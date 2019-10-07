@@ -10,31 +10,38 @@ collections:
     name: "design-pages"
     widget: "list"
     folder: "src/pages/design-pages"
+    create: true
     fields:
       - label: "Page Title"
         name: "title"
-        widget: "text"
-      - label: "Page Components"
-        name: "components"
-        widget: "list"
-        types:
-          - label: "Carousel"
-            name: "carousel"
-            widget: object
-            fields:
-                - {label: Header, name: header, widget: string, default: "Image Gallery"}
-                - {label: Template, name: template, widget: string, default: "carousel.html"}
-                - label: Images
-                  name: images
-                  widget: list
-                  field: {label: Image, name: image, widget: image}
-          - label: "Spotlight"
-            name: "spotlight"
-            widget: object
-            fields:
-              - {label: Header, name: header, widget: string, default: "Spotlight"}
-              - {label: Template, name: template, widget: string, default: "spotlight.html"}
-              - {label: Text, name: text, widget: text, default: "Hello World"}
-      - label: "Page Footer"
-        name: "footer"
-        widget: "markdown"
+        description: "Header and paragraph"
+        widget: object
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "design-page"}
+          - {label: Heading, name: heading, widget: string, default: "Heading"}
+          - {label: Description, name: description, widget: string, default: "This is a heading"}
+          - {label: "Two Columns", name: "Split into two columns", widget: "boolean", default: true}
+#      - label: "Page Components"
+#        name: "components"
+#        widget: "list"
+#        types:
+#          - label: "Carousel"
+#            name: "carousel"
+#            widget: object
+#            fields:
+#                - {label: Header, name: header, widget: string, default: "Image Gallery"}
+#                - {label: Template, name: template, widget: string, default: "carousel.html"}
+#                - label: Images
+#                  name: images
+#                  widget: list
+#                  field: {label: Image, name: image, widget: image}
+#          - label: "Spotlight"
+#            name: "spotlight"
+#            widget: object
+#            fields:
+#              - {label: Header, name: header, widget: string, default: "Spotlight"}
+#              - {label: Template, name: template, widget: string, default: "spotlight.html"}
+#              - {label: Text, name: text, widget: text, default: "Hello World"}
+#      - label: "Page Footer"
+#        name: "footer"
+#        widget: "markdown"
