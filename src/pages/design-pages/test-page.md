@@ -1,9 +1,10 @@
 ---
 templateKey: design-page
+title: Test Page
 components:
-  - Split into two columns: true
+  - twoColumns: true
     description: This is a heading
     heading: Heading
-    type: title
+    type: heading
 ---
 
