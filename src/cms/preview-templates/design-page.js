@@ -1,4 +1,6 @@
-import React, {Component} from 'react'
+import React, {Component}          from 'react'
+import {FullWidthImage, TwoImages} from '../../components/images/images-component';
+import {Quoteblock}                from '../../components/quoteblock/quoteblock-component';
 
 export default class DesignPagePreview extends Component {
 
@@ -10,7 +12,9 @@ export default class DesignPagePreview extends Component {
         return (<section>{widgetsFor('components').map(getComponent)}</section>);
     }
 
-    getComponent(component) {
+    getComponent = (component) => {
+
+        const {getAsset} = this.props;
 
         const type = component.getIn(['data', 'type']);
         switch(type) {
@@ -19,6 +23,18 @@ export default class DesignPagePreview extends Component {
                     <h1>{component.getIn(['data', 'heading'])}</h1>
                     <p>{component.getIn(['data', 'description'])}</p>
                 </section>);
+            case 'fullWidthImageComponent':
+                const image = component.getIn(['data', 'fullWidthImage']);
+                const asset = image ? getAsset(image) : null;
+                const {path} = asset || {};
+                return (<FullWidthImage img={path}/>);
+            case 'twoImageComponent':
+                // const image = component.getIn(['data', 'fullWidthImage']);
+                // const asset = image ? getAsset(image) : null;
+                // const {path} = asset || {};
+                return (<TwoImages/>);
+            // case 'quoteBlockComponent':
+            //     return <Quoteblock/>
             default:
                 return (<p>{component.getIn(['data', 'text'])}</p>)
         }

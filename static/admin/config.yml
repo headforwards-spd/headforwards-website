@@ -1,33 +1,45 @@
 backend:
-  name: github
-  repo: emmajgrimes/headforwards-website
+    name: github
+    repo: emmajgrimes/headforwards-website
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - label: "Design Pages"
-    name: "design-pages"
-    widget: "list"
-    folder: "src/pages/design-pages"
-    create: true
-    identifier_field: title
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "design-page"}
-      - {label: "Page Title", name: "title", widget: "text"}
-      - label: "Page Components"
-        name: "components"
+    -   label: "Design Pages"
+        name: "design-pages"
         widget: "list"
-        types:
-          - label: "Heading Component"
-            name: "heading"
-            description: "Header and paragraph"
-            widget: object
-            fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Description, name: description, widget: markdown}
-              - {label: "Two Columns", name: "twoColumns", widget: "boolean", default: true}
-          - label: "Full Width Image"
-            name: "fullWidthImage"
-            widget: image
-            default: "/img/default-images/full-width-man-glasses.png"
+        folder: "src/pages/design-pages"
+        create: true
+        identifier_field: title
+        fields:
+            - {label: "Template Key", name: "templateKey", widget: "hidden", default: "design-page"}
+            - {label: "Page Title", name: "title", widget: "text"}
+            -   label: "Page Components"
+                name: "components"
+                widget: "list"
+                types:
+                    -   label: "Heading Component"
+                        name: "heading"
+                        description: "Header and paragraph"
+                        widget: object
+                        fields:
+                            - {label: Heading, name: heading, widget: string}
+                            - {label: Description, name: description, widget: markdown}
+                            - {label: "Two Columns", name: "twoColumns", widget: "boolean", default: true}
+                    -   label: "Full Width Image Component"
+                        name: "fullWidthImageComponent"
+                        description: "Full Width Image"
+                        widget: object
+                        fields:
+                            -   label: "Full Width Image"
+                                name: "fullWidthImage"
+                                widget: image
+                    -   label: "Half Width Images Component"
+                        name: "twoImageComponent"
+                        description: "Half Width Images"
+                        widget: object
+                        fields:
+                            - {label: "Left Image", name: "leftImage", widget: image}
+                            - {label: "Right Image", name: "rightImage", widget: image}
+

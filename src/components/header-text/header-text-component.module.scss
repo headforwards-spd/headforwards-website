@@ -1,0 +1,20 @@
+.flexRow {
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    color: black;
+    display: flex;
+
+    p {
+        font-weight: lighter;
+    }
+
+    &.noGrow {
+        flex-direction: column;
+    }
+
+    &.flexGrow {
+        align-items: center;
+        > div {
+            flex: 1;
+        }
+    }
+}
