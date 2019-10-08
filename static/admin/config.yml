@@ -27,8 +27,7 @@ collections:
               - {label: Heading, name: heading, widget: string}
               - {label: Description, name: description, widget: markdown}
               - {label: "Two Columns", name: "twoColumns", widget: "boolean", default: true}
-          - label: "Another Component"
-            name: "anotherComponent"
-            widget: object
-            fields:
-              - {label: text, name: text, widget: markdown}
+          - label: "Full Width Image"
+            name: "fullWidthImage"
+            widget: image
+            default: "/img/default-images/full-width-man-glasses.png"

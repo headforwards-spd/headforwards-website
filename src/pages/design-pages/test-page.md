@@ -6,7 +6,5 @@ components:
     heading: Heading
     twoColumns: false
     type: heading
-  - text: Another Component
-    type: anotherComponent
 ---
 
