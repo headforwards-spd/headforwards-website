@@ -1,0 +1,43 @@
+.flexRow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &.right {
+        > div:first-of-type {
+            order: 1;
+        }
+
+    }
+
+    .flexColumn {
+        flex: 1;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #fdb82b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media (min-width: 640px) {
+    .flexRow {
+        flex-direction: row;
+
+        .flexColumn {
+            &:nth-of-type(1) {
+                margin-right: 10px;
+            }
+            &:nth-of-type(2) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
