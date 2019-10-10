@@ -1,3 +1,38 @@
-p {
-    color: orange;
+@import "variables";
+
+* {
+    font-family: "FS Albert", Arial, sans-serif;
 }
+
+h1 {
+    font-size: $h1-small-font-size
+}
+
+h2 {
+    font-size: $h2-small-font-size;
+}
+
+p {
+    font-size: $p-small-font-size;
+}
+
+a {
+    color: $orange;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: $anchor-tag-font-size-small;
+}
+
+@media(min-width: $screen-md){
+    h1 {
+        font-size: $h1-large-font-size;
+        color: $header_black;
+        margin-bottom: $header-margin-bottom;
+    }
+
+    p {
+        font-size: 24px;
+        color: $paragraph_grey;
+    }
+}
+

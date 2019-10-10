@@ -1,32 +1,25 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-
-}
+@import "../variables";
 
 .blockquoteContainer {
-    color: #fdb82b;
-
+    padding: 40px 1rem;
     blockquote {
         font-weight: bold;
         font-style: italic;
-        font-size: 2rem;
-        max-width: 600px;
+        font-size: 23px;
         line-height: 1.4;
         position: relative;
         padding: 0;
         margin-bottom: 2rem;
         margin-left: 0;
         margin-right: 0;
+        color: $orange;
 
         &:before,
         &:after {
             position: absolute;
-            color: #c4c4c4;
+            color: #686868;
             font-size: 5rem;
-            width: 4rem;
+            width: 3rem;
             height: 4rem;
         }
 
@@ -51,22 +44,25 @@ body {
 
     h1 {
         color: black;
-        margin-bottom: 0;
+        margin-bottom: 0.5rem;
+        font-size: 23px;
+        font-weight: bold;
     }
 
     p {
-        color: #c1c1c1;
+        color: #B8B8B8;
+        font-size: 14px;
         text-transform: uppercase;
         margin-top: 0;
         font-style: italic;
     }
     .imageCropper {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 71px;
         position: relative;
         overflow: hidden;
         border-radius: 50%;
-        margin-right: 2rem;
+        margin-right: 1rem;
 
         .profilePic {
             display: inline;
@@ -78,19 +74,26 @@ body {
 
 }
 
-@media (min-width: 640px) {
+@media (min-width: $screen-md) {
 
     .blockquoteContainer {
-        padding-left: 40px;
-        border-left: 1px solid #dddddd;
+        padding-left: 50px;
+        border-left: 1px solid #D8D8D8;
 
         blockquote {
             &:before {
-                left: -4rem;
+                left: -3rem;
                 top: -1rem;
                 background-color: #ffffff;
                 padding-left: 0;
             }
+        }
+    }
+
+    .flexRow {
+        .imageCropper {
+            width: 70px;
+            height: 71px;
         }
     }
 }

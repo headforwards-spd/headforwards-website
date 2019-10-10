@@ -12,6 +12,12 @@ const defaultHeader = faker.lorem.sentence();
 const paraLabel = 'Paragraph';
 const defaultSentence = faker.lorem.paragraph();
 
+const linkLabel = "Link Text";
+const defaultLinkText = faker.lorem.sentence();
+
+const linkDestinationLabel = "Link Destination";
+const defaultLinkDestination = faker.internet.url();
+
 const groupId = "header-group";
 
 const booleanLabel = 'Float image to the right';
@@ -32,12 +38,16 @@ export const textBlock = () => {
     const sentence = text(paraLabel, defaultSentence, groupId);
     const position = boolean(booleanLabel, defaultValue, groupId);
     const image = files(imageLabel, accept, defaultImageValue, groupId);
+    const linkText = text(linkLabel, defaultLinkText, groupId);
+    const linkDestination = text(linkDestinationLabel, defaultLinkDestination, groupId);
 
     const props = {
         header: header,
         sentence: sentence,
         position: position,
-        image: image
+        image: image,
+        linkText: linkText,
+        linkDestination: linkDestination
     };
     return <ImageHeader {...props} />
 };

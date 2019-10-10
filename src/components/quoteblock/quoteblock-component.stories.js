@@ -1,13 +1,10 @@
-import {files, text} from '@storybook/addon-knobs';
 import React         from 'react';
 import img           from '../../img/craig.jpg';
 import {Quoteblock}  from './quoteblock-component';
+import {withKnobs, text, files} from '@storybook/addon-knobs';
+
 
 const faker = require('faker');
-export default {
-    title: 'Quoteblock'
-};
-
 const groupId = 'quote-group';
 
 const nameLabel       = 'Name';
@@ -22,6 +19,11 @@ const defaultQuote = faker.lorem.paragraph();
 const imageLabel      = 'Profile Picture';
 const accept          = '.png, .jpg, .jpeg';
 const defaultImgValue = [img];
+
+export default {
+    decorators: [withKnobs],
+    title: 'Quoteblock'
+};
 
 export const quoteBlock = () => {
 
