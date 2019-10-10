@@ -1,18 +1,20 @@
-import React, {Component}          from 'react'
+import React, {Component}          from 'react';
+import {Article}                   from '../../components/article-block/article-block-component';
 import {HeaderText}                from '../../components/header-text/header-text-component';
 import {ImageHeader}               from '../../components/image-header-text-link/image-header-text-link-component';
 import {FullWidthImage, TwoImages} from '../../components/images/images-component';
 import {Quoteblock}                from '../../components/quoteblock/quoteblock-component';
-import {Article}                   from '../../components/article-block/article-block-component';
 
 export default class DesignPagePreview extends Component {
 
     render() {
 
         const {props, getComponent} = this;
-        const { widgetsFor} = props;
+        const {widgetsFor}          = props;
 
-        return (<section>{widgetsFor('components').map(getComponent)}</section>);
+        return (
+            <section>{widgetsFor('components').map(getComponent)}</section>
+        );
     }
 
     getComponent = (component) => {
@@ -20,35 +22,42 @@ export default class DesignPagePreview extends Component {
         const {getAsset} = this.props;
 
         const type = component.getIn(['data', 'type']);
-        switch(type) {
+        switch (type) {
             case 'heading':
 
                 const headerProps = {
-                    bool: !!component.getIn(['data', 'twoColumns']) ? 'flexGrow' : 'noGrow',
-                    header: component.getIn(['data', 'heading']),
+                    bool:     !!component.getIn(['data', 'twoColumns']) ? 'flexGrow' : 'noGrow',
+                    header:   component.getIn(['data', 'heading']),
                     sentence: component.getIn(['data', 'description'])
                 };
-                return <HeaderText {...headerProps} />
+                return <HeaderText {...headerProps} />;
 
             case 'fullWidthImageComponent':
-                const image = component.getIn(['data', 'fullWidthImage']);
-                const asset = image ? getAsset(image) : null;
+                const image  = component.getIn(['data', 'fullWidthImage']);
+                const asset  = image ? getAsset(image) : null;
                 const {path} = asset || {};
-                return (<FullWidthImage img={path}/>);
+                return (
+                    <FullWidthImage img={path}/>
+                );
 
             case 'twoImageComponent':
 
-                const leftImage = component.getIn(['data', 'leftImage']);
-                const leftImgAsset = leftImage ? getAsset(leftImage) : null;
+                const leftImage           = component.getIn(['data', 'leftImage']);
+                const leftImgAsset        = leftImage ? getAsset(leftImage) : null;
                 const {path: leftImgPath} = leftImgAsset || {};
 
-                const rightImage = component.getIn(['data', 'rightImage']);
-                const rightImgAsset = rightImage ? getAsset(rightImage) : null;
-                const {path: rightImgPath} = rightImgAsset|| {};
+                const rightImage           = component.getIn(['data', 'rightImage']);
+                const rightImgAsset        = rightImage ? getAsset(rightImage) : null;
+                const {path: rightImgPath} = rightImgAsset || {};
 
-                const props = {leftImg: leftImgPath, rightImg: rightImgPath};
+                const props = {
+                    leftImg:  leftImgPath,
+                    rightImg: rightImgPath
+                };
 
-                return (<TwoImages {...props}/>);
+                return (
+                    <TwoImages {...props}/>
+                );
 
             case 'blockQuoteComponent':
                 const quoteProps = {
@@ -57,25 +66,40 @@ export default class DesignPagePreview extends Component {
                     quote:    component.getIn(['data', 'quote']),
                     image:    component.getIn(['data', 'profilePic'])
                 };
-                return (<Quoteblock {...quoteProps} />);
+                return (
+                    <Quoteblock {...quoteProps} />
+                );
 
             case 'imageWithTextComponent':
                 const imgWithTextProps = {
-                        header: component.getIn(['data', 'header']),
-                        sentence: component.getIn(['data', 'sentence']),
-                        position: component.getIn(['data', 'position']),
-                        image: component.getIn(['data', 'image']),
-                        linkText: component.getIn(['data', 'linkText']),
-                        linkDestination: component.getIn(['data', 'linkDestination'])
+                    header:          component.getIn(['data', 'header']),
+                    sentence:        component.getIn(['data', 'sentence']),
+                    position:        component.getIn(['data', 'position']),
+                    image:           component.getIn(['data', 'image']),
+                    linkText:        component.getIn(['data', 'linkText']),
+                    linkDestination: component.getIn(['data', 'linkDestination'])
                 };
-                return (<ImageHeader {...imgWithTextProps} />);
+                return (
+                    <ImageHeader {...imgWithTextProps} />
+                );
 
             case 'articleBlockComponent':
-                return (<Article/>);
+                const articleBlockProps = {
+                    mainHeader:   component.getIn(['data', 'mainHeader']),
+                    secondHeader: component.getIn(['data', 'secondHeader']),
+                    articleImg:   component.getIn(['data', 'articleImg']),
+                    articlePost:  component.getIn(['data', 'articlePost'])
+
+                };
+                return (
+                    <Article {...articleBlockProps}/>
+                );
 
             default:
-                return (<p>{component.getIn(['data', 'text'])}</p>)
+                return (
+                    <p>{component.getIn(['data', 'text'])}</p>
+                );
         }
 
-    }
+    };
 }
