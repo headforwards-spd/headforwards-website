@@ -62,19 +62,24 @@ collections:
                             - {label: "Link Destination", name: "linkDestination", widget: string}
                     -   label: "Article Block"
                         name: "articleBlockComponent"
-                        widget: "list"
+                        widget: object
                         fields:
-                            - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-                            -   label: Author
-                                name: author
-                                widget: object
-                                fields:
-                                    - {label: Name, name: name, widget: string, default: "Emmet"}
-                                    - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+                            - {label: "Main Header", name: "mainHeader", widget: string}
+                            - label: "Articles"
+                              name: "Articles"
+                              widget: list
+                              fields:
+                              -   label: "Article Post"
+                                  name: "articlePostObj"
+                                  widget: object
+                                  fields:
+                                    - {label: "Article Image", name: "articleImg", widget: image}
+                                    - {label: "Second Header", name: "secondHeader", widget: string}
+                                    - {label: "Article Post", name: "articlePost", widget: text}
     -   name: "settings"
         label: "Settings"
         files:
-            - file: "data/navigation.yml"
+            - file: "src/data/navigation.yml"
               label: "Navigation"
               name: "navigation"
               fields:
@@ -82,6 +87,11 @@ collections:
                         name: nav_items
                         widget: list
                         fields:
-                            - {label: Label, name: label, widget: string}
-                            - {label: Path, name: path, widget: string}
+                            -   label: "Post Author"
+                                name: "author"
+                                widget: "relation"
+                                collection: "design-pages"
+                                searchFields: ["title"]
+                                valueField: "title"
+                                displayFields: ["title"]
 
