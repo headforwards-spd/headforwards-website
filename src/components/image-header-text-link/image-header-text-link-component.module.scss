@@ -1,42 +1,62 @@
+@import "../variables";
+
 .flexRow {
     display: flex;
-    align-items: center;
     flex-direction: column;
 
-    &.right {
-        > div:first-of-type {
-            order: 1;
-        }
-
-    }
-
     .flexColumn {
+
+        &:nth-of-type(2){
+            padding: 0 15px;
+        }
         flex: 1;
 
         img {
+            padding: 15px 0 20px 0;
             width: 100%;
             height: auto;
         }
 
-        a {
-            color: #fdb82b;
-            text-decoration: none;
-            font-weight: bold;
+        p {
+            font-size: 15px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: $h1-small-font-size;
         }
     }
 }
 
 
-@media (min-width: 640px) {
+@media (min-width: $screen-md) {
     .flexRow {
         flex-direction: row;
+        align-items: center;
+
+        &.right {
+            > div:first-of-type {
+                order: 1;
+            }
+
+        }
 
         .flexColumn {
+            h1 {
+                font-size: 45px;
+            }
+            a {
+                font-size: 26px;
+            }
+            p {
+                font-size: $p-large-font-size;
+                margin-bottom: 2.5rem;
+            }
             &:nth-of-type(1) {
-                margin-right: 10px;
+                margin-right: 0.625rem;
             }
             &:nth-of-type(2) {
-                margin-left: 10px;
+                margin-left: 0.625rem;
             }
         }
     }

@@ -14,7 +14,7 @@ collections:
         identifier_field: title
         fields:
             - {label: "Template Key", name: "templateKey", widget: "hidden", default: "design-page"}
-            - {label: "Page Title", name: "title", widget: "text"}
+            - {label: "Page Title", name: "title", widget: string}
             -   label: "Page Components"
                 name: "components"
                 widget: "list"
@@ -26,7 +26,7 @@ collections:
                         fields:
                             - {label: Heading, name: heading, widget: string}
                             - {label: Description, name: description, widget: markdown}
-                            - {label: "Two Columns", name: "twoColumns", widget: "boolean", default: true}
+                            - {label: "Two Columns", name: "twoColumns", widget: "boolean", default: false}
                     -   label: "Full Width Image Component"
                         name: "fullWidthImageComponent"
                         description: "Full Width Image"
@@ -42,4 +42,46 @@ collections:
                         fields:
                             - {label: "Left Image", name: "leftImage", widget: image}
                             - {label: "Right Image", name: "rightImage", widget: image}
+                    -   label: "Block Quote Component"
+                        name: "blockQuoteComponent"
+                        widget: object
+                        fields:
+                            - {label: "Profile Picture", name: "profilePic", widget: image}
+                            - {label: "Name", name: "name", widget: string}
+                            - {label: "Job Title", name: "jobTitle", widget: string}
+                            - {label: "Quote", name: "quote", widget: text}
+                    -   label: "Image with Text Component"
+                        name: "imageWithTextComponent"
+                        widget: object
+                        fields:
+                            - {label: "Header", name: "header", widget: string}
+                            - {label: "Sentence", name: "sentence", widget: text}
+                            - {label: "Position", name: "position", widget: boolean, default: false}
+                            - {label: "Image", name: "image", widget: image}
+                            - {label: "Link Text", name: "linkText", widget: string}
+                            - {label: "Link Destination", name: "linkDestination", widget: string}
+                    -   label: "Article Block"
+                        name: "articleBlockComponent"
+                        widget: "list"
+                        fields:
+                            - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+                            -   label: Author
+                                name: author
+                                widget: object
+                                fields:
+                                    - {label: Name, name: name, widget: string, default: "Emmet"}
+                                    - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+    -   name: "settings"
+        label: "Settings"
+        files:
+            - file: "navigation.yml"
+              label: "Navigation"
+              name: "navigation"
+              fields:
+                    -   label: Navigation
+                        name: nav_items
+                        widget: list
+                        fields:
+                            - {label: Label, name: label, widget: string}
+                            - {label: Path, name: path, widget: string}
 

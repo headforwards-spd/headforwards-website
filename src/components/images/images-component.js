@@ -1,7 +1,5 @@
 import React                                                     from 'react';
 import imgBlog                                                   from '../../img/blog.png';
-import imgHair                                                   from '../../img/curlyhair.png';
-import imgLaptop                                                 from '../../img/laptop.png';
 import {blogSection, flexCol, flexRow, fullWidthImage, imageRow} from './images-component.module.scss';
 
 export function FullWidthImage({img}) {
@@ -10,15 +8,15 @@ export function FullWidthImage({img}) {
     );
 }
 
-export function TwoImages({firstImg, secondImg}) {
+export function TwoImages({leftImg, rightImg}) {
     return (
         <div className={imageRow}>
             <div className={flexRow}>
                 <div className={flexCol}>
-                    <img src={firstImg}/>
+                    <img src={leftImg}/>
                 </div>
                 <div className={flexCol}>
-                    <img src={secondImg}/>
+                    <img src={rightImg}/>
                 </div>
             </div>
         </div>

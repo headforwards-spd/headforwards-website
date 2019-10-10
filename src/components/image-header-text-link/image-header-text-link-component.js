@@ -1,7 +1,7 @@
 import React                              from 'react';
 import {flexColumn, flexRow, left, right} from './image-header-text-link-component.module.scss';
 
-export function ImageHeader({header, sentence, position, image}) {
+export function ImageHeader({header, sentence, position, image, linkText, linkDestination}) {
 
     const side = position === true ? right : left;
     return (
@@ -12,7 +12,7 @@ export function ImageHeader({header, sentence, position, image}) {
             <div className={flexColumn}>
                 <h1>{header}</h1>
                 <p>{sentence}</p>
-                <a href="#">Discover more</a>
+                <a href={linkDestination}>{linkText} &#8594;</a>
             </div>
         </div>
     );
