@@ -74,7 +74,7 @@ collections:
     -   name: "settings"
         label: "Settings"
         files:
-            - file: "navigation.yml"
+            - file: "/data/navigation.yml"
               label: "Navigation"
               name: "navigation"
               fields:
