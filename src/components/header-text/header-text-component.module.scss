@@ -1,3 +1,5 @@
+@import "../variables";
+
 .flexRow {
     display: flex;
     flex-direction: column;
@@ -17,5 +19,19 @@
         > div {
             flex: 1;
         }
+    }
+}
+
+@media(min-width: $screen-md){
+    .flexRow {
+        flex-direction: unset;
+
+        //&:nth-child(1) {
+        //    margin-right: 25px;
+        //}
+        //
+        //&:nth-child(2) {
+        //    margin-left: 25px;
+        //}
     }
 }
