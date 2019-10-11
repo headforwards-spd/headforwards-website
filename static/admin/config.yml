@@ -19,44 +19,26 @@ collections:
             name: items
             widget: list
             fields:
-              - label: Label
-                name: label
-                widget: string
+              - {label: "Label", name: label, widget: string}
               - label: "Link"
                 name: link
                 widget: relation
-                collection: "design-pages"
+                collection: design-pages
                 searchFields: ["title"]
-                valueField: slug
+                valueField: uuid
                 displayFields: ["title"]
-              - label: Children
+              - label: "Children"
                 name: children
                 widget: list
                 fields:
-                  - label: Label
-                    name: label
-                    widget: string
-                  - label: "Link"
-                    name: link
-                    widget: relation
-                    collection: "design-pages"
-                    searchFields: ["title"]
-                    valueField: slug
-                    displayFields: ["title"]
-                  - label: Children
+                  - {label: "Label", name: label, widget: string}
+                  - {label: "Link", name: link, widget: string}
+                  - label: "Children"
                     name: children
                     widget: list
                     fields:
-                      - label: Label
-                        name: label
-                        widget: string
-                      - label: "Link"
-                        name: link
-                        widget: relation
-                        collection: "design-pages"
-                        searchFields: ["title"]
-                        valueField: slug
-                        displayFields: ["title"]
+                      - {label: "Label", name: label, widget: string}
+                      - {label: "Link", name: link, widget: string}
   - label: "Design Pages"
     label_singular: "Design Page"
     name: "design-pages"
@@ -67,6 +49,7 @@ collections:
     widget: "list"
     identifier_field: title
     fields:
+      - {label: "ID", name: uuid, widget: uuid}
       - {label: "Path", name: "path", widget: "hidden", default: "design-pages"}
       - {label: "Type", name: "type", widget: "hidden", default: "design"}
       - {label: "Page Title", name: "title", widget: string}
