@@ -12,7 +12,7 @@ collections:
         name: "design-pages"
         folder: "src/pages/design-pages"
         create: true
-        slug: {{slug}}
+        slug: "{{slug}}"
         preview_path: "design-pages/{{slug}}"
         widget: "list"
         identifier_field: title
