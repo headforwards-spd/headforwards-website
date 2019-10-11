@@ -1,6 +1,6 @@
 
 import React         from 'react';
-import {ImageHeader} from './image-header-text-link-component';
+import ImageHeader from './image-header-text-link-component';
 import img                                from '../../img/curlyhair.png';
 import {withKnobs, text, boolean, files}   from '@storybook/addon-knobs';
 
