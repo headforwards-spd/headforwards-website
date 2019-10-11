@@ -1,41 +1,49 @@
 ---
-title: Test Page
 path: design-pages
 type: design
+title: Test Page
 components:
-  - image: /img/chemex.jpg
+  - fullWidthImage: /img/chemex.jpg
     type: fullWidthImageComponent
-  - title: What we believe
+  - header: What we believe
     image: /img/chemex.jpg
+    linkDestination: /
+    linkText: Link Test
     position: false
-    text: >-
+    sentence: >-
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality.
     type: imageWithTextComponent
-  - title: How it began
+  - header: How it began
     image: /img/blog-index.jpg
+    linkDestination: /
+    linkText: Link Text
     position: true
-    text: >-
+    sentence: >-
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
     type: imageWithTextComponent
-  - text: >-
+  - description: >-
       Clients look to Headforwards to develop software that creates value. In a
       rapidly changing business environment, what constitutes value might change
       from one week to the next.
-    title: We believe in creating value
+    heading: We believe in creating value
     twoColumns: false
     type: heading
-  - text: >-
+  - description: >-
       Headforwards is based in Cornwall, UK and we specialise in software
       development outsourcing...
+
+
+
+
       Our business model is different to most other outsource software
       companies. We create dedicated teams for specific projects and never
       switch members to other projects, nor do we have team members waiting on
       the bench which ultimately drives costs up.
-    title: Headforwards specialise in software development outsourcing...
+    heading: Headforwards specialise in software development outsourcing...
     twoColumns: true
     type: heading
   - jobTitle: Software Developer
