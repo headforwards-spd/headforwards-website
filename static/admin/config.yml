@@ -69,7 +69,7 @@ collections:
                         name: "articleBlockComponent"
                         widget: object
                         fields:
-                            - {label: "Main Header", name: "title", widget: string}
+                            - {label: "Main Header", name: "title", widget: string, required: false}
                             - label: "Articles"
                               name: "articles"
                               widget: list

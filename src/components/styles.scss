@@ -2,7 +2,11 @@
 
 * {
     font-family: "FS Albert", Arial, sans-serif;
+}
+
+body {
     max-width: $screen-xxl;
+    margin: 0 auto;
 }
 
 h1 {
@@ -15,6 +19,7 @@ h2 {
 
 p {
     font-size: $p-small-font-size;
+    line-height: 22px;
 }
 
 a {
