@@ -6,7 +6,7 @@
 
 body {
     max-width: $screen-xxl;
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 
 h1 {
@@ -46,6 +46,7 @@ ul {
     p {
         font-size: 24px;
         color: $paragraph_grey;
+        line-height: 30px;
     }
 }
 
