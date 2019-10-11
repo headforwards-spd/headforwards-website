@@ -52,7 +52,7 @@ components:
       the bench which ultimately drives costs up.
     heading: Headforwards specialise in software development outsourcing...
     text: Heading component (one column)
-    twoColumns: true
+    twoColumns: false
     type: heading
     title: Heading (one column)
   - jobTitle: Software Developer
