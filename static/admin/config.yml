@@ -1,19 +1,24 @@
 backend:
     name: github
     repo: emmajgrimes/headforwards-website
+publish_mode: editorial_workflow
 
 media_folder: static/img
 public_folder: /img
 
 collections:
     -   label: "Design Pages"
+        label_singular: "Design Page"
         name: "design-pages"
-        widget: "list"
         folder: "src/pages/design-pages"
         create: true
+        slug: "{{slug}}"
+        preview_path: "design-pages/{{slug}}"
+        widget: "list"
         identifier_field: title
         fields:
-            - {label: "Template Key", name: "templateKey", widget: "hidden", default: "design-page"}
+            - {label: "Path", name: "path", widget: "hidden", default: "design-pages"}
+            - {label: "Type", name: "type", widget: "hidden", default: "design"}
             - {label: "Page Title", name: "title", widget: string}
             -   label: "Page Components"
                 name: "components"
