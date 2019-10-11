@@ -1,8 +1,18 @@
 items:
   - children:
-      - label: Front End Jobs
+      - children:
+          - label: React
+            link: /jobs/front-end/react/
+          - label: Angular
+            link: /jobs/front-end/angular/
+        label: Front End Jobs
         link: /jobs/front-end/
-      - label: Back End Jobs
+      - children:
+          - label: Perl
+            link: /jobs/back-end/perl/
+          - label: Python
+            link: /jobs/back-end/python/
+        label: Back End Jobs
         link: /jobs/back-end/
     label: Jobs
     link: /jobs/
