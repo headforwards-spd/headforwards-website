@@ -64,18 +64,14 @@ collections:
                         name: "articleBlockComponent"
                         widget: object
                         fields:
-                            - {label: "Main Header", name: "mainHeader", widget: string}
+                            - {label: "Main Header", name: "title", widget: string}
                             - label: "Articles"
-                              name: "Articles"
+                              name: "articles"
                               widget: list
                               fields:
-                              -   label: "Article Post"
-                                  name: "articlePostObj"
-                                  widget: object
-                                  fields:
-                                    - {label: "Article Image", name: "articleImg", widget: image}
-                                    - {label: "Second Header", name: "secondHeader", widget: string}
-                                    - {label: "Article Post", name: "articlePost", widget: text}
+                                    - {label: "Article Image", name: "image", widget: image}
+                                    - {label: "Article Header", name: "title", widget: string}
+                                    - {label: "Article Post", name: "post", widget: text}
     -   name: "settings"
         label: "Settings"
         files:
