@@ -1,6 +1,7 @@
 ---
-templateKey: design-page
 title: Test Page
+path: design-pages
+type: design
 components:
   - fullWidthImage: /img/chemex.jpg
     type: fullWidthImageComponent
