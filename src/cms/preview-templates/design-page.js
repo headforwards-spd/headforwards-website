@@ -1,9 +1,9 @@
 import React, {Component}          from 'react';
-import {Article}                   from '../../components/article-block/article-block-component';
+import ArticleBlock                from '../../components/article-block/article-block-component';
 import {HeaderText}                from '../../components/header-text/header-text-component';
-import {ImageHeader}               from '../../components/image-header-text-link/image-header-text-link-component';
+import ImageHeader               from '../../components/image-header-text-link/image-header-text-link-component';
 import {FullWidthImage, TwoImages} from '../../components/images/images-component';
-import {Quoteblock}                from '../../components/quoteblock/quoteblock-component';
+import Quoteblock               from '../../components/quoteblock/quoteblock-component';
 
 export default class DesignPagePreview extends Component {
 
@@ -60,39 +60,22 @@ export default class DesignPagePreview extends Component {
                 );
 
             case 'blockQuoteComponent':
-                const quoteProps = {
-                    name:     component.getIn(['data', 'name']),
-                    jobTitle: component.getIn(['data', 'jobTitle']),
-                    quote:    component.getIn(['data', 'quote']),
-                    image:    component.getIn(['data', 'profilePic'])
-                };
+                const {data: quoteData} = component.toJS() || {};
                 return (
-                    <Quoteblock {...quoteProps} />
+                    <Quoteblock {...quoteData} />
                 );
-
             case 'imageWithTextComponent':
-                const imgWithTextProps = {
-                    header:          component.getIn(['data', 'header']),
-                    sentence:        component.getIn(['data', 'sentence']),
-                    position:        component.getIn(['data', 'position']),
-                    image:           component.getIn(['data', 'image']),
-                    linkText:        component.getIn(['data', 'linkText']),
-                    linkDestination: component.getIn(['data', 'linkDestination'])
-                };
+
+                const {data: imageData} = component.toJS() || {};
                 return (
-                    <ImageHeader {...imgWithTextProps} />
+                    <ImageHeader {...imageData} />
                 );
 
             case 'articleBlockComponent':
-                const articleBlockProps = {
-                    mainHeader:   component.getIn(['data', 'mainHeader']),
-                    secondHeader: component.getIn(['data', 'secondHeader']),
-                    articleImg:   component.getIn(['data', 'articleImg']),
-                    articlePost:  component.getIn(['data', 'articlePost'])
 
-                };
+                const {data} = component.toJS() || {};
                 return (
-                    <Article {...articleBlockProps}/>
+                    <ArticleBlock {...data}/>
                 );
 
             default:
