@@ -4,7 +4,7 @@ type: design
 title: Test Page
 components:
   - fullWidthImage: /img/chemex.jpg
-    image: /img/chemex.jpg
+    image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
   - header: What we believe
     image: /img/blog-index.jpg
