@@ -37,15 +37,6 @@ components:
     type: imageWithTextComponent
     title: How it began
   - description: >-
-      Clients look to Headforwards to develop software that creates value. In a
-      rapidly changing business environment, what constitutes value might change
-      from one week to the next.
-    heading: We believe in creating value
-    text: Heading component
-    twoColumns: true
-    type: heading
-    title: Heading
-  - description: >-
       Headforwards is based in Cornwall, UK and we specialise in software
       development outsourcing...
 
@@ -57,10 +48,51 @@ components:
       switch members to other projects, nor do we have team members waiting on
       the bench which ultimately drives costs up.
     heading: Headforwards specialise in software development outsourcing...
-    text: Heading component (one column)
+    text: >-
+      Clients look to Headforwards to develop software that creates value. In a
+      rapidly changing business environment, what constitutes value might change
+      from one week to the next.
     twoColumns: false
     type: heading
-    title: Heading (one column)
+    title: We believe in creating value
+  - description: >-
+      Clients look to Headforwards to develop software that creates value. In a
+      rapidly changing business environment, what constitutes value might change
+      from one week to the next.
+    heading: We believe in creating value
+    text: >-
+      Headforwards is based in Cornwall, UK and we specialise in software
+      development outsourcing...
+
+
+      Our business model is different to most other outsource software
+      companies. We create dedicated teams for specific projects and never
+      switch members to other projects, nor do we have team members waiting on
+      the bench which ultimately drives costs up.
+    twoColumns: true
+    type: heading
+    title: Headforwards specialise in software development outsourcing...
+  - articles:
+      - image: /img/curlyhair.png
+        text: >-
+          Our business model is different to most other outsource software
+          companies. We create dedicated teams for specific projects and never
+          switch members to other projects, nor do we have team members waiting
+          on the bench which ultimately drives costs up.
+        title: Software development outsourcing...
+      - image: /img/curlyhair.png
+        text: >-
+          Our business model is different to most other outsource software
+          companies. We create dedicated teams for specific projects and never
+          switch members to other projects, nor do we have team members waiting.
+        title: Software development outsourcing...
+    type: articleBlockComponent
+    title: Headforwards specialise in software development outsourcing...
+  - type: articleBlockComponent
+    title: nonr
+  - leftImage: /img/girl.png
+    rightImage: /img/laptop.png
+    type: twoImageComponent
   - jobTitle: Software Developer
     name: Emma Grimes
     profilePic: /img/jumbotron.jpg
@@ -69,8 +101,5 @@ components:
       got to look for a new competitive advantage in their software. And that’s
       always what we aim to deliver.
     type: blockQuoteComponent
-  - leftImage: /img/products-full-width.jpg
-    rightImage: /img/products-grid3.jpg
-    type: twoImageComponent
 ---
 
