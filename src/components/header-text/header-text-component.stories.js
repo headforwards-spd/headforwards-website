@@ -29,8 +29,8 @@ export const headerWithText = () => {
     const bool = boolean(booleanLabel, defaultValue, groupId);
 
     const props = {
-        header: header,
-        sentence: sentence,
+        title: header,
+        text: sentence,
         bool: bool,
     };
 

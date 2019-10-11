@@ -1,15 +1,22 @@
-import React, {Component}          from 'react';
-import getComponent from '../../helpers/get-components';
+import React, {Component} from 'react';
+import getComponent       from '../../helpers/get-component';
 
 export default class DesignPagePreview extends Component {
 
     render() {
 
-        const {props} = this;
-        const {widgetsFor, getAsset}          = props;
+        const {props, getComponentPreview} = this;
+        const {widgetsFor}                 = props;
 
         return (
-            <section>{widgetsFor('components').map((component) => getComponent({component, getAsset}))}</section>
+            <section>{widgetsFor('components').map(getComponentPreview)}</section>
         );
+    }
+
+    getComponentPreview(component, key) {
+
+        const {data} = component.toJS() || {};
+
+        return getComponent({...data, key});
     }
 }

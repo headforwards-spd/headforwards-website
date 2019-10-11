@@ -1,16 +1,16 @@
 import React     from 'react';
 import {flexRow, flexGrow, noGrow} from './header-text-component.module.scss';
 
-export function HeaderText({header, sentence, bool}) {
+export function HeaderText({title, text, twoColumns}) {
 
-    const flexGrowClass = bool === 'flexGrow' ? flexGrow : noGrow;
+    const flexGrowClass = twoColumns ? flexGrow : noGrow;
     return (
         <div className={`${flexRow} ${flexGrowClass}`}>
             <div>
-                <h1>{header}</h1>
+                <h1>{title}</h1>
             </div>
             <div>
-                <p>{sentence}</p>
+                <p>{text}</p>
             </div>
         </div>
     );

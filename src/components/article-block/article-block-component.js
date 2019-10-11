@@ -1,4 +1,5 @@
-import React from 'react';
+import React                                from 'react';
+import Image                                from '../image/image-component'
 import {flexRow, flexCol, twoCol, threeCol} from './article-block-component.module.scss';
 
 export default ArticleBlock;
@@ -14,9 +15,9 @@ function ArticleBlock({title, articles}) {
             <h1>{title}</h1>
             <section className={flexRow}>
                 {articles.map(article => (<section className={articleLength}>
-                    <img src={article.image}/>
+                    <Image image={article.image}/>
                     <h1>{article.title}</h1>
-                    <p>{article.post}</p>
+                    <p>{article.text}</p>
                     <a href="#">Discover more</a>
                 </section>))}
             </section>

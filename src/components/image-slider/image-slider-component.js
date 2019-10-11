@@ -1,6 +1,7 @@
 import React           from 'react';
+import Image           from '../image/image-component'
 import {imageSliderBg} from './image-slider-component.module.scss';
-import girl from '../../img/girl.png';
+import girl            from '../../img/girl.png';
 
 export function ImageSlider() {
     return (
@@ -8,7 +9,7 @@ export function ImageSlider() {
             <div>
                 <h3> OUR STORY</h3>
                 <div>
-                    <img src={girl}/>
+                    <Image image={girl}/>
                 </div>
                 <h1>The new option in software outsourcing</h1>
                 <p>We are a British software outsourcing company based in the stunning location of Cornwall. Being in
@@ -17,7 +18,7 @@ export function ImageSlider() {
                 <a href="#">Read the case study</a>
             </div>
             <div>
-               <img src={girl}/>
+               <Image image={girl}/>
             </div>
         </div>
     );

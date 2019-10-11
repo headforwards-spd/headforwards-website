@@ -11,14 +11,12 @@ export const query = graphql`
               frontmatter {
           title
           components {
-            description
-            header
-            heading
+              title
+              text
             jobTitle
             name
             position
             quote
-            sentence
             twoColumns
             type
             rightImage {
@@ -31,9 +29,6 @@ export const query = graphql`
               publicURL
             }
             image {
-              publicURL
-            }
-            fullWidthImage {
               publicURL
             }
           }

@@ -30,13 +30,13 @@ export const quoteBlock = () => {
     const name     = text(nameLabel, defaultFakeName, groupId);
     const jobTitle = text(jobTitleLabel, defaultJobTitle, groupId);
     const quote    = text(quoteLabel, defaultQuote, groupId);
-    const image    = files(imageLabel, accept, defaultImgValue, groupId);
+    const profilePic = files(imageLabel, accept, defaultImgValue, groupId);
 
     const props = {
-        name:     name,
-        jobTitle: jobTitle,
-        quote:    quote,
-        image:    image
+        name,
+        jobTitle,
+        quote,
+        profilePic
     };
 
     return <Quoteblock {...props} />;
