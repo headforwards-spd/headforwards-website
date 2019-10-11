@@ -42,8 +42,8 @@ export const textBlock = () => {
     const linkDestination = text(linkDestinationLabel, defaultLinkDestination, groupId);
 
     const props = {
-        header: header,
-        sentence: sentence,
+        title: header,
+        text: sentence,
         position: position,
         image: image,
         linkText: linkText,

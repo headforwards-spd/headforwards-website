@@ -1,10 +1,12 @@
 import React                                                     from 'react';
 import imgBlog                                                   from '../../img/blog.png';
+import Image
+                                                                 from '../image/image-component'
 import {blogSection, flexCol, flexRow, fullWidthImage, imageRow} from './images-component.module.scss';
 
-export function FullWidthImage({img}) {
+export function FullWidthImage({image}) {
     return (
-        <img src={img} className={fullWidthImage}/>
+        <Image image={image} className={fullWidthImage}/>
     );
 }
 
@@ -13,10 +15,10 @@ export function TwoImages({leftImg, rightImg}) {
         <div className={imageRow}>
             <div className={flexRow}>
                 <div className={flexCol}>
-                    <img src={leftImg}/>
+                    <Image image={leftImg}/>
                 </div>
                 <div className={flexCol}>
-                    <img src={rightImg}/>
+                    <Image image={rightImg}/>
                 </div>
             </div>
         </div>
@@ -32,14 +34,14 @@ export function BlogImages() {
             <div className={flexRow}>
                 <div className={flexCol}>
                     <div>
-                        <img src={imgBlog}/>
+                        <Image image={imgBlog}/>
                         <h2>Agile Code Retreat
                             Two Days of Enhancing Software Development Practises</h2>
                     </div>
                 </div>
                 <div className={flexCol}>
                     <div>
-                        <img src={imgBlog}/>
+                        <Image image={imgBlog}/>
                         <h2>Support for EU Settled Status Registrations</h2>
                     </div>
                 </div>

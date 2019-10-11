@@ -29,16 +29,16 @@ collections:
                         description: "Header and paragraph"
                         widget: object
                         fields:
-                            - {label: Heading, name: heading, widget: string}
-                            - {label: Description, name: description, widget: markdown}
+                            - {label: Heading, name: title, widget: string}
+                            - {label: Description, name: text, widget: markdown}
                             - {label: "Two Columns", name: "twoColumns", widget: "boolean", default: false}
                     -   label: "Full Width Image Component"
                         name: "fullWidthImageComponent"
                         description: "Full Width Image"
                         widget: object
                         fields:
-                            -   label: "Full Width Image"
-                                name: "fullWidthImage"
+                            -   label: "Image"
+                                name: "image"
                                 widget: image
                     -   label: "Half Width Images Component"
                         name: "twoImageComponent"
@@ -59,8 +59,8 @@ collections:
                         name: "imageWithTextComponent"
                         widget: object
                         fields:
-                            - {label: "Header", name: "header", widget: string}
-                            - {label: "Sentence", name: "sentence", widget: text}
+                            - {label: "Header", name: title, widget: string}
+                            - {label: "Sentence", name: text, widget: text}
                             - {label: "Position", name: "position", widget: boolean, default: false}
                             - {label: "Image", name: "image", widget: image}
                             - {label: "Link Text", name: "linkText", widget: string}
@@ -75,8 +75,8 @@ collections:
                               widget: list
                               fields:
                                     - {label: "Article Image", name: "image", widget: image}
-                                    - {label: "Article Header", name: "title", widget: string}
-                                    - {label: "Article Post", name: "post", widget: text}
+                                    - {label: "Article Header", name: title, widget: string}
+                                    - {label: "Article Post", name: text, widget: text}
     -   name: "settings"
         label: "Settings"
         files:

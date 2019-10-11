@@ -3,43 +3,39 @@ title: Test Page
 path: design-pages
 type: design
 components:
-  - fullWidthImage: /img/chemex.jpg
+  - image: /img/chemex.jpg
     type: fullWidthImageComponent
-  - header: What we believe
+  - title: What we believe
     image: /img/chemex.jpg
     position: false
-    sentence: >-
+    text: >-
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality.
     type: imageWithTextComponent
-  - header: How it began
+  - title: How it began
     image: /img/blog-index.jpg
     position: true
-    sentence: >-
+    text: >-
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
     type: imageWithTextComponent
-  - description: >-
+  - text: >-
       Clients look to Headforwards to develop software that creates value. In a
       rapidly changing business environment, what constitutes value might change
       from one week to the next.
-    heading: We believe in creating value
+    title: We believe in creating value
     twoColumns: false
     type: heading
-  - description: >-
+  - text: >-
       Headforwards is based in Cornwall, UK and we specialise in software
       development outsourcing...
-
-
-
-
       Our business model is different to most other outsource software
       companies. We create dedicated teams for specific projects and never
       switch members to other projects, nor do we have team members waiting on
       the bench which ultimately drives costs up.
-    heading: Headforwards specialise in software development outsourcing...
+    title: Headforwards specialise in software development outsourcing...
     twoColumns: true
     type: heading
   - jobTitle: Software Developer

@@ -1,21 +1,22 @@
 import React                              from 'react';
+import Image                              from '../image/image-component'
 import {flexColumn, flexRow, left, right} from './image-header-text-link-component.module.scss';
 
 export default ImageHeader;
 
-function ImageHeader({image, position, header, sentence, linkDestination, linkText}) {
+function ImageHeader({image, position, title, text, linkDestination, linkText}) {
 
     const side = position === true ? right : left;
     return (
         <div className={`${flexRow} ${side}`}>
             <div className={flexColumn}>
-                <img src={image}/>
+                <Image image={image}/>
             </div>
             <div className={flexColumn}>
-                <h1>{header}</h1>
-                <p>{sentence}</p>
+                <h1>{title}</h1>
+                <p>{text}</p>
                 <a href={linkDestination}>{linkText} &#8594;</a>
-            </div>))};
+            </div>
         </div>
     );
 

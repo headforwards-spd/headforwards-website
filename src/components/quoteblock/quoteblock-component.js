@@ -1,14 +1,16 @@
-import React                      from 'react';
-import {flexRow, blockquoteContainer, imageCropper, profilePic} from './quoteblock-component.module.scss';
+import React                                                    from 'react';
+import Image
+                                                                from '../image/image-component'
+import {flexRow, blockquoteContainer, imageCropper, profilePicImage} from './quoteblock-component.module.scss';
 
 export default Quoteblock;
 
-function Quoteblock({jobTitle, name, image, quote}) {
+function Quoteblock({jobTitle, name, profilePic, quote}) {
     return (<div className={blockquoteContainer}>
                 <blockquote>{quote}</blockquote>
                  <div className={flexRow}>
                      <div className={imageCropper}>
-                        <img className={profilePic} src={image} />
+                        <Image className={profilePicImage} image={profilePic} />
                      </div>
                       <div>
                         <h1>{name}</h1>

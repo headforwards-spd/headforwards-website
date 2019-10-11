@@ -36,7 +36,7 @@ export const articleBlock = () => {
         articles: [{
             title: secondHeader,
             image: articleImg,
-            post:  articlePost
+            text:  articlePost
         }]
 
     };
