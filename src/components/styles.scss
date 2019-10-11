@@ -23,6 +23,13 @@ a {
     font-size: $anchor-tag-font-size-small;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+
+}
+
 @media(min-width: $screen-md){
     h1 {
         font-size: $h1-large-font-size;
