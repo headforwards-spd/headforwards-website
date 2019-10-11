@@ -1,6 +1,6 @@
 import React                                from 'react';
 import Image                                from '../image/image-component'
-import {flexRow, flexCol, twoCol, threeCol} from './article-block-component.module.scss';
+import {flexRow, twoCol, threeCol} from './article-block-component.module.scss';
 
 export default ArticleBlock;
 

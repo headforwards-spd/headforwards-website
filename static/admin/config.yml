@@ -1,98 +1,132 @@
 backend:
-    name: github
-    repo: emmajgrimes/headforwards-website
+  name: github
+  repo: emmajgrimes/headforwards-website
 publish_mode: editorial_workflow
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-    -   label: "Design Pages"
-        label_singular: "Design Page"
-        name: "design-pages"
-        folder: "src/pages/design-pages"
-        create: true
-        slug: "{{slug}}"
-        preview_path: "design-pages/{{slug}}"
-        widget: "list"
-        identifier_field: title
+  - name: "settings"
+    label: "Site Settings"
+    create: false
+    files:
+      - file: "src/data/main-menu.yml"
+        label: "Main Menu"
+        name: "main-menu"
         fields:
-            - {label: "Path", name: "path", widget: "hidden", default: "design-pages"}
-            - {label: "Type", name: "type", widget: "hidden", default: "design"}
-            - {label: "Page Title", name: "title", widget: string}
-            -   label: "Page Components"
-                name: "components"
-                widget: "list"
-                types:
-                    -   label: "Heading Component"
-                        name: "heading"
-                        description: "Header and paragraph"
-                        widget: object
-                        fields:
-                            - {label: Heading, name: title, widget: string}
-                            - {label: Description, name: text, widget: markdown}
-                            - {label: "Two Columns", name: "twoColumns", widget: "boolean", default: false}
-                    -   label: "Full Width Image Component"
-                        name: "fullWidthImageComponent"
-                        description: "Full Width Image"
-                        widget: object
-                        fields:
-                            -   label: "Image"
-                                name: "image"
-                                widget: image
-                    -   label: "Half Width Images Component"
-                        name: "twoImageComponent"
-                        description: "Half Width Images"
-                        widget: object
-                        fields:
-                            - {label: "Left Image", name: "leftImage", widget: image}
-                            - {label: "Right Image", name: "rightImage", widget: image}
-                    -   label: "Block Quote Component"
-                        name: "blockQuoteComponent"
-                        widget: object
-                        fields:
-                            - {label: "Profile Picture", name: "profilePic", widget: image}
-                            - {label: "Name", name: "name", widget: string}
-                            - {label: "Job Title", name: "jobTitle", widget: string}
-                            - {label: "Quote", name: "quote", widget: text}
-                    -   label: "Image with Text Component"
-                        name: "imageWithTextComponent"
-                        widget: object
-                        fields:
-                            - {label: "Header", name: title, widget: string}
-                            - {label: "Sentence", name: text, widget: text}
-                            - {label: "Position", name: "position", widget: boolean, default: false}
-                            - {label: "Image", name: "image", widget: image}
-                            - {label: "Link Text", name: "linkText", widget: string}
-                            - {label: "Link Destination", name: "linkDestination", widget: string}
-                    -   label: "Article Block"
-                        name: "articleBlockComponent"
-                        widget: object
-                        fields:
-                            - {label: "Main Header", name: "title", widget: string, required: false}
-                            - label: "Articles"
-                              name: "articles"
-                              widget: list
-                              fields:
-                                    - {label: "Article Image", name: "image", widget: image}
-                                    - {label: "Article Header", name: title, widget: string}
-                                    - {label: "Article Post", name: text, widget: text}
-    -   name: "settings"
-        label: "Settings"
-        files:
-            - file: "src/data/navigation.yml"
-              label: "Navigation"
-              name: "navigation"
-              fields:
-                    -   label: Navigation
-                        name: nav_items
-                        widget: list
-                        fields:
-                            -   label: "Post Author"
-                                name: "author"
-                                widget: "relation"
-                                collection: "design-pages"
-                                searchFields: ["title"]
-                                valueField: "title"
-                                displayFields: ["title"]
+          - label: "Items"
+            name: items
+            widget: list
+            fields:
+              - label: Label
+                name: label
+                widget: string
+              - label: "Link"
+                name: link
+                widget: relation
+                collection: "design-pages"
+                searchFields: ["title"]
+                valueField: slug
+                displayFields: ["title"]
+              - label: Children
+                name: children
+                widget: list
+                fields:
+                  - label: Label
+                    name: label
+                    widget: string
+                  - label: "Link"
+                    name: link
+                    widget: relation
+                    collection: "design-pages"
+                    searchFields: ["title"]
+                    valueField: slug
+                    displayFields: ["title"]
+                  - label: Children
+                    name: children
+                    widget: list
+                    fields:
+                      - label: Label
+                        name: label
+                        widget: string
+                      - label: "Link"
+                        name: link
+                        widget: relation
+                        collection: "design-pages"
+                        searchFields: ["title"]
+                        valueField: slug
+                        displayFields: ["title"]
+  - label: "Design Pages"
+    label_singular: "Design Page"
+    name: "design-pages"
+    folder: "src/pages/design-pages"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "design-pages/{{slug}}"
+    widget: "list"
+    identifier_field: title
+    fields:
+      - {label: "Path", name: "path", widget: "hidden", default: "design-pages"}
+      - {label: "Type", name: "type", widget: "hidden", default: "design"}
+      - {label: "Page Title", name: "title", widget: string}
+      - label: "Page Components"
+        name: "components"
+        widget: "list"
+        types:
+          - label: "Heading Component"
+            name: "heading"
+            description: "Header and paragraph"
+            widget: object
+            fields:
+              - {label: Heading, name: title, widget: string}
+              - {label: Description, name: text, widget: markdown}
+              - {label: "Two Columns", name: "twoColumns", widget: "boolean", default: false}
+          - label: "Full Width Image Component"
+            name: "fullWidthImageComponent"
+            description: "Full Width Image"
+            widget: object
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: image
+          - label: "Half Width Images Component"
+            name: "twoImageComponent"
+            description: "Half Width Images"
+            widget: object
+            fields:
+              - {label: "Left Image", name: "leftImage", widget: image}
+              - {label: "Right Image", name: "rightImage", widget: image}
+          - label: "Block Quote Component"
+            name: "blockQuoteComponent"
+            widget: object
+            fields:
+              - {label: "Profile Picture", name: "profilePic", widget: image}
+              - {label: "Name", name: "name", widget: string}
+              - {label: "Job Title", name: "jobTitle", widget: string}
+              - {label: "Quote", name: "quote", widget: text}
+          - label: "Image with Text Component"
+            name: "imageWithTextComponent"
+            widget: object
+            fields:
+              - {label: "Header", name: title, widget: string}
+              - {label: "Sentence", name: text, widget: text}
+              - {label: "Position", name: "position", widget: boolean, default: false}
+              - {label: "Image", name: "image", widget: image}
+              - {label: "Link Text", name: "linkText", widget: string}
+              - {label: "Link Destination", name: "linkDestination", widget: string}
+          - label: "Article Block"
+            name: "articleBlockComponent"
+            widget: object
+            fields:
+              - {label: "Main Header", name: "title", widget: string, required: false}
+              - label: "Articles"
+                name: "articles"
+                widget: list
+                fields:
+                  - {label: "Article Image", name: "image", widget: image}
+                  - {label: "Article Header", name: title, widget: string}
+                  - {label: "Article Post", name: text, widget: text}
+
+
 
