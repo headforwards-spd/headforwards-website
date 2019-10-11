@@ -8,7 +8,7 @@ export function Footer() {
     return (
         <footer>
             <section className={ftMobbing}>
-                <h1>Want to know more about how we use mobbing to deliver quality software? <span>Get in touch -></span>
+                <h1>Want to know more about how we use mobbing to deliver quality software? <span><a href="#">Get in touch &#8594;</a></span>
                 </h1>
             </section>
             <section className={ftSocial}>
