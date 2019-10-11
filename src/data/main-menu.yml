@@ -2,17 +2,17 @@ items:
   - children:
       - children:
           - label: React
-            link: /jobs/front-end/react/
+            link: d1956170-ec44-11e9-914c-c376cef31113
           - label: Angular
-            link: /jobs/front-end/angular/
+            link: d1956170-ec44-11e9-914c-c376cef31113
         label: Front End Jobs
-        link: /jobs/front-end/
+        link: d1956170-ec44-11e9-914c-c376cef31113
       - children:
           - label: Perl
-            link: /jobs/back-end/perl/
+            link: d1956170-ec44-11e9-914c-c376cef31113
           - label: Python
-            link: /jobs/back-end/python/
+            link: d1956170-ec44-11e9-914c-c376cef31113
         label: Back End Jobs
-        link: /jobs/back-end/
+        link: d1956170-ec44-11e9-914c-c376cef31113
     label: Jobs
     link: d1956170-ec44-11e9-914c-c376cef31113
