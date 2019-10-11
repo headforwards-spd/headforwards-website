@@ -1,6 +1,6 @@
 import React         from 'react';
 import img           from '../../img/craig.jpg';
-import {Quoteblock}  from './quoteblock-component';
+import Quoteblock  from './quoteblock-component';
 import {withKnobs, text, files} from '@storybook/addon-knobs';
 
 

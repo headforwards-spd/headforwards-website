@@ -10,4 +10,17 @@
 
 .flexRow {
     display: flex;
+
+    h1 {
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    .twoCol {
+        flex-basis: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
 }
