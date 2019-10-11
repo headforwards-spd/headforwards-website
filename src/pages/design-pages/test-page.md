@@ -7,29 +7,35 @@ components:
     image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
   - header: What we believe
-    image: /img/blog-index.jpg
+    image: /img/man-with-glasses-square.png
     linkDestination: /
-    linkText: Link Test
+    linkText: Discover more
     position: false
     sentence: >-
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality.
-    text: Image with text component
+    text: >-
+      The client-focused approach to outsourcing worked, attracting major brands
+      as well as talented developers keen to work for a firm with a focus on
+      teambuilding and software quality. 
     type: imageWithTextComponent
-    title: Image Text
+    title: What we belive
   - header: How it began
-    image: /img/products-grid2.jpg
+    image: /img/curlyhair.png
     linkDestination: /
-    linkText: Link Text
+    linkText: Discover more
     position: true
     sentence: >-
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
-    text: Image with text component (2)
+    text: >-
+      The client-focused approach to outsourcing worked, attracting major brands
+      as well as talented developers keen to work for a firm with a focus on
+      teambuilding and software quality. 
     type: imageWithTextComponent
-    title: Image Text (2)
+    title: How it began
   - description: >-
       Clients look to Headforwards to develop software that creates value. In a
       rapidly changing business environment, what constitutes value might change
