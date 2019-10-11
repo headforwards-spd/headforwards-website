@@ -1,3 +1,8 @@
 items:
-  - {label: "Jobs", link: "/jobs/", children: []}
-    
+  - children:
+      - label: Front End Jobs
+        link: /jobs/front-end/
+      - label: Back End Jobs
+        link: /jobs/back-end/
+    label: Jobs
+    link: /jobs/
