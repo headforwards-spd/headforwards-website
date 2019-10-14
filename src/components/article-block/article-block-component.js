@@ -9,6 +9,9 @@ ArticleBlock.defaultProps = {
 };
 
 function ArticleBlock({title, articles}) {
+
+    console.log({articles});
+
     const articleLength = articles.length === 3 ? threeCol : twoCol;
     return (
         <div>
