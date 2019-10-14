@@ -32,13 +32,25 @@ collections:
                 widget: list
                 fields:
                   - {label: "Label", name: label, widget: string}
-                  - {label: "Link", name: link, widget: string}
+                  - label: "Link"
+                    name: link
+                    widget: relation
+                    collection: design-pages
+                    searchFields: ["title"]
+                    valueField: uuid
+                    displayFields: ["title"]
                   - label: "Children"
                     name: children
                     widget: list
                     fields:
                       - {label: "Label", name: label, widget: string}
-                      - {label: "Link", name: link, widget: string}
+                      - label: "Link"
+                        name: link
+                        widget: relation
+                        collection: design-pages
+                        searchFields: ["title"]
+                        valueField: uuid
+                        displayFields: ["title"]
   - label: "Design Pages"
     label_singular: "Design Page"
     name: "design-pages"
