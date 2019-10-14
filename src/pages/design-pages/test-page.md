@@ -4,8 +4,7 @@ path: design-pages
 type: design
 title: Test Page
 components:
-  - fullWidthImage: /img/chemex.jpg
-    image: /img/full-width-man-glasses.png
+  - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
   - header: What we believe
     image: /img/man-with-glasses-square.png
