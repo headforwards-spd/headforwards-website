@@ -37,19 +37,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
-      resolve: 'gatsby-transformer-yaml',
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-              path: `./src/data/`,
-            },
-          },
-        ],
-      },
-    },
-    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -77,6 +64,20 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-transformer-yaml',
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              path: `./src/data/`,
+            },
+          },
+        ],
+      },
+    },
+    `gatsby-transformer-yaml-menu`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
