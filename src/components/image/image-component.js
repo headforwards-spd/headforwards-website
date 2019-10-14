@@ -4,7 +4,7 @@ export default Image;
 Image.defaultProps = {
     image: null,
     alt: null,
-}
+};
 
 function Image ({image, alt, ...props}) {
 

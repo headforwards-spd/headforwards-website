@@ -10,11 +10,9 @@ ArticleBlock.defaultProps = {
 
 function ArticleBlock({title, articles}) {
 
-    console.log({articles});
-
     const articleLength = articles.length === 3 ? threeCol : twoCol;
     return (
-        <div>
+        <div className={flexRow}>
             <h1>{title}</h1>
             <section className={flexRow}>
                 {articles.map((article,key) => (<section className={articleLength} key={key}>
