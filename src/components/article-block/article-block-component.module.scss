@@ -16,11 +16,15 @@
         font-size: 2rem;
     }
 
+    img {
+        width: 100%;
+    }
+
     .twoCol {
         flex-basis: 50%;
+    }
 
-        img {
-            width: 100%;
-        }
+    .threeCol {
+        flex-basis: 33%;
     }
 }
