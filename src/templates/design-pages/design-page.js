@@ -6,35 +6,42 @@ import DesignPageTemplate
 
 export default DesignPage;
 export const query = graphql`
-  query PostPage {
-    page: markdownRemark {
-              frontmatter {
-          title
-          components {
-              title
-              text
-            jobTitle
-            name
-            position
-            quote
-            twoColumns
-            type
-            rightImage {
-              publicURL
+    query PostPage {
+        page: markdownRemark {
+            frontmatter {
+                title
+                components {
+                    title
+                    text
+                    jobTitle
+                    name
+                    position
+                    quote
+                    twoColumns
+                    type
+                    articles {
+                        image {
+                            publicURL
+                        }
+                        title
+                        text
+                    }
+                    rightImage {
+                        publicURL
+                    }
+                    profilePic {
+                        publicURL
+                    }
+                    leftImage {
+                        publicURL
+                    }
+                    image {
+                        publicURL
+                    }
+                }
             }
-            profilePic {
-              publicURL
-            }
-            leftImage {
-              publicURL
-            }
-            image {
-              publicURL
-            }
-          }
         }
     }
-  }
 `;
 
 function DesignPage({data}) {
