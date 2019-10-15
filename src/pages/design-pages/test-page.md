@@ -39,10 +39,6 @@ components:
   - description: >-
       Headforwards is based in Cornwall, UK and we specialise in software
       development outsourcing...
-
-
-
-
       Our business model is different to most other outsource software
       companies. We create dedicated teams for specific projects and never
       switch members to other projects, nor do we have team members waiting on
@@ -63,8 +59,6 @@ components:
     text: >-
       Headforwards is based in Cornwall, UK and we specialise in software
       development outsourcing...
-
-
       Our business model is different to most other outsource software
       companies. We create dedicated teams for specific projects and never
       switch members to other projects, nor do we have team members waiting on
