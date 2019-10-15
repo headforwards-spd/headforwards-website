@@ -1,44 +1,7 @@
 @import '../variables';
 
-.logo {
-    display: inline-block;
-}
-
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-
-        li {
-
-
-            a {
-                display: inline-block;
-                padding: 10px 15px;
-                text-decoration: none;
-                color: black;
-
-                &:hover {
-                    color: $orange;
-
-                    a {
-                        color: darkgreen;
-                    }
-                }
-            }
-        }
-    }
-}
-
 .hamburger {
+    background-color: transparent;
     padding: 15px 15px;
     display: inline-block;
     cursor: pointer;
@@ -51,6 +14,10 @@
     border: 0;
     margin: 0;
     overflow: visible;
+
+    &:focus {
+        outline: none;
+    }
 
     &.is-active {
 
@@ -74,8 +41,6 @@
         position: relative;
     }
 }
-
-
 
 .hamburger-inner {
     display: block;
@@ -152,8 +117,85 @@
     }
 }
 
+.logo {
 
-.logo img {
-    width: 175px;
-    vertical-align: middle;
+    display: inline-block;
+    justify-content: space-between;
+
+    img {
+        width: 175px;
+        vertical-align: middle;
+    }
+
+}
+
+.flexRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    font-size: 18px;
+    background-color: $blue-background;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+
+    li {
+        margin: 15px auto;
+
+        li {
+            display: none;
+        }
+
+        .nav-links {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.is-active {
+    display: block;
+}
+
+@media screen and (min-width: $screen-md) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        align-items: center;
+        background-color: transparent;
+
+        .hamburger {
+            display: none;
+        }
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: black;
+    }
+
+    .main-nav {
+        li {
+            margin: 0;
+
+            .nav-links {
+                margin-left: 40px;
+                color: black;
+            }
+        }
+    }
+
+
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
 }
