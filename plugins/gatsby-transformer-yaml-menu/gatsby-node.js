@@ -14,6 +14,8 @@ exports.onCreateNode = ({ node, getNodes, actions }) => {
 
         const menu = items.map(transformChildren);
 
+        console.log(JSON.stringify(menu, null, 2))
+
         return createNodeField({node, name:'menu', value: menu});
 
         function transformChildren({label, link, children: _children}) {

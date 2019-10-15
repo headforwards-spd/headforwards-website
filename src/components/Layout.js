@@ -30,7 +30,7 @@ const TemplateWrapper = ({children}) => {
         }
         
     `)
-    console.log(edges);
+    console.log({children});
     return (
         <Fragment>
             <nav>

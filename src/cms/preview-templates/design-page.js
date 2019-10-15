@@ -7,9 +7,10 @@ export default class DesignPagePreview extends Component {
 
         const {props, getComponentPreview} = this;
         const {widgetsFor}                 = props;
+        const components = widgetsFor('components');
 
         return (
-            <section>{widgetsFor('components').map(getComponentPreview)}</section>
+            <section>{!!components && widgetsFor('components').map(getComponentPreview)}</section>
         );
     }
 
