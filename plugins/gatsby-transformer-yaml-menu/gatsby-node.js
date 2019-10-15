@@ -28,5 +28,7 @@ exports.onCreateNode = ({ node, getNodes, actions }) => {
             return {label, url, children};
         }
     }
+
+    return node;
 };
 

@@ -1,30 +1,42 @@
-.imgRow {
-    h1 {
-        font-size: 2rem;
-    }
-
-    img {
-        width: 100%;
-    }
-}
+@import "../variables";
 
 .flexRow {
     display: flex;
+    flex-wrap: wrap;
 
-    h1 {
-        padding: 0;
-        font-size: 2rem;
+    h1, p, a {
     }
 
     img {
         width: 100%;
     }
 
-    .twoCol {
-        flex-basis: 50%;
+    .twoCol,
+    .threeCol {
+        flex-basis: 100%;
+    }
+}
+
+@media(min-width: $screen-md) {
+    .flexRow {
+        &:not(.imgRow) {
+            padding: 0 15px;
+        }
+        .imgRow {
+            justify-content: space-between;
+        }
+        .twoCol {
+            flex-basis: 49%;
+        }
+
+        .threeCol {
+            flex-basis: 32%;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
     }
 
-    .threeCol {
-        flex-basis: 33%;
-    }
 }
