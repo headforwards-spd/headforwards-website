@@ -1,43 +1,43 @@
 import {graphql, useStaticQuery} from 'gatsby';
 import React, {Fragment}         from 'react';
-
 import './styles.scss';
+import Navbar from '../components/navbar/navbar-component';
 
 const TemplateWrapper = ({children}) => {
-
-    const {edges} = useStaticQuery(
-        graphql`
-        query {
-            allDataYaml {
-                edges {
-                    node {
-                        id
-                        items {
-                            label
-                            link
-                            children {
-                                label
-                                link
-                                children {
-                                    label
-                                    link
-                                 }
-                            }
-                        }
-                    }
+    const {data} = useStaticQuery(graphql`
+    query MyQuery {
+      data: allDataYaml {
+        edges {
+          node {
+            id
+            items {
+              label
+              link
+              children {
+                label
+                link
+                children {
+                  label
+                  link
                 }
+              }
             }
+          }
         }
-        
-    `)
-    console.log(edges);
+      }
+    }
+  `);
+
+    const {edges}      = data || {};
+    const [edge]       = edges || [];
+    const {node}       = edge || {};
+    const {items = []} = node;
+
+
+
     return (
         <Fragment>
-            <nav>
-                <ul>
-                    <li></li>
-                </ul>
-            </nav>
+            <Navbar {...{items}} />
             {children}
         </Fragment>
     );

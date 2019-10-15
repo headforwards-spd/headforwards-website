@@ -3,8 +3,7 @@
 .flexRow {
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 
     p {
         font-weight: lighter;
@@ -25,13 +24,5 @@
 @media(min-width: $screen-md){
     .flexRow {
         flex-direction: unset;
-
-        //&:nth-child(1) {
-        //    margin-right: 25px;
-        //}
-        //
-        //&:nth-child(2) {
-        //    margin-left: 25px;
-        //}
     }
 }
