@@ -1,12 +1,11 @@
-import React    from 'react';
-import {Footer} from './footer-component';
+import React from 'react'
+import { Footer } from './footer-component'
 
-const faker = require('faker');
+const faker = require('faker')
 export default {
-    title: 'Footer',
-};
+  title: 'Footer',
+}
 
 export const footerSection = () => {
-
-    return <Footer />;
-};
+  return <Footer />
+}
