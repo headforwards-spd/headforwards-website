@@ -2,7 +2,7 @@ items:
   - children:
       - children:
           - label: React
-            link: b7482970-ef2c-11e9-a170-b1f1706e4526
+            link: b7482970-ef2c-11e9-a170-b1f1706e4527
           - label: Angular
             link: 0c7cc0e0-ef2d-11e9-a170-b1f1706e4526
         label: Front End Jobs
@@ -13,7 +13,7 @@ items:
           - label: Python
             link: 53ce0c10-ef2d-11e9-a170-b1f1706e4526
         label: Back End Jobs
-        link: 0c7cc0e0-ef2d-11e9-a170-b1f1706e4526
+        link: 0c7cc0e0-ef2d-11e9-a170-b1f1706e4527
     label: Jobs
     link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
   - label: About Us
