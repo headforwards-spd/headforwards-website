@@ -122,6 +122,11 @@ collections:
                   - {label: "Article Image", name: "image", widget: image}
                   - {label: "Article Header", name: title, widget: string}
                   - {label: "Article Post", name: text, widget: text}
+          - label: "Navbar"
+            name: "navbarComponent"
+            widget: object
+            fields:
+              - {label: "theme", name: "Dark theme", widget: boolean, default: false}
 
 
 
