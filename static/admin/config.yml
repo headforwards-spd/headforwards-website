@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: emmajgrimes/headforwards-website
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 media_folder: static/img
 public_folder: /img
@@ -64,19 +64,17 @@ collections:
       - {label: "ID", name: uuid, widget: uuid}
       - {label: "Path", name: "path", widget: "hidden", default: "design-pages"}
       - {label: "Type", name: "type", widget: "hidden", default: "design"}
-      - {label: "Page Title", name: "title", widget: string}
+      - {label: "Title", name: "title", widget: string}
+      - label: "Navbar"
+        name: "navbar"
+        widget: object
+        fields:
+          - {label: "Paragraph", name: "paragraph", widget: text, required: false}
+          - {label: "Background Image", name:  "img", widget: image, required: false}
       - label: "Page Components"
         name: "components"
         widget: "list"
         types:
-          - label: "Navbar"
-            name: "navbarComponent"
-            widget: object
-            fields:
-              - {label: "Title", name: "navbarTitle", widget: string, required: false}
-              - {label: "Paragraph Title", name: "paragraphTitle", widget: string, required: false}
-              - {label: "Paragraph", name: "navbarParagraph", widget: text, required: false}
-              - {label: "Background Image", name:  "navbarBackgroundImage", widget: image, required: false}
           - label: "Heading Component"
             name: "heading"
             description: "Header and paragraph"

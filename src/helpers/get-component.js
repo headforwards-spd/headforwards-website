@@ -12,19 +12,17 @@ import Quoteblock     from '../components/quoteblock/quoteblock-component'
 export default ({ type, ...component }) => {
   switch (type) {
     case 'heading':
-      return <HeaderText {...component} />
+      return <HeaderText {...component} />;
     case 'fullWidthImageComponent':
-      return <FullWidthImage {...component} />
+      return <FullWidthImage {...component} />;
     case 'twoImageComponent':
-      return <TwoImages {...component} />
+      return <TwoImages {...component} />;
     case 'blockQuoteComponent':
-      return <Quoteblock {...component} />
+      return <Quoteblock {...component} />;
     case 'imageWithTextComponent':
-      return <ImageHeader {...component} />
+      return <ImageHeader {...component} />;
     case 'articleBlockComponent':
-      return <ArticleBlock {...component} />
-    case 'navbarComponent':
-      return <Navbar {...component} />
+      return <ArticleBlock {...component} />;
     default:
       return <p>{component.text}</p>
   }

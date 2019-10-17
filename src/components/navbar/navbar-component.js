@@ -1,6 +1,6 @@
 import {faFacebookSquare, faInstagram, faLinkedinIn, faTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon}                                                   from '@fortawesome/react-fontawesome';
-import {graphql, Link, useStaticQuery}                                     from 'gatsby';
+import {Link}                                                              from 'gatsby';
 import PropTypes                                                           from 'prop-types';
 import React, {Component}                                                  from 'react';
 
@@ -25,14 +25,15 @@ export default class Navbar extends Component {
     };
 
     render() {
-        const active      = this.state.isOpen ? 'is-active' : '';
-        const {menuClick} = this;
-        const {theme, menu}     = this.props;
+        const active        = this.state.isOpen ? 'is-active' : '';
+        const {menuClick}   = this;
+        const {theme, menu} = this.props;
         return (
             <Menu {...{
                 menuClick,
                 theme,
-                active, menu
+                active,
+                menu
             }} />
         );
     }

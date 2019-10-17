@@ -1,10 +1,10 @@
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const { createFilePath } = require('gatsby-source-filesystem');
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
-const path = require('path')
+const path = require('path');
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   return getData(graphql)
     .then(({ data, errors }) =>
@@ -14,13 +14,13 @@ exports.createPages = ({ actions, graphql }) => {
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  const { internal = null } = node
-  const { type } = internal
-  fmImagesToRelative(node) // convert image paths for gatsby images
+  const { createNodeField } = actions;
+  const { internal = null } = node;
+  const { type } = internal;
+  fmImagesToRelative(node); // convert image paths for gatsby images
 
   if (type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({ node, getNode });
     return createNodeField({
       name: `slug`,
       node,
@@ -36,9 +36,9 @@ function createAllPosts(createPage, { edges: posts = [] }) {
 
   return Promise.all(
     posts.map(({ node: post }, index) => {
-      const { id, fields, frontmatter } = post
-      const { slug } = fields
-      const { path: postPath, type } = frontmatter
+      const { id, fields, frontmatter } = post;
+      const { slug } = fields;
+      const { path: postPath, type } = frontmatter;
 
       // const { id: prevId = '' } = index > firstIndex ? posts[index - 1].node : {};
       // const { id: nextId = '' } = index < lastIndex ? posts[index + 1].node : {};

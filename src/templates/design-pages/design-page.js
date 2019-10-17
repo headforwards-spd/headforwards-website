@@ -48,13 +48,10 @@ export const query = graphql`
 `
 
 function DesignPage({ data }) {
-  const { page } = data
-  const { frontmatter } = page
-  const { components } = frontmatter
-
-  console.log({page});
-
-  const pageProps = { components }
+  const { page } = data;
+  const { frontmatter } = page;
+  const { components } = frontmatter;
+  const pageProps = { components };
 
   return (
     <Layout>
