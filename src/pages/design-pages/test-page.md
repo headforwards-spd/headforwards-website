@@ -5,6 +5,7 @@ type: design
 title: Test Page
 navbar:
   img: /img/blog-index.jpg
+  paragraph: This is a paragraph
 components:
   - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
