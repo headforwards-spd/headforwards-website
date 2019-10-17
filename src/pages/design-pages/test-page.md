@@ -4,6 +4,7 @@ path: design-pages
 type: design
 title: Test Page
 components:
+  - type: navbarComponent
   - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
   - header: What we believe
@@ -38,11 +39,10 @@ components:
     title: How it began
   - description: >-
       Headforwards is based in Cornwall, UK and we specialise in software
-      development outsourcing...
-      Our business model is different to most other outsource software
-      companies. We create dedicated teams for specific projects and never
-      switch members to other projects, nor do we have team members waiting on
-      the bench which ultimately drives costs up.
+      development outsourcing... Our business model is different to most other
+      outsource software companies. We create dedicated teams for specific
+      projects and never switch members to other projects, nor do we have team
+      members waiting on the bench which ultimately drives costs up.
     heading: Headforwards specialise in software development outsourcing...
     text: >-
       Clients look to Headforwards to develop software that creates value. In a
@@ -58,11 +58,10 @@ components:
     heading: We believe in creating value
     text: >-
       Headforwards is based in Cornwall, UK and we specialise in software
-      development outsourcing...
-      Our business model is different to most other outsource software
-      companies. We create dedicated teams for specific projects and never
-      switch members to other projects, nor do we have team members waiting on
-      the bench which ultimately drives costs up.
+      development outsourcing... Our business model is different to most other
+      outsource software companies. We create dedicated teams for specific
+      projects and never switch members to other projects, nor do we have team
+      members waiting on the bench which ultimately drives costs up.
     twoColumns: true
     type: heading
     title: Headforwards specialise in software development outsourcing...
