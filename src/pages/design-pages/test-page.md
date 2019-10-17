@@ -4,7 +4,8 @@ path: design-pages
 type: design
 title: Test Page
 components:
-  - type: navbarComponent
+  - navbarTitle: Testing
+    type: navbarComponent
   - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
   - header: What we believe
