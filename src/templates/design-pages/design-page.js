@@ -9,7 +9,10 @@ export const query = graphql`
     page: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-
+        navbar {
+        image {
+          publicURL
+        }
         components {
           title
           text
