@@ -3,6 +3,8 @@ uuid: d1956170-ec44-11e9-914c-c376cef31113
 path: design-pages
 type: design
 title: Test Page
+navbar:
+  img: /img/blog-index.jpg
 components:
   - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
