@@ -1,9 +1,10 @@
 import {graphql, useStaticQuery} from 'gatsby';
 import React, {Fragment}         from 'react';
+import Header                    from './header/header-component';
 import './styles.scss';
-import Navbar from '../components/navbar/navbar-component';
 
-const TemplateWrapper = ({children}) => {
+const Layout = ({children, header}) => {
+
     const {data} = useStaticQuery(graphql`
         query {
             data: allDataYaml {
@@ -29,17 +30,21 @@ const TemplateWrapper = ({children}) => {
         }
   `);
 
-    const {edges}   = data || {};
-    const [edge]    = edges || [];
-    const {node}    = edge || {};
-    const {fields}  = node || {};
-    const {menu=[]} = fields || {};
+    const {edges}  = data || {};
+    const [edge]   = edges || [];
+    const {node}   = edge || {};
+    const {fields} = node || {};
+    const {menu}   = fields || [];
+
+    const {title, subtitle, img} = header || {};
     return (
         <Fragment>
-            <Navbar {...{menu}} />
+            <Header {...{title, subtitle, img, menu}} />
             {children}
         </Fragment>
     );
 };
 
-export default TemplateWrapper;
+export default Layout;
+
+

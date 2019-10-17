@@ -69,6 +69,14 @@ collections:
         name: "components"
         widget: "list"
         types:
+          - label: "Navbar"
+            name: "navbarComponent"
+            widget: object
+            fields:
+              - {label: "Title", name: "navbarTitle", widget: string, required: false}
+              - {label: "Paragraph Title", name: "paragraphTitle", widget: string, required: false}
+              - {label: "Paragraph", name: "navbarParagraph", widget: text, required: false}
+              - {label: "Background Image", name:  "navbarBackgroundImage", widget: image, required: false}
           - label: "Heading Component"
             name: "heading"
             description: "Header and paragraph"
@@ -122,11 +130,6 @@ collections:
                   - {label: "Article Image", name: "image", widget: image}
                   - {label: "Article Header", name: title, widget: string}
                   - {label: "Article Post", name: text, widget: text}
-          - label: "Navbar"
-            name: "navbarComponent"
-            widget: object
-            fields:
-              - {label: "theme", name: "Dark theme", widget: boolean, default: false}
 
 
 
