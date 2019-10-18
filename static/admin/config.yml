@@ -70,7 +70,7 @@ collections:
         widget: object
         fields:
           - {label: "Paragraph", name: "paragraph", widget: text, required: false}
-          - {label: "Background Image", name:  "img", widget: image, required: false}
+          - {label: "Background Image", name:  "image", widget: image, required: false}
       - label: "Page Components"
         name: "components"
         widget: "list"

@@ -1,21 +1,28 @@
-import React, { Component } from 'react'
-import getComponent from '../../helpers/get-component'
+import React, {Component, Fragment} from 'react';
+import Header                       from '../../components/header/header-component';
+import getComponent                 from '../../helpers/get-component';
 
 export default class DesignPagePreview extends Component {
     render() {
-    const { props, getComponentPreview } = this
-    const { widgetsFor } = props
-        const components = widgetsFor('components');
-
+        const {props, getComponentPreview} = this;
+        const {entry}                 = props;
+        const {data} = entry.toJS();
+        const {title, navbar, components} = data;
+        const header = {title, ...navbar};
         return (
-            <section>{!!components && widgetsFor('components').map(getComponentPreview)}</section>
-    )
+            <Fragment>
+                <Header {...header} />
+                <section>{!!components && components.map(getComponentPreview)}</section>
+            </Fragment>
+        );
     }
 
     getComponentPreview(component, key) {
-    const { data } = component.toJS() || {}
 
-    return getComponent({ ...data, key })
+        return getComponent({
+            ...component,
+            key
+        });
     }
 }
 

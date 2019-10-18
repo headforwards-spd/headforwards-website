@@ -36,10 +36,10 @@ const Layout = ({children, header}) => {
     const {fields} = node || {};
     const {menu}   = fields || [];
 
-    const {title, subtitle, img} = header || {};
+    const {title, paragraph, image} = header || {};
     return (
         <Fragment>
-            <Header {...{title, subtitle, img, menu}} />
+            <Header {...{title, paragraph, image, menu}} />
             {children}
         </Fragment>
     );

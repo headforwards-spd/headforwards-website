@@ -10,8 +10,10 @@ export const query = graphql`
       frontmatter {
         title
         navbar {
-        image {
-          publicURL
+          image {
+            publicURL
+          }
+          paragraph
         }
         components {
           title
@@ -50,11 +52,12 @@ export const query = graphql`
 function DesignPage({ data }) {
   const { page } = data;
   const { frontmatter } = page;
-  const { components } = frontmatter;
+  const { components, title, navbar } = frontmatter;
+  const { paragraph, image } = navbar;
+  const header = {title, paragraph, image};
   const pageProps = { components };
-
   return (
-    <Layout>
+    <Layout {...{header}}>
       <DesignPageTemplate {...pageProps} />
     </Layout>
   )
