@@ -2,10 +2,10 @@
 uuid: d1956170-ec44-11e9-914c-c376cef31113
 path: design-pages
 type: design
-title: Test Page
+title: Who we are.
 navbar:
   image: /img/curlyhair.png
-  paragraph: This is a paragraph
+  paragraph: Optional sub title here
 components:
   - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
