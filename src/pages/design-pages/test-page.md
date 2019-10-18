@@ -5,7 +5,7 @@ type: design
 title: Who we are.
 navbar:
   image: /img/curlyhair.png
-  paragraph: Optional sub title here
+  paragraph: ''
 components:
   - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
