@@ -4,7 +4,7 @@ path: design-pages
 type: design
 title: Test Page
 navbar:
-  image: /img/full-width-man-glasses.png
+  image: /img/curlyhair.png
   paragraph: This is a paragraph
 components:
   - image: /img/full-width-man-glasses.png
