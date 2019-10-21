@@ -11,7 +11,7 @@ components:
     type: fullWidthImageComponent
   - header: What we believe
     image: /img/man-with-glasses-square.png
-    linkDestination: /
+    linkDestination: /test
     linkText: Discover more
     position: false
     sentence: >-
