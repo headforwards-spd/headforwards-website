@@ -3,9 +3,10 @@ items:
     link: 61c50760-ef2d-11e9-a170-b1f1706e4526
   - label: Test Page.
     link: d1956170-ec44-11e9-914c-c376cef31113
-  - label: Front End Jobs
-    link: b7482970-ef2c-11e9-a170-b1f1706e4526
-  - label: Back End Jobs
-    link: 0c7cc0e0-ef2d-11e9-a170-b1f1706e4527
-  - label: Jobs.
+  - children:
+      - label: Front End Jobs
+        link: b7482970-ef2c-11e9-a170-b1f1706e4526
+      - label: Back End Jobs
+        link: 0c7cc0e0-ef2d-11e9-a170-b1f1706e4527
+    label: Jobs.
     link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
