@@ -1,5 +1,6 @@
 import {graphql, useStaticQuery} from 'gatsby';
 import React, {Fragment}         from 'react';
+import Footer                    from './footer/footer-component';
 import Header                    from './header/header-component';
 import './styles.scss';
 
@@ -39,8 +40,14 @@ const Layout = ({children, header}) => {
     const {title, paragraph, image} = header || {};
     return (
         <Fragment>
-            <Header {...{title, paragraph, image, menu}} />
+            <Header {...{
+                title,
+                paragraph,
+                image,
+                menu
+            }} />
             {children}
+            <Footer />
         </Fragment>
     );
 };

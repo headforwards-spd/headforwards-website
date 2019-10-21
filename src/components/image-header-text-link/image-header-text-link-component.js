@@ -15,9 +15,10 @@ function ImageHeader({
   title,
   text,
   linkDestination,
-  linkText,
+  linkText
 }) {
-  const side = position === true ? right : left
+  const side = position === true ? right : left;
+  console.log(linkText);
   return (
     <div className={`${flexRow} ${side}`}>
       <div className={flexColumn}>

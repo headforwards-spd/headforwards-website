@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { ftLegal, ftMobbing, ftSocial } from './footer-component.module.scss'
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer>
       <section className={ftMobbing}>

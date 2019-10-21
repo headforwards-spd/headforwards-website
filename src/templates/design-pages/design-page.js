@@ -13,7 +13,7 @@ export const query = graphql`
           image {
             publicURL
             childImageSharp {
-                fluid {
+                fluid(maxWidth: 1024, maxHeight: 640) {
                    ...GatsbyImageSharpFluid
                 }
             }
@@ -33,7 +33,7 @@ export const query = graphql`
             image {
               publicURL
               childImageSharp {
-                    fluid {
+                    fluid(maxWidth: 1024, maxHeight: 640) {
                         ...GatsbyImageSharpFluid
                     }
                 }
@@ -44,23 +44,18 @@ export const query = graphql`
           rightImage {
             publicURL
             childImageSharp {
-                fluid {
+                fluid(maxWidth: 1024, maxHeight: 640) {
                    ...GatsbyImageSharpFluid
                 }
             }
           }
           profilePic {
             publicURL
-            childImageSharp {
-                fluid {
-                   ...GatsbyImageSharpFluid
-                }
-            }
           }
           leftImage {
             publicURL
             childImageSharp {
-                fluid {
+                fluid(maxWidth: 1024, maxHeight: 640) {
                    ...GatsbyImageSharpFluid
                 }
             }
@@ -68,7 +63,7 @@ export const query = graphql`
           image {
             publicURL
             childImageSharp {
-                fluid {
+                fluid(maxWidth: 1024, maxHeight: 640) {
                    ...GatsbyImageSharpFluid
                 }
             }

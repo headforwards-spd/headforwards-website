@@ -1,5 +1,7 @@
+@import "../variables";
+
 .navBackground {
-    height: 100vh;
+    //height: 100vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -25,5 +27,12 @@
                 font-size: 110px;
             }
         }
+    }
+}
+
+
+@media(min-width: $screen-lg){
+    .navBackground {
+        height: 100vh;
     }
 }
