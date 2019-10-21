@@ -1,5 +1,5 @@
 import React       from 'react';
-import Navbar      from './navbar-component';
+import Navbar from './navbar-component';
 import {withKnobs, text, files} from '@storybook/addon-knobs';
 
 export default {

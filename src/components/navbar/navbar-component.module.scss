@@ -262,12 +262,39 @@
 
 
 @media screen and (min-width: $screen-lg) {
+
+
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 45px 0;
         border-bottom: 1px solid #D8D8D8;
+
+        &.with-bg {
+            background-color: transparent;
+            color: white;
+            border-bottom: none;
+
+            .main-nav {
+                > .main-list-item {
+                    > .nav-links {
+                        color: white;
+
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+
+            .flexRow {
+                .logo {
+                    background-image: url("/img/headforwards-full-logo-white.png");
+                }
+            }
+
+        }
 
         .hamburger {
             display: none;

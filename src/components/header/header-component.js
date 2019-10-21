@@ -1,15 +1,18 @@
 import React  from 'react';
 import Navbar from '../navbar/navbar-component';
+import { navBackground, smallTitle, largeTitle } from './header-component.module.scss';
 
 export default function Header({title, paragraph, image, menu}) {
 
-    const backgroundImg = image.publicURL ? 'nav-background' : '';
+    const titleFontSize = !!paragraph ? smallTitle : largeTitle;
+    const backgroundImg = image.publicURL ? navBackground : '';
+    const hasBackgroundImg = !!image.publicURL;
     return (
-        <header className={backgroundImg} style={{backgroundImage: `url(${image.publicURL})`}}>
-            <Navbar {...{menu}} />
+        <header className={backgroundImg} style={{background: `linear-gradient(#00000080, #00000080), url(${image.publicURL}) center center/cover no-repeat`}}>
+            <Navbar {...{menu, hasBackgroundImg}} />
             <div>
-                <h1>{title}</h1>
                 <p>{paragraph}</p>
+                <h1 className={titleFontSize}>{title}</h1>
             </div>
         </header>
     );

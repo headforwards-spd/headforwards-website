@@ -1,9 +1,9 @@
-import { graphql } from 'gatsby'
-import React from 'react'
-import Layout from '../../components/Layout'
-import DesignPageTemplate from '../../components/pages/design-page/design-page-template'
+import {graphql}          from 'gatsby';
+import React              from 'react';
+import Layout             from '../../components/Layout';
+import DesignPageTemplate from '../../components/pages/design-page/design-page-template';
 
-export default DesignPage
+export default DesignPage;
 export const query = graphql`
   query PostPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
@@ -12,6 +12,11 @@ export const query = graphql`
         navbar {
           image {
             publicURL
+            childImageSharp {
+                fluid {
+                   ...GatsbyImageSharpFluid
+                }
+            }
           }
           paragraph
         }
@@ -27,38 +32,67 @@ export const query = graphql`
           articles {
             image {
               publicURL
+              childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
             }
             title
             text
           }
           rightImage {
             publicURL
+            childImageSharp {
+                fluid {
+                   ...GatsbyImageSharpFluid
+                }
+            }
           }
           profilePic {
             publicURL
+            childImageSharp {
+                fluid {
+                   ...GatsbyImageSharpFluid
+                }
+            }
           }
           leftImage {
             publicURL
+            childImageSharp {
+                fluid {
+                   ...GatsbyImageSharpFluid
+                }
+            }
           }
           image {
             publicURL
+            childImageSharp {
+                fluid {
+                   ...GatsbyImageSharpFluid
+                }
+            }
           }
         }
       }
     }
   }
-`
+`;
 
-function DesignPage({ data }) {
-  const { page } = data;
-  const { frontmatter } = page;
-  const { components, title, navbar } = frontmatter;
-  const { paragraph, image } = navbar;
-  const header = {title, paragraph, image};
-  const pageProps = { components };
-  return (
-    <Layout {...{header}}>
-      <DesignPageTemplate {...pageProps} />
-    </Layout>
-  )
+function DesignPage({data}) {
+    const {page}                      = data;
+    const {frontmatter}               = page;
+    const {components, title, navbar} = frontmatter;
+    const {paragraph, image}          = navbar;
+    const header                      = {
+        title,
+        paragraph,
+        image
+    };
+    const pageProps                   = {components};
+    return (
+        <Layout {...{header}}>
+            <DesignPageTemplate {...pageProps} />
+        </Layout>
+    );
 }

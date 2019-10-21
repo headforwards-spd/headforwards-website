@@ -1,0 +1,29 @@
+.navBackground {
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+
+    > div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        h1 {
+            color: white;
+            padding: 0 0 100px 100px;
+            margin: 0;
+
+            &.smallTitle {
+                font-size: 90px;
+            }
+
+            &.largeTitle {
+                font-size: 110px;
+            }
+        }
+    }
+}

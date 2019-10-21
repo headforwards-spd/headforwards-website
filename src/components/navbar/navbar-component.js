@@ -4,10 +4,11 @@ import {Link}                                                              from 
 import PropTypes                                                           from 'prop-types';
 import React, {Component}                                                  from 'react';
 
+
 export default class Navbar extends Component {
     static propTypes = {
         menu:  PropTypes.arrayOf(PropTypes.any),
-        theme: PropTypes.string
+        hasBackgroundImg: PropTypes.bool
     };
 
     state = {
@@ -16,7 +17,7 @@ export default class Navbar extends Component {
 
     static defaultProps = {
         menu:  [],
-        theme: 'dark'
+        hasBackgroundImg: false
     };
 
     menuClick = () => {
@@ -27,11 +28,12 @@ export default class Navbar extends Component {
     render() {
         const active        = this.state.isOpen ? 'is-active' : '';
         const {menuClick}   = this;
-        const {theme, menu} = this.props;
+        const {menu, hasBackgroundImg} = this.props;
+
         return (
             <Menu {...{
                 menuClick,
-                theme,
+                hasBackgroundImg,
                 active,
                 menu
             }} />
@@ -39,10 +41,10 @@ export default class Navbar extends Component {
     }
 }
 
-export function Menu({menuClick, theme, active, menu}) {
-
+export function Menu({menuClick, hasBackgroundImg, active, menu}) {
+    const backgroundImg = hasBackgroundImg ? 'with-bg' : 'without-bg';
     return (
-        <nav className={`${active} navbar ${theme}`}>
+        <nav className={`${active} navbar ${backgroundImg}`}>
             <div className="flexRow">
                 <a href="/" className="logo">
                 </a>
@@ -58,7 +60,7 @@ export function Menu({menuClick, theme, active, menu}) {
                     key
                 }} />)}
             </ul>
-            <ul class="socials-section">
+            <ul className="socials-section">
                 <li className="socials"><span>Call us.</span></li>
                 <li className="socials phone-number"><span>+44 (0)1209 311151</span></li>
                 <li className="socials"><span>Follow us.</span></li>
