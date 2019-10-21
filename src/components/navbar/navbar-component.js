@@ -46,8 +46,7 @@ export function Menu({menuClick, hasBackgroundImg, active, menu}) {
     return (
         <nav className={`${active} navbar ${backgroundImg}`}>
             <div className="flexRow">
-                <a href="/" className="logo">
-                </a>
+                <Link to="/" className="logo"></Link>
                 <button onClick={menuClick} className={`${active} hamburger hamburger--slider`} type="button">
                           <span className="hamburger-box">
                             <span className="hamburger-inner"></span>
@@ -55,10 +54,7 @@ export function Menu({menuClick, hasBackgroundImg, active, menu}) {
                 </button>
             </div>
             <ul className={`${active} main-nav`} id="js-menu">
-                {menu.map((item, key) => <MenuItem {...{
-                    item,
-                    key
-                }} />)}
+                {menu.map((item, key) => <MenuItem key={key} {...{item}} />)}
             </ul>
             <ul className="socials-section">
                 <li className="socials"><span>Call us.</span></li>
@@ -88,10 +84,10 @@ export function Menu({menuClick, hasBackgroundImg, active, menu}) {
 
 }
 
-export function MenuItem({item, key}) {
+export function MenuItem({item}) {
     return (
-        <li className="main-list-item" key={key}>
-            <Link className="nav-links" to={item.url} activeStyle={{color: '#ffb800'}}>{item.label}</Link>
+        <li className="main-list-item">
+            <Link className="nav-links" to={item.link} activeStyle={{color: '#ffb800'}}>{item.label}</Link>
             {!!item.children && <ul>
                 {item.children.map((item, key) => <MenuItem {...{
                     item,

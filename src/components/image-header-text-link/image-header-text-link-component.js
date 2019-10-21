@@ -15,11 +15,11 @@ function ImageHeader({
   position,
   title,
   text,
-  linkDestination,
+  link,
   linkText
 }) {
   const side = position === true ? right : left;
-  console.log(linkText);
+
   return (
     <div className={`${flexRow} ${side}`}>
       <div className={flexColumn}>
@@ -28,8 +28,7 @@ function ImageHeader({
       <div className={flexColumn}>
         <h1>{title}</h1>
         <p>{text}</p>
-        <Link to={linkDestination}>{linkText} &#8594;</Link>
-
+        {!!link && <Link to={link}>{linkText} &#8594;</Link>}
       </div>
     </div>
   )

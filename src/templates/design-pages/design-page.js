@@ -5,73 +5,75 @@ import DesignPageTemplate from '../../components/pages/design-page/design-page-t
 
 export default DesignPage;
 export const query = graphql`
-  query PostPage($id: String!) {
-    page: markdownRemark(id: { eq: $id }) {
-      frontmatter {
-        title
-        navbar {
-          image {
-            publicURL
-            childImageSharp {
-                fluid(maxWidth: 1024, maxHeight: 640) {
-                   ...GatsbyImageSharpFluid
+    query PostPage($id: String!) {
+        page: markdownRemark(id: { eq: $id }) {
+            frontmatter {
+                title
+                navbar {
+                    image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 1024, maxHeight: 640) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    paragraph
                 }
-            }
-          }
-          paragraph
-        }
-        components {
-          title
-          text
-          jobTitle
-          name
-          position
-          quote
-          twoColumns
-          type
-          articles {
-            image {
-              publicURL
-              childImageSharp {
-                    fluid(maxWidth: 1024, maxHeight: 640) {
-                        ...GatsbyImageSharpFluid
+                components {
+                    title
+                    text
+                    jobTitle
+                    name
+                    position
+                    quote
+                    twoColumns
+                    type
+                    link
+                    linkText
+                    articles {
+                        image {
+                            publicURL
+                            childImageSharp {
+                                fluid(maxWidth: 1024, maxHeight: 640) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                        title
+                        text
+                    }
+                    rightImage {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 1024, maxHeight: 640) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    profilePic {
+                        publicURL
+                    }
+                    leftImage {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 1024, maxHeight: 640) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 1024, maxHeight: 640) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
                     }
                 }
             }
-            title
-            text
-          }
-          rightImage {
-            publicURL
-            childImageSharp {
-                fluid(maxWidth: 1024, maxHeight: 640) {
-                   ...GatsbyImageSharpFluid
-                }
-            }
-          }
-          profilePic {
-            publicURL
-          }
-          leftImage {
-            publicURL
-            childImageSharp {
-                fluid(maxWidth: 1024, maxHeight: 640) {
-                   ...GatsbyImageSharpFluid
-                }
-            }
-          }
-          image {
-            publicURL
-            childImageSharp {
-                fluid(maxWidth: 1024, maxHeight: 640) {
-                   ...GatsbyImageSharpFluid
-                }
-            }
-          }
         }
-      }
     }
-  }
 `;
 
 function DesignPage({data}) {

@@ -15,8 +15,9 @@ collections:
         label: "Main Menu"
         name: "main-menu"
         fields:
+          - {label: "Title", name: "title", widget: "hidden", default: "main-menu"}
           - label: "Items"
-            name: items
+            name: menu
             widget: list
             fields:
               - {label: "Label", name: label, widget: string}

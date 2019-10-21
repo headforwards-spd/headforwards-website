@@ -64,6 +64,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-transformer-remark-linked-pages`,
     {
       resolve: 'gatsby-transformer-yaml',
       options: {

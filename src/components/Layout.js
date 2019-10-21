@@ -8,30 +8,19 @@ const Layout = ({children, header}) => {
 
     const {data} = useStaticQuery(graphql`
         query {
-            data: allDataYaml {
-                edges {
-                    node {
-                        fields {
-                            menu {
-                                label
-                                url
-                                children {
-                                    label
-                                    url
-                                }
-                            }
-                        }
+            data: dataYaml(title: {eq: "main-menu"}) {
+                menu {
+                    children {
+                        label
+                        link
                     }
+                    label
+                    link
                 }
             }
         }
   `);
-
-    const {edges}  = data || {};
-    const [edge]   = edges || [];
-    const {node}   = edge || {};
-    const {fields} = node || {};
-    const {menu}   = fields || [];
+    const {menu} = data || [];
 
     const {title, paragraph, image} = header || {};
     return (
