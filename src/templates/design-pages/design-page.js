@@ -78,7 +78,7 @@ function DesignPage({data}) {
     const {page}                      = data;
     const {frontmatter}               = page;
     const {components, title, navbar} = frontmatter;
-    const {paragraph, image}          = navbar;
+    const {paragraph, image}          = navbar || {};
     const header                      = {
         title,
         paragraph,

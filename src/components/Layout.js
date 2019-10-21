@@ -6,7 +6,6 @@ import './styles.scss';
 
 const Layout = ({children, header}) => {
 
-    console.log(children);
     const {data} = useStaticQuery(graphql`
         query {
             data: allDataYaml {
