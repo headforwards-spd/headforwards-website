@@ -23,7 +23,7 @@ components:
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
     type: imageWithTextComponent
-    title: What we belive
+    title: What we believe
   - header: How it began
     image: /img/curlyhair.png
     linkDestination: /
