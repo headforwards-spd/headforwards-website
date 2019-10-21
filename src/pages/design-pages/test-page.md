@@ -11,8 +11,8 @@ components:
     type: fullWidthImageComponent
   - header: What we believe
     image: /img/man-with-glasses-square.png
-    link: 0c7cc0e0-ef2d-11e9-a170-b1f1706e4527
-    linkDestination:
+    link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
+    linkDestination: null
     linkText: Discover more
     position: false
     sentence: >-
