@@ -1,11 +1,12 @@
-import React from 'react'
-import Image from '../image/image-component'
+import {Link} from 'gatsby';
+import React  from 'react'
+import Image  from '../image/image-component'
 import {
   flexColumn,
   flexRow,
   left,
   right,
-} from './image-header-text-link-component.module.scss'
+}             from './image-header-text-link-component.module.scss'
 
 export default ImageHeader
 
@@ -27,7 +28,7 @@ function ImageHeader({
       <div className={flexColumn}>
         <h1>{title}</h1>
         <p>{text}</p>
-        <a href={linkDestination}>{linkText} &#8594;</a>
+        <Link to={linkDestination}>{linkText} &#8594;</Link>
       </div>
     </div>
   )
