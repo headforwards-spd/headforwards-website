@@ -9,7 +9,7 @@ Image.defaultProps = {
 
 function Image({ image, alt, ...props }) {
 
-  const { publicURL = null, childImageSharp = null } = image || {};
+  const { childImageSharp = null } = image || {};
   if(childImageSharp) {
     const {fluid} = childImageSharp;
     return <GatsbyImage fluid = {fluid} durationFadeIn={5000}/>;

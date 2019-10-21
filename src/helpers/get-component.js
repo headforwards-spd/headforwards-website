@@ -6,7 +6,6 @@ import {
   FullWidthImage,
   TwoImages,
 }                     from '../components/images/images-component'
-import Navbar         from '../components/navbar/navbar-component';
 import Quoteblock     from '../components/quoteblock/quoteblock-component'
 
 export default ({ type, ...component }) => {
