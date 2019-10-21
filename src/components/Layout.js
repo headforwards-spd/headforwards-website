@@ -18,10 +18,6 @@ const Layout = ({children, header}) => {
                                 children {
                                     label
                                     url
-                                    children {
-                                        label
-                                        url
-                                    }
                                 }
                             }
                         }
