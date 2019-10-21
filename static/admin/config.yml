@@ -115,7 +115,14 @@ collections:
               - {label: "Position", name: "position", widget: boolean, default: false}
               - {label: "Image", name: "image", widget: image}
               - {label: "Link Text", name: "linkText", widget: string}
-              - {label: "Link Destination", name: "linkDestination", widget: string}
+              - label: "Link"
+                name: link
+                widget: relation
+                collection: design-pages
+                searchFields: ["title"]
+                valueField: uuid
+                displayFields: ["title"]
+                required: false
           - label: "Article Block"
             name: "articleBlockComponent"
             widget: object

@@ -29,6 +29,7 @@ function ImageHeader({
         <h1>{title}</h1>
         <p>{text}</p>
         <Link to={linkDestination}>{linkText} &#8594;</Link>
+
       </div>
     </div>
   )
