@@ -1,31 +1,28 @@
-import React          from 'react'
-import ArticleBlock   from '../components/article-block/article-block-component'
-import { HeaderText } from '../components/header-text/header-text-component'
-import ImageHeader    from '../components/image-header-text-link/image-header-text-link-component'
-import {ImageSlider}  from '../components/image-slider/image-slider-component';
-import {
-  FullWidthImage,
-  TwoImages,
-}                     from '../components/images/images-component'
-import Quoteblock     from '../components/quoteblock/quoteblock-component'
+import React                       from 'react';
+import ArticleBlock                from '../components/article-block/article-block-component';
+import {HeaderText}                from '../components/header-text/header-text-component';
+import ImageHeader                 from '../components/image-header-text-link/image-header-text-link-component';
+import ImageSlider                 from '../components/image-slider/image-slider-component';
+import {FullWidthImage, TwoImages} from '../components/images/images-component';
+import Quoteblock                  from '../components/quoteblock/quoteblock-component';
 
-export default ({ type, ...component }) => {
-  switch (type) {
-    case 'heading':
-      return <HeaderText {...component} />;
-    case 'fullWidthImageComponent':
-      return <FullWidthImage {...component} />;
-    case 'twoImageComponent':
-      return <TwoImages {...component} />;
-    case 'blockQuoteComponent':
-      return <Quoteblock {...component} />;
-    case 'imageWithTextComponent':
-      return <ImageHeader {...component} />;
-    case 'articleBlockComponent':
-      return <ArticleBlock {...component} />;
-    case 'imageSliderCompoent':
-      return <ImageSlider {...component} />
-    default:
-      return <p>{component.text}</p>
-  }
+export default ({type, ...component}) => {
+    switch (type) {
+        case 'heading':
+            return <HeaderText {...component} />;
+        case 'imageSliderComponent':
+            return <ImageSlider {...component} />;
+        case 'fullWidthImageComponent':
+            return <FullWidthImage {...component} />;
+        case 'twoImageComponent':
+            return <TwoImages {...component} />;
+        case 'blockQuoteComponent':
+            return <Quoteblock {...component} />;
+        case 'imageWithTextComponent':
+            return <ImageHeader {...component} />;
+        case 'articleBlockComponent':
+            return <ArticleBlock {...component} />;
+        default:
+            return <p>{component.text}</p>;
+    }
 }

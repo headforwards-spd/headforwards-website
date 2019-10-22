@@ -9,6 +9,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.5",
+    "@glidejs/glide": "^3.4.1",
     "bulma": "^0.7.0",
     "faker": "^4.1.0",
     "gatsby": "^2.13.31",
@@ -36,6 +37,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-glide": "^3.2.0",
     "react-helmet": "^5.2.0",
     "uuid": "^3.3.3"
   },
