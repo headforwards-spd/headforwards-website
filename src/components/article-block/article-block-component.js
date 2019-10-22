@@ -1,6 +1,6 @@
 import React                               from 'react';
 import Image                               from '../image/image-component';
-import {flexRow, imgRow, threeCol, twoCol} from './article-block-component.module.scss';
+import {flexRow, imgRow, threeCol, twoCol, articleRow} from './article-block-component.module.scss';
 
 export default ArticleBlock;
 
@@ -11,7 +11,7 @@ ArticleBlock.defaultProps = {
 function ArticleBlock({title, articles}) {
     const articleLength = articles.length === 3 ? threeCol : twoCol;
     return (
-        <div className={flexRow}>
+        <div className={`${flexRow} ${articleRow}`}>
             <h1>{title}</h1>
             <section className={`${flexRow} ${imgRow}`}>
                 {articles.map((article, key) => (

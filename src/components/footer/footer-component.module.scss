@@ -56,6 +56,7 @@
     }
 }
 
+/* Footer mobbing */
 .ftMobbing {
     display: flex;
     background-image: url('../../img/footer-bg.png');
@@ -64,8 +65,9 @@
         padding: 0 15px;
         max-width: 950px;
         line-height: 1.5;
+        font-size: 22px;
         color: white;
-        margin: 4rem;
+        margin: 2rem;
     }
 
     a {
@@ -80,6 +82,12 @@
 
     .ftSocial {
         padding-top: 1.25rem;
+    }
+
+    .ftMobbing {
+        h1 {
+            margin: 4rem;
+        }
     }
 }
 

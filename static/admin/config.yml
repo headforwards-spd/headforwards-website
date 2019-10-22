@@ -136,6 +136,10 @@ collections:
                   - {label: "Article Image", name: "image", widget: image}
                   - {label: "Article Header", name: title, widget: string}
                   - {label: "Article Post", name: text, widget: text}
-
+          - label: "Image Slider"
+            name: "imageSliderComponent"
+            widget: object
+            fields:
+              - {label: "Main Header", name: "title", widget: string, required: false}
 
 

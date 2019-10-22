@@ -2,6 +2,7 @@ import React          from 'react'
 import ArticleBlock   from '../components/article-block/article-block-component'
 import { HeaderText } from '../components/header-text/header-text-component'
 import ImageHeader    from '../components/image-header-text-link/image-header-text-link-component'
+import {ImageSlider}  from '../components/image-slider/image-slider-component';
 import {
   FullWidthImage,
   TwoImages,
@@ -22,6 +23,8 @@ export default ({ type, ...component }) => {
       return <ImageHeader {...component} />;
     case 'articleBlockComponent':
       return <ArticleBlock {...component} />;
+    case 'imageSliderCompoent':
+      return <ImageSlider {...component} />
     default:
       return <p>{component.text}</p>
   }
