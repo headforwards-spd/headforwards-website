@@ -42,6 +42,14 @@
     align-items: center;
     margin-bottom: 50px;
 
+    :global(.slick-prev:before),
+    :global(.slick-next:before) {
+        color: $orange;
+        font-family: FontAwesome;
+        opacity: unset;
+        font-size: 60px;
+    }
+
     > div {
         display: flex;
         align-items: center;
@@ -51,16 +59,17 @@
         div {
             height: 485px;
         }
-        > section {
+        ul {
             right: 0;
             left: unset;
-            margin-bottom: 565px;
+            margin-bottom: 605px;
             font-size: 70px;
+            text-align: right;
 
-            span {
+            li {
                 margin-right: 10px;
                 color: #D8D8D8;
-                &:global(.active-dot) {
+                &:global(.slick-active) button:before {
                     color: $orange;
                 }
             }

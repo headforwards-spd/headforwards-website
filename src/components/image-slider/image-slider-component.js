@@ -1,14 +1,26 @@
 import React, {Component} from 'react';
-import {Glide}            from 'react-glide';
-import 'react-glide/lib/reactGlide.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {flexRow, flexCol, slider} from './image-slider-component.module.scss';
+
 
 export default class ImageSlider extends Component {
 
+
+
     render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
+
         return (
             <div className={slider}>
-                <Glide autoPlay={false} autoPlaySpeed={1000} dots={true} infinite={true}>
+                <Slider {...settings}>
                     <div>
                         <div className={`${flexRow}`}>
                             <div className={flexCol}>
@@ -66,8 +78,7 @@ export default class ImageSlider extends Component {
                             </div>
                         </div>
                     </div>
-
-                </Glide>
+                </Slider>
             </div>
         );
     };
