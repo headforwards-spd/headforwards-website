@@ -3,6 +3,7 @@ import {FontAwesomeIcon}                                                   from 
 import {Link}                                                              from 'gatsby';
 import PropTypes                                                           from 'prop-types';
 import React, {Component}                                                  from 'react';
+import Image                                                               from '../image/image-component';
 
 
 export default class Navbar extends Component {
@@ -43,10 +44,11 @@ export default class Navbar extends Component {
 
 export function Menu({menuClick, hasBackgroundImg, active, menu}) {
     const backgroundImg = hasBackgroundImg ? 'with-bg' : 'without-bg';
+    const logo = hasBackgroundImg ? '/img/headforwards-full-logo-white.png' : '/img/headforwards-full-logo-black.png';
     return (
         <nav className={`${active} navbar ${backgroundImg}`}>
             <div className="flexRow">
-                <Link to="/" className="logo"></Link>
+                <Image className="logo" image={logo} />
                 <button onClick={menuClick} className={`${active} hamburger hamburger--slider`} type="button">
                           <span className="hamburger-box">
                             <span className="hamburger-inner"></span>

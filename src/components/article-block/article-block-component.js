@@ -13,7 +13,7 @@ function ArticleBlock({title, articles}) {
     return (
         <div className={`${flexRow} ${articleRow}`}>
             <h1>{title}</h1>
-            <section className={`${flexRow} ${imgRow}`}>
+            <section className={`${flexRow}`}>
                 {articles.map((article, key) => (
                     <section className={articleLength} key={key}>
                         <Image image={article.image}/>

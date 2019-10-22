@@ -88,4 +88,30 @@
     }
 }
 
+@media(min-width: $screen-lg) {
+    .ftMobbing {
+        h1 {
+            font-size: $h1-large-font-size;
+        }
+    }
+
+    .ftLegal {
+
+        ul {
+
+            &:nth-child(1) {
+                li {
+                    &:nth-child(2) {
+                        margin-left: 0;
+                        margin-right: 0;
+                        display: list-item;
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 
