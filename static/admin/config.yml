@@ -140,6 +140,12 @@ collections:
             name: "imageSliderComponent"
             widget: object
             fields:
-              - {label: "Main Header", name: "title", widget: string, required: false}
+              - label: "Images"
+                name: "slider"
+                widget: list
+                fields:
+                  - {label: "Slider Image", name: "image", widget: image}
+                  - {label: "Slider Header", name: title, widget: string}
+                  - {label: "Slider Text", name: text, widget: text}
 
 

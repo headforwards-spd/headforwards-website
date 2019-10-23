@@ -3,13 +3,21 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {flexRow, flexCol, slider} from './image-slider-component.module.scss';
+import PropTypes from 'prop-types';
 
 
 export default class ImageSlider extends Component {
 
+    static propTypes = {
+        slider: PropTypes.arrayOf(PropTypes.any)
+    };
 
+    static defaultProps = {
+        images: []
+    };
 
     render() {
+        console.log(this.props);
         const settings = {
             dots: true,
             infinite: true,

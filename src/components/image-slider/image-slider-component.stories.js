@@ -36,5 +36,5 @@ export const imageSlider = () => {
       },
     ],
   }
-  return <ImageSlider />
+  return <ImageSlider {...sliderProps} />
 }
