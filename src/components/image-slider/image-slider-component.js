@@ -2,22 +2,24 @@ import React, {Component} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {flexRow, flexCol, slider} from './image-slider-component.module.scss';
+import {flexRow, flexCol, sliderClass} from './image-slider-component.module.scss';
 import PropTypes from 'prop-types';
 
 
 export default class ImageSlider extends Component {
 
     static propTypes = {
-        slider: PropTypes.arrayOf(PropTypes.any)
+        imageSlider: PropTypes.arrayOf(PropTypes.any)
     };
 
     static defaultProps = {
-        images: []
+        imageSlider: []
     };
 
     render() {
         console.log(this.props);
+        const{imageSlider} = this.props;
+        console.log(imageSlider);
         const settings = {
             dots: true,
             infinite: true,
@@ -27,11 +29,13 @@ export default class ImageSlider extends Component {
         };
 
         return (
-            <div className={slider}>
+            <div className={sliderClass}>
                 <Slider {...settings}>
                     <div>
                         <div className={`${flexRow}`}>
                             <div className={flexCol}>
+
+
                                 <h2>Our story</h2>
                                 <h1>The new option in software outsourcing</h1>
                                 <p>We are a British software outsourcing company based in the stunning location of

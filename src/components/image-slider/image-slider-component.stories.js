@@ -28,13 +28,14 @@ export const imageSlider = () => {
   const slideImg = files(imgLabel, accept, defaultImgVal, groupId);
 
   const sliderProps = {
-    slider: [
+    imageSlider: [
       {
         title: mainHeader,
         image: slideImg,
         text: paragraphText,
       },
     ],
-  }
+  };
+
   return <ImageSlider {...sliderProps} />
-}
+};
