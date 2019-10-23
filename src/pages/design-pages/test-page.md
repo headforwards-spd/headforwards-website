@@ -8,9 +8,19 @@ navbar:
   paragraph: ''
 components:
   - imageSlider:
-      - image: /img/craig.jpg
-        text: afadfdsfsdfsdrfdcfsdfs
-        title: dfsfsdfdsf
+      - image: /img/girl.png
+        text: >-
+          We are a British software outsourcing company based in the stunning
+          location of Cornwall. Being in Cornwall is important to us. It enables
+          us to get the perfect work life balance that we strive for.
+        title: The new option in software outsourcing
+      - image: /img/curlyhair.png
+        text: >-
+          Our business model is different to most other outsource software
+          companies. We create dedicated teams for specific projects and never
+          switch members to other projects, nor do we have team members waiting
+          on the bench which ultimately drives costs up.
+        title: Software development outsourcing...
     type: imageSliderComponent
   - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
