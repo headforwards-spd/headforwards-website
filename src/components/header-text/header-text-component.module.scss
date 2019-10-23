@@ -27,5 +27,9 @@
 @media(min-width: $screen-md){
     .flexRow {
         flex-direction: unset;
+
+        h1, p {
+            padding: 0;
+        }
     }
 }

@@ -16,7 +16,6 @@
         flex: 1;
 
         img {
-            //padding: 15px 0 20px 0;
             width: 100%;
             height: auto;
         }
@@ -62,12 +61,11 @@
             }
 
             &:nth-of-type(1) {
-                margin-right: 0.625rem;
                 padding-bottom: 0;
             }
 
             &:nth-of-type(2) {
-                margin-left: 0.625rem;
+                padding: 0;
             }
         }
     }
