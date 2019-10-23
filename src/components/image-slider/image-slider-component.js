@@ -1,9 +1,10 @@
-import PropTypes                       from 'prop-types';
-import React, {Component}              from 'react';
-import Slider                          from 'react-slick';
+import {Link}                                                       from '@reach/router';
+import PropTypes                                                    from 'prop-types';
+import React, {Component}                                           from 'react';
+import Slider                                                       from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import Image                           from '../image/image-component';
+import Image                                                        from '../image/image-component';
 import {flexCol, flexRow, sliderClass, hiddenDesktop, hiddenMobile} from './image-slider-component.module.scss';
 
 export default class ImageSlider extends Component {
@@ -36,6 +37,7 @@ export default class ImageSlider extends Component {
                                     <h2 className={hiddenMobile}>Our story</h2>
                                     <h1>{slide.title}</h1>
                                     <p>{slide.text}</p>
+                                    <Link to={slide.link}>{slide.label}</Link>
                                     <a href="#">Read the case study</a>
                                 </div>
                                 <div className={flexCol}>

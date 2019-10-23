@@ -10,6 +10,11 @@ const headerLabel = 'Header';
 const paragraphLabel = 'Paragraph';
 const defaultHeader = faker.lorem.sentence();
 const paragraphText = faker.lorem.paragraph();
+const linkLabel       = 'Link Text';
+const defaultLinkText = faker.lorem.sentence();
+
+const linkDestinationLabel   = 'Link Destination';
+const defaultLinkDestination = faker.internet.url();
 
 const imgLabel = 'Image';
 const accept = '.png, .jpg, .jpeg';
@@ -26,6 +31,8 @@ export const imageSlider = () => {
   const mainHeader = text(headerLabel, defaultHeader, groupId);
   const paragraphText = text(paragraphLabel, paragraphText, groupId);
   const slideImg = files(imgLabel, accept, defaultImgVal, groupId);
+  const linkText        = text(linkLabel, defaultLinkText, groupId);
+  const linkDestination = text(linkDestinationLabel, defaultLinkDestination, groupId);
 
   const sliderProps = {
     imageSlider: [
@@ -33,6 +40,8 @@ export const imageSlider = () => {
         title: mainHeader,
         image: slideImg,
         text: paragraphText,
+        link: linkDestination,
+        label: linkText
       },
     ],
   };

@@ -34,6 +34,7 @@ export const query = graphql`
                     imageSlider {
                         text
                         title
+      
                         image {
                             publicURL
                         }

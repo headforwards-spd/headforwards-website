@@ -147,5 +147,14 @@ collections:
                   - {label: "Slider Image", name: "image", widget: image}
                   - {label: "Slider Header", name: title, widget: string}
                   - {label: "Slider Text", name: text, widget: text}
+                  - {label: "Link Text", name: label, widget: string}
+                  - label: "Link"
+                    name: link
+                    widget: relation
+                    collection: design-pages
+                    searchFields: ["title"]
+                    valueField: uuid
+                    displayFields: ["title"]
+                    required: false
 
 
