@@ -1,10 +1,11 @@
-@import "../variables";
+@import "../styles/variables";
+@import "../styles/mixins";
 
 /* Footer social */
 .ftSocial {
 
     ul {
-        display: flex;
+        @include flexRow(row, nowrap, center);
 
         li {
             margin: 0.5rem;
@@ -29,9 +30,8 @@
     color: black;
 
     ul {
+        @include flexRow(row, wrap, center);
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 0;
 
         &:nth-child(1) {
@@ -58,7 +58,8 @@
 
 /* Footer mobbing */
 .ftMobbing {
-    display: flex;
+
+    @include flexRow(row, nowrap, normal);
     background-image: url('../../img/footer-bg.png');
 
     h1 {
@@ -86,14 +87,6 @@
             margin: 4rem;
         }
     }
-}
-
-@media(min-width: $screen-lg) {
-    .ftMobbing {
-        h1 {
-            font-size: $h1-large-font-size;
-        }
-    }
 
     .ftLegal {
 
@@ -109,6 +102,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media(min-width: $screen-lg) {
+    .ftMobbing {
+        h1 {
+            font-size: $h1-large-font-size;
         }
     }
 

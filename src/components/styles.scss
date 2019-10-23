@@ -1,4 +1,4 @@
-@import "variables";
+@import "styles/variables";
 @import "navbar/navbar-component.module";
 
 * {
@@ -36,12 +36,11 @@ ul {
     justify-content: center;
 
 }
-
-@media(min-width: $screen-md){
+@media(min-width: $screen-md) {
     h1 {
         font-size: $h1-large-font-size;
         color: $header_black;
-        margin-bottom: $header-margin-bottom;
+        margin-bottom: $margin-bottom;
     }
 
     p {

@@ -1,4 +1,5 @@
-@import "../variables";
+@import "../styles/variables";
+@import "../styles/mixins";
 
 .imageSliderBg {
     background-color: $blue-background;
@@ -28,47 +29,89 @@
 }
 
 .sliderClass {
+
+    @include flexRow(row, nowrap, normal);
+
     height: 650px;
-    background: $blue-background;
-    background: -moz-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, $blue-background), color-stop(90%, $blue-background), color-stop(90%, $blue-background), color-stop(90%, #ffffff), color-stop(100%, #ffffff));
-    background: -webkit-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-    background: -o-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-    background: -ms-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-    background: linear-gradient(to right, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$blue-background, endColorstr='#ffffff', GradientType=1);
+    background-color: $blue-background;
     width: 100%;
-    display: flex;
     align-items: center;
-    margin-bottom: 50px;
 
     :global(.slick-prev:before),
     :global(.slick-next:before) {
         color: $orange;
         font-family: FontAwesome;
         opacity: unset;
-        font-size: 60px;
     }
 
     > div {
-        display: flex;
+        @include flexRow(row, nowrap, normal);
         align-items: center;
         width: 100%;
-        height: 635px;
+        height: 650px;
+        margin-bottom: 0 !important;
 
-        div {
-            height: 485px;
+        > div {
+            height: 100%;
+
+            .flexRow {
+                @include flexRow;
+
+                align-items: center;
+                .flexCol {
+                    &:first-of-type {
+                        @include flexRow(column, nowrap, normal);
+                        flex: 1;
+                        order: 2;
+                        margin-bottom: 0;
+                        padding: 0 15px;
+                    }
+
+                    &:last-of-type {
+                        order: 1;
+                        height: auto;
+                    }
+
+                    p {
+                        color: #888888;
+                    }
+
+                    h1 {
+                        color: $orange;
+                        padding: 0;
+                    }
+
+                    h2 {
+                        color: #6E7087;
+                        text-transform: uppercase;
+                    }
+
+                    a {
+                        font-size: 26px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                }
+            }
         }
+
         ul {
             right: 0;
             left: unset;
-            margin-bottom: 605px;
             font-size: 70px;
             text-align: right;
+            margin-bottom: 635px;
 
             li {
                 margin-right: 10px;
-                color: #D8D8D8;
+
+                button:before {
+                    color: #D8D8D8;
+                }
+
                 &:global(.slick-active) button:before {
                     color: $orange;
                 }
@@ -82,48 +125,82 @@
             color: #D8D8D8;
 
             &:first-of-type {
-                right: 100px;
                 left: unset;
             }
+
+            &:last-of-type {
+                right: 0;
+            }
+
             bottom: 0;
-            top: unset;
+            //top: unset;
+            z-index: 100;
         }
 
+    }
+
+    .hiddenDesktop {
+        padding: 0 15px;
+    }
+
+    .hiddenMobile {
+        display: none;
     }
 }
 
 
-.flexRow {
-    display: flex;
-    align-items: center;
+@media(min-width: $screen-lg) {
+    .sliderClass {
+        background: $blue-background;
+        background: -moz-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, $blue-background), color-stop(90%, $blue-background), color-stop(90%, $blue-background), color-stop(90%, #ffffff), color-stop(100%, #ffffff));
+        background: -webkit-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
+        background: -o-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
+        background: -ms-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
+        background: linear-gradient(to right, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$blue-background, endColorstr='#ffffff', GradientType=1);
 
-    .flexCol {
-
-        &:first-of-type {
-            padding-left: 100px;
-            padding-right: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        :global(.slick-prev:before),
+        :global(.slick-next:before) {
+            font-size: 60px;
         }
 
-        p {
-            color: #888888;
-        }
-        h1 {
-            color: $orange;
-            padding: 0;
-        }
+        > div {
 
-        h2 {
-            color: #6E7087;
-            text-transform: uppercase;
-            flex-grow: 1;
-        }
+            ul {
+                margin-bottom: 605px;
+            }
 
-        a {
-            font-size: 26px;
-        }
+            div {
+                height: 485px;
 
+                .flexRow {
+                    .flexCol {
+                        &:first-of-type {
+                            padding-left: 100px;
+                            padding-right: 50px;
+                            order: 1;
+
+                        }
+
+                        &:last-of-type {
+                            order: 2;
+                        }
+                    }
+                }
+            }
+
+            button {
+
+                &:first-of-type {
+                    right: 100px;
+                }
+                top: unset;
+            }
+        }
+    }
+
+    .hiddenDesktop {
+        display: none;
     }
 }

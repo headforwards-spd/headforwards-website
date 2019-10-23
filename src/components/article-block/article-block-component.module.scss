@@ -1,11 +1,11 @@
-@import "../variables";
+@import "../styles/variables";
+@import "../styles/mixins";
 
 .articleRow {
 
     h1, p, a {
         padding: 0 15px;
     }
-
     img {
         width: 100%;
     }
@@ -19,9 +19,7 @@
 
 @media(min-width: $screen-md) {
     .flexRow {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @include flexRow;
 
         .twoCol {
             flex-basis: 49%;

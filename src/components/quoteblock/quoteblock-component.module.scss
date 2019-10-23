@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../styles/variables";
 
 .blockquoteContainer {
     padding: 40px 1rem;
@@ -14,8 +14,7 @@
         margin-right: 0;
         color: $orange;
 
-        &:before,
-        &:after {
+        &:before {
             position: absolute;
             color: #686868;
             font-size: 5rem;
@@ -30,11 +29,11 @@
             padding-left: 30px;
         }
 
-        &:after {
-            content: '”';
-            bottom: 0;
-            margin-left: .25rem;
-        }
+        //&:after {
+        //    content: '”';
+        //    bottom: 0;
+        //    margin-left: .25rem;
+        //}
     }
 }
 

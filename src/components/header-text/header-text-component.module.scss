@@ -1,9 +1,12 @@
-@import "../variables";
+@import "../styles/variables";
+@import "../styles/mixins";
 
 .flexRow {
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
+    @include flexRow(column, nowrap, flex-end);
+
+    h1, p {
+        padding: 0 15px;
+    }
 
     p {
         font-weight: lighter;
@@ -24,6 +27,5 @@
 @media(min-width: $screen-md){
     .flexRow {
         flex-direction: unset;
-
     }
 }

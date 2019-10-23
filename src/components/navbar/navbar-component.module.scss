@@ -1,4 +1,5 @@
-@import '../variables';
+@import '../styles/variables';
+@import '../styles/mixins';
 
 .hamburger {
     background-color: transparent;
@@ -124,19 +125,13 @@
     background-color: white;
 
     .flexRow {
-        display: flex;
-        justify-content: space-between;
+        @include flexRow;
+        margin-bottom: 0 !important;
         align-items: center;
 
         .logo {
-
-            display: flex;
-            width: 100%;
             height: 65px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 0 50%;
-
+            flex: 1;
         }
     }
 
@@ -145,14 +140,8 @@
         display: none;
 
         .main-list-item {
-
             padding: 9px 0;
             border-top: 1px solid #383F51;
-
-            &:nth-last-of-type(1) {
-                border-bottom: 1px solid #383F51;
-
-            }
 
             ul {
                 display: none;
@@ -163,7 +152,6 @@
                 color: white;
                 font-size: 23px;
             }
-
         }
     }
 
@@ -200,8 +188,8 @@
         }
 
         .socials-list {
-            justify-content: unset;
-            display: flex;
+
+            @include flexRow(row, nowrap, unset);
 
             li {
                 padding-right: 20px;
@@ -217,10 +205,19 @@
 
 @media screen and (min-width: $screen-md) {
     .navbar {
+
+        .flexRow {
+            .logo {
+                width: 50%;
+                height: auto;
+                flex: unset;
+            }
+        }
+
         &.is-active {
             .main-nav {
-                display: flex;
-                justify-content: space-between;
+
+                @include flexRow;
 
                 .main-list-item {
                     border-top: none;
@@ -259,18 +256,11 @@
 
 
     .navbar {
-        display: flex;
-        justify-content: space-between;
+
+        @include flexRow;
         align-items: center;
         padding: 45px 0;
         border-bottom: 1px solid #D8D8D8;
-
-        .flexRow {
-            .logo {
-                width: 50%;
-                height:auto;
-            }
-        }
 
         &.with-bg {
             background-color: transparent;

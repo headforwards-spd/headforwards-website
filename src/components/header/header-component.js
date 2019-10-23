@@ -1,6 +1,6 @@
 import React  from 'react';
 import Navbar from '../navbar/navbar-component';
-import { navBackground, smallTitle, largeTitle } from './header-component.module.scss';
+import { navBackground, smallTitle, largeTitle, subTitle } from './header-component.module.scss';
 
 export default function Header({title, paragraph, image, menu}) {
 
@@ -12,7 +12,7 @@ export default function Header({title, paragraph, image, menu}) {
         <header className={backgroundImg} style={{background: `linear-gradient(#00000080, #00000080), url(${publicURL}) center center/cover no-repeat`}}>
             <Navbar {...{menu, hasBackgroundImg}} />
             <div>
-                <p>{paragraph}</p>
+                <h2 className={subTitle}>{paragraph}</h2>
                 <h1 className={titleFontSize}>{title}</h1>
             </div>
         </header>

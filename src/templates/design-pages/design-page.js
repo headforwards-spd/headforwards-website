@@ -31,6 +31,13 @@ export const query = graphql`
                     type
                     link
                     linkText
+                    imageSlider {
+                        text
+                        title
+                        image {
+                            publicURL
+                        }
+                    }
                     articles {
                         image {
                             publicURL

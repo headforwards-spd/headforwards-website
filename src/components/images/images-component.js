@@ -6,7 +6,9 @@ import {
 }              from './images-component.module.scss';
 
 export function FullWidthImage({image}) {
-    return <Image image={image} className={fullWidthImage}/>;
+    return (
+        <div className={fullWidthImage}><Image image={image}/></div>
+    );
 }
 
 export function TwoImages({leftImage, rightImage}) {

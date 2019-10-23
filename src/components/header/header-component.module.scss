@@ -1,21 +1,20 @@
-@import "../variables";
+@import "../styles/variables";
+@import "../styles/mixins";
 
 .navBackground {
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 50px;
+
+    @include flexRow(column, nowrap, normal);
 
 
     > div {
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+
+        @include flexRow(column, nowrap, flex-end);
 
         h1 {
             color: white;
-            padding: 0 0 100px 100px;
             margin: 0;
 
             &.smallTitle {
@@ -26,12 +25,22 @@
                 font-size: 110px;
             }
         }
+
+        .subTitle {
+            font-size: 35px;
+            color: $orange;
+        }
     }
 }
 
 
-@media(min-width: $screen-lg){
+@media(min-width: $screen-md) {
     .navBackground {
         height: 100vh;
+
+        > div {
+            padding: 0 0 100px 100px;
+
+        }
     }
 }

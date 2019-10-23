@@ -1,19 +1,22 @@
-@import "../variables";
+@import "../styles/variables";
+@import "../styles/mixins";
 
 .flexRow {
-    display: flex;
-    flex-direction: column;
-
+    margin-bottom: $margin-bottom;
     .flexColumn {
 
-        &:nth-of-type(2){
+        &:nth-of-type(1) {
+            padding-bottom: 15px;
+        }
+
+        &:nth-of-type(2) {
             padding: 0 15px;
         }
 
         flex: 1;
 
         img {
-            padding: 15px 0 20px 0;
+            //padding: 15px 0 20px 0;
             width: 100%;
             height: auto;
         }
@@ -27,12 +30,13 @@
             font-size: $h1-small-font-size;
         }
     }
+
 }
 
 
 @media (min-width: $screen-md) {
     .flexRow {
-        flex-direction: row;
+        @include flexRow;
         align-items: center;
 
         &.right {
@@ -47,16 +51,21 @@
                 font-size: 45px;
                 padding: 0;
             }
+
             a {
                 font-size: 26px;
             }
+
             p {
                 font-size: $p-large-font-size;
                 margin-bottom: 2.5rem;
             }
+
             &:nth-of-type(1) {
                 margin-right: 0.625rem;
+                padding-bottom: 0;
             }
+
             &:nth-of-type(2) {
                 margin-left: 0.625rem;
             }
