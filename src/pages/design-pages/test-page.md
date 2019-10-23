@@ -7,7 +7,11 @@ navbar:
   image: /img/curlyhair.png
   paragraph: ''
 components:
-  - type: imageSliderComponent
+  - images:
+      - image: /img/craig.jpg
+        text: afadfdsfsdfsdrfdcfsdfs
+        title: dfsfsdfdsf
+    type: imageSliderComponent
   - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent
   - header: What we believe
