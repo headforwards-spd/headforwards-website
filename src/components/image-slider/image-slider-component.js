@@ -18,6 +18,7 @@ export default class ImageSlider extends Component {
     };
 
     render() {
+        console.log(this.props);
         const {imageSlider} = this.props;
         const settings      = {
             dots:           true,
