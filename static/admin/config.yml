@@ -141,7 +141,7 @@ collections:
             widget: object
             fields:
               - label: "Images"
-                name: "slider"
+                name: "imageSlider"
                 widget: list
                 fields:
                   - {label: "Slider Image", name: "image", widget: image}

@@ -7,7 +7,7 @@ navbar:
   image: /img/curlyhair.png
   paragraph: ''
 components:
-  - slider:
+  - imageSlider:
       - image: /img/craig.jpg
         text: afadfdsfsdfsdrfdcfsdfs
         title: dfsfsdfdsf
