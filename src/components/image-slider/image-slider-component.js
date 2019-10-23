@@ -38,7 +38,7 @@ export default class ImageSlider extends Component {
                                     <h2 className={hiddenMobile}>Our story</h2>
                                     <h1>{slide.title}</h1>
                                     <p>{slide.text}</p>
-                                    <Link to={slide.link}>{slide.label}</Link>
+                                    {/*<Link to={slide.link}>{slide.label}</Link>*/}
                                     <a href="#">Read the case study</a>
                                 </div>
                                 <div className={flexCol}>

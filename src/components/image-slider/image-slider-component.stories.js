@@ -40,8 +40,7 @@ export const imageSlider = () => {
         title: mainHeader,
         image: slideImg,
         text: paragraphText,
-        link: linkDestination,
-        label: linkText
+
       },
     ],
   };
