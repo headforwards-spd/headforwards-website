@@ -9,20 +9,26 @@ navbar:
 components:
   - imageSlider:
       - image: /img/girl.png
-        label: saasqs
+        label: Slider Label
         text: >-
           We are a British software outsourcing company based in the stunning
           location of Cornwall. Being in Cornwall is important to us. It enables
           us to get the perfect work life balance that we strive for.
         title: The new option in software outsourcing
-      - image: /img/full-width-man-glasses.png
-        label: sdadasasda
+        subtitle:
+        link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
+        linkText: Read the case study
+      - image: /img/curlyhair.png
+        label: Another Slider Label
         text: >-
           Our business model is different to most other outsource software
           companies. We create dedicated teams for specific projects and never
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         title: Software development outsourcing...
+        subtitle:
+        link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
+        linkText: Read the case study
     type: imageSliderComponent
   - image: /img/full-width-man-glasses.png
     type: fullWidthImageComponent

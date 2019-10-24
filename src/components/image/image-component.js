@@ -12,7 +12,7 @@ function Image({ image, alt, ...props }) {
   const { childImageSharp = null } = image || {};
   if(childImageSharp) {
     const {fluid} = childImageSharp;
-    return <GatsbyImage fluid = {fluid} durationFadeIn={5000}/>;
+    return <GatsbyImage fluid = {fluid} durationFadeIn={5000} {...props}/>;
   }
   const src =
     image && image.hasOwnProperty('publicURL') ? image.publicURL : image;

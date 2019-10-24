@@ -146,6 +146,7 @@ collections:
                 fields:
                   - {label: "Slider Image", name: "image", widget: image}
                   - {label: "Slider Header", name: title, widget: string}
+                  - {label: "Slider Subheader", name: subtitle, widget: string}
                   - {label: "Slider Text", name: text, widget: text}
                   - {label: "Link Text", name: label, widget: string}
                   - label: "Link"

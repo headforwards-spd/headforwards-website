@@ -32,10 +32,15 @@ export const query = graphql`
                     link
                     linkText
                     imageSlider {
-                        text
                         title
+                        text
                         image {
                             publicURL
+                            childImageSharp {
+                                fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
                         }
                     }
                     articles {
@@ -50,7 +55,6 @@ export const query = graphql`
                         title
                         text
                     }
-                   
                     rightImage {
                         publicURL
                         childImageSharp {

@@ -1,6 +1,120 @@
 @import "../styles/variables";
 @import "../styles/mixins";
 
+.imageSlider {
+    padding: 5rem 0;
+    background: $blue-background;
+    background: linear-gradient(to right, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
+    position: relative;
+    margin-bottom: 25px;
+
+    :global(.slick-dots) {
+        position: absolute;
+        top: -5rem;
+        height: 5rem;
+        right: 0;
+        width: 10%;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        button:before {
+            font-size: 0.8rem;
+        }
+
+        :global(.slick-active) button:before, button:hover:before {
+            color: $orange;
+        }
+    }
+
+    :global(.slick-arrow) {
+
+        &:global(.slick-prev) {
+            left: unset;
+            right: 5%;
+            transform: rotate(180deg) translateY(50%);
+        }
+
+        &:global(.slick-next) {
+            left: unset;
+            right: 0;
+        }
+
+        &:before {
+            display: none;
+        }
+
+        path {
+            fill: $orange;
+        }
+
+        position: absolute;
+        top: calc(100% + 2.5rem);
+        width: 5%;
+        height: 5rem;
+
+        svg {
+            padding: 1.5rem 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    :global(.slick-slide) {
+        opacity: 0.98;
+        transition: opacity ease 250ms;
+        &:global(.slick-active) {
+            opacity: 1;
+        }
+    }
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: calc(10% - 1rem);
+    height: calc(90vh - 10rem);
+    max-height: calc(900px - 10rem;
+    background: #1c1e32;
+
+    section {
+        flex-shrink: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        h2 {
+            order: 1;
+            margin-top: 0;
+            color: #6E7087;
+            letter-spacing: 0.2em;
+        }
+        h1 {
+            order: 2;
+            color: $orange;
+            font-size: 28px;
+        }
+        p {
+            order: 3;
+            flex-grow: 1;
+            font-size: 16px;
+            color: #B8B8B8;
+        }
+        a {
+            order: 4;
+        }
+    }
+    .slideImage {
+        flex-shrink: 0;
+        flex-grow: 0;
+        height: calc(90vh - 10rem);
+        max-height: calc(900px - 10rem;
+        width: calc((90vh - 10rem) / .625);
+        max-width: calc(100% / 1.6);
+    }
+
+}
+
 .imageSliderBg {
     background-color: $blue-background;
     background-size: 100% 75%;
@@ -31,6 +145,17 @@
 .sliderClass {
 
     @include flexRow(row, nowrap, normal);
+
+    :global(.slick-arrow) {
+
+        &:before {
+            display: none;
+        }
+
+        path {
+            fill: $orange;
+        }
+    }
 
     height: 650px;
     background-color: $blue-background;

@@ -12,15 +12,16 @@ module.exports = {
         includePaths: ['src', 'node_modules'],
       },
     },
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: '/img/'
-        }
-
-      }
-    },
+      `gatsby-plugin-svgr`,
+    // {
+    //   resolve: 'gatsby-plugin-react-svg',
+    //   options: {
+    //     rule: {
+    //       include: '/img/'
+    //     }
+    //
+    //   }
+    // },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
