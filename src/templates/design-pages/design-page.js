@@ -49,6 +49,8 @@ export const query = graphql`
                         }
                         title
                         text
+                        link_text
+                        link
                     }
                    
                     rightImage {
