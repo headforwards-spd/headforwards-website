@@ -27,8 +27,8 @@ export default class ImageSlider extends Component {
             speed:          500,
             slidesToShow:   1,
             slidesToScroll: 1,
-            prevArrow:      <Arrow/>,
-            nextArrow:      <Arrow/>
+            // prevArrow:      <Arrow/>,
+            // nextArrow:      <Arrow/>
         };
 
         return (

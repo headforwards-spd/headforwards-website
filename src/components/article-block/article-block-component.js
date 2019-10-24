@@ -10,6 +10,7 @@ ArticleBlock.defaultProps = {
 
 function ArticleBlock({title, articles}) {
     const articleLength = articles.length === 3 ? threeCol : twoCol;
+    console.log(articles);
     return (
         <div className={`${flexRow} ${articleRow}`}>
             <h1>{title}</h1>
@@ -19,7 +20,8 @@ function ArticleBlock({title, articles}) {
                         <Image image={article.image}/>
                         <h1>{article.title}</h1>
                         <p>{article.text}</p>
-                        <a href="#">Discover more</a>
+                        {/*<Link to={}>Label</Link>*/}
+                        {/*<a href="#">Discover more</a>*/}
                     </section>
                 ))}
             </section>
