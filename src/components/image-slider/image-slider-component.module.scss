@@ -39,9 +39,9 @@
 
     :global(.slick-prev:before),
     :global(.slick-next:before) {
-        color: $orange;
-        font-family: FontAwesome;
-        opacity: unset;
+        //color: $orange;
+        //font-family: FontAwesome;
+        //opacity: unset;
     }
 
     > div {
@@ -58,6 +58,7 @@
                 @include flexRow;
 
                 align-items: center;
+
                 .flexCol {
                     &:first-of-type {
                         @include flexRow(column, nowrap, normal);
@@ -109,11 +110,11 @@
                 margin-right: 10px;
 
                 button:before {
-                    color: #D8D8D8;
+                    //color: #D8D8D8;
                 }
 
                 &:global(.slick-active) button:before {
-                    color: $orange;
+                    //color: $orange;
                 }
             }
 
@@ -121,20 +122,19 @@
 
         button {
 
-            background-color: transparent;
-            color: #D8D8D8;
+            //background-color: transparent;
+            //color: #D8D8D8;
+            //
 
-            &:first-of-type {
-                left: unset;
-            }
 
-            &:last-of-type {
-                right: 0;
-            }
-
-            bottom: 0;
-            //top: unset;
-            z-index: 100;
+            //
+            //&:last-of-type {
+            //    right: 0;
+            //}
+            //
+            //bottom: 0;
+            ////top: unset;
+            //z-index: 100;
         }
 
     }
@@ -162,7 +162,7 @@
 
         :global(.slick-prev:before),
         :global(.slick-next:before) {
-            font-size: 60px;
+            //font-size: 60px;
         }
 
         > div {
@@ -192,10 +192,10 @@
 
             button {
 
-                &:first-of-type {
-                    right: 100px;
-                }
-                top: unset;
+                //&:first-of-type {
+                //    right: 100px;
+                //}
+                //top: unset;
             }
         }
 

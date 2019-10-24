@@ -1,11 +1,13 @@
 import {Link}                                                       from '@reach/router';
 import PropTypes                                                    from 'prop-types';
 import React, {Component}                                           from 'react';
+import Arrow                                                        from '../../img/arrow-right.svg';
 import Slider                                                       from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import Image                                                        from '../image/image-component';
 import {flexCol, flexRow, sliderClass, hiddenDesktop, hiddenMobile} from './image-slider-component.module.scss';
+
 
 export default class ImageSlider extends Component {
 
@@ -18,14 +20,15 @@ export default class ImageSlider extends Component {
     };
 
     render() {
-        console.log(this.props);
         const {imageSlider} = this.props;
         const settings      = {
             dots:           true,
             infinite:       true,
             speed:          500,
             slidesToShow:   1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            prevArrow:      <Arrow/>,
+            nextArrow:      <Arrow/>
         };
 
         return (

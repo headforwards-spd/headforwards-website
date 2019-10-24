@@ -130,8 +130,13 @@
         align-items: center;
 
         .logo {
-            height: 65px;
+            background-image: url("/img/headforwards-full-logo-black.png");
+            background-size: contain;
             flex: 1;
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            height: 65px;
+
         }
     }
 
@@ -157,6 +162,12 @@
 
     &.is-active {
         background-color: $blue-background;
+
+        .flexRow {
+            .logo {
+                background-image: url("/img/headforwards-full-logo-white.png");
+            }
+        }
 
         .main-nav,
         .socials-section {
@@ -206,14 +217,6 @@
 @media screen and (min-width: $screen-md) {
     .navbar {
 
-        .flexRow {
-            .logo {
-                width: 50%;
-                height: auto;
-                flex: unset;
-            }
-        }
-
         &.is-active {
             .main-nav {
 
@@ -262,10 +265,21 @@
         padding: 45px 0;
         border-bottom: 1px solid #D8D8D8;
 
+        .flexRow {
+            flex-grow: 1;
+        }
+
         &.with-bg {
             background-color: transparent;
             color: white;
             border-bottom: none;
+
+            .flexRow {
+                .logo {
+                    background-image: url("/img/headforwards-full-logo-white.png");
+
+                }
+            }
 
             .main-nav {
                 > .main-list-item {

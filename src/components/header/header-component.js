@@ -8,8 +8,9 @@ export default function Header({title, paragraph, image, menu}) {
     const {publicURL} = image || {};
     const backgroundImg = publicURL ? navBackground : '';
     const hasBackgroundImg = !!publicURL;
+    const gradientStyle = hasBackgroundImg ? {backgroundImage: `linear-gradient(#00000080, #00000080), url(${publicURL})`} : null;
     return (
-        <header className={backgroundImg} style={{background: `linear-gradient(#00000080, #00000080), url(${publicURL}) center center/cover no-repeat`}}>
+        <header className={backgroundImg} style={gradientStyle}>
             <Navbar {...{menu, hasBackgroundImg}} />
             <div>
                 <h2 className={subTitle}>{paragraph}</h2>

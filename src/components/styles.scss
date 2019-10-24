@@ -1,8 +1,10 @@
+@import '~normalize.css';
 @import "styles/variables";
 @import "navbar/navbar-component.module";
 
 * {
     font-family: "FS Albert", Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 body {

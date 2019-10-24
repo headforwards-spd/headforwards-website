@@ -13,7 +13,7 @@ export const query = graphql`
                     image {
                         publicURL
                         childImageSharp {
-                            fluid(maxWidth: 1024, maxHeight: 640) {
+                            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
@@ -42,7 +42,7 @@ export const query = graphql`
                         image {
                             publicURL
                             childImageSharp {
-                                fluid(maxWidth: 1024, maxHeight: 640) {
+                                fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
                                     ...GatsbyImageSharpFluid
                                 }
                             }
@@ -54,7 +54,7 @@ export const query = graphql`
                     rightImage {
                         publicURL
                         childImageSharp {
-                            fluid(maxWidth: 1024, maxHeight: 640) {
+                            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
@@ -65,7 +65,7 @@ export const query = graphql`
                     leftImage {
                         publicURL
                         childImageSharp {
-                            fluid(maxWidth: 1024, maxHeight: 640) {
+                            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
@@ -73,7 +73,7 @@ export const query = graphql`
                     image {
                         publicURL
                         childImageSharp {
-                            fluid(maxWidth: 1024, maxHeight: 640) {
+                            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
