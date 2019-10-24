@@ -1,5 +1,6 @@
-import React                               from 'react';
-import Image                               from '../image/image-component';
+import {Link}                                  from '@reach/router';
+import React                                   from 'react';
+import Image                                   from '../image/image-component';
 import {flexRow, threeCol, twoCol, articleRow} from './article-block-component.module.scss';
 
 export default ArticleBlock;
@@ -19,7 +20,7 @@ function ArticleBlock({title, articles}) {
                         <Image image={article.image}/>
                         <h1>{article.title}</h1>
                         <p>{article.text}</p>
-                        <a href="#">Discover more</a>
+                        {!!article.link && <Link to={article.link}>{article.link_text}</Link>}
                     </section>
                 ))}
             </section>

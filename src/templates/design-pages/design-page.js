@@ -54,6 +54,8 @@ export const query = graphql`
                         }
                         title
                         text
+                        linkText
+                        link
                     }
                     rightImage {
                         publicURL

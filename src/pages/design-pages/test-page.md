@@ -93,6 +93,8 @@ components:
     title: Headforwards specialise in software development outsourcing...
   - articles:
       - image: /img/curlyhair.png
+        link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
+        link text: uoiuoiuoiuo
         text: >-
           Our business model is different to most other outsource software
           companies. We create dedicated teams for specific projects and never
@@ -114,6 +116,8 @@ components:
           companies. We create dedicated teams for specific projects and never
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
+        link: ""
+        linkText: ""
         title: Software development outsourcing...
       - image: /img/curlyhair.png
         text: >-

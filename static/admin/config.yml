@@ -136,6 +136,15 @@ collections:
                   - {label: "Article Image", name: "image", widget: image}
                   - {label: "Article Header", name: title, widget: string}
                   - {label: "Article Post", name: text, widget: text}
+                  - {label: "Article Link Text", name: linktext, widget: text, required: false}
+                  - label: "Link"
+                    name: link
+                    widget: relation
+                    collection: design-pages
+                    searchFields: ["title"]
+                    valueField: uuid
+                    displayFields: ["title"]
+                    required: false
           - label: "Image Slider"
             name: "imageSliderComponent"
             widget: object
