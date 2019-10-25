@@ -148,5 +148,6 @@ components:
     type: blockQuoteComponent
   - blogHeader: This is a header
     type: blogComponent
+    title: This is a new blog header
 ---
 
