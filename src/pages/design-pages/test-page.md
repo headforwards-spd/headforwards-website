@@ -146,10 +146,15 @@ components:
       got to look for a new competitive advantage in their software. And that’s
       always what we aim to deliver.
     type: blockQuoteComponent
+<<<<<<< HEAD
   - title: This is a header
     articles: 
         - title: This is the title
+=======
+  - articles:
+      - image: /img/blog-index.jpg
+        subtitle: this is a subtitle
+        title: ''
     type: blogComponent
     title: This is a new blog header
----
 
