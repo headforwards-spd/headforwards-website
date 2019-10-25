@@ -8,10 +8,10 @@ export default {
 }
 
 export const fullWidthImage = () => {
-  const fullWidthImageLabel = 'Full Width Image'
-  const accept = '.png, .jpg, .jpeg'
-  const defaultImgValue = []
-  const groupId = 'img-group'
+  const fullWidthImageLabel = 'Full Width Image';
+  const accept = '.png, .jpg, .jpeg';
+  const defaultImgValue = [];
+  const groupId = 'img-group';
 
   const fullWidthImg = files(
     fullWidthImageLabel,
@@ -28,11 +28,11 @@ export const fullWidthImage = () => {
 }
 
 export const twoImages = () => {
-  const leftImageLabel = 'Left Image'
-  const rightImageLabel = 'Right Image'
-  const accept = '.png, .jpg, .jpeg'
-  const defaultImgValue = []
-  const groupId = 'img-group'
+  const leftImageLabel = 'Left Image';
+  const rightImageLabel = 'Right Image';
+  const accept = '.png, .jpg, .jpeg';
+  const defaultImgValue = [];
+  const groupId = 'img-group';
 
   const leftImage = files(leftImageLabel, accept, defaultImgValue, groupId)
   const rightImage = files(rightImageLabel, accept, defaultImgValue, groupId)
@@ -46,5 +46,21 @@ export const twoImages = () => {
 }
 
 export const blogImages = () => {
-  return <BlogImages />
+
+  const blogImgLabel = 'Blog Image';
+  const accept = '.png, .jpg, .jpeg';
+  const defaultImgValue = [];
+  const groupId = 'blog-group';
+
+  const img = files(blogImgLabel, accept, defaultImgValue, groupId);
+
+  const blogProps = {
+    blogPost: [
+      {
+        img: img
+      }
+    ]
+  };
+
+  return <BlogImages {...blogProps} />
 }

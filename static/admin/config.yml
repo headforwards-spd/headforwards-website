@@ -145,6 +145,19 @@ collections:
                     valueField: uuid
                     displayFields: ["title"]
                     required: false
+          -   label: "Blog Component"
+              name: "blogComponent"
+              description: "Blog Post"
+              widget: object
+              fields:
+                - {label: "Blog Section Header", name: "blogHeader", widget: string}
+                -   label: "Blog Posts"
+                    name: "blogPost"
+                    widget: list
+                    fields:
+                      - {label: "Blog Image", name:  "image", widget: image, required: false}
+                      - {label: "Blog Title", name: "blogTitle", widget: string, required: false}
+                      - {label: "Blog Subtitle", name: "blogSubtitle", widget: text}
           - label: "Image Slider"
             name: "imageSliderComponent"
             widget: object
@@ -155,7 +168,7 @@ collections:
                 fields:
                   - {label: "Slider Image", name: "image", widget: image}
                   - {label: "Slider Header", name: title, widget: string}
-                  - {label: "Slider Subheader", name: subtitle, widget: string}
+                  - {label: "Slider Subheader", name: subtitle, widget: string, required: false}
                   - {label: "Slider Text", name: text, widget: text}
                   - {label: "Link Text", name: label, widget: string}
                   - label: "Link"

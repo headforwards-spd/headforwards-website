@@ -3,8 +3,6 @@ import {FontAwesomeIcon}                                                   from 
 import {Link}                                                              from 'gatsby';
 import PropTypes                                                           from 'prop-types';
 import React, {Component}                                                  from 'react';
-import Image                                                               from '../image/image-component';
-
 
 export default class Navbar extends Component {
     static propTypes = {

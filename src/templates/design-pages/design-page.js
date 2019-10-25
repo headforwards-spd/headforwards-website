@@ -57,6 +57,7 @@ export const query = graphql`
                         linkText
                         link
                     }
+            
                     rightImage {
                         publicURL
                         childImageSharp {
