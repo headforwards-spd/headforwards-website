@@ -150,14 +150,14 @@ collections:
               description: "Blog Post"
               widget: object
               fields:
-                - {label: "Blog Section Header", name: "blogHeader", widget: string}
+                - {label: "Blog Section Header", name: "title", widget: string}
                 -   label: "Blog Posts"
-                    name: "blogPost"
+                    name: "articles"
                     widget: list
                     fields:
                       - {label: "Blog Image", name:  "image", widget: image, required: false}
-                      - {label: "Blog Title", name: "blogTitle", widget: string, required: false}
-                      - {label: "Blog Subtitle", name: "blogSubtitle", widget: text}
+                      - {label: "Blog Title", name: "title", widget: string, required: false}
+                      - {label: "Blog Subtitle", name: "subtitle", widget: text}
           - label: "Image Slider"
             name: "imageSliderComponent"
             widget: object

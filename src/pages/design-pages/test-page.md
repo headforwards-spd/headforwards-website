@@ -146,7 +146,9 @@ components:
       got to look for a new competitive advantage in their software. And that’s
       always what we aim to deliver.
     type: blockQuoteComponent
-  - blogHeader: This is a header
+  - title: This is a header
+    articles: 
+        - title: This is the title
     type: blogComponent
     title: This is a new blog header
 ---

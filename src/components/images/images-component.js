@@ -18,13 +18,15 @@ export function TwoImages({leftImage, rightImage}) {
 }
 
 
-export function BlogImages({blogPost}) {
+export function BlogImages({title, articles}) {
 
     return (
         <div className={blogSection}>
             <div className={flexRow}>
-                <h1>From the Blog.</h1>
+                <h1>{title}</h1>
             </div>
+
+
         </div>
     );
 }

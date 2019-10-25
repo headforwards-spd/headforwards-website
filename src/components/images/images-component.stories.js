@@ -1,11 +1,13 @@
-import React from 'react'
+import React                                     from 'react'
 import { FullWidthImage, TwoImages, BlogImages } from './images-component'
-import { withKnobs, files } from '@storybook/addon-knobs'
+import {withKnobs, files, text}                  from '@storybook/addon-knobs'
 
 export default {
   decorators: [withKnobs],
   title: 'Images',
 }
+
+const faker = require('faker');
 
 export const fullWidthImage = () => {
   const fullWidthImageLabel = 'Full Width Image';
@@ -52,10 +54,16 @@ export const blogImages = () => {
   const defaultImgValue = [];
   const groupId = 'blog-group';
 
+  const headerLabel = 'Header';
+  const defaultHeader = faker.lorem.sentence();
+
+
   const img = files(blogImgLabel, accept, defaultImgValue, groupId);
+  const mainHeader = text(headerLabel, defaultHeader, groupId);
 
   const blogProps = {
-    blogPost: [
+    title: mainHeader,
+    articles: [
       {
         img: img
       }
