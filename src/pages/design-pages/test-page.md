@@ -151,6 +151,9 @@ components:
         subtitle: this is a subtitle
         text: blog title
         title: This is a title
+      - image: /img/chemex.jpg
+        text: This is the 2nd blog text
+        title: This is the 2nd title
     type: blogComponent
     title: This is a new blog header
 ---
