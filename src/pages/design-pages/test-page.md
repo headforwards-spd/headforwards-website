@@ -155,6 +155,6 @@ components:
         text: This is the 2nd blog text
         title: This is the 2nd title
     type: blogComponent
-    title: This is a new blog header
+    title: From the blog.
 ---
 
