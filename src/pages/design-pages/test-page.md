@@ -149,6 +149,7 @@ components:
   - articles:
       - image: /img/blog-index.jpg
         subtitle: this is a subtitle
+        text: blog title
         title: This is a title
     type: blogComponent
     title: This is a new blog header
