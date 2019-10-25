@@ -147,11 +147,11 @@ components:
       always what we aim to deliver.
     type: blockQuoteComponent
   - articles:
-      - image: /img/blog-index.jpg
+      - image: /img/curlyhair.png
         subtitle: this is a subtitle
         text: blog title
         title: This is a title
-      - image: /img/chemex.jpg
+      - image: /img/girl.png
         text: This is the 2nd blog text
         title: This is the 2nd title
     type: blogComponent
