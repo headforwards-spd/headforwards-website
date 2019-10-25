@@ -19,7 +19,7 @@ export function TwoImages({leftImage, rightImage}) {
 
 
 export function BlogImages({title, articles}) {
-
+console.log(articles);
     return (
         <div className={blogSection}>
             <div className={flexRow}>

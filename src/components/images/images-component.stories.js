@@ -65,7 +65,7 @@ export const blogImages = () => {
     title: mainHeader,
     articles: [
       {
-        img: img
+        image: img
       }
     ]
   };
