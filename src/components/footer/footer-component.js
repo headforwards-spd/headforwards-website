@@ -7,12 +7,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { ftLegal, ftMobbing, ftSocial } from './footer-component.module.scss'
+import styles from './footer-component.module.scss'
 
 export default function Footer() {
   return (
     <footer>
-      <section className={ftMobbing}>
+      <section className={styles.ftMobbing}>
         <h1>
           Want to know more about how we use mobbing to deliver quality
           software?{' '}
@@ -21,7 +21,7 @@ export default function Footer() {
           </span>
         </h1>
       </section>
-      <section className={ftSocial}>
+      <section className={styles.ftSocial}>
         <ul>
           <li>
             <a href="#">
@@ -51,7 +51,7 @@ export default function Footer() {
         </ul>
       </section>
 
-      <section className={ftLegal}>
+      <section className={styles.ftLegal}>
         <ul>
           <li>
             <a href="mailto:hello@headforwards.com">hello@headforwards.com</a>

@@ -1,6 +1,7 @@
 import React                                                     from 'react';
 import Image                                                     from '../image/image-component';
-import {blogSection, flexCol, flexRow, fullWidthImage, imageRow} from './images-component.module.scss';
+import {flexCol, fullWidthImage, imageRow} from './images-component.module.scss';
+import styles from './images-component.module.scss';
 
 export function FullWidthImage({image}) {
     return (
@@ -17,16 +18,23 @@ export function TwoImages({leftImage, rightImage}) {
     );
 }
 
-
 export function BlogImages({title, articles}) {
-console.log(articles);
     return (
-        <div className={blogSection}>
-            <div className={flexRow}>
+        <div className={styles.blogSection}>
                 <h1>{title}</h1>
+            <div className={styles.flexRow}>
+                {articles.map((post, key) => (
+                    <div className={flexCol} key={key}>
+                        <div>
+                            <div className={styles.imageContainer}>
+                                <Image image={post.image}/>
+                                <span className={styles.colouredBlock}></span>
+                            </div>
+                            <h2>{post.title}</h2>
+                        </div>
+                    </div>
+                ))}
             </div>
-
-
         </div>
     );
 }

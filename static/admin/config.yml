@@ -156,8 +156,7 @@ collections:
                     widget: list
                     fields:
                       - {label: "Blog Image", name:  "image", widget: image, required: false}
-                      - {label: "Blog Title", name: "title", widget: string, required: false}
-                      - {label: "Blog Subtitle", name: "subtitle", widget: text}
+                      - {label: "Blog Title", name: title, widget: string, required: false}
           - label: "Image Slider"
             name: "imageSliderComponent"
             widget: object

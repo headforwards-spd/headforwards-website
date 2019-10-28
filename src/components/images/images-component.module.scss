@@ -19,29 +19,50 @@ body {
         width: 100%;
 
         &:first-child {
-              margin-bottom: 5%;
-          }
+            margin-bottom: 5%;
+        }
     }
 }
 
 
 .blogSection {
-    .flexCol {
-        width: 100%;
-        img {
-            width: 100%;
-        }
 
-        h2 {
-            font-size: 20px;
-            margin: 10px 15px 20px;
-        }
-    }
+    @include flexRow(column, nowrap, space-between);
+
     h1 {
         color: $orange;
-        padding: 30px 15px;
+        padding: 0 1rem 1rem;
+        margin: 0;
+    }
+
+    .flexRow {
+
+        @include flexRow;
+
+        .flexCol {
+            flex-basis: 100%;
+            h2 {
+                margin: 10px 15px 20px;
+            }
+
+            .imageContainer {
+                margin-bottom: 30px;
+                position: relative;
+
+                .colouredBlock {
+                    position: absolute;
+                    right: 0;
+                    bottom: -20px;
+                    opacity: 0.6;
+                    border-width: 0 0 200px 200px;
+                    border-color: transparent transparent $orange;
+                    border-style: solid;
+                }
+            }
+        }
     }
 }
+
 
 @media (min-width: $screen-md) {
     .imageRow {
@@ -59,4 +80,21 @@ body {
 
 
     }
+
+    .blogSection {
+
+        h1 {
+            padding-left: 0;
+        }
+        .flexRow {
+            .flexCol {
+                flex-basis: 49%;
+
+                h2 {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
 }
