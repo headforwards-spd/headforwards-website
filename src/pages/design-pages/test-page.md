@@ -5,7 +5,7 @@ type: design
 title: Who we are.
 navbar:
   image: /img/curlyhair.png
-  paragraph: Who we are.
+  paragraph: This is the optional subtitle
 components:
   - imageSlider:
       - image: /img/girl.png

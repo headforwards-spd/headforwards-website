@@ -3,17 +3,7 @@ $paragraph_grey: #4A4A4A;
 $header_black: #1D1F32;
 $blue-background: #141122;
 
-$h1-large-font-size: 45px;
-$h1-small-font-size: 25px;
-
-$h2-small-font-size: 20px;
-
-$p-large-font-size: 22px;
-$p-small-font-size: 15px;
-
-$anchor-tag-font-size-small: 18px;
-
-$margin-bottom: 25px;
+$margin-bottom: 1.5rem;
 
 // Breakpoints
 
@@ -21,3 +11,11 @@ $screen-md: 620px;
 $screen-lg: 1024px;
 $screen-xl: 1200px;
 $screen-xxl: 1440px;
+
+$min_width: 320px;
+$max_width: 1440px;
+$min_font: 16px;
+$max_font: 20px;
+
+$mod_1: 1.2; // mobile
+$mod_2: 1.5; // desktop

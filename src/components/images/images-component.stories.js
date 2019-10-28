@@ -57,15 +57,25 @@ export const blogImages = () => {
   const headerLabel = 'Header';
   const defaultHeader = faker.lorem.sentence();
 
+  const secondHeaderLabel = 'Sub Heading';
+  const articleHeader = faker.lorem.sentence();
+
+  const articlePostLabel = 'Blog Post';
+  const articlePostText = faker.lorem.paragraph();
+
+
 
   const img = files(blogImgLabel, accept, defaultImgValue, groupId);
   const mainHeader = text(headerLabel, defaultHeader, groupId);
+  const secondHeader = text(secondHeaderLabel, articleHeader, groupId);
+  const articlePost = text(articlePostLabel, articlePostText, groupId)
 
   const blogProps = {
     title: mainHeader,
     articles: [
       {
-        image: img
+        image: img,
+        title: secondHeader,
       }
     ]
   };

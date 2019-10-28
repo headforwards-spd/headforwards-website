@@ -6,6 +6,17 @@
     background-size: cover;
     margin-bottom: 50px;
 
+    :global(.gatsby-image-wrapper:after) {
+        content: '';
+        height: 100%;
+        width: 100%;
+        display: block;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+
     @include flexRow(column, nowrap, normal);
 
 
@@ -15,21 +26,16 @@
         @include flexRow(column, nowrap, flex-end);
 
         h1 {
-            color: white;
             margin: 0;
-
-            &.smallTitle {
-                font-size: 90px;
-            }
-
-            &.largeTitle {
-                font-size: 110px;
-            }
+            color: black;
+            padding: 0 1rem;
+            font-size: 5.625rem;
         }
 
         .subTitle {
-            font-size: 35px;
             color: $orange;
+            display: none;
+            font-size: 2.25rem;
         }
     }
 }
@@ -38,9 +44,30 @@
 @media(min-width: $screen-md) {
     .navBackground {
         height: 100vh;
+        position: relative;
+
+        :global(.gatsby-image-wrapper) {
+            position: absolute !important;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+
+            &:after {
+                background-image: linear-gradient(#00000080, #00000080);
+            }
+        }
 
         > div {
             padding: 0 0 100px 100px;
+
+            h1 {
+                color: white;
+                padding: 0;
+            }
+
+            .subTitle {
+                display: block;
+            }
 
         }
     }

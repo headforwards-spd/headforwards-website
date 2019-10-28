@@ -3,7 +3,7 @@
 
 .hamburger {
     background-color: transparent;
-    padding: 15px 15px;
+    padding: 1rem;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -120,8 +120,7 @@
 
 
 .navbar {
-    font-size: 18px;
-    padding: 15px;
+    padding: 1rem;
     background-color: white;
 
     .flexRow {
@@ -155,7 +154,7 @@
             .nav-links {
                 text-decoration: none;
                 color: white;
-                font-size: 23px;
+                font-size: 1.5rem;
             }
         }
     }
@@ -184,16 +183,15 @@
             span {
                 color: $orange;
                 text-transform: uppercase;
-                font-size: 13px;
             }
 
             &.phone-number {
                 padding: 0;
+                padding-bottom: 1rem;
 
                 span {
                     color: white;
                     font-weight: bold;
-                    font-size: 17px;
                 }
             }
         }
@@ -204,6 +202,7 @@
 
             li {
                 padding-right: 20px;
+                font-size: 1.5rem;
 
                 a {
                     color: $paragraph_grey;
@@ -236,11 +235,9 @@
 
                     > a {
                         border-bottom: 1px solid #383F51;
-                        font-size: 18px;
 
                         + ul {
                             a {
-                                font-size: 14px;
                                 color: #8D9FAE;
                             }
                         }
@@ -318,12 +315,10 @@
                 .nav-links {
                     color: black;
                     margin-left: 40px;
-                    font-size: 25px;
                 }
 
                 > ul {
                     padding: 20px;
-                    font-size: 24px;
                     background-color: white;
                     -webkit-box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.5);
                     -moz-box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.5);
@@ -332,7 +327,7 @@
                     > li {
                         display: block;
                         position: relative;
-                        padding-bottom: 15px;
+                        padding-bottom: 1rem;
                     }
                 }
 
