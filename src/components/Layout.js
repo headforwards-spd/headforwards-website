@@ -6,9 +6,9 @@ import './styles.scss';
 
 const Layout = ({children, header}) => {
 
-    const {data} = useStaticQuery(graphql`
+    const {menu_data, company_data} = useStaticQuery(graphql`
         query {
-            data: dataYaml(title: {eq: "main-menu"}) {
+            menu_data: dataYaml(title: {eq: "main-menu"}) {
                 menu {
                     children {
                         label
@@ -18,9 +18,15 @@ const Layout = ({children, header}) => {
                     link
                 }
             }
+            company_data: dataYaml(title: {eq: "company-info"}) {
+                company_info {
+                        email
+                        address
+                        number
+                    }
+            }
         }
   `);
-    const {menu} = data || [];
 
     const {title, paragraph, image} = header || {};
     return (
@@ -29,10 +35,11 @@ const Layout = ({children, header}) => {
                 title,
                 paragraph,
                 image,
-                menu
+                menu_data
             }} />
             {children}
-            <Footer />
+            <Footer {...company_data} />
+
         </Fragment>
     );
 };

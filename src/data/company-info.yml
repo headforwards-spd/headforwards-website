@@ -1,4 +1,7 @@
-email: hello@headforwards.com
-address: ''
-number: ''
-facebookURL: 'https://www.facebook.com/headforwards/'
+
+title: company-info
+
+company_info:
+    email: emma.cheney@ymail.com
+    address: ''
+    number: ''

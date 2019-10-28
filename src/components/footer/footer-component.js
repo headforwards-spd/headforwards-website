@@ -9,9 +9,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import styles from './footer-component.module.scss'
 
-export default function Footer() {
+export default function Footer({company_info}) {
 
-
+  const {email, facebookURL} = company_info;
+  console.log(facebookURL);
   return (
     <footer>
       <section className={styles.ftMobbing}>
@@ -31,7 +32,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href={facebookURL}>
               <FontAwesomeIcon icon={faFacebookSquare} />
             </a>
           </li>
@@ -56,7 +57,7 @@ export default function Footer() {
       <section className={styles.ftLegal}>
         <ul>
           <li>
-            <a href="mailto:hello@headforwards.com">hello@headforwards.com</a>
+            <a href={`mailto:${email}`}>{email}</a>
           </li>
           <li>
             <span>//</span>
