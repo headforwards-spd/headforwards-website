@@ -31,6 +31,9 @@ const Layout = ({children, header}) => {
             }
         }
   `);
+    const {menu} = menu_data || [];
+    const {company_info} = company_data || [];
+
 
     const {title, paragraph, image} = header || {};
     return (
@@ -39,10 +42,11 @@ const Layout = ({children, header}) => {
                 title,
                 paragraph,
                 image,
-                menu_data
+                menu,
+                company_info
             }} />
             {children}
-            <Footer {...company_data} />
+            <Footer {...{company_info}} />
 
         </Fragment>
     );

@@ -1,27 +1,7 @@
 @import "../styles/variables";
 @import "../styles/mixins";
 
-/* Footer social */
-.ftSocial {
 
-    ul {
-        @include flexRow(row, nowrap, center);
-
-        li {
-            margin: 0.5rem;
-            font-size: 3rem;
-
-            a {
-                text-decoration: none;
-                color: #d7d7d6;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
 
 /* Footer legal */
 .ftLegal {
@@ -84,11 +64,6 @@
 }
 
 @media(min-width: $screen-md) {
-
-    .ftSocial {
-        padding-top: 1.25rem;
-    }
-
     .ftMobbing {
         h1 {
             margin: 4rem;

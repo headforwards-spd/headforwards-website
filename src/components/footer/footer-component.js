@@ -1,16 +1,10 @@
-import {
-  faFacebookSquare,
-  faInstagram,
-  faLinkedinIn,
-  faTwitter,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
-import styles from './footer-component.module.scss'
+import React      from 'react'
+import styles     from './footer-component.module.scss'
+import { Socials } from '../socials/socials-component';
 
 export default function Footer({company_info}) {
-  const {email, facebookURL, twitterURL, instaURL, youtubeURL, linkedinURL} = company_info;
+  const {email} = company_info;
+  const isFooter = true;
   return (
     <footer>
       <section className={styles.ftMobbing}>
@@ -22,35 +16,7 @@ export default function Footer({company_info}) {
           </span>
         </h1>
       </section>
-      <section className={styles.ftSocial}>
-        <ul>
-          <li>
-            <a href={twitterURL}>
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </li>
-          <li>
-            <a href={facebookURL}>
-              <FontAwesomeIcon icon={faFacebookSquare} />
-            </a>
-          </li>
-          <li>
-            <a href={instaURL}>
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </li>
-          <li>
-            <a href={linkedinURL}>
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
-          </li>
-          <li>
-            <a href={youtubeURL}>
-              <FontAwesomeIcon icon={faYoutube} />
-            </a>
-          </li>
-        </ul>
-      </section>
+      <Socials {...{...company_info, isFooter}} />
 
       <section className={styles.ftLegal}>
         <ul>

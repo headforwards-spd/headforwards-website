@@ -174,42 +174,6 @@
         }
     }
 
-
-    .socials-section {
-        display: none;
-
-        .socials {
-
-            span {
-                color: $orange;
-                text-transform: uppercase;
-            }
-
-            &.phone-number {
-                padding: 0;
-                padding-bottom: 1rem;
-
-                span {
-                    color: white;
-                    font-weight: bold;
-                }
-            }
-        }
-
-        .socials-list {
-
-            @include flexRow(row, nowrap, unset);
-
-            li {
-                padding-right: 20px;
-                font-size: 1.5rem;
-
-                a {
-                    color: $paragraph_grey;
-                }
-            }
-        }
-    }
 }
 
 
