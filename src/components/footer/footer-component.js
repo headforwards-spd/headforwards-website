@@ -10,9 +10,7 @@ import React from 'react'
 import styles from './footer-component.module.scss'
 
 export default function Footer({company_info}) {
-
-  const {email, facebookURL} = company_info;
-  console.log(facebookURL);
+  const {email, facebookURL, twitterURL, instaURL, youtubeURL, linkedinURL} = company_info;
   return (
     <footer>
       <section className={styles.ftMobbing}>
@@ -27,7 +25,7 @@ export default function Footer({company_info}) {
       <section className={styles.ftSocial}>
         <ul>
           <li>
-            <a href="#">
+            <a href={twitterURL}>
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
@@ -37,17 +35,17 @@ export default function Footer({company_info}) {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href={instaURL}>
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href={linkedinURL}>
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href={youtubeURL}>
               <FontAwesomeIcon icon={faYoutube} />
             </a>
           </li>

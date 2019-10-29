@@ -23,6 +23,10 @@ const Layout = ({children, header}) => {
                         email
                         address
                         number
+                        facebookURL
+                        twitterURL
+                        instaURL
+                        youtubeURL
                     }
             }
         }
