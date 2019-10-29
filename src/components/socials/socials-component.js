@@ -1,12 +1,12 @@
 import {faFacebookSquare, faInstagram, faLinkedinIn, faTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon}                                                   from '@fortawesome/react-fontawesome';
 import React                                                               from 'react';
-import { footerSection, headerSection }                                                    from './socials-component.module.scss';
+import styles                                                    from './socials-component.module.scss';
 
-export function Socials({twitterURL, facebookURL, instaURL, linkedinURL, youtubeURL, isFooter = false}) {
-    const footerClass = isFooter === true ? footerSection : headerSection;
+export function Socials({active, twitterURL, facebookURL, instaURL, linkedinURL, youtubeURL, isFooter = false}) {
+    const footerClass = isFooter ? styles.footerSection : styles.headerSection;
     return (
-        <ul className={footerClass}>
+        <ul className={`${active} ${footerClass}`}>
             <li>
                 <a href={twitterURL}>
                     <FontAwesomeIcon icon={faTwitter}/>

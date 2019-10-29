@@ -1,134 +1,16 @@
 @import '../styles/variables';
 @import '../styles/mixins';
 
-.hamburger {
-    background-color: transparent;
-    padding: 1rem;
-    display: inline-block;
-    cursor: pointer;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: $orange;
-    text-transform: none;
-    border: 0;
-    margin: 0;
-    overflow: visible;
-
-    &:focus {
-        outline: none;
-    }
-
-    &.is-active {
-
-        .hamburger-inner {
-            background-color: $orange;
-
-            &::before {
-                background-color: $orange;
-            }
-
-            &::after {
-                background-color: $orange;
-            }
-        }
-    }
-
-    .hamburger-box {
-        width: 40px;
-        height: 24px;
-        display: inline-block;
-        position: relative;
-    }
-}
-
-.hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: -2px;
-    width: 40px;
-    height: 4px;
-    background-color: $orange;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
-
-    &::before {
-        width: 40px;
-        height: 4px;
-        background-color: $orange;
-        border-radius: 4px;
-        position: absolute;
-        transition-property: transform;
-        transition-duration: 0.15s;
-        transition-timing-function: ease;
-        content: "";
-        display: block;
-        top: -10px;
-    }
-
-    &::after {
-        width: 40px;
-        height: 4px;
-        background-color: $orange;
-        border-radius: 4px;
-        position: absolute;
-        transition-property: transform;
-        transition-duration: 0.15s;
-        transition-timing-function: ease;
-        content: "";
-        display: block;
-        bottom: -10px;
-    }
-}
-
-.hamburger--slider {
-
-    &.is-active {
-        .hamburger-inner {
-            transform: translate3d(0, 10px, 0) rotate(45deg);
-
-            &::before {
-                transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
-                opacity: 0;
-            }
-
-            &::after {
-                transform: translate3d(0, -20px, 0) rotate(-90deg);
-            }
-        }
-    }
-
-    .hamburger-inner {
-        top: 2px;
-
-        &::before {
-            top: 10px;
-            transition-property: transform, opacity;
-            transition-timing-function: ease;
-            transition-duration: 0.15s;
-        }
-
-        &::after {
-            top: 20px;
-        }
-    }
-}
-
-
 .navbar {
     padding: 1rem;
     background-color: white;
 
-    .flexRow {
+    :global(.flexRow) {
         @include flexRow;
         margin-bottom: 0 !important;
         align-items: center;
 
-        .logo {
+        :global(.logo) {
             background-image: url("/img/headforwards-full-logo-black.png");
             background-size: contain;
             flex: 1;
@@ -139,11 +21,11 @@
         }
     }
 
-    .main-nav {
+    :global(.main-nav) {
         list-style-type: none;
         display: none;
 
-        .main-list-item {
+        :global(.main-list-item) {
             padding: 9px 0;
             border-top: 1px solid #383F51;
 
@@ -151,7 +33,7 @@
                 display: none;
             }
 
-            .nav-links {
+            :global(.nav-links) {
                 text-decoration: none;
                 color: white;
                 font-size: 1.5rem;
@@ -159,17 +41,21 @@
         }
     }
 
-    &.is-active {
+    :global(.socials-section) {
+        display: none;
+    }
+
+    &:global(.is-active) {
         background-color: $blue-background;
 
-        .flexRow {
-            .logo {
+        :global(.flexRow) {
+            :global(.logo) {
                 background-image: url("/img/headforwards-full-logo-white.png");
             }
         }
 
-        .main-nav,
-        .socials-section {
+        :global(.main-nav),
+        :global(.socials-section) {
             display: block;
         }
     }
@@ -177,43 +63,38 @@
 }
 
 
-@media screen and (min-width: $screen-md) {
-    .navbar {
-
-        &.is-active {
-            .main-nav {
-
-                @include flexRow;
-
-                .main-list-item {
-                    border-top: none;
-
-                    ul {
-                        display: block;
-                    }
-
-                }
-
-                > .main-list-item {
-                    border-top: none;
-
-                    > a {
-                        border-bottom: 1px solid #383F51;
-
-                        + ul {
-                            a {
-                                color: #8D9FAE;
-                            }
-                        }
-                    }
-                }
-            }
-
-        }
-
-    }
-
-}
+//@media screen and (min-width: $screen-md) {
+//    .navbar {
+//
+//            :global(.main-nav) {
+//                @include flexRow;
+//
+//                :global(.main-list-item) {
+//                    border-top: none;
+//
+//                    ul {
+//                        display: block;
+//                    }
+//
+//                }
+//
+//                > :global(.main-list-item) {
+//                    border-top: none;
+//
+//                    > a {
+//                        border-bottom: 1px solid #383F51;
+//
+//                        + ul {
+//                            a {
+//                                color: #8D9FAE;
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//
+//    }
+//}
 
 
 @media screen and (min-width: $screen-lg) {
@@ -226,25 +107,25 @@
         padding: 45px 0;
         border-bottom: 1px solid #D8D8D8;
 
-        .flexRow {
+        :global(.flexRow) {
             flex-grow: 1;
         }
 
-        &.with-bg {
+        &:global(.with-bg) {
             background-color: transparent;
             color: white;
             border-bottom: none;
 
-            .flexRow {
-                .logo {
+            :global(.flexRow) {
+                :global(.logo) {
                     background-image: url("/img/headforwards-full-logo-white.png");
 
                 }
             }
 
-            .main-nav {
-                > .main-list-item {
-                    > .nav-links {
+            :global(.main-nav) {
+                > :global(.main-list-item) {
+                    > :global(.nav-links) {
                         color: white;
 
                         &:hover {
@@ -256,17 +137,13 @@
 
         }
 
-        .hamburger {
-            display: none;
-        }
-
-        .main-nav {
+        :global(.main-nav) {
             display: flex;
             margin-right: 30px;
             flex-direction: row;
             justify-content: flex-end;
 
-            .main-list-item {
+            :global(.main-list-item) {
                 display: block;
                 position: relative;
                 border-top: none;
@@ -276,7 +153,7 @@
                 }
 
 
-                .nav-links {
+                :global(.nav-links) {
                     color: black;
                     margin-left: 40px;
                 }
@@ -284,8 +161,6 @@
                 > ul {
                     padding: 20px;
                     background-color: white;
-                    -webkit-box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.5);
-                    -moz-box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.5);
                     box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.5);
 
                     > li {

@@ -2,6 +2,8 @@ import {Link}             from 'gatsby';
 import PropTypes          from 'prop-types';
 import React, {Component} from 'react';
 import {Socials}          from '../socials/socials-component';
+import Hamburger          from './hamburger-component'
+import styles             from './navbar-component.module.scss';
 
 export default class Navbar extends Component {
     static propTypes = {
@@ -44,26 +46,20 @@ export default class Navbar extends Component {
 export function Menu({menuClick, hasBackgroundImg, active, menu, company_info}) {
     const backgroundImg = hasBackgroundImg ? 'with-bg' : 'without-bg';
     return (
-        <nav className={`${active} navbar ${backgroundImg}`}>
+        <nav className={`${active} ${styles.navbar} ${backgroundImg}`}>
             <div className="flexRow">
                 <Link to="/" className="logo"></Link>
-                <button onClick={menuClick} className={`${active} hamburger hamburger--slider`} type="button">
-                          <span className="hamburger-box">
-                            <span className="hamburger-inner"></span>
-                          </span>
-                </button>
+                <Hamburger {...{active, onClick:menuClick}}/>
             </div>
             <ul className={`${active} main-nav`} id="js-menu">
                 {menu.map((item, key) => <MenuItem key={key} {...{item}} />)}
             </ul>
-            <ul className="socials-section">
+            <ul className='socials-section'>
                 <li className="socials"><span>Call us.</span></li>
                 <li className="socials phone-number"><span>+44 (0)1209 311151</span></li>
                 <li className="socials"><span>Follow us.</span></li>
-                <Socials {...{
-                    ...company_info
-                }} />
             </ul>
+            <Socials {...{...company_info, active}} />
         </nav>
     );
 

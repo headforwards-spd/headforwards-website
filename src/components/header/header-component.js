@@ -12,7 +12,7 @@ export default function Header({title, paragraph, image, menu}) {
     return (
         <header className={backgroundImg}>
             <Navbar {...{menu, hasBackgroundImg}} />
-            <Image image={image} />
+            {!!image && <Image image={image} />}
             <div>
                 <h2 className={subTitle}>{paragraph}</h2>
                 <h1 className={titleFontSize}>{title}</h1>

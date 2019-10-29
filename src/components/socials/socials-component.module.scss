@@ -21,10 +21,8 @@
 }
 
 .headerSection {
-    display: none;
-
-
     @include flexRow(row, nowrap, unset);
+    display: none;
 
     li {
         padding-right: 20px;
@@ -33,6 +31,14 @@
         a {
             color: $paragraph_grey;
         }
+    }
+
+    :global(.socials-section) {
+        display: none;
+    }
+
+    &:global(.is-active) {
+        display: block;
     }
 }
 

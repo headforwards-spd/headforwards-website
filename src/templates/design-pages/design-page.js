@@ -68,6 +68,11 @@ export const query = graphql`
                     }
                     profilePic {
                         publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
                     }
                     leftImage {
                         publicURL

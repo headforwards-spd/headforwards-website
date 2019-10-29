@@ -10,7 +10,7 @@ function Quoteblock({ jobTitle, name, profilePic, quote }) {
       <blockquote>{quote}</blockquote>
       <div className={styles.flexRow}>
         <div className={styles.imageCropper}>
-          <Image className={styles.profilePicImage} image={profilePic} />
+          <Image className={styles.profilePicImage} image={profilePic} ratio='100%'/>
         </div>
         <div>
           <h1>{name}</h1>
