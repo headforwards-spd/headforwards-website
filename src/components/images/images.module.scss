@@ -7,7 +7,6 @@ body {
 
 .fullWidthImage {
     width: 100%;
-    height: auto;
     margin-bottom: $margin-bottom;
 }
 
@@ -41,7 +40,7 @@ body {
 
         .flexCol {
             flex-basis: 100%;
-            h2 {
+            h1 {
                 margin: 10px 15px 20px;
             }
 
@@ -63,6 +62,46 @@ body {
     }
 }
 
+.article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &:after {
+        position: absolute;
+        content: '';
+        right: -0.5rem;
+        border-radius: 0 0 0.5rem 0;
+        width: 37.5%;
+        padding-bottom: 37.5%;
+        background: linear-gradient(315deg, #FFB800 50%, transparent 50%);
+        opacity: 0.6;
+        margin-top: calc(62.5% + 0.5rem);
+        transform: translateY(-100%);
+    }
+    .image {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+    h1 {
+        order: 2;
+        flex-grow: 1;
+        @include headingFontMedium;
+    }
+
+    @media (min-width: $screen-md) {
+        &.twoColumns {
+            width: calc((100% - 1rem) / 2);
+        }
+        &.threeColumns {
+            width: calc((100% - 2rem) / 3);
+
+            h1 {
+                @include headingFontSmall;
+            }
+        }
+    }
+}
 
 @media (min-width: $screen-md) {
     .imageRow {

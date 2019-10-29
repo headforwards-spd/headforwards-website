@@ -1,7 +1,13 @@
-import React from 'react'
+import PropTypes   from 'prop-types'
+import React       from 'react'
 import GatsbyImage from 'gatsby-image';
-import styles from './image-component.module.scss';
+import styles      from './image-component.module.scss';
 export default Image
+
+export const ImagePropsType = PropTypes.shape({
+                                             publicURL: PropTypes.string.isRequired,
+                                             ratio: PropTypes.string
+                                         });
 
 Image.defaultProps = {
   image: null,
@@ -14,11 +20,9 @@ function Image({ image, alt, ratio, className='', ...props }) {
   const { childImageSharp = null } = image || {};
   if(childImageSharp) {
     const {fluid} = childImageSharp;
-    return <GatsbyImage fluid = {fluid} durationFadeIn={5000} className={className} {...props}/>;
+    return <GatsbyImage fluid = {fluid} durationFadeIn={1000} className={className} {...props}/>;
   }
   const src = image && image.hasOwnProperty('publicURL') ? image.publicURL : image;
-
-  console.log({className});
 
   return (
       <div className={`${styles.imageWrapper} ${className}`}>

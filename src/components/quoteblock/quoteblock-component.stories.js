@@ -1,5 +1,4 @@
 import React from 'react'
-import img from '../../img/craig.jpg'
 import Quoteblock from './quoteblock-component'
 import { withKnobs, text, files } from '@storybook/addon-knobs'
 
@@ -17,7 +16,7 @@ const defaultQuote = faker.lorem.paragraph();
 
 const imageLabel = 'Profile Picture';
 const accept = '.png, .jpg, .jpeg';
-const defaultImgValue = [img];
+const defaultImgValue = faker.image.avatar();
 
 export default {
   decorators: [withKnobs],
@@ -34,7 +33,9 @@ export const quoteBlock = () => {
     name,
     jobTitle,
     quote,
-    profilePic,
+    profilePic: {
+      publicURL: profilePic,
+    },
   }
 
   return <Quoteblock {...props} />

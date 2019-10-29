@@ -52,7 +52,7 @@
 .ftMobbing {
 
     @include flexRow(row, nowrap, normal);
-    background-image: url('../../img/footer-bg.png');
+    background-image: url('/img/footer-bg.png');
 
     h1 {
         padding: 0 1rem;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer } from './footer-component'
+import Footer from './footer-component'
 
 const faker = require('faker')
 export default {
