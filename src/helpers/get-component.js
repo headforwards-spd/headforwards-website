@@ -3,7 +3,7 @@ import ArticleBlock   from '../components/article-block/article-block-component'
 import {HeaderText}   from '../components/header-text/header-text-component';
 import ImageHeader    from '../components/image-header-text-link/image-header-text-link-component';
 import ImageSlider    from '../components/image-slider/image-slider-component';
-import BlogImages     from '../components/images/blog-images.component'
+import BlogImages     from '../components/images/blog/blog-images.component'
 import FullWidthImage from '../components/images/full-width-image.component'
 import TwoImages      from '../components/images/two-images.component'
 import Quoteblock     from '../components/quoteblock/quoteblock-component';

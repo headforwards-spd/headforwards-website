@@ -3,7 +3,7 @@ import uploadcare from 'netlify-cms-media-library-uploadcare'
 import cloudinary from 'netlify-cms-media-library-cloudinary'
 
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
-import styles from '!css-loader!sass-loader!../components/styles.scss'
+import styles from '!css-loader!sass-loader!../scss/main.scss'
 
 import UuidControl from './widgets/uuid-control'
 

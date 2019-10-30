@@ -1,12 +1,12 @@
-import React                    from 'react'
-import BlogImages               from './blog-images.component'
-import FullWidthImage           from './full-width-image.component'
+import React                            from 'react'
+import FullWidthImage                   from './full-width-image.component'
 import {withKnobs, files, text, object} from '@storybook/addon-knobs'
-import TwoImages                from './two-images.component'
+import generateImage                    from './lib/generate-image'
+import TwoImages                        from './two-images.component'
 
 export default {
   decorators: [withKnobs],
-  title: 'Images',
+  title: 'Page Components/Images',
 }
 
 const faker = require('faker');
@@ -50,44 +50,4 @@ export const twoImages = () => {
   return <TwoImages {...twoImgProps} />
 }
 
-export const blogImages = () => {
-
-  const groupId = 'blog-group';
-
-  const headerLabel = 'Header';
-  const defaultHeader = faker.lorem.words();
-
-  const title = text(headerLabel, defaultHeader, groupId);
-  const articles = object('Articles', generateArticles(), groupId);
-
-  const blogProps = {
-    title,
-    articles
-  };
-
-  return <BlogImages {...blogProps} />
-}
-
-function generateImage() {
-  return {publicURL: `${faker.image.imageUrl(1024,640)}?${faker.random.number()}`};
-}
-
-function generateArticles() {
-
-  const count = faker.random.number({min:2,max:3});
-  const articles = [];
-
-  for (let i=0; i<count; i+=1) {
-    articles.push(generateArticle());
-  }
-
-  return articles;
-}
-
-function generateArticle() {
-
-  return {
-    title: faker.lorem.words(),
-    image: generateImage(),
-  }
-}
+export {default as BlogImages} from './blog/blog-images-story';

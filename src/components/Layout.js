@@ -2,7 +2,7 @@ import {graphql, useStaticQuery} from 'gatsby';
 import React, {Fragment}         from 'react';
 import Footer                    from './footer/footer-component';
 import Header                    from './header/header-component';
-import './styles.scss';
+import '../scss/main.scss';
 
 const Layout = ({children, header}) => {
 
