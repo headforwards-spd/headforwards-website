@@ -1,9 +1,9 @@
-import React                     from 'react'
-import PropTypes                 from 'prop-types'
-import {Link} from 'gatsby';
-import Image, { ImagePropsType } from '../../image/image-component'
-import { ReactComponent as Arrow } from '../../../img/arrow-right.svg';
-import styles                    from './blog-images.module.scss'
+import React                       from 'react'
+import PropTypes                   from 'prop-types'
+import {Link}                      from 'gatsby';
+import Image, { ImagePropsType }   from '../../image/image-component'
+import { ReactComponent as Arrow } from '../../../../static/img/hf-arrow.svg';
+import styles                      from './blog-images.module.scss'
 
 export default Article;
 export const ArticlePropType = {

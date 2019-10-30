@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import getComponent from '../../../helpers/get-component'
+import getComponent      from '../../../lib/get-component'
 
 export default DesignPageTemplate
 

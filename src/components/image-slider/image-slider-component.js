@@ -1,12 +1,12 @@
-import PropTypes                                                    from 'prop-types';
-import React, {Component}                                           from 'react';
-import { ReactComponent as Arrow }                                                        from '../../img/arrow-right.svg';
-import Slider                                                       from 'react-slick';
+import PropTypes                   from 'prop-types';
+import React, {Component}          from 'react';
+import { ReactComponent as Arrow } from '../../../static/img/hf-arrow.svg';
+import Slider                      from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import styles from './image-slider-component.module.scss';
+import styles                      from './image-slider-component.module.scss';
 import Slide
-                                                                                          from './slide-component'
+                                   from './slide-component'
 
 
 export default class ImageSlider extends Component {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Quoteblock from './quoteblock-component'
+import Quote from './quote.component'
 import { withKnobs, text, files } from '@storybook/addon-knobs'
 
 const faker = require('faker');
@@ -38,5 +38,5 @@ export const quoteBlock = () => {
     },
   }
 
-  return <Quoteblock {...props} />
+  return <Quote {...props} />
 }

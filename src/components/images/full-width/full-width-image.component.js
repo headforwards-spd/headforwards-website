@@ -1,6 +1,6 @@
 import React                     from 'react'
-import Image, { ImagePropsType } from '../image/image-component'
-import styles                    from './images.module.scss';
+import Image, { ImagePropsType } from '../../image/image-component'
+import styles                    from './full-width-image.module.scss';
 
 export default FullWidthImage;
 

@@ -4,9 +4,9 @@ import {HeaderText}   from '../components/header-text/header-text-component';
 import ImageHeader    from '../components/image-header-text-link/image-header-text-link-component';
 import ImageSlider    from '../components/image-slider/image-slider-component';
 import BlogImages     from '../components/images/blog/blog-images.component'
-import FullWidthImage from '../components/images/full-width-image.component'
-import TwoImages      from '../components/images/two-images.component'
-import Quoteblock     from '../components/quoteblock/quoteblock-component';
+import FullWidthImage from '../components/images/full-width/full-width-image.component'
+import TwoImages      from '../components/images/two/two-images.component'
+import Quote     from '../components/quoteblock/quote.component';
 
 export default ({type, ...component}) => {
     switch (type) {
@@ -21,7 +21,7 @@ export default ({type, ...component}) => {
         case 'blogComponent':
             return <BlogImages {...component} />;
         case 'blockQuoteComponent':
-            return <Quoteblock {...component} />;
+            return <Quote {...component} />;
         case 'imageWithTextComponent':
             return <ImageHeader {...component} />;
         case 'articleBlockComponent':

@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from '../image/image-component'
-import styles from './quoteblock-component.module.scss'
+import styles from './quote.module.scss'
 
-export default Quoteblock
+export default Quote
 
-function Quoteblock({ jobTitle, name, profilePic, quote }) {
+function Quote({ jobTitle, name, profilePic, quote }) {
   return (
     <div className={styles.blockquoteContainer}>
       <blockquote>{quote}</blockquote>

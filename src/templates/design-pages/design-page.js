@@ -18,6 +18,14 @@ export const query = graphql`
                             }
                         }
                     }
+                    imageSquare: image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
                     paragraph
                 }
                 components {
@@ -42,12 +50,28 @@ export const query = graphql`
                                 }
                             }
                         }
+                        imageSquare: image {
+                            publicURL
+                            childImageSharp {
+                                fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
                     articles {
                         image {
                             publicURL
                             childImageSharp {
                                 fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                        imageSquare: image {
+                            publicURL
+                            childImageSharp {
+                                fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
                                     ...GatsbyImageSharpFluid
                                 }
                             }
@@ -62,6 +86,14 @@ export const query = graphql`
                         publicURL
                         childImageSharp {
                             fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    rightImageSquare: image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
@@ -82,10 +114,26 @@ export const query = graphql`
                             }
                         }
                     }
+                    leftImageSquare: image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
                     image {
                         publicURL
                         childImageSharp {
                             fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    imageSquare: image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
                                 ...GatsbyImageSharpFluid
                             }
                         }

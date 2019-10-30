@@ -1,0 +1,97 @@
+@import "../../../scss/variables";
+
+.twoImages {
+
+    position: relative;
+    margin: 0 0 $gutter-medium;
+    padding: $gutter-large 0;
+
+    > div {
+
+        margin: 0 0 $gutter-small;
+        overflow: visible !important;
+        position: relative;
+
+        &:first-child {
+            margin-right: $gutter-medium;
+            &:before {
+                position: absolute;
+                content: url('/img/hf-arrow.orange.svg');
+                width: 30%;
+                height: 100%;
+                z-index: 1;
+                right: $gutter-medium;
+                top: -37.5%;
+            }
+        }
+
+        &:last-child {
+            margin-left: $gutter-medium;
+            margin-bottom: 0;
+            &:after {
+                position: absolute;
+                content: url('/img/hf-arrow.orange.svg');
+                width: 60%;
+                height: 100%;
+                z-index: 1;
+                left: -37.5%;
+                bottom: -37.5%;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 37.5%;
+        height: 37.5%;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background: rgba($orange, 0.6);
+    }
+
+    @media (min-width: $screen-lg) {
+
+        padding: $gutter-small 0 $gutter-large;
+        display: flex;
+        flex-direction: row;
+
+        > div {
+            width: calc(50% - #{$gutter-medium/2});
+
+            &:first-child {
+                margin-right: $gutter-medium/2;
+                margin-bottom: 10%;
+                &:before {
+                    top: -$gutter-small;
+                    right: -$gutter-large;
+                    height: 100%;
+                    width: 18.75%;
+                    transform: translateX(100%);
+                }
+            }
+
+            &:last-child {
+                margin-left: $gutter-medium/2;
+                margin-top: 10%;
+                &:after {
+                    left: calc(-100% - #{$gutter-medium});
+                    bottom: 0;
+                    transform: translate(-50%, 30%);
+                }
+            }
+        }
+
+        &:after {
+            width: 30%;
+            height: 0;
+            margin-right: -10%;
+            padding-bottom: 25%;
+            top: $gutter-small;
+            right: 0;
+            transform: none;
+        }
+    }
+}
