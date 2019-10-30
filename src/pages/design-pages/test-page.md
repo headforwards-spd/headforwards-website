@@ -148,10 +148,12 @@ components:
     type: blockQuoteComponent
   - articles:
       - image: /img/curlyhair.png
+        link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
         subtitle: this is a subtitle
         text: blog title
         title: This is a title
       - image: /img/girl.png
+        link: b7482970-ef2c-11e9-a170-b1f1706e4527
         text: This is the 2nd blog text
         title: This is the 2nd title
     type: blogComponent
