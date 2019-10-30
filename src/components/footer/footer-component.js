@@ -1,10 +1,12 @@
 import React      from 'react'
+import {Link} from 'gatsby'
 import styles     from './footer-component.module.scss'
 import { Socials } from '../socials/socials-component';
 
 export default function Footer({company_info}) {
   const {email} = company_info;
   const isFooter = true;
+  const thisYear = (new Date()).getFullYear()
   return (
     <footer>
       <section className={styles.ftMobbing}>
@@ -12,7 +14,7 @@ export default function Footer({company_info}) {
           Want to know more about how we use mobbing to deliver quality
           software?{' '}
           <span>
-            <a href="#">Get in touch &#8594;</a>
+            <Link to="get-in-touch">Get in touch &#8594;</Link>
           </span>
         </h1>
       </section>
@@ -32,14 +34,14 @@ export default function Footer({company_info}) {
         </ul>
         <ul>
           <li>
-            &copy; 2019 Headforwards, Pool Innovation Centre, Trevenson Rd,
+            &copy; {thisYear} Headforwards, Pool Innovation Centre, Trevenson Rd,
             Redruth, Cornwall, TR15 3PL, UK.
           </li>
           <li>
-            <a href="#">Privacy Policy</a>
+            <Link to="privacy-policy">Privacy Policy</Link>
           </li>
           <li>
-            <a href="#">Terms &amp; Conditions</a>
+            <Link to="terms-and-conditions">Terms &amp; Conditions</Link>
           </li>
         </ul>
       </section>
