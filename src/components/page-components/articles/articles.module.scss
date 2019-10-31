@@ -1,0 +1,134 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+@import '../components';
+
+.articles {
+    @include component-gutter;
+
+    > section {
+
+        @media(min-width: $screen-md) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            margin: 0 -#{$gutter-medium/2};
+        }
+
+        .article {
+
+            display: flex;
+            flex-direction: column;
+            margin-bottom: $gutter-small;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .image {
+                order: 1;
+                margin: 0 #{-$gutter-medium} $gutter-small;
+            }
+
+            h1 {
+                order: 2;
+                @include headingFontMedium;
+            }
+
+            p {
+                order: 3;
+                flex-grow: 1;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            a {
+                order: 4;
+                @include arrow-link;
+            }
+        }
+
+        @media(min-width: $screen-md) {
+
+            &.isThreeColumns .article {
+                width: calc((100%/2) - #{$gutter-medium});
+
+                margin: 0 $gutter-medium/2 $gutter-small;
+                &:last-child {
+                    margin-bottom: $gutter-small;
+                }
+
+                .image {
+                    margin: 0 0 $gutter-small;
+                }
+            }
+        }
+
+        @media(min-width: $screen-lg) {
+
+            .article {
+                width: calc((100%/2) - #{$gutter-medium});
+
+                margin: 0 $gutter-medium/2 $gutter-small;
+                &:last-child {
+                    margin-bottom: $gutter-small;
+                }
+
+                .image {
+                    margin: 0 0 $gutter-small;
+                }
+            }
+
+            &.isThreeColumns .article {
+                width: calc((100%/3) - #{$gutter-medium});
+
+                h1 {
+                    @include headingFontSmall;
+                }
+
+            }
+        }
+    }
+}
+
+//.articleRow {
+//
+//    h1, p, a {
+//        padding: 0 1rem;
+//    }
+//    img {
+//        width: 100%;
+//    }
+//
+//    .twoCol,
+//    .threeCol {
+//        flex-basis: 100%;
+//        margin-bottom: 30px;
+//    }
+//}
+//
+//@media(min-width: $screen-md) {
+//    .flexRow {
+//        @include flexRow;
+//
+//        .twoCol {
+//            flex-basis: 49%;
+//        }
+//
+//        .threeCol {
+//            flex-basis: 32%;
+//        }
+//
+//        h1 {
+//            //font-size: 2rem;
+//        }
+//
+//        h1, p, a {
+//            padding: 0;
+//        }
+//
+//    }
+//
+//}

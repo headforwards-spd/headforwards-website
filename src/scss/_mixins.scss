@@ -48,6 +48,11 @@
     @include fluid-type($min_width, $max_width, $min_font/$mod_1, $min_font/$mod_2);
 }
 
+@mixin headingFontXLarge {
+
+    font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem;
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2 *$min_font);
+}
 @mixin headingFontLarge {
 
     font-size: $mod_1*$mod_1*$mod_1 *1rem;

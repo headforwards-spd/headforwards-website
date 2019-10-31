@@ -1,0 +1,41 @@
+@import '../../../scss/mixins';
+
+/* Footer social */
+.footerSection {
+    @include flexRow(row, nowrap, center);
+
+    li {
+        margin: 0.5rem;
+        font-size: 3rem;
+
+        a {
+            text-decoration: none;
+            color: #d7d7d6;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+.headerSection {
+    @include flexRow(row, nowrap, unset);
+
+    li {
+        padding-right: 20px;
+        font-size: 1.5rem;
+
+        a {
+            color: $paragraph_grey;
+        }
+    }
+}
+
+
+@media(min-width: $screen-md) {
+    .footerSection {
+        padding-top: 1.25rem;
+    }
+}

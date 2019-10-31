@@ -1,0 +1,12 @@
+@import "../../../../scss/variables";
+@import '../../components';
+
+.fullWidthImage {
+
+    margin-bottom: $gutter-large;
+
+    @media (min-width: $screen-lg) {
+
+        @include component-gutter;
+    }
+}

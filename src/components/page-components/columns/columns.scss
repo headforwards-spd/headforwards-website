@@ -1,0 +1,26 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+@import '../components';
+
+@mixin columns-component {
+    @include component-gutter;
+
+    @media (min-width: $screen-lg) {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@mixin copy {
+    h1 {
+        @include headingFontMedium;
+    }
+    p {
+        @include fontLarge;
+    }
+    a {
+        @include arrow-link;
+    }
+}

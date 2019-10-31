@@ -1,7 +1,7 @@
 import {graphql}          from 'gatsby';
 import React              from 'react';
-import Layout             from '../../components/Layout';
-import DesignPageTemplate from '../../components/pages/design-page/design-page-template';
+import Layout             from '../../components/layout/Layout';
+import DesignPageTemplate from '../../components/page-templates/design-page/design-page.template';
 
 export default DesignPage;
 export const query = graphql`

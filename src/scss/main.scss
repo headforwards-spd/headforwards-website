@@ -1,11 +1,24 @@
 @import '~normalize.css';
 @import "variables";
-@import "../components/navbar/navbar-component.module";
+@import "../components/layout/navbar/navbar.module";
 
 * {
     font-family: "FS Albert", Arial, sans-serif;
     box-sizing: border-box;
     outline: none;
+}
+
+#gatsby-focus-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    > header, > footer {
+        flex-shrink: 0;
+    }
+
+    > main {
+        flex-grow: 1;
+    }
 }
 
 body {
@@ -46,19 +59,6 @@ body {
         padding-left: 0;
         justify-content: center;
     }
-
-    //@media(min-width: $screen-md) {
-    //
-    //    h1 {
-    //        color: $header_black;
-    //        margin-bottom: $gutter-medium;
-    //    }
-    //
-    //    p {
-    //        color: $paragraph_grey;
-    //        line-height: 30px;
-    //    }
-    //}
 }
 
 

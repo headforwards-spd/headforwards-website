@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import Header                       from '../../components/header/header-component';
+import Header                       from '../../components/layout/header/header.component';
 import getComponent                 from '../../lib/get-component';
 
 export default class DesignPagePreview extends Component {

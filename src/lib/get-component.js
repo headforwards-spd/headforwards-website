@@ -1,13 +1,13 @@
-import React            from 'react';
-import Articles         from '../components/articles/articles.component'
-import PostitCopyColumns from '../components/columns/postit-copy-columns/postit-copy-columns.component'
-import Hero             from '../components/hero/hero.component';
-import ImageCopyColumns from '../components/columns/image-copy-columns/image-copy-columns.component';
-import ImageSlider      from '../components/image-slider/image-slider-component';
-import BlogImages       from '../components/images/blog/blog-images.component'
-import FullWidthImage   from '../components/images/full-width/full-width-image.component'
-import TwoImages         from '../components/images/two/two-images.component'
-import Quote             from '../components/quoteblock/quote.component';
+import React             from 'react';
+import Articles          from '../components/page-components/articles/articles.component'
+import PostitCopyColumns from '../components/page-components/columns/postit-copy-columns/postit-copy-columns.component'
+import Hero              from '../components/page-components/hero/hero.component';
+import ImageCopyColumns  from '../components/page-components/columns/image-copy-columns/image-copy-columns.component';
+import ImageSlider       from '../components/page-components/image-slider/image-slider.component';
+import BlogImages        from '../components/page-components/images/blog/blog-images.component'
+import FullWidthImage    from '../components/page-components/images/full-width/full-width-image.component'
+import TwoImages         from '../components/page-components/images/two/two-images.component'
+import Quote             from '../components/page-components/quoteblock/quote.component';
 
 export default ({type, ...component}) => {
     switch (type) {

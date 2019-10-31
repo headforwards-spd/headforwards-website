@@ -1,0 +1,125 @@
+@import '../../../scss/variables';
+
+.hamburger {
+    background-color: transparent;
+    padding: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: $orange;
+    text-transform: none;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:global(.is-active) {
+
+        .hamburgerInner {
+            background-color: $orange;
+
+            &::before {
+                background-color: $orange;
+            }
+
+            &::after {
+                background-color: $orange;
+            }
+        }
+    }
+
+    .hamburgerBox {
+        width: 40px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: $screen-lg) {
+
+    .hamburger {
+        display: none;
+    }
+}
+
+.hamburgerInner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+    width: 40px;
+    height: 4px;
+    background-color: $orange;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+
+    &::before {
+        width: 40px;
+        height: 4px;
+        background-color: $orange;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+        content: "";
+        display: block;
+        top: -10px;
+    }
+
+    &::after {
+        width: 40px;
+        height: 4px;
+        background-color: $orange;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+        content: "";
+        display: block;
+        bottom: -10px;
+    }
+}
+
+.hamburgerSlider {
+
+    &:global(.is-active) {
+        .hamburgerInner {
+            transform: translate3d(0, 10px, 0) rotate(45deg);
+
+            &::before {
+                transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+                opacity: 0;
+            }
+
+            &::after {
+                transform: translate3d(0, -20px, 0) rotate(-90deg);
+            }
+        }
+    }
+
+    .hamburgerInner {
+        top: 2px;
+
+        &::before {
+            top: 10px;
+            transition-property: transform, opacity;
+            transition-timing-function: ease;
+            transition-duration: 0.15s;
+        }
+
+        &::after {
+            top: 20px;
+        }
+    }
+}
