@@ -31,34 +31,37 @@
     }
 }
 
-@mixin fontMedium {
-    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+@mixin fontXLarge {
+    font-size: $mod_1*$mod_1 *1rem;
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
 }
 @mixin fontLarge {
     font-size: $mod_1*1rem;
     @include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font);
-
 }
-@mixin fontXLarge {
-    font-size: $mod_1*$mod_1 *1rem;
-    @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
-
+@mixin fontMedium {
+    font-size: 1rem;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+@mixin fontSmall {
+    font-size: 1rem/$mod_1;
+    @include fluid-type($min_width, $max_width, $min_font/$mod_1, $min_font/$mod_2);
 }
 
 @mixin headingFontLarge {
-
-    font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem;
-    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
-}
-
-@mixin headingFontMedium {
 
     font-size: $mod_1*$mod_1*$mod_1 *1rem;
     @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
 }
 
-@mixin headingFontSmall {
+@mixin headingFontMedium {
 
     font-size: $mod_1*$mod_1 *1rem;
     @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+}
+
+@mixin headingFontSmall {
+
+    font-size: $mod_1 *1rem;
+    @include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font);
 }

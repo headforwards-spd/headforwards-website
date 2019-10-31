@@ -1,9 +1,13 @@
 @import "../../../scss/variables";
+@import '../../components';
 
 .twoImages {
 
+    @include component-gutter;
+    margin-left: 0;
+    margin-right: 0;
+
     position: relative;
-    margin: 0 0 $gutter-medium;
     padding: $gutter-large 0;
 
     > div {

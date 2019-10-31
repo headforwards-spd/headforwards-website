@@ -12,12 +12,11 @@ export default function Footer({company_info}) {
       <section className={styles.ftMobbing}>
         <h1>
           Want to know more about how we use mobbing to deliver quality
-          software?{' '}
-          <span>
-            <Link to="get-in-touch">Get in touch &#8594;</Link>
-          </span>
+          software?
+          <Link to="get-in-touch">Get in touch</Link>
         </h1>
       </section>
+
       <Socials {...{...company_info, isFooter}} />
 
       <section className={styles.ftLegal}>

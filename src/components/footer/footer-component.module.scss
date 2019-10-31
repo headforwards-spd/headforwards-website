@@ -1,6 +1,6 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
-
+@import '../components';
 
 
 /* Footer legal */
@@ -60,6 +60,13 @@
         line-height: 1.5;
         color: white;
         margin: 2rem;
+
+        a {
+            &:before {
+                content: ' ';
+            }
+            @include arrow-link;
+        }
     }
 }
 

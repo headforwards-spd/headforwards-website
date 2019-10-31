@@ -1,8 +1,9 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
+@import '../components';
 
 .blockquoteContainer {
-    margin: 0 $gutter-medium $gutter-medium;
+    @include component-gutter;
 
     > div {
         display: flex;

@@ -8,15 +8,15 @@ import styles                      from './image-slider-component.module.scss';
 import Slide
                                    from './slide-component'
 
-
 export default class ImageSlider extends Component {
 
     static propTypes = {
-        imageSlider: PropTypes.arrayOf(PropTypes.any)
+        title: PropTypes.string.isRequired,
+        slides: PropTypes.arrayOf(PropTypes.any)
     };
 
     static defaultProps = {
-        imageSlider: []
+        slides: []
     };
 
     state = {
@@ -24,7 +24,7 @@ export default class ImageSlider extends Component {
     };
 
     render() {
-        const {imageSlider} = this.props;
+        const {title, slides} = this.props;
         const settings      = {
             dots:           true,
             infinite:       true,
@@ -41,9 +41,9 @@ export default class ImageSlider extends Component {
 
         return (
             <section className={styles.imageSlider}>
-                <h1 className={headerClass}>Our Story</h1>
+                <h1 className={headerClass}>{title}</h1>
                 <Slider {...settings}>
-                    {imageSlider.map((slide, key) => <Slide key={key} {...slide} />)}
+                    {slides.map((slide, key) => <Slide key={key} {...slide} />)}
                 </Slider>
             </section>
         );

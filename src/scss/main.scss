@@ -1,4 +1,4 @@
-@import '../../node_modules/normalize.css';
+@import '~normalize.css';
 @import "variables";
 @import "../components/navbar/navbar-component.module";
 
@@ -9,38 +9,10 @@
 }
 
 body {
-    max-width: 1440px;
+    max-width: $max_width;
     margin: 0 auto !important;
+    overflow-x: hidden;
 
-    a {
-        color: $orange;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    ul {
-        list-style: none;
-        padding-left: 0;
-        justify-content: center;
-
-    }
-}
-
-@media(min-width: $screen-md) {
-    body {
-        h1 {
-            color: $header_black;
-            margin-bottom: $gutter-medium;
-        }
-
-        p {
-            color: $paragraph_grey;
-            line-height: 30px;
-        }
-    }
-}
-
-html {
     @include fontMedium;
 
     h1, h2, h3 {
@@ -62,6 +34,31 @@ html {
     p {
         margin: 0 0 $gutter-medium;
     }
+
+    a {
+        color: $orange;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    //@media(min-width: $screen-md) {
+    //
+    //    h1 {
+    //        color: $header_black;
+    //        margin-bottom: $gutter-medium;
+    //    }
+    //
+    //    p {
+    //        color: $paragraph_grey;
+    //        line-height: 30px;
+    //    }
+    //}
 }
 
 

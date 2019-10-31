@@ -5,29 +5,70 @@ import { withKnobs, text, files } from '@storybook/addon-knobs'
 const faker = require('faker');
 const groupId = 'quote-group';
 
+const quoteLabel = 'Quote';
+const quoteValue = faker.lorem.paragraph;
+
 const nameLabel = 'Name';
-const defaultFakeName = faker.name.findName();
+const nameValue = faker.name.findName;
 
 const jobTitleLabel = 'Job Title';
-const defaultJobTitle = faker.name.jobTitle();
+const jobTitleValue = faker.name.jobTitle;
 
-const quoteLabel = 'Quote';
-const defaultQuote = faker.lorem.paragraph();
-
-const imageLabel = 'Profile Picture';
+const profilePicLabel = 'Profile Picture';
 const accept = '.png, .jpg, .jpeg';
-const defaultImgValue = faker.image.avatar();
+const profilePicValue = faker.image.avatar;
 
 export default {
   decorators: [withKnobs],
-  title: 'Quoteblock',
+  title: 'Page Components/Quote',
 }
 
-export const quoteBlock = () => {
-  const name = text(nameLabel, defaultFakeName, groupId);
-  const jobTitle = text(jobTitleLabel, defaultJobTitle, groupId);
-  const quote = text(quoteLabel, defaultQuote, groupId);
-  const profilePic = files(imageLabel, accept, defaultImgValue, groupId);
+export const SimpleQuote = () => {
+
+  const props = {
+    quote: quoteValue()
+  }
+
+  return <Quote {...props} />
+};
+
+export const QuoteWithName = () => {
+
+  const props = {
+    quote: quoteValue(),
+    name: nameValue(),
+  }
+
+  return <Quote {...props} />
+
+};
+export const QuoteWithNameAndJob = () => {
+
+  const props = {
+    quote: quoteValue(),
+    name: nameValue(),
+    jobTitle: jobTitleValue()
+  }
+
+  return <Quote {...props} />
+};
+export const QuoteWithNameJobAndImage = () => {
+
+  const props = {
+    quote: quoteValue(),
+    name: nameValue(),
+    jobTitle: jobTitleValue(),
+    profilePic: profilePicValue()
+  }
+
+  return <Quote {...props} />
+};
+
+export const InteractiveQuote = () => {
+  const name = text(nameLabel, nameValue(), groupId);
+  const jobTitle = text(jobTitleLabel, jobTitleValue(), groupId);
+  const quote = text(quoteLabel, quoteValue(), groupId);
+  const profilePic = files(profilePicLabel, accept, profilePicValue(), groupId);
 
   const props = {
     name,

@@ -89,7 +89,7 @@ collections:
         widget: "list"
         types:
           - label: "Heading Component"
-            name: "heading"
+            name: "heroComponent"
             description: "Header and paragraph"
             widget: object
             fields:
@@ -119,14 +119,30 @@ collections:
               - {label: "Name", name: "name", widget: string}
               - {label: "Job Title", name: "jobTitle", widget: string}
               - {label: "Quote", name: "quote", widget: text}
-          - label: "Image with Text Component"
-            name: "imageWithTextComponent"
+          - label: "Image, Copy Columns Component"
+            name: "imageCopyColumnsComponent"
             widget: object
             fields:
               - {label: "Header", name: title, widget: string}
               - {label: "Sentence", name: text, widget: text}
               - {label: "Position", name: "position", widget: boolean, default: false}
               - {label: "Image", name: "image", widget: image}
+              - {label: "Link Text", name: "linkText", widget: string}
+              - label: "Link"
+                name: link
+                widget: relation
+                collection: design-pages
+                searchFields: ["title"]
+                valueField: uuid
+                displayFields: ["title"]
+                required: false
+          - label: "Postit, Copy Columns Component"
+            name: "postitCopyColumnsComponent"
+            widget: object
+            fields:
+              - {label: "Header", name: title, widget: string}
+              - {label: "Sentence", name: text, widget: text}
+              - {label: "Position", name: "position", widget: boolean, default: false}
               - {label: "Link Text", name: "linkText", widget: string}
               - label: "Link"
                 name: link

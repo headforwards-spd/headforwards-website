@@ -8,15 +8,15 @@ function Quote({ jobTitle, name, profilePic, quote }) {
   return (
     <div className={styles.blockquoteContainer}>
       <blockquote>{quote}</blockquote>
-      <div className={styles.flexRow}>
-        <div className={styles.imageCropper}>
+        {!!name && <div className={styles.flexRow}>
+            {!!profilePic && <div className={styles.imageCropper}>
           <Image className={styles.profilePicImage} image={profilePic} ratio='100%'/>
-        </div>
+        </div>}
         <div>
           <h1>{name}</h1>
-          <p>{jobTitle}</p>
+            {!!jobTitle && <p>{jobTitle}</p>}
         </div>
-      </div>
+      </div>}
     </div>
   )
 }

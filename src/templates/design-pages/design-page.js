@@ -33,13 +33,13 @@ export const query = graphql`
                     text
                     jobTitle
                     name
-                    position
+                    isRightImage
                     quote
-                    twoColumns
+                    isTwoColumns
                     type
                     link
                     linkText
-                    imageSlider {
+                    slides {
                         title
                         text
                         image {

@@ -1,9 +1,10 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
+@import '../../components';
 
 .blogImages {
 
-    margin: 0 $gutter-medium $gutter-medium;
+    @include component-gutter;
 
     > h1 {
         color: $orange;

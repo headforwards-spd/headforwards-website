@@ -29,7 +29,7 @@ export default function BlogImagesStory() {
 function generateArticle() {
 
     return {
-        title: faker.lorem.words().toUpperCase(),
+        title: faker.lorem.words(),
         image: generateImage(),
         link: `/${faker.lorem.slug()}`,
     }

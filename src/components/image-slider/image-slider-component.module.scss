@@ -1,5 +1,6 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
+@import '../components';
 
 .imageSlider {
     background: $blue-background;
@@ -8,9 +9,17 @@
     height: calc(100vh - 48px);
     margin-bottom: 25px;
     > h1 {
+        padding: 0 $gutter-small;
+        @include fontMedium;
+        flex-shrink: 0;
+
+        line-height: calc(1em + #{2*$gutter-small});
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
         margin: 0 30% 0  0;
-        padding: 1rem;
-        @include headingFontSmall;
         font-weight: normal;
         color: #6E7087;
         letter-spacing: 0.2em;
@@ -25,7 +34,7 @@
         flex-grow: 1;
     }
 
-    :global(.slick-list), :global(.slick-track), :global(.slick-slide) > div {
+    :global(.slick-slider), :global(.slick-list), :global(.slick-track), :global(.slick-slide) > div {
         height: 100%;
     }
 
@@ -37,6 +46,7 @@
         display: flex !important;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
 
         button:before {
             font-size: 0.8rem;
@@ -52,7 +62,7 @@
 
         position: absolute;
 
-        top: calc(62.5vw - 2.5rem);
+        top: calc(50vw - 2.5rem);
         width: 5rem;
         height: 5rem;
 
@@ -99,9 +109,12 @@
         display: flex;
         flex-direction: column;
         padding: 25px;
+        overflow: hidden;
 
         h1 {
             color: $orange;
+            @include fontMedium;
+            margin-top: 2em;
         }
 
         p {
@@ -109,6 +122,7 @@
             flex-grow: 1;
             color: #B8B8B8;
             overflow: hidden;
+            @include fontLarge;
 
             &:after {
                 content: '';
@@ -120,6 +134,11 @@
                 display: block;
                 background: linear-gradient(transparent, #141122);
             }
+        }
+
+        a {
+            @include arrow-link;
+            @include fontMedium;
         }
     }
 }
@@ -258,204 +277,3 @@
 
     }
 }
-
-//.imageSliderBg {
-//    background-color: $blue-background;
-//    background-size: 100% 75%;
-//    width: 100%;
-//    padding: 15px;
-//
-//    img {
-//        padding: 0;
-//    }
-//
-//    p {
-//        font-size: 16px;
-//        color: #B8B8B8;
-//    }
-//
-//    h3 {
-//        margin-top: 0;
-//        color: #6E7087;
-//        letter-spacing: 0.2em;
-//    }
-//
-//    h1 {
-//        color: $orange;
-//        font-size: 28px;
-//    }
-//}
-//
-//.sliderClass {
-//
-//    @include flexRow(row, nowrap, normal);
-//
-//    :global(.slick-arrow) {
-//
-//        &:before {
-//            display: none;
-//        }
-//
-//        path {
-//            fill: $orange;
-//        }
-//    }
-//
-//    height: 650px;
-//    background-color: $blue-background;
-//    width: 100%;
-//    align-items: center;
-//
-//    :global(.slick-prev:before),
-//    :global(.slick-next:before) {
-//        //color: $orange;
-//        //font-family: FontAwesome;
-//        //opacity: unset;
-//    }
-//
-//    > div {
-//        @include flexRow(row, nowrap, normal);
-//        align-items: center;
-//        width: 100%;
-//        height: 650px;
-//        margin-bottom: 0 !important;
-//
-//        > div {
-//            height: 100%;
-//
-//            .flexRow {
-//                @include flexRow;
-//
-//                align-items: center;
-//
-//                .flexCol {
-//                    &:first-of-type {
-//                        @include flexRow(column, nowrap, normal);
-//                        flex: 1;
-//                        order: 2;
-//                        margin-bottom: 0;
-//                        padding: 0 15px;
-//                    }
-//
-//                    &:last-of-type {
-//                        order: 1;
-//                        height: auto;
-//                    }
-//
-//                    p {
-//                        color: #888888;
-//                        font-size: 22px;
-//                    }
-//
-//                    h1 {
-//                        color: $orange;
-//                        padding: 0;
-//                    }
-//
-//                    h2 {
-//                        color: #6E7087;
-//                        text-transform: uppercase;
-//                    }
-//
-//                    a {
-//                        font-size: 26px;
-//                    }
-//
-//                    img {
-//                        width: 100%;
-//                    }
-//
-//                }
-//            }
-//        }
-//
-//        ul {
-//            right: 0;
-//            left: unset;
-//            font-size: 70px;
-//            text-align: right;
-//            margin-bottom: 635px;
-//
-//            li {
-//                margin-right: 10px;
-//
-//                button:before {
-//                    //color: #D8D8D8;
-//                }
-//
-//                &:global(.slick-active) button:before {
-//                    //color: $orange;
-//                }
-//            }
-//
-//        }
-//    }
-//
-//    .hiddenDesktop {
-//        padding: 0 15px;
-//    }
-//
-//    .hiddenMobile {
-//        display: none;
-//    }
-//}
-//
-//@media(min-width: $screen-lg) {
-//    .sliderClass {
-//        background: $blue-background;
-//        background: -moz-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-//        background: -webkit-gradient(left top, right top, color-stop(0%, $blue-background), color-stop(90%, $blue-background), color-stop(90%, $blue-background), color-stop(90%, #ffffff), color-stop(100%, #ffffff));
-//        background: -webkit-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-//        background: -o-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-//        background: -ms-linear-gradient(left, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-//        background: linear-gradient(to right, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
-//        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$blue-background, endColorstr='#ffffff', GradientType=1);
-//
-//        :global(.slick-prev:before),
-//        :global(.slick-next:before) {
-//            //font-size: 60px;
-//        }
-//
-//        > div {
-//
-//            ul {
-//                margin-bottom: 605px;
-//            }
-//
-//            div {
-//                height: 485px;
-//
-//                .flexRow {
-//                    .flexCol {
-//                        &:first-of-type {
-//                            padding-left: 100px;
-//                            padding-right: 50px;
-//                            order: 1;
-//
-//                        }
-//
-//                        &:last-of-type {
-//                            order: 2;
-//                        }
-//                    }
-//                }
-//            }
-//
-//            button {
-//
-//                //&:first-of-type {
-//                //    right: 100px;
-//                //}
-//                //top: unset;
-//            }
-//        }
-//
-//        .hiddenDesktop {
-//            display: none;
-//        }
-//
-//        .hiddenMobile {
-//            display: block;
-//        }
-//    }
-//}

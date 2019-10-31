@@ -1,49 +1,57 @@
 import React                    from 'react'
+import generateImage            from '../images/lib/generate-image'
 import ImageSlider              from './image-slider-component';
-import {files, text, withKnobs} from '@storybook/addon-knobs';
+import {object, text, withKnobs} from '@storybook/addon-knobs';
 
 const faker = require('faker');
 
-const groupId = 'slider-group';
-
-const headerLabel = 'Header';
-const paragraphLabel = 'Paragraph';
-const defaultHeader = faker.lorem.sentence();
-const paragraphText = faker.lorem.paragraph();
-const linkLabel       = 'Link Text';
-const defaultLinkText = faker.lorem.sentence();
-
-const linkDestinationLabel   = 'Link Destination';
-const defaultLinkDestination = faker.internet.url();
-
-const imgLabel = 'Image';
-const accept = '.png, .jpg, .jpeg';
-const defaultImgVal = [];
-
-
 export default {
   decorators: [withKnobs],
-  title: 'Image Slider',
+  title: 'Page Components/Image Slider',
 }
 
-export const imageSlider = () => {
+const groupId = 'slider-group';
 
-  const mainHeader = text(headerLabel, defaultHeader, groupId);
-  const paragraphText = text(paragraphLabel, paragraphText, groupId);
-  const slideImg = files(imgLabel, accept, defaultImgVal, groupId);
-  const linkText        = text(linkLabel, defaultLinkText, groupId);
-  const linkDestination = text(linkDestinationLabel, defaultLinkDestination, groupId);
+const titleLabel = 'Header';
+const titleValue = faker.lorem.words;
 
-  const sliderProps = {
-    imageSlider: [
-      {
-        title: mainHeader,
-        image: slideImg,
-        text: paragraphText,
+const textValue = faker.lorem.paragraph;
 
-      },
-    ],
+const linkTextValue  = faker.lorem.sentence;
+
+const linkValue = () => `/${faker.lorem.slug()}`;
+
+export const interactive = () => {
+
+  const props = {
+    title: text(titleLabel, titleValue(), groupId),
+    slides: object('Articles', generateSlides(), groupId),
   };
 
-  return <ImageSlider {...sliderProps} />
+  return <ImageSlider {...props} />
 };
+
+function generateSlides() {
+
+  const count = faker.random.number({min: 2, max: 10});
+  const slides = [];
+
+  for(let i=0; i<count; i+=1) {
+    slides.push(generateSlide());
+  }
+
+  return slides;
+
+}
+
+function generateSlide() {
+
+  return {
+    title: titleValue(),
+    image: generateImage(),
+    text: textValue(),
+    linkText: linkTextValue(),
+    link: linkValue()
+  }
+
+}
