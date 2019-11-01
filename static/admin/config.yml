@@ -3,8 +3,8 @@ backend:
   repo: emmajgrimes/headforwards-website
 #publish_mode: editorial_workflow
 
-media_folder: static/img
-public_folder: /img
+media_folder: static/uploads
+public_folder: /uploads
 
 collections:
   - name: "settings"
@@ -30,7 +30,7 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - file: "src/data/company-info.yml"
-        name: company-info
+        name: companyInfo
         label: "Company Information"
         fields:
           - {label: "Company Name", name: companyName, widget: string}

@@ -4,17 +4,17 @@ path: design-pages
 type: design
 title: Who we are.
 text: This is the optional subtitle
-image: /img/curlyhair.png
+image: /uploads/curlyhair.png
 components:
   - type: fullWidthImageComponent
-    image: /img/full-width-man-glasses.png
+    image: /uploads/full-width-man-glasses.png
   - type: imageCopyColumnsComponent
     title: What we believe
     text: >-
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
-    image: /img/man-with-glasses-square.png
+    image: /uploads/man-with-glasses-square.png
     isRightImage: false
     link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
     linkText: Discover more
@@ -24,7 +24,7 @@ components:
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
-    image: /img/curlyhair.png
+    image: /uploads/curlyhair.png
     isRightImage: true
     link: /
     linkText: Discover more
@@ -63,7 +63,7 @@ components:
       members waiting on the bench which ultimately drives costs up.
     isTwoColumns: true
   - articles:
-      - image: /img/curlyhair.png
+      - image: /uploads/curlyhair.png
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
         link text: uoiuoiuoiuo
         text: >-
@@ -72,7 +72,7 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         title: Software development outsourcing...
-      - image: /img/curlyhair.png
+      - image: /uploads/curlyhair.png
         text: >-
           Our business model is different to most other outsource software
           companies. We create dedicated teams for specific projects and never
@@ -81,7 +81,7 @@ components:
     type: articleColumnsComponent
     title: Headforwards specialise in software development outsourcing...
   - articles:
-      - image: /img/curlyhair.png
+      - image: /uploads/curlyhair.png
         link: ''
         linkText: ''
         text: >-
@@ -90,14 +90,14 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         title: Software development outsourcing...
-      - image: /img/curlyhair.png
+      - image: /uploads/curlyhair.png
         text: >-
           Our business model is different to most other outsource software
           companies. We create dedicated teams for specific projects and never
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         title: Software development outsourcing...
-      - image: /img/curlyhair.png
+      - image: /uploads/curlyhair.png
         text: >-
           Our business model is different to most other outsource software
           companies. We create dedicated teams for specific projects and never
@@ -106,24 +106,24 @@ components:
         title: Software development outsourcing...
     type: articleColumnsComponent
     title: Headforwards specialise in software development outsourcing...
-  - leftImage: /img/girl.png
-    rightImage: /img/laptop.png
+  - leftImage: /uploads/girl.png
+    rightImage: /uploads/laptop.png
     type: twoImageComponent
   - jobTitle: Software Developer
     name: Emma Grimes
-    profilePic: /img/jumbotron.jpg
+    profilePic: /uploads/jumbotron.jpg
     quote: >-
       If something changes in our client’s world, they've got to adapt, they've
       got to look for a new competitive advantage in their software. And that’s
       always what we aim to deliver.
     type: quoteComponent
   - articles:
-      - image: /img/curlyhair.png
+      - image: /uploads/curlyhair.png
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
         subtitle: this is a subtitle
         text: blog title
         title: This is a title
-      - image: /img/girl.png
+      - image: /uploads/girl.png
         link: b7482970-ef2c-11e9-a170-b1f1706e4527
         text: This is the 2nd blog text
         title: This is the 2nd title
@@ -132,7 +132,7 @@ components:
   - type: contentSliderComponent
     title: Our Story
     articles:
-      - image: /img/girl.png
+      - image: /uploads/girl.png
         label: Slider Label
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
         linkText: Read the case study
@@ -142,7 +142,7 @@ components:
           location of Cornwall. Being in Cornwall is important to us. It enables
           us to get the perfect work life balance that we strive for.
         title: The new option in software outsourcing
-      - image: /img/curlyhair.png
+      - image: /uploads/curlyhair.png
         label: Another Slider Label
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
         linkText: Read the case study

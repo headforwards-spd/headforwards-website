@@ -1,7 +1,7 @@
 const gatsbyPluginSass = require('./gatsby/gatsby-plugin-sass');
 const gatsbySourceFilesystemUploads = require('./gatsby/gatsby-source-filesystem.uploads');
 const gatsbySourceFilesystemPages = require('./gatsby/gatsby-source-filesystem.pages');
-const gatsbySourceFilesystemImages = require('./gatsby/gatsby-source-filesystem.images');
+// const gatsbySourceFilesystemImages = require('./gatsby/gatsby-source-filesystem.images');
 const gatsbyTransformerRemark = require('./gatsby/gatsby-transformer-remark');
 const gatsbyTransformerYaml = require('./gatsby/gatsby-transformer-yaml');
 const gatsbyPluginNetlifyCms = require('./gatsby/gatsby-plugin-netlify-cms');
@@ -16,7 +16,7 @@ module.exports = {
         // keep as first gatsby-source-filesystem plugin for gatsby image support
         { ...gatsbySourceFilesystemUploads },
         { ...gatsbySourceFilesystemPages },
-        { ...gatsbySourceFilesystemImages },
+        // { ...gatsbySourceFilesystemImages },
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         { ...gatsbyTransformerRemark },

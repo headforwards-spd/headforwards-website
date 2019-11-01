@@ -14,7 +14,7 @@
             padding: $gutter-small 0;
 
             text-indent: -1000vw;
-            background-image: url("/img/headforwards.black.png");
+            background-image: url("/images/headforwards.black.png");
             background-size: contain;
             flex: 1;
             background-repeat: no-repeat;
@@ -83,7 +83,7 @@
         > header {
 
             a {
-                background-image: url("/img/headforwards.white.png");
+                background-image: url("/images/headforwards.white.png");
             }
         }
 
@@ -194,7 +194,7 @@
 
             > header {
                 a {
-                    background-image: url("/img/headforwards.white.png");
+                    background-image: url("/images/headforwards.white.png");
                 }
             }
 
@@ -219,7 +219,7 @@
     //    align-items: center;
     //
     //    :global(.logo) {
-    //        background-image: url("/img/headforwards.black.png");
+    //        background-image: url("/images/headforwards.black.png");
     //        background-size: contain;
     //        flex: 1;
     //        background-repeat: no-repeat;
@@ -258,7 +258,7 @@
     //
     //    :global(.flexRow) {
     //        :global(.logo) {
-    //            background-image: url("/img/headforwards-full-logo-white.png");
+    //            background-image: url("/images/headforwards-full-logo-white.png");
     //        }
     //    }
     //
@@ -324,7 +324,7 @@
         //
         //    :global(.flexRow) {
         //        :global(.logo) {
-        //            background-image: url("/img/headforwards-full-logo-white.png");
+        //            background-image: url("/images/headforwards-full-logo-white.png");
         //
         //        }
         //    }

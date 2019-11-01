@@ -19,7 +19,8 @@ export const PageComponentPropType = shape(pageComponentPropTypes);
 
 PageComponent.propTypes = pageComponentPropTypes;
 function PageComponent({ type, ...component }) {
-    const { imageSquare: image } = component || {};
+    const { image } = component;
+    const { imageSquare=image } = component || {};
 
     switch (type) {
         case 'heroComponent':
@@ -35,7 +36,7 @@ function PageComponent({ type, ...component }) {
         case 'quoteComponent':
             return <Quote {...component} />;
         case 'imageCopyColumnsComponent':
-            return <ImageCopyColumns {...{ ...component, image }} />;
+            return <ImageCopyColumns {...{ ...component, image: imageSquare }} />;
         case 'postitCopyColumnsComponent':
             return <PostitCopyColumns {...component} />;
         case 'articleColumnsComponent':
