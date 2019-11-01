@@ -1,12 +1,17 @@
-import React, {Fragment} from 'react'
-import getComponent      from '../../../lib/get-component'
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 
-export default DesignPageTemplate
+export default DesignPageTemplate;
 
-function DesignPageTemplate ({components=[]}) {
-  return (
-    <Fragment>
-      {!!components && components.map((component, key) => getComponent({ ...component, key }))}
-    </Fragment>
-  )
+DesignPageTemplate.propTypes = {
+    components: PropTypes.arrayOf(PageComponentPropType).isRequired,
+};
+
+function DesignPageTemplate({ components = [] }) {
+    return (
+        <Fragment>
+            {!!components && components.map((component, key) => <PageComponent key={key} {...component} />)}
+        </Fragment>
+    );
 }

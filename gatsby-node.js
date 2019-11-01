@@ -4,52 +4,50 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 const path = require('path');
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+    const { createPage } = actions;
 
-  return getData(graphql)
-    .then(({ data, errors }) =>
-      !errors ? Promise.resolve(data) : Promise.reject(errors)
-    )
-    .then(({ designPages }) => createAllPosts(createPage, designPages))
-}
+    return getData(graphql)
+        .then(({ data, errors }) => (!errors ? Promise.resolve(data) : Promise.reject(errors)))
+        .then(({ designPages }) => createAllPosts(createPage, designPages));
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-  const { internal = null } = node;
-  const { type } = internal;
-  fmImagesToRelative(node); // convert image paths for gatsby images
+    const { createNodeField } = actions;
+    const { internal = null } = node;
+    const { type } = internal;
+    fmImagesToRelative(node); // convert image paths for gatsby images
 
-  if (type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
-    return createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
-  return Promise.resolve()
-}
+    if (type === `MarkdownRemark`) {
+        const value = createFilePath({ node, getNode });
+        return createNodeField({
+            name: `slug`,
+            node,
+            value,
+        });
+    }
+    return Promise.resolve();
+};
 
 function createAllPosts(createPage, { edges: posts = [] }) {
-  // const firstIndex = 0;
-  // const lastIndex = posts.length - 1;
+    // const firstIndex = 0;
+    // const lastIndex = posts.length - 1;
 
-  return Promise.all(
-    posts.map(({ node: post }, index) => {
-      const { id, fields, frontmatter } = post;
-      const { slug } = fields;
-      const { path: postPath, type } = frontmatter;
+    return Promise.all(
+        posts.map(({ node: post }, index) => {
+            const { id, fields, frontmatter } = post;
+            const { slug } = fields;
+            const { path: postPath, type } = frontmatter;
 
-      // const { id: prevId = '' } = index > firstIndex ? posts[index - 1].node : {};
-      // const { id: nextId = '' } = index < lastIndex ? posts[index + 1].node : {};
+            // const { id: prevId = '' } = index > firstIndex ? posts[index - 1].node : {};
+            // const { id: nextId = '' } = index < lastIndex ? posts[index + 1].node : {};
 
-      return createPage({
-        path: slug,
-        component: path.resolve(`src/templates/${postPath}/${type}-page.js`),
-        context: { id }, //, prevId, nextId },
-      })
-    })
-  )
+            return createPage({
+                path: slug,
+                component: path.resolve(`src/templates/${postPath}/${type}-page.js`),
+                context: { id }, // , prevId, nextId },
+            });
+        })
+    );
 }
 
 //
@@ -134,22 +132,22 @@ function createAllPosts(createPage, { edges: posts = [] }) {
 // }
 
 function getData(graphql) {
-  return graphql(`
-    {
-      designPages: allMarkdownRemark {
-        edges {
-          node {
-            id
-            fields {
-              slug
+    return graphql(`
+        {
+            designPages: allMarkdownRemark {
+                edges {
+                    node {
+                        id
+                        fields {
+                            slug
+                        }
+                        frontmatter {
+                            type
+                            path
+                        }
+                    }
+                }
             }
-            frontmatter {
-              type
-              path
-            }
-          }
         }
-      }
-    }
-  `)
+    `);
 }

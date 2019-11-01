@@ -1,12 +1,11 @@
-import React            from 'react'
-import { object, text } from '@storybook/addon-knobs'
-import generateImage    from '../../../../lib/generate-image'
-import BlogImages       from './blog-images.component'
+import React from 'react';
+import { object, text } from '@storybook/addon-knobs';
+import generateImage from '../../../../lib/generate-image';
+import BlogImages from './blog-images.component';
 
 const faker = require('faker');
 
 export default function BlogImagesStory() {
-
     const groupId = 'blog-group';
 
     const headerLabel = 'Header';
@@ -20,17 +19,16 @@ export default function BlogImagesStory() {
 
     const blogProps = {
         title,
-        articles
+        articles,
     };
 
-    return <BlogImages {...blogProps} />
+    return <BlogImages {...blogProps} />;
 }
 
 function generateArticle() {
-
     return {
         title: faker.lorem.words(),
         image: generateImage(),
         link: `/${faker.lorem.slug()}`,
-    }
+    };
 }

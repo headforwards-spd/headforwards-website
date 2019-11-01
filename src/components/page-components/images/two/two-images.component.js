@@ -1,19 +1,22 @@
-import React                     from 'react'
-import Image, { ImagePropsType } from '../../../image/image.component'
-import styles                    from './two-images.module.scss'
+import { shape } from 'prop-types';
+import React from 'react';
+import Image, { ImagePropType } from '../../../image/image.component';
+import styles from './two-images.module.scss';
 
-export default TwoImages;
-
-TwoImages.porpTypes = {
-    leftImage: ImagePropsType.isRequired,
-    rightImage: ImagePropsType.isRequired,
+const twoImagesPropTypes = {
+    leftImage: ImagePropType.isRequired,
+    rightImage: ImagePropType.isRequired,
 };
 
-function TwoImages({leftImage, rightImage}) {
+export default TwoImages;
+export const TwoImagesPropType = shape(twoImagesPropTypes);
+
+TwoImages.propTypes = twoImagesPropTypes;
+function TwoImages({ leftImage, rightImage }) {
     return (
         <section className={styles.twoImages}>
-            <Image image={leftImage}/>
-            <Image image={rightImage}/>
+            <Image image={leftImage} />
+            <Image image={rightImage} />
         </section>
     );
 }

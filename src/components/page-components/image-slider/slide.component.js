@@ -1,18 +1,28 @@
-import React  from 'react'
-import Image  from '../../image/image.component'
-import Link   from '../../link/link.component'
-import styles from './image-slider.module.scss'
+import React from 'react';
+import PropTypes, { shape } from 'prop-types';
+import Image, { ImagePropType } from '../../image/image.component';
+import Link from '../../link/link.component';
+import styles from './image-slider.module.scss';
 
-export default function Slide({title, text, image}) {
+const slidePropTypes = {
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    image: ImagePropType.isRequired,
+};
 
+export default Slide;
+export const SlidePropType = shape(slidePropTypes);
+
+Slide.propTypes = slidePropTypes;
+function Slide({ title, text, image }) {
     return (
         <section className={styles.slide}>
             <section>
                 <h1>{title}</h1>
                 <p>{text}</p>
-                <Link to={'/'}>Read the case study</Link>
+                <Link to="/">Read the case study</Link>
             </section>
-            <Image className={styles.slideImage} image={image}/>
+            <Image className={styles.slideImage} image={image} />
         </section>
     );
 }

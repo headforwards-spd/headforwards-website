@@ -1,21 +1,27 @@
-import React                  from 'react'
-import PropTypes from 'prop-types';
+import React from 'react';
+import { shape, string, oneOfType, arrayOf, node } from 'prop-types';
 import { Link as GatsbyLink } from 'gatsby';
 
-export default Link;
-export const LinkPropType = {
-    to: PropTypes.string.isRequired,
-    children: PropTypes.oneOfType([
-                                      PropTypes.arrayOf(PropTypes.node),
-                                      PropTypes.node
-                                  ])
+const linkPropTypes = {
+    to: string.isRequired,
+    children: oneOfType([arrayOf(node), node, string]),
 };
 
-Link.propTypes = LinkPropType;
+export default Link;
+export const LinkPropType = shape(linkPropTypes);
 
-function Link({to, children, ...props}) {
+Link.propTypes = linkPropTypes;
+Link.defaultProps = { children: null };
+function Link({ to, children, ...props }) {
+    const isExternalLink = to.match(/((?:http(?:s)?:)?\/\/)[^.]+\.\S+/g);
 
-    const isExternalLink = to.match(/((?:http(?:s)?:)?\/\/)[^\.]+\.\S+/g);
-
-    return isExternalLink ? <a href={to} {...props}>{children}</a> : <GatsbyLink to={to} {...props}>{children}</GatsbyLink>;
+    return isExternalLink ? (
+        <a href={to} {...props}>
+            {children}
+        </a>
+    ) : (
+        <GatsbyLink to={to} {...props}>
+            {children}
+        </GatsbyLink>
+    );
 }

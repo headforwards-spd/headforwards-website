@@ -1,106 +1,139 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
-@import '../../page-components/components';
+@import "../../page-components/page-component";
 
+.footer {
 
-/* Footer legal */
-.ftLegal {
-    padding: 0.9375rem 1.875rem;
-    color: black;
+    .getInTouch {
 
-    ul {
-        @include flexRow(row, wrap, center);
-        width: 100%;
-        margin-top: 0;
+        @include flexRow(row, nowrap, normal);
+        background-image: url('/img/footer-bg.png');
 
-        &:nth-child(1) {
-            line-height: 2;
-
-            li {
-                &:nth-child(2) {
-                    margin-left: 0;
-                    margin-right: 0;
-                    display: none;
-                }
-            }
-        }
-
-        &:nth-of-type(2) {
-            li {
-
-                &:nth-of-type(2),
-                &:nth-of-type(3) {
-                    a {
-                        font-weight: lighter !important;
-                    }
-                }
-            }
-        }
-
-        li {
-            margin: 0.125rem 0.625rem;
-
+        h1 {
+            padding: $gutter-large;
+            line-height: 1.5;
+            color: white;
             a {
-                color: black;
-
-            }
-        }
-    }
-}
-
-/* Footer mobbing */
-.ftMobbing {
-
-    @include flexRow(row, nowrap, normal);
-    background-image: url('/img/footer-bg.png');
-
-    h1 {
-        padding: 0 1rem;
-        max-width: 950px;
-        line-height: 1.5;
-        color: white;
-        margin: 2rem;
-
-        a {
-            &:before {
-                content: ' ';
-            }
-            @include arrow-link;
-        }
-    }
-}
-
-@media(min-width: $screen-md) {
-    .ftMobbing {
-        h1 {
-            margin: 4rem;
-        }
-    }
-
-    .ftLegal {
-
-        ul {
-
-            &:nth-child(1) {
-                li {
-                    &:nth-child(2) {
-                        margin-left: 0;
-                        margin-right: 0;
-                        display: list-item;
-                        color: $orange;
-                    }
+                &:before {
+                    content: ' ';
                 }
+                @include arrow-link;
             }
         }
     }
-}
 
-@media(min-width: $screen-lg) {
-    .ftMobbing {
-        h1 {
+    address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        :first-child :first-child {
+            &:after {
+                content: '//';
+                font-weight: bold;
+                color: $orange;
+                padding-left: $gutter-small/2;
+            }
+        }
+
+        a, .address, .copyright {
+            padding: 0 $gutter-small/4;
+            line-height: 2;
+            color: black;
+            display: block;
+        }
+
+        .address, .copyright, .legal a {
+            font-weight: lighter;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
         }
     }
-
 }
+///* Footer legal */
+//.ftLegal {
+//    padding: 0.9375rem 1.875rem;
+//    color: black;
+//
+//    ul {
+//        @include flexRow(row, wrap, center);
+//        width: 100%;
+//        margin-top: 0;
+//
+//        &:nth-child(1) {
+//            line-height: 2;
+//
+//            li {
+//                &:nth-child(2) {
+//                    margin-left: 0;
+//                    margin-right: 0;
+//                    display: none;
+//                }
+//            }
+//        }
+//
+//        &:nth-of-type(2) {
+//            li {
+//
+//                &:nth-of-type(2),
+//                &:nth-of-type(3) {
+//                    a {
+//                        font-weight: lighter !important;
+//                    }
+//                }
+//            }
+//        }
+//
+//        li {
+//            margin: 0.125rem 0.625rem;
+//
+//            a {
+//                color: black;
+//
+//            }
+//        }
+//    }
+//}
+//
+///* Footer mobbing */
+//
+//@media(min-width: $screen-md) {
+//    .ftMobbing {
+//        h1 {
+//            margin: 4rem;
+//        }
+//    }
+//
+//    .ftLegal {
+//
+//        ul {
+//
+//            &:nth-child(1) {
+//                li {
+//                    &:nth-child(2) {
+//                        margin-left: 0;
+//                        margin-right: 0;
+//                        display: list-item;
+//                        color: $orange;
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//@media(min-width: $screen-lg) {
+//    .ftMobbing {
+//        h1 {
+//        }
+//    }
+//
+//}
 
 

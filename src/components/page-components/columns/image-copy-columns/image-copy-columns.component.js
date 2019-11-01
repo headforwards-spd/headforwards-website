@@ -1,29 +1,39 @@
-import React  from 'react'
-import Image  from '../../../image/image.component'
-import Link   from '../../../link/link.component'
-import styles from './image-copy-columns.module.scss'
+import React from 'react';
+import { shape, boolean, string } from 'prop-types';
+import Image, { ImagePropType } from '../../../image/image.component';
+import Link from '../../../link/link.component';
+import styles from './image-copy-columns.module.scss';
 
-export default ImageCopyColumns
+const imageCopyColumnsPropTypes = {
+    image: ImagePropType.isRequired,
+    isRightImage: boolean,
+    title: string.isRequired,
+    text: string.isRequired,
+    link: string,
+    linkText: string,
+};
 
-function ImageCopyColumns({
-  image,
-  isRightImage,
-  title,
-  text,
-  link,
-  linkText
-}) {
-  const imageClass = isRightImage === true ? styles.isRightImage : '';
-  const hasLink = !!link && !!linkText;
+export default ImageCopyColumns;
+export const ImageCopyColumnsPropType = shape(imageCopyColumnsPropTypes);
 
-  return (
-      <section className={`${styles.twoColumnsImageText} ${imageClass}`}>
-        <Image image={image} ratio='100%' className={styles.image}/>
-        <section className={styles.copy}>
-          <h1>{title}</h1>
-          <p>{text}</p>
-          {hasLink && <Link to={link}>{linkText}</Link>}
+ImageCopyColumns.propTypes = imageCopyColumnsPropTypes;
+ImageCopyColumns.defaultProps = {
+    isRightImage: false,
+    link: null,
+    linkText: null,
+};
+function ImageCopyColumns({ image, isRightImage, title, text, link, linkText }) {
+    const imageClass = isRightImage === true ? styles.isRightImage : '';
+    const hasLink = !!link && !!linkText;
+
+    return (
+        <section className={`${styles.twoColumnsImageText} ${imageClass}`}>
+            <Image image={image} ratio="100%" className={styles.image} />
+            <section className={styles.copy}>
+                <h1>{title}</h1>
+                <p>{text}</p>
+                {hasLink && <Link to={link}>{linkText}</Link>}
+            </section>
         </section>
-      </section>
-  )
+    );
 }

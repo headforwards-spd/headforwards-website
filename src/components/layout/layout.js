@@ -1,14 +1,28 @@
-import {graphql, useStaticQuery} from 'gatsby';
-import React, {Fragment}         from 'react';
-import Header                    from './header/header.component';
-import Footer                    from './footer/footer.component';
+import { graphql, useStaticQuery } from 'gatsby';
+import { arrayOf, node, oneOf, shape, string } from 'prop-types';
+import React, { Fragment } from 'react';
+import { ImagePropType } from '../image/image.component';
+import Header from './header/header.component';
+import Footer from './footer/footer.component';
 import '../../scss/main.scss';
 
-const Layout = ({children, header}) => {
+export default Layout;
 
-    const {menuData, companyData} = useStaticQuery(graphql`
+Layout.propTypes = {
+    header: shape({
+        title: string.isRequired,
+        text: string,
+        image: ImagePropType,
+    }).isRequired,
+    children: oneOf([arrayOf(node), node, string]),
+};
+Layout.defaultProps = {
+    children: null,
+};
+function Layout({ children, header }) {
+    const { menuData, companyData } = useStaticQuery(graphql`
         query {
-            menuData: dataYaml(title: {eq: "main-menu"}) {
+            menuData: dataYaml(title: { eq: "main-menu" }) {
                 menu {
                     children {
                         linkText
@@ -18,42 +32,36 @@ const Layout = ({children, header}) => {
                     link
                 }
             }
-            companyData: dataYaml(title: {eq: "company-info"}) {
+            companyData: dataYaml(title: { eq: "company-info" }) {
                 companyInfo {
-                        email
-                        address
-                        phone
-                        facebookURL
-                        twitterURL
-                        instaURL
-                        youtubeURL
-                    }
+                    email
+                    address
+                    phone
+                    twitterURL
+                    facebookURL
+                    instagramURL
+                    linkedInURL
+                }
             }
         }
-  `);
-    const {menu} = menuData || [];
-    const {companyInfo} = companyData || [];
-    const {title, text, image} = header || {};
+    `);
+    const { menu } = menuData || [];
+    const { companyInfo } = companyData || [];
+    const { title, text, image } = header || {};
 
     const headerProps = {
         title,
         text,
         image,
         menu,
-        companyInfo
+        companyInfo,
     };
-
-    console.log({headerProps});
 
     return (
         <Fragment>
             <Header {...headerProps} />
             <main>{children}</main>
-            <Footer {...{companyInfo}} />
+            <Footer {...{ companyInfo }} />
         </Fragment>
     );
-};
-
-export default Layout;
-
-
+}

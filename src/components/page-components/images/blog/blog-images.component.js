@@ -1,26 +1,29 @@
-import React                        from 'react';
-import PropTypes                    from 'prop-types'
-import Article, { ArticlePropType } from './article.component'
-import styles                       from './blog-images.module.scss';
+import React from 'react';
+import { shape, string, arrayOf } from 'prop-types';
+import BlogArticle, { BlogArticlePropType } from './blog-article.component';
+import styles from './blog-images.module.scss';
+
+const blogImagesPropTypes = {
+    title: string,
+    articles: arrayOf(BlogArticlePropType),
+};
 
 export default BlogImages;
+export const BlogImagesPropType = shape(blogImagesPropTypes);
 
-BlogImages.propTypes = {
-    title: PropTypes.string,
-    articles: PropTypes.arrayOf(PropTypes.shape(ArticlePropType)).isRequired
-};
-
+BlogImages.propTypes = blogImagesPropTypes;
 BlogImages.defaultProps = {
-    articles: []
+    title: null,
+    articles: [],
 };
-
-export function BlogImages({title, articles}) {
-
+function BlogImages({ title, articles }) {
     return (
         <section className={styles.blogImages}>
-            <h1>{title}</h1>
+            {!!title && <h1>{title}</h1>}
             <section>
-                {articles.map((article, key) => <Article key={key} {...article}/>)}
+                {articles.map((article, key) => (
+                    <BlogArticle key={key} {...article} />
+                ))}
             </section>
         </section>
     );

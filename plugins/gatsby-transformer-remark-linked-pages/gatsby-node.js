@@ -1,7 +1,6 @@
 const { getUrl, getUrls } = require('../lib/page-urls');
 
-exports.sourceNodes = (gatsby) => {
-
+exports.sourceNodes = gatsby => {
     const { getNodes } = gatsby;
     const nodes = getNodes();
 
@@ -13,24 +12,20 @@ exports.sourceNodes = (gatsby) => {
     const urls = getUrls(pages);
 
     pages.forEach(page => {
-        const {frontmatter} = page || {};
-        const {components=[]} = frontmatter || {};
+        const { frontmatter } = page || {};
+        const { components = [] } = frontmatter || {};
 
-        if(!!components.length) {
-
+        if (components.length) {
             components.forEach(component => {
-
-                const {link='', articles=[]} = component;
+                const { link = '', articles = [] } = component;
 
                 !!link && (component.link = getUrl(urls, link) || link);
 
                 articles.forEach(article => {
+                    const { link: childLink = '' } = article || {};
 
-                    const {link=''} = article || {};
-
-                    !!link && (article.link = getUrl(urls, link) || link);
+                    !!childLink && (article.link = getUrl(urls, childLink) || childLink);
                 });
-
             });
 
             page.frontmatter.components = [...components];

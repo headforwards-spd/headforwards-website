@@ -1,7 +1,7 @@
-import { files }      from '@storybook/addon-knobs'
-import React          from 'react'
-import generateImage  from '../../../../lib/generate-image'
-import FullWidthImage from './full-width-image.component'
+import { files } from '@storybook/addon-knobs';
+import React from 'react';
+import generateImage from '../../../../lib/generate-image';
+import FullWidthImage from './full-width-image.component';
 
 export default function FullWidthImageStory() {
     const fullWidthImageLabel = 'Full Width Image';
@@ -9,16 +9,11 @@ export default function FullWidthImageStory() {
     const defaultImgValue = generateImage();
     const groupId = 'img-group';
 
-    const fullWidthImg = files(
-        fullWidthImageLabel,
-        accept,
-        defaultImgValue,
-        groupId
-    )
+    const fullWidthImg = files(fullWidthImageLabel, accept, defaultImgValue, groupId);
 
     const imgProps = {
         image: fullWidthImg,
-    }
+    };
 
-    return <FullWidthImage {...imgProps} />
+    return <FullWidthImage {...imgProps} />;
 }

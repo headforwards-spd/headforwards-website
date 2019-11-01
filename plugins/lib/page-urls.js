@@ -1,13 +1,11 @@
-exports.getUrls = (pages) => {
-
+exports.getUrls = pages => {
     const urls = {};
 
     pages.forEach(page => {
-
-        const {fields, frontmatter} = page || {};
-        const {uuid} = frontmatter || {};
-        const {slug} = fields || {};
-        if(!uuid || !slug) {
+        const { fields, frontmatter } = page || {};
+        const { uuid } = frontmatter || {};
+        const { slug } = fields || {};
+        if (!uuid || !slug) {
             return;
         }
 
@@ -18,8 +16,7 @@ exports.getUrls = (pages) => {
 };
 
 exports.getUrl = (urls, link) => {
-
-    const {[link]:url=null} = urls || {};
+    const { [link]: url = null } = urls || {};
 
     return url;
 };

@@ -1,28 +1,33 @@
-import React, {Component, Fragment} from 'react';
-import Header                       from '../../components/layout/header/header.component';
-import getComponent                 from '../../lib/get-component';
+import { shape, string } from 'prop-types';
+import React, { Fragment } from 'react';
+import { ImagePropType } from '../../components/image/image.component';
+import Header from '../../components/layout/header/header.component';
+import PageComponent from '../../components/page-components/page-component';
 
-export default class DesignPagePreview extends Component {
-    render() {
-        const {props, getComponentPreview} = this;
-        const {entry}                 = props;
-        const {data} = entry.toJS();
-        const {title, navbar, components} = data;
-        const header = {title, ...navbar};
-        return (
-            <Fragment>
-                <Header {...header} />
-                <section>{!!components && components.map(getComponentPreview)}</section>
-            </Fragment>
-        );
-    }
+export default DesignPagePreview;
 
-    getComponentPreview(component, key) {
+DesignPagePreview.propTypes = {
+    entry: shape({
+        data: shape({
+            title: string.isRequired,
+            header: shape({
+                text: string,
+                image: ImagePropType,
+            }),
+        }),
+    }).isRequired,
+};
 
-        return getComponent({
-            ...component,
-            key
-        });
-    }
+function DesignPagePreview({ entry }) {
+    const { data } = entry.toJS();
+    const { title, header: pageHeader, components } = data;
+    const header = { title, ...pageHeader };
+    return (
+        <Fragment>
+            <Header {...header} />
+            <section>
+                {!!components && components.map((component, key) => <PageComponent key={key} {...component} />)}
+            </section>
+        </Fragment>
+    );
 }
-

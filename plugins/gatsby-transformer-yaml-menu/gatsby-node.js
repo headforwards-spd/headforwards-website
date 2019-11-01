@@ -1,7 +1,6 @@
 const { getUrl, getUrls } = require('../lib/page-urls');
 
-exports.onCreateNode = ({ node, getNodes, actions }) => {
-
+exports.onCreateNode = ({ node, getNodes }) => {
     if (node.internal.type !== `DataYaml`) {
         return node;
     }
@@ -14,20 +13,18 @@ exports.onCreateNode = ({ node, getNodes, actions }) => {
 
     const urls = getUrls(pages);
 
-    const {menu=[]} = node;
+    const { menu = [] } = node;
 
     !!menu.length && (node.menu = menu.map(transformChildren));
 
     return node;
 
     function transformChildren(item) {
+        const { link, children } = item;
 
-        const {link, children} = item;
-
-        !!link     && (item.link     = getUrl(urls, link) || link);
+        !!link && (item.link = getUrl(urls, link) || link);
         !!children && (item.children = children.map(transformChildren));
 
         return item;
     }
 };
-

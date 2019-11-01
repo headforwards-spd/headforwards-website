@@ -1,25 +1,20 @@
-import React         from 'react';
-import generateMenu  from '../../../lib/generate-menu'
-import generateImage from '../../../lib/generate-image'
-import Navbar        from './navbar.component';
-import {
-    withKnobs, text, files, object, boolean,
-}                    from '@storybook/addon-knobs'
+import React from 'react';
+import { withKnobs, text, object, boolean } from '@storybook/addon-knobs';
+import generateMenu from '../../../lib/generate-menu';
+import generateImage from '../../../lib/generate-image';
+import Navbar from './navbar.component';
 
-const faker = require('faker')
+const faker = require('faker');
 
 export default {
     decorators: [withKnobs],
-    title: "Page Layout/Navbar"
-}
+    title: 'Page Layout/Navbar',
+};
 
-const groupId = 'Navbar'
+const groupId = 'Navbar';
 
 const hasBackgroundLabel = 'Has Background Image?';
 const menuLabel = 'Menu';
-
-const linkValue = () => `/${faker.lorem.slug()}`;
-const linkTextValue = faker.lorem.words;
 
 const headerStyle = {
     position: 'absolute',
@@ -30,18 +25,18 @@ const headerStyle = {
     width: '100%',
     maxWidth: '1440px',
     background: 'no-repeat center center',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
 };
 
-
 export const Interactive = () => {
-
     const hasBackground = boolean(hasBackgroundLabel, false, groupId);
 
-    const style = hasBackground ? {
-        ...headerStyle,
-        backgroundImage: `url(${generateImage().publicURL})`,
-    } : headerStyle;
+    const style = hasBackground
+        ? {
+              ...headerStyle,
+              backgroundImage: `url(${generateImage().publicURL})`,
+          }
+        : headerStyle;
 
     const props = {
         hasBackground,
@@ -53,7 +48,11 @@ export const Interactive = () => {
             linkedInURL: text('LinkedIn URL', faker.internet.url(), 'Company Info'),
             youtubeURL: text('YouTube URL', faker.internet.url(), 'Company Info'),
         },
-    }
+    };
 
-    return <section style={style}><Navbar {...props} /></section>;
-}
+    return (
+        <section style={style}>
+            <Navbar {...props} />
+        </section>
+    );
+};

@@ -1,17 +1,17 @@
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs'
-import React                                from 'react';
-import generateImage                        from '../../../lib/generate-image'
-import generateMenu                         from '../../../lib/generate-menu'
-import Header                               from './header.component';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import React from 'react';
+import generateImage from '../../../lib/generate-image';
+import generateMenu from '../../../lib/generate-menu';
+import Header from './header.component';
 
 const faker = require('faker');
 
 export default {
-    title:      'Page Layout/Header',
-    decorators: [withKnobs]
+    title: 'Page Layout/Header',
+    decorators: [withKnobs],
 };
 
-const groupId            = 'nav-group';
+const groupId = 'nav-group';
 
 const titleLabel = 'Title';
 const titleValue = faker.lorem.words;
@@ -24,7 +24,6 @@ const hasBackgroundLabel = 'Has Background Image?';
 const menuLabel = 'Menu';
 
 export const Title = () => {
-
     const props = {
         title: titleValue(),
         text: null,
@@ -42,7 +41,6 @@ export const Title = () => {
 };
 
 export const TitleAndSubTitle = () => {
-
     const props = {
         title: titleValue(),
         text: textValue(),
@@ -60,7 +58,6 @@ export const TitleAndSubTitle = () => {
 };
 
 export const ImageWithTitle = () => {
-
     const props = {
         title: titleValue(),
         text: null,
@@ -78,7 +75,6 @@ export const ImageWithTitle = () => {
 };
 
 export const ImageWithTitleAndSubTitle = () => {
-
     const props = {
         title: titleValue(),
         text: textValue(),
@@ -96,7 +92,6 @@ export const ImageWithTitleAndSubTitle = () => {
 };
 
 export const interactive = () => {
-
     const hasBackground = boolean(hasBackgroundLabel, false, groupId);
 
     const props = {

@@ -1,8 +1,8 @@
-import {faFacebookSquare, faInstagram, faLinkedinIn, faTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons';
-import {FontAwesomeIcon}                                                   from '@fortawesome/react-fontawesome';
-import React                                                               from 'react';
+import { faFacebookSquare, faInstagram, faLinkedinIn, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 import PropTypes from 'prop-types';
-import styles                                                              from './socials.module.scss';
+import styles from './socials.module.scss';
 import Link from '../../link/link.component';
 
 export default Socials;
@@ -15,7 +15,7 @@ Socials.propTypes = {
     linkedInURL: PropTypes.string,
     youtubeURL: PropTypes.string,
     isFooter: PropTypes.bool,
-}
+};
 Socials.defaultProps = {
     activeClass: '',
     twitterURL: null,
@@ -26,35 +26,45 @@ Socials.defaultProps = {
     isFooter: false,
 };
 
-function Socials({activeClass, twitterURL, facebookURL, instagramURL, linkedInURL, youtubeURL, isFooter}) {
+function Socials({ activeClass, twitterURL, facebookURL, instagramURL, linkedInURL, youtubeURL, isFooter }) {
     const footerClass = isFooter ? styles.footerSection : styles.headerSection;
     return (
         <ul className={`${activeClass} ${footerClass}`}>
-            {!!twitterURL && <li>
-                <Link to={twitterURL}>
-                    <FontAwesomeIcon icon={faTwitter}/>
-                </Link>
-            </li>}
-            {!!facebookURL && <li>
-                <Link to={facebookURL}>
-                    <FontAwesomeIcon icon={faFacebookSquare}/>
-                </Link>
-            </li>}
-            {!!instagramURL && <li>
-                <Link to={instagramURL}>
-                    <FontAwesomeIcon icon={faInstagram}/>
-                </Link>
-            </li>}
-            {!!linkedInURL && <li>
-                <Link to={linkedInURL}>
-                    <FontAwesomeIcon icon={faLinkedinIn}/>
-                </Link>
-            </li>}
-            {!!youtubeURL && <li>
-                <Link to={youtubeURL}>
-                    <FontAwesomeIcon icon={faYoutube}/>
-                </Link>
-            </li>}
+            {!!twitterURL && (
+                <li>
+                    <Link to={twitterURL}>
+                        <FontAwesomeIcon icon={faTwitter} />
+                    </Link>
+                </li>
+            )}
+            {!!facebookURL && (
+                <li>
+                    <Link to={facebookURL}>
+                        <FontAwesomeIcon icon={faFacebookSquare} />
+                    </Link>
+                </li>
+            )}
+            {!!instagramURL && (
+                <li>
+                    <Link to={instagramURL}>
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </Link>
+                </li>
+            )}
+            {!!linkedInURL && (
+                <li>
+                    <Link to={linkedInURL}>
+                        <FontAwesomeIcon icon={faLinkedinIn} />
+                    </Link>
+                </li>
+            )}
+            {!!youtubeURL && (
+                <li>
+                    <Link to={youtubeURL}>
+                        <FontAwesomeIcon icon={faYoutube} />
+                    </Link>
+                </li>
+            )}
         </ul>
     );
 }
