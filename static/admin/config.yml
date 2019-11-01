@@ -30,8 +30,8 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - file: "src/data/company-info.yml"
-        name: companyInfo
         label: "Company Information"
+        name: company-info
         fields:
           - {label: "Company Name", name: companyName, widget: string}
           - {label: "Email Address", name: email, widget: string}

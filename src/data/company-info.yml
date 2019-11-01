@@ -1,11 +1,10 @@
-title: companyInfo
-companyInfo:
-    companyName: 'Headforwards'
-    email: 'hello@headforwards.com'
-    address: 'Pool Innovation Centre, Trevenson Rd, Redruth, Cornwall, TR15 3PL, UK.'
-    phone: '+44 (0)1209 311151'
-    facebookURL: 'https://www.facebook.com/headforwards/'
-    twitterURL: 'https://twitter.com/headforwards?lang=en'
-    instagramURL: 'https://www.instagram.com/headforwards_uk/'
-    linkedInURL: 'https://www.linkedin.com/company/headforwards/'
-    youtubeURL: 'https://www.youtube.com/channel/UC6EL0AsCvG7duu-PVsSQIXg'
+title: company-info
+companyName: 'Headforwards'
+email: 'hello@headforwards.com'
+address: 'Pool Innovation Centre, Trevenson Rd, Redruth, Cornwall, TR15 3PL, UK.'
+phone: '+44 (0)1209 311151'
+facebookURL: 'https://www.facebook.com/headforwards/'
+twitterURL: 'https://twitter.com/headforwards?lang=en'
+instagramURL: 'https://www.instagram.com/headforwards_uk/'
+linkedInURL: 'https://www.linkedin.com/company/headforwards/'
+youtubeURL: 'https://www.youtube.com/channel/UC6EL0AsCvG7duu-PVsSQIXg'

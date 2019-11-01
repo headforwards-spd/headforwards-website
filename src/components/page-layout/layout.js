@@ -20,7 +20,7 @@ Layout.defaultProps = {
     children: null,
 };
 function Layout({ title, text, image, children }) {
-    const { menuData, companyData } = useStaticQuery(graphql`
+    const { menuData, companyInfo } = useStaticQuery(graphql`
         query {
             menuData: dataYaml(title: { eq: "main-menu" }) {
                 menu {
@@ -32,23 +32,20 @@ function Layout({ title, text, image, children }) {
                     }
                 }
             }
-            companyData: dataYaml(title: { eq: "company-info" }) {
-                companyInfo {
-                    companyName
-                    email
-                    phone
-                    address
-                    facebookURL
-                    instagramURL
-                    linkedInURL
-                    youtubeURL
-                    twitterURL
-                }
+            companyInfo: dataYaml(title: { eq: "company-info" }) {
+                companyName
+                email
+                phone
+                address
+                facebookURL
+                instagramURL
+                linkedInURL
+                youtubeURL
+                twitterURL
             }
         }
     `);
     const { menu } = menuData || [];
-    const { companyInfo } = companyData || [];
 
     const headerProps = {
         title,
