@@ -33,7 +33,8 @@ function createAllPosts(createPage, { edges: posts = [] }) {
     // const lastIndex = posts.length - 1;
 
     return Promise.all(
-        posts.map(({ node: post }, index) => {
+        posts.map(({ node: post }) => {
+            // , index) => {
             const { id, fields, frontmatter } = post;
             const { slug } = fields;
             const { path: postPath, type } = frontmatter;

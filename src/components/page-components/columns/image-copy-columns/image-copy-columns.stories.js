@@ -7,10 +7,10 @@ const faker = require('faker');
 
 const groupId = 'header-group';
 
-const titleLabel = 'Header';
+const titleLabel = 'Title';
 const titleValue = faker.lorem.sentence;
 
-const textLabel = 'Paragraph';
+const textLabel = 'Copy';
 const textValue = faker.lorem.paragraph;
 
 const linkTextLabel = 'Link Text';
@@ -58,7 +58,7 @@ export const ImageOnRight = () => {
 
 export const Interactive = () => {
     const props = {
-        title: text(textLabel, titleValue(), groupId),
+        title: text(titleLabel, titleValue(), groupId),
         text: text(textLabel, textValue(), groupId),
         isRightImage: boolean(isRightImageLabel, isRightImageValue(), groupId),
         image: files(imageLabel, accept, imageValue(), groupId),

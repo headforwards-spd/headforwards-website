@@ -1,16 +1,16 @@
 import { shape } from 'prop-types';
 import React from 'react';
-import Image, { ImagePropType } from '../../../image/image.component';
+import Image, { ImageSrcPropType } from '../../../image/image.component';
 import styles from './full-width-image.module.scss';
 
-const fullWidthImagePropTypes = {
-    image: ImagePropType.isRequired,
+const fullWidthImageSrcPropTypes = {
+    image: ImageSrcPropType.isRequired,
 };
 
 export default FullWidthImage;
-export const FullWidthImagePropType = shape(fullWidthImagePropTypes);
+export const FullWidthImageSrcPropType = shape(fullWidthImageSrcPropTypes);
 
-FullWidthImage.propTypes = fullWidthImagePropTypes;
+FullWidthImage.propTypes = fullWidthImageSrcPropTypes;
 function FullWidthImage({ image }) {
     return <Image className={styles.fullWidthImage} image={image} />;
 }

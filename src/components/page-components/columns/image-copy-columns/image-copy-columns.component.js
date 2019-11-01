@@ -1,11 +1,11 @@
 import React from 'react';
 import { shape, boolean, string } from 'prop-types';
-import Image, { ImagePropType } from '../../../image/image.component';
+import Image, { ImageSrcPropType } from '../../../image/image.component';
 import Link from '../../../link/link.component';
 import styles from './image-copy-columns.module.scss';
 
 const imageCopyColumnsPropTypes = {
-    image: ImagePropType.isRequired,
+    image: ImageSrcPropType.isRequired,
     isRightImage: boolean,
     title: string.isRequired,
     text: string.isRequired,

@@ -13,207 +13,152 @@ collections:
     files:
       - file: "src/data/main-menu.yml"
         label: "Main Menu"
-        name: "main-menu"
+        name: main-menu
         fields:
-          - {label: "Title", name: "title", widget: "hidden", default: "main-menu"}
+          - {label: "Title", name: title, widget: hidden, default: "main-menu"}
           - label: "Items"
             name: menu
             widget: list
             fields:
-              - {label: "Label", name: label, widget: string}
-              - label: "Link"
-                name: link
-                widget: relation
-                collection: design-pages
-                searchFields: ["title"]
-                valueField: uuid
-                displayFields: ["title"]
+              - {label: "Label", name: linkText, widget: string}
+              - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
               - label: "Children"
                 name: children
                 widget: list
                 fields:
-                  - {label: "Label", name: label, widget: string}
-                  - label: "Link"
-                    name: link
-                    widget: relation
-                    collection: design-pages
-                    searchFields: ["title"]
-                    valueField: uuid
-                    displayFields: ["title"]
-                  - label: "Children"
-                    name: children
-                    widget: list
-                    fields:
-                      - {label: "Label", name: label, widget: string}
-                      - label: "Link"
-                        name: link
-                        widget: relation
-                        collection: design-pages
-                        searchFields: ["title"]
-                        valueField: uuid
-                        displayFields: ["title"]
+                  - {label: "Label", name: linkText, widget: string}
+                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
       - file: "src/data/company-info.yml"
-        name: "company-info"
+        name: company-info
         label: "Company Information"
         fields:
-          - {label: "Email Address", name: email, widget: string, required: false}
-          - {label: "Address", name: address, widget: text, required: false}
-          - {label: "Phone Number", name: number, widget: string, required: false}
+          - {label: "Company Name", name: companyName, widget: string}
+          - {label: "Email Address", name: email, widget: string}
+          - {label: "Address", name: address, widget: text}
+          - {label: "Phone Number", name: phone, widget: string}
           - {label: "Facebook URL",  name: facebookURL, widget: string, required: false}
-          - {label: "Instagram URL",  name: instaURL, widget: string, required: false}
-          - {label: "Linkedin URL",  name: linkedinURL, widget: string, required: false}
+          - {label: "Instagram URL",  name: instagramURL, widget: string, required: false}
+          - {label: "Linkedin URL",  name: linkedInURL, widget: string, required: false}
           - {label: "Youtube URL",  name: youtubeURL, widget: string, required: false}
           - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
+
   - label: "Design Pages"
     label_singular: "Design Page"
-    name: "design-pages"
+    name: design-pages
     folder: "src/pages/design-pages"
     create: true
     slug: "{{slug}}"
     preview_path: "design-pages/{{slug}}"
-    widget: "list"
+    widget: list
     identifier_field: title
     fields:
       - {label: "ID", name: uuid, widget: uuid}
-      - {label: "Path", name: "path", widget: "hidden", default: "design-pages"}
-      - {label: "Type", name: "type", widget: "hidden", default: "design"}
-      - {label: "Title", name: "title", widget: string}
-      - label: "Navbar"
-        name: "navbar"
-        widget: object
-        fields:
-          - {label: "Paragraph", name: "paragraph", widget: text, required: false}
-          - {label: "Background Image", name:  "image", widget: image, required: false}
+      - {label: "Path", name: path, widget: hidden, default: "design-pages"}
+      - {label: "Type", name: type, widget: hidden, default: "design"}
+      - {label: "Page Title", name: title, widget: string}
+      - {label: "Page Sub Title", name: text, widget: text, required: false}
+      - {label: "Header Image", name:  image, widget: image, required: false}
       - label: "Page Components"
-        name: "components"
-        widget: "list"
+        name: components
+        widget: list
         types:
-          - label: "Heading Component"
-            name: "heroComponent"
-            description: "Header and paragraph"
+          - label: "Hero Component"
+            name: heroComponent
             widget: object
             fields:
-              - {label: Heading, name: title, widget: string}
-              - {label: Description, name: text, widget: markdown}
-              - {label: "Two Columns", name: "twoColumns", widget: "boolean", default: false}
-          - label: "Full Width Image Component"
-            name: "fullWidthImageComponent"
-            description: "Full Width Image"
+              - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
+              - {label: "Title", name: title, widget: string}
+              - {label: "Copy", name: text, widget: markdown}
+
+          - label: "Full Width Image"
+            name: fullWidthImageComponent
             widget: object
             fields:
               - label: "Image"
-                name: "image"
+                name: image
                 widget: image
-          - label: "Half Width Images Component"
-            name: "twoImageComponent"
-            description: "Half Width Images"
+
+          - label: "Two Images"
+            name: twoImageComponent
             widget: object
             fields:
-              - {label: "Left Image", name: "leftImage", widget: image}
-              - {label: "Right Image", name: "rightImage", widget: image}
-          - label: "Block Quote Component"
-            name: "blockQuoteComponent"
+              - {label: "Left Image", name: leftImage, widget: image}
+              - {label: "Right Image", name: rightImage, widget: image}
+
+          - label: "Quote"
+            name: quoteComponent
             widget: object
             fields:
-              - {label: "Profile Picture", name: "profilePic", widget: image}
-              - {label: "Name", name: "name", widget: string}
-              - {label: "Job Title", name: "jobTitle", widget: string}
-              - {label: "Quote", name: "quote", widget: text}
-          - label: "Image, Copy Columns Component"
-            name: "imageCopyColumnsComponent"
+              - {label: "Quote", name: quote, widget: text}
+              - {label: "Name", name: name, widget: string, required: false}
+              - {label: "Job Title", name: jobTitle, widget: string, required: false}
+              - {label: "Profile Picture", name: profilePic, widget: image, required: false}
+
+          - label: "Image, Copy Columns"
+            name: imageCopyColumnsComponent
             widget: object
             fields:
-              - {label: "Header", name: title, widget: string}
-              - {label: "Sentence", name: text, widget: text}
-              - {label: "Position", name: "position", widget: boolean, default: false}
-              - {label: "Image", name: "image", widget: image}
-              - {label: "Link Text", name: "linkText", widget: string}
-              - label: "Link"
-                name: link
-                widget: relation
-                collection: design-pages
-                searchFields: ["title"]
-                valueField: uuid
-                displayFields: ["title"]
-                required: false
-          - label: "Postit, Copy Columns Component"
-            name: "postitCopyColumnsComponent"
+              - {label: "Image", name: image, widget: image}
+              - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
+              - {label: "Title", name: title, widget: string}
+              - {label: "Copy", name: text, widget: text}
+              - {label: "Link Text", name: linkText, widget: string, required: false}
+              - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+
+          - label: "Postit, Copy Columns"
+            name: postitCopyColumnsComponent
             widget: object
             fields:
-              - {label: "Header", name: title, widget: string}
-              - {label: "Sentence", name: text, widget: text}
-              - {label: "Position", name: "position", widget: boolean, default: false}
-              - {label: "Link Text", name: "linkText", widget: string}
-              - label: "Link"
-                name: link
-                widget: relation
-                collection: design-pages
-                searchFields: ["title"]
-                valueField: uuid
-                displayFields: ["title"]
-                required: false
-          - label: "Article Block"
-            name: "articleBlockComponent"
+              - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
+              - {label: "Title", name: title, widget: string}
+              - {label: "Copy", name: text, widget: text}
+              - {label: "Link Text", name: linkText, widget: string, required: false}
+              - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+
+          - label: "Article Columns"
+            name: articleColumnsComponent
             widget: object
             fields:
-              - {label: "Main Header", name: "title", widget: string, required: false}
+              - {label: "Component Title", name: title, widget: string, required: false}
               - label: "Articles"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Copy", name: text, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+
+          - label: "Blog Post Columns"
+            name: blogPostColumnsComponent
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string}
+              - label: "Blog Posts"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Image", name:  image, widget: image}
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+
+          - label: "Content Slider"
+            name: "contentSliderComponent"
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string}
+              - label: "Slides"
                 name: "articles"
                 widget: list
                 fields:
-                  - {label: "Article Image", name: "image", widget: image}
-                  - {label: "Article Header", name: title, widget: string}
-                  - {label: "Article Post", name: text, widget: text}
-                  - {label: "Article Link Text", name: linktext, widget: text, required: false}
-                  - label: "Link"
-                    name: link
-                    widget: relation
-                    collection: design-pages
-                    searchFields: ["title"]
-                    valueField: uuid
-                    displayFields: ["title"]
-                    required: false
-          -   label: "Blog Component"
-              name: "blogComponent"
-              description: "Blog Post"
-              widget: object
-              fields:
-                - {label: "Blog Section Header", name: "title", widget: string}
-                -   label: "Blog Posts"
-                    name: "articles"
-                    widget: list
-                    fields:
-                      - {label: "Blog Image", name:  "image", widget: image, required: false}
-                      - {label: "Blog Title", name: title, widget: string, required: false}
-                      - label: "Link"
-                        name: link
-                        widget: relation
-                        collection: design-pages
-                        searchFields: ["title"]
-                        valueField: uuid
-                        displayFields: ["title"]
-                        required: false
-          - label: "Image Slider"
-            name: "imageSliderComponent"
-            widget: object
-            fields:
-              - label: "Images"
-                name: "imageSlider"
-                widget: list
-                fields:
-                  - {label: "Slider Image", name: "image", widget: image}
-                  - {label: "Slider Header", name: title, widget: string}
-                  - {label: "Slider Subheader", name: subtitle, widget: string, required: false}
-                  - {label: "Slider Text", name: text, widget: text}
-                  - {label: "Link Text", name: label, widget: string}
-                  - label: "Link"
-                    name: link
-                    widget: relation
-                    collection: design-pages
-                    searchFields: ["title"]
-                    valueField: uuid
-                    displayFields: ["title"]
-                    required: false
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Copy", name: text, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
 
 

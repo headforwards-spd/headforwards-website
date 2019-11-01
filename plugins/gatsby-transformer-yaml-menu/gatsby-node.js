@@ -1,3 +1,4 @@
+const uuid = require('uuid');
 const { getUrl, getUrls } = require('../lib/page-urls');
 
 exports.onCreateNode = ({ node, getNodes }) => {
@@ -22,6 +23,7 @@ exports.onCreateNode = ({ node, getNodes }) => {
     function transformChildren(item) {
         const { link, children } = item;
 
+        item.id = uuid.v1();
         !!link && (item.link = getUrl(urls, link) || link);
         !!children && (item.children = children.map(transformChildren));
 

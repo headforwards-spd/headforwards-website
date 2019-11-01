@@ -1,0 +1,64 @@
+import { shape, string, arrayOf } from 'prop-types';
+import React, { Component } from 'react';
+import Slider from 'react-slick';
+import { ReactComponent as Arrow } from '../../../../static/img/hf-arrow.svg';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import styles from './content-slider.module.scss';
+import Slide, { SlidePropType } from './slide.component';
+
+const contentSliderPropTypes = {
+    title: string.isRequired,
+    articles: arrayOf(SlidePropType),
+};
+
+export const ContentSliderPropType = shape(contentSliderPropTypes);
+
+export default class ContentSlider extends Component {
+    static propTypes = contentSliderPropTypes;
+
+    static defaultProps = {
+        articles: [],
+    };
+
+    state = {
+        isChanging: false,
+    };
+
+    render() {
+        const { title, articles } = this.props;
+        const { isChanging } = this.state;
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            beforeChange: () => this.setState({ isChanging: true }),
+            afterChange: () => this.setState({ isChanging: false }),
+            prevArrow: (
+                <button type="button" className={styles.prevArrow}>
+                    <Arrow />
+                </button>
+            ),
+            nextArrow: (
+                <button type="button" className={styles.nextArrow}>
+                    <Arrow />
+                </button>
+            ),
+        };
+
+        const headerClass = isChanging ? 'changing' : '';
+
+        return (
+            <section className={styles.contentSlider}>
+                <h1 className={headerClass}>{title}</h1>
+                <Slider {...settings}>
+                    {articles.map(({ id, ...slide }) => (
+                        <Slide key={id} {...slide} />
+                    ))}
+                </Slider>
+            </section>
+        );
+    }
+}

@@ -1,0 +1,105 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins";
+@import '../../page-component';
+
+.blogPostColumns {
+
+    @include component-gutter;
+
+    > h1 {
+        color: $orange;
+        @include headingFontMedium;
+    }
+
+    > section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .article {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: $gutter-medium;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .image {
+                order: 1;
+                margin: 0 #{-$gutter-medium} $gutter-small;
+            }
+
+            h1 {
+                order: 2;
+                flex-grow: 1;
+                @include headingFontSmall;
+                color: $header_black;
+                margin-bottom: 0;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                right: $gutter-small - $gutter-medium;
+                border-radius: 0 0 $gutter-medium 0;
+                width: 37.5%;
+                padding-bottom: 37.5%;
+                background: linear-gradient(315deg, rgba(#FFB800, 0.6) 50%, transparent 50%);
+                margin-top: calc(62.5% + #{$gutter-medium} + #{$gutter-small});
+                transform: translateY(-100%);
+            }
+
+            a {
+                position: absolute;
+                right: $gutter-small - $gutter-medium;
+                width: 18.75%;
+                padding-bottom: 18.75%;
+                margin-top: calc(62.5% + #{$gutter-medium} + #{$gutter-small});
+                transform: translateY(-100%);
+                z-index: 1;
+
+                svg {
+                    height: 50%;
+                    width: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    path {
+                        fill: white;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: $screen-lg) {
+
+            margin: 0 #{-$gutter-medium/2};
+
+            .article {
+
+                width: calc(50% - #{$gutter-medium});
+                margin: 0 #{$gutter-medium/2};
+
+                .image {
+                    margin: 0 0 $gutter-small;
+                }
+
+                &:after {
+                    right: $gutter-small;
+                    margin-top: calc(62.5% + #{$gutter-small});
+                }
+
+                a {
+                    right: $gutter-small;
+                    margin-top: calc(62.5% + #{$gutter-small});
+                }
+            }
+        }
+    }
+}

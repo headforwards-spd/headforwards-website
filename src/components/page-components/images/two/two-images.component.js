@@ -1,11 +1,11 @@
 import { shape } from 'prop-types';
 import React from 'react';
-import Image, { ImagePropType } from '../../../image/image.component';
+import Image, { ImageSrcPropType } from '../../../image/image.component';
 import styles from './two-images.module.scss';
 
 const twoImagesPropTypes = {
-    leftImage: ImagePropType.isRequired,
-    rightImage: ImagePropType.isRequired,
+    leftImage: ImageSrcPropType.isRequired,
+    rightImage: ImageSrcPropType.isRequired,
 };
 
 export default TwoImages;

@@ -1,3 +1,4 @@
+const uuid = require('uuid');
 const { getUrl, getUrls } = require('../lib/page-urls');
 
 exports.sourceNodes = gatsby => {
@@ -15,14 +16,17 @@ exports.sourceNodes = gatsby => {
         const { frontmatter } = page || {};
         const { components = [] } = frontmatter || {};
 
-        if (components.length) {
+        if (components && components.length) {
             components.forEach(component => {
                 const { link = '', articles = [] } = component;
+                component.id = uuid.v1();
 
                 !!link && (component.link = getUrl(urls, link) || link);
 
                 articles.forEach(article => {
                     const { link: childLink = '' } = article || {};
+
+                    article.id = uuid.v1();
 
                     !!childLink && (article.link = getUrl(urls, childLink) || childLink);
                 });

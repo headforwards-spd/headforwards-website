@@ -4,7 +4,7 @@ import Link from '../../../link/link.component';
 import styles from './postit-copy-columns.module.scss';
 
 const postitCopyColumnsPropTypes = {
-    // image: ImagePropType.isRequired,
+    // image: ImageSrcPropType.isRequired,
     isRightImage: boolean,
     title: string.isRequired,
     text: string.isRequired,

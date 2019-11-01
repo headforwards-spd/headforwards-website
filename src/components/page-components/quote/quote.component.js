@@ -1,13 +1,13 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
-import Image, { ImagePropType } from '../../image/image.component';
+import Image, { ImageSrcPropType } from '../../image/image.component';
 import styles from './quote.module.scss';
 
 const quotePropTypes = {
     quote: string.isRequired,
     name: string,
     jobTitle: string,
-    profilePic: ImagePropType,
+    profilePic: ImageSrcPropType,
 };
 
 export default Quote;

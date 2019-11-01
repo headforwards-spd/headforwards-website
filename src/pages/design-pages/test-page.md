@@ -3,9 +3,8 @@ uuid: d1956170-ec44-11e9-914c-c376cef31113
 path: design-pages
 type: design
 title: Who we are.
-header:
-  image: /img/curlyhair.png
-  paragraph: This is the optional subtitle
+text: This is the optional subtitle
+image: /img/curlyhair.png
 components:
   - type: fullWidthImageComponent
     image: /img/full-width-man-glasses.png
@@ -79,7 +78,7 @@ components:
           companies. We create dedicated teams for specific projects and never
           switch members to other projects, nor do we have team members waiting.
         title: Software development outsourcing...
-    type: articleBlockComponent
+    type: articleColumnsComponent
     title: Headforwards specialise in software development outsourcing...
   - articles:
       - image: /img/curlyhair.png
@@ -105,7 +104,7 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         title: Software development outsourcing...
-    type: articleBlockComponent
+    type: articleColumnsComponent
     title: Headforwards specialise in software development outsourcing...
   - leftImage: /img/girl.png
     rightImage: /img/laptop.png
@@ -117,7 +116,7 @@ components:
       If something changes in our client’s world, they've got to adapt, they've
       got to look for a new competitive advantage in their software. And that’s
       always what we aim to deliver.
-    type: blockQuoteComponent
+    type: quoteComponent
   - articles:
       - image: /img/curlyhair.png
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
@@ -128,11 +127,11 @@ components:
         link: b7482970-ef2c-11e9-a170-b1f1706e4527
         text: This is the 2nd blog text
         title: This is the 2nd title
-    type: blogComponent
+    type: blogPostColumnsComponent
     title: From the blog.
-  - type: imageSliderComponent
+  - type: contentSliderComponent
     title: Our Story
-    slides:
+    articles:
       - image: /img/girl.png
         label: Slider Label
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
@@ -154,6 +153,5 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         title: Software development outsourcing...
-    
 ---
 

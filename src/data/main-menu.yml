@@ -1,23 +1,13 @@
 title: main-menu
 menu:
-<<<<<<< HEAD
-  - linkText: About Us.
+  - linkText: About Us
     link: 61c50760-ef2d-11e9-a170-b1f1706e4526
-  - linkText: Test Page.
-=======
-  - label: About Us
-    link: 61c50760-ef2d-11e9-a170-b1f1706e4526
-  - label: Test Page
->>>>>>> 0bfb249006ef6e4bfe43bfc467f0b51ba43b46c1
+  - linkText: Test Page
     link: d1956170-ec44-11e9-914c-c376cef31113
   - children:
       - linkText: Front End Jobs
         link: b7482970-ef2c-11e9-a170-b1f1706e4526
       - linkText: Back End Jobs
         link: 0c7cc0e0-ef2d-11e9-a170-b1f1706e4527
-<<<<<<< HEAD
-    linkText: Jobs.
-=======
-    label: Jobs
->>>>>>> 0bfb249006ef6e4bfe43bfc467f0b51ba43b46c1
+    linkText: Jobs
     link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f

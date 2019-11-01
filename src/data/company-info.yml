@@ -1,5 +1,6 @@
 title: company-info
 companyInfo:
+    companyName: 'Headforwards'
     email: 'hello@headforwards.com'
     address: 'Pool Innovation Centre, Trevenson Rd, Redruth, Cornwall, TR15 3PL, UK.'
     phone: '+44 (0)1209 311151'

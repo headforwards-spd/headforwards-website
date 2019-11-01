@@ -1,11 +1,11 @@
 import { shape, string } from 'prop-types';
 import React from 'react';
-import Articles from './articles/articles.component';
+import ArticleColumns from './columns/article-columns/article-columns.component';
 import PostitCopyColumns from './columns/postit-copy-columns/postit-copy-columns.component';
 import Hero from './hero/hero.component';
 import ImageCopyColumns from './columns/image-copy-columns/image-copy-columns.component';
-import ImageSlider from './image-slider/image-slider.component';
-import BlogImages from './images/blog/blog-images.component';
+import ContentSlider from './content-slider/content-slider.component';
+import BlogPostColumns from './columns/blog-post-columns/blog-post-columns.component';
 import FullWidthImage from './images/full-width/full-width-image.component';
 import TwoImages from './images/two/two-images.component';
 import Quote from './quote/quote.component';
@@ -24,22 +24,22 @@ function PageComponent({ type, ...component }) {
     switch (type) {
         case 'heroComponent':
             return <Hero {...component} />;
-        case 'imageSliderComponent':
-            return <ImageSlider {...component} />;
+        case 'contentSliderComponent':
+            return <ContentSlider {...component} />;
         case 'fullWidthImageComponent':
             return <FullWidthImage {...component} />;
         case 'twoImageComponent':
             return <TwoImages {...component} />;
-        case 'blogComponent':
-            return <BlogImages {...component} />;
-        case 'blockQuoteComponent':
+        case 'blogPostColumnsComponent':
+            return <BlogPostColumns {...component} />;
+        case 'quoteComponent':
             return <Quote {...component} />;
         case 'imageCopyColumnsComponent':
             return <ImageCopyColumns {...{ ...component, image }} />;
         case 'postitCopyColumnsComponent':
             return <PostitCopyColumns {...component} />;
-        case 'articleBlockComponent':
-            return <Articles {...component} />;
+        case 'articleColumnsComponent':
+            return <ArticleColumns {...component} />;
         default:
             return <p>{component.text}</p>;
     }
