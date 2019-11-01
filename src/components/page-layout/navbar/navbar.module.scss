@@ -4,6 +4,7 @@
 .menu {
     padding: $gutter-small;
     background-color: white;
+    border-bottom: 1px solid #D8D8D8;
 
     > header {
         @include flexRow;
@@ -94,6 +95,7 @@
         flex-direction: column;
         height: 100vh;
         overflow: hidden;
+        border-bottom: none;
 
         > header {
 
@@ -107,6 +109,7 @@
             display: flex;
             flex-direction: column;
             overflow-y: auto;
+            padding-top: $gutter-small;
 
             ul {
                 flex-grow: 1;

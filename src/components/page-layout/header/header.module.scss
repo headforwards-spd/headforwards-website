@@ -13,7 +13,7 @@
     }
     > section {
         order: 2;
-        @include component-gutter;
+        margin: $gutter-large $gutter-medium;
 
         display: flex;
         flex-direction: column;
@@ -33,15 +33,22 @@
             margin-bottom: 0;
         }
     }
+    &.hasBackground {
+        > section {
+            margin-top: 0;
+        }
+    }
 
     @media(min-width: $screen-lg) {
 
-        > section {
-            margin: 2*$gutter-large;
-        }
-
         .image {
             margin: 0;
+        }
+
+        > section {
+            &.hasSubTitle {
+                margin: 2*$gutter-large;
+            }
         }
 
         &.hasBackground {
