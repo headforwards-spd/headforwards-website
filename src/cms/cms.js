@@ -7,7 +7,6 @@ import UuidControl from './widgets/uuid-control';
 
 import DesignPagePreview from './preview-templates/design-page';
 
-
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
 CMS.registerWidget('uuid', UuidControl);
