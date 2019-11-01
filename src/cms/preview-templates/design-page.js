@@ -12,23 +12,37 @@ DesignPagePreview.propTypes = {
     entry: shape({
         data: shape({
             title: string.isRequired,
-            header: shape({
-                text: string,
-                image: ImageSrcPropType,
-            }),
+            text: string,
+            image: ImageSrcPropType,
         }),
     }).isRequired,
 };
 
 function DesignPagePreview({ entry }) {
     const { data } = entry.toJS();
-    const { title, header: pageHeader, components } = data;
-    const header = { title, ...pageHeader };
-    const menu = [];
+    const { components, ...header } = data;
+
+    !!components &&
+        components.forEach(component => {
+            const { articles } = component;
+            component.id = uuid.v1();
+
+            !!articles &&
+                articles.forEach(article => {
+                    article.id = uuid.v1();
+                });
+        });
+
     const companyInfo = {};
+    const headerProps = {
+        ...header,
+        menu: [],
+        companyInfo,
+    };
+
     return (
         <Fragment>
-            <Header {...{ ...header, menu, companyInfo }} />
+            <Header {...headerProps} />
             <main>{!!components && components.map(component => <PageComponent key={uuid.v1()} {...component} />)}</main>
             <Footer {...{ companyInfo }} />
         </Fragment>

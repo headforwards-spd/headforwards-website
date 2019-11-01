@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { arrayOf, node, oneOf, string } from 'prop-types';
+import { arrayOf, node, oneOfType, string } from 'prop-types';
 import React, { Fragment } from 'react';
 import { ImageSrcPropType } from '../image/image.component';
 import Header from './header/header.component';
@@ -12,7 +12,7 @@ Layout.propTypes = {
     title: string.isRequired,
     text: string,
     image: ImageSrcPropType,
-    children: oneOf([arrayOf(node), node, string]),
+    children: oneOfType([arrayOf(node), node, string]),
 };
 Layout.defaultProps = {
     text: null,

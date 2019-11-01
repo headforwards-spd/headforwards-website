@@ -1,12 +1,12 @@
 import React from 'react';
-import PropTypes, { shape } from 'prop-types';
+import { string, shape } from 'prop-types';
 import Image, { ImageSrcPropType } from '../../image/image.component';
 import Link from '../../link/link.component';
 import styles from './content-slider.module.scss';
 
 const slidePropTypes = {
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
+    title: string.isRequired,
+    text: string.isRequired,
     image: ImageSrcPropType.isRequired,
 };
 

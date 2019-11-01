@@ -18,25 +18,27 @@ function Footer({ companyInfo }) {
             <section className={styles.getInTouch}>
                 <h1>
                     Want to know more about how we use mobbing to deliver quality software?
-                    <Link to="get-in-touch">Get in touch</Link>
+                    <Link to="/get-in-touch">Get in touch</Link>
                 </h1>
             </section>
 
             <Socials {...{ ...companyInfo, isFooter }} />
 
             <address>
-                <section className={styles.contact}>
-                    <Link to={`mailto:${email}`}>{email}</Link>
-                    <Link to={`tel:${phone}`}>{phone}</Link>
-                </section>
+                {(email || phone) && (
+                    <section className={styles.contact}>
+                        {!!email && <Link to={`mailto:${email}`}>{email}</Link>}
+                        {!!phone && <Link to={`tel:${phone}`}>{phone}</Link>}
+                    </section>
+                )}
                 <section>
                     <section className={styles.copyright}>
                         &copy; {thisYear} {companyName}
                     </section>
                     <section className={styles.address}>{address}</section>
                     <section className={styles.legal}>
-                        <Link to="privacy-policy">Privacy Policy</Link>
-                        <Link to="terms-and-conditions">Terms &amp; Conditions</Link>
+                        <Link to="/privacy-policy">Privacy Policy</Link>
+                        <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
                     </section>
                 </section>
             </address>

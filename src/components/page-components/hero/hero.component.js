@@ -1,11 +1,11 @@
 import React from 'react';
-import { shape, string, boolean } from 'prop-types';
+import { shape, string, bool } from 'prop-types';
 import styles from './hero.module.scss';
 
 const heroPropTypes = {
     title: string.isRequired,
     text: string,
-    isTwoColumns: boolean,
+    isTwoColumns: bool,
 };
 
 export default Hero;

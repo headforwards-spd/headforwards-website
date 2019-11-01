@@ -1,20 +1,20 @@
 import { faFacebookSquare, faInstagram, faLinkedinIn, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string, bool } from 'prop-types';
 import styles from './socials.module.scss';
 import Link from '../../link/link.component';
 
 export default Socials;
 
 Socials.propTypes = {
-    activeClass: PropTypes.string,
-    twitterURL: PropTypes.string,
-    facebookURL: PropTypes.string,
-    instagramURL: PropTypes.string,
-    linkedInURL: PropTypes.string,
-    youtubeURL: PropTypes.string,
-    isFooter: PropTypes.bool,
+    activeClass: string,
+    twitterURL: string,
+    facebookURL: string,
+    instagramURL: string,
+    linkedInURL: string,
+    youtubeURL: string,
+    isFooter: bool,
 };
 Socials.defaultProps = {
     activeClass: '',

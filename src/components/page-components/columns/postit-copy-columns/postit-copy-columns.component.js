@@ -1,11 +1,12 @@
 import React from 'react';
-import { shape, boolean, string } from 'prop-types';
+import { shape, bool, string } from 'prop-types';
 import Link from '../../../link/link.component';
+// import { ImageSrcPropType } from '../../../image/image.component';
 import styles from './postit-copy-columns.module.scss';
 
 const postitCopyColumnsPropTypes = {
     // image: ImageSrcPropType.isRequired,
-    isRightImage: boolean,
+    isRightImage: bool,
     title: string.isRequired,
     text: string.isRequired,
     link: string,

@@ -21,7 +21,7 @@ Header.defaultProps = {
 };
 function Header({ title, text, image, menu, companyInfo }) {
     const { publicURL } = image || {};
-    const hasBackground = !!publicURL;
+    const hasBackground = typeof image === 'string' || !!publicURL;
     const headerStyle = hasBackground ? styles.hasBackground : '';
 
     const titleStyle = text ? styles.hasSubTitle : '';

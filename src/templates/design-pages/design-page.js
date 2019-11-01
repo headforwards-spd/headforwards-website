@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import PropTypes from 'prop-types';
-import { ImageSrcPropType } from '../../components/image/image.component';
+import { objectOf, shape, string, any, arrayOf, oneOfType } from 'prop-types';
 import Layout from '../../components/page-layout/layout';
 import { ArticleColumnsPropType } from '../../components/page-components/columns/article-columns/article-columns.component';
 import { ImageCopyColumnsPropType } from '../../components/page-components/columns/image-copy-columns/image-copy-columns.component';
@@ -17,16 +16,19 @@ import DesignPageTemplate from '../../components/page-templates/design-page/desi
 export default DesignPage;
 
 DesignPage.propTypes = {
-    data: PropTypes.shape({
-        page: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-                title: PropTypes.string.isRequired,
-                header: PropTypes.shape({
-                    subtitle: PropTypes.string,
-                    image: ImageSrcPropType,
+    data: shape({
+        page: shape({
+            frontmatter: shape({
+                title: string.isRequired,
+                text: string,
+                image: shape({
+                    publicURL: string,
+                    childImageSharp: shape({
+                        fluid: objectOf(any),
+                    }),
                 }),
-                components: PropTypes.arrayOf(
-                    PropTypes.oneOf([
+                components: arrayOf(
+                    oneOfType([
                         ArticleColumnsPropType,
                         ImageCopyColumnsPropType,
                         PostitCopyColumnsPropType,

@@ -1,4 +1,4 @@
-import { any, objectOf, oneOf, shape, string } from 'prop-types';
+import { any, objectOf, oneOfType, shape, string } from 'prop-types';
 import React from 'react';
 import GatsbyImage from 'gatsby-image';
 import styles from './image.module.scss';
@@ -14,7 +14,7 @@ const imageSrcPropTypes = [
 ];
 
 const imagePropTypes = {
-    image: oneOf(imageSrcPropTypes).isRequired,
+    image: oneOfType(imageSrcPropTypes).isRequired,
     alt: string,
     ratio: string,
     className: string,
@@ -22,7 +22,7 @@ const imagePropTypes = {
 
 export default Image;
 export const ImagePropType = shape(imagePropTypes);
-export const ImageSrcPropType = oneOf(imageSrcPropTypes);
+export const ImageSrcPropType = oneOfType(imageSrcPropTypes);
 
 Image.propTypes = imagePropTypes;
 Image.defaultProps = {

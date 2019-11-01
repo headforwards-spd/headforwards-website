@@ -1,10 +1,10 @@
-import { arrayOf, boolean, shape } from 'prop-types';
+import { bool, arrayOf, shape } from 'prop-types';
 import { MenuItemPropType } from './menu-item/menu-item.prop-type';
 import { CompanyInfoPropType } from '../company-info.prop-type';
 
 export const navbarPropTypes = {
     menu: arrayOf(MenuItemPropType).isRequired,
-    hasBackground: boolean,
+    hasBackground: bool,
     companyInfo: CompanyInfoPropType.isRequired,
 };
 

@@ -13,6 +13,10 @@ export const LinkPropType = shape(linkPropTypes);
 Link.propTypes = linkPropTypes;
 Link.defaultProps = { children: null };
 function Link({ to, children, ...props }) {
+    if (!to) {
+        return null;
+    }
+
     const isExternalLink = to.match(/((?:http(?:s)?:)?\/\/)[^.]+\.\S+/g);
 
     return isExternalLink ? (
@@ -20,7 +24,7 @@ function Link({ to, children, ...props }) {
             {children}
         </a>
     ) : (
-        <GatsbyLink to={to} {...props}>
+        <GatsbyLink to={`/${to}`.replace(/\/+/g, '/')} {...props}>
             {children}
         </GatsbyLink>
     );
