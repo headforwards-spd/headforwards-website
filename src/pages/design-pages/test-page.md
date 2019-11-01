@@ -53,15 +53,6 @@ components:
       Clients look to Headforwards to develop software that creates value. In a
       rapidly changing business environment, what constitutes value might change
       from one week to the next.
-  - isTwoColumns: true
-    type: heroComponent
-    title: Headforwards specialise in software development outsourcing...
-    text: >-
-      Headforwards is based in Cornwall, UK and we specialise in software
-      development outsourcing... Our business model is different to most other
-      outsource software companies. We create dedicated teams for specific
-      projects and never switch members to other projects, nor do we have team
-      members waiting on the bench which ultimately drives costs up.
   - articles:
       - image: /uploads/curlyhair.png
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
@@ -80,6 +71,15 @@ components:
         image: /uploads/curlyhair.png
     type: articleColumnsComponent
     title: Headforwards specialise in software development outsourcing...
+  - isTwoColumns: true
+    type: heroComponent
+    title: Headforwards specialise in software development outsourcing...
+    text: >-
+      Headforwards is based in Cornwall, UK and we specialise in software
+      development outsourcing... Our business model is different to most other
+      outsource software companies. We create dedicated teams for specific
+      projects and never switch members to other projects, nor do we have team
+      members waiting on the bench which ultimately drives costs up.
   - articles:
       - image: /uploads/curlyhair.png
         link: ''
