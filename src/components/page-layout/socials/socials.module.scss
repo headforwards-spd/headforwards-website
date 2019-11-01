@@ -1,12 +1,16 @@
 @import '../../../scss/mixins';
+@import '../../page-components/page-component';
 
 /* Footer social */
 .footerSection {
     @include flexRow(row, nowrap, center);
+    @include component-gutter;
+    margin: 0 #{$gutter-medium - $gutter-small/2} $gutter-small/2;
+    padding: 0;
 
     li {
-        margin: 0.5rem;
-        font-size: 3rem;
+        padding: 0 $gutter-small/2 $gutter-small/2;
+        @include headingFontLarge;
 
         a {
             text-decoration: none;
@@ -30,12 +34,5 @@
         a {
             color: $paragraph_grey;
         }
-    }
-}
-
-
-@media(min-width: $screen-md) {
-    .footerSection {
-        padding-top: 1.25rem;
     }
 }

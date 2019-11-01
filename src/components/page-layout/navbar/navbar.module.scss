@@ -29,7 +29,7 @@
 
             margin: 0;
 
-            a {
+            > li a {
                 display: block;
                 text-decoration: none;
                 color: white;
@@ -43,11 +43,26 @@
                 }
             }
 
+            > li > a {
+                @include fontLarge;
+                color: white;
+                text-transform: capitalize;
+            }
+
             > li {
                 border-top: 1px solid #383F51;
                 text-decoration: none;
-                color: white;
-                @include fontLarge;
+
+                > ul > li {
+                    display: none;
+                    margin: 0;
+                    padding: 0;
+
+                    a {
+                        @include fontMedium;
+                        font-weight: lighter;
+                    }
+                }
 
                 &:last-child {
                     border-bottom: 1px solid #383F51;
@@ -128,6 +143,7 @@
                 flex-wrap: wrap;
 
                 > li {
+                    position: relative;
                     border: none;
                     padding: $gutter-small/2 $gutter-medium/2;
 
@@ -152,8 +168,6 @@
 
                         > li {
                             display: block;
-                            position: relative;
-                            padding-bottom: 1rem;
                         }
                     }
 
@@ -162,6 +176,7 @@
                             white-space: nowrap;
                             display: block;
                             position: absolute;
+                            right: 0;
 
                             a {
                                 margin: 0;
@@ -169,7 +184,7 @@
 
                             > li {
                                 > ul {
-                                    left: 100%;
+                                    right: 100%;
                                     top: 10px;
                                 }
                             }
@@ -200,7 +215,7 @@
 
             > section {
 
-                a {
+               > ul  > li > a {
                     color: white;
                 }
             }

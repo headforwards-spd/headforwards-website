@@ -4,8 +4,6 @@
 
 .footer {
 
-    margin-bottom: $gutter-large;
-
     .getInTouch {
 
         @include flexRow(row, nowrap, normal);
@@ -25,6 +23,7 @@
     }
 
     address {
+        @include component-gutter;
         display: flex;
         flex-direction: column;
         align-items: center;
