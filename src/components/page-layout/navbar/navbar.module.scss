@@ -163,8 +163,21 @@
                         display: none;
                         padding: 20px;
                         background-color: white;
-                        box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.5);
+                        box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.4);
                         color: black;
+
+                        &:before {
+                            top: -$gutter-small/2;
+                            right: 2rem;
+                            content: '';
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border: $gutter-small/2 solid;
+                            border-color: transparent transparent white white;
+                            transform: rotate(135deg);
+                            box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+                        }
 
                         > li {
                             display: block;
