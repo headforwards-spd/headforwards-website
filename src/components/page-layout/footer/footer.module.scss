@@ -4,6 +4,8 @@
 
 .footer {
 
+    margin-bottom: $gutter-large;
+
     .getInTouch {
 
         @include flexRow(row, nowrap, normal);

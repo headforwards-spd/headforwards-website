@@ -3,7 +3,7 @@
 @import '../page-component';
 
 .hero {
-    @include component-gutter;
+    margin: 0 $gutter-large $gutter-large;
     h1 {
         @include headingFontLarge;
     }
@@ -18,8 +18,8 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin-left: $gutter-medium/2;
-            margin-right: $gutter-medium/2;
+            margin-left: $gutter-large - $gutter-medium/2;
+            margin-right: $gutter-large - $gutter-medium/2;
 
             h1, p {
                 padding: 0 $gutter-medium/2;

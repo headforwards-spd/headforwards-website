@@ -4,6 +4,7 @@
 
 .articleColumns {
     @include component-gutter;
+    margin-bottom: $gutter-large - $gutter-small;
 
     > section {
 
