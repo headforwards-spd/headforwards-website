@@ -20,7 +20,7 @@ export const PageComponentPropType = shape(pageComponentPropTypes);
 PageComponent.propTypes = pageComponentPropTypes;
 function PageComponent({ type, ...component }) {
     const { image } = component;
-    const { imageSquare=image } = component || {};
+    const { imageSquare = image } = component || {};
 
     switch (type) {
         case 'heroComponent':

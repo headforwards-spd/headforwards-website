@@ -1,11 +1,11 @@
-import { shape, string, arrayOf }  from 'prop-types';
-import React, { Component }        from 'react';
-import Slider                      from 'react-slick';
+import { shape, string, arrayOf } from 'prop-types';
+import React, { Component } from 'react';
+import Slider from 'react-slick';
 import { ReactComponent as Arrow } from '../../../../static/images/hf-arrow.svg';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import styles                      from './content-slider.module.scss';
-import Slide, { SlidePropType }    from './slide.component';
+import styles from './content-slider.module.scss';
+import Slide, { SlidePropType } from './slide.component';
 
 const contentSliderPropTypes = {
     title: string.isRequired,
