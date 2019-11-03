@@ -1,0 +1,15 @@
+@import './variables';
+
+#root {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $gutter-large;
+
+    > header, > footer {
+        flex-shrink: 0;
+    }
+
+    > main {
+        flex-grow: 1;
+    }
+}

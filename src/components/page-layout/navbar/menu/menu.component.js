@@ -25,7 +25,7 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                 <Hamburger {...{ activeClass, onClick: menuClick }} />
             </header>
             <section>
-                <ul id="js-menu">
+                <ul>
                     {menu.map(({ id, ...item }) => (
                         <MenuItem key={id} {...item} />
                     ))}

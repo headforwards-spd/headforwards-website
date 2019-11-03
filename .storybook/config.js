@@ -1,5 +1,6 @@
 import { configure, addParameters } from '@storybook/react';
 import '../src/scss/main.scss';
+import '../src/scss/storybook.scss';
 import viewports                    from './lib/viewports'
 
 global.__PATH_PREFIX__ = ''

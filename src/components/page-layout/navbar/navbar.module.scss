@@ -1,5 +1,6 @@
 @import '../../../scss/variables';
 @import '../../../scss/mixins';
+@import '../../page-components/page-component';
 
 .menu {
     padding: $gutter-small;
@@ -12,7 +13,6 @@
 
         a {
             @include fontLarge;
-            padding: $gutter-small 0;
 
             text-indent: -1000vw;
             background-image: url("/images/headforwards.black.png");
@@ -30,43 +30,59 @@
 
             margin: 0;
 
-            > li a {
+            > li > a {
                 display: block;
                 text-decoration: none;
                 color: white;
                 padding: $gutter-small 0;
-
-                &::first-letter {
-                    text-transform: capitalize;
-                }
-                &:after {
-                    content: '.';
-                }
             }
 
             > li > a {
                 @include fontLarge;
                 color: white;
                 text-transform: capitalize;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
             }
 
             > li {
+
+                &.hasChildren > a {
+                    display: block;
+                    button {
+                        background: none;
+                        border: none;
+                        padding: $gutter-small;
+                        margin: -$gutter-small 0;
+                        color: white;
+
+                    }
+                }
                 border-top: 1px solid #383F51;
                 text-decoration: none;
 
-                > ul > li {
-                    display: none;
-                    margin: 0;
-                    padding: 0;
-
-                    a {
-                        @include fontMedium;
-                        font-weight: lighter;
-                    }
-                }
-
                 &:last-child {
                     border-bottom: 1px solid #383F51;
+                }
+
+                > section {
+                    display: none;
+                    ul {
+                        margin-bottom: $gutter-small;
+                    }
+                    a {
+                        color: #d7d7d6;
+                        font-weight: lighter;
+                        line-height: 2;
+                    }
+                }
+                &.isOpen > section {
+                    display: block;
+                    h1 {
+                        display: none;
+                    }
                 }
             }
         }
@@ -123,17 +139,38 @@
 
         @include flexRow;
         margin: 0;
-        align-items: center;
+        align-items: flex-start;
+        flex-wrap: nowrap;
         border-bottom: 1px solid #D8D8D8;
 
-        > header {
-            padding: $gutter-small/2 $gutter-medium/2;
+        &:global(.is-active) {
+            background-color: unset;
+            height: unset;
+            overflow: visible;
+            border-bottom: 1px solid #D8D8D8;
+            flex-direction: row;
+
+            > header {
+
+                a {
+                    background-image: url("/images/headforwards.black.png");
+                }
+            }
+
+            > section {
+                overflow: visible;
+                padding-top: unset;
+            }
         }
 
         > header {
+            padding: $gutter-small/2 $gutter-medium/2;
             width: 37.5%;
-            flex-grow: 1;
             flex-shrink: 0;
+
+            a {
+                padding: $gutter-small 0;
+            }
         }
 
         > section {
@@ -160,14 +197,25 @@
                         &:hover {
                             color: $orange;
                         }
+                        button {
+                            display: none;
+                        }
                     }
-
-                    > ul {
+                    &.isOpen > section {
+                        display: none;
+                    }
+                    > section {
                         display: none;
                         padding: 20px;
                         background-color: white;
                         box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.4);
                         color: black;
+                        width: 37.5vw;
+                        max-width: $max_width*0.375;
+                        z-index: 1;
+                        white-space: nowrap;
+                        position: absolute;
+                        right: 0;
 
                         &:before {
                             top: -$gutter-small/2;
@@ -182,33 +230,32 @@
                             box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1);
                         }
 
+                        > ul {
+                            margin: 0;
+                        }
+
                         > li {
                             display: block;
                         }
-                    }
 
-                    &:hover {
-                        > ul {
-                            white-space: nowrap;
-                            display: block;
-                            position: absolute;
-                            right: 0;
-
-                            a {
-                                margin: 0;
-                            }
-
-                            > li {
-                                > ul {
-                                    right: 100%;
-                                    top: 10px;
-                                }
-                            }
-
-
+                        h1 {
+                            @include fontMedium;
+                            font-weight: lighter;
+                            padding-bottom: $gutter-small;
+                            border-bottom: 1px solid #D8D8D8;
                         }
 
-
+                        a {
+                            margin: 0;
+                            @include arrow-link;
+                            line-height: 2;
+                            color: black;
+                        }
+                    }
+                    &:hover {
+                        > section {
+                            display: block;
+                        }
                     }
                 }
             }
@@ -236,201 +283,6 @@
                 }
             }
 
-        }
-    }
-}
-
-.navbarffff {
-    //padding: 1rem;
-    //background-color: white;
-    //
-    //:global(.flexRow) {
-    //    @include flexRow;
-    //    margin-bottom: 0 !important;
-    //    align-items: center;
-    //
-    //    :global(.logo) {
-    //        background-image: url("/images/headforwards.black.png");
-    //        background-size: contain;
-    //        flex: 1;
-    //        background-repeat: no-repeat;
-    //        background-position: 0 center;
-    //        height: 65px;
-    //
-    //    }
-    //}
-
-    //:global(.main-nav) {
-    //    list-style-type: none;
-    //    display: none;
-    //
-    //    :global(.main-list-item) {
-    //        padding: 9px 0;
-    //        border-top: 1px solid #383F51;
-    //
-    //        ul {
-    //            display: none;
-    //        }
-    //
-    //        :global(.nav-links) {
-    //            text-decoration: none;
-    //            color: white;
-    //            font-size: 1.5rem;
-    //        }
-    //    }
-    //}
-
-    //:global(.socials-section) {
-    //    display: none;
-    //}
-    //
-    //&:global(.is-active) {
-    //    background-color: $blue-background;
-    //
-    //    :global(.flexRow) {
-    //        :global(.logo) {
-    //            background-image: url("/images/headforwards-full-logo-white.png");
-    //        }
-    //    }
-    //
-    //    :global(.main-nav),
-    //    :global(.socials-section) {
-    //        display: block;
-    //    }
-    //}
-
-}
-
-@media screen and (min-width: $screen-md) {
-    .navbarfffff {
-//
-//            :global(.main-nav) {
-//                @include flexRow;
-//
-//                :global(.main-list-item) {
-//                    border-top: none;
-//
-//                    ul {
-//                        display: block;
-//                    }
-//
-//                }
-//
-//                > :global(.main-list-item) {
-//                    border-top: none;
-//
-//                    > a {
-//                        border-bottom: 1px solid #383F51;
-//
-//                        + ul {
-//                            a {
-//                                color: #8D9FAE;
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//
-    }
-}
-
-
-@media screen and (min-width: $screen-lg) {
-
-    .navbarfffff {
-
-        //@include flexRow;
-        //align-items: center;
-        //padding: 45px 0;
-        //border-bottom: 1px solid #D8D8D8;
-
-        //:global(.flexRow) {
-        //    flex-grow: 1;
-        //}
-        //
-        //&:global(.with-bg) {
-        //    background-color: transparent;
-        //    color: white;
-        //    border-bottom: none;
-        //
-        //    :global(.flexRow) {
-        //        :global(.logo) {
-        //            background-image: url("/images/headforwards-full-logo-white.png");
-        //
-        //        }
-        //    }
-        //
-        //    :global(.main-nav) {
-        //        > :global(.main-list-item) {
-        //            > :global(.nav-links) {
-        //                color: white;
-        //
-        //                &:hover {
-        //                    color: $orange;
-        //                }
-        //            }
-        //        }
-        //    }
-        //
-        //}
-
-        :global(.main-nav) {
-            display: flex;
-            margin-right: 30px;
-            flex-direction: row;
-            justify-content: flex-end;
-
-            :global(.main-list-item) {
-                display: block;
-                position: relative;
-                border-top: none;
-
-                &:nth-last-of-type(1) {
-                    border-bottom: none;
-                }
-
-
-                :global(.nav-links) {
-                    color: black;
-                    margin-left: 40px;
-                }
-
-                > ul {
-                    padding: 20px;
-                    background-color: white;
-                    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.5);
-
-                    > li {
-                        display: block;
-                        position: relative;
-                        padding-bottom: 1rem;
-                    }
-                }
-
-
-                &:hover {
-                    > ul {
-                        white-space: nowrap;
-                        display: block;
-                        position: absolute;
-
-                        a {
-                            margin: 0;
-                        }
-
-                        > li {
-                            > ul {
-                                left: 100%;
-                                top: 10px;
-                            }
-                        }
-
-
-                    }
-
-
-                }
-            }
         }
     }
 }
