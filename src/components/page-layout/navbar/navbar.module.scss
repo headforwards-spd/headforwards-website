@@ -50,7 +50,7 @@
             > li {
 
                 &.hasChildren > a {
-                    display: block;
+                    display: flex;
                     button {
                         background: none;
                         border: none;
@@ -75,7 +75,8 @@
                     a {
                         color: #d7d7d6;
                         font-weight: lighter;
-                        line-height: 2;
+                        display: block;
+                        padding: 0.5em 0;
                     }
                 }
                 &.isOpen > section {
@@ -248,8 +249,8 @@
                         a {
                             margin: 0;
                             @include arrow-link;
-                            line-height: 2;
                             color: black;
+                            display: block;
                         }
                     }
                     &:hover {
