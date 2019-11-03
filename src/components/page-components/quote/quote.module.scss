@@ -5,7 +5,40 @@
 .blockquoteContainer {
     @include component-gutter;
 
-    > div {
+    > p {
+        margin: 0 0 $gutter-small;
+        padding: $gutter-large 0 0;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 1.4;
+        position: relative;
+        color: $orange;
+        @include fontXLarge;
+
+        &:before,
+        &:after {
+            position: absolute;
+            color: #686868;
+            font-size: 5rem;
+        }
+
+        &:before {
+            content: '“';
+            left: -2rem;
+            top: 0;
+            padding-left: 30px;
+        }
+
+        &:after {
+            content: '”';
+            bottom: 0;
+            margin-left: .25rem;
+            display: inline-block;
+            transform: translateY(50%);
+        }
+    }
+
+    > footer {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -41,39 +74,6 @@
 
         }
     }
-
-    blockquote {
-        margin: 0 0 $gutter-small;
-        padding: $gutter-large 0 0;
-        font-weight: bold;
-        font-style: italic;
-        line-height: 1.4;
-        position: relative;
-        color: $orange;
-        @include fontXLarge;
-
-        &:before,
-        &:after {
-            position: absolute;
-            color: #686868;
-            font-size: 5rem;
-        }
-
-        &:before {
-            content: '“';
-            left: -2rem;
-            top: 0;
-            padding-left: 30px;
-        }
-
-        &:after {
-            content: '”';
-            bottom: 0;
-            margin-left: .25rem;
-            display: inline-block;
-            transform: translateY(50%);
-        }
-    }
 }
 
 
@@ -84,7 +84,7 @@
         padding-top: 0;
         padding-left: $gutter-medium;
 
-        blockquote {
+        > p {
             &:before {
                 left: -$gutter-large;
                 top: 0;

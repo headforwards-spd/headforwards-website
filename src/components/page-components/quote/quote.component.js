@@ -21,21 +21,21 @@ Quote.defaultProps = {
 };
 function Quote({ jobTitle, name, profilePic, quote }) {
     return (
-        <div className={styles.blockquoteContainer}>
-            <blockquote>{quote}</blockquote>
+        <blockquote className={styles.blockquoteContainer}>
+            <p>{quote}</p>
             {!!name && (
-                <div className={styles.flexRow}>
+                <footer>
                     {!!profilePic && (
                         <div className={styles.imageCropper}>
-                            <Image className={styles.profilePicImage} image={profilePic} ratio="100%" />
+                            <Image className={styles.image} image={profilePic} ratio="100%" />
                         </div>
                     )}
-                    <div>
+                    <section>
                         <h1>{name}</h1>
                         {!!jobTitle && <p>{jobTitle}</p>}
-                    </div>
-                </div>
+                    </section>
+                </footer>
             )}
-        </div>
+        </blockquote>
     );
 }
