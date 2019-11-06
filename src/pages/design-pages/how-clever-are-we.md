@@ -3,6 +3,7 @@ uuid: 359e0550-009f-11ea-b6f6-d743f848720a
 path: design-pages
 type: design
 title: How clever are we
+text: An old man with glasses
 image: /uploads/simon-minchin-author-copy-2.jpg
 components:
   - jobTitle: Luddite
