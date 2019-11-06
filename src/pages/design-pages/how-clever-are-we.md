@@ -20,10 +20,12 @@ components:
       planets. What makes this one so special? I mean, who cares about a bit of
       rubbish? What difference does it make?’
 
+
       Doctor Mike was standing behind Dave and he started to shake his head in
       disbelief. Candy let her head drop to one side as she glared at the alien.
       Boffo and Jane snuggled closer to each other on the sofa, scowls on both
       their faces.
+
 
       ‘Did you?’ asked Candy.
 ---
