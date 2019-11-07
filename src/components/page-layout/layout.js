@@ -20,7 +20,7 @@ Layout.defaultProps = {
     text: null,
     image: null,
     children: null,
-    seo: { title: null },
+    seo: {},
 };
 function Layout({ seo, title, text, image, children }) {
     const { menuData, companyInfo } = useStaticQuery(graphql`
