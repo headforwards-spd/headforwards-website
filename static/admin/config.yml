@@ -4,7 +4,7 @@ backend:
 #publish_mode: editorial_workflow
 
 site_url: https://headforwards-website.netlify.com
-display_url: headforwards.com
+display_url: https://headforwards.com
 logo_url: https://headforwards-website.netlify.com/images/headforwards.black.png
 show_preview_links: true
 
