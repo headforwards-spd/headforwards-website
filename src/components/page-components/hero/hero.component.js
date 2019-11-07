@@ -1,7 +1,7 @@
-import React                   from 'react';
+import React from 'react';
 import { shape, string, bool } from 'prop-types';
-import ReactMarkdown           from 'react-markdown'
-import styles                  from './hero.module.scss';
+import ReactMarkdown from 'react-markdown';
+import styles from './hero.module.scss';
 
 const heroPropTypes = {
     title: string.isRequired,
@@ -22,7 +22,9 @@ function Hero({ title, text, isTwoColumns }) {
     return (
         <section className={`${styles.hero} ${columnsClass}`}>
             <h1>{title}</h1>
-            <section><ReactMarkdown source={text} /></section>
+            <section>
+                <ReactMarkdown source={text} />
+            </section>
         </section>
     );
 }

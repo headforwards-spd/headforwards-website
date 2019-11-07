@@ -1,9 +1,9 @@
-import React                       from 'react';
-import { shape, string }           from 'prop-types';
-import ReactMarkdown               from 'react-markdown'
+import React from 'react';
+import { shape, string } from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import Image, { ImageSrcPropType } from '../../../image/image.component';
-import Link                        from '../../../link/link.component';
-import styles                      from './article-columns.module.scss';
+import Link from '../../../link/link.component';
+import styles from './article-columns.module.scss';
 
 const articlePropTypes = {
     title: string.isRequired,
@@ -28,7 +28,9 @@ function Article({ title, text, image, link, linkText }) {
         <section className={styles.article}>
             <h1>{title}</h1>
             <Image image={image} className={styles.image} />
-            <section><ReactMarkdown source={text} /></section>
+            <section>
+                <ReactMarkdown source={text} />
+            </section>
             {hasLink && <Link to={link}>{linkText}</Link>}
         </section>
     );

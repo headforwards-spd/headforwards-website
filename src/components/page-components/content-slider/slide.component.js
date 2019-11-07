@@ -1,9 +1,9 @@
-import React                       from 'react';
-import { string, shape }           from 'prop-types';
-import ReactMarkdown               from 'react-markdown'
+import React from 'react';
+import { string, shape } from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import Image, { ImageSrcPropType } from '../../image/image.component';
-import Link                        from '../../link/link.component';
-import styles                      from './content-slider.module.scss';
+import Link from '../../link/link.component';
+import styles from './content-slider.module.scss';
 
 const slidePropTypes = {
     title: string.isRequired,
@@ -20,7 +20,9 @@ function Slide({ title, text, image }) {
         <section className={styles.slide}>
             <section>
                 <h1>{title}</h1>
-                <section><ReactMarkdown source={text} /></section>
+                <section>
+                    <ReactMarkdown source={text} />
+                </section>
                 <Link to="/">Read the case study</Link>
             </section>
             <Image className={styles.slideImage} image={image} />

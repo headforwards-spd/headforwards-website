@@ -5,6 +5,7 @@ import { ImageSrcPropType } from '../image/image.component';
 import Header from './header/header.component';
 import Footer from './footer/footer.component';
 import '../../scss/main.scss';
+import Seo, { SeoPropType } from './seo';
 
 export default Layout;
 
@@ -12,14 +13,16 @@ Layout.propTypes = {
     title: string.isRequired,
     text: string,
     image: ImageSrcPropType,
+    seo: SeoPropType,
     children: oneOfType([arrayOf(node), node, string]),
 };
 Layout.defaultProps = {
     text: null,
     image: null,
     children: null,
+    seo: { title: null },
 };
-function Layout({ title, text, image, children }) {
+function Layout({ seo, title, text, image, children }) {
     const { menuData, companyInfo } = useStaticQuery(graphql`
         query {
             menuData: dataYaml(title: { eq: "main-menu" }) {
@@ -57,6 +60,7 @@ function Layout({ title, text, image, children }) {
 
     return (
         <Fragment>
+            <Seo {...{ title, ...seo }} />
             <Header {...headerProps} />
             <main>{children}</main>
             <Footer {...{ companyInfo }} />
