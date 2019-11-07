@@ -20,7 +20,7 @@ function BlogArticle({ title, image, link }) {
         <section className={styles.article}>
             <h1>{title}</h1>
             <Image className={styles.image} image={image} />
-            <Link to={link}>
+            <Link to={link} aria-label={title}>
                 <Arrow />
             </Link>
         </section>

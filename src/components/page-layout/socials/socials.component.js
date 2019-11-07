@@ -32,35 +32,35 @@ function Socials({ activeClass, twitterURL, facebookURL, instagramURL, linkedInU
         <ul className={`${activeClass} ${footerClass}`}>
             {!!twitterURL && (
                 <li>
-                    <Link to={twitterURL}>
+                    <Link to={twitterURL} aria-label="Twitter">
                         <FontAwesomeIcon icon={faTwitter} />
                     </Link>
                 </li>
             )}
             {!!facebookURL && (
                 <li>
-                    <Link to={facebookURL}>
+                    <Link to={facebookURL} aria-label="Facebook">
                         <FontAwesomeIcon icon={faFacebookSquare} />
                     </Link>
                 </li>
             )}
             {!!instagramURL && (
                 <li>
-                    <Link to={instagramURL}>
+                    <Link to={instagramURL} aria-label="Instagram">
                         <FontAwesomeIcon icon={faInstagram} />
                     </Link>
                 </li>
             )}
             {!!linkedInURL && (
                 <li>
-                    <Link to={linkedInURL}>
+                    <Link to={linkedInURL} aria-label="LinkedIn">
                         <FontAwesomeIcon icon={faLinkedinIn} />
                     </Link>
                 </li>
             )}
             {!!youtubeURL && (
                 <li>
-                    <Link to={youtubeURL}>
+                    <Link to={youtubeURL} aria-label="YouTube">
                         <FontAwesomeIcon icon={faYoutube} />
                     </Link>
                 </li>

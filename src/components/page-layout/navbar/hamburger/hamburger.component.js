@@ -14,6 +14,7 @@ function Hamburger({ activeClass, onClick }) {
             onClick={onClick}
             className={`${activeClass} ${styles.hamburger} ${styles.hamburgerSlider}`}
             type="button"
+            aria-label="Toggle Menu"
         >
             <span className={styles.hamburgerBox}>
                 <span className={styles.hamburgerInner} />

@@ -37,12 +37,12 @@ export default class ContentSlider extends Component {
             beforeChange: () => this.setState({ isChanging: true }),
             afterChange: () => this.setState({ isChanging: false }),
             prevArrow: (
-                <button type="button" className={styles.prevArrow}>
+                <button type="button" className={styles.prevArrow} aria-label="Previous Slide">
                     <Arrow />
                 </button>
             ),
             nextArrow: (
-                <button type="button" className={styles.nextArrow}>
+                <button type="button" className={styles.nextArrow} aria-label="Next Slide">
                     <Arrow />
                 </button>
             ),
