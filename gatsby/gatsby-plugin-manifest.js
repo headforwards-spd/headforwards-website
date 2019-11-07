@@ -1,7 +1,7 @@
 module.exports = {
     resolve: `gatsby-plugin-manifest`,
     options: {
-        name: 'Headforwards Solutions Ltd.',
+        name: 'Headforwards',
         short_name: 'Headforwards',
         start_url: '/',
         background_color: '#141122',
