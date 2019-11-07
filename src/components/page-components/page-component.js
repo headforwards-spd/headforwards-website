@@ -2,13 +2,14 @@ import { shape, string } from 'prop-types';
 import React from 'react';
 import ArticleColumns from './columns/article-columns/article-columns.component';
 import PostitCopyColumns from './columns/postit-copy-columns/postit-copy-columns.component';
-import Hero from './hero/hero.component';
-import ImageCopyColumns from './columns/image-copy-columns/image-copy-columns.component';
-import ContentSlider from './content-slider/content-slider.component';
-import BlogPostColumns from './columns/blog-post-columns/blog-post-columns.component';
-import FullWidthImage from './images/full-width/full-width-image.component';
-import TwoImages from './images/two/two-images.component';
-import Quote from './quote/quote.component';
+import Hero              from './hero/hero.component';
+import ImageCopyColumns  from './columns/image-copy-columns/image-copy-columns.component';
+import ContentSlider     from './content-slider/content-slider.component';
+import BlogPostColumns   from './columns/blog-post-columns/blog-post-columns.component';
+import FullWidthImage    from './images/full-width/full-width-image.component';
+import TwoImages         from './images/two/two-images.component';
+import Quote             from './quote/quote.component';
+import ReactMarkdown     from 'react-markdown'
 
 const pageComponentPropTypes = {
     type: string.isRequired,
@@ -42,6 +43,6 @@ function PageComponent({ type, ...component }) {
         case 'articleColumnsComponent':
             return <ArticleColumns {...component} />;
         default:
-            return <p>{component.text}</p>;
+            return <ReactMarkdown source={component.text} />;
     }
 }

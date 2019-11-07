@@ -102,7 +102,7 @@
         order: 1;
     }
 
-    section {
+    > section {
 
         order: 2;
         flex-grow: 1;
@@ -111,13 +111,13 @@
         padding: 25px;
         overflow: hidden;
 
-        h1 {
+        > h1 {
             color: $orange;
             @include fontMedium;
             margin-top: 2em;
         }
 
-        p {
+        > section {
             position: relative;
             flex-grow: 1;
             color: #B8B8B8;
@@ -136,7 +136,7 @@
             }
         }
 
-        a {
+        > a {
             @include arrow-link;
             @include fontMedium;
         }
@@ -244,24 +244,24 @@
         height: calc(90vh - 10rem);
         background: $blue-background;
 
-        section {
+        > section {
             order: 1;
             flex-shrink: 1;
             display: flex;
             flex-direction: column;
             padding: 1rem;
 
-            h1 {
+            > h1 {
                 font-size: 28px;
                 transition: opacity ease 250ms;
             }
 
-            p {
+            > section {
                 flex-grow: 1;
                 color: #B8B8B8;
             }
 
-            a {
+            > a {
                 font-size: 26px;
             }
         }

@@ -1,8 +1,9 @@
-import React from 'react';
-import { shape, bool, string } from 'prop-types';
+import React                       from 'react';
+import { shape, bool, string }     from 'prop-types';
+import ReactMarkdown               from 'react-markdown'
 import Image, { ImageSrcPropType } from '../../../image/image.component';
-import Link from '../../../link/link.component';
-import styles from './image-copy-columns.module.scss';
+import Link                        from '../../../link/link.component';
+import styles                      from './image-copy-columns.module.scss';
 
 const imageCopyColumnsPropTypes = {
     image: ImageSrcPropType.isRequired,
@@ -31,7 +32,7 @@ function ImageCopyColumns({ image, isRightImage, title, text, link, linkText }) 
             <Image image={image} ratio="100%" className={styles.image} />
             <section className={styles.copy}>
                 <h1>{title}</h1>
-                <p>{text}</p>
+                <section><ReactMarkdown source={text} /></section>
                 {hasLink && <Link to={link}>{linkText}</Link>}
             </section>
         </section>

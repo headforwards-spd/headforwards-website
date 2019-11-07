@@ -31,12 +31,12 @@
                 margin: 0 #{-$gutter-medium} $gutter-small;
             }
 
-            h1 {
+            > h1 {
                 order: 2;
                 @include headingFontMedium;
             }
 
-            p {
+            > section {
                 order: 3;
                 flex-grow: 1;
 
@@ -45,7 +45,7 @@
                 }
             }
 
-            a {
+            > a {
                 order: 4;
                 @include arrow-link;
             }
@@ -85,7 +85,7 @@
             &.isThreeColumns .article {
                 width: calc((100%/3) - #{$gutter-medium});
 
-                h1 {
+                > h1 {
                     @include headingFontSmall;
                 }
 
@@ -93,43 +93,3 @@
         }
     }
 }
-
-//.articleRow {
-//
-//    h1, p, a {
-//        padding: 0 1rem;
-//    }
-//    img {
-//        width: 100%;
-//    }
-//
-//    .twoCol,
-//    .threeCol {
-//        flex-basis: 100%;
-//        margin-bottom: 30px;
-//    }
-//}
-//
-//@media(min-width: $screen-md) {
-//    .flexRow {
-//        @include flexRow;
-//
-//        .twoCol {
-//            flex-basis: 49%;
-//        }
-//
-//        .threeCol {
-//            flex-basis: 32%;
-//        }
-//
-//        h1 {
-//            //font-size: 2rem;
-//        }
-//
-//        h1, p, a {
-//            padding: 0;
-//        }
-//
-//    }
-//
-//}

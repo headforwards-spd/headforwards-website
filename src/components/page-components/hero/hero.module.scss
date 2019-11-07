@@ -4,10 +4,10 @@
 
 .hero {
     margin: 0 $gutter-large $gutter-large;
-    h1 {
+    > h1 {
         @include headingFontLarge;
     }
-    p {
+    > section {
         @include fontLarge;
         margin-bottom: 0;
     }
@@ -21,16 +21,16 @@
             margin-left: $gutter-large - $gutter-medium/2;
             margin-right: $gutter-large - $gutter-medium/2;
 
-            h1, p {
+            > h1, > section {
                 padding: 0 $gutter-medium/2;
             }
 
-            h1 {
+            > h1 {
                 width: 37.5%;
                 @include headingFontMedium;
             }
 
-            p {
+            > section {
                 width: 67.5%;
                 @include fontMedium;
             }
