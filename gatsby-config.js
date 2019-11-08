@@ -6,6 +6,7 @@ const gatsbyTransformerRemark = require('./gatsby/gatsby-transformer-remark');
 const gatsbyTransformerYaml = require('./gatsby/gatsby-transformer-yaml');
 const gatsbyPluginManifest = require('./gatsby/gatsby-plugin-manifest');
 const gatsbyPluginNetlifyCms = require('./gatsby/gatsby-plugin-netlify-cms');
+const gatsbyPluginOffline = require('./gatsby/gatsby-plugin-offline');
 // const gatsbyPluginPurgecss = require('./gatsby/gatsby-plugin-purgecss');
 
 module.exports = {
@@ -25,9 +26,9 @@ module.exports = {
         { ...gatsbyTransformerYaml },
         `gatsby-transformer-yaml-menu`,
         // must be after other CSS plugins
-        // {...gatsbyPluginPurgecss},
+        // { ...gatsbyPluginPurgecss },
         { ...gatsbyPluginManifest },
-        // `gatsby-plugin-offline`,
+        { ...gatsbyPluginOffline },
         { ...gatsbyPluginNetlifyCms },
         // make sure to keep it last in the array
         'gatsby-plugin-netlify',
