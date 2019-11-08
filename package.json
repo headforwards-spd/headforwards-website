@@ -18,10 +18,10 @@
     "netlify-cms-app": "^2.9.7",
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
+    "react-helmet": "^5.2.0",
     "react-markdown": "^4.2.2",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1",
-    "react-helmet": "^5.2.0",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
