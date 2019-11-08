@@ -24,11 +24,11 @@ module.exports = {
         `gatsby-transformer-remark-linked-pages`,
         { ...gatsbyTransformerYaml },
         `gatsby-transformer-yaml-menu`,
-        { ...gatsbyPluginNetlifyCms },
-        { ...gatsbyPluginManifest },
-        `gatsby-plugin-offline`,
         // must be after other CSS plugins
         // {...gatsbyPluginPurgecss},
+        { ...gatsbyPluginManifest },
+        // `gatsby-plugin-offline`,
+        { ...gatsbyPluginNetlifyCms },
         // make sure to keep it last in the array
         'gatsby-plugin-netlify',
     ],
