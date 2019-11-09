@@ -11,6 +11,7 @@ components:
     quote: 'So, basically, it''s very similar to a WP back end. Weird, huh. '
     type: quoteComponent
   - isRightImage: true
+    link: d1956170-ec44-11e9-914c-c376cef31113
     linkText: Find out less
     type: postitCopyColumnsComponent
     title: On the eternal pointlessness of life.
