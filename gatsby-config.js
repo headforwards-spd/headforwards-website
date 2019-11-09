@@ -22,8 +22,8 @@ module.exports = {
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         { ...gatsbyTransformerRemark },
-        `gatsby-transformer-remark-linked-pages`,
         { ...gatsbyTransformerYaml },
+        `gatsby-transformer-remark-linked-pages`,
         `gatsby-transformer-yaml-menu`,
         // must be after other CSS plugins
         // { ...gatsbyPluginPurgecss },
