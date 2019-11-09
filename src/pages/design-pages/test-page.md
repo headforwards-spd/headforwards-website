@@ -16,7 +16,7 @@ components:
       teambuilding and software quality. 
     image: /uploads/man-with-glasses-square.png
     isRightImage: false
-    link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
+    link: 359e0550-009f-11ea-b6f6-d743f848720a
     linkText: Discover more
   - type: imageCopyColumnsComponent
     title: How it began
