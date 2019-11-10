@@ -1,10 +1,12 @@
-import React from 'react';
+import React  from 'react';
+import Layout from '../components/page-layout/layout'
 
-const NotFoundPage = () => (
-    <div>
-        <h1>NOT FOUND</h1>
+export default () => {
+    const props = {
+        title: 'Not Found',
+    };
+
+    return (<Layout {...props}>
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </div>
-);
-
-export default NotFoundPage;
+    </Layout>);
+};

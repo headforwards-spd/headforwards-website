@@ -17,7 +17,7 @@ function Link({ to, children, ...props }) {
         return null;
     }
 
-    const isExternalLink = to.match(/((?:http(?:s)?:)?\/\/)[^.]+\.\S+/g);
+    const isExternalLink = to.match(/^(?:tel:|(?:(?:http(?:s)?:)?\/\/|mailto:)[^.]+\.\S+)/g);
 
     return isExternalLink ? (
         <a href={to} {...props}>
