@@ -10,7 +10,9 @@ const gatsbyPluginOffline = require('./gatsby/gatsby-plugin-offline');
 // const gatsbyPluginPurgecss = require('./gatsby/gatsby-plugin-purgecss');
 
 module.exports = {
-    siteMetadata: {},
+    siteMetadata: {
+        siteUrl: `https://headforwards-website.netlify.com`,
+    },
     plugins: [
         'gatsby-plugin-react-helmet',
         { ...gatsbyPluginSass },
@@ -31,6 +33,18 @@ module.exports = {
         { ...gatsbyPluginOffline },
         { ...gatsbyPluginNetlifyCms },
         // make sure to keep it last in the array
+        {
+            resolve: `gatsby-plugin-sitemap`,
+            options: {
+                exclude: [`/admin`]
+            }
+        },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                policy: [{ userAgent: '*', disallow: '/admin/' }],
+            },
+        },
         `gatsby-plugin-netlify-cache`,
         'gatsby-plugin-netlify',
     ],
