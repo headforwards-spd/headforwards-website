@@ -31,6 +31,7 @@ module.exports = {
         { ...gatsbyPluginOffline },
         { ...gatsbyPluginNetlifyCms },
         // make sure to keep it last in the array
+        `gatsby-plugin-netlify-cache`,
         'gatsby-plugin-netlify',
     ],
 };
