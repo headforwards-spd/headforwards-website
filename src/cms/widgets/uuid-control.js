@@ -7,41 +7,22 @@ const uuidControlPropTypes = {
     onChange: func.isRequired,
     forID: string.isRequired,
     classNameWrapper: string.isRequired,
-    setActiveStyle: func.isRequired,
-    setInactiveStyle: func.isRequired,
 };
 
 export default class UuidControl extends Component {
     static propTypes = uuidControlPropTypes;
 
-    componentDidMount() {
+    isValid() {
         const { value, onChange } = this.props;
 
-        if (value) {
-            return;
-        }
+        !value && onChange(uuid.v1());
 
-        const id = uuid.v1();
-
-        onChange(id);
+        return true;
     }
 
     render() {
-        const { forID, classNameWrapper, setActiveStyle, setInactiveStyle, value } = this.props;
+        const { forID, classNameWrapper, value } = this.props;
 
-        return (
-            <input
-                type="text"
-                className={classNameWrapper}
-                style={{
-                    color: '#cdcdcd',
-                }}
-                value={value}
-                id={forID}
-                onFocus={setActiveStyle}
-                onBlur={setInactiveStyle}
-                disabled
-            />
-        );
+        return <input type="text" className={classNameWrapper} value={value} id={forID} disabled />;
     }
 }
