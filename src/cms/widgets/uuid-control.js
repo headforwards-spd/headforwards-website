@@ -5,7 +5,6 @@ import { string, func } from 'prop-types';
 const uuidControlPropTypes = {
     value: string.isRequired,
     onChange: func.isRequired,
-    forID: string.isRequired,
     classNameWrapper: string.isRequired,
 };
 
@@ -21,8 +20,8 @@ export default class UuidControl extends Component {
     }
 
     render() {
-        const { forID, classNameWrapper, value } = this.props;
+        const { classNameWrapper, value } = this.props;
 
-        return <input type="text" className={classNameWrapper} value={value} id={forID} disabled />;
+        return <p className={classNameWrapper}>{value}</p>;
     }
 }
