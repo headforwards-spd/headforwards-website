@@ -6,6 +6,8 @@ const gatsbyTransformerRemark = require('./gatsby/gatsby-transformer-remark');
 const gatsbyTransformerYaml = require('./gatsby/gatsby-transformer-yaml');
 const gatsbyPluginManifest = require('./gatsby/gatsby-plugin-manifest');
 const gatsbyPluginNetlifyCms = require('./gatsby/gatsby-plugin-netlify-cms');
+const gatsbyPluginSitemap = require('./gatsby/gatsby-plugin-sitemap');
+const gatsbyPluginRobotsTxt = require('./gatsby/gatsby-plugin-robots-txt');
 const gatsbyPluginOffline = require('./gatsby/gatsby-plugin-offline');
 // const gatsbyPluginPurgecss = require('./gatsby/gatsby-plugin-purgecss');
 
@@ -33,18 +35,8 @@ module.exports = {
         { ...gatsbyPluginOffline },
         { ...gatsbyPluginNetlifyCms },
         // make sure to keep it last in the array
-        {
-            resolve: `gatsby-plugin-sitemap`,
-            options: {
-                exclude: [`/admin`]
-            }
-        },
-        {
-            resolve: 'gatsby-plugin-robots-txt',
-            options: {
-                policy: [{ userAgent: '*', disallow: '/admin/' }],
-            },
-        },
+        { ...gatsbyPluginSitemap },
+        { ...gatsbyPluginRobotsTxt },
         `gatsby-plugin-netlify-cache`,
         'gatsby-plugin-netlify',
     ],
