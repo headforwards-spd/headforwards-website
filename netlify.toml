@@ -1,3 +1,16 @@
 [build.environment]
   YARN_VERSION = "1.19.1"
   YARN_FLAGS = "--no-ignore-optional"
+# Asset optimization, mimicking what we accomplished earlier
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
