@@ -39,6 +39,7 @@ Celebrate success and failure! We hold weekly "Show and Tell" sessions that do b
 
 
 ![](/wp-content/uploads/2018/03/headforwards-office-photos-2017-166-web-2048-2.jpg)
+
 ![](/wp-content/uploads/2017/04/Headforwards-Headtalks-280916-12.jpg)
 
 </section>

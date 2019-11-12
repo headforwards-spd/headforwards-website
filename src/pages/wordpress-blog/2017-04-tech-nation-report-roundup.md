@@ -46,8 +46,11 @@ Here are some stats about our Tech Cluster that were gathered from the survey re
 
 
 ![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-3.jpg)
+
 ![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-1.jpg)
+
 ![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet.jpg)
+
 ![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-2.jpg)
 
 </section>

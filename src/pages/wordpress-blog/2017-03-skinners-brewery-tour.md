@@ -24,7 +24,9 @@ Here are a few photos from the tour including some post-beer tasting friendly fa
 
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-17.jpg)
+
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-19.jpg)
+
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-21.jpg)
 
 </section>
@@ -38,8 +40,11 @@ Beer hops –_ “foil packed for freshness”_
 
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-22.jpg)
+
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-24.jpg)
+
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-25.jpg)
+
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-27.jpg)
 
 </section>
@@ -65,6 +70,7 @@ Beer tasting time…
 
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-5.jpg)
+
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-8.jpg)
 
 </section>
@@ -90,6 +96,7 @@ The huge variety of ales, beers and ciders
 
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-29.jpg)
+
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-30.jpg)
 
 </section>

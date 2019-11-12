@@ -26,6 +26,7 @@ First up was Garry Barter of [Hertzian](http://www.hertzian.co.uk/) on Artificia
 
 
 ![Kernow DAT Virtual Reality game](/wp-content/uploads/2016/09/Headforwards-kernowdat-vrgame.jpg)
+
 ![BDD Beer](/wp-content/uploads/2016/09/Headforwards-kernowdat-bddbeer2.jpg)
 
 </section>

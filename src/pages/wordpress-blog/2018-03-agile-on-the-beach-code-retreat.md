@@ -20,16 +20,27 @@ The Agile Code Retreat is a 2-day event where participants study and practice di
 
 
 ![](/wp-content/uploads/2018/03/CodeRetreat11.jpg)
+
 ![](/wp-content/uploads/2018/03/CodeRetreat17.jpg)
+
 ![](/wp-content/uploads/2018/03/CodeRetreat54.jpg)
+
 ![](/wp-content/uploads/2018/03/CodeRetreat25.jpg)
+
 ![](/wp-content/uploads/2018/03/CodeRetreat26.jpg)
+
 ![](/wp-content/uploads/2018/03/CodeRetreat43.jpg)
+
 ![](/wp-content/uploads/2018/03/CodeRetreat57.jpg)
+
 ![](/wp-content/uploads/2018/03/CodeRetreat59.jpg)
+
 ![](/wp-content/uploads/2018/03/CodeRetreat70.jpg)
+
 ![](/wp-content/uploads/2018/03/aotb17-480.jpg)
+
 ![](/wp-content/uploads/2018/03/aotb17-575.jpg)
+
 ![](/wp-content/uploads/2018/03/CodeRetreat11-1.jpg)
 
 </section>
