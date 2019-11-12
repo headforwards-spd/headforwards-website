@@ -144,7 +144,10 @@ module.exports = {
                         body: content ? getMarkdown(content) : null,
                     },
                     path: `src/pages/wordpress-blog/`,
-                    fileName: `${path.split('/').filter(value => !!value).join('-')}.md`,
+                    fileName: `${path
+                        .split('/')
+                        .filter(value => !!value)
+                        .join('-')}.md`,
                 };
 
                 transformAndWriteToFile(markdown);
