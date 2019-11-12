@@ -12,57 +12,6 @@ media_folder: static/uploads
 public_folder: /uploads
 
 collections:
-  - name: "settings"
-    label: "Site Settings"
-    description: "Website settings & meta data"
-    create: false
-    files:
-      - file: "src/data/main-menu.yml"
-        label: "Main Menu"
-        name: main-menu
-        fields:
-          - {label: "Title", name: title, widget: hidden, default: "main-menu"}
-          - label: "Items"
-            name: menu
-            widget: list
-            fields:
-              - {label: "Label", name: linkText, widget: string}
-              - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
-              - label: "Children"
-                name: children
-                widget: list
-                fields:
-                  - {label: "Label", name: linkText, widget: string}
-                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
-
-      - file: "src/data/company-info.yml"
-        label: "Company Information"
-        name: company-info
-        fields:
-          - {label: "Title", name: title, widget: hidden, default: "company-info"}
-          - {label: "Meta Title", name: metaTitle, widget: string}
-          - {label: "Meta Description", name: metaDescription, widget: string}
-          - {label: "Company Name", name: companyName, widget: string}
-          - {label: "Email Address", name: email, widget: string}
-          - {label: "Address", name: address, widget: text}
-          - {label: "Phone Number", name: phone, widget: string}
-          - {label: "Facebook URL",  name: facebookURL, widget: string, required: false}
-          - {label: "Instagram URL",  name: instagramURL, widget: string, required: false}
-          - {label: "Linkedin URL",  name: linkedInURL, widget: string, required: false}
-          - {label: "Youtube URL",  name: youtubeURL, widget: string, required: false}
-          - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
-
-  - label: "WordPress Posts"
-    label_singular: "WordPress Post"
-    name: wordpress-posts
-    description: "Imported old WordPress blog posts."
-    folder: "src/pages/wordpress-blog"
-    identifier_field: title
-    fields:
-      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - {label: "Type", name: type, widget: hidden, default: "wordpress"}
-      - {label: "Page Title", name: title, widget: string}
-      - {label: "Copy", name: body, widget: markdown}
 
   - label: "Pages"
     label_singular: "Page"
@@ -181,5 +130,56 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
+  - name: "settings"
+    label: "Site Settings"
+    description: "Website settings & meta data"
+    create: false
+    files:
+      - file: "src/data/main-menu.yml"
+        label: "Main Menu"
+        name: main-menu
+        fields:
+          - {label: "Title", name: title, widget: hidden, default: "main-menu"}
+          - label: "Items"
+            name: menu
+            widget: list
+            fields:
+              - {label: "Label", name: linkText, widget: string}
+              - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+              - label: "Children"
+                name: children
+                widget: list
+                fields:
+                  - {label: "Label", name: linkText, widget: string}
+                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
+      - file: "src/data/company-info.yml"
+        label: "Company Information"
+        name: company-info
+        fields:
+          - {label: "Title", name: title, widget: hidden, default: "company-info"}
+          - {label: "Meta Title", name: metaTitle, widget: string}
+          - {label: "Meta Description", name: metaDescription, widget: string}
+          - {label: "Company Name", name: companyName, widget: string}
+          - {label: "Email Address", name: email, widget: string}
+          - {label: "Address", name: address, widget: text}
+          - {label: "Phone Number", name: phone, widget: string}
+          - {label: "Facebook URL",  name: facebookURL, widget: string, required: false}
+          - {label: "Instagram URL",  name: instagramURL, widget: string, required: false}
+          - {label: "Linkedin URL",  name: linkedInURL, widget: string, required: false}
+          - {label: "Youtube URL",  name: youtubeURL, widget: string, required: false}
+          - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
+
+  - label: "WordPress Posts"
+    label_singular: "WordPress Post"
+    name: wordpress-posts
+    description: "Imported old WordPress blog posts."
+    folder: "src/pages/wordpress-blog"
+    identifier_field: title
+    fields:
+      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "Type", name: type, widget: hidden, default: "wordpress"}
+      - {label: "Page Title", name: title, widget: string}
+      - {label: "Copy", name: body, widget: markdown}
 
 
