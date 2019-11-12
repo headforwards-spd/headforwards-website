@@ -1,7 +1,7 @@
 module.exports = {
     resolve: 'gatsby-source-filesystem',
     options: {
-        path: `${__dirname}/../src/images`,
-        name: 'images',
+        path: `${__dirname}/../static/wp-content`,
+        name: 'wp-content',
     },
 };

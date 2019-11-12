@@ -37,14 +37,14 @@ function createAllPosts(createPage, { edges: posts = [] }) {
             // , index) => {
             const { id, fields, frontmatter } = post;
             const { slug } = fields;
-            const { path: postPath, type } = frontmatter;
+            const { path: type } = frontmatter;
 
             // const { id: prevId = '' } = index > firstIndex ? posts[index - 1].node : {};
             // const { id: nextId = '' } = index < lastIndex ? posts[index + 1].node : {};
 
             return createPage({
                 path: slug,
-                component: path.resolve(`src/templates/${postPath}/${type}-page.js`),
+                component: path.resolve(`src/templates/${type}-page.js`),
                 context: { id }, // , prevId, nextId },
             });
         })

@@ -1,5 +1,6 @@
 import { arrayOf, string } from 'prop-types';
 import React from 'react';
+import parseHtml from 'html-react-parser';
 import Image, { ImageSrcPropType } from '../../image/image.component';
 import { MenuItemPropType } from '../navbar/menu-item/menu-item.prop-type';
 import Navbar from '../navbar/navbar.component';
@@ -30,7 +31,7 @@ function Header({ title, text, image, menu, companyInfo }) {
         <header className={`${styles.header} ${headerStyle}`}>
             <Navbar {...{ menu, companyInfo, hasBackground }} />
             <section className={titleStyle}>
-                <h1>{title}</h1>
+                <h1>{parseHtml(title)}</h1>
                 <h2>{text}</h2>
             </section>
             {!!image && <Image image={image} className={styles.image} />}

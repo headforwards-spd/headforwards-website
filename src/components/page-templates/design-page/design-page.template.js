@@ -5,7 +5,11 @@ import PageComponent, { PageComponentPropType } from '../../page-components/page
 export default DesignPageTemplate;
 
 DesignPageTemplate.propTypes = {
-    components: arrayOf(PageComponentPropType).isRequired,
+    components: arrayOf(PageComponentPropType),
+};
+
+DesignPageTemplate.defaultProps = {
+    components: null,
 };
 
 function DesignPageTemplate({ components = [] }) {

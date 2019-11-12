@@ -1,0 +1,22 @@
+@import "../../../scss/variables";
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    > * {
+        flex-basis: 100%;
+    }
+
+    > img {
+        object-fit: contain;
+    }
+
+    > :global(.gatsby-resp-image-wrapper) {
+        margin: $gutter-small/2;
+        flex-basis: calc(100%/3 - #{$gutter-small});
+        width: calc(100%/3 - #{$gutter-small});
+    }
+}

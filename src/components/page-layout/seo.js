@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const seoPropTypes = {
-    title: string.isRequired,
+    title: string,
     description: string,
     lang: string,
     meta: arrayOf(object),
@@ -16,6 +16,7 @@ export const SeoPropType = shape(seoPropTypes);
 Seo.propTypes = seoPropTypes;
 
 Seo.defaultProps = {
+    title: '',
     description: ``,
     lang: `en`,
     meta: [],
