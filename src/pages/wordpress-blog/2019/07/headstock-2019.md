@@ -1,0 +1,111 @@
+---
+type: "wordpress"
+path: "/2019/07/headstock-2019"
+title: "Headstock 2019"
+slug: "headstock-2019"
+date: "2019-07-26T10:17:21.000Z"
+modified: "2019-07-29T11:24:21.000Z"
+excerpt: "Our Annual Festival was held at Stithians Lake in June, the sun came out for  the party and the more adventurous  of us took to the water on paddle-boards, kayaks and windsurf boards whilst the rest of us enjoyed the all day BBQ and beer, wine and soft drinks. The annual raft race was as …"
+categories: ["News"]
+tags: []
+author:
+  id: "1860e925-e52c-5d69-88c7-1ef257c71e70"
+  slug: "karen"
+  name: "Karen Russell"
+  path: "/author/karen/"
+---
+Our Annual Festival was held at Stithians Lake in June, the sun came out for  the party and the more adventurous  of us took to the water on paddle-boards, kayaks and windsurf boards whilst the rest of us enjoyed the all day BBQ and beer, wine and soft drinks.
+
+The annual raft race was as competitive as always and this time Toby’s team were well and truly beaten by Craig’s team.
+
+
+<section class="gallery">
+
+
+![](/wp-content/uploads/2019/07/P1000297.jpg)
+![](/wp-content/uploads/2019/07/P1000300.jpg)
+![](/wp-content/uploads/2019/07/P1000301.jpg)
+![](/wp-content/uploads/2019/07/P1000303.jpg)
+![](/wp-content/uploads/2019/07/P1000305.jpg)
+![](/wp-content/uploads/2019/07/P1000304.jpg)
+![](/wp-content/uploads/2019/07/P1000307.jpg)
+![](/wp-content/uploads/2019/07/P1000308.jpg)
+![](/wp-content/uploads/2019/07/P1000309.jpg)
+![](/wp-content/uploads/2019/07/P1000310.jpg)
+![](/wp-content/uploads/2019/07/P1000311.jpg)
+![](/wp-content/uploads/2019/07/P1000312.jpg)
+![](/wp-content/uploads/2019/07/P1000314.jpg)
+![](/wp-content/uploads/2019/07/P1000315.jpg)
+![](/wp-content/uploads/2019/07/P1000311.jpg)
+![](/wp-content/uploads/2019/07/P1000316.jpg)
+![](/wp-content/uploads/2019/07/P1000318.jpg)
+![](/wp-content/uploads/2019/07/P1000319.jpg)
+![](/wp-content/uploads/2019/07/P1000321.jpg)
+![](/wp-content/uploads/2019/07/P1000323.jpg)
+![](/wp-content/uploads/2019/07/P1000338.jpg)
+![](/wp-content/uploads/2019/07/P1000324.jpg)
+![](/wp-content/uploads/2019/01/2018-06-30-14.28.51.jpg)
+![](/wp-content/uploads/2019/07/P1000325.jpg)
+![](/wp-content/uploads/2019/07/P1000326.jpg)
+![](/wp-content/uploads/2019/07/P1000340.jpg)
+![](/wp-content/uploads/2019/07/P1000334.jpg)
+![](/wp-content/uploads/2019/07/P1000327.jpg)
+![](/wp-content/uploads/2019/07/P1000328.jpg)
+![](/wp-content/uploads/2019/07/P1000330.jpg)
+![](/wp-content/uploads/2019/07/P1000331.jpg)
+![](/wp-content/uploads/2019/07/P1000332.jpg)
+![](/wp-content/uploads/2019/07/P1000336.jpg)
+![](/wp-content/uploads/2019/07/P1000394.jpg)
+![](/wp-content/uploads/2019/07/P1000322.jpg)
+![](/wp-content/uploads/2019/07/P1000320.jpg)
+![](/wp-content/uploads/2019/07/P1000337.jpg)
+![](/wp-content/uploads/2019/07/P1000347.jpg)
+![](/wp-content/uploads/2019/07/P1000346.jpg)
+![](/wp-content/uploads/2019/07/P1000341.jpg)
+![](/wp-content/uploads/2019/07/P1000342.jpg)
+![](/wp-content/uploads/2019/07/P1000375.jpg)
+![](/wp-content/uploads/2019/07/P1000374.jpg)
+![](/wp-content/uploads/2019/07/P1000378.jpg)
+![](/wp-content/uploads/2019/07/P1000376.jpg)
+![](/wp-content/uploads/2019/07/P1000374.jpg)
+![](/wp-content/uploads/2019/07/P1000373.jpg)
+![](/wp-content/uploads/2019/07/P1000401.jpg)
+![](/wp-content/uploads/2019/07/P1000390.jpg)
+![](/wp-content/uploads/2019/07/P1000412.jpg)
+![](/wp-content/uploads/2019/07/P1000414.jpg)
+![](/wp-content/uploads/2019/07/P1000416.jpg)
+![](/wp-content/uploads/2019/07/P1000420.jpg)
+![](/wp-content/uploads/2019/07/P1000421.jpg)
+![](/wp-content/uploads/2019/07/P1000431.jpg)
+![](/wp-content/uploads/2019/07/P1000422.jpg)
+![](/wp-content/uploads/2019/07/P1000423.jpg)
+![](/wp-content/uploads/2019/07/P1000427.jpg)
+![](/wp-content/uploads/2019/07/P1000437.jpg)
+![](/wp-content/uploads/2019/07/P1000450.jpg)
+![](/wp-content/uploads/2019/07/P1000461.jpg)
+![](/wp-content/uploads/2019/07/P1000468.jpg)
+![](/wp-content/uploads/2019/07/P1000478.jpg)
+![](/wp-content/uploads/2019/07/P1000479.jpg)
+![](/wp-content/uploads/2019/07/P1000493.jpg)
+![](/wp-content/uploads/2019/07/P1000496.jpg)
+![](/wp-content/uploads/2019/07/P1000547-001.jpg)
+![](/wp-content/uploads/2019/07/P1000546.jpg)
+![](/wp-content/uploads/2019/07/P1000544.jpg)
+![](/wp-content/uploads/2019/07/P1000542.jpg)
+![](/wp-content/uploads/2019/07/P1000536.jpg)
+![](/wp-content/uploads/2019/07/P1000535.jpg)
+![](/wp-content/uploads/2019/07/P1000534.jpg)
+![](/wp-content/uploads/2019/07/P1000532.jpg)
+![](/wp-content/uploads/2019/07/P1000531.jpg)
+![](/wp-content/uploads/2019/07/P1000530.jpg)
+![](/wp-content/uploads/2019/07/P1000529.jpg)
+![](/wp-content/uploads/2019/07/P1000528.jpg)
+![](/wp-content/uploads/2019/07/P1000526.jpg)
+![](/wp-content/uploads/2019/07/P1000525.jpg)
+![](/wp-content/uploads/2019/07/P1000523.jpg)
+![](/wp-content/uploads/2019/07/P1000520.jpg)
+![](/wp-content/uploads/2019/07/P1000517.jpg)
+![](/wp-content/uploads/2019/07/P1000512.jpg)
+
+</section>
+
