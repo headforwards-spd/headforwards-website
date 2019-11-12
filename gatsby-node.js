@@ -8,7 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     return getData(graphql)
         .then(({ data, errors }) => (!errors ? Promise.resolve(data) : Promise.reject(errors)))
-        .then(({ designPages }) => createAllPosts(createPage, designPages));
+        .then(({ pages }) => createAllPages(createPage, pages));
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -28,25 +28,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     return Promise.resolve();
 };
 
-function createAllPosts(createPage, { edges: posts = [] }) {
-    // const firstIndex = 0;
-    // const lastIndex = posts.length - 1;
-
+function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
-        posts.map(({ node: post }) => {
-            // , index) => {
-            const { id, fields, frontmatter } = post;
+        pages.map(({ id, fields, frontmatter }) => {
             const { slug } = fields;
-            const { path: postPath, type } = frontmatter;
-
-            // const { id: prevId = '' } = index > firstIndex ? posts[index - 1].node : {};
-            // const { id: nextId = '' } = index < lastIndex ? posts[index + 1].node : {};
+            const { type } = frontmatter;
 
             return createPage({
-                path: slug,
-                component: path.resolve(`src/templates/${postPath}/${type}-page.js`),
-                context: { id }, // , prevId, nextId },
-            });
+                                  path: slug,
+                                  component: path.resolve(`src/templates/${type}-page.js`),
+                                  context: { id },
+                              });
         })
     );
 }
@@ -135,17 +127,15 @@ function createAllPosts(createPage, { edges: posts = [] }) {
 function getData(graphql) {
     return graphql(`
         {
-            designPages: allMarkdownRemark {
-                edges {
-                    node {
-                        id
-                        fields {
-                            slug
-                        }
-                        frontmatter {
-                            type
-                            path
-                        }
+            pages: allMarkdownRemark(filter: { frontmatter: { type: { eq: "design" } } }) {
+                nodes {
+                    id
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        type
+                        path
                     }
                 }
             }

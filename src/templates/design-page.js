@@ -1,17 +1,17 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { objectOf, shape, string, any, arrayOf, oneOfType } from 'prop-types';
-import Layout from '../../components/page-layout/layout';
-import { ArticleColumnsPropType } from '../../components/page-components/columns/article-columns/article-columns.component';
-import { ImageCopyColumnsPropType } from '../../components/page-components/columns/image-copy-columns/image-copy-columns.component';
-import { PostitCopyColumnsPropType } from '../../components/page-components/columns/postit-copy-columns/postit-copy-columns.component';
-import { HeroPropType } from '../../components/page-components/hero/hero.component';
-import { ContentSliderPropType } from '../../components/page-components/content-slider/content-slider.component';
-import { BlogPostColumnsPropType } from '../../components/page-components/columns/blog-post-columns/blog-post-columns.component';
-import { FullWidthImageSrcPropType } from '../../components/page-components/images/full-width/full-width-image.component';
-import { TwoImagesPropType } from '../../components/page-components/images/two/two-images.component';
-import { QuotePropType } from '../../components/page-components/quote/quote.component';
-import DesignPageTemplate from '../../components/page-templates/design-page/design-page.template';
+import Layout from '../components/page-layout/layout';
+import { ArticleColumnsPropType } from '../components/page-components/columns/article-columns/article-columns.component';
+import { ImageCopyColumnsPropType } from '../components/page-components/columns/image-copy-columns/image-copy-columns.component';
+import { PostitCopyColumnsPropType } from '../components/page-components/columns/postit-copy-columns/postit-copy-columns.component';
+import { HeroPropType } from '../components/page-components/hero/hero.component';
+import { ContentSliderPropType } from '../components/page-components/content-slider/content-slider.component';
+import { BlogPostColumnsPropType } from '../components/page-components/columns/blog-post-columns/blog-post-columns.component';
+import { FullWidthImageSrcPropType } from '../components/page-components/images/full-width/full-width-image.component';
+import { TwoImagesPropType } from '../components/page-components/images/two/two-images.component';
+import { QuotePropType } from '../components/page-components/quote/quote.component';
+import DesignPageTemplate from '../components/page-templates/design-page/design-page.template';
 
 export default DesignPage;
 
@@ -46,7 +46,7 @@ DesignPage.propTypes = {
 };
 
 export const query = graphql`
-    query PostPage($id: String!) {
+    query DesignPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
@@ -167,6 +167,7 @@ function DesignPage({ data }) {
     const { frontmatter } = page;
     const { components, ...header } = frontmatter;
     const pageProps = { components };
+
     return (
         <Layout {...header}>
             <DesignPageTemplate {...pageProps} />
