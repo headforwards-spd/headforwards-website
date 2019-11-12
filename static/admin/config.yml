@@ -14,6 +14,7 @@ public_folder: /uploads
 collections:
   - name: "settings"
     label: "Site Settings"
+    description: "Website settings & meta data"
     create: false
     files:
       - file: "src/data/main-menu.yml"
@@ -52,8 +53,9 @@ collections:
           - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
 
   - label: "WordPress Posts"
-    label_singular: "WordPress Page"
+    label_singular: "WordPress Post"
     name: wordpress-posts
+    description: "Imported old WordPress blog posts."
     folder: "src/pages/wordpress-blog"
     slug: "{{year}}/{{month}}/{{slug}}"
     preview_path: "{{year}}/{{month}}/{{slug}}"
@@ -64,9 +66,10 @@ collections:
       - {label: "Page Title", name: title, widget: string}
       - {label: "Copy", name: body, widget: markdown}
 
-  - label: "Design Pages"
-    label_singular: "Design Page"
+  - label: "Pages"
+    label_singular: "Page"
     name: design-pages
+    description: "Website landing pages"
     folder: "src/pages/design-pages"
     create: true
     slug: "{{slug}}"
