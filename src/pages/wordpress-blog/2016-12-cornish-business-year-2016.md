@@ -76,8 +76,11 @@ If you’d like to work for the Cornish Business of the Year 2016, we are curren
 
 
 ![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-cornish-business-of-the-year.jpg)
+
 ![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-jeni.jpg)
+
 ![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-john.jpg)
+
 ![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-lysssa.jpg)
 
 </section>

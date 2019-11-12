@@ -64,10 +64,15 @@ If you know of an event you think we might be interested in attending please let
 
 
 ![Headforwards atThe Cornwall Business Show ](/wp-content/uploads/2016/03/business-show-logo.png)
+
 ![Headforwards at The Cornwall Business Fair ](/wp-content/uploads/2016/03/newHeaderLogo.png)
+
 ![Headforwards at XP2016](/wp-content/uploads/2016/03/XP2016.jpg)
+
 ![Headforwards doing the roc5k](/wp-content/uploads/2016/03/logo.png)
+
 ![Headforwards at Software Cornwall Work Experience ](/wp-content/uploads/2016/03/cropped-2015-04-07-15.56.27-e1439802104964.png)
+
 ![Headforwards at Agile on the Beach](/wp-content/uploads/2016/03/agile-on-the-beach.gif)
 
 </section>

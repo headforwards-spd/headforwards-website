@@ -22,7 +22,9 @@ When I was their age I remember a 5 minute quiz on my likes and dislikes followe
 
 
 ![Cornwall Careers Show 2016 Robot Arm](/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-2016-Lyssa.jpg)
+
 ![Cornwall Careers Show Circus Skills](/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-2016-Circus.jpg)
+
 ![Cornwall Careers Show 2016](/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-group.jpg)
 
 </section>

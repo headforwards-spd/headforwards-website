@@ -26,13 +26,21 @@ Here are a few photos from the evening, if you want to watch them in a slideshow
 
 
 ![Summer BBQ at St Agnes](/wp-content/uploads/2014/01/ST-Agnes-122.jpg)
+
 ![Headforwards summer BBQ in St Agnes](/wp-content/uploads/2014/01/St-Agnes-12.jpg)
+
 ![Headforwards summer BBQ](/wp-content/uploads/2014/01/St-Agnes-31.jpg)
+
 ![Headforwards summer bbq](/wp-content/uploads/2014/01/st-Agnes18.jpg)
+
 ![summer bbq in cornwall](/wp-content/uploads/2014/01/St-Agnes-17.jpg)
+
 ![Cornish summer BBQ for Headforwards team](/wp-content/uploads/2014/01/St-Agnes-19.jpg)
+
 ![Koru Kayaking - Headforwards team ](/wp-content/uploads/2014/01/St-Agnes-91.jpg)
+
 ![Swimming at St Agnes- Headforwards team ](/wp-content/uploads/2014/01/St-Agnes22.jpg)
+
 ![The Headforwards team with Koru Kayaking ](/wp-content/uploads/2014/01/St-Agnes-101.jpg)
 
 </section>

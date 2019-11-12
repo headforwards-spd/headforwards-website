@@ -36,8 +36,11 @@ You never know you might get an invite to our next BBQ.
 
 
 ![Headforwards beach BBQ](/wp-content/uploads/2014/06/DSCF2516.jpg)
+
 ![Headforwards team at laser tag](/wp-content/uploads/2015/06/DSCF0778.jpg)
+
 ![Headforwards team in Falmouth](/wp-content/uploads/2014/06/DSCF1774.jpg)
+
 ![Headforwards- Headstock festival](/wp-content/uploads/2014/01/Headstock-21.jpg)
 
 </section>

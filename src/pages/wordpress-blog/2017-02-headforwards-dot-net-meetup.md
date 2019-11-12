@@ -27,9 +27,13 @@ author:
 
 
 ![](/wp-content/uploads/2017/02/Headforwards-Agile-Board.jpg)
+
 ![](/wp-content/uploads/2017/02/Headforwards-Agile-board-for-software-development-.jpg)
+
 ![](/wp-content/uploads/2017/02/Headforwards-software-squad.jpg)
+
 ![](/wp-content/uploads/2017/02/Headforwards-programming-.jpeg)
+
 ![](/wp-content/uploads/2017/02/Headforwards-team-member-working-copy.jpg)
 
 </section>

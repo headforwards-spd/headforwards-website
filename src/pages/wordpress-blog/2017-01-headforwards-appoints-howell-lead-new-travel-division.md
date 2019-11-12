@@ -39,6 +39,7 @@ Howell’s knowledge of the travel market will help to drive forward Headforward
 
 
 ![Left to Right: Craig Girvan, John Howell, Toby Parkins](/wp-content/uploads/2017/01/IMG_2199-web-2048-1.jpg "Left to Right: Craig Girvan, John Howell, Toby Parkins")
+
 ![Left to Right: John Howell, Craig Girvan, Toby Parkins](/wp-content/uploads/2017/01/IMG_2205-web-2048-edited.jpg "Left to Right: John Howell, Craig Girvan, Toby Parkins")
 
 </section>

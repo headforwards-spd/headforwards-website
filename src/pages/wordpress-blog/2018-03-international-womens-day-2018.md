@@ -26,6 +26,7 @@ However, women are not new to the world of technology.
 Here are 3 inspirational women who have contributed greatly to the tech world:
 
 [**Ada Lovelace**](https://en.wikipedia.org/wiki/Ada_Lovelace)
+
 ![Ada Lovelace portrait](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/256px-Ada_Lovelace_portrait.jpg)
 
 Ada Lovelace was born in 1815 – a long time before computers were around. However, she is widely considered the first computer programmer.
@@ -45,6 +46,7 @@ Her work was published in an English science journal in 1843, however it was onl
 In the 1980s  a computer programming language (Ada) was named after her.
 
 [**Grace Hopper**](https://en.wikipedia.org/wiki/Grace_Hopper)
+
 ![Grace Hopper](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Grace_Hopper.jpg/256px-Grace_Hopper.jpg)  
 Grace Hopper was a computer scientist in the US Navy, where she was also a Rear Admiral.  
 She worked on the UNIVAC 1, which was the first commercial computer produced in the USA, and she created the first compiler.
@@ -58,6 +60,7 @@ FLOW-MATIC then led to the development of COBOL which is still used today.
 In 1991 Hopper was awarded the National Medal of Technology. She was the first woman to receive this honour.
 
 [**Hedy Lamarr**](https://en.wikipedia.org/wiki/Hedy_Lamarr)
+
 ![Hedy Lamarr Publicity Photo for The Heavenly Body 1944](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hedy_Lamarr_Publicity_Photo_for_The_Heavenly_Body_1944.jpg/256px-Hedy_Lamarr_Publicity_Photo_for_The_Heavenly_Body_1944.jpg)
 
 Hedy Lamarr may be a surprise to you, as she is mainly famous for being a movie star in the 1920s. However, Lamarr also developed technology that allowed the Navy to remotely control torpedoes by manipulating radio frequencies at irregular intervals between transmission and reception. This invention formed an unbreakable code that prevented classified messages from being intercepted by enemy personnel.
