@@ -35,10 +35,10 @@ function createAllPages(createPage, { nodes: pages = [] }) {
             const { type } = frontmatter;
 
             return createPage({
-                                  path: slug,
-                                  component: path.resolve(`src/templates/${type}-page.js`),
-                                  context: { id },
-                              });
+                path: slug,
+                component: path.resolve(`src/templates/${type}-page.js`),
+                context: { id },
+            });
         })
     );
 }
