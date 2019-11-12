@@ -5,7 +5,7 @@ title: "Headforwards Supporting Safer Internet Day"
 slug: "headforwards-supporting-safer-internet-day"
 date: "2014-02-11T18:01:28.000Z"
 modified: "2015-09-01T16:15:46.000Z"
-excerpt: "Safer Internet Day (SID) is organised by the joint Insafe/INHOPE network, with the support of the European Commission each February to promote safer and more responsible use of online technology and mobile devices, especially among children and young people. Celebrated on the second day of the second week of the second month, each year on …"
+excerpt: "Safer Internet Day (SID) is organised by the joint Insafe/INHOPE network, with the support of the European Commission each February to promote safer and more responsible use of online technology and mobile devices, especially among children and young people. Celebrated on the second day of the second week of the second month, each year on \[…\]"
 categories: ["Informational","News","The Headforwards Team"]
 tags: []
 author:

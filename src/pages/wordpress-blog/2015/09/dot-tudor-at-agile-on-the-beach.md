@@ -5,7 +5,7 @@ title: "Dot Tudor at Agile on the Beach"
 slug: "dot-tudor-at-agile-on-the-beach"
 date: "2015-09-11T16:01:41.000Z"
 modified: "2017-11-03T10:54:28.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Dot Tudor at Agile on the Beach and her talk entitled “I’m an Alien” Dot Tudor is founder and Technical Director of TCC Limited, a company who specialise in business change and helping people improve the way they manage projects. She also won “Best Agile Coach / …"
+excerpt: "Lyssa, our Marketing Manager, has written the following article about Dot Tudor at Agile on the Beach and her talk entitled “I’m an Alien” Dot Tudor is founder and Technical Director of TCC Limited, a company who specialise in business change and helping people improve the way they manage projects. She also won “Best Agile Coach / \[…\]"
 categories: ["News","The Headforwards Team"]
 tags: ["Agile","Agile on the Beach","Agile on the Beach 2015","Agile Project Management","AgileBA handbook","BA","Business Analyst","Dot Tudor","Dot Tudor at Agile on the beach","Dot Tudor at Agile on the beach 2015","Ellen Gottendiener","Englishman in New York","I'm an alien","I'm an alien - a business analyst in an agile world","PO","product owner","scrum","Sting","TCC Limited","UK agile awards"]
 author:
@@ -21,7 +21,7 @@ She also won “Best Agile Coach / Mentor” at the UK Agile Awards 2011.
 
 Tudor’s talk was entitled “I’m an Alien – a Business Analyst in an Agile World”
 
-![Dot Tudor at Agile on the Beach - BA, I'm an alien ](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-BA-Im-an-Alien.jpg)
+[![Dot Tudor at Agile on the Beach - BA, I'm an alien ](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-BA-Im-an-Alien-300x225.jpg)](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-BA-Im-an-Alien.jpg)
 
 It was a discussion on Business Analysts and Product Owners. Is there space for both of these roles in an agile environment? Are they just the same role? Or are they both equally important?
 
@@ -30,7 +30,7 @@ One was to count how many ‘aliens’ there were during [“Englishman in New Y
 The second was to come up with a company name and logo.  
 The final task was to come up with different skills and attributes that  could be attributed to a BA and PO, either individually or combined.
 
-![Dot Tudor at Agile on the Beach - so what skills/ attributes ](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach.jpg)
+[![Dot Tudor at Agile on the Beach - so what skills/ attributes ](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-300x225.jpg)](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach.jpg)
 
 Most of teams were caught out by the number of aliens, with only one team noticing the full sized one running around on the balcony during the song!
 
@@ -82,12 +82,12 @@ Bring key resources together.
 Document “just enough” and “just in time” Keep the detail out of it until the last responsible moment.  
 Finally, know the business case and share with each other.
 
-![Dot Tudor at Agile on the Beach. BA v PO](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-BA-versus-PO.jpg)
+[![Dot Tudor at Agile on the Beach. BA v PO](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-BA-versus-PO-300x225.jpg)](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-BA-versus-PO.jpg)
 
 Dot Tudor at Agile on the Beach gave us a really interesting look at the roles of the Business Analyst and the Product Owner. They do over lap in places, but she has made a compelling case attesting to the fact you still need both people.
 
 If you would like to know more on this topic read Dot Tudor’s book the [AgileBA Handbook](http://www.dsdm.org/product/agileba-business-analysis-handbook), in it she gives practical and comprehensive guidance on the role of business analyst.
 
-![Dot Tudor at Agile on the Beach - Agile Business Analysis](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-Agile-Business-Analusis-handbook.jpg)
+[![Dot Tudor at Agile on the Beach - Agile Business Analysis](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-Agile-Business-Analusis-handbook-300x225.jpg)](/wp-content/uploads/2015/09/Dot-Tudor-at-Agile-on-the-Beach-Agile-Business-Analusis-handbook.jpg)
 
 Did you get to watch Dot Tudor at Agile on the Beach 2015? If so we would love to hear your thoughts on her talk “I’m an Alien” Please join the conversation on our [Facebook](https://www.facebook.com/headforwards) page.

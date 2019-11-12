@@ -5,7 +5,7 @@ title: "Headforwards: Getting social"
 slug: "headforwards-getting-social"
 date: "2015-07-09T14:53:10.000Z"
 modified: "2017-11-03T10:56:42.000Z"
-excerpt: "As you may have guessed from the photos we share of our staff events, here at Headforwards we like to get social! However that is not limited to the ‘real world’ we are on social media too. We have a Facebook page that is full of fun pictures. A Twitter account where we share our daily …"
+excerpt: "As you may have guessed from the photos we share of our staff events, here at Headforwards we like to get social! However that is not limited to the ‘real world’ we are on social media too. We have a Facebook page that is full of fun pictures. A Twitter account where we share our daily \[…\]"
 categories: ["News","The Headforwards Team"]
 tags: ["Cornwall","Headforwards","Infomational","News","Team"]
 author:
@@ -32,10 +32,10 @@ So come along and say hello – get social with us!
 
 You never know you might get an invite to our next BBQ.
 
-![Headforwards beach BBQ](/wp-content/uploads/2014/06/DSCF2516.jpg)
+[![Headforwards beach BBQ](/wp-content/uploads/2014/06/DSCF2516-300x225.jpg)](/wp-content/uploads/2014/06/DSCF2516.jpg)
 
-![Headforwards team at laser tag](/wp-content/uploads/2015/06/DSCF0778.jpg)
+[![Headforwards team at laser tag](/wp-content/uploads/2015/06/DSCF0778-300x225.jpg)](/wp-content/uploads/2015/06/DSCF0778.jpg)
 
-![Headforwards team in Falmouth](/wp-content/uploads/2014/06/DSCF1774.jpg)
+[![Headforwards team in Falmouth](/wp-content/uploads/2014/06/DSCF1774-300x225.jpg)](/wp-content/uploads/2014/06/DSCF1774.jpg)
 
-![Headforwards- Headstock festival](/wp-content/uploads/2014/01/Headstock-21.jpg)
+[![Headforwards- Headstock festival](/wp-content/uploads/2014/01/Headstock-21-300x225.jpg)](/wp-content/uploads/2014/01/Headstock-21.jpg)

@@ -5,7 +5,7 @@ title: "Plymouth JS 2017: February Roundup"
 slug: "plymouth-javascript-feb17-roundup"
 date: "2017-02-17T10:36:54.000Z"
 modified: "2017-11-03T10:52:48.000Z"
-excerpt: "PlymouthJS is an informal tech meetup based in the centre of Plymouth. What started out as a small gathering of software enthusiasts, quickly transformed into a popular South West event for developers of all skill levels with a shared objective: to learn and share their experiences with JavaScript frameworks. The evening began with a warm …"
+excerpt: "PlymouthJS is an informal tech meetup based in the centre of Plymouth. What started out as a small gathering of software enthusiasts, quickly transformed into a popular South West event for developers of all skill levels with a shared objective: to learn and share their experiences with JavaScript frameworks. The evening began with a warm \[…\]"
 categories: ["Coding","News"]
 tags: []
 author:
@@ -62,8 +62,12 @@ The meet up felt really positive with plenty of interesting discussions to get i
 
 We would also like to thank THINQTANQ and Andy Mantell for organising and hosting the event.
 
-![](/wp-content/uploads/2017/02/IMG_1305-web-2048.jpg)
-![](/wp-content/uploads/2017/02/IMG_1303-web-2048.jpg)
-![](/wp-content/uploads/2017/02/IMG_1324-web-2048.jpg)
-![](/wp-content/uploads/2017/02/IMG_1301-web-2048.jpg)
-![](/wp-content/uploads/2017/02/CymFrhZWgAArSNT-web-2048-1.jpg)
+[![](/wp-content/uploads/2017/02/IMG_1305-web-2048-300x180.jpg)](/wp-content/uploads/2017/02/IMG_1305-web-2048.jpg)
+
+[![](/wp-content/uploads/2017/02/IMG_1303-web-2048-300x225.jpg)](/wp-content/uploads/2017/02/IMG_1303-web-2048.jpg)
+
+[![](/wp-content/uploads/2017/02/IMG_1324-web-2048-300x225.jpg)](/wp-content/uploads/2017/02/IMG_1324-web-2048.jpg)
+
+[![](/wp-content/uploads/2017/02/IMG_1301-web-2048-300x225.jpg)](/wp-content/uploads/2017/02/IMG_1301-web-2048.jpg)
+
+[![](/wp-content/uploads/2017/02/CymFrhZWgAArSNT-web-2048-1-300x203.jpg)](/wp-content/uploads/2017/02/CymFrhZWgAArSNT-web-2048-1.jpg)

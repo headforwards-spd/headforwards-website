@@ -5,7 +5,7 @@ title: "Pirate FM Software Squad Interview"
 slug: "pirate-fm-software-squad-interview"
 date: "2015-07-23T10:59:17.000Z"
 modified: "2017-11-03T10:56:41.000Z"
-excerpt: "Earlier this week, Headforwards were invited to Cornish radio station Pirate FM to talk about our upcoming Software Squad event. Pirate FM is Cornwall’s number local radio station and has been on the air since 1992.  It was launched by Roger Day and was even featured on BBC’s Tomorrow’s World. The team at Pirate were …"
+excerpt: "Earlier this week, Headforwards were invited to Cornish radio station Pirate FM to talk about our upcoming Software Squad event. Pirate FM is Cornwall’s number local radio station and has been on the air since 1992.  It was launched by Roger Day and was even featured on BBC’s Tomorrow’s World. The team at Pirate were \[…\]"
 categories: ["Cornwall","News","Software Squad","The Headforwards Team"]
 tags: ["Children learning to code","code academy","coding cornwall","Cornwall","corporate social responsibility","mclaren","Pirate","Pirate 2","Pirate FM","Radio Interview","school event cornwall","Software","software company uk","Software Cornwall","Software Squad","summer holidays cornwall"]
 author:

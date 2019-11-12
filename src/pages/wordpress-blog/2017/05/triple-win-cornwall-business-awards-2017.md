@@ -5,7 +5,7 @@ title: "Headforwards Triple Win: Cornwall Business Awards 2017"
 slug: "triple-win-cornwall-business-awards-2017"
 date: "2017-05-22T12:01:08.000Z"
 modified: "2017-11-03T10:52:10.000Z"
-excerpt: "The Cornwall Business Awards are a celebration of innovation, achievement and entrepreneurial spirit within the Cornish business community. The glittering event shines a spotlight on the amazing people who help drive the Cornish economy and make it one of the best places in the country to do business. We were honoured to be attending the …"
+excerpt: "The Cornwall Business Awards are a celebration of innovation, achievement and entrepreneurial spirit within the Cornish business community. The glittering event shines a spotlight on the amazing people who help drive the Cornish economy and make it one of the best places in the country to do business. We were honoured to be attending the \[…\]"
 categories: ["Cornwall","News","The Headforwards Team"]
 tags: []
 author:
@@ -22,9 +22,7 @@ We were honoured to be attending the 2017 awards ceremony held at the prestigiou
 
 The full award list covered many areas of business identifying areas of growth, innovation and entrepreneurialism.
 
-**
-
-![](/wp-content/uploads/2017/05/cba17-004_34711424496_o.jpg)**
+**[![](/wp-content/uploads/2017/05/cba17-004_34711424496_o-300x200.jpg)](/wp-content/uploads/2017/05/cba17-004_34711424496_o.jpg)**
 
 *   Young Enterprise
 *   **Young Business Person Of The Year**
@@ -53,16 +51,28 @@ We’d like to congratulate all the individuals and businesses who shortlisted f
 
 We would also like to thank the event organisers for the huge amount of time and money that has been invested into such a glamorous and enjoyable evening.
 
-![](/wp-content/uploads/2017/05/cornwall-business-awards_33908587384_o-1.jpg)
-![](/wp-content/uploads/2017/05/cba17-005_34619842851_o.jpg)
-![](/wp-content/uploads/2017/05/cornwall-business-awards_33908588844_o.jpg)
-![](/wp-content/uploads/2017/05/matt-dawson_34619808531_o.jpg)
-![](/wp-content/uploads/2017/05/mike-king-cdc-md_33909226764_o-1.jpg)
-![](/wp-content/uploads/2017/05/cornwall-business-awards_34619153701_o.jpg)
-![](/wp-content/uploads/2017/05/cornwall-business-awards_33908587674_o-1.jpg)
-![](/wp-content/uploads/2017/05/cornwall-business-awards_34750934435_o.jpg)
-![](/wp-content/uploads/2017/05/IMG_2190.jpg)
-![](/wp-content/uploads/2017/05/winner-of-winners-headforwards_34751572005_o.jpg)
-![](/wp-content/uploads/2017/05/cornwall-business-awards_33941819943_o-1.jpg)
-![](/wp-content/uploads/2017/05/young-business-person-lyssa-fee-crump-headforwards_34751559705_o-1.jpg)
-![](/wp-content/uploads/2017/05/IMG_2215.jpg)
+[![](/wp-content/uploads/2017/05/cornwall-business-awards_33908587384_o-1-300x225.jpg)](/wp-content/uploads/2017/05/cornwall-business-awards_33908587384_o-1.jpg)
+
+![](/wp-content/uploads/2017/05/cba17-005_34619842851_o-300x206.jpg)
+
+![](/wp-content/uploads/2017/05/cornwall-business-awards_33908588844_o-300x225.jpg)
+
+[![](/wp-content/uploads/2017/05/matt-dawson_34619808531_o-300x214.jpg)](/wp-content/uploads/2017/05/matt-dawson_34619808531_o.jpg)
+
+[![](/wp-content/uploads/2017/05/mike-king-cdc-md_33909226764_o-1-300x213.jpg)](/wp-content/uploads/2017/05/mike-king-cdc-md_33909226764_o-1.jpg)
+
+[![](/wp-content/uploads/2017/05/cornwall-business-awards_34619153701_o-300x225.jpg)](/wp-content/uploads/2017/05/cornwall-business-awards_34619153701_o.jpg)
+
+[![](/wp-content/uploads/2017/05/cornwall-business-awards_33908587674_o-1-300x225.jpg)](/wp-content/uploads/2017/05/cornwall-business-awards_33908587674_o-1.jpg)
+
+[![](/wp-content/uploads/2017/05/cornwall-business-awards_34750934435_o-300x225.jpg)](/wp-content/uploads/2017/05/cornwall-business-awards_34750934435_o.jpg)
+
+[![](/wp-content/uploads/2017/05/IMG_2190-225x300.jpg)](/wp-content/uploads/2017/05/IMG_2190.jpg)
+
+[![](/wp-content/uploads/2017/05/winner-of-winners-headforwards_34751572005_o-300x211.jpg)](/wp-content/uploads/2017/05/winner-of-winners-headforwards_34751572005_o.jpg)
+
+[![](/wp-content/uploads/2017/05/cornwall-business-awards_33941819943_o-1-300x225.jpg)](/wp-content/uploads/2017/05/young-business-person-lyssa-fee-crump-headforwards_34751559705_o-1.jpg)
+
+[![](/wp-content/uploads/2017/05/young-business-person-lyssa-fee-crump-headforwards_34751559705_o-1-300x204.jpg)](/wp-content/uploads/2017/05/young-business-person-lyssa-fee-crump-headforwards_34751559705_o-1.jpg)
+
+[![](/wp-content/uploads/2017/05/IMG_2215-300x266.jpg)](/wp-content/uploads/2017/05/IMG_2215.jpg)

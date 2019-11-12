@@ -5,7 +5,7 @@ title: "Software Developer Job in Cornwall"
 slug: "software-developer-job-in-cornwall"
 date: "2017-01-05T14:44:59.000Z"
 modified: "2017-11-03T10:52:49.000Z"
-excerpt: "Are you looking for a new software developer job in Cornwall? Do you want to be part of a young company whilst it is going through massive growth? In just 5 years we have grown from a spark of an idea to a team of over 80 people. We are an outsource software development company, …"
+excerpt: "Are you looking for a new software developer job in Cornwall? Do you want to be part of a young company whilst it is going through massive growth? In just 5 years we have grown from a spark of an idea to a team of over 80 people. We are an outsource software development company, \[…\]"
 categories: ["Jobs","News"]
 tags: []
 author:

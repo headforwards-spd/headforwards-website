@@ -5,7 +5,7 @@ title: "Top 10 things to do on your Lunch break"
 slug: "top-10-things-to-do-on-your-lunch-break"
 date: "2015-10-09T15:46:17.000Z"
 modified: "2017-11-03T10:54:18.000Z"
-excerpt: "Today in the office we have been sharing productivity tips. One topic that repeatedly came up was lunch breaks. We all know it is important to have a lunch break but that doesn’t always mean we take them. I am sure more than one of us is prone to eating lunch one handed at our desks whilst trying …"
+excerpt: "Today in the office we have been sharing productivity tips. One topic that repeatedly came up was lunch breaks. We all know it is important to have a lunch break but that doesn’t always mean we take them. I am sure more than one of us is prone to eating lunch one handed at our desks whilst trying \[…\]"
 categories: ["News","Top Tips"]
 tags: ["being productive at work","Group work","Headforwards","lunch breaks","lunch time","power nap","Productivity","top 10 tips","Top Tips","work life balance"]
 author:

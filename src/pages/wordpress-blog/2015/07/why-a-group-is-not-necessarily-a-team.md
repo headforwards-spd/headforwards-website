@@ -5,7 +5,7 @@ title: "Why a Group is Not Necessarily a Team"
 slug: "why-a-group-is-not-necessarily-a-team"
 date: "2015-07-07T14:09:48.000Z"
 modified: "2017-11-03T10:56:43.000Z"
-excerpt: "You have an exciting and important new project on the table. So what is the first thing you do? Source 6 people, throw them together and expect them to be a highly productive team churning out quality work, right? Perhaps this isn’t the best way. In the software world developers need to work together as a …"
+excerpt: "You have an exciting and important new project on the table. So what is the first thing you do? Source 6 people, throw them together and expect them to be a highly productive team churning out quality work, right? Perhaps this isn’t the best way. In the software world developers need to work together as a \[…\]"
 categories: ["Agile","Informational","News"]
 tags: ["Agile","Agile Project Management","Agile Software Development","Business","Business Tips","Group work","Headforwards","Infomational","project","project work","scrum","team work","teamwork"]
 author:

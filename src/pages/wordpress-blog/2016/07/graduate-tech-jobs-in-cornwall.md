@@ -5,7 +5,7 @@ title: "Graduate tech jobs in Cornwall"
 slug: "graduate-tech-jobs-in-cornwall"
 date: "2016-07-21T09:28:18.000Z"
 modified: "2017-11-03T10:53:48.000Z"
-excerpt: "WHY HEADFORWARDS? Headforwards are looking for highly skilled, tech passionate graduates who can fulfil our exciting, new Graduate tech jobs. Being based in Cornwall there is no end to opportunities that will allow them to advance their tech careers. Graduates would need to have a degree in computer science or a degree related to computer …"
+excerpt: "WHY HEADFORWARDS? Headforwards are looking for highly skilled, tech passionate graduates who can fulfil our exciting, new Graduate tech jobs. Being based in Cornwall there is no end to opportunities that will allow them to advance their tech careers. Graduates would need to have a degree in computer science or a degree related to computer \[…\]"
 categories: ["Jobs","News"]
 tags: []
 author:

@@ -5,7 +5,7 @@ title: "Software Careers in the UK"
 slug: "software-careers-uk"
 date: "2016-03-16T11:58:58.000Z"
 modified: "2017-11-03T10:53:54.000Z"
-excerpt: "Here at Headforwards, we are pleased to be offering rewarding software careers in the UK. As an outsource software development company we get to work with lots of different clients on exciting projects. These projects vary drastically from each other, and we hire developers with a range of different language specialities. Our outsource model is different to …"
+excerpt: "Here at Headforwards, we are pleased to be offering rewarding software careers in the UK. As an outsource software development company we get to work with lots of different clients on exciting projects. These projects vary drastically from each other, and we hire developers with a range of different language specialities. Our outsource model is different to \[…\]"
 categories: ["Jobs","News","The Headforwards Team"]
 tags: []
 author:
@@ -41,4 +41,4 @@ Happy developers who feel valued and are working well as a team produce the best
 If you are interested in becoming part of the Headforwards family, please [contact us](https://www.headforwards.com/careers/application-form/).  
 We are looking forward to hearing from you.
 
-![The Headforwards team - offering software careers in the UK ](/wp-content/uploads/2016/03/Headforwards-team-at-30.jpg)
+[![The Headforwards team - offering software careers in the UK ](/wp-content/uploads/2016/03/Headforwards-team-at-30-300x222.jpg)](/wp-content/uploads/2016/03/Headforwards-team-at-30.jpg)

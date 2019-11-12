@@ -5,7 +5,7 @@ title: "Agile Code Retreat – Two Days of Enhancing Software Development Practi
 slug: "agile-on-the-beach-code-retreat"
 date: "2018-03-28T09:07:39.000Z"
 modified: "2018-04-05T07:54:50.000Z"
-excerpt: "The Agile Code Retreat is a 2-day event where participants study and practice different tools and methodologies used in software development. The first ever retreat was run by Jon Jagger who specialises in practice, process, TDD, and complex-adaptive systems-thinking and is known for his collaborative development tool: Cyber-Dojo. Co-hosting with Jon was Kevlin Henney whose development …"
+excerpt: "The Agile Code Retreat is a 2-day event where participants study and practice different tools and methodologies used in software development. The first ever retreat was run by Jon Jagger who specialises in practice, process, TDD, and complex-adaptive systems-thinking and is known for his collaborative development tool: Cyber-Dojo. Co-hosting with Jon was Kevlin Henney whose development \[…\]"
 categories: ["Agile","News","Team adventures","The Headforwards Team"]
 tags: []
 author:
@@ -16,18 +16,29 @@ author:
 ---
 The Agile Code Retreat is a 2-day event where participants study and practice different tools and methodologies used in software development. The first ever retreat was run by **Jon Jagger** who specialises in practice, process, TDD, and complex-adaptive systems-thinking and is known for his collaborative development tool: Cyber-Dojo. Co-hosting with Jon was **Kevlin Henney** whose development interests are in patterns, programming, practice and process. A few lucky members of our team were able attend this year. Here are some of their thoughts and findings.
 
-![](/wp-content/uploads/2018/03/CodeRetreat11.jpg)
-![](/wp-content/uploads/2018/03/CodeRetreat17.jpg)
-![](/wp-content/uploads/2018/03/CodeRetreat54.jpg)
-![](/wp-content/uploads/2018/03/CodeRetreat25.jpg)
-![](/wp-content/uploads/2018/03/CodeRetreat26.jpg)
-![](/wp-content/uploads/2018/03/CodeRetreat43.jpg)
-![](/wp-content/uploads/2018/03/CodeRetreat57.jpg)
-![](/wp-content/uploads/2018/03/CodeRetreat59.jpg)
-![](/wp-content/uploads/2018/03/CodeRetreat70.jpg)
-![](/wp-content/uploads/2018/03/aotb17-480.jpg)
-![](/wp-content/uploads/2018/03/aotb17-575.jpg)
-![](/wp-content/uploads/2018/03/CodeRetreat11-1.jpg)
+[![](/wp-content/uploads/2018/03/CodeRetreat11-300x209.jpg)](/wp-content/uploads/2018/03/CodeRetreat11.jpg)
+
+[![](/wp-content/uploads/2018/03/CodeRetreat17-300x210.jpg)](/wp-content/uploads/2018/03/CodeRetreat17.jpg)
+
+[![](/wp-content/uploads/2018/03/CodeRetreat54-300x220.jpg)](/wp-content/uploads/2018/03/CodeRetreat54.jpg)
+
+[![](/wp-content/uploads/2018/03/CodeRetreat25-300x204.jpg)](/wp-content/uploads/2018/03/CodeRetreat25.jpg)
+
+[![](/wp-content/uploads/2018/03/CodeRetreat26-300x216.jpg)](/wp-content/uploads/2018/03/CodeRetreat26.jpg)
+
+[![](/wp-content/uploads/2018/03/CodeRetreat43-300x217.jpg)](/wp-content/uploads/2018/03/CodeRetreat43.jpg)
+
+[![](/wp-content/uploads/2018/03/CodeRetreat57-300x204.jpg)](/wp-content/uploads/2018/03/CodeRetreat57.jpg)
+
+[![](/wp-content/uploads/2018/03/CodeRetreat59-300x208.jpg)](/wp-content/uploads/2018/03/CodeRetreat59.jpg)
+
+[![](/wp-content/uploads/2018/03/CodeRetreat70-300x211.jpg)](/wp-content/uploads/2018/03/CodeRetreat70.jpg)
+
+[![](/wp-content/uploads/2018/03/aotb17-480-300x215.jpg)](/wp-content/uploads/2018/03/aotb17-480.jpg)
+
+[![](/wp-content/uploads/2018/03/aotb17-575-300x216.jpg)](/wp-content/uploads/2018/03/aotb17-575.jpg)
+
+[![](/wp-content/uploads/2018/03/CodeRetreat11-1-300x209.jpg)](/wp-content/uploads/2018/03/CodeRetreat11-1.jpg)
 
 ### Filcho Dragunchev
 

@@ -5,7 +5,7 @@ title: "Increasing Knowledge Sharing in an Organisation"
 slug: "increase-knowledge-sharing-organisation"
 date: "2018-03-08T11:48:27.000Z"
 modified: "2018-03-12T15:21:47.000Z"
-excerpt: "The distribution of project-based knowledge can be painfully slow. New discoveries and findings within a project lifecycle can often pave the way to successful product delivery and enhance the knowledge of individuals in the team. So, how do we make these experiences visible to a whole organisation? At the time of writing this, I can …"
+excerpt: "The distribution of project-based knowledge can be painfully slow. New discoveries and findings within a project lifecycle can often pave the way to successful product delivery and enhance the knowledge of individuals in the team. So, how do we make these experiences visible to a whole organisation? At the time of writing this, I can \[…\]"
 categories: ["Agile","Informational","News","Top Tips"]
 tags: []
 author:
@@ -36,6 +36,7 @@ While a lot of conversations happen over a coffee or during unexpected discussio
 Celebrate success and failure! We hold weekly "Show and Tell" sessions that do both. Show and Tell gives the teams a chance to talk about new developments on their projects. It also gives them a chance to talk about any hurdles they've overcome during their sprint. This can be useful for other teams who may be facing similar problems. These small but insightful talks give others the ability to follow up with the developers and ask questions in more detail later.
 
 ![](/wp-content/uploads/2018/03/headforwards-office-photos-2017-166-web-2048-2.jpg)
+
 ![](/wp-content/uploads/2017/04/Headforwards-Headtalks-280916-12.jpg)
 
 ### Internal Conferences
@@ -74,7 +75,7 @@ Pair programming is self-explanatory, you take two members of the team and pair 
 
 Mob Programming is paired programming but on a larger scale. Instead of 2 members of the team working together, this is about the whole team getting together to work around a problem. This is a popular technique used by our .NET development teams. Often, I will see a whole team sat around a screen working directly with their client over video chat to discuss and solve problems. Working together strengthens the bond between the team but also allows new and possibly more creative ideas to flourish.
 
-![](/wp-content/uploads/2017/10/headforwards-office-photos-2017-183-web-3000.jpg)
+![](/wp-content/uploads/2017/10/headforwards-office-photos-2017-183-web-3000-1024x683.jpg)
 
 Celebrate Failure
 -----------------

@@ -5,7 +5,7 @@ title: "When to Outsource Your Software Development"
 slug: "when-to-outsource-your-software-development"
 date: "2015-11-23T12:08:55.000Z"
 modified: "2017-11-03T10:54:17.000Z"
-excerpt: "Outsourcing your software development can be a tough decision to make and it can be even harder to know when it is the right time to make this jump. That is why we have put together this list to help you decide when to outsource your software development. Project Costs When you choose to outsource …"
+excerpt: "Outsourcing your software development can be a tough decision to make and it can be even harder to know when it is the right time to make this jump. That is why we have put together this list to help you decide when to outsource your software development. Project Costs When you choose to outsource \[…\]"
 categories: ["News","Outsourcing"]
 tags: ["Agile","Headforwards","make an app","Outsourcing","outsourcing software development","Software","software development","When to outsource your software development"]
 author:

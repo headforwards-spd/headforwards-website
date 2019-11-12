@@ -5,7 +5,7 @@ title: "Jobs for Graduates"
 slug: "jobs-for-graduates"
 date: "2016-06-30T09:54:17.000Z"
 modified: "2017-11-03T10:53:49.000Z"
-excerpt: "Here at Headforwards, we are pleased to be providing a variety of jobs for graduates in Cornwall. If you have graduated with a computer science related degree and are looking for work then please contact us. Due to winning some exciting new contracts we currently have 42 jobs available at Headforwards HQ at the Pool …"
+excerpt: "Here at Headforwards, we are pleased to be providing a variety of jobs for graduates in Cornwall. If you have graduated with a computer science related degree and are looking for work then please contact us. Due to winning some exciting new contracts we currently have 42 jobs available at Headforwards HQ at the Pool \[…\]"
 categories: ["Cornwall","Jobs","News"]
 tags: []
 author:
@@ -39,6 +39,6 @@ Whilst this is model is unconventional, it is proving to be extremely successful
 
 If you are interested in becoming part of the team at the fastest growing software company in Cornwall, [apply now](https://www.headforwards.com/careers/application-form/).
 
-![Headforwards - jobs for graduates](/wp-content/uploads/2016/06/SGP1364.jpg)
+[![Headforwards - jobs for graduates](/wp-content/uploads/2016/06/SGP1364-300x200.jpg)](/wp-content/uploads/2016/06/SGP1364.jpg)
 
 Headforwards celebratory birthday beer

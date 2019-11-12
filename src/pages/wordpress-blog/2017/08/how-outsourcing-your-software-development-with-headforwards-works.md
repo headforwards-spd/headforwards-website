@@ -5,7 +5,7 @@ title: "How Outsourcing Your Software Development With Headforwards Works"
 slug: "how-outsourcing-your-software-development-with-headforwards-works"
 date: "2017-08-10T12:55:24.000Z"
 modified: "2018-02-08T14:11:28.000Z"
-excerpt: "We specialise in creating partnerships with our clients where we provide dedicated teams of people working to help them achieve their business goal. Our primary aim is to work with you, our client, to create and deliver software that brings you business value. We thrive when creating software that delivers our clients tangible business value, …"
+excerpt: "We specialise in creating partnerships with our clients where we provide dedicated teams of people working to help them achieve their business goal. Our primary aim is to work with you, our client, to create and deliver software that brings you business value. We thrive when creating software that delivers our clients tangible business value, \[…\]"
 categories: ["News","Outsourcing"]
 tags: []
 author:

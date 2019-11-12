@@ -5,7 +5,7 @@ title: "Should Children Learn to Code?"
 slug: "should-children-learn-to-code"
 date: "2015-06-24T10:57:37.000Z"
 modified: "2015-07-14T16:02:33.000Z"
-excerpt: "There seems to be a lot in the media at the moment about children learning to code, but what do you think about it? Are we getting children too involved with technology? The BBC recently did a report on children in Hong Kong learning to code after school. Barclays bank are even getting in on …"
+excerpt: "There seems to be a lot in the media at the moment about children learning to code, but what do you think about it? Are we getting children too involved with technology? The BBC recently did a report on children in Hong Kong learning to code after school. Barclays bank are even getting in on \[…\]"
 categories: ["Coding","Debate","News"]
 tags: ["Children","Children learning to code","Coding","Debate","Infomational","National Curriculum","News","Software"]
 author:

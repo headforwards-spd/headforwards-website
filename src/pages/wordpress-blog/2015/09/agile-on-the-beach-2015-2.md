@@ -5,7 +5,7 @@ title: "Agile on the Beach 2015"
 slug: "agile-on-the-beach-2015-2"
 date: "2015-09-08T11:08:51.000Z"
 modified: "2017-11-03T10:54:30.000Z"
-excerpt: "Last week a few members of the Headforwards team had the pleasure of attending Agile on The Beach in Falmouth.  Headforwards are proud to be one of the sponsors of the event, along with some other fantastic companies. Agile on the Beach is a two day business and technology conference that sees speakers from all over …"
+excerpt: "Last week a few members of the Headforwards team had the pleasure of attending Agile on The Beach in Falmouth.  Headforwards are proud to be one of the sponsors of the event, along with some other fantastic companies. Agile on the Beach is a two day business and technology conference that sees speakers from all over \[…\]"
 categories: ["Agile","Cornwall","News"]
 tags: ["agile conference","Agile on the Beach","Agile on the Beach 2015","AOTB","best agile conferences","falmouth","Headforwards","lyssa-fee crump","software development","software development today","top agile conferences 2014"]
 author:
@@ -16,7 +16,7 @@ author:
 ---
 Last week a few members of the Headforwards team had the pleasure of attending [Agile on The Beach](http://agileonthebeach.com/) in [Falmouth.](http://www.falmouth.ac.uk/)  Headforwards are proud to be one of the [sponsors](http://agileonthebeach.com/2015-sponsors/) of the event, along with some other fantastic companies.
 
-![Agile on the beach 2015](/wp-content/uploads/2015/06/AOTB-logo-design.jpg)
+![Agile on the beach 2015](/wp-content/uploads/2015/06/AOTB-logo-design-300x169.jpg)
 
 Agile on the Beach is a two day business and technology conference that sees speakers from all over the world come to Cornwall to educate and inspire whilst also getting to enjoy a rather special beach party at [Gyllyngvase](http://www.gyllybeach.com/).
 

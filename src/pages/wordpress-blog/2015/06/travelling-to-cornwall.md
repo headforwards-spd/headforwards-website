@@ -5,7 +5,7 @@ title: "Travelling to Cornwall"
 slug: "travelling-to-cornwall"
 date: "2015-06-29T09:20:47.000Z"
 modified: "2015-07-14T15:58:15.000Z"
-excerpt: "As you may know we are based down in sunny Cornwall, and whilst we live in the digital world and do a lot of networking remotely, sometimes it is valuable to meet with our clients face to face. Not surprisingly some of these meetings happen on a Friday, so the weekend can be spent enjoying …"
+excerpt: "As you may know we are based down in sunny Cornwall, and whilst we live in the digital world and do a lot of networking remotely, sometimes it is valuable to meet with our clients face to face. Not surprisingly some of these meetings happen on a Friday, so the weekend can be spent enjoying \[…\]"
 categories: ["Cornwall","Informational"]
 tags: ["Cornwall","Driving to Cornwall","Flying to Cornwall","Headforwards","Infomational","Meetings","Relocating","Top Tips","Train to Cornwall","Traveling to Cornwall"]
 author:

@@ -5,7 +5,7 @@ title: "Western Morning News Business Awards 2017"
 slug: "western-morning-news-business-awards-2017"
 date: "2017-10-18T09:53:36.000Z"
 modified: "2017-11-03T10:52:07.000Z"
-excerpt: "  The finalists for the Western Morning News Business Awards 2017 have just been announced and we are thrilled to have been shortlisted for two awards. A wide range of businesses in different sectors from the Isles of Scilly to the Somerset border is represented in the finalists. Bill Martin, editor of the Western Morning …"
+excerpt: "  The finalists for the Western Morning News Business Awards 2017 have just been announced and we are thrilled to have been shortlisted for two awards. A wide range of businesses in different sectors from the Isles of Scilly to the Somerset border is represented in the finalists. Bill Martin, editor of the Western Morning \[…\]"
 categories: ["Awards","News"]
 tags: []
 author:
@@ -30,4 +30,4 @@ We are shortlisted for **Business of the Year** and **Best Technological or Cre
 
 We are looking forward to celebrating with all the other finalists at the gala dinner at St Mellion on Thursday 16th November.
 
-![Headforwards - business of the year- western morning news business awards ](/wp-content/uploads/2017/10/Wester-Morning-News-Business-Awards-2017-headforwards.jpg)
+[![Headforwards - business of the year- western morning news business awards ](/wp-content/uploads/2017/10/Wester-Morning-News-Business-Awards-2017-headforwards-300x202.jpg)](/wp-content/uploads/2017/10/Wester-Morning-News-Business-Awards-2017-headforwards.jpg)

@@ -5,7 +5,7 @@ title: "What is Pair Programming?"
 slug: "what-is-pair-programming"
 date: "2015-07-15T11:08:10.000Z"
 modified: "2017-11-03T10:56:42.000Z"
-excerpt: "You may have been wondering “what is Pair Programming?” Well it is one of many exciting techniques used in Agile Software Development. It works by having two programmers working side by side on the same workstation. One monitor, one keyboard, one mouse. The team members switch regularly between two roles: the Driver and the Navigator. …"
+excerpt: "You may have been wondering “what is Pair Programming?” Well it is one of many exciting techniques used in Agile Software Development. It works by having two programmers working side by side on the same workstation. One monitor, one keyboard, one mouse. The team members switch regularly between two roles: the Driver and the Navigator. \[…\]"
 categories: ["Agile","Informational"]
 tags: ["Agile","Agile Software Development","agile toolbox","Coding","driver","Headforwards","navigator","pair","pair programming","pairing","programming","Software","software dev","software development"]
 author:

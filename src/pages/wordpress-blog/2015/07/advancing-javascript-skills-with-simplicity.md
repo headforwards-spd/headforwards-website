@@ -5,7 +5,7 @@ title: "Advancing JavaScript Skills with Simplicity"
 slug: "advancing-javascript-skills-with-simplicity"
 date: "2015-07-20T12:45:48.000Z"
 modified: "2017-11-03T10:56:42.000Z"
-excerpt: "At the beginning of July, Headforwards sent a colleague and myself on an Advanced JavaScript course with Kyle Simpson. This had come about after a tweet I’d posted in April  after seeing a call from Kyle for people interested in having him run workshops whilst in the UK. My tweet started a ball rolling and …"
+excerpt: "At the beginning of July, Headforwards sent a colleague and myself on an Advanced JavaScript course with Kyle Simpson. This had come about after a tweet I’d posted in April  after seeing a call from Kyle for people interested in having him run workshops whilst in the UK. My tweet started a ball rolling and \[…\]"
 categories: ["Cornwall","News","Team adventures","The Headforwards Team"]
 tags: ["Agile Software Development","Belinda Waldcock","Cornwall","Front end developer","Getify","Gilmores Newquay","Glen Pike","Headforwards","Headforwards Team","JavaScript","JavaScript Training","Kyle Simpson","OLOO","OOP","Software Cornwall"]
 author:

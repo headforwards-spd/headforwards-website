@@ -5,7 +5,7 @@ title: "Outsourcing: Onshore? Nearshore? or Offshore? Still Unsure?"
 slug: "outsourcing-onshore-nearshore-or-offshore-still-unsure"
 date: "2015-07-13T10:13:29.000Z"
 modified: "2017-11-03T10:56:42.000Z"
-excerpt: "So you have read our blog “Why Outsource” and have decided it is the right choice for you, but now you are faced with another big question. Do we outsource onshore? Nearshore? Or Offshore? The main drivers for outsourcing are productivity, labour, cost, revenue growth and risk management so we need to look at these when making …"
+excerpt: "So you have read our blog “Why Outsource” and have decided it is the right choice for you, but now you are faced with another big question. Do we outsource onshore? Nearshore? Or Offshore? The main drivers for outsourcing are productivity, labour, cost, revenue growth and risk management so we need to look at these when making \[…\]"
 categories: ["Informational","Outsourcing"]
 tags: ["Cornwall","Nearshore","Offshore","Onshore","Outsourcing","Software","Software Outsourcing"]
 author:

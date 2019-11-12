@@ -10,10 +10,10 @@ const getMarkdown = html =>
     turndownService
         .turndown(html)
         .replace(/http(?:s)?:\/\/(?:www.)?headforwards.com\/wp-content/g, '/wp-content')
-        .replace(/\[(!\[[^\]]*\]\([^)]+\))\]\([^)]+\)/g, '$1') // unwrap images from links
-        .replace(/(\))\s*(!\[\]\()/g, '$1\n$2') // one image per line
-        .replace(/([^\s])(!\[[^\]]*\]\()/g, '$1\n\n$2') // first image on new line
-        .replace(/(?:[-_]+\d+x\d+)+(?:-\d)?(\.\w+\))/g, '$1'); // remove sizes
+        // .replace(/\[(!\[[^\]]*\]\([^)]+\))\]\([^)]+\)/g, '$1') // unwrap images from links
+        // .replace(/(\))\s*(!\[\]\()/g, '$1\n$2') // one image per line
+        // .replace(/([^\s])(!\[[^\]]*\]\()/g, '$1\n\n$2') // first image on new line
+        // .replace(/(?:[-_]+\d+x\d+)+(?:-\d)?(\.\w+\))/g, '$1'); // remove sizes
 
 module.exports = {
     resolve: 'gatsby-source-wordpress',
@@ -111,7 +111,7 @@ module.exports = {
                     path,
                 }));
 
-            posts.foreach(post => {
+            posts.forEach(post => {
                 const {
                     date,
                     modified,
@@ -136,7 +136,7 @@ module.exports = {
                             { slug },
                             { date },
                             { modified },
-                            { excerpt: excerpt ? getMarkdown(excerpt).replace('\\[…\\]', '…') : null },
+                            { excerpt: excerpt ? getMarkdown(excerpt.replace('[…]', '…')) : null },
                             {
                                 categories: categories
                                     .filter(category => postCategories.includes(category.id))

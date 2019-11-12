@@ -5,7 +5,7 @@ title: "Headforwards Head to Mumbai"
 slug: "headforwards-head-to-mumbai"
 date: "2015-07-22T12:43:10.000Z"
 modified: "2017-11-03T10:56:41.000Z"
-excerpt: "Recently three members of the Headforwards team (Emily, Tom and Paul) travelled to Mumbai, India on a work trip. They flew overnight on Sunday to arrive in Mumbai on Monday morning. After only a short journey from the airport they arrived at the Westin Mumbai Garden City Hotel, where they would be staying for the week. …"
+excerpt: "Recently three members of the Headforwards team (Emily, Tom and Paul) travelled to Mumbai, India on a work trip. They flew overnight on Sunday to arrive in Mumbai on Monday morning. After only a short journey from the airport they arrived at the Westin Mumbai Garden City Hotel, where they would be staying for the week. \[…\]"
 categories: ["News","Team adventures","The Headforwards Team"]
 tags: ["Cornwall","Headforwards","Headforwards Team","India","Internet","Load Balancers","Lychee jellie","Mumbai","rapport","Westin Mumbai Garden City Hotel","Work travel","Work trip","working remotley"]
 author:

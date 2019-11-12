@@ -5,7 +5,7 @@ title: "The Hub Awards Finalists of 2015"
 slug: "the-hub-awards-finalists-of-2015"
 date: "2015-11-09T10:23:55.000Z"
 modified: "2017-11-03T10:54:17.000Z"
-excerpt: "  We have previously posted about being proud sponsors of “The Best Use of Digital” award at the Hub Awards 2015. Well, now the finalists have been announced and we are even more excited about the awards ceremony later this month! Best New Start Up –sponsored by Oxford Innovation and Unlocking Potential Jenny Wren Weddings …"
+excerpt: "  We have previously posted about being proud sponsors of “The Best Use of Digital” award at the Hub Awards 2015. Well, now the finalists have been announced and we are even more excited about the awards ceremony later this month! Best New Start Up –sponsored by Oxford Innovation and Unlocking Potential Jenny Wren Weddings \[…\]"
 categories: ["News"]
 tags: ["Cornwall","Headforwards","the hub","the hub awards"]
 author:
@@ -14,7 +14,7 @@ author:
   name: "Lyssa Crump"
   path: "/author/lyssa/"
 ---
-![The Hub Awards](/wp-content/uploads/2015/11/TheHubSponsor.jpg)
+[![The Hub Awards](/wp-content/uploads/2015/11/TheHubSponsor-300x300.jpg)](/wp-content/uploads/2015/11/TheHubSponsor.jpg)
 
 We have previously posted about being proud sponsors of “The Best Use of Digital” award at the Hub Awards 2015.
 

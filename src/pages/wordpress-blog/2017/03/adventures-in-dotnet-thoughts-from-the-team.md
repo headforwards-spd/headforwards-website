@@ -5,7 +5,7 @@ title: "Adventures in .NET – Thoughts from the team"
 slug: "adventures-in-dotnet-thoughts-from-the-team"
 date: "2017-03-02T16:02:03.000Z"
 modified: "2017-11-03T10:52:48.000Z"
-excerpt: "Here at Headforwards, we have over 80 talented software developers. There isn’t a day where a project isn’t bringing new complications and problems to overcome. With ongoing work for some of the largest companies in the world, the developers have racked up countless programming languages, frameworks and tools used for a wide variety of applications. It’s …"
+excerpt: "Here at Headforwards, we have over 80 talented software developers. There isn’t a day where a project isn’t bringing new complications and problems to overcome. With ongoing work for some of the largest companies in the world, the developers have racked up countless programming languages, frameworks and tools used for a wide variety of applications. It’s \[…\]"
 categories: ["News","The Headforwards Team"]
 tags: []
 author:
@@ -71,4 +71,4 @@ _The people I work with are really great. There is less pressure to work long da
 
 _Windows 10_
 
-![](/wp-content/uploads/2017/03/benefits.png)
+[![](/wp-content/uploads/2017/03/benefits-182x300.png)](/wp-content/uploads/2017/03/benefits.png)

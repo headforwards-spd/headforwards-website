@@ -5,7 +5,7 @@ title: "Headforwards Hosts .NET Meetup: Roundup"
 slug: "headforwards-hosts-net-meetup-roundup"
 date: "2017-02-22T16:44:20.000Z"
 modified: "2017-11-03T10:52:48.000Z"
-excerpt: "Due to the success of recent developer events, we scheduled our first ever .NET social meetup. The event location was at our HQ in Redruth. The objective: establish a plan of action for future events. Armed with post-it notes and sharpies, topics soon emerged on the white-board. The main talking point centred around the new(ish) …"
+excerpt: "Due to the success of recent developer events, we scheduled our first ever .NET social meetup. The event location was at our HQ in Redruth. The objective: establish a plan of action for future events. Armed with post-it notes and sharpies, topics soon emerged on the white-board. The main talking point centred around the new(ish) \[…\]"
 categories: ["Agile","Coding","Cornwall"]
 tags: []
 author:
@@ -33,5 +33,7 @@ As part of our ongoing development with the local tech community, we will plan t
 > Our first ever .NET meetup is underway. [#software](https://twitter.com/hashtag/software?src=hash) [#development](https://twitter.com/hashtag/development?src=hash) [#dotnet](https://twitter.com/hashtag/dotnet?src=hash) [#cornwall](https://twitter.com/hashtag/cornwall?src=hash) [pic.twitter.com/eGiHWtdA4s](https://t.co/eGiHWtdA4s)
 > 
 > — Headforwards (@Headforwards) [February 10, 2017](https://twitter.com/Headforwards/status/830105259804618753)
-![](/wp-content/uploads/2017/02/IMG_1364-web-2048-2.jpg)
-![](/wp-content/uploads/2017/02/IMG_1357-web-2048-2.jpg)
+
+[![](/wp-content/uploads/2017/02/IMG_1364-web-2048-2-300x186.jpg)](/wp-content/uploads/2017/02/IMG_1364-web-2048-2.jpg)
+
+[![](/wp-content/uploads/2017/02/IMG_1357-web-2048-2-300x291.jpg)](/wp-content/uploads/2017/02/IMG_1357-web-2048-2.jpg)

@@ -5,7 +5,7 @@ title: "Top 10 Reasons to Relocate to Cornwall"
 slug: "top-10-reasons-to-relocate-to-cornwall"
 date: "2015-12-08T15:59:12.000Z"
 modified: "2017-11-03T10:54:00.000Z"
-excerpt: "Headforwards are based in Cornwall and we love living and working here. It can be a bit of an adjustment if you are use to busy city life, but we feel it is well worth the change of pace. Here our are top 10 reasons to relocate to Cornwall: 1. The beaches Cornwall is famous …"
+excerpt: "Headforwards are based in Cornwall and we love living and working here. It can be a bit of an adjustment if you are use to busy city life, but we feel it is well worth the change of pace. Here our are top 10 reasons to relocate to Cornwall: 1. The beaches Cornwall is famous \[…\]"
 categories: ["Cornwall","News"]
 tags: ["boardmasters","buisness","camel valley","Cornwall","fifteen cornwall","jamie oliver","kneehigh","miracle","Perranporth","port elliott","relocate","Relocating","rinsey cove","sharps","software jobs","software jobs in cornwall","st ives","world belly board championships"]
 author:

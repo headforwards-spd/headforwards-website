@@ -5,7 +5,7 @@ title: "Can I Relocate?"
 slug: "can-i-relocate"
 date: "2015-06-22T14:09:23.000Z"
 modified: "2015-09-01T14:45:41.000Z"
-excerpt: "Are you dreaming of a different life? One where your work life balance is not affected by long commutes home on stuffy trains or stuck in long traffic jams. Why not relocate somewhere new, where your journey home takes you through fields and you can squeeze a quick surf in on your lunch break. But …"
+excerpt: "Are you dreaming of a different life? One where your work life balance is not affected by long commutes home on stuffy trains or stuck in long traffic jams. Why not relocate somewhere new, where your journey home takes you through fields and you can squeeze a quick surf in on your lunch break. But \[…\]"
 categories: ["Cornwall","Informational"]
 tags: ["Business","Cornwall","developer jobs","developer jobs cornwa","developer jobs cornwall","developer jobs uk","Headforwards","Infomational","jobs cornwall","jobs in cornwall","Relocating","relocating careers in software","relocatinh","Skype","Software","software careers","software companies","software companies cornwall","software companies uk","software jobs","software jobs uk","Software Outsourcing","Top Tips"]
 author:
@@ -33,7 +33,7 @@ We are based in [Cornwall,](https://www.visitcornwall.com/,) which is an extrem
 
 There is a strange misconception that the majority of people moving to Cornwall are doing so to retire and not because of work. However the predominant reasons are economic and lifestyle. A large number being ‘returners’ for example – people who left to study elsewhere and have come back to settle down. Internal migration is the single greatest driver of population change in Cornwall.
 
-![Migration statistics ](/wp-content/uploads/2015/06/Screen-Shot-2015-06-19-at-16.41.23.png)
+[![Migration statistics ](/wp-content/uploads/2015/06/Screen-Shot-2015-06-19-at-16.41.23-300x212.png)](/wp-content/uploads/2015/06/Screen-Shot-2015-06-19-at-16.41.23.png)
 
 Cornwall County Council Demographic Evidence Base 2011
 

@@ -5,7 +5,7 @@ title: "Headstock Essential Festival Kit Guide"
 slug: "headstock-essential-festival-kit"
 date: "2016-09-06T11:35:10.000Z"
 modified: "2017-11-03T10:52:53.000Z"
-excerpt: "So the festival feeling is beginning to flicker as our annual summer get together, HeadStock, draws ever closer. We at Headforwards are looking forward to letting our hair down, after what has been another hard working summer! This Headstock essential festival kit guide should help you plan out your weekend away. This years festival promises to …"
+excerpt: "So the festival feeling is beginning to flicker as our annual summer get together, HeadStock, draws ever closer. We at Headforwards are looking forward to letting our hair down, after what has been another hard working summer! This Headstock essential festival kit guide should help you plan out your weekend away. This years festival promises to \[…\]"
 categories: ["News","Team adventures","The Headforwards Team"]
 tags: []
 author:

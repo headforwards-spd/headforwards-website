@@ -5,7 +5,7 @@ title: "2016 Cornwall Business Awards"
 slug: "2016-cornwall-business-awards"
 date: "2016-04-06T16:19:12.000Z"
 modified: "2017-11-03T10:53:53.000Z"
-excerpt: "Earlier today the shortlist for the 2016 Cornwall Business Awards was announced, and we are thrilled to say that we are shortlisted for the Employer of The Year Award. The Cornwall Business Awards, now in their 11th year, are a celebration of innovation, achievement, and entrepreneurial spirit within the Cornish business community. The prestigious evening event …"
+excerpt: "Earlier today the shortlist for the 2016 Cornwall Business Awards was announced, and we are thrilled to say that we are shortlisted for the Employer of The Year Award. The Cornwall Business Awards, now in their 11th year, are a celebration of innovation, achievement, and entrepreneurial spirit within the Cornish business community. The prestigious evening event \[…\]"
 categories: ["Awards","Cornwall","News"]
 tags: []
 author:
@@ -30,4 +30,4 @@ Company culture is carefully considered here at Headforwards and we work hard to
 
 If you are interested in working with a company who is shortlisted as the Employer of the Year, why not take a look at our [careers page](https://www.headforwards.com/careers/) to see our open vacancies. We would love to hear from you.
 
-![2016 Cornwall Business Awards Finalists ](/wp-content/uploads/2016/04/Headforwards-team-pool-innovation-centre.jpg)
+[![2016 Cornwall Business Awards Finalists ](/wp-content/uploads/2016/04/Headforwards-team-pool-innovation-centre-300x225.jpg)](/wp-content/uploads/2016/04/Headforwards-team-pool-innovation-centre.jpg)

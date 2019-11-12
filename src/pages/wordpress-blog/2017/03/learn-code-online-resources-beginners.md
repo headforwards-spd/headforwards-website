@@ -5,7 +5,7 @@ title: "How To Learn Code: Online Resources for Beginners"
 slug: "learn-code-online-resources-beginners"
 date: "2017-03-08T16:07:43.000Z"
 modified: "2017-11-03T10:52:48.000Z"
-excerpt: "There is an unlimited supply of coding resources on the web. 110,000,000 according to Google Search. Learning a programming language online is an excellent way to stay up-to-date with newly added features. Here at Headforwards, our team use a wide variety of online resources to help them stay ahead of the curve. We’ve picked out …"
+excerpt: "There is an unlimited supply of coding resources on the web. 110,000,000 according to Google Search. Learning a programming language online is an excellent way to stay up-to-date with newly added features. Here at Headforwards, our team use a wide variety of online resources to help them stay ahead of the curve. We’ve picked out \[…\]"
 categories: ["Coding","Top Tips"]
 tags: []
 author:

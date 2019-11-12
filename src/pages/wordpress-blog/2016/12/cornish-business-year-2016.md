@@ -5,7 +5,7 @@ title: "Cornish Business of the Year 2016"
 slug: "cornish-business-year-2016"
 date: "2016-12-02T16:48:37.000Z"
 modified: "2017-11-03T10:52:51.000Z"
-excerpt: "Headforwards are extremely proud to announce that last week we were awarded the impressive accolade of being Cornish Business of the Year 2016 at the Hub Awards. The Hub, launched in 2003, is an exciting network that now connects over 700 members from the business community across Cornwall and Devon. It’s mission statement is “To connect …"
+excerpt: "Headforwards are extremely proud to announce that last week we were awarded the impressive accolade of being Cornish Business of the Year 2016 at the Hub Awards. The Hub, launched in 2003, is an exciting network that now connects over 700 members from the business community across Cornwall and Devon. It’s mission statement is “To connect \[…\]"
 categories: ["Awards","News","Team adventures","The Headforwards Team"]
 tags: []
 author:
@@ -72,12 +72,12 @@ We are incredibly proud of our team here at Headforwards. Combining passion for 
 
 If you’d like to work for the Cornish Business of the Year 2016, we are currently recruiting! Take a look at the opportunities on our [careers page](https://www.headforwards.com/careers/) and get in touch.
 
-![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-cornish-business-of-the-year.jpg)
+[![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-cornish-business-of-the-year-300x225.jpg)](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-cornish-business-of-the-year.jpg)
 
-![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-jeni.jpg)
+[![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-jeni-300x225.jpg)](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-jeni.jpg)
 
-![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-john.jpg)
+![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-john-300x169.jpg)
 
-![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-lysssa.jpg)
+[![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-lysssa-300x169.jpg)](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-lysssa.jpg)
 
 You can see the official photos by the fabulous [Toby Weller](http://tobyweller.co.uk/) on either the [Hub](https://www.facebook.com/TheHubCornwall/)‘s or [our Facebook page](https://www.facebook.com/headforwards/)

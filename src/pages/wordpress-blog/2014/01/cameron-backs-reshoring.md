@@ -5,7 +5,7 @@ title: "Great news for UK Reshoring after Cameron drive"
 slug: "cameron-backs-reshoring"
 date: "2014-01-28T18:24:18.000Z"
 modified: "2015-09-02T10:45:19.000Z"
-excerpt: "In line with the growing success of Headforwards, British Prime Minister, David Cameron called for greater ‘reshoring’ in the UK and ‘Bringing more of the benefits of globalisation home’. This was during a speech he made on the opportunities of reshoring at the World Economic Forum (Davos 2014) Reshoring is when Offshore Outsourcing is stopped …"
+excerpt: "In line with the growing success of Headforwards, British Prime Minister, David Cameron called for greater ‘reshoring’ in the UK and ‘Bringing more of the benefits of globalisation home’. This was during a speech he made on the opportunities of reshoring at the World Economic Forum (Davos 2014) Reshoring is when Offshore Outsourcing is stopped \[…\]"
 categories: ["Coding","Cornwall","Informational","News","Outsourcing"]
 tags: ["Business","Business Tips","Cornwall","Craig Girvan","David Cameron","Headforwards","Infomational","nearshore outsourcing","News","Offshore Outsourcing","Onshore Outsourcing","onshore software development","Outsource","Outsourcing","Reshoring","software companies cornwall","software companies uk","Software Cornwall","software jobs","toby parkins","Vince Cable"]
 author:

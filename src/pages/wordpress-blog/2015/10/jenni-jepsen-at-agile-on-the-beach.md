@@ -5,7 +5,7 @@ title: "Jenni Jepsen at Agile on the Beach"
 slug: "jenni-jepsen-at-agile-on-the-beach"
 date: "2015-10-06T10:49:06.000Z"
 modified: "2017-11-03T10:54:18.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Jenni Jepsen at Agile on the Beach and her Keynote entitled “Agile Leadership and Teams” Jenni Jepsen is a partner at goAgile, a Denmark based Agile consulting firm who focus on helping people deliver the right product, faster. Whilst at the same creating lasting change. Jepsen’s keynote speech was …"
+excerpt: "Lyssa, our Marketing Manager, has written the following article about Jenni Jepsen at Agile on the Beach and her Keynote entitled “Agile Leadership and Teams” Jenni Jepsen is a partner at goAgile, a Denmark based Agile consulting firm who focus on helping people deliver the right product, faster. Whilst at the same creating lasting change. Jepsen’s keynote speech was \[…\]"
 categories: ["Agile","The Headforwards Team"]
 tags: ["Agile","Agile on the Beach","Agile on the Beach 2015","AOTB","AOTB2015","Go Agile","Jenni Jepsen"]
 author:
@@ -24,7 +24,7 @@ Jepsen wanted to prove with science how agile works. MRI scans played a big part
 She started discussing the [Prefrontal Cortex](https://en.wikipedia.org/wiki/Prefrontal_cortex), which is the thinking part of the brain. She called it the Goldilocks part of the brain- everything needs to be just right!  
 She then discussed the [Limbic System](https://en.wikipedia.org/wiki/Limbic_system), which is the feeling region of the brain. It is where fear and old habits come from, it also holds onto your long term memory. When the prefrontal cortex shuts down it has the effect of a short term lobotomy.
 
-![Jenni Jepsen at Agile on the Beach - Brain](/wp-content/uploads/2015/09/Jenni_Jepsen_at_Agile_on_the_Beach_Brain.jpg)
+[![Jenni Jepsen at Agile on the Beach - Brain](/wp-content/uploads/2015/09/Jenni_Jepsen_at_Agile_on_the_Beach_Brain-300x169.jpg)](/wp-content/uploads/2015/09/Jenni_Jepsen_at_Agile_on_the_Beach_Brain.jpg)
 
 Jepsen went on to say how hearing the phrase “_Can I give you some feedback_” gives the brain the same reaction as a bear running at you in the woods. That’s rather scary isn’t it?  
 I know that I can relate to this. Whilst you want to learn and grow, which can be achieved by receiving feedback, hearing someone say this to you brings up feelings of terror.
@@ -32,7 +32,7 @@ I know that I can relate to this. Whilst you want to learn and grow, which can 
 When we are stressed we do not work well.  
 Jepsen showed us a graph called the “Stress Performance Curve” to demonstrate this statement.
 
-![Jenni Jepsen at Agile on the Beach Stress Curve](/wp-content/uploads/2015/09/Jenni_Jepsen_at_Agile_on_the_Beach_STRESS_Performance_Curve.jpg)
+[![Jenni Jepsen at Agile on the Beach Stress Curve](/wp-content/uploads/2015/09/Jenni_Jepsen_at_Agile_on_the_Beach_STRESS_Performance_Curve-300x225.jpg)](/wp-content/uploads/2015/09/Jenni_Jepsen_at_Agile_on_the_Beach_STRESS_Performance_Curve.jpg)
 
 In the work place, the most common cause of stress is having too many demands and not enough control.
 
@@ -44,7 +44,7 @@ However, sometimes people are on the lower left end of the scale and need a litt
 
 When we are really stressed the prefrontal cortex stops working, which as I mentioned before has the same effect as a (temporary) lobotomy. This will not make for a productive day.
 
-![Jenni Jepsen at Agile on the Beach](/wp-content/uploads/2015/10/Jenni_Jepsen_At-Agile_on_The_beach.jpg)
+[![Jenni Jepsen at Agile on the Beach](/wp-content/uploads/2015/10/Jenni_Jepsen_At-Agile_on_The_beach-300x168.jpg)](/wp-content/uploads/2015/10/Jenni_Jepsen_At-Agile_on_The_beach.jpg)
 
 Jepsen explains that our brains are prediction machines, which is why the left hand side of the brain says “No, I don’t want that feedback”
 

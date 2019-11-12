@@ -5,7 +5,7 @@ title: "Headforwards Appoints Howell to Lead New Travel Division"
 slug: "headforwards-appoints-howell-lead-new-travel-division"
 date: "2017-01-27T12:29:34.000Z"
 modified: "2017-11-03T10:52:49.000Z"
-excerpt: "Former Multicom CEO John Howell has been appointed to lead the travel division of leading software development outsourcing specialists Headforwards. Howell left market leading travel software technology specialists Multicom following its acquisition by Swedish company Paxport last year. Based in Cornwall, Headforwards provide their clients with dedicated software development teams delivering quality software using tried-and-tested …"
+excerpt: "Former Multicom CEO John Howell has been appointed to lead the travel division of leading software development outsourcing specialists Headforwards. Howell left market leading travel software technology specialists Multicom following its acquisition by Swedish company Paxport last year. Based in Cornwall, Headforwards provide their clients with dedicated software development teams delivering quality software using tried-and-tested \[…\]"
 categories: ["Cornwall","News","The Headforwards Team"]
 tags: []
 author:
@@ -35,6 +35,6 @@ Howell’s knowledge of the travel market will help to drive forward Headforward
 
 “Underpinning our success is the fundamental belief in working in an Agile way and in the philosophies behind it, not just slavishly putting practices into action. Our clients are viewed as partners, and we work hard to make it a mutually beneficial partnership. I’m confident with John joining the team the travel industry will recognise the benefits of our approach.”
 
-![Left to Right: Craig Girvan, John Howell, Toby Parkins](/wp-content/uploads/2017/01/IMG_2199-web-2048-1-300x200.jpg "Left to Right: Craig Girvan, John Howell, Toby Parkins")
+[![Left to Right: Craig Girvan, John Howell, Toby Parkins](/wp-content/uploads/2017/01/IMG_2199-web-2048-1-300x200.jpg "Left to Right: Craig Girvan, John Howell, Toby Parkins")](/wp-content/uploads/2017/01/IMG_2199-web-2048-1.jpg)
 
-![Left to Right: John Howell, Craig Girvan, Toby Parkins](/wp-content/uploads/2017/01/IMG_2205-web-2048-edited-300x200.jpg "Left to Right: John Howell, Craig Girvan, Toby Parkins")
+[![Left to Right: John Howell, Craig Girvan, Toby Parkins](/wp-content/uploads/2017/01/IMG_2205-web-2048-edited-300x200.jpg "Left to Right: John Howell, Craig Girvan, Toby Parkins")](/wp-content/uploads/2017/01/IMG_2205-web-2048-edited.jpg)

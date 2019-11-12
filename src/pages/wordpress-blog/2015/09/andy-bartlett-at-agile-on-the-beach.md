@@ -5,7 +5,7 @@ title: "Andy Bartlett at Agile on the Beach"
 slug: "andy-bartlett-at-agile-on-the-beach"
 date: "2015-09-17T11:57:31.000Z"
 modified: "2017-11-03T10:54:26.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Andy Bartlett at Agile on the Beach and his talk entitled “Herding Creative Cats” Andy Bartlett is Product Design Manager at Worlds Apart, a Cornish company who create innovative children’s lifestyle products. They hold licences to many well known brands including Disney, Star Wars and Peppa Pig. …"
+excerpt: "Lyssa, our Marketing Manager, has written the following article about Andy Bartlett at Agile on the Beach and his talk entitled “Herding Creative Cats” Andy Bartlett is Product Design Manager at Worlds Apart, a Cornish company who create innovative children’s lifestyle products. They hold licences to many well known brands including Disney, Star Wars and Peppa Pig. \[…\]"
 categories: ["News","The Headforwards Team"]
 tags: ["agile in creative companies","agile in marketin","agile in marketing","Agile on the Beach","Andy Bartlett","being agile","belinda waldock","design week","herding creative cats","Worlds Apart"]
 author:
@@ -47,7 +47,7 @@ _“The magic of some of my ideas gets lost as products go through the developme
 _“I have no idea how my products perform once they leave development.”_  
 _“I go home having done lots, but nothing properly.”_
 
-![Andy Bartlett at Agile on the Beach - Herding Creative cats ](/wp-content/uploads/2015/09/AmdyBarlett_meet_the_creative_cats.jpg)
+![Andy Bartlett at Agile on the Beach - Herding Creative cats ](/wp-content/uploads/2015/09/AmdyBarlett_meet_the_creative_cats-300x225.jpg)
 
 Even though his team were delivering, they didn’t feel like they were achieving.  
 It is crucial for people to feel like they are doing their jobs well, otherwise they end up losing motivation and feeling unworthy.
@@ -59,7 +59,7 @@ So what did Worlds Apart want to achieve by changing?
 **Rhythm** instead of **AdHoc**  
 **Reflect** instead of **repeat**
 
-![Andy Bartlett at Agile on the Beach ](/wp-content/uploads/2015/09/AndyBartlett_aims.jpg)
+[![Andy Bartlett at Agile on the Beach ](/wp-content/uploads/2015/09/AndyBartlett_aims-300x225.jpg)](/wp-content/uploads/2015/09/AndyBartlett_aims.jpg)
 
 The solutions…
 --------------
@@ -98,7 +98,7 @@ They also put a big cargo ship up on the wall and every time a container was shi
 
 Bartlett told us that their shipping window for their products was between 20th April and 10th May.
 
-![Andy Bartlet- Worlds Apart Ship](/wp-content/uploads/2015/09/AndyBarlett_Sanity_check.jpg)
+[![Andy Bartlet- Worlds Apart Ship](/wp-content/uploads/2015/09/AndyBarlett_Sanity_check-300x225.jpg)](/wp-content/uploads/2015/09/AndyBarlett_Sanity_check.jpg)
 
 In reality only 16% of their product was shipped during this window.  
 20%  was shipped during May- June  
@@ -106,7 +106,7 @@ In reality only 16% of their product was shipped during this window.
 27% was shipped in July  
 A massive 16% of the merchandise didn’t even make it to retailers. This amounted to £50,000 worth of stock.
 
-![Andy Bartlett at Agile on the Beach- shipping](/wp-content/uploads/2015/09/Andy_Bartlett_Shipping_dates.jpg)
+[![Andy Bartlett at Agile on the Beach- shipping](/wp-content/uploads/2015/09/Andy_Bartlett_Shipping_dates-300x225.jpg)](/wp-content/uploads/2015/09/Andy_Bartlett_Shipping_dates.jpg)
 
 Displaying this ship on the wall provided a massive _“sanity check”_ for Bartlett’s team.  
 He commented that legacy can be hard to change, but by making it visible, having it on the wall for everyone to see helps to change the culture. Displaying your tasks and blockages for everyone to see enables them to understand what is really happening. That is when changes get made.
@@ -126,7 +126,7 @@ They experienced varying levels of acceptance, how are you going to have cultura
 At Worlds Apart they noticed that when one team got going, it rippled out to the other teams getting the other ‘cats’ going.  
 They were all riding “The Change Rollercoaster” which is probably something we have all experienced before!
 
-![Andy Bartlett at Agile on the Beach- the change rollercoaster ](/wp-content/uploads/2015/09/Andy_Bartlett_change_rollercoaster.jpg)
+[![Andy Bartlett at Agile on the Beach- the change rollercoaster ](/wp-content/uploads/2015/09/Andy_Bartlett_change_rollercoaster-300x225.jpg)](/wp-content/uploads/2015/09/Andy_Bartlett_change_rollercoaster.jpg)
 
 I found it fascinating to hear Bartlett talk about his journey implementing Agile into a creative company, where he was _“herding creative cats!”_  He puts a large amount of their success down to their mentoring from [Belinda Waldock](http://www.beingagile.co.uk/).
 

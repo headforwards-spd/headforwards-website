@@ -5,7 +5,7 @@ title: "Cornwall Tech Week"
 slug: "cornwall-tech-week"
 date: "2015-11-30T12:24:45.000Z"
 modified: "2017-11-03T10:54:17.000Z"
-excerpt: "Cornwall Tech Week is fast approaching and we are getting rather excited! Cornwall Tech Week is the brainchild of Cornwall College and Software Cornwall – the idea was sparked from The Hour of Code. The Hour of Code is a global event that sees people all over the world engage in creating code for an hour. No experience …"
+excerpt: "Cornwall Tech Week is fast approaching and we are getting rather excited! Cornwall Tech Week is the brainchild of Cornwall College and Software Cornwall – the idea was sparked from The Hour of Code. The Hour of Code is a global event that sees people all over the world engage in creating code for an hour. No experience \[…\]"
 categories: ["Cornwall","News","The Headforwards Team"]
 tags: ["cornwall college","Cornwall Tech Week","education","Headforwards","progamming","Software Cornwall"]
 author:

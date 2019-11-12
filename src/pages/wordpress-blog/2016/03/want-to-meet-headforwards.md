@@ -5,7 +5,7 @@ title: "Want to Meet Headforwards?"
 slug: "want-to-meet-headforwards"
 date: "2016-03-30T12:22:01.000Z"
 modified: "2017-11-03T10:53:54.000Z"
-excerpt: "The Headforwards diary is looking pretty busy for the year, with lots of exciting events on the horizon. Do you want to meet Headforwards? Here are the events that we will be attending throughout 2016, one of them might be the perfect time for you to come along and say hello. The Cornwall Business Show 17th …"
+excerpt: "The Headforwards diary is looking pretty busy for the year, with lots of exciting events on the horizon. Do you want to meet Headforwards? Here are the events that we will be attending throughout 2016, one of them might be the perfect time for you to come along and say hello. The Cornwall Business Show 17th \[…\]"
 categories: ["News"]
 tags: []
 author:
@@ -60,14 +60,14 @@ _Agile on the beach is a agile conference that is held at Tremough campus in Pen
 No doubt there will be some more events added to our calender as the year goes on, and we will try to keep you up to date.  
 If you know of an event you think we might be interested in attending please let us know.
 
-![Headforwards atThe Cornwall Business Show ](/wp-content/uploads/2016/03/business-show-logo.png)
+[![Headforwards atThe Cornwall Business Show ](/wp-content/uploads/2016/03/business-show-logo.png)](/wp-content/uploads/2016/03/business-show-logo.png)
 
-![Headforwards at The Cornwall Business Fair ](/wp-content/uploads/2016/03/newHeaderLogo.png)
+[![Headforwards at The Cornwall Business Fair ](/wp-content/uploads/2016/03/newHeaderLogo-300x122.png)](/wp-content/uploads/2016/03/newHeaderLogo.png)
 
-![Headforwards at XP2016](/wp-content/uploads/2016/03/XP2016.jpg)
+[![Headforwards at XP2016](/wp-content/uploads/2016/03/XP2016-300x151.jpg)](/wp-content/uploads/2016/03/XP2016.jpg)
 
-![Headforwards doing the roc5k](/wp-content/uploads/2016/03/logo.png)
+[![Headforwards doing the roc5k](/wp-content/uploads/2016/03/logo.png)](/wp-content/uploads/2016/03/logo.png)
 
-![Headforwards at Software Cornwall Work Experience ](/wp-content/uploads/2016/03/cropped-2015-04-07-15.56.27-e1439802104964.png)
+[![Headforwards at Software Cornwall Work Experience ](/wp-content/uploads/2016/03/cropped-2015-04-07-15.56.27-e1439802104964.png)](/wp-content/uploads/2016/03/cropped-2015-04-07-15.56.27-e1439802104964.png)
 
-![Headforwards at Agile on the Beach](/wp-content/uploads/2016/03/agile-on-the-beach.gif)
+[![Headforwards at Agile on the Beach](/wp-content/uploads/2016/03/agile-on-the-beach-300x68.gif)](/wp-content/uploads/2016/03/agile-on-the-beach.gif)

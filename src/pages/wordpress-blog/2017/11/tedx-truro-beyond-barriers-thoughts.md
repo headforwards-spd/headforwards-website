@@ -5,7 +5,7 @@ title: "TEDx Truro – Beyond Barriers – Our Thoughts"
 slug: "tedx-truro-beyond-barriers-thoughts"
 date: "2017-11-10T16:49:29.000Z"
 modified: "2017-11-10T17:05:12.000Z"
-excerpt: "Headforwards is proud to have sponsored this year’s TEDxTruro. For anybody who hasn’t heard of TED Talks, it is an organisation formed to help people share their views, insights, knowledge and personal stories to the world. TEDx was founded to reach a larger audience base by expanding to smaller communities. The x stands for independent …"
+excerpt: "Headforwards is proud to have sponsored this year’s TEDxTruro. For anybody who hasn’t heard of TED Talks, it is an organisation formed to help people share their views, insights, knowledge and personal stories to the world. TEDx was founded to reach a larger audience base by expanding to smaller communities. The x stands for independent \[…\]"
 categories: ["Cornwall","Team adventures"]
 tags: []
 author:

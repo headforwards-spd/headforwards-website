@@ -5,7 +5,7 @@ title: "Do You Want to Learn to Code in Cornwall?"
 slug: "do-you-want-to-learn-code-in-cornwall"
 date: "2015-06-30T10:16:20.000Z"
 modified: "2015-09-01T14:23:11.000Z"
-excerpt: "Yesterday we talked about the debatable lack of skilled IT workers and it appears a lot of you are interested in learning code. It is a skill that will be beneficial in your life even if you don’t wish to make a career out of it. Do you want to learn to code in Cornwall? …"
+excerpt: "Yesterday we talked about the debatable lack of skilled IT workers and it appears a lot of you are interested in learning code. It is a skill that will be beneficial in your life even if you don’t wish to make a career out of it. Do you want to learn to code in Cornwall? \[…\]"
 categories: ["Coding","Cornwall","Informational","News"]
 tags: ["Business","Children","Children learning to code","Code club","Codecademy","Coding","Cornwall","education","Headforwards","Infomational","Raspberry Pi","Software","software development","software outsourcing in Cornwall","software outsourcing uk","Top Tips"]
 author:

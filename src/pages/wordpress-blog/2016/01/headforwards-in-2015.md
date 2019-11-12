@@ -5,7 +5,7 @@ title: "Headforwards in 2015"
 slug: "headforwards-in-2015"
 date: "2016-01-04T12:50:17.000Z"
 modified: "2017-11-03T10:53:54.000Z"
-excerpt: "Welcome to 2016! We hope you all had a fantastic Christmas and New Year? Here at Headforwards, we are constantly striving for agile excellence and as you know a key part of being agile is having regular retrospectives. We have just been looking back on the past twelve months and decided to share with you a quick …"
+excerpt: "Welcome to 2016! We hope you all had a fantastic Christmas and New Year? Here at Headforwards, we are constantly striving for agile excellence and as you know a key part of being agile is having regular retrospectives. We have just been looking back on the past twelve months and decided to share with you a quick \[…\]"
 categories: ["News","The Headforwards Team"]
 tags: ["2015","agile excellence","Agile on the Beach","AOTB","career opportunities","Headforwards","headstock","interview tips","interview tps","jobs in cornwall","new year","review","skype intervies","skype tips","software jobs in cornwall","Software Squad","year review"]
 author:

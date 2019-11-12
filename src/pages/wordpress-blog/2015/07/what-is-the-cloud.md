@@ -5,7 +5,7 @@ title: "What is the Cloud?"
 slug: "what-is-the-cloud"
 date: "2015-07-17T15:57:42.000Z"
 modified: "2017-11-03T10:56:42.000Z"
-excerpt: "You will most likely have heard about The Cloud recently, in fact most of us use it on a daily basis, but what is The Cloud? Well firstly, it is not a physical thing it is more of a  concept. Essentially it’s a network of servers used for accessing and storing data and programs on the …"
+excerpt: "You will most likely have heard about The Cloud recently, in fact most of us use it on a daily basis, but what is The Cloud? Well firstly, it is not a physical thing it is more of a  concept. Essentially it’s a network of servers used for accessing and storing data and programs on the \[…\]"
 categories: ["Informational"]
 tags: ["Agile Software Development","ARPNET","Azure","Business","Cloud developer","Cloud Developer UK","Cloud Developers","Cloud developers in the UK","Dropbox","GoogleDocs","IaaS","Informational","JCR Licklider","News","PaaS","Rackspace","SaaS","Salesforce","Software","The cloud","What is the cloud"]
 author:

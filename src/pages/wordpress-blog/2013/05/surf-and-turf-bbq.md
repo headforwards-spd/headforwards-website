@@ -5,7 +5,7 @@ title: "Surf and Turf BBQ"
 slug: "surf-and-turf-bbq"
 date: "2013-05-29T09:36:00.000Z"
 modified: "2017-11-03T11:11:17.000Z"
-excerpt: "Our first beach BBQ of 2013 happened in May and to make this one a bit special we organised some surfing lessons as well as the usual yummy food. Tom, a local surf instructor from Breakers Surf School  joined us to teach the Headforwards team how to surf. The water was a little colder than expected …"
+excerpt: "Our first beach BBQ of 2013 happened in May and to make this one a bit special we organised some surfing lessons as well as the usual yummy food. Tom, a local surf instructor from Breakers Surf School  joined us to teach the Headforwards team how to surf. The water was a little colder than expected \[…\]"
 categories: ["Cornwall","News","Team adventures","The Headforwards Team"]
 tags: ["Agile","Beach BBQ","careers in cornwall","Cornwall","cornwall bbq","Developers","Headforwards","Headforwards Team","headforwards team bbq","jobs in cornwall","software companies cornwall","software companies uk","Software Cornwall","software in cornwall","software jobs","software jobs cornwall","software jobs in cornwall","surf and turf","surf and turf bbq","surf and turf team bbq","work activities"]
 author:
@@ -22,25 +22,25 @@ The BBQ was a big hit as usual, providing some delicious steaks for the team alo
 
 We took a few photos of the lovely surf and turf BBQ, which you can see below. If you want to view them as a slideshow, please just click on one of the images.
 
-![Breakers surf school teach Headforwards](/wp-content/uploads/2013/07/tomblazej.jpg)
+![Breakers surf school teach Headforwards](/wp-content/uploads/2013/07/tomblazej-300x200.jpg)
 
-![Breakers surf school teach Headforwards](/wp-content/uploads/2013/07/surflesson.jpg)
+![Breakers surf school teach Headforwards](/wp-content/uploads/2013/07/surflesson-300x200.jpg)
 
-![Headforwards surf and turf bbq](/wp-content/uploads/2013/07/everyone.jpg)
+[![Headforwards surf and turf bbq](/wp-content/uploads/2013/07/everyone-300x200.jpg)](/wp-content/uploads/2013/07/everyone.jpg)
 
-![Headforwards surf and turf BBQ](/wp-content/uploads/2013/07/simon_kartick.jpg)
+[![Headforwards surf and turf BBQ](/wp-content/uploads/2013/07/simon_kartick-300x200.jpg)](/wp-content/uploads/2013/07/simon_kartick.jpg)
 
-![Breakers Surf School with Headforwards ](/wp-content/uploads/2013/05/Headforwards-Breakers-surf-lesson.jpg)
+[![Breakers Surf School with Headforwards ](/wp-content/uploads/2013/05/Headforwards-Breakers-surf-lesson-300x201.jpg)](/wp-content/uploads/2013/05/Headforwards-Breakers-surf-lesson.jpg)
 
-![Headforwards team surf and turf bbq](/wp-content/uploads/2013/05/Headforwards-surf-and-turn-BBQ.jpg)
+[![Headforwards team surf and turf bbq](/wp-content/uploads/2013/05/Headforwards-surf-and-turn-BBQ-300x201.jpg)](/wp-content/uploads/2013/05/Headforwards-surf-and-turn-BBQ.jpg)
 
-![Headforwards Porthtowan sunset](/wp-content/uploads/2013/05/Headforwards-Porthtowan-sunset.jpg)
+[![Headforwards Porthtowan sunset](/wp-content/uploads/2013/05/Headforwards-Porthtowan-sunset-300x225.jpg)](/wp-content/uploads/2013/05/Headforwards-Porthtowan-sunset.jpg)
 
-![Headforwards surf and turf bbq sunset](/wp-content/uploads/2013/05/Headforwards-beach-BBQ-sunset.jpg)
+[![Headforwards surf and turf bbq sunset](/wp-content/uploads/2013/05/Headforwards-beach-BBQ-sunset-300x225.jpg)](/wp-content/uploads/2013/05/Headforwards-beach-BBQ-sunset.jpg)
 
-![Headforwards surf and turf BBQ](/wp-content/uploads/2013/05/glensurfing.jpg)
+![Headforwards surf and turf BBQ](/wp-content/uploads/2013/05/glensurfing-200x300.jpg)
 
-![Headforwards surf and turf BBQ chef Toby Parkins](/wp-content/uploads/2013/07/bbq.jpg)
+![Headforwards surf and turf BBQ chef Toby Parkins](/wp-content/uploads/2013/07/bbq-200x300.jpg)
 
 If like the idea of be involved in a Headforwards surf and turf BBQ who not take a look at our [careers](http://www.headforwards.com/careers/) page?
 
