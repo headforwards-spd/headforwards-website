@@ -5,7 +5,7 @@ title: "Cornwall: The Unlikely High-Tech Hub"
 slug: "cornwall-the-unlikely-high-tech-hub"
 date: "2016-04-20T14:27:58.000Z"
 modified: "2017-11-03T10:53:49.000Z"
-excerpt: "By ContentLive The below recent article posted by ContentLive discusses the surprising growth of the tech sector in Cornwall: Superfast broadband and a growing software industry are turning Cornwall into a hive of activity for technology companies. The Cornish village of the Lizard is about as far away as an English business could be from the \[…\]"
+excerpt: "By ContentLive The below recent article posted by ContentLive discusses the surprising growth of the tech sector in Cornwall: Superfast broadband and a growing software industry are turning Cornwall into a hive of activity for technology companies. The Cornish village of the Lizard is about as far away as an English business could be from the …"
 categories: ["Cornwall","News"]
 tags: []
 author:

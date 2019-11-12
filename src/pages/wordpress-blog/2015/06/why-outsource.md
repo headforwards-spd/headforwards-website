@@ -5,7 +5,7 @@ title: "Why Outsource?"
 slug: "why-outsource"
 date: "2015-06-26T10:12:51.000Z"
 modified: "2016-04-22T13:04:52.000Z"
-excerpt: "Why Outsource? Businesses everywhere seem to be  doing it, but why? Let’s discuss the benefits of Outsourcing and the potential issues. First of all, what actually is Outsourcing? Outsourcing is when a company delegates a project or department to a third party to complete. If this work is being done abroad it is referred to as \[…\]"
+excerpt: "Why Outsource? Businesses everywhere seem to be  doing it, but why? Let’s discuss the benefits of Outsourcing and the potential issues. First of all, what actually is Outsourcing? Outsourcing is when a company delegates a project or department to a third party to complete. If this work is being done abroad it is referred to as …"
 categories: ["Informational","Outsourcing"]
 tags: ["Agile Software Development","Business","Business Tips","Cornwall","Headforwards","Infomational","Offshore Outsourcing","Onshore Outsourcing","onshore software outsourcing companies","Outsource","Outsourcing","Relocating","software companies cornwall","software companies uk","Software Outsourcing","software outsourcing uk","software partners","software partners cornwall","software partners england","software partners uk"]
 author:

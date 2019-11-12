@@ -5,7 +5,7 @@ title: "Headforwards Team Social: Rugby – Redruth vs. Worthing"
 slug: "headforwards-team-social-rugby-redruth-vs-worthing"
 date: "2017-04-03T13:09:17.000Z"
 modified: "2017-11-03T10:52:10.000Z"
-excerpt: "Our monthly social for March was held at Redruth Rugby Football Club for the Redruth vs. Worthing rugby match. The Tribute Lounge was booked exclusively for The Headforwards Team where a huge buffet of snacks and pasties were provided. There was also an open bar to compliment the food… Much to everybody’s delight. Around 60 people \[…\]"
+excerpt: "Our monthly social for March was held at Redruth Rugby Football Club for the Redruth vs. Worthing rugby match. The Tribute Lounge was booked exclusively for The Headforwards Team where a huge buffet of snacks and pasties were provided. There was also an open bar to compliment the food… Much to everybody’s delight. Around 60 people …"
 categories: ["News","Team adventures","The Headforwards Team"]
 tags: []
 author:
@@ -24,63 +24,43 @@ For a detailed report of the game including a match-timeline, head over to [pitc
 
 Check out some of the photos from the afternoon.
 
-[![](/wp-content/uploads/2017/04/DSCF8067-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8067.jpg)
 
-[![](/wp-content/uploads/2017/04/DSCF8066-225x300.jpg)](/wp-content/uploads/2017/04/DSCF8066.jpg)
+<section class="gallery">
 
-[![](/wp-content/uploads/2017/04/IMG_1768-225x300.jpg)](/wp-content/uploads/2017/04/IMG_1768.jpg)
 
-[![](/wp-content/uploads/2017/04/DSCF8073-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8073.jpg)
+![](/wp-content/uploads/2017/04/DSCF8067.jpg)
+![](/wp-content/uploads/2017/04/DSCF8066.jpg)
+![](/wp-content/uploads/2017/04/IMG_1768.jpg)
+![](/wp-content/uploads/2017/04/DSCF8073.jpg)
+![](/wp-content/uploads/2017/04/DSCF8078.jpg)
+![](/wp-content/uploads/2017/04/DSCF8069.jpg)
+![](/wp-content/uploads/2017/04/DSCF8080.jpg)
+![](/wp-content/uploads/2017/04/DSCF8083.jpg)
+![](/wp-content/uploads/2017/04/DSCF8096.jpg)
+![](/wp-content/uploads/2017/04/DSCF8098.jpg)
+![](/wp-content/uploads/2017/04/DSCF8152.jpg)
+![](/wp-content/uploads/2017/04/DSCF8104.jpg)
+![](/wp-content/uploads/2017/04/DSCF8095.jpg)
+![](/wp-content/uploads/2017/04/DSCF8112.jpg)
+![](/wp-content/uploads/2017/04/DSCF8121.jpg)
+![](/wp-content/uploads/2017/04/DSCF8160.jpg)
+![](/wp-content/uploads/2017/04/DSCF8137.jpg)
+![](/wp-content/uploads/2017/04/DSCF8199.jpg)
+![](/wp-content/uploads/2017/04/DSCF8150.jpg)
+![](/wp-content/uploads/2017/04/DSCF8193.jpg)
+![](/wp-content/uploads/2017/04/DSCF8133.jpg)
+![](/wp-content/uploads/2017/04/DSCF8142.jpg)
+![](/wp-content/uploads/2017/04/DSCF8166.jpg)
+![](/wp-content/uploads/2017/04/DSCF8193-1.jpg)
+![](/wp-content/uploads/2017/04/DSCF8205.jpg)
+![](/wp-content/uploads/2017/04/IMG_1757.jpg)
+![](/wp-content/uploads/2017/04/IMG_1765.jpg)
+![](/wp-content/uploads/2017/04/DSCF8208.jpg)
+![](/wp-content/uploads/2017/04/image_58e0d86dac205.jpg)
 
-[![](/wp-content/uploads/2017/04/DSCF8078-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8078.jpg)
+</section>
 
-[![](/wp-content/uploads/2017/04/DSCF8069-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8069.jpg)
 
-[![](/wp-content/uploads/2017/04/DSCF8080-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8080.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8083-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8083.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8096-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8096.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8098-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8098.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8152-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8152.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8104-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8104.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8095-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8095.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8112-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8112.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8121-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8121.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8160-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8160.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8137-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8137.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8199-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8199.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8150-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8150.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8193-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8193.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8133-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8133.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8142-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8142.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8166-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8166.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8193-1-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8193-1.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8205-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8205.jpg)
-
-[![](/wp-content/uploads/2017/04/IMG_1757-300x225.jpg)](/wp-content/uploads/2017/04/IMG_1757.jpg)
-
-[![](/wp-content/uploads/2017/04/IMG_1765-300x225.jpg)](/wp-content/uploads/2017/04/IMG_1765.jpg)
-
-[![](/wp-content/uploads/2017/04/DSCF8208-300x225.jpg)](/wp-content/uploads/2017/04/DSCF8208.jpg)
-
-[![](/wp-content/uploads/2017/04/image_58e0d86dac205-300x225.jpg)](/wp-content/uploads/2017/04/image_58e0d86dac205.jpg)
 
 > Worthing score the tenth try in this thrilling game. Making the full time score Redruth 33 – Worthing 29!!
 > 

@@ -5,7 +5,7 @@ title: "Software Job at Headforwards"
 slug: "software-job-at-headforwards"
 date: "2015-11-12T12:28:24.000Z"
 modified: "2017-11-03T10:54:17.000Z"
-excerpt: "Are you looking for a new software job? Headforwards are looking for an experienced cyber-security professional (developer / analyst) to join their team in Cornwall, South West England. Headforwards are an outsource software development company and this role will involve working on very high end web applications for one of the largest companies in the \[…\]"
+excerpt: "Are you looking for a new software job? Headforwards are looking for an experienced cyber-security professional (developer / analyst) to join their team in Cornwall, South West England. Headforwards are an outsource software development company and this role will involve working on very high end web applications for one of the largest companies in the …"
 categories: ["Jobs","News"]
 tags: ["jobs in cornwall","new jobs at headforwards","software development cornwall","software job"]
 author:

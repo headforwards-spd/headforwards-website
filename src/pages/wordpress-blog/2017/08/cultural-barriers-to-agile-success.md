@@ -5,7 +5,7 @@ title: "Cultural Barriers to Agile Success"
 slug: "cultural-barriers-to-agile-success"
 date: "2017-08-07T16:03:03.000Z"
 modified: "2018-02-01T13:57:03.000Z"
-excerpt: "Adaptive, reactive, responsive, incremental… Excuse the buzzword bingo, but these are words that are bandied around a lot in the world of Agile.  What do they mean to you? More importantly, what do they mean to you, your team and your organisation? Embedding the philosophy of Agile is a massive challenge and takes a lot \[…\]"
+excerpt: "Adaptive, reactive, responsive, incremental… Excuse the buzzword bingo, but these are words that are bandied around a lot in the world of Agile.  What do they mean to you? More importantly, what do they mean to you, your team and your organisation? Embedding the philosophy of Agile is a massive challenge and takes a lot …"
 categories: ["Agile","Informational","Top Tips"]
 tags: []
 author:

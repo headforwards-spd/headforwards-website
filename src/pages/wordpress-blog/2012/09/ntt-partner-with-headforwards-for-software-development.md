@@ -5,7 +5,7 @@ title: "NTT partner with Headforwards for software development"
 slug: "ntt-partner-with-headforwards-for-software-development"
 date: "2012-09-27T15:07:58.000Z"
 modified: "2018-09-28T13:51:54.000Z"
-excerpt: "Cornwall is not a location necessarily associated with cutting edge software development; however, investment in the region’s data infrastructure appears to be reaping returns as a series of global brands look to move their software development work into the area. Headforwards, an outsourced development solutions company, has already signed NTT Europe, a subsidiary of NTT \[…\]"
+excerpt: "Cornwall is not a location necessarily associated with cutting edge software development; however, investment in the region’s data infrastructure appears to be reaping returns as a series of global brands look to move their software development work into the area. Headforwards, an outsourced development solutions company, has already signed NTT Europe, a subsidiary of NTT …"
 categories: ["Jobs","News","Outsourcing","The Headforwards Team"]
 tags: ["Agile","Agile software developement","Craig Girvan","Headforwards","John Salter","NNT","NTT Europe","software companies uk","software company","software jobs cornwall","toby parkins","uknetweb"]
 author:

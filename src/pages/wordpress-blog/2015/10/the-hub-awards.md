@@ -5,7 +5,7 @@ title: "The Hub Awards"
 slug: "the-hub-awards"
 date: "2015-10-28T13:11:31.000Z"
 modified: "2017-11-03T10:54:17.000Z"
-excerpt: "The Hub is an exciting and dynamic network created and run by forward thinking business people in Cornwall to support the business leaders of tomorrow. 2015 marks the13th year of The Hub Awards and Headforwards are extremely proud to be sponsors. Drum roll please…and the categories are… Best New Start Up Sponsored by Oxford Innovation \[…\]"
+excerpt: "The Hub is an exciting and dynamic network created and run by forward thinking business people in Cornwall to support the business leaders of tomorrow. 2015 marks the13th year of The Hub Awards and Headforwards are extremely proud to be sponsors. Drum roll please…and the categories are… Best New Start Up Sponsored by Oxford Innovation …"
 categories: ["Awards","News"]
 tags: ["awards","business cornwall","Cornwall","Headforwards","the hub","the hub awards"]
 author:
@@ -16,7 +16,15 @@ author:
 ---
 [The Hub](https://cornwallhub.org/) is an exciting and dynamic network created and run by forward thinking business people in Cornwall to support the business leaders of tomorrow.
 
-[![The hub Awars](/wp-content/uploads/2015/10/10438454_10152975868044218_309510142084846356_n-600x600-300x300.jpg)](/wp-content/uploads/2015/10/10438454_10152975868044218_309510142084846356_n-600x600.jpg)
+
+<section class="gallery">
+
+
+![The hub Awars](/wp-content/uploads/2015/10/10438454_10152975868044218_309510142084846356_n.jpg)
+
+</section>
+
+
 
 2015 marks the13th year of The Hub Awards and Headforwards are extremely proud to be sponsors.  
 _Drum roll please_…and the categories are…

@@ -5,7 +5,7 @@ title: "Headforwards Merger"
 slug: "headforwards-merger"
 date: "2016-07-07T16:04:28.000Z"
 modified: "2017-11-03T10:53:49.000Z"
-excerpt: "We are pleased to announce the imminent merger between Headforwards and UKNetWeb. Until now Headforwards have specialised in larger, long-term outsource software projects. On these projects dedicated teams of developers are recruited for their clients offering them a continuous, dedicated resource. UKNetWeb compliments this as they offer shorter term, high quality solutions on a per project \[…\]"
+excerpt: "We are pleased to announce the imminent merger between Headforwards and UKNetWeb. Until now Headforwards have specialised in larger, long-term outsource software projects. On these projects dedicated teams of developers are recruited for their clients offering them a continuous, dedicated resource. UKNetWeb compliments this as they offer shorter term, high quality solutions on a per project …"
 categories: ["News"]
 tags: []
 author:

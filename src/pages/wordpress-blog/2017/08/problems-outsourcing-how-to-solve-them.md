@@ -5,7 +5,7 @@ title: "The Problems With Outsourcing & How We Solve Them"
 slug: "problems-outsourcing-how-to-solve-them"
 date: "2017-08-25T14:48:59.000Z"
 modified: "2018-01-18T11:02:19.000Z"
-excerpt: "Outsourcing can be a frightening prospect for many companies. Moving internal process and workloads over to a third-party organisation isn’t a walk in the park. We are faced with a lot of difficult and complex problems when working with clients. They are usually unique to a specific project and require us to find new angles \[…\]"
+excerpt: "Outsourcing can be a frightening prospect for many companies. Moving internal process and workloads over to a third-party organisation isn’t a walk in the park. We are faced with a lot of difficult and complex problems when working with clients. They are usually unique to a specific project and require us to find new angles …"
 categories: ["Informational","Outsourcing"]
 tags: []
 author:
@@ -16,7 +16,15 @@ author:
 ---
 Outsourcing can be a frightening prospect for many companies. Moving internal process and workloads over to a third-party organisation isn’t a walk in the park. We are faced with a lot of difficult and complex problems when working with clients. They are usually unique to a specific project and require us to find new angles of approach. We have identified some of the leading problems faced by businesses looking to outsource and how we solve them.
 
-[![](/wp-content/uploads/2017/08/helloquence-51716-1024x683.jpg)](/wp-content/uploads/2017/08/helloquence-51716.jpg)
+
+<section class="gallery">
+
+
+![](/wp-content/uploads/2017/08/helloquence-51716.jpg)
+
+</section>
+
+
 
 **Misunderstanding the Specifications**
 
@@ -34,7 +42,15 @@ There has to be an understanding that there will be a requirement on our side th
 
 Keeping up with the competition means being able to adapt and move with rising trends in the market. Our ability to implement and release updates and new features swiftly is paramount to the success of any software development project. We define the timeline, not the scope. This gives our clients the option to take the helm and change direction quickly when needed. As our development cycle is Agile, we can rearrange and re-prioritise feature requests which can then be added to the following development cycle or “Sprint” as we call it. We take pride in our reaction speeds and make sure that our clients know this. There are, of course, a handful of other factors to weigh in on when deciding to make quick feature requests. The most important being the delay to current work within the project timeline. We will always outline the risks and complications that may arise and suggest alternatives if possible.
 
-[![](/wp-content/uploads/2017/08/problems-with-outsourcing-scrum-2-headforwards-1024x528.jpg)](/wp-content/uploads/2017/08/problems-with-outsourcing-scrum-2-headforwards.jpg)
+
+<section class="gallery">
+
+
+![](/wp-content/uploads/2017/08/problems-with-outsourcing-scrum-2-headforwards.jpg)
+
+</section>
+
+
 
 **Adaptability**
 

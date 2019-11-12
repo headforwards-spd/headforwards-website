@@ -5,7 +5,7 @@ title: "Agile on the Beach 2017 – A Small Slice Of Agile Utopia"
 slug: "attending-agile-on-the-beach-2017"
 date: "2017-08-18T13:57:14.000Z"
 modified: "2017-11-03T10:52:08.000Z"
-excerpt: "This time last year I was working on my own projects with no real element of shared work with others. Prioritisation was driven merely by my own personal preference of what I thought was right and never stood back to ask if what I am contributing is in fact, valuable to the company. Of course, \[…\]"
+excerpt: "This time last year I was working on my own projects with no real element of shared work with others. Prioritisation was driven merely by my own personal preference of what I thought was right and never stood back to ask if what I am contributing is in fact, valuable to the company. Of course, …"
 categories: ["Agile","News"]
 tags: []
 author:
@@ -67,6 +67,14 @@ While my focus of Agile is primarily in marketing, it is of course used widely a
 
 This article was written by Jake Kimpton – Digital Engagement Strategist, Headforwards.
 
-[![](/wp-content/uploads/2017/08/aotb-2017-1024x749.jpg)](/wp-content/uploads/2017/08/aotb-2017.jpg)
+
+<section class="gallery">
+
+
+![](/wp-content/uploads/2017/08/aotb-2017.jpg)
+
+</section>
+
+
 
 _Diana Larson, Opening Keynote AOTB 2017_

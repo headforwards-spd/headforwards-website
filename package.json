@@ -23,6 +23,7 @@
     "gatsby-source-filesystem": "^2.0.26",
     "gatsby-source-wordpress": "^3.1.47",
     "gatsby-wordpress-migrate": "^1.0.6",
+    "glob": "^7.1.6",
     "html-entities": "^1.2.1",
     "html-react-parser": "^0.10.0",
     "json-to-frontmatter-markdown": "^1.0.0",
@@ -91,6 +92,7 @@
     "build:app": "npm run clean && gatsby build",
     "build:storybook": "NODE_ENV=production build-storybook -s ./public,./static",
     "start:storybook": "NODE_ENV=production start-storybook -s ./public,./static",
-    "sonar": "npm run lint:report; npm run test; sonar-scanner"
+    "sonar": "npm run lint:report; npm run test; sonar-scanner",
+    "sanitise:wordpress": "node src/lib/sanitise-wordpress-markdown.js"
   }
 }

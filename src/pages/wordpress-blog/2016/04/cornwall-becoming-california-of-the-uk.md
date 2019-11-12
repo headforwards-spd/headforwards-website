@@ -5,7 +5,7 @@ title: "Cornwall Becoming California of The UK"
 slug: "cornwall-becoming-california-of-the-uk"
 date: "2016-04-14T09:57:05.000Z"
 modified: "2017-11-03T10:53:53.000Z"
-excerpt: "The Cornish Guardian recently published the following article called: Cornwall becoming ‘California of the UK’ as it is named second in the UK for growth. The county’s growing digital community was ranked second in the UK in terms of turnover growth, showing a 153 percent increase. This was second only to Southampton on 180 percent \[…\]"
+excerpt: "The Cornish Guardian recently published the following article called: Cornwall becoming ‘California of the UK’ as it is named second in the UK for growth. The county’s growing digital community was ranked second in the UK in terms of turnover growth, showing a 153 percent increase. This was second only to Southampton on 180 percent …"
 categories: ["Cornwall","News"]
 tags: []
 author:

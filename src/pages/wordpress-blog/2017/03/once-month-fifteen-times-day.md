@@ -5,7 +5,7 @@ title: "From Once a Month to Fifteen Times a Day – Our Journey Into Continuous
 slug: "once-month-fifteen-times-day"
 date: "2017-03-21T15:42:44.000Z"
 modified: "2018-02-08T14:16:34.000Z"
-excerpt: "We build software. We also build the teams that build the software. Currently, with one our clients we are releasing 15-20 new updates a day across a global infrastructure. And, with zero downtime. Continuous Delivery is something that really excites us here at Headforwards. But software deployment wasn’t always this way. The State (or not too \[…\]"
+excerpt: "We build software. We also build the teams that build the software. Currently, with one our clients we are releasing 15-20 new updates a day across a global infrastructure. And, with zero downtime. Continuous Delivery is something that really excites us here at Headforwards. But software deployment wasn’t always this way. The State (or not too …"
 categories: ["Agile","Coding","News"]
 tags: []
 author:
@@ -98,7 +98,15 @@ We can’t visualise a new project without Continuous Delivery being a goal. We 
 
 We can’t see into the future (too far) but we know for a fact that methodologies like Continuous Delivery are here to stay. Open-source technologies like Jenkins and Docker flip the traditional model of software delivery on its head, giving way to a vastly superior set of tech, tools and methodologies.
 
-[![](/wp-content/uploads/2017/03/once-a-month-fifteen-times-a-day-3-300x155.jpg)](/wp-content/uploads/2017/03/once-a-month-fifteen-times-a-day-3.jpg)
+
+<section class="gallery">
+
+
+![](/wp-content/uploads/2017/03/once-a-month-fifteen-times-a-day-3.jpg)
+
+</section>
+
+
 
 Are you looking to outsource your software development? We’d love to talk about it further.
 

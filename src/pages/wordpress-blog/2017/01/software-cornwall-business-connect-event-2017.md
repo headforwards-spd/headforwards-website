@@ -5,7 +5,7 @@ title: "Software Cornwall: Business Connect Event 2017"
 slug: "software-cornwall-business-connect-event-2017"
 date: "2017-01-25T11:06:35.000Z"
 modified: "2017-11-03T10:52:49.000Z"
-excerpt: "Software Cornwall was established in 2015 to connect South West based like-minded businesses to achieve a shared goal of promoting technology growth within Cornwall. After the hugely successful debut event in 2016, a decision was made to host a full-day 2017 tech event fully-loaded with talks, workshops, exhibitors and ample time between talks for delegates to \[…\]"
+excerpt: "Software Cornwall was established in 2015 to connect South West based like-minded businesses to achieve a shared goal of promoting technology growth within Cornwall. After the hugely successful debut event in 2016, a decision was made to host a full-day 2017 tech event fully-loaded with talks, workshops, exhibitors and ample time between talks for delegates to …"
 categories: ["Agile","Cornwall","Informational","News"]
 tags: []
 author:

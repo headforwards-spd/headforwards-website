@@ -5,7 +5,7 @@ title: "Is There an IT Skills Shortage? The Big Debate!"
 slug: "is-there-an-it-skills-shortage-the-big-debate"
 date: "2015-06-29T16:22:27.000Z"
 modified: "2016-09-22T15:24:12.000Z"
-excerpt: "The IT sector in the UK is growing at an astounding rate, however the media is reporting a shortage of skilled IT workers but how true is this statement? Is there an IT skills shortage? The recent changes to the National curriculum  are a good start to closing this skill gap, however they don’t help \[…\]"
+excerpt: "The IT sector in the UK is growing at an astounding rate, however the media is reporting a shortage of skilled IT workers but how true is this statement? Is there an IT skills shortage? The recent changes to the National curriculum  are a good start to closing this skill gap, however they don’t help …"
 categories: ["Debate","Informational","Jobs"]
 tags: ["Business Tips","Cornwall","Debate","Headforwards","Infomational","Offshore Outsourcing","Onshore Outsourcing","Outsource","Outsourcing","Top Tips"]
 author:

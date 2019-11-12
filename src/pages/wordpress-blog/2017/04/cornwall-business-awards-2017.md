@@ -5,7 +5,7 @@ title: "Cornwall Business Awards 2017"
 slug: "cornwall-business-awards-2017"
 date: "2017-04-13T10:47:24.000Z"
 modified: "2017-11-03T10:52:10.000Z"
-excerpt: "The Cornwall Business Awards 2017 are nearly upon us and we are thrilled to have made it to the shortlist for Employer of the Year and Most Dynamic Growth Business! On top of that, Lyssa-Fee Crump, Catalyst of Disruptive Innovation here at Headforwards, has been shortlisted for Young Business Person of the Year. This year \[…\]"
+excerpt: "The Cornwall Business Awards 2017 are nearly upon us and we are thrilled to have made it to the shortlist for Employer of the Year and Most Dynamic Growth Business! On top of that, Lyssa-Fee Crump, Catalyst of Disruptive Innovation here at Headforwards, has been shortlisted for Young Business Person of the Year. This year …"
 categories: ["Awards","News","The Headforwards Team"]
 tags: []
 author:

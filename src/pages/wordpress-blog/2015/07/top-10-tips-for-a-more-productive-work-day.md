@@ -5,7 +5,7 @@ title: "Top 10 Tips for a More Productive Work Day"
 slug: "top-10-tips-for-a-more-productive-work-day"
 date: "2015-07-03T15:26:37.000Z"
 modified: "2017-11-03T10:56:43.000Z"
-excerpt: "You are a hardworking and diligent, but sometimes it is easy to get off track and lose sight of what you are trying to accomplish. (Particularly on a Monday morning) So we have compiled are our Top 10 Tips for a More Productive Work Day to try to help you kickstart next week in a productive \[…\]"
+excerpt: "You are a hardworking and diligent, but sometimes it is easy to get off track and lose sight of what you are trying to accomplish. (Particularly on a Monday morning) So we have compiled are our Top 10 Tips for a More Productive Work Day to try to help you kickstart next week in a productive …"
 categories: ["News","Top Tips"]
 tags: ["Business","Business Tips","Concentration","Infomational","Productivity","Top Tips"]
 author:

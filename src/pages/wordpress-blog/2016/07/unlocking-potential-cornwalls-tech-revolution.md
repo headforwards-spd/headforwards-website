@@ -5,7 +5,7 @@ title: "Unlocking Potential: Cornwall’s Tech Revolution"
 slug: "unlocking-potential-cornwalls-tech-revolution"
 date: "2016-07-20T11:43:39.000Z"
 modified: "2017-11-03T10:53:48.000Z"
-excerpt: "Unlocking Potential are passionate about helping people and business grow in Cornwall. They recently published a blog article Unlocking Potential: Cornwall’s Tech Revolution that features Headforwards and co-founder Toby Parkins. You can read the full article below – or on their website.  Toby Parkins, co-founder and director of software outsourcing company Headforwards, tells us about his business journey \[…\]"
+excerpt: "Unlocking Potential are passionate about helping people and business grow in Cornwall. They recently published a blog article Unlocking Potential: Cornwall’s Tech Revolution that features Headforwards and co-founder Toby Parkins. You can read the full article below – or on their website.  Toby Parkins, co-founder and director of software outsourcing company Headforwards, tells us about his business journey …"
 categories: ["Cornwall","Informational","News"]
 tags: []
 author:

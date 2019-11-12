@@ -5,7 +5,7 @@ title: "What Happened When we Pitched up at The Blue"
 slug: "happened-pitched-blue"
 date: "2017-10-03T09:45:10.000Z"
 modified: "2017-11-03T10:52:08.000Z"
-excerpt: "The Blue Bar in Porthtowan was the venue for Software Cornwall’s latest event – Pitch Up At The Blue. A fantastic venue overlooking Porthtowan beach, the Blue Bar has a great function room next to the main bar.  When we arrived there were already a lot of delegates talking and milling about. A couple of \[…\]"
+excerpt: "The Blue Bar in Porthtowan was the venue for Software Cornwall’s latest event – Pitch Up At The Blue. A fantastic venue overlooking Porthtowan beach, the Blue Bar has a great function room next to the main bar.  When we arrived there were already a lot of delegates talking and milling about. A couple of …"
 categories: ["Cornwall","News"]
 tags: []
 author:

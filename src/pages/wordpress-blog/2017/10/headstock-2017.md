@@ -5,7 +5,7 @@ title: "Headstock 2017"
 slug: "headstock-2017"
 date: "2017-10-13T12:29:57.000Z"
 modified: "2017-11-03T10:52:07.000Z"
-excerpt: "We love our team socials here at Headforwards and at the end of every summer, we put on an outdoor event, called Headstock, for the whole team, our families and our friends. Each year has been slightly different, but the core requirements remain the same: music, BBQs, bouncy castles, beer and an incredible group of \[…\]"
+excerpt: "We love our team socials here at Headforwards and at the end of every summer, we put on an outdoor event, called Headstock, for the whole team, our families and our friends. Each year has been slightly different, but the core requirements remain the same: music, BBQs, bouncy castles, beer and an incredible group of …"
 categories: ["Cornwall","News","Team adventures"]
 tags: []
 author:
@@ -36,104 +36,61 @@ If you want to check out what else we've been up to recently take a look at our 
 
 "Nice atmosphere. Well planned with tents, fire, hay bales etc. The music is always a highlight. Location was, again, excellent as well."
 
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-22-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-22.jpg)
 
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-76-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-76.jpg)
+<section class="gallery">
 
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-48-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-48.jpg)
 
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-118-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-118.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-22.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-76.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-48.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-118.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-162.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-32.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-101.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-92.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/IMG_3391.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-58.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-67.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-38.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-31.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-89.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-35.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-49.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-1.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-130.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-56.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-50.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-122.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-25.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-68.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-19.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-34.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-64.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-26.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-102.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-16.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/IMG_3386.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-4.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-18.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-81.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-110.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-90.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-98.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-103.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-5.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-36.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-10.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-105.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-45.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-79.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-54.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-53.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-88.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-140.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-17.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-21.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-144.jpg)
+![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-83.jpg)
 
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-162-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-162.jpg)
+</section>
 
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-32-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-32.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-101-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-101.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-92-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-92.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/IMG_3391-300x225.jpg)](/wp-content/uploads/2017/10/IMG_3391.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-58-300x222.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-58.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-67-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-67.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-38-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-38.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-31-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-31.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-89-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-89.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-35-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-35.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-49-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-49.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-1-300x168.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-1.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-130-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-130.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-56-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-56.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-50-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-50.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-122-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-122.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-25-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-25.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-68-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-68.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-19-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-19.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-34-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-34.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-64-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-64.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-26-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-26.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-102-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-102.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-16-300x168.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-16.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/IMG_3386-300x225.jpg)](/wp-content/uploads/2017/10/IMG_3386.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-4-300x168.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-4.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-18-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-18.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-81-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-81.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-110-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-110.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-90-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-90.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-98-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-98.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-103-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-103.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-5-300x168.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-5.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-36-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-36.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-10-300x168.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-10.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-105-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-105.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-45-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-45.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-79-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-79.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-54-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-54.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-53-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-53.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-88-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-88.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-140-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-140.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-17-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-17.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-21-300x200.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-21.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-144-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-144.jpg)
-
-[![Headstock 2017 - Headforwards' Festival](/wp-content/uploads/2017/10/headstock-2017-headforwards-83-300x225.jpg)](/wp-content/uploads/2017/10/headstock-2017-headforwards-83.jpg)

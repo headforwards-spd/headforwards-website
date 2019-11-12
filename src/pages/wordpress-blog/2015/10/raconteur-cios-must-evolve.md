@@ -5,7 +5,7 @@ title: "Raconteur- CIOs Must Evolve…"
 slug: "raconteur-cios-must-evolve"
 date: "2015-10-13T15:04:05.000Z"
 modified: "2017-11-03T10:54:18.000Z"
-excerpt: "Raconteur is a publishing house that produces special reports for The Times and The Sunday Times. They focus on creating high quality, relevant and informative content. They have recently published an article about the evolving role a CIO has in a company. “Continuous disruption is forcing companies to transform their IT at an accelerating pace, dramatically \[…\]"
+excerpt: "Raconteur is a publishing house that produces special reports for The Times and The Sunday Times. They focus on creating high quality, relevant and informative content. They have recently published an article about the evolving role a CIO has in a company. “Continuous disruption is forcing companies to transform their IT at an accelerating pace, dramatically …"
 categories: ["Debate","Informational","News","The Headforwards Team"]
 tags: ["CIO","Craig Girvan","Headforwards","Raconteur","toby parkins"]
 author:

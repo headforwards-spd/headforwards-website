@@ -5,7 +5,7 @@ title: "Plymouth University recruitment careers fair"
 slug: "plymouth-university-recruitment-careers-fair-2"
 date: "2016-11-15T16:32:26.000Z"
 modified: "2017-11-03T10:52:51.000Z"
-excerpt: "In early November, Alex from our recruitment team headed up the A30 for the Plymouth University recruitment careers fair. He was joined by two other members from Software Cornwall; Paul Clark from Packet Ship and Steve Forth from Bluefruit. The day was a great opportunity for businesses such as ourselves to get a feel for \[…\]"
+excerpt: "In early November, Alex from our recruitment team headed up the A30 for the Plymouth University recruitment careers fair. He was joined by two other members from Software Cornwall; Paul Clark from Packet Ship and Steve Forth from Bluefruit. The day was a great opportunity for businesses such as ourselves to get a feel for …"
 categories: ["News"]
 tags: []
 author:

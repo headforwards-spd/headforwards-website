@@ -5,7 +5,7 @@ title: "Software Jobs in Cornwall"
 slug: "software-jobs-in-cornwall"
 date: "2015-10-23T15:20:58.000Z"
 modified: "2017-11-03T10:54:18.000Z"
-excerpt: "Headforwards are offering exciting software jobs in Cornwall to a range of developers, testers and project managers. But why Cornwall? Cornwall is an idilic location often thought of a spectacular place for a holiday but it is an even better place to live. Having the stunning scenery, exciting activities and spectacular cuisine on your doorstep really helps encourage \[…\]"
+excerpt: "Headforwards are offering exciting software jobs in Cornwall to a range of developers, testers and project managers. But why Cornwall? Cornwall is an idilic location often thought of a spectacular place for a holiday but it is an even better place to live. Having the stunning scenery, exciting activities and spectacular cuisine on your doorstep really helps encourage …"
 categories: ["Jobs","News"]
 tags: ["Headforwards","jobs","jobs in cornwall","sof","Software","software career","software careers cornwall","software careers uk","software job","software job cornwall","software job uk"]
 author:

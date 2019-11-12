@@ -5,7 +5,7 @@ title: "Software Cornwall"
 slug: "software-cornwall"
 date: "2015-08-10T10:33:37.000Z"
 modified: "2017-11-03T10:56:40.000Z"
-excerpt: "You may have heard about Software Cornwall recently, but you may not know what it is all about. Software Cornwall is a collective of software development enterprises, education providers and business support organisations based in Cornwall, who aim to support the growth of the software industry in the county. Headforwards are proud to be members \[…\]"
+excerpt: "You may have heard about Software Cornwall recently, but you may not know what it is all about. Software Cornwall is a collective of software development enterprises, education providers and business support organisations based in Cornwall, who aim to support the growth of the software industry in the county. Headforwards are proud to be members …"
 categories: ["Cornwall","Informational","News","The Headforwards Team"]
 tags: ["19th acre","Agile Software Development","Belinda Waldcock","blue fruit","Code club","Headforwards","ibm","kate hughes","membership","mike barritt","mike trebilcok","packetship","paul clark","paul massey","recruitment","Software Cornwall","software development cornwall","sullivan cuff software","toby parkins","uknetweb"]
 author:
@@ -34,7 +34,15 @@ Thir objectives are split up into 7 core sections.
 
 **Financial Sustainability** : To develop an organisation that is self sustaining
 
-[![Software Cornwall wheel ](/wp-content/uploads/2015/08/SWCWheel-285x300.png)](/wp-content/uploads/2015/08/SWCWheel.png)
+
+<section class="gallery">
+
+
+![Software Cornwall wheel ](/wp-content/uploads/2015/08/SWCWheel.png)
+
+</section>
+
+
 
 Who is involved in Software Cornwall? Here is the Committee:
 

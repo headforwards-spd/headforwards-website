@@ -5,7 +5,7 @@ title: "QA Automation Engineer Job in Cornwall"
 slug: "qa-automation-engineer-job"
 date: "2015-07-16T09:43:51.000Z"
 modified: "2017-11-03T10:56:42.000Z"
-excerpt: "Are you looking for a new QA Automation engineer job? We are still looking for a QA Automation Engineer to be based here in Cornwall with us, working as part of the NTT OSS European team. The successful candidate will get to work on a number of exciting projects including global systems. You will get \[…\]"
+excerpt: "Are you looking for a new QA Automation engineer job? We are still looking for a QA Automation Engineer to be based here in Cornwall with us, working as part of the NTT OSS European team. The successful candidate will get to work on a number of exciting projects including global systems. You will get …"
 categories: ["Cornwall","Jobs","News"]
 tags: ["Agile","Agile methodologies","automation engineer","CI Jenkins","framework","Git","Headforwards","job","jobs in cornwall","Kanban","Linux","MAC","NTT","NTT Europe","NTT OSS","OSS","Python","QA","QA Automation","QA Automation engineer","QA Manager","scrum","Selenium","Version Control Systems","webdriver"]
 author:

@@ -5,7 +5,7 @@ title: "The Headforwards Agile Glossary"
 slug: "the-headforwards-agile-glossary"
 date: "2015-07-08T11:40:07.000Z"
 modified: "2017-11-03T10:56:43.000Z"
-excerpt: "There are a lot of terms and key phrases used within the Agile world, and it can be a bit hard to understand if you are not “in the know” So we have put together a short glossary to help you understand what your Agile Software team are talking about.   Agile – this is \[…\]"
+excerpt: "There are a lot of terms and key phrases used within the Agile world, and it can be a bit hard to understand if you are not “in the know” So we have put together a short glossary to help you understand what your Agile Software team are talking about.   Agile – this is …"
 categories: ["Agile","Informational"]
 tags: ["Agile","Agile Project Management","Agile Software Development","Business","Business Tips","Developers","education","glossary","Headforwards","Infomational","software terms","Top Tips"]
 author:

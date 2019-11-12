@@ -8,7 +8,10 @@ exports.createPages = ({ actions, graphql }) => {
 
     return getData(graphql)
         .then(({ data, errors }) => (!errors ? Promise.resolve(data) : Promise.reject(errors)))
-        .then(({ designPages }) => createAllPosts(createPage, designPages));
+        .then(({ pages, posts }) => {
+            createAllPages(createPage, pages);
+            createAllPosts(createPage, posts);
+        });
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -28,24 +31,37 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     return Promise.resolve();
 };
 
-function createAllPosts(createPage, { edges: posts = [] }) {
-    // const firstIndex = 0;
-    // const lastIndex = posts.length - 1;
-
+function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
-        posts.map(({ node: post }) => {
-            // , index) => {
-            const { id, fields, frontmatter } = post;
+        pages.map(({ id, fields, frontmatter }) => {
             const { slug } = fields;
-            const { path: type } = frontmatter;
-
-            // const { id: prevId = '' } = index > firstIndex ? posts[index - 1].node : {};
-            // const { id: nextId = '' } = index < lastIndex ? posts[index + 1].node : {};
+            const { type } = frontmatter;
 
             return createPage({
                 path: slug,
                 component: path.resolve(`src/templates/${type}-page.js`),
-                context: { id }, // , prevId, nextId },
+                context: { id },
+            });
+        })
+    );
+}
+
+function createAllPosts(createPage, { nodes: posts = [] }) {
+    const firstIndex = 0;
+    const lastIndex = posts.length - 1;
+
+    return Promise.all(
+        posts.map(({ id, fields, frontmatter }, index) => {
+            const { slug } = fields;
+            const { type } = frontmatter;
+
+            const { id: prevId = '' } = index > firstIndex ? posts[index - 1] : {};
+            const { id: nextId = '' } = index < lastIndex ? posts[index + 1] : {};
+
+            return createPage({
+                path: slug,
+                component: path.resolve(`src/templates/${type}-page.js`),
+                context: { id, prevId, nextId },
             });
         })
     );
@@ -118,34 +134,34 @@ function createAllPosts(createPage, { edges: posts = [] }) {
 //   })
 // }
 
-// exports.onCreateNode = ({ node, actions, getNode }) => {
-//   const { createNodeField } = actions
-//   fmImagesToRelative(node) // convert image paths for gatsby images
-//
-//   if (node.internal.type === `MarkdownRemark`) {
-//     const value = createFilePath({ node, getNode })
-//     createNodeField({
-//       name: `slug`,
-//       node,
-//       value,
-//     })
-//   }
-// }
-
 function getData(graphql) {
     return graphql(`
         {
-            designPages: allMarkdownRemark {
-                edges {
-                    node {
-                        id
-                        fields {
-                            slug
-                        }
-                        frontmatter {
-                            type
-                            path
-                        }
+            posts: allMarkdownRemark(
+                filter: { frontmatter: { type: { eq: "wordpress" } } }
+                sort: { fields: frontmatter___date, order: DESC }
+            ) {
+                nodes {
+                    id
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        type
+                        path
+                    }
+                }
+            }
+
+            pages: allMarkdownRemark(filter: { frontmatter: { type: { eq: "design" } } }) {
+                nodes {
+                    id
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        type
+                        path
                     }
                 }
             }

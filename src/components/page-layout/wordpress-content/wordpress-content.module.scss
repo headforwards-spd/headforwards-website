@@ -1,22 +1,38 @@
 @import "../../../scss/variables";
+@import "../../page-components/columns/columns";
 
 .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
 
-    > * {
-        flex-basis: 100%;
+    @include columns-component;
+    @include fontMedium;
+
+    > h1 {
+        @include headingFontMedium;
     }
 
     > img {
         object-fit: contain;
     }
 
-    > :global(.gatsby-resp-image-wrapper) {
-        margin: $gutter-small/2;
-        flex-basis: calc(100%/3 - #{$gutter-small});
-        width: calc(100%/3 - #{$gutter-small});
+    > :global(.gallery) {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+        margin: -$gutter-small/2;
+        margin-bottom: $gutter-medium - $gutter-small/2;
+
+        :global(.gatsby-resp-image-wrapper) {
+
+            margin: $gutter-small/2;
+            flex-basis: calc(100% / 3 - #{$gutter-small});
+            width: calc(100% / 3 - #{$gutter-small});
+        }
+    }
+
+    > :last-child {
+        margin-bottom: 0;
     }
 }

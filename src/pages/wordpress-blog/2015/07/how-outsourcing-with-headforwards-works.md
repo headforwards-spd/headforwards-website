@@ -5,7 +5,7 @@ title: "How Outsourcing with Headforwards Works"
 slug: "how-outsourcing-with-headforwards-works"
 date: "2015-07-30T13:31:36.000Z"
 modified: "2017-11-03T10:56:41.000Z"
-excerpt: "Here at Headforwards we do onshore outsourcing, differently. More efficiently. We create bespoke teams for your project, tailored to its specific needs. Other outsource companies often have people waiting on the bench for new projects, which ultimately drives their costs up. It is also common for team members to be switched between projects and clients; \[…\]"
+excerpt: "Here at Headforwards we do onshore outsourcing, differently. More efficiently. We create bespoke teams for your project, tailored to its specific needs. Other outsource companies often have people waiting on the bench for new projects, which ultimately drives their costs up. It is also common for team members to be switched between projects and clients; …"
 categories: ["Outsourcing","The Headforwards Team"]
 tags: ["Agile","Career","careers","careers in cornwall","careers in software","collaberation","Cornwall","CV","developer","Headforwards","interviews","Offshore Outsourcing","Onshore Outsourcing","Outsourcing","recruitment","Scrum Master","Skype","Software","software career","software company uk","Software Cornwall","software developers","software jobs","software jobs cornwall","software jobs uk","software outs","software outsource","Software Outsourcing","software outsourcing uk","software project","where to outsource to","why outsource","WQ"]
 author:

@@ -5,7 +5,7 @@ title: "From Tourism To Tech – Why Cornwall is Disrupting the Software Industr
 slug: "why-cornwall-is-disrupting-the-software-industry"
 date: "2017-05-11T10:56:41.000Z"
 modified: "2017-11-03T10:52:10.000Z"
-excerpt: "If you have read the recent Tech Nation report you might be aware of a surprising tech cluster emerging. Cornwall, in the South West of England, has a well-established reputation as a holiday destination. Its rugged coastline, scenic beaches, spectacular cuisine and friendly locals attract visitors from across the globe, but would we expect it \[…\]"
+excerpt: "If you have read the recent Tech Nation report you might be aware of a surprising tech cluster emerging. Cornwall, in the South West of England, has a well-established reputation as a holiday destination. Its rugged coastline, scenic beaches, spectacular cuisine and friendly locals attract visitors from across the globe, but would we expect it …"
 categories: ["Cornwall","News","Outsourcing"]
 tags: []
 author:

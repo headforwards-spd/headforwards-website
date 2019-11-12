@@ -1,0 +1,32 @@
+@import "../scss/mixins";
+@import "../components/page-components/columns/columns";
+
+.dataTable {
+    @include columns-component;
+    dl {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    dt {
+        font-weight: bold;
+        width: 150px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    dd {
+        flex-grow: 1;
+    }
+}
+
+.prev, .next {
+    @include columns-component;
+    h1 {
+        @include headingFontSmall;
+    }
+    p {
+        @include fontSmall;
+        color: black;
+        font-weight: lighter;
+    }
+}

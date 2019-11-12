@@ -5,7 +5,7 @@ title: "Front End Stack for the Cloud"
 slug: "front-end-stack-for-the-cloud"
 date: "2015-09-30T15:18:25.000Z"
 modified: "2017-11-03T10:54:25.000Z"
-excerpt: "Headforwards is not just about beaches and BBQs, we get some serious work done too! Glen is one of our developers and he has written the following article about a project he has been working on here at Headforwards –  Front End Stack for The Cloud. Introduction I asked a question on Twitter about what people \[…\]"
+excerpt: "Headforwards is not just about beaches and BBQs, we get some serious work done too! Glen is one of our developers and he has written the following article about a project he has been working on here at Headforwards –  Front End Stack for The Cloud. Introduction I asked a question on Twitter about what people …"
 categories: ["Coding","Informational","News","The Headforwards Team"]
 tags: ["cloud infrastructure","full stack development","Glen","Headforwards","Python","software development","software development cornwall","TDD"]
 author:

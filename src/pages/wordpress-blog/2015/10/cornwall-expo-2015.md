@@ -5,7 +5,7 @@ title: "Cornwall Expo 2015"
 slug: "cornwall-expo-2015"
 date: "2015-10-01T15:46:00.000Z"
 modified: "2017-11-03T10:54:19.000Z"
-excerpt: "On Tuesday 29th September 2015 we attended the Cornwall Expo at Newquay Airports Aerohub. The Expo combined a conference and exhibition to show the improvements planned for Cornwall and the Isles of Scilly over the next few years. It was also an opportunity for people to learn more about schemes and initiatives in the county that \[…\]"
+excerpt: "On Tuesday 29th September 2015 we attended the Cornwall Expo at Newquay Airports Aerohub. The Expo combined a conference and exhibition to show the improvements planned for Cornwall and the Isles of Scilly over the next few years. It was also an opportunity for people to learn more about schemes and initiatives in the county that …"
 categories: ["Cornwall","News","The Headforwards Team"]
 tags: ["3D printer","Cornwall expo","Cornwall Expo 2015","Sleeper train","Software Cornwall"]
 author:
@@ -26,47 +26,135 @@ The Transport Secretary Patrick McLoughlin  gave a [speech](https://www.gov.uk/
 
 The event was organised by the Cornwall and Isles of Scilly Local Economic Partnership [(LEP)](http://www.cioslep.com/), [Cornwall Council](http://www.cornwall.gov.uk/) and the [Council of the Isles of Scilly](http://www.scilly.gov.uk/).
 
-[![The Bloodhound at Cornwall Expo 2015 ](/wp-content/uploads/2015/10/Bloodhound_at_Cornwall_Expo-300x225.jpeg)](/wp-content/uploads/2015/10/Bloodhound_at_Cornwall_Expo.jpeg)
+
+<section class="gallery">
+
+
+![The Bloodhound at Cornwall Expo 2015 ](/wp-content/uploads/2015/10/Bloodhound_at_Cornwall_Expo.jpeg)
+
+</section>
+
+
 
 The Bloodhound Super-Sonic Car
 
-[![Old Bus at Cornwall Expo](/wp-content/uploads/2015/10/Helston_Lizard_bus-300x225.jpeg)](/wp-content/uploads/2015/10/Helston_Lizard_bus.jpeg)
+
+<section class="gallery">
+
+
+![Old Bus at Cornwall Expo](/wp-content/uploads/2015/10/Helston_Lizard_bus.jpeg)
+
+</section>
+
+
 
 A Vintage bus – Helston to the Lizard
 
-[![Skybus](/wp-content/uploads/2015/10/Skybus-at-Cornwall-Expo-2015-300x225.jpeg)](/wp-content/uploads/2015/10/Skybus-at-Cornwall-Expo-2015.jpeg)
+
+<section class="gallery">
+
+
+![Skybus](/wp-content/uploads/2015/10/Skybus-at-Cornwall-Expo-2015.jpeg)
+
+</section>
+
+
 
 A Skybus
 
-[![Welcome to...bus](/wp-content/uploads/2015/10/Welcome_bus-300x225.jpeg)](/wp-content/uploads/2015/10/Welcome_bus.jpeg)
+
+<section class="gallery">
+
+
+![Welcome to...bus](/wp-content/uploads/2015/10/Welcome_bus.jpeg)
+
+</section>
+
+
 
 Kernow bus with the message “Welcome to the Cornwall Expo 2015”
 
-[![Robot on Software Cornwall stand ](/wp-content/uploads/2015/10/Robot-300x225.jpg)](/wp-content/uploads/2015/10/Robot.jpg)
+
+<section class="gallery">
+
+
+![Robot on Software Cornwall stand ](/wp-content/uploads/2015/10/Robot.jpg)
+
+</section>
+
+
 
 A Robot on the Software Cornwall Stand
 
-[![Software Cornwall at Cornwall Expo 2015](/wp-content/uploads/2015/10/Skills_zone-300x225.jpeg)](/wp-content/uploads/2015/10/Skills_zone.jpeg)
+
+<section class="gallery">
+
+
+![Software Cornwall at Cornwall Expo 2015](/wp-content/uploads/2015/10/Skills_zone.jpeg)
+
+</section>
+
+
 
 The Software Cornwall area
 
-[![Software Cornwall ](/wp-content/uploads/2015/10/Software-Cornwall-stands-300x225.jpeg)](/wp-content/uploads/2015/10/Software-Cornwall-stands.jpeg)
+
+<section class="gallery">
+
+
+![Software Cornwall ](/wp-content/uploads/2015/10/Software-Cornwall-stands.jpeg)
+
+</section>
+
+
 
 Headforwards in the Software Cornwall area
 
-[![Software Cornwall ](/wp-content/uploads/2015/10/Software_cornwall_stands-300x225.jpeg)](/wp-content/uploads/2015/10/Software_cornwall_stands.jpeg)
+
+<section class="gallery">
+
+
+![Software Cornwall ](/wp-content/uploads/2015/10/Software_cornwall_stands.jpeg)
+
+</section>
+
+
 
 The Software section of the skills area
 
-![3D Printer on Software Cornwall Stand ](/wp-content/uploads/2015/10/3D_Printer-225x300.jpeg)
+
+<section class="gallery">
+
+
+![3D Printer on Software Cornwall Stand ](/wp-content/uploads/2015/10/3D_Printer.jpeg)
+
+</section>
+
+
 
 3D Printer printing whistles
 
-![New sleeper carriage](/wp-content/uploads/2015/10/Sleeper_Carridge--225x300.jpeg)
+
+<section class="gallery">
+
+
+![New sleeper carriage](/wp-content/uploads/2015/10/Sleeper_Carridge-.jpeg)
+
+</section>
+
+
 
 A new Riviera Sleeper Carriage
 
-![New sleeper carriage](/wp-content/uploads/2015/10/Sleeper_Cornwall_Expo-225x300.jpeg)
+
+<section class="gallery">
+
+
+![New sleeper carriage](/wp-content/uploads/2015/10/Sleeper_Cornwall_Expo.jpeg)
+
+</section>
+
+
 
 A new Riviera Sleeper Carriage
 

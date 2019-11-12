@@ -51,6 +51,19 @@ collections:
           - {label: "Youtube URL",  name: youtubeURL, widget: string, required: false}
           - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
 
+  - label: "WordPress Posts"
+    label_singular: "WordPress Page"
+    name: wordpress-posts
+    folder: "src/pages/wordpress-blog"
+    slug: "{{year}}/{{month}}/{{slug}}"
+    preview_path: "{{year}}/{{month}}/{{slug}}"
+    identifier_field: title
+    fields:
+      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "Type", name: type, widget: hidden, default: "wordpress"}
+      - {label: "Page Title", name: title, widget: string}
+      - {label: "Copy", name: body, widget: markdown}
+
   - label: "Design Pages"
     label_singular: "Design Page"
     name: design-pages

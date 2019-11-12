@@ -5,7 +5,7 @@ title: "Last Nights Leap Second and the Future of Time."
 slug: "last-nights-leap-second-and-the-future-of-time"
 date: "2015-07-01T11:20:19.000Z"
 modified: "2015-08-28T15:38:35.000Z"
-excerpt: "Yesterday (Tuesday 30th June 2015)  we saw the last minute of the day have 61 seconds instead of the usual 60. This ‘leap second’ is necessary to keep coordinated Universal Time. (UTC) This is what guides most international time systems that are synced with the Earths rotation. The leap second was introduced because the difference between \[…\]"
+excerpt: "Yesterday (Tuesday 30th June 2015)  we saw the last minute of the day have 61 seconds instead of the usual 60. This ‘leap second’ is necessary to keep coordinated Universal Time. (UTC) This is what guides most international time systems that are synced with the Earths rotation. The leap second was introduced because the difference between …"
 categories: ["Informational","News"]
 tags: ["Atomic time","Clocks","Developers","GMT","IERS","Java","Leap seconds","Linux","News","Time","UTC","VLBI"]
 author:
@@ -44,9 +44,9 @@ UTC is the standard used in computing, which is like TAI but with leap seconds
 
 The list goes on with TDT, TBT, TCB, TCG etc.
 
-[](/wp-content/uploads/2015/06/2015-06-19-18.56.27.jpg)
 
-[](/wp-content/uploads/2015/06/2015-06-19-18.56.27.jpg)
+
+
 
 Lets look at your smartphones for an example of the issues this causes. The clock in your smartphones GPS is 16 seconds out of sync with the phones system clock, because GPS doesn’t use leap seconds.
 

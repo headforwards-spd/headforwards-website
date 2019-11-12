@@ -5,7 +5,7 @@ title: "Free Agile on the Beach Tickets 2013"
 slug: "free-agile-on-the-beach-tickets"
 date: "2013-08-12T15:11:26.000Z"
 modified: "2015-09-02T12:12:32.000Z"
-excerpt: "At Headforwards we believe in Agile and would like to share this with more people just like you. If you would like to attend one of the UK’s top conferences, Agile on the Beach, then we’d like to help you get there. \\Agile on the Beach is a two day conference on the Cornish coast \[…\]"
+excerpt: "At Headforwards we believe in Agile and would like to share this with more people just like you. If you would like to attend one of the UK’s top conferences, Agile on the Beach, then we’d like to help you get there. \\Agile on the Beach is a two day conference on the Cornish coast …"
 categories: ["Agile","Coding","News","The Headforwards Team"]
 tags: ["Agile","Agile on the Beach","Agile Project Management","Agile Software Development","Business","careers in cornwall","Cornwall","free tickets","Headforwards","Headforwards Team","Infomational","scrum","Software","Software Cornwall","software jobs","software jobs cornwall","software jobs in cornwall","tickets","tickets to agile on the beach"]
 author:

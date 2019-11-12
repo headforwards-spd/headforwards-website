@@ -5,7 +5,7 @@ title: "BDD – Beer Driven Development"
 slug: "bdd"
 date: "2016-08-31T18:00:21.000Z"
 modified: "2017-11-03T10:52:53.000Z"
-excerpt: "BDD – Beer Driven Development for Agile on the Beach 2016. We are proud sponsors of Agile on the Beach, which is a world leading Agile conference held in Falmouth, Cornwall. Each year we try to give the delegates something cool to take home to remind them of the trip. We are really pleased with what \[…\]"
+excerpt: "BDD – Beer Driven Development for Agile on the Beach 2016. We are proud sponsors of Agile on the Beach, which is a world leading Agile conference held in Falmouth, Cornwall. Each year we try to give the delegates something cool to take home to remind them of the trip. We are really pleased with what …"
 categories: ["News"]
 tags: []
 author:
@@ -38,4 +38,11 @@ If you were lucky enough to get your hands on a bottle of our finest BDD do twee
 A big thanks to Lou and the team at the [Driftwood Spars Brewery](http://www.driftwoodsparsbrewery.com/) for making us another amazing beer!  
 Earlier in the year they also made a fantastic beer for our birthday – Agi(a)le.
 
-[![BDD Beer Driven Development](/wp-content/uploads/2016/08/BDD-Beer-Driven-Development-Headforwards-Agile-On-The-Beach-300x137.png)](/wp-content/uploads/2016/08/BDD-Beer-Driven-Development-Headforwards-Agile-On-The-Beach.png)
+
+<section class="gallery">
+
+
+![BDD Beer Driven Development](/wp-content/uploads/2016/08/BDD-Beer-Driven-Development-Headforwards-Agile-On-The-Beach.png)
+
+</section>
+

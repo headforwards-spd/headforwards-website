@@ -5,7 +5,7 @@ title: "What is Agile?"
 slug: "what-is-agile"
 date: "2015-06-17T11:18:44.000Z"
 modified: "2015-09-01T14:50:25.000Z"
-excerpt: "You may have come across the term Agile recently as it seems to be the current buzzword within the software world but what is Agile? Well to be Agile means the ability to think quickly, use well coordinated movement and to be active. These same principles are transferred into Agile Software Development. Previous methods of \[…\]"
+excerpt: "You may have come across the term Agile recently as it seems to be the current buzzword within the software world but what is Agile? Well to be Agile means the ability to think quickly, use well coordinated movement and to be active. These same principles are transferred into Agile Software Development. Previous methods of …"
 categories: ["Agile","Informational"]
 tags: ["Agile","Agile on the Beach","Agile Project Management","Agile Software Development","Cornwall","Headforwards","History","Infomational","Software"]
 author:
@@ -59,7 +59,15 @@ However good project management is key, the team leader plays an important part 
 
 If you are interested in finding out more about the use of Agile you should consider attending [Agile on the Beach.](http://agileonthebeach.com/) It is a 2-day conference in [Falmouth, Cornwall](http://www.falmouth.co.uk/)  with a beach party in between.
 
-[![Agile on the beach](/wp-content/uploads/2015/06/AOTB-logo-design-300x169.jpg)](/wp-content/uploads/2015/06/AOTB-logo-design.jpg)
+
+<section class="gallery">
+
+
+![Agile on the beach](/wp-content/uploads/2015/06/AOTB-logo-design.jpg)
+
+</section>
+
+
 
 If you have any questions or would like to become part of the team here at Headforwards please get it touch. Lets get social.
 

@@ -5,7 +5,7 @@ title: "Software Cornwall’s Mission to Mars"
 slug: "software-cornwalls-mission-to-mars"
 date: "2016-07-25T08:53:19.000Z"
 modified: "2017-11-03T10:53:48.000Z"
-excerpt: "Earlier this month it was Software Cornwall’s Mission to Mars work experience week. Software Cornwall run regular Missions to Mars, but this was by far the biggest one. Software Cornwall is a not for profit organisation run by its members, with the aim of raising the profile of the industry in the county, offering business support \[…\]"
+excerpt: "Earlier this month it was Software Cornwall’s Mission to Mars work experience week. Software Cornwall run regular Missions to Mars, but this was by far the biggest one. Software Cornwall is a not for profit organisation run by its members, with the aim of raising the profile of the industry in the county, offering business support …"
 categories: ["Coding","Cornwall","News"]
 tags: []
 author:
@@ -52,6 +52,14 @@ Altogether, the Mission to Mars project was a really fun experience and I learne
 
 Georgia Pain
 
-[![Software Cornwall's Mission to Mars ](/wp-content/uploads/2016/07/13566967_904700899636215_2693135533375073744_n-300x225.jpg)](/wp-content/uploads/2016/07/13566967_904700899636215_2693135533375073744_n.jpg)
+
+<section class="gallery">
+
+
+![Software Cornwall's Mission to Mars ](/wp-content/uploads/2016/07/13566967_904700899636215_2693135533375073744_n.jpg)
+
+</section>
+
+
 
 Georgia and her Mission to Mars team.

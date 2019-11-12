@@ -5,7 +5,7 @@ title: "Tech Nation Report – Roundup"
 slug: "tech-nation-report-roundup"
 date: "2017-04-11T14:00:05.000Z"
 modified: "2017-11-03T10:52:10.000Z"
-excerpt: "The figures for the 2017 Tech Nation annual report are in and have got us really excited! We’re really pleased with the stats for the South West tech-cluster and how quickly it’s expanding. Tech Nation’s report provides the most comprehensive view of the UK digital tech economy and ecosystems to date. Investment in Digital Tech reaches \[…\]"
+excerpt: "The figures for the 2017 Tech Nation annual report are in and have got us really excited! We’re really pleased with the stats for the South West tech-cluster and how quickly it’s expanding. Tech Nation’s report provides the most comprehensive view of the UK digital tech economy and ecosystems to date. Investment in Digital Tech reaches …"
 categories: ["Cornwall","Informational","News"]
 tags: []
 author:
@@ -42,13 +42,18 @@ Tech Sector Growth Potential: 79%
 
 Here are some stats about our Tech Cluster that were gathered from the survey responses, community partners and founder case studies:
 
-![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-3-556x1024.jpg)
 
-[![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-1-993x1024.jpg)](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-1.jpg)
+<section class="gallery">
 
-![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-996x1024.jpg)
 
-[![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-2-996x1024.jpg)](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-2.jpg)
+![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-3.jpg)
+![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-1.jpg)
+![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet.jpg)
+![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-2.jpg)
+
+</section>
+
+
 
 For more information about the UK Tech Sector: [Click Here](http://technation.techcityuk.com/)
 

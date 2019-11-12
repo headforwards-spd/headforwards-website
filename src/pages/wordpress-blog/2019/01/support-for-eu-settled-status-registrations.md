@@ -5,7 +5,7 @@ title: "Support for EU Settled Status Registrations"
 slug: "support-for-eu-settled-status-registrations"
 date: "2019-01-07T12:15:50.000Z"
 modified: "2019-01-07T12:37:57.000Z"
-excerpt: "The Government recently announced a registration scheme for EU migrant workers and their families. This wasn’t really expected and after the Government previously have said they would support EU residents in the UK. At Headforwards we’re really lucky to have people from a wide number of nationalities. Diversity is well recognised in improving the capability \[…\]"
+excerpt: "The Government recently announced a registration scheme for EU migrant workers and their families. This wasn’t really expected and after the Government previously have said they would support EU residents in the UK. At Headforwards we’re really lucky to have people from a wide number of nationalities. Diversity is well recognised in improving the capability …"
 categories: ["News"]
 tags: []
 author:

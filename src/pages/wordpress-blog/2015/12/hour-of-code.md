@@ -5,7 +5,7 @@ title: "Hour of Code"
 slug: "hour-of-code"
 date: "2015-12-04T16:18:12.000Z"
 modified: "2017-11-03T10:54:00.000Z"
-excerpt: "You may have noticed we mentioned Hour of Code in our blog piece about Cornwall Tech Week, but what is it? The Hour of Code is a global movement where people from over 180 countries all have a go at an hour of code. The great thing about it is you don’t need to have any \[…\]"
+excerpt: "You may have noticed we mentioned Hour of Code in our blog piece about Cornwall Tech Week, but what is it? The Hour of Code is a global movement where people from over 180 countries all have a go at an hour of code. The great thing about it is you don’t need to have any …"
 categories: ["Coding","News"]
 tags: ["Coding","education","Headforwards","hour of code","workshop"]
 author:

@@ -5,7 +5,7 @@ title: "Headforwards Team Social: Rogue One Private Screening"
 slug: "headforwards-team-social-rogue-one-private-screening"
 date: "2017-02-02T10:35:42.000Z"
 modified: "2017-11-03T10:52:49.000Z"
-excerpt: "In a small independent cinema… far far away… Our first monthly social for 2017 took place with a private screening of Star Wars: Rogue One with buffet dinner. Over 60 of the team including +1’s attended the event at our local cinema making for a lively Wednesday evening. Once a month, the Headforwards team vote \[…\]"
+excerpt: "In a small independent cinema… far far away… Our first monthly social for 2017 took place with a private screening of Star Wars: Rogue One with buffet dinner. Over 60 of the team including +1’s attended the event at our local cinema making for a lively Wednesday evening. Once a month, the Headforwards team vote …"
 categories: ["Team adventures","The Headforwards Team"]
 tags: []
 author:
@@ -24,18 +24,17 @@ Once a month, the Headforwards team vote on a social outing from a selection of 
 > 
 > — Headforwards (@Headforwards) [February 2, 2017](https://twitter.com/Headforwards/status/827084204261441536)
 
-[![](/wp-content/uploads/2017/02/IMG_1280-300x225.jpg "Headforwards Team Social: Rogue One Private Screening")](/wp-content/uploads/2017/02/IMG_1280.jpg)
+<section class="gallery">
 
-[![](/wp-content/uploads/2017/02/IMG_3531.JPG-300x225.jpg)](/wp-content/uploads/2017/02/IMG_3531.JPG.jpg)
 
-[![](/wp-content/uploads/2017/02/IMG_1285-300x225.jpg "Headforwards Team Social: Rogue One Private Screening")](/wp-content/uploads/2017/02/IMG_1285.jpg)
+![](/wp-content/uploads/2017/02/IMG_1280.jpg "Headforwards Team Social: Rogue One Private Screening")
+![](/wp-content/uploads/2017/02/IMG_3531.JPG.jpg)
+![](/wp-content/uploads/2017/02/IMG_1285.jpg "Headforwards Team Social: Rogue One Private Screening")
+![](/wp-content/uploads/2017/02/IMG_1286.jpg "Headforwards Team Social: Rogue One Private Screening")
+![](/wp-content/uploads/2017/02/C3pksS6WYAARvmL.jpg "Headforwards Team Social: Rogue One Private Screening")
+![](/wp-content/uploads/2017/02/IMG_3528.JPG.jpg)
+![](/wp-content/uploads/2017/02/IMG_3532.JPG.jpg)
+![](/wp-content/uploads/2017/02/IMG_3533.JPG.jpg)
 
-[![](/wp-content/uploads/2017/02/IMG_1286-300x225.jpg "Headforwards Team Social: Rogue One Private Screening")](/wp-content/uploads/2017/02/IMG_1286.jpg)
+</section>
 
-[![](/wp-content/uploads/2017/02/C3pksS6WYAARvmL-300x225.jpg "Headforwards Team Social: Rogue One Private Screening")](/wp-content/uploads/2017/02/C3pksS6WYAARvmL.jpg)
-
-[![](/wp-content/uploads/2017/02/IMG_3528.JPG-300x225.jpg)](/wp-content/uploads/2017/02/IMG_3528.JPG.jpg)
-
-[![](/wp-content/uploads/2017/02/IMG_3532.JPG-300x225.jpg)](/wp-content/uploads/2017/02/IMG_3532.JPG.jpg)
-
-[![](/wp-content/uploads/2017/02/IMG_3533.JPG-300x225.jpg)](/wp-content/uploads/2017/02/IMG_3533.JPG.jpg)

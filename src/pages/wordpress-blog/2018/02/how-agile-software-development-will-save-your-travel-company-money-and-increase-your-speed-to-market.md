@@ -5,7 +5,7 @@ title: "How Agile Software Development Will Save Your Travel Company Money and I
 slug: "how-agile-software-development-will-save-your-travel-company-money-and-increase-your-speed-to-market"
 date: "2018-02-16T14:52:06.000Z"
 modified: "2018-02-16T14:54:08.000Z"
-excerpt: "Cutting edge software is a crucial part of business for companies in the travel technology industry. Waterfall is the traditional style of software development; however it is being phased out and replaced with Agile practises and methodologies. But why? Well, in short, it will save your company money. Do you want to find out how?  \[…\]"
+excerpt: "Cutting edge software is a crucial part of business for companies in the travel technology industry. Waterfall is the traditional style of software development; however it is being phased out and replaced with Agile practises and methodologies. But why? Well, in short, it will save your company money. Do you want to find out how?  …"
 categories: ["News"]
 tags: []
 author:
@@ -25,7 +25,15 @@ Do you want to find out how?  Are you at [TTE 2018](http://www.traveltechnology
 You can join the discussion in our tech huddle on 21st February 1325 – 1405.  
 Or come and see us on stand TT82.
 
-[![How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market](/wp-content/uploads/2018/02/John-Howell-headshot-300x245.jpeg)](/wp-content/uploads/2018/02/John-Howell-headshot.jpeg)
+
+<section class="gallery">
+
+
+![How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market](/wp-content/uploads/2018/02/John-Howell-headshot.jpeg)
+
+</section>
+
+
 
 **[John Howell](https://www.linkedin.com/in/john-howell/)**  
 **Travel Solutions Director**  
@@ -35,7 +43,15 @@ John is the Headforwards Travels Solution Director, and is the former CEO of tra
 
 John has extensive experience designing and developing products, this along with his unrivaled knowledge of the travel industry enables him to help our clients achieve their business goals.
 
-[![How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market](/wp-content/uploads/2018/02/Toby-Parkins-Headforwards-copy-300x200.jpg)](/wp-content/uploads/2018/02/Toby-Parkins-Headforwards-copy.jpg)
+
+<section class="gallery">
+
+
+![How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market](/wp-content/uploads/2018/02/Toby-Parkins-Headforwards-copy.jpg)
+
+</section>
+
+
 
 **[Toby Parkins](https://www.linkedin.com/in/tobyparkins/)**  
 **Director**  

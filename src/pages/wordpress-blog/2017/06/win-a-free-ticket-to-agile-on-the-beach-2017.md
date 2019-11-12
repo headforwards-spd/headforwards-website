@@ -5,7 +5,7 @@ title: "Win a Free Ticket to Agile on The Beach 2017"
 slug: "win-a-free-ticket-to-agile-on-the-beach-2017"
 date: "2017-06-21T16:12:36.000Z"
 modified: "2017-11-03T10:52:09.000Z"
-excerpt: "Do you want to win a free ticket to Agile on the Beach 2017 worth over £400? Headforwards are giving one person the chance to win a ticket to the Agile conference. Agile on the Beach is an industry 2-day annual conference in Falmouth, Cornwall that explores the latest Agile and lean thinking in software craftsmanship, \[…\]"
+excerpt: "Do you want to win a free ticket to Agile on the Beach 2017 worth over £400? Headforwards are giving one person the chance to win a ticket to the Agile conference. Agile on the Beach is an industry 2-day annual conference in Falmouth, Cornwall that explores the latest Agile and lean thinking in software craftsmanship, …"
 categories: ["News"]
 tags: []
 author:

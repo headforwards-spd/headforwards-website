@@ -5,7 +5,7 @@ title: "Agile on the Beach 2015"
 slug: "agile-on-the-beach-2015"
 date: "2015-07-06T15:04:36.000Z"
 modified: "2017-11-03T10:56:43.000Z"
-excerpt: "We are very excited for Agile on the Beach 2015, which will be held in early September in Falmouth, Cornwall. This is a conference with a difference, it finishes with a big beach party! Over the two days hundreds of people gather to talk and learn about the latest Agile news and Lean thinking in software \[…\]"
+excerpt: "We are very excited for Agile on the Beach 2015, which will be held in early September in Falmouth, Cornwall. This is a conference with a difference, it finishes with a big beach party! Over the two days hundreds of people gather to talk and learn about the latest Agile news and Lean thinking in software …"
 categories: ["Agile","Cornwall","News"]
 tags: ["Agile","Agile on the Beach","Agile Project Management","Agile Software Development","Beach","Conference","Cornwall","education","Headforwards","Kanban","scrum"]
 author:
