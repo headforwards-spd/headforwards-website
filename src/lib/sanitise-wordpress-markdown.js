@@ -14,8 +14,8 @@ function sanitiseFile(fileName) {
         // Remove links to images
         .replace(/([^!])\[[^\]]*]\(\/wp-content\/uploads\/[^)]+\)/g, '$1')
         // Each image on it's own line
-        .replace(/(\))\s*(!\[)/g, '$1\n$2')
-        // Finish with a blank line
+        .replace(/(\))\s*(!\[)/g, '$1\n\n$2')
+        // Wrap images in a gallery
         .replace(
             /((?:\s?!\[[^\]]*]\(\/wp-content\/uploads\/[^)]+\))+)/g,
             '\n\n<section class="gallery">\n\n$1\n\n</section>\n\n'
