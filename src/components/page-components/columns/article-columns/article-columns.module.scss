@@ -1,5 +1,6 @@
 @import "../../../../scss/variables";
-@import "../../../../scss/mixins";
+@import "../../../../scss/mixins/mixins";
+@import "../../../../scss/mixins/typography";
 @import '../../page-component';
 
 .articleColumns {
@@ -39,6 +40,10 @@
             > section {
                 order: 3;
                 flex-grow: 1;
+                @include fontMedium;
+                > :last-child {
+                    margin-bottom: 0;
+                }
 
                 &:last-child {
                     margin-bottom: 0;

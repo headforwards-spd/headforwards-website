@@ -1,16 +1,19 @@
 @import "../../../scss/variables";
-@import "../../../scss/mixins";
+@import "../../../scss/mixins/mixins";
+@import "../../../scss/mixins/typography";
 @import '../page-component';
 
 .blockquoteContainer {
     @include component-gutter;
 
+    > :last-child {
+        margin-bottom: 0;
+    }
+
     > p {
-        margin: 0 0 $gutter-small;
         padding: $gutter-large 0 0;
         font-weight: bold;
         font-style: italic;
-        line-height: 1.4;
         position: relative;
         color: $orange;
         @include fontXLarge;
@@ -45,6 +48,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        section > :last-child {
+            margin-bottom: 0;
+        }
 
         h1 {
             color: black;

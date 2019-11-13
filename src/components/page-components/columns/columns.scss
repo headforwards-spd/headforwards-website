@@ -1,5 +1,6 @@
 @import "../../../scss/variables";
-@import "../../../scss/mixins";
+@import "../../../scss/mixins/mixins";
+@import "../../../scss/mixins/typography";
 @import '../page-component';
 
 @mixin columns-component {
@@ -14,13 +15,21 @@
 }
 
 @mixin copy {
+
     h1 {
-        @include headingFontMedium;
+        @include headingFontLarge;
     }
-    p {
+    > section {
         @include fontLarge;
+        > :last-child {
+            margin-bottom: 0;
+        }
     }
     a {
         @include arrow-link;
+    }
+
+    > :last-child {
+        margin-bottom: 0;
     }
 }

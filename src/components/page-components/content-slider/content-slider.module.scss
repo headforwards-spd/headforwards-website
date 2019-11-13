@@ -1,5 +1,6 @@
 @import "../../../scss/variables";
-@import "../../../scss/mixins";
+@import "../../../scss/mixins/mixins";
+@import "../../../scss/mixins/typography";
 @import '../page-component';
 
 .contentSlider {
@@ -10,7 +11,7 @@
     margin-bottom: $gutter-large;
     > h1 {
         padding: 0 $gutter-small;
-        @include fontMedium;
+        @include headingFontSmall;
         flex-shrink: 0;
 
         line-height: calc(1em + #{2*$gutter-small});
@@ -113,7 +114,7 @@
 
         > h1 {
             color: $orange;
-            @include fontMedium;
+            @include headingFontLarge;
             margin-top: 2em;
         }
 
@@ -122,7 +123,10 @@
             flex-grow: 1;
             color: #B8B8B8;
             overflow: hidden;
-            @include fontLarge;
+            @include fontMedium;
+            > :last-child {
+                margin-bottom: 0;
+            }
 
             &:after {
                 content: '';
@@ -139,6 +143,7 @@
         > a {
             @include arrow-link;
             @include fontMedium;
+            margin-bottom: 0;
         }
     }
 }
@@ -184,8 +189,6 @@
             margin: 0;
             left: 10%;
             z-index: 10;
-
-            font-size: 28px;
         }
 
         :global(.slick-dots) {
@@ -252,17 +255,12 @@
             padding: 1rem;
 
             > h1 {
-                font-size: 28px;
                 transition: opacity ease 250ms;
             }
 
             > section {
                 flex-grow: 1;
                 color: #B8B8B8;
-            }
-
-            > a {
-                font-size: 26px;
             }
         }
 

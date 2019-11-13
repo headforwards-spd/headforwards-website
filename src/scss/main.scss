@@ -1,5 +1,6 @@
 @import '~normalize.css';
 @import "variables";
+@import "mixins/typography";
 @import "../components/page-layout/navbar/navbar.module";
 
 * {
@@ -27,10 +28,10 @@ body {
     margin: 0 auto !important;
     overflow-x: hidden;
 
-    @include fontMedium;
+    @include fluid-type($min_font, $max_font);
 
     h1, h2, h3 {
-        margin: 0 0 $gutter-small;
+        margin: 0;
         text-transform: capitalize;
     }
 
@@ -44,9 +45,9 @@ body {
     h3 {
         @include headingFontSmall;
     }
-
     p {
-        margin: 0 0 $gutter-medium;
+        margin: 0;
+        @include fontMedium;
     }
 
     a {

@@ -1,0 +1,61 @@
+@import "../../scss/mixins/typography";
+
+.wrapper {
+    padding: $gutter-medium;
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+        margin: $gutter-small;
+        border: 1px solid $paragraph_grey;
+        box-shadow: 0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
+    }
+}
+
+h1 {
+    &.xxxlarge {
+        @include headingFontXXXLarge;
+    }
+
+    &.xxlarge {
+        @include headingFontXXLarge;
+    }
+
+    &.xlarge {
+        @include headingFontXLarge;
+    }
+
+    &.large {
+        @include headingFontLarge;
+    }
+
+    &.medium {
+        @include headingFontMedium;
+    }
+
+    &.small {
+        @include headingFontSmall;
+    }
+}
+p {
+    &.xxlarge {
+        @include fontXXLarge;
+    }
+
+    &.xlarge {
+        @include fontXLarge;
+    }
+
+    &.large {
+        @include fontLarge;
+    }
+
+    &.medium {
+        @include fontMedium;
+    }
+
+    &.small {
+        @include fontSmall;
+    }
+}

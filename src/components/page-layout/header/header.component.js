@@ -32,7 +32,7 @@ function Header({ title, text, image, menu, companyInfo }) {
             <Navbar {...{ menu, companyInfo, hasBackground }} />
             <section className={titleStyle}>
                 <h1>{parseHtml(title)}</h1>
-                <h2>{text}</h2>
+                {!!text && <h2>{text}</h2>}
             </section>
             {!!image && <Image image={image} className={styles.image} />}
         </header>

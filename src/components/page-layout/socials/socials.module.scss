@@ -1,4 +1,5 @@
-@import '../../../scss/mixins';
+@import '../../../scss/mixins/mixins';
+@import '../../../scss/mixins/typography';
 @import '../../page-components/page-component';
 
 /* Footer social */
@@ -11,6 +12,7 @@
     li {
         padding: 0 $gutter-small/2 $gutter-small/2;
         @include headingFontLarge;
+        margin-bottom: 0;
 
         a {
             text-decoration: none;
