@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { arrayOf } from 'prop-types';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 
@@ -13,9 +13,5 @@ DesignPageTemplate.defaultProps = {
 };
 
 function DesignPageTemplate({ components = [] }) {
-    return (
-        <Fragment>
-            {!!components && components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
-        </Fragment>
-    );
+    return <>{!!components && components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}</>;
 }

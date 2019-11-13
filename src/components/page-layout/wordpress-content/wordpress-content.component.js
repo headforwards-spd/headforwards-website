@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { Fragment } from 'react';
+import React from 'react';
 import parseHtml from 'html-react-parser';
 import styles from './wordpress-content.module.scss';
 
@@ -10,11 +10,7 @@ WordpressContent.propTypes = {
 };
 
 function WordpressContent({ content }) {
-    return (
-        <Fragment>
-            {(content && <section className={styles.content}>{parseHtml(cleanContent(content))}</section>) || ''}
-        </Fragment>
-    );
+    return <>{(content && <section className={styles.content}>{parseHtml(cleanContent(content))}</section>) || ''}</>;
 }
 
 function cleanContent(content) {

@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { arrayOf, node, oneOfType, string } from 'prop-types';
-import React, { Fragment } from 'react';
+import React from 'react';
 import { ImageSrcPropType } from '../image/image.component';
 import Header from './header/header.component';
 import Footer from './footer/footer.component';
@@ -59,11 +59,11 @@ function Layout({ seo, title, text, image, children }) {
     };
 
     return (
-        <Fragment>
+        <>
             <Seo {...{ title, ...seo }} />
             <Header {...headerProps} />
             <main>{children}</main>
             <Footer {...{ companyInfo }} />
-        </Fragment>
+        </>
     );
 }

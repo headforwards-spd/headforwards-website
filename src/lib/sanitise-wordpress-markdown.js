@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const path = 'src/pages/wordpress-blog/**/*.md';
 
+// eslint-disable-next-line no-console
 glob(path, (error, files) => (error ? console.error(error) : files.forEach(sanitiseFile)));
 
 function sanitiseFile(fileName) {
