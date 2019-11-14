@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/06/why-outsource"
 title: "Why Outsource?"
 date: "2015-06-26T10:12:51.000Z"

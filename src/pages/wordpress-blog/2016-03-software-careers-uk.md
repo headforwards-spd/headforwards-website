@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/03/software-careers-uk"
 title: "Software Careers in the UK"
 date: "2016-03-16T11:58:58.000Z"
@@ -40,11 +40,4 @@ Happy developers who feel valued and are working well as a team produce the best
 If you are interested in becoming part of the Headforwards family, please [contact us](https://www.headforwards.com/careers/application-form/).  
 We are looking forward to hearing from you.
 
-
-<section class="gallery">
-
-
 ![The Headforwards team - offering software careers in the UK ](/wp-content/uploads/2016/03/Headforwards-team-at-30.jpg)
-
-</section>
-

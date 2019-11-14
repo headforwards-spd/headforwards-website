@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/09/front-end-stack-for-the-cloud"
 title: "Front End Stack for the Cloud"
 date: "2015-09-30T15:18:25.000Z"

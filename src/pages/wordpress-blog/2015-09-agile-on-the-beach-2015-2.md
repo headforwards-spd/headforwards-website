@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/09/agile-on-the-beach-2015-2"
 title: "Agile on the Beach 2015"
 date: "2015-09-08T11:08:51.000Z"
@@ -15,15 +15,7 @@ author:
 ---
 Last week a few members of the Headforwards team had the pleasure of attending [Agile on The Beach](http://agileonthebeach.com/) in [Falmouth.](http://www.falmouth.ac.uk/)  Headforwards are proud to be one of the [sponsors](http://agileonthebeach.com/2015-sponsors/) of the event, along with some other fantastic companies.
 
-
-<section class="gallery">
-
-
 ![Agile on the beach 2015](/wp-content/uploads/2015/06/AOTB-logo-design.jpg)
-
-</section>
-
-
 
 Agile on the Beach is a two day business and technology conference that sees speakers from all over the world come to Cornwall to educate and inspire whilst also getting to enjoy a rather special beach party at [Gyllyngvase](http://www.gyllybeach.com/).
 

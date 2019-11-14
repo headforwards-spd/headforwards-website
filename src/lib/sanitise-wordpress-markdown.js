@@ -18,12 +18,14 @@ function sanitiseFile(fileName) {
         .replace(/(\))\s*(!\[)/g, '$1\n$2')
         // Wrap images in a gallery
         .replace(
-            /((?:\s?!\[[^\]]*]\(\/wp-content\/uploads\/[^)]+\))+)/g,
+            /((?:\s?!\[[^\]]*]\(\/wp-content\/uploads\/[^)]+\)){2,})/g,
             '\n\n<section class="gallery">\n\n$1\n\n</section>\n\n'
         )
+        // Blank line between images
         .replace(/(\))\s*(!\[)/g, '$1\n\n$2')
         // Remove image sizes
-        .replace(/(\(\/wp-content\/uploads\/[^)]+)(?:[-_]+\d+x\d+)+(?:[-_]\d)?(\.\w+(?:\s*"[^"]*")?\))/g, '$1$2');
+        .replace(/(\(\/wp-content\/uploads\/[^)]+)(?:[-_]+\d+x\d+)+(?:[-_]\d)?(\.\w+(?:\s*"[^"]*")?\))/g, '$1$2')
+        .replace(/\n{2,}/g, '\n\n');
 
     fs.writeFileSync(`./${fileName}`, newContent);
 }

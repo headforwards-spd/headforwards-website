@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/02/plymouth-javascript-feb17-roundup"
 title: "Plymouth JS 2017: February Roundup"
 date: "2017-02-17T10:36:54.000Z"
@@ -61,9 +61,7 @@ The meet up felt really positive with plenty of interesting discussions to get i
 
 We would also like to thank THINQTANQ and Andy Mantell for organising and hosting the event.
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/02/IMG_1305-web-2048.jpg)
 

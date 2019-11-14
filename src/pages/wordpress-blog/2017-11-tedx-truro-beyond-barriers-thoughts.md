@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/11/tedx-truro-beyond-barriers-thoughts"
 title: "TEDx Truro – Beyond Barriers – Our Thoughts"
 date: "2017-11-10T16:49:29.000Z"

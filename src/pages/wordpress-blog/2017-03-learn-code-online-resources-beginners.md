@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/03/learn-code-online-resources-beginners"
 title: "How To Learn Code: Online Resources for Beginners"
 date: "2017-03-08T16:07:43.000Z"

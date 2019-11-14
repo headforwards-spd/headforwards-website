@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/06/do-you-want-to-learn-code-in-cornwall"
 title: "Do You Want to Learn to Code in Cornwall?"
 date: "2015-06-30T10:16:20.000Z"

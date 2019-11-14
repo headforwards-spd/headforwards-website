@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/12/headforwards-christmas-party-2016"
 title: "Headforwards Christmas party 2016"
 date: "2016-12-16T16:00:28.000Z"
@@ -33,9 +33,7 @@ We are all in agreement that this year’s Christmas party was a great success.
 
 A special thank you goes to Edvinas and Karen who took some superb pictures throughout the evening. Which one is your favourite?
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-00.jpg)
 

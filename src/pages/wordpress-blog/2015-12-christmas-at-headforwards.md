@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/12/christmas-at-headforwards"
 title: "Christmas at Headforwards"
 date: "2015-12-25T11:04:57.000Z"
@@ -22,9 +22,7 @@ Before the bank holiday we had secret santa in the office, which was a lot of f
 We were also invited to the [Pool Innovation Centre’s](http://www.cornwallinnovation.co.uk/pool-innovation-centre) Christmas party. We were treated to lots of yummy food and drink along with a Christmas quiz! One of the Headforwards teams “The Eventual Winners” won the quiz! We are still working our way through all the tins of quality streets!  
 Everyone at Headforwards would like to wish you all a very Merry Christmas! 2015 has been an excellent year for us and we hope you all have a fantastic 2016!
 
-
 <section class="gallery">
-
 
 ![Christmas at Headforwards ](/wp-content/uploads/2015/12/EGObYfo2fvIxX8xJ7YscBj6yVvB0UPkhUvDpvnQeZP4.jpeg)
 

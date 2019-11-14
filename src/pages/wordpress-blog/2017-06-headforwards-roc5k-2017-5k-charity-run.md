@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/06/headforwards-roc5k-2017-5k-charity-run"
 title: "Headforwards ROC5K 2017 – 5K Charity Run"
 date: "2017-06-28T15:37:12.000Z"
@@ -18,7 +18,6 @@ It’s time for the 2017 ROC5K! The Headforwards team were ready to rumble durin
 ROC Wellbeing services, including ROC Welcome, offer a varied range of programmes and creative activities designed to improve people’s heath and wellbeing, as well as increasing work and learning opportunities across the Devon and Cornwall region. The annual ROC5K Charity Run was created to help raise money for people supported by ROC Wellbeing Services. [Make a Donation](https://www.unitedresponse.org.uk/donate/donate-now/5/credit-card)
 
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/06/IMG_0425-web-2048.jpg)
 

@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/12/software-jobs-in-the-uk"
 title: "Software Jobs in the UK"
 date: "2015-12-16T11:47:09.000Z"
@@ -19,15 +19,7 @@ Are you ready to take the next step in your career?
 
 Do you want to work at an exciting company who are passionate about innovation?
 
-
-<section class="gallery">
-
-
 ![Software Jobs in the UK at Headforwards ](/wp-content/uploads/2015/12/Headforwards-team-at-30.jpg)
-
-</section>
-
-
 
 Software Jobs in the UK at Headforwards
 

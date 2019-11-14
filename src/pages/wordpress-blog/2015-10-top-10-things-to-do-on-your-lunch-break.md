@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/10/top-10-things-to-do-on-your-lunch-break"
 title: "Top 10 things to do on your Lunch break"
 date: "2015-10-09T15:46:17.000Z"

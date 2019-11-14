@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/11/plymouth-university-recruitment-careers-fair-2"
 title: "Plymouth University recruitment careers fair"
 date: "2016-11-15T16:32:26.000Z"

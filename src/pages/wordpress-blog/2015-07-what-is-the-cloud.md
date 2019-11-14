@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/07/what-is-the-cloud"
 title: "What is the Cloud?"
 date: "2015-07-17T15:57:42.000Z"

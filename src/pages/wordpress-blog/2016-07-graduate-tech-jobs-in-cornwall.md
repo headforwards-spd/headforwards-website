@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/07/graduate-tech-jobs-in-cornwall"
 title: "Graduate tech jobs in Cornwall"
 date: "2016-07-21T09:28:18.000Z"

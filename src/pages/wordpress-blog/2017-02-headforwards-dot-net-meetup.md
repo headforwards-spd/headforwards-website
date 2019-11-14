@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/02/headforwards-dot-net-meetup"
 title: "Headforwards .NET Meetup"
 date: "2017-02-02T16:51:29.000Z"
@@ -24,7 +24,6 @@ author:
 **Book a Place**: [Book Here](https://www.meetup.com/Cornwall-Digital/events/237372278/)
 
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/02/Headforwards-Agile-Board.jpg)
 

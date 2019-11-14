@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/06/helping-firms-surf-the-waves-of-the-cornish-tech-boom"
 title: "Helping Firms Surf the Waves of the Cornish Tech Boom"
 date: "2016-06-23T09:51:04.000Z"
@@ -43,11 +43,4 @@ After such a successful event in 2015, a repeat was held on 19th May, as part of
 
 Headforwards is also a founding member of not-for-profit organisation [Software Cornwall](https://www.softwarecornwall.org/) which works to raise the profile of the county’s tech services and with the education sector bridge the skills gap. On Thursday 16th June, Headforwards base at the Pool Innovation Centre will host Software Cornwall’s next major event. See https://www.softwarecornwall.org/software-cornwall-business-connect-event/ for more details.
 
-
-<section class="gallery">
-
-
 ![Bristol Business Post- Headforwards article ](/wp-content/uploads/2016/06/Bristol-Business-Post-copy.jpg)
-
-</section>
-

@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2013/07/headforwards-grows-to-30-people-in-2-years"
 title: "Headforwards Grows to 30 People in 2 Years"
 date: "2013-07-29T09:30:15.000Z"

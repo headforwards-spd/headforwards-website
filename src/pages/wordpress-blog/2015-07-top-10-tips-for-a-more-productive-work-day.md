@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/07/top-10-tips-for-a-more-productive-work-day"
 title: "Top 10 Tips for a More Productive Work Day"
 date: "2015-07-03T15:26:37.000Z"

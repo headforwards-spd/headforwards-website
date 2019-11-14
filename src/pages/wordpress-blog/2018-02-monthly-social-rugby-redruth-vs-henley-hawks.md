@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2018/02/monthly-social-rugby-redruth-vs-henley-hawks"
 title: "Monthly Social: Rugby – Redruth vs. Henley Hawks"
 date: "2018-02-27T10:31:48.000Z"
@@ -15,9 +15,7 @@ author:
 ---
 Back to the Tribute Lounge for another fantastic game of Rugby for this month's team social. This match was Redruth vs. Henley Hawks. Well done to both teams for delivering an exciting game. Man of the Match goes to Alex Ducker for bringing in a hat-trick of tries before full-time. Well done!
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2018/02/2018-02-17-13.06.29.jpg)
 

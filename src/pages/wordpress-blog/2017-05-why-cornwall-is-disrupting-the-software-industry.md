@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/05/why-cornwall-is-disrupting-the-software-industry"
 title: "From Tourism To Tech – Why Cornwall is Disrupting the Software Industry"
 date: "2017-05-11T10:56:41.000Z"

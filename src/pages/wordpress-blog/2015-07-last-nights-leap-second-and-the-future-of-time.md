@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/07/last-nights-leap-second-and-the-future-of-time"
 title: "Last Nights Leap Second and the Future of Time."
 date: "2015-07-01T11:20:19.000Z"
@@ -42,10 +42,6 @@ GPS which is used by GPS satellites
 UTC is the standard used in computing, which is like TAI but with leap seconds
 
 The list goes on with TDT, TBT, TCB, TCG etc.
-
-
-
-
 
 Lets look at your smartphones for an example of the issues this causes. The clock in your smartphones GPS is 16 seconds out of sync with the phones system clock, because GPS doesn’t use leap seconds.
 

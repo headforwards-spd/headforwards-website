@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/07/qa-automation-engineer-job"
 title: "QA Automation Engineer Job in Cornwall"
 date: "2015-07-16T09:43:51.000Z"

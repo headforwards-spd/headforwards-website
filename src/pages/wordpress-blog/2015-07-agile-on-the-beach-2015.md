@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/07/agile-on-the-beach-2015"
 title: "Agile on the Beach 2015"
 date: "2015-07-06T15:04:36.000Z"

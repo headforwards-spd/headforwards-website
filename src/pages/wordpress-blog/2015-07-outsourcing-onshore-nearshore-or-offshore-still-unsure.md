@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/07/outsourcing-onshore-nearshore-or-offshore-still-unsure"
 title: "Outsourcing: Onshore? Nearshore? or Offshore? Still Unsure?"
 date: "2015-07-13T10:13:29.000Z"

@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/02/headforwards-team-social-rogue-one-private-screening"
 title: "Headforwards Team Social: Rogue One Private Screening"
 date: "2017-02-02T10:35:42.000Z"
@@ -24,7 +24,6 @@ Once a month, the Headforwards team vote on a social outing from a selection of 
 > — Headforwards (@Headforwards) [February 2, 2017](https://twitter.com/Headforwards/status/827084204261441536)
 
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/02/IMG_1280.jpg "Headforwards Team Social: Rogue One Private Screening")
 

@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/06/can-i-relocate"
 title: "Can I Relocate?"
 date: "2015-06-22T14:09:23.000Z"
@@ -32,15 +32,7 @@ We are based in [Cornwall,](https://www.visitcornwall.com/,) which is an extrem
 
 There is a strange misconception that the majority of people moving to Cornwall are doing so to retire and not because of work. However the predominant reasons are economic and lifestyle. A large number being ‘returners’ for example – people who left to study elsewhere and have come back to settle down. Internal migration is the single greatest driver of population change in Cornwall.
 
-
-<section class="gallery">
-
-
 ![Migration statistics ](/wp-content/uploads/2015/06/Screen-Shot-2015-06-19-at-16.41.23.png)
-
-</section>
-
-
 
 Cornwall County Council Demographic Evidence Base 2011
 

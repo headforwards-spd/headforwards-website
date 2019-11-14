@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2019/01/headstock-2018-festival-and-watersports"
 title: "Headstock 2018 – Fun & Games at Stithians Lake"
 date: "2019-01-09T16:10:11.000Z"
@@ -102,7 +102,5 @@ So the Headstock Organisation Team – aka the Business Team – pulled out all 
 ![](/wp-content/uploads/2019/01/2018-06-30-15.25.14.jpg)
 
 </section>
-
-
 
 If this looks like the sort of event you would like to be part of, why not take a look at our [careers](http://www.headforwards.com/careers/) page to see if we have the right opportunity for you.

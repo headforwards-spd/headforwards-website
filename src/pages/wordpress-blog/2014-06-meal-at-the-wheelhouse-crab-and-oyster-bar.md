@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2014/06/meal-at-the-wheelhouse-crab-and-oyster-bar"
 title: "Meal at The Wheelhouse Crab and Oyster Bar"
 date: "2014-06-27T14:22:46.000Z"
@@ -24,8 +24,6 @@ The food was spectacular, as was the company!
 After dinner we visited [Beerwolf Books](http://beerwolfbooks.com/), another Falmouth favourite.
 
 We all had a fantastic evening, and we are looking forward to the next one!
-
-
 
 <section class="gallery">
 

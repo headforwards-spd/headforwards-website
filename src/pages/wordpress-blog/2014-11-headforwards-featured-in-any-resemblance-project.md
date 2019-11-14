@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2014/11/headforwards-featured-in-any-resemblance-project"
 title: "Headforwards featured in Any Resemblance film project"
 date: "2014-11-12T11:26:58.000Z"

@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/06/headforwards-team-bbq-june-2017"
 title: "Headforwards Team BBQ – June 2017"
 date: "2017-06-27T11:13:32.000Z"
@@ -15,9 +15,7 @@ author:
 ---
 Another excellent BBQ on a warm summer’s evening here in Cornwall and possibly the best way to end a day in the office. During the summer months, we try to have a few evening BBQs with the team. It’s a great way for family and friends to get together outside of work and enjoy good food with great views of the local coastline. This month’s BBQ was held at Trevaunance Cove, St Agnes – the hometown of many employees at Headforwards.
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/06/IMG_2572.jpg)
 

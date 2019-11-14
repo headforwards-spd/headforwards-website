@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/09/kernow-dat-evening-for-the-digitally-curious"
 title: "Kernow DAT’s Evening for the Digitally Curious"
 date: "2016-09-22T15:18:36.000Z"
@@ -21,17 +21,13 @@ The host for the evening was Garry Hunt, co-founder of [Digital Plymouth](https:
 
 First up was Garry Barter of [Hertzian](http://www.hertzian.co.uk/) on Artificial Intelligence: What it can do and where it can help. The term AI, always makes me think about super robots taking over the world – but Garry’s talk focused on the incredible way AI can help everything from automating basic admin tasks to even helping diagnose mental health issues. The technology and the scope of it is amazing.
 
-
 <section class="gallery">
-
 
 ![Kernow DAT Virtual Reality game](/wp-content/uploads/2016/09/Headforwards-kernowdat-vrgame.jpg)
 
 ![BDD Beer](/wp-content/uploads/2016/09/Headforwards-kernowdat-bddbeer2.jpg)
 
 </section>
-
-
 
 Next to speak was Natalia Waniczek from [Nixon](http://www.nixondesign.com/), who used to work here at Headforwards. She gave a great talk: Finding Patterns in Learning Human and Programming Languages. Though quite different, both can be split into different language families and other common patterns can be found which can help in learning other languages – I would not have guessed this was her first ever talk, it was brilliant! We are glad to see she is flourishing in her new role.
 
@@ -49,11 +45,4 @@ During the evening there was time to try out Unseen Diplomacy, brought along by 
 
 Thanks Tony for organising what is hopefully the first of many Kernow DAT events!
 
-
-<section class="gallery">
-
-
 ![Kernow DAT Mariokart](/wp-content/uploads/2016/09/Headforwards-kernowdat-mariokart.jpg)
-
-</section>
-

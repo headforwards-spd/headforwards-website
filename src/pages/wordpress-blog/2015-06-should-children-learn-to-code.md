@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/06/should-children-learn-to-code"
 title: "Should Children Learn to Code?"
 date: "2015-06-24T10:57:37.000Z"

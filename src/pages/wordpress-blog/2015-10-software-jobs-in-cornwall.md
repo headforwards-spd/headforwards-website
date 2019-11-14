@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/10/software-jobs-in-cornwall"
 title: "Software Jobs in Cornwall"
 date: "2015-10-23T15:20:58.000Z"

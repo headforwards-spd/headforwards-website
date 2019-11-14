@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2014/02/headforwards-supporting-safer-internet-day"
 title: "Headforwards Supporting Safer Internet Day"
 date: "2014-02-11T18:01:28.000Z"

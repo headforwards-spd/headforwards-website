@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2013/12/christmas-party-2013"
 title: "Christmas Party 2013"
 date: "2013-12-20T17:36:22.000Z"
@@ -20,9 +20,7 @@ We had a most enjoyable evening, full of food, drinks and dancing! We were lucky
 
 Below are a selection of photos from our delightful Christmas party, if you would like the view them in a lightbox slideshow please just click on one of the images.
 
-
 <section class="gallery">
-
 
 ![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner5.jpg)
 
@@ -61,7 +59,5 @@ Below are a selection of photos from our delightful Christmas party, if you woul
 ![Headforwards Christmas dinner at the Driftwood Spars](/wp-content/uploads/2014/01/1526672_10152129596798200_2034344827_n.jpg)
 
 </section>
-
-
 
 If you like the look of this Christmas party and think you would like to be at the next one, then please look at our [careers page](http://www.headforwards.com/careers/). We might have just the role for you.

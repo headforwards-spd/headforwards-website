@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/08/how-outsourcing-your-software-development-with-headforwards-works"
 title: "How Outsourcing Your Software Development With Headforwards Works"
 date: "2017-08-10T12:55:24.000Z"

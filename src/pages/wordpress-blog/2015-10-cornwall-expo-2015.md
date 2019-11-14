@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/10/cornwall-expo-2015"
 title: "Cornwall Expo 2015"
 date: "2015-10-01T15:46:00.000Z"
@@ -25,135 +25,47 @@ The Transport Secretary Patrick McLoughlin  gave a [speech](https://www.gov.uk/
 
 The event was organised by the Cornwall and Isles of Scilly Local Economic Partnership [(LEP)](http://www.cioslep.com/), [Cornwall Council](http://www.cornwall.gov.uk/) and the [Council of the Isles of Scilly](http://www.scilly.gov.uk/).
 
-
-<section class="gallery">
-
-
 ![The Bloodhound at Cornwall Expo 2015 ](/wp-content/uploads/2015/10/Bloodhound_at_Cornwall_Expo.jpeg)
-
-</section>
-
-
 
 The Bloodhound Super-Sonic Car
 
-
-<section class="gallery">
-
-
 ![Old Bus at Cornwall Expo](/wp-content/uploads/2015/10/Helston_Lizard_bus.jpeg)
-
-</section>
-
-
 
 A Vintage bus – Helston to the Lizard
 
-
-<section class="gallery">
-
-
 ![Skybus](/wp-content/uploads/2015/10/Skybus-at-Cornwall-Expo-2015.jpeg)
-
-</section>
-
-
 
 A Skybus
 
-
-<section class="gallery">
-
-
 ![Welcome to...bus](/wp-content/uploads/2015/10/Welcome_bus.jpeg)
-
-</section>
-
-
 
 Kernow bus with the message “Welcome to the Cornwall Expo 2015”
 
-
-<section class="gallery">
-
-
 ![Robot on Software Cornwall stand ](/wp-content/uploads/2015/10/Robot.jpg)
-
-</section>
-
-
 
 A Robot on the Software Cornwall Stand
 
-
-<section class="gallery">
-
-
 ![Software Cornwall at Cornwall Expo 2015](/wp-content/uploads/2015/10/Skills_zone.jpeg)
-
-</section>
-
-
 
 The Software Cornwall area
 
-
-<section class="gallery">
-
-
 ![Software Cornwall ](/wp-content/uploads/2015/10/Software-Cornwall-stands.jpeg)
-
-</section>
-
-
 
 Headforwards in the Software Cornwall area
 
-
-<section class="gallery">
-
-
 ![Software Cornwall ](/wp-content/uploads/2015/10/Software_cornwall_stands.jpeg)
-
-</section>
-
-
 
 The Software section of the skills area
 
-
-<section class="gallery">
-
-
 ![3D Printer on Software Cornwall Stand ](/wp-content/uploads/2015/10/3D_Printer.jpeg)
-
-</section>
-
-
 
 3D Printer printing whistles
 
-
-<section class="gallery">
-
-
 ![New sleeper carriage](/wp-content/uploads/2015/10/Sleeper_Carridge-.jpeg)
-
-</section>
-
-
 
 A new Riviera Sleeper Carriage
 
-
-<section class="gallery">
-
-
 ![New sleeper carriage](/wp-content/uploads/2015/10/Sleeper_Cornwall_Expo.jpeg)
-
-</section>
-
-
 
 A new Riviera Sleeper Carriage
 

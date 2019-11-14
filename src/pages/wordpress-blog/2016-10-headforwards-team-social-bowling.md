@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/10/headforwards-team-social-bowling"
 title: "Headforwards Team Social : Bowling"
 date: "2016-10-26T15:55:50.000Z"
@@ -45,9 +45,7 @@ Well done guys! Maybe you should think about joining a league!
 
 You can see the full scores in the first photo below:
 
-
 <section class="gallery">
-
 
 ![The Scores](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Scores.jpg)
 

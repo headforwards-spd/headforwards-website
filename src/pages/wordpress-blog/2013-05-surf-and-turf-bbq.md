@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2013/05/surf-and-turf-bbq"
 title: "Surf and Turf BBQ"
 date: "2013-05-29T09:36:00.000Z"
@@ -21,9 +21,7 @@ The BBQ was a big hit as usual, providing some delicious steaks for the team alo
 
 We took a few photos of the lovely surf and turf BBQ, which you can see below. If you want to view them as a slideshow, please just click on one of the images.
 
-
 <section class="gallery">
-
 
 ![Breakers surf school teach Headforwards](/wp-content/uploads/2013/07/tomblazej.jpg)
 
@@ -46,8 +44,6 @@ We took a few photos of the lovely surf and turf BBQ, which you can see below. I
 ![Headforwards surf and turf BBQ chef Toby Parkins](/wp-content/uploads/2013/07/bbq.jpg)
 
 </section>
-
-
 
 If like the idea of be involved in a Headforwards surf and turf BBQ who not take a look at our [careers](http://www.headforwards.com/careers/) page?
 

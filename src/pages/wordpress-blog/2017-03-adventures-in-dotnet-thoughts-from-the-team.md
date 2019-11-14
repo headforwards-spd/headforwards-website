@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/03/adventures-in-dotnet-thoughts-from-the-team"
 title: "Adventures in .NET – Thoughts from the team"
 date: "2017-03-02T16:02:03.000Z"
@@ -70,11 +70,4 @@ _The people I work with are really great. There is less pressure to work long da
 
 _Windows 10_
 
-
-<section class="gallery">
-
-
 ![](/wp-content/uploads/2017/03/benefits.png)
-
-</section>
-

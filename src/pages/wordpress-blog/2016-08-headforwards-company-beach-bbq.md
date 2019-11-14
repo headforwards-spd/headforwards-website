@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/08/headforwards-company-beach-bbq"
 title: "Headforwards Company Beach BBQ"
 date: "2016-08-30T09:48:38.000Z"
@@ -17,9 +17,7 @@ On Friday evening we had another wonderful Headforwards company beach BBQ. It wa
 We have a number of new members joining our team in the coming weeks, and it was great that so many of them could join us at this BBQ. What a great way to meet the team! As usual Karen and Toby cooked some amazing food on the BBQ, and the kids had fun running round on the beach and looking in rock pools.  
 Thank you to everyone who joined us and made it such a special evening.
 
-
 <section class="gallery">
-
 
 ![Headforwards Company Beach BBQ](/wp-content/uploads/2016/08/Headforwards-company-beach-bbq.jpg)
 

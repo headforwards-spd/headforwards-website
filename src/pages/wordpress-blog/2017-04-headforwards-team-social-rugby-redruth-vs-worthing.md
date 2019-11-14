@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/04/headforwards-team-social-rugby-redruth-vs-worthing"
 title: "Headforwards Team Social: Rugby – Redruth vs. Worthing"
 date: "2017-04-03T13:09:17.000Z"
@@ -23,9 +23,7 @@ For a detailed report of the game including a match-timeline, head over to [pitc
 
 Check out some of the photos from the afternoon.
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/04/DSCF8067.jpg)
 
@@ -86,8 +84,6 @@ Check out some of the photos from the afternoon.
 ![](/wp-content/uploads/2017/04/image_58e0d86dac205.jpg)
 
 </section>
-
-
 
 > Worthing score the tenth try in this thrilling game. Making the full time score Redruth 33 – Worthing 29!!
 > 

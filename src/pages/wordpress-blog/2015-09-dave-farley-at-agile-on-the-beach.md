@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/09/dave-farley-at-agile-on-the-beach"
 title: "Dave Farley at Agile on the Beach"
 date: "2015-09-09T11:02:51.000Z"
@@ -19,15 +19,7 @@ Dave Farley kicked off day one of [Agile on the Beach](http://agileonthebeach.co
 
 [Dave Farley](http://www.davefarley.net) is co-author of the award winning book “[Continuous Delivery](http://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912)” and he is also one of the authors of ” The [Reactive Manifesto](http://www.reactivemanifesto.org/)”
 
-
-<section class="gallery">
-
-
 ![Dave Farley- what is continuous delivery- agile on the beach ](/wp-content/uploads/2015/09/Dave-Farley-continuous-delivery-at-Agile-on-the-Beach.jpg)
-
-</section>
-
-
 
 One of his favourite quotes is:
 
@@ -39,42 +31,18 @@ He also believes that:
 
 He was an early adopter of Agile Development Techniques, using tools like iterative development and continuous integration since the early 1990’s!
 
-
-<section class="gallery">
-
-
 ![The principles of continuous delivery - agile on the beach- Dave Farley ](/wp-content/uploads/2015/09/Dave-Farley-the-principles-of-continuous-delivery-at-AOTB.jpg)
-
-</section>
-
-
 
 In Dave’s talk at AOTB about Continuous Delivery, he discussed how he has used most models of Software development. Such as Waterfall, V model, Scrum and  Extreme Programming. He says that he has learnt something from each and everyone of these.
 
 But which of these methodologies work?
 
-
-<section class="gallery">
-
-
 ![Dave Farley at Agile on the Beach. What works?](/wp-content/uploads/2015/09/Dave-Farley-at-Agile-on-the-Beach-what-works.jpg)
-
-</section>
-
-
 
 We see that Waterfall has a 29% failure rate, compared to Agiles 9%  
 Waterfall methods have a 14% success rate, compared to Agiles 42%
 
-
-<section class="gallery">
-
-
 ![Dave Farley- what works- Agile on the beach](/wp-content/uploads/2015/09/Dave-Farley-Agile-on-the-beach-what-works-more-datas.jpg)
-
-</section>
-
-
 
 So what can we learn from this data taken from [Dr Dobbs Journal](http://www.drdobbs.com/author/Scott-Ambler) by Scott Ambler?
 
@@ -97,15 +65,7 @@ We then went on to discuss cycle time.
 If you have a cycle time of 103 days, as Farley had at one point, you do not have feedback.  
 If you have a cycle time of 57  minutes you will always know which change you had made that caused an issue.
 
-
-<section class="gallery">
-
-
 ![Dave Farely - cycle time - Agile on the beach ](/wp-content/uploads/2015/09/Dave-Farley-Continuous-Delivery-at-Agile-on-the-beach.jpg)
-
-</section>
-
-
 
 Continuous delivery is a subversive idea.  
 It changes every aspect of a business all the way up to how a CEO interacts with the team.
@@ -114,15 +74,7 @@ However, repeatable reliable processes are not always good for humans. Farley sa
 “Leave the humans to do all the bits they are good at and automate nearly everything else.  
 Can you run a version of something that was saved 6 months ago? If you can- fantastic. – If not?  Your version control could be better.”
 
-
-<section class="gallery">
-
-
 ![Continuous delivery deployment pipeline - Dave Farley- Agile on the beach](/wp-content/uploads/2015/09/Dave-Farley-Agile-on-the-beach-Continuous-Delivery-Process.jpg)
-
-</section>
-
-
 
 Farley goes on to say that if your cycle time hurts you, you should do it more often.  
 If you are struggling to release every 6 months then you should push yourself to do it every 3 rather than relax it to every 12.  
@@ -138,97 +90,41 @@ There are a few reasons why people try to resist CD that he sees repeatedly.
 One concern he hears often is “_This is too risky, releasing all the time is a recipe for disaster_”  
 He puts this fear at rest by talking about the [Amazon](http://www.amazon.co.uk/) build process:
 
-
-<section class="gallery">
-
-
 ![Dave Farley- the Amazon build process- at Agile on the Beach](/wp-content/uploads/2015/09/Dave-Farley-The-Amazon-Build-Process-Agile-on-the-beach.jpg)
-
-</section>
-
-
 
 Which amongst other things showed a 90% reduction in outage minutes triggered by deployment and a reduction in complexity.
 
 Another reason for resistance is ” _This may work for small projects, but can’t possibly scale_”  
 Farley then discusses the [Google](https://www.google.co.uk/) build process.
 
-
-<section class="gallery">
-
-
 ![Dave Farley- The Google Build Process- Agile on the beach ](/wp-content/uploads/2015/09/Dave-Farley-The-Google-Build-Process-AOTB.jpg)
-
-</section>
-
-
 
 Google do continuous builds and tests on commit for 60 Million builds per year and 100 Million lines of code.
 
 Another common cause for concern is “_This may work for simple websites but my technology is too complex”_  
 This is where Farley refers to [HP Laserjet Firmware](http://www.hp.com/country/us/en/uc/welcome.html) team experience.
 
-
-<section class="gallery">
-
-
 ![Dave Farley- HP Laser Jet Firmware Team Experience- Agile on the beach ](/wp-content/uploads/2015/09/Dave-Farley-HP-Laserjet-firmware-team-experience-agile-on-the-beach.jpg)
-
-</section>
-
-
 
 Using Continuous Delivery transformed their development approach for all of their products and increased their developers productivity x 10.  
 Making the move to Continuous Delivery also enables them to free up more time for innovation.
 
-
-<section class="gallery">
-
-
 ![HP LaserJet Firmware Team- Agile on the Beach ](/wp-content/uploads/2015/09/Dave-Farley-HP-Laser-Jet-Firmware-team-2008-v-2011-Agile-on-the-Beach.jpg)
-
-</section>
-
-
 
 So what effect does the change to Continuous Delivery have on a business?  
 It changes the economics of software delivery, as shown in the image below.
 
-
-<section class="gallery">
-
-
 ![Dave Farley- the effects of continuous delivery on business - Agile on the Beach](/wp-content/uploads/2015/09/Dave-Farley-the-effects-on-business-agile-on-the-beach.jpg)
-
-</section>
-
-
 
 It leads to 50% lower change failure rates.
 
-
-<section class="gallery">
-
-
 ![Dave Farley - the effects of continuous delivery on business part 2- Agile on the beach](/wp-content/uploads/2015/09/Dave-Farley-the-effect-on-business-part-2-agile-on-the-beach.jpg)
-
-</section>
-
-
 
 “We can now assert with confidence that high IT performance correlates with strong business performance, helping boost productivity, profitability and market share”
 
 So if it was this amazing, lots of big companies would be using it right? Right!
 
-
-<section class="gallery">
-
-
 ![Brands practising Continuous Delivery- Agile on the beach ](/wp-content/uploads/2015/09/Dave-Farley-who-practices-continuous-delivery-AOTB.jpg)
-
-</section>
-
-
 
 Big companies such as [Nokia](http://www.nokia.com/en_int), [Stack Overflow](http://stackoverflow.com/), [Netflix](https://www.netflix.com/gb/),  [SAP](http://go.sap.com/index.html), [Etsy](https://www.etsy.com/uk/), [ING](http://www.ing.com/en.htm) and [The New York Times](http://www.nytimes.com/).
 

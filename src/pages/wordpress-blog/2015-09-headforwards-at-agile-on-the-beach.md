@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/09/headforwards-at-agile-on-the-beach"
 title: "Headforwards at Agile on the Beach"
 date: "2015-09-22T15:21:12.000Z"
@@ -18,15 +18,7 @@ author:
 [Toby Parkins](https://www.linkedin.com/in/tobyparkins) and [Craig Girvan](https://www.linkedin.com/in/craiggirvan) are both directors at Headforwards, an outsource software development company based in Cornwall.  
 They believe that being [agile](http://www.headforwards.com/2015/06/what-is-agile/) has played an instrumental part in their success and they want to help others in becoming more agile.
 
-
-<section class="gallery">
-
-
 ![Headforwards at Agile on the Beach- The Open Agile Profiler ](/wp-content/uploads/2015/09/Headforwards_at_Agile_on_the_beach.jpg)
-
-</section>
-
-
 
 Whilst they were at [Agile on the Beach](http://agileonthebeach.com/craig-girvan-toby-parkins-the-open-agile-profiling-system-live-blog/) they talked about the Open Agile Profiling System they are developing, but how do you assess how agile a person or organisation is?
 
@@ -46,27 +38,11 @@ Whilst conducting research for their Open Agile Profiler; Parkins and Girvan ca
 
 When they first started developing their Open Agile Profiler they put together some _“symptoms of agility”_  from looking at the Agile Alliances Practises Guide.
 
-
-<section class="gallery">
-
-
 ![Headforwards at Agile on the Beach ](/wp-content/uploads/2015/09/Headforwards_at_Agile_on_the_beach_AGILE_ALLIANCE_PRACTICES_GUIDE-.jpg)
-
-</section>
-
-
 
 The dilemma they then faced was _“how do you measure agility?” _There is no one size fits all for agile.
 
-
-<section class="gallery">
-
-
 ![Headforwards at Agile on the Beach ](/wp-content/uploads/2015/09/Headforwards_at_Agile_on_the_beach_THE-DILEMA-.jpg)
-
-</section>
-
-
 
 Parkins and Girvan said that _“The first thing you have to do to be agile, is have retrospectives”_  
 However if you did **just** this, how would it effect the other principles?
@@ -79,15 +55,7 @@ So, they want their profiler to have a selection of questions for the user to se
 
 Their initial set of question stemmed from the Principles of the Agile Manifesto, however they are now working hard on creating new question ranges for their Open Agile Profiler.
 
-
-<section class="gallery">
-
-
 ![Headforwards at Agile on the Beach- The Open Agile Profiler ](/wp-content/uploads/2015/09/Headforwards_at_Agile_on_the_beach_OPEN_AGILE_PROFILER_V1.jpg)
-
-</section>
-
-
 
 Do you want to get involved?
 ----------------------------

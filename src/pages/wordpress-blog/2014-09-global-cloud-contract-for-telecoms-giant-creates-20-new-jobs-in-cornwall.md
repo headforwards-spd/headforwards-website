@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2014/09/global-cloud-contract-for-telecoms-giant-creates-20-new-jobs-in-cornwall"
 title: "Global Cloud contract for telecoms giant creates 20 new jobs in Cornwall"
 date: "2014-09-04T18:36:48.000Z"

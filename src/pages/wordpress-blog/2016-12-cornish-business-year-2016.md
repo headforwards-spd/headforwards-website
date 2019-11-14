@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/12/cornish-business-year-2016"
 title: "Cornish Business of the Year 2016"
 date: "2016-12-02T16:48:37.000Z"
@@ -71,9 +71,7 @@ We are incredibly proud of our team here at Headforwards. Combining passion for 
 
 If you’d like to work for the Cornish Business of the Year 2016, we are currently recruiting! Take a look at the opportunities on our [careers page](https://www.headforwards.com/careers/) and get in touch.
 
-
 <section class="gallery">
-
 
 ![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-cornish-business-of-the-year.jpg)
 
@@ -84,7 +82,5 @@ If you’d like to work for the Cornish Business of the Year 2016, we are curren
 ![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-lysssa.jpg)
 
 </section>
-
-
 
 You can see the official photos by the fabulous [Toby Weller](http://tobyweller.co.uk/) on either the [Hub](https://www.facebook.com/TheHubCornwall/)‘s or [our Facebook page](https://www.facebook.com/headforwards/)

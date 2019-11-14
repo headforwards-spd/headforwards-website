@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/11/cornwall-tech-week"
 title: "Cornwall Tech Week"
 date: "2015-11-30T12:24:45.000Z"

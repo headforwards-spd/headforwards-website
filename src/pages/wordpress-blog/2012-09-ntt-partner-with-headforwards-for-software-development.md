@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2012/09/ntt-partner-with-headforwards-for-software-development"
 title: "NTT partner with Headforwards for software development"
 date: "2012-09-27T15:07:58.000Z"

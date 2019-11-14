@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/02/headforwards-hosts-net-meetup-roundup"
 title: "Headforwards Hosts .NET Meetup: Roundup"
 date: "2017-02-22T16:44:20.000Z"
@@ -34,7 +34,6 @@ As part of our ongoing development with the local tech community, we will plan t
 > — Headforwards (@Headforwards) [February 10, 2017](https://twitter.com/Headforwards/status/830105259804618753)
 
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/02/IMG_1364-web-2048-2.jpg)
 

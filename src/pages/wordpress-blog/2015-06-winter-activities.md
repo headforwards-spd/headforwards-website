@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/06/winter-activities"
 title: "Winter Activities"
 date: "2015-06-15T14:43:23.000Z"
@@ -23,9 +23,7 @@ It is quite similar to [paintball](https://en.wikipedia.org/wiki/Paintball), but
 You are probably familiar with bowling, but perhaps not with how seriously our team of developers take it! It is always a fun filled evening!  
 Please take a look at the photos we have taken of our evenings out, if you click on one image you can open a lightbox slideshow.
 
-
 <section class="gallery">
-
 
 ![Headforwards- indian food](/wp-content/uploads/2015/06/Headforwards-indian-food.jpg)
 
@@ -74,8 +72,6 @@ Please take a look at the photos we have taken of our evenings out, if you click
 ![bowling5](/wp-content/uploads/2015/06/bowling5.jpg)
 
 </section>
-
-
 
 If you like the looks of these outings and would like to work somewhere where work life balance, and team relationships are taken seriously- then why not take a look at our [careers](http://www.headforwards.com/careers/) page?
 

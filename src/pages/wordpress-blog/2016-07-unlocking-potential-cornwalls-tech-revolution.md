@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2016/07/unlocking-potential-cornwalls-tech-revolution"
 title: "Unlocking Potential: Cornwall’s Tech Revolution"
 date: "2016-07-20T11:43:39.000Z"

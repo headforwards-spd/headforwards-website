@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/06/top-10-tips-for-a-successful-skype-interview"
 title: "Top 10 Tips for a Successful Skype Interview"
 date: "2015-06-19T12:58:58.000Z"

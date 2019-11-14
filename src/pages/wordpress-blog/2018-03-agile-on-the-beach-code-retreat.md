@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2018/03/agile-on-the-beach-code-retreat"
 title: "Agile Code Retreat – Two Days of Enhancing Software Development Practises"
 date: "2018-03-28T09:07:39.000Z"
@@ -15,9 +15,7 @@ author:
 ---
 The Agile Code Retreat is a 2-day event where participants study and practice different tools and methodologies used in software development. The first ever retreat was run by **Jon Jagger** who specialises in practice, process, TDD, and complex-adaptive systems-thinking and is known for his collaborative development tool: Cyber-Dojo. Co-hosting with Jon was **Kevlin Henney** whose development interests are in patterns, programming, practice and process. A few lucky members of our team were able attend this year. Here are some of their thoughts and findings.
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2018/03/CodeRetreat11.jpg)
 
@@ -44,8 +42,6 @@ The Agile Code Retreat is a 2-day event where participants study and practice di
 ![](/wp-content/uploads/2018/03/CodeRetreat11-1.jpg)
 
 </section>
-
-
 
 ### Filcho Dragunchev
 
@@ -83,29 +79,13 @@ Each time a problem-solving session came to end we repaired and attempted the sa
 
 ### Hosted By
 
-
-<section class="gallery">
-
-
 ![](/wp-content/uploads/2018/03/aotb17-480.jpg)
-
-</section>
-
-
 
 ### Kevlin Henney
 
 Kevlin is an independent consultant, speaker, writer and trainer. His development interests are in patterns, programming, practice and process. He has been a columnist for a number of magazines and sites and has been on far too many committees (it has been said that “a committee is a cul-de-sac down which ideas are lured and then quietly strangled”). He is co-author of A Pattern Language for Distributed Computing and On Patterns and Pattern Languages, two volumes in the Pattern-Oriented Software Architecture series. He is also editor of 97 Things Every Programmer Should Know. He lives in Bristol and online.
 
-
-<section class="gallery">
-
-
 ![](/wp-content/uploads/2018/03/aotb17-575.jpg)
-
-</section>
-
-
 
 ### Jon Jagger
 

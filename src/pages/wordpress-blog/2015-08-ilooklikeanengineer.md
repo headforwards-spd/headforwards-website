@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/08/ilooklikeanengineer"
 title: "#ILookLikeAnEngineer"
 date: "2015-08-06T11:28:28.000Z"
@@ -21,15 +21,7 @@ It is sad to read about some of the experiences she has been through, and how un
 
 She was recently used in an Ad campaign for her current company, [OneLogin](https://www.onelogin.com/). The Ad features a picture of her along with a quote about her team.  Facebook did not react well to the Ad claiming that it was a poorly planned marketing campaign, and that she doesn’t even look like an engineer.
 
-
-<section class="gallery">
-
-
 ![Isis Wenger - Headforwards blog ](/wp-content/uploads/2015/08/1-tM5CLfGMj4wIT4qGzxNQGQ.jpeg)
-
-</section>
-
-
 
 Image from Medium. Isis Wenger
 
@@ -45,77 +37,29 @@ _**#iLookLikeAnEngineer**_
 
 This hashtag has really taken off – leading to engineers all over the globe sharing photos of themselves, including our very own [Natalia](https://twitter.com/natkuTala).
 
-
-<section class="gallery">
-
-
 ![Natalia Waniczek from Headforwards ](/wp-content/uploads/2015/08/Natalia.jpg)
-
-</section>
-
-
 
 Some of our other favourites inlcude:
 
 [Adafruit Industries](https://twitter.com/adafruit) sharing this image of the first time a Samsung Pick and Place machine was in [Glamour Magazine](http://www.glamourmagazine.co.uk/):
 
-
-<section class="gallery">
-
-
 ![Adafruit - Headforwards blog](/wp-content/uploads/2015/08/Screen-Shot-2015-08-06-at-11.52.25.png)
-
-</section>
-
-
 
 [MIT](https://twitter.com/MIT) have posted a few photographs, including this one:
 
-
-<section class="gallery">
-
-
 ![MIT - Headforwards blog ](/wp-content/uploads/2015/08/Screen-Shot-2015-08-06-at-11.52.54.png)
-
-</section>
-
-
 
 It is not just women getting involved either, [Iheanyi Ekechukwu](https://twitter.com/kwuchu) who is an advocate for diversity in Tech, has too:
 
-
-<section class="gallery">
-
-
 ![Iheanyi Ekechukwu - Headforwards blog ](/wp-content/uploads/2015/08/Screen-Shot-2015-08-06-at-11.55.44.png)
-
-</section>
-
-
 
 [Tilde Ann Thurium ](https://twitter.com/annthurium)has shared her picture, and in the process given me insane hair envy:
 
-
-<section class="gallery">
-
-
 ![Tilde Ann Thurium - Headforwards blog ](/wp-content/uploads/2015/08/Screen-Shot-2015-08-06-at-11.56.49.png)
-
-</section>
-
-
 
 [Dara](https://twitter.com/daraoke) who has worked at Intel and Twitter Microsoft has posted this rather stunning shot:
 
-
-<section class="gallery">
-
-
 ![Dara - Headforwards blog ](/wp-content/uploads/2015/08/Screen-Shot-2015-08-06-at-12.20.41.png)
-
-</section>
-
-
 
 So if you fancy having a little fun, whilst helping shut down stereotypes share your photos with the hashtag #ILookLikeAnEngineer
 

@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/08/software-squad-event-august-2015"
 title: "Software Squad Event – August 2015"
 date: "2015-08-13T12:29:02.000Z"
@@ -17,15 +17,7 @@ Earlier in the week we opened the doors at Headforwards to young IT enthusiasts 
 
 After a quick cup of tea the day started off with all the students standing up to introduce themselves, whilst also saying which school or college they go to, and why IT excites them.  It was really interesting to see the mix of students who attended, and this was a great way for them to break the ice with each other.
 
-
-<section class="gallery">
-
-
 ![2015-08-11 09.54.18](/wp-content/uploads/2015/08/2015-08-11-09.54.18.jpg)
-
-</section>
-
-
 
 Students at Headforwards Software Squad
 
@@ -33,58 +25,26 @@ Then [Toby Parkins](https://uk.linkedin.com/in/tobyparkins), director at Headfor
 
 One of the teams had a go at [pair programming](http://www.headforwards.com/2015/07/what-is-pair-programming/) on the [Raspberry Pi’s](https://www.raspberrypi.org/).
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad](/wp-content/uploads/2015/08/2015-08-11-11.01.13.jpg)
-
-</section>
-
-
 
 Pair Programming with Raspberry Pi’s
 
 The other half of the group did a [JavaScript](https://www.javascript.com/) workshop on [Codecademy](https://www.codecademy.com/tracks/javascript).  
 It is believed, at the moment, that JavaScript is probably one of the most important and useful language for developers to learn.  Why not have a go yourself?
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad](/wp-content/uploads/2015/08/2015-08-11-10.44.25.jpg)
-
-</section>
-
-
 
 Codecademy JavaScript workshop
 
 We were very lucky to have a [Skype](http://www.skype.com/en/) video call with [Eben Upton](https://www.raspberrypi.org/blog/author/eben/) who is founder of [Raspberry Pi](https://www.raspberrypi.org/).
 
-
-<section class="gallery">
-
-
 ![Eben Upton Headforwards Software Squad Skype](/wp-content/uploads/2015/08/2015-08-11-12.11.41.jpg)
-
-</section>
-
-
 
 Skype video call with Eben Upton
 
 Raspberry Pis are a small, low cost computer that can be plugged into a computer monitor or TV. They were designed to allow everyone access to a computer that will enable them to learn how to program in languages like [Scratch](https://scratch.mit.edu/) and [Python](https://www.python.org/).
 
-
-<section class="gallery">
-
-
 ![A box of Raspberry Pi's](/wp-content/uploads/2015/08/2015-08-11-14.30.42.jpg)
-
-</section>
-
-
 
 A box of Raspberry Pi’s
 
@@ -96,15 +56,7 @@ During the lunch break, members of the Headforwards team joined us for some food
 
 Next [Cornwall College](https://www.cornwall.ac.uk/) joined us to talk about education options. They discussed the A-Levels and degree courses available, including the new [BSc (Hons) Computing Technologies](https://www.cornwall.ac.uk/courses/bschons-computing-technologies-top-upsubject-approval) which is a top up course for their [FdSc Computing, Networking and Software Development](https://www.cornwall.ac.uk/courses/bschons-computing-technologies-top-upsubject-approval).
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-13.16.40.jpg)
-
-</section>
-
-
 
 Caroline Cripps from Cornwall College
 
@@ -112,29 +64,13 @@ Caroline Cripps from Cornwall College also discussed the requirements for gettin
 
 The next speaker was [Jimmy Headdon ](https://uk.linkedin.com/in/jimmyheaddon) who is Senior Software Engineer at [McLaren Racing](http://www.mclaren.com/). Jimmy talked to us about his journey from being a student at [Richard Lander School](http://www.richardlander.co.uk/) in [Truro](http://www.visittruro.org.uk/) to working at one of the top Formula one teams in the world.
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-13.55.06.jpg)
-
-</section>
-
-
 
 Jimmy Headdon – Senior Software Engineer at McLaren Racing
 
 It was really interesting to hear about the astonishing amount of software being used in Formula one, including the pit stops. McLaren hold the record for the fastest pit stop and software plays a large part in them being able to perform the necessary tasks simultaneously, at such speed without causing injury.
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-14.17.35.jpg)
-
-</section>
-
-
 
 Jimmy Headdon- McLaren Racing
 
@@ -142,14 +78,7 @@ We also had a short lesson about [Grace Hopper](https://en.wikipedia.org/wiki/Gr
 
 Next we were joined by the enigmatic [Daphne Skinnard](https://twitter.com/daphneskinnard) from [BBC Radio Cornwall.](http://www.bbc.co.uk/radiocornwall)
 
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-14.43.31.jpg)
-
-</section>
-
-
 
 Daphne Skinnard from BBC Radio Cornwall
 
@@ -157,41 +86,18 @@ She discussed the technology that is used in the media, in particular at BBC Rad
 
 Then we took the delegates on a tour of our office at [Pool Innovation Centre ](http://www.cornwallinnovation.co.uk/pool-innovation-centre)
 
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-15.05.15.jpg)
-
-</section>
-
-
 
 Tour of the Headforwards offices
 
 This tour led to an interesting Q and A session about the inner workings of a software company, how [outsourcing](http://www.headforwards.com/2015/07/outsourcing-onshore-nearshore-or-offshore-still-unsure/) works and the future of IT – mainly [the cloud](http://www.headforwards.com/2015/07/what-is-the-cloud/).  
 When we returned to the conference room, the delegates split into teams and we had a pop quiz!
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-15.53.49.jpg)
-
-</section>
-
-
 
 Headforwards Software Squad Quiz
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-15.54.04.jpg)
-
-</section>
-
-
 
 Headforwards Software Squad
 
@@ -199,71 +105,31 @@ Well done to “The Team At The Back” who have won two Raspberry Pi’s!
 
 Our final speaker of the day was [Sam Lanyon](https://www.linkedin.com/in/conceptshed) from [Concept Shed](http://www.conceptshed.com/), he filled us in on his adventures with design, software and [Arduino](https://www.arduino.cc/).  His [AutoWed](http://www.conceptshed.com/projects/autowed-wedding-machine/) machine was definitely a big hit!
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-16.13.12.jpg)
-
-</section>
-
-
 
 Sam Lanyon talks about his AutoWed machine
 
 He also brought along a [3D printer](https://en.wikipedia.org/wiki/3D_printing) which he demonstrated to the group, making a range of fascinating items and giving them away. This was really interesting to see in action, and is something that will probably be appearing on a few Christmas lists now.
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-16.17.14.jpg)
-
-</section>
-
-
 
 3D printer
 
 We had such a fantastic day, thank you to all the speakers who spared time in their very busy schedules to come along and inspire the next generation of IT lovers- along with a few of the old hats!
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad ](/wp-content/uploads/2015/08/2015-08-11-11.28.31.jpg)
-
-</section>
-
-
 
 Delegates working hard learning JavaScript
 
 We also want to say thank you to all the students and their relatives for coming along and making the day such a success.
 
-
-<section class="gallery">
-
-
 ![Headforwards Software Squad](/wp-content/uploads/2015/08/2015-08-11-10.58.47.jpg)
-
-</section>
-
-
 
 Pair Programming on the Raspberry Pi’s
 
 Thank you for all your feedback about the event, on the back of this we are already starting to plan our next Software Squad event!
 
-
-<section class="gallery">
-
-
 ![headforwards software squad](/wp-content/uploads/2015/08/2015-08-11-10.45.00.jpg)
-
-</section>
-
-
 
 Software Squad in full swing
 

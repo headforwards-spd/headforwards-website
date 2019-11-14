@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/02/software-jobs"
 title: "Exciting News: New software jobs available"
 date: "2015-02-19T13:30:24.000Z"

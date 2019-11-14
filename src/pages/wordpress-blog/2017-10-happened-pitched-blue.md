@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/10/happened-pitched-blue"
 title: "What Happened When we Pitched up at The Blue"
 date: "2017-10-03T09:45:10.000Z"

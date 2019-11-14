@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/04/cornwall-business-awards-2017"
 title: "Cornwall Business Awards 2017"
 date: "2017-04-13T10:47:24.000Z"

@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2015/12/headforwards-christmas-party-2015"
 title: "Headforwards Christmas Party 2015"
 date: "2015-12-15T11:46:44.000Z"
@@ -24,9 +24,7 @@ Thank you to everyone who was involved in making the night such a great success,
 
 Here’s to an excellent 2016!
 
-
 <section class="gallery">
-
 
 ![Seiners Arms Perranporth ](/wp-content/uploads/2015/12/Headforwards_Christmas_Party_38.jpg)
 

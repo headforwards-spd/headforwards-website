@@ -1,5 +1,5 @@
 ---
-type: "wordpress-blog"
+type: "wordpress"
 path: "/2017/08/team-bbq-august-2017"
 title: "Team BBQ – August 2017"
 date: "2017-08-21T15:47:43.000Z"
@@ -15,9 +15,7 @@ author:
 ---
 Planning for a BBQ between the occasional and slightly unpredictable weather has been an interesting one for us this month. Luckily, the weather prevailed for a few hours giving us time for a BBQ at our local favourite,  Tevaunance Cove, St Agnes. Here are some photos taken the evening, including some from the air!
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/08/trevaunance-cove-15-08-17_007_headforwards-web-2048.jpg)
 
