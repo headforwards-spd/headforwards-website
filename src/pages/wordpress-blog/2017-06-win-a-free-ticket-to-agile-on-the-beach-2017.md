@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/06/win-a-free-ticket-to-agile-on-the-beach-2017"
 title: "Win a Free Ticket to Agile on The Beach 2017"
 date: "2017-06-21T16:12:36.000Z"

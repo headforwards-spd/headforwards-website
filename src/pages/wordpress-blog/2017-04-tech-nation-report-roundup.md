@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/04/tech-nation-report-roundup"
 title: "Tech Nation Report – Roundup"
 date: "2017-04-11T14:00:05.000Z"

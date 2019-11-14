@@ -4,7 +4,7 @@
 
 .content {
 
-    @include columns-component;
+    @include component-gutter;
     @include fontMedium;
 
     > h1 {
@@ -13,6 +13,10 @@
 
     > img {
         object-fit: contain;
+    }
+
+    > :global(.gatsby-resp-image-wrapper) {
+        max-width: 62.5%;
     }
 
     > :global(.gallery) {

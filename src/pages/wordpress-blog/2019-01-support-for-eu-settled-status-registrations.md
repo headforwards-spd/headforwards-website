@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2019/01/support-for-eu-settled-status-registrations"
 title: "Support for EU Settled Status Registrations"
 date: "2019-01-07T12:15:50.000Z"

@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/software-squad-line-up-announced"
 title: "Software Squad Line Up Announced"
 date: "2015-07-28T15:04:58.000Z"

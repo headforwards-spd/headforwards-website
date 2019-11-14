@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/08/ilooklikeanengineer"
 title: "#ILookLikeAnEngineer"
 date: "2015-08-06T11:28:28.000Z"

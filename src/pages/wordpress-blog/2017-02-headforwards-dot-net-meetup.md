@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/02/headforwards-dot-net-meetup"
 title: "Headforwards .NET Meetup"
 date: "2017-02-02T16:51:29.000Z"

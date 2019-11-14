@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/10/raconteur-cios-must-evolve"
 title: "Raconteur- CIOs Must Evolve…"
 date: "2015-10-13T15:04:05.000Z"

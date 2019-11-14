@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/04/waterfall-vs-agile"
 title: "Waterfall vs. Agile – Comparing Software Development Techniques"
 date: "2017-04-24T13:09:15.000Z"

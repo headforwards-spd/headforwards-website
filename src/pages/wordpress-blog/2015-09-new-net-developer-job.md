@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/09/new-net-developer-job"
 title: "New .NET Developer job"
 date: "2015-09-01T15:32:38.000Z"

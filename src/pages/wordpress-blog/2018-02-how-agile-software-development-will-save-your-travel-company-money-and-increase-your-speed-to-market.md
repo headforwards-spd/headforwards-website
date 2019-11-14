@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2018/02/how-agile-software-development-will-save-your-travel-company-money-and-increase-your-speed-to-market"
 title: "How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market"
 date: "2018-02-16T14:52:06.000Z"

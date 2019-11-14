@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2018/03/increase-knowledge-sharing-organisation"
 title: "Increasing Knowledge Sharing in an Organisation"
 date: "2018-03-08T11:48:27.000Z"

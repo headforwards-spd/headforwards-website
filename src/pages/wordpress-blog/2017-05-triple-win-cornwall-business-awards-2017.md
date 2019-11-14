@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/05/triple-win-cornwall-business-awards-2017"
 title: "Headforwards Triple Win: Cornwall Business Awards 2017"
 date: "2017-05-22T12:01:08.000Z"

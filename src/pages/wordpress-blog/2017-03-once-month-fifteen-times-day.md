@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/03/once-month-fifteen-times-day"
 title: "From Once a Month to Fifteen Times a Day – Our Journey Into Continuous Delivery"
 date: "2017-03-21T15:42:44.000Z"

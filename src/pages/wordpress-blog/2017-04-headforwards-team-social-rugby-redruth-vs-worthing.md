@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/04/headforwards-team-social-rugby-redruth-vs-worthing"
 title: "Headforwards Team Social: Rugby – Redruth vs. Worthing"
 date: "2017-04-03T13:09:17.000Z"

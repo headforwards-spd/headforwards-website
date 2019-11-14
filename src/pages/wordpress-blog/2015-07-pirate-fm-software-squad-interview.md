@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/pirate-fm-software-squad-interview"
 title: "Pirate FM Software Squad Interview"
 date: "2015-07-23T10:59:17.000Z"

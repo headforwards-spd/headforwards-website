@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/12/cornish-business-year-2016"
 title: "Cornish Business of the Year 2016"
 date: "2016-12-02T16:48:37.000Z"

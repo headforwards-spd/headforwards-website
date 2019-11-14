@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/10/headforwards-team-social-bowling"
 title: "Headforwards Team Social : Bowling"
 date: "2016-10-26T15:55:50.000Z"

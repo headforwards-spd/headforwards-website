@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/08/attending-agile-on-the-beach-2017"
 title: "Agile on the Beach 2017 – A Small Slice Of Agile Utopia"
 date: "2017-08-18T13:57:14.000Z"

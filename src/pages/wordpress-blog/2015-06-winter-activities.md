@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/06/winter-activities"
 title: "Winter Activities"
 date: "2015-06-15T14:43:23.000Z"

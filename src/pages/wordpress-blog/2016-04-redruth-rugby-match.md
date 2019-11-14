@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/04/redruth-rugby-match"
 title: "Redruth Rugby Match"
 date: "2016-04-18T09:44:47.000Z"

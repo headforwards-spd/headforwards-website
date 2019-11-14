@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/06/is-there-an-it-skills-shortage-the-big-debate"
 title: "Is There an IT Skills Shortage? The Big Debate!"
 date: "2015-06-29T16:22:27.000Z"

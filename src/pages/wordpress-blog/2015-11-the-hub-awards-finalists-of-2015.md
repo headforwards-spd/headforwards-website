@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/11/the-hub-awards-finalists-of-2015"
 title: "The Hub Awards Finalists of 2015"
 date: "2015-11-09T10:23:55.000Z"

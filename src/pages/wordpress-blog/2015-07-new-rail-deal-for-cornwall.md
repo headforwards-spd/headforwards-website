@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/new-rail-deal-for-cornwall"
 title: "New Rail Deal for Cornwall"
 date: "2015-07-31T15:37:58.000Z"

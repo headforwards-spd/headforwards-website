@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/the-top-10-most-popular-programming-languages-of-2015"
 title: "The Top 10 Most Popular Programming Languages of 2015"
 date: "2015-07-02T10:38:43.000Z"

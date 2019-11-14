@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/08/team-bbq-august-2017"
 title: "Team BBQ – August 2017"
 date: "2017-08-21T15:47:43.000Z"

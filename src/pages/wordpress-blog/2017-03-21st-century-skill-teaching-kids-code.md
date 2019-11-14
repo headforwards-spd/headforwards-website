@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/03/21st-century-skill-teaching-kids-code"
 title: "The 21st Century Skill – Teaching Kids How To Code"
 date: "2017-03-30T11:41:36.000Z"

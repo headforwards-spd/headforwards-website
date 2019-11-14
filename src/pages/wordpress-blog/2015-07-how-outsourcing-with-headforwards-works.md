@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/how-outsourcing-with-headforwards-works"
 title: "How Outsourcing with Headforwards Works"
 date: "2015-07-30T13:31:36.000Z"

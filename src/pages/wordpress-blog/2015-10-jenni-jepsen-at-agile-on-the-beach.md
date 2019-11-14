@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/10/jenni-jepsen-at-agile-on-the-beach"
 title: "Jenni Jepsen at Agile on the Beach"
 date: "2015-10-06T10:49:06.000Z"

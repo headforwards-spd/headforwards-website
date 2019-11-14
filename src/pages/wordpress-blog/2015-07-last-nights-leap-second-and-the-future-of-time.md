@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/last-nights-leap-second-and-the-future-of-time"
 title: "Last Nights Leap Second and the Future of Time."
 date: "2015-07-01T11:20:19.000Z"

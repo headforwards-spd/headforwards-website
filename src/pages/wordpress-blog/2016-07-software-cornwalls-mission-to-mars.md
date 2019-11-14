@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/07/software-cornwalls-mission-to-mars"
 title: "Software Cornwall’s Mission to Mars"
 date: "2016-07-25T08:53:19.000Z"

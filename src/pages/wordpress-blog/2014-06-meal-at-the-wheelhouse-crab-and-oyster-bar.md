@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2014/06/meal-at-the-wheelhouse-crab-and-oyster-bar"
 title: "Meal at The Wheelhouse Crab and Oyster Bar"
 date: "2014-06-27T14:22:46.000Z"

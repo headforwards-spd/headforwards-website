@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/headforwards-getting-social"
 title: "Headforwards: Getting social"
 date: "2015-07-09T14:53:10.000Z"

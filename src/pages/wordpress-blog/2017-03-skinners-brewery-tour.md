@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/03/skinners-brewery-tour"
 title: "Team Adventure: Skinners Brewery Tour"
 date: "2017-03-15T14:16:13.000Z"

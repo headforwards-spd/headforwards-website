@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/09/dave-farley-at-agile-on-the-beach"
 title: "Dave Farley at Agile on the Beach"
 date: "2015-09-09T11:02:51.000Z"

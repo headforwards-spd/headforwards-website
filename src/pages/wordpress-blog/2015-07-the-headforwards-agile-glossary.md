@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/the-headforwards-agile-glossary"
 title: "The Headforwards Agile Glossary"
 date: "2015-07-08T11:40:07.000Z"

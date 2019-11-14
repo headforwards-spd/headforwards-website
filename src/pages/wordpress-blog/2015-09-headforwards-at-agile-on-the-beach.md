@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/09/headforwards-at-agile-on-the-beach"
 title: "Headforwards at Agile on the Beach"
 date: "2015-09-22T15:21:12.000Z"

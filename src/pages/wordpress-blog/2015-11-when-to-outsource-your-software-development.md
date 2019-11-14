@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/11/when-to-outsource-your-software-development"
 title: "When to Outsource Your Software Development"
 date: "2015-11-23T12:08:55.000Z"

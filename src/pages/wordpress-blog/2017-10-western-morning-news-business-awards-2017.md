@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/10/western-morning-news-business-awards-2017"
 title: "Western Morning News Business Awards 2017"
 date: "2017-10-18T09:53:36.000Z"

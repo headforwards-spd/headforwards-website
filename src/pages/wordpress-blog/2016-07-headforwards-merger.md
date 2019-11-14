@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/07/headforwards-merger"
 title: "Headforwards Merger"
 date: "2016-07-07T16:04:28.000Z"

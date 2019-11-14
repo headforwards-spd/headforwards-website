@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2019/01/headstock-2018-festival-and-watersports"
 title: "Headstock 2018 – Fun & Games at Stithians Lake"
 date: "2019-01-09T16:10:11.000Z"

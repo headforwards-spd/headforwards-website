@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/05/cba17-team-celebratory-bbq"
 title: "Cornwall Business Awards – Team Celebratory BBQ"
 date: "2017-05-25T16:05:36.000Z"

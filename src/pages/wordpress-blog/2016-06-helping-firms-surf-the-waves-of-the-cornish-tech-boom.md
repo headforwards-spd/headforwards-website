@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/06/helping-firms-surf-the-waves-of-the-cornish-tech-boom"
 title: "Helping Firms Surf the Waves of the Cornish Tech Boom"
 date: "2016-06-23T09:51:04.000Z"

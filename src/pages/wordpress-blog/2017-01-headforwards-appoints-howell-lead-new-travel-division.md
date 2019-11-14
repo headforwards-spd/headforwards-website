@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/01/headforwards-appoints-howell-lead-new-travel-division"
 title: "Headforwards Appoints Howell to Lead New Travel Division"
 date: "2017-01-27T12:29:34.000Z"

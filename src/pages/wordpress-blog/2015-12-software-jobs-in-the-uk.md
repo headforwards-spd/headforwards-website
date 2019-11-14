@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/12/software-jobs-in-the-uk"
 title: "Software Jobs in the UK"
 date: "2015-12-16T11:47:09.000Z"

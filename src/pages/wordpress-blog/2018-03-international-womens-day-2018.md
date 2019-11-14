@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2018/03/international-womens-day-2018"
 title: "International Women’s Day 2018"
 date: "2018-03-08T14:11:32.000Z"

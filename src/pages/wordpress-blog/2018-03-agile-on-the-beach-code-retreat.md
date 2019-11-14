@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2018/03/agile-on-the-beach-code-retreat"
 title: "Agile Code Retreat – Two Days of Enhancing Software Development Practises"
 date: "2018-03-28T09:07:39.000Z"

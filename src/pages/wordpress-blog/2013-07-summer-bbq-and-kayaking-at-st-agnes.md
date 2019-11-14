@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2013/07/summer-bbq-and-kayaking-at-st-agnes"
 title: "Summer BBQ and kayaking at St Agnes"
 date: "2013-07-18T20:07:21.000Z"

@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/09/kernow-dat-evening-for-the-digitally-curious"
 title: "Kernow DAT’s Evening for the Digitally Curious"
 date: "2016-09-22T15:18:36.000Z"

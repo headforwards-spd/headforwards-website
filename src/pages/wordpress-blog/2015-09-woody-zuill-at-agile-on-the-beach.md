@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/09/woody-zuill-at-agile-on-the-beach"
 title: "Woody Zuill at Agile on the Beach"
 date: "2015-09-14T14:11:25.000Z"

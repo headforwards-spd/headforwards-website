@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/03/adventures-in-dotnet-thoughts-from-the-team"
 title: "Adventures in .NET – Thoughts from the team"
 date: "2017-03-02T16:02:03.000Z"

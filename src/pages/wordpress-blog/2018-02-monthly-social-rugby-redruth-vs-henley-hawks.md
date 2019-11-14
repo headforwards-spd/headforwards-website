@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2018/02/monthly-social-rugby-redruth-vs-henley-hawks"
 title: "Monthly Social: Rugby – Redruth vs. Henley Hawks"
 date: "2018-02-27T10:31:48.000Z"

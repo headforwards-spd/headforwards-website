@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/09/belinda-waldock-at-agile-on-the-beach"
 title: "Belinda Waldock at Agile on the Beach"
 date: "2015-09-10T11:00:19.000Z"

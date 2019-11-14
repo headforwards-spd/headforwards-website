@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/02/plymouth-javascript-feb17-roundup"
 title: "Plymouth JS 2017: February Roundup"
 date: "2017-02-17T10:36:54.000Z"

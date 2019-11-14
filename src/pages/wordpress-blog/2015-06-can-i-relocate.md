@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/06/can-i-relocate"
 title: "Can I Relocate?"
 date: "2015-06-22T14:09:23.000Z"

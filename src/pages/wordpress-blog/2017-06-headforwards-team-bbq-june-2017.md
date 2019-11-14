@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/06/headforwards-team-bbq-june-2017"
 title: "Headforwards Team BBQ – June 2017"
 date: "2017-06-27T11:13:32.000Z"

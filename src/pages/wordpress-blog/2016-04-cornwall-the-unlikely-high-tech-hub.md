@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/04/cornwall-the-unlikely-high-tech-hub"
 title: "Cornwall: The Unlikely High-Tech Hub"
 date: "2016-04-20T14:27:58.000Z"

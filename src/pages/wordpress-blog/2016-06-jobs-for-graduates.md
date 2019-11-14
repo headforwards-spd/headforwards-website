@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/06/jobs-for-graduates"
 title: "Jobs for Graduates"
 date: "2016-06-30T09:54:17.000Z"

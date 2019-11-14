@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/08/problems-outsourcing-how-to-solve-them"
 title: "The Problems With Outsourcing & How We Solve Them"
 date: "2017-08-25T14:48:59.000Z"

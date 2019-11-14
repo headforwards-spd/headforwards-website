@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/06/headforwards-roc5k-2017-5k-charity-run"
 title: "Headforwards ROC5K 2017 – 5K Charity Run"
 date: "2017-06-28T15:37:12.000Z"

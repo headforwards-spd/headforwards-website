@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/02/headforwards-team-social-rogue-one-private-screening"
 title: "Headforwards Team Social: Rogue One Private Screening"
 date: "2017-02-02T10:35:42.000Z"

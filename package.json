@@ -88,7 +88,7 @@
     "lint": "eslint '**/*.{js,jsx}'",
     "lint:fix": "eslint --fix '**/*.{js,jsx}'",
     "lint:report": "eslint --fix -f json -o reports/eslint.json '**/*.{js,jsx}'",
-    "start:app": "npm run clean && gatsby develop",
+    "start:app": "gatsby develop",
     "build:app": "npm run clean && gatsby build",
     "build:storybook": "NODE_ENV=production build-storybook -s ./public,./static",
     "start:storybook": "NODE_ENV=production start-storybook -s ./public,./static",

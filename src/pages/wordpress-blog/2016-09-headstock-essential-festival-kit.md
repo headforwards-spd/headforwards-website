@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/09/headstock-essential-festival-kit"
 title: "Headstock Essential Festival Kit Guide"
 date: "2016-09-06T11:35:10.000Z"

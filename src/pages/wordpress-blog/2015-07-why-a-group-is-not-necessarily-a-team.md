@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/why-a-group-is-not-necessarily-a-team"
 title: "Why a Group is Not Necessarily a Team"
 date: "2015-07-07T14:09:48.000Z"

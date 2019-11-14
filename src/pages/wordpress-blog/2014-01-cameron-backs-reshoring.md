@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2014/01/cameron-backs-reshoring"
 title: "Great news for UK Reshoring after Cameron drive"
 date: "2014-01-28T18:24:18.000Z"

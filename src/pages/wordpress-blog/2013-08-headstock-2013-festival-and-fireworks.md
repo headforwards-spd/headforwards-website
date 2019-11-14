@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2013/08/headstock-2013-festival-and-fireworks"
 title: "Headstock 2013 Festival and Fireworks"
 date: "2013-08-06T10:40:25.000Z"
