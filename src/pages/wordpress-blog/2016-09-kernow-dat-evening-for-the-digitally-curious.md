@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/09/kernow-dat-evening-for-the-digitally-curious"
 title: "Kernow DAT’s Evening for the Digitally Curious"
 date: "2016-09-22T15:18:36.000Z"
@@ -21,9 +21,13 @@ The host for the evening was Garry Hunt, co-founder of [Digital Plymouth](https:
 
 First up was Garry Barter of [Hertzian](http://www.hertzian.co.uk/) on Artificial Intelligence: What it can do and where it can help. The term AI, always makes me think about super robots taking over the world – but Garry’s talk focused on the incredible way AI can help everything from automating basic admin tasks to even helping diagnose mental health issues. The technology and the scope of it is amazing.
 
-![Kernow DAT Virtual Reality game](https://www.headforwards.com/wp-content/uploads/2016/09/Headforwards-kernowdat-vrgame-169x300.jpg)
+<section class="gallery">
 
-![BDD Beer](https://www.headforwards.com/wp-content/uploads/2016/09/Headforwards-kernowdat-bddbeer2-169x300.jpg)
+![Kernow DAT Virtual Reality game](//headforwards.com/wp-content/uploads/2016/09/Headforwards-kernowdat-vrgame.jpg)
+
+![BDD Beer](//headforwards.com/wp-content/uploads/2016/09/Headforwards-kernowdat-bddbeer2.jpg)
+
+</section>
 
 Next to speak was Natalia Waniczek from [Nixon](http://www.nixondesign.com/), who used to work here at Headforwards. She gave a great talk: Finding Patterns in Learning Human and Programming Languages. Though quite different, both can be split into different language families and other common patterns can be found which can help in learning other languages – I would not have guessed this was her first ever talk, it was brilliant! We are glad to see she is flourishing in her new role.
 
@@ -41,4 +45,4 @@ During the evening there was time to try out Unseen Diplomacy, brought along by 
 
 Thanks Tony for organising what is hopefully the first of many Kernow DAT events!
 
-![Kernow DAT Mariokart](https://www.headforwards.com/wp-content/uploads/2016/09/Headforwards-kernowdat-mariokart-169x300.jpg)
+![Kernow DAT Mariokart](//headforwards.com/wp-content/uploads/2016/09/Headforwards-kernowdat-mariokart.jpg)

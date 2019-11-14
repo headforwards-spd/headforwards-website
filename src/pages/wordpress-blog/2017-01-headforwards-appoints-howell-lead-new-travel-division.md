@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/01/headforwards-appoints-howell-lead-new-travel-division"
 title: "Headforwards Appoints Howell to Lead New Travel Division"
 date: "2017-01-27T12:29:34.000Z"
@@ -34,6 +34,11 @@ Howell’s knowledge of the travel market will help to drive forward Headforward
 
 “Underpinning our success is the fundamental belief in working in an Agile way and in the philosophies behind it, not just slavishly putting practices into action. Our clients are viewed as partners, and we work hard to make it a mutually beneficial partnership. I’m confident with John joining the team the travel industry will recognise the benefits of our approach.”
 
-![Left to Right: Craig Girvan, John Howell, Toby Parkins](https://www.headforwards.com/wp-content/uploads/2017/01/IMG_2199-web-2048-1-300x200.jpg "Left to Right: Craig Girvan, John Howell, Toby Parkins")
+<section class="gallery">
 
-![Left to Right: John Howell, Craig Girvan, Toby Parkins](https://www.headforwards.com/wp-content/uploads/2017/01/IMG_2205-web-2048-edited-300x200.jpg "Left to Right: John Howell, Craig Girvan, Toby Parkins")
+![Left to Right: Craig Girvan, John Howell, Toby Parkins](//headforwards.com/wp-content/uploads/2017/01/IMG_2199-web-2048-1.jpg "Left to Right: Craig Girvan, John Howell, Toby Parkins")
+
+![Left to Right: John Howell, Craig Girvan, Toby Parkins](//headforwards.com/wp-content/uploads/2017/01/IMG_2205-web-2048-edited.jpg "Left to Right: John Howell, Craig Girvan, Toby Parkins")
+
+</section>
+

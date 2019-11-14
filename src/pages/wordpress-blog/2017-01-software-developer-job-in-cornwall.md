@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/01/software-developer-job-in-cornwall"
 title: "Software Developer Job in Cornwall"
 date: "2017-01-05T14:44:59.000Z"
@@ -22,7 +22,7 @@ At Headforwards, our product is our people. We encourage thought leadership and 
 
 We believe in Agile and have adopted it as a philosophy as well as utilising its methodologies. Headforwards has a completely linear hierarchy, we don’t believe in team heroes. Every member of the team is equal, their ideas and opinions all have merit.
 
-Cornwall has a thriving tech scene, it was ranked as the second fastest growing tech cluster in the UK in the [2016 Tech Nation Report.](http://www.techcityuk.com/wp-content/uploads/2016/02/Tech-Nation-2016_FINAL-ONLINE-1.pdf)
+Cornwall has a thriving tech scene, it was ranked as the second fastest growing tech cluster in the UK in the [2016 Tech Nation Report.](http://www.techcityuk.com//headforwards.com/wp-content/uploads/2016/02/Tech-Nation-2016_FINAL-ONLINE-1.pdf)
 
 There is an abundance of tech companies working across many different sectors here in the South West. The community is also very strong as shown through the established networks [Cornwall Digital Meet Up Group](https://www.meetup.com/Cornwall-Digital/) and [Software Cornwall. ](http://www.softwarecornwall.org/)
 

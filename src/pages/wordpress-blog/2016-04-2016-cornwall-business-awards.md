@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/04/2016-cornwall-business-awards"
 title: "2016 Cornwall Business Awards"
 date: "2016-04-06T16:19:12.000Z"
@@ -29,4 +29,4 @@ Company culture is carefully considered here at Headforwards and we work hard to
 
 If you are interested in working with a company who is shortlisted as the Employer of the Year, why not take a look at our [careers page](https://www.headforwards.com/careers/) to see our open vacancies. We would love to hear from you.
 
-![2016 Cornwall Business Awards Finalists ](https://www.headforwards.com/wp-content/uploads/2016/04/Headforwards-team-pool-innovation-centre-300x225.jpg)
+![2016 Cornwall Business Awards Finalists ](//headforwards.com/wp-content/uploads/2016/04/Headforwards-team-pool-innovation-centre.jpg)

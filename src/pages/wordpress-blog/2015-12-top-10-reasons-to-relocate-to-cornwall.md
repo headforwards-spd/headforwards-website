@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/12/top-10-reasons-to-relocate-to-cornwall"
 title: "Top 10 Reasons to Relocate to Cornwall"
 date: "2015-12-08T15:59:12.000Z"

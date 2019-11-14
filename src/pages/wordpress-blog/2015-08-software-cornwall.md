@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/08/software-cornwall"
 title: "Software Cornwall"
 date: "2015-08-10T10:33:37.000Z"
@@ -33,7 +33,7 @@ Thir objectives are split up into 7 core sections.
 
 **Financial Sustainability** : To develop an organisation that is self sustaining
 
-![Software Cornwall wheel ](http://www.headforwards.com/wp-content/uploads/2015/08/SWCWheel-285x300.png)
+![Software Cornwall wheel ](//headforwards.com/wp-content/uploads/2015/08/SWCWheel.png)
 
 Who is involved in Software Cornwall? Here is the Committee:
 

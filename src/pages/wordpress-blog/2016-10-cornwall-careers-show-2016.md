@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/10/cornwall-careers-show-2016"
 title: "Cornwall Careers Show 2016"
 date: "2016-10-19T13:36:28.000Z"
@@ -17,11 +17,15 @@ The [Cornwall Careers Show 2016](https://www.cswgroup.co.uk/cornwall-careers-sho
 The Royal Cornwall showground was filled with over 100 different organisations and 3300 students from 24 schools visited over the two days. It has been a great opportunity to make connections with potential future employees. Equally is has been fantastic for those students to see the myriad of different opportunities available to them, many of which they may never have previously considered.  
 When I was their age I remember a 5 minute quiz on my likes and dislikes followed by a 15 minute chat with a seemingly uninterested careers advisor, which, according to many others I’ve spoken to is more help than they received.
 
-![Cornwall Careers Show 2016 Robot Arm](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-2016-Lyssa-169x300.jpg)
+<section class="gallery">
 
-![Cornwall Careers Show Circus Skills](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-2016-Circus-169x300.jpg)
+![Cornwall Careers Show 2016 Robot Arm](//headforwards.com/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-2016-Lyssa.jpg)
 
-![Cornwall Careers Show 2016](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-group-300x225.jpg)
+![Cornwall Careers Show Circus Skills](//headforwards.com/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-2016-Circus.jpg)
+
+![Cornwall Careers Show 2016](//headforwards.com/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-group.jpg)
+
+</section>
 
 Here at the Cornwall Careers Show these students are getting a totally different experience. All the stands had an interactive element to them – mostly giving them the chance to try out something related to the business. This was a great way to draw students in for a chat with people actually working in those jobs, and the fun element helped to engage them.  
 There were representatives from many different types of businesses and other organisations from around Cornwall in attendance. All sorts of careers were covered including the emergency services, beauty therapists, the hospitality sector, the construction industry and even a circus school, and the activities on offer were even more varied than the businesses.They could try everything from making mocktails to birdhouses, going up in a cherry picker, slacklining, taking fingerprints, painting nails, making pancakes, even recording a song.
@@ -31,4 +35,4 @@ The ambition and drive of these youngsters was great to see – some seem to hav
 
 We were really happy to be able to attend the Cornwall Careers Show and we are proud of the involvement we have in helping to inspire and inform the next generation, not only with regards to the tech sector in general but also that there are great career opportunities to be found here in Cornwall.
 
-![Cornwall Careers Show 2016](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-robotarm-group-300x225.jpg)
+![Cornwall Careers Show 2016](//headforwards.com/wp-content/uploads/2016/10/Headforwards-Cornwall-Careers-Show-robotarm-group.jpg)

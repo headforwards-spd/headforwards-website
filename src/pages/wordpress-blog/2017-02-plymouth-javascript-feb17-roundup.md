@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/02/plymouth-javascript-feb17-roundup"
 title: "Plymouth JS 2017: February Roundup"
 date: "2017-02-17T10:36:54.000Z"
@@ -61,12 +61,17 @@ The meet up felt really positive with plenty of interesting discussions to get i
 
 We would also like to thank THINQTANQ and Andy Mantell for organising and hosting the event.
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1305-web-2048-300x180.jpg)
+<section class="gallery">
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1303-web-2048-300x225.jpg)
+![](//headforwards.com/wp-content/uploads/2017/02/IMG_1305-web-2048.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1324-web-2048-300x225.jpg)
+![](//headforwards.com/wp-content/uploads/2017/02/IMG_1303-web-2048.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1301-web-2048-300x225.jpg)
+![](//headforwards.com/wp-content/uploads/2017/02/IMG_1324-web-2048.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/CymFrhZWgAArSNT-web-2048-1-300x203.jpg)
+![](//headforwards.com/wp-content/uploads/2017/02/IMG_1301-web-2048.jpg)
+
+![](//headforwards.com/wp-content/uploads/2017/02/CymFrhZWgAArSNT-web-2048-1.jpg)
+
+</section>
+

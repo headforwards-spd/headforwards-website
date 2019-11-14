@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/04/cornwall-becoming-california-of-the-uk"
 title: "Cornwall Becoming California of The UK"
 date: "2016-04-14T09:57:05.000Z"

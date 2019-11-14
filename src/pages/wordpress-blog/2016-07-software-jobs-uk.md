@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/07/software-jobs-uk"
 title: "Software Jobs UK"
 date: "2016-07-10T09:41:47.000Z"
@@ -19,7 +19,7 @@ We currently have a large number of new roles available that may be suitable for
 We are an outsource software development company based in Cornwall, South West England.  
 Cornwall may seem like an odd choice for a growing software company but it is fast becoming a hub for agile software development.  
 It is home to the renowned Agile conference, [Agile on the Beach](http://agileonthebeach.com/), and it was also ranked as the second fastest growing Tech Hub in the UK in the 2016 [Tech Nation Report.  
-](http://www.techcityuk.com/wp-content/uploads/2016/02/Tech-Nation-2016_FINAL-ONLINE-1.pdf)
+](http://www.techcityuk.com//headforwards.com/wp-content/uploads/2016/02/Tech-Nation-2016_FINAL-ONLINE-1.pdf)
 
 Showing that is not just us that believe Cornwall is the perfect place for a Tech company.
 

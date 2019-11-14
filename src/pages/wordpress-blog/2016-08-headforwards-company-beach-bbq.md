@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/08/headforwards-company-beach-bbq"
 title: "Headforwards Company Beach BBQ"
 date: "2016-08-30T09:48:38.000Z"
@@ -17,30 +17,35 @@ On Friday evening we had another wonderful Headforwards company beach BBQ. It wa
 We have a number of new members joining our team in the coming weeks, and it was great that so many of them could join us at this BBQ. What a great way to meet the team! As usual Karen and Toby cooked some amazing food on the BBQ, and the kids had fun running round on the beach and looking in rock pools.  
 Thank you to everyone who joined us and made it such a special evening.
 
-![Headforwards Company Beach BBQ](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-300x225.jpg)
+<section class="gallery">
 
-![Headforwards-company-beach-bbq-tevaunance-cove](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-tevaunance-cove-300x225.jpg)
+![Headforwards Company Beach BBQ](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq.jpg)
 
-![Headforwards-company-beach-bbq-team-bbq](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-team-bbq-300x225.jpg)
+![Headforwards-company-beach-bbq-tevaunance-cove](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-tevaunance-cove.jpg)
 
-![Headforwards-company-beach-bbq-sunset-stagnes-](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-sunset-stagnes--300x225.jpg)
+![Headforwards-company-beach-bbq-team-bbq](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-team-bbq.jpg)
 
-![Headforwards-company-beach-bbq-stagnes](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-stagnes-300x225.jpg)
+![Headforwards-company-beach-bbq-sunset-stagnes-](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-sunset-stagnes-.jpg)
 
-![Headforwards-company-beach-bbq-st-agnes](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-st-agnes-300x225.jpg)
+![Headforwards-company-beach-bbq-stagnes](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-stagnes.jpg)
 
-![Headforwards-company-beach-bbq-koru-kayaks](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-koru-kayaks-300x225.jpg)
+![Headforwards-company-beach-bbq-st-agnes](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-st-agnes.jpg)
 
-![Headforwards-company-beach-bbq-group-bbq](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-group-bbq-300x225.jpg)
+![Headforwards-company-beach-bbq-koru-kayaks](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-koru-kayaks.jpg)
 
-![Headforwards-company-beach-bbq-family-and-friends](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-family-and-friends-300x225.jpg)
+![Headforwards-company-beach-bbq-group-bbq](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-group-bbq.jpg)
 
-![Headforwards-company-beach-bbq-cornwall](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-cornwall-300x225.jpg)
+![Headforwards-company-beach-bbq-family-and-friends](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-family-and-friends.jpg)
 
-![Headforwards-company-beach-bbq-aggie](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-aggie-300x225.jpg)
+![Headforwards-company-beach-bbq-cornwall](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-cornwall.jpg)
 
-![Headforwards-company-beach-bbq-2016](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-2016-300x225.jpg)
+![Headforwards-company-beach-bbq-aggie](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-aggie.jpg)
 
-![Headforwards-company-beach-bbq-evening-sunset](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-evening-sunset-300x225.jpg)
+![Headforwards-company-beach-bbq-2016](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-2016.jpg)
 
-![Headforwards-company-beach-bbq](https://www.headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-300x225.jpg)
+![Headforwards-company-beach-bbq-evening-sunset](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq-evening-sunset.jpg)
+
+![Headforwards-company-beach-bbq](//headforwards.com/wp-content/uploads/2016/08/Headforwards-company-beach-bbq.jpg)
+
+</section>
+

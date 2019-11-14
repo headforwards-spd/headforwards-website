@@ -29,7 +29,7 @@
         margin: -$gutter-small/2;
         margin-bottom: $gutter-medium - $gutter-small/2;
 
-        :global(.gatsby-resp-image-wrapper) {
+        :global(.gatsby-resp-image-wrapper), img {
 
             margin: $gutter-small/2;
             flex-basis: calc(100% / 3 - #{$gutter-small});

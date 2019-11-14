@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/08/cultural-barriers-to-agile-success"
 title: "Cultural Barriers to Agile Success"
 date: "2017-08-07T16:03:03.000Z"

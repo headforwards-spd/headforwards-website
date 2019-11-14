@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/07/software-cornwalls-mission-to-mars"
 title: "Software Cornwall’s Mission to Mars"
 date: "2016-07-25T08:53:19.000Z"
@@ -51,6 +51,6 @@ Altogether, the Mission to Mars project was a really fun experience and I learne
 
 Georgia Pain
 
-![Software Cornwall's Mission to Mars ](https://www.headforwards.com/wp-content/uploads/2016/07/13566967_904700899636215_2693135533375073744_n-300x225.jpg)
+![Software Cornwall's Mission to Mars ](//headforwards.com/wp-content/uploads/2016/07/13566967_904700899636215_2693135533375073744_n.jpg)
 
 Georgia and her Mission to Mars team.

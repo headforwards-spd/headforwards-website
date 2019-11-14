@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/01/headforwards-in-2015"
 title: "Headforwards in 2015"
 date: "2016-01-04T12:50:17.000Z"

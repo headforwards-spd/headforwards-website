@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/04/waterfall-vs-agile"
 title: "Waterfall vs. Agile – Comparing Software Development Techniques"
 date: "2017-04-24T13:09:15.000Z"
@@ -21,7 +21,7 @@ One of the best ways to imagine how this process function is with this analogy:
 
 **Agile** – Adaptive planning, evolutionary development with frequent and continuous delivery. Responsive to scope change without harming the project as a whole.
 
-![Waterfall vs. Agile](https://www.headforwards.com/wp-content/uploads/2017/04/agile-vs-waterfall-300x186.png "Waterfall vs. Agile")
+![Waterfall vs. Agile](//headforwards.com/wp-content/uploads/2017/04/agile-vs-waterfall.png "Waterfall vs. Agile")
 
 **Did you know?**
 
@@ -29,7 +29,7 @@ Both Waterfall and Agile go back a long way to the early days of software develo
 
 ### **Waterfall Methodology**
 
-![](https://www.headforwards.com/wp-content/uploads/2017/04/waterfall-vs-agile-header-3-300x155.jpg)
+![](//headforwards.com/wp-content/uploads/2017/04/waterfall-vs-agile-header-3.jpg)
 
 Waterfall development is a linear process and looks similar to this layout:
 
@@ -66,7 +66,7 @@ Things can turn really sour with this process, but it is important to point out 
 
 ### **Agile Methodology**
 
-![](https://www.headforwards.com/wp-content/uploads/2017/04/waterfall-vs-agile-header-2-300x155.jpg)
+![](//headforwards.com/wp-content/uploads/2017/04/waterfall-vs-agile-header-2.jpg)
 
 Take a linear project timeline and break it down into each task. Next, break the final product down into individual functional components. In an Agile world, these tasks and features are placed in order of business value and time-boxed into phases known as sprints.
 

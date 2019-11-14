@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/advancing-javascript-skills-with-simplicity"
 title: "Advancing JavaScript Skills with Simplicity"
 date: "2015-07-20T12:45:48.000Z"

@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/04/cornwall-the-unlikely-high-tech-hub"
 title: "Cornwall: The Unlikely High-Tech Hub"
 date: "2016-04-20T14:27:58.000Z"
@@ -39,7 +39,7 @@ The EU’s largest investment in superfast broadband infrastructure, the fibre r
 
 With more than 95% of premises in Cornwall now connected to superfast broadband and work continuing on a goal of 99%, it no longer seems crazy for the Edlin’s to run their business from their village home in a region that is still struggling from the collapse of its traditional mining and fishing industries.
 
-The UK government’s 2016 [Tech Nation report](http://www.techcityuk.com/wp-content/uploads/2016/02/Tech-Nation-2016_FINAL-ONLINE-1.pdf?utm_content=buffer2e58f&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) ranked the cluster of digital economy firms around the Cornish towns of Truro, Redruth and Camborne as the second fastest growing in the country, with turnover increasing 153% between 2010 and 2014. The Cornwall hub is still small, but its growth was outdone by Southampton (180%) and ranked well ahead of London (101%) and better-known tech centres such as Cambridge and Bristol.
+The UK government’s 2016 [Tech Nation report](http://www.techcityuk.com//headforwards.com/wp-content/uploads/2016/02/Tech-Nation-2016_FINAL-ONLINE-1.pdf?utm_content=buffer2e58f&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) ranked the cluster of digital economy firms around the Cornish towns of Truro, Redruth and Camborne as the second fastest growing in the country, with turnover increasing 153% between 2010 and 2014. The Cornwall hub is still small, but its growth was outdone by Southampton (180%) and ranked well ahead of London (101%) and better-known tech centres such as Cambridge and Bristol.
 
 That growth has been spurred by continuing EU funding and the ability of local firms to attract and retain quality of staff, thanks to an attractive lifestyle and one of the cheapest costs of living in Britain.
 

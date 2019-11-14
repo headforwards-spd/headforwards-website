@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/10/western-morning-news-business-awards-2017"
 title: "Western Morning News Business Awards 2017"
 date: "2017-10-18T09:53:36.000Z"
@@ -29,4 +29,4 @@ We are shortlisted for **Business of the Year** and **Best Technological or Cre
 
 We are looking forward to celebrating with all the other finalists at the gala dinner at St Mellion on Thursday 16th November.
 
-![Headforwards - business of the year- western morning news business awards ](https://www.headforwards.com/wp-content/uploads/2017/10/Wester-Morning-News-Business-Awards-2017-headforwards-300x202.jpg)
+![Headforwards - business of the year- western morning news business awards ](//headforwards.com/wp-content/uploads/2017/10/Wester-Morning-News-Business-Awards-2017-headforwards.jpg)

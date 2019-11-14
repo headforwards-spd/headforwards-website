@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/12/hour-of-code"
 title: "Hour of Code"
 date: "2015-12-04T16:18:12.000Z"

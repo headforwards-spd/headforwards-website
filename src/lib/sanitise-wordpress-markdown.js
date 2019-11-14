@@ -11,7 +11,7 @@ function sanitiseFile(fileName) {
 
     const newContent = oldContent
         // Relative image paths
-        // .replace(/http(?:s)?:\/\/(?:www.)?headforwards.com\/wp-content/g, '/wp-content')
+        .replace(/http(?:s)?:\/\/(?:www.)?headforwards.com\/wp-content\/uploads\//g, '/wp-content/uploads/')
         // Unwrap images from links
         .replace(/([^!])?\[(!\[[^\]]*]\([^)]+\))]\([^)]+\)/g, '$1$2')
         // Remove links to images
@@ -27,7 +27,8 @@ function sanitiseFile(fileName) {
         .replace(/(\))\s*(!\[)/g, '$1\n\n$2')
         // Remove image sizes
         .replace(/(\(\/wp-content\/uploads\/[^)]+)(?:[-_]+\d+x\d+)+(?:[-_]\d)?(\.\w+(?:\s*"[^"]*")?\))/g, '$1$2')
-        .replace(/\n{2,}/g, '\n\n');
+        .replace(/\n{2,}/g, '\n\n')
+        .replace(/\/wp-content\/uploads\//g, '//headforwards.com/wp-content/uploads/');
 
     fs.writeFileSync(`./${fileName}`, newContent);
 }

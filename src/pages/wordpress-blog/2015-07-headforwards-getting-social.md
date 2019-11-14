@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/headforwards-getting-social"
 title: "Headforwards: Getting social"
 date: "2015-07-09T14:53:10.000Z"
@@ -31,10 +31,15 @@ So come along and say hello – get social with us!
 
 You never know you might get an invite to our next BBQ.
 
-![Headforwards beach BBQ](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF2516-300x225.jpg)
+<section class="gallery">
 
-![Headforwards team at laser tag](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0778-300x225.jpg)
+![Headforwards beach BBQ](//headforwards.com/wp-content/uploads/2014/06/DSCF2516.jpg)
 
-![Headforwards team in Falmouth](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1774-300x225.jpg)
+![Headforwards team at laser tag](//headforwards.com/wp-content/uploads/2015/06/DSCF0778.jpg)
 
-![Headforwards- Headstock festival](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock-21-300x225.jpg)
+![Headforwards team in Falmouth](//headforwards.com/wp-content/uploads/2014/06/DSCF1774.jpg)
+
+![Headforwards- Headstock festival](//headforwards.com/wp-content/uploads/2014/01/Headstock-21.jpg)
+
+</section>
+

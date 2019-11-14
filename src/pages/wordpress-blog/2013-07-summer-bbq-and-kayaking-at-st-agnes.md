@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2013/07/summer-bbq-and-kayaking-at-st-agnes"
 title: "Summer BBQ and kayaking at St Agnes"
 date: "2013-07-18T20:07:21.000Z"
@@ -21,22 +21,26 @@ We were also lucky enough to be treated to a guided Kayak tour of the coastline 
 
 Here are a few photos from the evening, if you want to watch them in a slideshow please just click on one image and it will open up.
 
-![Summer BBQ at St Agnes](http://www.headforwards.com/wp-content/uploads/2014/01/ST-Agnes-122-300x225.jpg)
+<section class="gallery">
 
-![Headforwards summer BBQ in St Agnes](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-12-300x225.jpg)
+![Summer BBQ at St Agnes](//headforwards.com/wp-content/uploads/2014/01/ST-Agnes-122.jpg)
 
-![Headforwards summer BBQ](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-31-300x225.jpg)
+![Headforwards summer BBQ in St Agnes](//headforwards.com/wp-content/uploads/2014/01/St-Agnes-12.jpg)
 
-![Headforwards summer bbq](http://www.headforwards.com/wp-content/uploads/2014/01/st-Agnes18-300x225.jpg)
+![Headforwards summer BBQ](//headforwards.com/wp-content/uploads/2014/01/St-Agnes-31.jpg)
 
-![summer bbq in cornwall](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-17-300x225.jpg)
+![Headforwards summer bbq](//headforwards.com/wp-content/uploads/2014/01/st-Agnes18.jpg)
 
-![Cornish summer BBQ for Headforwards team](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-19-300x225.jpg)
+![summer bbq in cornwall](//headforwards.com/wp-content/uploads/2014/01/St-Agnes-17.jpg)
 
-![Koru Kayaking - Headforwards team ](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-91-300x225.jpg)
+![Cornish summer BBQ for Headforwards team](//headforwards.com/wp-content/uploads/2014/01/St-Agnes-19.jpg)
 
-![Swimming at St Agnes- Headforwards team ](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes22-300x225.jpg)
+![Koru Kayaking - Headforwards team ](//headforwards.com/wp-content/uploads/2014/01/St-Agnes-91.jpg)
 
-![The Headforwards team with Koru Kayaking ](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-101-300x225.jpg)
+![Swimming at St Agnes- Headforwards team ](//headforwards.com/wp-content/uploads/2014/01/St-Agnes22.jpg)
+
+![The Headforwards team with Koru Kayaking ](//headforwards.com/wp-content/uploads/2014/01/St-Agnes-101.jpg)
+
+</section>
 
 If this looks like the sort of after work activity and team adventure you would like to be a part of then please take a look at our [careers](http://www.headforwards.com/careers/) page. We might have just the job in Cornwall for you.

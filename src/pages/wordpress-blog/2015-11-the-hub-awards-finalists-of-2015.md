@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/11/the-hub-awards-finalists-of-2015"
 title: "The Hub Awards Finalists of 2015"
 date: "2015-11-09T10:23:55.000Z"
@@ -13,7 +13,7 @@ author:
   name: "Lyssa Crump"
   path: "/author/lyssa/"
 ---
-![The Hub Awards](http://www.headforwards.com/wp-content/uploads/2015/11/TheHubSponsor-300x300.jpg)
+![The Hub Awards](//headforwards.com/wp-content/uploads/2015/11/TheHubSponsor.jpg)
 
 We have previously posted about being proud sponsors of “The Best Use of Digital” award at the Hub Awards 2015.
 

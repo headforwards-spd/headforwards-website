@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/06/team-beach-bbq-of-2015"
 title: "First Headforwards Team Beach BBQ of 2015"
 date: "2015-06-30T10:46:17.000Z"
@@ -24,71 +24,71 @@ Even though the tide was pretty high we all had a great time munching our dinner
 
 Take a look at some of the photos we took on this beautiful summers evening, if you click on one image it will open them up in a slideshow.
 
-![Headforwards team bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3086-300x200.jpg)
+<section class="gallery">
 
-![The Headforwards team ](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3070-300x200.jpg)
+![Headforwards team bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_3086.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.54.20-300x225.jpg)
+![The Headforwards team ](//headforwards.com/wp-content/uploads/2015/06/IMG_3070.jpg)
 
-![Headforwards team bbq](http://www.headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.54.39-300x225.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.54.20.jpg)
 
-![Headforwards beach - St Agnes](http://www.headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.56.27-300x225.jpg)
+![Headforwards team bbq](//headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.54.39.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2937-300x200.jpg)
+![Headforwards beach - St Agnes](//headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.56.27.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2943-300x200.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_2937.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2951-300x200.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_2943.jpg)
 
-![Headforwards team at the beach](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2959-300x200.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_2951.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2965-300x200.jpg)
+![Headforwards team at the beach](//headforwards.com/wp-content/uploads/2015/06/IMG_2959.jpg)
 
-![Headforwards team at Trevaunance cove ](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2978-300x200.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_2965.jpg)
 
-![The Headforwards team ](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2984-300x200.jpg)
+![Headforwards team at Trevaunance cove ](//headforwards.com/wp-content/uploads/2015/06/IMG_2978.jpg)
 
-![Headforwards work BBQ](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2991-300x200.jpg)
+![The Headforwards team ](//headforwards.com/wp-content/uploads/2015/06/IMG_2984.jpg)
 
-![The Headforwards team on the beach ](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3000-300x200.jpg)
+![Headforwards work BBQ](//headforwards.com/wp-content/uploads/2015/06/IMG_2991.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3005-300x200.jpg)
+![The Headforwards team on the beach ](//headforwards.com/wp-content/uploads/2015/06/IMG_3000.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3012-300x200.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_3005.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3033-300x200.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_3012.jpg)
 
-![Headforwards - Trevaunance cove St Agnes ](http://www.headforwards.com/wp-content/uploads/2015/06/Roars-running-300x225.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_3033.jpg)
 
-![Headforwards Software dev in Cornwall ](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3040-300x200.jpg)
+![Headforwards - Trevaunance cove St Agnes ](//headforwards.com/wp-content/uploads/2015/06/Roars-running.jpg)
 
-![Headforwards Beach BBQ](http://www.headforwards.com/wp-content/uploads/2015/06/Toby-Karen-300x225.jpg)
+![Headforwards Software dev in Cornwall ](//headforwards.com/wp-content/uploads/2015/06/IMG_3040.jpg)
 
-![Headforwards at Trevaunance Cove, Cornwall](http://www.headforwards.com/wp-content/uploads/2015/06/Seascape-300x225.jpg)
+![Headforwards Beach BBQ](//headforwards.com/wp-content/uploads/2015/06/Toby-Karen.jpg)
 
-![Headforwards Beach BBQ 2015](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2982-300x200.jpg)
+![Headforwards at Trevaunance Cove, Cornwall](//headforwards.com/wp-content/uploads/2015/06/Seascape.jpg)
 
-![Headforwards Beach BBQ](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3042-300x200.jpg)
+![Headforwards Beach BBQ 2015](//headforwards.com/wp-content/uploads/2015/06/IMG_2982.jpg)
 
-[](http://www.headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.56.27.jpg)
+![Headforwards Beach BBQ](//headforwards.com/wp-content/uploads/2015/06/IMG_3042.jpg)
 
-[](http://www.headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.56.27.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_3052.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3052-200x300.jpg)
+![Headforwards work BBQ](//headforwards.com/wp-content/uploads/2015/06/IMG_3067.jpg)
 
-![Headforwards work BBQ](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3067-200x300.jpg)
+![The Headforwards family](//headforwards.com/wp-content/uploads/2015/06/IMG_3064.jpg)
 
-![The Headforwards family](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3064-200x300.jpg)
+![Headforwards on the  Beach Cornwall ](//headforwards.com/wp-content/uploads/2015/06/Jimmy.jpg)
 
-![Headforwards on the  Beach Cornwall ](http://www.headforwards.com/wp-content/uploads/2015/06/Jimmy-225x300.jpg)
+![Headforwards team beach bbq](//headforwards.com/wp-content/uploads/2015/06/IMG_3008.jpg)
 
-![Headforwards team beach bbq](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3008-200x300.jpg)
+![Headforwards go to St Agnes beach ](//headforwards.com/wp-content/uploads/2015/06/Kids-playing.jpg)
 
-![Headforwards go to St Agnes beach ](http://www.headforwards.com/wp-content/uploads/2015/06/Kids-playing-225x300.jpg)
+![Headforwards team BBQ](//headforwards.com/wp-content/uploads/2015/06/IMG_3077.jpg)
 
-![Headforwards team BBQ](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_3077-200x300.jpg)
+![The Headforwards team](//headforwards.com/wp-content/uploads/2015/06/IMG_2967.jpg)
 
-![The Headforwards team](http://www.headforwards.com/wp-content/uploads/2015/06/IMG_2967-200x300.jpg)
+</section>
 
 **If you like the look of our team and want to join, take a look at our [careers page](http://www.headforwards.com/careers/). We might have just the vacancy for you!  
 **If their is not an appropriate role available, please feel free to get in touch with us to register your interest.

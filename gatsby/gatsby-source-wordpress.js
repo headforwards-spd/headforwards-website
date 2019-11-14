@@ -120,7 +120,7 @@ module.exports = {
                 const markdown = {
                     frontmatterMarkdown: {
                         frontmatter: [
-                            { type: 'wordpress' },
+                            { type: 'wordpress-blog' },
                             {
                                 path: path.replace(/^(.*)(?:\/)$/, '$1'),
                             },

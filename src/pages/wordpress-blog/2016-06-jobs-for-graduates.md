@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/06/jobs-for-graduates"
 title: "Jobs for Graduates"
 date: "2016-06-30T09:54:17.000Z"
@@ -38,6 +38,6 @@ Whilst this is model is unconventional, it is proving to be extremely successful
 
 If you are interested in becoming part of the team at the fastest growing software company in Cornwall, [apply now](https://www.headforwards.com/careers/application-form/).
 
-![Headforwards - jobs for graduates](https://www.headforwards.com/wp-content/uploads/2016/06/SGP1364-300x200.jpg)
+![Headforwards - jobs for graduates](//headforwards.com/wp-content/uploads/2016/06/SGP1364.jpg)
 
 Headforwards celebratory birthday beer

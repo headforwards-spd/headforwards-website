@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2013/08/headstock-2013-festival-and-fireworks"
 title: "Headstock 2013 Festival and Fireworks"
 date: "2013-08-06T10:40:25.000Z"
@@ -23,38 +23,42 @@ No outdoor event would be complete without a beautiful bonfire and spectacular f
 
 The team and their families look forward to Headstock every year, it really is the perfect way to end the summer.
 
-![Headforwards- kegs of beer](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock1-300x225.jpg)
+<section class="gallery">
 
-![Headforwards DJ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock23-300x225.jpg)
+![Headforwards- kegs of beer](//headforwards.com/wp-content/uploads/2014/01/Headstock1.jpg)
 
-![Headforwards enjoy pimms](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock25-300x225.jpg)
+![Headforwards DJ](//headforwards.com/wp-content/uploads/2014/01/Headstock23.jpg)
 
-![Headforwards team on the Roseland ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock8-300x225.jpg)
+![Headforwards enjoy pimms](//headforwards.com/wp-content/uploads/2014/01/Headstock25.jpg)
 
-![The Headforwards team ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock2-300x225.jpg)
+![Headforwards team on the Roseland ](//headforwards.com/wp-content/uploads/2014/01/Headstock8.jpg)
 
-![The Headforwards team at Headstock ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock13-300x225.jpg)
+![The Headforwards team ](//headforwards.com/wp-content/uploads/2014/01/Headstock2.jpg)
 
-![Headforwards bouncy castle ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock-21-300x225.jpg)
+![The Headforwards team at Headstock ](//headforwards.com/wp-content/uploads/2014/01/Headstock13.jpg)
 
-![Headforwards bbq](http://www.headforwards.com/wp-content/uploads/2014/01/headstock10-300x225.jpg)
+![Headforwards bouncy castle ](//headforwards.com/wp-content/uploads/2014/01/Headstock-21.jpg)
 
-![Headforwards BBQ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock22-300x225.jpg)
+![Headforwards bbq](//headforwards.com/wp-content/uploads/2014/01/headstock10.jpg)
 
-![The Headforwards team at Headstock ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock12-300x225.jpg)
+![Headforwards BBQ](//headforwards.com/wp-content/uploads/2014/01/Headstock22.jpg)
 
-![The Headforwards team at Headstock ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock6-300x225.jpg)
+![The Headforwards team at Headstock ](//headforwards.com/wp-content/uploads/2014/01/Headstock12.jpg)
 
-![Headforwards Kayaking ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock9-300x225.jpg)
+![The Headforwards team at Headstock ](//headforwards.com/wp-content/uploads/2014/01/Headstock6.jpg)
 
-![Headforwards kayaking](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock11-300x225.jpg)
+![Headforwards Kayaking ](//headforwards.com/wp-content/uploads/2014/01/Headstock9.jpg)
 
-![Headforwards fireworks](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock14-300x225.jpg)
+![Headforwards kayaking](//headforwards.com/wp-content/uploads/2014/01/Headstock11.jpg)
 
-![Headforwards fireworks](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock261-300x225.jpg)
+![Headforwards fireworks](//headforwards.com/wp-content/uploads/2014/01/Headstock14.jpg)
 
-![Headforwards fireworks](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock-27-300x225.jpg)
+![Headforwards fireworks](//headforwards.com/wp-content/uploads/2014/01/Headstock261.jpg)
 
-![Headforwards fireworks](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock18-300x225.jpg)
+![Headforwards fireworks](//headforwards.com/wp-content/uploads/2014/01/Headstock-27.jpg)
+
+![Headforwards fireworks](//headforwards.com/wp-content/uploads/2014/01/Headstock18.jpg)
+
+</section>
 
 If this looks like the sort of event you would like to be part of, why not take a look at our [careers](http://www.headforwards.com/careers/) page to see if we have an the right opportunity for you.

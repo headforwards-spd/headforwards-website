@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/07/what-is-pair-programming"
 title: "What is Pair Programming?"
 date: "2015-07-15T11:08:10.000Z"

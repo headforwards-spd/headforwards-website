@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/02/headforwards-dot-net-meetup"
 title: "Headforwards .NET Meetup"
 date: "2017-02-02T16:51:29.000Z"
@@ -23,12 +23,17 @@ author:
 
 **Book a Place**: [Book Here](https://www.meetup.com/Cornwall-Digital/events/237372278/)
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/Headforwards-Agile-Board-300x200.jpg)
+<section class="gallery">
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/Headforwards-Agile-board-for-software-development--300x199.jpg)
+![](//headforwards.com/wp-content/uploads/2017/02/Headforwards-Agile-Board.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/Headforwards-software-squad-300x225.jpg)
+![](//headforwards.com/wp-content/uploads/2017/02/Headforwards-Agile-board-for-software-development-.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/Headforwards-programming--300x200.jpeg)
+![](//headforwards.com/wp-content/uploads/2017/02/Headforwards-software-squad.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/Headforwards-team-member-working-copy-300x200.jpg)
+![](//headforwards.com/wp-content/uploads/2017/02/Headforwards-programming-.jpeg)
+
+![](//headforwards.com/wp-content/uploads/2017/02/Headforwards-team-member-working-copy.jpg)
+
+</section>
+

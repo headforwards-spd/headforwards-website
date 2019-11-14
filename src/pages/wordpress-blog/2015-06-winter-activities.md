@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/06/winter-activities"
 title: "Winter Activities"
 date: "2015-06-15T14:43:23.000Z"
@@ -23,51 +23,55 @@ It is quite similar to [paintball](https://en.wikipedia.org/wiki/Paintball), but
 You are probably familiar with bowling, but perhaps not with how seriously our team of developers take it! It is always a fun filled evening!  
 Please take a look at the photos we have taken of our evenings out, if you click on one image you can open a lightbox slideshow.
 
-![Headforwards- indian food](http://www.headforwards.com/wp-content/uploads/2015/06/Headforwards-indian-food-300x225.jpg)
+<section class="gallery">
 
-![Headforwards go to Truro bowl](http://www.headforwards.com/wp-content/uploads/2015/06/Headforwards-go-to-Truro-bowl-300x225.jpg)
+![Headforwards- indian food](//headforwards.com/wp-content/uploads/2015/06/Headforwards-indian-food.jpg)
 
-![Headforwards play laser tag](http://www.headforwards.com/wp-content/uploads/2015/06/Headforwards-play-laser-tag-300x225.jpg)
+![Headforwards go to Truro bowl](//headforwards.com/wp-content/uploads/2015/06/Headforwards-go-to-Truro-bowl.jpg)
 
-![Headforwards score board at Truro bowl](http://www.headforwards.com/wp-content/uploads/2015/06/Headforwards-score-board-at-Truro-bowl-300x225.jpg)
+![Headforwards play laser tag](//headforwards.com/wp-content/uploads/2015/06/Headforwards-play-laser-tag.jpg)
 
-![Headforwards at Truro bowl](http://www.headforwards.com/wp-content/uploads/2015/06/Headforwards-at-Truro-bowl-300x225.jpg)
+![Headforwards score board at Truro bowl](//headforwards.com/wp-content/uploads/2015/06/Headforwards-score-board-at-Truro-bowl.jpg)
 
-![Headforwards at Truro bowl, Cornwall](http://www.headforwards.com/wp-content/uploads/2015/06/Headforwards-at-Truro-bowl-Cornwall-300x225.jpg)
+![Headforwards at Truro bowl](//headforwards.com/wp-content/uploads/2015/06/Headforwards-at-Truro-bowl.jpg)
 
-![HF2](http://www.headforwards.com/wp-content/uploads/2015/06/HF2-300x225.jpg)
+![Headforwards at Truro bowl, Cornwall](//headforwards.com/wp-content/uploads/2015/06/Headforwards-at-Truro-bowl-Cornwall.jpg)
 
-![bowling6](http://www.headforwards.com/wp-content/uploads/2015/06/bowling6-300x225.jpg)
+![HF2](//headforwards.com/wp-content/uploads/2015/06/HF2.jpg)
 
-![bowling5](http://www.headforwards.com/wp-content/uploads/2015/06/bowling51-300x225.jpg)
+![bowling6](//headforwards.com/wp-content/uploads/2015/06/bowling6.jpg)
 
-![DSCF0807](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0807-300x225.jpg)
+![bowling5](//headforwards.com/wp-content/uploads/2015/06/bowling51.jpg)
 
-![DSCF0805](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0805-300x225.jpg)
+![DSCF0807](//headforwards.com/wp-content/uploads/2015/06/DSCF0807.jpg)
 
-![DSCF0806](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0806-300x225.jpg)
+![DSCF0805](//headforwards.com/wp-content/uploads/2015/06/DSCF0805.jpg)
 
-![DSCF0784](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0784-300x225.jpg)
+![DSCF0806](//headforwards.com/wp-content/uploads/2015/06/DSCF0806.jpg)
 
-![DSCF0778](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0778-300x225.jpg)
+![DSCF0784](//headforwards.com/wp-content/uploads/2015/06/DSCF0784.jpg)
 
-![DSCF0756](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0756-300x225.jpg)
+![DSCF0778](//headforwards.com/wp-content/uploads/2015/06/DSCF0778.jpg)
 
-![DSCF0686](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0686-300x225.jpg)
+![DSCF0756](//headforwards.com/wp-content/uploads/2015/06/DSCF0756.jpg)
 
-![DSCF0674](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0674-300x225.jpg)
+![DSCF0686](//headforwards.com/wp-content/uploads/2015/06/DSCF0686.jpg)
 
-![DSCF0683](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0683-300x225.jpg)
+![DSCF0674](//headforwards.com/wp-content/uploads/2015/06/DSCF0674.jpg)
 
-![Bowling3](http://www.headforwards.com/wp-content/uploads/2015/06/Bowling3-300x225.jpg)
+![DSCF0683](//headforwards.com/wp-content/uploads/2015/06/DSCF0683.jpg)
 
-![Bowling2](http://www.headforwards.com/wp-content/uploads/2015/06/Bowling2-300x225.jpg)
+![Bowling3](//headforwards.com/wp-content/uploads/2015/06/Bowling3.jpg)
 
-![Truro Bowl1](http://www.headforwards.com/wp-content/uploads/2015/06/Truro-Bowl1-300x225.jpg)
+![Bowling2](//headforwards.com/wp-content/uploads/2015/06/Bowling2.jpg)
 
-![Bowling4](http://www.headforwards.com/wp-content/uploads/2015/06/Bowling4-300x225.jpg)
+![Truro Bowl1](//headforwards.com/wp-content/uploads/2015/06/Truro-Bowl1.jpg)
 
-![bowling5](http://www.headforwards.com/wp-content/uploads/2015/06/bowling5-300x225.jpg)
+![Bowling4](//headforwards.com/wp-content/uploads/2015/06/Bowling4.jpg)
+
+![bowling5](//headforwards.com/wp-content/uploads/2015/06/bowling5.jpg)
+
+</section>
 
 If you like the looks of these outings and would like to work somewhere where work life balance, and team relationships are taken seriously- then why not take a look at our [careers](http://www.headforwards.com/careers/) page?
 

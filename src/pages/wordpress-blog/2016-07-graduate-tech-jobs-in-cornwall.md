@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/07/graduate-tech-jobs-in-cornwall"
 title: "Graduate tech jobs in Cornwall"
 date: "2016-07-21T09:28:18.000Z"
@@ -23,7 +23,7 @@ Due to our recent expansion we have over 40 jobs vacancies.  We would love to s
 
 **WHY CORNWALL?**
 
-Cornwall over the last few years has now become an unlikely high tech hub. The UK government’s 2016 [Tech Nation report](http://www.techcityuk.com/wp-content/uploads/2016/02/Tech-Nation-2016_FINAL-ONLINE-1.pdf) states that Cornwall is the second fastest growing tech economy. This is due to turnover increasing by 153% between 2010 and 2014.
+Cornwall over the last few years has now become an unlikely high tech hub. The UK government’s 2016 [Tech Nation report](http://www.techcityuk.com//headforwards.com/wp-content/uploads/2016/02/Tech-Nation-2016_FINAL-ONLINE-1.pdf) states that Cornwall is the second fastest growing tech economy. This is due to turnover increasing by 153% between 2010 and 2014.
 
 Living and working in Cornwall as part of the tech community is an exciting place to be. [Superfast Broadband](https://www.cornwall.gov.uk/council-and-democracy/council-news-room/media-releases/news-from-2015/news-from-june-2015/new-multi-million-pound-deal-will-make-superfast-broadband-available-to-thousands-more-cornish-homes-and-businesses/) is now installed county wide. This means that Cornwall is now very well connected which allows businesses to communicate faster than ever. As a result, Cornwall is now a hotbed for [Tech activity in the UK](http://www.investincornwall.com/key-sectors/tech-and-creative/).
 

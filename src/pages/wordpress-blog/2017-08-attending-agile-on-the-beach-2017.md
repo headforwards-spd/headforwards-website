@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/08/attending-agile-on-the-beach-2017"
 title: "Agile on the Beach 2017 – A Small Slice Of Agile Utopia"
 date: "2017-08-18T13:57:14.000Z"
@@ -66,6 +66,6 @@ While my focus of Agile is primarily in marketing, it is of course used widely a
 
 This article was written by Jake Kimpton – Digital Engagement Strategist, Headforwards.
 
-![](https://www.headforwards.com/wp-content/uploads/2017/08/aotb-2017-1024x749.jpg)
+![](//headforwards.com/wp-content/uploads/2017/08/aotb-2017.jpg)
 
 _Diana Larson, Opening Keynote AOTB 2017_

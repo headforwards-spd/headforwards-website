@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2012/08/headforwards-lures-top-london-talent"
 title: "Headforwards Lures Top London Talent"
 date: "2012-08-06T09:40:14.000Z"

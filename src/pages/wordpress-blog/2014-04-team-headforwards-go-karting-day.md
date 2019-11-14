@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2014/04/team-headforwards-go-karting-day"
 title: "Team Headforwards Go-Karting Day"
 date: "2014-04-26T14:43:25.000Z"
@@ -18,32 +18,34 @@ For a little while it was a case of hurry up and wait whilst the rain continued 
 
 By the end of the the day we were all totally drenched, but happy!
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1517-300x225.jpg)
+<section class="gallery">
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1516-300x225.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1517.jpg)
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1511-300x225.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1516.jpg)
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1510-300x225.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1511.jpg)
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1498-300x225.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1510.jpg)
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1496-300x225.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1498.jpg)
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1490-300x225.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1496.jpg)
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1487-300x225.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1490.jpg)
 
-[ ](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1486.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1487.jpg)
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1486-300x225.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1486.jpg)
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/04/Headforwards-go-karting--300x225.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/04/Headforwards-go-karting-.jpg)
 
-![Headforwards- Go Karting](http://www.headforwards.com/wp-content/uploads/2014/04/Headforwards-Go-Karting-300x225.jpg)
+![Headforwards- Go Karting](//headforwards.com/wp-content/uploads/2014/04/Headforwards-Go-Karting.jpg)
 
-![Headforwards- go karting in the rain](http://www.headforwards.com/wp-content/uploads/2014/04/Headforwards-go-karting-in-the-rain-300x225.jpg)
+![Headforwards- go karting in the rain](//headforwards.com/wp-content/uploads/2014/04/Headforwards-go-karting-in-the-rain.jpg)
 
-![Headforwards Go-Karting](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1492-e1403707255288-225x300.jpg)
+![Headforwards Go-Karting](//headforwards.com/wp-content/uploads/2014/06/DSCF1492-e1403707255288.jpg)
+
+</section>
 
 If this looks like the sort of team you want to be a part of, please take a look at our [careers](http://www.headforwards.com/careers/) page – we might have just the role for you!

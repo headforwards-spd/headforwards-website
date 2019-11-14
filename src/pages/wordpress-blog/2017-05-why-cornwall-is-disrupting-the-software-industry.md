@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/05/why-cornwall-is-disrupting-the-software-industry"
 title: "From Tourism To Tech – Why Cornwall is Disrupting the Software Industry"
 date: "2017-05-11T10:56:41.000Z"
@@ -27,7 +27,7 @@ Redruth was also home to the first ever [gas street light](http://www.historyhou
 
 When all this is considered it seems only logical that the county would continue to embrace its engineering heritage and become pioneers in the tech industry.
 
-In recent years there has been a steady stream of articles referring to Cornwall as the [Silicon Valley of the UK,](http://www.cornwalllive.com/camborne-pool-redruth-how-technology-is-turning-a-deprived-part-of-cornwall-into-silicon-valley/story-30183060-detail/story.html) or even [Kernowfornia](https://www.pfa-research.com/wp-content/uploads/2016/07/PFA-Research-Cornwall-Digitech-Industry-2016-full-report.pdf), however, I would be inclined to stay away from this parallel. Cornwall is offering something quite different and unique.
+In recent years there has been a steady stream of articles referring to Cornwall as the [Silicon Valley of the UK,](http://www.cornwalllive.com/camborne-pool-redruth-how-technology-is-turning-a-deprived-part-of-cornwall-into-silicon-valley/story-30183060-detail/story.html) or even [Kernowfornia](https://www.pfa-research.com//headforwards.com/wp-content/uploads/2016/07/PFA-Research-Cornwall-Digitech-Industry-2016-full-report.pdf), however, I would be inclined to stay away from this parallel. Cornwall is offering something quite different and unique.
 
 It is a place where the tech industry focuses on collaboration over competition and people are encouraged to take their work-life balance seriously.
 

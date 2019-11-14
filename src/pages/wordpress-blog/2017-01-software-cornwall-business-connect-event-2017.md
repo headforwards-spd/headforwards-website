@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2017/01/software-cornwall-business-connect-event-2017"
 title: "Software Cornwall: Business Connect Event 2017"
 date: "2017-01-25T11:06:35.000Z"

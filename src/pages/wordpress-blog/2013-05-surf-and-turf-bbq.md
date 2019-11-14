@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2013/05/surf-and-turf-bbq"
 title: "Surf and Turf BBQ"
 date: "2013-05-29T09:36:00.000Z"
@@ -21,25 +21,29 @@ The BBQ was a big hit as usual, providing some delicious steaks for the team alo
 
 We took a few photos of the lovely surf and turf BBQ, which you can see below. If you want to view them as a slideshow, please just click on one of the images.
 
-![Breakers surf school teach Headforwards](http://www.headforwards.com/wp-content/uploads/2013/07/tomblazej-300x200.jpg)
+<section class="gallery">
 
-![Breakers surf school teach Headforwards](http://www.headforwards.com/wp-content/uploads/2013/07/surflesson-300x200.jpg)
+![Breakers surf school teach Headforwards](//headforwards.com/wp-content/uploads/2013/07/tomblazej.jpg)
 
-![Headforwards surf and turf bbq](http://www.headforwards.com/wp-content/uploads/2013/07/everyone-300x200.jpg)
+![Breakers surf school teach Headforwards](//headforwards.com/wp-content/uploads/2013/07/surflesson.jpg)
 
-![Headforwards surf and turf BBQ](http://www.headforwards.com/wp-content/uploads/2013/07/simon_kartick-300x200.jpg)
+![Headforwards surf and turf bbq](//headforwards.com/wp-content/uploads/2013/07/everyone.jpg)
 
-![Breakers Surf School with Headforwards ](http://www.headforwards.com/wp-content/uploads/2013/05/Headforwards-Breakers-surf-lesson-300x201.jpg)
+![Headforwards surf and turf BBQ](//headforwards.com/wp-content/uploads/2013/07/simon_kartick.jpg)
 
-![Headforwards team surf and turf bbq](http://www.headforwards.com/wp-content/uploads/2013/05/Headforwards-surf-and-turn-BBQ-300x201.jpg)
+![Breakers Surf School with Headforwards ](//headforwards.com/wp-content/uploads/2013/05/Headforwards-Breakers-surf-lesson.jpg)
 
-![Headforwards Porthtowan sunset](http://www.headforwards.com/wp-content/uploads/2013/05/Headforwards-Porthtowan-sunset-300x225.jpg)
+![Headforwards team surf and turf bbq](//headforwards.com/wp-content/uploads/2013/05/Headforwards-surf-and-turn-BBQ.jpg)
 
-![Headforwards surf and turf bbq sunset](http://www.headforwards.com/wp-content/uploads/2013/05/Headforwards-beach-BBQ-sunset-300x225.jpg)
+![Headforwards Porthtowan sunset](//headforwards.com/wp-content/uploads/2013/05/Headforwards-Porthtowan-sunset.jpg)
 
-![Headforwards surf and turf BBQ](http://www.headforwards.com/wp-content/uploads/2013/05/glensurfing-200x300.jpg)
+![Headforwards surf and turf bbq sunset](//headforwards.com/wp-content/uploads/2013/05/Headforwards-beach-BBQ-sunset.jpg)
 
-![Headforwards surf and turf BBQ chef Toby Parkins](http://www.headforwards.com/wp-content/uploads/2013/07/bbq-200x300.jpg)
+![Headforwards surf and turf BBQ](//headforwards.com/wp-content/uploads/2013/05/glensurfing.jpg)
+
+![Headforwards surf and turf BBQ chef Toby Parkins](//headforwards.com/wp-content/uploads/2013/07/bbq.jpg)
+
+</section>
 
 If like the idea of be involved in a Headforwards surf and turf BBQ who not take a look at our [careers](http://www.headforwards.com/careers/) page?
 

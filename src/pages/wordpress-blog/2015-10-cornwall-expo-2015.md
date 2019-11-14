@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/10/cornwall-expo-2015"
 title: "Cornwall Expo 2015"
 date: "2015-10-01T15:46:00.000Z"
@@ -25,47 +25,47 @@ The Transport Secretary Patrick McLoughlin  gave a [speech](https://www.gov.uk/
 
 The event was organised by the Cornwall and Isles of Scilly Local Economic Partnership [(LEP)](http://www.cioslep.com/), [Cornwall Council](http://www.cornwall.gov.uk/) and the [Council of the Isles of Scilly](http://www.scilly.gov.uk/).
 
-![The Bloodhound at Cornwall Expo 2015 ](http://www.headforwards.com/wp-content/uploads/2015/10/Bloodhound_at_Cornwall_Expo-300x225.jpeg)
+![The Bloodhound at Cornwall Expo 2015 ](//headforwards.com/wp-content/uploads/2015/10/Bloodhound_at_Cornwall_Expo.jpeg)
 
 The Bloodhound Super-Sonic Car
 
-![Old Bus at Cornwall Expo](http://www.headforwards.com/wp-content/uploads/2015/10/Helston_Lizard_bus-300x225.jpeg)
+![Old Bus at Cornwall Expo](//headforwards.com/wp-content/uploads/2015/10/Helston_Lizard_bus.jpeg)
 
 A Vintage bus – Helston to the Lizard
 
-![Skybus](http://www.headforwards.com/wp-content/uploads/2015/10/Skybus-at-Cornwall-Expo-2015-300x225.jpeg)
+![Skybus](//headforwards.com/wp-content/uploads/2015/10/Skybus-at-Cornwall-Expo-2015.jpeg)
 
 A Skybus
 
-![Welcome to...bus](http://www.headforwards.com/wp-content/uploads/2015/10/Welcome_bus-300x225.jpeg)
+![Welcome to...bus](//headforwards.com/wp-content/uploads/2015/10/Welcome_bus.jpeg)
 
 Kernow bus with the message “Welcome to the Cornwall Expo 2015”
 
-![Robot on Software Cornwall stand ](http://www.headforwards.com/wp-content/uploads/2015/10/Robot-300x225.jpg)
+![Robot on Software Cornwall stand ](//headforwards.com/wp-content/uploads/2015/10/Robot.jpg)
 
 A Robot on the Software Cornwall Stand
 
-![Software Cornwall at Cornwall Expo 2015](http://www.headforwards.com/wp-content/uploads/2015/10/Skills_zone-300x225.jpeg)
+![Software Cornwall at Cornwall Expo 2015](//headforwards.com/wp-content/uploads/2015/10/Skills_zone.jpeg)
 
 The Software Cornwall area
 
-![Software Cornwall ](http://www.headforwards.com/wp-content/uploads/2015/10/Software-Cornwall-stands-300x225.jpeg)
+![Software Cornwall ](//headforwards.com/wp-content/uploads/2015/10/Software-Cornwall-stands.jpeg)
 
 Headforwards in the Software Cornwall area
 
-![Software Cornwall ](http://www.headforwards.com/wp-content/uploads/2015/10/Software_cornwall_stands-300x225.jpeg)
+![Software Cornwall ](//headforwards.com/wp-content/uploads/2015/10/Software_cornwall_stands.jpeg)
 
 The Software section of the skills area
 
-![3D Printer on Software Cornwall Stand ](http://www.headforwards.com/wp-content/uploads/2015/10/3D_Printer-225x300.jpeg)
+![3D Printer on Software Cornwall Stand ](//headforwards.com/wp-content/uploads/2015/10/3D_Printer.jpeg)
 
 3D Printer printing whistles
 
-![New sleeper carriage](http://www.headforwards.com/wp-content/uploads/2015/10/Sleeper_Carridge--225x300.jpeg)
+![New sleeper carriage](//headforwards.com/wp-content/uploads/2015/10/Sleeper_Carridge-.jpeg)
 
 A new Riviera Sleeper Carriage
 
-![New sleeper carriage](http://www.headforwards.com/wp-content/uploads/2015/10/Sleeper_Cornwall_Expo-225x300.jpeg)
+![New sleeper carriage](//headforwards.com/wp-content/uploads/2015/10/Sleeper_Cornwall_Expo.jpeg)
 
 A new Riviera Sleeper Carriage
 

@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2015/10/the-hub-awards"
 title: "The Hub Awards"
 date: "2015-10-28T13:11:31.000Z"
@@ -15,7 +15,7 @@ author:
 ---
 [The Hub](https://cornwallhub.org/) is an exciting and dynamic network created and run by forward thinking business people in Cornwall to support the business leaders of tomorrow.
 
-![The hub Awars](http://www.headforwards.com/wp-content/uploads/2015/10/10438454_10152975868044218_309510142084846356_n-600x600-300x300.jpg)
+![The hub Awars](//headforwards.com/wp-content/uploads/2015/10/10438454_10152975868044218_309510142084846356_n-600x600.jpg)
 
 2015 marks the13th year of The Hub Awards and Headforwards are extremely proud to be sponsors.  
 _Drum roll please_…and the categories are…

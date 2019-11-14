@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2016/03/want-to-meet-headforwards"
 title: "Want to Meet Headforwards?"
 date: "2016-03-30T12:22:01.000Z"
@@ -59,14 +59,19 @@ _Agile on the beach is a agile conference that is held at Tremough campus in Pen
 No doubt there will be some more events added to our calender as the year goes on, and we will try to keep you up to date.  
 If you know of an event you think we might be interested in attending please let us know.
 
-![Headforwards atThe Cornwall Business Show ](https://www.headforwards.com/wp-content/uploads/2016/03/business-show-logo.png)
+<section class="gallery">
 
-![Headforwards at The Cornwall Business Fair ](https://www.headforwards.com/wp-content/uploads/2016/03/newHeaderLogo-300x122.png)
+![Headforwards atThe Cornwall Business Show ](//headforwards.com/wp-content/uploads/2016/03/business-show-logo.png)
 
-![Headforwards at XP2016](https://www.headforwards.com/wp-content/uploads/2016/03/XP2016-300x151.jpg)
+![Headforwards at The Cornwall Business Fair ](//headforwards.com/wp-content/uploads/2016/03/newHeaderLogo.png)
 
-![Headforwards doing the roc5k](https://www.headforwards.com/wp-content/uploads/2016/03/logo.png)
+![Headforwards at XP2016](//headforwards.com/wp-content/uploads/2016/03/XP2016.jpg)
 
-![Headforwards at Software Cornwall Work Experience ](https://www.headforwards.com/wp-content/uploads/2016/03/cropped-2015-04-07-15.56.27-e1439802104964.png)
+![Headforwards doing the roc5k](//headforwards.com/wp-content/uploads/2016/03/logo.png)
 
-![Headforwards at Agile on the Beach](https://www.headforwards.com/wp-content/uploads/2016/03/agile-on-the-beach-300x68.gif)
+![Headforwards at Software Cornwall Work Experience ](//headforwards.com/wp-content/uploads/2016/03/cropped-2015-04-07-15.56.27-e1439802104964.png)
+
+![Headforwards at Agile on the Beach](//headforwards.com/wp-content/uploads/2016/03/agile-on-the-beach.gif)
+
+</section>
+

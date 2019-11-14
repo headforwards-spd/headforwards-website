@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2018/03/agile-on-the-beach-code-retreat"
 title: "Agile Code Retreat – Two Days of Enhancing Software Development Practises"
 date: "2018-03-28T09:07:39.000Z"
@@ -15,29 +15,33 @@ author:
 ---
 The Agile Code Retreat is a 2-day event where participants study and practice different tools and methodologies used in software development. The first ever retreat was run by **Jon Jagger** who specialises in practice, process, TDD, and complex-adaptive systems-thinking and is known for his collaborative development tool: Cyber-Dojo. Co-hosting with Jon was **Kevlin Henney** whose development interests are in patterns, programming, practice and process. A few lucky members of our team were able attend this year. Here are some of their thoughts and findings.
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat11-300x209.jpg)
+<section class="gallery">
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat17-300x210.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat11.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat54-300x220.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat17.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat25-300x204.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat54.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat26-300x216.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat25.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat43-300x217.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat26.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat57-300x204.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat43.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat59-300x208.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat57.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat70-300x211.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat59.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/aotb17-480-300x215.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat70.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/aotb17-575-300x216.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/aotb17-480.jpg)
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/CodeRetreat11-1-300x209.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/aotb17-575.jpg)
+
+![](//headforwards.com/wp-content/uploads/2018/03/CodeRetreat11-1.jpg)
+
+</section>
 
 ### Filcho Dragunchev
 
@@ -75,13 +79,13 @@ Each time a problem-solving session came to end we repaired and attempted the sa
 
 ### Hosted By
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/aotb17-480.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/aotb17-480.jpg)
 
 ### Kevlin Henney
 
 Kevlin is an independent consultant, speaker, writer and trainer. His development interests are in patterns, programming, practice and process. He has been a columnist for a number of magazines and sites and has been on far too many committees (it has been said that “a committee is a cul-de-sac down which ideas are lured and then quietly strangled”). He is co-author of A Pattern Language for Distributed Computing and On Patterns and Pattern Languages, two volumes in the Pattern-Oriented Software Architecture series. He is also editor of 97 Things Every Programmer Should Know. He lives in Bristol and online.
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/aotb17-575.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/aotb17-575.jpg)
 
 ### Jon Jagger
 

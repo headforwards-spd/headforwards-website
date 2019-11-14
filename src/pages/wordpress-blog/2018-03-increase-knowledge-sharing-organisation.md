@@ -1,5 +1,5 @@
 ---
-type: "wordpress"
+type: "wordpress-blog"
 path: "/2018/03/increase-knowledge-sharing-organisation"
 title: "Increasing Knowledge Sharing in an Organisation"
 date: "2018-03-08T11:48:27.000Z"
@@ -34,9 +34,13 @@ While a lot of conversations happen over a coffee or during unexpected discussio
 
 Celebrate success and failure! We hold weekly "Show and Tell" sessions that do both. Show and Tell gives the teams a chance to talk about new developments on their projects. It also gives them a chance to talk about any hurdles they've overcome during their sprint. This can be useful for other teams who may be facing similar problems. These small but insightful talks give others the ability to follow up with the developers and ask questions in more detail later.
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/headforwards-office-photos-2017-166-web-2048-2.jpg)
+<section class="gallery">
 
-![](https://www.headforwards.com/wp-content/uploads/2017/04/Headforwards-Headtalks-280916-12.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/headforwards-office-photos-2017-166-web-2048-2.jpg)
+
+![](//headforwards.com/wp-content/uploads/2017/04/Headforwards-Headtalks-280916-12.jpg)
+
+</section>
 
 ### Internal Conferences
 
@@ -50,12 +54,12 @@ We share most of our talks on YouTube which you can check out our [YouTube chann
 
 Right now, we have 3 active communities, all set up and run by the teams themselves. These groups are self-organised and plan their own meetups. By sharing and maintaining a level of quality they would all like to adhere to, these groups can aid in the cross-team distribution of project and code experience. Right now, we have a Business Analysis, Front End JavaScript and ScrumMaster community of practice. As these become popular, we expect other areas of within the organisation to begin their own groups.
 
-![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1362-web-2048.jpg)
+![](//headforwards.com/wp-content/uploads/2017/02/IMG_1362-web-2048.jpg)
 
 Make Space
 ----------
 
-![](https://www.headforwards.com/wp-content/uploads/2017/10/Headforwards-5th-year-birthday-Barney.jpg)
+![](//headforwards.com/wp-content/uploads/2017/10/Headforwards-5th-year-birthday-Barney.jpg)
 
 Communal spaces are becoming increasingly popular with lots of organisations. Offering up "breakout" spaces for anybody to check-in to can effectively enable small groups or even pairs of developers to sit down and work out a solution on-the-fly. This is regardless of which team they're from. Placing seating in high-traffic areas increases the chance of interaction between developers who may usually only pass with a quick "hello".
 
@@ -74,12 +78,12 @@ Pair programming is self-explanatory, you take two members of the team and pair 
 
 Mob Programming is paired programming but on a larger scale. Instead of 2 members of the team working together, this is about the whole team getting together to work around a problem. This is a popular technique used by our .NET development teams. Often, I will see a whole team sat around a screen working directly with their client over video chat to discuss and solve problems. Working together strengthens the bond between the team but also allows new and possibly more creative ideas to flourish.
 
-![](https://www.headforwards.com/wp-content/uploads/2017/10/headforwards-office-photos-2017-183-web-3000-1024x683.jpg)
+![](//headforwards.com/wp-content/uploads/2017/10/headforwards-office-photos-2017-183-web-3000.jpg)
 
 Celebrate Failure
 -----------------
 
-![](https://www.headforwards.com/wp-content/uploads/2018/03/shutterstock_325494917-5a68d8403418c600190a3e1f.jpg)
+![](//headforwards.com/wp-content/uploads/2018/03/shutterstock_325494917-5a68d8403418c600190a3e1f.jpg)
 
 We, as people, learn a lot from failure. A large part of being Agile is about failing fast and communicating those failures. If you successfully remove the negative effects of failing, you can learn a lot quicker. Making sure the team are comfortable enough to admit failure means the rate at which that knowledge is shared with others increases. In effect, this protects others from making the same mistakes.
 
