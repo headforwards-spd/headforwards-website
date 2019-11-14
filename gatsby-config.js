@@ -24,6 +24,7 @@ module.exports = {
         // { ...gatsbySourceWordpress },
         // Use WordPress Images
         // { ...gatsbySourceFilesystemWordpress },
+        `gatsby-source-recruitee-api`,
         { ...gatsbySourceFilesystemUploads },
         { ...gatsbySourceFilesystemPages },
         { ...gatsbySourceFilesystemData },

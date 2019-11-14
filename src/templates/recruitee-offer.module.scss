@@ -1,0 +1,30 @@
+@import "../scss/mixins/typography";
+@import "../components/page-components/columns/columns";
+
+.dataTable {
+    @include component-gutter;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 37.5%;
+    dt {
+        font-weight: bold;
+        width: 37.5%;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+    dd {
+        width: 62.5%;
+        margin: 0;
+        padding-left: $gutter-small;
+    }
+}
+
+.copy {
+    @include fontMedium;
+    @include component-gutter;
+    h1 {
+        @include headingFontMedium;
+    }
+}

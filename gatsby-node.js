@@ -8,9 +8,10 @@ exports.createPages = ({ actions, graphql }) => {
 
     return getData(graphql)
         .then(({ data, errors }) => (!errors ? Promise.resolve(data) : Promise.reject(errors)))
-        .then(({ pages, posts }) => {
+        .then(({ pages, posts, jobs }) => {
             createAllPages(createPage, pages);
             createAllPosts(createPage, posts);
+            createAllJobs(createPage, jobs);
         });
 };
 
@@ -38,6 +39,18 @@ function createAllPages(createPage, { nodes: pages = [] }) {
             const { type } = frontmatter;
             return createPage({
                 path: slug,
+                component: path.resolve(`src/templates/${type}-page.js`),
+                context: { id },
+            });
+        })
+    );
+}
+
+function createAllJobs(createPage, { nodes: jobs = [] }) {
+    return Promise.all(
+        jobs.map(({ id, type, slug }) => {
+            return createPage({
+                path: `/careers/${slug}`,
                 component: path.resolve(`src/templates/${type}-page.js`),
                 context: { id },
             });
@@ -94,6 +107,14 @@ function getData(graphql) {
                         type
                         path
                     }
+                }
+            }
+
+            jobs: allRecruiteeOffer(sort: { fields: created, order: DESC }) {
+                nodes {
+                    id
+                    type
+                    slug
                 }
             }
         }

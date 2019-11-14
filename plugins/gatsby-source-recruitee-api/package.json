@@ -1,0 +1,8 @@
+{
+    "name": "gatsby-source-recruitee-api",
+    "dependencies": {
+        "moment": "^2.24.0",
+        "node-fetch": "^2.6.0",
+        "turndown": "^5.0.3"
+    }
+}
