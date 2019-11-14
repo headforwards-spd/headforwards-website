@@ -33,7 +33,7 @@ Thir objectives are split up into 7 core sections.
 
 **Financial Sustainability** : To develop an organisation that is self sustaining
 
-![Software Cornwall wheel ](/wp-content/uploads/2015/08/SWCWheel.png)
+![Software Cornwall wheel ](http://www.headforwards.com/wp-content/uploads/2015/08/SWCWheel-285x300.png)
 
 Who is involved in Software Cornwall? Here is the Committee:
 

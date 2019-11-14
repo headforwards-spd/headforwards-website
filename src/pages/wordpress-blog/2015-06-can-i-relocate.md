@@ -32,7 +32,7 @@ We are based in [Cornwall,](https://www.visitcornwall.com/,) which is an extrem
 
 There is a strange misconception that the majority of people moving to Cornwall are doing so to retire and not because of work. However the predominant reasons are economic and lifestyle. A large number being ‘returners’ for example – people who left to study elsewhere and have come back to settle down. Internal migration is the single greatest driver of population change in Cornwall.
 
-![Migration statistics ](/wp-content/uploads/2015/06/Screen-Shot-2015-06-19-at-16.41.23.png)
+![Migration statistics ](http://www.headforwards.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-19-at-16.41.23-300x212.png)
 
 Cornwall County Council Demographic Evidence Base 2011
 

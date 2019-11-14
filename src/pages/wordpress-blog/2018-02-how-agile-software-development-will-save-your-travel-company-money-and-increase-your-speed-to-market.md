@@ -24,7 +24,7 @@ Do you want to find out how?  Are you at [TTE 2018](http://www.traveltechnology
 You can join the discussion in our tech huddle on 21st February 1325 – 1405.  
 Or come and see us on stand TT82.
 
-![How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market](/wp-content/uploads/2018/02/John-Howell-headshot.jpeg)
+![How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market](https://www.headforwards.com/wp-content/uploads/2018/02/John-Howell-headshot-300x245.jpeg)
 
 **[John Howell](https://www.linkedin.com/in/john-howell/)**  
 **Travel Solutions Director**  
@@ -34,7 +34,7 @@ John is the Headforwards Travels Solution Director, and is the former CEO of tra
 
 John has extensive experience designing and developing products, this along with his unrivaled knowledge of the travel industry enables him to help our clients achieve their business goals.
 
-![How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market](/wp-content/uploads/2018/02/Toby-Parkins-Headforwards-copy.jpg)
+![How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market](https://www.headforwards.com/wp-content/uploads/2018/02/Toby-Parkins-Headforwards-copy-300x200.jpg)
 
 **[Toby Parkins](https://www.linkedin.com/in/tobyparkins/)**  
 **Director**  

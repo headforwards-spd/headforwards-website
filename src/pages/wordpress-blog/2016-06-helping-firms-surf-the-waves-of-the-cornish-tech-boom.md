@@ -43,4 +43,4 @@ After such a successful event in 2015, a repeat was held on 19th May, as part of
 
 Headforwards is also a founding member of not-for-profit organisation [Software Cornwall](https://www.softwarecornwall.org/) which works to raise the profile of the county’s tech services and with the education sector bridge the skills gap. On Thursday 16th June, Headforwards base at the Pool Innovation Centre will host Software Cornwall’s next major event. See https://www.softwarecornwall.org/software-cornwall-business-connect-event/ for more details.
 
-![Bristol Business Post- Headforwards article ](/wp-content/uploads/2016/06/Bristol-Business-Post-copy.jpg)
+![Bristol Business Post- Headforwards article ](https://www.headforwards.com/wp-content/uploads/2016/06/Bristol-Business-Post-copy-225x300.jpg)

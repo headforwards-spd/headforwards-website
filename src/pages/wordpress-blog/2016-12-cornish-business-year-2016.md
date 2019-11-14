@@ -71,16 +71,12 @@ We are incredibly proud of our team here at Headforwards. Combining passion for 
 
 If you’d like to work for the Cornish Business of the Year 2016, we are currently recruiting! Take a look at the opportunities on our [careers page](https://www.headforwards.com/careers/) and get in touch.
 
-<section class="gallery">
+![Cornish Business of the Year 2016](https://www.headforwards.com/wp-content/uploads/2016/12/headforwards-hub-awards-2016-cornish-business-of-the-year-300x225.jpg)
 
-![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-cornish-business-of-the-year.jpg)
+![Cornish Business of the Year 2016](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-jeni-300x225.jpg)
 
-![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-jeni.jpg)
+![Cornish Business of the Year 2016](https://www.headforwards.com/wp-content/uploads/2016/12/headforwards-hub-awards-2016-john-300x169.jpg)
 
-![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/headforwards-hub-awards-2016-john.jpg)
-
-![Cornish Business of the Year 2016](/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-lysssa.jpg)
-
-</section>
+![Cornish Business of the Year 2016](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-hub-awards-2016-lysssa-300x169.jpg)
 
 You can see the official photos by the fabulous [Toby Weller](http://tobyweller.co.uk/) on either the [Hub](https://www.facebook.com/TheHubCornwall/)‘s or [our Facebook page](https://www.facebook.com/headforwards/)

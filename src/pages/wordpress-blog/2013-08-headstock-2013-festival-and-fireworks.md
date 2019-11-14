@@ -23,42 +23,38 @@ No outdoor event would be complete without a beautiful bonfire and spectacular f
 
 The team and their families look forward to Headstock every year, it really is the perfect way to end the summer.
 
-<section class="gallery">
+![Headforwards- kegs of beer](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock1-300x225.jpg)
 
-![Headforwards- kegs of beer](/wp-content/uploads/2014/01/Headstock1.jpg)
+![Headforwards DJ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock23-300x225.jpg)
 
-![Headforwards DJ](/wp-content/uploads/2014/01/Headstock23.jpg)
+![Headforwards enjoy pimms](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock25-300x225.jpg)
 
-![Headforwards enjoy pimms](/wp-content/uploads/2014/01/Headstock25.jpg)
+![Headforwards team on the Roseland ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock8-300x225.jpg)
 
-![Headforwards team on the Roseland ](/wp-content/uploads/2014/01/Headstock8.jpg)
+![The Headforwards team ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock2-300x225.jpg)
 
-![The Headforwards team ](/wp-content/uploads/2014/01/Headstock2.jpg)
+![The Headforwards team at Headstock ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock13-300x225.jpg)
 
-![The Headforwards team at Headstock ](/wp-content/uploads/2014/01/Headstock13.jpg)
+![Headforwards bouncy castle ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock-21-300x225.jpg)
 
-![Headforwards bouncy castle ](/wp-content/uploads/2014/01/Headstock-21.jpg)
+![Headforwards bbq](http://www.headforwards.com/wp-content/uploads/2014/01/headstock10-300x225.jpg)
 
-![Headforwards bbq](/wp-content/uploads/2014/01/headstock10.jpg)
+![Headforwards BBQ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock22-300x225.jpg)
 
-![Headforwards BBQ](/wp-content/uploads/2014/01/Headstock22.jpg)
+![The Headforwards team at Headstock ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock12-300x225.jpg)
 
-![The Headforwards team at Headstock ](/wp-content/uploads/2014/01/Headstock12.jpg)
+![The Headforwards team at Headstock ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock6-300x225.jpg)
 
-![The Headforwards team at Headstock ](/wp-content/uploads/2014/01/Headstock6.jpg)
+![Headforwards Kayaking ](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock9-300x225.jpg)
 
-![Headforwards Kayaking ](/wp-content/uploads/2014/01/Headstock9.jpg)
+![Headforwards kayaking](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock11-300x225.jpg)
 
-![Headforwards kayaking](/wp-content/uploads/2014/01/Headstock11.jpg)
+![Headforwards fireworks](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock14-300x225.jpg)
 
-![Headforwards fireworks](/wp-content/uploads/2014/01/Headstock14.jpg)
+![Headforwards fireworks](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock261-300x225.jpg)
 
-![Headforwards fireworks](/wp-content/uploads/2014/01/Headstock261.jpg)
+![Headforwards fireworks](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock-27-300x225.jpg)
 
-![Headforwards fireworks](/wp-content/uploads/2014/01/Headstock-27.jpg)
-
-![Headforwards fireworks](/wp-content/uploads/2014/01/Headstock18.jpg)
-
-</section>
+![Headforwards fireworks](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock18-300x225.jpg)
 
 If this looks like the sort of event you would like to be part of, why not take a look at our [careers](http://www.headforwards.com/careers/) page to see if we have an the right opportunity for you.

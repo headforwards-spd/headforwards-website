@@ -19,7 +19,7 @@ Are you ready to take the next step in your career?
 
 Do you want to work at an exciting company who are passionate about innovation?
 
-![Software Jobs in the UK at Headforwards ](/wp-content/uploads/2015/12/Headforwards-team-at-30.jpg)
+![Software Jobs in the UK at Headforwards ](http://www.headforwards.com/wp-content/uploads/2015/12/Headforwards-team-at-30-300x222.jpg)
 
 Software Jobs in the UK at Headforwards
 

@@ -10,6 +10,8 @@ function sanitiseFile(fileName) {
     const oldContent = fs.readFileSync(`./${fileName}`).toString();
 
     const newContent = oldContent
+        // Relative image paths
+        // .replace(/http(?:s)?:\/\/(?:www.)?headforwards.com\/wp-content/g, '/wp-content')
         // Unwrap images from links
         .replace(/([^!])?\[(!\[[^\]]*]\([^)]+\))]\([^)]+\)/g, '$1$2')
         // Remove links to images

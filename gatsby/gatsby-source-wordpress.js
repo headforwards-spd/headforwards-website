@@ -6,8 +6,7 @@ const Entities = require('html-entities').XmlEntities;
 const htmlEntities = new Entities();
 
 const turndownService = new TurndownService();
-const getMarkdown = html =>
-    turndownService.turndown(html).replace(/http(?:s)?:\/\/(?:www.)?headforwards.com\/wp-content/g, '/wp-content');
+const getMarkdown = html => turndownService.turndown(html);
 
 module.exports = {
     resolve: 'gatsby-source-wordpress',

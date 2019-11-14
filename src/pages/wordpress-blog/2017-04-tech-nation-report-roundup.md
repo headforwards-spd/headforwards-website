@@ -41,17 +41,13 @@ Tech Sector Growth Potential: 79%
 
 Here are some stats about our Tech Cluster that were gathered from the survey responses, community partners and founder case studies:
 
-<section class="gallery">
+![](https://www.headforwards.com/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-3-556x1024.jpg)
 
-![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-3.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-1-993x1024.jpg)
 
-![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-1.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-996x1024.jpg)
 
-![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet.jpg)
-
-![](/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-2.jpg)
-
-</section>
+![](https://www.headforwards.com/wp-content/uploads/2017/04/tech-nation-report-sw-stat-snippet-2-996x1024.jpg)
 
 For more information about the UK Tech Sector: [Click Here](http://technation.techcityuk.com/)
 

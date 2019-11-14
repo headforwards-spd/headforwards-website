@@ -66,6 +66,6 @@ While my focus of Agile is primarily in marketing, it is of course used widely a
 
 This article was written by Jake Kimpton – Digital Engagement Strategist, Headforwards.
 
-![](/wp-content/uploads/2017/08/aotb-2017.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/08/aotb-2017-1024x749.jpg)
 
 _Diana Larson, Opening Keynote AOTB 2017_

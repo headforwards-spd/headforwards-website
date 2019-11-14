@@ -33,221 +33,216 @@ We are all in agreement that this year’s Christmas party was a great success.
 
 A special thank you goes to Edvinas and Karen who took some superb pictures throughout the evening. Which one is your favourite?
 
-<section class="gallery">
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-00-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-00.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-1-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-1.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-01-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-01.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-02-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-02.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-03-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-03.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-04-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-04.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-05-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-05.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-06-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-06.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-07-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-07.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-08-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-08.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-09-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-09.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-11-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-11.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-13-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-13.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-15-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-15.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-16-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-16.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-17-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-17.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-22-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-22.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-25-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-25.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-27-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-27.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-28-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-28.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-31-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-31.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-32-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-32.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-34-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-34.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-38-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-38.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-36-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-36.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-39-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-39.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-40-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-40.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-42-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-42.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-45-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-45.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-47-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-47.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-48-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-48.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-49-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-49.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-52-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-52.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-57-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-57.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-58-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-58.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-63-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-63.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-64-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-64.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-69-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-69.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-70-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-70.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-71-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-71.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-75-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-75.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-76-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-76.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-78-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-78.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-91-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-91.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-84-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-84.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-85-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-85.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-86-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-86.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-87-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-87.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-92-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-92.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-93-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-93.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-95-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-95.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-98-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-98.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-99-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-99.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-Ben-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-Ben.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-sign-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-sign.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-300x200.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8042-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8042.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8043-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8043.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8045-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8045.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8047-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8047.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8048-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8051-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8051.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8052-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8052.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8053-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8053.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8054-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8054.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8055-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8055.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8058-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8058.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8059-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8059.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8060-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8060.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8062-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8062.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8063-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8063.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8065-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8065.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8066-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8066.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8067-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8067.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8069-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8069.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8070-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8070.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8071-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8071.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8072-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8072.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8073-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8073.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8074-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8074.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8078-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8078.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8076-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8076.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8079-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8079.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8081-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8081.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8082-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8082.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8089-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8089.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8091-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8091.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8092-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8092.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8093-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8093.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8094-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8094.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8096-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8096.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8099-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8099.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8100-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8100.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8101-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8101.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8102-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8102.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8111-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8111.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8115-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8115.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8117-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8117.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8123-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8123.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8132-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8132.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8134-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8134.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8140-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8140.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8144-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8144.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8141-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8141.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8152-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8152.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8163-300x225.jpg)
 
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8163.jpg)
-
-![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8173.jpg)
-
-</section>
-
+![](https://www.headforwards.com/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016F8173-300x225.jpg)

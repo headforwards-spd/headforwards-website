@@ -21,26 +21,22 @@ We were also lucky enough to be treated to a guided Kayak tour of the coastline 
 
 Here are a few photos from the evening, if you want to watch them in a slideshow please just click on one image and it will open up.
 
-<section class="gallery">
+![Summer BBQ at St Agnes](http://www.headforwards.com/wp-content/uploads/2014/01/ST-Agnes-122-300x225.jpg)
 
-![Summer BBQ at St Agnes](/wp-content/uploads/2014/01/ST-Agnes-122.jpg)
+![Headforwards summer BBQ in St Agnes](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-12-300x225.jpg)
 
-![Headforwards summer BBQ in St Agnes](/wp-content/uploads/2014/01/St-Agnes-12.jpg)
+![Headforwards summer BBQ](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-31-300x225.jpg)
 
-![Headforwards summer BBQ](/wp-content/uploads/2014/01/St-Agnes-31.jpg)
+![Headforwards summer bbq](http://www.headforwards.com/wp-content/uploads/2014/01/st-Agnes18-300x225.jpg)
 
-![Headforwards summer bbq](/wp-content/uploads/2014/01/st-Agnes18.jpg)
+![summer bbq in cornwall](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-17-300x225.jpg)
 
-![summer bbq in cornwall](/wp-content/uploads/2014/01/St-Agnes-17.jpg)
+![Cornish summer BBQ for Headforwards team](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-19-300x225.jpg)
 
-![Cornish summer BBQ for Headforwards team](/wp-content/uploads/2014/01/St-Agnes-19.jpg)
+![Koru Kayaking - Headforwards team ](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-91-300x225.jpg)
 
-![Koru Kayaking - Headforwards team ](/wp-content/uploads/2014/01/St-Agnes-91.jpg)
+![Swimming at St Agnes- Headforwards team ](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes22-300x225.jpg)
 
-![Swimming at St Agnes- Headforwards team ](/wp-content/uploads/2014/01/St-Agnes22.jpg)
-
-![The Headforwards team with Koru Kayaking ](/wp-content/uploads/2014/01/St-Agnes-101.jpg)
-
-</section>
+![The Headforwards team with Koru Kayaking ](http://www.headforwards.com/wp-content/uploads/2014/01/St-Agnes-101-300x225.jpg)
 
 If this looks like the sort of after work activity and team adventure you would like to be a part of then please take a look at our [careers](http://www.headforwards.com/careers/) page. We might have just the job in Cornwall for you.

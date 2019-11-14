@@ -58,7 +58,7 @@ However good project management is key, the team leader plays an important part 
 
 If you are interested in finding out more about the use of Agile you should consider attending [Agile on the Beach.](http://agileonthebeach.com/) It is a 2-day conference in [Falmouth, Cornwall](http://www.falmouth.co.uk/)  with a beach party in between.
 
-![Agile on the beach](/wp-content/uploads/2015/06/AOTB-logo-design.jpg)
+![Agile on the beach](http://www.headforwards.com/wp-content/uploads/2015/06/AOTB-logo-design-300x169.jpg)
 
 If you have any questions or would like to become part of the team here at Headforwards please get it touch. Lets get social.
 

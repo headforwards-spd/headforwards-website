@@ -31,15 +31,10 @@ So come along and say hello – get social with us!
 
 You never know you might get an invite to our next BBQ.
 
-<section class="gallery">
+![Headforwards beach BBQ](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF2516-300x225.jpg)
 
-![Headforwards beach BBQ](/wp-content/uploads/2014/06/DSCF2516.jpg)
+![Headforwards team at laser tag](http://www.headforwards.com/wp-content/uploads/2015/06/DSCF0778-300x225.jpg)
 
-![Headforwards team at laser tag](/wp-content/uploads/2015/06/DSCF0778.jpg)
+![Headforwards team in Falmouth](http://www.headforwards.com/wp-content/uploads/2014/06/DSCF1774-300x225.jpg)
 
-![Headforwards team in Falmouth](/wp-content/uploads/2014/06/DSCF1774.jpg)
-
-![Headforwards- Headstock festival](/wp-content/uploads/2014/01/Headstock-21.jpg)
-
-</section>
-
+![Headforwards- Headstock festival](http://www.headforwards.com/wp-content/uploads/2014/01/Headstock-21-300x225.jpg)

@@ -70,4 +70,4 @@ _The people I work with are really great. There is less pressure to work long da
 
 _Windows 10_
 
-![](/wp-content/uploads/2017/03/benefits.png)
+![](https://www.headforwards.com/wp-content/uploads/2017/03/benefits-182x300.png)

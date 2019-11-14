@@ -33,11 +33,6 @@ As part of our ongoing development with the local tech community, we will plan t
 > 
 > — Headforwards (@Headforwards) [February 10, 2017](https://twitter.com/Headforwards/status/830105259804618753)
 
-<section class="gallery">
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1364-web-2048-2-300x186.jpg)
 
-![](/wp-content/uploads/2017/02/IMG_1364-web-2048-2.jpg)
-
-![](/wp-content/uploads/2017/02/IMG_1357-web-2048-2.jpg)
-
-</section>
-
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1357-web-2048-2-300x291.jpg)

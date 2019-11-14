@@ -61,17 +61,12 @@ The meet up felt really positive with plenty of interesting discussions to get i
 
 We would also like to thank THINQTANQ and Andy Mantell for organising and hosting the event.
 
-<section class="gallery">
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1305-web-2048-300x180.jpg)
 
-![](/wp-content/uploads/2017/02/IMG_1305-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1303-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/02/IMG_1303-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1324-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/02/IMG_1324-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1301-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/02/IMG_1301-web-2048.jpg)
-
-![](/wp-content/uploads/2017/02/CymFrhZWgAArSNT-web-2048-1.jpg)
-
-</section>
-
+![](https://www.headforwards.com/wp-content/uploads/2017/02/CymFrhZWgAArSNT-web-2048-1-300x203.jpg)

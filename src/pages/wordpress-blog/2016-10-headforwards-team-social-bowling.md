@@ -45,47 +45,42 @@ Well done guys! Maybe you should think about joining a league!
 
 You can see the full scores in the first photo below:
 
-<section class="gallery">
+![The Scores](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Scores-300x169.jpg)
 
-![The Scores](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Scores.jpg)
+![3 Strikes!](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-3strikes-300x169.jpg)
 
-![3 Strikes!](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-3strikes.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-201691935-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-201691935.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-201684714-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-201684714.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-ballandpins-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-ballandpins.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Bar-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Bar.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Craig-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Craig.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-group1-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-group1.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-201685440-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-201685440.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-201684332-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-201684332.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Toby-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Toby.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Toby-strike-169x300.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Toby-strike.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Pool-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Pool.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Lyssa-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-Lyssa.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-shoes-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-shoes.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-team-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-team.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-winner-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-winner.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-201691930-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-201691930.jpg)
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-2016-group-300x169.jpg)
 
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-2016-group.jpg)
-
-![Headforwards Bowling](/wp-content/uploads/2016/10/Headforwards-Bowling-201684443.jpg)
-
-</section>
-
+![Headforwards Bowling](https://www.headforwards.com/wp-content/uploads/2016/10/Headforwards-Bowling-201684443-169x300.jpg)

@@ -43,6 +43,10 @@ UTC is the standard used in computing, which is like TAI but with leap seconds
 
 The list goes on with TDT, TBT, TCB, TCG etc.
 
+[](http://www.headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.56.27.jpg)
+
+[](http://www.headforwards.com/wp-content/uploads/2015/06/2015-06-19-18.56.27.jpg)
+
 Lets look at your smartphones for an example of the issues this causes. The clock in your smartphones GPS is 16 seconds out of sync with the phones system clock, because GPS doesn’t use leap seconds.
 
 Imagine this on a much bigger, global scale and you can see why this loss of synchronisation could cause issues.

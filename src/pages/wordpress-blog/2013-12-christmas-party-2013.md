@@ -20,44 +20,40 @@ We had a most enjoyable evening, full of food, drinks and dancing! We were lucky
 
 Below are a selection of photos from our delightful Christmas party, if you would like the view them in a lightbox slideshow please just click on one of the images.
 
-<section class="gallery">
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner5-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner5.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/Dinner1-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/Dinner1.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner17-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner17.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner14-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner14.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner20-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner20.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner10-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner10.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner8-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner8.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2013/12/dinner21.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2013/12/dinner21.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2013/12/dscf8770-300x225.jpeg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2013/12/dscf8770.jpeg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2013/12/dscf8831-300x225.jpeg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2013/12/dscf8831.jpeg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2013/12/dinner366-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2013/12/dinner366.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2013/12/dinner7-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2013/12/dinner7.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner4-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner4.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner12-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner12.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner2-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner2.jpg)
+![Headforwards Christmas dinner at the Driftwood Spars ](http://www.headforwards.com/wp-content/uploads/2014/01/dinner16-300x225.jpg)
 
-![Headforwards Christmas dinner at the Driftwood Spars ](/wp-content/uploads/2014/01/dinner16.jpg)
+![Karen Russell - Headforwards](http://www.headforwards.com/wp-content/uploads/2014/01/dinner15-225x300.jpg)
 
-![Karen Russell - Headforwards](/wp-content/uploads/2014/01/dinner15.jpg)
-
-![Headforwards Christmas dinner at the Driftwood Spars](/wp-content/uploads/2014/01/1526672_10152129596798200_2034344827_n.jpg)
-
-</section>
+![Headforwards Christmas dinner at the Driftwood Spars](http://www.headforwards.com/wp-content/uploads/2014/01/1526672_10152129596798200_2034344827_n-225x300.jpg)
 
 If you like the look of this Christmas party and think you would like to be at the next one, then please look at our [careers page](http://www.headforwards.com/careers/). We might have just the role for you.

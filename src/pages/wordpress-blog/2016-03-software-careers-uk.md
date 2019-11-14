@@ -40,4 +40,4 @@ Happy developers who feel valued and are working well as a team produce the best
 If you are interested in becoming part of the Headforwards family, please [contact us](https://www.headforwards.com/careers/application-form/).  
 We are looking forward to hearing from you.
 
-![The Headforwards team - offering software careers in the UK ](/wp-content/uploads/2016/03/Headforwards-team-at-30.jpg)
+![The Headforwards team - offering software careers in the UK ](https://www.headforwards.com/wp-content/uploads/2016/03/Headforwards-team-at-30-300x222.jpg)

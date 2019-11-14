@@ -23,23 +23,18 @@ Once a month, the Headforwards team vote on a social outing from a selection of 
 > 
 > — Headforwards (@Headforwards) [February 2, 2017](https://twitter.com/Headforwards/status/827084204261441536)
 
-<section class="gallery">
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1280-300x225.jpg "Headforwards Team Social: Rogue One Private Screening")
 
-![](/wp-content/uploads/2017/02/IMG_1280.jpg "Headforwards Team Social: Rogue One Private Screening")
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_3531.JPG-300x225.jpg)
 
-![](/wp-content/uploads/2017/02/IMG_3531.JPG.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1285-300x225.jpg "Headforwards Team Social: Rogue One Private Screening")
 
-![](/wp-content/uploads/2017/02/IMG_1285.jpg "Headforwards Team Social: Rogue One Private Screening")
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_1286-300x225.jpg "Headforwards Team Social: Rogue One Private Screening")
 
-![](/wp-content/uploads/2017/02/IMG_1286.jpg "Headforwards Team Social: Rogue One Private Screening")
+![](https://www.headforwards.com/wp-content/uploads/2017/02/C3pksS6WYAARvmL-300x225.jpg "Headforwards Team Social: Rogue One Private Screening")
 
-![](/wp-content/uploads/2017/02/C3pksS6WYAARvmL.jpg "Headforwards Team Social: Rogue One Private Screening")
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_3528.JPG-300x225.jpg)
 
-![](/wp-content/uploads/2017/02/IMG_3528.JPG.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_3532.JPG-300x225.jpg)
 
-![](/wp-content/uploads/2017/02/IMG_3532.JPG.jpg)
-
-![](/wp-content/uploads/2017/02/IMG_3533.JPG.jpg)
-
-</section>
-
+![](https://www.headforwards.com/wp-content/uploads/2017/02/IMG_3533.JPG-300x225.jpg)

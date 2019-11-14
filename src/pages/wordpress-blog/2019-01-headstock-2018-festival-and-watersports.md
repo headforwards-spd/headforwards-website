@@ -15,92 +15,86 @@ author:
 ---
 Every year we organise our very own Festival called Headstock.  Traditionally this  been held at the end of the summer, but as the British weather can be so unreliable in September, we decided to hold this year’s Festival in June.
 
-So the Headstock Organisation Team – aka the Business Team – pulled out all the stops to make the Festival great fun for all.  Raft building and racing, Bouncy Castles, Gladiator Games and Watersports were all laid on with the most competitive amongst us taking the raft building very seriously.  The Reggae DJs and our own resident DJ kept the music going and the BBQ was busy all day.
+So the Headstock Organisation Team – aka the Business Team – pulled out all the stops to make the Festival great fun for all.  Raft building and racing, Bouncy Castles, Gladiator Games and Watersports were all laid on with the most competitive amongst us taking the raft building very seriously.  The Reggae DJs and our own resident DJ kept the music going and the BBQ was busy all day.![](https://www.headforwards.com/wp-content/uploads/2019/01/36240576_10156557481288200_981399722193321984_n-300x225.jpg)
 
-<section class="gallery">
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.01.14-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/36240576_10156557481288200_981399722193321984_n.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.01.16-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.01.14.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.01.22-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.01.16.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.01.38-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.01.22.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.02.05-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.01.38.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.02.09-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.02.05.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.02.12-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.02.09.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.02.19-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.02.12.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.02.25-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.02.19.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.02.27-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.02.25.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.02.57-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.02.27.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/36389807_10156560315383200_3971093261136691200_n-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.02.57.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.07.08-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/36389807_10156560315383200_3971093261136691200_n.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.07.10-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.07.08.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.07.13-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.07.10.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.07.26-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.07.13.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.07.38-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.07.26.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.07.41-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.07.38.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.28.34-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.07.41.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.28.51-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.28.34.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.28.57-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.28.51.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.29.00-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.28.57.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.29.07-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.29.00.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.29.56-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.29.07.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.30.05-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.29.56.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.30.23-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.30.05.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.30.41-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.30.23.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.31.10-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.30.41.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.45.23-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.31.10.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.45.43-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.45.23.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-14.45.53-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.45.43.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-15.17.15-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-14.45.53.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-15.17.19-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-15.17.15.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-15.17.37-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-15.17.19.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-15.17.40-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-15.17.37.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-15.18.29-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-15.17.40.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-15.18.39-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-15.18.29.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-15.19.00-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-15.18.39.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-15.19.35-300x225.jpg)
 
-![](/wp-content/uploads/2019/01/2018-06-30-15.19.00.jpg)
-
-![](/wp-content/uploads/2019/01/2018-06-30-15.19.35.jpg)
-
-![](/wp-content/uploads/2019/01/2018-06-30-15.25.14.jpg)
-
-</section>
+![](https://www.headforwards.com/wp-content/uploads/2019/01/2018-06-30-15.25.14-300x225.jpg)
 
 If this looks like the sort of event you would like to be part of, why not take a look at our [careers](http://www.headforwards.com/careers/) page to see if we have the right opportunity for you.

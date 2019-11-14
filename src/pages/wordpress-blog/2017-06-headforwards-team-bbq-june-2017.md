@@ -15,49 +15,44 @@ author:
 ---
 Another excellent BBQ on a warm summer’s evening here in Cornwall and possibly the best way to end a day in the office. During the summer months, we try to have a few evening BBQs with the team. It’s a great way for family and friends to get together outside of work and enjoy good food with great views of the local coastline. This month’s BBQ was held at Trevaunance Cove, St Agnes – the hometown of many employees at Headforwards.
 
-<section class="gallery">
+![](https://www.headforwards.com/wp-content/uploads/2017/06/IMG_2572-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/IMG_2572.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/IMG_2560-1-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/IMG_2560-1.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/IMG_2566-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/IMG_2566.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9100-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9100-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9101-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9101-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9102-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9102-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9105-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9105-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9106-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9106-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9108-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9108-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9110-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9110-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9111-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9111-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9113-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9113-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9116-web-2048-300x186.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9116-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9120-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9120-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9123-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9123-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9124-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9124-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9125-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9125-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9127-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9127-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9129-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9129-web-2048.jpg)
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9134-web-2048-300x225.jpg)
 
-![](/wp-content/uploads/2017/06/DSCF9134-web-2048.jpg)
-
-![](/wp-content/uploads/2017/06/DSCF9135-web-2048.jpg)
-
-</section>
-
+![](https://www.headforwards.com/wp-content/uploads/2017/06/DSCF9135-web-2048-300x225.jpg)

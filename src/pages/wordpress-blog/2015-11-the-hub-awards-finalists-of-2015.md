@@ -13,7 +13,7 @@ author:
   name: "Lyssa Crump"
   path: "/author/lyssa/"
 ---
-![The Hub Awards](/wp-content/uploads/2015/11/TheHubSponsor.jpg)
+![The Hub Awards](http://www.headforwards.com/wp-content/uploads/2015/11/TheHubSponsor-300x300.jpg)
 
 We have previously posted about being proud sponsors of “The Best Use of Digital” award at the Hub Awards 2015.
 
