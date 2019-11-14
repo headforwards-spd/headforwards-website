@@ -24,6 +24,7 @@ function HomepageTemplate({ page }) {
                     <section style={{ display: 'flex' }} className={index % 2 ? '' : styles.postitRight}>
                         {!!image && <FullWidthImage image="/uploads/craig.jpg" />}
                         {!!postit && <Postit />}
+
                         <section>
                             {!!components && components.map(component => <PageComponent {...component} />)}
                         </section>
