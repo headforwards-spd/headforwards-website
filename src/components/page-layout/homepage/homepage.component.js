@@ -18,17 +18,18 @@ HomepageTemplate.defaultProps = {
 function HomepageTemplate({ page }) {
     const { sections } = page;
     return (
-        <>
+        <Fragment>
             {!!sections &&
                 sections.map(({ components, postit, image }, index) => (
                     <section style={{ display: 'flex' }} className={index % 2 ? '' : styles.postitRight}>
                         {!!image && <FullWidthImage image="/uploads/craig.jpg" />}
                         {!!postit && <Postit />}
+
                         <section>
                             {!!components && components.map(component => <PageComponent {...component} />)}
                         </section>
                     </section>
                 ))}
-        </>
+        </Fragment>
     );
 }
