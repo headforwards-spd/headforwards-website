@@ -31,9 +31,7 @@ So come along and say hello – get social with us!
 
 You never know you might get an invite to our next BBQ.
 
-
 <section class="gallery">
-
 
 ![Headforwards beach BBQ](/wp-content/uploads/2014/06/DSCF2516.jpg)
 

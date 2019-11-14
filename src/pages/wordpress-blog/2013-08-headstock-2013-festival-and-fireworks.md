@@ -23,9 +23,7 @@ No outdoor event would be complete without a beautiful bonfire and spectacular f
 
 The team and their families look forward to Headstock every year, it really is the perfect way to end the summer.
 
-
 <section class="gallery">
-
 
 ![Headforwards- kegs of beer](/wp-content/uploads/2014/01/Headstock1.jpg)
 
@@ -62,7 +60,5 @@ The team and their families look forward to Headstock every year, it really is t
 ![Headforwards fireworks](/wp-content/uploads/2014/01/Headstock18.jpg)
 
 </section>
-
-
 
 If this looks like the sort of event you would like to be part of, why not take a look at our [careers](http://www.headforwards.com/careers/) page to see if we have an the right opportunity for you.

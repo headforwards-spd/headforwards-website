@@ -25,7 +25,6 @@ author:
 
 <section class="gallery">
 
-
 ![](/wp-content/uploads/2017/02/Headforwards-Agile-Board.jpg)
 
 ![](/wp-content/uploads/2017/02/Headforwards-Agile-board-for-software-development-.jpg)

@@ -19,15 +19,7 @@ author:
 
 She is on the [Agile on the Beach](http://agileonthebeach.com/) committee and is also a big supporter of [Software Cornwall](http://www.headforwards.com/2015/08/software-cornwall/), a collective of software companies who are committed to raising its profile in the county.
 
-
-<section class="gallery">
-
-
 ![Belinda Waldock at Agile on the Beach discussing Software Cornwall ](/wp-content/uploads/2015/09/Belinda-Waldcock-Being-Agile-in-Business-Software-Cornwall-Agile-on-the-Beach.jpg)
-
-</section>
-
-
 
 Waldock talks about doing business in an Agile way.
 
@@ -41,15 +33,7 @@ If we look at the Agile manifesto and replace the word software with solutions i
 
 “Working solutions _over _comprehensive documentation”
 
-
-<section class="gallery">
-
-
 ![Belinda Waldock at Agile on the beach- The Agile manifesto](/wp-content/uploads/2015/09/Belinda-Waldcock-The-Agile-Manifesto-Being-Agile-in-Business-.jpg)
-
-</section>
-
-
 
 She makes the remark “_Common sense isn’t very common any more_” and I think that is something most of us could attest to.
 
@@ -57,15 +41,7 @@ Agile thinking helps lead us back to a place where common sense is prevalent.
 
 She has recently had a book published called “[Being Agile in Business](http://www.amazon.co.uk/Being-Agile-Business-Discover-Smarter/dp/1292083700/ref=as_sl_pc_tf_til?tag=wwwbelindawco-21&linkCode=w00&linkId=ARFOGQWJ52CULALO&creativeASIN=1292083700)”
 
-
-<section class="gallery">
-
-
 ![Being Agile in Business by Belinda Waldock ](/wp-content/uploads/2015/09/Being-Agile-in-Business-book-by-Belinda-Waldcock.jpg)
-
-</section>
-
-
 
 It was really interesting to hear about Waldocks unusual approach to writing this book.  
 The publishers loved the idea and asked her to go away for 6 months to write it. They would then review what she had written and, more than likely, tear it apart and send her off for another 6 months to rewrite it.
@@ -74,15 +50,7 @@ To Waldock this seemed like a very counter productive way to write a book-not ve
 She spoke to her publishers and proposed writing it in sprints.  
 After some initial trepidation they agreed.
 
-
-<section class="gallery">
-
-
 ![Belinda Waldock at Agile on the Beach - Book planning ](/wp-content/uploads/2015/09/Belinda-Waldcock-book-plannong-being-Agile-in-Business-.jpg)
-
-</section>
-
-
 
 She made a Kanban board and included all the topics she wanted to cover. She then covered one section per sprint, and sent it to the publishers to be approved.
 
@@ -98,15 +66,7 @@ If a task was placed by the anchor it was because the task was dragging them dow
 
 This is a really useful exercise for gauging the teams happiness levels as well their work load and helping with prioritisation.
 
-
-<section class="gallery">
-
-
 ![Belinda Waldock at Agile on the beach ](/wp-content/uploads/2015/09/Belinda-Waldcock-Being-Agile-in-Business-Agile-on-the-Beach.jpg)
-
-</section>
-
-
 
 Belinda Waldock at Agile on the Beach had a strong message: Be Agile- don’t worry about being perfect.
 
@@ -116,15 +76,7 @@ I guess the software equivalent to this would be minimum viable product. (MVP)
 Waldock does go on to stress the point that it is important to make a plan, just be prepared for that plan to change.  
 You need to be flexible and ready to adjust.
 
-
-<section class="gallery">
-
-
 ![Belinda Waldock at Agile on the beach](/wp-content/uploads/2015/09/Belinda-Waldock-Agile-on-the-Beach-letting-go-of-the-wheel-.jpg)
-
-</section>
-
-
 
 She goes on to say Agile isn’t necessarily the solution, but it is a way of showing you where the problems are and helping you to fix them.
 

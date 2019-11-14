@@ -103,6 +103,4 @@ So the Headstock Organisation Team – aka the Business Team – pulled out all 
 
 </section>
 
-
-
 If this looks like the sort of event you would like to be part of, why not take a look at our [careers](http://www.headforwards.com/careers/) page to see if we have the right opportunity for you.

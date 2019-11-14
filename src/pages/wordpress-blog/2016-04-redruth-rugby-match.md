@@ -19,9 +19,7 @@ It was a thrilling game and everyone enjoyed watching it – even the members of
 
 Thank you to everyone who came along and made the day so special. We are all already looking forward to the next Redruth rugby match.
 
-
 <section class="gallery">
-
 
 ![Headforwards - Redruth Rugby Match ](/wp-content/uploads/2016/04/Headforwards-Redruth-Rugby.jpg)
 
@@ -136,7 +134,5 @@ Thank you to everyone who came along and made the day so special. We are all alr
 ![Headforwards-Redruth-Rugby57](/wp-content/uploads/2016/04/Headforwards-Redruth-Rugby57.jpg)
 
 </section>
-
-
 
 If you are interested in joining the Headforwards team and attending events like this with us, please take a look at our [careers page](https://www.headforwards.com/careers/) to see our current software job vacancies.

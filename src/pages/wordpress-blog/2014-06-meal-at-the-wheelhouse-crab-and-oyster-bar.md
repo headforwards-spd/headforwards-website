@@ -25,8 +25,6 @@ After dinner we visited [Beerwolf Books](http://beerwolfbooks.com/), another Fal
 
 We all had a fantastic evening, and we are looking forward to the next one!
 
-
-
 <section class="gallery">
 
  ![Headforwards at The Wheel House Falmouth ](/wp-content/uploads/2014/06/DSCF1719.jpg)

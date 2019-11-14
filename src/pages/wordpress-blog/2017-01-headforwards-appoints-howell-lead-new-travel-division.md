@@ -34,9 +34,7 @@ Howell’s knowledge of the travel market will help to drive forward Headforward
 
 “Underpinning our success is the fundamental belief in working in an Agile way and in the philosophies behind it, not just slavishly putting practices into action. Our clients are viewed as partners, and we work hard to make it a mutually beneficial partnership. I’m confident with John joining the team the travel industry will recognise the benefits of our approach.”
 
-
 <section class="gallery">
-
 
 ![Left to Right: Craig Girvan, John Howell, Toby Parkins](/wp-content/uploads/2017/01/IMG_2199-web-2048-1.jpg "Left to Right: Craig Girvan, John Howell, Toby Parkins")
 

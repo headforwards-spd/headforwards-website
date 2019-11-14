@@ -1,1 +1,7 @@
-public/*
+.cache
+.scannerwork
+public
+static/images
+static/uploads
+static/wp-content
+storybook-static

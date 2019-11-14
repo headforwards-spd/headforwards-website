@@ -19,7 +19,6 @@ ROC Wellbeing services, including ROC Welcome, offer a varied range of programme
 
 <section class="gallery">
 
-
 ![](/wp-content/uploads/2017/06/IMG_0425-web-2048.jpg)
 
 ![](/wp-content/uploads/2017/06/IMG_7270.jpg)

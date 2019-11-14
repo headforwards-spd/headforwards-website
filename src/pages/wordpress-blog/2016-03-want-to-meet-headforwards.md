@@ -59,9 +59,7 @@ _Agile on the beach is a agile conference that is held at Tremough campus in Pen
 No doubt there will be some more events added to our calender as the year goes on, and we will try to keep you up to date.  
 If you know of an event you think we might be interested in attending please let us know.
 
-
 <section class="gallery">
-
 
 ![Headforwards atThe Cornwall Business Show ](/wp-content/uploads/2016/03/business-show-logo.png)
 

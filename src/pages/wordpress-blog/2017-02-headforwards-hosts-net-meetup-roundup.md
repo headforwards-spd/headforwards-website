@@ -35,7 +35,6 @@ As part of our ongoing development with the local tech community, we will plan t
 
 <section class="gallery">
 
-
 ![](/wp-content/uploads/2017/02/IMG_1364-web-2048-2.jpg)
 
 ![](/wp-content/uploads/2017/02/IMG_1357-web-2048-2.jpg)

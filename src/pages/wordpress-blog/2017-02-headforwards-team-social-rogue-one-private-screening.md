@@ -25,7 +25,6 @@ Once a month, the Headforwards team vote on a social outing from a selection of 
 
 <section class="gallery">
 
-
 ![](/wp-content/uploads/2017/02/IMG_1280.jpg "Headforwards Team Social: Rogue One Private Screening")
 
 ![](/wp-content/uploads/2017/02/IMG_3531.JPG.jpg)

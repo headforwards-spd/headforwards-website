@@ -70,11 +70,4 @@ _The people I work with are really great. There is less pressure to work long da
 
 _Windows 10_
 
-
-<section class="gallery">
-
-
 ![](/wp-content/uploads/2017/03/benefits.png)
-
-</section>
-

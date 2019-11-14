@@ -29,11 +29,4 @@ We are shortlisted for **Business of the Year** and **Best Technological or Cre
 
 We are looking forward to celebrating with all the other finalists at the gala dinner at St Mellion on Thursday 16th November.
 
-
-<section class="gallery">
-
-
 ![Headforwards - business of the year- western morning news business awards ](/wp-content/uploads/2017/10/Wester-Morning-News-Business-Awards-2017-headforwards.jpg)
-
-</section>
-

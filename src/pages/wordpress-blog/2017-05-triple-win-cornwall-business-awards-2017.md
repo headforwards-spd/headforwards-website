@@ -21,15 +21,7 @@ We were honoured to be attending the 2017 awards ceremony held at the prestigiou
 
 The full award list covered many areas of business identifying areas of growth, innovation and entrepreneurialism.
 
-**
-
-<section class="gallery">
-
-![](/wp-content/uploads/2017/05/cba17-004_34711424496_o.jpg)
-
-</section>
-
-**
+**![](/wp-content/uploads/2017/05/cba17-004_34711424496_o.jpg)**
 
 *   Young Enterprise
 *   **Young Business Person Of The Year**
@@ -58,9 +50,7 @@ We’d like to congratulate all the individuals and businesses who shortlisted f
 
 We would also like to thank the event organisers for the huge amount of time and money that has been invested into such a glamorous and enjoyable evening.
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/05/cornwall-business-awards_33908587384_o-1.jpg)
 

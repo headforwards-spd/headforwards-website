@@ -38,14 +38,6 @@ Whilst this is model is unconventional, it is proving to be extremely successful
 
 If you are interested in becoming part of the team at the fastest growing software company in Cornwall, [apply now](https://www.headforwards.com/careers/application-form/).
 
-
-<section class="gallery">
-
-
 ![Headforwards - jobs for graduates](/wp-content/uploads/2016/06/SGP1364.jpg)
-
-</section>
-
-
 
 Headforwards celebratory birthday beer

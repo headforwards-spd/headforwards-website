@@ -19,9 +19,7 @@ The tour began with the vital ingredient to any fine brew: hops. Onwards, we we
 
 Here are a few photos from the tour including some post-beer tasting friendly faces.
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-17.jpg)
 
@@ -31,13 +29,9 @@ Here are a few photos from the tour including some post-beer tasting friendly fa
 
 </section>
 
-
-
 Beer hops –_ “foil packed for freshness”_
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-22.jpg)
 
@@ -49,25 +43,13 @@ Beer hops –_ “foil packed for freshness”_
 
 </section>
 
-
-
 The fermentation process in action
-
-
-<section class="gallery">
-
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-2.jpg "Taster Session")
 
-</section>
-
-
-
 Beer tasting time…
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-5.jpg)
 
@@ -75,25 +57,13 @@ Beer tasting time…
 
 </section>
 
-
-
 La Bière
-
-
-<section class="gallery">
-
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-11.jpg)
 
-</section>
-
-
-
 The huge variety of ales, beers and ciders
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-29.jpg)
 
@@ -101,19 +71,9 @@ The huge variety of ales, beers and ciders
 
 </section>
 
-
-
 Beers beers beers…
 
-
-<section class="gallery">
-
-
 ![](/wp-content/uploads/2017/03/headforwards-team-adventure-skinners-brewery-tour-2017-34.jpg)
-
-</section>
-
-
 
 _Thank you to Skinner’s brewery for an excellent tour and wonderful selection of tasters. _
 

@@ -18,9 +18,7 @@ For a little while it was a case of hurry up and wait whilst the rain continued 
 
 By the end of the the day we were all totally drenched, but happy!
 
-
 <section class="gallery">
-
 
 ![Headforwards Go-Karting](/wp-content/uploads/2014/06/DSCF1517.jpg)
 
@@ -49,7 +47,5 @@ By the end of the the day we were all totally drenched, but happy!
 ![Headforwards Go-Karting](/wp-content/uploads/2014/06/DSCF1492-e1403707255288.jpg)
 
 </section>
-
-
 
 If this looks like the sort of team you want to be a part of, please take a look at our [careers](http://www.headforwards.com/careers/) page – we might have just the role for you!

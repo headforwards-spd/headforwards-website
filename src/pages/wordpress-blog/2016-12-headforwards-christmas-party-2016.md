@@ -33,9 +33,7 @@ We are all in agreement that this year’s Christmas party was a great success.
 
 A special thank you goes to Edvinas and Karen who took some superb pictures throughout the evening. Which one is your favourite?
 
-
 <section class="gallery">
-
 
 ![](/wp-content/uploads/2016/12/Headforwards-Christmas-party-2016-00.jpg)
 

@@ -97,15 +97,7 @@ We can’t visualise a new project without Continuous Delivery being a goal. We 
 
 We can’t see into the future (too far) but we know for a fact that methodologies like Continuous Delivery are here to stay. Open-source technologies like Jenkins and Docker flip the traditional model of software delivery on its head, giving way to a vastly superior set of tech, tools and methodologies.
 
-
-<section class="gallery">
-
-
 ![](/wp-content/uploads/2017/03/once-a-month-fifteen-times-a-day-3.jpg)
-
-</section>
-
-
 
 Are you looking to outsource your software development? We’d love to talk about it further.
 

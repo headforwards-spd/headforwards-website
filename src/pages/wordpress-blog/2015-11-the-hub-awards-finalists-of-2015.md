@@ -13,15 +13,7 @@ author:
   name: "Lyssa Crump"
   path: "/author/lyssa/"
 ---
-
-<section class="gallery">
-
-
 ![The Hub Awards](/wp-content/uploads/2015/11/TheHubSponsor.jpg)
-
-</section>
-
-
 
 We have previously posted about being proud sponsors of “The Best Use of Digital” award at the Hub Awards 2015.
 

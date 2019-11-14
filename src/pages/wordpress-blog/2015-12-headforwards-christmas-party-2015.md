@@ -24,9 +24,7 @@ Thank you to everyone who was involved in making the night such a great success,
 
 Here’s to an excellent 2016!
 
-
 <section class="gallery">
-
 
 ![Seiners Arms Perranporth ](/wp-content/uploads/2015/12/Headforwards_Christmas_Party_38.jpg)
 

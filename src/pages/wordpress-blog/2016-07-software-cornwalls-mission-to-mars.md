@@ -51,14 +51,6 @@ Altogether, the Mission to Mars project was a really fun experience and I learne
 
 Georgia Pain
 
-
-<section class="gallery">
-
-
 ![Software Cornwall's Mission to Mars ](/wp-content/uploads/2016/07/13566967_904700899636215_2693135533375073744_n.jpg)
-
-</section>
-
-
 
 Georgia and her Mission to Mars team.

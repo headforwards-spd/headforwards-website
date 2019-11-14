@@ -1,5 +1,5 @@
 import { shape, string } from 'prop-types';
-import React, { Fragment } from 'react';
+import React from 'react';
 import * as uuid from 'uuid';
 import { ImageSrcPropType } from '../../components/image/image.component';
 import Footer from '../../components/page-layout/footer/footer.component';
@@ -41,10 +41,10 @@ function DesignPagePreview({ entry }) {
     };
 
     return (
-        <Fragment>
+        <>
             <Header {...headerProps} />
             <main>{!!components && components.map(component => <PageComponent key={uuid.v1()} {...component} />)}</main>
             <Footer {...{ companyInfo }} />
-        </Fragment>
+        </>
     );
 }

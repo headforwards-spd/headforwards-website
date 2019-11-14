@@ -24,9 +24,7 @@ Even though the tide was pretty high we all had a great time munching our dinner
 
 Take a look at some of the photos we took on this beautiful summers evening, if you click on one image it will open them up in a slideshow.
 
-
 <section class="gallery">
-
 
 ![Headforwards team bbq](/wp-content/uploads/2015/06/IMG_3086.jpg)
 
@@ -91,8 +89,6 @@ Take a look at some of the photos we took on this beautiful summers evening, if 
 ![The Headforwards team](/wp-content/uploads/2015/06/IMG_2967.jpg)
 
 </section>
-
-
 
 **If you like the look of our team and want to join, take a look at our [careers page](http://www.headforwards.com/careers/). We might have just the vacancy for you!  
 **If their is not an appropriate role available, please feel free to get in touch with us to register your interest.
