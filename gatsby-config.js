@@ -3,6 +3,7 @@ const gatsbyPluginSass = require('./gatsby/gatsby-plugin-sass');
 // const gatsbySourceFilesystemWordpress = require('./gatsby/gatsby-source-filesystem.wp-content');
 const gatsbySourceFilesystemUploads = require('./gatsby/gatsby-source-filesystem.uploads');
 const gatsbySourceFilesystemPages = require('./gatsby/gatsby-source-filesystem.pages');
+const gatsbySourceFilesystemData = require('./gatsby/gatsby-source-filesystem.data');
 const gatsbyTransformerRemark = require('./gatsby/gatsby-transformer-remark');
 const gatsbyPluginManifest = require('./gatsby/gatsby-plugin-manifest');
 const gatsbyPluginNetlifyCms = require('./gatsby/gatsby-plugin-netlify-cms');
@@ -25,21 +26,16 @@ module.exports = {
         // { ...gatsbySourceFilesystemWordpress },
         { ...gatsbySourceFilesystemUploads },
         { ...gatsbySourceFilesystemPages },
+        { ...gatsbySourceFilesystemData },
         'gatsby-transformer-sharp',
         { ...gatsbyTransformerRemark },
         'gatsby-transformer-yaml',
         'gatsby-transformer-json',
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `./src/data`,
-            },
-        },
         `gatsby-transformer-remark-linked-pages`,
-        `gatsby-transformer-yaml-menu`, // must be after other CSS plugins
+        `gatsby-transformer-yaml-menu`,
         { ...gatsbyPluginManifest },
         { ...gatsbyPluginOffline },
-        { ...gatsbyPluginNetlifyCms }, // make sure to keep it last in the array
+        { ...gatsbyPluginNetlifyCms },
         { ...gatsbyPluginSitemap },
         { ...gatsbyPluginRobotsTxt },
         `gatsby-plugin-netlify-cache`,
