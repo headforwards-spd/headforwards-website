@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import HomepageTemplate from '../components/page-layout/homepage/homepage.component';
+import HomepageTemplate from '../components/page-templates/homepage/homepage.template';
 import Layout from '../components/page-layout/layout';
 
 const homepagePropTypes = {

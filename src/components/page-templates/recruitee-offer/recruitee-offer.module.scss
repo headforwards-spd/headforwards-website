@@ -1,5 +1,5 @@
-@import "../scss/mixins/typography";
-@import "../components/page-components/columns/columns";
+@import "../../../scss/mixins/typography";
+@import "../../page-components/columns/columns";
 
 .dataTable {
     @include component-gutter;

@@ -6,7 +6,7 @@ const singularImagePropTypes = {
     image: ImageSrcPropType.isRequired,
 };
 
-export default SingularImage();
+export default SingularImage;
 
 SingularImage.propTypes = singularImagePropTypes;
 SingularImage.defaultProps = {};

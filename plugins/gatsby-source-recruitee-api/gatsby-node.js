@@ -32,7 +32,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
             },
             description: getMarkdown(description),
             requirements: getMarkdown(requirements),
-            created: moment(created).toDate(),
+            created: moment(created, 'YYYY-MM-DD HH:mm:ss Z').toDate(),
         };
         createNode(nodeData);
     }

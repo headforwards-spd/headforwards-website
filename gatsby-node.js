@@ -39,7 +39,7 @@ function createAllPages(createPage, { nodes: pages = [] }) {
             const { type } = frontmatter;
             return createPage({
                 path: slug,
-                component: path.resolve(`src/templates/${type}-page.js`),
+                component: path.resolve(`src/templates/${type}.page.js`),
                 context: { id },
             });
         })
@@ -51,7 +51,7 @@ function createAllJobs(createPage, { nodes: jobs = [] }) {
         jobs.map(({ id, type, slug }) => {
             return createPage({
                 path: `/careers/${slug}`,
-                component: path.resolve(`src/templates/${type}-page.js`),
+                component: path.resolve(`src/templates/${type}.page.js`),
                 context: { id },
             });
         })
@@ -71,7 +71,7 @@ function createAllPosts(createPage, { nodes: posts = [] }) {
 
             return createPage({
                 path: postPath,
-                component: path.resolve(`src/templates/${type}-page.js`),
+                component: path.resolve(`src/templates/${type}.page.js`),
                 context: { id, prevId, nextId },
             });
         })
