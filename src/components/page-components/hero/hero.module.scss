@@ -3,7 +3,8 @@
 @import '../page-component';
 
 .hero {
-    margin: 0 $gutter-large $gutter-large;
+    @include component-gutter;
+
     > h1 {
         @include headingFontLarge;
     }

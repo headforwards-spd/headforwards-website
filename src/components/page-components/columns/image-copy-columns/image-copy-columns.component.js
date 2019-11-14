@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import Image, { ImageSrcPropType } from '../../../image/image.component';
 import Link from '../../../link/link.component';
 import styles from './image-copy-columns.module.scss';
+import SingularImage from '../../images/singular/singular-image.component';
 
 const imageCopyColumnsPropTypes = {
     image: ImageSrcPropType.isRequired,
@@ -29,6 +30,7 @@ function ImageCopyColumns({ image, isRightImage, title, text, link, linkText }) 
 
     return (
         <section className={`${styles.twoColumnsImageText} ${imageClass}`}>
+            {/*<SingularImage classN/>*/}
             <Image image={image} ratio="100%" className={styles.image} />
             <section className={styles.copy}>
                 <h1>{title}</h1>
