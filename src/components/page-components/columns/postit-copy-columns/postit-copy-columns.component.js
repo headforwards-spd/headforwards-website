@@ -2,11 +2,10 @@ import React from 'react';
 import { shape, bool, string } from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import Link from '../../../link/link.component';
-// import { ImageSrcPropType } from '../../../image/image.component';
+import Postit from '../../postit/postit.component';
 import styles from './postit-copy-columns.module.scss';
 
 const postitCopyColumnsPropTypes = {
-    // image: ImageSrcPropType.isRequired,
     isRightImage: bool,
     title: string.isRequired,
     text: string.isRequired,
@@ -29,7 +28,7 @@ function PostitCopyColumns({ isRightImage, title, text, link, linkText }) {
 
     return (
         <section className={`${styles.twoColumnsImageText} ${imageClass}`}>
-            <div className={styles.postit} />
+            <Postit isRightImage={isRightImage} className={styles.postit} />
             <section className={styles.copy}>
                 <h1>{title}</h1>
                 <section>

@@ -33,7 +33,6 @@ function createAllPages(createPage, { nodes: pages = [] }) {
         pages.map(({ id, fields, frontmatter }) => {
             const { slug } = fields;
             const { type } = frontmatter;
-
             return createPage({
                 path: slug,
                 component: path.resolve(`src/templates/${type}-page.js`),
