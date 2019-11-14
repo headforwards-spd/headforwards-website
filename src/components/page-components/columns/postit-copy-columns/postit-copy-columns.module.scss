@@ -8,21 +8,6 @@
     @include component-gutter;
     @include columns-component;
 
-    .postit {
-        padding-bottom: 100%;
-
-        box-shadow: 0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
-        border-bottom-right-radius: #{2*$gutter-large} #{$gutter-large/5};
-        background: linear-gradient(135deg, $orange 81%,$orange 82%,$orange 82%,lighten($orange, 25%) 100%);
-        transform: perspective(24rem) rotateY(1deg);
-        margin-bottom: $gutter-small;
-        transition: box-shadow 500ms ease, transform 250ms ease;
-
-        &:hover {
-            box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba($paragraph_grey, 0.2);
-            transform: rotateX(0);
-        }
-    }
 
     .copy {
         @include copy;
@@ -30,16 +15,6 @@
 
     @media (min-width: $screen-lg) {
 
-        .image, .postit {
-            width: 50%;
-            flex-shrink: 0;
-        }
-
-        .postit {
-            order: 1;
-            padding-bottom: 50%;
-            margin-bottom: 0;
-        }
         .copy {
             order: 2;
             padding: 0 $gutter-medium;
@@ -54,17 +29,6 @@
             }
             .postit {
                 order: 2;
-
-                box-shadow: -0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
-                border-bottom-right-radius: 0;
-                border-bottom-left-radius: #{2*$gutter-large} #{$gutter-large/5};
-                background: linear-gradient(-135deg, $orange 81%,$orange 82%,$orange 82%,lighten($orange, 25%) 100%);
-                transform: perspective(24rem) rotateY(-1deg);
-
-                &:hover {
-                    box-shadow: -0.25rem 0.25rem 0.5rem 0 rgba($paragraph_grey, 0.2);
-                    transform: rotateX(0);
-                }
             }
         }
 

@@ -1,0 +1,85 @@
+{
+    "sections": [
+        {
+            "components": [
+                {
+                    "type": "heroComponent",
+                    "title":"Headforwards is a software development outsourcing company that builds strong relationships with clients in order to deliver exceptional software.",
+                    "text": "Being true to the principals of an Agile methodology brings benefits to both clients and the people who work in the business."
+                }
+            ]
+        },
+        {
+            "postit": false,
+            "image": true,
+            "components": [
+                {
+                    "type": "heroComponent",
+                    "title":"People over process",
+                    "text": "Developers are recruited specifically for a clients needs and teams are self-organising with the responsibility of producing software that delivers business value."
+                },
+                {
+                    "type":       "quoteComponent",
+                    "profilePic": "/uploads/simon-minchin-author-copy-2.jpg",
+                    "jobTitle":   "Director & Co-Founder",
+                    "quote":      "It's about picking the right people for each client, rather than running a bench. ",
+                    "name":       "Craig Girvan"
+                },
+                {
+                    "type": "heroComponent",
+                    "title":"",
+                    "text": "Headforwards aim to provide early and continuous delivery of useful software and be flexible in its response to changing requirements."
+                },
+                {
+                    "type":       "quoteComponent",
+                    "profilePic": "",
+                    "jobTitle":   "",
+                    "quote":      "If something changes in our clients world, they've got to adapt, they've got to look for a new competitive advantage in their software. ",
+                    "name":       ""
+                }
+            ]
+        },
+        {
+            "title":   "This is a title",
+            "postit": true,
+            "isRightImage": true,
+            "components": [
+                {
+                    "type": "heroComponent",
+                    "title":"Building partnerships with clients",
+                    "text": "Headforwards looks to develop trust between themselves and their clients by continuously delivering business value."
+
+                },
+                {
+                    "type":       "quoteComponent",
+                    "profilePic": "/uploads/simon-minchin-author-copy-2.jpg",
+                    "jobTitle":   "MD & Founder",
+                    "quote":      "We want to be a partner to our clients, to develop long-term relationships with trust on both sides.",
+                    "name":       "Toby Parkins"
+                }
+
+            ]
+        },
+        {
+            "title":   "This is a title",
+            "postit": true,
+            "isRightImage": false,
+            "components": [
+                {
+                    "type": "heroComponent",
+                    "title":"Building partnerships with clients",
+                    "text": "Headforwards looks to develop trust between themselves and their clients by continuously delivering business value."
+
+                },
+                {
+                    "type":       "quoteComponent",
+                    "profilePic": "/uploads/simon-minchin-author-copy-2.jpg",
+                    "jobTitle":   "MD & Founder",
+                    "quote":      "We want to be a partner to our clients, to develop long-term relationships with trust on both sides.",
+                    "name":       "Toby Parkins"
+                }
+
+            ]
+        }
+    ]
+}

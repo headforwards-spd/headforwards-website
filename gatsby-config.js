@@ -4,7 +4,6 @@ const gatsbySourceFilesystemWordpress = require('./gatsby/gatsby-source-filesyst
 const gatsbySourceFilesystemUploads = require('./gatsby/gatsby-source-filesystem.uploads');
 const gatsbySourceFilesystemPages = require('./gatsby/gatsby-source-filesystem.pages');
 const gatsbyTransformerRemark = require('./gatsby/gatsby-transformer-remark');
-const gatsbyTransformerYaml = require('./gatsby/gatsby-transformer-yaml');
 const gatsbyPluginManifest = require('./gatsby/gatsby-plugin-manifest');
 const gatsbyPluginNetlifyCms = require('./gatsby/gatsby-plugin-netlify-cms');
 const gatsbyPluginSitemap = require('./gatsby/gatsby-plugin-sitemap');
@@ -27,7 +26,14 @@ module.exports = {
         { ...gatsbySourceFilesystemPages },
         'gatsby-transformer-sharp',
         { ...gatsbyTransformerRemark },
-        { ...gatsbyTransformerYaml },
+        'gatsby-transformer-yaml',
+        'gatsby-transformer-json',
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `./src/data`,
+            },
+        },
         `gatsby-transformer-remark-linked-pages`,
         `gatsby-transformer-yaml-menu`, // must be after other CSS plugins
         { ...gatsbyPluginManifest },

@@ -141,7 +141,7 @@
 
     @media screen and (min-width: $screen-lg) {
 
-        padding: $gutter-small/2 $gutter-medium/2;
+        padding: $gutter-medium $gutter-medium+1;
 
         @include flexRow;
         margin: 0;
