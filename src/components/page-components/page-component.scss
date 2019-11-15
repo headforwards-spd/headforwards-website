@@ -1,5 +1,9 @@
 @mixin component-gutter {
-    margin: 0 $gutter-medium $gutter-medium;
+    margin: 0 $gutter-small $gutter-medium;
+
+    @media (min-width: $screen-md) {
+        margin: 0 $gutter-medium $gutter-medium;
+    }
 }
 @mixin component-columns-gutter {
 

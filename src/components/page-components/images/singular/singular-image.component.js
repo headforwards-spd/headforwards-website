@@ -16,6 +16,5 @@ SingularImage.defaultProps = {
 };
 
 function SingularImage({ image, className }) {
-
     return <Image image={image} ratio="100%" className={`${styles.image} ${className}`} />;
 }

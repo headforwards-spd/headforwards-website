@@ -56,12 +56,23 @@
 
         @media(min-width: $screen-md) {
 
-            &.isThreeColumns .article {
-                width: calc((100%/2) - #{$gutter-medium});
+            &.isThreeColumns {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 0 $gutter-medium/2 $gutter-medium/2;
+                > * {
+                    margin: 0 $gutter-medium/2 $gutter-medium/2;
+                }
+                .article {
+                    width: calc((100% / 2) - #{$gutter-medium});
 
-                .image {
-                    margin: 0;
-                    @include fontMedium;
+                    .image {
+                        margin: 0;
+                        @include fontMedium;
+                    }
                 }
             }
         }
