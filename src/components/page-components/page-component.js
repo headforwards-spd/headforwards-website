@@ -1,15 +1,15 @@
 import { shape, string } from 'prop-types';
-import React             from 'react';
-import ReactMarkdown     from 'react-markdown';
-import ArticleColumns    from './columns/article-columns/article-columns.component';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import ArticleColumns from './columns/article-columns/article-columns.component';
 import PostitCopyColumns from './columns/image-copy-columns/postit-copy-columns.component';
-import Hero              from './hero/hero.component';
-import ImageCopyColumns  from './columns/image-copy-columns/image-copy-columns.component';
-import ContentSlider     from './content-slider/content-slider.component';
-import BlogPostColumns   from './columns/blog-post-columns/blog-post-columns.component';
-import FullWidthImage    from './images/full-width/full-width-image.component';
-import TwoImages         from './images/two/two-images.component';
-import Quote             from './quote/quote.component';
+import Hero from './hero/hero.component';
+import ImageCopyColumns from './columns/image-copy-columns/image-copy-columns.component';
+import ContentSlider from './content-slider/content-slider.component';
+import BlogPostColumns from './columns/blog-post-columns/blog-post-columns.component';
+import FullWidthImage from './images/full-width/full-width-image.component';
+import TwoImages from './images/two/two-images.component';
+import Quote from './quote/quote.component';
 
 const pageComponentPropTypes = {
     type: string.isRequired,

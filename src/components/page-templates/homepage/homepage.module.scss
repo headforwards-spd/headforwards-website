@@ -1,10 +1,44 @@
 @import "../../page-components/columns/columns";
 
-.postitRight {
-    flex-direction: row-reverse;
-}
+.wrapper {
+    @include columns-component;
+    @media (min-width: $screen-lg) {
+        margin-bottom: $gutter-large - $gutter-medium/2;
+    }
 
-.imageCopyColumns {
-    display: flex;
-    @include component-gutter;
+    .components {
+
+        > * {
+            margin-left: 0;
+            margin-right: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.hasImage {
+        &.isRightImage {
+            flex-direction: row-reverse;
+        }
+
+        .image, .postit {
+            width: 62.5%;
+            margin: 0 auto $gutter-large;
+            &.postit {
+                padding-bottom: 62.5%;
+            }
+        }
+
+        .image, .postit, .components {
+
+            @media(min-width: $screen-lg) {
+                width: calc(50% - #{$gutter-medium});
+                &.postit {
+                    padding-bottom: calc(50% - #{$gutter-medium});
+                }
+            }
+        }
+    }
 }

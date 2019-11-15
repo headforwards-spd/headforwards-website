@@ -1,6 +1,7 @@
+import { arrayOf, bool } from 'prop-types';
 import React from 'react';
-import FullWidthImage from '../../page-components/images/full-width/full-width-image.component';
-import PageComponent from '../../page-components/page-component';
+import Image, { ImagePropType } from '../../image/image.component';
+import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import Postit from '../../page-components/postit/postit.component';
 import styles from './homepage.module.scss';
 
@@ -18,20 +19,41 @@ HomepageTemplate.defaultProps = {
 function HomepageTemplate({ page }) {
     const { sections } = page;
 
-    const columnStyle = index => `${styles.imageCopyColumns} ${index % 2 ? styles.postitRight : ''}`;
-
     return (
         <>
             {!!sections &&
-                sections.map(({ components, postit, image }, index) => (
-                    <section className={columnStyle(index)}>
-                        {!!image && <FullWidthImage image="/uploads/craig.jpg" />}
-                        {!!postit && <Postit isRightImage={!!(index % 2)} />}
-                        <section>
-                            {!!components && components.map(component => <PageComponent {...component} />)}
-                        </section>
-                    </section>
-                ))}
+                sections.map((section, index) => <HomePageSection {...{ ...section, even: index % 2 === 0 }} />)}
         </>
+    );
+}
+
+HomePageSection.propTypes = {
+    even: bool,
+    components: arrayOf(PageComponentPropType),
+    postit: bool,
+    image: ImagePropType,
+};
+HomePageSection.defaultProps = {
+    even: false,
+    components: [],
+    postit: false,
+    image: null,
+};
+
+function HomePageSection({ even, components, postit, image }) {
+    const wrapperStyles = [
+        styles.wrapper,
+        even ? styles.isRightImage : '',
+        !!image || !!postit ? styles.hasImage : '',
+    ].join(' ');
+
+    return (
+        <section className={wrapperStyles}>
+            {!!image && <Image className={styles.image} ratio="100%" image="/uploads/craig.jpg" />}
+            {!!postit && <Postit className={styles.postit} isRightImage={even} />}
+            <section className={styles.components}>
+                {!!components && components.map(component => <PageComponent {...component} />)}
+            </section>
+        </section>
     );
 }

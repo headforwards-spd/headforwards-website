@@ -11,7 +11,7 @@
         @include headingFontMedium;
     }
 
-    > :global(.gatsby-resp-image-wrapper), img {
+    > :global(.gatsby-resp-image-wrapper), > img {
         max-width: 62.5%;
     }
 
@@ -33,9 +33,21 @@
 
         :global(.gatsby-resp-image-wrapper), img {
 
-            margin: $gutter-small/2;
-            flex-basis: calc(100% / 3 - #{$gutter-small});
-            width: calc(100% / 3 - #{$gutter-small});
+            width: 62.5%;
+            margin: 0 auto;
+            @include fontMedium;
+
+            @media(min-width: $screen-md) {
+                margin: 0 $gutter-medium/2;
+                @include fontMedium;
+                width: calc(100% / 2 - #{$gutter-medium});
+            }
+            @media(min-width: $screen-lg) {
+                width: calc(100% / 3 - #{$gutter-medium});
+            }
+            @media(min-width: $screen-xl) {
+                width: calc(100% / 4 - #{$gutter-medium});
+            }
         }
     }
 

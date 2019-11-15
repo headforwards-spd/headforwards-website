@@ -61,7 +61,9 @@ function RecruiteeOfferTemplate({
                 <h1>Requirements</h1>
                 {!!requirements && <ReactMarkdown source={requirements} />}
 
-                <Link to={applyUrl}>Apply &rarr;</Link>
+                <Link to={applyUrl} className={styles.apply}>
+                    Apply
+                </Link>
             </section>
         </>
     );
