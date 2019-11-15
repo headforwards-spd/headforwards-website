@@ -14,7 +14,10 @@
     }
     > section {
         order: 2;
-        margin: $gutter-large $gutter-medium;
+        margin: $gutter-large $gutter-small;
+        @media(min-width: $screen-md) {
+            margin: $gutter-large $gutter-medium;
+        }
 
         display: flex;
         flex-direction: column;
