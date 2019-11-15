@@ -43,23 +43,31 @@
             &:after {
                 position: absolute;
                 content: '';
-                right:  $gutter-small - $gutter-medium;
+                right:  -$gutter-small/2;
                 border-radius: 0 0 $gutter-medium 0;
                 width: 37.5%;
                 padding-bottom: 37.5%;
                 background: linear-gradient(315deg, rgba(#FFB800, 0.6) 50%, transparent 50%);
-                margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small});
+                margin-top: calc(62.5% + #{1.25*$gutter-small} + #{$gutter-small/2});
                 transform: translateY(-100%);
+                @media (min-width: $screen-md) {
+                    right:  $gutter-small - $gutter-medium;
+                    margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small});
+                }
             }
 
             a {
                 position: absolute;
-                right:  1.5*$gutter-small - $gutter-medium;
+                right:  1.5*$gutter-small - $gutter-small;
                 width: 18.75%;
                 padding-bottom: 18.75%;
-                margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small/2});
+                margin-top: calc(62.5% + #{1.25*$gutter-small} + #{$gutter-small/4});
                 transform: translateY(-100%);
                 z-index: 1;
+                @media (min-width: $screen-md) {
+                    right:  1.5*$gutter-small - $gutter-medium;
+                    margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small/4});
+                }
 
                 svg {
                     height: 50%;
