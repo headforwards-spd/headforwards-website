@@ -1,7 +1,7 @@
 import { boolean, files, text, withKnobs } from '@storybook/addon-knobs';
-import React from 'react';
-import generateImage from '../../../../lib/generate-image';
-import PostitCopyColumns from './postit-copy-columns.component';
+import React                               from 'react';
+import generateImage                       from '../../../../lib/generate-image';
+import PostitCopyColumns                   from './postit-copy-columns.component';
 
 const faker = require('faker');
 

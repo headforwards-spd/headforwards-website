@@ -13,7 +13,11 @@
         background-size: cover;
 
         h1 {
-            padding: $gutter-large;
+            padding: $gutter-medium;
+            margin: 0;
+            @media (min-width: $screen-lg) {
+                padding: $gutter-large;
+            }
             line-height: 1.5;
             color: white;
             a {

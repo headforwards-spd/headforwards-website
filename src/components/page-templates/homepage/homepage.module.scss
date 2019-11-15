@@ -4,6 +4,7 @@
     flex-direction: row-reverse;
 }
 
-section {
+.imageCopyColumns {
+    display: flex;
     @include component-gutter;
 }

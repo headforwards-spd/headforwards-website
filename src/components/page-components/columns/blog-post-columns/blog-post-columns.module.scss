@@ -2,42 +2,35 @@
 @import "../../../../scss/mixins/mixins";
 @import "../../../../scss/mixins/typography";
 @import '../../page-component';
+@import "../columns";
 
 .blogPostColumns {
 
-    @include component-gutter;
-
     > h1 {
+        @include component-gutter;
+        @include headingFontLarge;
         color: $orange;
-        @include headingFontMedium;
     }
 
     > section {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
+        @include columns-component;
 
         .article {
+
             position: relative;
             display: flex;
             flex-direction: column;
-            width: 100%;
-            margin-bottom: $gutter-medium;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
 
             .image {
                 order: 1;
-                margin: 0 #{-$gutter-medium} $gutter-small;
+                margin: 0 -#{$gutter-medium};
+                @include fontMedium;
             }
 
             h1 {
                 order: 2;
                 flex-grow: 1;
-                @include headingFontSmall;
+                @include headingFontMedium;
                 color: $header_black;
                 margin-bottom: 0;
             }
@@ -45,21 +38,21 @@
             &:after {
                 position: absolute;
                 content: '';
-                right: $gutter-small - $gutter-medium;
+                right:  $gutter-small - $gutter-medium;
                 border-radius: 0 0 $gutter-medium 0;
                 width: 37.5%;
                 padding-bottom: 37.5%;
                 background: linear-gradient(315deg, rgba(#FFB800, 0.6) 50%, transparent 50%);
-                margin-top: calc(62.5% + #{$gutter-medium} + #{$gutter-small});
+                margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small});
                 transform: translateY(-100%);
             }
 
             a {
                 position: absolute;
-                right: $gutter-small - $gutter-medium;
+                right:  1.5*$gutter-small - $gutter-medium;
                 width: 18.75%;
                 padding-bottom: 18.75%;
-                margin-top: calc(62.5% + #{$gutter-medium} + #{$gutter-small});
+                margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small/2});
                 transform: translateY(-100%);
                 z-index: 1;
 
@@ -80,15 +73,12 @@
 
         @media (min-width: $screen-lg) {
 
-            margin: 0 #{-$gutter-medium/2};
-
             .article {
-
                 width: calc(50% - #{$gutter-medium});
-                margin: 0 #{$gutter-medium/2};
 
                 .image {
-                    margin: 0 0 $gutter-small;
+                    margin: 0;
+                    @include fontMedium;
                 }
 
                 &:after {

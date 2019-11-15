@@ -6,7 +6,7 @@
 .hero {
     @include component-gutter;
     > h1 {
-        @include headingFontLarge;
+        @include headingFontXLarge;
     }
     > section {
         @include fontLarge;
@@ -28,13 +28,11 @@
 
             > h1 {
                 width: 37.5%;
-                @include headingFontMedium;
                 margin-bottom: 0;
             }
 
             > section {
                 width: 67.5%;
-                @include fontMedium;
                 margin-bottom: 0;
             }
         }

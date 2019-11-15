@@ -29,7 +29,7 @@ function ImageCopyColumns({ image, isRightImage, title, text, link, linkText }) 
     const hasLink = !!link && !!linkText;
 
     return (
-        <section className={`${styles.twoColumnsImageText} ${imageClass}`}>
+        <section className={`${styles.columnsWrapper} ${imageClass}`}>
             <SingularImage image={image} ratio="100%" className={styles.image} />
             <section className={styles.copy}>
                 <h1>{title}</h1>

@@ -17,14 +17,16 @@ HomepageTemplate.defaultProps = {
 
 function HomepageTemplate({ page }) {
     const { sections } = page;
+
+    const columnStyle = index => `${styles.imageCopyColumns} ${index % 2 ? styles.postitRight : ''}`;
+
     return (
         <>
             {!!sections &&
                 sections.map(({ components, postit, image }, index) => (
-                    <section style={{ display: 'flex' }} className={index % 2 ? '' : styles.postitRight}>
+                    <section className={columnStyle(index)}>
                         {!!image && <FullWidthImage image="/uploads/craig.jpg" />}
-                        {!!postit && <Postit />}
-
+                        {!!postit && <Postit isRightImage={!!(index % 2)} />}
                         <section>
                             {!!components && components.map(component => <PageComponent {...component} />)}
                         </section>

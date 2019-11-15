@@ -3,45 +3,56 @@
 @import '../../page-component';
 @import '../columns';
 
-.twoColumnsImageText {
+.columnsWrapper {
 
-    @include component-gutter;
     @include columns-component;
-    margin-left: 0;
-    margin-right: 0;
 
     .image {
-        margin-bottom: $gutter-small;
+        margin-left: -$gutter-medium;
+        margin-right: -$gutter-medium;
     }
 
     .copy {
         @include copy;
-        padding: 0 $gutter-medium;
+    }
+
+    @media (min-width: $screen-md) {
+        .postit {
+            margin-left: auto;
+            margin-right: auto;
+            width: 62.5%;
+            padding-bottom: 62.5%;
+        }
     }
 
     @media (min-width: $screen-lg) {
 
-        .image, .copy {
-            width: 50%;
+        .image {
+            width: 37.5%;
+            margin: 0 #{$gutter-medium/2} 0 -#{$gutter-medium/2};
+            margin-bottom: $gutter-medium/2;
+
         }
 
-        .image {
-            order: 1;
-            margin-bottom: 0;
+        .postit {
+            width: calc(37.5% - #{$gutter-medium});
+            padding-bottom: calc(37.5% - #{$gutter-medium});
+            margin-bottom: $gutter-medium/2;
         }
+
         .copy {
-            order: 2;
+            width: calc(62.5% - #{$gutter-medium});
+            margin-bottom: $gutter-medium/2;
+
         }
 
         &.isRightImage {
-            .copy {
-                order: 1;
-            }
+            flex-direction: row-reverse;
+
             .image {
-                order: 2;
+                margin: 0 -#{$gutter-medium/2} 0 #{$gutter-medium/2};
             }
         }
 
     }
-
 }

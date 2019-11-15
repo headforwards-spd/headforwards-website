@@ -2,34 +2,31 @@
 @import "../../../../scss/mixins/mixins";
 @import "../../../../scss/mixins/typography";
 @import '../../page-component';
+@import '../columns';
 
 .articleColumns {
-    @include component-gutter;
-    margin-bottom: $gutter-large - $gutter-small;
+
+    > h1 {
+        @include component-gutter;
+        @include headingFontLarge;
+    }
 
     > section {
+        @include columns-component;
 
-        @media(min-width: $screen-md) {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+        @media(min-width: $screen-lg) {
             align-items: stretch;
-            margin: 0 -#{$gutter-medium/2};
         }
 
         .article {
 
             display: flex;
             flex-direction: column;
-            margin-bottom: $gutter-small;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
 
             .image {
                 order: 1;
-                margin: 0 #{-$gutter-medium} $gutter-small;
+                margin: 0 -#{$gutter-medium};
+                @include fontMedium;
             }
 
             > h1 {
@@ -41,11 +38,8 @@
                 order: 3;
                 flex-grow: 1;
                 @include fontMedium;
-                > :last-child {
-                    margin-bottom: 0;
-                }
 
-                &:last-child {
+                > :last-child {
                     margin-bottom: 0;
                 }
             }
@@ -54,6 +48,10 @@
                 order: 4;
                 @include arrow-link;
             }
+
+            > :last-child {
+                margin-bottom: 0;
+            }
         }
 
         @media(min-width: $screen-md) {
@@ -61,13 +59,9 @@
             &.isThreeColumns .article {
                 width: calc((100%/2) - #{$gutter-medium});
 
-                margin: 0 $gutter-medium/2 $gutter-small;
-                &:last-child {
-                    margin-bottom: $gutter-small;
-                }
-
                 .image {
-                    margin: 0 0 $gutter-small;
+                    margin: 0;
+                    @include fontMedium;
                 }
             }
         }
@@ -77,23 +71,14 @@
             .article {
                 width: calc((100%/2) - #{$gutter-medium});
 
-                margin: 0 $gutter-medium/2 $gutter-small;
-                &:last-child {
-                    margin-bottom: $gutter-small;
-                }
-
                 .image {
-                    margin: 0 0 $gutter-small;
+                    margin: 0;
+                    @include fontMedium;
                 }
             }
 
             &.isThreeColumns .article {
                 width: calc((100%/3) - #{$gutter-medium});
-
-                > h1 {
-                    @include headingFontSmall;
-                }
-
             }
         }
     }

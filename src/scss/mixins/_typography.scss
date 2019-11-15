@@ -18,7 +18,9 @@ $margin-bottom: 1em;
     margin-bottom: $heading-margin-bottom;
 }
 @mixin fontXXLarge {
-    @include fluid-type($mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$min_font);
+    &, p {
+        @include fluid-type($mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$min_font);
+    }
     line-height: $line-height;
     margin-bottom: $margin-bottom;
 }
@@ -29,7 +31,9 @@ $margin-bottom: 1em;
     margin-bottom: $heading-margin-bottom;
 }
 @mixin fontXLarge {
-    @include fluid-type($mod_1*$mod_1*$min_font, $mod_2*$mod_2*$min_font);
+    &, p {
+        @include fluid-type($mod_1*$mod_1*$min_font, $mod_2*$mod_2*$min_font);
+    }
     line-height: $line-height;
     margin-bottom: $margin-bottom;
 }
@@ -40,7 +44,9 @@ $margin-bottom: 1em;
     margin-bottom: $heading-margin-bottom;
 }
 @mixin fontLarge {
-    @include fluid-type($mod_1*$min_font, $mod_2*$min_font);
+    &, p {
+        @include fluid-type($mod_1*$min_font, $mod_2*$min_font);
+    }
     line-height: $line-height;
     margin-bottom: $margin-bottom;
 }
@@ -51,7 +57,9 @@ $margin-bottom: 1em;
     margin-bottom: $heading-margin-bottom;
 }
 @mixin fontMedium {
-    @include fluid-type($min_font, $max_font);
+    &, p {
+        @include fluid-type($min_font, $max_font);
+    }
     line-height: $line-height;
     margin-bottom: $margin-bottom;
 }
@@ -62,7 +70,9 @@ $margin-bottom: 1em;
     margin-bottom: $heading-margin-bottom;
 }
 @mixin fontSmall {
-    @include fluid-type($min_font/$mod_1, $min_font/$mod_2);
+    &, p {
+        @include fluid-type($min_font/$mod_1, $min_font/$mod_2);
+    }
     line-height: $line-height;
     margin-bottom: $margin-bottom;
 }

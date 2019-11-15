@@ -1,6 +1,21 @@
 @mixin component-gutter {
     margin: 0 $gutter-medium $gutter-medium;
 }
+@mixin component-columns-gutter {
+
+    @include component-gutter;
+
+    > * {
+        margin-bottom: $gutter-small;
+    }
+
+    @media (min-width: $screen-lg) {
+        margin: 0 $gutter-medium/2 $gutter-medium/2;
+        > * {
+            margin: 0 $gutter-medium/2 $gutter-medium/2;
+        }
+    }
+}
 
 @mixin arrow-link {
     &:after {
@@ -8,6 +23,6 @@
         content: url('/images/hf-arrow.orange.svg');
         width: 1em;
         margin-left: 1em;
-        vertical-align: middle;
+        vertical-align: sub;
     }
 }

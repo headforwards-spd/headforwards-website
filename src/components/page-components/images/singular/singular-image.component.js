@@ -1,16 +1,23 @@
-import React from 'react';
+import { string }                  from 'prop-types'
+import React                       from 'react';
 import Image, { ImageSrcPropType } from '../../../image/image.component';
-import styles from './singular-image.module.scss';
+import styles                      from './singular-image.module.scss';
 
 const singularImagePropTypes = {
     image: ImageSrcPropType.isRequired,
+    className: string
 };
 
 export default SingularImage;
 
 SingularImage.propTypes = singularImagePropTypes;
-SingularImage.defaultProps = {};
+SingularImage.defaultProps = {
+    className: ''
+};
 
-function SingularImage({ image }) {
-    return <Image image={image} ratio="100%" className={styles.image} />;
+function SingularImage({ image, className }) {
+
+    console.log({className});
+
+    return <Image image={image} ratio="100%" className={`${styles.image} ${className}`} />;
 }
