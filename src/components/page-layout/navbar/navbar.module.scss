@@ -109,7 +109,7 @@
         }
         dt, h1 {
             text-transform: uppercase;
-            color: $orange;
+            @include orange-type;
             @include fontMedium;
             margin-bottom: 0;
             font-weight: normal;
@@ -207,7 +207,7 @@
                         color: black;
 
                         &:hover {
-                            color: $orange;
+                            @include orange-type;
                         }
                         button {
                             display: none;

@@ -9,7 +9,7 @@
     > h1 {
         @include component-gutter;
         @include headingFontLarge;
-        color: $orange;
+        @include orange-type;
     }
 
     > section {

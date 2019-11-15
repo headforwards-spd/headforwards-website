@@ -20,7 +20,7 @@
         flex-direction: column;
 
         h1 {
-            color: $orange;
+            @include orange-type;
             @include headingFontXLarge;
         }
         h2 {
@@ -70,7 +70,7 @@
                     @include headingFontXLarge;
                 }
                 h2 {
-                    color: $orange;
+                    @include orange-type;
                     @include headingFontMedium;
                 }
 

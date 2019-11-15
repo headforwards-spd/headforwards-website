@@ -51,9 +51,8 @@ body {
     }
 
     a {
-        color: $orange;
+        @include orange-type;
         text-decoration: none;
-        font-weight: bold;
     }
 
     ul {

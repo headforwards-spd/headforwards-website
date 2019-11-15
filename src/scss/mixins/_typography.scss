@@ -6,6 +6,12 @@ $heading-margin-bottom: 0.5em;
 $line-height: $mod_2;
 $margin-bottom: 1em;
 
+@mixin orange-type {
+    color: $orange;
+    text-shadow: 0 0 1px #996D00;
+    font-weight: 600;
+}
+
 @mixin headingFontXXXLarge {
     @include fluid-type($mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$min_font);
     line-height: $heading-line-height;

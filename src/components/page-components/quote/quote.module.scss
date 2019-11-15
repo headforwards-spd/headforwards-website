@@ -15,7 +15,7 @@
         font-weight: bold;
         font-style: italic;
         position: relative;
-        color: $orange;
+        @include orange-type;
         @include fontXLarge;
 
         &:before,
