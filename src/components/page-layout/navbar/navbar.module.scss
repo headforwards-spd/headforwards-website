@@ -17,13 +17,16 @@
         margin: 0;
 
         a {
-            @include fontLarge;
+            //@include fontLarge;
             margin: 0 $gutter-small/2;
             @media (min-width: $screen-md) {
                 margin: 0 $gutter-medium/2;
             }
+            @media (min-width: $screen-lg) {
+                margin: 0;
+            }
 
-            text-indent: -1000vw;
+                text-indent: -1000vw;
             background-image: url("/images/headforwards.black.png");
             background-size: contain;
             flex: 1;
@@ -180,10 +183,6 @@
             padding: $gutter-small/2 $gutter-medium/2;
             width: 37.5%;
             flex-shrink: 0;
-
-            a {
-                padding: $gutter-small 0;
-            }
         }
 
         > section {
