@@ -23,8 +23,13 @@
 
             .image {
                 order: 1;
-                margin: 0 -#{$gutter-medium};
+                margin: 0 -#{$gutter-small};
                 @include fontMedium;
+
+                @media (min-width: $screen-md) {
+                    margin: 0 -#{$gutter-medium};
+                    @include fontMedium;
+                }
             }
 
             h1 {

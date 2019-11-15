@@ -8,8 +8,13 @@
     @include columns-component;
 
     .image {
-        margin-left: -$gutter-medium;
-        margin-right: -$gutter-medium;
+        margin-left: -$gutter-small;
+        margin-right: -$gutter-small;
+
+        @media (min-width: $screen-md) {
+            margin-left: -$gutter-medium;
+            margin-right: -$gutter-medium;
+        }
     }
 
     .copy {
