@@ -6,6 +6,10 @@
     @include component-gutter;
     margin-left: 0;
     margin-right: 0;
+    @media (min-width: $screen-md) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     position: relative;
     padding: $gutter-large 0;
@@ -17,7 +21,10 @@
         position: relative;
 
         &:first-child {
-            margin-right: $gutter-medium;
+            margin-right: 2*$gutter-small;
+            @media (min-width: $screen-md) {
+                margin-right: 2*$gutter-medium;
+            }
             &:before {
                 position: absolute;
                 content: url('/images/hf-arrow.orange.svg');
@@ -30,7 +37,10 @@
         }
 
         &:last-child {
-            margin-left: $gutter-medium;
+            margin-left: 2*$gutter-small;
+            @media (min-width: $screen-md) {
+                margin-left: 2*$gutter-medium;
+            }
             margin-bottom: 0;
             &:after {
                 position: absolute;

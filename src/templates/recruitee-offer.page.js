@@ -38,7 +38,7 @@ export const query = graphql`
             employment_type_code
             category_code
             department
-            created
+            created(fromNow: true)
         }
     }
 `;

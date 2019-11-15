@@ -29,6 +29,8 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                     {menu.map(({ id, ...item }) => (
                         <MenuItem key={id} {...item} />
                     ))}
+                    <MenuItem {...{ link: '/careers', linkText: 'Careers.' }} />
+                    <MenuItem {...{ link: '/news', linkText: 'News.' }} />
                 </ul>
                 <section className={styles.contactDetails}>
                     <dl>
