@@ -28,12 +28,18 @@
         flex-wrap: wrap;
         align-items: center;
 
-        margin: -$gutter-small/2;
-        margin-bottom: $gutter-medium - $gutter-small/2;
+        margin: 0;
+        @include fontMedium;
+
+        @media(min-width: $screen-md) {
+            margin-left: -$gutter-medium/2;
+            margin-right: -$gutter-medium/2;
+        }
 
         :global(.gatsby-resp-image-wrapper), img {
 
             //width: 62.5%;
+            width: 100%;
             margin: 0 auto;
             @include fontMedium;
 

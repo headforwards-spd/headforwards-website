@@ -47,7 +47,7 @@ export const query = graphql`
                     excerpt
                     path
                     date
-                    dateString:date(fromNow: true)
+                    dateString: date(fromNow: true)
                 }
             }
         }

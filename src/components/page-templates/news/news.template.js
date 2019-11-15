@@ -22,9 +22,10 @@ function NewsPageTemplate({ page }) {
     const { nodes: news } = page;
 
     return (
-            <section className={styles.newsSummary}>{news.map(({ id: key, frontmatter }) => (
+        <section className={styles.newsSummary}>
+            {news.map(({ id: key, frontmatter }) => (
                 <NewsSummary key={key} {...frontmatter} />
             ))}
-            </section>
+        </section>
     );
 }
