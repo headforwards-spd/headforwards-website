@@ -2,7 +2,10 @@
 
 .hamburger {
     background-color: transparent;
-    padding: 1rem;
+    padding: 1rem $gutter-small/2;
+    @media (min-width: $screen-md) {
+        padding: 1rem $gutter-medium/2;
+    }
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
