@@ -25,7 +25,8 @@
 
         .image, .postit {
             width: 100%;
-            margin: 0 auto $gutter-large;
+            margin: 0 auto;
+            @include fontMedium;
 
             &.postit {
                 padding-bottom: 100%;
@@ -33,7 +34,6 @@
 
             @media(min-width: $screen-md) {
                 width: 62.5%;
-                margin: 0 auto $gutter-large;
                 &.postit {
                     padding-bottom: 62.5%;
                 }
