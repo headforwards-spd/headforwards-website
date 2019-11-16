@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2016/10/headforwards-team-social-bowling"
-title: "Headforwards Team Social : Bowling"
-date: "2016-10-26T15:55:50.000Z"
-modified: "2017-11-03T10:52:52.000Z"
-excerpt: "Every month at Headforwards we like to get together outside of the office and do something fun. After a summer of BBQs, topped off with our mini-festival – Headstock – we decided October was the right time to find a fun inside activity. This month we chose bowling. Last night 45 of us, including some …"
-categories: ["News","Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2016/10/headforwards-team-social-bowling
+title: 'Headforwards Team Social : Bowling'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbowling20161.jpg, text: 'Headforwards Bowling '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbowling2016trurobowl.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbowling2016balls.jpg, text: ""}
+date: '2016-10-26T15:55:50.000Z'
+modified: '2017-11-03T10:52:52.000Z'
+excerpt: 'Every month at Headforwards we like to get together outside of the office and do something fun. After a summer of BBQs, topped off with our mini-festival – Headstock – we decided October was the right time to find a fun inside activity. This month we chose bowling. Last night 45 of us, including some …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "0b897961-f4cb-5d8b-a38c-fcccfd76e946"
-  slug: "jeni"
-  name: "Jeni Henthorn"
-  path: "/author/jeni/"
+    id: 0b897961-f4cb-5d8b-a38c-fcccfd76e946
+    slug: jeni
+    name: 'Jeni Henthorn'
+    path: /author/jeni/
+
 ---
 Every month at Headforwards we like to get together outside of the office and do something fun.  
 After a summer of BBQs, topped off with our mini-festival – [Headstock](https://www.headforwards.com/2016/09/headstock-2016/) – we decided October was the right time to find a fun inside activity. This month we chose bowling.

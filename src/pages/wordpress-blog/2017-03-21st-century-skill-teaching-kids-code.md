@@ -1,17 +1,27 @@
 ---
-type: "wordpress-blog"
-path: "/2017/03/21st-century-skill-teaching-kids-code"
-title: "The 21st Century Skill – Teaching Kids How To Code"
-date: "2017-03-30T11:41:36.000Z"
-modified: "2017-11-03T10:52:11.000Z"
-excerpt: "  Coding – the 21st century skill. We are heavily reliant on technology and software. As our world becomes increasingly more digital, we need to guarantee we have people with the right skills to build the future. The IT skills gap is immense and there is a global demand for computer scientists. Support for adults wanting …"
-categories: ["Coding","Informational","Top Tips"]
+type: wordpress-blog
+path: /2017/03/21st-century-skill-teaching-kids-code
+title: 'The 21st Century Skill – Teaching Kids How To Code'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/lego_boost_creative_tool_box.jpg, text: 'The 21st Century Skill - Teaching Kids How To Code'}
+    - {image: //headforwards.com/wp-content/files_mf/kids_holding_kibo_photo_150729.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/minecraftwallpaper18.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/spherospark2_cr_sphero.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/screenshot20170330at12.10.12.jpg, text: ""}
+date: '2017-03-30T11:41:36.000Z'
+modified: '2017-11-03T10:52:11.000Z'
+excerpt: '  Coding – the 21st century skill. We are heavily reliant on technology and software. As our world becomes increasingly more digital, we need to guarantee we have people with the right skills to build the future. The IT skills gap is immense and there is a global demand for computer scientists. Support for adults wanting …'
+categories:
+    - Coding
+    - Informational
+    - 'Top Tips'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Coding – the 21st century skill. We are heavily reliant on technology and software. As our world becomes increasingly more digital, we need to guarantee we have people with the right skills to build the future.
 

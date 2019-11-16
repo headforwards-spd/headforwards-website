@@ -1,17 +1,28 @@
 ---
-type: "wordpress-blog"
-path: "/2015/11/software-job-at-headforwards"
-title: "Software Job at Headforwards"
-date: "2015-11-12T12:28:24.000Z"
-modified: "2017-11-03T10:54:17.000Z"
-excerpt: "Are you looking for a new software job? Headforwards are looking for an experienced cyber-security professional (developer / analyst) to join their team in Cornwall, South West England. Headforwards are an outsource software development company and this role will involve working on very high end web applications for one of the largest companies in the …"
-categories: ["Jobs","News"]
-tags: ["jobs in cornwall","new jobs at headforwards","software development cornwall","software job"]
+type: wordpress-blog
+path: /2015/11/software-job-at-headforwards
+title: 'Software Job at Headforwards'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamatpicsmall20.jpeg, text: 'Software Job at Headforwards '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardstrevaunancecove2.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/agileonthebeachbeachparty43.jpg, text: ""}
+date: '2015-11-12T12:28:24.000Z'
+modified: '2017-11-03T10:54:17.000Z'
+excerpt: 'Are you looking for a new software job? Headforwards are looking for an experienced cyber-security professional (developer / analyst) to join their team in Cornwall, South West England. Headforwards are an outsource software development company and this role will involve working on very high end web applications for one of the largest companies in the …'
+categories:
+    - Jobs
+    - News
+tags:
+    - 'jobs in cornwall'
+    - 'new jobs at headforwards'
+    - 'software development cornwall'
+    - 'software job'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Are you looking for a new software job?
 

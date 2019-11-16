@@ -1,17 +1,54 @@
 ---
-type: "wordpress-blog"
-path: "/2015/08/software-squad-event-august-2015"
-title: "Software Squad Event – August 2015"
-date: "2015-08-13T12:29:02.000Z"
-modified: "2017-11-03T10:56:40.000Z"
-excerpt: "Earlier in the week we opened the doors at Headforwards to young IT enthusiasts from all over Cornwall to give them a day of encouragement and education. After a quick cup of tea the day started off with all the students standing up to introduce themselves, whilst also saying which school or college they go …"
-categories: ["News","Software Squad","The Headforwards Team"]
-tags: ["3D printer","bbc radio cornwall","Children","Children learning to code","code academy","Code club","Codecademy","Coding","concept shed","Cornwall","cornwall college","daphne skinnard","Eben Upton","education","grace hopper","Headforwards","JavaScript","jimmy headdon","McLaren racing","pair programming","Python","Raspberry Pi","sam lanyon","Scratch","Skype","Software","Software Cornwall","Software Squad","toby parkins"]
+type: wordpress-blog
+path: /2015/08/software-squad-event-august-2015
+title: 'Software Squad Event – August 2015'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwaresquad.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwaresquad56.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwaresquad2.jpg, text: ""}
+date: '2015-08-13T12:29:02.000Z'
+modified: '2017-11-03T10:56:40.000Z'
+excerpt: 'Earlier in the week we opened the doors at Headforwards to young IT enthusiasts from all over Cornwall to give them a day of encouragement and education. After a quick cup of tea the day started off with all the students standing up to introduce themselves, whilst also saying which school or college they go …'
+categories:
+    - News
+    - 'Software Squad'
+    - 'The Headforwards Team'
+tags:
+    - '3D printer'
+    - 'bbc radio cornwall'
+    - Children
+    - 'Children learning to code'
+    - 'code academy'
+    - 'Code club'
+    - Codecademy
+    - Coding
+    - 'concept shed'
+    - Cornwall
+    - 'cornwall college'
+    - 'daphne skinnard'
+    - 'Eben Upton'
+    - education
+    - 'grace hopper'
+    - Headforwards
+    - JavaScript
+    - 'jimmy headdon'
+    - 'McLaren racing'
+    - 'pair programming'
+    - Python
+    - 'Raspberry Pi'
+    - 'sam lanyon'
+    - Scratch
+    - Skype
+    - Software
+    - 'Software Cornwall'
+    - 'Software Squad'
+    - 'toby parkins'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Earlier in the week we opened the doors at Headforwards to young IT enthusiasts from all over Cornwall to give them a day of encouragement and education.
 

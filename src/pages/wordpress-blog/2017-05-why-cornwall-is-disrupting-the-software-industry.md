@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2017/05/why-cornwall-is-disrupting-the-software-industry"
-title: "From Tourism To Tech – Why Cornwall is Disrupting the Software Industry"
-date: "2017-05-11T10:56:41.000Z"
-modified: "2017-11-03T10:52:10.000Z"
-excerpt: "If you have read the recent Tech Nation report you might be aware of a surprising tech cluster emerging. Cornwall, in the South West of England, has a well-established reputation as a holiday destination. Its rugged coastline, scenic beaches, spectacular cuisine and friendly locals attract visitors from across the globe, but would we expect it …"
-categories: ["Cornwall","News","Outsourcing"]
+type: wordpress-blog
+path: /2017/05/why-cornwall-is-disrupting-the-software-industry
+title: 'From Tourism To Tech – Why Cornwall is Disrupting the Software Industry'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/fromtourismtotech.jpg, text: 'From Tourism To Tech - Why Cornwall is Disrupting the Software Industry'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.programminglanguagessoftwaredevelopment63.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/agileonthebeach2016.jpg, text: ""}
+date: '2017-05-11T10:56:41.000Z'
+modified: '2017-11-03T10:52:10.000Z'
+excerpt: 'If you have read the recent Tech Nation report you might be aware of a surprising tech cluster emerging. Cornwall, in the South West of England, has a well-established reputation as a holiday destination. Its rugged coastline, scenic beaches, spectacular cuisine and friendly locals attract visitors from across the globe, but would we expect it …'
+categories:
+    - Cornwall
+    - News
+    - Outsourcing
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 If you have read the recent [Tech Nation](http://technation.techcityuk.com/) report you might be aware of a surprising tech cluster emerging.
 

@@ -1,17 +1,23 @@
 ---
-type: "wordpress-blog"
-path: "/2017/02/headforwards-team-social-rogue-one-private-screening"
-title: "Headforwards Team Social: Rogue One Private Screening"
-date: "2017-02-02T10:35:42.000Z"
-modified: "2017-11-03T10:52:49.000Z"
-excerpt: "In a small independent cinema… far far away… Our first monthly social for 2017 took place with a private screening of Star Wars: Rogue One with buffet dinner. Over 60 of the team including +1’s attended the event at our local cinema making for a lively Wednesday evening. Once a month, the Headforwards team vote …"
-categories: ["Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2017/02/headforwards-team-social-rogue-one-private-screening
+title: 'Headforwards Team Social: Rogue One Private Screening'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/bannerwithouttext.png, text: 'Headforwards Team Social: Rogue One Private Screening'}
+    - {image: //headforwards.com/wp-content/files_mf/c3pkss6wyaarvml.jpg, text: 'Headforwards Team Social: Rogue One Private Screening'}
+date: '2017-02-02T10:35:42.000Z'
+modified: '2017-11-03T10:52:49.000Z'
+excerpt: 'In a small independent cinema… far far away… Our first monthly social for 2017 took place with a private screening of Star Wars: Rogue One with buffet dinner. Over 60 of the team including +1’s attended the event at our local cinema making for a lively Wednesday evening. Once a month, the Headforwards team vote …'
+categories:
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 _In a small independent cinema… far far away…_
 

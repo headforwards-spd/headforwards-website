@@ -1,17 +1,38 @@
 ---
-type: "wordpress-blog"
-path: "/2013/08/headstock-2013-festival-and-fireworks"
-title: "Headstock 2013 Festival and Fireworks"
-date: "2013-08-06T10:40:25.000Z"
-modified: "2017-11-03T11:11:15.000Z"
-excerpt: "Every year to mark the end of the summer and to celebrate the teams hard work, Headforwards organise a festival called Headstock. September 2013 was no different  and the mini festival was held on the beautiful Roseland Peninsular. A lot of work goes into planning the weekend which is filled with live music, BBQs, Kayaking …"
-categories: ["News","Team adventures","The Headforwards Team"]
-tags: ["Cornwall","Headforwards","headforwards adventures","headforwards festival","Headforwards Team","headstock","Outsourcing","software jobs","software jobs cornwall","software jobs uk","Software Outsourcing","the roseland","the roseland peninsular"]
+type: wordpress-blog
+path: /2013/08/headstock-2013-festival-and-fireworks
+title: 'Headstock 2013 Festival and Fireworks'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headstockheadforwardsendofsummerfestival.jpg, text: Headstock}
+    - {image: //headforwards.com/wp-content/files_mf/headstockheadforwardsfestival.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headstock209158.jpg, text: ""}
+date: '2013-08-06T10:40:25.000Z'
+modified: '2017-11-03T11:11:15.000Z'
+excerpt: 'Every year to mark the end of the summer and to celebrate the teams hard work, Headforwards organise a festival called Headstock. September 2013 was no different  and the mini festival was held on the beautiful Roseland Peninsular. A lot of work goes into planning the weekend which is filled with live music, BBQs, Kayaking …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - Cornwall
+    - Headforwards
+    - 'headforwards adventures'
+    - 'headforwards festival'
+    - 'Headforwards Team'
+    - headstock
+    - Outsourcing
+    - 'software jobs'
+    - 'software jobs cornwall'
+    - 'software jobs uk'
+    - 'Software Outsourcing'
+    - 'the roseland'
+    - 'the roseland peninsular'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 Every year to mark the end of the summer and to celebrate the teams hard work, Headforwards organise a festival called Headstock.
 

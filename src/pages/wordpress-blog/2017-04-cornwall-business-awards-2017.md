@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2017/04/cornwall-business-awards-2017"
-title: "Cornwall Business Awards 2017"
-date: "2017-04-13T10:47:24.000Z"
-modified: "2017-11-03T10:52:10.000Z"
-excerpt: "The Cornwall Business Awards 2017 are nearly upon us and we are thrilled to have made it to the shortlist for Employer of the Year and Most Dynamic Growth Business! On top of that, Lyssa-Fee Crump, Catalyst of Disruptive Innovation here at Headforwards, has been shortlisted for Young Business Person of the Year. This year …"
-categories: ["Awards","News","The Headforwards Team"]
+type: wordpress-blog
+path: /2017/04/cornwall-business-awards-2017
+title: 'Cornwall Business Awards 2017'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/cba17awardbannerheadforwards.jpg, text: 'Cornwall Business Awards 2017'}
+    - {image: //headforwards.com/wp-content/files_mf/dsc_129096.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssurferatgwithianbeach70.jpg, text: ""}
+date: '2017-04-13T10:47:24.000Z'
+modified: '2017-11-03T10:52:10.000Z'
+excerpt: 'The Cornwall Business Awards 2017 are nearly upon us and we are thrilled to have made it to the shortlist for Employer of the Year and Most Dynamic Growth Business! On top of that, Lyssa-Fee Crump, Catalyst of Disruptive Innovation here at Headforwards, has been shortlisted for Young Business Person of the Year. This year …'
+categories:
+    - Awards
+    - News
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 [The Cornwall Business Awards 2017](http://www.cornwallbusinessawards.co.uk/) are nearly upon us and we are thrilled to have made it to the shortlist for Employer of the Year and Most Dynamic Growth Business! On top of that, Lyssa-Fee Crump, Catalyst of Disruptive Innovation here at Headforwards, has been shortlisted for Young Business Person of the Year.
 

@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2018/03/international-womens-day-2018"
-title: "International Women’s Day 2018"
-date: "2018-03-08T14:11:32.000Z"
-modified: "2018-03-08T14:37:20.000Z"
-excerpt: "Today we are celebrating International Women’s Day. International Women’s day was started by the Suffragettes in the early 1900s, and so much has happened for women’s rights since then. However, the World Economic Forum’s 2017 Global Gender Gap Report found that gender parity is over 200 years away, which shows we still have a way to …"
-categories: ["Informational","News"]
+type: wordpress-blog
+path: /2018/03/international-womens-day-2018
+title: 'International Women’s Day 2018'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsinternationalwomensday.jpg, text: 'International Women''s Day 2018'}
+    - {image: //headforwards.com/wp-content/files_mf/softwarecornwallinternationalwomensday.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsofficephotos2017206web2048.jpg, text: ""}
+date: '2018-03-08T14:11:32.000Z'
+modified: '2018-03-08T14:37:20.000Z'
+excerpt: 'Today we are celebrating International Women’s Day. International Women’s day was started by the Suffragettes in the early 1900s, and so much has happened for women’s rights since then. However, the World Economic Forum’s 2017 Global Gender Gap Report found that gender parity is over 200 years away, which shows we still have a way to …'
+categories:
+    - Informational
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Today we are celebrating International Women’s Day.
 

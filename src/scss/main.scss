@@ -33,6 +33,9 @@ body {
     h1, h2, h3 {
         margin: 0;
         text-transform: capitalize;
+        color: $header_black;
+        font-weight: bold;
+        text-shadow: none;
     }
 
     h1 {
@@ -45,9 +48,12 @@ body {
     h3 {
         @include headingFontSmall;
     }
-    p {
+    p, time {
         margin: 0;
         @include fontMedium;
+        color: $paragraph_grey;
+        font-weight: normal;
+        text-shadow: none;
     }
 
     a {

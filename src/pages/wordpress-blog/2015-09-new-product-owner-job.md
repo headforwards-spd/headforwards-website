@@ -1,17 +1,48 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/new-product-owner-job"
-title: "New Product Owner Job"
-date: "2015-09-02T14:29:20.000Z"
-modified: "2017-11-03T10:54:30.000Z"
-excerpt: "Are you looking for a new Product Owner Job? Headforwards are pleased to be looking for a Product Owner / Product Manager to work with a new .NET Development team they are putting together. This team will be working on a range of exciting projects for a new national healthcare client. The position is based …"
-categories: ["Jobs","News"]
-tags: [".net development team","agile job","agile jobs","job","job in cornwall","jobs","jobs in cornwall","product manager","product manager job","product manager job cornwall","product manager job uk","product owner","product owner job","product owner job cornwall","product owner job uk","scrum","scrum job","scrum jobs","software company cornwall","software company uk","software job","software jobs cornwall","software jobs england","software jobs in cornwall"]
+type: wordpress-blog
+path: /2015/09/new-product-owner-job
+title: 'New Product Owner Job'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardswhealcoatescornwall10.jpg, text: 'New Product Owner Job'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamat3023.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsskimboarding11.jpeg, text: ""}
+date: '2015-09-02T14:29:20.000Z'
+modified: '2017-11-03T10:54:30.000Z'
+excerpt: 'Are you looking for a new Product Owner Job? Headforwards are pleased to be looking for a Product Owner / Product Manager to work with a new .NET Development team they are putting together. This team will be working on a range of exciting projects for a new national healthcare client. The position is based …'
+categories:
+    - Jobs
+    - News
+tags:
+    - '.net development team'
+    - 'agile job'
+    - 'agile jobs'
+    - job
+    - 'job in cornwall'
+    - jobs
+    - 'jobs in cornwall'
+    - 'product manager'
+    - 'product manager job'
+    - 'product manager job cornwall'
+    - 'product manager job uk'
+    - 'product owner'
+    - 'product owner job'
+    - 'product owner job cornwall'
+    - 'product owner job uk'
+    - scrum
+    - 'scrum job'
+    - 'scrum jobs'
+    - 'software company cornwall'
+    - 'software company uk'
+    - 'software job'
+    - 'software jobs cornwall'
+    - 'software jobs england'
+    - 'software jobs in cornwall'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Are you looking for a new Product Owner Job?
 

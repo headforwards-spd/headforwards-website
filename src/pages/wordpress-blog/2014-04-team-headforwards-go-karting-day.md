@@ -1,17 +1,33 @@
 ---
-type: "wordpress-blog"
-path: "/2014/04/team-headforwards-go-karting-day"
-title: "Team Headforwards Go-Karting Day"
-date: "2014-04-26T14:43:25.000Z"
-modified: "2015-09-01T16:10:55.000Z"
-excerpt: "One wet day in April saw “Team Headforwards” head off to the track to try go-karting. For a little while it was a case of hurry up and wait whilst the rain continued to fall from the sky. By the end of the the day we were all totally drenched, but happy!       …"
-categories: ["News","Team adventures","The Headforwards Team"]
-tags: ["Cornwall","go-karting","Headforwards","Headforwards Team","rain","software career","Software Cornwall","software jobs"]
+type: wordpress-blog
+path: /2014/04/team-headforwards-go-karting-day
+title: 'Team Headforwards Go-Karting Day'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsgokarting.jpg, text: Go-Karting}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsgokarting85.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsgokartingintherain.jpg, text: ""}
+date: '2014-04-26T14:43:25.000Z'
+modified: '2015-09-01T16:10:55.000Z'
+excerpt: 'One wet day in April saw “Team Headforwards” head off to the track to try go-karting. For a little while it was a case of hurry up and wait whilst the rain continued to fall from the sky. By the end of the the day we were all totally drenched, but happy!       …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - Cornwall
+    - go-karting
+    - Headforwards
+    - 'Headforwards Team'
+    - rain
+    - 'software career'
+    - 'Software Cornwall'
+    - 'software jobs'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 One wet day in April saw “Team Headforwards” head off to the track to try go-karting.  
 For a little while it was a case of hurry up and wait whilst the rain continued to fall from the sky.

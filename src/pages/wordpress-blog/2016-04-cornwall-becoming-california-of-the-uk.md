@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2016/04/cornwall-becoming-california-of-the-uk"
-title: "Cornwall Becoming California of The UK"
-date: "2016-04-14T09:57:05.000Z"
-modified: "2017-11-03T10:53:53.000Z"
-excerpt: "The Cornish Guardian recently published the following article called: Cornwall becoming ‘California of the UK’ as it is named second in the UK for growth. The county’s growing digital community was ranked second in the UK in terms of turnover growth, showing a 153 percent increase. This was second only to Southampton on 180 percent …"
-categories: ["Cornwall","News"]
+type: wordpress-blog
+path: /2016/04/cornwall-becoming-california-of-the-uk
+title: 'Cornwall Becoming California of The UK'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/california_headforwards_cornwall.jpg, text: 'Cornwall Becoming California of The UK'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_california.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforward_cornwall_california_of_the_uk.jpg, text: ""}
+date: '2016-04-14T09:57:05.000Z'
+modified: '2017-11-03T10:53:53.000Z'
+excerpt: 'The Cornish Guardian recently published the following article called: Cornwall becoming ‘California of the UK’ as it is named second in the UK for growth. The county’s growing digital community was ranked second in the UK in terms of turnover growth, showing a 153 percent increase. This was second only to Southampton on 180 percent …'
+categories:
+    - Cornwall
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 The [Cornish Guardian](http://www.cornishguardian.co.uk/Cornwall-California-UK-named-second-UK-growth/story-28762944-detail/story.html) recently published the following article called: Cornwall becoming ‘California of the UK’ as it is named second in the UK for growth.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

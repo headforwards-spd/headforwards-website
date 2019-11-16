@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2018/03/increase-knowledge-sharing-organisation"
-title: "Increasing Knowledge Sharing in an Organisation"
-date: "2018-03-08T11:48:27.000Z"
-modified: "2018-03-12T15:21:47.000Z"
-excerpt: "The distribution of project-based knowledge can be painfully slow. New discoveries and findings within a project lifecycle can often pave the way to successful product delivery and enhance the knowledge of individuals in the team. So, how do we make these experiences visible to a whole organisation? At the time of writing this, I can …"
-categories: ["Agile","Informational","News","Top Tips"]
+type: wordpress-blog
+path: /2018/03/increase-knowledge-sharing-organisation
+title: 'Increasing Knowledge Sharing in an Organisation'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/crossteamexperiencebanner.jpg, text: ""}
+date: '2018-03-08T11:48:27.000Z'
+modified: '2018-03-12T15:21:47.000Z'
+excerpt: 'The distribution of project-based knowledge can be painfully slow. New discoveries and findings within a project lifecycle can often pave the way to successful product delivery and enhance the knowledge of individuals in the team. So, how do we make these experiences visible to a whole organisation? At the time of writing this, I can …'
+categories:
+    - Agile
+    - Informational
+    - News
+    - 'Top Tips'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 **The distribution of project-based knowledge can be painfully slow. New discoveries and findings within a project lifecycle can often pave the way to successful product delivery and enhance the knowledge of individuals in the team. So, how do we make these experiences visible to a whole organisation?**
 

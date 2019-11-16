@@ -1,17 +1,49 @@
 ---
-type: "wordpress-blog"
-path: "/2014/09/global-cloud-contract-for-telecoms-giant-creates-20-new-jobs-in-cornwall"
-title: "Global Cloud contract for telecoms giant creates 20 new jobs in Cornwall"
-date: "2014-09-04T18:36:48.000Z"
-modified: "2015-09-01T16:02:18.000Z"
-excerpt: "Cornwall’s fastest growing technology start-up company has won a global cloud contract for telecom giant NTT Communications which will create 20 new technology jobs. Headforwards, a three-year old software outsourcing company based in Pool Innovation Centre, secured the contract with one of the world’s largest telecoms companies to work on the Next Generation Cloud Platform. …"
-categories: ["Cornwall","News","Outsourcing","The Headforwards Team"]
-tags: ["Cloud","Cloud contract","Cornwall","Craig Girvan","DR Vince Cable","jobs in cornwall","Julian Beer","LEP","new jobs in cornwall","NTT","NTT Europe partners","NTT partners","NTT telecoms","pool innovation centre","sandra rothwell","software careers cornwall","software companies in cornwall","software jobs","software jobs cornwall","software jobs cornwll","software jobs in cornwall","software jobs uk","toby parkins","Vinca Cable"]
+type: wordpress-blog
+path: /2014/09/global-cloud-contract-for-telecoms-giant-creates-20-new-jobs-in-cornwall
+title: 'Global Cloud contract for telecoms giant creates 20 new jobs in Cornwall'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsandnttpartner.jpg, text: 'Cloud Contract '}
+    - {image: //headforwards.com/wp-content/files_mf/nttpartnerwithheadforwards.jpg, text: ""}
+date: '2014-09-04T18:36:48.000Z'
+modified: '2015-09-01T16:02:18.000Z'
+excerpt: 'Cornwall’s fastest growing technology start-up company has won a global cloud contract for telecom giant NTT Communications which will create 20 new technology jobs. Headforwards, a three-year old software outsourcing company based in Pool Innovation Centre, secured the contract with one of the world’s largest telecoms companies to work on the Next Generation Cloud Platform. …'
+categories:
+    - Cornwall
+    - News
+    - Outsourcing
+    - 'The Headforwards Team'
+tags:
+    - Cloud
+    - 'Cloud contract'
+    - Cornwall
+    - 'Craig Girvan'
+    - 'DR Vince Cable'
+    - 'jobs in cornwall'
+    - 'Julian Beer'
+    - LEP
+    - 'new jobs in cornwall'
+    - NTT
+    - 'NTT Europe partners'
+    - 'NTT partners'
+    - 'NTT telecoms'
+    - 'pool innovation centre'
+    - 'sandra rothwell'
+    - 'software careers cornwall'
+    - 'software companies in cornwall'
+    - 'software jobs'
+    - 'software jobs cornwall'
+    - 'software jobs cornwll'
+    - 'software jobs in cornwall'
+    - 'software jobs uk'
+    - 'toby parkins'
+    - 'Vinca Cable'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 Cornwall’s fastest growing technology start-up company has won a global cloud contract for telecom giant NTT Communications which will create 20 new technology jobs.
 

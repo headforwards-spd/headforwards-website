@@ -1,17 +1,46 @@
 ---
-type: "wordpress-blog"
-path: "/2015/08/software-cornwall"
-title: "Software Cornwall"
-date: "2015-08-10T10:33:37.000Z"
-modified: "2017-11-03T10:56:40.000Z"
-excerpt: "You may have heard about Software Cornwall recently, but you may not know what it is all about. Software Cornwall is a collective of software development enterprises, education providers and business support organisations based in Cornwall, who aim to support the growth of the software industry in the county. Headforwards are proud to be members …"
-categories: ["Cornwall","Informational","News","The Headforwards Team"]
-tags: ["19th acre","Agile Software Development","Belinda Waldcock","blue fruit","Code club","Headforwards","ibm","kate hughes","membership","mike barritt","mike trebilcok","packetship","paul clark","paul massey","recruitment","Software Cornwall","software development cornwall","sullivan cuff software","toby parkins","uknetweb"]
+type: wordpress-blog
+path: /2015/08/software-cornwall
+title: 'Software Cornwall'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsshorelinesurfer35.jpeg, text: 'Software Cornwall'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardswhealcoatescornwall47.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsprogramming91.jpg, text: ""}
+date: '2015-08-10T10:33:37.000Z'
+modified: '2017-11-03T10:56:40.000Z'
+excerpt: 'You may have heard about Software Cornwall recently, but you may not know what it is all about. Software Cornwall is a collective of software development enterprises, education providers and business support organisations based in Cornwall, who aim to support the growth of the software industry in the county. Headforwards are proud to be members …'
+categories:
+    - Cornwall
+    - Informational
+    - News
+    - 'The Headforwards Team'
+tags:
+    - '19th acre'
+    - 'Agile Software Development'
+    - 'Belinda Waldcock'
+    - 'blue fruit'
+    - 'Code club'
+    - Headforwards
+    - ibm
+    - 'kate hughes'
+    - membership
+    - 'mike barritt'
+    - 'mike trebilcok'
+    - packetship
+    - 'paul clark'
+    - 'paul massey'
+    - recruitment
+    - 'Software Cornwall'
+    - 'software development cornwall'
+    - 'sullivan cuff software'
+    - 'toby parkins'
+    - uknetweb
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 You may have heard about [Software Cornwall](http://www.softwarecornwall.org/) recently, but you may not know what it is all about.
 

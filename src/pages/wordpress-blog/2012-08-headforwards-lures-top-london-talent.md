@@ -1,17 +1,46 @@
 ---
-type: "wordpress-blog"
-path: "/2012/08/headforwards-lures-top-london-talent"
-title: "Headforwards Lures Top London Talent"
-date: "2012-08-06T09:40:14.000Z"
-modified: "2017-11-03T11:11:17.000Z"
-excerpt: "Former LoveFilm senior developer, Aaron Trevena, has taken up a new post with Headforwards, a recently established software development agency based in Cornwall. Bringing over 12 years of experience to the role, Aaron will be working with the founders of Headforwards Toby Parkins and Craig Girvan to deliver world-class projects for an international client base, …"
-categories: ["Jobs","News","The Headforwards Team"]
-tags: ["aaron trevena","amazon","careers","careers in cornwall","Craig Girvan","headforwards lures top london talent","IT jobs cornwall","love film","NTT","software companies in cornwall","software companies in the uk","software company","Software Cornwall","software jobs cornwall","Software Outsourcing","software outsourcing partners","software outsourcing uk","software partners","super fast broadband","superfast broadband","toby parkins"]
+type: wordpress-blog
+path: /2012/08/headforwards-lures-top-london-talent
+title: 'Headforwards Lures Top London Talent'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/aaronjoinsheadforwards.jpg, text: 'Aaron joins Headforwards'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsstartingteamsmall96.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamatpic57.jpg, text: ""}
+date: '2012-08-06T09:40:14.000Z'
+modified: '2017-11-03T11:11:17.000Z'
+excerpt: 'Former LoveFilm senior developer, Aaron Trevena, has taken up a new post with Headforwards, a recently established software development agency based in Cornwall. Bringing over 12 years of experience to the role, Aaron will be working with the founders of Headforwards Toby Parkins and Craig Girvan to deliver world-class projects for an international client base, …'
+categories:
+    - Jobs
+    - News
+    - 'The Headforwards Team'
+tags:
+    - 'aaron trevena'
+    - amazon
+    - careers
+    - 'careers in cornwall'
+    - 'Craig Girvan'
+    - 'headforwards lures top london talent'
+    - 'IT jobs cornwall'
+    - 'love film'
+    - NTT
+    - 'software companies in cornwall'
+    - 'software companies in the uk'
+    - 'software company'
+    - 'Software Cornwall'
+    - 'software jobs cornwall'
+    - 'Software Outsourcing'
+    - 'software outsourcing partners'
+    - 'software outsourcing uk'
+    - 'software partners'
+    - 'super fast broadband'
+    - 'superfast broadband'
+    - 'toby parkins'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 Former [LoveFilm](http://www.amazon.co.uk/gp/bypost/storefront?node=3054240031) senior developer, [Aaron Trevena](https://www.linkedin.com/in/aarontrevena), has taken up a new post with Headforwards, a recently established software development agency based in Cornwall.
 

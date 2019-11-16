@@ -1,17 +1,23 @@
 ---
-type: "wordpress-blog"
-path: "/2016/03/want-to-meet-headforwards"
-title: "Want to Meet Headforwards?"
-date: "2016-03-30T12:22:01.000Z"
-modified: "2017-11-03T10:53:54.000Z"
-excerpt: "The Headforwards diary is looking pretty busy for the year, with lots of exciting events on the horizon. Do you want to meet Headforwards? Here are the events that we will be attending throughout 2016, one of them might be the perfect time for you to come along and say hello. The Cornwall Business Show 17th …"
-categories: ["News"]
+type: wordpress-blog
+path: /2016/03/want-to-meet-headforwards
+title: 'Want to Meet Headforwards?'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamat3082.jpg, text: 'Want to Meet Headforwards '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamsmall5097.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_team1.jpeg, text: ""}
+date: '2016-03-30T12:22:01.000Z'
+modified: '2017-11-03T10:53:54.000Z'
+excerpt: 'The Headforwards diary is looking pretty busy for the year, with lots of exciting events on the horizon. Do you want to meet Headforwards? Here are the events that we will be attending throughout 2016, one of them might be the perfect time for you to come along and say hello. The Cornwall Business Show 17th …'
+categories:
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 The Headforwards diary is looking pretty busy for the year, with lots of exciting events on the horizon.  
 Do you want to meet Headforwards? Here are the events that we will be attending throughout 2016, one of them might be the perfect time for you to come along and say hello.

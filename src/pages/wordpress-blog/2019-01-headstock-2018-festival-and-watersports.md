@@ -1,17 +1,41 @@
 ---
-type: "wordpress-blog"
-path: "/2019/01/headstock-2018-festival-and-watersports"
-title: "Headstock 2018 – Fun & Games at Stithians Lake"
-date: "2019-01-09T16:10:11.000Z"
-modified: "2019-07-01T11:29:52.000Z"
-excerpt: "Every year we organise our very own Festival called Headstock.  Traditionally this  been held at the end of the summer, but as the British weather can be so unreliable in September, we decided to hold this year’s Festival in June. So the Headstock Organisation Team – aka the Business Team – pulled out all the …"
-categories: ["News","Team adventures","The Headforwards Team"]
-tags: ["Cornwall","Headforwards","headforwards adventures","headforwards festival","Headforwards Team","headstock","Outsourcing","software jobs","software jobs cornwall","software jobs uk","Software Outsourcing","the roseland","the roseland peninsular"]
+type: wordpress-blog
+path: /2019/01/headstock-2018-festival-and-watersports
+title: 'Headstock 2018 – Fun & Games at Stithians Lake'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/36240576_10156557481288200_981399722193321984_n.jpg, text: Headstock}
+    - {image: //headforwards.com/wp-content/files_mf/2018063015.20.15.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/2018063015.25.24.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/2018063015.24.27.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/2018063014.28.51.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/2018063015.19.58.jpg, text: ""}
+date: '2019-01-09T16:10:11.000Z'
+modified: '2019-07-01T11:29:52.000Z'
+excerpt: 'Every year we organise our very own Festival called Headstock.  Traditionally this  been held at the end of the summer, but as the British weather can be so unreliable in September, we decided to hold this year’s Festival in June. So the Headstock Organisation Team – aka the Business Team – pulled out all the …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - Cornwall
+    - Headforwards
+    - 'headforwards adventures'
+    - 'headforwards festival'
+    - 'Headforwards Team'
+    - headstock
+    - Outsourcing
+    - 'software jobs'
+    - 'software jobs cornwall'
+    - 'software jobs uk'
+    - 'Software Outsourcing'
+    - 'the roseland'
+    - 'the roseland peninsular'
 author:
-  id: "1860e925-e52c-5d69-88c7-1ef257c71e70"
-  slug: "karen"
-  name: "Karen Russell"
-  path: "/author/karen/"
+    id: 1860e925-e52c-5d69-88c7-1ef257c71e70
+    slug: karen
+    name: 'Karen Russell'
+    path: /author/karen/
+
 ---
 Every year we organise our very own Festival called Headstock.  Traditionally this  been held at the end of the summer, but as the British weather can be so unreliable in September, we decided to hold this year’s Festival in June.
 

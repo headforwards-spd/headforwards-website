@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2016/07/software-jobs-uk"
-title: "Software Jobs UK"
-date: "2016-07-10T09:41:47.000Z"
-modified: "2017-11-03T10:53:48.000Z"
-excerpt: "Have you been searching for Software Jobs UK? We currently have a large number of new roles available that may be suitable for you. We are an outsource software development company based in Cornwall, South West England. Cornwall may seem like an odd choice for a growing software company but it is fast becoming a hub …"
-categories: ["Cornwall","Jobs","News"]
+type: wordpress-blog
+path: /2016/07/software-jobs-uk
+title: 'Software Jobs UK'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardswhealcoatescornwall30.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteaminstandupmeeting71.jpg, text: 'Software Jobs UK'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteam55.jpg, text: ""}
+date: '2016-07-10T09:41:47.000Z'
+modified: '2017-11-03T10:53:48.000Z'
+excerpt: 'Have you been searching for Software Jobs UK? We currently have a large number of new roles available that may be suitable for you. We are an outsource software development company based in Cornwall, South West England. Cornwall may seem like an odd choice for a growing software company but it is fast becoming a hub …'
+categories:
+    - Cornwall
+    - Jobs
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Have you been searching for Software Jobs UK?  
 We currently have a large number of new roles available that may be suitable for you.

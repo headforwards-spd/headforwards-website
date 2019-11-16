@@ -1,17 +1,34 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/front-end-stack-for-the-cloud"
-title: "Front End Stack for the Cloud"
-date: "2015-09-30T15:18:25.000Z"
-modified: "2017-11-03T10:54:25.000Z"
-excerpt: "Headforwards is not just about beaches and BBQs, we get some serious work done too! Glen is one of our developers and he has written the following article about a project he has been working on here at Headforwards –  Front End Stack for The Cloud. Introduction I asked a question on Twitter about what people …"
-categories: ["Coding","Informational","News","The Headforwards Team"]
-tags: ["cloud infrastructure","full stack development","Glen","Headforwards","Python","software development","software development cornwall","TDD"]
+type: wordpress-blog
+path: /2015/09/front-end-stack-for-the-cloud
+title: 'Front End Stack for the Cloud'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsprogramming21.jpeg, text: 'Front End Stack for The Cloud '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsdevelopersatbeachbbq27.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsmacbook78.jpg, text: ""}
+date: '2015-09-30T15:18:25.000Z'
+modified: '2017-11-03T10:54:25.000Z'
+excerpt: 'Headforwards is not just about beaches and BBQs, we get some serious work done too! Glen is one of our developers and he has written the following article about a project he has been working on here at Headforwards –  Front End Stack for The Cloud. Introduction I asked a question on Twitter about what people …'
+categories:
+    - Coding
+    - Informational
+    - News
+    - 'The Headforwards Team'
+tags:
+    - 'cloud infrastructure'
+    - 'full stack development'
+    - Glen
+    - Headforwards
+    - Python
+    - 'software development'
+    - 'software development cornwall'
+    - TDD
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Headforwards is not just about beaches and BBQs, we get some serious work done too!  
 Glen is one of our developers and he has written the following article about a project he has been working on here at Headforwards –  Front End Stack for The Cloud.

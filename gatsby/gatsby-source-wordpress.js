@@ -1,12 +1,10 @@
 const TurndownService = require('turndown');
-const transformAndWriteToFile = require('json-to-frontmatter-markdown').default;
-
+const fs = require('fs');
+const YAML = require('yamljs');
 const Entities = require('html-entities').XmlEntities;
 
 const htmlEntities = new Entities();
-
 const turndownService = new TurndownService();
-const getMarkdown = html => turndownService.turndown(html);
 
 module.exports = {
     resolve: 'gatsby-source-wordpress',
@@ -114,45 +112,55 @@ module.exports = {
                     categories___NODE: postCategories = [],
                     tags___NODE: postTags = [],
                     author___NODE: postAuthor,
+                    metadata,
                     path,
                 } = post;
 
-                const markdown = {
-                    frontmatterMarkdown: {
-                        frontmatter: [
-                            { type: 'wordpress-blog' },
-                            {
-                                path: path.replace(/^(.*)(?:\/)$/, '$1'),
-                            },
-                            { title: htmlEntities.decode(title) },
-                            { date },
-                            { modified },
-                            { excerpt: excerpt ? getMarkdown(excerpt.replace('[&hellip;]', '…')) : null },
-                            {
-                                categories: categories
-                                    .filter(category => postCategories.includes(category.id))
-                                    .map(category => category.name),
-                            },
-                            {
-                                tags: tags.filter(tag => postTags.includes(tag.id)).map(tag => tag.name),
-                            },
-                            {
-                                author: authors.find(author => author.id === postAuthor),
-                            },
-                        ],
-                        body: content ? getMarkdown(content) : null,
-                    },
-                    path: `src/pages/wordpress-blog/`,
-                    fileName: `${path
-                        .split('/')
-                        .filter(value => !!value)
-                        .join('-')}.md`,
-                };
+                const filename = `${path
+                    .split('/')
+                    .filter(value => !!value)
+                    .join('-')}.md`;
 
-                transformAndWriteToFile(markdown);
+                const frontmatter = {
+                    type: 'wordpress-blog',
+                    path: path.replace(/^(.*)(?:\/)$/, '$1'),
+                    title: htmlEntities.decode(title),
+                    headerImages: extractHeaderImages(metadata),
+                    date,
+                    modified,
+                    excerpt: excerpt ? getMarkdown(excerpt.replace('[&hellip;]', '…')) : '',
+                    categories: categories
+                        .filter(category => postCategories.includes(category.id))
+                        .map(category => category.name),
+                    tags: tags.filter(tag => postTags.includes(tag.id)).map(tag => tag.name),
+                    author: authors.find(author => author.id === postAuthor),
+                };
+                const body = content ? getMarkdown(content) : '';
+
+                const data = `---\n${YAML.stringify(frontmatter)}\n---\n${body}\n`;
+
+                fs.writeFile(
+                    `src/pages/wordpress-blog/${filename}`,
+                    data,
+                    // eslint-disable-next-line no-console
+                    error => !!error && console.error(error)
+                );
             });
 
             return entities;
         },
     },
 };
+
+function extractHeaderImages(metadata) {
+    const { header_image_image: images = [], header_image_text: text = [] } = metadata || {};
+
+    return images.map((image, index) => ({
+        image: `//headforwards.com/wp-content/files_mf/${image}`,
+        text: text[index] || '',
+    }));
+}
+
+function getMarkdown(html) {
+    return turndownService.turndown(html);
+}

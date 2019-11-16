@@ -1,17 +1,23 @@
 ---
-type: "wordpress-blog"
-path: "/2017/04/tech-nation-report-roundup"
-title: "Tech Nation Report – Roundup"
-date: "2017-04-11T14:00:05.000Z"
-modified: "2017-11-03T10:52:10.000Z"
-excerpt: "The figures for the 2017 Tech Nation annual report are in and have got us really excited! We’re really pleased with the stats for the South West tech-cluster and how quickly it’s expanding. Tech Nation’s report provides the most comprehensive view of the UK digital tech economy and ecosystems to date. Investment in Digital Tech reaches …"
-categories: ["Cornwall","Informational","News"]
+type: wordpress-blog
+path: /2017/04/tech-nation-report-roundup
+title: 'Tech Nation Report – Roundup'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/technationdigestbanner.png, text: ""}
+date: '2017-04-11T14:00:05.000Z'
+modified: '2017-11-03T10:52:10.000Z'
+excerpt: 'The figures for the 2017 Tech Nation annual report are in and have got us really excited! We’re really pleased with the stats for the South West tech-cluster and how quickly it’s expanding. Tech Nation’s report provides the most comprehensive view of the UK digital tech economy and ecosystems to date. Investment in Digital Tech reaches …'
+categories:
+    - Cornwall
+    - Informational
+    - News
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 The figures for the 2017 Tech Nation annual report are in and have got us really excited! We’re really pleased with the stats for the South West tech-cluster and how quickly it’s expanding. Tech Nation’s report provides the most comprehensive view of the UK digital tech economy and ecosystems to date.
 

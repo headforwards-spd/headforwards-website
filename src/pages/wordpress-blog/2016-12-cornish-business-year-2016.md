@@ -1,17 +1,26 @@
 ---
-type: "wordpress-blog"
-path: "/2016/12/cornish-business-year-2016"
-title: "Cornish Business of the Year 2016"
-date: "2016-12-02T16:48:37.000Z"
-modified: "2017-11-03T10:52:51.000Z"
-excerpt: "Headforwards are extremely proud to announce that last week we were awarded the impressive accolade of being Cornish Business of the Year 2016 at the Hub Awards. The Hub, launched in 2003, is an exciting network that now connects over 700 members from the business community across Cornwall and Devon. It’s mission statement is “To connect …"
-categories: ["Awards","News","Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2016/12/cornish-business-year-2016
+title: 'Cornish Business of the Year 2016'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardshubawards2016trophy.jpg, text: 'Cornish Business of the Year 2016'}
+    - {image: //headforwards.com/wp-content/files_mf/20161201_1207201.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardshubawards2016blurrydessery.jpg, text: ""}
+date: '2016-12-02T16:48:37.000Z'
+modified: '2017-11-03T10:52:51.000Z'
+excerpt: 'Headforwards are extremely proud to announce that last week we were awarded the impressive accolade of being Cornish Business of the Year 2016 at the Hub Awards. The Hub, launched in 2003, is an exciting network that now connects over 700 members from the business community across Cornwall and Devon. It’s mission statement is “To connect …'
+categories:
+    - Awards
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "0b897961-f4cb-5d8b-a38c-fcccfd76e946"
-  slug: "jeni"
-  name: "Jeni Henthorn"
-  path: "/author/jeni/"
+    id: 0b897961-f4cb-5d8b-a38c-fcccfd76e946
+    slug: jeni
+    name: 'Jeni Henthorn'
+    path: /author/jeni/
+
 ---
 Headforwards are extremely proud to announce that last week we were awarded the impressive accolade of being Cornish Business of the Year 2016 at the [Hub Awards](https://cornwallhub.org/).
 

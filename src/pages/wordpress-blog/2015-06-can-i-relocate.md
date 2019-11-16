@@ -1,17 +1,47 @@
 ---
-type: "wordpress-blog"
-path: "/2015/06/can-i-relocate"
-title: "Can I Relocate?"
-date: "2015-06-22T14:09:23.000Z"
-modified: "2015-09-01T14:45:41.000Z"
-excerpt: "Are you dreaming of a different life? One where your work life balance is not affected by long commutes home on stuffy trains or stuck in long traffic jams. Why not relocate somewhere new, where your journey home takes you through fields and you can squeeze a quick surf in on your lunch break. But …"
-categories: ["Cornwall","Informational"]
-tags: ["Business","Cornwall","developer jobs","developer jobs cornwa","developer jobs cornwall","developer jobs uk","Headforwards","Infomational","jobs cornwall","jobs in cornwall","Relocating","relocating careers in software","relocatinh","Skype","Software","software careers","software companies","software companies cornwall","software companies uk","software jobs","software jobs uk","Software Outsourcing","Top Tips"]
+type: wordpress-blog
+path: /2015/06/can-i-relocate
+title: 'Can I Relocate?'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscorwallsurf56.jpg, text: 'Can I relocate?'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbeachsunset.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssunsetrock42.jpeg, text: ""}
+date: '2015-06-22T14:09:23.000Z'
+modified: '2015-09-01T14:45:41.000Z'
+excerpt: 'Are you dreaming of a different life? One where your work life balance is not affected by long commutes home on stuffy trains or stuck in long traffic jams. Why not relocate somewhere new, where your journey home takes you through fields and you can squeeze a quick surf in on your lunch break. But …'
+categories:
+    - Cornwall
+    - Informational
+tags:
+    - Business
+    - Cornwall
+    - 'developer jobs'
+    - 'developer jobs cornwa'
+    - 'developer jobs cornwall'
+    - 'developer jobs uk'
+    - Headforwards
+    - Infomational
+    - 'jobs cornwall'
+    - 'jobs in cornwall'
+    - Relocating
+    - 'relocating careers in software'
+    - relocatinh
+    - Skype
+    - Software
+    - 'software careers'
+    - 'software companies'
+    - 'software companies cornwall'
+    - 'software companies uk'
+    - 'software jobs'
+    - 'software jobs uk'
+    - 'Software Outsourcing'
+    - 'Top Tips'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Are you dreaming of a different life? One where your work life balance is not affected by long commutes home on stuffy trains or stuck in long traffic jams.  
 Why not relocate somewhere new, where your journey home takes you through fields and you can squeeze a quick surf in on your lunch break.  

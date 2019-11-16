@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/08/problems-outsourcing-how-to-solve-them"
-title: "The Problems With Outsourcing & How We Solve Them"
-date: "2017-08-25T14:48:59.000Z"
-modified: "2018-01-18T11:02:19.000Z"
-excerpt: "Outsourcing can be a frightening prospect for many companies. Moving internal process and workloads over to a third-party organisation isn’t a walk in the park. We are faced with a lot of difficult and complex problems when working with clients. They are usually unique to a specific project and require us to find new angles …"
-categories: ["Informational","Outsourcing"]
+type: wordpress-blog
+path: /2017/08/problems-outsourcing-how-to-solve-them
+title: 'The Problems With Outsourcing & How We Solve Them'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/problemswithoutsourcingheadforwards96.jpg, text: 'The Problems With Outsourcing & How We Solve Them'}
+    - {image: //headforwards.com/wp-content/files_mf/problemswithoutsourcingteamheadforwards.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/problemswithoutsourcingscrumheadforwards.jpg, text: ""}
+date: '2017-08-25T14:48:59.000Z'
+modified: '2018-01-18T11:02:19.000Z'
+excerpt: 'Outsourcing can be a frightening prospect for many companies. Moving internal process and workloads over to a third-party organisation isn’t a walk in the park. We are faced with a lot of difficult and complex problems when working with clients. They are usually unique to a specific project and require us to find new angles …'
+categories:
+    - Informational
+    - Outsourcing
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Outsourcing can be a frightening prospect for many companies. Moving internal process and workloads over to a third-party organisation isn’t a walk in the park. We are faced with a lot of difficult and complex problems when working with clients. They are usually unique to a specific project and require us to find new angles of approach. We have identified some of the leading problems faced by businesses looking to outsource and how we solve them.
 

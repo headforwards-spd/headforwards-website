@@ -1,17 +1,39 @@
 ---
-type: "wordpress-blog"
-path: "/2013/12/christmas-party-2013"
-title: "Christmas Party 2013"
-date: "2013-12-20T17:36:22.000Z"
-modified: "2015-09-02T11:56:25.000Z"
-excerpt: "It is becoming common knowledge that the people at Headforwards love a get together, so when Christmas comes around we like to organise something quite special. To mark the end of 2013, which was a spectacular year, we organised dinner and a party at the fabulous Driftwood Spars Hotel, in St Agnes. We had a …"
-categories: ["News","Team adventures","The Headforwards Team"]
-tags: ["christmas","christmas dinner","christmas part","christmas party","driftwood","driftwood spars","driftwood spars hotel","driftwood st agnes","headforwards at the driftwood spars hotel","headforwards christmas","headforwards christmas 2013","headforwards christmas dinner","headforwards christmas party","headforwards christmas party 2013"]
+type: wordpress-blog
+path: /2013/12/christmas-party-2013
+title: 'Christmas Party 2013'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/thedriftwoodspars.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardschristmas.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/christmascracker.jpeg, text: ""}
+date: '2013-12-20T17:36:22.000Z'
+modified: '2015-09-02T11:56:25.000Z'
+excerpt: 'It is becoming common knowledge that the people at Headforwards love a get together, so when Christmas comes around we like to organise something quite special. To mark the end of 2013, which was a spectacular year, we organised dinner and a party at the fabulous Driftwood Spars Hotel, in St Agnes. We had a …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - christmas
+    - 'christmas dinner'
+    - 'christmas part'
+    - 'christmas party'
+    - driftwood
+    - 'driftwood spars'
+    - 'driftwood spars hotel'
+    - 'driftwood st agnes'
+    - 'headforwards at the driftwood spars hotel'
+    - 'headforwards christmas'
+    - 'headforwards christmas 2013'
+    - 'headforwards christmas dinner'
+    - 'headforwards christmas party'
+    - 'headforwards christmas party 2013'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 It is becoming common knowledge that the people at Headforwards love a get together, so when Christmas comes around we like to organise something quite special.  
 To mark the end of 2013, which was a spectacular year, we organised dinner and a party at the fabulous [Driftwood Spars Hotel](https://www.driftwoodspars.co.uk/), in [St Agnes](http://www.st-agnes.com/).

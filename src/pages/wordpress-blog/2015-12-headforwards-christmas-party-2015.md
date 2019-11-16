@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2015/12/headforwards-christmas-party-2015"
-title: "Headforwards Christmas Party 2015"
-date: "2015-12-15T11:46:44.000Z"
-modified: "2017-11-03T10:54:00.000Z"
-excerpt: "We do love a good celebration here at Headforwards and this years Christmas party was rather spectacular! On Saturday night we all went down to  The Seiners Arms in Perranporth who made sure we all had an excellent evening. The location was stunning and even though it was dark it was lovely to look across the …"
-categories: ["News","Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2015/12/headforwards-christmas-party-2015
+title: 'Headforwards Christmas Party 2015'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_christmas_party_38.jpg, text: 'Christmas Party 2015'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_christmas_party31.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_christmas_party_146.jpg, text: ""}
+date: '2015-12-15T11:46:44.000Z'
+modified: '2017-11-03T10:54:00.000Z'
+excerpt: 'We do love a good celebration here at Headforwards and this years Christmas party was rather spectacular! On Saturday night we all went down to  The Seiners Arms in Perranporth who made sure we all had an excellent evening. The location was stunning and even though it was dark it was lovely to look across the …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 We do love a good celebration here at Headforwards and this years Christmas party was rather spectacular!
 

@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2017/03/learn-code-online-resources-beginners"
-title: "How To Learn Code: Online Resources for Beginners"
-date: "2017-03-08T16:07:43.000Z"
-modified: "2017-11-03T10:52:48.000Z"
-excerpt: "There is an unlimited supply of coding resources on the web. 110,000,000 according to Google Search. Learning a programming language online is an excellent way to stay up-to-date with newly added features. Here at Headforwards, our team use a wide variety of online resources to help them stay ahead of the curve. We’ve picked out …"
-categories: ["Coding","Top Tips"]
+type: wordpress-blog
+path: /2017/03/learn-code-online-resources-beginners
+title: 'How To Learn Code: Online Resources for Beginners'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/bonniekittle186235.jpg, text: 'Learning to Code'}
+    - {image: //headforwards.com/wp-content/files_mf/emileperron190221.jpg, text: 'Learning to Code'}
+    - {image: //headforwards.com/wp-content/files_mf/glenncarstenspeters203007.jpg, text: 'Learning to Code'}
+    - {image: //headforwards.com/wp-content/files_mf/lewisngugi186309.jpg, text: 'Learning to Code'}
+date: '2017-03-08T16:07:43.000Z'
+modified: '2017-11-03T10:52:48.000Z'
+excerpt: 'There is an unlimited supply of coding resources on the web. 110,000,000 according to Google Search. Learning a programming language online is an excellent way to stay up-to-date with newly added features. Here at Headforwards, our team use a wide variety of online resources to help them stay ahead of the curve. We’ve picked out …'
+categories:
+    - Coding
+    - 'Top Tips'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 There is an unlimited supply of coding resources on the web. _110,000,000 according to Google Search_. Learning a programming language online is an excellent way to stay up-to-date with newly added features.
 

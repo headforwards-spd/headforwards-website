@@ -1,17 +1,41 @@
 ---
-type: "wordpress-blog"
-path: "/2016/01/headforwards-in-2015"
-title: "Headforwards in 2015"
-date: "2016-01-04T12:50:17.000Z"
-modified: "2017-11-03T10:53:54.000Z"
-excerpt: "Welcome to 2016! We hope you all had a fantastic Christmas and New Year? Here at Headforwards, we are constantly striving for agile excellence and as you know a key part of being agile is having regular retrospectives. We have just been looking back on the past twelve months and decided to share with you a quick …"
-categories: ["News","The Headforwards Team"]
-tags: ["2015","agile excellence","Agile on the Beach","AOTB","career opportunities","Headforwards","headstock","interview tips","interview tps","jobs in cornwall","new year","review","skype intervies","skype tips","software jobs in cornwall","Software Squad","year review"]
+type: wordpress-blog
+path: /2016/01/headforwards-in-2015
+title: 'Headforwards in 2015'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_headstock_summer_festival.jpg, text: 'Headforwards in 2015'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_software_squad.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_at_agile_on_the_beach.jpg, text: ""}
+date: '2016-01-04T12:50:17.000Z'
+modified: '2017-11-03T10:53:54.000Z'
+excerpt: 'Welcome to 2016! We hope you all had a fantastic Christmas and New Year? Here at Headforwards, we are constantly striving for agile excellence and as you know a key part of being agile is having regular retrospectives. We have just been looking back on the past twelve months and decided to share with you a quick …'
+categories:
+    - News
+    - 'The Headforwards Team'
+tags:
+    - '2015'
+    - 'agile excellence'
+    - 'Agile on the Beach'
+    - AOTB
+    - 'career opportunities'
+    - Headforwards
+    - headstock
+    - 'interview tips'
+    - 'interview tps'
+    - 'jobs in cornwall'
+    - 'new year'
+    - review
+    - 'skype intervies'
+    - 'skype tips'
+    - 'software jobs in cornwall'
+    - 'Software Squad'
+    - 'year review'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Welcome to 2016! We hope you all had a fantastic Christmas and New Year?
 

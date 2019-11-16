@@ -1,17 +1,31 @@
 ---
-type: "wordpress-blog"
-path: "/2015/10/raconteur-cios-must-evolve"
-title: "Raconteur- CIOs Must Evolve…"
-date: "2015-10-13T15:04:05.000Z"
-modified: "2017-11-03T10:54:18.000Z"
-excerpt: "Raconteur is a publishing house that produces special reports for The Times and The Sunday Times. They focus on creating high quality, relevant and informative content. They have recently published an article about the evolving role a CIO has in a company. “Continuous disruption is forcing companies to transform their IT at an accelerating pace, dramatically …"
-categories: ["Debate","Informational","News","The Headforwards Team"]
-tags: ["CIO","Craig Girvan","Headforwards","Raconteur","toby parkins"]
+type: wordpress-blog
+path: /2015/10/raconteur-cios-must-evolve
+title: 'Raconteur- CIOs Must Evolve…'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsdirectorscraiggirvanandtobyparkins.jpg, text: 'Raconteur- CIOs Must Evolve...'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteaminstandupmeeting86.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_perranporth.jpg, text: ""}
+date: '2015-10-13T15:04:05.000Z'
+modified: '2017-11-03T10:54:18.000Z'
+excerpt: 'Raconteur is a publishing house that produces special reports for The Times and The Sunday Times. They focus on creating high quality, relevant and informative content. They have recently published an article about the evolving role a CIO has in a company. “Continuous disruption is forcing companies to transform their IT at an accelerating pace, dramatically …'
+categories:
+    - Debate
+    - Informational
+    - News
+    - 'The Headforwards Team'
+tags:
+    - CIO
+    - 'Craig Girvan'
+    - Headforwards
+    - Raconteur
+    - 'toby parkins'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [Raconteur](http://raconteur.net/) is a publishing house that produces special reports for [The Times](http://www.thetimes.co.uk/tto/news/) and [The Sunday Times.](http://www.thesundaytimes.co.uk/sto/)  
 They focus on creating high quality, relevant and informative content.

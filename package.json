@@ -29,7 +29,6 @@
     "glob": "^7.1.6",
     "html-entities": "^1.2.1",
     "html-react-parser": "^0.10.0",
-    "json-to-frontmatter-markdown": "^1.0.0",
     "moment": "^2.24.0",
     "netlify-cms-app": "^2.9.7",
     "node-fetch": "^2.6.0",
@@ -41,7 +40,8 @@
     "slick-carousel": "^1.8.1",
     "turndown": "^5.0.3",
     "uuid": "^3.3.3",
-    "wordpress-gatsby-migrator": "^1.0.6"
+    "wordpress-gatsby-migrator": "^1.0.6",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",

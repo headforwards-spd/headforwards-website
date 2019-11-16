@@ -1,17 +1,26 @@
 ---
-type: "wordpress-blog"
-path: "/2017/03/once-month-fifteen-times-day"
-title: "From Once a Month to Fifteen Times a Day – Our Journey Into Continuous Delivery"
-date: "2017-03-21T15:42:44.000Z"
-modified: "2018-02-08T14:16:34.000Z"
-excerpt: "We build software. We also build the teams that build the software. Currently, with one our clients we are releasing 15-20 new updates a day across a global infrastructure. And, with zero downtime. Continuous Delivery is something that really excites us here at Headforwards. But software deployment wasn’t always this way. The State (or not too …"
-categories: ["Agile","Coding","News"]
+type: wordpress-blog
+path: /2017/03/once-month-fifteen-times-day
+title: 'From Once a Month to Fifteen Times a Day – Our Journey Into Continuous Delivery'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssunsetoverwater.jpeg, text: 'From Once a Month to Fifteen Times a Day'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssunsetoverwater46.jpeg, text: 'Our Journey Into Continuous Delivery'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteammemberworkingcopy.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.agilesoftwaredevelopmentoutsourcing80.jpg, text: ""}
+date: '2017-03-21T15:42:44.000Z'
+modified: '2018-02-08T14:16:34.000Z'
+excerpt: 'We build software. We also build the teams that build the software. Currently, with one our clients we are releasing 15-20 new updates a day across a global infrastructure. And, with zero downtime. Continuous Delivery is something that really excites us here at Headforwards. But software deployment wasn’t always this way. The State (or not too …'
+categories:
+    - Agile
+    - Coding
+    - News
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 We build software. We also build the teams that build the software. Currently, with one our clients we are releasing 15-20 new updates a day across a global infrastructure. And, with zero downtime. Continuous Delivery is something that really excites us here at Headforwards. But software deployment wasn’t always this way.
 

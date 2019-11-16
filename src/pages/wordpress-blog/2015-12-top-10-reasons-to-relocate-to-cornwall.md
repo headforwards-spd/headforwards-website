@@ -1,17 +1,42 @@
 ---
-type: "wordpress-blog"
-path: "/2015/12/top-10-reasons-to-relocate-to-cornwall"
-title: "Top 10 Reasons to Relocate to Cornwall"
-date: "2015-12-08T15:59:12.000Z"
-modified: "2017-11-03T10:54:00.000Z"
-excerpt: "Headforwards are based in Cornwall and we love living and working here. It can be a bit of an adjustment if you are use to busy city life, but we feel it is well worth the change of pace. Here our are top 10 reasons to relocate to Cornwall: 1. The beaches Cornwall is famous …"
-categories: ["Cornwall","News"]
-tags: ["boardmasters","buisness","camel valley","Cornwall","fifteen cornwall","jamie oliver","kneehigh","miracle","Perranporth","port elliott","relocate","Relocating","rinsey cove","sharps","software jobs","software jobs in cornwall","st ives","world belly board championships"]
+type: wordpress-blog
+path: /2015/12/top-10-reasons-to-relocate-to-cornwall
+title: 'Top 10 Reasons to Relocate to Cornwall'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssunsetrock19.jpeg, text: 'Relocate to Cornwall '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsedenprojectcornwall.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_redrivercafe_cornwall.jpeg, text: ""}
+date: '2015-12-08T15:59:12.000Z'
+modified: '2017-11-03T10:54:00.000Z'
+excerpt: 'Headforwards are based in Cornwall and we love living and working here. It can be a bit of an adjustment if you are use to busy city life, but we feel it is well worth the change of pace. Here our are top 10 reasons to relocate to Cornwall: 1. The beaches Cornwall is famous …'
+categories:
+    - Cornwall
+    - News
+tags:
+    - boardmasters
+    - buisness
+    - 'camel valley'
+    - Cornwall
+    - 'fifteen cornwall'
+    - 'jamie oliver'
+    - kneehigh
+    - miracle
+    - Perranporth
+    - 'port elliott'
+    - relocate
+    - Relocating
+    - 'rinsey cove'
+    - sharps
+    - 'software jobs'
+    - 'software jobs in cornwall'
+    - 'st ives'
+    - 'world belly board championships'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Headforwards are based in Cornwall and we love living and working here.
 

@@ -1,17 +1,33 @@
 ---
-type: "wordpress-blog"
-path: "/2015/06/what-is-agile"
-title: "What is Agile?"
-date: "2015-06-17T11:18:44.000Z"
-modified: "2015-09-01T14:50:25.000Z"
-excerpt: "You may have come across the term Agile recently as it seems to be the current buzzword within the software world but what is Agile? Well to be Agile means the ability to think quickly, use well coordinated movement and to be active. These same principles are transferred into Agile Software Development. Previous methods of …"
-categories: ["Agile","Informational"]
-tags: ["Agile","Agile on the Beach","Agile Project Management","Agile Software Development","Cornwall","Headforwards","History","Infomational","Software"]
+type: wordpress-blog
+path: /2015/06/what-is-agile
+title: 'What is Agile?'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.programminglanguagessoftwaredevelopment57.jpg, text: 'What is Agile? '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.agileonthebeach.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.agilesoftwaredevelopment35.jpg, text: ""}
+date: '2015-06-17T11:18:44.000Z'
+modified: '2015-09-01T14:50:25.000Z'
+excerpt: 'You may have come across the term Agile recently as it seems to be the current buzzword within the software world but what is Agile? Well to be Agile means the ability to think quickly, use well coordinated movement and to be active. These same principles are transferred into Agile Software Development. Previous methods of …'
+categories:
+    - Agile
+    - Informational
+tags:
+    - Agile
+    - 'Agile on the Beach'
+    - 'Agile Project Management'
+    - 'Agile Software Development'
+    - Cornwall
+    - Headforwards
+    - History
+    - Infomational
+    - Software
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 You may have come across the term Agile recently as it seems to be the current buzzword within the software world but what is Agile?
 

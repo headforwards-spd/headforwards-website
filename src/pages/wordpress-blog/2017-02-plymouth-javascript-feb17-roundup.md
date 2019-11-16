@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/02/plymouth-javascript-feb17-roundup"
-title: "Plymouth JS 2017: February Roundup"
-date: "2017-02-17T10:36:54.000Z"
-modified: "2017-11-03T10:52:48.000Z"
-excerpt: "PlymouthJS is an informal tech meetup based in the centre of Plymouth. What started out as a small gathering of software enthusiasts, quickly transformed into a popular South West event for developers of all skill levels with a shared objective: to learn and share their experiences with JavaScript frameworks. The evening began with a warm …"
-categories: ["Coding","News"]
+type: wordpress-blog
+path: /2017/02/plymouth-javascript-feb17-roundup
+title: 'Plymouth JS 2017: February Roundup'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/cymfrhzwgaarsntweb2048.jpg, text: 'Plymouth JS 2017: February Roundup'}
+    - {image: //headforwards.com/wp-content/files_mf/img_1307web2048.jpg, text: 'Plymouth JS 2017: February Roundup'}
+    - {image: //headforwards.com/wp-content/files_mf/img_1324web2048.jpg, text: 'Plymouth JS 2017: February Roundup'}
+date: '2017-02-17T10:36:54.000Z'
+modified: '2017-11-03T10:52:48.000Z'
+excerpt: 'PlymouthJS is an informal tech meetup based in the centre of Plymouth. What started out as a small gathering of software enthusiasts, quickly transformed into a popular South West event for developers of all skill levels with a shared objective: to learn and share their experiences with JavaScript frameworks. The evening began with a warm …'
+categories:
+    - Coding
+    - News
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 PlymouthJS is an informal tech meetup based in the centre of Plymouth. What started out as a small gathering of software enthusiasts, quickly transformed into a popular South West event for developers of all skill levels with a shared objective: to learn and share their experiences with JavaScript frameworks.
 

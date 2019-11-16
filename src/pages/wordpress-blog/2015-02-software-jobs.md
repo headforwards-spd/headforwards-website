@@ -1,17 +1,49 @@
 ---
-type: "wordpress-blog"
-path: "/2015/02/software-jobs"
-title: "Exciting News: New software jobs available"
-date: "2015-02-19T13:30:24.000Z"
-modified: "2015-09-01T15:53:43.000Z"
-excerpt: "We are currently exploring bringing together a new team for a client, which will enable us to advertise lots of new software jobs. We are looking for a range of  software engineers, including the following: Ruby on Rails developers UI/UX designers JS – Backbone/Angular experienced developers. There will be more information coming soon and individual …"
-categories: ["Jobs","News","The Headforwards Team"]
-tags: ["agile jobs","agile jobs uk","Angular","Backbone","careers in cornwall","careers in software","IT jobs cornwall","jobs","jobs in cornwall","jobs in redruth","JS","rub on rails","ruby on rails","ruby on rails career cornwall","ruby on rails job","ruby on rails job uk","Ruby on the Rails","software jobs","software jobs cornwall","software jobs in cornwall","software jobs uk","this is cornwall jobs","UI","UX"]
+type: wordpress-blog
+path: /2015/02/software-jobs
+title: 'Exciting News: New software jobs available'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.agilesoftwaredevelopment11.jpg, text: 'Software Jobs '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssailing.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsruggedcoastline.jpeg, text: ""}
+date: '2015-02-19T13:30:24.000Z'
+modified: '2015-09-01T15:53:43.000Z'
+excerpt: 'We are currently exploring bringing together a new team for a client, which will enable us to advertise lots of new software jobs. We are looking for a range of  software engineers, including the following: Ruby on Rails developers UI/UX designers JS – Backbone/Angular experienced developers. There will be more information coming soon and individual …'
+categories:
+    - Jobs
+    - News
+    - 'The Headforwards Team'
+tags:
+    - 'agile jobs'
+    - 'agile jobs uk'
+    - Angular
+    - Backbone
+    - 'careers in cornwall'
+    - 'careers in software'
+    - 'IT jobs cornwall'
+    - jobs
+    - 'jobs in cornwall'
+    - 'jobs in redruth'
+    - JS
+    - 'rub on rails'
+    - 'ruby on rails'
+    - 'ruby on rails career cornwall'
+    - 'ruby on rails job'
+    - 'ruby on rails job uk'
+    - 'Ruby on the Rails'
+    - 'software jobs'
+    - 'software jobs cornwall'
+    - 'software jobs in cornwall'
+    - 'software jobs uk'
+    - 'this is cornwall jobs'
+    - UI
+    - UX
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 We are currently exploring bringing together a new team for a client, which will enable us to advertise lots of new software jobs.
 

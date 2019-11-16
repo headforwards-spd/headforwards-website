@@ -1,17 +1,34 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/andy-bartlett-at-agile-on-the-beach"
-title: "Andy Bartlett at Agile on the Beach"
-date: "2015-09-17T11:57:31.000Z"
-modified: "2017-11-03T10:54:26.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Andy Bartlett at Agile on the Beach and his talk entitled “Herding Creative Cats” Andy Bartlett is Product Design Manager at Worlds Apart, a Cornish company who create innovative children’s lifestyle products. They hold licences to many well known brands including Disney, Star Wars and Peppa Pig. …"
-categories: ["News","The Headforwards Team"]
-tags: ["agile in creative companies","agile in marketin","agile in marketing","Agile on the Beach","Andy Bartlett","being agile","belinda waldock","design week","herding creative cats","Worlds Apart"]
+type: wordpress-blog
+path: /2015/09/andy-bartlett-at-agile-on-the-beach
+title: 'Andy Bartlett at Agile on the Beach'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/andy_bartlett_agile_on_the_beach2015.jpg, text: 'Andy Bartlett '}
+    - {image: //headforwards.com/wp-content/files_mf/andy_bartlett_talk.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/agile_andybartlett.jpg, text: ""}
+date: '2015-09-17T11:57:31.000Z'
+modified: '2017-11-03T10:54:26.000Z'
+excerpt: 'Lyssa, our Marketing Manager, has written the following article about Andy Bartlett at Agile on the Beach and his talk entitled “Herding Creative Cats” Andy Bartlett is Product Design Manager at Worlds Apart, a Cornish company who create innovative children’s lifestyle products. They hold licences to many well known brands including Disney, Star Wars and Peppa Pig. …'
+categories:
+    - News
+    - 'The Headforwards Team'
+tags:
+    - 'agile in creative companies'
+    - 'agile in marketin'
+    - 'agile in marketing'
+    - 'Agile on the Beach'
+    - 'Andy Bartlett'
+    - 'being agile'
+    - 'belinda waldock'
+    - 'design week'
+    - 'herding creative cats'
+    - 'Worlds Apart'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [Lyssa](https://uk.linkedin.com/in/lyssafeecrump), _our Marketing Manager, has written the following article about Andy Bartlett at Agile on the Beach and his talk entitled “Herding Creative Cats”_
 

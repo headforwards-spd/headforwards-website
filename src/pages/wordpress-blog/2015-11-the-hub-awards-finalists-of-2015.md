@@ -1,17 +1,26 @@
 ---
-type: "wordpress-blog"
-path: "/2015/11/the-hub-awards-finalists-of-2015"
-title: "The Hub Awards Finalists of 2015"
-date: "2015-11-09T10:23:55.000Z"
-modified: "2017-11-03T10:54:17.000Z"
-excerpt: "  We have previously posted about being proud sponsors of “The Best Use of Digital” award at the Hub Awards 2015. Well, now the finalists have been announced and we are even more excited about the awards ceremony later this month! Best New Start Up –sponsored by Oxford Innovation and Unlocking Potential Jenny Wren Weddings …"
-categories: ["News"]
-tags: ["Cornwall","Headforwards","the hub","the hub awards"]
+type: wordpress-blog
+path: /2015/11/the-hub-awards-finalists-of-2015
+title: 'The Hub Awards Finalists of 2015'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsatthehubawards30.jpg, text: 'The Hub Awards '}
+    - {image: //headforwards.com/wp-content/files_mf/12087992_10153803444724218_7356174485038990667_n58.jpg, text: ""}
+date: '2015-11-09T10:23:55.000Z'
+modified: '2017-11-03T10:54:17.000Z'
+excerpt: '  We have previously posted about being proud sponsors of “The Best Use of Digital” award at the Hub Awards 2015. Well, now the finalists have been announced and we are even more excited about the awards ceremony later this month! Best New Start Up –sponsored by Oxford Innovation and Unlocking Potential Jenny Wren Weddings …'
+categories:
+    - News
+tags:
+    - Cornwall
+    - Headforwards
+    - 'the hub'
+    - 'the hub awards'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 ![The Hub Awards](//headforwards.com/wp-content/uploads/2015/11/TheHubSponsor.jpg)
 

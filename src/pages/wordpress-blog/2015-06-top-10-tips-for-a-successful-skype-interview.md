@@ -1,17 +1,39 @@
 ---
-type: "wordpress-blog"
-path: "/2015/06/top-10-tips-for-a-successful-skype-interview"
-title: "Top 10 Tips for a Successful Skype Interview"
-date: "2015-06-19T12:58:58.000Z"
-modified: "2016-09-22T15:30:12.000Z"
-excerpt: "It is becoming more and more common to have your first interview for a new role over Skype, particularly if the role would require relocating. It is something we do regularly here at Headforwards as we recruit talented software developers from all over the globe. However the prospect of a Skype interview can be a bit daunting- …"
-categories: ["Informational","Jobs","The Headforwards Team","Top Tips"]
-tags: ["Headforwards","Infomational","Interview Techniques","interviews","Relocating","Skype","skype interviews","software interview tips","software interviews","software jobs","software jobs cornwall","software jobs uk","Top Tips"]
+type: wordpress-blog
+path: /2015/06/top-10-tips-for-a-successful-skype-interview
+title: 'Top 10 Tips for a Successful Skype Interview'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsofficeworkstation38.jpg, text: 'Skype Interview Tips '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwaredevelopment.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsworkspace.jpeg, text: ""}
+date: '2015-06-19T12:58:58.000Z'
+modified: '2016-09-22T15:30:12.000Z'
+excerpt: 'It is becoming more and more common to have your first interview for a new role over Skype, particularly if the role would require relocating. It is something we do regularly here at Headforwards as we recruit talented software developers from all over the globe. However the prospect of a Skype interview can be a bit daunting- …'
+categories:
+    - Informational
+    - Jobs
+    - 'The Headforwards Team'
+    - 'Top Tips'
+tags:
+    - Headforwards
+    - Infomational
+    - 'Interview Techniques'
+    - interviews
+    - Relocating
+    - Skype
+    - 'skype interviews'
+    - 'software interview tips'
+    - 'software interviews'
+    - 'software jobs'
+    - 'software jobs cornwall'
+    - 'software jobs uk'
+    - 'Top Tips'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 It is becoming more and more common to have your first interview for a new role over Skype, particularly if the role would require relocating. It is something we do regularly here at Headforwards as we recruit talented software developers from all over the globe. However the prospect of a Skype interview can be a bit daunting- so here are our tTop 10 tips for a successful Skype interview to help you out.
 

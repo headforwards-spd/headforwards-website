@@ -1,17 +1,41 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/belinda-waldock-at-agile-on-the-beach"
-title: "Belinda Waldock at Agile on the Beach"
-date: "2015-09-10T11:00:19.000Z"
-modified: "2017-11-03T10:54:28.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Belinda Waldock at Agile on the Beach and her talk entitled “Being Agile in Business” Belinda Waldock is an Agile business coach who has spent the last 15 years working with SME’s in the South West supporting ICT adoption, and for the last 5 years has been …"
-categories: ["Agile","News","The Headforwards Team"]
-tags: ["Agile","agile business techniques","agile marketing","Agile on the Beach","Agile on the Beach 2015","agile sales","agile writing","being agile","being agile in business","Belinda Waldcock","belinda waldock","book","book publishing","Kanban","lyssa-fee crump","software development cornwall"]
+type: wordpress-blog
+path: /2015/09/belinda-waldock-at-agile-on-the-beach
+title: 'Belinda Waldock at Agile on the Beach'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/belindawaldcocktheagilemanifestobeingagileinbusiness.jpg, text: 'Belinda Waldock'}
+    - {image: //headforwards.com/wp-content/files_mf/agile2015_0071024x687.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/beingagileinbusinessatagileonthebeach.jpg, text: ""}
+date: '2015-09-10T11:00:19.000Z'
+modified: '2017-11-03T10:54:28.000Z'
+excerpt: 'Lyssa, our Marketing Manager, has written the following article about Belinda Waldock at Agile on the Beach and her talk entitled “Being Agile in Business” Belinda Waldock is an Agile business coach who has spent the last 15 years working with SME’s in the South West supporting ICT adoption, and for the last 5 years has been …'
+categories:
+    - Agile
+    - News
+    - 'The Headforwards Team'
+tags:
+    - Agile
+    - 'agile business techniques'
+    - 'agile marketing'
+    - 'Agile on the Beach'
+    - 'Agile on the Beach 2015'
+    - 'agile sales'
+    - 'agile writing'
+    - 'being agile'
+    - 'being agile in business'
+    - 'Belinda Waldcock'
+    - 'belinda waldock'
+    - book
+    - 'book publishing'
+    - Kanban
+    - 'lyssa-fee crump'
+    - 'software development cornwall'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [Lyssa](https://uk.linkedin.com/in/lyssafeecrump), _our Marketing Manager, has written the following article about_ _Belinda Waldock at Agile on the Beach and her talk entitled “Being Agile in Business”_
 

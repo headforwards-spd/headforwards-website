@@ -1,17 +1,41 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/advancing-javascript-skills-with-simplicity"
-title: "Advancing JavaScript Skills with Simplicity"
-date: "2015-07-20T12:45:48.000Z"
-modified: "2017-11-03T10:56:42.000Z"
-excerpt: "At the beginning of July, Headforwards sent a colleague and myself on an Advanced JavaScript course with Kyle Simpson. This had come about after a tweet I’d posted in April  after seeing a call from Kyle for people interested in having him run workshops whilst in the UK. My tweet started a ball rolling and …"
-categories: ["Cornwall","News","Team adventures","The Headforwards Team"]
-tags: ["Agile Software Development","Belinda Waldcock","Cornwall","Front end developer","Getify","Gilmores Newquay","Glen Pike","Headforwards","Headforwards Team","JavaScript","JavaScript Training","Kyle Simpson","OLOO","OOP","Software Cornwall"]
+type: wordpress-blog
+path: /2015/07/advancing-javascript-skills-with-simplicity
+title: 'Advancing JavaScript Skills with Simplicity'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsjavascrip.jpg, text: 'JavaScript skills'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardskeyboard76.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsprogramming19.jpg, text: ""}
+date: '2015-07-20T12:45:48.000Z'
+modified: '2017-11-03T10:56:42.000Z'
+excerpt: 'At the beginning of July, Headforwards sent a colleague and myself on an Advanced JavaScript course with Kyle Simpson. This had come about after a tweet I’d posted in April  after seeing a call from Kyle for people interested in having him run workshops whilst in the UK. My tweet started a ball rolling and …'
+categories:
+    - Cornwall
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - 'Agile Software Development'
+    - 'Belinda Waldcock'
+    - Cornwall
+    - 'Front end developer'
+    - Getify
+    - 'Gilmores Newquay'
+    - 'Glen Pike'
+    - Headforwards
+    - 'Headforwards Team'
+    - JavaScript
+    - 'JavaScript Training'
+    - 'Kyle Simpson'
+    - OLOO
+    - OOP
+    - 'Software Cornwall'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 At the beginning of July, Headforwards sent a colleague and myself on an Advanced JavaScript course with [Kyle Simpson](http://getify.me/). This had come about after a [tweet](https://twitter.com/glengineered/status/589015462702358528) I’d posted in April  after seeing a call from Kyle for people interested in having him run workshops whilst in the UK. My tweet started a ball rolling and [Belinda Waldock](https://twitter.com/belindawaldock) from [Software Cornwall](http://www.softwarecornwall.org/)  ran with it to setup the workshops.
 

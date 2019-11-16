@@ -1,17 +1,36 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/woody-zuill-at-agile-on-the-beach"
-title: "Woody Zuill at Agile on the Beach"
-date: "2015-09-14T14:11:25.000Z"
-modified: "2017-11-03T10:54:27.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Woody Zuill at Agile on the Beach and his talk entitled “Mob Programming, A Whole Team Approach” Woody Zuill, according to his website, is known as the illegitimate father of Mob Programming.  It was this time laps video of him and his team that started the craze of Mob …"
-categories: ["Agile","News","The Headforwards Team"]
-tags: ["Agile","agile conference","agile conference cornwall","Agile methodologies","Agile on the Beach","Agile on the Beach 2015","Mob Programming","pair programming","software development techniques","Woody Zuill","Woody Zuill Mob Programming"]
+type: wordpress-blog
+path: /2015/09/woody-zuill-at-agile-on-the-beach
+title: 'Woody Zuill at Agile on the Beach'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/woodyzuillatagileonthebeachmobprogramming.jpg, text: 'Woody Zuill'}
+    - {image: //headforwards.com/wp-content/files_mf/woodyzuillatagileonthebeachproductivity.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/mobprogrammingwoodyzuillatagileonthebeach.jpg, text: ""}
+date: '2015-09-14T14:11:25.000Z'
+modified: '2017-11-03T10:54:27.000Z'
+excerpt: 'Lyssa, our Marketing Manager, has written the following article about Woody Zuill at Agile on the Beach and his talk entitled “Mob Programming, A Whole Team Approach” Woody Zuill, according to his website, is known as the illegitimate father of Mob Programming.  It was this time laps video of him and his team that started the craze of Mob …'
+categories:
+    - Agile
+    - News
+    - 'The Headforwards Team'
+tags:
+    - Agile
+    - 'agile conference'
+    - 'agile conference cornwall'
+    - 'Agile methodologies'
+    - 'Agile on the Beach'
+    - 'Agile on the Beach 2015'
+    - 'Mob Programming'
+    - 'pair programming'
+    - 'software development techniques'
+    - 'Woody Zuill'
+    - 'Woody Zuill Mob Programming'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [Lyssa](https://uk.linkedin.com/in/lyssafeecrump), _our Marketing Manager, has written the following article about Woody Zuill at Agile on the Beach and his talk entitled “Mob Programming, A Whole Team Approach”_
 

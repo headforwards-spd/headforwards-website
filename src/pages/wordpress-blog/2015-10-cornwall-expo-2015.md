@@ -1,17 +1,30 @@
 ---
-type: "wordpress-blog"
-path: "/2015/10/cornwall-expo-2015"
-title: "Cornwall Expo 2015"
-date: "2015-10-01T15:46:00.000Z"
-modified: "2017-11-03T10:54:19.000Z"
-excerpt: "On Tuesday 29th September 2015 we attended the Cornwall Expo at Newquay Airports Aerohub. The Expo combined a conference and exhibition to show the improvements planned for Cornwall and the Isles of Scilly over the next few years. It was also an opportunity for people to learn more about schemes and initiatives in the county that …"
-categories: ["Cornwall","News","The Headforwards Team"]
-tags: ["3D printer","Cornwall expo","Cornwall Expo 2015","Sleeper train","Software Cornwall"]
+type: wordpress-blog
+path: /2015/10/cornwall-expo-2015
+title: 'Cornwall Expo 2015'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/welcome_bus.jpeg, text: 'Cornwall Expo 2015'}
+    - {image: //headforwards.com/wp-content/files_mf/robot.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/software_cornwall_stands_cornwall_expo_2015.jpeg, text: ""}
+date: '2015-10-01T15:46:00.000Z'
+modified: '2017-11-03T10:54:19.000Z'
+excerpt: 'On Tuesday 29th September 2015 we attended the Cornwall Expo at Newquay Airports Aerohub. The Expo combined a conference and exhibition to show the improvements planned for Cornwall and the Isles of Scilly over the next few years. It was also an opportunity for people to learn more about schemes and initiatives in the county that …'
+categories:
+    - Cornwall
+    - News
+    - 'The Headforwards Team'
+tags:
+    - '3D printer'
+    - 'Cornwall expo'
+    - 'Cornwall Expo 2015'
+    - 'Sleeper train'
+    - 'Software Cornwall'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 On Tuesday 29th September 2015 we attended the [Cornwall Expo](http://www.ciosgrowthhub.com/news/article/13/2015/08/07/cornwall-expo-2015) at Newquay Airports [Aerohub](http://www.aerohub.co.uk/).  
 The Expo combined a conference and exhibition to show the improvements planned for Cornwall and the Isles of Scilly over the next few years.  

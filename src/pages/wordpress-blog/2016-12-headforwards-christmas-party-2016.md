@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2016/12/headforwards-christmas-party-2016"
-title: "Headforwards Christmas party 2016"
-date: "2016-12-16T16:00:28.000Z"
-modified: "2017-11-03T10:52:50.000Z"
-excerpt: "Merry Christmas to one and all! The Headforwards Christmas party 2016 got us all well into the Christmas swing. We had the pleasure of celebrating another year at Headforwards in the beautiful venue that is Tregenna Castle. The Castle looked it’s regal best under it’s fantastic Christmas lighting. The Events and Conference staff looked after …"
-categories: ["News","Team adventures"]
+type: wordpress-blog
+path: /2016/12/headforwards-christmas-party-2016
+title: 'Headforwards Christmas party 2016'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardschristmasparty201613.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardschristmasparty2016sign13.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardschristmasparty201664.jpg, text: ""}
+date: '2016-12-16T16:00:28.000Z'
+modified: '2017-11-03T10:52:50.000Z'
+excerpt: 'Merry Christmas to one and all! The Headforwards Christmas party 2016 got us all well into the Christmas swing. We had the pleasure of celebrating another year at Headforwards in the beautiful venue that is Tregenna Castle. The Castle looked it’s regal best under it’s fantastic Christmas lighting. The Events and Conference staff looked after …'
+categories:
+    - News
+    - 'Team adventures'
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 ### Merry Christmas to one and all! The Headforwards Christmas party 2016 got us all well into the Christmas swing. We had the pleasure of celebrating another year at Headforwards in the beautiful venue that is [Tregenna Castle](https://www.tregenna-castle.co.uk/).
 

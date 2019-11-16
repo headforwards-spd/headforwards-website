@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/10/happened-pitched-blue"
-title: "What Happened When we Pitched up at The Blue"
-date: "2017-10-03T09:45:10.000Z"
-modified: "2017-11-03T10:52:08.000Z"
-excerpt: "The Blue Bar in Porthtowan was the venue for Software Cornwall’s latest event – Pitch Up At The Blue. A fantastic venue overlooking Porthtowan beach, the Blue Bar has a great function room next to the main bar.  When we arrived there were already a lot of delegates talking and milling about. A couple of …"
-categories: ["Cornwall","News"]
+type: wordpress-blog
+path: /2017/10/happened-pitched-blue
+title: 'What Happened When we Pitched up at The Blue'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/bluebar185.jpg, text: 'What happened when we pitched up at The Blue'}
+    - {image: //headforwards.com/wp-content/files_mf/screenshot20170929at14.50.52.png, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/screenshot20170929at14.52.53.png, text: ""}
+date: '2017-10-03T09:45:10.000Z'
+modified: '2017-11-03T10:52:08.000Z'
+excerpt: 'The Blue Bar in Porthtowan was the venue for Software Cornwall’s latest event – Pitch Up At The Blue. A fantastic venue overlooking Porthtowan beach, the Blue Bar has a great function room next to the main bar.  When we arrived there were already a lot of delegates talking and milling about. A couple of …'
+categories:
+    - Cornwall
+    - News
 tags: []
 author:
-  id: "551b9a60-3770-51f8-b566-a723750d9fb1"
-  slug: "marie"
-  name: "marie"
-  path: "/author/marie/"
+    id: 551b9a60-3770-51f8-b566-a723750d9fb1
+    slug: marie
+    name: marie
+    path: /author/marie/
+
 ---
 The Blue Bar in Porthtowan was the venue for Software Cornwall’s latest event – Pitch Up At The Blue.
 

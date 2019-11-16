@@ -1,17 +1,48 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/dave-farley-at-agile-on-the-beach"
-title: "Dave Farley at Agile on the Beach"
-date: "2015-09-09T11:02:51.000Z"
-modified: "2017-11-03T10:54:30.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Dave Farley at Agile on the Beach and his talk on Continuous Delivery. Dave Farley kicked off day one of Agile on the Beach 2015 by doing his keynote speech, which was directly followed by his talk “Introduction to Continuous Delivery” Dave Farley is co-author of the award …"
-categories: ["Agile","News","The Headforwards Team"]
-tags: ["Agile","agile development techniques","Agile on the Beach","Agile on the Beach 2015","albert einstein","amazon build process","AOTB","continuous delivery","dave farley","dave farley at agile on the beach","extreme programming","google build process","iteration","iterative development","keynote","principles of continuous delivery","scrum","Software","software development","the effect on business","v model","waterfall","xp"]
+type: wordpress-blog
+path: /2015/09/dave-farley-at-agile-on-the-beach
+title: 'Dave Farley at Agile on the Beach'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/davefarleytheprinciplesofcontinuousdeliveryataotb.jpg, text: 'Dave Farley '}
+    - {image: //headforwards.com/wp-content/files_mf/davefarleyagileonthebeachwhatworksmoredatas.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/davefarleycontinuousdeliveryatagileonthebeach.jpg, text: ""}
+date: '2015-09-09T11:02:51.000Z'
+modified: '2017-11-03T10:54:30.000Z'
+excerpt: 'Lyssa, our Marketing Manager, has written the following article about Dave Farley at Agile on the Beach and his talk on Continuous Delivery. Dave Farley kicked off day one of Agile on the Beach 2015 by doing his keynote speech, which was directly followed by his talk “Introduction to Continuous Delivery” Dave Farley is co-author of the award …'
+categories:
+    - Agile
+    - News
+    - 'The Headforwards Team'
+tags:
+    - Agile
+    - 'agile development techniques'
+    - 'Agile on the Beach'
+    - 'Agile on the Beach 2015'
+    - 'albert einstein'
+    - 'amazon build process'
+    - AOTB
+    - 'continuous delivery'
+    - 'dave farley'
+    - 'dave farley at agile on the beach'
+    - 'extreme programming'
+    - 'google build process'
+    - iteration
+    - 'iterative development'
+    - keynote
+    - 'principles of continuous delivery'
+    - scrum
+    - Software
+    - 'software development'
+    - 'the effect on business'
+    - 'v model'
+    - waterfall
+    - xp
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [Lyssa](https://uk.linkedin.com/in/lyssafeecrump)_, our Marketing Manager, has written the following article about _[Dave Farley](https://twitter.com/davefarley77) _at Agile on the Beach and his talk on Continuous Delivery._
 

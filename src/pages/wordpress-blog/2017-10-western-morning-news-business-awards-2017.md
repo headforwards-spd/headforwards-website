@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/10/western-morning-news-business-awards-2017"
-title: "Western Morning News Business Awards 2017"
-date: "2017-10-18T09:53:36.000Z"
-modified: "2017-11-03T10:52:07.000Z"
-excerpt: "  The finalists for the Western Morning News Business Awards 2017 have just been announced and we are thrilled to have been shortlisted for two awards. A wide range of businesses in different sectors from the Isles of Scilly to the Somerset border is represented in the finalists. Bill Martin, editor of the Western Morning …"
-categories: ["Awards","News"]
+type: wordpress-blog
+path: /2017/10/western-morning-news-business-awards-2017
+title: 'Western Morning News Business Awards 2017'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/img_0155webedit81.jpg, text: 'Western Morning News Business Awards'}
+    - {image: //headforwards.com/wp-content/files_mf/westermorningnewsbusinessawards2017headforwards.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/_sgp1380.jpg, text: ""}
+date: '2017-10-18T09:53:36.000Z'
+modified: '2017-11-03T10:52:07.000Z'
+excerpt: '  The finalists for the Western Morning News Business Awards 2017 have just been announced and we are thrilled to have been shortlisted for two awards. A wide range of businesses in different sectors from the Isles of Scilly to the Somerset border is represented in the finalists. Bill Martin, editor of the Western Morning …'
+categories:
+    - Awards
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 The finalists for the Western Morning News Business Awards 2017 have just been [announced](http://www.devonlive.com/news/business/revealed-shortlist-western-morning-news-612098) and we are thrilled to have been shortlisted for two awards.
 

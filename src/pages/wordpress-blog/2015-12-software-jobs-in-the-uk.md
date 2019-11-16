@@ -1,17 +1,36 @@
 ---
-type: "wordpress-blog"
-path: "/2015/12/software-jobs-in-the-uk"
-title: "Software Jobs in the UK"
-date: "2015-12-16T11:47:09.000Z"
-modified: "2017-11-03T10:53:57.000Z"
-excerpt: "Are you looking at new software jobs in the UK? Are you ready to take the next step in your career? Do you want to work at an exciting company who are passionate about innovation?   Headforwards are looking for a number of people to join their team in Cornwall, South West England. Headforwards are …"
-categories: ["Jobs"]
-tags: ["cyber security professional","dot net developer","dot net job","Headforwards","outsource software developer","Perl","perl developer","perl job","Python","python job","software job","software jobs","software jobs uk"]
+type: wordpress-blog
+path: /2015/12/software-jobs-in-the-uk
+title: 'Software Jobs in the UK'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_people_water.jpg, text: 'Software Jobs in the UK '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_heartlands_water.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_stagnes.jpg, text: ""}
+date: '2015-12-16T11:47:09.000Z'
+modified: '2017-11-03T10:53:57.000Z'
+excerpt: 'Are you looking at new software jobs in the UK? Are you ready to take the next step in your career? Do you want to work at an exciting company who are passionate about innovation?   Headforwards are looking for a number of people to join their team in Cornwall, South West England. Headforwards are …'
+categories:
+    - Jobs
+tags:
+    - 'cyber security professional'
+    - 'dot net developer'
+    - 'dot net job'
+    - Headforwards
+    - 'outsource software developer'
+    - Perl
+    - 'perl developer'
+    - 'perl job'
+    - Python
+    - 'python job'
+    - 'software job'
+    - 'software jobs'
+    - 'software jobs uk'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Are you looking at new software jobs in the UK?
 

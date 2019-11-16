@@ -1,17 +1,38 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/what-is-pair-programming"
-title: "What is Pair Programming?"
-date: "2015-07-15T11:08:10.000Z"
-modified: "2017-11-03T10:56:42.000Z"
-excerpt: "You may have been wondering “what is Pair Programming?” Well it is one of many exciting techniques used in Agile Software Development. It works by having two programmers working side by side on the same workstation. One monitor, one keyboard, one mouse. The team members switch regularly between two roles: the Driver and the Navigator. …"
-categories: ["Agile","Informational"]
-tags: ["Agile","Agile Software Development","agile toolbox","Coding","driver","Headforwards","navigator","pair","pair programming","pairing","programming","Software","software dev","software development"]
+type: wordpress-blog
+path: /2015/07/what-is-pair-programming
+title: 'What is Pair Programming?'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardspairprogramming.jpeg, text: 'Pair Programming '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscoffeeandcomputer.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsprogramming47.jpg, text: ""}
+date: '2015-07-15T11:08:10.000Z'
+modified: '2017-11-03T10:56:42.000Z'
+excerpt: 'You may have been wondering “what is Pair Programming?” Well it is one of many exciting techniques used in Agile Software Development. It works by having two programmers working side by side on the same workstation. One monitor, one keyboard, one mouse. The team members switch regularly between two roles: the Driver and the Navigator. …'
+categories:
+    - Agile
+    - Informational
+tags:
+    - Agile
+    - 'Agile Software Development'
+    - 'agile toolbox'
+    - Coding
+    - driver
+    - Headforwards
+    - navigator
+    - pair
+    - 'pair programming'
+    - pairing
+    - programming
+    - Software
+    - 'software dev'
+    - 'software development'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 You may have been wondering “what is Pair Programming?” Well it is one of many exciting techniques used in Agile Software Development.
 

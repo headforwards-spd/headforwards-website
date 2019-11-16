@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2016/04/redruth-rugby-match"
-title: "Redruth Rugby Match"
-date: "2016-04-18T09:44:47.000Z"
-modified: "2017-11-03T10:53:53.000Z"
-excerpt: "Headforwards were pleased to be sponsoring a Redruth rugby match on Saturday 16th April. The Headforwards team, along with some guests, spent the game in the  Tribute lounge with some fantastic food and drink along with an excellent view of the match. It was a thrilling game and everyone enjoyed watching it – even the members …"
-categories: ["Cornwall","News","Team adventures"]
+type: wordpress-blog
+path: /2016/04/redruth-rugby-match
+title: 'Redruth Rugby Match'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsredruthrugby0.jpg, text: 'Redruth Rugby Match '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsredruthrugby24.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsredruthrugby32.jpg, text: ""}
+date: '2016-04-18T09:44:47.000Z'
+modified: '2017-11-03T10:53:53.000Z'
+excerpt: 'Headforwards were pleased to be sponsoring a Redruth rugby match on Saturday 16th April. The Headforwards team, along with some guests, spent the game in the  Tribute lounge with some fantastic food and drink along with an excellent view of the match. It was a thrilling game and everyone enjoyed watching it – even the members …'
+categories:
+    - Cornwall
+    - News
+    - 'Team adventures'
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Headforwards were pleased to be sponsoring a Redruth rugby match on Saturday 16th April.  
 The Headforwards team, along with some guests, spent the game in the  Tribute lounge with some fantastic food and drink along with an excellent view of the match.  

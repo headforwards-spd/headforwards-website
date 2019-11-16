@@ -1,17 +1,30 @@
 ---
-type: "wordpress-blog"
-path: "/2015/10/the-hub-awards"
-title: "The Hub Awards"
-date: "2015-10-28T13:11:31.000Z"
-modified: "2017-11-03T10:54:17.000Z"
-excerpt: "The Hub is an exciting and dynamic network created and run by forward thinking business people in Cornwall to support the business leaders of tomorrow. 2015 marks the13th year of The Hub Awards and Headforwards are extremely proud to be sponsors. Drum roll please…and the categories are… Best New Start Up Sponsored by Oxford Innovation …"
-categories: ["Awards","News"]
-tags: ["awards","business cornwall","Cornwall","Headforwards","the hub","the hub awards"]
+type: wordpress-blog
+path: /2015/10/the-hub-awards
+title: 'The Hub Awards'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsatthehubawards.jpg, text: 'The Hub Awards'}
+    - {image: //headforwards.com/wp-content/files_mf/12087992_10153803444724218_7356174485038990667_n.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/11034218_10153264276154218_4680098135575916445_n.jpg, text: ""}
+date: '2015-10-28T13:11:31.000Z'
+modified: '2017-11-03T10:54:17.000Z'
+excerpt: 'The Hub is an exciting and dynamic network created and run by forward thinking business people in Cornwall to support the business leaders of tomorrow. 2015 marks the13th year of The Hub Awards and Headforwards are extremely proud to be sponsors. Drum roll please…and the categories are… Best New Start Up Sponsored by Oxford Innovation …'
+categories:
+    - Awards
+    - News
+tags:
+    - awards
+    - 'business cornwall'
+    - Cornwall
+    - Headforwards
+    - 'the hub'
+    - 'the hub awards'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [The Hub](https://cornwallhub.org/) is an exciting and dynamic network created and run by forward thinking business people in Cornwall to support the business leaders of tomorrow.
 

@@ -1,17 +1,33 @@
 ---
-type: "wordpress-blog"
-path: "/2015/10/software-jobs-in-cornwall"
-title: "Software Jobs in Cornwall"
-date: "2015-10-23T15:20:58.000Z"
-modified: "2017-11-03T10:54:18.000Z"
-excerpt: "Headforwards are offering exciting software jobs in Cornwall to a range of developers, testers and project managers. But why Cornwall? Cornwall is an idilic location often thought of a spectacular place for a holiday but it is an even better place to live. Having the stunning scenery, exciting activities and spectacular cuisine on your doorstep really helps encourage …"
-categories: ["Jobs","News"]
-tags: ["Headforwards","jobs","jobs in cornwall","sof","Software","software career","software careers cornwall","software careers uk","software job","software job cornwall","software job uk"]
+type: wordpress-blog
+path: /2015/10/software-jobs-in-cornwall
+title: 'Software Jobs in Cornwall'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_trevaunance_cove_st_agnes.jpg, text: 'Software Jobs in Cornwall '}
+date: '2015-10-23T15:20:58.000Z'
+modified: '2017-11-03T10:54:18.000Z'
+excerpt: 'Headforwards are offering exciting software jobs in Cornwall to a range of developers, testers and project managers. But why Cornwall? Cornwall is an idilic location often thought of a spectacular place for a holiday but it is an even better place to live. Having the stunning scenery, exciting activities and spectacular cuisine on your doorstep really helps encourage …'
+categories:
+    - Jobs
+    - News
+tags:
+    - Headforwards
+    - jobs
+    - 'jobs in cornwall'
+    - sof
+    - Software
+    - 'software career'
+    - 'software careers cornwall'
+    - 'software careers uk'
+    - 'software job'
+    - 'software job cornwall'
+    - 'software job uk'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Headforwards are offering exciting software jobs in Cornwall to a range of developers, testers and project managers.
 

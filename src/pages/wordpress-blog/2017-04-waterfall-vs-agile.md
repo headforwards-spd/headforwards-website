@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2017/04/waterfall-vs-agile"
-title: "Waterfall vs. Agile – Comparing Software Development Techniques"
-date: "2017-04-24T13:09:15.000Z"
-modified: "2018-05-08T12:07:28.000Z"
-excerpt: "Making the right decision for your team, the project and your client is critically important. There are many different practices available to follow within the ever-changing world of software development. Two of the most popular are Waterfall and Agile. One of the best ways to imagine how this process function is with this analogy: Waterfall …"
-categories: ["Agile","Debate","News"]
+type: wordpress-blog
+path: /2017/04/waterfall-vs-agile
+title: 'Waterfall vs. Agile – Comparing Software Development Techniques'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/waterfallvsagileheader.jpg, text: 'Waterfall vs. Agile - Comparing Software Development Techniques'}
+    - {image: //headforwards.com/wp-content/files_mf/waterfallvsagileheader2.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/waterfallvsagileheader3.jpg, text: ""}
+date: '2017-04-24T13:09:15.000Z'
+modified: '2018-05-08T12:07:28.000Z'
+excerpt: 'Making the right decision for your team, the project and your client is critically important. There are many different practices available to follow within the ever-changing world of software development. Two of the most popular are Waterfall and Agile. One of the best ways to imagine how this process function is with this analogy: Waterfall …'
+categories:
+    - Agile
+    - Debate
+    - News
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Making the right decision for your team, the project and your client is critically important. There are many different practices available to follow within the ever-changing world of software development. Two of the most popular are Waterfall and Agile.
 

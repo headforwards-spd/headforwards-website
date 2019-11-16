@@ -1,17 +1,29 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/headforwards-getting-social"
-title: "Headforwards: Getting social"
-date: "2015-07-09T14:53:10.000Z"
-modified: "2017-11-03T10:56:42.000Z"
-excerpt: "As you may have guessed from the photos we share of our staff events, here at Headforwards we like to get social! However that is not limited to the ‘real world’ we are on social media too. We have a Facebook page that is full of fun pictures. A Twitter account where we share our daily …"
-categories: ["News","The Headforwards Team"]
-tags: ["Cornwall","Headforwards","Infomational","News","Team"]
+type: wordpress-blog
+path: /2015/07/headforwards-getting-social
+title: 'Headforwards: Getting social'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsanawardwinningsoftwarecompany6064.jpg, text: 'Getting social '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbeachbbq55.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardskorukayakingstagnes72.jpg, text: ""}
+date: '2015-07-09T14:53:10.000Z'
+modified: '2017-11-03T10:56:42.000Z'
+excerpt: 'As you may have guessed from the photos we share of our staff events, here at Headforwards we like to get social! However that is not limited to the ‘real world’ we are on social media too. We have a Facebook page that is full of fun pictures. A Twitter account where we share our daily …'
+categories:
+    - News
+    - 'The Headforwards Team'
+tags:
+    - Cornwall
+    - Headforwards
+    - Infomational
+    - News
+    - Team
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 As you may have guessed from the photos we share of our staff events, here at Headforwards we like to get social!
 

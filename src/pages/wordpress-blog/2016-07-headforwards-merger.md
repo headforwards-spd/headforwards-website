@@ -1,17 +1,23 @@
 ---
-type: "wordpress-blog"
-path: "/2016/07/headforwards-merger"
-title: "Headforwards Merger"
-date: "2016-07-07T16:04:28.000Z"
-modified: "2017-11-03T10:53:49.000Z"
-excerpt: "We are pleased to announce the imminent merger between Headforwards and UKNetWeb. Until now Headforwards have specialised in larger, long-term outsource software projects. On these projects dedicated teams of developers are recruited for their clients offering them a continuous, dedicated resource. UKNetWeb compliments this as they offer shorter term, high quality solutions on a per project …"
-categories: ["News"]
+type: wordpress-blog
+path: /2016/07/headforwards-merger
+title: 'Headforwards Merger'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/uknetwebandheadforwards60.jpg, text: 'Headforwards Merger '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsmobprogramming20.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/uknetwebandheadforwardsatagileonthebeach.jpeg, text: ""}
+date: '2016-07-07T16:04:28.000Z'
+modified: '2017-11-03T10:53:49.000Z'
+excerpt: 'We are pleased to announce the imminent merger between Headforwards and UKNetWeb. Until now Headforwards have specialised in larger, long-term outsource software projects. On these projects dedicated teams of developers are recruited for their clients offering them a continuous, dedicated resource. UKNetWeb compliments this as they offer shorter term, high quality solutions on a per project …'
+categories:
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 We are pleased to announce the imminent merger between [Headforwards](https://www.headforwards.com/) and [UKNetWeb](https://www.uknetweb.com/).
 

@@ -1,17 +1,23 @@
 ---
-type: "wordpress-blog"
-path: "/2017/03/adventures-in-dotnet-thoughts-from-the-team"
-title: "Adventures in .NET – Thoughts from the team"
-date: "2017-03-02T16:02:03.000Z"
-modified: "2017-11-03T10:52:48.000Z"
-excerpt: "Here at Headforwards, we have over 80 talented software developers. There isn’t a day where a project isn’t bringing new complications and problems to overcome. With ongoing work for some of the largest companies in the world, the developers have racked up countless programming languages, frameworks and tools used for a wide variety of applications. It’s …"
-categories: ["News","The Headforwards Team"]
+type: wordpress-blog
+path: /2017/03/adventures-in-dotnet-thoughts-from-the-team
+title: 'Adventures in .NET – Thoughts from the team'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardswritingonboard25.jpg, text: 'Adventures in .NET'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsgroupdiscussion.jpg, text: 'Adventures in .NET'}
+date: '2017-03-02T16:02:03.000Z'
+modified: '2017-11-03T10:52:48.000Z'
+excerpt: 'Here at Headforwards, we have over 80 talented software developers. There isn’t a day where a project isn’t bringing new complications and problems to overcome. With ongoing work for some of the largest companies in the world, the developers have racked up countless programming languages, frameworks and tools used for a wide variety of applications. It’s …'
+categories:
+    - News
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Here at Headforwards, we have over 80 talented software developers. There isn’t a day where a project isn’t bringing new complications and problems to overcome. With ongoing work for some of the largest companies in the world, the developers have racked up countless programming languages, frameworks and tools used for a wide variety of applications. It’s no surprise that .NET is amongst the stack.
 

@@ -1,17 +1,34 @@
 ---
-type: "wordpress-blog"
-path: "/2015/06/travelling-to-cornwall"
-title: "Travelling to Cornwall"
-date: "2015-06-29T09:20:47.000Z"
-modified: "2015-07-14T15:58:15.000Z"
-excerpt: "As you may know we are based down in sunny Cornwall, and whilst we live in the digital world and do a lot of networking remotely, sometimes it is valuable to meet with our clients face to face. Not surprisingly some of these meetings happen on a Friday, so the weekend can be spent enjoying …"
-categories: ["Cornwall","Informational"]
-tags: ["Cornwall","Driving to Cornwall","Flying to Cornwall","Headforwards","Infomational","Meetings","Relocating","Top Tips","Train to Cornwall","Traveling to Cornwall"]
+type: wordpress-blog
+path: /2015/06/travelling-to-cornwall
+title: 'Travelling to Cornwall'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/6108b580.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/ipeivx6xsbaiyouky88v_dsc06462_tonemapped.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/jetsky.jpg, text: ""}
+date: '2015-06-29T09:20:47.000Z'
+modified: '2015-07-14T15:58:15.000Z'
+excerpt: 'As you may know we are based down in sunny Cornwall, and whilst we live in the digital world and do a lot of networking remotely, sometimes it is valuable to meet with our clients face to face. Not surprisingly some of these meetings happen on a Friday, so the weekend can be spent enjoying …'
+categories:
+    - Cornwall
+    - Informational
+tags:
+    - Cornwall
+    - 'Driving to Cornwall'
+    - 'Flying to Cornwall'
+    - Headforwards
+    - Infomational
+    - Meetings
+    - Relocating
+    - 'Top Tips'
+    - 'Train to Cornwall'
+    - 'Traveling to Cornwall'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 As you may know we are based down in sunny [Cornwall](https://www.visitcornwall.com/), and whilst we live in the digital world and do a lot of networking remotely, sometimes it is valuable to meet with our clients face to face.
 

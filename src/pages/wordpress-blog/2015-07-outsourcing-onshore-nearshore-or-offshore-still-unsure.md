@@ -1,17 +1,31 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/outsourcing-onshore-nearshore-or-offshore-still-unsure"
-title: "Outsourcing: Onshore? Nearshore? or Offshore? Still Unsure?"
-date: "2015-07-13T10:13:29.000Z"
-modified: "2017-11-03T10:56:42.000Z"
-excerpt: "So you have read our blog “Why Outsource” and have decided it is the right choice for you, but now you are faced with another big question. Do we outsource onshore? Nearshore? Or Offshore? The main drivers for outsourcing are productivity, labour, cost, revenue growth and risk management so we need to look at these when making …"
-categories: ["Informational","Outsourcing"]
-tags: ["Cornwall","Nearshore","Offshore","Onshore","Outsourcing","Software","Software Outsourcing"]
+type: wordpress-blog
+path: /2015/07/outsourcing-onshore-nearshore-or-offshore-still-unsure
+title: 'Outsourcing: Onshore? Nearshore? or Offshore? Still Unsure?'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.agilesoftwaredevelopmentoutsourcing75.jpg, text: 'Outsourcing '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbedruthanstepscornwall64.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsofficeworkstation.jpg, text: ""}
+date: '2015-07-13T10:13:29.000Z'
+modified: '2017-11-03T10:56:42.000Z'
+excerpt: 'So you have read our blog “Why Outsource” and have decided it is the right choice for you, but now you are faced with another big question. Do we outsource onshore? Nearshore? Or Offshore? The main drivers for outsourcing are productivity, labour, cost, revenue growth and risk management so we need to look at these when making …'
+categories:
+    - Informational
+    - Outsourcing
+tags:
+    - Cornwall
+    - Nearshore
+    - Offshore
+    - Onshore
+    - Outsourcing
+    - Software
+    - 'Software Outsourcing'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 So you have read our blog[“Why Outsource”](http://www.headforwards.com/2015/06/why-outsource/)and have decided it is the right choice for you, but now you are faced with another big question.  
 Do we outsource onshore? Nearshore? Or Offshore?  

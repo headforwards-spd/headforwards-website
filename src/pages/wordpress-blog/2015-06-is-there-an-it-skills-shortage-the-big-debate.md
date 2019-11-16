@@ -1,17 +1,35 @@
 ---
-type: "wordpress-blog"
-path: "/2015/06/is-there-an-it-skills-shortage-the-big-debate"
-title: "Is There an IT Skills Shortage? The Big Debate!"
-date: "2015-06-29T16:22:27.000Z"
-modified: "2016-09-22T15:24:12.000Z"
-excerpt: "The IT sector in the UK is growing at an astounding rate, however the media is reporting a shortage of skilled IT workers but how true is this statement? Is there an IT skills shortage? The recent changes to the National curriculum  are a good start to closing this skill gap, however they don’t help …"
-categories: ["Debate","Informational","Jobs"]
-tags: ["Business Tips","Cornwall","Debate","Headforwards","Infomational","Offshore Outsourcing","Onshore Outsourcing","Outsource","Outsourcing","Top Tips"]
+type: wordpress-blog
+path: /2015/06/is-there-an-it-skills-shortage-the-big-debate
+title: 'Is There an IT Skills Shortage? The Big Debate!'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.programminglanguagessoftwaredevelopment30.jpg, text: 'IT Skills Shortage? '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsofficeworkstation35.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwarecomputerprogramming.jpg, text: ""}
+date: '2015-06-29T16:22:27.000Z'
+modified: '2016-09-22T15:24:12.000Z'
+excerpt: 'The IT sector in the UK is growing at an astounding rate, however the media is reporting a shortage of skilled IT workers but how true is this statement? Is there an IT skills shortage? The recent changes to the National curriculum  are a good start to closing this skill gap, however they don’t help …'
+categories:
+    - Debate
+    - Informational
+    - Jobs
+tags:
+    - 'Business Tips'
+    - Cornwall
+    - Debate
+    - Headforwards
+    - Infomational
+    - 'Offshore Outsourcing'
+    - 'Onshore Outsourcing'
+    - Outsource
+    - Outsourcing
+    - 'Top Tips'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 The IT sector in the UK is growing at an astounding rate, however the media is reporting a shortage of skilled IT workers but how true is this statement? Is there an IT skills shortage?
 

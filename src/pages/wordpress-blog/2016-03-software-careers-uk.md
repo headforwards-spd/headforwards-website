@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2016/03/software-careers-uk"
-title: "Software Careers in the UK"
-date: "2016-03-16T11:58:58.000Z"
-modified: "2017-11-03T10:53:54.000Z"
-excerpt: "Here at Headforwards, we are pleased to be offering rewarding software careers in the UK. As an outsource software development company we get to work with lots of different clients on exciting projects. These projects vary drastically from each other, and we hire developers with a range of different language specialities. Our outsource model is different to …"
-categories: ["Jobs","News","The Headforwards Team"]
+type: wordpress-blog
+path: /2016/03/software-careers-uk
+title: 'Software Careers in the UK'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardstrevellas_st_agnes_cornwall.jpg, text: 'Software Careers in the UK'}
+    - {image: //headforwards.com/wp-content/files_mf/korukayakingwithheadforwards77.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscoffeeandcomputer98.jpg, text: ""}
+date: '2016-03-16T11:58:58.000Z'
+modified: '2017-11-03T10:53:54.000Z'
+excerpt: 'Here at Headforwards, we are pleased to be offering rewarding software careers in the UK. As an outsource software development company we get to work with lots of different clients on exciting projects. These projects vary drastically from each other, and we hire developers with a range of different language specialities. Our outsource model is different to …'
+categories:
+    - Jobs
+    - News
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Here at Headforwards, we are pleased to be offering rewarding software careers in the UK.
 

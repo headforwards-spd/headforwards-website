@@ -1,17 +1,47 @@
 ---
-type: "wordpress-blog"
-path: "/2013/05/surf-and-turf-bbq"
-title: "Surf and Turf BBQ"
-date: "2013-05-29T09:36:00.000Z"
-modified: "2017-11-03T11:11:17.000Z"
-excerpt: "Our first beach BBQ of 2013 happened in May and to make this one a bit special we organised some surfing lessons as well as the usual yummy food. Tom, a local surf instructor from Breakers Surf School  joined us to teach the Headforwards team how to surf. The water was a little colder than expected …"
-categories: ["Cornwall","News","Team adventures","The Headforwards Team"]
-tags: ["Agile","Beach BBQ","careers in cornwall","Cornwall","cornwall bbq","Developers","Headforwards","Headforwards Team","headforwards team bbq","jobs in cornwall","software companies cornwall","software companies uk","Software Cornwall","software in cornwall","software jobs","software jobs cornwall","software jobs in cornwall","surf and turf","surf and turf bbq","surf and turf team bbq","work activities"]
+type: wordpress-blog
+path: /2013/05/surf-and-turf-bbq
+title: 'Surf and Turf BBQ'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsporthtowansunset.jpg, text: 'Surf and Turf BBQ'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbreakerssurflesson.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssurfandturnbbq.jpg, text: ""}
+date: '2013-05-29T09:36:00.000Z'
+modified: '2017-11-03T11:11:17.000Z'
+excerpt: 'Our first beach BBQ of 2013 happened in May and to make this one a bit special we organised some surfing lessons as well as the usual yummy food. Tom, a local surf instructor from Breakers Surf School  joined us to teach the Headforwards team how to surf. The water was a little colder than expected …'
+categories:
+    - Cornwall
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - Agile
+    - 'Beach BBQ'
+    - 'careers in cornwall'
+    - Cornwall
+    - 'cornwall bbq'
+    - Developers
+    - Headforwards
+    - 'Headforwards Team'
+    - 'headforwards team bbq'
+    - 'jobs in cornwall'
+    - 'software companies cornwall'
+    - 'software companies uk'
+    - 'Software Cornwall'
+    - 'software in cornwall'
+    - 'software jobs'
+    - 'software jobs cornwall'
+    - 'software jobs in cornwall'
+    - 'surf and turf'
+    - 'surf and turf bbq'
+    - 'surf and turf team bbq'
+    - 'work activities'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 Our first beach BBQ of 2013 happened in May and to make this one a bit special we organised some surfing lessons as well as the usual yummy food.
 

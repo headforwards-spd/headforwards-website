@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/06/headforwards-roc5k-2017-5k-charity-run"
-title: "Headforwards ROC5K 2017 – 5K Charity Run"
-date: "2017-06-28T15:37:12.000Z"
-modified: "2017-11-03T10:52:09.000Z"
-excerpt: "It’s time for the 2017 ROC5K! The Headforwards team were ready to rumble during last night’s charity run in Truro city centre. This year, over 30 people from Headforwards entered the run and braved the terrible weather and added to a fantastic turnout of over 600 people. Good work team! Here are some photos which …"
-categories: ["News","Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2017/06/headforwards-roc5k-2017-5k-charity-run
+title: 'Headforwards ROC5K 2017 – 5K Charity Run'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/img_0425web2048.jpg, text: 'Headforwards ROC5K 2017 - 5K Charity Run'}
+    - {image: //headforwards.com/wp-content/files_mf/img_5757copy.jpg, text: 'Headforwards ROC5K 2017 - 5K Charity Run'}
+date: '2017-06-28T15:37:12.000Z'
+modified: '2017-11-03T10:52:09.000Z'
+excerpt: 'It’s time for the 2017 ROC5K! The Headforwards team were ready to rumble during last night’s charity run in Truro city centre. This year, over 30 people from Headforwards entered the run and braved the terrible weather and added to a fantastic turnout of over 600 people. Good work team! Here are some photos which …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 It’s time for the 2017 ROC5K! The Headforwards team were ready to rumble during last night’s charity run in Truro city centre. This year, over 30 people from Headforwards entered the run and braved the terrible weather and added to a fantastic turnout of over 600 people. Good work team! Here are some photos which were taken before and after the race.
 

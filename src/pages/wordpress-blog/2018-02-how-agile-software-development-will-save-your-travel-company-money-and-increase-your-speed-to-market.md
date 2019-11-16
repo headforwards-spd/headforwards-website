@@ -1,17 +1,21 @@
 ---
-type: "wordpress-blog"
-path: "/2018/02/how-agile-software-development-will-save-your-travel-company-money-and-increase-your-speed-to-market"
-title: "How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market"
-date: "2018-02-16T14:52:06.000Z"
-modified: "2018-02-16T14:54:08.000Z"
-excerpt: "Cutting edge software is a crucial part of business for companies in the travel technology industry. Waterfall is the traditional style of software development; however it is being phased out and replaced with Agile practises and methodologies. But why? Well, in short, it will save your company money. Do you want to find out how?  …"
-categories: ["News"]
+type: wordpress-blog
+path: /2018/02/how-agile-software-development-will-save-your-travel-company-money-and-increase-your-speed-to-market
+title: 'How Agile Software Development Will Save Your Travel Company Money and Increase Your Speed to Market'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/tte2018logo_with_dates_dark_text196.jpg, text: ""}
+date: '2018-02-16T14:52:06.000Z'
+modified: '2018-02-16T14:54:08.000Z'
+excerpt: 'Cutting edge software is a crucial part of business for companies in the travel technology industry. Waterfall is the traditional style of software development; however it is being phased out and replaced with Agile practises and methodologies. But why? Well, in short, it will save your company money. Do you want to find out how?  …'
+categories:
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Cutting edge software is a crucial part of business for companies in the travel technology industry.
 

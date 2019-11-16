@@ -1,17 +1,39 @@
 ---
-type: "wordpress-blog"
-path: "/2013/07/headforwards-grows-to-30-people-in-2-years"
-title: "Headforwards Grows to 30 People in 2 Years"
-date: "2013-07-29T09:30:15.000Z"
-modified: "2017-11-03T11:11:15.000Z"
-excerpt: "In only 2  short years the Cornwall based software outsourcing company Headforwards has grown to 30 employees making it one of the fastest growing startups in the southwest of the UK. Further contracts are continually being negotiated and then signed to increase its capacity further and the next 2 years are set to present a …"
-categories: ["Cornwall","Jobs","News","The Headforwards Team"]
-tags: ["careers at","fastest growing software companies","fastest growing start ups","Headforwards","Headforwards Team","jobs in cornwall","new jobs in cornwall","software companies in the uk","Software Cornwall","software jobs in cornwall","software jobs in uk","software outsourcing partners","software outsourcing uk"]
+type: wordpress-blog
+path: /2013/07/headforwards-grows-to-30-people-in-2-years
+title: 'Headforwards Grows to 30 People in 2 Years'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamat30.jpg, text: 'Headforwards at 30'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsofficesmall.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteaminstandupmeeting.jpg, text: ""}
+date: '2013-07-29T09:30:15.000Z'
+modified: '2017-11-03T11:11:15.000Z'
+excerpt: 'In only 2  short years the Cornwall based software outsourcing company Headforwards has grown to 30 employees making it one of the fastest growing startups in the southwest of the UK. Further contracts are continually being negotiated and then signed to increase its capacity further and the next 2 years are set to present a …'
+categories:
+    - Cornwall
+    - Jobs
+    - News
+    - 'The Headforwards Team'
+tags:
+    - 'careers at'
+    - 'fastest growing software companies'
+    - 'fastest growing start ups'
+    - Headforwards
+    - 'Headforwards Team'
+    - 'jobs in cornwall'
+    - 'new jobs in cornwall'
+    - 'software companies in the uk'
+    - 'Software Cornwall'
+    - 'software jobs in cornwall'
+    - 'software jobs in uk'
+    - 'software outsourcing partners'
+    - 'software outsourcing uk'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 In only 2  short years the Cornwall based software outsourcing company Headforwards has grown to 30 employees making it one of the fastest growing startups in the southwest of the UK.
 

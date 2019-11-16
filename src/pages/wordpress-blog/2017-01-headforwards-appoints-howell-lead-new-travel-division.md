@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/01/headforwards-appoints-howell-lead-new-travel-division"
-title: "Headforwards Appoints Howell to Lead New Travel Division"
-date: "2017-01-27T12:29:34.000Z"
-modified: "2017-11-03T10:52:49.000Z"
-excerpt: "Former Multicom CEO John Howell has been appointed to lead the travel division of leading software development outsourcing specialists Headforwards. Howell left market leading travel software technology specialists Multicom following its acquisition by Swedish company Paxport last year. Based in Cornwall, Headforwards provide their clients with dedicated software development teams delivering quality software using tried-and-tested …"
-categories: ["Cornwall","News","The Headforwards Team"]
+type: wordpress-blog
+path: /2017/01/headforwards-appoints-howell-lead-new-travel-division
+title: 'Headforwards Appoints Howell to Lead New Travel Division'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/img_2199web204859.jpg, text: 'Headforwards Appoints Howell to Lead New Travel Division'}
+    - {image: //headforwards.com/wp-content/files_mf/img_2205web2048edited59.jpg, text: 'Headforwards Appoints Howell to Lead New Travel Division'}
+date: '2017-01-27T12:29:34.000Z'
+modified: '2017-11-03T10:52:49.000Z'
+excerpt: 'Former Multicom CEO John Howell has been appointed to lead the travel division of leading software development outsourcing specialists Headforwards. Howell left market leading travel software technology specialists Multicom following its acquisition by Swedish company Paxport last year. Based in Cornwall, Headforwards provide their clients with dedicated software development teams delivering quality software using tried-and-tested …'
+categories:
+    - Cornwall
+    - News
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 **Former Multicom CEO John Howell has been appointed to lead the travel division of leading software development outsourcing specialists Headforwards.**
 

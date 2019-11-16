@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/08/how-outsourcing-your-software-development-with-headforwards-works"
-title: "How Outsourcing Your Software Development With Headforwards Works"
-date: "2017-08-10T12:55:24.000Z"
-modified: "2018-02-08T14:11:28.000Z"
-excerpt: "We specialise in creating partnerships with our clients where we provide dedicated teams of people working to help them achieve their business goal. Our primary aim is to work with you, our client, to create and deliver software that brings you business value. We thrive when creating software that delivers our clients tangible business value, …"
-categories: ["News","Outsourcing"]
+type: wordpress-blog
+path: /2017/08/how-outsourcing-your-software-development-with-headforwards-works
+title: 'How Outsourcing Your Software Development With Headforwards Works'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/howoutsourcingyoursoftwaredevelopmentwithheadforwardsworks.jpg, text: 'How Outsourcing Your Software Development With Headforwards Works'}
+    - {image: //headforwards.com/wp-content/files_mf/howoutsourcingyoursoftwaredevelopmentwithheadforwardsworks3.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/howoutsourcingyoursoftwaredevelopmentwithheadforwardsworks2.jpg, text: ""}
+date: '2017-08-10T12:55:24.000Z'
+modified: '2018-02-08T14:11:28.000Z'
+excerpt: 'We specialise in creating partnerships with our clients where we provide dedicated teams of people working to help them achieve their business goal. Our primary aim is to work with you, our client, to create and deliver software that brings you business value. We thrive when creating software that delivers our clients tangible business value, …'
+categories:
+    - News
+    - Outsourcing
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 We specialise in creating partnerships with our clients where we provide dedicated teams of people working to help them achieve their business goal.
 

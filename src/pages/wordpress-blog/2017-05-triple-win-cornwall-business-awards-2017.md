@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2017/05/triple-win-cornwall-business-awards-2017"
-title: "Headforwards Triple Win: Cornwall Business Awards 2017"
-date: "2017-05-22T12:01:08.000Z"
-modified: "2017-11-03T10:52:10.000Z"
-excerpt: "The Cornwall Business Awards are a celebration of innovation, achievement and entrepreneurial spirit within the Cornish business community. The glittering event shines a spotlight on the amazing people who help drive the Cornish economy and make it one of the best places in the country to do business. We were honoured to be attending the …"
-categories: ["Cornwall","News","The Headforwards Team"]
+type: wordpress-blog
+path: /2017/05/triple-win-cornwall-business-awards-2017
+title: 'Headforwards Triple Win: Cornwall Business Awards 2017'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/cba17004_34711424496_o.jpg, text: 'A Triple Win at Cornwall Business Awards 2017'}
+    - {image: //headforwards.com/wp-content/files_mf/mostdynamicbizgrowthheadforwards_33942464693_o.jpg, text: 'A Triple Win at Cornwall Business Awards 2017'}
+    - {image: //headforwards.com/wp-content/files_mf/cornwallbusinessawards_34750934435_o.jpg, text: 'A Triple Win at Cornwall Business Awards 2017'}
+date: '2017-05-22T12:01:08.000Z'
+modified: '2017-11-03T10:52:10.000Z'
+excerpt: 'The Cornwall Business Awards are a celebration of innovation, achievement and entrepreneurial spirit within the Cornish business community. The glittering event shines a spotlight on the amazing people who help drive the Cornish economy and make it one of the best places in the country to do business. We were honoured to be attending the …'
+categories:
+    - Cornwall
+    - News
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 The Cornwall Business Awards are a celebration of innovation, achievement and entrepreneurial spirit within the Cornish business community. The glittering event shines a spotlight on the amazing people who help drive the Cornish economy and make it one of the best places in the country to do business.
 

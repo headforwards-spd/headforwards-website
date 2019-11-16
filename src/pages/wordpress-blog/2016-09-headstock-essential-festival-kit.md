@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2016/09/headstock-essential-festival-kit"
-title: "Headstock Essential Festival Kit Guide"
-date: "2016-09-06T11:35:10.000Z"
-modified: "2017-11-03T10:52:53.000Z"
-excerpt: "So the festival feeling is beginning to flicker as our annual summer get together, HeadStock, draws ever closer. We at Headforwards are looking forward to letting our hair down, after what has been another hard working summer! This Headstock essential festival kit guide should help you plan out your weekend away. This years festival promises to …"
-categories: ["News","Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2016/09/headstock-essential-festival-kit
+title: 'Headstock Essential Festival Kit Guide'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_headstock_bar.jpg, text: 'Headstock Essential Festival Guide '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_headstock_dusk.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_headstock_kids_bubbles.jpg, text: ""}
+date: '2016-09-06T11:35:10.000Z'
+modified: '2017-11-03T10:52:53.000Z'
+excerpt: 'So the festival feeling is beginning to flicker as our annual summer get together, HeadStock, draws ever closer. We at Headforwards are looking forward to letting our hair down, after what has been another hard working summer! This Headstock essential festival kit guide should help you plan out your weekend away. This years festival promises to …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 So the festival feeling is beginning to flicker as our annual summer get together, HeadStock, draws ever closer.
 

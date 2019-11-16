@@ -1,17 +1,43 @@
 ---
-type: "wordpress-blog"
-path: "/2013/07/summer-bbq-and-kayaking-at-st-agnes"
-title: "Summer BBQ and kayaking at St Agnes"
-date: "2013-07-18T20:07:21.000Z"
-modified: "2017-11-03T11:11:16.000Z"
-excerpt: "We do love to get together and enjoy our Cornish surroundings. So in mid July we all got together for another summer BBQ on the beach. This time we chose Trevaunance Cove in St Agnes, which is a local favourite of ours. We were also lucky enough to be treated to a guided Kayak tour …"
-categories: ["Cornwall","News","Team adventures","The Headforwards Team"]
-tags: ["BBQ","Beach evening","cornish companies","Cornwall","cornwall jobs","jobs in cornwall","koru","koru kayaking","software careers","software careers cornwall","software companies","software company uk","st agnes","st agnes cornwall","summer bbq","trevaunance cove","work activities"]
+type: wordpress-blog
+path: /2013/07/summer-bbq-and-kayaking-at-st-agnes
+title: 'Summer BBQ and kayaking at St Agnes'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/korukayakingwithheadforwards.jpg, text: 'Summer BBQ'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamkayaingwithkoruatstagnes.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssummerbbq.jpg, text: ""}
+date: '2013-07-18T20:07:21.000Z'
+modified: '2017-11-03T11:11:16.000Z'
+excerpt: 'We do love to get together and enjoy our Cornish surroundings. So in mid July we all got together for another summer BBQ on the beach. This time we chose Trevaunance Cove in St Agnes, which is a local favourite of ours. We were also lucky enough to be treated to a guided Kayak tour …'
+categories:
+    - Cornwall
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - BBQ
+    - 'Beach evening'
+    - 'cornish companies'
+    - Cornwall
+    - 'cornwall jobs'
+    - 'jobs in cornwall'
+    - koru
+    - 'koru kayaking'
+    - 'software careers'
+    - 'software careers cornwall'
+    - 'software companies'
+    - 'software company uk'
+    - 'st agnes'
+    - 'st agnes cornwall'
+    - 'summer bbq'
+    - 'trevaunance cove'
+    - 'work activities'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 We do love to get together and enjoy our Cornish surroundings.
 

@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2016/07/software-cornwalls-mission-to-mars"
-title: "Software Cornwall’s Mission to Mars"
-date: "2016-07-25T08:53:19.000Z"
-modified: "2017-11-03T10:53:48.000Z"
-excerpt: "Earlier this month it was Software Cornwall’s Mission to Mars work experience week. Software Cornwall run regular Missions to Mars, but this was by far the biggest one. Software Cornwall is a not for profit organisation run by its members, with the aim of raising the profile of the industry in the county, offering business support …"
-categories: ["Coding","Cornwall","News"]
+type: wordpress-blog
+path: /2016/07/software-cornwalls-mission-to-mars
+title: 'Software Cornwall’s Mission to Mars'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/softwarecornwallmissiontomarsworkexperience.jpg, text: 'Software Cornwall''s Mission to Mars '}
+    - {image: //headforwards.com/wp-content/files_mf/softwarecornwallmissiontomarsworkexperiencestudents.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/softwarecornwallsmissiontomars.jpg, text: ""}
+date: '2016-07-25T08:53:19.000Z'
+modified: '2017-11-03T10:53:48.000Z'
+excerpt: 'Earlier this month it was Software Cornwall’s Mission to Mars work experience week. Software Cornwall run regular Missions to Mars, but this was by far the biggest one. Software Cornwall is a not for profit organisation run by its members, with the aim of raising the profile of the industry in the county, offering business support …'
+categories:
+    - Coding
+    - Cornwall
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 _Earlier this month it was Software Cornwall’s Mission to Mars work experience week._  
 _[Software Cornwall](https://www.softwarecornwall.org/) run regular [Missions to Mars](https://www.softwarecornwall.org/?s=mission+to+mars), but this was by far the biggest one._

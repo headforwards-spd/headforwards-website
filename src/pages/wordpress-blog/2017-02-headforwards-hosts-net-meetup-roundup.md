@@ -1,17 +1,23 @@
 ---
-type: "wordpress-blog"
-path: "/2017/02/headforwards-hosts-net-meetup-roundup"
-title: "Headforwards Hosts .NET Meetup: Roundup"
-date: "2017-02-22T16:44:20.000Z"
-modified: "2017-11-03T10:52:48.000Z"
-excerpt: "Due to the success of recent developer events, we scheduled our first ever .NET social meetup. The event location was at our HQ in Redruth. The objective: establish a plan of action for future events. Armed with post-it notes and sharpies, topics soon emerged on the white-board. The main talking point centred around the new(ish) …"
-categories: ["Agile","Coding","Cornwall"]
+type: wordpress-blog
+path: /2017/02/headforwards-hosts-net-meetup-roundup
+title: 'Headforwards Hosts .NET Meetup: Roundup'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/img_1364web20482.jpg, text: 'Headforwards .NET Meetup: Roundup'}
+date: '2017-02-22T16:44:20.000Z'
+modified: '2017-11-03T10:52:48.000Z'
+excerpt: 'Due to the success of recent developer events, we scheduled our first ever .NET social meetup. The event location was at our HQ in Redruth. The objective: establish a plan of action for future events. Armed with post-it notes and sharpies, topics soon emerged on the white-board. The main talking point centred around the new(ish) …'
+categories:
+    - Agile
+    - Coding
+    - Cornwall
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Due to the success of recent developer events, we scheduled our first ever .NET social meetup. The event location was at our HQ in Redruth. The objective: establish a plan of action for future events. Armed with post-it notes and sharpies, topics soon emerged on the white-board.
 

@@ -1,17 +1,42 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/the-top-10-most-popular-programming-languages-of-2015"
-title: "The Top 10 Most Popular Programming Languages of 2015"
-date: "2015-07-02T10:38:43.000Z"
-modified: "2017-11-03T10:56:43.000Z"
-excerpt: "Codeeval  have published their list of most popular programming languages for 2015 and there are a couple of surprises! The top 10 for 2015 are: Python Java C++ C# Ruby JavaScript C PHP Go Perl     Python is often said to be the easiest language to learn. Google has invested in it heavily in the …"
-categories: ["Coding","Informational","News"]
-tags: ["C++","Children learning to code","Code club","Coding","Debate","Developers","Go","Infomational","Java","JavaScript","Perl","PHP","Python","Ruby","Ruby on the Rails","Software","Top Tips"]
+type: wordpress-blog
+path: /2015/07/the-top-10-most-popular-programming-languages-of-2015
+title: 'The Top 10 Most Popular Programming Languages of 2015'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.programminglanguagessoftwaredevelopment41.jpg, text: 'Programming Languages '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsprogrammingcodingmacbook.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsprograming.jpg, text: ""}
+date: '2015-07-02T10:38:43.000Z'
+modified: '2017-11-03T10:56:43.000Z'
+excerpt: 'Codeeval  have published their list of most popular programming languages for 2015 and there are a couple of surprises! The top 10 for 2015 are: Python Java C++ C# Ruby JavaScript C PHP Go Perl     Python is often said to be the easiest language to learn. Google has invested in it heavily in the …'
+categories:
+    - Coding
+    - Informational
+    - News
+tags:
+    - C++
+    - 'Children learning to code'
+    - 'Code club'
+    - Coding
+    - Debate
+    - Developers
+    - Go
+    - Infomational
+    - Java
+    - JavaScript
+    - Perl
+    - PHP
+    - Python
+    - Ruby
+    - 'Ruby on the Rails'
+    - Software
+    - 'Top Tips'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [Codeeval ](http://blog.codeeval.com/) have published their list of most popular programming languages for 2015 and there are a couple of surprises!
 

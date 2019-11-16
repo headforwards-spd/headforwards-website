@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2016/04/2016-cornwall-business-awards"
-title: "2016 Cornwall Business Awards"
-date: "2016-04-06T16:19:12.000Z"
-modified: "2017-11-03T10:53:53.000Z"
-excerpt: "Earlier today the shortlist for the 2016 Cornwall Business Awards was announced, and we are thrilled to say that we are shortlisted for the Employer of The Year Award. The Cornwall Business Awards, now in their 11th year, are a celebration of innovation, achievement, and entrepreneurial spirit within the Cornish business community. The prestigious evening event …"
-categories: ["Awards","Cornwall","News"]
+type: wordpress-blog
+path: /2016/04/2016-cornwall-business-awards
+title: '2016 Cornwall Business Awards'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/cornwall_business_awards_2016_headforwards.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsagileboardforsoftwaredevelopment20.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwaredevelopmentcompanywinaward43.jpg, text: ""}
+date: '2016-04-06T16:19:12.000Z'
+modified: '2017-11-03T10:53:53.000Z'
+excerpt: 'Earlier today the shortlist for the 2016 Cornwall Business Awards was announced, and we are thrilled to say that we are shortlisted for the Employer of The Year Award. The Cornwall Business Awards, now in their 11th year, are a celebration of innovation, achievement, and entrepreneurial spirit within the Cornish business community. The prestigious evening event …'
+categories:
+    - Awards
+    - Cornwall
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Earlier today the [shortlist](https://www.businesscornwall.co.uk/news-by-industry/awards/2016/04/cornwall-business-awards-finalists-2/) for the 2016 Cornwall Business Awards was announced, and we are thrilled to say that we are shortlisted for the Employer of The Year Award.
 

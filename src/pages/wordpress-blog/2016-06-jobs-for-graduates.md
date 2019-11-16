@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2016/06/jobs-for-graduates"
-title: "Jobs for Graduates"
-date: "2016-06-30T09:54:17.000Z"
-modified: "2017-11-03T10:53:49.000Z"
-excerpt: "Here at Headforwards, we are pleased to be providing a variety of jobs for graduates in Cornwall. If you have graduated with a computer science related degree and are looking for work then please contact us. Due to winning some exciting new contracts we currently have 42 jobs available at Headforwards HQ at the Pool …"
-categories: ["Cornwall","Jobs","News"]
+type: wordpress-blog
+path: /2016/06/jobs-for-graduates
+title: 'Jobs for Graduates'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwaresquad13.jpeg, text: 'Jobs for Graduates '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsofficespace28.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards5thbirthdaycelebrations.jpeg, text: ""}
+date: '2016-06-30T09:54:17.000Z'
+modified: '2017-11-03T10:53:49.000Z'
+excerpt: 'Here at Headforwards, we are pleased to be providing a variety of jobs for graduates in Cornwall. If you have graduated with a computer science related degree and are looking for work then please contact us. Due to winning some exciting new contracts we currently have 42 jobs available at Headforwards HQ at the Pool …'
+categories:
+    - Cornwall
+    - Jobs
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Here at Headforwards, we are pleased to be providing a variety of jobs for graduates in Cornwall.  
 If you have graduated with a computer science related degree and are looking for work then please contact us.  

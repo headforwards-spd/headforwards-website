@@ -1,17 +1,38 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/why-a-group-is-not-necessarily-a-team"
-title: "Why a Group is Not Necessarily a Team"
-date: "2015-07-07T14:09:48.000Z"
-modified: "2017-11-03T10:56:43.000Z"
-excerpt: "You have an exciting and important new project on the table. So what is the first thing you do? Source 6 people, throw them together and expect them to be a highly productive team churning out quality work, right? Perhaps this isn’t the best way. In the software world developers need to work together as a …"
-categories: ["Agile","Informational","News"]
-tags: ["Agile","Agile Project Management","Agile Software Development","Business","Business Tips","Group work","Headforwards","Infomational","project","project work","scrum","team work","teamwork"]
+type: wordpress-blog
+path: /2015/07/why-a-group-is-not-necessarily-a-team
+title: 'Why a Group is Not Necessarily a Team'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsgrouponamountain.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsmeetingwithaview28.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardslookingatthewater47.jpeg, text: ""}
+date: '2015-07-07T14:09:48.000Z'
+modified: '2017-11-03T10:56:43.000Z'
+excerpt: 'You have an exciting and important new project on the table. So what is the first thing you do? Source 6 people, throw them together and expect them to be a highly productive team churning out quality work, right? Perhaps this isn’t the best way. In the software world developers need to work together as a …'
+categories:
+    - Agile
+    - Informational
+    - News
+tags:
+    - Agile
+    - 'Agile Project Management'
+    - 'Agile Software Development'
+    - Business
+    - 'Business Tips'
+    - 'Group work'
+    - Headforwards
+    - Infomational
+    - project
+    - 'project work'
+    - scrum
+    - 'team work'
+    - teamwork
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 You have an exciting and important new project on the table. So what is the first thing you do? Source 6 people, throw them together and expect them to be a highly productive team churning out quality work, right?
 

@@ -1,17 +1,44 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/what-is-the-cloud"
-title: "What is the Cloud?"
-date: "2015-07-17T15:57:42.000Z"
-modified: "2017-11-03T10:56:42.000Z"
-excerpt: "You will most likely have heard about The Cloud recently, in fact most of us use it on a daily basis, but what is The Cloud? Well firstly, it is not a physical thing it is more of a  concept. Essentially it’s a network of servers used for accessing and storing data and programs on the …"
-categories: ["Informational"]
-tags: ["Agile Software Development","ARPNET","Azure","Business","Cloud developer","Cloud Developer UK","Cloud Developers","Cloud developers in the UK","Dropbox","GoogleDocs","IaaS","Informational","JCR Licklider","News","PaaS","Rackspace","SaaS","Salesforce","Software","The cloud","What is the cloud"]
+type: wordpress-blog
+path: /2015/07/what-is-the-cloud
+title: 'What is the Cloud?'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscloudsinthesky.jpeg, text: 'The Cloud'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscloudcomputing.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsclouds.jpeg, text: ""}
+date: '2015-07-17T15:57:42.000Z'
+modified: '2017-11-03T10:56:42.000Z'
+excerpt: 'You will most likely have heard about The Cloud recently, in fact most of us use it on a daily basis, but what is The Cloud? Well firstly, it is not a physical thing it is more of a  concept. Essentially it’s a network of servers used for accessing and storing data and programs on the …'
+categories:
+    - Informational
+tags:
+    - 'Agile Software Development'
+    - ARPNET
+    - Azure
+    - Business
+    - 'Cloud developer'
+    - 'Cloud Developer UK'
+    - 'Cloud Developers'
+    - 'Cloud developers in the UK'
+    - Dropbox
+    - GoogleDocs
+    - IaaS
+    - Informational
+    - 'JCR Licklider'
+    - News
+    - PaaS
+    - Rackspace
+    - SaaS
+    - Salesforce
+    - Software
+    - 'The cloud'
+    - 'What is the cloud'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 You will most likely have heard about The Cloud recently, in fact most of us use it on a daily basis, but what is The Cloud?
 

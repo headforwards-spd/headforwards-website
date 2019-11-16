@@ -1,17 +1,38 @@
 ---
-type: "wordpress-blog"
-path: "/2012/09/ntt-partner-with-headforwards-for-software-development"
-title: "NTT partner with Headforwards for software development"
-date: "2012-09-27T15:07:58.000Z"
-modified: "2018-09-28T13:51:54.000Z"
-excerpt: "Cornwall is not a location necessarily associated with cutting edge software development; however, investment in the region’s data infrastructure appears to be reaping returns as a series of global brands look to move their software development work into the area. Headforwards, an outsourced development solutions company, has already signed NTT Europe, a subsidiary of NTT …"
-categories: ["Jobs","News","Outsourcing","The Headforwards Team"]
-tags: ["Agile","Agile software developement","Craig Girvan","Headforwards","John Salter","NNT","NTT Europe","software companies uk","software company","software jobs cornwall","toby parkins","uknetweb"]
+type: wordpress-blog
+path: /2012/09/ntt-partner-with-headforwards-for-software-development
+title: 'NTT partner with Headforwards for software development'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/img_0155webedit30.jpg, text: 'NTT Partner with Headforwards '}
+    - {image: //headforwards.com/wp-content/files_mf/_sgp138096.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsofficeworkinghard.jpg, text: ""}
+date: '2012-09-27T15:07:58.000Z'
+modified: '2018-09-28T13:51:54.000Z'
+excerpt: 'Cornwall is not a location necessarily associated with cutting edge software development; however, investment in the region’s data infrastructure appears to be reaping returns as a series of global brands look to move their software development work into the area. Headforwards, an outsourced development solutions company, has already signed NTT Europe, a subsidiary of NTT …'
+categories:
+    - Jobs
+    - News
+    - Outsourcing
+    - 'The Headforwards Team'
+tags:
+    - Agile
+    - 'Agile software developement'
+    - 'Craig Girvan'
+    - Headforwards
+    - 'John Salter'
+    - NNT
+    - 'NTT Europe'
+    - 'software companies uk'
+    - 'software company'
+    - 'software jobs cornwall'
+    - 'toby parkins'
+    - uknetweb
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 [Cornwall](http://www.lonelyplanet.com/england/southwest-england/cornwall) is not a location necessarily associated with cutting edge software development; however, investment in the region’s data infrastructure appears to be reaping returns as a series of global brands look to move their [software](http://www.softwarecornwall.org/) development work into the area.
 

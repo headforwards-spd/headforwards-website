@@ -1,17 +1,31 @@
 ---
-type: "wordpress-blog"
-path: "/2015/10/jenni-jepsen-at-agile-on-the-beach"
-title: "Jenni Jepsen at Agile on the Beach"
-date: "2015-10-06T10:49:06.000Z"
-modified: "2017-11-03T10:54:18.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Jenni Jepsen at Agile on the Beach and her Keynote entitled “Agile Leadership and Teams” Jenni Jepsen is a partner at goAgile, a Denmark based Agile consulting firm who focus on helping people deliver the right product, faster. Whilst at the same creating lasting change. Jepsen’s keynote speech was …"
-categories: ["Agile","The Headforwards Team"]
-tags: ["Agile","Agile on the Beach","Agile on the Beach 2015","AOTB","AOTB2015","Go Agile","Jenni Jepsen"]
+type: wordpress-blog
+path: /2015/10/jenni-jepsen-at-agile-on-the-beach
+title: 'Jenni Jepsen at Agile on the Beach'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/2015090409.42.01.jpg, text: 'Jenni Jepsen '}
+    - {image: //headforwards.com/wp-content/files_mf/jenni_jepsen_at_agile_on_the_beach_brain.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/jenni_jepsen_at_agile_on_the_beach_i_couldnt.jpg, text: ""}
+date: '2015-10-06T10:49:06.000Z'
+modified: '2017-11-03T10:54:18.000Z'
+excerpt: 'Lyssa, our Marketing Manager, has written the following article about Jenni Jepsen at Agile on the Beach and her Keynote entitled “Agile Leadership and Teams” Jenni Jepsen is a partner at goAgile, a Denmark based Agile consulting firm who focus on helping people deliver the right product, faster. Whilst at the same creating lasting change. Jepsen’s keynote speech was …'
+categories:
+    - Agile
+    - 'The Headforwards Team'
+tags:
+    - Agile
+    - 'Agile on the Beach'
+    - 'Agile on the Beach 2015'
+    - AOTB
+    - AOTB2015
+    - 'Go Agile'
+    - 'Jenni Jepsen'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [Lyssa](https://uk.linkedin.com/in/lyssafeecrump), _our Marketing Manager, has written the following article about Jenni Jepsen at Agile on the Beach and her Keynote entitled “Agile Leadership and Teams”_
 

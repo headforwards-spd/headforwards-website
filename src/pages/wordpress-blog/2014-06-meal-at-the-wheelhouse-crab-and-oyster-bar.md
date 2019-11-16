@@ -1,17 +1,36 @@
 ---
-type: "wordpress-blog"
-path: "/2014/06/meal-at-the-wheelhouse-crab-and-oyster-bar"
-title: "Meal at The Wheelhouse Crab and Oyster Bar"
-date: "2014-06-27T14:22:46.000Z"
-modified: "2015-09-01T16:09:48.000Z"
-excerpt: "We decided to celebrate the arrival of Spring with an evening out at the Wheelhouse Crab and Oyster bar  in Falmouth. The Wheelhouse is really rather special, offering the freshest seafood that is caught locally that day. They don’t have a website, nor do they have social media accounts yet they are rated the number 1 restaurant in Falmouth …"
-categories: ["News","Team adventures","The Headforwards Team"]
-tags: ["beerwolf","beerwolf books","Cornwall","freshest seafood","Headforwards","seafood","Software Cornwall","team outings","the wheel house","the wheelhouse","the wheelhouse crab and oyster bar"]
+type: wordpress-blog
+path: /2014/06/meal-at-the-wheelhouse-crab-and-oyster-bar
+title: 'Meal at The Wheelhouse Crab and Oyster Bar'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsatthewheelhousefalmouth3.jpg, text: 'The Wheelhouse'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsatthewheelhousefalmouth4.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsatthewheelhousefalmouth.jpg, text: ""}
+date: '2014-06-27T14:22:46.000Z'
+modified: '2015-09-01T16:09:48.000Z'
+excerpt: 'We decided to celebrate the arrival of Spring with an evening out at the Wheelhouse Crab and Oyster bar  in Falmouth. The Wheelhouse is really rather special, offering the freshest seafood that is caught locally that day. They don’t have a website, nor do they have social media accounts yet they are rated the number 1 restaurant in Falmouth …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - beerwolf
+    - 'beerwolf books'
+    - Cornwall
+    - 'freshest seafood'
+    - Headforwards
+    - seafood
+    - 'Software Cornwall'
+    - 'team outings'
+    - 'the wheel house'
+    - 'the wheelhouse'
+    - 'the wheelhouse crab and oyster bar'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 We decided to celebrate the arrival of Spring with an evening out at the [Wheelhouse Crab and Oyster](http://www.tripadvisor.co.uk/Restaurant_Review-g186235-d1734677-Reviews-The_Wheel_House-Falmouth_Cornwall_England.html) bar  in [Falmouth.](http://www.falmouth.co.uk/)
 

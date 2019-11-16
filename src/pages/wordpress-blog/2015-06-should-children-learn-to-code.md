@@ -1,17 +1,33 @@
 ---
-type: "wordpress-blog"
-path: "/2015/06/should-children-learn-to-code"
-title: "Should Children Learn to Code?"
-date: "2015-06-24T10:57:37.000Z"
-modified: "2015-07-14T16:02:33.000Z"
-excerpt: "There seems to be a lot in the media at the moment about children learning to code, but what do you think about it? Are we getting children too involved with technology? The BBC recently did a report on children in Hong Kong learning to code after school. Barclays bank are even getting in on …"
-categories: ["Coding","Debate","News"]
-tags: ["Children","Children learning to code","Coding","Debate","Infomational","National Curriculum","News","Software"]
+type: wordpress-blog
+path: /2015/06/should-children-learn-to-code
+title: 'Should Children Learn to Code?'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/d1524764.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/9b885cab.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/photo1429051883746afd9d56fbdaf.jpeg, text: ""}
+date: '2015-06-24T10:57:37.000Z'
+modified: '2015-07-14T16:02:33.000Z'
+excerpt: 'There seems to be a lot in the media at the moment about children learning to code, but what do you think about it? Are we getting children too involved with technology? The BBC recently did a report on children in Hong Kong learning to code after school. Barclays bank are even getting in on …'
+categories:
+    - Coding
+    - Debate
+    - News
+tags:
+    - Children
+    - 'Children learning to code'
+    - Coding
+    - Debate
+    - Infomational
+    - 'National Curriculum'
+    - News
+    - Software
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 There seems to be a lot in the media at the moment about children learning to code, but what do you think about it?  
 Are we getting children too involved with technology?

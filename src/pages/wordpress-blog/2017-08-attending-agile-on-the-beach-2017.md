@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/08/attending-agile-on-the-beach-2017"
-title: "Agile on the Beach 2017 – A Small Slice Of Agile Utopia"
-date: "2017-08-18T13:57:14.000Z"
-modified: "2017-11-03T10:52:08.000Z"
-excerpt: "This time last year I was working on my own projects with no real element of shared work with others. Prioritisation was driven merely by my own personal preference of what I thought was right and never stood back to ask if what I am contributing is in fact, valuable to the company. Of course, …"
-categories: ["Agile","News"]
+type: wordpress-blog
+path: /2017/08/attending-agile-on-the-beach-2017
+title: 'Agile on the Beach 2017 – A Small Slice Of Agile Utopia'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/aotb2017roundup.jpg, text: 'AOTB – A Small Slice Of Agile Utopia'}
+    - {image: //headforwards.com/wp-content/files_mf/aotb2017roundup2.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/aotb2017roundup3.jpg, text: ""}
+date: '2017-08-18T13:57:14.000Z'
+modified: '2017-11-03T10:52:08.000Z'
+excerpt: 'This time last year I was working on my own projects with no real element of shared work with others. Prioritisation was driven merely by my own personal preference of what I thought was right and never stood back to ask if what I am contributing is in fact, valuable to the company. Of course, …'
+categories:
+    - Agile
+    - News
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 This time last year I was working on my own projects with no real element of shared work with others. Prioritisation was driven merely by my own personal preference of what I thought was right and never stood back to ask if what I am contributing is in fact, valuable to the company. Of course, I had a pretty good idea of what was valuable but no true confirmation. I hardly ever briefed others on my work in progress, and rarely discussed future projects. There was never a discussion on what is important right now and what is important long-term.
 

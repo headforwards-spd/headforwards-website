@@ -1,17 +1,26 @@
 ---
-type: "wordpress-blog"
-path: "/2017/04/headforwards-team-social-rugby-redruth-vs-worthing"
-title: "Headforwards Team Social: Rugby – Redruth vs. Worthing"
-date: "2017-04-03T13:09:17.000Z"
-modified: "2017-11-03T10:52:10.000Z"
-excerpt: "Our monthly social for March was held at Redruth Rugby Football Club for the Redruth vs. Worthing rugby match. The Tribute Lounge was booked exclusively for The Headforwards Team where a huge buffet of snacks and pasties were provided. There was also an open bar to compliment the food… Much to everybody’s delight. Around 60 people …"
-categories: ["News","Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2017/04/headforwards-team-social-rugby-redruth-vs-worthing
+title: 'Headforwards Team Social: Rugby – Redruth vs. Worthing'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/dscf8185.jpg, text: 'Headforwards Team Social: Rugby – Redruth vs. Worthing'}
+    - {image: //headforwards.com/wp-content/files_mf/dscf8142.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/dscf814299.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/image_58e0d86dac205.jpg, text: ""}
+date: '2017-04-03T13:09:17.000Z'
+modified: '2017-11-03T10:52:10.000Z'
+excerpt: 'Our monthly social for March was held at Redruth Rugby Football Club for the Redruth vs. Worthing rugby match. The Tribute Lounge was booked exclusively for The Headforwards Team where a huge buffet of snacks and pasties were provided. There was also an open bar to compliment the food… Much to everybody’s delight. Around 60 people …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Our monthly social for March was held at Redruth Rugby Football Club for the Redruth vs. Worthing rugby match. The Tribute Lounge was booked exclusively for The Headforwards Team where a huge buffet of snacks and pasties were provided. There was also an open bar to compliment the food… Much to everybody’s delight.
 

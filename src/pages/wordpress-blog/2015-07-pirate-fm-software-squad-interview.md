@@ -1,17 +1,42 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/pirate-fm-software-squad-interview"
-title: "Pirate FM Software Squad Interview"
-date: "2015-07-23T10:59:17.000Z"
-modified: "2017-11-03T10:56:41.000Z"
-excerpt: "Earlier this week, Headforwards were invited to Cornish radio station Pirate FM to talk about our upcoming Software Squad event. Pirate FM is Cornwall’s number local radio station and has been on the air since 1992.  It was launched by Roger Day and was even featured on BBC’s Tomorrow’s World. The team at Pirate were …"
-categories: ["Cornwall","News","Software Squad","The Headforwards Team"]
-tags: ["Children learning to code","code academy","coding cornwall","Cornwall","corporate social responsibility","mclaren","Pirate","Pirate 2","Pirate FM","Radio Interview","school event cornwall","Software","software company uk","Software Cornwall","Software Squad","summer holidays cornwall"]
+type: wordpress-blog
+path: /2015/07/pirate-fm-software-squad-interview
+title: 'Pirate FM Software Squad Interview'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/cornwalleducationbusinesspartnership.jpg, text: 'Pirate FM'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscomputerkeyboard.jpg, text: ""}
+date: '2015-07-23T10:59:17.000Z'
+modified: '2017-11-03T10:56:41.000Z'
+excerpt: 'Earlier this week, Headforwards were invited to Cornish radio station Pirate FM to talk about our upcoming Software Squad event. Pirate FM is Cornwall’s number local radio station and has been on the air since 1992.  It was launched by Roger Day and was even featured on BBC’s Tomorrow’s World. The team at Pirate were …'
+categories:
+    - Cornwall
+    - News
+    - 'Software Squad'
+    - 'The Headforwards Team'
+tags:
+    - 'Children learning to code'
+    - 'code academy'
+    - 'coding cornwall'
+    - Cornwall
+    - 'corporate social responsibility'
+    - mclaren
+    - Pirate
+    - 'Pirate 2'
+    - 'Pirate FM'
+    - 'Radio Interview'
+    - 'school event cornwall'
+    - Software
+    - 'software company uk'
+    - 'Software Cornwall'
+    - 'Software Squad'
+    - 'summer holidays cornwall'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Earlier this week, Headforwards were invited to Cornish radio station [Pirate FM](http://www.piratefm.co.uk) to talk about our upcoming [Software Squad event](http://www.eventbrite.co.uk/e/headforwards-software-squad-tickets-17692901946).
 

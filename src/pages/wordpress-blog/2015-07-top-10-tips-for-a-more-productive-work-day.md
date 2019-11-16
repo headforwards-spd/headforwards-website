@@ -1,17 +1,30 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/top-10-tips-for-a-more-productive-work-day"
-title: "Top 10 Tips for a More Productive Work Day"
-date: "2015-07-03T15:26:37.000Z"
-modified: "2017-11-03T10:56:43.000Z"
-excerpt: "You are a hardworking and diligent, but sometimes it is easy to get off track and lose sight of what you are trying to accomplish. (Particularly on a Monday morning) So we have compiled are our Top 10 Tips for a More Productive Work Day to try to help you kickstart next week in a productive …"
-categories: ["News","Top Tips"]
-tags: ["Business","Business Tips","Concentration","Infomational","Productivity","Top Tips"]
+type: wordpress-blog
+path: /2015/07/top-10-tips-for-a-more-productive-work-day
+title: 'Top 10 Tips for a More Productive Work Day'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsdroppingastackofpaper.jpg, text: 'Productivity tips '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsagilesoftwareboard.done93.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscoffeecup.jpg, text: ""}
+date: '2015-07-03T15:26:37.000Z'
+modified: '2017-11-03T10:56:43.000Z'
+excerpt: 'You are a hardworking and diligent, but sometimes it is easy to get off track and lose sight of what you are trying to accomplish. (Particularly on a Monday morning) So we have compiled are our Top 10 Tips for a More Productive Work Day to try to help you kickstart next week in a productive …'
+categories:
+    - News
+    - 'Top Tips'
+tags:
+    - Business
+    - 'Business Tips'
+    - Concentration
+    - Infomational
+    - Productivity
+    - 'Top Tips'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 You are a hardworking and diligent, but sometimes it is easy to get off track and lose sight of what you are trying to accomplish. (Particularly on a Monday morning)
 

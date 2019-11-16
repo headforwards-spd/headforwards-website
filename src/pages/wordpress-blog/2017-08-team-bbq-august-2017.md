@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/08/team-bbq-august-2017"
-title: "Team BBQ – August 2017"
-date: "2017-08-21T15:47:43.000Z"
-modified: "2017-11-03T10:52:08.000Z"
-excerpt: "Planning for a BBQ between the occasional and slightly unpredictable weather has been an interesting one for us this month. Luckily, the weather prevailed for a few hours giving us time for a BBQ at our local favourite,  Tevaunance Cove, St Agnes. Here are some photos taken the evening, including some from the air!"
-categories: ["Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2017/08/team-bbq-august-2017
+title: 'Team BBQ – August 2017'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/trevaunancecove150817_008_headforwardsweb2048.jpg, text: 'Team BBQ – August 2017'}
+    - {image: //headforwards.com/wp-content/files_mf/20798972_10155623275313200_6700186016831038046_n.jpg, text: 'Team BBQ – August 2017'}
+    - {image: //headforwards.com/wp-content/files_mf/20767867_10155623275148200_1654559015711421839_n.jpg, text: 'Team BBQ – August 2017'}
+date: '2017-08-21T15:47:43.000Z'
+modified: '2017-11-03T10:52:08.000Z'
+excerpt: 'Planning for a BBQ between the occasional and slightly unpredictable weather has been an interesting one for us this month. Luckily, the weather prevailed for a few hours giving us time for a BBQ at our local favourite,  Tevaunance Cove, St Agnes. Here are some photos taken the evening, including some from the air!'
+categories:
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Planning for a BBQ between the occasional and slightly unpredictable weather has been an interesting one for us this month. Luckily, the weather prevailed for a few hours giving us time for a BBQ at our local favourite,  Tevaunance Cove, St Agnes. Here are some photos taken the evening, including some from the air!
 

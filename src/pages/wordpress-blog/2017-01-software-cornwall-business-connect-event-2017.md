@@ -1,17 +1,27 @@
 ---
-type: "wordpress-blog"
-path: "/2017/01/software-cornwall-business-connect-event-2017"
-title: "Software Cornwall: Business Connect Event 2017"
-date: "2017-01-25T11:06:35.000Z"
-modified: "2017-11-03T10:52:49.000Z"
-excerpt: "Software Cornwall was established in 2015 to connect South West based like-minded businesses to achieve a shared goal of promoting technology growth within Cornwall. After the hugely successful debut event in 2016, a decision was made to host a full-day 2017 tech event fully-loaded with talks, workshops, exhibitors and ample time between talks for delegates to …"
-categories: ["Agile","Cornwall","Informational","News"]
+type: wordpress-blog
+path: /2017/01/software-cornwall-business-connect-event-2017
+title: 'Software Cornwall: Business Connect Event 2017'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/img_2104web2000.jpg, text: 'Software Cornwall: Business Connect Event 2017 Roundup'}
+    - {image: //headforwards.com/wp-content/files_mf/img_2023web2000.jpg, text: 'Software Cornwall: Business Connect Event 2017 Roundup'}
+    - {image: //headforwards.com/wp-content/files_mf/img_2031web2000.jpg, text: 'Software Cornwall: Business Connect Event 2017 Roundup'}
+    - {image: //headforwards.com/wp-content/files_mf/img_2033web2000.jpg, text: 'Software Cornwall: Business Connect Event 2017 Roundup'}
+date: '2017-01-25T11:06:35.000Z'
+modified: '2017-11-03T10:52:49.000Z'
+excerpt: 'Software Cornwall was established in 2015 to connect South West based like-minded businesses to achieve a shared goal of promoting technology growth within Cornwall. After the hugely successful debut event in 2016, a decision was made to host a full-day 2017 tech event fully-loaded with talks, workshops, exhibitors and ample time between talks for delegates to …'
+categories:
+    - Agile
+    - Cornwall
+    - Informational
+    - News
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Software Cornwall was [established in 2015](https://www.softwarecornwall.org/about-us/) to connect South West based like-minded businesses to achieve a shared goal of promoting technology growth within Cornwall. After the hugely successful debut event in 2016, a decision was made to host a full-day 2017 tech event fully-loaded with talks, workshops, exhibitors and ample time between talks for delegates to connect and share knowledge.
 

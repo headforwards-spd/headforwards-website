@@ -1,17 +1,26 @@
 ---
-type: "wordpress-blog"
-path: "/2016/06/helping-firms-surf-the-waves-of-the-cornish-tech-boom"
-title: "Helping Firms Surf the Waves of the Cornish Tech Boom"
-date: "2016-06-23T09:51:04.000Z"
-modified: "2017-11-03T10:53:49.000Z"
-excerpt: "We were recently featured in the Bristol Business Post in an article called “Helping Firms Surf the Waves of the Cornish Tech Boom”  West Cornwall boasts the second fastest-growing cluster of tech firms in the UK, having seen a growth of 153% between 2010 and 2014. The government’s Tech Nation Report put it ahead of …"
-categories: ["Cornwall","News","Outsourcing","Software Squad"]
+type: wordpress-blog
+path: /2016/06/helping-firms-surf-the-waves-of-the-cornish-tech-boom
+title: 'Helping Firms Surf the Waves of the Cornish Tech Boom'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsofficespace.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/uknetwebandheadforwardsatsoftwarecornwallevent.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwaresquad.jpeg, text: ""}
+date: '2016-06-23T09:51:04.000Z'
+modified: '2017-11-03T10:53:49.000Z'
+excerpt: 'We were recently featured in the Bristol Business Post in an article called “Helping Firms Surf the Waves of the Cornish Tech Boom”  West Cornwall boasts the second fastest-growing cluster of tech firms in the UK, having seen a growth of 153% between 2010 and 2014. The government’s Tech Nation Report put it ahead of …'
+categories:
+    - Cornwall
+    - News
+    - Outsourcing
+    - 'Software Squad'
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 _We were recently featured in the [Bristol Business Post](http://www.bbpmedia.co.uk/publications/business-post/midlands/birmingham-business-post-edition-62.html) in an article called “Helping Firms Surf the Waves of the Cornish Tech Boom” _
 

@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2016/09/kernow-dat-evening-for-the-digitally-curious"
-title: "Kernow DAT’s Evening for the Digitally Curious"
-date: "2016-09-22T15:18:36.000Z"
-modified: "2017-11-03T10:52:52.000Z"
-excerpt: "Jeni went along to the first Kernow DAT event last week – here’s what she had to say about the evening.  Last Thursday was the first Kernow DAT event – an Evening for the Digitally Curious. Held at the Workbox in Penzance, the event was a great mix of TED style talks, demos, and conversation, all fuelled …"
-categories: ["Cornwall","News"]
+type: wordpress-blog
+path: /2016/09/kernow-dat-evening-for-the-digitally-curious
+title: 'Kernow DAT’s Evening for the Digitally Curious'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardskernowdatbddbeer.jpg, text: 'Our BDD beer'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardskernowdatattendees.jpg, text: 'Kernow DAT Attendees'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardskernowdatattendees2.jpg, text: ""}
+date: '2016-09-22T15:18:36.000Z'
+modified: '2017-11-03T10:52:52.000Z'
+excerpt: 'Jeni went along to the first Kernow DAT event last week – here’s what she had to say about the evening.  Last Thursday was the first Kernow DAT event – an Evening for the Digitally Curious. Held at the Workbox in Penzance, the event was a great mix of TED style talks, demos, and conversation, all fuelled …'
+categories:
+    - Cornwall
+    - News
 tags: []
 author:
-  id: "0b897961-f4cb-5d8b-a38c-fcccfd76e946"
-  slug: "jeni"
-  name: "Jeni Henthorn"
-  path: "/author/jeni/"
+    id: 0b897961-f4cb-5d8b-a38c-fcccfd76e946
+    slug: jeni
+    name: 'Jeni Henthorn'
+    path: /author/jeni/
+
 ---
 _Jeni went along to the first Kernow DAT event last week – here’s what she had to say about the evening. _
 

@@ -1,17 +1,22 @@
 ---
-type: "wordpress-blog"
-path: "/2018/02/monthly-social-rugby-redruth-vs-henley-hawks"
-title: "Monthly Social: Rugby – Redruth vs. Henley Hawks"
-date: "2018-02-27T10:31:48.000Z"
-modified: "2018-02-27T10:35:07.000Z"
-excerpt: "Back to the Tribute Lounge for another fantastic game of Rugby for this month’s team social. This match was Redruth vs. Henley Hawks. Well done to both teams for delivering an exciting game. Man of the Match goes to Alex Ducker for bringing in a hat-trick of tries before full-time. Well done!"
-categories: ["News"]
+type: wordpress-blog
+path: /2018/02/monthly-social-rugby-redruth-vs-henley-hawks
+title: 'Monthly Social: Rugby – Redruth vs. Henley Hawks'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/dscf100562.jpg, text: 'Monthly Social: Rugby - Redruth vs. Henley Hawks'}
+    - {image: //headforwards.com/wp-content/files_mf/2018021715.04.33.jpg, text: 'Monthly Social: Rugby - Redruth vs. Henley Hawks'}
+date: '2018-02-27T10:31:48.000Z'
+modified: '2018-02-27T10:35:07.000Z'
+excerpt: 'Back to the Tribute Lounge for another fantastic game of Rugby for this month’s team social. This match was Redruth vs. Henley Hawks. Well done to both teams for delivering an exciting game. Man of the Match goes to Alex Ducker for bringing in a hat-trick of tries before full-time. Well done!'
+categories:
+    - News
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Back to the Tribute Lounge for another fantastic game of Rugby for this month's team social. This match was Redruth vs. Henley Hawks. Well done to both teams for delivering an exciting game. Man of the Match goes to Alex Ducker for bringing in a hat-trick of tries before full-time. Well done!
 

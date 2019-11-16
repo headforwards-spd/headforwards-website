@@ -1,17 +1,50 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/software-squad-line-up-announced"
-title: "Software Squad Line Up Announced"
-date: "2015-07-28T15:04:58.000Z"
-modified: "2017-11-03T10:56:41.000Z"
-excerpt: "We are really excited to announce the line up for our Software Squad event! First we have Toby Parkins who is a director here at Headforwards as well as at Agile on the Beach, Pixxcell Ltd and UK Net Web. He is also a board member at Cornwall Chamber. Toby will be facilitating a hands-on-learning workshop that teaches the delegates code. We then …"
-categories: ["Coding","Cornwall","News","Software Squad","The Headforwards Team"]
-tags: ["auto wed","bbc","caroline cripps","code academy","Coding","computing degree","concept shed","Cornwall","cornwall college","daphne skinnard","dragons den","education","event brite","jimmy headdon","lyssa-fee crump","Pirate FM","pool innovation centre","sam lanyon","Software Cornwall","Software Squad","software squadf","summer holidays","toby parkins"]
+type: wordpress-blog
+path: /2015/07/software-squad-line-up-announced
+title: 'Software Squad Line Up Announced'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscornwalleducationbusinesspartnership.jpg, text: 'Line up announced '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardspeopleontheboardwalk.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsmeetingwithaview.jpeg, text: ""}
+date: '2015-07-28T15:04:58.000Z'
+modified: '2017-11-03T10:56:41.000Z'
+excerpt: 'We are really excited to announce the line up for our Software Squad event! First we have Toby Parkins who is a director here at Headforwards as well as at Agile on the Beach, Pixxcell Ltd and UK Net Web. He is also a board member at Cornwall Chamber. Toby will be facilitating a hands-on-learning workshop that teaches the delegates code. We then …'
+categories:
+    - Coding
+    - Cornwall
+    - News
+    - 'Software Squad'
+    - 'The Headforwards Team'
+tags:
+    - 'auto wed'
+    - bbc
+    - 'caroline cripps'
+    - 'code academy'
+    - Coding
+    - 'computing degree'
+    - 'concept shed'
+    - Cornwall
+    - 'cornwall college'
+    - 'daphne skinnard'
+    - 'dragons den'
+    - education
+    - 'event brite'
+    - 'jimmy headdon'
+    - 'lyssa-fee crump'
+    - 'Pirate FM'
+    - 'pool innovation centre'
+    - 'sam lanyon'
+    - 'Software Cornwall'
+    - 'Software Squad'
+    - 'software squadf'
+    - 'summer holidays'
+    - 'toby parkins'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 We are really excited to announce the line up for our Software Squad event!
 

@@ -1,5 +1,6 @@
-import { string } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
+import Image from '../../image/image.component';
 import Link from '../../link/link.component';
 import styles from './news.module.scss';
 
@@ -7,20 +8,34 @@ export default NewsSummary;
 
 NewsSummary.propTypes = {
     title: string.isRequired,
+    headerImages: arrayOf(
+        shape({
+            image: string,
+            text: string,
+        })
+    ).isRequired,
     excerpt: string.isRequired,
     path: string.isRequired,
     date: string.isRequired,
     dateString: string.isRequired,
 };
-function NewsSummary({ title, excerpt, path, date, dateString }) {
+function NewsSummary({ title, headerImages, excerpt, path, date, dateString }) {
+    const [firstHeaderImage = {}] = headerImages;
+    const { image = null } = firstHeaderImage;
+
     return (
-        <article className={styles.newsItem}>
-            <h1>{title}</h1>
-            <time dateTime={date}>posted {dateString}</time>
-            <p>{excerpt}</p>
-            <Link to={path} className={styles.readMore}>
-                Read more
-            </Link>
-        </article>
+        <Link to={path} className={styles.newsItem}>
+            <article>
+                <header>
+                    <h1>{title}</h1>
+                    {!!image && <Image image={image} alt={title} className={styles.image} />}
+                    <time dateTime={date}>posted {dateString}</time>
+                </header>
+                <p>{excerpt}</p>
+                <Link to={path} className={styles.readMore}>
+                    Read more
+                </Link>
+            </article>
+        </Link>
     );
 }

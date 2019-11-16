@@ -27,6 +27,10 @@ export const query = graphql`
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
+                headerImages {
+                    image
+                    text
+                }
                 author {
                     name
                 }
@@ -58,20 +62,25 @@ export const query = graphql`
 function WordpressBlogPage({ data }) {
     const { page, prev, next } = data;
     const { frontmatter, html } = page;
-    const { author, categories, tags, date, ...header } = frontmatter;
+    const { title, headerImages } = frontmatter;
+
+    const [firstHeaderImage = {}] = headerImages;
+    const { image = null } = firstHeaderImage;
+
+    const headerProps = {
+        title,
+        image,
+    };
 
     const templateProps = {
         prev,
         next,
+        ...frontmatter,
         html,
-        author,
-        categories,
-        tags,
-        date,
     };
 
     return (
-        <Layout {...header}>
+        <Layout {...headerProps}>
             <WordpressBlogPageTemplate {...templateProps} />
         </Layout>
     );

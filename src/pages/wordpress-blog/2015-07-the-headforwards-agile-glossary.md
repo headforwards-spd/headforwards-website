@@ -1,17 +1,36 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/the-headforwards-agile-glossary"
-title: "The Headforwards Agile Glossary"
-date: "2015-07-08T11:40:07.000Z"
-modified: "2017-11-03T10:56:43.000Z"
-excerpt: "There are a lot of terms and key phrases used within the Agile world, and it can be a bit hard to understand if you are not “in the know” So we have put together a short glossary to help you understand what your Agile Software team are talking about.   Agile – this is …"
-categories: ["Agile","Informational"]
-tags: ["Agile","Agile Project Management","Agile Software Development","Business","Business Tips","Developers","education","glossary","Headforwards","Infomational","software terms","Top Tips"]
+type: wordpress-blog
+path: /2015/07/the-headforwards-agile-glossary
+title: 'The Headforwards Agile Glossary'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsagileboard.jpg, text: 'Agile Glossary '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsagileboardforsoftwaredevelopment52.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsagilesoftwareboard.done74.jpg, text: ""}
+date: '2015-07-08T11:40:07.000Z'
+modified: '2017-11-03T10:56:43.000Z'
+excerpt: 'There are a lot of terms and key phrases used within the Agile world, and it can be a bit hard to understand if you are not “in the know” So we have put together a short glossary to help you understand what your Agile Software team are talking about.   Agile – this is …'
+categories:
+    - Agile
+    - Informational
+tags:
+    - Agile
+    - 'Agile Project Management'
+    - 'Agile Software Development'
+    - Business
+    - 'Business Tips'
+    - Developers
+    - education
+    - glossary
+    - Headforwards
+    - Infomational
+    - 'software terms'
+    - 'Top Tips'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 There are a lot of terms and key phrases used within the Agile world, and it can be a bit hard to understand if you are not “in the know”  
 So we have put together a short glossary to help you understand what your Agile Software team are talking about.

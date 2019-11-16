@@ -1,17 +1,23 @@
 ---
-type: "wordpress-blog"
-path: "/2016/07/unlocking-potential-cornwalls-tech-revolution"
-title: "Unlocking Potential: Cornwall’s Tech Revolution"
-date: "2016-07-20T11:43:39.000Z"
-modified: "2017-11-03T10:53:48.000Z"
-excerpt: "Unlocking Potential are passionate about helping people and business grow in Cornwall. They recently published a blog article Unlocking Potential: Cornwall’s Tech Revolution that features Headforwards and co-founder Toby Parkins. You can read the full article below – or on their website.  Toby Parkins, co-founder and director of software outsourcing company Headforwards, tells us about his business journey …"
-categories: ["Cornwall","Informational","News"]
+type: wordpress-blog
+path: /2016/07/unlocking-potential-cornwalls-tech-revolution
+title: 'Unlocking Potential: Cornwall’s Tech Revolution'
+headerImages:
+    - {image: '//headforwards.com/wp-content/files_mf/unlockingpotential:cornwallstechrevolution53.png', text: ""}
+date: '2016-07-20T11:43:39.000Z'
+modified: '2017-11-03T10:53:48.000Z'
+excerpt: 'Unlocking Potential are passionate about helping people and business grow in Cornwall. They recently published a blog article Unlocking Potential: Cornwall’s Tech Revolution that features Headforwards and co-founder Toby Parkins. You can read the full article below – or on their website.  Toby Parkins, co-founder and director of software outsourcing company Headforwards, tells us about his business journey …'
+categories:
+    - Cornwall
+    - Informational
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 _[Unlocking Potential](http://www.unlocking-potential.co.uk/) are passionate about helping people and business grow in Cornwall._  
 _They recently published a blog article [Unlocking Potential: Cornwall’s Tech Revolution](http://www.unlocking-potential.co.uk/blog/cornwalls-tech-revolution) that features Headforwards and co-founder Toby Parkins. You can read the full article below – or on their website. _

@@ -1,17 +1,22 @@
 ---
-type: "wordpress-blog"
-path: "/2016/08/win-free-ticket-agile-beach-2016"
-title: "Win a Free Ticket to Agile on the Beach 2016"
-date: "2016-08-17T16:25:59.000Z"
-modified: "2017-11-03T10:53:48.000Z"
-excerpt: "Do you want to win a free ticket to Agile on the Beach 2016? Headforwards are giving two individuals the chance to win a ticket to the Agile conference. Agile on the Beach is an industry leading 2 day annual conference in Falmouth, Cornwall that explores the latest Agile and lean thinking in software craftmanship, teams and …"
-categories: ["Cornwall","News"]
+type: wordpress-blog
+path: /2016/08/win-free-ticket-agile-beach-2016
+title: 'Win a Free Ticket to Agile on the Beach 2016'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/agileonthebeachticketcomptiwtter2016.png, text: ""}
+date: '2016-08-17T16:25:59.000Z'
+modified: '2017-11-03T10:53:48.000Z'
+excerpt: 'Do you want to win a free ticket to Agile on the Beach 2016? Headforwards are giving two individuals the chance to win a ticket to the Agile conference. Agile on the Beach is an industry leading 2 day annual conference in Falmouth, Cornwall that explores the latest Agile and lean thinking in software craftmanship, teams and …'
+categories:
+    - Cornwall
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Do you want to win a free ticket to Agile on the Beach 2016?  
 Headforwards are giving two individuals the chance to win a ticket to the Agile conference.

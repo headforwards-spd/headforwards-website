@@ -1,17 +1,32 @@
 ---
-type: "wordpress-blog"
-path: "/2015/11/when-to-outsource-your-software-development"
-title: "When to Outsource Your Software Development"
-date: "2015-11-23T12:08:55.000Z"
-modified: "2017-11-03T10:54:17.000Z"
-excerpt: "Outsourcing your software development can be a tough decision to make and it can be even harder to know when it is the right time to make this jump. That is why we have put together this list to help you decide when to outsource your software development. Project Costs When you choose to outsource …"
-categories: ["News","Outsourcing"]
-tags: ["Agile","Headforwards","make an app","Outsourcing","outsourcing software development","Software","software development","When to outsource your software development"]
+type: wordpress-blog
+path: /2015/11/when-to-outsource-your-software-development
+title: 'When to Outsource Your Software Development'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscoffeeandcomputer39.jpg, text: 'When to Outsource Your Software Development '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsagilesoftwareboard.done88.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscomputerwork.jpg, text: ""}
+date: '2015-11-23T12:08:55.000Z'
+modified: '2017-11-03T10:54:17.000Z'
+excerpt: 'Outsourcing your software development can be a tough decision to make and it can be even harder to know when it is the right time to make this jump. That is why we have put together this list to help you decide when to outsource your software development. Project Costs When you choose to outsource …'
+categories:
+    - News
+    - Outsourcing
+tags:
+    - Agile
+    - Headforwards
+    - 'make an app'
+    - Outsourcing
+    - 'outsourcing software development'
+    - Software
+    - 'software development'
+    - 'When to outsource your software development'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Outsourcing your software development can be a tough decision to make and it can be even harder to know when it is the right time to make this jump. That is why we have put together this list to help you decide when to outsource your software development.
 

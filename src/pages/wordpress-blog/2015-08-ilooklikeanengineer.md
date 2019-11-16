@@ -1,17 +1,38 @@
 ---
-type: "wordpress-blog"
-path: "/2015/08/ilooklikeanengineer"
-title: "#ILookLikeAnEngineer"
-date: "2015-08-06T11:28:28.000Z"
-modified: "2017-11-03T10:56:41.000Z"
-excerpt: "If you have been on the internet in the last few days you have probably come across #ILookLikeAnEngineer For those of you who don’t know, this new hashtag has come about after Isis Wenger wrote an article for Medium about what it is like working in tech as a woman. It is sad to read about some …"
-categories: ["Informational","News","The Headforwards Team"]
-tags: ["#ILookLikeAnEngineer","adafruit ind","engineer","facebook","Isis Wenger","medium","MIT","MITY","natalia","one login","Pintrest","twitter","Women in tech"]
+type: wordpress-blog
+path: /2015/08/ilooklikeanengineer
+title: '#ILookLikeAnEngineer'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/isisanchaleeilooklikeanengineerheadforwardsblog.jpeg, text: '#ILookLikeAnEngineer '}
+    - {image: //headforwards.com/wp-content/files_mf/isisanchaleeilooklikeanengineerheadforwards.jpeg, text: '#ILookLikeAnEngineer '}
+    - {image: //headforwards.com/wp-content/files_mf/nataliailooklikeanengineerblog.jpg, text: '#ILookLikeAnEngineer '}
+date: '2015-08-06T11:28:28.000Z'
+modified: '2017-11-03T10:56:41.000Z'
+excerpt: 'If you have been on the internet in the last few days you have probably come across #ILookLikeAnEngineer For those of you who don’t know, this new hashtag has come about after Isis Wenger wrote an article for Medium about what it is like working in tech as a woman. It is sad to read about some …'
+categories:
+    - Informational
+    - News
+    - 'The Headforwards Team'
+tags:
+    - '#ILookLikeAnEngineer'
+    - 'adafruit ind'
+    - engineer
+    - facebook
+    - 'Isis Wenger'
+    - medium
+    - MIT
+    - MITY
+    - natalia
+    - 'one login'
+    - Pintrest
+    - twitter
+    - 'Women in tech'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 If you have been on the internet in the last few days you have probably come across #ILookLikeAnEngineer
 

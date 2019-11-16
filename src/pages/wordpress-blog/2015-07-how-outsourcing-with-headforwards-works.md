@@ -1,17 +1,57 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/how-outsourcing-with-headforwards-works"
-title: "How Outsourcing with Headforwards Works"
-date: "2015-07-30T13:31:36.000Z"
-modified: "2017-11-03T10:56:41.000Z"
-excerpt: "Here at Headforwards we do onshore outsourcing, differently. More efficiently. We create bespoke teams for your project, tailored to its specific needs. Other outsource companies often have people waiting on the bench for new projects, which ultimately drives their costs up. It is also common for team members to be switched between projects and clients; …"
-categories: ["Outsourcing","The Headforwards Team"]
-tags: ["Agile","Career","careers","careers in cornwall","careers in software","collaberation","Cornwall","CV","developer","Headforwards","interviews","Offshore Outsourcing","Onshore Outsourcing","Outsourcing","recruitment","Scrum Master","Skype","Software","software career","software company uk","Software Cornwall","software developers","software jobs","software jobs cornwall","software jobs uk","software outs","software outsource","Software Outsourcing","software outsourcing uk","software project","where to outsource to","why outsource","WQ"]
+type: wordpress-blog
+path: /2015/07/how-outsourcing-with-headforwards-works
+title: 'How Outsourcing with Headforwards Works'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardswhealcoatescornwall62.jpg, text: 'Outsourcing '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsagilesoftwaredev87.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardskorukayakingstagnes.jpg, text: ""}
+date: '2015-07-30T13:31:36.000Z'
+modified: '2017-11-03T10:56:41.000Z'
+excerpt: 'Here at Headforwards we do onshore outsourcing, differently. More efficiently. We create bespoke teams for your project, tailored to its specific needs. Other outsource companies often have people waiting on the bench for new projects, which ultimately drives their costs up. It is also common for team members to be switched between projects and clients; …'
+categories:
+    - Outsourcing
+    - 'The Headforwards Team'
+tags:
+    - Agile
+    - Career
+    - careers
+    - 'careers in cornwall'
+    - 'careers in software'
+    - collaberation
+    - Cornwall
+    - CV
+    - developer
+    - Headforwards
+    - interviews
+    - 'Offshore Outsourcing'
+    - 'Onshore Outsourcing'
+    - Outsourcing
+    - recruitment
+    - 'Scrum Master'
+    - Skype
+    - Software
+    - 'software career'
+    - 'software company uk'
+    - 'Software Cornwall'
+    - 'software developers'
+    - 'software jobs'
+    - 'software jobs cornwall'
+    - 'software jobs uk'
+    - 'software outs'
+    - 'software outsource'
+    - 'Software Outsourcing'
+    - 'software outsourcing uk'
+    - 'software project'
+    - 'where to outsource to'
+    - 'why outsource'
+    - WQ
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Here at Headforwards we do onshore outsourcing, differently.
 

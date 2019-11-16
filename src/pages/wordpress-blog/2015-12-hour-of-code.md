@@ -1,17 +1,29 @@
 ---
-type: "wordpress-blog"
-path: "/2015/12/hour-of-code"
-title: "Hour of Code"
-date: "2015-12-04T16:18:12.000Z"
-modified: "2017-11-03T10:54:00.000Z"
-excerpt: "You may have noticed we mentioned Hour of Code in our blog piece about Cornwall Tech Week, but what is it? The Hour of Code is a global movement where people from over 180 countries all have a go at an hour of code. The great thing about it is you don’t need to have any …"
-categories: ["Coding","News"]
-tags: ["Coding","education","Headforwards","hour of code","workshop"]
+type: wordpress-blog
+path: /2015/12/hour-of-code
+title: 'Hour of Code'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_softwaresquad.jpeg, text: 'Hour of Code '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards_computer_code.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwarecomputerprogramming15.jpg, text: ""}
+date: '2015-12-04T16:18:12.000Z'
+modified: '2017-11-03T10:54:00.000Z'
+excerpt: 'You may have noticed we mentioned Hour of Code in our blog piece about Cornwall Tech Week, but what is it? The Hour of Code is a global movement where people from over 180 countries all have a go at an hour of code. The great thing about it is you don’t need to have any …'
+categories:
+    - Coding
+    - News
+tags:
+    - Coding
+    - education
+    - Headforwards
+    - 'hour of code'
+    - workshop
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 You may have noticed we mentioned Hour of Code in our blog piece about Cornwall Tech Week, but what is it?
 

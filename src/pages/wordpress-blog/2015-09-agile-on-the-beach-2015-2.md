@@ -1,17 +1,36 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/agile-on-the-beach-2015-2"
-title: "Agile on the Beach 2015"
-date: "2015-09-08T11:08:51.000Z"
-modified: "2017-11-03T10:54:30.000Z"
-excerpt: "Last week a few members of the Headforwards team had the pleasure of attending Agile on The Beach in Falmouth.  Headforwards are proud to be one of the sponsors of the event, along with some other fantastic companies. Agile on the Beach is a two day business and technology conference that sees speakers from all over …"
-categories: ["Agile","Cornwall","News"]
-tags: ["agile conference","Agile on the Beach","Agile on the Beach 2015","AOTB","best agile conferences","falmouth","Headforwards","lyssa-fee crump","software development","software development today","top agile conferences 2014"]
+type: wordpress-blog
+path: /2015/09/agile-on-the-beach-2015-2
+title: 'Agile on the Beach 2015'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/agile2015_0031024x737.jpg, text: 'Agile on the Beach 2015 '}
+    - {image: //headforwards.com/wp-content/files_mf/agile2015_0061024x688.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/agile2015_2291024x682.jpg, text: ""}
+date: '2015-09-08T11:08:51.000Z'
+modified: '2017-11-03T10:54:30.000Z'
+excerpt: 'Last week a few members of the Headforwards team had the pleasure of attending Agile on The Beach in Falmouth.  Headforwards are proud to be one of the sponsors of the event, along with some other fantastic companies. Agile on the Beach is a two day business and technology conference that sees speakers from all over …'
+categories:
+    - Agile
+    - Cornwall
+    - News
+tags:
+    - 'agile conference'
+    - 'Agile on the Beach'
+    - 'Agile on the Beach 2015'
+    - AOTB
+    - 'best agile conferences'
+    - falmouth
+    - Headforwards
+    - 'lyssa-fee crump'
+    - 'software development'
+    - 'software development today'
+    - 'top agile conferences 2014'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Last week a few members of the Headforwards team had the pleasure of attending [Agile on The Beach](http://agileonthebeach.com/) in [Falmouth.](http://www.falmouth.ac.uk/)  Headforwards are proud to be one of the [sponsors](http://agileonthebeach.com/2015-sponsors/) of the event, along with some other fantastic companies.
 

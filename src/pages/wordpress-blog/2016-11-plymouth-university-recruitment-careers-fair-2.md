@@ -1,17 +1,21 @@
 ---
-type: "wordpress-blog"
-path: "/2016/11/plymouth-university-recruitment-careers-fair-2"
-title: "Plymouth University recruitment careers fair"
-date: "2016-11-15T16:32:26.000Z"
-modified: "2017-11-03T10:52:51.000Z"
-excerpt: "In early November, Alex from our recruitment team headed up the A30 for the Plymouth University recruitment careers fair. He was joined by two other members from Software Cornwall; Paul Clark from Packet Ship and Steve Forth from Bluefruit. The day was a great opportunity for businesses such as ourselves to get a feel for …"
-categories: ["News"]
+type: wordpress-blog
+path: /2016/11/plymouth-university-recruitment-careers-fair-2
+title: 'Plymouth University recruitment careers fair'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/img_0418.jpg, text: 'Plymouth University recruitment careers fair '}
+date: '2016-11-15T16:32:26.000Z'
+modified: '2017-11-03T10:52:51.000Z'
+excerpt: 'In early November, Alex from our recruitment team headed up the A30 for the Plymouth University recruitment careers fair. He was joined by two other members from Software Cornwall; Paul Clark from Packet Ship and Steve Forth from Bluefruit. The day was a great opportunity for businesses such as ourselves to get a feel for …'
+categories:
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 In early November, Alex from our recruitment team headed up the A30 for the Plymouth University recruitment careers fair. He was joined by two other members from [Software Cornwall](https://www.softwarecornwall.org/); Paul Clark from Packet Ship and Steve Forth from Bluefruit.
 

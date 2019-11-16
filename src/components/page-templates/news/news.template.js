@@ -10,6 +10,12 @@ NewsPageTemplate.propTypes = {
         news: arrayOf(
             shape({
                 title: string,
+                headerImages: arrayOf(
+                    shape({
+                        image: string,
+                        text: string,
+                    })
+                ),
                 excerpt: string,
                 path: string,
                 date: string,

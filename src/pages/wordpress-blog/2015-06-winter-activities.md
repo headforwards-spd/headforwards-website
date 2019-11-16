@@ -1,17 +1,35 @@
 ---
-type: "wordpress-blog"
-path: "/2015/06/winter-activities"
-title: "Winter Activities"
-date: "2015-06-15T14:43:23.000Z"
-modified: "2015-09-01T14:41:10.000Z"
-excerpt: "Just because summer has ended doesn’t mean the Headforward team adventures have to! This years winter activities included laser tag at Bombadingas, bowling at Truro Bowl and enjoying some tasty Indian food at various restaurants in Truro. For those of you who haven’t played laser tag, it is a sport where you attempt to score …"
-categories: ["News","Team adventures","The Headforwards Team"]
-tags: ["bombadingas","bowling","curry","Headforwards","Headforwards Team","indian","laser tag","team building","team outings","truro bowl"]
+type: wordpress-blog
+path: /2015/06/winter-activities
+title: 'Winter Activities'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsgototrurobowl.jpg, text: 'Winter Activities '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsscoreboardattrurobowl.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsindianfood.jpg, text: ""}
+date: '2015-06-15T14:43:23.000Z'
+modified: '2015-09-01T14:41:10.000Z'
+excerpt: 'Just because summer has ended doesn’t mean the Headforward team adventures have to! This years winter activities included laser tag at Bombadingas, bowling at Truro Bowl and enjoying some tasty Indian food at various restaurants in Truro. For those of you who haven’t played laser tag, it is a sport where you attempt to score …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - bombadingas
+    - bowling
+    - curry
+    - Headforwards
+    - 'Headforwards Team'
+    - indian
+    - 'laser tag'
+    - 'team building'
+    - 'team outings'
+    - 'truro bowl'
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 Just because summer has ended doesn’t mean the Headforward team adventures have to!
 

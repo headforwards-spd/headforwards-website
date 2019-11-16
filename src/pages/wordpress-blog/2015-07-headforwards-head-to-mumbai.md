@@ -1,17 +1,39 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/headforwards-head-to-mumbai"
-title: "Headforwards Head to Mumbai"
-date: "2015-07-22T12:43:10.000Z"
-modified: "2017-11-03T10:56:41.000Z"
-excerpt: "Recently three members of the Headforwards team (Emily, Tom and Paul) travelled to Mumbai, India on a work trip. They flew overnight on Sunday to arrive in Mumbai on Monday morning. After only a short journey from the airport they arrived at the Westin Mumbai Garden City Hotel, where they would be staying for the week. …"
-categories: ["News","Team adventures","The Headforwards Team"]
-tags: ["Cornwall","Headforwards","Headforwards Team","India","Internet","Load Balancers","Lychee jellie","Mumbai","rapport","Westin Mumbai Garden City Hotel","Work travel","Work trip","working remotley"]
+type: wordpress-blog
+path: /2015/07/headforwards-head-to-mumbai
+title: 'Headforwards Head to Mumbai'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsinmumbai.jpg, text: 'Headforwards in Mumbai'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsmumbaitraffic.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsmumbaiatnight.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsviewfromhotelinmumbai.jpg, text: ""}
+date: '2015-07-22T12:43:10.000Z'
+modified: '2017-11-03T10:56:41.000Z'
+excerpt: 'Recently three members of the Headforwards team (Emily, Tom and Paul) travelled to Mumbai, India on a work trip. They flew overnight on Sunday to arrive in Mumbai on Monday morning. After only a short journey from the airport they arrived at the Westin Mumbai Garden City Hotel, where they would be staying for the week. …'
+categories:
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - Cornwall
+    - Headforwards
+    - 'Headforwards Team'
+    - India
+    - Internet
+    - 'Load Balancers'
+    - 'Lychee jellie'
+    - Mumbai
+    - rapport
+    - 'Westin Mumbai Garden City Hotel'
+    - 'Work travel'
+    - 'Work trip'
+    - 'working remotley'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Recently three members of the Headforwards team (Emily, Tom and Paul) travelled to [Mumbai, India](http://www.lonelyplanet.com/india/mumbai-bombay) on a work trip.
 

@@ -1,17 +1,26 @@
 ---
-type: "wordpress-blog"
-path: "/2017/03/skinners-brewery-tour"
-title: "Team Adventure: Skinners Brewery Tour"
-date: "2017-03-15T14:16:13.000Z"
-modified: "2017-11-03T10:52:47.000Z"
-excerpt: "Our February team event was a private tour of the famous Skinner’s Brewery. We were all super excited to see behind the scenes of such a well-known Cornish beer producer. After the tour, ample quantities of tasters were available plus a tasty Cornish pasty. Free beer and free food – the ultimate combination. The tour began with …"
-categories: ["Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2017/03/skinners-brewery-tour
+title: 'Team Adventure: Skinners Brewery Tour'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamadventureskinnersbrewerytour20172.jpg, text: 'Skinners Brewery Tour'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamadventureskinnersbrewerytour201722.jpg, text: 'Skinners Brewery Tour'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamadventureskinnersbrewerytour20178.jpg, text: 'Skinners Brewery Tour'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamadventureskinnersbrewerytour201734.jpg, text: 'Skinners Brewery Tour'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamadventureskinnersbrewerytour201711.jpg, text: 'Skinners Brewery Tour'}
+date: '2017-03-15T14:16:13.000Z'
+modified: '2017-11-03T10:52:47.000Z'
+excerpt: 'Our February team event was a private tour of the famous Skinner’s Brewery. We were all super excited to see behind the scenes of such a well-known Cornish beer producer. After the tour, ample quantities of tasters were available plus a tasty Cornish pasty. Free beer and free food – the ultimate combination. The tour began with …'
+categories:
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Our February team event was a private tour of the famous Skinner’s Brewery. We were all super excited to see behind the scenes of such a well-known Cornish beer producer. After the tour, ample quantities of tasters were available plus a tasty Cornish pasty. Free beer and free food – the ultimate combination.
 

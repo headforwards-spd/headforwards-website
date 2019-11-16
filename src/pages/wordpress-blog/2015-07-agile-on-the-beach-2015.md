@@ -1,17 +1,36 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/agile-on-the-beach-2015"
-title: "Agile on the Beach 2015"
-date: "2015-07-06T15:04:36.000Z"
-modified: "2017-11-03T10:56:43.000Z"
-excerpt: "We are very excited for Agile on the Beach 2015, which will be held in early September in Falmouth, Cornwall. This is a conference with a difference, it finishes with a big beach party! Over the two days hundreds of people gather to talk and learn about the latest Agile news and Lean thinking in software …"
-categories: ["Agile","Cornwall","News"]
-tags: ["Agile","Agile on the Beach","Agile Project Management","Agile Software Development","Beach","Conference","Cornwall","education","Headforwards","Kanban","scrum"]
+type: wordpress-blog
+path: /2015/07/agile-on-the-beach-2015
+title: 'Agile on the Beach 2015'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/agilebeachparty14_761024x722.jpg, text: 'Agile on the Beach'}
+    - {image: //headforwards.com/wp-content/files_mf/2015020719.10.4628.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/dsc_108874.jpg, text: ""}
+date: '2015-07-06T15:04:36.000Z'
+modified: '2017-11-03T10:56:43.000Z'
+excerpt: 'We are very excited for Agile on the Beach 2015, which will be held in early September in Falmouth, Cornwall. This is a conference with a difference, it finishes with a big beach party! Over the two days hundreds of people gather to talk and learn about the latest Agile news and Lean thinking in software …'
+categories:
+    - Agile
+    - Cornwall
+    - News
+tags:
+    - Agile
+    - 'Agile on the Beach'
+    - 'Agile Project Management'
+    - 'Agile Software Development'
+    - Beach
+    - Conference
+    - Cornwall
+    - education
+    - Headforwards
+    - Kanban
+    - scrum
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 We are very excited for [Agile on the Beach](http://agileonthebeach.com/) 2015, which will be held in early September in [Falmouth,](http://www.falmouth.co.uk/) Cornwall.  
 This is a conference with a difference, it finishes with a big beach party!  

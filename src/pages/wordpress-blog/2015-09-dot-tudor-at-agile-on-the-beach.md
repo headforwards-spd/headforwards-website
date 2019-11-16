@@ -1,17 +1,44 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/dot-tudor-at-agile-on-the-beach"
-title: "Dot Tudor at Agile on the Beach"
-date: "2015-09-11T16:01:41.000Z"
-modified: "2017-11-03T10:54:28.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Dot Tudor at Agile on the Beach and her talk entitled “I’m an Alien” Dot Tudor is founder and Technical Director of TCC Limited, a company who specialise in business change and helping people improve the way they manage projects. She also won “Best Agile Coach / …"
-categories: ["News","The Headforwards Team"]
-tags: ["Agile","Agile on the Beach","Agile on the Beach 2015","Agile Project Management","AgileBA handbook","BA","Business Analyst","Dot Tudor","Dot Tudor at Agile on the beach","Dot Tudor at Agile on the beach 2015","Ellen Gottendiener","Englishman in New York","I'm an alien","I'm an alien - a business analyst in an agile world","PO","product owner","scrum","Sting","TCC Limited","UK agile awards"]
+type: wordpress-blog
+path: /2015/09/dot-tudor-at-agile-on-the-beach
+title: 'Dot Tudor at Agile on the Beach'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/dottudoratagileonthebeach2015.jpg, text: 'Dot Tudor '}
+    - {image: //headforwards.com/wp-content/files_mf/dottudoratagileonthebeachbaimanalien.jpg, text: ' '}
+    - {image: //headforwards.com/wp-content/files_mf/dottudoratagileonthebeachagilebusinessanalusishandbook.jpg, text: ""}
+date: '2015-09-11T16:01:41.000Z'
+modified: '2017-11-03T10:54:28.000Z'
+excerpt: 'Lyssa, our Marketing Manager, has written the following article about Dot Tudor at Agile on the Beach and her talk entitled “I’m an Alien” Dot Tudor is founder and Technical Director of TCC Limited, a company who specialise in business change and helping people improve the way they manage projects. She also won “Best Agile Coach / …'
+categories:
+    - News
+    - 'The Headforwards Team'
+tags:
+    - Agile
+    - 'Agile on the Beach'
+    - 'Agile on the Beach 2015'
+    - 'Agile Project Management'
+    - 'AgileBA handbook'
+    - BA
+    - 'Business Analyst'
+    - 'Dot Tudor'
+    - 'Dot Tudor at Agile on the beach'
+    - 'Dot Tudor at Agile on the beach 2015'
+    - 'Ellen Gottendiener'
+    - 'Englishman in New York'
+    - 'I''m an alien'
+    - 'I''m an alien - a business analyst in an agile world'
+    - PO
+    - 'product owner'
+    - scrum
+    - Sting
+    - 'TCC Limited'
+    - 'UK agile awards'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [Lyssa](https://uk.linkedin.com/in/lyssafeecrump), _our Marketing Manager, has written the following article about_ _Dot Tudor at Agile on the Beach and her talk entitled “I’m an Alien”_
 

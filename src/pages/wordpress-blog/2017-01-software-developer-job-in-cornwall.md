@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2017/01/software-developer-job-in-cornwall"
-title: "Software Developer Job in Cornwall"
-date: "2017-01-05T14:44:59.000Z"
-modified: "2017-11-03T10:52:49.000Z"
-excerpt: "Are you looking for a new software developer job in Cornwall? Do you want to be part of a young company whilst it is going through massive growth? In just 5 years we have grown from a spark of an idea to a team of over 80 people. We are an outsource software development company, …"
-categories: ["Jobs","News"]
+type: wordpress-blog
+path: /2017/01/software-developer-job-in-cornwall
+title: 'Software Developer Job in Cornwall'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsteamat307422.jpg, text: 'Software Developer Jobs in Cornwall '}
+    - {image: //headforwards.com/wp-content/files_mf/img_2881.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssurferatgwithianbeach.jpg, text: ""}
+date: '2017-01-05T14:44:59.000Z'
+modified: '2017-11-03T10:52:49.000Z'
+excerpt: 'Are you looking for a new software developer job in Cornwall? Do you want to be part of a young company whilst it is going through massive growth? In just 5 years we have grown from a spark of an idea to a team of over 80 people. We are an outsource software development company, …'
+categories:
+    - Jobs
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Are you looking for a new software developer job in Cornwall?  
 Do you want to be part of a young company whilst it is going through massive growth? In just 5 years we have grown from a spark of an idea to a team of over 80 people.

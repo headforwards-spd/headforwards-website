@@ -1,17 +1,26 @@
 ---
-type: "wordpress-blog"
-path: "/2017/08/cultural-barriers-to-agile-success"
-title: "Cultural Barriers to Agile Success"
-date: "2017-08-07T16:03:03.000Z"
-modified: "2018-02-01T13:57:03.000Z"
-excerpt: "Adaptive, reactive, responsive, incremental… Excuse the buzzword bingo, but these are words that are bandied around a lot in the world of Agile.  What do they mean to you? More importantly, what do they mean to you, your team and your organisation? Embedding the philosophy of Agile is a massive challenge and takes a lot …"
-categories: ["Agile","Informational","Top Tips"]
+type: wordpress-blog
+path: /2017/08/cultural-barriers-to-agile-success
+title: 'Cultural Barriers to Agile Success'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/culturalbarrierstoagilesuccessbannersurfercornwall2.jpg, text: 'Cultural Barriers to Agile Success'}
+    - {image: //headforwards.com/wp-content/files_mf/culturalbarrierstoagilesuccessbannerkanban.jpg, text: 'Cultural Barriers to Agile Success'}
+    - {image: //headforwards.com/wp-content/files_mf/culturalbarrierstoagilesuccessgreenfield.jpg, text: 'Cultural Barriers to Agile Success'}
+    - {image: //headforwards.com/wp-content/files_mf/culturalbarrierstoagilesuccessteam.jpg, text: 'Cultural Barriers to Agile Success'}
+date: '2017-08-07T16:03:03.000Z'
+modified: '2018-02-01T13:57:03.000Z'
+excerpt: 'Adaptive, reactive, responsive, incremental… Excuse the buzzword bingo, but these are words that are bandied around a lot in the world of Agile.  What do they mean to you? More importantly, what do they mean to you, your team and your organisation? Embedding the philosophy of Agile is a massive challenge and takes a lot …'
+categories:
+    - Agile
+    - Informational
+    - 'Top Tips'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Adaptive, reactive, responsive, incremental… Excuse the buzzword bingo, but these are words that are bandied around a lot in the world of Agile.  What do they mean to you? More importantly, what do they mean to you, your team and your organisation? Embedding the philosophy of Agile is a massive challenge and takes a lot of hard work.
 

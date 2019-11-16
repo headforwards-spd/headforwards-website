@@ -1,17 +1,39 @@
 ---
-type: "wordpress-blog"
-path: "/2015/07/new-rail-deal-for-cornwall"
-title: "New Rail Deal for Cornwall"
-date: "2015-07-31T15:37:58.000Z"
-modified: "2017-11-03T10:56:41.000Z"
-excerpt: "We are really pleased to hear the Government has given the go ahead for a new rail deal for Cornwall. This means that First Great Western are now able to buy 29 new state of the art, long distance trains that will be in service from 2018. They are being purchased from Hitachi Rail Europe for £360 Million and will …"
-categories: ["Cornwall","Informational","News"]
-tags: ["commuting","first great western","Government","Hitachi","Hitachi Rail Europe","Karen Boswell","London","paddington","Penzance","Rail","Railway","train from cornwall to london","Train from london to cornwall","Trains"]
+type: wordpress-blog
+path: /2015/07/new-rail-deal-for-cornwall
+title: 'New Rail Deal for Cornwall'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsviewfromtrain.jpeg, text: 'New rail deal '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsviewfromtrainwindow.jpeg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardstraintrack.jpeg, text: ""}
+date: '2015-07-31T15:37:58.000Z'
+modified: '2017-11-03T10:56:41.000Z'
+excerpt: 'We are really pleased to hear the Government has given the go ahead for a new rail deal for Cornwall. This means that First Great Western are now able to buy 29 new state of the art, long distance trains that will be in service from 2018. They are being purchased from Hitachi Rail Europe for £360 Million and will …'
+categories:
+    - Cornwall
+    - Informational
+    - News
+tags:
+    - commuting
+    - 'first great western'
+    - Government
+    - Hitachi
+    - 'Hitachi Rail Europe'
+    - 'Karen Boswell'
+    - London
+    - paddington
+    - Penzance
+    - Rail
+    - Railway
+    - 'train from cornwall to london'
+    - 'Train from london to cornwall'
+    - Trains
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 We are really pleased to hear the [Government](https://www.gov.uk/government/news/new-fleet-of-trains-to-bring-better-journeys-to-the-south-west) has given the go ahead for a new rail deal for Cornwall.
 

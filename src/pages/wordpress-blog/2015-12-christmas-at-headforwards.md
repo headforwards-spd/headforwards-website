@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2015/12/christmas-at-headforwards"
-title: "Christmas at Headforwards"
-date: "2015-12-25T11:04:57.000Z"
-modified: "2017-11-03T10:53:56.000Z"
-excerpt: "Christmas at Headforwards is always fun! We have already told you about our fabulous Christmas party at Seiners, but let us tell you about the fun we had here in the office. We put some lovely Christmas decorations up in the offices to make it feel a little more festive whilst we busy working away …"
-categories: ["Team adventures","The Headforwards Team"]
-tags: ["christmas at headforwards","merry christmas"]
+type: wordpress-blog
+path: /2015/12/christmas-at-headforwards
+title: 'Christmas at Headforwards'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/554839_972391132833850_1311073040643271858_n.jpg, text: 'Merry Christmas '}
+    - {image: //headforwards.com/wp-content/files_mf/merrychristmas.jpg, text: ""}
+date: '2015-12-25T11:04:57.000Z'
+modified: '2017-11-03T10:53:56.000Z'
+excerpt: 'Christmas at Headforwards is always fun! We have already told you about our fabulous Christmas party at Seiners, but let us tell you about the fun we had here in the office. We put some lovely Christmas decorations up in the offices to make it feel a little more festive whilst we busy working away …'
+categories:
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - 'christmas at headforwards'
+    - 'merry christmas'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Christmas at Headforwards is always fun! We have already told you about our fabulous [Christmas party](http://www.headforwards.com/2015/12/headforwards-christmas-party-2015/) at Seiners, but let us tell you about the fun we had here in the office.
 

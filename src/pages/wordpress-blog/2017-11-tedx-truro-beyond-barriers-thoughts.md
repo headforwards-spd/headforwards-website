@@ -1,17 +1,22 @@
 ---
-type: "wordpress-blog"
-path: "/2017/11/tedx-truro-beyond-barriers-thoughts"
-title: "TEDx Truro – Beyond Barriers – Our Thoughts"
-date: "2017-11-10T16:49:29.000Z"
-modified: "2017-11-10T17:05:12.000Z"
-excerpt: "Headforwards is proud to have sponsored this year’s TEDxTruro. For anybody who hasn’t heard of TED Talks, it is an organisation formed to help people share their views, insights, knowledge and personal stories to the world. TEDx was founded to reach a larger audience base by expanding to smaller communities. The x stands for independent …"
-categories: ["Cornwall","Team adventures"]
+type: wordpress-blog
+path: /2017/11/tedx-truro-beyond-barriers-thoughts
+title: 'TEDx Truro – Beyond Barriers – Our Thoughts'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/tedxheadforwards2017.jpg, text: 'TEDx Truro - Beyond Barriers'}
+date: '2017-11-10T16:49:29.000Z'
+modified: '2017-11-10T17:05:12.000Z'
+excerpt: 'Headforwards is proud to have sponsored this year’s TEDxTruro. For anybody who hasn’t heard of TED Talks, it is an organisation formed to help people share their views, insights, knowledge and personal stories to the world. TEDx was founded to reach a larger audience base by expanding to smaller communities. The x stands for independent …'
+categories:
+    - Cornwall
+    - 'Team adventures'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 Headforwards is proud to have sponsored this year’s TEDxTruro. For anybody who hasn’t heard of TED Talks, it is an organisation formed to help people share their views, insights, knowledge and personal stories to the world. TEDx was founded to reach a larger audience base by expanding to smaller communities. The x stands for independent and is run by a dedicated team of individuals from the local area.
 

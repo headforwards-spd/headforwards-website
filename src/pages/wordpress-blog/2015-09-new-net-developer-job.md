@@ -1,17 +1,47 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/new-net-developer-job"
-title: "New .NET Developer job"
-date: "2015-09-01T15:32:38.000Z"
-modified: "2017-11-03T10:56:39.000Z"
-excerpt: "Headforwards are pleased to announce that with our client, a national healthcare company, we are looking for an experienced .NET developer to join a dynamic new team on a range of exciting new projects. Are you looking for a new .NET developer job? Would you like to be based at Headforwards HQ, in beautiful Cornwall? Some of …"
-categories: ["Jobs","News"]
-tags: [".net",".net developer",".net jobs","Agile","C++","careers","careers in cornwall","dot net","dot net developer","dot net jobs","dot net jobs uk","Headforwards","HTML","JavaScript","jobs at headforwards","jobs in cornwall","Outsourcing","software job","software jobs","software jobs in cornwall","software jobs uk","SQL","WEB API"]
+type: wordpress-blog
+path: /2015/09/new-net-developer-job
+title: 'New .NET Developer job'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsmaninthewater.jpeg, text: '.Net Developer '}
+    - {image: //headforwards.com/wp-content/files_mf/headforwards.programminglanguagessoftwaredevelopment33.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/heasforwardsstagnesbeach.jpg, text: ""}
+date: '2015-09-01T15:32:38.000Z'
+modified: '2017-11-03T10:56:39.000Z'
+excerpt: 'Headforwards are pleased to announce that with our client, a national healthcare company, we are looking for an experienced .NET developer to join a dynamic new team on a range of exciting new projects. Are you looking for a new .NET developer job? Would you like to be based at Headforwards HQ, in beautiful Cornwall? Some of …'
+categories:
+    - Jobs
+    - News
+tags:
+    - .net
+    - '.net developer'
+    - '.net jobs'
+    - Agile
+    - C++
+    - careers
+    - 'careers in cornwall'
+    - 'dot net'
+    - 'dot net developer'
+    - 'dot net jobs'
+    - 'dot net jobs uk'
+    - Headforwards
+    - HTML
+    - JavaScript
+    - 'jobs at headforwards'
+    - 'jobs in cornwall'
+    - Outsourcing
+    - 'software job'
+    - 'software jobs'
+    - 'software jobs in cornwall'
+    - 'software jobs uk'
+    - SQL
+    - 'WEB API'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 Headforwards are pleased to announce that with our client, a national healthcare company, we are looking for an experienced .NET developer to join a dynamic new team on a range of exciting new projects.
 

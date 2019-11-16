@@ -1,17 +1,31 @@
 ---
-type: "wordpress-blog"
-path: "/2015/09/headforwards-at-agile-on-the-beach"
-title: "Headforwards at Agile on the Beach"
-date: "2015-09-22T15:21:12.000Z"
-modified: "2017-11-03T10:54:26.000Z"
-excerpt: "Lyssa, our Marketing Manager, has written the following article about Headforwards at Agile on the Beach and their talk entitled “The Open Agile Profiling System” Toby Parkins and Craig Girvan are both directors at Headforwards, an outsource software development company based in Cornwall. They believe that being agile has played an instrumental part in their success and they …"
-categories: ["News","The Headforwards Team"]
-tags: ["Agile","Agile on the Beach","agile profiler","Craig Girvan","Headforwards","open agile profiler","toby parkins"]
+type: wordpress-blog
+path: /2015/09/headforwards-at-agile-on-the-beach
+title: 'Headforwards at Agile on the Beach'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/agile2015_0091024x730.jpg, text: 'Toby Parkins and Craig Girvan'}
+    - {image: //headforwards.com/wp-content/files_mf/agile2015_0481024x681.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/agile2015_0501024x719.jpg, text: ""}
+date: '2015-09-22T15:21:12.000Z'
+modified: '2017-11-03T10:54:26.000Z'
+excerpt: 'Lyssa, our Marketing Manager, has written the following article about Headforwards at Agile on the Beach and their talk entitled “The Open Agile Profiling System” Toby Parkins and Craig Girvan are both directors at Headforwards, an outsource software development company based in Cornwall. They believe that being agile has played an instrumental part in their success and they …'
+categories:
+    - News
+    - 'The Headforwards Team'
+tags:
+    - Agile
+    - 'Agile on the Beach'
+    - 'agile profiler'
+    - 'Craig Girvan'
+    - Headforwards
+    - 'open agile profiler'
+    - 'toby parkins'
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [Lyssa](https://uk.linkedin.com/in/lyssafeecrump), _our Marketing Manager, has written the following article about Headforwards at Agile on the Beach and their talk entitled “The Open Agile Profiling System”_
 

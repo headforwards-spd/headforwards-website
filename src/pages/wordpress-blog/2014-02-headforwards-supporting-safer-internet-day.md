@@ -1,17 +1,25 @@
 ---
-type: "wordpress-blog"
-path: "/2014/02/headforwards-supporting-safer-internet-day"
-title: "Headforwards Supporting Safer Internet Day"
-date: "2014-02-11T18:01:28.000Z"
-modified: "2015-09-01T16:15:46.000Z"
-excerpt: "Safer Internet Day (SID) is organised by the joint Insafe/INHOPE network, with the support of the European Commission each February to promote safer and more responsible use of online technology and mobile devices, especially among children and young people. Celebrated on the second day of the second week of the second month, each year on …"
-categories: ["Informational","News","The Headforwards Team"]
+type: wordpress-blog
+path: /2014/02/headforwards-supporting-safer-internet-day
+title: 'Headforwards Supporting Safer Internet Day'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssaferinternetday.jpg, text: 'Headforwards Supports Safer Internet Day'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardssoftwaredevelopment32.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscomputerphonespeaker.jpg, text: ""}
+date: '2014-02-11T18:01:28.000Z'
+modified: '2015-09-01T16:15:46.000Z'
+excerpt: 'Safer Internet Day (SID) is organised by the joint Insafe/INHOPE network, with the support of the European Commission each February to promote safer and more responsible use of online technology and mobile devices, especially among children and young people. Celebrated on the second day of the second week of the second month, each year on …'
+categories:
+    - Informational
+    - News
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "e83942f5-3f47-50f6-ab58-7fef99205f81"
-  slug: "toby"
-  name: "Toby"
-  path: "/author/toby/"
+    id: e83942f5-3f47-50f6-ab58-7fef99205f81
+    slug: toby
+    name: Toby
+    path: /author/toby/
+
 ---
 [Safer Internet Day](http://www.saferinternet.org/safer-internet-day) (SID) is organised by the joint [Insafe/INHOPE](http://www.saferinternet.org/insafe-inhope-resources) network, with the support of the European Commission each February to promote safer and more responsible use of online technology and mobile devices, especially among children and young people.
 

@@ -1,17 +1,26 @@
 ---
-type: "wordpress-blog"
-path: "/2018/03/agile-on-the-beach-code-retreat"
-title: "Agile Code Retreat – Two Days of Enhancing Software Development Practises"
-date: "2018-03-28T09:07:39.000Z"
-modified: "2018-04-05T07:54:50.000Z"
-excerpt: "The Agile Code Retreat is a 2-day event where participants study and practice different tools and methodologies used in software development. The first ever retreat was run by Jon Jagger who specialises in practice, process, TDD, and complex-adaptive systems-thinking and is known for his collaborative development tool: Cyber-Dojo. Co-hosting with Jon was Kevlin Henney whose development …"
-categories: ["Agile","News","Team adventures","The Headforwards Team"]
+type: wordpress-blog
+path: /2018/03/agile-on-the-beach-code-retreat
+title: 'Agile Code Retreat – Two Days of Enhancing Software Development Practises'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/coderetreat70.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/coderetreat43.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/coderetreat25.jpg, text: ""}
+date: '2018-03-28T09:07:39.000Z'
+modified: '2018-04-05T07:54:50.000Z'
+excerpt: 'The Agile Code Retreat is a 2-day event where participants study and practice different tools and methodologies used in software development. The first ever retreat was run by Jon Jagger who specialises in practice, process, TDD, and complex-adaptive systems-thinking and is known for his collaborative development tool: Cyber-Dojo. Co-hosting with Jon was Kevlin Henney whose development …'
+categories:
+    - Agile
+    - News
+    - 'Team adventures'
+    - 'The Headforwards Team'
 tags: []
 author:
-  id: "ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac"
-  slug: "jake"
-  name: "Jake Kimpton"
-  path: "/author/jake/"
+    id: ccc5e2bb-ae99-57b8-bc21-de8892c1d0ac
+    slug: jake
+    name: 'Jake Kimpton'
+    path: /author/jake/
+
 ---
 The Agile Code Retreat is a 2-day event where participants study and practice different tools and methodologies used in software development. The first ever retreat was run by **Jon Jagger** who specialises in practice, process, TDD, and complex-adaptive systems-thinking and is known for his collaborative development tool: Cyber-Dojo. Co-hosting with Jon was **Kevlin Henney** whose development interests are in patterns, programming, practice and process. A few lucky members of our team were able attend this year. Here are some of their thoughts and findings.
 

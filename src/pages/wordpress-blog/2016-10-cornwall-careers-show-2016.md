@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2016/10/cornwall-careers-show-2016"
-title: "Cornwall Careers Show 2016"
-date: "2016-10-19T13:36:28.000Z"
-modified: "2017-11-03T10:52:52.000Z"
-excerpt: "The Cornwall Careers Show 2016 took place on Wednesday and Thursday last week. Software Cornwall had a stand and, together with other volunteers from the Software Cornwall community, a few members of the Headforwards team spent the two days there. The Royal Cornwall showground was filled with over 100 different organisations and 3300 students from 24 schools visited over …"
-categories: ["Cornwall","News"]
+type: wordpress-blog
+path: /2016/10/cornwall-careers-show-2016
+title: 'Cornwall Careers Show 2016'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscornwallcareersshow2016grouprobots.jpg, text: 'Cornwall Careers Show 2016'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscornwallcareersshow2016view.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscornwallcareersshowgroup1.jpg, text: ""}
+date: '2016-10-19T13:36:28.000Z'
+modified: '2017-11-03T10:52:52.000Z'
+excerpt: 'The Cornwall Careers Show 2016 took place on Wednesday and Thursday last week. Software Cornwall had a stand and, together with other volunteers from the Software Cornwall community, a few members of the Headforwards team spent the two days there. The Royal Cornwall showground was filled with over 100 different organisations and 3300 students from 24 schools visited over …'
+categories:
+    - Cornwall
+    - News
 tags: []
 author:
-  id: "0b897961-f4cb-5d8b-a38c-fcccfd76e946"
-  slug: "jeni"
-  name: "Jeni Henthorn"
-  path: "/author/jeni/"
+    id: 0b897961-f4cb-5d8b-a38c-fcccfd76e946
+    slug: jeni
+    name: 'Jeni Henthorn'
+    path: /author/jeni/
+
 ---
 The [Cornwall Careers Show 2016](https://www.cswgroup.co.uk/cornwall-careers-show-2016/) took place on Wednesday and Thursday last week. [Software Cornwall](https://www.softwarecornwall.org/) had a stand and, together with other volunteers from the Software Cornwall community, a few members of the Headforwards team spent the two days there.  
 The Royal Cornwall showground was filled with over 100 different organisations and 3300 students from 24 schools visited over the two days. It has been a great opportunity to make connections with potential future employees. Equally is has been fantastic for those students to see the myriad of different opportunities available to them, many of which they may never have previously considered.  

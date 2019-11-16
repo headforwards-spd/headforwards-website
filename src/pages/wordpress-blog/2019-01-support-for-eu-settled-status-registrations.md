@@ -1,17 +1,23 @@
 ---
-type: "wordpress-blog"
-path: "/2019/01/support-for-eu-settled-status-registrations"
-title: "Support for EU Settled Status Registrations"
-date: "2019-01-07T12:15:50.000Z"
-modified: "2019-01-07T12:37:57.000Z"
-excerpt: "The Government recently announced a registration scheme for EU migrant workers and their families. This wasn’t really expected and after the Government previously have said they would support EU residents in the UK. At Headforwards we’re really lucky to have people from a wide number of nationalities. Diversity is well recognised in improving the capability …"
-categories: ["News"]
+type: wordpress-blog
+path: /2019/01/support-for-eu-settled-status-registrations
+title: 'Support for EU Settled Status Registrations'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/1546861776_magicfields_header_image_image_1_1.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/1546861917_magicfields_header_image_image_2_1.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/1546861959_magicfields_header_image_image_3_1.jpg, text: ""}
+date: '2019-01-07T12:15:50.000Z'
+modified: '2019-01-07T12:37:57.000Z'
+excerpt: 'The Government recently announced a registration scheme for EU migrant workers and their families. This wasn’t really expected and after the Government previously have said they would support EU residents in the UK. At Headforwards we’re really lucky to have people from a wide number of nationalities. Diversity is well recognised in improving the capability …'
+categories:
+    - News
 tags: []
 author:
-  id: "0e91a2c5-daac-5f08-b1af-f72185e61075"
-  slug: "uknetweb"
-  name: "uknetweb"
-  path: "/author/uknetweb/"
+    id: 0e91a2c5-daac-5f08-b1af-f72185e61075
+    slug: uknetweb
+    name: uknetweb
+    path: /author/uknetweb/
+
 ---
 The Government recently announced a registration scheme for EU migrant workers and their families. This wasn’t really expected and after the Government previously have said they would support EU residents in the UK.
 

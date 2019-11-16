@@ -1,17 +1,24 @@
 ---
-type: "wordpress-blog"
-path: "/2016/04/cornwall-the-unlikely-high-tech-hub"
-title: "Cornwall: The Unlikely High-Tech Hub"
-date: "2016-04-20T14:27:58.000Z"
-modified: "2017-11-03T10:53:49.000Z"
-excerpt: "By ContentLive The below recent article posted by ContentLive discusses the surprising growth of the tech sector in Cornwall: Superfast broadband and a growing software industry are turning Cornwall into a hive of activity for technology companies. The Cornish village of the Lizard is about as far away as an English business could be from the …"
-categories: ["Cornwall","News"]
+type: wordpress-blog
+path: /2016/04/cornwall-the-unlikely-high-tech-hub
+title: 'Cornwall: The Unlikely High-Tech Hub'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardscornishlandscape.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/stmichaelsmountheadforwards.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardstouchscreenipad.jpg, text: ""}
+date: '2016-04-20T14:27:58.000Z'
+modified: '2017-11-03T10:53:49.000Z'
+excerpt: 'By ContentLive The below recent article posted by ContentLive discusses the surprising growth of the tech sector in Cornwall: Superfast broadband and a growing software industry are turning Cornwall into a hive of activity for technology companies. The Cornish village of the Lizard is about as far away as an English business could be from the …'
+categories:
+    - Cornwall
+    - News
 tags: []
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 [By ContentLive](http://rbs.contentlive.co.uk/content/2bfd7edd-2486-b7e9-8bc5-681d11c088c9)
 -------------------------------------------------------------------------------------------

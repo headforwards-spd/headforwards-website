@@ -1,17 +1,36 @@
 ---
-type: "wordpress-blog"
-path: "/2015/06/team-beach-bbq-of-2015"
-title: "First Headforwards Team Beach BBQ of 2015"
-date: "2015-06-30T10:46:17.000Z"
-modified: "2015-09-01T14:16:44.000Z"
-excerpt: "On Friday 19th June Headforwards organised a beach BBQ  for the team and their families. So at 1730 we shut down our computers, collected our loved ones and headed to Trevaunance Cove, in St Agnes.  The sun was shining and it was beautifully warm, perfect beach weather! Even though the tide was pretty high we all …"
-categories: ["Cornwall","Team adventures","The Headforwards Team"]
-tags: ["Beach","Beach BBQ","Cornwall","Headforwards","Onshore Outsourcing","onshore software development","software companies cornwall","software companies uk","software jobs cornwall","Team","Teambuilding"]
+type: wordpress-blog
+path: /2015/06/team-beach-bbq-of-2015
+title: 'First Headforwards Team Beach BBQ of 2015'
+headerImages:
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbeachbbq90.jpg, text: 'Beach BBQ'}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbeachbbqstagnes.jpg, text: ""}
+    - {image: //headforwards.com/wp-content/files_mf/headforwardsbeachbbqtrevaunancecove.jpg, text: ""}
+date: '2015-06-30T10:46:17.000Z'
+modified: '2015-09-01T14:16:44.000Z'
+excerpt: 'On Friday 19th June Headforwards organised a beach BBQ  for the team and their families. So at 1730 we shut down our computers, collected our loved ones and headed to Trevaunance Cove, in St Agnes.  The sun was shining and it was beautifully warm, perfect beach weather! Even though the tide was pretty high we all …'
+categories:
+    - Cornwall
+    - 'Team adventures'
+    - 'The Headforwards Team'
+tags:
+    - Beach
+    - 'Beach BBQ'
+    - Cornwall
+    - Headforwards
+    - 'Onshore Outsourcing'
+    - 'onshore software development'
+    - 'software companies cornwall'
+    - 'software companies uk'
+    - 'software jobs cornwall'
+    - Team
+    - Teambuilding
 author:
-  id: "0c471ce3-c08d-545b-9457-33251e971504"
-  slug: "lyssa"
-  name: "Lyssa Crump"
-  path: "/author/lyssa/"
+    id: 0c471ce3-c08d-545b-9457-33251e971504
+    slug: lyssa
+    name: 'Lyssa Crump'
+    path: /author/lyssa/
+
 ---
 On Friday 19th June Headforwards organised a beach BBQ  for the team and their families.  
 So at 1730 we shut down our computers, collected our loved ones and headed to [Trevaunance Cove](https://www.visitcornwall.com/beaches/north-cornwall/st-agnes/trevaunance-cove-beach#.VYfSlRNVhBc), in St Agnes. 
