@@ -31,51 +31,35 @@ We believe in people. Team happiness is extremely important to us, that is why 
 
 If you want to take a longer lunch break to go surfing, you can, you just make up the time. Maybe you'd like to play Lasertag, badminton or go for a run. We have lunchtime clubs set up for this and showers on site. You may prefer the robot club where you can develop & build robots using Raspberry Pis. We try to make the most of our amazing location with beach BBQs after work and an end of year festival called [Headstock](https://www.youtube.com/watch?v=n2GL8sMAOKA).
 
-[
-
-](https://www.headforwards.com/advantages-working-headforwards/)
+[](https://www.headforwards.com/advantages-working-headforwards/)
 
 ##### [Flexible Hours](https://www.headforwards.com/advantages-working-headforwards/)
 
-[
-
-](https://www.headforwards.com/advantages-working-headforwards/)
+[](https://www.headforwards.com/advantages-working-headforwards/)
 
 ##### [Gym Discount](https://www.headforwards.com/advantages-working-headforwards/)
 
-[
-
-](https://www.headforwards.com/advantages-working-headforwards/)
+[](https://www.headforwards.com/advantages-working-headforwards/)
 
 ##### [Monthly Socials](https://www.headforwards.com/advantages-working-headforwards/)
 
-[
-
-](https://www.headforwards.com/advantages-working-headforwards/)
+[](https://www.headforwards.com/advantages-working-headforwards/)
 
 ##### [Childcare Vouchers](https://www.headforwards.com/advantages-working-headforwards/)
 
-[
-
-](https://www.headforwards.com/advantages-working-headforwards/)
+[](https://www.headforwards.com/advantages-working-headforwards/)
 
 ##### [Fresh Fruit](https://www.headforwards.com/advantages-working-headforwards/)
 
-[
-
-](https://www.headforwards.com/advantages-working-headforwards/)
+[](https://www.headforwards.com/advantages-working-headforwards/)
 
 ##### [Bike Scheme](https://www.headforwards.com/advantages-working-headforwards/)
 
-[
-
-](https://www.headforwards.com/advantages-working-headforwards/)
+[](https://www.headforwards.com/advantages-working-headforwards/)
 
 ##### [Tech Conferences](https://www.headforwards.com/advantages-working-headforwards/)
 
-[
-
-](https://www.headforwards.com/advantages-working-headforwards/)
+[](https://www.headforwards.com/advantages-working-headforwards/)
 
 ##### [Fresh Coffee](https://www.headforwards.com/advantages-working-headforwards/)
 

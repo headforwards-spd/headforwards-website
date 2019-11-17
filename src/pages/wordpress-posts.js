@@ -1,8 +1,8 @@
-import { graphql }                from 'gatsby';
+import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
-import React                      from 'react';
-import Layout                     from '../components/page-layout/layout';
-import NewsPageTemplate           from '../components/page-templates/wordpress-post/news/news.template';
+import React from 'react';
+import Layout from '../components/page-layout/layout';
+import NewsPageTemplate from '../components/page-templates/wordpress-post/news/news.template';
 
 export default NewsPage;
 

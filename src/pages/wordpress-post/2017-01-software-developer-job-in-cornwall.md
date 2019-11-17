@@ -37,8 +37,7 @@ Do you want to be part of this technical hub?
 We have a number of exciting positions available here at Headforwards HQ.
 
 [.NET Developer Job  
-](https://www.headforwards.com/net-developer-job/)[  
-](https://www.headforwards.com/net-developer-job/)We have a number of positions available for .NET developers who would be working on a long term project for one of our clients, a national healthcare company. Are you skilled with .NET, C#, SQL and JavaScript? This could be the role for you.
+](https://www.headforwards.com/net-developer-job/)[](https://www.headforwards.com/net-developer-job/)We have a number of positions available for .NET developers who would be working on a long term project for one of our clients, a national healthcare company. Are you skilled with .NET, C#, SQL and JavaScript? This could be the role for you.
 
 [Perl Developer Job  
 ](https://www.headforwards.com/perl-developer-job/)

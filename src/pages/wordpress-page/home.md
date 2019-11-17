@@ -70,27 +70,19 @@ We provide feedback and support at each stage of our recruitment process. We als
 
 * * *
 
-[
-
-](https://www.headforwards.com/2017/05/triple-win-cornwall-business-awards-2017/)
+[](https://www.headforwards.com/2017/05/triple-win-cornwall-business-awards-2017/)
 
 ##### [Employer of the Year 2017](https://www.headforwards.com/2017/05/triple-win-cornwall-business-awards-2017/)
 
-[
-
-](https://www.headforwards.com/2017/05/triple-win-cornwall-business-awards-2017/)
+[](https://www.headforwards.com/2017/05/triple-win-cornwall-business-awards-2017/)
 
 ##### [Most Dynamic Growth 2017](https://www.headforwards.com/2017/05/triple-win-cornwall-business-awards-2017/)
 
-[
-
-](https://www.headforwards.com/2017/05/triple-win-cornwall-business-awards-2017/)
+[](https://www.headforwards.com/2017/05/triple-win-cornwall-business-awards-2017/)
 
 ##### [Winner of Winners 2017](https://www.headforwards.com/2017/05/triple-win-cornwall-business-awards-2017/)
 
-[
-
-](https://www.headforwards.com/2016/12/cornish-business-year-2016/)
+[](https://www.headforwards.com/2016/12/cornish-business-year-2016/)
 
 ##### [Business of the Year 2016](https://www.headforwards.com/2016/12/cornish-business-year-2016/)
 

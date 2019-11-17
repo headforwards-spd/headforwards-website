@@ -46,8 +46,7 @@ Win a Free Ticket to Agile on the Beach 2017 Terms and Conditions:
 7\. _We can’t accept any responsibility for entries that are not received for any reason._
 
 8. _The rules of the competition are as follows:_  
-_Enter by clicking the button above and entering your contact details. [  
-](mailto:competition@headforwards.com)_  
+_Enter by clicking the button above and entering your contact details. [](mailto:competition@headforwards.com)_  
 _The promoter reserves the right to cancel or amend the competition and these terms and conditions without notice, any changes to the competition will be notified to the entrants as soon as possible._  
 _The promoter is not responsible for inaccurate prize details supplied to any entrant by any third party connected with this competition._
 
