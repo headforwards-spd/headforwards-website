@@ -7,7 +7,7 @@ categories: []
 tags: []
 
 ---
-.content .single-col:nth-of-type(1) { display:none; }
+
 
 Applying to Work at Headforwards – Our Process
 ==============================================
