@@ -111,7 +111,7 @@ components:
     type: twoImageComponent
   - jobTitle: Software Developer
     name: Emma Grimes
-    profilePic: /uploads/jumbotron.jpg
+    profilePic: /uploads/girl.png
     quote: >-
       If something changes in our client’s world, they've got to adapt, they've
       got to look for a new competitive advantage in their software. And that’s
