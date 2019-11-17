@@ -3,8 +3,6 @@ type: wordpress-page
 path: /contactus
 title: Contact
 excerpt: 'How to contact Headforwards We are a Cornish company who pride ourselves on our Agile excellence and ability to form effective teams, specifically for your individual project. We know how to make onshore, outsourced software development work and our primary aim is to deliver custom software that increases our clients business value. If you are interested …'
-categories: []
-tags: []
 
 ---
 How to contact Headforwards

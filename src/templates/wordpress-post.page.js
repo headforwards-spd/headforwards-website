@@ -2,11 +2,11 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import { shape, string, arrayOf } from 'prop-types';
 import Layout from '../components/page-layout/layout';
-import WordpressBlogPageTemplate from '../components/page-templates/wordpress-blog-page/wordpress-blog-page.template';
+import WordpressPostTemplate from '../components/page-templates/wordpress-post/wordpress-post.template';
 
-export default WordpressBlogPage;
+export default WordpressPost;
 
-WordpressBlogPage.propTypes = {
+WordpressPost.propTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
@@ -23,7 +23,7 @@ WordpressBlogPage.propTypes = {
 };
 
 export const query = graphql`
-    query WordpressPage($id: String!, $prevId: String!, $nextId: String!) {
+    query WordpressPost($id: String!, $prevId: String!, $nextId: String!) {
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
@@ -59,7 +59,7 @@ export const query = graphql`
     }
 `;
 
-function WordpressBlogPage({ data }) {
+function WordpressPost({ data }) {
     const { page, prev, next } = data;
     const { frontmatter, html } = page;
     const { title, headerImages } = frontmatter;
@@ -81,7 +81,7 @@ function WordpressBlogPage({ data }) {
 
     return (
         <Layout {...headerProps}>
-            <WordpressBlogPageTemplate {...templateProps} />
+            <WordpressPostTemplate {...templateProps} />
         </Layout>
     );
 }

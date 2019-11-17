@@ -3,8 +3,6 @@ type: wordpress-page
 path: /software-tester-job
 title: 'Software Tester Job'
 excerpt: 'Software Tester Job (Status: Closed)   Description: Headforwards is an outsource software development company based in Cornwall, South West England. Cornwall is fast becoming a hub for Agile software development. It is home to the renowned Agile conference Agile on the Beach and it was also ranked as the second fastest growing Tech Hub in the UK in …'
-categories: []
-tags: []
 
 ---
 Software Tester Job (Status: Closed)

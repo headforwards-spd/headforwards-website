@@ -3,8 +3,6 @@ type: wordpress-page
 path: /our-values
 title: 'Our Values'
 excerpt: 'Our values It is our belief and experience that successful organisations and businesses are those that have a true understanding and passion of who they are and what they have set out to achieve. At Headforwards this understanding and passion is firmly rooted in our three core values:   Happy Clients Great Software Effective Software …'
-categories: []
-tags: []
 
 ---
 Our values

@@ -3,8 +3,6 @@ type: wordpress-page
 path: /stage-two-application-form
 title: 'Stage Two Application Form'
 excerpt: ""
-categories: []
-tags: []
 
 ---
      

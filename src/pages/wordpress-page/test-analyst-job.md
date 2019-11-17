@@ -3,8 +3,6 @@ type: wordpress-page
 path: /test-analyst-job
 title: 'Test Analyst Job'
 excerpt: 'Test Analyst Job (Status: Closed) Headforwards are an outsource software development company based in Cornwall, South West England. Cornwall is fast becoming a well known area for software development. The recent Tech Nation report has recognised it as the 2nd fastest growing tech hub in the UK. Headforwards value people above all else, and work hard to ensure …'
-categories: []
-tags: []
 
 ---
 Test Analyst Job (Status: Closed)

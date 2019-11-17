@@ -3,8 +3,6 @@ type: wordpress-page
 path: /scrum-master-job
 title: 'Scrum Master Job'
 excerpt: 'Scrum Master Job (Status: Closed) Headforwards are an outsource software development company based in Cornwall, South West England. Cornwall is fast becoming a hub for agile software development. It is home to the renowned Agile conference Agile on the Beach. It was also ranked as the second fastest growing Tech Hub in the UK in the Tech …'
-categories: []
-tags: []
 
 ---
 Scrum Master Job (Status: Closed)

@@ -3,11 +3,8 @@ type: wordpress-page
 path: /headtalks
 title: 'Headtalks – The Internal Technical Conference'
 excerpt: ""
-categories: []
-tags: []
 
 ---
-
 
 ### Headtalks – The Internal Technical Conference
 

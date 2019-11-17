@@ -3,8 +3,6 @@ type: wordpress-page
 path: /location
 title: Location
 excerpt: 'Location We are based in a highly desirable location in Cornwall, the South West part of the UK. Currently, we work from the Pool Innovation Centre which has fibre connectivity to ensure high productivity combined with a high-quality working environment. Being close to the sea is a privilege that gives us inspiration to think faster …'
-categories: []
-tags: []
 
 ---
 Location

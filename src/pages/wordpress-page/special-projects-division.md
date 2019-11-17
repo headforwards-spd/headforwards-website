@@ -3,8 +3,6 @@ type: wordpress-page
 path: /special-projects-division
 title: 'Special Projects Division'
 excerpt: 'Special Projects Division Our mission at Headforwards is to build long-term relationships. We are entirely focused on the goals of our clients to guarantee project success. We thrive when creating software that delivers tangible business value to our clients, and we’re fortunate enough to be able to do it in a place we love and …'
-categories: []
-tags: []
 
 ---
 **Special Projects Division**

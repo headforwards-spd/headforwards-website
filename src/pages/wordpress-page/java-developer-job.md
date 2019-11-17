@@ -3,8 +3,6 @@ type: wordpress-page
 path: /java-developer-job
 title: 'Java Developer Job'
 excerpt: 'Java Developer Job (Status: Closed) Headforwards are an Outsource Software Development company based in Cornwall, a county that is showing astounding growth in the Tech sector. It was recently featured in the Tech Nation report as the second fastest growing tech cluster in the UK. The successful candidates will be joining an organisation that has a …'
-categories: []
-tags: []
 
 ---
 Java Developer Job (Status: Closed)

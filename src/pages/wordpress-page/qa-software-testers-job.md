@@ -3,8 +3,6 @@ type: wordpress-page
 path: /qa-software-testers-job
 title: 'QA Software Tester Job'
 excerpt: 'QA Software Tester Job (Status: Closed) Headforwards are an outsource software development company and they are looking for a number of QA Software Testers to join their team. This positions will be based in Cornwall, South West England which is famous for its beaches, rugged coastline and spectacular cuisine. Cornwall is gaining a reputation as …'
-categories: []
-tags: []
 
 ---
 QA Software Tester Job (Status: Closed)

@@ -170,15 +170,27 @@ collections:
           - {label: "Youtube URL",  name: youtubeURL, widget: string, required: false}
           - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
 
+  - label: "WordPress Pages"
+    label_singular: "WordPress Page"
+    name: wordpress-pages
+    description: "Imported old WordPress pages."
+    folder: "src/pages/wordpress-page"
+    identifier_field: title
+    fields:
+      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "Type", name: type, widget: hidden, default: "wordpress-page"}
+      - {label: "Page Title", name: title, widget: string}
+      - {label: "Copy", name: body, widget: markdown}
+
   - label: "WordPress Posts"
     label_singular: "WordPress Post"
     name: wordpress-posts
     description: "Imported old WordPress blog posts."
-    folder: "src/pages/wordpress-blog"
+    folder: "src/pages/wordpress-post"
     identifier_field: title
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - {label: "Type", name: type, widget: hidden, default: "wordpress"}
+      - {label: "Type", name: type, widget: hidden, default: "wordpress-post"}
       - {label: "Page Title", name: title, widget: string}
       - {label: "Copy", name: body, widget: markdown}
 

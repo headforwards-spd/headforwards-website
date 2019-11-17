@@ -3,8 +3,6 @@ type: wordpress-page
 path: /developer-security-specialism
 title: 'Developer: Security Specialism'
 excerpt: 'Developer: Security Specialism (Status: Closed) About Headforwards Headforwards is an outsource software development company based in Cornwall, South West England. Not only is Cornwall famous for its stunning scenery, but it’s fast becoming known as a thriving Tech Hub – ranked as the second fastest growing tech cluster in the UK in the 2016 Tech Nation report. Cornwall is …'
-categories: []
-tags: []
 
 ---
 **Developer: Security Specialism  

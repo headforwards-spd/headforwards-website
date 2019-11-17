@@ -3,8 +3,6 @@ type: wordpress-page
 path: /python-developer-job
 title: 'Python Developer Job'
 excerpt: 'Python Developer Job (Status: Closed) About Headforwards: We are an outsource software development company based in Cornwall, South West England. Cornwall is fast becoming a hub for Agile software development. It is home to the renowned Agile conference Agile on the Beach. It was also ranked as the second fastest growing Tech Hub in the UK in the 2016 Tech …'
-categories: []
-tags: []
 
 ---
 Python Developer Job

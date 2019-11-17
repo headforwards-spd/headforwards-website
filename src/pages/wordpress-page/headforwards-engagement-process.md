@@ -3,8 +3,6 @@ type: wordpress-page
 path: /headforwards-engagement-process
 title: 'Headforwards Engagement Process'
 excerpt: 'The Headforwards engagement process Defining how we will partner with you, to deliver quality software. We seek to establish productive and long-standing relationships with our clients, based on trust and mutual benefit. As soon as we understand what you want to achieve, we’ll work with you to agree the most appropriate engagement model and the resources required to meet your needs. …'
-categories: []
-tags: []
 
 ---
 The Headforwards engagement process

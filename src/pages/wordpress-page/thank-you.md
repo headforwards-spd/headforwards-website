@@ -3,8 +3,6 @@ type: wordpress-page
 path: /thank-you
 title: 'Thank you'
 excerpt: 'Thank you Thank you for applying to become the newest member of the Headforwards team. We will be in touch with you shortly. If you are interested in finding out more about what it is like to be part of the Headforwards team, why not look at our ‘Team Adventures‘ page to see what they …'
-categories: []
-tags: []
 
 ---
 Thank you

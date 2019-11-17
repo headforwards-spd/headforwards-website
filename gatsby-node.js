@@ -82,7 +82,7 @@ function getData(graphql) {
     return graphql(`
         {
             posts: allMarkdownRemark(
-                filter: { frontmatter: { type: { eq: "wordpress-blog" } } }
+                filter: { frontmatter: { type: { eq: "wordpress-post" } } }
                 sort: { fields: frontmatter___date, order: DESC }
             ) {
                 nodes {
@@ -97,7 +97,7 @@ function getData(graphql) {
                 }
             }
 
-            pages: allMarkdownRemark(filter: { frontmatter: { type: { eq: "design" } } }) {
+            pages: allMarkdownRemark(filter: { frontmatter: { type: { in: ["wordpress-page", "design"] } } }) {
                 nodes {
                     id
                     fields {
@@ -107,6 +107,7 @@ function getData(graphql) {
                         type
                         path
                     }
+                    html
                 }
             }
 

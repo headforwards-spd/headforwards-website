@@ -3,8 +3,6 @@ type: wordpress-page
 path: /web-designer-old
 title: 'Web Designer'
 excerpt: 'Web Designer (level: Experienced – status: Closed) Description: Headforwards are looking for a front end web designer with experience of UI design and UX processes. The ideal candidate will have a  level of understanding of programming processes and languages. This role will be working on very high end web application development for some of the …'
-categories: []
-tags: []
 
 ---
 Web Designer (level: Experienced – status: Closed)

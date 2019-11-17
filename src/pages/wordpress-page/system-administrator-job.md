@@ -3,8 +3,6 @@ type: wordpress-page
 path: /system-administrator-job
 title: 'System Administrator Job'
 excerpt: ' System Administrator Job (Status: Closed) Description: Headforwards are an outsource software development company and they are looking for an System Administrator to join their team. This position will be based in Cornwall, South West England which is famous for its beaches, rugged coastline and spectacular cuisine. Cornwall is gaining a reputation as a fantastic place for software …'
-categories: []
-tags: []
 
 ---
  System Administrator Job (Status: Closed)

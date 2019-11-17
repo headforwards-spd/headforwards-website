@@ -3,8 +3,6 @@ type: wordpress-page
 path: /integration-services-architect
 title: 'Integration Services Architect'
 excerpt: 'Integration Services Architect (level: Experienced – status: Closed) Headforwards require a Solutions Architect to lead an agile team of Integration specialists. Our client (a blue-chip healthcare provider) has a clear IT strategy, strong governance and is progressing towards a fully Service Oriented Architecture (SOA).   The ideal candidate for this role will already have experience of leading the implementation …'
-categories: []
-tags: []
 
 ---
 Integration Services Architect

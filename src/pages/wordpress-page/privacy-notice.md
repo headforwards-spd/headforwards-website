@@ -3,8 +3,6 @@ type: wordpress-page
 path: /privacy-notice
 title: 'Privacy Notice'
 excerpt: 'Privacy Notice This privacy notice is here to explain how we (Headforwards Solutions LTD) use and protect any information you give us whilst using our site.We want to ensure that your privacy is protected at all times. We will only ever use your data in the way you intended it when you provided it to …'
-categories: []
-tags: []
 
 ---
 **Privacy Notice**

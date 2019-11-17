@@ -3,8 +3,6 @@ type: wordpress-page
 path: /marketing-assistant-job
 title: 'Marketing Assistant Job'
 excerpt: 'Marketing Assistant Job (Status: Closed) Are you an experienced marketeer looking for a rewarding new marketing assistant job? Headforwards have an exciting career opportunity available for you! Headforwards are an outsource software development company based in Cornwall, South West England. Cornwall is renowned for its beautiful scenery, stunning beaches and relaxed attitude. However it is also an …'
-categories: []
-tags: []
 
 ---
 Marketing Assistant Job (Status: Closed)

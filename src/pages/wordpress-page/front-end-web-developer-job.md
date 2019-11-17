@@ -3,8 +3,6 @@ type: wordpress-page
 path: /front-end-web-developer-job
 title: 'Front End Web Developer Job'
 excerpt: ' Front End Developer Job (Status: Open) Description: Headforwards are an exciting outsource software development company and they are looking for Front End Web Developers to join their team. This position will be based in Cornwall, South West England, which is famous for its beaches, rugged coastline, and spectacular cuisine. The successful candidate will be joining …'
-categories: []
-tags: []
 
 ---
  Front End Developer Job (Status: Open)

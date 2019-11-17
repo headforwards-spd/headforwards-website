@@ -3,8 +3,6 @@ type: wordpress-page
 path: /senior-vmware-engineer
 title: 'Senior VMware Engineer'
 excerpt: 'Senior VMware Engineer (level: Experienced – status: Closed) Description: Headforwards are looking to appoint a Senior VMware Engineer to work in the Cornwall office, but as part of the European team managing part of a global cloud project. We have been developing the Operating Support System (OSS) software that runs parts of a global cloud …'
-categories: []
-tags: []
 
 ---
 Senior VMware Engineer (level: Experienced – status: Closed)

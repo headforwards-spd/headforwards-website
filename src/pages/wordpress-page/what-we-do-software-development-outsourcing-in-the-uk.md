@@ -3,8 +3,6 @@ type: wordpress-page
 path: /what-we-do-software-development-outsourcing-in-the-uk
 title: 'What We Do: Software Development Outsourcing in the UK'
 excerpt: 'What We Do: Software Development Outsourcing in the UK We are an Outsource Software Development Company who excel in bringing together talented developers and forming teams that are empowered to deliver quality software. We specialise in creating dedicated teams to work on long-term projects in partnership with our clients, in an Agile way. However, we are aware …'
-categories: []
-tags: []
 
 ---
 What We Do: Software Development Outsourcing in the UK

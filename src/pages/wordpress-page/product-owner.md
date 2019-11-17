@@ -3,8 +3,6 @@ type: wordpress-page
 path: /product-owner
 title: 'Product Owner'
 excerpt: 'Product Owner (Status: Closed) Description: Working with an established national health care client, Headforwards are looking to appoint a product owner to work with a new .NET development team on a range of exciting projects. The successful candidate will be based in our Cornwall office. Occasional travel within the UK will be required as you …'
-categories: []
-tags: []
 
 ---
 Product Owner

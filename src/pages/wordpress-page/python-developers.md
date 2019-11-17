@@ -3,8 +3,6 @@ type: wordpress-page
 path: /python-developers
 title: 'C / C++ or Python Developers'
 excerpt: 'C/C++ or Python Developers (level: Varied – status: Closed) Headforwards are looking for a range of developers with various experience levels for an ongoing project. In particular Python Developers although candidates with C or C++ experience will all be considered. Some front experience with web technologies such as HTML/CSS/JQuery/AJAX/Javascript/HTML5 will be a useful additional knowledge. This …'
-categories: []
-tags: []
 
 ---
 **C/C++ or Python Developers**

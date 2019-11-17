@@ -3,8 +3,6 @@ type: wordpress-page
 path: /net-developer-job
 title: '.NET Developer Job – Healthcare'
 excerpt: ' .NET Developer Job – Healthcare  (Status: Open) About Headforwards: We are an outsource software development company based in Cornwall, South West England. Combining Agile philosophies and practices with our core values of happy clients, great software, and effective software teams has led to continual strong growth across the business. From a team of 5 in 2011 we are …'
-categories: []
-tags: []
 
 ---
  .NET Developer Job – Healthcare  (Status: Open)

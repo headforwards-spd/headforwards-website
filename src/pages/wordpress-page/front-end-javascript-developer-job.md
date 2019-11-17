@@ -3,8 +3,6 @@ type: wordpress-page
 path: /front-end-javascript-developer-job
 title: 'Front End JavaScript Developer Job'
 excerpt: 'Front End JavaScript Developer Job (Status: Closed) Are you a front-end developer with a strong practical knowledge of JavaScript? Are you looking for an exciting new opportunity in a fast-growing company at the forefront of the Cornish tech industry? Our new vacancy could be the perfect role for you.  About Headforwards We are an outsource …'
-categories: []
-tags: []
 
 ---
 Front End JavaScript Developer Job (Status: Closed)

@@ -1,11 +1,11 @@
 import parseHtml from 'html-react-parser';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
-import styles from './wordpress-post-page.module.scss';
+import styles from './wordpress-post.module.scss';
 import Link from '../../link/link.component';
 import WordpressContent from '../../page-layout/wordpress-content/wordpress-content.component';
 
-const wordpressPostPageTemplateProps = {
+const wordpressPostTemplateProps = {
     prev: shape({
         frontmatter: shape({
             path: string,
@@ -29,17 +29,17 @@ const wordpressPostPageTemplateProps = {
     date: string.isRequired,
 };
 
-export default WordpressPostPageTemplate;
+export default WordpressPostTemplate;
 
-WordpressPostPageTemplate.propTypes = wordpressPostPageTemplateProps;
-WordpressPostPageTemplate.defaultProps = {
+WordpressPostTemplate.propTypes = wordpressPostTemplateProps;
+WordpressPostTemplate.defaultProps = {
     prev: null,
     next: null,
     categories: [],
     tags: [],
 };
 
-function WordpressPostPageTemplate({ prev, next, html, author, categories, tags, date }) {
+function WordpressPostTemplate({ prev, next, html, author, categories, tags, date }) {
     return (
         <>
             <dl className={styles.dataTable}>

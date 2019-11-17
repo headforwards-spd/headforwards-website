@@ -3,8 +3,6 @@ type: wordpress-page
 path: /headforwards-to-cornwall
 title: 'Headforwards to Cornwall'
 excerpt: 'Headforwards to Cornwall… for outstanding outsource software development in the UK   At Headforwards, we excel in bringing together talented developers and forming teams who are empowered to deliver quality software. We believe that to be successful, a business needs to have a true understanding of who they are, and what they are trying to achieve. …'
-categories: []
-tags: []
 
 ---
 **Headforwards to Cornwall…**

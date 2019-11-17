@@ -3,8 +3,6 @@ type: wordpress-page
 path: /ruby-on-rails-developer
 title: 'Ruby on Rails Developer'
 excerpt: 'Ruby on Rails Developer (status: Closed) Description: Headforwards are looking for mid to senior level Rails developer to help build the back-end for a new high-end web application. The primary app is a JSON API for a JavaScript front end; therefore the focus is much more on solid data and business logic skills than on …'
-categories: []
-tags: []
 
 ---
 Ruby on Rails Developer (status: Closed)

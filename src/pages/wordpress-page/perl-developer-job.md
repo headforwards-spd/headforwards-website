@@ -3,8 +3,6 @@ type: wordpress-page
 path: /perl-developer-job
 title: 'Perl Developer Job'
 excerpt: 'Perl Developer Job (Status: Closed) Are you an experienced Perl developer looking for your next challenge?  We are looking for a Perl developer to join our fast growing company here in Cornwall. We fully employ the use of Agile methodologies within our business to better achieve project objectives. About Headforwards: We are an outsource software …'
-categories: []
-tags: []
 
 ---
 Perl Developer Job (Status: Closed)

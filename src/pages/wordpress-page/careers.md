@@ -3,8 +3,6 @@ type: wordpress-page
 path: /careers
 title: Careers
 excerpt: 'If you don’t Headforwards then where are you going? You may be standing still or even going backwards? Are you looking for somewhere you can continue to develop and learn? Then Headforwards is the place for you. From a spark of an idea in 2011, we are about to reach a team of 100! We …'
-categories: []
-tags: []
 
 ---
 ### If you don't Headforwards then where are you going?

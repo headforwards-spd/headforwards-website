@@ -3,8 +3,6 @@ type: wordpress-page
 path: /careers-old
 title: 'Careers – old'
 excerpt: 'Software Careers at Headforwards Are you ready to take the next step in your career? Are you looking for somewhere you can develop and grow? Then take a look at the software careers at Headforwards. From a spark of an idea in 2011 we are about to reach a team of 100. Due to recently winning some …'
-categories: []
-tags: []
 
 ---
 Software Careers at Headforwards

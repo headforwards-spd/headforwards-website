@@ -3,8 +3,6 @@ type: wordpress-page
 path: /web-designer
 title: 'Web Designer'
 excerpt: 'Web Designer (Status: Closed) Headforwards are an exciting outsource software development company based in Cornwall, South West England. Cornwall is an exciting county that has a very unique culture and rich history. It is has gained a reputation for being a creative hub and it has now also been recognised as a Tech Hub. The successful candidate …'
-categories: []
-tags: []
 
 ---
 Web Designer  

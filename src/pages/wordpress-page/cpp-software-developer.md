@@ -3,8 +3,6 @@ type: wordpress-page
 path: /cpp-software-developer
 title: 'C/C++ Software Developer'
 excerpt: 'C/C++ Software Developer (level: Experienced – status: Closed) Description: Are you a C/C++ Software Developer looking for an exciting new role? Headforwards are building a number of new agile software teams for international companies. We are having discussions with two well known investment banks, both who have the requirement for developers with C/C++ as a minimum …'
-categories: []
-tags: []
 
 ---
 C/C++ Software Developer (level: Experienced – status: Closed)

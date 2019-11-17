@@ -10,18 +10,22 @@ module.exports = {
     resolve: 'gatsby-source-wordpress',
     options: {
         /*
-         * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
+         * The base URL of the WordPress site without the trailing slash and the protocol. This is required.
          * Example : 'gatsbyjsexamplewordpress.wordpress.com' or 'www.example-site.com'
          */
-        baseUrl: 'headforwards.com', // The protocol. This can be http or https.
-        protocol: 'https', // Indicates whether the site is hosted on wordpress.com.
+        baseUrl: 'headforwards.com',
+        // The protocol. This can be http or https.
+        protocol: 'https',
+        // Indicates whether the site is hosted on wordpress.com.
         // If false, then the assumption is made that the site is self hosted.
         // If true, then the plugin will source its content on wordpress.com using the JSON REST API V2.
         // If your site is hosted on wordpress.org, then set this to false.
-        hostingWPCOM: false, // If useACF is true, then the source plugin will try to import the WordPress ACF Plugin contents.
+        hostingWPCOM: false,
+        // If useACF is true, then the source plugin will try to import the WordPress ACF Plugin contents.
         // This feature is untested for sites hosted on wordpress.com.
         // Defaults to true.
-        useACF: false, // Include specific ACF Option Pages that have a set post ID
+        useACF: false,
+        // Include specific ACF Option Pages that have a set post ID
         // Regardless if an ID is set, the default options route will still be retrieved
         // Must be using V3 of ACF to REST to include these routes
         // Example: `["option_page_1", "option_page_2"]` will include the proper ACF option
@@ -59,13 +63,17 @@ module.exports = {
         // cookies: {},
         // Set verboseOutput to true to display a verbose output on `npm run develop` or `npm run build`
         // It can help you debug specific API Endpoints problems.
-        verboseOutput: false, // Set how many pages are retrieved per API request.
-        perPage: 100, // Search and Replace Urls across WordPress content.
+        verboseOutput: false,
+        // Set how many pages are retrieved per API request.
+        perPage: 100,
+        // Search and Replace Urls across WordPress content.
         // searchAndReplaceContentUrls: {
         //     sourceUrl: 'https://www.headforwards.com/wp-content',
         //     replacementUrl: '/wp-content',
-        // }, // Set how many simultaneous requests are sent at once.
-        concurrentRequests: 10, // Set WP REST API routes whitelists
+        // },
+        // Set how many simultaneous requests are sent at once.
+        concurrentRequests: 10,
+        // Set WP REST API routes whitelists
         // and blacklists using glob patterns.
         // Defaults to whitelist the routes shown
         // in the example below.
@@ -77,22 +85,29 @@ module.exports = {
         includedRoutes: [
             '**/categories',
             '**/posts',
-            // "**/pages",
+            '**/pages',
             // "**/media",
             '**/tags',
             // '**/taxonomies',
             '**/users',
-        ], // Blacklisted routes using glob patterns
+        ],
+        // Blacklisted routes using glob patterns
         // excludedRoutes: ["**/posts/1456"],
         // Set this to keep media sizes.
         // This option is particularly useful in case you need access to
         // URLs for thumbnails, or any other media detail.
         // Defaults to false
-        keepMediaSizes: false, // use a custom normalizer which is applied after the built-in ones.
+        keepMediaSizes: false,
+        // use a custom normalizer which is applied after the built-in ones.
         normalizer({ entities }) {
             const categories = entities.filter(({ __type: type }) => type === 'wordpress__CATEGORY');
             const tags = entities.filter(({ __type: type }) => type === 'wordpress__TAG');
-            const posts = entities.filter(({ __type: type }) => type === 'wordpress__POST');
+            const posts = entities.filter(
+                ({ __type: type, status }) => type === 'wordpress__POST' && status === 'publish'
+            );
+            const pages = entities.filter(
+                ({ __type: type, status }) => type === 'wordpress__PAGE' && status === 'publish'
+            );
             const authors = entities
                 .filter(({ __type: type }) => type === 'wordpress__wp_users')
                 .map(({ id, slug, name, path }) => ({
@@ -102,6 +117,37 @@ module.exports = {
                     path,
                 }));
 
+            pages.forEach(page => {
+                const {
+                    path,
+                    title,
+                    excerpt,
+                    content,
+                } = page;
+
+                const filename = `${path
+                    .split('/')
+                    .filter(value => !!value)
+                    .join('-') || 'home'}.md`;
+
+                const frontmatter = {
+                    type: 'wordpress-page',
+                    path: path.replace(/^(.*)(?:\/)$/, '$1') || '/',
+                    title: htmlEntities.decode(title),
+                    excerpt: excerpt ? getMarkdown(excerpt.replace('[&hellip;]', '…')) : '',
+                };
+                const body = content ? getMarkdown(content) : '';
+
+                const data = `---\n${YAML.stringify(frontmatter)}\n---\n${body}\n`;
+
+                fs.writeFile(
+                    `src/pages/wordpress-page/${filename}`,
+                    data,
+                    // eslint-disable-next-line no-console
+                    error => !!error && console.error(error)
+                );
+            });
+
             posts.forEach(post => {
                 const {
                     date,
@@ -109,10 +155,10 @@ module.exports = {
                     title,
                     content,
                     excerpt,
+                    metadata,
                     categories___NODE: postCategories = [],
                     tags___NODE: postTags = [],
                     author___NODE: postAuthor,
-                    metadata,
                     path,
                 } = post;
 
@@ -122,7 +168,7 @@ module.exports = {
                     .join('-')}.md`;
 
                 const frontmatter = {
-                    type: 'wordpress-blog',
+                    type: 'wordpress-post',
                     path: path.replace(/^(.*)(?:\/)$/, '$1'),
                     title: htmlEntities.decode(title),
                     headerImages: extractHeaderImages(metadata),
@@ -140,7 +186,7 @@ module.exports = {
                 const data = `---\n${YAML.stringify(frontmatter)}\n---\n${body}\n`;
 
                 fs.writeFile(
-                    `src/pages/wordpress-blog/${filename}`,
+                    `src/pages/wordpress-post/${filename}`,
                     data,
                     // eslint-disable-next-line no-console
                     error => !!error && console.error(error)

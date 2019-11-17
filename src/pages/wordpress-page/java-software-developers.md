@@ -3,8 +3,6 @@ type: wordpress-page
 path: /java-software-developers
 title: 'Java Software Developers'
 excerpt: 'Java Software Developer (level: Experienced – status: Open) Description: Headforwards are planning a new team working with a new client in the area of financial services. This role will require a full software engineering experience to include design, development, testing and implementation. Knowledge of secure coding approaches will be imperative and ability to follow team agreed …'
-categories: []
-tags: []
 
 ---
 Java Software Developer (level: Experienced – status: Open)

@@ -3,8 +3,6 @@ type: wordpress-page
 path: /net-developer-careers
 title: '.NET Developer Careers'
 excerpt: '.NET Developer Careers Are you looking for to take the next step in your .NET Developer career? We have some exciting opportunities available for you. We are an outsource software development company who specialise in forming dedicated teams of people for individual clients on long-term development contracts. This is very different to the traditional ‘agency’ …'
-categories: []
-tags: []
 
 ---
 .NET Developer Careers

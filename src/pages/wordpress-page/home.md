@@ -3,8 +3,6 @@ type: wordpress-page
 path: /home
 title: Home
 excerpt: 'Headforwards Software development outsourcing, but not as you know it… Headforwards is based in Cornwall, UK and we specialise in software development outsourcing. Our primary aim is to work with our clients to create and deliver custom software that brings them business value. We believe in working in an Agile way. We have adopted both …'
-categories: []
-tags: []
 
 ---
 Headforwards

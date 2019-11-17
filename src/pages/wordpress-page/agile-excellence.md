@@ -3,8 +3,6 @@ type: wordpress-page
 path: /agile-excellence
 title: 'Agile Excellence'
 excerpt: 'Agile excellence is something we strive for here at Headforwards. The term Agile is being used all over the software development world, but sometimes it is thought of as just a buzz word by people that may not fully understand it’s usefulness. However Agile as a philosophy, is actually fairly simple. There are many branches of …'
-categories: []
-tags: []
 
 ---
 [Agile](http://www.headforwards.com/2015/06/what-is-agile/) excellence is something we strive for here at Headforwards.

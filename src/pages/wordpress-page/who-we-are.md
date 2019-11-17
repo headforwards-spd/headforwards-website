@@ -3,8 +3,6 @@ type: wordpress-page
 path: /who-we-are
 title: 'Who We Are'
 excerpt: 'Who we are ? …the new option in software outsourcing We are the new option in software outsourcing. We are centred around Agile philosophies and practices, enabling us to integrate software teams with our customers to deliver immediate business value. We are a British software outsourcing company based in the stunning location of Cornwall. Being …'
-categories: []
-tags: []
 
 ---
 **Who we are ?**

@@ -3,8 +3,6 @@ type: wordpress-page
 path: /the-agile-manifesto
 title: 'The Agile Manifesto'
 excerpt: 'The Agile Manifesto The Agile Manifesto is also sometimes referred to as the Manifesto for Agile Software Development. It is the formal declaration of the guidelines for working in an iterative way with a people focused approach to software development. We are uncovering better ways of developing software by doing it and helping others do it. …'
-categories: []
-tags: []
 
 ---
 The Agile Manifesto

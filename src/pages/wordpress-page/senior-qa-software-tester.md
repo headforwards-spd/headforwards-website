@@ -3,8 +3,6 @@ type: wordpress-page
 path: /senior-qa-software-tester
 title: 'Senior QA Software Tester'
 excerpt: 'Senior QA Software Tester (status: Closed) Description: Working with NTT, Headforwards are looking to appoint a Senior and Quality Assurance Team Lead working in the Cornwall office, but as part of the NTT OSS European team. There are a number of projects which include some very exciting global systems and the successful applicant will gain the …'
-categories: []
-tags: []
 
 ---
 Senior QA Software Tester (status: Closed)

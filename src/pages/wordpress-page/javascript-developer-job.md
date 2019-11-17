@@ -3,8 +3,6 @@ type: wordpress-page
 path: /javascript-developer-job
 title: 'JavaScript Developer Job'
 excerpt: 'JavaScript Developer Job (Status: Open) Are you a front-end developer with a strong practical knowledge of JavaScript? Are you looking for an exciting new opportunity in a fast growing company at the forefront of the Cornish tech industry? We might have the perfect role for you About Headforwards We are an outsource software development company …'
-categories: []
-tags: []
 
 ---
 JavaScript Developer Job (Status: Open)

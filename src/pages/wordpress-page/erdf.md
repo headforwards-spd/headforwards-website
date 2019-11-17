@@ -3,8 +3,6 @@ type: wordpress-page
 path: /erdf
 title: 'European Regional Development Fund (ERDF)'
 excerpt: 'Due to rapid expansion, we have sought out a new premises to allow for an increase in organisational capacity. This extra office space will allow for the creation of new job opportunities and assist in attracting a skilled labour force to the area. It is part-funded by the European Regional Development Fund. The new space …'
-categories: []
-tags: []
 
 ---
 Due to rapid expansion, we have sought out a new premises to allow for an increase in organisational capacity. This extra office space will allow for the creation of new job opportunities and assist in attracting a skilled labour force to the area. It is part-funded by the European Regional Development Fund.

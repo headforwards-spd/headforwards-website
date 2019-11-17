@@ -3,8 +3,6 @@ type: wordpress-page
 path: /software-engineer-job
 title: 'Software Engineer Job'
 excerpt: 'Software Engineer Job (Status: Closed) Headforwards are an outsource software development company based in Cornwall, South West England. Cornwall is fast becoming a hub for agile software development and it is home to the renowned Agile conference Agile on the Beach. It was also ranked as the second fastest growing Tech Hub in the UK in the …'
-categories: []
-tags: []
 
 ---
 Software Engineer Job (Status: Closed)

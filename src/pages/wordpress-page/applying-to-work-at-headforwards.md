@@ -3,11 +3,8 @@ type: wordpress-page
 path: /applying-to-work-at-headforwards
 title: 'Applying to Work at Headforwards – Our Process'
 excerpt: ""
-categories: []
-tags: []
 
 ---
-
 
 Applying to Work at Headforwards – Our Process
 ==============================================

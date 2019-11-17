@@ -3,8 +3,6 @@ type: wordpress-page
 path: /news/upcoming-events
 title: 'Upcoming Events for 2017'
 excerpt: 'Upcoming Events 2017 is shaping up to be an exciting year here at Headforwards. We are hosting and attending a multitude of tech events in the coming months. If you would like to get involved please add some of these dates to your calendar. Please bear in mind that some of these events require registration …'
-categories: []
-tags: []
 
 ---
 Upcoming Events

@@ -1,25 +1,24 @@
 import { arrayOf, string } from 'prop-types';
 import React from 'react';
-import styles from './wordpress-page-page.module.scss';
+import styles from './wordpress-page.module.scss';
 import WordpressContent from '../../page-layout/wordpress-content/wordpress-content.component';
 
-const wordpressPagePageTemplateProps = {
+const wordpressPageTemplateProps = {
     html: string.isRequired,
     categories: arrayOf(string),
     tags: arrayOf(string),
 };
 
-export default WordpressPagePageTemplate;
+export default WordpressPageTemplate;
 
-WordpressPagePageTemplate.propTypes = wordpressPagePageTemplateProps;
-WordpressPagePageTemplate.defaultProps = {
+WordpressPageTemplate.propTypes = wordpressPageTemplateProps;
+WordpressPageTemplate.defaultProps = {
     categories: [],
     tags: [],
 };
 
-function WordpressPagePageTemplate({ html, categories, tags }) {
-
-    console.log({html, categories, tags});
+function WordpressPageTemplate({ html, categories, tags }) {
+    console.log({ html, categories, tags });
 
     return (
         <>

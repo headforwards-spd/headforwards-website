@@ -3,8 +3,6 @@ type: wordpress-page
 path: /job-application-new
 title: 'Job Application (new)'
 excerpt: ""
-categories: []
-tags: []
 
 ---
      

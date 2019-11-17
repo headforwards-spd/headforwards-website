@@ -3,8 +3,6 @@ type: wordpress-page
 path: /lead-front-end-developer
 title: 'Lead Front End Developer'
 excerpt: 'Lead Front End Developer  (level: varied – status: Closed) Description Headforwards are looking for an experienced web developer to become their new lead front end developer who will create the user-facing front-end application for a new service. The solution will be pure (or nearly pure) JavaScript, speaking JSON to a back-end API that will be …'
-categories: []
-tags: []
 
 ---
 Lead Front End Developer  (level: varied – status: Closed)

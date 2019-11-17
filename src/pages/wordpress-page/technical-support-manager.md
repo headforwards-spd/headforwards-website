@@ -3,8 +3,6 @@ type: wordpress-page
 path: /technical-support-manager
 title: 'Technical Support Manager'
 excerpt: 'Technical Support Manager (Status: Closed) Headforwards are an exciting outsource software development company who are looking for a Technical Support Manager to join their team in Cornwall. Cornwall is in south west England and is famous for its beautiful beaches, rugged coastline and spectacular cuisine. Headforwards currently have a team of 60 developers working on …'
-categories: []
-tags: []
 
 ---
 Technical Support Manager (Status: Closed)

@@ -3,8 +3,6 @@ type: wordpress-page
 path: /ui-ux-front-end-developer
 title: 'UI/UX Front End Developer'
 excerpt: 'UI/UX Front End Developer (level: Experienced – status:Closed) Description: Headforwards are looking for an experienced UI/UX Front End Developer. Previous experience in this sector is essential. The ideal candidate will have a certain level of understanding of some programming processes and languages whilst being expert in the core skills areas. This role will be working on …'
-categories: []
-tags: []
 
 ---
 UI/UX Front End Developer (level: Experienced – status:Closed)

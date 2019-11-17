@@ -3,8 +3,6 @@ type: wordpress-page
 path: /advantages-working-headforwards
 title: 'The Advantages of Working at Headforwards'
 excerpt: 'The Advantages of Working at Headforwards Here at Headforwards, we aim to provide a range perks and advantages for our team. From little things like daily fresh fruit to exclusive-mini festivals each summer. Here are some of the perks our team enjoy: Team Socials We organise lots of team socials. The events can be anything …'
-categories: []
-tags: []
 
 ---
 The Advantages of Working at Headforwards

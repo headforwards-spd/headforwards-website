@@ -3,8 +3,6 @@ type: wordpress-page
 path: /qa-automation-engineer
 title: 'QA Automation Engineer'
 excerpt: 'QA Automation Engineer (status: Closed) Description: Working with NTT, Headforwards are looking to appoint a QA Automation Engineer working in the Cornwall office, but as part of the NTT OSS European team. There are a number of projects which include some very exciting global systems and the successful applicant will gain the opportunity of working on …'
-categories: []
-tags: []
 
 ---
 QA Automation Engineer (status: Closed)

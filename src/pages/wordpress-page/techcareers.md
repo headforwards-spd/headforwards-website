@@ -3,8 +3,6 @@ type: wordpress-page
 path: /techcareers
 title: Careers
 excerpt: 'So you saw us on Facebook and want to know more?  We’re sure you’re keen to find out what vacancies we’re currently looking to fill, so take a look at our Current Vacancies below. We’re also sure you’ll want to know more about us as a company, what it’s like to work here, our teams etc. …'
-categories: []
-tags: []
 
 ---
 ### So you saw us on Facebook and want to know more? 

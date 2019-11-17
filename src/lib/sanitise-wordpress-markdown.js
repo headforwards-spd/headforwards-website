@@ -1,7 +1,7 @@
 const glob = require('glob');
 const fs = require('fs');
 
-const path = 'src/pages/wordpress-blog/**/*.md';
+const path = 'src/pages/wordpress-*/**/*.md';
 
 // eslint-disable-next-line no-console
 glob(path, (error, files) => (error ? console.error(error) : files.forEach(sanitiseFile)));
@@ -16,6 +16,10 @@ function sanitiseFile(fileName) {
         .replace(/([^!])?\[(!\[[^\]]*]\([^)]+\))]\([^)]+\)/g, '$1$2')
         // Remove links to images
         .replace(/([^!])\[[^\]]*]\(\/wp-content\/uploads\/[^)]+\)/g, '$1')
+        // Odd new lines in pages
+        .replace(/\[\s+]/g, '[]')
+        // More WP junk in pages
+        .replace('.content .single-col:nth-of-type(1) { display:none; }', '')
         // Each image on it's own line
         .replace(/(\))\s*(!\[)/g, '$1\n$2')
         // Wrap images in a gallery

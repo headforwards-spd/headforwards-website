@@ -3,8 +3,6 @@ type: wordpress-page
 path: /terms-of-use
 title: 'Terms of Use'
 excerpt: 'Website usage terms and conditions Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Headforward’s relationship with you in relation to this website. If you disagree with …'
-categories: []
-tags: []
 
 ---
 Website usage terms and conditions

@@ -3,8 +3,6 @@ type: wordpress-page
 path: /ui-developer-job
 title: 'UI Developer Job'
 excerpt: 'UI Developer Job (Status: Closed) Headforwards are an exciting outsource software development company based in Cornwall, South West England. Cornwall is famous for its beaches, rugged coastline and spectacular cuisine. It is also fast becoming well known for its software development. The 2016 Tech Nation report has recognised it as the 2nd fastest growing tech hub in the UK. …'
-categories: []
-tags: []
 
 ---
 UI Developer Job (Status: Closed)

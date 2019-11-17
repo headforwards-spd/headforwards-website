@@ -3,8 +3,6 @@ type: wordpress-page
 path: /graduate-jobs-for-programmers
 title: 'Graduate Jobs for Programmers'
 excerpt: 'New Graduate Jobs for Programmers (level: Varied – status: Closed) Headforwards are looking to recruit new graduate level developers with programming capabilities for an ongoing project. The principle language will be Python although we expect candidates with knowledge of other languages to apply. Some front experience with web technologies such as HTML/CSS/JQuery/AJAX/Javascript/HTML5 will be a useful additional knowledge. …'
-categories: []
-tags: []
 
 ---
 New Graduate Jobs for Programmers

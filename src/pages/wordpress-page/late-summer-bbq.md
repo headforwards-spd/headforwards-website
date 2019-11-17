@@ -3,8 +3,6 @@ type: wordpress-page
 path: /late-summer-bbq
 title: 'Late Summer BBQ'
 excerpt: 'The Headforwards team all gathered at Porthtowan beach, Cornwall for a late summer BBQ. As you know the Headforwards team love to socialise together, and we really do make the most of living and working in Cornwall. We often meet up outside of work and head to the beach, we just did this for a …'
-categories: []
-tags: []
 
 ---
 The Headforwards team all gathered at [Porthtowan](https://www.visitcornwall.com/beaches/north-cornwall/st-agnes/porthtowan-beach#.Vdrdi9NVhBc) beach, [Cornwall](http://www.lonelyplanet.com/england/southwest-england/cornwall) for a late summer BBQ.
