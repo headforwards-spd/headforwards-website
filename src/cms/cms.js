@@ -4,10 +4,10 @@ import CMS from 'netlify-cms-app';
 import styles from '!css-loader!sass-loader!../scss/main.scss';
 import UuidControl from './widgets/uuid-control';
 
-import DesignPagePreview from './preview-templates/design-page';
+import InfoPagePreview from './preview-templates/info-page';
 
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
 CMS.registerWidget({ name: 'uuid', controlComponent: UuidControl });
 
-CMS.registerPreviewTemplate('design-page', DesignPagePreview);
+CMS.registerPreviewTemplate('info-page', InfoPagePreview);

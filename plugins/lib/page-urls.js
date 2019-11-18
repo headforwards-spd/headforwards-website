@@ -2,13 +2,14 @@ exports.getUrls = pages => {
     const urls = {};
 
     pages.forEach(page => {
-        const { frontmatter } = page || {};
-        const { uuid, path } = frontmatter || {};
-        if (!uuid || !path) {
+        const { fields, frontmatter } = page || {};
+        const { uuid } = frontmatter || {};
+        const { slug } = fields;
+        if (!uuid || !slug) {
             return;
         }
 
-        urls[uuid] = path;
+        urls[uuid] = slug;
     });
 
     return urls;

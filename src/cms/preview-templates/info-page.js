@@ -6,9 +6,9 @@ import Footer from '../../components/page-layout/footer/footer.component';
 import Header from '../../components/page-layout/header/header.component';
 import PageComponent from '../../components/page-components/page-component';
 
-export default DesignPagePreview;
+export default InfoPagePreview;
 
-DesignPagePreview.propTypes = {
+InfoPagePreview.propTypes = {
     entry: shape({
         data: shape({
             title: string.isRequired,
@@ -18,7 +18,7 @@ DesignPagePreview.propTypes = {
     }).isRequired,
 };
 
-function DesignPagePreview({ entry }) {
+function InfoPagePreview({ entry }) {
     const { data } = entry.toJS();
     const { components, ...header } = data;
 

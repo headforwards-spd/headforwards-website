@@ -15,17 +15,15 @@ collections:
 
   - label: "Pages"
     label_singular: "Page"
-    name: design-pages
-    description: "Website landing pages"
+    name: info-pages
+    description: "Website info pages"
     folder: "src/pages/info-pages"
     create: true
     slug: "{{slug}}"
-    preview_path: "{{path}}/{{slug}}"
     identifier_field: title
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - {label: "Path", name: path, widget: hidden, default: "design-pages"}
-      - {label: "Type", name: type, widget: hidden, default: "design"}
+      - {label: "Type", name: type, widget: hidden, default: "info-page"}
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: text, widget: text, required: false}
       - {label: "Header Image", name:  image, widget: image, required: false}
@@ -74,7 +72,7 @@ collections:
               - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
               - {label: "Copy", name: text, widget: text}
               - {label: "Link Text", name: linkText, widget: string, required: false}
-              - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
           - label: "Postit, Copy Columns"
             name: postitCopyColumnsComponent
@@ -84,7 +82,7 @@ collections:
               - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
               - {label: "Copy", name: text, widget: text}
               - {label: "Link Text", name: linkText, widget: string, required: false}
-              - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
           - label: "Article Columns"
             name: articleColumnsComponent
@@ -99,7 +97,7 @@ collections:
                   - {label: "Image", name: image, widget: image}
                   - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
           - label: "Blog Post Columns"
             name: blogPostColumnsComponent
@@ -113,7 +111,7 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
           - label: "Content Slider"
             name: "contentSliderComponent"
@@ -128,7 +126,7 @@ collections:
                   - {label: "Image", name: image, widget: image}
                   - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
   - name: "settings"
     label: "Site Settings"
@@ -145,13 +143,13 @@ collections:
             widget: list
             fields:
               - {label: "Label", name: linkText, widget: string}
-              - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
               - label: "Children"
                 name: children
                 widget: list
                 fields:
                   - {label: "Label", name: linkText, widget: string}
-                  - {label: "Link", name: link, widget: relation, collection: design-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - file: "src/data/company-info.yml"
         label: "Company Information"

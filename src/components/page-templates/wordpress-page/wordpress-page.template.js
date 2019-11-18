@@ -18,8 +18,6 @@ WordpressPageTemplate.defaultProps = {
 };
 
 function WordpressPageTemplate({ html, categories, tags }) {
-    console.log({ html, categories, tags });
-
     return (
         <>
             <dl className={styles.dataTable}>

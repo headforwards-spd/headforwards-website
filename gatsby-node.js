@@ -1,5 +1,6 @@
 // const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+const makeSlug = require('slug');
 
 const { resolve } = require('path');
 
@@ -15,30 +16,34 @@ exports.createPages = ({ actions, graphql }) => {
         });
 };
 
-exports.onCreateNode = ({ node }) => {
-    // , actions, getNode }) => {
-    // const { createNodeField } = actions;
-    // const { internal = null } = node;
-    // const { type } = internal;
+exports.onCreateNode = ({ node, actions }) => {
+    const { createNodeField } = actions;
+    const { internal = null } = node;
+    const { type } = internal;
     fmImagesToRelative(node); // convert image paths for gatsby images
 
-    // if (type === `MarkdownRemark`) {
-    //     const value = createFilePath({ node, getNode });
-    //     return createNodeField({
-    //         name: `slug`,
-    //         node,
-    //         value,
-    //     });
-    // }
+    if (type === `MarkdownRemark`) {
+        const { frontmatter } = node;
+        const { title } = frontmatter;
+        const value = makeSlug(title, makeSlug.defaults.modes.rfc3986);
+
+        // const value = createFilePath({ node, getNode });
+        return createNodeField({
+            name: `slug`,
+            node,
+            value,
+        });
+    }
     return Promise.resolve();
 };
 
 function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
-        pages.map(({ id, frontmatter }) => {
+        pages.map(({ id, fields, frontmatter }) => {
+            const { slug } = fields;
             const { path, type } = frontmatter;
             return createPage({
-                path: type !== 'wordpress-page' ? path : `/old${path}`,
+                path: type !== 'wordpress-page' ? `/${slug}` : `/old${path}`,
                 component: resolve(`src/templates/${type}.js`),
                 context: { id },
             });
@@ -97,6 +102,9 @@ function getData(graphql) {
             pages: allMarkdownRemark(filter: { frontmatter: { type: { in: ["wordpress-page", "info-page"] } } }) {
                 nodes {
                     id
+                    fields {
+                        slug
+                    }
                     frontmatter {
                         type
                         path
