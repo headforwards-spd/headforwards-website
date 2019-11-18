@@ -1,7 +1,7 @@
-import { string } from 'prop-types';
-import React from 'react';
-import Image, { ImageSrcPropType } from '../../../image/image.component';
-import styles from './singular-image.module.scss';
+import { string }                  from 'prop-types';
+import React                       from 'react';
+import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
+import styles                      from './singular-image.module.scss';
 
 const singularImagePropTypes = {
     image: ImageSrcPropType.isRequired,

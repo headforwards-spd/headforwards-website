@@ -118,12 +118,7 @@ module.exports = {
                 }));
 
             pages.forEach(page => {
-                const {
-                    path,
-                    title,
-                    excerpt,
-                    content,
-                } = page;
+                const { path, title, excerpt, content } = page;
 
                 const filename = `${path
                     .split('/')
@@ -141,7 +136,7 @@ module.exports = {
                 const data = `---\n${YAML.stringify(frontmatter)}\n---\n${body}\n`;
 
                 fs.writeFile(
-                    `src/pages/wordpress-page/${filename}`,
+                    `src/pages/wordpress-pages/${filename}`,
                     data,
                     // eslint-disable-next-line no-console
                     error => !!error && console.error(error)
@@ -186,7 +181,7 @@ module.exports = {
                 const data = `---\n${YAML.stringify(frontmatter)}\n---\n${body}\n`;
 
                 fs.writeFile(
-                    `src/pages/wordpress-post/${filename}`,
+                    `src/pages/wordpress-posts/${filename}`,
                     data,
                     // eslint-disable-next-line no-console
                     error => !!error && console.error(error)

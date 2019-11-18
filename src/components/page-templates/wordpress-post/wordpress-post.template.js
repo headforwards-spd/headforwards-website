@@ -1,9 +1,9 @@
-import parseHtml from 'html-react-parser';
+import parseHtml                  from 'html-react-parser';
 import { arrayOf, shape, string } from 'prop-types';
-import React from 'react';
-import styles from './wordpress-post.module.scss';
-import Link from '../../link/link.component';
-import WordpressContent from '../../page-layout/wordpress-content/wordpress-content.component';
+import React                      from 'react';
+import styles                     from './wordpress-post.module.scss';
+import Link                       from '../../page-layout/link/link.component';
+import WordpressContent           from '../../page-layout/wordpress-content/wordpress-content.component';
 
 const wordpressPostTemplateProps = {
     prev: shape({

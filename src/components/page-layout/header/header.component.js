@@ -1,11 +1,11 @@
-import { arrayOf, string } from 'prop-types';
-import React from 'react';
-import parseHtml from 'html-react-parser';
-import Image, { ImageSrcPropType } from '../../image/image.component';
-import { MenuItemPropType } from '../navbar/menu-item/menu-item.prop-type';
-import Navbar from '../navbar/navbar.component';
-import styles from './header.module.scss';
-import { CompanyInfoPropType } from '../company-info.prop-type';
+import { arrayOf, string }         from 'prop-types';
+import React                       from 'react';
+import parseHtml                   from 'html-react-parser';
+import Image, { ImageSrcPropType } from '../image/image.component';
+import { MenuItemPropType }        from '../navbar/menu-item/menu-item.prop-type';
+import Navbar                      from '../navbar/navbar.component';
+import styles                      from './header.module.scss';
+import { CompanyInfoPropType }     from '../company-info.prop-type';
 
 export default Header;
 

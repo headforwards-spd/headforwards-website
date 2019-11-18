@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from '../../../link/link.component';
-import Socials from '../../socials/socials.component';
-import Hamburger from '../hamburger/hamburger.component';
-import MenuItem from '../menu-item/menu-item.component';
-import styles from '../navbar.module.scss';
+import React             from 'react';
+import Link              from '../../link/link.component';
+import Socials           from '../../socials/socials.component';
+import Hamburger         from '../hamburger/hamburger.component';
+import MenuItem          from '../menu-item/menu-item.component';
+import styles            from '../navbar.module.scss';
 import { menuPropTypes } from './menu.prop-type';
 
 export default Menu;

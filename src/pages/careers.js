@@ -12,7 +12,7 @@ CareersPage.propTypes = {
             shape({
                 id: string,
                 title: string,
-                slug: string,
+                path: string,
                 created: string,
             })
         ),
@@ -36,7 +36,7 @@ export const query = graphql`
             nodes {
                 id
                 title
-                slug
+                path
                 created(fromNow: true)
             }
         }

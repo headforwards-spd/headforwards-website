@@ -9,7 +9,7 @@ CareersPageTemplate.propTypes = {
         jobs: arrayOf(
             shape({
                 id: string,
-                slug: string,
+                path: string,
                 title: string,
                 created: string,
             })

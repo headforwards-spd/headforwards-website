@@ -17,11 +17,12 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     );
 
     function processOffer(offer) {
-        const { id, description, requirements, created_at: created, ...others } = offer;
+        const { id, description, requirements, created_at: created, slug:path, ...others } = offer;
 
         const nodeId = createNodeId(`recruitee-offer-${id}`);
         const nodeData = {
             ...others,
+            path,
             id: nodeId,
             type: 'recruitee-offer',
             parent: null,

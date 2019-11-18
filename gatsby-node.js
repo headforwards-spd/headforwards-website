@@ -1,7 +1,7 @@
-const { createFilePath } = require('gatsby-source-filesystem');
+// const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
-const path = require('path');
+const { resolve } = require('path');
 
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
@@ -15,31 +15,31 @@ exports.createPages = ({ actions, graphql }) => {
         });
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-    const { createNodeField } = actions;
-    const { internal = null } = node;
-    const { type } = internal;
+exports.onCreateNode = ({ node }) => {
+    // , actions, getNode }) => {
+    // const { createNodeField } = actions;
+    // const { internal = null } = node;
+    // const { type } = internal;
     fmImagesToRelative(node); // convert image paths for gatsby images
 
-    if (type === `MarkdownRemark`) {
-        const value = createFilePath({ node, getNode });
-        return createNodeField({
-            name: `slug`,
-            node,
-            value,
-        });
-    }
+    // if (type === `MarkdownRemark`) {
+    //     const value = createFilePath({ node, getNode });
+    //     return createNodeField({
+    //         name: `slug`,
+    //         node,
+    //         value,
+    //     });
+    // }
     return Promise.resolve();
 };
 
 function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
-        pages.map(({ id, fields, frontmatter }) => {
-            const { slug } = fields;
-            const { type } = frontmatter;
+        pages.map(({ id, frontmatter }) => {
+            const { path, type } = frontmatter;
             return createPage({
-                path: slug,
-                component: path.resolve(`src/templates/${type}.page.js`),
+                path: type !== 'wordpress-page' ? path : `/old${path}`,
+                component: resolve(`src/templates/${type}.js`),
                 context: { id },
             });
         })
@@ -48,10 +48,10 @@ function createAllPages(createPage, { nodes: pages = [] }) {
 
 function createAllJobs(createPage, { nodes: jobs = [] }) {
     return Promise.all(
-        jobs.map(({ id, type, slug }) => {
+        jobs.map(({ id, type, path }) => {
             return createPage({
-                path: `/careers/${slug}`,
-                component: path.resolve(`src/templates/${type}.page.js`),
+                path: `/careers/${path}`,
+                component: resolve(`src/templates/${type}.js`),
                 context: { id },
             });
         })
@@ -64,14 +64,14 @@ function createAllPosts(createPage, { nodes: posts = [] }) {
 
     return Promise.all(
         posts.map(({ id, frontmatter }, index) => {
-            const { path: postPath, type } = frontmatter;
+            const { path, type } = frontmatter;
 
             const { id: prevId = '' } = index > firstIndex ? posts[index - 1] : {};
             const { id: nextId = '' } = index < lastIndex ? posts[index + 1] : {};
 
             return createPage({
-                path: postPath,
-                component: path.resolve(`src/templates/${type}.page.js`),
+                path,
+                component: resolve(`src/templates/${type}.js`),
                 context: { id, prevId, nextId },
             });
         })
@@ -87,9 +87,6 @@ function getData(graphql) {
             ) {
                 nodes {
                     id
-                    fields {
-                        slug
-                    }
                     frontmatter {
                         type
                         path
@@ -97,17 +94,13 @@ function getData(graphql) {
                 }
             }
 
-            pages: allMarkdownRemark(filter: { frontmatter: { type: { in: ["wordpress-page", "design"] } } }) {
+            pages: allMarkdownRemark(filter: { frontmatter: { type: { in: ["wordpress-page", "info-page"] } } }) {
                 nodes {
                     id
-                    fields {
-                        slug
-                    }
                     frontmatter {
                         type
                         path
                     }
-                    html
                 }
             }
 
@@ -115,7 +108,7 @@ function getData(graphql) {
                 nodes {
                     id
                     type
-                    slug
+                    path
                 }
             }
         }

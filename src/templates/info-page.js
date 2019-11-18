@@ -11,11 +11,11 @@ import { BlogPostColumnsPropType } from '../components/page-components/columns/b
 import { FullWidthImageSrcPropType } from '../components/page-components/images/full-width/full-width-image.component';
 import { TwoImagesPropType } from '../components/page-components/images/two/two-images.component';
 import { QuotePropType } from '../components/page-components/quote/quote.component';
-import DesignPageTemplate from '../components/page-templates/design-page/design-page.template';
+import InfoPageTemplate from '../components/page-templates/info-page/info-page.template';
 
-export default DesignPage;
+export default InfoPagePage;
 
-DesignPage.propTypes = {
+InfoPagePage.propTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
@@ -46,7 +46,7 @@ DesignPage.propTypes = {
 };
 
 export const query = graphql`
-    query DesignPage($id: String!) {
+    query InfoPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
@@ -162,7 +162,7 @@ export const query = graphql`
     }
 `;
 
-function DesignPage({ data }) {
+function InfoPagePage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
     const { components, ...header } = frontmatter;
@@ -170,7 +170,7 @@ function DesignPage({ data }) {
 
     return (
         <Layout {...header}>
-            <DesignPageTemplate {...pageProps} />
+            <InfoPageTemplate {...pageProps} />
         </Layout>
     );
 }

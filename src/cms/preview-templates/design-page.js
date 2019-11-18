@@ -1,10 +1,10 @@
-import { shape, string } from 'prop-types';
-import React from 'react';
-import * as uuid from 'uuid';
-import { ImageSrcPropType } from '../../components/image/image.component';
-import Footer from '../../components/page-layout/footer/footer.component';
-import Header from '../../components/page-layout/header/header.component';
-import PageComponent from '../../components/page-components/page-component';
+import { shape, string }    from 'prop-types';
+import React                from 'react';
+import * as uuid            from 'uuid';
+import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
+import Footer               from '../../components/page-layout/footer/footer.component';
+import Header               from '../../components/page-layout/header/header.component';
+import PageComponent        from '../../components/page-components/page-component';
 
 export default DesignPagePreview;
 

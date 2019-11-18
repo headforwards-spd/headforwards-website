@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from '../../link/link.component';
-import styles from './footer.module.scss';
-import Socials from '../socials/socials.component';
+import React                   from 'react';
+import Link                    from '../link/link.component';
+import styles                  from './footer.module.scss';
+import Socials                 from '../socials/socials.component';
 import { CompanyInfoPropType } from '../company-info.prop-type';
 
 export default Footer;

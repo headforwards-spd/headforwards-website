@@ -1,5 +1,5 @@
 const gatsbyPluginSass = require('./gatsby/gatsby-plugin-sass');
-const gatsbySourceWordpress = require('./gatsby/gatsby-source-wordpress');
+// const gatsbySourceWordpress = require('./gatsby/gatsby-source-wordpress');
 // const gatsbySourceFilesystemWordpress = require('./gatsby/gatsby-source-filesystem.wp-content');
 const gatsbySourceFilesystemUploads = require('./gatsby/gatsby-source-filesystem.uploads');
 const gatsbySourceFilesystemPages = require('./gatsby/gatsby-source-filesystem.pages');
@@ -21,7 +21,7 @@ module.exports = {
         `gatsby-plugin-svgr`,
         'gatsby-plugin-sharp',
         // Import WordPress Posts
-        { ...gatsbySourceWordpress },
+        // { ...gatsbySourceWordpress },
         // Use WordPress Images
         // { ...gatsbySourceFilesystemWordpress },
         `gatsby-source-recruitee-api`,

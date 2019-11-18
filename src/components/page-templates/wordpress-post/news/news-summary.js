@@ -1,8 +1,8 @@
 import { arrayOf, shape, string } from 'prop-types';
-import React from 'react';
-import Image from '../../../image/image.component';
-import Link from '../../../link/link.component';
-import styles from './news.module.scss';
+import React                      from 'react';
+import Image                      from '../../../page-layout/image/image.component';
+import Link                       from '../../../page-layout/link/link.component';
+import styles                     from './news.module.scss';
 
 export default NewsSummary;
 

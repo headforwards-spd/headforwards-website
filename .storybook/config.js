@@ -9,10 +9,7 @@ window.___navigate = pathname => {
     action('NavigateTo:')(pathname)
 }
 
-addParameters({
-                  viewport: {
-                      viewports,
-                  },
-              });
+addParameters({ viewport: { viewports } });
+
 // automatically import all files ending in *.stories.js
 configure(require.context('../src', true, /\.stories\.js$/), module);
