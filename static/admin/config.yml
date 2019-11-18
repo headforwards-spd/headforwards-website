@@ -17,7 +17,7 @@ collections:
     label_singular: "Page"
     name: design-pages
     description: "Website landing pages"
-    folder: "src/pages/design-pages"
+    folder: "src/pages/info-pages"
     create: true
     slug: "{{slug}}"
     preview_path: "{{path}}/{{slug}}"
@@ -174,7 +174,7 @@ collections:
     label_singular: "WordPress Page"
     name: wordpress-pages
     description: "Imported old WordPress pages."
-    folder: "src/pages/wordpress-page"
+    folder: "src/pages/wordpress-pages"
     identifier_field: title
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
@@ -186,7 +186,7 @@ collections:
     label_singular: "WordPress Post"
     name: wordpress-posts
     description: "Imported old WordPress blog posts."
-    folder: "src/pages/wordpress-post"
+    folder: "src/pages/wordpress-posts"
     identifier_field: title
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
