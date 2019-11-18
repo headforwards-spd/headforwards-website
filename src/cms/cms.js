@@ -10,4 +10,4 @@ CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
 CMS.registerWidget({ name: 'uuid', controlComponent: UuidControl });
 
-CMS.registerPreviewTemplate('info-page', InfoPagePreview);
+CMS.registerPreviewTemplate('info-pages', InfoPagePreview);
