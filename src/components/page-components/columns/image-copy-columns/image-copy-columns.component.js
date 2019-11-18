@@ -1,10 +1,10 @@
-import React                   from 'react';
+import React from 'react';
 import { shape, bool, string } from 'prop-types';
-import ReactMarkdown           from 'react-markdown';
-import { ImageSrcPropType }    from '../../../page-layout/image/image.component';
-import Link                    from '../../../page-layout/link/link.component';
-import styles                  from './image-copy-columns.module.scss';
-import SingularImage           from '../../images/singular/singular-image.component';
+import ReactMarkdown from 'react-markdown';
+import { ImageSrcPropType } from '../../../page-layout/image/image.component';
+import Link from '../../../page-layout/link/link.component';
+import styles from './image-copy-columns.module.scss';
+import SingularImage from '../../images/singular/singular-image.component';
 
 const imageCopyColumnsPropTypes = {
     image: ImageSrcPropType.isRequired,

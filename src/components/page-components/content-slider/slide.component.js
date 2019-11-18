@@ -1,9 +1,9 @@
-import React                       from 'react';
-import { string, shape }           from 'prop-types';
-import ReactMarkdown               from 'react-markdown';
+import React from 'react';
+import { string, shape } from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
-import Link                        from '../../page-layout/link/link.component';
-import styles                      from './content-slider.module.scss';
+import Link from '../../page-layout/link/link.component';
+import styles from './content-slider.module.scss';
 
 const slidePropTypes = {
     title: string.isRequired,

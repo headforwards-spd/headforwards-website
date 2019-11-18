@@ -1,9 +1,9 @@
-import { arrayOf, bool }                        from 'prop-types';
-import React                                    from 'react';
-import Image, { ImagePropType }                 from '../../page-layout/image/image.component';
+import { arrayOf, bool } from 'prop-types';
+import React from 'react';
+import Image, { ImagePropType } from '../../page-layout/image/image.component';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
-import Postit                                   from '../../page-components/postit/postit.component';
-import styles                                   from './homepage.module.scss';
+import Postit from '../../page-components/postit/postit.component';
+import styles from './homepage.module.scss';
 
 const homepagePropTypes = {
     page: [],

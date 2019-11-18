@@ -1,9 +1,9 @@
-import React                   from 'react';
+import React from 'react';
 import { shape, bool, string } from 'prop-types';
-import ReactMarkdown           from 'react-markdown';
-import Link                    from '../../../page-layout/link/link.component';
-import Postit                  from '../../postit/postit.component';
-import styles                  from './image-copy-columns.module.scss';
+import ReactMarkdown from 'react-markdown';
+import Link from '../../../page-layout/link/link.component';
+import Postit from '../../postit/postit.component';
+import styles from './image-copy-columns.module.scss';
 
 const postitCopyColumnsPropTypes = {
     isRightImage: bool,

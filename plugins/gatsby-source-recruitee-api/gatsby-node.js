@@ -17,7 +17,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     );
 
     function processOffer(offer) {
-        const { id, description, requirements, created_at: created, slug:path, ...others } = offer;
+        const { id, description, requirements, created_at: created, slug: path, ...others } = offer;
 
         const nodeId = createNodeId(`recruitee-offer-${id}`);
         const nodeData = {

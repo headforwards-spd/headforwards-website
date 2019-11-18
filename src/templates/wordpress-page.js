@@ -34,7 +34,6 @@ export const query = graphql`
 `;
 
 function WordpressPage({ data }) {
-
     const { page } = data;
     const { frontmatter, html } = page;
     const { title } = frontmatter;

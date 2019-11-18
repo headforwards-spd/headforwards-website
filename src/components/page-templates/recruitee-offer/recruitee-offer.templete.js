@@ -1,8 +1,8 @@
-import { string }    from 'prop-types';
-import React         from 'react';
+import { string } from 'prop-types';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import styles        from './recruitee-offer.module.scss';
-import Link          from '../../page-layout/link/link.component';
+import styles from './recruitee-offer.module.scss';
+import Link from '../../page-layout/link/link.component';
 
 export default RecruiteeOfferTemplate;
 

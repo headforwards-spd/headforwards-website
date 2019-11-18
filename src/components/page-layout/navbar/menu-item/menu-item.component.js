@@ -1,9 +1,9 @@
-import { faMinus, faPlus }   from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon }   from '@fortawesome/react-fontawesome';
-import React, { Component }  from 'react';
-import Link                  from '../../link/link.component';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { Component } from 'react';
+import Link from '../../link/link.component';
 import { menuItemPropTypes } from './menu-item.prop-type';
-import styles                from '../navbar.module.scss';
+import styles from '../navbar.module.scss';
 
 export default class MenuItem extends Component {
     static propTypes = menuItemPropTypes;

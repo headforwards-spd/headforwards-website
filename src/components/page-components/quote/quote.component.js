@@ -1,7 +1,7 @@
-import React                       from 'react';
-import { shape, string }           from 'prop-types';
+import React from 'react';
+import { shape, string } from 'prop-types';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
-import styles                      from './quote.module.scss';
+import styles from './quote.module.scss';
 
 const quotePropTypes = {
     quote: string.isRequired,

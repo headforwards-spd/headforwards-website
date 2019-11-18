@@ -1,9 +1,9 @@
-import React                       from 'react';
-import { shape, string }           from 'prop-types';
+import React from 'react';
+import { shape, string } from 'prop-types';
 import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import { ReactComponent as Arrow } from '../../../../../static/images/hf-arrow.svg';
-import Link                        from '../../../page-layout/link/link.component';
-import styles                      from './blog-post-columns.module.scss';
+import Link from '../../../page-layout/link/link.component';
+import styles from './blog-post-columns.module.scss';
 
 const blogArticlePropTypes = {
     title: string.isRequired,

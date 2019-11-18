@@ -1,7 +1,7 @@
 import { string } from 'prop-types';
-import React      from 'react';
-import Link       from '../../page-layout/link/link.component';
-import styles     from './careers.module.scss';
+import React from 'react';
+import Link from '../../page-layout/link/link.component';
+import styles from './careers.module.scss';
 
 export default JobSummary;
 

@@ -1,7 +1,7 @@
 import { any, objectOf, oneOfType, shape, string } from 'prop-types';
-import React                                       from 'react';
-import GatsbyImage                                 from 'gatsby-image';
-import styles                                      from './image.module.scss';
+import React from 'react';
+import GatsbyImage from 'gatsby-image';
+import styles from './image.module.scss';
 
 const imageSrcPropTypes = [
     string,
