@@ -13,6 +13,7 @@ function PrivacyNotice() {
     const { privacyData } = useStaticQuery(graphql`
         query {
             privacyData: dataYaml(title: { eq: "privacy-notice" }) {
+                introduction
                 personalDataTitle
                 personalData
                 howDoWeCollectTitle
