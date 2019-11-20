@@ -172,7 +172,16 @@ collections:
         label: "Privacy Notice"
         name: privacy-notice
         fields:
-          - {label: "Personal Data", name: personalData, widget: text, required: false}
+          - {label: "Personal Data Title", name: personalDataTitle, widget: string, required: false}
+          - {label: "Personal Data", name: personalData, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+          - {label: "How do we collect information title", name: howDoWeCollectTitle, widget: string, required: false}
+          - {label: "How do we collect information?", name: howDoWeCollect, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+          - {label: "How long do we keep your data for?", name: howLong, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+          - {label: "Registration Forms", name: regForms, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+          - {label: "Data we collect from potential customers", name: potentialCustomerData, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+          - {label: "Marketing Data Title", name: marketingDataTitle, widget: string, required: false}
+          - {label: "Marketing Data", name: marketingData, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+
 
   - label: "WordPress Pages"
     label_singular: "WordPress Page"

@@ -1,0 +1,16 @@
+
+@import "../../page-components/page-component";
+
+.contactStyles {
+    @include component-gutter;
+    display: flex;
+
+    .flexSection {
+        &:nth-child(1) {
+
+        }
+        &:nth-child(2) {
+            flex: 1;
+        }
+    }
+}
