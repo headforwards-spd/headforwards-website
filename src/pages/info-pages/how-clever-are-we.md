@@ -33,7 +33,7 @@ components:
       share ideas, work in diverse teams and take risks every day – and our
       clients get a lot of value from that
     type: quoteComponent
-  - isRightImage: true
+  - isRightImage: false
     type: postitCopyColumnsComponent
     title: A team dynamic focused on equality and respect
     text: >
@@ -51,7 +51,7 @@ components:
       value. It’s a flat structure – everyone is listened to, everyone is
       trusted equally, and we’re all a united team
     type: quoteComponent
-  - isRightImage: false
+  - isRightImage: true
     type: postitCopyColumnsComponent
     title: Client relationships that go further
     text: >
