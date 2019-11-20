@@ -56,10 +56,10 @@ function PrivacyNoticeTemplate({privacyData}) {
                         <ReactMarkdown source={howDoWeCollect} />
                         <h1>{howLongTitle}</h1>
                         <ReactMarkdown source={howLong} />
-                        <h1>{regFormsTitle}</h1>
-                        <ReactMarkdown source={regForms} />
                     </div>
                     <div style={{flex: 1}}>
+                        <h1>{regFormsTitle}</h1>
+                        <ReactMarkdown source={regForms} />
                         <h1>{potentialCustomerDataTitle}</h1>
                         <ReactMarkdown source={potentialCustomerData} />
                         <h1>{marketingDataTitle}</h1>
