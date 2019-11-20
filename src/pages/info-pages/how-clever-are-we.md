@@ -33,7 +33,7 @@ components:
       share ideas, work in diverse teams and take risks every day – and our
       clients get a lot of value from that
     type: quoteComponent
-  - isRightImage: false
+  - isRightImage: true
     type: postitCopyColumnsComponent
     title: A team dynamic focused on equality and respect
     text: >
@@ -50,6 +50,24 @@ components:
       Relationships within the company work so well because everyone has equal
       value. It’s a flat structure – everyone is listened to, everyone is
       trusted equally, and we’re all a united team
+    type: quoteComponent
+  - isRightImage: false
+    type: postitCopyColumnsComponent
+    title: Client relationships that go further
+    text: >
+      Headforwards works closely with clients to do much more than deliver to
+      requirements. It’s always focused on the bigger picture, drawing on its
+      teams’ skills and experience to provide advice and add value wherever
+      possible.
+
+
+      Empowered to chase big ideas without constraints, teams at Headforwards
+      frequently go beyond clients’ expectations – from overdelivering on
+      projects to co-creating new products that generate true business value.
+  - quote: >-
+      We’re always looking towards the future with our client relationships.
+      We’re not afraid to take the ‘what if’ risks each day, and some of our
+      clients have seen huge results from this.
     type: quoteComponent
 ---
 
