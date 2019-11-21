@@ -3,7 +3,7 @@ uuid: d1956170-ec44-11e9-914c-c376cef31113
 type: info-page
 title: Who we are.
 text: This is the optional subtitle
-image: /uploads/blog.png
+image: /uploads/curlyhair.png
 components:
   - type: fullWidthImageComponent
     image: /uploads/full-width-man-glasses.png
