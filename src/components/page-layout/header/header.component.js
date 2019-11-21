@@ -34,9 +34,6 @@ function Header({ title, text, image, menu, companyInfo }) {
                 <h1>{parseHtml(title)}</h1>
                 {!!text && <h2>{text}</h2>}
             </section>
-            <p>image: {image ? JSON.stringify(image) : ''}</p>
-            <p>publicUrl: {publicURL || ''}</p>
-            <p>hasBackground: {hasBackground ? 'yes' : 'no'}</p>
             {!!image && <Image image={image} className={styles.image} />}
         </header>
     );
