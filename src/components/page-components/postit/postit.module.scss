@@ -1,21 +1,59 @@
 @import '../../../scss/variables';
 @import "../../../scss/mixins/typography";
 
+$postit1: rotate(0deg)   scaleX(1);
+$postit2: rotate(90deg)  scaleX(1);
+$postit3: rotate(180deg) scaleX(1);
+$postit4: rotate(270deg) scaleX(1);
+$postit5: rotate(0deg)   scaleX(-1);
+$postit6: rotate(90deg)  scaleX(-1);
+$postit7: rotate(180deg) scaleX(-1);
+$postit8: rotate(270deg) scaleX(-1);
+
+$postitLeft: perspective(24rem) rotateY(1deg);
+$postitRight: perspective(24rem) rotateY(-1deg);
 
 .postit {
+    background: #ffcc55 url("/images/postit-background.webp");
+    background-size: cover;
+
     width: 100%;
     padding-bottom: 100%;
 
-    box-shadow: 0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
-    border-bottom-right-radius: #{2*$gutter-large} #{$gutter-large/5};
-    background: linear-gradient(135deg, $orange 81%, $orange 82%, $orange 82%, lighten($orange, 25%) 100%);
-    transform: perspective(24rem) rotateY(1deg);
-    transition: box-shadow 500ms ease, transform 250ms ease;
-
-    &:hover {
-        box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba($paragraph_grey, 0.2);
-        transform: rotateX(0);
+    &.v1 {
+        transform: $postitLeft $postit1;
     }
+    &.v2 {
+        transform: $postitLeft $postit2;
+    }
+    &.v3 {
+        transform: $postitLeft $postit3;
+    }
+    &.v4 {
+        transform: $postitLeft $postit4;
+    }
+    &.v5 {
+        transform: $postitLeft $postit5;
+    }
+    &.v6 {
+        transform: $postitLeft $postit6;
+    }
+    &.v7 {
+        transform: $postitLeft $postit7;
+    }
+    &.v8 {
+        transform: $postitLeft $postit8;
+    }
+
+    //box-shadow: 0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
+    //border-bottom-right-radius: #{2*$gutter-large} #{$gutter-large/5};
+    //background: linear-gradient(135deg, $orange 81%, $orange 82%, $orange 82%, lighten($orange, 25%) 100%);
+    //transition: box-shadow 500ms ease, transform 250ms ease;
+
+    //&:hover {
+    //    box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba($paragraph_grey, 0.2);
+    //    transform: rotateX(0);
+    //}
 }
 
 
@@ -24,16 +62,41 @@
     .postit {
 
         &.isRightImage {
-            box-shadow: -0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: #{2*$gutter-large} #{$gutter-large/5};
-            background: linear-gradient(-135deg, $orange 81%, $orange 82%, $orange 82%, lighten($orange, 25%) 100%);
-            transform: perspective(24rem) rotateY(-1deg);
 
-            &:hover {
-                box-shadow: -0.25rem 0.25rem 0.5rem 0 rgba($paragraph_grey, 0.2);
-                transform: rotateX(0);
+            &.v1 {
+                transform: $postitRight $postit1;
             }
+            &.v2 {
+                transform: $postitRight $postit2;
+            }
+            &.v3 {
+                transform: $postitRight $postit3;
+            }
+            &.v4 {
+                transform: $postitRight $postit4;
+            }
+            &.v5 {
+                transform: $postitRight $postit5;
+            }
+            &.v6 {
+                transform: $postitRight $postit6;
+            }
+            &.v7 {
+                transform: $postitRight $postit7;
+            }
+            &.v8 {
+                transform: $postitRight $postit8;
+            }
+
+            //box-shadow: -0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
+            //border-bottom-right-radius: 0;
+            //border-bottom-left-radius: #{2*$gutter-large} #{$gutter-large/5};
+            //background: linear-gradient(-135deg, $orange 81%, $orange 82%, $orange 82%, lighten($orange, 25%) 100%);
+
+            //&:hover {
+            //    box-shadow: -0.25rem 0.25rem 0.5rem 0 rgba($paragraph_grey, 0.2);
+            //    transform: rotateX(0);
+            //}
         }
     }
 }

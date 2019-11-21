@@ -22,7 +22,7 @@ Header.defaultProps = {
 };
 function Header({ title, text, image, menu, companyInfo }) {
     const { publicURL } = image || {};
-    const hasBackground = typeof image === 'string' || !!publicURL;
+    const hasBackground = !!image || !!publicURL;
     const headerStyle = hasBackground ? styles.hasBackground : '';
 
     const titleStyle = text ? styles.hasSubTitle : '';
@@ -34,6 +34,9 @@ function Header({ title, text, image, menu, companyInfo }) {
                 <h1>{parseHtml(title)}</h1>
                 {!!text && <h2>{text}</h2>}
             </section>
+            <p>image: {image ? JSON.stringify(image) : ''}</p>
+            <p>publicUrl: {publicURL || ''}</p>
+            <p>hasBackground: {hasBackground ? 'yes' : 'no'}</p>
             {!!image && <Image image={image} className={styles.image} />}
         </header>
     );

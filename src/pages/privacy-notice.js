@@ -1,7 +1,7 @@
-import {graphql, useStaticQuery} from 'gatsby';
-import React                     from 'react';
-import Layout                    from '../components/page-layout/layout';
-import PrivacyNoticeTemplate     from '../components/page-templates/priacy-notice/privacy-notice.template';
+import { graphql, useStaticQuery } from 'gatsby';
+import React from 'react';
+import Layout from '../components/page-layout/layout';
+import PrivacyNoticeTemplate from '../components/page-templates/priacy-notice/privacy-notice.template';
 
 export default PrivacyNotice;
 

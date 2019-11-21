@@ -16,6 +16,7 @@ Postit.defaultProps = {
 };
 function Postit({ isRightImage, className }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
+    const version = Math.floor(Math.random() * 8 + 1);
 
-    return <div className={`${styles.postit} ${imageClass} ${className}`} />;
+    return <div className={`${styles.postit} ${styles[`v${version}`]} ${imageClass} ${className}`} />;
 }
