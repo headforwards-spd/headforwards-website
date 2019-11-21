@@ -2,6 +2,15 @@
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 const makeSlug = require('slug');
 
+const slugOptions = {
+    replacement: '-',
+    symbols: true,
+    remove: /[.]/g,
+    lower: true,
+    charmap: makeSlug.charmap,
+    multicharmap: makeSlug.multicharmap,
+};
+
 const { resolve } = require('path');
 
 exports.createPages = ({ actions, graphql }) => {
@@ -25,7 +34,7 @@ exports.onCreateNode = ({ node, actions }) => {
     if (type === `MarkdownRemark`) {
         const { frontmatter } = node;
         const { title } = frontmatter;
-        const value = makeSlug(title, makeSlug.defaults.modes.rfc3986);
+        const value = makeSlug(title, slugOptions);
 
         // const value = createFilePath({ node, getNode });
         return createNodeField({
