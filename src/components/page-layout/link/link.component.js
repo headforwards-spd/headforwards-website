@@ -24,7 +24,7 @@ function Link({ to, children, ...props }) {
             {children}
         </a>
     ) : (
-        <GatsbyLink to={`/${to}`.replace(/\/+/g, '/')} {...props}>
+        <GatsbyLink to={`/${to}/`.replace(/\/+/g, '/')} {...props}>
             {children}
         </GatsbyLink>
     );
