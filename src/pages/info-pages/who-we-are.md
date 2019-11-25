@@ -1,6 +1,6 @@
 ---
 uuid: d1956170-ec44-11e9-914c-c376cef31113
-parent: who-we-are
+parent: careers
 type: info-page
 title: Who we are.
 text: This is the optional subtitle
