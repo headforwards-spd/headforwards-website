@@ -242,7 +242,6 @@ collections:
           - {label: "SEO Tiitle",      name: title,       widget: string, required: false}
           - {label: "SEO Description", name: description, widget: string, required: false}
 
-
   - label: "How we work."
     label_singular: "Page"
     name: how-we-work
@@ -578,6 +577,18 @@ collections:
       - {label: "Type", name: type, widget: hidden, default: "wordpress-post"}
       - {label: "Page Title", name: title, widget: string}
       - {label: "Copy", name: body, widget: markdown}
+
+  - label: "All Pages"
+    label_singular: "Page"
+    name: info-pages
+    description: "Nothing to see here - allows linking to pages"
+    folder: "src/pages/info-pages"
+    create: false
+    delete: false
+    identifier_field: title
+    fields:
+      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "Page Title", name: title, widget: string}
 
 
 
