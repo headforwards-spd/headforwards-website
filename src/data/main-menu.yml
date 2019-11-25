@@ -1,13 +1,13 @@
 title: main-menu
 menu:
-  - linkText: Who we are.
-    link: /who-we-are/
-  - linkText: What we do.
+  - link: /who-we-are/
+    linkText: Who we are.
+  - children:
+      - link: b7482970-ef2c-11e9-a170-b1f1706e4526
+        linkText: Front End Jobs
+      - link: 0c7cc0e0-ef2d-11e9-a170-b1f1706e4527
+        linkText: Back End Jobs
     link: /what-we-do/
-    children:
-      - linkText: Front End Jobs
-        link: b7482970-ef2c-11e9-a170-b1f1706e4526
-      - linkText: Back End Jobs
-        link: 0c7cc0e0-ef2d-11e9-a170-b1f1706e4527
-  - linkText: How we work.
-
+    linkText: What we do.
+  - link: /how-we-work/
+    linkText: How we work.
