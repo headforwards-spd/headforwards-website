@@ -21,14 +21,14 @@
         @include copy;
     }
 
-    @media (min-width: $screen-md) {
-        .postit {
-            margin-left: auto;
-            margin-right: auto;
-            width: 62.5%;
-            padding-bottom: 62.5%;
-        }
-    }
+    //@media (min-width: $screen-md) {
+    //    .postit {
+    //        margin-left: auto;
+    //        margin-right: auto;
+    //        width: 62.5%;
+    //        padding-bottom: 62.5%;
+    //    }
+    //}
 
     @media (min-width: $screen-lg) {
 
@@ -39,11 +39,11 @@
 
         }
 
-        .postit {
-            width: calc(37.5% - #{$gutter-medium});
-            padding-bottom: calc(37.5% - #{$gutter-medium});
-            margin-bottom: $gutter-medium/2;
-        }
+        //.postit {
+        //    width: calc(37.5% - #{$gutter-medium});
+        //    padding-bottom: calc(37.5% - #{$gutter-medium});
+        //    margin-bottom: $gutter-medium/2;
+        //}
 
         .copy {
             width: calc(62.5% - #{$gutter-medium});

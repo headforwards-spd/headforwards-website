@@ -1,11 +1,8 @@
 @import "../../scss/variables";
 @mixin component-gutter {
-    margin: 0 $gutter-small $gutter-medium;
-
-    @media (min-width: $screen-md) {
-        margin: 0 $gutter-medium $gutter-medium;
-    }
+    margin-bottom: $gutter-medium;
 }
+
 @mixin component-columns-gutter {
 
     @include component-gutter;
@@ -15,7 +12,7 @@
     }
 
     @media (min-width: $screen-lg) {
-        margin: 0 $gutter-medium/2 $gutter-medium/2;
+        margin: 0 #{-$gutter-medium/2} $gutter-medium/2;
         > * {
             margin: 0 $gutter-medium/2 $gutter-medium/2;
         }
@@ -31,3 +28,4 @@
         vertical-align: sub;
     }
 }
+

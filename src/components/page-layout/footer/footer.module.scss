@@ -14,13 +14,13 @@
         background-size: cover;
 
         h1 {
-            padding: $gutter-medium;
-            margin: 0;
-            @media (min-width: $screen-lg) {
-                padding: $gutter-large;
-            }
+            @include fontXXLarge;
+
+            padding: 3rem $page-gutter;
             line-height: 1.5;
             color: white;
+            margin-bottom: 0;
+
             a {
                 &:before {
                     content: ' ';

@@ -1,7 +1,8 @@
 @import "../../page-components/columns/columns";
+@import "../../../scss/variables";
 
 .wrapper {
-    @include columns-component;
+    @include component-gutter;
     @media (min-width: $screen-lg) {
         margin-bottom: $gutter-large - $gutter-medium/2;
     }
@@ -16,16 +17,41 @@
                 margin-bottom: 0;
             }
         }
+
+        blockquote {
+            padding-left: 1rem;
+            p {
+                @include fontLarge;
+                padding: 0;
+                margin-bottom: 0;
+
+                &:before,
+                &:after {
+                    font-size: 3rem;
+                }
+
+                &:before {
+                    left: calc(0rem - 0.6em);
+                }
+            }
+
+            footer {
+                margin-left: calc(-2rem - #{$column-gutter}/2);
+                padding-left: calc(#{$column-gutter}/2 + 2rem);
+                background-color: white;
+                margin-top: 1rem;
+            }
+        }
     }
 
     &.hasImage {
+        @include columns-component;
         &.isRightImage {
             flex-direction: row-reverse;
         }
 
         .image, .postit {
             width: 100%;
-            margin: 0 auto;
             @include fontMedium;
 
             &.postit {

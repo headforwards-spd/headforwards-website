@@ -24,8 +24,6 @@
 }
 
 body {
-    max-width: $max_width;
-    margin: 0 auto !important;
     overflow-x: hidden;
 
     @include fluid-type($min_font, $max_font);
@@ -51,7 +49,7 @@ body {
         margin: 0;
         @include fontMedium;
         color: $paragraph_grey;
-        font-weight: normal;
+        font-weight: lighter;
         text-shadow: none;
     }
 
@@ -67,4 +65,15 @@ body {
     }
 }
 
+main,
+header > *,
+footer > section > * {
+    padding: 0 $page-gutter;
+    max-width: $max_width;
+    margin: 0 auto;
+    width: 100%;
+}
 
+header, footer {
+    width: 100%;
+}
