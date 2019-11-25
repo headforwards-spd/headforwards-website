@@ -11,5 +11,8 @@ menu:
     linkText: What we do.
   - link: /how-we-work/
     linkText: How we work.
-  - link: /careers/
+  - children:
+      - link: 92161650-0f9b-11ea-9e15-59d1e5da42db
+        linkText: 'Pizza, beaches and beer.'
+    link: /careers/
     linkText: Careers.
