@@ -477,16 +477,16 @@ collections:
                           - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
   -   label: "Careers."
-      name: Careers
+      name: careers
       description: "Careers pages"
       folder: "src/pages/info-pages"
       create: true
       slug: "{{slug}}"
       identifier_field: title
-      filter: {field: "parent", value: "Careers"}
+      filter: {field: "parent", value: "careers"}
       fields:
         - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-        - {label: "parent", name: parent, widget: select, options: ['Careers']}
+        - {label: "parent", name: parent, widget: select, options: ['careers']}
         - {label: "Type", name: type, widget: hidden, default: "info-page"}
         - {label: "Page Title", name: title, widget: string}
         - {label: "Page Sub Title", name: text, widget: string, required: false}
