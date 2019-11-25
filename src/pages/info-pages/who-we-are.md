@@ -159,6 +159,8 @@ components:
     type: content-slider-component
     title: Our Story
 seo:
+  description: SEO who we are description.
   slug: this-is-who-we-are
+  title: SEO Who we are.
 ---
 
