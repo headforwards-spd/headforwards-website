@@ -6,8 +6,8 @@ title: Who we are.
 text: This is the optional subtitle
 image: /uploads/curlyhair.png
 components:
-  - type: images-component
-    imageOne: /uploads/full-width-man-glasses.png
+  - imageOne: /uploads/full-width-man-glasses.png
+    type: images-component
   - type: image-copy-component
     title: What we believe
     text: >-
@@ -28,21 +28,21 @@ components:
     isRightImage: true
     link: /
     linkText: Discover more
-  - isRightImage: false
+  - isPostit: true
+    isRightImage: false
     link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
     linkText: Discover more
     type: image-copy-component
-    isPostit: true
     title: What we believe
     text: >-
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
-  - isRightImage: true
+  - isPostit: true
+    isRightImage: true
     link: /
     linkText: Discover more
     type: image-copy-component
-    isPostit: true
     title: How it began
     text: >-
       The client-focused approach to outsourcing worked, attracting major brands
@@ -158,5 +158,7 @@ components:
           on the bench which ultimately drives costs up.
     type: content-slider-component
     title: Our Story
+seo:
+  slug: this-is-who-we-are
 ---
 
