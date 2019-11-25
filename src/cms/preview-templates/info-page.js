@@ -20,8 +20,8 @@ InfoPagePreview.propTypes = {
 
 function InfoPagePreview({ entry }) {
     const { data } = entry.toJS();
-    const { components, title='', image=null } = data;
-    const header = {title, image};
+    const { components, title = '', image = null } = data;
+    const header = { title, image };
 
     !!components &&
         components.forEach(component => {

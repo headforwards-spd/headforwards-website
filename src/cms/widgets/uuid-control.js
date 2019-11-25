@@ -10,6 +10,7 @@ const uuidControlPropTypes = {
 
 export default class UuidControl extends Component {
     static propTypes = uuidControlPropTypes;
+
     static defaultProps = {
         value: null,
     };

@@ -74,6 +74,7 @@ export const query = graphql`
                     quote
                     name
                     jobTitle
+                    isPostit
                     isRightImage
                     isTwoColumns
                     link
@@ -116,7 +117,7 @@ export const query = graphql`
                             }
                         }
                     }
-                    leftImage {
+                    imageOne {
                         publicURL
                         childImageSharp {
                             fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
@@ -124,7 +125,7 @@ export const query = graphql`
                             }
                         }
                     }
-                    leftImageSquare: image {
+                    imageOneSquare: image {
                         publicURL
                         childImageSharp {
                             fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
@@ -132,7 +133,7 @@ export const query = graphql`
                             }
                         }
                     }
-                    rightImage {
+                    imageTwo {
                         publicURL
                         childImageSharp {
                             fluid(maxWidth: 1024, maxHeight: 640, cropFocus: ENTROPY) {
@@ -140,7 +141,7 @@ export const query = graphql`
                             }
                         }
                     }
-                    rightImageSquare: image {
+                    imageTwoSquare: image {
                         publicURL
                         childImageSharp {
                             fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {

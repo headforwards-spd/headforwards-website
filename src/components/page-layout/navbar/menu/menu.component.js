@@ -29,9 +29,9 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                     {menu.map(({ id, ...item }) => (
                         <MenuItem key={id} {...item} />
                     ))}
-                    <MenuItem {...{ link: '/contact', linkText: 'Contact.' }} />
-                    {/*<MenuItem {...{ link: '/wordpress-pages', linkText: 'Old Pages.' }} />*/}
-                    {/*<MenuItem {...{ link: '/wordpress-posts', linkText: 'Old Posts.' }} />*/}
+                    {/*<MenuItem {...{ link: '/contact', linkText: 'Contact.' }} />*/}
+                    {/* <MenuItem {...{ link: '/wordpress-pages', linkText: 'Old Pages.' }} /> */}
+                    {/* <MenuItem {...{ link: '/wordpress-posts', linkText: 'Old Posts.' }} /> */}
                 </ul>
                 <section className={styles.contactDetails}>
                     <dl>

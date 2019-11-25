@@ -3,13 +3,16 @@ exports.getUrls = pages => {
 
     pages.forEach(page => {
         const { fields, frontmatter } = page || {};
-        const { uuid } = frontmatter || {};
-        const { slug } = fields;
+        const { uuid, parent = '', seo } = frontmatter || {};
+        const { slug: pageSlug=null } = fields;
+        const { slug: seoSlug=null } = seo || {};
+        const slug = seoSlug || pageSlug;
+
         if (!uuid || !slug) {
             return;
         }
 
-        urls[uuid] = slug;
+        urls[uuid] = `${parent}/${slug}`;
     });
 
     return urls;

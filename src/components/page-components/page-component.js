@@ -1,6 +1,7 @@
-import { shape, string } from 'prop-types';
+import { bool, shape, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { ImageSrcPropType } from '../page-layout/image/image.component';
 import ArticleColumns from './columns/article-columns/article-columns.component';
 import PostitCopyColumns from './columns/image-copy-columns/postit-copy-columns.component';
 import Hero from './hero/hero.component';
@@ -20,29 +21,60 @@ export const PageComponentPropType = shape(pageComponentPropTypes);
 
 PageComponent.propTypes = pageComponentPropTypes;
 function PageComponent({ type, ...component }) {
-    const { image } = component;
-    const { imageSquare = image } = component || {};
 
     switch (type) {
-        case 'heroComponent':
-            return <Hero {...component} />;
-        case 'contentSliderComponent':
-            return <ContentSlider {...component} />;
-        case 'fullWidthImageComponent':
-            return <FullWidthImage {...component} />;
-        case 'twoImageComponent':
-            return <TwoImages {...component} />;
-        case 'blogPostColumnsComponent':
-            return <BlogPostColumns {...component} />;
-        case 'quoteComponent':
+        case 'images-component':
+            return <ImagesComponent {...component} />;
+        case 'quote-component':
             return <Quote {...component} />;
-        case 'imageCopyColumnsComponent':
-            return <ImageCopyColumns {...{ ...component, image: imageSquare }} />;
-        case 'postitCopyColumnsComponent':
-            return <PostitCopyColumns {...component} />;
-        case 'articleColumnsComponent':
+        case 'image-copy-component':
+            return <ImageCopyComponent {...component} />;
+        case 'article-component':
             return <ArticleColumns {...component} />;
+        case 'blog-post-component':
+            return <BlogPostColumns {...component} />;
+        case 'content-slider-component':
+            return <ContentSlider {...component} />;
         default:
             return <ReactMarkdown source={component.text} />;
+    }
+}
+
+const imagesComponentPropTypes = {
+    imageOne: ImageSrcPropType.isRequired,
+    imageTwo: ImageSrcPropType,
+};
+ImagesComponent.propTypes = imagesComponentPropTypes;
+ImagesComponent.defaultProps = {
+    imageTwo: null,
+};
+function ImagesComponent({ imageOne, imageTwo, ...props }) {
+
+    return !imageTwo ? (
+        <FullWidthImage {...{ ...props, image: imageOne }} />
+    ) : (
+        <TwoImages {...{ ...props, leftImage: imageOne, rightImage: imageTwo }} />
+    );
+}
+
+const imageCopyComponentPropTypes = {
+    image: ImageSrcPropType,
+    imageSquare: ImageSrcPropType,
+    isPostit: bool,
+};
+ImageCopyComponent.propTypes = imageCopyComponentPropTypes;
+ImageCopyComponent.defaultProps = {
+    image: null,
+    imageSquare: null,
+    isPostit: false,
+};
+function ImageCopyComponent({ image, imageSquare, isPostit, ...props }) {
+    switch (true) {
+        case isPostit:
+            return <PostitCopyColumns {...{ image: imageSquare, ...props }} />;
+        case !image:
+            return <Hero {...props} />;
+        default:
+            return <ImageCopyColumns {...{ image: imageSquare, ...props }} />;
     }
 }

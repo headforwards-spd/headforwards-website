@@ -13,122 +13,8 @@ public_folder: /uploads
 
 collections:
 
-  - label: "Pages"
-    label_singular: "Page"
-    name: info-pages
-    description: "Website info pages"
-    folder: "src/pages/info-pages"
-    create: true
-    slug: "{{slug}}"
-    identifier_field: title
-    fields:
-      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - {label: "Type", name: type, widget: hidden, default: "info-page"}
-      - {label: "Page Title", name: title, widget: string}
-      - {label: "Page Sub Title", name: text, widget: string, required: false}
-      - {label: "Header Image", name:  image, widget: image, required: false}
-      - label: "Page Components"
-        name: components
-        widget: list
-        types:
-          - label: "Hero Component"
-            name: heroComponent
-            widget: object
-            fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: markdown}
-
-          - label: "Full Width Image"
-            name: fullWidthImageComponent
-            widget: object
-            fields:
-              - label: "Image"
-                name: image
-                widget: image
-
-          - label: "Two Images"
-            name: twoImageComponent
-            widget: object
-            fields:
-              - {label: "Left Image", name: leftImage, widget: image}
-              - {label: "Right Image", name: rightImage, widget: image}
-
-          - label: "Quote"
-            name: quoteComponent
-            widget: object
-            fields:
-              - {label: "Quote", name: quote, widget: text}
-              - {label: "Name", name: name, widget: string, required: false}
-              - {label: "Job Title", name: jobTitle, widget: string, required: false}
-              - {label: "Profile Picture", name: profilePic, widget: image, required: false}
-
-          - label: "Image, Copy Columns"
-            name: imageCopyColumnsComponent
-            widget: object
-            fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Image", name: image, widget: image}
-              - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: text}
-              - {label: "Link Text", name: linkText, widget: string, required: false}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-          - label: "Postit, Copy Columns"
-            name: postitCopyColumnsComponent
-            widget: object
-            fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: text}
-              - {label: "Link Text", name: linkText, widget: string, required: false}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-          - label: "Article Columns"
-            name: articleColumnsComponent
-            widget: object
-            fields:
-              - {label: "Component Title", name: title, widget: string, required: false}
-              - label: "Articles"
-                name: articles
-                widget: list
-                fields:
-                  - {label: "Title", name: title, widget: string}
-                  - {label: "Image", name: image, widget: image}
-                  - {label: "Copy", name: text, widget: text}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-          - label: "Blog Post Columns"
-            name: blogPostColumnsComponent
-            widget: object
-            fields:
-              - {label: "Component Title", name: title, widget: string}
-              - label: "Blog Posts"
-                name: articles
-                widget: list
-                fields:
-                  - {label: "Title", name: title, widget: string}
-                  - {label: "Image", name:  image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-          - label: "Content Slider"
-            name: "contentSliderComponent"
-            widget: object
-            fields:
-              - {label: "Component Title", name: title, widget: string}
-              - label: "Slides"
-                name: "articles"
-                widget: list
-                fields:
-                  - {label: "Title", name: title, widget: string}
-                  - {label: "Image", name: image, widget: image}
-                  - {label: "Copy", name: text, widget: text}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
   - label: "Who we are."
+    label_singular: "Page"
     name: who-we-are
     description: "Who we are pages"
     folder: "src/pages/info-pages"
@@ -143,6 +29,109 @@ collections:
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: text, widget: string, required: false}
       - {label: "Header Image", name:  image, widget: image, required: false}
+      # COMPONENTS
+      - label: "Page Components"
+        name: components
+        widget: list
+        types:
+          - label: "Images"
+            name: images-component
+            widget: object
+            fields:
+              - {label: "Image One", name: imageOne, widget: image}
+              - {label: "Image Two", name: imageTwo, widget: image, required: false}
+
+          - label: "Quote"
+            name: quote-component
+            widget: object
+            fields:
+              - {label: "Quote", name: quote, widget: text}
+              - {label: "Name", name: name, widget: string, required: false}
+              - {label: "Job Title", name: jobTitle, widget: string, required: false}
+              - {label: "Profile Picture", name: profilePic, widget: image, required: false}
+
+          - label: "Image & Copy"
+            name: image-copy-component
+            widget: object
+            fields:
+              - {label: "Image", name: image, widget: image, required: false}
+              - {label: "Title", name: title, widget: string}
+              - {label: "Copy", name: text, widget: markdown}
+              - {label: "Link Text", name: linkText, widget: string, required: false}
+              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+              - {label: "Image on right?", name: isRightImage, widget: boolean, default: false, required: false}
+              - {label: "Postit?", name: isPostit, widget: boolean, default: false, required: false}
+              - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, default: false, required: false}
+
+          - label: "Articles"
+            name: article-component
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string, required: false}
+              - label: "Articles"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+
+          - label: "Blog Posts"
+            name: blog-post-component
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string}
+              - label: "Blog Posts"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name:  image, widget: image}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+
+          - label: "Content Slider"
+            name: content-slider-component
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string}
+              - label: "Slides"
+                name: "articles"
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Copy", name: text, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+      # SEO
+      - label: "SEO"
+        name: seo
+        widget: object
+        required: false
+        fields:
+          - {label: "SEO Slug",        name: slug,        widget: string, required: false}
+          - {label: "SEO Title",       name: title,       widget: string, required: false}
+          - {label: "SEO Description", name: description, widget: string, required: false}
+
+  - label: "What we do."
+    label_singular: "Page"
+    name: what-we-do
+    description: "What we do pages"
+    folder: "src/pages/info-pages"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    filter: {field: "parent", value: "what-we-do"}
+    fields:
+      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "parent", name: parent, widget: select, options: ['what-we-do']}
+      - {label: "Type", name: type, widget: hidden, default: "info-page"}
+      - {label: "Page Title", name: title, widget: string}
+      - {label: "Page Sub Title", name: text, widget: string, required: false}
+      - {label: "Header Image", name:  image, widget: image, required: false}
+      # COMPONENTS
       - label: "Page Components"
         name: components
         widget: list
@@ -243,354 +232,270 @@ collections:
                   - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+      # SEO
+      - label: "SEO"
+        name: seo
+        widget: object
+        required: false
+        fields:
+          - {label: "SEO Slug",        name: slug,        widget: string, required: false}
+          - {label: "SEO Tiitle",      name: title,       widget: string, required: false}
+          - {label: "SEO Description", name: description, widget: string, required: false}
 
-  -   label: "What we do."
-      name: what-we-do
-      description: "What we do pages"
-      folder: "src/pages/info-pages"
-      create: true
-      slug: "{{slug}}"
-      identifier_field: title
-      filter: {field: "parent", value: "what-we-do"}
-      fields:
-        - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-        - {label: "parent", name: parent, widget: select, options: ['what-we-do']}
-        - {label: "Type", name: type, widget: hidden, default: "info-page"}
-        - {label: "Page Title", name: title, widget: string}
-        - {label: "Page Sub Title", name: text, widget: string, required: false}
-        - {label: "Header Image", name:  image, widget: image, required: false}
-        -   label: "Page Components"
-            name: components
-            widget: list
-            types:
-              -   label: "Hero Component"
-                  name: heroComponent
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
-                    - {label: "Copy", name: text, widget: markdown}
 
-              -   label: "Full Width Image"
-                  name: fullWidthImageComponent
-                  widget: object
-                  fields:
-                    -   label: "Image"
-                        name: image
-                        widget: image
+  - label: "How we work."
+    label_singular: "Page"
+    name: how-we-work
+    description: "How we work pages"
+    folder: "src/pages/info-pages"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    filter: {field: "parent", value: "how-we-work"}
+    fields:
+      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "parent", name: parent, widget: select, options: ['how-we-work']}
+      - {label: "Type", name: type, widget: hidden, default: "info-page"}
+      - {label: "Page Title", name: title, widget: string}
+      - {label: "Page Sub Title", name: text, widget: string, required: false}
+      - {label: "Header Image", name:  image, widget: image, required: false}
+      # COMPONENTS
+      - label: "Page Components"
+        name: components
+        widget: list
+        types:
+          - label: "Hero Component"
+            name: heroComponent
+            widget: object
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
+              - {label: "Copy", name: text, widget: markdown}
 
-              -   label: "Two Images"
-                  name: twoImageComponent
-                  widget: object
-                  fields:
-                    - {label: "Left Image", name: leftImage, widget: image}
-                    - {label: "Right Image", name: rightImage, widget: image}
+          - label: "Full Width Image"
+            name: fullWidthImageComponent
+            widget: object
+            fields:
+              - label: "Image"
+                name: image
+                widget: image
 
-              -   label: "Quote"
-                  name: quoteComponent
-                  widget: object
-                  fields:
-                    - {label: "Quote", name: quote, widget: text}
-                    - {label: "Name", name: name, widget: string, required: false}
-                    - {label: "Job Title", name: jobTitle, widget: string, required: false}
-                    - {label: "Profile Picture", name: profilePic, widget: image, required: false}
+          - label: "Two Images"
+            name: twoImageComponent
+            widget: object
+            fields:
+              - {label: "Left Image", name: leftImage, widget: image}
+              - {label: "Right Image", name: rightImage, widget: image}
 
-              -   label: "Image, Copy Columns"
-                  name: imageCopyColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Image", name: image, widget: image}
-                    - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
-                    - {label: "Copy", name: text, widget: text}
-                    - {label: "Link Text", name: linkText, widget: string, required: false}
-                    - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Quote"
+            name: quoteComponent
+            widget: object
+            fields:
+              - {label: "Quote", name: quote, widget: text}
+              - {label: "Name", name: name, widget: string, required: false}
+              - {label: "Job Title", name: jobTitle, widget: string, required: false}
+              - {label: "Profile Picture", name: profilePic, widget: image, required: false}
 
-              -   label: "Postit, Copy Columns"
-                  name: postitCopyColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
-                    - {label: "Copy", name: text, widget: text}
-                    - {label: "Link Text", name: linkText, widget: string, required: false}
-                    - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Image, Copy Columns"
+            name: imageCopyColumnsComponent
+            widget: object
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Image", name: image, widget: image}
+              - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
+              - {label: "Copy", name: text, widget: text}
+              - {label: "Link Text", name: linkText, widget: string, required: false}
+              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-              -   label: "Article Columns"
-                  name: articleColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Component Title", name: title, widget: string, required: false}
-                    -   label: "Articles"
-                        name: articles
-                        widget: list
-                        fields:
-                          - {label: "Title", name: title, widget: string}
-                          - {label: "Image", name: image, widget: image}
-                          - {label: "Copy", name: text, widget: text}
-                          - {label: "Link Text", name: linkText, widget: string, required: false}
-                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Postit, Copy Columns"
+            name: postitCopyColumnsComponent
+            widget: object
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
+              - {label: "Copy", name: text, widget: text}
+              - {label: "Link Text", name: linkText, widget: string, required: false}
+              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-              -   label: "Blog Post Columns"
-                  name: blogPostColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Component Title", name: title, widget: string}
-                    -   label: "Blog Posts"
-                        name: articles
-                        widget: list
-                        fields:
-                          - {label: "Title", name: title, widget: string}
-                          - {label: "Image", name:  image, widget: image}
-                          - {label: "Link Text", name: linkText, widget: string, required: false}
-                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Article Columns"
+            name: articleColumnsComponent
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string, required: false}
+              - label: "Articles"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Copy", name: text, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-              -   label: "Content Slider"
-                  name: "contentSliderComponent"
-                  widget: object
-                  fields:
-                    - {label: "Component Title", name: title, widget: string}
-                    -   label: "Slides"
-                        name: "articles"
-                        widget: list
-                        fields:
-                          - {label: "Title", name: title, widget: string}
-                          - {label: "Image", name: image, widget: image}
-                          - {label: "Copy", name: text, widget: text}
-                          - {label: "Link Text", name: linkText, widget: string, required: false}
-                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Blog Post Columns"
+            name: blogPostColumnsComponent
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string}
+              - label: "Blog Posts"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name:  image, widget: image}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-  -   label: "How we work."
-      name: how-we-work
-      description: "How we work pages"
-      folder: "src/pages/info-pages"
-      create: true
-      slug: "{{slug}}"
-      identifier_field: title
-      filter: {field: "parent", value: "how-we-work"}
-      fields:
-        - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-        - {label: "parent", name: parent, widget: select, options: ['how-we-work']}
-        - {label: "Type", name: type, widget: hidden, default: "info-page"}
-        - {label: "Page Title", name: title, widget: string}
-        - {label: "Page Sub Title", name: text, widget: string, required: false}
-        - {label: "Header Image", name:  image, widget: image, required: false}
-        -   label: "Page Components"
-            name: components
-            widget: list
-            types:
-              -   label: "Hero Component"
-                  name: heroComponent
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
-                    - {label: "Copy", name: text, widget: markdown}
+          - label: "Content Slider"
+            name: "contentSliderComponent"
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string}
+              - label: "Slides"
+                name: "articles"
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Copy", name: text, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+      # SEO
+      - label: "SEO"
+        name: seo
+        widget: object
+        required: false
+        fields:
+          - {label: "SEO Slug",        name: slug,        widget: string, required: false}
+          - {label: "SEO Tiitle",      name: title,       widget: string, required: false}
+          - {label: "SEO Description", name: description, widget: string, required: false}
 
-              -   label: "Full Width Image"
-                  name: fullWidthImageComponent
-                  widget: object
-                  fields:
-                    -   label: "Image"
-                        name: image
-                        widget: image
+  - label: "Careers."
+    label_singular: "Page"
+    name: careers
+    description: "Careers pages"
+    folder: "src/pages/info-pages"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    filter: {field: "parent", value: "careers"}
+    fields:
+      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "parent", name: parent, widget: select, options: ['careers']}
+      - {label: "Type", name: type, widget: hidden, default: "info-page"}
+      - {label: "Page Title", name: title, widget: string}
+      - {label: "Page Sub Title", name: text, widget: string, required: false}
+      - {label: "Header Image", name:  image, widget: image, required: false}
+      # COMPONENTS
+      - label: "Page Components"
+        name: components
+        widget: list
+        types:
+          - label: "Hero Component"
+            name: heroComponent
+            widget: object
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
+              - {label: "Copy", name: text, widget: markdown}
 
-              -   label: "Two Images"
-                  name: twoImageComponent
-                  widget: object
-                  fields:
-                    - {label: "Left Image", name: leftImage, widget: image}
-                    - {label: "Right Image", name: rightImage, widget: image}
+          - label: "Full Width Image"
+            name: fullWidthImageComponent
+            widget: object
+            fields:
+              - label: "Image"
+                name: image
+                widget: image
 
-              -   label: "Quote"
-                  name: quoteComponent
-                  widget: object
-                  fields:
-                    - {label: "Quote", name: quote, widget: text}
-                    - {label: "Name", name: name, widget: string, required: false}
-                    - {label: "Job Title", name: jobTitle, widget: string, required: false}
-                    - {label: "Profile Picture", name: profilePic, widget: image, required: false}
+          - label: "Two Images"
+            name: twoImageComponent
+            widget: object
+            fields:
+              - {label: "Left Image", name: leftImage, widget: image}
+              - {label: "Right Image", name: rightImage, widget: image}
 
-              -   label: "Image, Copy Columns"
-                  name: imageCopyColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Image", name: image, widget: image}
-                    - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
-                    - {label: "Copy", name: text, widget: text}
-                    - {label: "Link Text", name: linkText, widget: string, required: false}
-                    - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Quote"
+            name: quoteComponent
+            widget: object
+            fields:
+              - {label: "Quote", name: quote, widget: text}
+              - {label: "Name", name: name, widget: string, required: false}
+              - {label: "Job Title", name: jobTitle, widget: string, required: false}
+              - {label: "Profile Picture", name: profilePic, widget: image, required: false}
 
-              -   label: "Postit, Copy Columns"
-                  name: postitCopyColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
-                    - {label: "Copy", name: text, widget: text}
-                    - {label: "Link Text", name: linkText, widget: string, required: false}
-                    - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Image, Copy Columns"
+            name: imageCopyColumnsComponent
+            widget: object
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Image", name: image, widget: image}
+              - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
+              - {label: "Copy", name: text, widget: text}
+              - {label: "Link Text", name: linkText, widget: string, required: false}
+              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-              -   label: "Article Columns"
-                  name: articleColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Component Title", name: title, widget: string, required: false}
-                    -   label: "Articles"
-                        name: articles
-                        widget: list
-                        fields:
-                          - {label: "Title", name: title, widget: string}
-                          - {label: "Image", name: image, widget: image}
-                          - {label: "Copy", name: text, widget: text}
-                          - {label: "Link Text", name: linkText, widget: string, required: false}
-                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Postit, Copy Columns"
+            name: postitCopyColumnsComponent
+            widget: object
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
+              - {label: "Copy", name: text, widget: text}
+              - {label: "Link Text", name: linkText, widget: string, required: false}
+              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-              -   label: "Blog Post Columns"
-                  name: blogPostColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Component Title", name: title, widget: string}
-                    -   label: "Blog Posts"
-                        name: articles
-                        widget: list
-                        fields:
-                          - {label: "Title", name: title, widget: string}
-                          - {label: "Image", name:  image, widget: image}
-                          - {label: "Link Text", name: linkText, widget: string, required: false}
-                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Article Columns"
+            name: articleColumnsComponent
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string, required: false}
+              - label: "Articles"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Copy", name: text, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-              -   label: "Content Slider"
-                  name: "contentSliderComponent"
-                  widget: object
-                  fields:
-                    - {label: "Component Title", name: title, widget: string}
-                    -   label: "Slides"
-                        name: "articles"
-                        widget: list
-                        fields:
-                          - {label: "Title", name: title, widget: string}
-                          - {label: "Image", name: image, widget: image}
-                          - {label: "Copy", name: text, widget: text}
-                          - {label: "Link Text", name: linkText, widget: string, required: false}
-                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Blog Post Columns"
+            name: blogPostColumnsComponent
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string}
+              - label: "Blog Posts"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name:  image, widget: image}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-  -   label: "Careers."
-      name: careers
-      description: "Careers pages"
-      folder: "src/pages/info-pages"
-      create: true
-      slug: "{{slug}}"
-      identifier_field: title
-      filter: {field: "parent", value: "careers"}
-      fields:
-        - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-        - {label: "parent", name: parent, widget: select, options: ['careers']}
-        - {label: "Type", name: type, widget: hidden, default: "info-page"}
-        - {label: "Page Title", name: title, widget: string}
-        - {label: "Page Sub Title", name: text, widget: string, required: false}
-        - {label: "Header Image", name:  image, widget: image, required: false}
-        -   label: "Page Components"
-            name: components
-            widget: list
-            types:
-              -   label: "Hero Component"
-                  name: heroComponent
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
-                    - {label: "Copy", name: text, widget: markdown}
-
-              -   label: "Full Width Image"
-                  name: fullWidthImageComponent
-                  widget: object
-                  fields:
-                    -   label: "Image"
-                        name: image
-                        widget: image
-
-              -   label: "Two Images"
-                  name: twoImageComponent
-                  widget: object
-                  fields:
-                    - {label: "Left Image", name: leftImage, widget: image}
-                    - {label: "Right Image", name: rightImage, widget: image}
-
-              -   label: "Quote"
-                  name: quoteComponent
-                  widget: object
-                  fields:
-                    - {label: "Quote", name: quote, widget: text}
-                    - {label: "Name", name: name, widget: string, required: false}
-                    - {label: "Job Title", name: jobTitle, widget: string, required: false}
-                    - {label: "Profile Picture", name: profilePic, widget: image, required: false}
-
-              -   label: "Image, Copy Columns"
-                  name: imageCopyColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Image", name: image, widget: image}
-                    - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
-                    - {label: "Copy", name: text, widget: text}
-                    - {label: "Link Text", name: linkText, widget: string, required: false}
-                    - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-              -   label: "Postit, Copy Columns"
-                  name: postitCopyColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
-                    - {label: "Copy", name: text, widget: text}
-                    - {label: "Link Text", name: linkText, widget: string, required: false}
-                    - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-              -   label: "Article Columns"
-                  name: articleColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Component Title", name: title, widget: string, required: false}
-                    -   label: "Articles"
-                        name: articles
-                        widget: list
-                        fields:
-                          - {label: "Title", name: title, widget: string}
-                          - {label: "Image", name: image, widget: image}
-                          - {label: "Copy", name: text, widget: text}
-                          - {label: "Link Text", name: linkText, widget: string, required: false}
-                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-              -   label: "Blog Post Columns"
-                  name: blogPostColumnsComponent
-                  widget: object
-                  fields:
-                    - {label: "Component Title", name: title, widget: string}
-                    -   label: "Blog Posts"
-                        name: articles
-                        widget: list
-                        fields:
-                          - {label: "Title", name: title, widget: string}
-                          - {label: "Image", name:  image, widget: image}
-                          - {label: "Link Text", name: linkText, widget: string, required: false}
-                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-              -   label: "Content Slider"
-                  name: "contentSliderComponent"
-                  widget: object
-                  fields:
-                    - {label: "Component Title", name: title, widget: string}
-                    -   label: "Slides"
-                        name: "articles"
-                        widget: list
-                        fields:
-                          - {label: "Title", name: title, widget: string}
-                          - {label: "Image", name: image, widget: image}
-                          - {label: "Copy", name: text, widget: text}
-                          - {label: "Link Text", name: linkText, widget: string, required: false}
-                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+          - label: "Content Slider"
+            name: "contentSliderComponent"
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string}
+              - label: "Slides"
+                name: "articles"
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Copy", name: text, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string, required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+      # SEO
+      - label: "SEO"
+        name: seo
+        widget: object
+        required: false
+        fields:
+          - {label: "SEO Slug",        name: slug,        widget: string, required: false}
+          - {label: "SEO Tiitle",      name: title,       widget: string, required: false}
+          - {label: "SEO Description", name: description, widget: string, required: false}
 
   - name: "settings"
     label: "Site Settings"

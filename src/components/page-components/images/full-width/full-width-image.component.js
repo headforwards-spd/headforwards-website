@@ -12,5 +12,6 @@ export const FullWidthImageSrcPropType = shape(fullWidthImageSrcPropTypes);
 
 FullWidthImage.propTypes = fullWidthImageSrcPropTypes;
 function FullWidthImage({ image }) {
+
     return <Image className={styles.fullWidthImage} image={image} />;
 }

@@ -49,8 +49,11 @@ exports.onCreateNode = ({ node, actions }) => {
 function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
         pages.map(({ id, fields, frontmatter }) => {
-            const { slug } = fields;
-            const { path, type, parent } = frontmatter;
+            const { slug: titleSlug } = fields;
+            const { path, type, parent, seo } = frontmatter;
+            const { slug: seoSlug } = seo || {};
+            const slug = seoSlug || titleSlug;
+
             return createPage({
                 path: type !== 'wordpress-page' ? `/${parent}/${slug}` : `/old${path}`,
                 component: resolve(`src/templates/${type}.js`),
@@ -118,6 +121,9 @@ function getData(graphql) {
                         type
                         path
                         parent
+                        seo {
+                            slug
+                        }
                     }
                 }
             }

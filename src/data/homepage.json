@@ -3,7 +3,7 @@
         {
             "components": [
                 {
-                    "type": "heroComponent",
+                    "type": "image-copy-component",
                     "title":"Headforwards is a software development outsourcing company that builds strong relationships with clients in order to deliver exceptional software.",
                     "text": "Being true to the principals of an Agile methodology brings benefits to both clients and the people who work in the business."
                 }
@@ -14,7 +14,7 @@
             "image": true,
             "components": [
                 {
-                    "type": "heroComponent",
+                    "type": "image-copy-component",
                     "title":"People over process",
                     "text": "Developers are recruited specifically for a clients needs and teams are self-organising with the responsibility of producing software that delivers business value."
                 },
@@ -26,12 +26,12 @@
                     "name":       "Craig Girvan"
                 },
                 {
-                    "type": "heroComponent",
+                    "type": "image-copy-component",
                     "title":"",
                     "text": "Headforwards aim to provide early and continuous delivery of useful software and be flexible in its response to changing requirements."
                 },
                 {
-                    "type":       "quoteComponent",
+                    "type":       "quote-component",
                     "profilePic": "",
                     "jobTitle":   "",
                     "quote":      "If something changes in our clients world, they've got to adapt, they've got to look for a new competitive advantage in their software. ",
@@ -45,13 +45,13 @@
             "isRightImage": true,
             "components": [
                 {
-                    "type": "heroComponent",
+                    "type": "image-copy-component",
                     "title":"Building partnerships with clients",
                     "text": "Headforwards looks to develop trust between themselves and their clients by continuously delivering business value."
 
                 },
                 {
-                    "type":       "quoteComponent",
+                    "type":       "quote-component",
                     "profilePic": "/uploads/simon-minchin-author-copy-2.jpg",
                     "jobTitle":   "MD & Founder",
                     "quote":      "We want to be a partner to our clients, to develop long-term relationships with trust on both sides.",
@@ -66,13 +66,13 @@
             "isRightImage": false,
             "components": [
                 {
-                    "type": "heroComponent",
+                    "type": "image-copy-component",
                     "title":"Building partnerships with clients",
                     "text": "Headforwards looks to develop trust between themselves and their clients by continuously delivering business value."
 
                 },
                 {
-                    "type":       "quoteComponent",
+                    "type":       "quote-component",
                     "profilePic": "/uploads/simon-minchin-author-copy-2.jpg",
                     "jobTitle":   "MD & Founder",
                     "quote":      "We want to be a partner to our clients, to develop long-term relationships with trust on both sides.",
