@@ -1,13 +1,18 @@
 ---
 uuid: d1956170-ec44-11e9-914c-c376cef31113
+parent: who-we-are
 type: info-page
 title: Who we are.
 text: This is the optional subtitle
 image: /uploads/curlyhair.png
+seo:
+  - slug: this-is-who-we-are
+  - title: SEO Who we are.
+  - description: "SEO description about who we are."
 components:
-  - type: fullWidthImageComponent
-    image: /uploads/full-width-man-glasses.png
-  - type: imageCopyColumnsComponent
+  - type: images-component
+    imageOne: /uploads/full-width-man-glasses.png
+  - type: image-copy-component
     title: What we believe
     text: >-
       The client-focused approach to outsourcing worked, attracting major brands
@@ -17,7 +22,7 @@ components:
     isRightImage: false
     link: 359e0550-009f-11ea-b6f6-d743f848720a
     linkText: Discover more
-  - type: imageCopyColumnsComponent
+  - type: image-copy-component
     title: How it began
     text: >-
       The client-focused approach to outsourcing worked, attracting major brands
@@ -30,7 +35,8 @@ components:
   - isRightImage: false
     link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
     linkText: Discover more
-    type: postitCopyColumnsComponent
+    type: image-copy-component
+    isPostit: true
     title: What we believe
     text: >-
       The client-focused approach to outsourcing worked, attracting major brands
@@ -39,14 +45,15 @@ components:
   - isRightImage: true
     link: /
     linkText: Discover more
-    type: postitCopyColumnsComponent
+    type: image-copy-component
+    isPostit: true
     title: How it began
     text: >-
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
   - isTwoColumns: false
-    type: heroComponent
+    type: image-copy-component
     title: We believe in creating value
     text: >-
       Clients look to Headforwards to develop software that creates value. In a
@@ -68,10 +75,10 @@ components:
           companies. We create dedicated teams for specific projects and never
           switch members to other projects, nor do we have team members waiting.
         image: /uploads/curlyhair.png
-    type: articleColumnsComponent
+    type: article-component
     title: Headforwards specialise in software development outsourcing...
   - isTwoColumns: true
-    type: heroComponent
+    type: image-copy-component
     title: Headforwards specialise in software development outsourcing...
     text: >-
       Headforwards is based in Cornwall, UK and we specialise in software
@@ -103,11 +110,11 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         image: /uploads/curlyhair.png
-    type: articleColumnsComponent
+    type: article-component
     title: Headforwards specialise in software development outsourcing...
-  - leftImage: /uploads/girl.png
-    rightImage: /uploads/laptop.png
-    type: twoImageComponent
+  - imageOne: /uploads/girl.png
+    imageTwo: /uploads/laptop.png
+    type: images-component
   - jobTitle: Software Developer
     name: Emma Grimes
     profilePic: /uploads/girl.png
@@ -115,7 +122,7 @@ components:
       If something changes in our client’s world, they've got to adapt, they've
       got to look for a new competitive advantage in their software. And that’s
       always what we aim to deliver.
-    type: quoteComponent
+    type: quote-component
   - articles:
       - image: /uploads/curlyhair.png
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
@@ -126,7 +133,7 @@ components:
         link: b7482970-ef2c-11e9-a170-b1f1706e4527
         title: This is the 2nd title
         text: This is the 2nd blog text
-    type: blogPostColumnsComponent
+    type: blog-post-component
     title: From the blog.
   - articles:
       - title: New Slide
@@ -153,7 +160,7 @@ components:
           companies. We create dedicated teams for specific projects and never
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
-    type: contentSliderComponent
+    type: content-slider-component
     title: Our Story
 ---
 
