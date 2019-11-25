@@ -16,7 +16,7 @@ Homepage.defaultProps = {
 
 function Homepage({ data }) {
     const props = {
-        title: 'Forward Thinking Software',
+        title: 'Forward thinking software',
         image: '/uploads/curlyhair.png',
     };
     return (

@@ -15,6 +15,7 @@
     > section {
         order: 2;
         margin: $gutter-large $gutter-small;
+
         @media(min-width: $screen-md) {
             margin: $gutter-large $gutter-medium;
         }
@@ -24,7 +25,8 @@
 
         h1 {
             @include orange-type;
-            @include headingFontXLarge;
+            @include headingFontXXXLarge;
+            width: 62.5%;
         }
         h2 {
             color: black;
@@ -48,6 +50,7 @@
         }
 
         > section {
+            margin: 0 auto 6rem;
             &.hasSubTitle {
                 margin: 2*$gutter-large;
             }
@@ -65,12 +68,12 @@
 
             > section {
 
-                max-width: 67.5%;
-                margin: 0 2*$gutter-large $gutter-large;
+                //max-width: 67.5%;
+                //margin: 0 2*$gutter-large $gutter-large;
 
                 h1 {
                     color: white;
-                    @include headingFontXLarge;
+                    @include headingFontXXXLarge;
                 }
                 h2 {
                     @include orange-type;
@@ -90,6 +93,7 @@
         }
 
         .image {
+            max-width: unset;
             z-index: -1;
             position: absolute !important;
             top: 0;
