@@ -607,7 +607,7 @@ collections:
             widget: list
             fields:
               - {label: "Label", name: linkText, widget: string}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+              - {label: "Link", name: link, widget: string}
               - label: "Children"
                 name: children
                 widget: list
