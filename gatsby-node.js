@@ -50,9 +50,9 @@ function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
         pages.map(({ id, fields, frontmatter }) => {
             const { slug } = fields;
-            const { path, type } = frontmatter;
+            const { path, type, parent } = frontmatter;
             return createPage({
-                path: type !== 'wordpress-page' ? `/${slug}` : `/old${path}`,
+                path: type !== 'wordpress-page' ? `/${parent}/${slug}` : `/old${path}`,
                 component: resolve(`src/templates/${type}.js`),
                 context: { id },
             });
@@ -117,6 +117,7 @@ function getData(graphql) {
                     frontmatter {
                         type
                         path
+                        parent
                     }
                 }
             }

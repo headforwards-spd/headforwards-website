@@ -1,4 +1,3 @@
-
 @import "../../page-components/page-component";
 
 .contactStyles {
@@ -9,8 +8,29 @@
         &:nth-child(1) {
 
         }
+
         &:nth-child(2) {
             flex: 1;
+        }
+    }
+
+    .mapStyles {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+form {
+    button {
+        background-color: #FFB800;
+
+        &:after {
+            display: inline-block;
+
+            content: url(http://localhost:8000/images/hf-arrow.white.svg);
+            width: 1em;
+            margin-left: 1em;
+            vertical-align: sub;
         }
     }
 }
