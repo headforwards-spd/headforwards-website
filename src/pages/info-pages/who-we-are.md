@@ -5,10 +5,6 @@ type: info-page
 title: Who we are.
 text: This is the optional subtitle
 image: /uploads/curlyhair.png
-seo:
-  - slug: this-is-who-we-are
-  - title: SEO Who we are.
-  - description: "SEO description about who we are."
 components:
   - type: images-component
     imageOne: /uploads/full-width-man-glasses.png
