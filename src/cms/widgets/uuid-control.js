@@ -3,13 +3,16 @@ import * as uuid from 'uuid';
 import { string, func } from 'prop-types';
 
 const uuidControlPropTypes = {
-    value: string.isRequired,
+    value: string,
     onChange: func.isRequired,
     classNameWrapper: string.isRequired,
 };
 
 export default class UuidControl extends Component {
     static propTypes = uuidControlPropTypes;
+    static defaultProps = {
+        value: null,
+    };
 
     isValid() {
         const { value, onChange } = this.props;
