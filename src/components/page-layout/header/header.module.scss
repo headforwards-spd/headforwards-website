@@ -14,7 +14,7 @@
     }
     > section {
         order: 2;
-        margin: $gutter-large $gutter-small;
+        margin: $gutter-large auto;
 
         @media(min-width: $screen-md) {
             margin: $gutter-large $gutter-medium;

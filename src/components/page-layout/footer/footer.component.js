@@ -9,7 +9,7 @@ export default Footer;
 Footer.propTypes = {
     companyInfo: CompanyInfoPropType.isRequired,
 };
-function Footer({ companyInfo }) {
+function Footer({ companyInfo, callToAction }) {
     const { companyName, email, address, phone } = companyInfo;
     const isFooter = true;
     const thisYear = new Date().getFullYear();
@@ -17,7 +17,7 @@ function Footer({ companyInfo }) {
         <footer className={styles.footer}>
             <section className={styles.getInTouch}>
                 <h1>
-                    Want to know more about how we use mobbing to deliver quality software?
+                    {callToAction}
                     <Link to="/get-in-touch">Get in touch</Link>
                 </h1>
             </section>

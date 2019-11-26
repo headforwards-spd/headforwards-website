@@ -113,6 +113,7 @@ collections:
                   - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+      - {label: "Call to action", name: callToAction, widget: string, required: false}
       # SEO
       - label: "SEO"
         name: seo
@@ -248,6 +249,7 @@ collections:
                   - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+      - {label: "Call to action", name: callToAction, widget: string, required: false}
       # SEO
       - label: "SEO"
         name: seo
@@ -383,6 +385,7 @@ collections:
                   - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+      - {label: "Call to action", name: callToAction, widget: string, required: false}
       # SEO
       - label: "SEO"
         name: seo
@@ -518,6 +521,7 @@ collections:
                   - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+      - {label: "Call to action", name: callToAction, widget: string, required: false}
       # SEO
       - label: "SEO"
         name: seo
@@ -629,7 +633,3 @@ collections:
           - { label: "What we do.", value: what-we-do }
           - { label: "How we work.", value: how-we-work }
           - { label: "Careers", value: careers }
-
-
-
-

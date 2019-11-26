@@ -2,6 +2,7 @@ import { shape, string } from 'prop-types';
 
 export const companyInfoPropTypes = {
     companyName: string,
+    callToAction: string,
     email: string,
     address: string,
     phone: string,

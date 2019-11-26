@@ -16,7 +16,8 @@
         h1 {
             @include fontXXLarge;
 
-            padding: 3rem $page-gutter;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
             line-height: 1.5;
             color: white;
             margin-bottom: 0;

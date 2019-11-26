@@ -4,7 +4,6 @@
 @import '../../page-components/page-component';
 
 .menu {
-    padding: 0;
     @media (min-width: $screen-md) {
         padding: $page-gutter;
     }
@@ -14,12 +13,11 @@
 
     > header {
         @include flexRow;
-        margin-bottom: 0;
+        margin: 0 -#{$gutter-small/2};
 
         @media (min-width: $screen-md) {
             margin-bottom: $gutter-medium;
         }
-        //margin: 0;
 
         a {
             //@include fontLarge;

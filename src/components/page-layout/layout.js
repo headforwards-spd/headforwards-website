@@ -12,6 +12,7 @@ export default Layout;
 Layout.propTypes = {
     title: string.isRequired,
     text: string,
+    callToAction: string,
     image: ImageSrcPropType,
     seo: SeoPropType,
     children: oneOfType([arrayOf(node), node, string]),
@@ -22,7 +23,7 @@ Layout.defaultProps = {
     children: null,
     seo: null,
 };
-function Layout({ seo, title, text, image, children }) {
+function Layout({ seo, title, text, image, children, callToAction: pageCallToAction }) {
     const { menuData, companyInfo } = useStaticQuery(graphql`
         query {
             menuData: dataYaml(title: { eq: "main-menu" }) {
@@ -39,6 +40,7 @@ function Layout({ seo, title, text, image, children }) {
             }
             companyInfo: dataYaml(title: { eq: "company-info" }) {
                 companyName
+                callToAction
                 email
                 phone
                 address
@@ -52,6 +54,8 @@ function Layout({ seo, title, text, image, children }) {
     `);
     const { menu } = menuData || [];
 
+    const { callToAction: defaultCallToAction } = companyInfo;
+
     const headerProps = {
         title,
         text,
@@ -60,12 +64,14 @@ function Layout({ seo, title, text, image, children }) {
         companyInfo,
     };
 
+    const callToAction = pageCallToAction || defaultCallToAction;
+
     return (
         <>
             <Seo {...{ title, ...seo }} />
             <Header {...headerProps} />
             <main>{children}</main>
-            <Footer {...{ companyInfo }} />
+            <Footer {...{ companyInfo, callToAction }} />
             <section className="dev-links">
                 <Link to="/recruitee-jobs">Recruitee Jobs</Link>
                 <Link to="/wordpress-pages">Old WP Pages</Link>

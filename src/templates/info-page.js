@@ -21,6 +21,7 @@ InfoPagePage.propTypes = {
             frontmatter: shape({
                 title: string.isRequired,
                 text: string,
+                callToAction: string,
                 seo: {
                     slug: string,
                     title: string,
@@ -56,6 +57,7 @@ export const query = graphql`
             frontmatter {
                 title
                 text
+                callToAction
                 seo {
                     title
                     description
