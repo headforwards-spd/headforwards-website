@@ -5,6 +5,14 @@ menu:
         linkText: What we believe
       - link: 3b246990-0f6f-11ea-81de-ff3cb4003432
         linkText: How we began
+      - link: 3630b640-1033-11ea-9288-bf5475231968
+        linkText: Who we work with
+      - link: 40718760-1033-11ea-9288-bf5475231968
+        linkText: How we recruit
+      - link: 4bc8aa80-1033-11ea-9288-bf5475231968
+        linkText: What is it like here?
+      - link: 550440a0-1033-11ea-9288-bf5475231968
+        linkText: Where are we going?
     link: /who-we-are
     linkText: Who we are.
   - children:
