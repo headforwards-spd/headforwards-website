@@ -5,7 +5,7 @@
                 {
                     "type": "image-copy-component",
                     "title":"Headforwards is a software development outsourcing company that builds strong relationships with clients in order to deliver exceptional software.",
-                    "text": "Being true to the principals of an Agile methodology brings benefits to both clients and the people who work in the business."
+                    "text": "Being true to the principles of an Agile methodology brings benefits to both clients and the people who work in the business."
                 }
             ]
         },
@@ -16,26 +16,21 @@
                 {
                     "type": "image-copy-component",
                     "title":"People over process",
-                    "text": "Developers are recruited specifically for a clients needs and teams are self-organising with the responsibility of producing software that delivers business value."
+                    "text": "Developers are recruited specifically for a client’s needs and teams are self-organising with the responsibility of producing software that delivers business value."
                 },
                 {
                     "type":       "quoteComponent",
                     "profilePic": "/uploads/simon-minchin-author-copy-2.jpg",
                     "jobTitle":   "Director & Co-Founder",
                     "quote":      "It's about picking the right people for each client, rather than running a bench. ",
-                    "name":       "Craig Girvan"
-                },
-                {
-                    "type": "image-copy-component",
-                    "title":"",
-                    "text": "Headforwards aim to provide early and continuous delivery of useful software and be flexible in its response to changing requirements."
+                    "name":       "Toby Parkins"
                 },
                 {
                     "type":       "quote-component",
                     "profilePic": "",
-                    "jobTitle":   "",
+                    "jobTitle":   "Director & Co-founder",
                     "quote":      "If something changes in our clients world, they've got to adapt, they've got to look for a new competitive advantage in their software. ",
-                    "name":       ""
+                    "name":       "Craig Girvan"
                 }
             ]
         },
@@ -52,10 +47,10 @@
                 },
                 {
                     "type":       "quote-component",
-                    "profilePic": "/uploads/simon-minchin-author-copy-2.jpg",
-                    "jobTitle":   "MD & Founder",
+                    "profilePic": "",
+                    "jobTitle":   "",
                     "quote":      "We want to be a partner to our clients, to develop long-term relationships with trust on both sides.",
-                    "name":       "Toby Parkins"
+                    "name":       ""
                 }
 
             ]
@@ -67,16 +62,16 @@
             "components": [
                 {
                     "type": "image-copy-component",
-                    "title":"Building partnerships with clients",
-                    "text": "Headforwards looks to develop trust between themselves and their clients by continuously delivering business value."
+                    "title":"Careers without compromise",
+                    "text": "Headforwards offer the ability to live in one of the most beautiful and relaxing parts of the UK while at the same time working at the forefront of professional technical excellence."
 
                 },
                 {
                     "type":       "quote-component",
-                    "profilePic": "/uploads/simon-minchin-author-copy-2.jpg",
-                    "jobTitle":   "MD & Founder",
-                    "quote":      "We want to be a partner to our clients, to develop long-term relationships with trust on both sides.",
-                    "name":       "Toby Parkins"
+                    "profilePic": "",
+                    "jobTitle":   "",
+                    "quote":      "There are no egos here. Team fit is the most important thing, so the people we hire need to be really positive and prepared to have each other’s backs.",
+                    "name":       ""
                 }
 
             ]

@@ -1,16 +1,43 @@
 title: main-menu
 menu:
   - children:
-      - link: d1956170-ec44-11e9-914c-c376cef31113
-        linkText: Who We Are...
+      - link: 07758420-1033-11ea-9288-bf5475231968
+        linkText: What we believe
+      - link: 3b246990-0f6f-11ea-81de-ff3cb4003432
+        linkText: How we began
+      - link: 3630b640-1033-11ea-9288-bf5475231968
+        linkText: Who we work with
+      - link: 40718760-1033-11ea-9288-bf5475231968
+        linkText: How we recruit
+      - link: 4bc8aa80-1033-11ea-9288-bf5475231968
+        linkText: What is it like here?
+      - link: 550440a0-1033-11ea-9288-bf5475231968
+        linkText: Where are we going?
     link: /who-we-are
     linkText: Who we are.
   - children:
-      - link: b7482970-ef2c-11e9-a170-b1f1706e4526
-        linkText: Front End Jobs
+      - link: 45d05450-103a-11ea-9ef0-bd54961b4e30
+        linkText: People over process
+      - link: 53629a60-103a-11ea-9ef0-bd54961b4e30
+        linkText: Create value through software
+      - link: 359e0550-009f-11ea-b6f6-d743f848720a
+        linkText: Build strong relationships
+      - link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+        linkText: Create effective teams
     link: /what-we-do
     linkText: What we do.
-  - link: /how-we-work
+  - children:
+      - link: 7332ebd0-0fac-11ea-8f1d-b7c7fe6e2260
+        linkText: Working model
+      - link: 0cd74ed0-0fac-11ea-843f-932c76de5936
+        linkText: Collaboration
+      - link: fe1a1d50-0fab-11ea-843f-932c76de5936
+        linkText: Always aim to do the right thing
+      - link: 21a08160-0fac-11ea-843f-932c76de5936
+        linkText: Continuous delivery
+      - link: 3c96d190-0fac-11ea-843f-932c76de5936
+        linkText: Mobbing
+    link: /how-we-work
     linkText: How we work.
   - children:
       - link: 92161650-0f9b-11ea-9e15-59d1e5da42db

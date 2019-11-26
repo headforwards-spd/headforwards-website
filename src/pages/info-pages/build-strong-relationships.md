@@ -2,15 +2,15 @@
 uuid: 359e0550-009f-11ea-b6f6-d743f848720a
 parent: what-we-do
 type: info-page
-title: Build strong relationships.
+title: Build strong relationships
 text: ''
 image: /uploads/simon-minchin-author-copy-2.jpg
 components:
-  - isRightImage: true
+  - isPostit: true
+    isRightImage: true
     link: d1956170-ec44-11e9-914c-c376cef31113
     linkText: ''
     type: image-copy-component
-    isPostit: true
     title: Strong relationships matter
     text: >
 
@@ -35,9 +35,9 @@ components:
       share ideas, work in diverse teams and take risks every day – and our
       clients get a lot of value from that
     type: quote-component
-  - isRightImage: false
+  - isPostit: true
+    isRightImage: false
     type: image-copy-component
-    isPostit: true
     title: A team dynamic focused on equality and respect
     text: >
       From the moment someone joins Headforwards, they’re treated as a valued
@@ -53,9 +53,9 @@ components:
       value. It’s a flat structure – everyone is listened to, everyone is
       trusted equally, and we’re all a united team
     type: quote-component
-  - isRightImage: true
+  - isPostit: true
+    isRightImage: true
     type: image-copy-component
-    isPostit: true
     title: Client relationships that go further
     text: >
       Headforwards works closely with clients to do much more than deliver to
@@ -72,3 +72,4 @@ components:
       clients have seen huge results from this.
     type: quote-component
 ---
+

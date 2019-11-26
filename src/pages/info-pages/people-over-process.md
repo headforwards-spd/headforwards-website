@@ -1,7 +1,7 @@
 ---
-uuid: 2370f610-0f74-11ea-ab05-7d37da5364a3
+uuid: 45d05450-103a-11ea-9ef0-bd54961b4e30
 parent: what-we-do
 type: info-page
-title: People over process.
+title: People over process
 ---
 
