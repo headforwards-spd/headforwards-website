@@ -15,7 +15,15 @@ menu:
         linkText: Where are we going?
     link: /who-we-are
     linkText: Who we are.
-  - children: []
+  - children:
+      - link: 45d05450-103a-11ea-9ef0-bd54961b4e30
+        linkText: People over process
+      - link: 53629a60-103a-11ea-9ef0-bd54961b4e30
+        linkText: Create value through software
+      - link: 359e0550-009f-11ea-b6f6-d743f848720a
+        linkText: Build strong relationships
+      - link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+        linkText: Create effective teams
     link: /what-we-do
     linkText: What we do.
   - children:
