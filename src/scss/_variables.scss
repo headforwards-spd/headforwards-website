@@ -8,11 +8,11 @@ $gutter-medium: 2rem;
 $gutter-large:  4rem;
 
 // Breakpoints
-$screen-sm: 320px;
-$screen-md: 620px;
-$screen-lg: 1024px;
-$screen-xl: 1200px;
-$screen-xxl: 1440px;
+$screen-sm: 320px;   // page gutter 2*1rem ?
+$screen-md: 620px;   // page gutter 2*2rem ?
+$screen-lg: 1024px;  // page gutter 2*3rem ?
+$screen-xl: 1200px;  // page gutter 2*4rem ?
+$screen-xxl: 1440px; // page gutter 2*5rem ?
 
 $min_width: $screen-sm;
 $max_width: $screen-xxl;
