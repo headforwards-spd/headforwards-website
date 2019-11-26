@@ -3,19 +3,17 @@ menu:
   - children:
       - link: d1956170-ec44-11e9-914c-c376cef31113
         linkText: Who We Are...
-    link: /who-we-are/
+    link: /who-we-are
     linkText: Who we are.
   - children:
       - link: b7482970-ef2c-11e9-a170-b1f1706e4526
         linkText: Front End Jobs
-    link: /what-we-do/
+    link: /what-we-do
     linkText: What we do.
-  - link: /how-we-work/
+  - link: /how-we-work
     linkText: How we work.
   - children:
       - link: 92161650-0f9b-11ea-9e15-59d1e5da42db
         linkText: 'Pizza, beaches and beer.'
-    link: /careers/
+    link: /careers
     linkText: Careers.
-  - link: /contact/
-    linkText: Contact.

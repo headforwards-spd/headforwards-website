@@ -22,7 +22,7 @@ Seo.defaultProps = {
     meta: [],
 };
 
-function Seo({ description, lang, meta, title }) {
+function Seo({ title, description, lang, meta }) {
     const { companyInfo } = useStaticQuery(graphql`
         query {
             companyInfo: dataYaml(title: { eq: "company-info" }) {

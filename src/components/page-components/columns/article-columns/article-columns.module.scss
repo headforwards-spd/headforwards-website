@@ -67,9 +67,9 @@
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
-                margin: 0 $gutter-medium/2 $gutter-medium/2;
+                margin: #{-$column-gutter/2} #{-$column-gutter/2} #{$gutter-large - $column-gutter/2};
                 > * {
-                    margin: 0 $gutter-medium/2 $gutter-medium/2;
+                    margin: $column-gutter/2;
                 }
                 .article {
                     width: calc((100% / 2) - #{$gutter-medium});

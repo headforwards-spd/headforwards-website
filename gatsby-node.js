@@ -18,7 +18,8 @@ exports.createPages = ({ actions, graphql }) => {
 
     return getData(graphql)
         .then(({ data, errors }) => (!errors ? Promise.resolve(data) : Promise.reject(errors)))
-        .then(({ pages, posts, jobs }) => {
+        .then(({ indexPages, pages, posts, jobs }) => {
+            createAllIndexPages(createPage, indexPages);
             createAllPages(createPage, pages);
             createAllPosts(createPage, posts);
             createAllJobs(createPage, jobs);
@@ -45,6 +46,19 @@ exports.onCreateNode = ({ node, actions }) => {
     }
     return Promise.resolve();
 };
+
+function createAllIndexPages(createPage, { menu: pages }) {
+    return Promise.all(
+        pages.map(({ linkText: title, link: path, children }) => {
+
+            return createPage({
+                path,
+                component: resolve(`src/templates/index-page.js`),
+                context: { title, children },
+            });
+        })
+    );
+}
 
 function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
@@ -98,6 +112,35 @@ function createAllPosts(createPage, { nodes: posts = [] }) {
 function getData(graphql) {
     return graphql(`
         {
+            indexPages:   dataYaml(title: {eq: "main-menu"}) {
+                menu {
+                    linkText
+                    link
+                    children {
+                        link
+                        linkText
+                        page {
+                            frontmatter {
+                                image {
+                                    publicURL
+                                    childImageSharp {
+                                        fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: ENTROPY) {
+                                            aspectRatio
+                                            base64
+                                            sizes
+                                            src
+                                            srcSet
+                                            srcSetWebp
+                                            srcWebp
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             posts: allMarkdownRemark(
                 filter: { frontmatter: { type: { eq: "wordpress-post" } } }
                 sort: { fields: frontmatter___date, order: DESC }

@@ -4,6 +4,7 @@
 .fullWidthImage {
 
     margin-bottom: $gutter-large;
+    max-height: calc(100vh - #{$gutter-large*2});
 
     @media (min-width: $screen-lg) {
 

@@ -21,7 +21,6 @@ export const PageComponentPropType = shape(pageComponentPropTypes);
 
 PageComponent.propTypes = pageComponentPropTypes;
 function PageComponent({ type, ...component }) {
-
     switch (type) {
         case 'images-component':
             return <ImagesComponent {...component} />;
@@ -49,7 +48,6 @@ ImagesComponent.defaultProps = {
     imageTwo: null,
 };
 function ImagesComponent({ imageOne, imageTwo, ...props }) {
-
     return !imageTwo ? (
         <FullWidthImage {...{ ...props, image: imageOne }} />
     ) : (
@@ -75,6 +73,6 @@ function ImageCopyComponent({ image, imageSquare, isPostit, ...props }) {
         case !image:
             return <Hero {...props} />;
         default:
-            return <ImageCopyColumns {...{ image: imageSquare, ...props }} />;
+            return <ImageCopyColumns {...{ image, ...props }} />;
     }
 }

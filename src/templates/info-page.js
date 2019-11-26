@@ -21,6 +21,11 @@ InfoPagePage.propTypes = {
             frontmatter: shape({
                 title: string.isRequired,
                 text: string,
+                seo: {
+                    slug: string,
+                    title: string,
+                    description: string,
+                },
                 image: shape({
                     publicURL: string,
                     childImageSharp: shape({
@@ -51,6 +56,10 @@ export const query = graphql`
             frontmatter {
                 title
                 text
+                seo {
+                    title
+                    description
+                }
                 image {
                     publicURL
                     childImageSharp {
@@ -68,6 +77,7 @@ export const query = graphql`
                     }
                 }
                 components {
+                    id
                     type
                     title
                     text
@@ -80,6 +90,7 @@ export const query = graphql`
                     link
                     linkText
                     articles {
+                        id
                         title
                         text
                         linkText

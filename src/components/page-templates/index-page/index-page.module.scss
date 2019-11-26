@@ -1,0 +1,28 @@
+@import "../../page-components/columns/columns";
+.pages {
+    @include columns-component;
+    justify-content: flex-start;
+
+    > a {
+        width: 100%;
+        @media(min-width: $screen-lg) {
+            width: calc(50% - #{$column-gutter});
+        }
+    }
+
+    @media(min-width: $screen-lg) {
+        justify-content: flex-start;
+        > a {
+                width: calc(50% - #{$column-gutter});
+        }
+    }
+
+    .page {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            @include arrow-link;
+        }
+    }
+}

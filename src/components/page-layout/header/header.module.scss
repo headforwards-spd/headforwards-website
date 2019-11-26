@@ -50,10 +50,7 @@
         }
 
         > section {
-            margin: 0 auto 6rem;
-            &.hasSubTitle {
-                margin: 2*$gutter-large;
-            }
+            margin: 0 auto $gutter-large;
         }
 
         &.hasBackground {

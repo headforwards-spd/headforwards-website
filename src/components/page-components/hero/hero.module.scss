@@ -2,6 +2,7 @@
 @import "../../../scss/mixins/mixins";
 @import "../../../scss/mixins/typography";
 @import '../page-component';
+@import "../columns/columns";
 
 .hero {
     @include component-gutter;
@@ -13,27 +14,30 @@
         margin-bottom: 0;
     }
 
+    &.isTwoColumns {
+        @include columns-component;
+    }
     @media(min-width: $screen-lg) {
 
         &.isTwoColumns {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-left: $gutter-medium/2;
-            margin-right: $gutter-medium/2;
-
-            > h1, > section {
-                padding: 0 $gutter-medium/2;
-            }
+            //display: flex;
+            //flex-direction: row;
+            //align-items: center;
+            //margin-left: $gutter-medium/2;
+            //margin-right: $gutter-medium/2;
+            //
+            //> h1, > section {
+            //    padding: 0 $gutter-medium/2;
+            //}
 
             > h1 {
-                width: 37.5%;
-                margin-bottom: 0;
+                width: calc(37.5% - #{$column-gutter});
+                //margin-bottom: 0;
             }
 
             > section {
-                width: 67.5%;
-                margin-bottom: 0;
+                width: calc(62.5% - #{$column-gutter});
+                //margin-bottom: 0;
             }
         }
     }

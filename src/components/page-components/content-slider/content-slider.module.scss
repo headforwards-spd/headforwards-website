@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     height: calc(100vh - 48px);
-    margin-bottom: $gutter-large;
+    margin: 0 -#{$page-gutter} $gutter-large;
     > h1 {
         padding: 0 $gutter-small;
         @include headingFontSmall;
@@ -177,8 +177,8 @@
 
 @media(min-width: $screen-lg) {
     .contentSlider {
-        padding: 5rem 0;
-        background: linear-gradient(to right, $blue-background 0%, $blue-background 90%, $blue-background 90%, #ffffff 90%, #ffffff 100%);
+        padding: 5rem $page-gutter 5rem 0;
+        background: linear-gradient(to right, $blue-background 0%, $blue-background 80%, $blue-background 80%, #ffffff 80%, #ffffff 100%);
         position: relative;
         height: auto;
 
@@ -187,16 +187,20 @@
             top: 5rem;
             padding: 0;
             margin: 0;
-            left: 10%;
+            left: $page-gutter;
             z-index: 10;
+        }
+
+        :global(.slick-list) {
+            margin-right: -$page-gutter;
         }
 
         :global(.slick-dots) {
             position: absolute;
             top: -5rem;
             height: 5rem;
-            right: 0;
-            width: 10%;
+            right: $page-gutter;
+            width: calc(20% - #{$page-gutter} - #{$page-gutter*0.8});
 
             button:before {
                 font-size: 0.8rem;
@@ -210,7 +214,7 @@
         :global(.slick-arrow) {
 
             top: calc(100% + 2.5rem);
-            width: 5%;
+            width: calc(10% - #{$page-gutter/2} - #{$page-gutter*0.4});
             height: 5rem;
 
             svg {
@@ -219,12 +223,12 @@
 
             &:global(.slick-prev) {
                 left: unset;
-                right: 5%;
+                right: calc(10% - #{$page-gutter/2} - #{$page-gutter*0.4} + #{$page-gutter})
             }
 
             &:global(.slick-next) {
                 left: unset;
-                right: 0;
+                right: $page-gutter;
             }
 
         }
@@ -243,7 +247,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: calc(10% - 1rem);
+        margin-left: calc(#{$page-gutter} - #{$column-gutter/2});
         height: calc(90vh - 10rem);
         background: $blue-background;
 

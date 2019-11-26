@@ -1,5 +1,5 @@
 const uuid = require('uuid');
-const { getUrl, getUrls } = require('../lib/page-urls');
+const { getIndexedPages, getIndexedPage } = require('../lib/indexed-pages');
 
 exports.sourceNodes = gatsby => {
     const { getNodes } = gatsby;
@@ -10,7 +10,7 @@ exports.sourceNodes = gatsby => {
         return type === 'MarkdownRemark';
     });
 
-    const urls = getUrls(pages);
+    const indexedPages = getIndexedPages(pages);
 
     pages.forEach(page => {
         const { frontmatter } = page || {};
@@ -19,16 +19,17 @@ exports.sourceNodes = gatsby => {
         if (components && components.length) {
             components.forEach(component => {
                 const { link = '', articles = [] } = component;
-                component.id = uuid.v1();
+                const { path = link } = getIndexedPage(indexedPages, link) || {};
 
-                !!link && (component.link = getUrl(urls, link) || link);
+                component.id = uuid.v1();
+                component.link = path;
 
                 articles.forEach(article => {
                     const { link: childLink = '' } = article || {};
+                    const { path: childPath = link } = getIndexedPage(indexedPages, childLink) || {};
 
                     article.id = uuid.v1();
-
-                    !!childLink && (article.link = getUrl(urls, childLink) || childLink);
+                    article.link = childPath;
                 });
             });
 

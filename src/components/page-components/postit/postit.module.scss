@@ -44,16 +44,6 @@ $postitRight: perspective(24rem) rotateY(-1deg);
     &.v8 {
         transform: $postitLeft $postit8;
     }
-
-    //box-shadow: 0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
-    //border-bottom-right-radius: #{2*$gutter-large} #{$gutter-large/5};
-    //background: linear-gradient(135deg, $orange 81%, $orange 82%, $orange 82%, lighten($orange, 25%) 100%);
-    //transition: box-shadow 500ms ease, transform 250ms ease;
-
-    //&:hover {
-    //    box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba($paragraph_grey, 0.2);
-    //    transform: rotateX(0);
-    //}
 }
 
 
@@ -87,16 +77,6 @@ $postitRight: perspective(24rem) rotateY(-1deg);
             &.v8 {
                 transform: $postitRight $postit8;
             }
-
-            //box-shadow: -0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
-            //border-bottom-right-radius: 0;
-            //border-bottom-left-radius: #{2*$gutter-large} #{$gutter-large/5};
-            //background: linear-gradient(-135deg, $orange 81%, $orange 82%, $orange 82%, lighten($orange, 25%) 100%);
-
-            //&:hover {
-            //    box-shadow: -0.25rem 0.25rem 0.5rem 0 rgba($paragraph_grey, 0.2);
-            //    transform: rotateX(0);
-            //}
         }
     }
 }

@@ -1,5 +1,5 @@
 const uuid = require('uuid');
-const { getUrl, getUrls } = require('../lib/page-urls');
+const { getIndexedPages, getIndexedPage } = require('../lib/indexed-pages');
 
 exports.onCreateNode = ({ node, getNodes }) => {
     if (node.internal.type !== `DataYaml`) {
@@ -12,7 +12,7 @@ exports.onCreateNode = ({ node, getNodes }) => {
         return type === 'MarkdownRemark';
     });
 
-    const urls = getUrls(pages);
+    const indexedPages = getIndexedPages(pages);
 
     const { menu = [] } = node;
 
@@ -21,10 +21,12 @@ exports.onCreateNode = ({ node, getNodes }) => {
     return node;
 
     function transformChildren(item) {
-        const { link, children } = item;
+        const { link = '', children } = item;
+        const { id = null, path = link } = getIndexedPage(indexedPages, link) || {};
 
         item.id = uuid.v1();
-        !!link && (item.link = getUrl(urls, link) || link);
+        item.page___NODE = id;
+        item.link = path;
         !!children && (item.children = children.map(transformChildren));
 
         return item;
