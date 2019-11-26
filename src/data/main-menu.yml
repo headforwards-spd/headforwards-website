@@ -15,9 +15,7 @@ menu:
         linkText: Where are we going?
     link: /who-we-are
     linkText: Who we are.
-  - children:
-      - link: b7482970-ef2c-11e9-a170-b1f1706e4526
-        linkText: Front End Jobs
+  - children: []
     link: /what-we-do
     linkText: What we do.
   - link: /how-we-work
