@@ -37,11 +37,21 @@
             margin-bottom: 0;
         }
     }
+
+    .hasSubTitle {
+        h1, h2 {
+            font-size: 52px;
+        }
+
+    }
+
     &.hasBackground {
         > section {
             margin-top: 0;
         }
     }
+
+
 
     @media(min-width: $screen-lg) {
 
