@@ -2,7 +2,7 @@ title: main-menu
 menu:
   - children:
       - link: d1956170-ec44-11e9-914c-c376cef31113
-        linkText: Who We Are...
+        linkText: Who we are
     link: /who-we-are
     linkText: Who we are.
   - children:
