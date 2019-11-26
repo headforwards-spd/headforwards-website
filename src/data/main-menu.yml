@@ -1,6 +1,8 @@
 title: main-menu
 menu:
   - children:
+      - link: 07758420-1033-11ea-9288-bf5475231968
+        linkText: What we believe
       - link: 3b246990-0f6f-11ea-81de-ff3cb4003432
         linkText: How we began
     link: /who-we-are
