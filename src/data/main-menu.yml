@@ -18,7 +18,18 @@ menu:
   - children: []
     link: /what-we-do
     linkText: What we do.
-  - link: /how-we-work
+  - children:
+      - link: 7332ebd0-0fac-11ea-8f1d-b7c7fe6e2260
+        linkText: Working model
+      - link: 0cd74ed0-0fac-11ea-843f-932c76de5936
+        linkText: Collaboration
+      - link: fe1a1d50-0fab-11ea-843f-932c76de5936
+        linkText: Always aim to do the right thing
+      - link: 21a08160-0fac-11ea-843f-932c76de5936
+        linkText: Continuous delivery
+      - link: 3c96d190-0fac-11ea-843f-932c76de5936
+        linkText: Mobbing
+    link: /how-we-work
     linkText: How we work.
   - children:
       - link: 92161650-0f9b-11ea-9e15-59d1e5da42db
