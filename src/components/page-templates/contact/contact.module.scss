@@ -1,8 +1,22 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins/mixins";
+@import "../../../scss/mixins/typography";
 @import "../../page-components/page-component";
+
 
 .contactStyles {
     @include component-gutter;
     display: flex;
+    flex-wrap: wrap;
+
+    p {
+        @include fontLarge;
+        margin-bottom: 0;
+
+        &.bold {
+            font-weight: bold;
+        }
+    }
 
     .flexSection {
         &:nth-child(1) {
@@ -21,16 +35,33 @@
 }
 
 form {
+    width: 100%;
+    @include fontLarge;
+    font-weight: lighter;
     button {
         background-color: #FFB800;
+        color: white;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        float: right;
 
         &:after {
-            display: inline-block;
-
             content: url(http://localhost:8000/images/hf-arrow.white.svg);
             width: 1em;
             margin-left: 1em;
-            vertical-align: sub;
         }
+    }
+    > div {
+        > div {
+            width: 100%;
+        }
+    }
+
+    input, textarea {
+        background-image: none !important;
+        width: 100%;
+        padding: 1rem;
     }
 }
