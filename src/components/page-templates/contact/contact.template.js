@@ -1,12 +1,23 @@
 import React from 'react';
+import { string } from 'prop-types';
 import styles from './contact.module.scss';
+
+const contactPropTypes = {
+    email: string,
+    phone: string,
+    address: string,
+};
 
 export default ContactTemplate;
 
-ContactTemplate.propTypes = {};
+ContactTemplate.propTypes = contactPropTypes;
+ContactTemplate.defaultProps = {
+    email: '',
+    phone: '',
+    address: '',
+};
 
 function ContactTemplate({ email, phone, address }) {
-    // const { email } = companyInfo;
     return (
         <>
             <section className={styles.contactStyles}>

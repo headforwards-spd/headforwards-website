@@ -50,7 +50,6 @@ exports.onCreateNode = ({ node, actions }) => {
 function createAllIndexPages(createPage, { menu: pages }) {
     return Promise.all(
         pages.map(({ linkText: title, link: path, children }) => {
-
             return createPage({
                 path,
                 component: resolve(`src/templates/index-page.js`),
@@ -112,7 +111,7 @@ function createAllPosts(createPage, { nodes: posts = [] }) {
 function getData(graphql) {
     return graphql(`
         {
-            indexPages:   dataYaml(title: {eq: "main-menu"}) {
+            indexPages: dataYaml(title: { eq: "main-menu" }) {
                 menu {
                     linkText
                     link

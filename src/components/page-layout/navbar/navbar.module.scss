@@ -4,16 +4,21 @@
 @import '../../page-components/page-component';
 
 .menu {
-    padding: $page-gutter;
-    //@media (min-width: $screen-md) {
-    //    padding: $gutter-small $gutter-medium/2;
-    //}
+    padding: 0;
+    @media (min-width: $screen-md) {
+        padding: $page-gutter;
+    }
 
     background-color: white;
     border-bottom: 1px solid #D8D8D8;
 
     > header {
         @include flexRow;
+        margin-bottom: 0;
+
+        @media (min-width: $screen-md) {
+            margin-bottom: $gutter-medium;
+        }
         //margin: 0;
 
         a {
@@ -63,6 +68,7 @@
 
                 &.hasChildren > a {
                     display: flex;
+
                     button {
                         background: none;
                         border: none;
@@ -72,6 +78,7 @@
 
                     }
                 }
+
                 border-top: 1px solid #383F51;
                 text-decoration: none;
 
@@ -81,17 +88,21 @@
 
                 > section {
                     display: none;
+
                     ul {
                         margin-bottom: $gutter-small;
                     }
+
                     a {
                         color: #d7d7d6;
                         display: block;
                         padding: 0.5em 0;
                     }
                 }
+
                 &.isOpen > section {
                     display: block;
+
                     h1 {
                         display: none;
                     }
@@ -105,6 +116,7 @@
             padding: 0;
             margin: 0;
         }
+
         dt, h1 {
             text-transform: uppercase;
             @include orange-type;
@@ -112,6 +124,7 @@
             margin-bottom: 0;
             font-weight: normal;
         }
+
         dd {
             line-height: 2;
             @include fontLarge;
@@ -208,13 +221,16 @@
                         &:hover {
                             @include orange-type;
                         }
+
                         button {
                             display: none;
                         }
                     }
+
                     &.isOpen > section {
                         display: none;
                     }
+
                     > section {
                         display: none;
                         padding: 20px;
@@ -263,6 +279,7 @@
                             display: block;
                         }
                     }
+
                     &:hover {
                         > section {
                             display: block;
@@ -289,7 +306,7 @@
 
             > section {
 
-                > ul  > li > a {
+                > ul > li > a {
                     color: white;
                 }
             }

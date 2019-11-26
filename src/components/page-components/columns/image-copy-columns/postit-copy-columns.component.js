@@ -26,8 +26,6 @@ function PostitCopyColumns({ isRightImage, title, text, link, linkText }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
     const hasLink = !!link && !!linkText;
 
-    console.log({styles});
-
     return (
         <section className={`${styles.columnsWrapper} ${imageClass}`}>
             <Postit isRightImage={isRightImage} className={styles.postit} />
