@@ -4,6 +4,7 @@ parent: who-we-are
 type: info-page
 title: Who we work with
 text: ''
+image: /uploads/curlyhair.png
 components:
   - jobTitle: 'John Howell, Travel Solutions Director'
     name: John Howell
