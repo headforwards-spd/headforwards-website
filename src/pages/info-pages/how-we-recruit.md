@@ -11,5 +11,16 @@ components:
       people we hire need to be really positive and prepared to have each
       other’s backs.
     type: quote-component
+  - quote: >-
+      We want to make sure our people feel completely at home where they are.
+      That applies equally to the projects they’re working on and the experience
+      of being here in general—we even help our employees choose the best place
+      to live if they’re relocating.
+    type: quote-component
+  - quote: >-
+      We do a lot to try and make sure our people and their families are
+      happy—from helping them integrate into Cornish life to organising regular
+      social events, like our annual ‘Headstock’ festival.
+    type: quote-component
 ---
 
