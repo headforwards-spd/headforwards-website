@@ -41,6 +41,14 @@ menu:
     linkText: How we work.
   - children:
       - link: 92161650-0f9b-11ea-9e15-59d1e5da42db
-        linkText: 'Pizza, beaches and beer.'
+        linkText: 'Pizza, beaches and beer'
+      - link: 87ef9080-0f86-11ea-9e15-59d1e5da42db
+        linkText: Digital peninsular
+      - link: 97f70000-0fac-11ea-b2ae-07531833e614
+        linkText: 'Training, development and growth'
+      - link: 5fc0e4d0-0fac-11ea-8ab2-d74757235dd0
+        linkText: Working at Headforwards
+      - link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
+        linkText: Jobs
     link: /careers
     linkText: Careers.
