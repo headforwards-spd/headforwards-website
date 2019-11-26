@@ -1,8 +1,8 @@
 title: main-menu
 menu:
   - children:
-      - link: d1956170-ec44-11e9-914c-c376cef31113
-        linkText: Who we are
+      - link: 3b246990-0f6f-11ea-81de-ff3cb4003432
+        linkText: How we began
     link: /who-we-are
     linkText: Who we are.
   - children:
