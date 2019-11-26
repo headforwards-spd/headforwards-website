@@ -24,8 +24,8 @@
     @media (min-width: $screen-lg) {
 
         .image {
-            width: calc(37.5% + #{$page-gutter});
-            margin: 0 #{$column-gutter/2} 0 -#{$page-gutter + $column-gutter/2};
+            width: calc(37.5% + #{$page-gutter - $column-gutter});
+            margin: 0 #{$column-gutter/2} 0 -#{$page-gutter - $column-gutter/2};
             > div {
                 padding-bottom: calc(62.5% + #{$page-gutter}) !important;
             }
@@ -47,7 +47,7 @@
             flex-direction: row-reverse;
 
             .image {
-                margin: 0 -#{$page-gutter + $column-gutter/2} 0 #{$column-gutter/2};
+                margin: 0 -#{$page-gutter - $column-gutter/2} 0 #{$column-gutter/2};
             }
         }
 
