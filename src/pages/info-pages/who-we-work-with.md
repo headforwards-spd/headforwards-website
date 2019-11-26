@@ -45,11 +45,6 @@ components:
       strong foundation of trust and communication, the challenge becomes much
       easier to overcome.
     type: quote-component
-  - quote: >-
-      Our Agile approach to software development means we’re not well suited to
-      companies that insist on traditional processes – but those willing to
-      adapt to an Agile mindset can see huge results with us.
-    type: quote-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: false
@@ -63,5 +58,10 @@ components:
       When both client and teams take a flexible approach to projects, they can
       easily collaborate to tackle issues and changes in direction, avoiding the
       challenges associated with waterfall-style project cycles.
+  - quote: >-
+      Our Agile approach to software development means we’re not well suited to
+      companies that insist on traditional processes – but those willing to
+      adapt to an Agile mindset can see huge results with us.
+    type: quote-component
 ---
 
