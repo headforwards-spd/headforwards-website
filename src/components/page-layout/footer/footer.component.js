@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types';
 import Link from '../link/link.component';
 import styles from './footer.module.scss';
 import Socials from '../socials/socials.component';
@@ -8,6 +9,11 @@ export default Footer;
 
 Footer.propTypes = {
     companyInfo: CompanyInfoPropType.isRequired,
+    callToAction: string,
+};
+
+Footer.defaultProps = {
+    callToAction: '',
 };
 function Footer({ companyInfo, callToAction }) {
     const { companyName, email, address, phone } = companyInfo;
