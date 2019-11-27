@@ -1,5 +1,5 @@
 import { string } from 'prop-types';
-import Reacts from 'react';
+import React from 'react';
 import styles from './contact.module.scss';
 
 const contactPropTypes = {
