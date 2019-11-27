@@ -13,5 +13,6 @@ TermsConditionsTemplate.defaultProps = {
 };
 
 function TermsConditionsTemplate({ tcData }) {
+    console.log(tcData);
     return <div>test</div>;
 }
