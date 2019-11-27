@@ -31,7 +31,8 @@ export const query = graphql`
         page: dataJson {
             sections {
                 image
-                postit
+                imageSquare: image
+                isPostit
                 title
                 isRightImage
                 components {

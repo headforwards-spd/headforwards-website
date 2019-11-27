@@ -30,30 +30,49 @@ function HomepageTemplate({ page }) {
 HomePageSection.propTypes = {
     even: bool,
     components: arrayOf(PageComponentPropType),
-    postit: bool,
+    isPostit: bool,
     image: ImagePropType,
+    imageSquare: ImagePropType,
 };
 HomePageSection.defaultProps = {
     even: false,
     components: [],
-    postit: false,
+    isPostit: false,
     image: null,
+    imageSquare: null,
 };
 
-function HomePageSection({ even, components, postit, image }) {
+function HomePageSection({ even, components, isPostit, image, imageSquare }) {
     const wrapperStyles = [
         styles.wrapper,
         even ? styles.isRightImage : '',
-        !!image || !!postit ? styles.hasImage : '',
+        !!image || !!isPostit ? styles.hasImage : '',
     ].join(' ');
 
     return (
         <section className={wrapperStyles}>
-            {!!image && <Image className={styles.image} ratio="100%" image="/uploads/craig.jpg" />}
-            {!!postit && <Postit className={styles.postit} isRightImage={even} />}
+            {!!image && <HomePageImage {...{ isPostit, image, imageSquare, even }} />}
             <section className={styles.components}>
                 {!!components && components.map(component => <PageComponent {...component} />)}
             </section>
         </section>
+    );
+}
+
+HomePageImage.propTypes = {
+    image: ImagePropType.isRequired,
+    imageSquare: ImagePropType.isRequired,
+    isPostit: bool,
+    even: bool,
+};
+HomePageImage.defaultProps = {
+    isPostit: false,
+    even: false,
+};
+function HomePageImage({ isPostit, image, imageSquare, even }) {
+    return isPostit ? (
+        <Postit className={styles.postit} image={imageSquare || image} isRightImage={even} />
+    ) : (
+        <Image className={styles.image} ratio="100%" image={image} />
     );
 }

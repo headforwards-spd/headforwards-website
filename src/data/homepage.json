@@ -10,8 +10,8 @@
             ]
         },
         {
-            "postit": false,
-            "image": true,
+            "isPostit": false,
+            "image": "/uploads/craig.jpg",
             "components": [
                 {
                     "type": "image-copy-component",
@@ -36,7 +36,8 @@
         },
         {
             "title":   "This is a title",
-            "postit": true,
+            "isPostit": true,
+            "image": "/uploads/smiley-face-doodle.png",
             "isRightImage": true,
             "components": [
                 {
@@ -57,7 +58,8 @@
         },
         {
             "title":   "This is a title",
-            "postit": true,
+            "isPostit": true,
+            "image": "/uploads/paper-airplane-doodle.png",
             "isRightImage": false,
             "components": [
                 {
