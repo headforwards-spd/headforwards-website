@@ -40,7 +40,8 @@
                 margin-bottom: 0;
             }
 
-            &:after {
+            &:before {
+                z-index: 1;
                 position: absolute;
                 content: '';
                 right:  -$gutter-small/2;
@@ -94,7 +95,7 @@
                     @include fontMedium;
                 }
 
-                &:after {
+                &:before {
                     right: $gutter-small;
                     margin-top: calc(62.5% + #{$gutter-small});
                 }

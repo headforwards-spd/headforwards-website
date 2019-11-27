@@ -15,7 +15,7 @@ function TermsConditions() {
             tcData: dataYaml(title: { eq: "terms-and-conditions" }) {
                 introduction
                 sections {
-                        text
+                    text
                 }
             }
         }
