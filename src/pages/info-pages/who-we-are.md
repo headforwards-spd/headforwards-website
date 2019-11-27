@@ -28,8 +28,8 @@ components:
     isRightImage: true
     link: /
     linkText: Discover more
-  - isPostit: true
-    image: /uploads/paper-airplane-doodle.png
+  - image: /uploads/smiley-face-doodle.png
+    isPostit: true
     isRightImage: false
     link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
     linkText: Discover more
@@ -39,8 +39,8 @@ components:
       The client-focused approach to outsourcing worked, attracting major brands
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
-  - isPostit: true
-    image: /uploads/paper-airplane-doodle.png
+  - image: /uploads/lightning-doodle.png
+    isPostit: true
     isRightImage: true
     link: /
     linkText: Discover more
@@ -61,6 +61,7 @@ components:
       - image: /uploads/curlyhair.png
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
         link text: uoiuoiuoiuo
+        linkText: Read more
         title: Software development outsourcing...
         text: >-
           Our business model is different to most other outsource software
@@ -73,6 +74,8 @@ components:
           companies. We create dedicated teams for specific projects and never
           switch members to other projects, nor do we have team members waiting.
         image: /uploads/curlyhair.png
+        link: 21a08160-0fac-11ea-843f-932c76de5936
+        linkText: Read more
     type: article-component
     title: Headforwards specialise in software development outsourcing...
   - isTwoColumns: true
@@ -86,8 +89,8 @@ components:
       members waiting on the bench which ultimately drives costs up.
   - articles:
       - image: /uploads/curlyhair.png
-        link: ''
-        linkText: ''
+        link: 21a08160-0fac-11ea-843f-932c76de5936
+        linkText: Read more
         title: Software development outsourcing...
         text: >-
           Our business model is different to most other outsource software
@@ -101,6 +104,8 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         image: /uploads/curlyhair.png
+        link: 4bc8aa80-1033-11ea-9288-bf5475231968
+        linkText: Read more
       - title: Software development outsourcing...
         text: >-
           Our business model is different to most other outsource software
@@ -108,6 +113,8 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         image: /uploads/curlyhair.png
+        link: 550440a0-1033-11ea-9288-bf5475231968
+        linkText: Read more
     type: article-component
     title: Headforwards specialise in software development outsourcing...
   - imageOne: /uploads/girl.png
