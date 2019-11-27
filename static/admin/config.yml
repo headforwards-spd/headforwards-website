@@ -577,9 +577,9 @@ collections:
         name: privacy-notice
         fields:
           - {label: "Introduction", name: introduction, widget: text, required: false}
-          - label: Privacy Policy Sections,
-            name: sections,
-            widget: list,
+          - label: Privacy Policy Sections
+            name: sections
+            widget: list
             fields:
               - {label: Section title, name: title, widget: string}
               - {label: "Text", name: text, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
