@@ -126,6 +126,14 @@ export const query = graphql`
                         publicURL
                         childImageSharp {
                             fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
+                                ...GatsbyImageSharpFluid_withWebp
+                            }
+                        }
+                    }
+                    imagePostit: image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY) {
                                 ...GatsbyImageSharpFluid_withWebp_noBase64
                             }
                         }

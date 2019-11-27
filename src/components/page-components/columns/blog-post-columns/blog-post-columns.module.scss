@@ -8,7 +8,7 @@
 
     > h1 {
         @include component-gutter;
-        @include headingFontLarge;
+        @include headingFontXLarge;
         @include orange-type;
     }
 
@@ -35,7 +35,7 @@
             h1 {
                 order: 2;
                 flex-grow: 1;
-                @include headingFontMedium;
+                @include headingFontLarge;
                 color: $header_black;
                 margin-bottom: 0;
             }

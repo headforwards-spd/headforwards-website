@@ -10,11 +10,9 @@
     .components {
 
         > * {
-            margin-left: 0;
-            margin-right: 0;
-
-            &:last-child {
-                margin-bottom: 0;
+            margin: 0;
+            h1 {
+                @include headingFontLarge;
             }
         }
 
@@ -36,6 +34,10 @@
             }
 
             footer {
+                h1 {
+                    @include headingFontSmall;
+                }
+                @include fontSmall;
                 margin-left: calc(-2rem - #{$column-gutter}/2);
                 padding-left: calc(#{$column-gutter}/2 + 2rem);
                 background-color: white;

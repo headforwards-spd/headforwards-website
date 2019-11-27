@@ -58,21 +58,23 @@ function ImagesComponent({ imageOne, imageTwo, ...props }) {
 const imageCopyComponentPropTypes = {
     image: ImageSrcPropType,
     imageSquare: ImageSrcPropType,
+    imagePostit: ImageSrcPropType,
     isPostit: bool,
 };
 ImageCopyComponent.propTypes = imageCopyComponentPropTypes;
 ImageCopyComponent.defaultProps = {
     image: null,
     imageSquare: null,
+    imagePostit: null,
     isPostit: false,
 };
-function ImageCopyComponent({ image, imageSquare, isPostit, ...props }) {
+function ImageCopyComponent({ image, imageSquare, imagePostit, isPostit, ...props }) {
     switch (true) {
-        case isPostit:
-            return <PostitCopyColumns {...{ image: imageSquare || image, ...props }} />;
         case !image:
             return <Hero {...props} />;
+        case isPostit:
+            return <PostitCopyColumns {...{ image: imagePostit || image, ...props }} />;
         default:
-            return <ImageCopyColumns {...{ image, ...props }} />;
+            return <ImageCopyColumns {...{ image: imageSquare || image, ...props }} />;
     }
 }

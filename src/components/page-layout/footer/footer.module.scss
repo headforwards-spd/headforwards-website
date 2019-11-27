@@ -15,10 +15,11 @@
 
         h1 {
             @include fontXXLarge;
+            font-weight: normal;
 
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-            line-height: 1.5;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            //line-height: 1.5;
             color: white;
             margin-bottom: 0;
 
@@ -26,6 +27,7 @@
                 &:before {
                     content: ' ';
                 }
+                font-weight: normal;
                 @include arrow-link;
             }
         }
@@ -33,6 +35,7 @@
 
     address {
         @include component-gutter;
+        margin-bottom: $gutter-medium;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -19,7 +19,7 @@
 @mixin copy {
 
     h1 {
-        @include headingFontLarge;
+        @include headingFontXLarge;
     }
     > section {
         @include fontLarge;
@@ -29,6 +29,10 @@
     }
     a {
         @include arrow-link;
+        display: block;
+        margin-top: $gutter-medium;
+        @include fontLarge;
+        font-weight: normal;
     }
 
     > :last-child {

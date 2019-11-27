@@ -25,36 +25,31 @@
             margin-right: -$page-gutter-md;
         }
         @media(min-width: $screen-lg) {
-            width: calc(37.5% + #{$page-gutter-lg - $column-gutter});
-            margin: 0 #{$column-gutter/2} 0 -#{$page-gutter-lg - $column-gutter/2};
-            > div {
-                padding-bottom: calc((100% + #{$page-gutter-lg}) * 0.625) !important;
-            }
+            flex-grow: 1;
+            margin: 0 #{$column-gutter/2} 0 #{$column-gutter/2 - $page-gutter-lg};
         }
         @media(min-width: $screen-xl) {
-            width: calc(37.5% + #{$page-gutter-xl - $column-gutter});
-            margin: 0 #{$column-gutter/2} 0 -#{$page-gutter-xl - $column-gutter/2};
-            > div {
-                padding-bottom: calc((100% + #{$page-gutter-xl}) * 0.625) !important;
-            }
+            margin: 0 #{$column-gutter/2} 0 #{$column-gutter/2 - $page-gutter-xl};
         }
         @media(min-width: $screen-xxl) {
-            width: calc(37.5% + #{$page-gutter-xxl - $column-gutter});
-            margin: 0 #{$column-gutter/2} 0 -#{$page-gutter-xxl - $column-gutter/2};
-            > div {
-                padding-bottom: calc((100% + #{$page-gutter-xxl}) * 0.625) !important;
-            }
+            margin: 0 #{$column-gutter/2} 0 #{$column-gutter/2 - $page-gutter-xxl};
+        }
+        @media(min-width: $screen-xxxl) {
+            margin: 0 #{$column-gutter/2} 0 #{$column-gutter/2 - $page-gutter-xxxl};
         }
     }
     &.isRightImage .image {
         @media(min-width: $screen-lg) {
-            margin: 0 -#{$page-gutter-lg - $column-gutter/2} 0 #{$column-gutter/2};
+            margin: 0 #{$column-gutter/2 - $page-gutter-lg} 0 #{$column-gutter/2};
         }
         @media(min-width: $screen-xl) {
-            margin: 0 -#{$page-gutter-xl - $column-gutter/2} 0 #{$column-gutter/2};
+            margin: 0 #{$column-gutter/2 - $page-gutter-xl} 0 #{$column-gutter/2};
         }
         @media(min-width: $screen-xxl) {
-            margin: 0 -#{$page-gutter-xxl - $column-gutter/2} 0 #{$column-gutter/2};
+            margin: 0 #{$column-gutter/2 - $page-gutter-xxl} 0 #{$column-gutter/2};
+        }
+        @media(min-width: $screen-xxxl) {
+            margin: 0 #{$column-gutter/2 - $page-gutter-xxxl} 0 #{$column-gutter/2};
         }
     }
 

@@ -7,8 +7,7 @@
 .articleColumns {
 
     > h1 {
-        @include component-gutter;
-        @include headingFontLarge;
+        @include headingFontXLarge;
     }
 
     > section {
@@ -36,13 +35,13 @@
 
             > h1 {
                 order: 2;
-                @include headingFontMedium;
+                @include headingFontLarge;
             }
 
             > section {
                 order: 3;
                 flex-grow: 1;
-                @include fontMedium;
+                @include fontLarge;
 
                 > :last-child {
                     margin-bottom: 0;
@@ -74,9 +73,17 @@
                 .article {
                     width: calc((100% / 2) - #{$gutter-medium});
 
+                    > h1 {
+                        @include headingFontMedium;
+                    }
+
+                    > section {
+                        @include fontMedium;
+                    }
+
                     .image {
                         margin: 0;
-                        @include fontMedium;
+                        @include fontSmall;
                     }
                 }
             }
@@ -89,7 +96,6 @@
 
                 .image {
                     margin: 0;
-                    @include fontMedium;
                 }
             }
 

@@ -5,7 +5,7 @@ $blue-background: #141122;
 
 $gutter-small:  1rem;
 $gutter-medium: 2rem;
-$gutter-large:  4rem;
+$gutter-large:  6rem;
 
 // Breakpoints
 $screen-sm:      320px;
@@ -22,6 +22,9 @@ $page-gutter-xl: 4rem;
 
 $screen-xxl:      1440px;
 $page-gutter-xxl: 8rem;
+
+$screen-xxxl:     2200px;
+$page-gutter-xxxl: 16rem;
 
 $min_width: $screen-sm;
 $max_width: $screen-xxl;

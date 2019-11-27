@@ -22,7 +22,7 @@
         &.isTwoColumns {
             //display: flex;
             //flex-direction: row;
-            //align-items: center;
+            align-items: flex-start;
             //margin-left: $gutter-medium/2;
             //margin-right: $gutter-medium/2;
             //
@@ -32,6 +32,7 @@
 
             > h1 {
                 width: calc(37.5% - #{$column-gutter});
+                @include headingFontLarge;
                 //margin-bottom: 0;
             }
 

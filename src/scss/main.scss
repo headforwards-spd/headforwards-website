@@ -41,6 +41,9 @@ body > div > div {
         @media(min-width: $screen-xxl) {
             padding: 0 $page-gutter-xxl;
         }
+        @media(min-width: $screen-xxxl) {
+            padding: 0 $page-gutter-xxxl;
+        }
     }
 
     > header, > footer {
