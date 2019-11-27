@@ -3,7 +3,7 @@ exports.getIndexedPages = pages => {
 
     pages.forEach(page => {
         const { id, fields, frontmatter } = page || {};
-        const { uuid, title, parent = '', seo } = frontmatter || {};
+        const { uuid, parent = '', seo } = frontmatter || {};
         const { slug: pageSlug = null } = fields;
         const { slug: seoSlug = null } = seo || {};
         const slug = seoSlug || pageSlug;
@@ -11,8 +11,6 @@ exports.getIndexedPages = pages => {
         if (!uuid || !slug) {
             return;
         }
-
-        !parent && console.log(title, parent, slug);
 
         urls[uuid] = {
             id,

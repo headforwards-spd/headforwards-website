@@ -7,6 +7,7 @@ text: ''
 image: /uploads/simon-minchin-author-copy-2.jpg
 components:
   - isPostit: true
+    image: /uploads/paper-airplane-doodle.png
     isRightImage: true
     link: d1956170-ec44-11e9-914c-c376cef31113
     linkText: ''
@@ -36,6 +37,7 @@ components:
       clients get a lot of value from that
     type: quote-component
   - isPostit: true
+    image: /uploads/paper-airplane-doodle.png
     isRightImage: false
     type: image-copy-component
     title: A team dynamic focused on equality and respect
@@ -54,6 +56,7 @@ components:
       trusted equally, and we’re all a united team
     type: quote-component
   - isPostit: true
+    image: /uploads/paper-airplane-doodle.png
     isRightImage: true
     type: image-copy-component
     title: Client relationships that go further
