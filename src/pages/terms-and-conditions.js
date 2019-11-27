@@ -14,6 +14,9 @@ function TermsConditions() {
         query {
             tcData: dataYaml(title: { eq: "terms-and-conditions" }) {
                 introduction
+                sections {
+                        text
+                }
             }
         }
     `);
