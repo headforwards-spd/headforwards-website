@@ -1,5 +1,5 @@
 import { string } from 'prop-types';
-import React, { Fragment } from 'react';
+import Reacts  from 'react';
 import styles from './contact.module.scss';
 
 const contactPropTypes = {
