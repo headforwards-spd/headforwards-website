@@ -153,31 +153,15 @@ collections:
         name: components
         widget: list
         types:
-          - label: "Hero Component"
-            name: heroComponent
+          - label: "Images"
+            name: images-component
             widget: object
             fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: markdown}
-
-          - label: "Full Width Image"
-            name: fullWidthImageComponent
-            widget: object
-            fields:
-              - label: "Image"
-                name: image
-                widget: image
-
-          - label: "Two Images"
-            name: twoImageComponent
-            widget: object
-            fields:
-              - {label: "Left Image", name: leftImage, widget: image}
-              - {label: "Right Image", name: rightImage, widget: image}
+              - {label: "Image One", name: imageOne, widget: image}
+              - {label: "Image Two", name: imageTwo, widget: image, required: false}
 
           - label: "Quote"
-            name: quoteComponent
+            name: quote-component
             widget: object
             fields:
               - {label: "Quote", name: quote, widget: text}
@@ -185,29 +169,21 @@ collections:
               - {label: "Job Title", name: jobTitle, widget: string, required: false}
               - {label: "Profile Picture", name: profilePic, widget: image, required: false}
 
-          - label: "Image, Copy Columns"
-            name: imageCopyColumnsComponent
+          - label: "Image & Copy"
+            name: image-copy-component
             widget: object
             fields:
+              - {label: "Image", name: image, widget: image, required: false}
               - {label: "Title", name: title, widget: string}
-              - {label: "Image", name: image, widget: image}
-              - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: text}
+              - {label: "Copy", name: text, widget: markdown}
               - {label: "Link Text", name: linkText, widget: string, required: false}
               - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+              - {label: "Image on right?", name: isRightImage, widget: boolean, default: false, required: false}
+              - {label: "Postit?", name: isPostit, widget: boolean, default: false, required: false}
+              - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, default: false, required: false}
 
-          - label: "Postit, Copy Columns"
-            name: postitCopyColumnsComponent
-            widget: object
-            fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: text}
-              - {label: "Link Text", name: linkText, widget: string, required: false}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-          - label: "Article Columns"
-            name: articleColumnsComponent
+          - label: "Articles"
+            name: article-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false}
@@ -217,12 +193,11 @@ collections:
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-          - label: "Blog Post Columns"
-            name: blogPostColumnsComponent
+          - label: "Blog Posts"
+            name: blog-post-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
@@ -236,7 +211,7 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
           - label: "Content Slider"
-            name: "contentSliderComponent"
+            name: content-slider-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
@@ -289,31 +264,15 @@ collections:
         name: components
         widget: list
         types:
-          - label: "Hero Component"
-            name: heroComponent
+          - label: "Images"
+            name: images-component
             widget: object
             fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: markdown}
-
-          - label: "Full Width Image"
-            name: fullWidthImageComponent
-            widget: object
-            fields:
-              - label: "Image"
-                name: image
-                widget: image
-
-          - label: "Two Images"
-            name: twoImageComponent
-            widget: object
-            fields:
-              - {label: "Left Image", name: leftImage, widget: image}
-              - {label: "Right Image", name: rightImage, widget: image}
+              - {label: "Image One", name: imageOne, widget: image}
+              - {label: "Image Two", name: imageTwo, widget: image, required: false}
 
           - label: "Quote"
-            name: quoteComponent
+            name: quote-component
             widget: object
             fields:
               - {label: "Quote", name: quote, widget: text}
@@ -321,29 +280,21 @@ collections:
               - {label: "Job Title", name: jobTitle, widget: string, required: false}
               - {label: "Profile Picture", name: profilePic, widget: image, required: false}
 
-          - label: "Image, Copy Columns"
-            name: imageCopyColumnsComponent
+          - label: "Image & Copy"
+            name: image-copy-component
             widget: object
             fields:
+              - {label: "Image", name: image, widget: image, required: false}
               - {label: "Title", name: title, widget: string}
-              - {label: "Image", name: image, widget: image}
-              - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: text}
+              - {label: "Copy", name: text, widget: markdown}
               - {label: "Link Text", name: linkText, widget: string, required: false}
               - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+              - {label: "Image on right?", name: isRightImage, widget: boolean, default: false, required: false}
+              - {label: "Postit?", name: isPostit, widget: boolean, default: false, required: false}
+              - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, default: false, required: false}
 
-          - label: "Postit, Copy Columns"
-            name: postitCopyColumnsComponent
-            widget: object
-            fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: text}
-              - {label: "Link Text", name: linkText, widget: string, required: false}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-          - label: "Article Columns"
-            name: articleColumnsComponent
+          - label: "Articles"
+            name: article-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false}
@@ -353,12 +304,11 @@ collections:
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-          - label: "Blog Post Columns"
-            name: blogPostColumnsComponent
+          - label: "Blog Posts"
+            name: blog-post-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
@@ -372,7 +322,7 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
           - label: "Content Slider"
-            name: "contentSliderComponent"
+            name: content-slider-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
@@ -425,31 +375,15 @@ collections:
         name: components
         widget: list
         types:
-          - label: "Hero Component"
-            name: heroComponent
+          - label: "Images"
+            name: images-component
             widget: object
             fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Split into two columns?", name: isTwoColumns, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: markdown}
-
-          - label: "Full Width Image"
-            name: fullWidthImageComponent
-            widget: object
-            fields:
-              - label: "Image"
-                name: image
-                widget: image
-
-          - label: "Two Images"
-            name: twoImageComponent
-            widget: object
-            fields:
-              - {label: "Left Image", name: leftImage, widget: image}
-              - {label: "Right Image", name: rightImage, widget: image}
+              - {label: "Image One", name: imageOne, widget: image}
+              - {label: "Image Two", name: imageTwo, widget: image, required: false}
 
           - label: "Quote"
-            name: quoteComponent
+            name: quote-component
             widget: object
             fields:
               - {label: "Quote", name: quote, widget: text}
@@ -457,29 +391,21 @@ collections:
               - {label: "Job Title", name: jobTitle, widget: string, required: false}
               - {label: "Profile Picture", name: profilePic, widget: image, required: false}
 
-          - label: "Image, Copy Columns"
-            name: imageCopyColumnsComponent
+          - label: "Image & Copy"
+            name: image-copy-component
             widget: object
             fields:
+              - {label: "Image", name: image, widget: image, required: false}
               - {label: "Title", name: title, widget: string}
-              - {label: "Image", name: image, widget: image}
-              - {label: "Image on the right?", name: isRightImage, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: text}
+              - {label: "Copy", name: text, widget: markdown}
               - {label: "Link Text", name: linkText, widget: string, required: false}
               - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+              - {label: "Image on right?", name: isRightImage, widget: boolean, default: false, required: false}
+              - {label: "Postit?", name: isPostit, widget: boolean, default: false, required: false}
+              - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, default: false, required: false}
 
-          - label: "Postit, Copy Columns"
-            name: postitCopyColumnsComponent
-            widget: object
-            fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Postit on the right?", name: isRightImage, widget: boolean, default: false}
-              - {label: "Copy", name: text, widget: text}
-              - {label: "Link Text", name: linkText, widget: string, required: false}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
-
-          - label: "Article Columns"
-            name: articleColumnsComponent
+          - label: "Articles"
+            name: article-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false}
@@ -489,12 +415,11 @@ collections:
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
-          - label: "Blog Post Columns"
-            name: blogPostColumnsComponent
+          - label: "Blog Posts"
+            name: blog-post-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
@@ -508,7 +433,7 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
 
           - label: "Content Slider"
-            name: "contentSliderComponent"
+            name: content-slider-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
