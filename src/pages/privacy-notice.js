@@ -23,7 +23,6 @@ function PrivacyNotice() {
     `);
     console.log(privacyData);
 
-
     return (
         <Layout {...props}>
             <PrivacyNoticeTemplate {...{ privacyData }} />

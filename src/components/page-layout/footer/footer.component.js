@@ -43,7 +43,7 @@ function Footer({ companyInfo, callToAction }) {
                     </section>
                     <section className={styles.address}>{address}</section>
                     <section className={styles.legal}>
-                        <Link to="/privacy-policy">Privacy Policy</Link>
+                        <Link to="/privacy-notice">Privacy Policy</Link>
                         <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
                     </section>
                 </section>
