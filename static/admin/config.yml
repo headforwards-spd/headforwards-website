@@ -81,6 +81,7 @@ collections:
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
+                  - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
@@ -192,6 +193,7 @@ collections:
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
+                  - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
@@ -303,6 +305,7 @@ collections:
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
+                  - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
@@ -414,6 +417,7 @@ collections:
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
+                  - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
                   - {label: "Link Text", name: linkText, widget: string, required: false}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
