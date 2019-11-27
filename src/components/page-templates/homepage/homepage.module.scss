@@ -19,7 +19,7 @@
         }
 
         blockquote {
-            padding-left: 1rem;
+            //padding-left: 1rem;
             p {
                 @include fontLarge;
                 padding: 0;
@@ -31,7 +31,7 @@
                 }
 
                 &:before {
-                    left: calc(0rem - 0.6em);
+                    left: calc(-1rem - 0.52em);
                 }
             }
 

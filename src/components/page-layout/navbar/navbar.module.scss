@@ -42,6 +42,10 @@
                 margin-left: -3.6em;
             }
 
+            @media (min-width: $screen-xxl) {
+                margin-left: -$page-gutter;
+            }
+
             text-indent: -1000vw;
             background-image: url("/images/headforwards.black.png");
             background-size: contain;
@@ -78,7 +82,7 @@
             }
 
             > li {
-
+                padding-left: $gutter-small;
                 &.hasChildren > a {
                     display: flex;
 
@@ -174,10 +178,8 @@
 
     @media screen and (min-width: $screen-lg) {
 
-        //padding: $page-gutter;
 
         @include flexRow;
-        //margin: 0;
         align-items: stretch;
         flex-wrap: nowrap;
         border-bottom: 1px solid #D8D8D8;
