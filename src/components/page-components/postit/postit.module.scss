@@ -29,7 +29,7 @@ $postitRight: perspective(24rem) rotateY(-1deg);
     width: 100%;
     padding-bottom: 100%;
 
-    > > * {
+    > * {
         position: absolute !important;
         top: 0;
         bottom: 0;
@@ -39,49 +39,49 @@ $postitRight: perspective(24rem) rotateY(-1deg);
 
     &.v1 {
         transform: $postitLeft $postit1;
-        > > * {
+        > * {
             transform: $image1;
         }
     }
     &.v2 {
         transform: $postitLeft $postit2;
-        > > * {
+        > * {
             transform: $image2;
         }
     }
     &.v3 {
         transform: $postitLeft $postit3;
-        > > * {
+        > * {
             transform: $image3;
         }
     }
     &.v4 {
         transform: $postitLeft $postit4;
-        > > * {
+        > * {
             transform: $image4;
         }
     }
     &.v5 {
         transform: $postitLeft $postit5;
-        > > * {
+        > * {
             transform: $image5;
         }
     }
     &.v6 {
         transform: $postitLeft $postit6;
-        > > * {
+        > * {
             transform: $image6;
         }
     }
     &.v7 {
         transform: $postitLeft $postit7;
-        > > * {
+        > * {
             transform: $image7;
         }
     }
     &.v8 {
         transform: $postitLeft $postit8;
-        > > * {
+        > * {
             transform: $image8;
         }
     }
