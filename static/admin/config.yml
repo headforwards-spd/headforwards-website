@@ -520,7 +520,7 @@ collections:
                 name: sections
                 widget: list
                 fields:
-                  - {label: Section title, name: title, widget: string}
+                  - {label: Section title, name: title, widget: string, required: false}
                   - {label: "Text", name: text, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
 
   - label: "WordPress Pages"
