@@ -39,7 +39,7 @@ module.exports = {
         { ...gatsbyPluginSitemap },
         { ...gatsbyPluginRobotsTxt },
         { ...gatsbyPluginNetlifyCms },
-        `gatsby-plugin-netlify-cache`,
+        // `gatsby-plugin-netlify-cache`, // Turn off cache for Dev
         'gatsby-plugin-netlify',
     ],
 };
