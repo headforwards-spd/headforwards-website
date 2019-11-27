@@ -29,6 +29,7 @@ components:
     link: /
     linkText: Discover more
   - isPostit: true
+    image: /uploads/paper-airplane-doodle.png
     isRightImage: false
     link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
     linkText: Discover more
@@ -39,6 +40,7 @@ components:
       as well as talented developers keen to work for a firm with a focus on
       teambuilding and software quality. 
   - isPostit: true
+    image: /uploads/paper-airplane-doodle.png
     isRightImage: true
     link: /
     linkText: Discover more
