@@ -83,8 +83,8 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Blog Posts"
             name: blog-post-component
@@ -97,8 +97,7 @@ collections:
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Content Slider"
             name: content-slider-component
@@ -195,8 +194,8 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Blog Posts"
             name: blog-post-component
@@ -209,8 +208,7 @@ collections:
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Content Slider"
             name: content-slider-component
@@ -307,8 +305,8 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Blog Posts"
             name: blog-post-component
@@ -321,8 +319,7 @@ collections:
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Content Slider"
             name: content-slider-component
@@ -419,8 +416,8 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Blog Posts"
             name: blog-post-component
@@ -433,8 +430,7 @@ collections:
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string, required: false}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Content Slider"
             name: content-slider-component
