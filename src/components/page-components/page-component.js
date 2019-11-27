@@ -69,7 +69,7 @@ ImageCopyComponent.defaultProps = {
 function ImageCopyComponent({ image, imageSquare, isPostit, ...props }) {
     switch (true) {
         case isPostit:
-            return <PostitCopyColumns {...{ image: imageSquare, ...props }} />;
+            return <PostitCopyColumns {...{ image: imageSquare || image, ...props }} />;
         case !image:
             return <Hero {...props} />;
         default:

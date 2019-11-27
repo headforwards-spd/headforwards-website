@@ -2,13 +2,22 @@
 @import "../../../scss/mixins/typography";
 
 $postit1: rotate(0deg)   scaleX(1);
+$image1:  rotate(-0deg);
 $postit2: rotate(90deg)  scaleX(1);
+$image2:  rotate(-90deg);
 $postit3: rotate(180deg) scaleX(1);
+$image3:  rotate(-180deg);
 $postit4: rotate(270deg) scaleX(1);
+$image4:  rotate(-270deg);
+
 $postit5: rotate(0deg)   scaleX(-1);
+$image5:  rotate(0deg)   scaleX(-1);
 $postit6: rotate(90deg)  scaleX(-1);
+$image6:  rotate(90deg)  scaleX(-1);
 $postit7: rotate(180deg) scaleX(-1);
+$image7:  rotate(180deg) scaleX(-1);
 $postit8: rotate(270deg) scaleX(-1);
+$image8:  rotate(270deg) scaleX(-1);
 
 $postitLeft: perspective(24rem) rotateY(1deg);
 $postitRight: perspective(24rem) rotateY(-1deg);
@@ -20,29 +29,61 @@ $postitRight: perspective(24rem) rotateY(-1deg);
     width: 100%;
     padding-bottom: 100%;
 
+    > :global(.gatsby-image-wrapper), > img {
+        position: absolute !important;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
     &.v1 {
         transform: $postitLeft $postit1;
+        > :global(.gatsby-image-wrapper), > img {
+            transform: $image1;
+        }
     }
     &.v2 {
         transform: $postitLeft $postit2;
+        > :global(.gatsby-image-wrapper), > img {
+            transform: $image2;
+        }
     }
     &.v3 {
         transform: $postitLeft $postit3;
+        > :global(.gatsby-image-wrapper), > img {
+            transform: $image3;
+        }
     }
     &.v4 {
         transform: $postitLeft $postit4;
+        > :global(.gatsby-image-wrapper), > img {
+            transform: $image4;
+        }
     }
     &.v5 {
         transform: $postitLeft $postit5;
+        > :global(.gatsby-image-wrapper), > img {
+            transform: $image5;
+        }
     }
     &.v6 {
         transform: $postitLeft $postit6;
+        > :global(.gatsby-image-wrapper), > img {
+            transform: $image6;
+        }
     }
     &.v7 {
         transform: $postitLeft $postit7;
+        > :global(.gatsby-image-wrapper), > img {
+            transform: $image7;
+        }
     }
     &.v8 {
         transform: $postitLeft $postit8;
+        > :global(.gatsby-image-wrapper), > img {
+            transform: $image8;
+        }
     }
 }
 
