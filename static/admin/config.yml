@@ -515,13 +515,18 @@ collections:
           name: terms-and-conditions
           fields:
             - {label: "Title", name: title, widget: hidden, default: "terms-and-conditions"}
-            - {label: "Introduction", name: introduction, widget: text, required: false}
+            - {label: "Introduction", name: introduction, widget: markdown, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list'], required: false}
             -   label: T & C Sections
                 name: sections
                 widget: list
                 fields:
                   - {label: Section title, name: title, widget: string, required: false}
-                  - {label: "Text", name: text, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+                  - {label: "Text", name: text, widget: markdown, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+                  -   label: List item
+                      name: listItem
+                      widget: list
+                      fields:
+                        - {label: "List Item", name: text, widget: string}
 
   - label: "WordPress Pages"
     label_singular: "WordPress Page"
