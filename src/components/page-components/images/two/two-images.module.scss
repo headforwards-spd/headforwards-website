@@ -2,14 +2,14 @@
 @import '../../page-component';
 
 .twoImages {
-
     @include component-gutter;
-    margin-left: 0;
-    margin-right: 0;
-    @media (min-width: $screen-md) {
-        margin-left: 0;
-        margin-right: 0;
+    margin: 0 #{-$page-gutter-sm} $gutter-large;
+    @media(min-width: $screen-md) {
+        margin: 0 #{-$page-gutter-md} $gutter-large;
     }
+    //@media(min-width: $screen-xxl) {
+    //    margin: 0 -#{$page-gutter-xxl - $column-gutter/2} 0 #{$column-gutter/2};
+    //}
 
     position: relative;
     padding: $gutter-large 0;
@@ -21,9 +21,9 @@
         position: relative;
 
         &:first-child {
-            margin-right: 2*$gutter-small;
+            margin-right: 2*$page-gutter-sm;
             @media (min-width: $screen-md) {
-                margin-right: 2*$gutter-medium;
+                margin-right: 2*$page-gutter-md;
             }
             &:before {
                 position: absolute;
@@ -31,15 +31,15 @@
                 width: 30%;
                 height: 100%;
                 z-index: 1;
-                right: $gutter-medium;
                 top: -37.5%;
+                right: $gutter-medium;
             }
         }
 
         &:last-child {
-            margin-left: 2*$gutter-small;
+            margin-left: 2*$page-gutter-sm;
             @media (min-width: $screen-md) {
-                margin-left: 2*$gutter-medium;
+                margin-left: 2*$page-gutter-md;
             }
             margin-bottom: 0;
             &:after {
@@ -68,19 +68,20 @@
 
     @media (min-width: $screen-lg) {
 
+        margin: 0 0 $gutter-large;
         padding: $gutter-small 0 $gutter-large;
         display: flex;
         flex-direction: row;
 
         > div {
-            width: calc(50% - #{$gutter-medium/2});
+            width: calc(50% - #{$column-gutter/2});
 
             &:first-child {
-                margin-right: $gutter-medium/2;
+                margin-right: $column-gutter/2;
                 margin-bottom: 10%;
                 &:before {
                     top: -$gutter-small;
-                    right: -$gutter-large;
+                    right: -$page-gutter-lg;
                     height: 100%;
                     width: 18.75%;
                     transform: translateX(100%);
@@ -88,10 +89,10 @@
             }
 
             &:last-child {
-                margin-left: $gutter-medium/2;
+                margin-left: $column-gutter/2;
                 margin-top: 10%;
                 &:after {
-                    left: calc(-100% - #{$gutter-medium});
+                    left: calc(-100% - #{$page-gutter-lg});
                     bottom: 0;
                     transform: translate(-50%, 30%);
                 }
@@ -101,11 +102,17 @@
         &:after {
             width: 30%;
             height: 0;
-            margin-right: -10%;
-            padding-bottom: 25%;
+            padding-bottom: 30%;
             top: $gutter-small;
             right: 0;
             transform: none;
+            margin-right: -$page-gutter-lg;
+            @media (min-width: $screen-xl) {
+                margin-right: -$page-gutter-xl;
+            }
+            @media (min-width: $screen-xxl) {
+                margin-right: -$page-gutter-xxl;
+            }
         }
     }
 }

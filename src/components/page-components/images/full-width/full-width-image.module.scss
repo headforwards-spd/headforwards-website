@@ -3,6 +3,13 @@
 
 .fullWidthImage {
 
+    margin-left: -$page-gutter-sm;
+    margin-right: -$page-gutter-sm;
+
+    @media(min-width: $screen-md) {
+        margin-left: -$page-gutter-md;
+        margin-right: -$page-gutter-md;
+    }
     margin-bottom: $gutter-large;
     max-height: calc(100vh - #{$gutter-large*2});
 

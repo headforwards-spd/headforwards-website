@@ -8,9 +8,25 @@
     display: flex;
     flex-direction: column;
     height: calc(100vh - 48px);
-    margin: 0 -#{$page-gutter} $gutter-large;
+    margin: 0 -#{$page-gutter-sm} $gutter-large;
+    @media(min-width: $screen-md) {
+        margin: 0 -#{$page-gutter-md} $gutter-large;
+    }
+    @media(min-width: $screen-lg) {
+        margin: 0 -#{$page-gutter-lg} $gutter-large;
+    }
+    @media(min-width: $screen-xl) {
+        margin: 0 -#{$page-gutter-xl} $gutter-large;
+    }
+    @media(min-width: $screen-xxl) {
+        margin: 0 -#{$page-gutter-xxl} $gutter-large;
+    }
+
     > h1 {
-        padding: 0 $gutter-small;
+        padding: 0 $page-gutter-sm;
+        @media(min-width: $screen-md) {
+            padding: 0 $page-gutter-md;
+        }
         @include headingFontSmall;
         flex-shrink: 0;
 
@@ -109,8 +125,11 @@
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-        padding: 25px;
         overflow: hidden;
+        padding: $page-gutter-sm;
+        @media(min-width: $screen-md) {
+            padding: $page-gutter-md;
+        }
 
         > h1 {
             color: $orange;
@@ -130,7 +149,7 @@
 
             &:after {
                 content: '';
-                height: 60px;
+                height: 2.5em * $line-height;
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -177,30 +196,54 @@
 
 @media(min-width: $screen-lg) {
     .contentSlider {
-        padding: 5rem $page-gutter 5rem 0;
         background: linear-gradient(to right, $blue-background 0%, $blue-background 80%, $blue-background 80%, #ffffff 80%, #ffffff 100%);
         position: relative;
         height: auto;
+        padding: 5rem $page-gutter-lg 5rem 0;
+        @media(min-width: $screen-xl) {
+            padding: 5rem $page-gutter-xl 5rem 0;
+        }
+        @media(min-width: $screen-xxl) {
+            padding: 5rem $page-gutter-xxl 5rem 0;
+        }
 
         > h1 {
             position: absolute;
             top: 5rem;
             padding: 0;
             margin: 0;
-            left: $page-gutter;
             z-index: 10;
+            left: $page-gutter-lg;
+            @media(min-width: $screen-xl) {
+                left: $page-gutter-xl;
+            }
+            @media(min-width: $screen-xxl) {
+                left: $page-gutter-xxl;
+            }
         }
 
         :global(.slick-list) {
-            margin-right: -$page-gutter;
+            margin-right: -$page-gutter-lg;
+            @media(min-width: $screen-xl) {
+                margin-right: -$page-gutter-xl;
+            }
+            @media(min-width: $screen-xxl) {
+                margin-right: -$page-gutter-xxl;
+            }
         }
 
         :global(.slick-dots) {
             position: absolute;
             top: -5rem;
             height: 5rem;
-            right: $page-gutter;
-            width: calc(20% - #{$page-gutter} - #{$page-gutter*0.8});
+            right: 0;
+            width: calc(20% + #{$page-gutter-lg*0.2} - #{$page-gutter-lg});
+            @media(min-width: $screen-xl) {
+                width: calc(20% + #{$page-gutter-xl*0.2} - #{$page-gutter-xl});
+            }
+            @media(min-width: $screen-xxl) {
+                width: calc(20% + #{$page-gutter-xxl*0.2} - #{$page-gutter-xxl});
+            }
 
             button:before {
                 font-size: 0.8rem;
@@ -214,8 +257,14 @@
         :global(.slick-arrow) {
 
             top: calc(100% + 2.5rem);
-            width: calc(10% - #{$page-gutter/2} - #{$page-gutter*0.4});
             height: 5rem;
+            width: calc(10% + #{$page-gutter-lg*0.1} - #{$page-gutter-lg/2});
+            @media(min-width: $screen-xl) {
+                width: calc(10% + #{$page-gutter-xl*0.1} - #{$page-gutter-xl/2});
+            }
+            @media(min-width: $screen-xxl) {
+                width: calc(10% + #{$page-gutter-xxl*0.1} - #{$page-gutter-xxl/2});
+            }
 
             svg {
                 padding: 1.5rem 0;
@@ -223,12 +272,18 @@
 
             &:global(.slick-prev) {
                 left: unset;
-                right: calc(10% - #{$page-gutter/2} - #{$page-gutter*0.4} + #{$page-gutter})
+                right: calc(10% + #{$page-gutter-lg*0.1} - #{$page-gutter-lg/2});
+                @media(min-width: $screen-xl) {
+                    right: calc(10% + #{$page-gutter-xl*0.1} - #{$page-gutter-xl/2});
+                }
+                @media(min-width: $screen-xxl) {
+                    right: calc(10% + #{$page-gutter-xxl*0.1} - #{$page-gutter-xxl/2});
+                }
             }
 
             &:global(.slick-next) {
                 left: unset;
-                right: $page-gutter;
+                right: 0;
             }
 
         }
@@ -247,9 +302,15 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: calc(#{$page-gutter} - #{$column-gutter/2});
         height: calc(90vh - 10rem);
         background: $blue-background;
+        margin-left: calc(#{$page-gutter-lg} - #{$column-gutter/2});
+        @media(min-width: $screen-xl) {
+            margin-left: calc(#{$page-gutter-xl} - #{$column-gutter/2});
+        }
+        @media(min-width: $screen-xxl) {
+            margin-left: calc(#{$page-gutter-xxl} - #{$column-gutter/2});
+        }
 
         > section {
             order: 1;

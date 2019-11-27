@@ -18,7 +18,7 @@ ContactTemplate.defaultProps = {
 };
 
 function ContactTemplate({ email, phone, address }) {
-    let formattedAddress = address.split(",").join('<br>');
+    const formattedAddress = address.split(',').join('<br>');
 
     return (
         <>

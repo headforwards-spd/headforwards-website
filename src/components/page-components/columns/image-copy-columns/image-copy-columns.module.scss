@@ -7,28 +7,61 @@
 
     @include columns-component;
 
-    .image {
-        margin-left: -$gutter-small;
-        margin-right: -$gutter-small;
+    .copy {
+        @include copy;
 
-        @media (min-width: $screen-md) {
-            margin-left: -$gutter-medium;
-            margin-right: -$gutter-medium;
+        @media (min-width: $screen-lg) {
+            width: calc(62.5% - #{$gutter-medium});
+            margin-bottom: $gutter-medium/2;
         }
     }
 
-    .copy {
-        @include copy;
+    .image {
+        margin-left: -$page-gutter-sm;
+        margin-right: -$page-gutter-sm;
+
+        @media(min-width: $screen-md) {
+            margin-left: -$page-gutter-md;
+            margin-right: -$page-gutter-md;
+        }
+        @media(min-width: $screen-lg) {
+            width: calc(37.5% + #{$page-gutter-lg - $column-gutter});
+            margin: 0 #{$column-gutter/2} 0 -#{$page-gutter-lg - $column-gutter/2};
+            > div {
+                padding-bottom: calc((100% + #{$page-gutter-lg}) * 0.625) !important;
+            }
+        }
+        @media(min-width: $screen-xl) {
+            width: calc(37.5% + #{$page-gutter-xl - $column-gutter});
+            margin: 0 #{$column-gutter/2} 0 -#{$page-gutter-xl - $column-gutter/2};
+            > div {
+                padding-bottom: calc((100% + #{$page-gutter-xl}) * 0.625) !important;
+            }
+        }
+        @media(min-width: $screen-xxl) {
+            width: calc(37.5% + #{$page-gutter-xxl - $column-gutter});
+            margin: 0 #{$column-gutter/2} 0 -#{$page-gutter-xxl - $column-gutter/2};
+            > div {
+                padding-bottom: calc((100% + #{$page-gutter-xxl}) * 0.625) !important;
+            }
+        }
+    }
+    &.isRightImage .image {
+        @media(min-width: $screen-lg) {
+            margin: 0 -#{$page-gutter-lg - $column-gutter/2} 0 #{$column-gutter/2};
+        }
+        @media(min-width: $screen-xl) {
+            margin: 0 -#{$page-gutter-xl - $column-gutter/2} 0 #{$column-gutter/2};
+        }
+        @media(min-width: $screen-xxl) {
+            margin: 0 -#{$page-gutter-xxl - $column-gutter/2} 0 #{$column-gutter/2};
+        }
     }
 
-    @media (min-width: $screen-lg) {
+    @media(min-width: $screen-lg) {
 
-        .image {
-            width: calc(37.5% + #{$page-gutter - $column-gutter});
-            margin: 0 #{$column-gutter/2} 0 -#{$page-gutter - $column-gutter/2};
-            > div {
-                padding-bottom: calc(62.5% + #{$page-gutter}) !important;
-            }
+        &.isRightImage {
+            flex-direction: row-reverse;
         }
 
         .postit {
@@ -36,20 +69,6 @@
             padding-bottom: calc(37.5% - #{$gutter-medium});
             margin: $gutter-medium/2;
         }
-
-        .copy {
-            width: calc(62.5% - #{$gutter-medium});
-            margin-bottom: $gutter-medium/2;
-
-        }
-
-        &.isRightImage {
-            flex-direction: row-reverse;
-
-            .image {
-                margin: 0 -#{$page-gutter - $column-gutter/2} 0 #{$column-gutter/2};
-            }
-        }
-
     }
+
 }

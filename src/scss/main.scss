@@ -25,10 +25,22 @@ body > div > div {
     > header > *,
     > main,
     > footer > section > * {
-        padding: 0 $page-gutter;
-        max-width: $max_width;
+        max-width: calc(#{$max_width} + #{2*$page-gutter-xxl});
         margin: 0 auto;
         width: 100%;
+        padding: 0 $page-gutter-sm;
+        @media(min-width: $screen-md) {
+            padding: 0 $page-gutter-md;
+        }
+        @media(min-width: $screen-lg) {
+            padding: 0 $page-gutter-lg;
+        }
+        @media(min-width: $screen-xl) {
+            padding: 0 $page-gutter-xl;
+        }
+        @media(min-width: $screen-xxl) {
+            padding: 0 $page-gutter-xxl;
+        }
     }
 
     > header, > footer {
