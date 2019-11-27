@@ -514,6 +514,19 @@ collections:
               - {label: Section title, name: title, widget: string}
               - {label: "Text", name: text, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
 
+      -   file: "src/data/tandcs.yml"
+          label: "Terms and Conditions"
+          name: terms-and-conditions
+          fields:
+            - {label: "Title", name: title, widget: hidden, default: "terms-and-conditions"}
+            - {label: "Introduction", name: introduction, widget: text, required: false}
+            -   label: T & C Sections
+                name: sections
+                widget: list
+                fields:
+                  - {label: Section title, name: title, widget: string}
+                  - {label: "Text", name: text, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+
   - label: "WordPress Pages"
     label_singular: "WordPress Page"
     name: wordpress-pages
