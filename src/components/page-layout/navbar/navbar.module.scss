@@ -5,18 +5,8 @@
 
 .menu {
     @media (min-width: $screen-lg) {
-        padding: $page-gutter-lg 0;
-        width: calc(100% - #{2*$page-gutter-lg});
-        max-width: calc(#{$max_width});
-    }
-    @media (min-width: $screen-xl) {
-        width: calc(100% - #{2*$page-gutter-xl});
-    }
-    @media (min-width: $screen-xxl) {
-        width: calc(100% - #{2*$page-gutter-xxl});
-    }
-    @media (min-width: $screen-xxxl) {
-        width: calc(100% - #{2*$page-gutter-xxxl});
+        padding-top: $page-gutter-lg;
+        padding-bottom: $page-gutter-lg;
     }
 
     background-color: white;
