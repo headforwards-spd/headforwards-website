@@ -26,7 +26,7 @@ components:
       always what we aim to deliver.”
     type: quote-component
   - isPostit: false
-    isRightImage: false
+    isRightImage: true
     isTwoColumns: false
     type: image-copy-component
     title: We believe in being Agile
@@ -34,6 +34,7 @@ components:
       Software can only deliver business value if development teams can adapt to
       changing client needs. For Headforwards, that comes from being Agile in
       the way they work with clients.
+    image: /uploads/delete 3.jpg
   - quote: >-
       “If we held our clients to a specific contract and said: ‘this is what you
       said you wanted, so you can't change your mind now’, it would be
