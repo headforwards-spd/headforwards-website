@@ -47,6 +47,7 @@
     address {
         @include fontSmall;
         @include component-gutter;
+        margin: 0 auto;
         margin-bottom: $gutter-medium;
         display: flex;
         flex-direction: column;

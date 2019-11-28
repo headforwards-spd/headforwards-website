@@ -8,7 +8,7 @@
     @include component-gutter;
     margin-bottom: $gutter-small/2;
     @media (min-width: $screen-lg) {
-        margin: 0 #{$gutter-medium - $gutter-small/2} $gutter-small/2;
+        margin: 0 auto $gutter-small/2;
         padding: 0;
     }
 
