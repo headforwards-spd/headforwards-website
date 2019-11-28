@@ -1,9 +1,10 @@
 @import "../../../scss/variables";
 
 .termsSection {
-    column-count: 2;
+    column-count: 1;
     margin-bottom: $gutter-large;
     column-gap: $gutter-large;
+    padding-left: 1rem;
 
     h1 {
         color: $header_black;
@@ -20,6 +21,12 @@
 
     li {
         line-height: 24px;
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .termsSection {
+        column-count: 2;
     }
 }
 

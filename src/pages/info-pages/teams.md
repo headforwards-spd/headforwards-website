@@ -22,6 +22,6 @@ components:
       Mobbing keeps everyone on the same page. Everyone agrees how the software
       will be coded, issues are picked up on fast, and we’re quicker to spot
       potential traps in the process.
-    type: quoteComponent
+    type: quote-component
 ---
 

@@ -30,6 +30,11 @@ function ContactTemplate({ email, phone, address }) {
                     <div className={styles.contactStyles}>
                         <div className={styles.flexSection}>
                             <p>Headforwards</p>
+                            <ul>
+                                {formattedAddress.map(({ ...item }) => (
+                                    <li>{item}</li>
+                                ))}
+                            </ul>
                             {formattedAddress}
                         </div>
                         <div className={styles.flexSection}>

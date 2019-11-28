@@ -19,7 +19,7 @@
                     "text": "Developers are recruited specifically for a client’s needs and teams are self-organising with the responsibility of producing software that delivers business value."
                 },
                 {
-                    "type":       "quoteComponent",
+                    "type":       "quote-component",
                     "profilePic": "/uploads/simon-minchin-author-copy-2.jpg",
                     "jobTitle":   "Director & Co-Founder",
                     "quote":      "It's about picking the right people for each client, rather than running a bench. ",
