@@ -29,21 +29,25 @@ components:
     isRightImage: true
     isTwoColumns: false
     type: image-copy-component
-    title: We believe in being Agile
+    title: We believe in being Agile and we believe in empowering teams
     text: >-
       Software can only deliver business value if development teams can adapt to
       changing client needs. For Headforwards, that comes from being Agile in
       the way they work with clients.
+
+
+      The Agile Manifesto says quality software emerges from self-organising
+      teams. That’s why there’s no management layer at Headforwards. Instead,
+      decision-making responsibility lies with the team working on each client
+      project.
+
+
+      When team members feel empowered and engaged, they work to their full
+      potential, and it shows in the quality of the software they deliver.
     image: /uploads/delete 3.jpg
   - imageOne: /uploads/delete 12.jpg
     imageTwo: /uploads/delete 3.jpg
     type: images-component
-  - quote: >-
-      If we held our clients to a specific contract and said: ‘this is what you
-      said you wanted, so you can't change your mind now’, it would be
-      completely useless. They wouldn't get business value out of the software
-      we’re creating for them.
-    type: quote-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: false
