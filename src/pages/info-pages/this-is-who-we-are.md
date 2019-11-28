@@ -7,18 +7,14 @@ image: /uploads/delete-11.jpg
 components:
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
-    type: image-copy-component
-    title: What we believe
-    text: >-
-      Headforwards believes clients get the greatest business value when Agile
-      development teams are empowered to make their own decisions.
-  - isPostit: false
-    isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: We believe in creating value
     text: >-
+      Headforwards believes clients get the greatest business value when Agile
+      development teams are empowered to make their own decisions.
+
+
       Clients look to Headforwards to develop software that creates value. In a
       rapidly changing business environment, what constitutes value might change
       from one week to the next.
