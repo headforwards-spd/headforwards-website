@@ -6,10 +6,13 @@
 
 .blogPostColumns {
 
-    > h1 {
         @include component-gutter;
-        @include headingFontXLarge;
+    > h1 {
         @include orange-type;
+        @include headingFontXLarge;
+        @media (min-width: $screen-lg) {
+            @include headingFontXXLarge;
+        }
     }
 
     > section {
@@ -35,9 +38,12 @@
             h1 {
                 order: 2;
                 flex-grow: 1;
-                @include headingFontLarge;
                 color: $header_black;
                 margin-bottom: 0;
+                @include headingFontMedium;
+                @media (min-width: $screen-lg) {
+                    @include headingFontLarge;
+                }
             }
 
             &:before {

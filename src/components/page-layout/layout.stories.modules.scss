@@ -1,4 +1,5 @@
 @import "../../scss/mixins/typography";
+@import "../../scss/variables";
 
 .wrapper {
     padding: $gutter-medium;
@@ -57,5 +58,74 @@ p {
 
     &.small {
         @include fontSmall;
+    }
+}
+
+.colours {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    dd, dt {
+        display: block;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    dt {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid black;
+    }
+    dd {
+        width: calc(100% - 2rem - 2rem);
+        flex-shrink: 0;
+    }
+
+    .orange1 {
+        background: $orange-1;
+    }
+    .orange2 {
+        background: $orange-2;
+    }
+
+    .blue1 {
+        background: $blue-1;
+    }
+    .blue2 {
+        background: $blue-2;
+    }
+
+    .grey1 {
+        background: $grey-1;
+    }
+    .grey2 {
+        background: $grey-2;
+    }
+    .grey3 {
+        background: $grey-3;
+    }
+    .grey4 {
+        background: $grey-4;
+    }
+    .grey5 {
+        background: $grey-5;
+    }
+    .grey6 {
+        background: $grey-6;
+    }
+    .grey7 {
+        background: $grey-7;
+    }
+    .grey8 {
+        background: $grey-8;
+    }
+    .grey9 {
+        background: $grey-9;
+    }
+    .grey10 {
+        background: $grey-10;
     }
 }

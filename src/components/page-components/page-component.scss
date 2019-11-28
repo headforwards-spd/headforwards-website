@@ -1,6 +1,9 @@
 @import "../../scss/variables";
 @mixin component-gutter {
-    margin: 0 0 $gutter-large;
+    margin: 0 0 $gutter-medium;
+    @media (min-width: $screen-lg) {
+        margin-bottom: $gutter-large;
+    }
 }
 
 @mixin component-columns-gutter {
@@ -23,9 +26,9 @@
     &:after {
         display: inline-block;
         content: url('/images/hf-arrow.orange.svg');
-        width: 1em;
+        width: 0.8em;
         margin-left: 1em;
-        vertical-align: sub;
+        vertical-align: middle;
     }
 }
 

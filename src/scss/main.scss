@@ -24,6 +24,8 @@ body > div > div {
 
     > header > *,
     > main,
+    > footer > ul,
+    > footer > address,
     > footer > section > * {
         max-width: calc(#{$max_width} + #{2*$page-gutter-xxl});
         margin: 0 auto;

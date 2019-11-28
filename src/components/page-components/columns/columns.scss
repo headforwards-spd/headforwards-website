@@ -19,19 +19,31 @@
 @mixin copy {
 
     h1 {
-        @include headingFontXLarge;
+        @include headingFontLarge;
+
+        @media (min-width: $screen-lg) {
+            @include headingFontXLarge;
+        }
     }
     > section {
-        @include fontLarge;
+        @include fontMedium;
+        @media (min-width: $screen-lg) {
+            @include fontLarge;
+        }
         > :last-child {
             margin-bottom: 0;
         }
     }
     a {
         @include arrow-link;
-        display: block;
-        margin-top: $gutter-medium;
-        @include fontLarge;
+        margin-top: $gutter-small;
+        @media(min-width: $screen-lg) {
+            margin-top: $gutter-medium;
+        }
+        @include fontMedium;
+        @media (min-width: $screen-lg) {
+            @include fontLarge;
+        }
         font-weight: normal;
     }
 

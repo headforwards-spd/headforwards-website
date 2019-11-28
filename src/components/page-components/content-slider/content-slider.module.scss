@@ -56,8 +56,10 @@
     }
 
     :global(.slick-dots) {
-        top: calc(-23px - 2rem);
-        height: calc(23px + 2rem);
+        @include headingFontSmall;
+        margin-bottom: 0;
+        top: calc(-1em - #{2*$gutter-small});
+        height: calc(1em + #{2*$gutter-small});
         right: 0;
         width: 30%;
         display: flex !important;
@@ -79,9 +81,9 @@
 
         position: absolute;
 
-        top: calc(50vw - 2.5rem);
-        width: 5rem;
-        height: 5rem;
+        top: calc(50vw - 2rem);
+        width: 4rem;
+        height: 4rem;
 
         svg {
             padding: 1rem;
@@ -133,7 +135,11 @@
 
         > h1 {
             color: $orange;
-            @include headingFontXLarge;
+            @include headingFontLarge;
+            @media(min-width: $screen-lg) {
+                @include headingFontXLarge;
+
+            }
             margin-top: 2em;
         }
 
@@ -144,7 +150,11 @@
                 color: #b4b4b5;
             }
             overflow: hidden;
-            @include fontLarge;
+            @include fontMedium;
+            @media(min-width: $screen-lg) {
+                @include fontLarge;
+
+            }
             > :last-child {
                 margin-bottom: 0;
             }
@@ -157,15 +167,19 @@
                 left: 0;
                 right: 0;
                 display: block;
-                background: linear-gradient(transparent, #141122);
+                background: linear-gradient(transparent, $blue-background);
             }
         }
 
         > a {
             @include arrow-link;
-            @include fontLarge;
             font-weight: normal;
             margin-bottom: 0;
+            @include fontMedium;
+            @media(min-width: $screen-lg) {
+                @include fontLarge;
+
+            }
         }
     }
 }
@@ -328,7 +342,6 @@
 
             > section {
                 flex-grow: 1;
-                color: #B8B8B8;
             }
         }
 

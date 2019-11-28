@@ -7,7 +7,11 @@
 .articleColumns {
 
     > h1 {
-        @include headingFontXLarge;
+        @include headingFontLarge;
+        @media(min-width: $screen-lg) {
+            @include headingFontXLarge;
+
+        }
     }
 
     > section {
@@ -21,6 +25,11 @@
 
             display: flex;
             flex-direction: column;
+            @include fontMedium;
+            @media(min-width: $screen-lg) {
+                @include fontLarge;
+
+            }
 
             .image {
                 order: 1;
@@ -29,19 +38,22 @@
 
                 @media(min-width: $screen-md) {
                     margin: 0 -#{$gutter-medium};
-                    @include fontMedium;
+                    @include fontLarge;
                 }
             }
 
             > h1 {
                 order: 2;
-                @include headingFontLarge;
+                @include headingFontMedium;
+                @media(min-width: $screen-lg) {
+                    @include headingFontLarge;
+
+                }
             }
 
             > section {
                 order: 3;
                 flex-grow: 1;
-                @include fontLarge;
 
                 > :last-child {
                     margin-bottom: 0;
@@ -51,6 +63,12 @@
             > a {
                 order: 4;
                 @include arrow-link;
+                font-weight: normal;
+                display: block;
+                margin-top: $gutter-small;
+                @media(min-width: $screen-lg) {
+                    margin-top: $gutter-medium;
+                }
             }
 
             > :last-child {
@@ -95,7 +113,8 @@
                 width: calc((100%/2) - #{$gutter-medium});
 
                 .image {
-                    margin: 0;
+                    margin-left: 0;
+                    margin-right: 0;
                 }
             }
 

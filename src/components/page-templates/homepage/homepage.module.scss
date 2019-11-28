@@ -7,6 +7,12 @@
         margin-bottom: $gutter-large - $gutter-medium/2;
     }
 
+    &:first-child {
+        @media (min-width: $screen-lg) {
+            width: 62.5%;
+        }
+    }
+
     .components {
 
         > * {
@@ -20,7 +26,9 @@
             //padding-left: 1rem;
             p {
                 @include fontLarge;
-                padding: 0;
+                @media (min-width: $screen-lg) {
+                    padding: 0;
+                }
                 margin-bottom: 0;
 
                 &:before,

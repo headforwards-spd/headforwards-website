@@ -6,13 +6,20 @@
 .footerSection {
     @include flexRow(row, nowrap, center);
     @include component-gutter;
-    margin: 0 #{$gutter-medium - $gutter-small/2} $gutter-small/2;
-    padding: 0;
+    margin-bottom: $gutter-small/2;
+    @media (min-width: $screen-lg) {
+        margin: 0 #{$gutter-medium - $gutter-small/2} $gutter-small/2;
+        padding: 0;
+    }
 
     li {
         padding: 0 $gutter-small/2 $gutter-small/2;
-        @include headingFontLarge;
+        @include headingFontXXXLarge;
         margin-bottom: 0;
+        @media (min-width: $screen-lg) {
+            @include headingFontLarge;
+            margin-bottom: 0;
+        }
 
         a {
             text-decoration: none;

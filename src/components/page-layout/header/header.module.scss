@@ -22,7 +22,9 @@
         h1 {
             @include orange-type;
             @include headingFontXXXLarge;
-            width: 62.5%;
+            @media(min-width: $screen-lg) {
+                width: 62.5%;
+            }
         }
         h2 {
             color: black;

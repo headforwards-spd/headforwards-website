@@ -39,7 +39,7 @@ form {
     @include fontLarge;
     font-weight: lighter;
     button {
-        background-color: #FFB800;
+        background-color: $orange;
         color: white;
         border: none;
         display: flex;

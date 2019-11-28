@@ -7,10 +7,17 @@
 .hero {
     @include component-gutter;
     > h1 {
-        @include headingFontXLarge;
+        @include headingFontLarge;
+        @media(min-width: $screen-lg) {
+            @include headingFontXLarge;
+
+        }
     }
     > section {
-        @include fontLarge;
+        @include fontMedium;
+        @media(min-width: $screen-lg) {
+            @include fontLarge;
+        }
         margin-bottom: 0;
     }
 

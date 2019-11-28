@@ -11,17 +11,18 @@
     }
 
     > p {
-        padding: $gutter-large 0 0;
-        font-weight: bold;
+        padding: 2em 0 0;
         font-style: italic;
         position: relative;
         @include orange-type;
         @include fontXLarge;
+        font-weight: normal;
 
         &:before,
         &:after {
+            font-weight: bold;
             color: #c3c3c3;
-            font-size: 2.4em;
+            font-size: 2em;
         }
 
         &:before {
@@ -55,9 +56,9 @@
 
         h1 {
             color: black;
-            margin-bottom: 0.5rem;
             font-weight: bold;
-            @include headingFontMedium;
+            @include headingFontLarge;
+            margin-bottom: 0.5rem;
         }
 
         p {
@@ -65,21 +66,25 @@
             text-transform: uppercase;
             margin: 0;
             font-style: italic;
-            @include fontMedium;
+            @include fontSmall;
+            @media (min-width: $screen-lg) {
+                @include fontMedium;
+            }
+            font-weight: lighter;
         }
         .imageCropper {
-            width: calc(20% + #{$gutter-medium});
+            width: 3em;
             position: relative;
             overflow: hidden;
             border-radius: 50%;
-            margin-right: $gutter-medium;
+            margin-right: $gutter-small;
 
             @media (min-width: $screen-lg) {
-                width: calc(10% + #{$gutter-medium});
+                width: 3.5em;
             }
 
             @media (min-width: $screen-lg) {
-                width: calc(5% + #{$gutter-medium});
+                width: 4em;
             }
 
         }
