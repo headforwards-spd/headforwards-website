@@ -28,10 +28,12 @@
         }
     }
 
-    .mapStyles {
-        margin-left: 0;
-        margin-right: 0;
-    }
+
+}
+
+.mapStyles {
+    margin-left: -$gutter-small;
+    margin-right: -$gutter-small;
 }
 
 form {
@@ -45,7 +47,6 @@ form {
         display: flex;
         align-items: center;
         padding: 1rem;
-        float: right;
 
         &:after {
             content: url(http://localhost:8000/images/hf-arrow.white.svg);

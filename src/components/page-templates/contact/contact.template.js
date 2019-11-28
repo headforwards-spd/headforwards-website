@@ -18,7 +18,7 @@ ContactTemplate.defaultProps = {
 };
 
 function ContactTemplate({ email, phone, address }) {
-    const formattedAddress = address.split(',').join('<br>');
+    const formattedAddress = address.split(',');
 
     return (
         <>
@@ -30,7 +30,11 @@ function ContactTemplate({ email, phone, address }) {
                     <div className={styles.contactStyles}>
                         <div className={styles.flexSection}>
                             <p>Headforwards</p>
-                            {formattedAddress}
+                            <ul>
+                                {formattedAddress.map(({ item }) => (
+                                    <li>{item}</li>
+                                ))}
+                            </ul>
                         </div>
                         <div className={styles.flexSection}>
                             <p>Telephone.</p>

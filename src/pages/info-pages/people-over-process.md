@@ -14,22 +14,22 @@ components:
       Everyone in my team is equal, and they each bring important skills and
       knowledge to the table. In my role as a Scrum Master, I work with
       influence and competency, rather than authority and seniority.
-    type: quoteComponent
+    type: quote-component
   - quote: >-
       One of the first things I tell clients when we bring them on board is:
       ‘when we deploy through our systems, you’ll see when it succeeds, but
       you’ll also see when it fails.’ That’s how open it is.
-    type: quoteComponent
+    type: quote-component
   - quote: >-
       Our people are so much more than developers. Yes, they design and build,
       but they also test, deploy, and provide on-going support. It means they’re
       responsible and accountable for the full project lifecycle.
-    type: quoteComponent
+    type: quote-component
   - quote: >-
       t’s important to get teams working together to be the best they can be.
       This can only happen if your people gel and build their own relationships
       before building one with a client.
-    type: quoteComponent
+    type: quote-component
 callToAction: ''
 ---
 

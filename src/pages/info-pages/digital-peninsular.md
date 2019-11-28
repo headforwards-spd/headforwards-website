@@ -10,6 +10,6 @@ components:
       When clients decide to partner with Headforwards, they don’t just get the
       value of an in-house team – they get the value of Cornwall’s entire tech
       ecosystem.
-    type: quoteComponent
+    type: quote-component
 ---
 
