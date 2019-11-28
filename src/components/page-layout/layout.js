@@ -1,11 +1,12 @@
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery }    from 'gatsby';
 import { arrayOf, node, oneOfType, string } from 'prop-types';
-import React from 'react';
-import { ImageSrcPropType } from './image/image.component';
-import Header from './header/header.component';
-import Footer from './footer/footer.component';
+import React                                from 'react';
+import Helmet                               from 'react-helmet'
+import { ImageSrcPropType }                 from './image/image.component';
+import Header                               from './header/header.component';
+import Footer                               from './footer/footer.component';
 import '../../scss/main.scss';
-import Seo, { SeoPropType } from './seo';
+import Seo, { SeoPropType }                 from './seo';
 
 export default Layout;
 
@@ -69,6 +70,14 @@ function Layout({ seo, title, text, image, children, callToAction: pageCallToAct
 
     return (
         <>
+            <Helmet>
+                <link rel="preload" href="/fonts/FSAlbert-Bold.woff2" as="font" />
+                <link rel="preload" href="/fonts/FSAlbert-BoldItalic.woff2" as="font" />
+                <link rel="preload" href="/fonts/FSAlbert-Regular.woff2" as="font" />
+                <link rel="preload" href="/fonts/FSAlbert-RegularItalic.woff2" as="font" />
+                <link rel="preload" href="/fonts/FSAlbert-Light.woff2" as="font" />
+                <link rel="preload" href="/fonts/FSAlbert-LightItalic.woff2" as="font" />
+            </Helmet>
             <Seo {...{ title, ...seo }} />
             <Header {...headerProps} />
             <main>{children}</main>
