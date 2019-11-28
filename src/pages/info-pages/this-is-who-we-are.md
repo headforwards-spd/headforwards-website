@@ -5,6 +5,19 @@ type: info-page
 title: What we believe
 image: /uploads/delete-11.jpg
 components:
+  - isPostit: false
+    isRightImage: false
+    isTwoColumns: true
+    type: image-copy-component
+    title: We believe in creating value
+    text: >-
+      Headforwards believes clients get the greatest business value when Agile
+      development teams are empowered to make their own decisions.
+
+
+      Clients look to Headforwards to develop software that creates value. In a
+      rapidly changing business environment, what constitutes value might change
+      from one week to the next.
   - jobTitle: co Founder
     name: Craig Girvan
     quote: >-
@@ -22,19 +35,6 @@ components:
       changing client needs. For Headforwards, that comes from being Agile in
       the way they work with clients.
     image: /uploads/delete 3.jpg
-  - isPostit: false
-    isRightImage: false
-    isTwoColumns: true
-    type: image-copy-component
-    title: We believe in creating value
-    text: >-
-      Headforwards believes clients get the greatest business value when Agile
-      development teams are empowered to make their own decisions.
-
-
-      Clients look to Headforwards to develop software that creates value. In a
-      rapidly changing business environment, what constitutes value might change
-      from one week to the next.
   - imageOne: /uploads/delete 12.jpg
     imageTwo: /uploads/delete 3.jpg
     type: images-component
