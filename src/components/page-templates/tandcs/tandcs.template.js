@@ -1,4 +1,4 @@
-import React         from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styles from './tandcs.module.scss';
 
@@ -26,5 +26,5 @@ function TermsConditionsTemplate({ tcData }) {
                 </section>
             ))}
         </section>
-    )
+    );
 }

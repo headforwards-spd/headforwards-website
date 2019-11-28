@@ -1,12 +1,12 @@
-import { graphql, Link, useStaticQuery }    from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import { arrayOf, node, oneOfType, string } from 'prop-types';
-import React                                from 'react';
-import Helmet                               from 'react-helmet'
-import { ImageSrcPropType }                 from './image/image.component';
-import Header                               from './header/header.component';
-import Footer                               from './footer/footer.component';
+import React from 'react';
+import Helmet from 'react-helmet';
+import { ImageSrcPropType } from './image/image.component';
+import Header from './header/header.component';
+import Footer from './footer/footer.component';
 import '../../scss/main.scss';
-import Seo, { SeoPropType }                 from './seo';
+import Seo, { SeoPropType } from './seo';
 
 export default Layout;
 

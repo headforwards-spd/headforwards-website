@@ -11,23 +11,38 @@ export default {
 };
 
 export const Colours = () => {
-
-    return <dl className={styles.colours}>
-        <dt className={styles.orange1}></dt><dd>Orange 1 (#ffb900)</dd>
-        <dt className={styles.orange2}></dt><dd>Orange 2 (#ffcc55)</dd>
-        <dt className={styles.blue1}></dt><dd>Blue 1 (#141122)</dd>
-        <dt className={styles.blue2}></dt><dd>Blue 2 (#1D1F32)</dd>
-        <dt className={styles.grey1}></dt><dd>Grey 1 (#383F51)</dd>
-        <dt className={styles.grey2}></dt><dd>Grey 2 (#4A4A4A)</dd>
-        <dt className={styles.grey3}></dt><dd>Grey 3 (#4D4D4D)</dd>
-        <dt className={styles.grey4}></dt><dd>Grey 4 (#6E7087)</dd>
-        <dt className={styles.grey5}></dt><dd>Grey 5 (#b4b4b5)</dd>
-        <dt className={styles.grey6}></dt><dd>Grey 6 (#B8B8B8)</dd>
-        <dt className={styles.grey7}></dt><dd>Grey 7 (#c3c3c3)</dd>
-        <dt className={styles.grey8}></dt><dd>Grey 8 (#d7d7d6)</dd>
-        <dt className={styles.grey9}></dt><dd>Grey 9 (#D8D8D8)</dd>
-        <dt className={styles.grey10}></dt><dd>Grey 10 (#eeeeee)</dd>
-    </dl>
+    return (
+        <dl className={styles.colours}>
+            <dt className={styles.orange1} />
+            <dd>Orange 1 (#ffb900)</dd>
+            <dt className={styles.orange2} />
+            <dd>Orange 2 (#ffcc55)</dd>
+            <dt className={styles.blue1} />
+            <dd>Blue 1 (#141122)</dd>
+            <dt className={styles.blue2} />
+            <dd>Blue 2 (#1D1F32)</dd>
+            <dt className={styles.grey1} />
+            <dd>Grey 1 (#383F51)</dd>
+            <dt className={styles.grey2} />
+            <dd>Grey 2 (#4A4A4A)</dd>
+            <dt className={styles.grey3} />
+            <dd>Grey 3 (#4D4D4D)</dd>
+            <dt className={styles.grey4} />
+            <dd>Grey 4 (#6E7087)</dd>
+            <dt className={styles.grey5} />
+            <dd>Grey 5 (#b4b4b5)</dd>
+            <dt className={styles.grey6} />
+            <dd>Grey 6 (#B8B8B8)</dd>
+            <dt className={styles.grey7} />
+            <dd>Grey 7 (#c3c3c3)</dd>
+            <dt className={styles.grey8} />
+            <dd>Grey 8 (#d7d7d6)</dd>
+            <dt className={styles.grey9} />
+            <dd>Grey 9 (#D8D8D8)</dd>
+            <dt className={styles.grey10} />
+            <dd>Grey 10 (#eeeeee)</dd>
+        </dl>
+    );
 };
 
 export const Headings = () => {
