@@ -3,6 +3,7 @@
 .termsSection {
     column-count: 2;
     margin-bottom: $gutter-large;
+    column-gap: $gutter-large;
 
     h1 {
         color: $header_black;
@@ -13,7 +14,7 @@
     }
 
     ul {
-        text-indent: 1rem;
+        list-style-type: unset;
         font-weight: lighter;
     }
 

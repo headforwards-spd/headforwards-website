@@ -18,7 +18,6 @@ PrivacyNoticeTemplate.defaultProps = {
 };
 
 function PrivacyNoticeTemplate({ privacyData }) {
-    console.log(privacyData);
     const { introduction, sections } = privacyData || {};
     return (
         <>
