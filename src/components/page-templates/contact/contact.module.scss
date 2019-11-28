@@ -8,7 +8,6 @@
     @include component-gutter;
     display: flex;
     flex-wrap: wrap;
-    background-color: green;
 
     p {
         @include fontLarge;
