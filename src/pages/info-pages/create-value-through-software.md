@@ -34,7 +34,7 @@ components:
     type: quote-component
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: How we measure value
     text: "As an integral part of the client’s team, it’s easy for Headforwards to measure the value created and monitor a project’s success.\r\n\nThat’s why development is often just the start. Headforwards’ teams stay with clients after deployment to measure their impact, identifying metrics like usage, user experience and stability, and updating software when needed."
