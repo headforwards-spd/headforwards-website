@@ -17,11 +17,7 @@ function Contact() {
                 email
                 phone
                 address
-                facebookURL
-                instagramURL
-                linkedInURL
-                youtubeURL
-                twitterURL
+                registeredAddress
             }
         }
     `);

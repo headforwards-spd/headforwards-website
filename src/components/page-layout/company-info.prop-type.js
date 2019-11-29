@@ -10,5 +10,6 @@ export const companyInfoPropTypes = {
     facebookURL: string,
     instagramURL: string,
     linkedInURL: string,
+    registeredAddress: string,
 };
 export const CompanyInfoPropType = shape(companyInfoPropTypes);
