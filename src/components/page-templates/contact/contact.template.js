@@ -23,40 +23,34 @@ function ContactTemplate({ email, phone, address }) {
     return (
         <>
             <section className={styles.contactStyles}>
-                <div className={styles.flexSection}>
-                    <h1 className={styles.flexSection}>We would love to talk business with you.</h1>
+                <div className={`${styles.flexSection} ${styles.header}`}>
+                    <h1>We would love to talk business with you.</h1>
                 </div>
                 <div className={styles.flexSection}>
-                    <div className={styles.contactStyles}>
-                        <div className={styles.flexSection}>
-                            <p>Headforwards</p>
+                    <div className={styles.flexContainer}>
+                        <div className={styles.flexGrow}>
+                            <p className={styles.bold}>Headforwards</p>
                             <ul>
-                                {formattedAddress.map(({ item }) => (
+                                {formattedAddress.map(item => (
                                     <li>{item}</li>
                                 ))}
                             </ul>
                         </div>
-                        <div className={styles.flexSection}>
+                        <div className={styles.flexGrow}>
                             <p>Telephone.</p>
                             <p className={styles.bold}>{phone}</p>
                             <p>Email.</p>
                             <p className={styles.bold}>{email}</p>
                         </div>
                     </div>
-                    <div className={styles.contactStyles}>
-                        <div className={styles.flexSection}>
+                    <div>
                             <h1>Send us a message...</h1>
-                        </div>
                     </div>
                     <div className={styles.contactStyles}>
                         <form name="contact" method="POST" data-netlify="true">
-                            <div
-                                style={{
-                                    display: 'flex',
-                                }}
-                            >
+                            <div className={styles.doubleInput}>
                                 <div>
-                                    <span>Your Name</span>
+                                    <span>Your Name *</span>
                                     <div>
                                         <input />
                                     </div>
@@ -68,36 +62,37 @@ function ContactTemplate({ email, phone, address }) {
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                style={{
-                                    display: 'flex',
-                                }}
-                            >
+                            <div className={styles.doubleInput}>
                                 <div>
-                                    <span>Telephone Number</span>
+                                    <span>Telephone Number *</span>
                                     <div>
                                         <input />
                                     </div>
                                 </div>
                                 <div>
-                                    <span>Email Address</span>
+                                    <span>Email Address *</span>
                                     <div>
                                         <input />
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                style={{
-                                    display: 'flex',
-                                    justifyContent: 'space-between',
-                                }}
-                            >
+                            <div>
                                 <div>
                                     <span>Enquiry</span>
                                     <div>
                                         <textarea />
                                     </div>
                                 </div>
+                            </div>
+                            <div className={styles.terms}>
+                                <label>
+                                    <input type="checkbox" name="privacy" value="accept" checked="checked" />
+                                    <span>I agree to the terms outlined in the privacy policy</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="marketing" value="accept" checked="checked" />
+                                    <span>I would like to receive marketing communications.</span>
+                                </label>
                             </div>
                             <button>Send form</button>
                         </form>
@@ -113,20 +108,25 @@ function ContactTemplate({ email, phone, address }) {
                     allowFullScreen
                 />
             </section>
+            <section>
+                <div>
+                    <h1>Recruitment</h1>
+                    <p>If you are interested in joining the team here at Headforwards please take a look at our careers page to see if we have any suitable vacancies available.</p>
+                    <p className={styles.bold}>We only recruit directly so, please, NO recruiters.</p>
+                    <p>If you are a recruiter and still wish to call us then we will ask for a donation of at least £50 to the charity Shelter Box.</p>
+                </div>
+                <div>
+                    <h1>Our Registered Office:</h1>
+                    <ul>
+                        <li>The Engine House</li>
+                        <li>Wheal Kitty</li>
+                        <li>St Agnes, Cornwall</li>
+                        <li>TR5 0RD</li>
+                    </ul>
+                    <p>Headforwards is the trading name of Headforwards Solutions Ltd.</p>
+                    <p>An Outsource Software Company registered in England and Wales with number 07576641</p>
+                </div>
+            </section>
         </>
-        // <>
-        //     <section className={styles.contactStyles}>
-        //         <div className={styles.flexSection}>
-        //             <p>Headforwards</p>
-        //             {address}
-        //         </div>
-
-        //     </section>
-        //     <section className={styles.contactStyles}>
-        //     </section>
-        //
-        //     ;
-        //     <section className={styles.contactStyles} />;{' '}
-        // </>
     );
 }
