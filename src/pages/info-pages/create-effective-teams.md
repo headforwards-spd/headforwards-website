@@ -33,7 +33,7 @@ components:
     image: /uploads/smiley-face-doodle.png
   - quote: >-
       It’s important everyone is trusted equally in our teams. The right mix of
-      experiences and skills can generate some really exciting ideas – and it
+      experiences and skills can generate some really exciting ideas and it
       completely shapes the way the project runs.
     type: quote-component
   - isPostit: false
