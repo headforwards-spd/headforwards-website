@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import Image from '../../page-layout/image/image.component';
 import Link from '../../page-layout/link/link.component';
 import styles from './index-page.module.scss';
@@ -17,6 +17,9 @@ PageLink.defaultProps = {
     page: {},
 };
 
+IndexPageTemplate.propTypes = {
+    pages: arrayOf(shape(PageLinkPropTypes)).isRequired,
+};
 export default function IndexPageTemplate({ pages }) {
     return <section className={styles.pages}>{!!pages && pages.map(page => <PageLink {...page} />)}</section>;
 }

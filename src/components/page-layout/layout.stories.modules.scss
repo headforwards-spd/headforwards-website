@@ -1,3 +1,4 @@
+@import "../../scss/fonts/fs-albert-web";
 @import "../../scss/mixins/typography";
 @import "../../scss/variables";
 
@@ -128,4 +129,8 @@ p {
     .grey10 {
         background: $grey-10;
     }
+}
+
+.fsAlbertWeb {
+    font-family: 'FS ALbert Web';
 }

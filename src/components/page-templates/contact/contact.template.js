@@ -23,7 +23,6 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
     const formattedAddress = address.split(',');
     const formattedRegAddress = registeredAddress.split(',');
 
-
     return (
         <>
             <section className={styles.contactStyles}>

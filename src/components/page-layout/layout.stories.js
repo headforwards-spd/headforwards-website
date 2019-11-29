@@ -1,9 +1,12 @@
 import { withKnobs } from '@storybook/addon-knobs';
+import { string } from 'prop-types';
 import React from 'react';
 
 import styles from './layout.stories.modules.scss';
 
 const faker = require('faker');
+
+const testText = `The quick brown fox jumps over the lazy dog. $123.45!`;
 
 export default {
     title: 'Page Layout/Typography',
@@ -46,16 +49,22 @@ export const Colours = () => {
 };
 
 export const Headings = () => {
-    const title = faker.lorem.words();
+    const title = testText;
 
     return (
         <section className={styles.wrapper}>
             <h1 className={styles.xxxlarge}>XXXLarge: {title}</h1>
+            <h1 className={`${styles.xxxlarge} ${styles.fsAlbertWeb}`}>XXXLarge: {title}</h1>
             <h1 className={styles.xxlarge}>XXLarge: {title}</h1>
+            <h1 className={`${styles.xxlarge} ${styles.fsAlbertWeb}`}>XXLarge: {title}</h1>
             <h1 className={styles.xlarge}>XLarge: {title}</h1>
+            <h1 className={`${styles.xlarge} ${styles.fsAlbertWeb}`}>XLarge: {title}</h1>
             <h1 className={styles.large}>Large: {title}</h1>
+            <h1 className={`${styles.large} ${styles.fsAlbertWeb}`}>Large: {title}</h1>
             <h1 className={styles.medium}>Medium: {title}</h1>
+            <h1 className={`${styles.medium} ${styles.fsAlbertWeb}`}>Medium: {title}</h1>
             <h1 className={styles.small}>Small: {title}</h1>
+            <h1 className={`${styles.small} ${styles.fsAlbertWeb}`}>Small: {title}</h1>
         </section>
     );
 };
@@ -66,120 +75,144 @@ export const Paragraphs = () => {
     return (
         <section className={styles.wrapper}>
             <p className={styles.xxlarge}>XXLarge: {copy}</p>
+            <p className={`${styles.xxlarge} ${styles.fsAlbertWeb}`}>XXLarge: {copy}</p>
             <p className={styles.xlarge}>XLarge: {copy}</p>
+            <p className={`${styles.xlarge} ${styles.fsAlbertWeb}`}>XLarge: {copy}</p>
             <p className={styles.large}>Large: {copy}</p>
+            <p className={`${styles.large} ${styles.fsAlbertWeb}`}>Large: {copy}</p>
             <p className={styles.medium}>Medium: {copy}</p>
+            <p className={`${styles.medium} ${styles.fsAlbertWeb}`}>Medium: {copy}</p>
             <p className={styles.small}>Small: {copy}</p>
+            <p className={`${styles.small} ${styles.fsAlbertWeb}`}>Small: {copy}</p>
         </section>
     );
 };
 
 export const SmallCopy = () => {
-    const title = faker.lorem.words();
-    const paragraphs = faker.lorem.paragraphs().split('\n');
+    const className = styles.wrapper;
+    const heading = faker.lorem.words();
+    const copy = faker.lorem.paragraphs().split('\n');
+    const largeHeadingClass = styles.medium;
+    const headingClass = styles.small;
+    const copyClass = styles.small;
 
     return (
         <>
-            <section className={styles.wrapper}>
-                <h1 className={styles.small}>Small: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.small}>{copy}</p>
-                ))}
-            </section>
-            <section className={styles.wrapper}>
-                <h1 className={styles.medium}>Medium: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.small}>{copy}</p>
-                ))}
-            </section>
+            <Section {...{ className, heading, headingClass, copy, copyClass }} />
+            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
         </>
     );
 };
 
 export const MediumCopy = () => {
-    const title = faker.lorem.words();
-    const paragraphs = faker.lorem.paragraphs().split('\n');
+    const className = styles.wrapper;
+    const heading = faker.lorem.words();
+    const copy = faker.lorem.paragraphs().split('\n');
+    const largeHeadingClass = styles.large;
+    const headingClass = styles.medium;
+    const copyClass = styles.medium;
 
     return (
         <>
-            <section className={styles.wrapper}>
-                <h1 className={styles.medium}>Medium: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.medium}>{copy}</p>
-                ))}
-            </section>
-            <section className={styles.wrapper}>
-                <h1 className={styles.large}>Large: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.medium}>{copy}</p>
-                ))}
-            </section>
+            <Section {...{ className, heading, headingClass, copy, copyClass }} />
+            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
         </>
     );
 };
 
 export const LargeCopy = () => {
-    const title = faker.lorem.words();
-    const paragraphs = faker.lorem.paragraphs().split('\n');
+    const className = styles.wrapper;
+    const heading = faker.lorem.words();
+    const copy = faker.lorem.paragraphs().split('\n');
+    const largeHeadingClass = styles.xlarge;
+    const headingClass = styles.large;
+    const copyClass = styles.large;
 
     return (
         <>
-            <section className={styles.wrapper}>
-                <h1 className={styles.large}>Large: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.large}>{copy}</p>
-                ))}
-            </section>
-            <section className={styles.wrapper}>
-                <h1 className={styles.xlarge}>XLarge: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.large}>{copy}</p>
-                ))}
-            </section>
+            <Section {...{ className, heading, headingClass, copy, copyClass }} />
+            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
         </>
     );
 };
 
 export const XLargeCopy = () => {
-    const title = faker.lorem.words();
-    const paragraphs = faker.lorem.paragraphs().split('\n');
+    const className = styles.wrapper;
+    const heading = faker.lorem.words();
+    const copy = faker.lorem.paragraphs().split('\n');
+    const largeHeadingClass = styles.xxlarge;
+    const headingClass = styles.xlarge;
+    const copyClass = styles.xLarge;
 
     return (
         <>
-            <section className={styles.wrapper}>
-                <h1 className={styles.xlarge}>XLarge: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.xlarge}>{copy}</p>
-                ))}
-            </section>
-            <section className={styles.wrapper}>
-                <h1 className={styles.xxlarge}>XXLarge: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.xlarge}>{copy}</p>
-                ))}
-            </section>
+            <Section {...{ className, heading, headingClass, copy, copyClass }} />
+            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
         </>
     );
 };
 
 export const XXLargeCopy = () => {
-    const title = faker.lorem.words();
-    const paragraphs = faker.lorem.paragraphs().split('\n');
+    const className = styles.wrapper;
+    const heading = faker.lorem.words();
+    const copy = faker.lorem.paragraphs().split('\n');
+    const largeHeadingClass = styles.xxxlarge;
+    const headingClass = styles.xxlarge;
+    const copyClass = styles.xxLarge;
 
     return (
         <>
-            <section className={styles.wrapper}>
-                <h1 className={styles.xxlarge}>XXLarge: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.xxlarge}>{copy}</p>
-                ))}
-            </section>
-            <section className={styles.wrapper}>
-                <h1 className={styles.xxxlarge}>XXXLarge: {title}</h1>
-                {paragraphs.map(copy => (
-                    <p className={styles.xxlarge}>{copy}</p>
-                ))}
-            </section>
+            <Section {...{ className, heading, headingClass, copy, copyClass }} />
+            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
         </>
     );
 };
+
+Heading.propTypes = {
+    text: string,
+    className: string,
+};
+Heading.defaultProps = {
+    text: testText,
+    className: '',
+};
+function Heading({ text, className }) {
+    return <h1 className={className}>{text}</h1>;
+}
+
+Paragraph.propTypes = {
+    text: string,
+    className: string,
+};
+Paragraph.defaultProps = {
+    text: testText,
+    className: '',
+};
+function Paragraph({ text, className }) {
+    return <p className={className}>{text}</p>;
+}
+
+Section.propTypes = {
+    className: string,
+    heading: string,
+    headingClass: string,
+    copy: string,
+    copyClass: string,
+};
+Section.defaultProps = {
+    className: '',
+    heading: testText,
+    headingClass: '',
+    copy: testText,
+    copyClass: '',
+};
+function Section({ className, heading, headingClass, copy, copyClass }) {
+    return (
+        <section className={className}>
+            <h1 className={headingClass}>{heading}</h1>
+            {copy.map(paragraph => (
+                <p className={copyClass}>{paragraph}</p>
+            ))}
+        </section>
+    );
+}

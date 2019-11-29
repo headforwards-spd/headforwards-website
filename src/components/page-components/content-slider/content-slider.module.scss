@@ -68,12 +68,11 @@
         flex-wrap: wrap;
 
         button:before {
-            font-size: 0.8rem;
-            color: #6E7087;
+            background: #6E7087;
         }
 
         :global(.slick-active) button:before, button:hover:before {
-            color: $orange;
+            background: $orange;
         }
     }
 
