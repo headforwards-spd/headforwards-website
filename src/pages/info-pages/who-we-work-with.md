@@ -3,13 +3,25 @@ uuid: 3630b640-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: Who we work with
-text: Whatever the size of your business, Headforwards focuses on building long-term partnerships with clients willing to take an Agile approach to development.
+text: >-
+  Whatever the size of your business, Headforwards focuses on building long-term
+  partnerships with clients willing to take an Agile approach to development.
+image: /uploads/delete 9.jpg
 components:
   - isPostit: false
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: A long-term partnership approach
+    title: blah
+    text: >-
+      Whatever the size of your business, Headforwards focuses on building
+      long-term partnerships with clients willing to take an Agile approach to
+      development.
+  - isPostit: false
+    isRightImage: false
+    isTwoColumns: false
+    type: image-copy-component
+    title: blah
     text: >-
       With dedicated teams created for each client, Headforwards looks to
       develop long-term client partnerships that continuously deliver business
@@ -45,6 +57,9 @@ components:
       strong foundation of trust and communication, the challenge becomes much
       easier to overcome.
     type: quote-component
+  - imageOne: /uploads/gash-1.jpg
+    imageTwo: /uploads/delete 7.jpg
+    type: images-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: false
