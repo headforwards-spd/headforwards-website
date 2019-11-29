@@ -44,7 +44,7 @@ function ContactTemplate({ email, phone, address }) {
                         </div>
                     </div>
                     <div>
-                            <h1>Send us a message...</h1>
+                        <h1>Send us a message...</h1>
                     </div>
                     <div className={styles.contactStyles}>
                         <form name="contact" method="POST" data-netlify="true">
@@ -111,9 +111,15 @@ function ContactTemplate({ email, phone, address }) {
             <section>
                 <div>
                     <h1>Recruitment</h1>
-                    <p>If you are interested in joining the team here at Headforwards please take a look at our careers page to see if we have any suitable vacancies available.</p>
+                    <p>
+                        If you are interested in joining the team here at Headforwards please take a look at our careers
+                        page to see if we have any suitable vacancies available.
+                    </p>
                     <p className={styles.bold}>We only recruit directly so, please, NO recruiters.</p>
-                    <p>If you are a recruiter and still wish to call us then we will ask for a donation of at least £50 to the charity Shelter Box.</p>
+                    <p>
+                        If you are a recruiter and still wish to call us then we will ask for a donation of at least £50
+                        to the charity Shelter Box.
+                    </p>
                 </div>
                 <div>
                     <h1>Our Registered Office:</h1>

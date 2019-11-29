@@ -496,7 +496,7 @@ collections:
           - {label: "Linkedin URL",  name: linkedInURL, widget: string, required: false}
           - {label: "Youtube URL",  name: youtubeURL, widget: string, required: false}
           - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
-          - {label: "Registered Office Address", name: registeredAddress, widget: string}
+          - {label: "Registered Office Address", name: registeredAddress, widget: text}
 
       - file: "src/data/privacy-notice.yml"
         label: "Privacy Notice"
