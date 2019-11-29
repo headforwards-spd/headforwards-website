@@ -29,7 +29,7 @@ components:
     isRightImage: true
     isTwoColumns: false
     type: image-copy-component
-    title: We believe in being Agile and we believe in empowering teams
+    title: 'We believe in being Agile, we believe in empowering teams'
     text: >-
       Software can only deliver business value if development teams can adapt to
       changing client needs. For Headforwards, that comes from being Agile in
