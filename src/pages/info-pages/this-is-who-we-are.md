@@ -3,6 +3,7 @@ uuid: 07758420-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: What we believe
+text: ''
 image: /uploads/delete-11.jpg
 components:
   - isPostit: false
@@ -53,8 +54,6 @@ components:
       empower everybody who works for us and maximise their contribution – and
       the client really benefits from that.
     type: quote-component
-callToAction: >-
-  Want to know more about how we can create value for your organisation? Get in
-  touch.
+callToAction: Want to know more about how we can create value for your organisation?
 ---
 
