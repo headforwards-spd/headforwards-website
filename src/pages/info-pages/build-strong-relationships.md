@@ -4,11 +4,12 @@ parent: what-we-do
 type: info-page
 title: Build strong relationships
 text: ''
-image: /uploads/simon-minchin-author-copy-2.jpg
+image: ''
 components:
-  - isPostit: true
-    image: /uploads/paper-airplane-doodle.png
-    isRightImage: true
+  - image: ''
+    isPostit: false
+    isRightImage: false
+    isTwoColumns: true
     link: d1956170-ec44-11e9-914c-c376cef31113
     linkText: ''
     type: image-copy-component
@@ -36,8 +37,8 @@ components:
       share ideas, work in diverse teams and take risks every day – and our
       clients get a lot of value from that
     type: quote-component
-  - isPostit: true
-    image: /uploads/paper-airplane-doodle.png
+  - image: /uploads/paper-airplane-doodle.png
+    isPostit: true
     isRightImage: false
     type: image-copy-component
     title: A team dynamic focused on equality and respect
@@ -55,8 +56,8 @@ components:
       value. It’s a flat structure – everyone is listened to, everyone is
       trusted equally, and we’re all a united team
     type: quote-component
-  - isPostit: true
-    image: /uploads/paper-airplane-doodle.png
+  - image: /uploads/paper-airplane-doodle.png
+    isPostit: true
     isRightImage: true
     type: image-copy-component
     title: Client relationships that go further
