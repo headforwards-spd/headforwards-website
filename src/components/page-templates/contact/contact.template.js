@@ -6,6 +6,7 @@ const contactPropTypes = {
     email: string,
     phone: string,
     address: string,
+    registeredAddress: string,
 };
 
 export default ContactTemplate;
@@ -15,10 +16,13 @@ ContactTemplate.defaultProps = {
     email: '',
     phone: '',
     address: '',
+    registeredAddress: string,
 };
 
-function ContactTemplate({ email, phone, address }) {
+function ContactTemplate({ email, phone, address, registeredAddress }) {
     const formattedAddress = address.split(',');
+    const formattedRegAddress = registeredAddress.split(',');
+
 
     return (
         <>
@@ -124,10 +128,9 @@ function ContactTemplate({ email, phone, address }) {
                 <div>
                     <h1>Our Registered Office:</h1>
                     <ul>
-                        <li>The Engine House</li>
-                        <li>Wheal Kitty</li>
-                        <li>St Agnes, Cornwall</li>
-                        <li>TR5 0RD</li>
+                        {formattedRegAddress.map(item => (
+                            <li>{item}</li>
+                        ))}
                     </ul>
                     <p>Headforwards is the trading name of Headforwards Solutions Ltd.</p>
                     <p>An Outsource Software Company registered in England and Wales with number 07576641</p>
