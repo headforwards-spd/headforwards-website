@@ -1,21 +1,9 @@
 ---
-type: legal-page
+uuid: 4b2bb870-13bb-11ea-9795-cb94363984ef
 title: Privacy Notice
-introduction: >-
-  This privacy notice is here to explain how we (Headforwards Solutions LTD) use
-  and protect any information you give us whilst using our site. We want to
-  ensure that your privacy is protected at all times.
-
-
-  We will only ever use your data in the way you intended it when you provided
-  it to us. This should be explicitly clear, if you are unsure please contact
-  us. We will regularly review and revise our privacy policy, to ensure you are
-  protected.
-
-
-  This policy was last updated on 24th May 2018.
 sections:
-  - text: >-
+  - title: Personal Data
+    text: >-
       Whilst using our website, software applications or services, you may
       provide us your personal information (name, address, email, account
       details, etc.). We will use this information to administer our website,
@@ -23,8 +11,8 @@ sections:
       all personal information supplied is held securely in accordance with the
       General Data Protection Regulation (EU) 2016/679, as adopted into law of
       the United Kingdom in the Data Protection Act 2018.
-    title: Personal Data
-  - text: >-
+  - title: How do we collect information?
+    text: >-
       Headforwards Solutions Ltd collects information in two possible ways:
 
 
@@ -44,8 +32,8 @@ sections:
       account with those other services. For example, this can be via social
       media or by choosing to send us your location data when accessing our
       website from your smartphone.
-    title: How do we collect information?
-  - text: >-
+  - title: How long do we keep your data for?
+    text: >-
       Headforwards Solutions Ltd will not retain your personal information for
       longer than necessary. We will hold onto the information you provide
       either while your account is in existence, or as needed to be able to
@@ -61,8 +49,8 @@ sections:
       Terms and Conditions, we may also retain some of your information for a
       limited period of time as required, even after you have closed your
       account or it is no longer needed to provide the Services to you.
-    title: How long do we keep your data for?
-  - text: >-
+  - title: Registration forms
+    text: >-
       Data we collect from job applicants
 
 
@@ -120,8 +108,8 @@ sections:
       information such as your name and the result of the recruitment process to
       refer to in the event that you subsequently apply for another role in the
       future.
-    title: Registration forms
-  - text: >-
+  - title: Data we collect from potential customers
+    text: >-
       If you fill in the contact form on our website we will collect the
       following information:
 
@@ -151,8 +139,8 @@ sections:
       administered by the U.S. Department of Commerce, in order to implement
       appropriate safeguards for such transfers pursuant to Article 46 of the
       GDPR.
-    title: Data we collect from potential customers
-  - text: >-
+  - title: Marketing Data
+    text: >-
       When you apply for a position or contact via our contact form you will
       also have the option to receive marketing communications from us. If you
       select no, you will not be added to our marketing mailing list.
@@ -179,7 +167,7 @@ sections:
       comply with the Privacy Shield Principles for all onward transfers of
       Personal Information from the EU and Switzerland, including the onward
       transfer liability provisions.
-    title: Marketing Data
 seo:
-    slug: privacy-notice
+  slug: privacy-notice
 ---
+
