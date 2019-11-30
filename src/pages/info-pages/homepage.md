@@ -35,7 +35,7 @@ sections:
         type: quote-component
     image: /uploads/craig.jpg
     isPostit: false
-    isRightImage: true
+    isRightImage: false
   - components:
       - text: >-
           Headforwards looks to develop trust between themselves and their
@@ -51,7 +51,7 @@ sections:
         type: quote-component
     image: /uploads/smiley-face-doodle.png
     isPostit: true
-    isRightImage: false
+    isRightImage: true
     title: This is a title
   - components:
       - text: >-
@@ -70,7 +70,7 @@ sections:
         type: quote-component
     image: /uploads/paper-airplane-doodle.png
     isPostit: true
-    isRightImage: true
+    isRightImage: false
     title: This is a title
 seo:
   slug: /
