@@ -16,8 +16,8 @@ sections:
           Developers are recruited specifically for a client’s needs and teams
           are self-organising with the responsibility of producing software that
           delivers business value.
-        title: People over process
         type: image-copy-component
+        title: People over process
       - jobTitle: Director & Co-Founder
         name: Toby Parkins
         profilePic: /uploads/simon-minchin-author-copy-2.jpg
@@ -40,8 +40,8 @@ sections:
       - text: >-
           Headforwards looks to develop trust between themselves and their
           clients by continuously delivering business value.
-        title: Building partnerships with clients
         type: image-copy-component
+        title: Building partnerships with clients
       - jobTitle: ''
         name: ''
         profilePic: ''
@@ -58,8 +58,8 @@ sections:
           Headforwards offer the ability to live in one of the most beautiful
           and relaxing parts of the UK while at the same time working at the
           forefront of professional technical excellence.
-        title: Careers without compromise
         type: image-copy-component
+        title: Careers without compromise
       - jobTitle: ''
         name: ''
         profilePic: ''
@@ -73,6 +73,6 @@ sections:
     isRightImage: true
     title: This is a title
 seo:
-    slug: '/'
+  slug: /
 ---
 
