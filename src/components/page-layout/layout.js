@@ -73,11 +73,8 @@ function Layout({ seo, title, text, image, children, callToAction: pageCallToAct
         <>
             <Helmet>
                 <link rel="preload" href="/fonts/FSAlbertWeb/Bold.woff2" as="font" />
-                {/* <link rel="preload" href="/fonts/FSAlbert/BoldItalic.woff2" as="font" /> */}
                 <link rel="preload" href="/fonts/FSAlbertWeb/Regular.woff2" as="font" />
                 <link rel="preload" href="/fonts/FSAlbertWeb/Italic.woff2" as="font" />
-                {/* <link rel="preload" href="/fonts/FSAlbert/Light.woff2" as="font" /> */}
-                {/* <link rel="preload" href="/fonts/FSAlbert/LightItalic.woff2" as="font" /> */}
             </Helmet>
             <Seo {...{ title, ...seo }} />
             <Header {...headerProps} />
