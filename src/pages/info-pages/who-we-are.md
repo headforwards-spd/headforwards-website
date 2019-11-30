@@ -27,11 +27,11 @@ components:
       teambuilding and software quality. 
     image: /uploads/curlyhair.png
     isRightImage: true
-    link:
+    link: null
   - image: /uploads/smiley-face-doodle.png
     isPostit: true
     isRightImage: false
-    link:
+    link: null
     type: image-copy-component
     title: What we believe
     text: >-
@@ -41,7 +41,7 @@ components:
   - image: /uploads/lightning-doodle.png
     isPostit: true
     isRightImage: true
-    link:
+    link: null
     type: image-copy-component
     title: How it began
     text: >-
