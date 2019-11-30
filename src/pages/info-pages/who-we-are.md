@@ -55,6 +55,7 @@ components:
   - articles:
       - image: /uploads/curlyhair.png
         link: 45d7fb20-ef2d-11e9-a170-b1f1706e4526
+        linkText: Read more
         title: Software development outsourcing...
         text: >-
           Our business model is different to most other outsource software
@@ -67,6 +68,8 @@ components:
           companies. We create dedicated teams for specific projects and never
           switch members to other projects, nor do we have team members waiting.
         image: /uploads/curlyhair.png
+        link: 3c96d190-0fac-11ea-843f-932c76de5936
+        linkText: Read more
     type: article-component
     title: Headforwards specialise in software development outsourcing...
   - isTwoColumns: true
@@ -89,6 +92,8 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         image: /uploads/curlyhair.png
+        link: 87ef9080-0f86-11ea-9e15-59d1e5da42db
+        linkText: Read more
       - title: Software development outsourcing...
         text: >-
           Our business model is different to most other outsource software
@@ -96,6 +101,8 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         image: /uploads/curlyhair.png
+        link: 359e0550-009f-11ea-b6f6-d743f848720a
+        linkText: Read more
       - title: Software development outsourcing...
         text: >-
           Our business model is different to most other outsource software
@@ -103,6 +110,8 @@ components:
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
         image: /uploads/curlyhair.png
+        link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+        linkText: Read more
     type: article-component
     title: Headforwards specialise in software development outsourcing...
   - imageOne: /uploads/girl.png
@@ -132,8 +141,12 @@ components:
       - title: New Slide
         text: New Slide Copy...
         image: /uploads/laptop.png
+        link: 07758420-1033-11ea-9288-bf5475231968
+        linkText: Read more
       - image: /uploads/girl.png
         label: Slider Label
+        link: b7482970-ef2c-11e9-a170-b1f1706e4526
+        linkText: Read more
         subtitle: null
         title: The new option in software outsourcing
         text: >-
@@ -142,6 +155,8 @@ components:
           us to get the perfect work life balance that we strive for.
       - image: /uploads/curlyhair.png
         label: Another Slider Label
+        link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+        linkText: Read more
         subtitle: null
         title: Software development outsourcing...
         text: >-
