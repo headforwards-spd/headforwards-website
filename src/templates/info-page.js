@@ -89,14 +89,18 @@ export const query = graphql`
                     isPostit
                     isRightImage
                     isTwoColumns
-                    link
-                    linkText
+                    link {
+                        link
+                        linkText
+                    }
                     articles {
                         id
                         title
                         text
-                        linkText
-                        link
+                        link {
+                            linkText
+                            link
+                        }
                         image {
                             publicURL
                             childImageSharp {

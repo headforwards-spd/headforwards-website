@@ -68,9 +68,10 @@ collections:
               - label: "Link"
                 name: link
                 required: false
-                widget: object
+                default: null
+                widget: optional-object
                 fields:
-                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
               - {label: "Image on right?", name: isRightImage, widget: boolean, required: false, default: false}
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
@@ -88,7 +89,7 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Blog Posts"
@@ -116,8 +117,8 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name: image, widget: image}
                   - {label: "Copy", name: text, widget: text}
-                  - {label: "Link Text", name: linkText, widget: string, required: false, default: null}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false, default: null}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
@@ -182,8 +183,14 @@ collections:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string}
               - {label: "Copy", name: text, widget: markdown}
-              - {label: "Link Text", name: linkText, widget: string, required: false, default: null}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false, default: null}
+              - label: "Link"
+                name: link
+                required: false
+                default: null
+                widget: optional-object
+                fields:
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
               - {label: "Image on right?", name: isRightImage, widget: boolean, required: false, default: false}
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
               - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
@@ -200,7 +207,7 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Blog Posts"
@@ -228,8 +235,8 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name: image, widget: image}
                   - {label: "Copy", name: text, widget: text}
-                  - {label: "Link Text", name: linkText, widget: string, required: false, default: null}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false, default: null}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
@@ -294,8 +301,14 @@ collections:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string}
               - {label: "Copy", name: text, widget: markdown}
-              - {label: "Link Text", name: linkText, widget: string, required: false, default: null}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false, default: null}
+              - label: "Link"
+                name: link
+                required: false
+                default: null
+                widget: optional-object
+                fields:
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
               - {label: "Image on right?", name: isRightImage, widget: boolean, required: false, default: false}
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
               - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
@@ -312,7 +325,7 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Blog Posts"
@@ -340,8 +353,8 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name: image, widget: image}
                   - {label: "Copy", name: text, widget: text}
-                  - {label: "Link Text", name: linkText, widget: string, required: false, default: null}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false, default: null}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
@@ -406,8 +419,14 @@ collections:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string}
               - {label: "Copy", name: text, widget: markdown}
-              - {label: "Link Text", name: linkText, widget: string, required: false, default: null}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false, default: null}
+              - label: "Link"
+                name: link
+                required: false
+                default: null
+                widget: optional-object
+                fields:
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
               - {label: "Image on right?", name: isRightImage, widget: boolean, required: false, default: false}
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
               - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
@@ -424,7 +443,7 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Copy", name: text, widget: markdown}
                   - {label: "Image", name: image, widget: image}
-                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
           - label: "Blog Posts"
@@ -452,8 +471,8 @@ collections:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name: image, widget: image}
                   - {label: "Copy", name: text, widget: text}
-                  - {label: "Link Text", name: linkText, widget: string, required: false, default: null}
-                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false, default: null}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
@@ -471,6 +490,7 @@ collections:
     description: "Website settings & meta data"
     create: false
     files:
+
       - file: "src/data/main-menu.yml"
         label: "Main Menu"
         name: main-menu
@@ -480,13 +500,13 @@ collections:
             name: menu
             widget: list
             fields:
-              - {label: "Label", name: linkText, widget: string}
+              - {label: "Label", name: linkText, widget: string, default: 'Read more'}
               - {label: "Link", name: link, widget: string}
               - label: "Children"
                 name: children
                 widget: list
                 fields:
-                  - {label: "Label", name: linkText, widget: string}
+                  - {label: "Label", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - file: "src/data/company-info.yml"
@@ -532,6 +552,7 @@ collections:
                 fields:
                   - {label: Section title, name: title, widget: string, required: false}
                   - {label: "Text", name: text, widget: markdown, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
+
   - label: "WordPress Pages"
     label_singular: "WordPress Page"
     name: wordpress-pages
