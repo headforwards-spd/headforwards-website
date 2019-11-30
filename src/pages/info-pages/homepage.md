@@ -1,53 +1,75 @@
 ---
-type: home-page
-title: 'Forward thinking software'
-image: '/uploads/curlyhair.png'
+uuid: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
+title: Forward thinking software
+image: /uploads/curlyhair.png
 introduction:
-        title: "Headforwards is a software development outsourcing company that builds strong relationships with clients in order to deliver exceptional software."
-        text: "Being true to the principles of an Agile methodology brings benefits to both clients and the people who work in the business."
+  text: >-
+    Being true to the principles of an Agile methodology brings benefits to both
+    clients and the people who work in the business.
+  title: >-
+    Headforwards is a software development outsourcing company that builds
+    strong relationships with clients in order to deliver exceptional software.
 sections:
-  - isPostit: false
-    image: "/uploads/craig.jpg"
-    components:
-      - type: "image-copy-component"
-        title: "People over process"
-        text: "Developers are recruited specifically for a client’s needs and teams are self-organising with the responsibility of producing software that delivers business value."
-      - type: "quote-component"
-        profilePic: "/uploads/simon-minchin-author-copy-2.jpg"
-        jobTitle: "Director & Co-Founder"
-        quote: "It's about picking the right people for each client, rather than running a bench. "
-        name: "Toby Parkins"
-      - type: "quote-component"
-        profilePic: ""
-        jobTitle: "Director & Co-founder"
-        quote: "If something changes in our clients world, they've got to adapt, they've got to look for a new competitive advantage in their software. "
-        name: "Craig Girvan"
-  - title: "This is a title"
-    isPostit: true
-    image: "/uploads/smiley-face-doodle.png"
+  - components:
+      - text: >-
+          Developers are recruited specifically for a client’s needs and teams
+          are self-organising with the responsibility of producing software that
+          delivers business value.
+        title: People over process
+        type: image-copy-component
+      - jobTitle: Director & Co-Founder
+        name: Toby Parkins
+        profilePic: /uploads/simon-minchin-author-copy-2.jpg
+        quote: >-
+          It's about picking the right people for each client, rather than
+          running a bench. 
+        type: quote-component
+      - jobTitle: Director & Co-founder
+        name: Craig Girvan
+        profilePic: ''
+        quote: >-
+          If something changes in our clients world, they've got to adapt,
+          they've got to look for a new competitive advantage in their
+          software. 
+        type: quote-component
+    image: /uploads/craig.jpg
+    isPostit: false
     isRightImage: true
-    components:
-      - type: "image-copy-component"
-        title: "Building partnerships with clients"
-        text: "Headforwards looks to develop trust between themselves and their clients by continuously delivering business value."
-      - type: "quote-component"
-        profilePic: ""
-        jobTitle: ""
-        quote: "We want to be a partner to our clients, to develop long-term relationships with trust on both sides."
-        name: ""
-  - title: "This is a title"
+  - components:
+      - text: >-
+          Headforwards looks to develop trust between themselves and their
+          clients by continuously delivering business value.
+        title: Building partnerships with clients
+        type: image-copy-component
+      - jobTitle: ''
+        name: ''
+        profilePic: ''
+        quote: >-
+          We want to be a partner to our clients, to develop long-term
+          relationships with trust on both sides.
+        type: quote-component
+    image: /uploads/smiley-face-doodle.png
     isPostit: true
-    image: "/uploads/paper-airplane-doodle.png"
     isRightImage: false
-    components:
-      - type: "image-copy-component"
-        title: "Careers without compromise"
-        text: "Headforwards offer the ability to live in one of the most beautiful and relaxing parts of the UK while at the same time working at the forefront of professional technical excellence."
-      - type: "quote-component"
-        profilePic: ""
-        jobTitle: ""
-        quote: "There are no egos here. Team fit is the most important thing, so the people we hire need to be really positive and prepared to have each other’s backs."
-        name: ""
-seo:
-    slug: '/'
+    title: This is a title
+  - components:
+      - text: >-
+          Headforwards offer the ability to live in one of the most beautiful
+          and relaxing parts of the UK while at the same time working at the
+          forefront of professional technical excellence.
+        title: Careers without compromise
+        type: image-copy-component
+      - jobTitle: ''
+        name: ''
+        profilePic: ''
+        quote: >-
+          There are no egos here. Team fit is the most important thing, so the
+          people we hire need to be really positive and prepared to have each
+          other’s backs.
+        type: quote-component
+    image: /uploads/paper-airplane-doodle.png
+    isPostit: true
+    isRightImage: true
+    title: This is a title
 ---
+
