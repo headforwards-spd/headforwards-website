@@ -485,6 +485,16 @@ collections:
           - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
           - {label: "SEO Description", name: description, widget: string, required: false, default: null}
 
+  - label: "Legal Pages."
+    label_singular: "Page"
+    name: pages
+    description: "Site legal pages"
+    folder: "src/pages/info-pages"
+    create: false
+    slug: "{{slug}}"
+    identifier_field: title
+    filter: {field: "type", value: "legal-pages"}
+
   - name: "settings"
     label: "Site Settings"
     description: "Website settings & meta data"

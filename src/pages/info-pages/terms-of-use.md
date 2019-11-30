@@ -1,4 +1,6 @@
-title: terms-and-conditions
+---
+type: legal-page
+title: Website usage terms and conditions
 introduction: >-
   Welcome to our website. If you continue to browse and use this website, you
   are agreeing to comply with and be bound by the following terms and conditions
@@ -56,3 +58,6 @@ sections:
       * Your use of this website and any dispute arising out of such use of the
       website is subject to the laws of England, Northern Ireland, Scotland and
       Wales.
+seo:
+  slug: terms-of-use
+---

@@ -1,4 +1,6 @@
-title: privacy-notice
+---
+type: legal-page
+title: Privacy Notice
 introduction: >-
   This privacy notice is here to explain how we (Headforwards Solutions LTD) use
   and protect any information you give us whilst using our site. We want to
@@ -178,3 +180,6 @@ sections:
       Personal Information from the EU and Switzerland, including the onward
       transfer liability provisions.
     title: Marketing Data
+seo:
+    slug: privacy-notice
+---

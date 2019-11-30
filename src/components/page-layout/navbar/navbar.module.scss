@@ -232,7 +232,9 @@
                         &:hover {
                             @include orange-type;
                         }
+                    }
 
+                    &.hasChildren > a {
                         button {
                             display: none;
                         }
