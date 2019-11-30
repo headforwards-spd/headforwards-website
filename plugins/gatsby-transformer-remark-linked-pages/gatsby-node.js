@@ -36,17 +36,15 @@ exports.sourceNodes = gatsby => {
     });
 
     function getPageLink(link) {
-
-        if(!link) {
+        if (!link) {
             return null;
         }
 
         const [linkObject] = typeof link === 'object' ? link : [];
-        const {link:linkObjectLink} = linkObject || {};
+        const { link: linkObjectLink } = linkObject || {};
         const pageLink = linkObjectLink || link;
         const { path } = getIndexedPage(indexedPages, pageLink) || {};
 
         return typeof link === 'string' ? path : { ...linkObject, link: path };
-
     }
 };

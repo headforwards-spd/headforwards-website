@@ -8,6 +8,10 @@ $heading-margin-bottom: 0.6em;
 $line-height: $mod_2;
 $margin-bottom: 1em;
 
+* {
+    font-family: "FS Albert Web", Arial, sans-serif;
+}
+
 @mixin orange-type {
     color: $orange;
     font-weight: 700;
