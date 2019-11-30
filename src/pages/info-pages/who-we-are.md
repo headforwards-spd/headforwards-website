@@ -16,6 +16,9 @@ components:
       teambuilding and software quality. 
     image: /uploads/man-with-glasses-square.png
     isRightImage: false
+    link:
+      - link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+        linkText: Read more...
   - type: image-copy-component
     title: How it began
     text: >-
@@ -72,20 +75,20 @@ components:
     text: >-
       Headforwards is based in Cornwall, UK and we specialise in software
       development outsourcing...
-      
-      
-      Our business model is different to most other
-      outsource software companies. We create dedicated teams for specific
-      projects and never switch members to other projects, nor do we have team
-      members waiting on the bench which ultimately drives costs up.
+
+
+      Our business model is different to most other outsource software
+      companies. We create dedicated teams for specific projects and never
+      switch members to other projects, nor do we have team members waiting on
+      the bench which ultimately drives costs up.
   - articles:
-      - image: /uploads/curlyhair.png
-        title: Software development outsourcing...
+      - title: Software development outsourcing...
         text: >-
           Our business model is different to most other outsource software
           companies. We create dedicated teams for specific projects and never
           switch members to other projects, nor do we have team members waiting
           on the bench which ultimately drives costs up.
+        image: /uploads/curlyhair.png
       - title: Software development outsourcing...
         text: >-
           Our business model is different to most other outsource software
