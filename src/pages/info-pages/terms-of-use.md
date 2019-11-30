@@ -1,6 +1,21 @@
 ---
 uuid: 5fafcbb0-13bb-11ea-9795-cb94363984ef
+type: legal-page
 title: Website usage terms and conditions
+introduction:
+    text: >-
+        Welcome to our website. If you continue to browse and use this website, you
+        are agreeing to comply with and be bound by the following terms and conditions
+        of use, which together with our privacy policy govern Headforward’s
+        relationship with you in relation to this website. If you disagree with any
+        part of these terms and conditions, please do not use our website.
+        
+        
+        The term Headforwards or ‘us’ or ‘we’ refers to the owner of the website whose
+        registered office is Headforwards Solutions Ltd. The Engine House, Wheal
+        Kitty, St Agnes. TR5 0RD. Our company registration number is 07576641, company
+        registered in England and Wales. The term ‘you’ refers to the user or viewer
+        of our website.
 sections:
   - text: >-
       The use of this website is subject to the following terms of use:

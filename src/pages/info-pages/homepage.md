@@ -1,5 +1,6 @@
 ---
 uuid: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
+type: home-page
 title: Forward thinking software
 image: /uploads/curlyhair.png
 introduction:
@@ -71,5 +72,7 @@ sections:
     isPostit: true
     isRightImage: true
     title: This is a title
+seo:
+    slug: '/'
 ---
 
