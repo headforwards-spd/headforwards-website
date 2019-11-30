@@ -6,7 +6,7 @@
     @media (min-width: $screen-md) {
         padding: 1rem $gutter-medium/2;
     }
-    display: inline-block;
+    display: flex;
     cursor: pointer;
     transition-property: opacity, filter;
     transition-duration: 0.15s;
