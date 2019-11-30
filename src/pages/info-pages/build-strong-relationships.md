@@ -3,16 +3,15 @@ uuid: 359e0550-009f-11ea-b6f6-d743f848720a
 parent: what-we-do
 type: info-page
 title: Build strong relationships
-text:
-image:
 components:
-  - image:
+  - image: null
     isPostit: false
     isRightImage: false
     isTwoColumns: true
     link:
       - link: d1956170-ec44-11e9-914c-c376cef31113
-        linktext:
+        linkText: Read more
+        linktext: null
     type: image-copy-component
     title: Strong relationships matter
     text: >
