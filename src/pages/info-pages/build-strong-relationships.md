@@ -10,8 +10,6 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    link: d1956170-ec44-11e9-914c-c376cef31113
-    linktext:
     type: image-copy-component
     title: Strong relationships matter
     text: >

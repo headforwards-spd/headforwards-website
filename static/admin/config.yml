@@ -65,8 +65,13 @@ collections:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string}
               - {label: "Copy", name: text, widget: markdown}
-              - {label: "Link Text", name: linkText, widget: string, required: false, default: null}
-              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title], required: false, default: null}
+              - label: "Link"
+                name: link
+                required: false
+                widget: object
+                fields:
+                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
               - {label: "Image on right?", name: isRightImage, widget: boolean, required: false, default: false}
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
               - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
