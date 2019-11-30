@@ -2,11 +2,10 @@
 type: home-page
 title: 'Forward thinking software'
 image: '/uploads/curlyhair.png'
+introduction:
+        title: "Headforwards is a software development outsourcing company that builds strong relationships with clients in order to deliver exceptional software."
+        text: "Being true to the principles of an Agile methodology brings benefits to both clients and the people who work in the business."
 sections:
-  - components:
-  - type: "image-copy-component"
-    title: "Headforwards is a software development outsourcing company that builds strong relationships with clients in order to deliver exceptional software."
-    text: "Being true to the principles of an Agile methodology brings benefits to both clients and the people who work in the business."
   - isPostit: false
     image: "/uploads/craig.jpg"
     components:
