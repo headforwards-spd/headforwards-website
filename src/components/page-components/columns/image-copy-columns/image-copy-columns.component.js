@@ -11,8 +11,10 @@ const imageCopyColumnsPropTypes = {
     isRightImage: bool,
     title: string.isRequired,
     text: string.isRequired,
-    link: string,
-    linkText: string,
+    link: shape({
+        link: string.isRequired,
+        linkText: string.isRequired,
+    }),
 };
 
 export default ImageCopyColumns;
@@ -22,11 +24,10 @@ ImageCopyColumns.propTypes = imageCopyColumnsPropTypes;
 ImageCopyColumns.defaultProps = {
     isRightImage: false,
     link: null,
-    linkText: null,
 };
-function ImageCopyColumns({ image, isRightImage, title, text, link, linkText }) {
+function ImageCopyColumns({ image, isRightImage, title, text, link }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
-    const hasLink = !!link && !!linkText;
+    const hasLink = !!link;
 
     return (
         <section className={`${styles.columnsWrapper} ${imageClass}`}>
@@ -36,7 +37,7 @@ function ImageCopyColumns({ image, isRightImage, title, text, link, linkText }) 
                 <section>
                     <ReactMarkdown source={text} />
                 </section>
-                {hasLink && <Link to={link}>{linkText}</Link>}
+                {hasLink && <Link to={link.link}>{link.linkText}</Link>}
             </section>
         </section>
     );

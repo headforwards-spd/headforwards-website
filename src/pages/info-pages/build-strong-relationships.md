@@ -11,7 +11,6 @@ components:
     link:
       - link: d1956170-ec44-11e9-914c-c376cef31113
         linkText: Read more
-        linktext: null
     type: image-copy-component
     title: Strong relationships matter
     text: >

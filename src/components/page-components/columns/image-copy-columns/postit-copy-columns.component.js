@@ -11,8 +11,10 @@ const postitCopyColumnsPropTypes = {
     isRightImage: bool,
     title: string.isRequired,
     text: string.isRequired,
-    link: string,
-    linkText: string,
+    link: shape({
+        link: string.isRequired,
+        linkText: string.isRequired,
+    }),
 };
 
 export default PostitCopyColumns;
@@ -22,11 +24,10 @@ PostitCopyColumns.propTypes = postitCopyColumnsPropTypes;
 PostitCopyColumns.defaultProps = {
     isRightImage: false,
     link: null,
-    linkText: null,
 };
-function PostitCopyColumns({ image, isRightImage, title, text, link, linkText }) {
+function PostitCopyColumns({ image, isRightImage, title, text, link }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
-    const hasLink = !!link && !!linkText;
+    const hasLink = !!link;
 
     return (
         <section className={`${styles.columnsWrapper} ${imageClass}`}>
@@ -37,8 +38,8 @@ function PostitCopyColumns({ image, isRightImage, title, text, link, linkText })
                     <ReactMarkdown source={text} />
                 </section>
                 {hasLink && (
-                    <Link to={link} className={styles.arrowLink}>
-                        {linkText}
+                    <Link to={link.link} className={styles.arrowLink}>
+                        {link.linkText}
                     </Link>
                 )}
             </section>

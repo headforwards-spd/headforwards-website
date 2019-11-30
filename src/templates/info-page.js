@@ -97,10 +97,8 @@ export const query = graphql`
                         id
                         title
                         text
-                        link {
-                            linkText
-                            link
-                        }
+                        linkText
+                        link
                         image {
                             publicURL
                             childImageSharp {

@@ -18,22 +18,35 @@ exports.sourceNodes = gatsby => {
 
         if (components && components.length) {
             components.forEach(component => {
-                const { link = '', articles = [] } = component;
-                const { path = link } = getIndexedPage(indexedPages, link) || {};
+                const { link = null, articles = [] } = component;
 
                 component.id = uuid.v1();
-                component.link = path;
+                component.link = getPageLink(link);
 
                 articles.forEach(article => {
-                    const { link: childLink = '' } = article || {};
-                    const { path: childPath = link } = getIndexedPage(indexedPages, childLink) || {};
+                    const { link: childLink = null } = article || {};
 
                     article.id = uuid.v1();
-                    article.link = childPath;
+                    article.link = getPageLink(childLink);
                 });
             });
 
             page.frontmatter.components = [...components];
         }
     });
+
+    function getPageLink(link) {
+
+        if(!link) {
+            return null;
+        }
+
+        const [linkObject] = typeof link === 'object' ? link : [];
+        const {link:linkObjectLink} = linkObject || {};
+        const pageLink = linkObjectLink || link;
+        const { path } = getIndexedPage(indexedPages, pageLink) || {};
+
+        return typeof link === 'string' ? path : { ...linkObject, link: path };
+
+    }
 };
