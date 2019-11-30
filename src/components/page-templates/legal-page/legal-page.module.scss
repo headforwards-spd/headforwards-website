@@ -1,0 +1,29 @@
+@import "../../../scss/variables";
+.sections {
+    column-count: 1;
+    @media (min-width: $screen-lg) {
+        column-count: 2;
+    }
+    margin-bottom: $gutter-large;
+    column-gap: $gutter-large;
+    //padding-left: 1rem;
+
+    h1 {
+        color: $header_black;
+    }
+
+    p, ul, li {
+        color: #4D4D4D;
+    }
+
+    ul {
+        list-style-type: unset;
+        font-weight: lighter;
+        margin-left: $gutter-medium;
+    }
+
+    li {
+        line-height: 24px;
+    }
+}
+
