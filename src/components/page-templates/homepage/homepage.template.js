@@ -1,57 +1,68 @@
-import { arrayOf, bool } from 'prop-types';
-import React from 'react';
-import Image, { ImagePropType } from '../../page-layout/image/image.component';
+import { arrayOf, bool }                        from 'prop-types';
+import React                                    from 'react';
+import Hero
+                                                from '../../page-components/hero/hero.component'
+import Image, { ImageSrcPropType,
+} from '../../page-layout/image/image.component'
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
-import Postit from '../../page-components/postit/postit.component';
-import styles from './homepage.module.scss';
+import Postit                                   from '../../page-components/postit/postit.component';
+import styles                                   from './homepage.module.scss';
+import ReactMarkdown from 'react-markdown';
 
-const homepagePropTypes = {
-    page: [],
-};
+// const homepagePropTypes = {
+//     page: [],
+// };
 
 export default HomepageTemplate;
 
-HomepageTemplate.propTypes = homepagePropTypes;
-HomepageTemplate.defaultProps = {
-    page: [],
-};
+// HomepageTemplate.propTypes = homepagePropTypes;
+// HomepageTemplate.defaultProps = {
+//     page: [],
+// };
 
-function HomepageTemplate({ page }) {
-    const { sections } = page;
+function HomepageTemplate({ introduction, sections }) {
+
+    const {title, text} = introduction;
 
     return (
         <>
-            {!!sections &&
-                sections.map((section, index) => <HomePageSection {...{ ...section, even: index % 2 === 0 }} />)}
+            {introduction && <section className={styles.introduction}>
+                <h1>{title}</h1>
+                <ReactMarkdown source={text} />
+            </section>}
+            {!!sections && sections.map(section => <HomePageSection {...{ ...section }} />)}
         </>
     );
 }
 
 HomePageSection.propTypes = {
-    even: bool,
+    isRightImage: bool,
     components: arrayOf(PageComponentPropType),
     isPostit: bool,
-    image: ImagePropType,
-    imageSquare: ImagePropType,
+    image: ImageSrcPropType,
+    imagePostit: ImageSrcPropType,
+    imageSquare: ImageSrcPropType,
 };
 HomePageSection.defaultProps = {
-    even: false,
+    isRightImage: false,
     components: [],
     isPostit: false,
     image: null,
+    imagePostit: null,
     imageSquare: null,
 };
 
-function HomePageSection({ even, components, isPostit, image, imageSquare }) {
+function HomePageSection({ components, isPostit, isRightImage, image, imagePostit, imageSquare }) {
+    const hasImage = !!image || !!imagePostit || imageSquare;
     const wrapperStyles = [
-        styles.wrapper,
-        even ? styles.isRightImage : '',
-        !!image || !!isPostit ? styles.hasImage : '',
+        styles.section,
+        isRightImage ? styles.isRightImage : '',
+        hasImage ? styles.hasImage : '',
     ].join(' ');
 
     return (
         <section className={wrapperStyles}>
-            {!!image && <HomePageImage {...{ isPostit, image, imageSquare, even }} />}
+            {!!hasImage && <HomePageImage {...{ isPostit, image, imagePostit, imageSquare, isRightImage }} />}
             <section className={styles.components}>
                 {!!components && components.map(component => <PageComponent {...component} />)}
             </section>
@@ -60,19 +71,22 @@ function HomePageSection({ even, components, isPostit, image, imageSquare }) {
 }
 
 HomePageImage.propTypes = {
-    image: ImagePropType.isRequired,
-    imageSquare: ImagePropType.isRequired,
+    image: ImageSrcPropType.isRequired,
+    imagePostit: ImageSrcPropType,
+    imageSquare: ImageSrcPropType,
     isPostit: bool,
-    even: bool,
+    isRightImage: bool,
 };
 HomePageImage.defaultProps = {
+    imagePostit: null,
+    imageSquare: null,
     isPostit: false,
-    even: false,
+    isRightImage: false,
 };
-function HomePageImage({ isPostit, image, imageSquare, even }) {
+function HomePageImage({ isPostit, image, imagePostit, imageSquare, isRightImage }) {
     return isPostit ? (
-        <Postit className={styles.postit} image={imageSquare || image} isRightImage={even} />
+        <Postit className={styles.postit} image={imagePostit || image} isRightImage={isRightImage} />
     ) : (
-        <Image className={styles.image} ratio="100%" image={image} />
+        <Image className={styles.image} image={imageSquare || image} ratio="100%" />
     );
 }

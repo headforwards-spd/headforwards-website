@@ -1,4 +1,5 @@
-@import '~normalize.css';
+//@import "./fonts/fs-albert";
+@import "./fonts/fs-albert-web";@import '~normalize.css';
 @import "variables";
 @import "mixins/typography";
 @import "../components/page-layout/navbar/navbar.module";
@@ -8,96 +9,104 @@
     outline: none;
 }
 
-body > div > div {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-    > header, > footer {
-        flex-shrink: 0;
-    }
-
-    > main {
-        flex-grow: 1;
-    }
-
-    > header > *,
-    > main,
-    > footer > ul,
-    > footer > address,
-    > footer > section > * {
-        max-width: calc(#{$max_width} + #{2*$page-gutter-xxl});
-        margin: 0 auto;
-        width: 100%;
-        padding: 0 $page-gutter-sm;
-        @media(min-width: $screen-md) {
-            padding: 0 $page-gutter-md;
-        }
-        @media(min-width: $screen-lg) {
-            padding: 0 $page-gutter-lg;
-        }
-        @media(min-width: $screen-xl) {
-            padding: 0 $page-gutter-xl;
-        }
-        @media(min-width: $screen-xxl) {
-            padding: 0 $page-gutter-xxl;
-        }
-        @media(min-width: $screen-xxxl) {
-            padding: 0 $page-gutter-xxxl;
-        }
-    }
-
-    > header, > footer {
-        width: 100%;
-    }
-}
-
 body {
-    overflow-x: hidden;
+     font-family: "FS Albert Web", Arial, sans-serif;
 
-    @include fluid-type($min_font, $max_font);
-}
-h1, h2, h3 {
-    margin: 0;
-    color: $header_black;
-    font-weight: bold;
-    text-shadow: none;
-}
+    > div > div {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
 
-h1 {
-    @include headingFontLarge;
-}
+        > header, > footer {
+            flex-shrink: 0;
+        }
 
-h2 {
-    @include headingFontMedium;
-}
-h3 {
-    @include headingFontSmall;
-}
-p, time {
-    margin: 0;
-    @include fontMedium;
-    color: $paragraph_grey;
-    font-weight: lighter;
-}
+        > main {
+            flex-grow: 1;
+        }
 
-a {
-    @include orange-type;
-    text-decoration: none;
-}
+        > header > *,
+        > main,
+        > footer > ul,
+        > footer > address,
+        > footer > section > * {
+            max-width: calc(#{$max_width} + #{2*$page-gutter-xxl});
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 $page-gutter-sm;
+            @media(min-width: $screen-md) {
+                padding: 0 $page-gutter-md;
+            }
+            @media(min-width: $screen-lg) {
+                padding: 0 $page-gutter-lg;
+            }
+            @media(min-width: $screen-xl) {
+                padding: 0 $page-gutter-xl;
+            }
+            @media(min-width: $screen-xxl) {
+                padding: 0 $page-gutter-xxl;
+            }
+            @media(min-width: $screen-xxxl) {
+                padding: 0 $page-gutter-xxxl;
+            }
+        }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-    justify-content: center;
-}
-.dev-links {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+        > header, > footer {
+            width: 100%;
+        }
+    }
 
-    > * {
-        margin: $column-gutter/2;
+    body {
+        overflow-x: hidden;
+
+        @include fluid-type($min_font, $max_font);
+    }
+
+    h1, h2, h3 {
+        margin: 0;
+        color: $header_black;
+        font-weight: bold;
+        text-shadow: none;
+    }
+
+    h1 {
+        @include headingFontLarge;
+    }
+
+    h2 {
+        @include headingFontMedium;
+    }
+
+    h3 {
+        @include headingFontSmall;
+    }
+
+    p, time {
+        margin: 0;
+        @include fontMedium;
+        color: $paragraph_grey;
+        font-weight: lighter;
+    }
+
+    a {
+        @include orange-type;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .dev-links {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        > * {
+            margin: $column-gutter/2;
+        }
     }
 }

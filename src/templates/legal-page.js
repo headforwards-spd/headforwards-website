@@ -10,7 +10,10 @@ LegalPage.propTypes = {
                     page: shape({
                                     frontmatter: shape({
                                                            title:        string.isRequired,
-                                                           introduction: string,
+                                                           introduction: shape({
+                                                               title: string,
+                                                               text: string,
+                                                                               }),
                                                            sections:     arrayOf(
                                                                shape({
                                                                          title: string,
@@ -43,7 +46,10 @@ export const query = graphql`
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
-                introduction
+                introduction {
+                    title
+                    text
+                }
                 callToAction
                 seo {
                     title
@@ -52,7 +58,7 @@ export const query = graphql`
                 image {
                     publicURL
                     childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 900, cropFocus: ENTROPY) {
+                        fluid(maxWidth: 1440, maxHeight: 900, cropFocus: ENTROPY, quality: 100) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -60,7 +66,7 @@ export const query = graphql`
                 imageSquare: image {
                     publicURL
                     childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: ENTROPY) {
+                        fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: ENTROPY, quality: 100) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }

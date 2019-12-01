@@ -493,17 +493,95 @@ collections:
     create: false
     slug: "{{slug}}"
     identifier_field: title
-    filter: {field: "type", value: "legal-pages"}
+    filter: {field: "type", value: "legal-page"}
+    fields:
+      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "Type", name: type, widget: hidden, default: "legal-page"}
+      - {label: "Page Title", name: title, widget: string}
+      - {label: "Introduction", name: text, widget: string, required: false, default: null}
+      - label: "Sections"
+        name: sections
+        widget: list
+        required: true
+        fields:
+          - {label: "Title", name: title, widget: string, required: false, default: null}
+          - {label: "Copy", name: text, widget: markdown}
+
+      - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
+
+      # SEO
+      - label: "SEO"
+        name: seo
+        widget: object
+        fields:
+          - {label: "SEO Slug",        name: slug,        widget: string, required: false, default: null}
+          - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
+          - {label: "SEO Description", name: description, widget: string, required: false, default: null}
 
   - name: "settings"
     label: "Site Settings"
     description: "Website settings & meta data"
-    create: false
     files:
+      - file: "src/pages/info-pages/homepage.md"
+        label: "Home Page"
+        name: home-page
+        create: false
+        delete: false
+        fields:
+        - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+        - {label: "Type", name: type, widget: hidden, default: "home-page"}
+        - {label: "Page Title", name: title, widget: string}
+        - {label: "Header Image", name:  image, widget: image, required: false, default: null}
+        - label: "Introduction"
+          name: introduction
+          widget: object
+          fields:
+            - {label: "Title", name: title, widget: string}
+            - {label: "Copy", name: text, widget: markdown}
+        - label: "Sections"
+          name: sections
+          widget: list
+          fields:
+            - {label: "Title", name: title, widget: string, required: false, default: null}
+            - {label: "Image on right?", name: isRightImage, widget: boolean, required: false, default: false}
+            - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
+            - {label: "Image", name: image, widget: image, required: false, default: null}
+            - label: "Components"
+              name: components
+              widget: list
+              types:
+                - label: "Quote"
+                  name: quote-component
+                  widget: object
+                  fields:
+                    - {label: "Quote", name: quote, widget: text}
+                    - {label: "Name", name: name, widget: string, required: false, default: null}
+                    - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
+                    - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
+
+                - label: "Copy"
+                  name: image-copy-component
+                  widget: object
+                  fields:
+                    - {label: "Title", name: title, widget: string}
+                    - {label: "Copy", name: text, widget: markdown}
+                    - label: "Link"
+                      name: link
+                      required: false
+                      default: null
+                      widget: optional-object
+                      fields:
+                        - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                        - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+        - name: seo
+          widget: hidden
+          default: { slug: "/" }
 
       - file: "src/data/main-menu.yml"
         label: "Main Menu"
         name: main-menu
+        create: false
+        delete: false
         fields:
           - {label: "Title", name: title, widget: hidden, default: "main-menu"}
           - label: "Items"
@@ -537,32 +615,6 @@ collections:
           - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
           - {label: "Registered Office Address", name: registeredAddress, widget: text}
 
-      - file: "src/data/privacy-notice.yml"
-        label: "Privacy Notice"
-        name: privacy-notice
-        fields:
-          - {label: "Title", name: title, widget: hidden, default: "privacy-notice"}
-          - {label: "Introduction", name: introduction, widget: text, required: false}
-          - label: Privacy Policy Sections
-            name: sections
-            widget: list
-            fields:
-              - {label: Section title, name: title, widget: string}
-              - {label: "Text", name: text, widget: markdown, required: false, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
-
-      -   file: "src/data/tandcs.yml"
-          label: "Terms and Conditions"
-          name: terms-and-conditions
-          fields:
-            - {label: "Title", name: title, widget: hidden, default: "terms-and-conditions"}
-            - {label: "Introduction", name: introduction, widget: markdown, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list'], required: false}
-            -   label: T & C Sections
-                name: sections
-                widget: list
-                fields:
-                  - {label: Section title, name: title, widget: string, required: false}
-                  - {label: "Text", name: text, widget: markdown, buttons: ['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']}
-
   - label: "WordPress Pages"
     label_singular: "WordPress Page"
     name: wordpress-pages
@@ -590,7 +642,7 @@ collections:
   - label: "All Pages"
     label_singular: "Page"
     name: info-pages
-    description: "Nothing to see here - allows linking to pages"
+    description: "Nothing to see here - allows linking to pages DO NOT EDIT PAGES!"
     folder: "src/pages/info-pages"
     create: false
     delete: false
@@ -598,11 +650,3 @@ collections:
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
       - {label: "Page Title", name: title, widget: string}
-      - label: "Parent"
-        name: parent
-        widget: select
-        options:
-          - { label: "Who we are.", value: who-we-are }
-          - { label: "What we do.", value: what-we-do }
-          - { label: "How we work.", value: how-we-work }
-          - { label: "Careers", value: careers }

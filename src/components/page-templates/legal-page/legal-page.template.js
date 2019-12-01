@@ -18,9 +18,11 @@ export default LegalPageTemplate;
 // };
 
 function LegalPageTemplate({ introduction, sections }) {
+    const {title, text} = introduction;
     return (
         <section className={styles.sections}>
-            {introduction && <ReactMarkdown source={introduction} />}
+            {title && <h1>{title}</h1>}
+            {text && <ReactMarkdown source={text} />}
             {sections.map(({ id, title, text }) => (
                 <section key={id}>
                     {title && <h1>{title}</h1>}
