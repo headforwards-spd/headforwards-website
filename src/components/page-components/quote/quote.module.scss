@@ -10,83 +10,89 @@
         margin-bottom: 0;
     }
 
-    > p {
-        padding: 1em 0 0;
-        font-style: italic;
-        position: relative;
-        @include orange-type;
-        @include fontXLarge;
-        font-weight: normal;
+    blockquote {
 
-        &:before,
-        &:after {
-            font-weight: bold;
-            color: #c3c3c3;
-            font-size: 2em;
-        }
+        margin: 0;
 
-        &:before {
-            position: absolute;
-            content: '“';
-            left: -2rem;
-            top: 0;
-            padding-left: 30px;
-        }
-
-        &:after {
-            content: '”';
-            display: inline-block;
-            transform: translateY(-50%);
-            height: calc(1.4em / 3);
-            line-height: 1.4em;
-            vertical-align: middle;
-            text-align: center;
-            width: 0.5em;
-        }
-    }
-
-    > footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        section > :last-child {
-            margin-bottom: 0;
-        }
-
-        h1 {
-            color: black;
-            font-weight: bold;
-            @include headingFontLarge;
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            color: #B8B8B8;
-            text-transform: uppercase;
-            margin: 0;
+        > p {
+            padding: 1em 0 0;
             font-style: italic;
-            @include fontSmall;
-            @media (min-width: $screen-lg) {
-                @include fontMedium;
-            }
-            font-weight: lighter;
-        }
-        .imageCropper {
-            width: 3em;
             position: relative;
-            overflow: hidden;
-            border-radius: 50%;
-            margin-right: $gutter-small;
+            @include orange-type;
+            @include fontXLarge;
+            font-weight: normal;
 
-            @media (min-width: $screen-lg) {
-                width: 3.5em;
+            &:before,
+            &:after {
+                font-weight: bold;
+                color: #c3c3c3;
+                font-size: 2em;
             }
 
-            @media (min-width: $screen-lg) {
-                width: 4em;
+            &:before {
+                position: absolute;
+                content: '“';
+                left: -2rem;
+                top: 0;
+                padding-left: 30px;
             }
 
+            &:after {
+                content: '”';
+                display: inline-block;
+                transform: translateY(-50%);
+                height: calc(1.4em / 3);
+                line-height: 1.4em;
+                vertical-align: middle;
+                text-align: center;
+                width: 0.5em;
+            }
+        }
+
+        > footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            section > :last-child {
+                margin-bottom: 0;
+            }
+
+            h1 {
+                color: black;
+                font-weight: bold;
+                @include headingFontLarge;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                color: #B8B8B8;
+                text-transform: uppercase;
+                margin: 0;
+                font-style: italic;
+                @include fontSmall;
+                @media (min-width: $screen-lg) {
+                    @include fontMedium;
+                }
+                font-weight: lighter;
+            }
+
+            .imageCropper {
+                width: 3em;
+                position: relative;
+                overflow: hidden;
+                border-radius: 50%;
+                margin-right: $gutter-small;
+
+                @media (min-width: $screen-lg) {
+                    width: 3.5em;
+                }
+
+                @media (min-width: $screen-lg) {
+                    width: 4em;
+                }
+
+            }
         }
     }
 }
@@ -95,20 +101,23 @@
 @media (min-width: $screen-lg) {
 
     .blockquoteContainer {
-        border-left: 1px solid #D8D8D8;
-        padding-top: 0;
-        padding-left: $gutter-medium;
 
-        > p {
-            &:before {
-                top: 0;
-                background-color: #ffffff;
-                padding-left: 0;
-                line-height: 1;
-                display: inline-block;
-                left: calc(-2rem - 0.25em);
-                width: 0.5em;
-                height: 0.5em;
+        blockquote {
+            border-left: 1px solid #D8D8D8;
+            padding-top: 0;
+            padding-left: $gutter-medium;
+
+            > p {
+                &:before {
+                    top: 0;
+                    background-color: #ffffff;
+                    padding-left: 0;
+                    line-height: 1;
+                    display: inline-block;
+                    left: calc(-2rem - 0.25em);
+                    width: 0.5em;
+                    height: 0.5em;
+                }
             }
         }
     }

@@ -23,24 +23,24 @@ Quote.defaultProps = {
 };
 function Quote({ title, quote, name, jobTitle, profilePic }) {
     return (
-        <section>
+        <section className={styles.blockquoteContainer}>
             {title && <h1>{title}</h1>}
-            <blockquote className={styles.blockquoteContainer}>
-            <p>{quote}</p>
-            {!!name && (
-                <footer>
-                    {!!profilePic && (
-                        <div className={styles.imageCropper}>
-                            <Image className={styles.image} image={profilePic} ratio="100%" />
-                        </div>
-                    )}
-                    <section>
-                        <h1>{name}</h1>
-                        {!!jobTitle && <p>{jobTitle}</p>}
-                    </section>
-                </footer>
-            )}
-        </blockquote>
+            <blockquote>
+                <p>{quote}</p>
+                {!!name && (
+                    <footer>
+                        {!!profilePic && (
+                            <div className={styles.imageCropper}>
+                                <Image className={styles.image} image={profilePic} ratio="100%" />
+                            </div>
+                        )}
+                        <section>
+                            <h1>{name}</h1>
+                            {!!jobTitle && <p>{jobTitle}</p>}
+                        </section>
+                    </footer>
+                )}
+            </blockquote>
         </section>
     );
 }
