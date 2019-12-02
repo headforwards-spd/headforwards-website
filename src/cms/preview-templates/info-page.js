@@ -20,7 +20,7 @@ InfoPagePreview.propTypes = {
 
 function InfoPagePreview({ entry }) {
     const { data } = entry.toJS();
-    const { components, title = '', image = null } = data;
+    const { title = '', image = null, introduction, components, callToAction } = data;
     const header = { title, image };
 
     !!components &&
@@ -34,7 +34,7 @@ function InfoPagePreview({ entry }) {
                 });
         });
 
-    const companyInfo = {};
+    const companyInfo = { callToAction };
     const headerProps = {
         ...header,
         menu: [],

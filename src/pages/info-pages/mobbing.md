@@ -4,8 +4,7 @@ parent: how-we-work
 type: info-page
 title: Mobbing
 components:
-  - isTwoColumns: false
-    type: heroComponent
+  - type: image-copy-component
     title: The power of the mob
     text: >-
       An entire dev team, gathered around one computer, all working on the same
