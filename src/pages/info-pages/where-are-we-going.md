@@ -5,10 +5,10 @@ type: info-page
 title: Where are we going?
 image: /uploads/gash-2.jpg
 introduction:
-  text: >-
-    Most organisations have a plan for the future, but what makes Headforwards
-    different is its focus on people-driven growth, and how it constantly
-    refines its approach to serving clients.
+  - text: >-
+      Most organisations have a plan for the future, but what makes Headforwards
+      different is its focus on people-driven growth, and how it constantly
+      refines its approach to serving clients.
 components:
   - isPostit: false
     isRightImage: false

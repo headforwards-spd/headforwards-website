@@ -3,7 +3,7 @@ uuid: 5fafcbb0-13bb-11ea-9795-cb94363984ef
 type: legal-page
 title: Website usage terms and conditions
 introduction:
-    text: >-
+    - text: >-
         Welcome to our website. If you continue to browse and use this website, you
         are agreeing to comply with and be bound by the following terms and conditions
         of use, which together with our privacy policy govern Headforward’s
