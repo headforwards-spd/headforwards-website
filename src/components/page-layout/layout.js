@@ -42,7 +42,6 @@ function Layout({ seo, title, text, image, children, callToAction: pageCallToAct
             }
             companyInfo: dataYaml(title: { eq: "company-info" }) {
                 companyName
-                callToAction
                 email
                 phone
                 address

@@ -46,22 +46,22 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                             <p className={styles.bold}>{email}</p>
                         </div>
                     </div>
-                    <div>
+                    <div className={styles.flexContainer}>
                         <h1>Send us a message...</h1>
                     </div>
-                    <div className={styles.contactStyles}>
+                    <div className={`${styles.contactStyles} ${styles.flexContainer}`}>
                         <form name="contact" method="POST" data-netlify="true">
                             <div className={styles.doubleInput}>
                                 <div>
                                     <span>Your Name *</span>
                                     <div>
-                                        <input />
+                                        <input type="text" />
                                     </div>
                                 </div>
                                 <div>
                                     <span>Your Business</span>
                                     <div>
-                                        <input />
+                                        <input type="text" />
                                     </div>
                                 </div>
                             </div>
@@ -69,13 +69,13 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                                 <div>
                                     <span>Telephone Number *</span>
                                     <div>
-                                        <input />
+                                        <input type="text" />
                                     </div>
                                 </div>
                                 <div>
                                     <span>Email Address *</span>
                                     <div>
-                                        <input />
+                                        <input type="text" />
                                     </div>
                                 </div>
                             </div>
@@ -89,11 +89,11 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                             </div>
                             <div className={styles.terms}>
                                 <label>
-                                    <input type="checkbox" name="privacy" value="accept" checked="checked" />
+                                    <input type="checkbox" name="privacy" value="accept" />
                                     <span>I agree to the terms outlined in the privacy policy</span>
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="marketing" value="accept" checked="checked" />
+                                    <input type="checkbox" name="marketing" value="accept" />
                                     <span>I would like to receive marketing communications.</span>
                                 </label>
                             </div>
@@ -111,20 +111,20 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                     allowFullScreen
                 />
             </section>
-            <section>
-                <div>
+            <section className={`${styles.contactStyles} ${styles.recruitmentStyles}`}>
+                <div className={styles.flexSection}>
                     <h1>Recruitment</h1>
                     <p>
                         If you are interested in joining the team here at Headforwards please take a look at our careers
-                        page to see if we have any suitable vacancies available.
+                        page to see if we have any suitable vacancies available.{' '}
                     </p>
                     <p className={styles.bold}>We only recruit directly so, please, NO recruiters.</p>
                     <p>
                         If you are a recruiter and still wish to call us then we will ask for a donation of at least £50
-                        to the charity Shelter Box.
+                        to the charity Shelter Box.{' '}
                     </p>
                 </div>
-                <div>
+                <div className={styles.flexSection}>
                     <h1>Our Registered Office:</h1>
                     <ul>
                         {formattedRegAddress.map(item => (
