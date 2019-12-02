@@ -33,7 +33,7 @@ sections:
           they've got to look for a new competitive advantage in their
           software. 
         type: quote-component
-    image: /uploads/craig.jpg
+    image: /uploads/founders.jpg
     isPostit: false
     isRightImage: false
   - components:
@@ -49,10 +49,10 @@ sections:
           We want to be a partner to our clients, to develop long-term
           relationships with trust on both sides.
         type: quote-component
-    image: /uploads/smiley-face-doodle.png
     isPostit: true
     isRightImage: true
     title: This is a title
+    image: /uploads/smiley-face-doodle.png
   - components:
       - text: >-
           Headforwards offer the ability to live in one of the most beautiful
@@ -68,10 +68,10 @@ sections:
           people we hire need to be really positive and prepared to have each
           other’s backs.
         type: quote-component
-    image: /uploads/paper-airplane-doodle.png
     isPostit: true
     isRightImage: false
     title: This is a title
+    image: /uploads/paper-airplane-doodle.png
 seo:
   slug: /
 ---
