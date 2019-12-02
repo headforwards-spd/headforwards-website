@@ -30,6 +30,7 @@
     "gatsby-wordpress-migrate": "^1.0.6",
     "glob": "^7.1.6",
     "html-entities": "^1.2.1",
+    "html-minifier": "^4.0.0",
     "html-react-parser": "^0.10.0",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.15",

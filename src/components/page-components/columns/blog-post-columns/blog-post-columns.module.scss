@@ -6,7 +6,8 @@
 
 .blogPostColumns {
 
-        @include component-gutter;
+    @include component-gutter;
+
     > h1 {
         @include orange-type;
         @include headingFontXLarge;
@@ -18,97 +19,101 @@
     > section {
         @include columns-component;
 
-        .article {
-
-            position: relative;
-            display: flex;
-            flex-direction: column;
-
-            .image {
-                order: 1;
-                margin: 0 -#{$gutter-small};
-                @include fontMedium;
-
-                @media (min-width: $screen-md) {
-                    margin: 0 -#{$gutter-medium};
-                    @include fontMedium;
-                }
-            }
-
-            h1 {
-                order: 2;
-                flex-grow: 1;
-                color: $header_black;
-                margin-bottom: 0;
-                @include headingFontMedium;
-                @media (min-width: $screen-lg) {
-                    @include headingFontLarge;
-                }
-            }
-
-            &:before {
-                z-index: 1;
-                position: absolute;
-                content: '';
-                right:  -$gutter-small/2;
-                border-radius: 0 0 $gutter-medium 0;
-                width: 37.5%;
-                padding-bottom: 37.5%;
-                background: linear-gradient(315deg, rgba(#FFB800, 0.6) 50%, transparent 50%);
-                margin-top: calc(62.5% + #{1.25*$gutter-small} + #{$gutter-small/2});
-                transform: translateY(-100%);
-                @media (min-width: $screen-md) {
-                    right:  $gutter-small - $gutter-medium;
-                    margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small});
-                }
-            }
-
-            a {
-                position: absolute;
-                right:  1.5*$gutter-small - $gutter-small;
-                width: 18.75%;
-                padding-bottom: 18.75%;
-                margin-top: calc(62.5% + #{1.25*$gutter-small} + #{$gutter-small/4});
-                transform: translateY(-100%);
-                z-index: 1;
-                @media (min-width: $screen-md) {
-                    right:  1.5*$gutter-small - $gutter-medium;
-                    margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small/4});
-                }
-
-                svg {
-                    height: 50%;
-                    width: 50%;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-
-                    path {
-                        fill: white;
-                    }
-                }
-            }
-        }
-
-        @media (min-width: $screen-lg) {
+        > a {
 
             .article {
-                width: calc(50% - #{$gutter-medium});
+
+                position: relative;
+                display: flex;
+                flex-direction: column;
 
                 .image {
-                    margin: 0;
+                    order: 1;
+                    margin: 0 -#{$gutter-small};
                     @include fontMedium;
+
+                    @media (min-width: $screen-md) {
+                        margin: 0 -#{$gutter-medium};
+                        @include fontMedium;
+                    }
+                }
+
+                h1 {
+                    order: 2;
+                    flex-grow: 1;
+                    color: $header_black;
+                    margin-bottom: 0;
+                    @include headingFontMedium;
+                    @media (min-width: $screen-lg) {
+                        @include headingFontLarge;
+                    }
                 }
 
                 &:before {
-                    right: $gutter-small;
-                    margin-top: calc(62.5% + #{$gutter-small});
+                    z-index: 1;
+                    position: absolute;
+                    content: '';
+                    right: -$gutter-small/2;
+                    border-radius: 0 0 $gutter-medium 0;
+                    width: 37.5%;
+                    padding-bottom: 37.5%;
+                    background: linear-gradient(315deg, rgba(#FFB800, 0.6) 50%, transparent 50%);
+                    margin-top: calc(62.5% + #{1.25*$gutter-small} + #{$gutter-small/2});
+                    transform: translateY(-100%);
+                    @media (min-width: $screen-md) {
+                        right: $gutter-small - $gutter-medium;
+                        margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small});
+                    }
                 }
 
                 a {
-                    right: $gutter-small;
-                    margin-top: calc(62.5% + #{$gutter-small});
+                    position: absolute;
+                    right: 1.5*$gutter-small - $gutter-small;
+                    width: 18.75%;
+                    padding-bottom: 18.75%;
+                    margin-top: calc(62.5% + #{1.25*$gutter-small} + #{$gutter-small/4});
+                    transform: translateY(-100%);
+                    z-index: 1;
+                    @media (min-width: $screen-md) {
+                        right: 1.5*$gutter-small - $gutter-medium;
+                        margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small/4});
+                    }
+
+                    svg {
+                        height: 50%;
+                        width: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+
+                        path {
+                            fill: white;
+                        }
+                    }
+                }
+            }
+
+            @media (min-width: $screen-lg) {
+
+                width: calc(50% - #{$gutter-medium});
+
+                .article {
+
+                    .image {
+                        margin: 0;
+                        @include fontMedium;
+                    }
+
+                    &:before {
+                        right: $gutter-small;
+                        margin-top: calc(62.5% + #{$gutter-small});
+                    }
+
+                    a {
+                        right: $gutter-small;
+                        margin-top: calc(62.5% + #{$gutter-small});
+                    }
                 }
             }
         }

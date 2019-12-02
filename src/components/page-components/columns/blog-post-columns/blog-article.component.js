@@ -17,12 +17,14 @@ export const BlogArticlePropType = shape(blogArticlePropTypes);
 BlogArticle.propTypes = blogArticlePropTypes;
 function BlogArticle({ title, image, link }) {
     return (
-        <section className={styles.article}>
-            <h1>{title}</h1>
-            <Image className={styles.image} image={image} />
-            <Link to={link} aria-label={title}>
-                <Arrow />
-            </Link>
-        </section>
+        <Link to={link} aria-label={title}>
+            <section className={styles.article}>
+                <h1>{title}</h1>
+                <Image className={styles.image} image={image} />
+                <Link to={link} aria-label={title}>
+                    <Arrow />
+                </Link>
+            </section>
+        </Link>
     );
 }

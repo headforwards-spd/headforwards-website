@@ -1,9 +1,21 @@
 const moment = require('moment');
 const TurndownService = require('turndown');
 const fetch = require('node-fetch');
+const minify = require('html-minifier').minify;
+
+const minifyOptions = {
+    collapseWhitespace: true,
+    removeComments: true,
+    removeTagWhitespace: true,
+    removeEmptyElements: true,
+};
 
 const turndownService = new TurndownService();
-const getMarkdown = html => turndownService.turndown(html);
+const getMarkdown = html => {
+    const minifiedHtml = minify(html, minifyOptions)
+    const markdown = turndownService.turndown(minifiedHtml);
+    return markdown;
+};
 
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     const { createNode } = actions;
