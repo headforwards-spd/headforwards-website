@@ -16,7 +16,7 @@ components:
         link: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
       - title: 'Perl, Python & Golang'
         image: /uploads/golang-logo.jpg
-        link: fe1a1d50-0fab-11ea-843f-932c76de5936
+        link: 7ccaa0e0-152c-11ea-a47f-c360f0875c84
     type: blog-post-component
 ---
 
