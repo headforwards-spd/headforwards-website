@@ -4,6 +4,7 @@ import Image, { ImageSrcPropType } from '../../page-layout/image/image.component
 import styles from './quote.module.scss';
 
 const quotePropTypes = {
+    title: string,
     quote: string.isRequired,
     name: string,
     jobTitle: string,
@@ -15,13 +16,16 @@ export const QuotePropType = shape(quotePropTypes);
 
 Quote.propTypes = quotePropTypes;
 Quote.defaultProps = {
+    title: null,
     name: null,
     jobTitle: null,
     profilePic: null,
 };
-function Quote({ jobTitle, name, profilePic, quote }) {
+function Quote({ title, quote, name, jobTitle, profilePic }) {
     return (
-        <blockquote className={styles.blockquoteContainer}>
+        <section>
+            {title && <h1>{title}</h1>}
+            <blockquote className={styles.blockquoteContainer}>
             <p>{quote}</p>
             {!!name && (
                 <footer>
@@ -37,5 +41,6 @@ function Quote({ jobTitle, name, profilePic, quote }) {
                 </footer>
             )}
         </blockquote>
+        </section>
     );
 }

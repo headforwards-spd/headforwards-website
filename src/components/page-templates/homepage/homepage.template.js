@@ -1,13 +1,11 @@
-import { arrayOf, bool }                        from 'prop-types';
-import React                                    from 'react';
-import Hero
-                                                from '../../page-components/hero/hero.component'
-import Image, { ImageSrcPropType,
-} from '../../page-layout/image/image.component'
-import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
-import Postit                                   from '../../page-components/postit/postit.component';
-import styles                                   from './homepage.module.scss';
+import { arrayOf, bool } from 'prop-types';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import Hero from '../../page-components/hero/hero.component';
+import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
+import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
+import Postit from '../../page-components/postit/postit.component';
+import styles from './homepage.module.scss';
 
 // const homepagePropTypes = {
 //     page: [],
@@ -21,15 +19,16 @@ export default HomepageTemplate;
 // };
 
 function HomepageTemplate({ introduction, sections }) {
-
-    const {title, text} = introduction;
+    const { title, text } = introduction;
 
     return (
         <>
-            {introduction && <section className={styles.introduction}>
-                <h1>{title}</h1>
-                <ReactMarkdown source={text} />
-            </section>}
+            {introduction && (
+                <section className={styles.introduction}>
+                    {title && <h1>{title}</h1>}
+                    <ReactMarkdown source={text} />
+                </section>
+            )}
             {!!sections && sections.map(section => <HomePageSection {...{ ...section }} />)}
         </>
     );

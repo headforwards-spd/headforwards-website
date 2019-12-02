@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
-import React            from 'react';
+import React from 'react';
 import HomepageTemplate from '../components/page-templates/homepage/homepage.template';
-import Layout           from '../components/page-layout/layout';
+import Layout from '../components/page-layout/layout';
 
 // const homepagePropTypes = {
 //     data: [],
@@ -20,7 +20,7 @@ function Homepage({ data }) {
     const { introduction, sections, ...layoutProps } = frontmatter;
     return (
         <Layout {...layoutProps}>
-            <HomepageTemplate {...{introduction, sections}} />
+            <HomepageTemplate {...{ introduction, sections }} />
         </Layout>
     );
 }

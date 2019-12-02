@@ -37,6 +37,14 @@ collections:
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: text, widget: string, required: false, default: null}
       - {label: "Header Image", name:  image, widget: image, required: false, default: null}
+      - label: "Introduction"
+        name: introduction
+        required: false
+        default: null
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required, false, default: null}
+          - {label: "Copy", name: copy, widget: markdown}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -63,8 +71,8 @@ collections:
             widget: object
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
-              - {label: "Title", name: title, widget: string}
-              - {label: "Copy", name: text, widget: markdown}
+              - {label: "Title", name: title, widget: string, required: false, default: null}
+              - {label: "Copy", name: text, widget: markdown, required: false, default: null}
               - label: "Link"
                 name: link
                 required: false
@@ -155,6 +163,14 @@ collections:
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: text, widget: string, required: false, default: null}
       - {label: "Header Image", name:  image, widget: image, required: false, default: null}
+      - label: "Introduction"
+        name: introduction
+        required: false
+        default: null
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required, false, default: null}
+          - {label: "Copy", name: copy, widget: markdown}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -181,8 +197,8 @@ collections:
             widget: object
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
-              - {label: "Title", name: title, widget: string}
-              - {label: "Copy", name: text, widget: markdown}
+              - {label: "Title", name: title, widget: string, required: false, default: null}
+              - {label: "Copy", name: text, widget: markdown, required: false, default: null}
               - label: "Link"
                 name: link
                 required: false
@@ -273,6 +289,14 @@ collections:
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: text, widget: string, required: false, default: null}
       - {label: "Header Image", name:  image, widget: image, required: false, default: null}
+      - label: "Introduction"
+        name: introduction
+        required: false
+        default: null
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required, false, default: null}
+          - {label: "Copy", name: copy, widget: markdown}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -299,8 +323,8 @@ collections:
             widget: object
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
-              - {label: "Title", name: title, widget: string}
-              - {label: "Copy", name: text, widget: markdown}
+              - {label: "Title", name: title, widget: string, required: false, default: null}
+              - {label: "Copy", name: text, widget: markdown, required: false, default: null}
               - label: "Link"
                 name: link
                 required: false
@@ -391,6 +415,14 @@ collections:
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: text, widget: string, required: false, default: null}
       - {label: "Header Image", name:  image, widget: image, required: false, default: null}
+      - label: "Introduction"
+        name: introduction
+        required: false
+        default: null
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required, false, default: null}
+          - {label: "Copy", name: copy, widget: markdown}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -417,8 +449,8 @@ collections:
             widget: object
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
-              - {label: "Title", name: title, widget: string}
-              - {label: "Copy", name: text, widget: markdown}
+              - {label: "Title", name: title, widget: string, required: false, default: null}
+              - {label: "Copy", name: text, widget: markdown, required: false, default: null}
               - label: "Link"
                 name: link
                 required: false
@@ -498,7 +530,14 @@ collections:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
       - {label: "Type", name: type, widget: hidden, default: "legal-page"}
       - {label: "Page Title", name: title, widget: string}
-      - {label: "Introduction", name: text, widget: string, required: false, default: null}
+      - label: "Introduction"
+        name: introduction
+        required: false
+        default: null
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required, false, default: null}
+          - {label: "Copy", name: copy, widget: markdown}
       - label: "Sections"
         name: sections
         widget: list
@@ -522,6 +561,7 @@ collections:
     label: "Site Settings"
     description: "Website settings & meta data"
     files:
+
       - file: "src/pages/info-pages/homepage.md"
         label: "Home Page"
         name: home-page
@@ -534,10 +574,12 @@ collections:
         - {label: "Header Image", name:  image, widget: image, required: false, default: null}
         - label: "Introduction"
           name: introduction
-          widget: object
+          required: false
+          default: null
+          widget: optional-object
           fields:
-            - {label: "Title", name: title, widget: string}
-            - {label: "Copy", name: text, widget: markdown}
+            - {label: "Title", name: title, widget: string, required, false, default: null}
+            - {label: "Copy", name: copy, widget: markdown}
         - label: "Sections"
           name: sections
           widget: list
@@ -563,8 +605,8 @@ collections:
                   name: image-copy-component
                   widget: object
                   fields:
-                    - {label: "Title", name: title, widget: string}
-                    - {label: "Copy", name: text, widget: markdown}
+                    - {label: "Title", name: title, widget: string, required: false, default: null}
+                    - {label: "Copy", name: text, widget: markdown, required: false, default: null}
                     - label: "Link"
                       name: link
                       required: false

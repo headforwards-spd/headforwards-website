@@ -4,16 +4,12 @@ parent: who-we-are
 type: info-page
 title: Where are we going?
 image: /uploads/gash-2.jpg
+introduction:
+  text: >-
+    Most organisations have a plan for the future, but what makes Headforwards
+    different is its focus on people-driven growth, and how it constantly
+    refines its approach to serving clients.
 components:
-  - isPostit: false
-    isRightImage: false
-    isTwoColumns: false
-    type: image-copy-component
-    title: blah
-    text: >-
-      Most organisations have a plan for the future, but what makes Headforwards
-      different is its focus on people-driven growth, and how it constantly
-      refines its approach to serving clients.
   - isPostit: false
     isRightImage: false
     isTwoColumns: false
@@ -39,4 +35,3 @@ components:
     type: quote-component
 callToAction: Think this is a refreshing approach to software development?
 ---
-

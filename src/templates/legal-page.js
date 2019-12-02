@@ -1,28 +1,28 @@
 import { graphql } from 'gatsby';
-import { arrayOf, shape, string }  from 'prop-types'
-import React                       from 'react';
-import Layout                      from '../components/page-layout/layout';
-import LegalPageTemplate       from '../components/page-templates/legal-page/legal-page.template';
+import { arrayOf, shape, string } from 'prop-types';
+import React from 'react';
+import Layout from '../components/page-layout/layout';
+import LegalPageTemplate from '../components/page-templates/legal-page/legal-page.template';
 
 export default LegalPage;
 LegalPage.propTypes = {
     data: shape({
-                    page: shape({
-                                    frontmatter: shape({
-                                                           title:        string.isRequired,
-                                                           introduction: shape({
-                                                               title: string,
-                                                               text: string,
-                                                                               }),
-                                                           sections:     arrayOf(
-                                                               shape({
-                                                                         title: string,
-                                                                         text:  string.isRequired
-
-                                                                     }))
-                                                       })
-                                })
-                })
+        page: shape({
+            frontmatter: shape({
+                title: string.isRequired,
+                introduction: shape({
+                    title: string,
+                    text: string,
+                }),
+                sections: arrayOf(
+                    shape({
+                        title: string,
+                        text: string.isRequired,
+                    })
+                ),
+            }),
+        }),
+    }),
 };
 LegalPage.defaultProps = {
     introduction: null,

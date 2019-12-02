@@ -20,7 +20,6 @@ Hero.defaultProps = {
     className: '',
 };
 function Hero({ title, text, isTwoColumns, className }) {
-
     const columnsClass = isTwoColumns ? styles.isTwoColumns : '';
     return (
         <section className={`${styles.hero} ${columnsClass} ${className}}`}>

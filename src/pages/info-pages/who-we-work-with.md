@@ -3,34 +3,22 @@ uuid: 3630b640-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: Who we work with
-text: >-
-  Whatever the size of your business, Headforwards focuses on building long-term
-  partnerships with clients willing to take an Agile approach to development.
+introduction:
+  text: >-
+    Whatever the size of your business, Headforwards focuses on building long-term
+    partnerships with clients willing to take an Agile approach to development.
+
+
+    With dedicated teams created for each client, Headforwards looks to
+    develop long-term client partnerships that continuously deliver business
+    value. 
+
+
+    Relationships between the client and the team are given time to grow,
+    teams get to know the client’s goals and requirements in greater detail,
+    and the software produced is closely aligned with the client’s needs.
 image: /uploads/delete 9.jpg
 components:
-  - isPostit: false
-    isRightImage: false
-    isTwoColumns: false
-    type: image-copy-component
-    title: blah
-    text: >-
-      Whatever the size of your business, Headforwards focuses on building
-      long-term partnerships with clients willing to take an Agile approach to
-      development.
-  - isPostit: false
-    isRightImage: false
-    isTwoColumns: false
-    type: image-copy-component
-    title: blah
-    text: >-
-      With dedicated teams created for each client, Headforwards looks to
-      develop long-term client partnerships that continuously deliver business
-      value. 
-
-
-      Relationships between the client and the team are given time to grow,
-      teams get to know the client’s goals and requirements in greater detail,
-      and the software produced is closely aligned with the client’s needs.
   - jobTitle: 'John Howell, Travel Solutions Director'
     name: John Howell
     quote: >-
@@ -79,4 +67,3 @@ components:
       adapt to an Agile mindset can see huge results with us.
     type: quote-component
 ---
-

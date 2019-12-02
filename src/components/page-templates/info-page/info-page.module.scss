@@ -1,0 +1,13 @@
+@import "../../page-components/page-component";
+@import "../../page-components/columns/columns";
+
+.introduction {
+    > h1 {
+        @include headingFontLarge;
+    }
+    @include fontMedium;
+    @media(min-width: $screen-lg) {
+        @include fontLarge;
+    }
+    @include component-gutter;
+}

@@ -63,7 +63,7 @@ function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
         pages.map(({ id, fields, frontmatter }) => {
             const { slug: titleSlug } = fields;
-            const { path, type, parent='', seo } = frontmatter;
+            const { path, type, parent = '', seo } = frontmatter;
             const { slug: seoSlug } = seo || {};
             const slug = seoSlug || titleSlug;
             const pagePath = type !== 'wordpress-page' ? `/${parent || ''}/${slug}` : `/old${path}`;
@@ -154,7 +154,9 @@ function getData(graphql) {
                 }
             }
 
-            pages: allMarkdownRemark(filter: { frontmatter: { type: { in: ["wordpress-page", "info-page", "legal-page", "home-page"] } } }) {
+            pages: allMarkdownRemark(
+                filter: { frontmatter: { type: { in: ["wordpress-page", "info-page", "legal-page", "home-page"] } } }
+            ) {
                 nodes {
                     id
                     fields {

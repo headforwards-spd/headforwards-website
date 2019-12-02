@@ -9,8 +9,8 @@ import SingularImage from '../../images/singular/singular-image.component';
 const imageCopyColumnsPropTypes = {
     image: ImageSrcPropType.isRequired,
     isRightImage: bool,
-    title: string.isRequired,
-    text: string.isRequired,
+    title: string,
+    text: string,
     link: shape({
         link: string.isRequired,
         linkText: string.isRequired,
@@ -24,6 +24,8 @@ ImageCopyColumns.propTypes = imageCopyColumnsPropTypes;
 ImageCopyColumns.defaultProps = {
     isRightImage: false,
     link: null,
+    title: null,
+    text: null,
 };
 function ImageCopyColumns({ image, isRightImage, title, text, link }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
@@ -33,10 +35,12 @@ function ImageCopyColumns({ image, isRightImage, title, text, link }) {
         <section className={`${styles.columnsWrapper} ${imageClass}`}>
             <SingularImage image={image} ratio="100%" className={styles.image} />
             <section className={styles.copy}>
-                <h1>{title}</h1>
-                <section>
-                    <ReactMarkdown source={text} />
-                </section>
+                {title && <h1>{title}</h1>}
+                {text && (
+                    <section>
+                        <ReactMarkdown source={text} />
+                    </section>
+                )}
                 {hasLink && <Link to={link.link}>{link.linkText}</Link>}
             </section>
         </section>

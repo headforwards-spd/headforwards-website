@@ -8,10 +8,10 @@
 
     > h1 {
         @include headingFontLarge;
-        @media(min-width: $screen-lg) {
-            @include headingFontXLarge;
-
-        }
+        //@media(min-width: $screen-lg) {
+        //    @include headingFontXLarge;
+        //
+        //}
     }
 
     > section {

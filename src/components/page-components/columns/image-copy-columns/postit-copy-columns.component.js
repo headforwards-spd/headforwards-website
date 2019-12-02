@@ -9,8 +9,8 @@ import styles from './image-copy-columns.module.scss';
 const postitCopyColumnsPropTypes = {
     image: ImageSrcPropType.isRequired,
     isRightImage: bool,
-    title: string.isRequired,
-    text: string.isRequired,
+    title: string,
+    text: string,
     link: shape({
         link: string.isRequired,
         linkText: string.isRequired,
@@ -24,6 +24,8 @@ PostitCopyColumns.propTypes = postitCopyColumnsPropTypes;
 PostitCopyColumns.defaultProps = {
     isRightImage: false,
     link: null,
+    title: null,
+    text: null,
 };
 function PostitCopyColumns({ image, isRightImage, title, text, link }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
@@ -33,10 +35,12 @@ function PostitCopyColumns({ image, isRightImage, title, text, link }) {
         <section className={`${styles.columnsWrapper} ${imageClass}`}>
             <Postit image={image} isRightImage={isRightImage} className={styles.postit} />
             <section className={styles.copy}>
-                <h1>{title}</h1>
-                <section>
-                    <ReactMarkdown source={text} />
-                </section>
+                {title && <h1>{title}</h1>}
+                {text && (
+                    <section>
+                        <ReactMarkdown source={text} />
+                    </section>
+                )}
                 {hasLink && (
                     <Link to={link.link} className={styles.arrowLink}>
                         {link.linkText}
