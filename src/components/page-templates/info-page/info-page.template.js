@@ -20,7 +20,7 @@ InfoPageTemplate.defaultProps = {
 };
 
 function InfoPageTemplate({ introduction, components = [] }) {
-    const {title, text} = introduction || {};
+    const [{ title, text }={}] = introduction || [];
 
     return <>
         {text && <section className={styles.introduction}>

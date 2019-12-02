@@ -44,7 +44,7 @@ collections:
         widget: optional-object
         fields:
           - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: copy, widget: markdown}
+          - {label: "Copy", name: text, widget: markdown}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -170,7 +170,7 @@ collections:
         widget: optional-object
         fields:
           - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: copy, widget: markdown}
+          - {label: "Copy", name: text, widget: markdown}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -296,7 +296,7 @@ collections:
         widget: optional-object
         fields:
           - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: copy, widget: markdown}
+          - {label: "Copy", name: text, widget: markdown}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -422,7 +422,7 @@ collections:
         widget: optional-object
         fields:
           - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: copy, widget: markdown}
+          - {label: "Copy", name: text, widget: markdown}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -537,7 +537,7 @@ collections:
         widget: optional-object
         fields:
           - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: copy, widget: markdown}
+          - {label: "Copy", name: text, widget: markdown}
       - label: "Sections"
         name: sections
         widget: list
@@ -579,7 +579,7 @@ collections:
           widget: optional-object
           fields:
             - {label: "Title", name: title, widget: string, required, false, default: null}
-            - {label: "Copy", name: copy, widget: markdown}
+            - {label: "Copy", name: text, widget: markdown}
         - label: "Sections"
           name: sections
           widget: list

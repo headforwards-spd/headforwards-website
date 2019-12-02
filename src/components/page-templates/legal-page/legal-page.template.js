@@ -18,7 +18,7 @@ export default LegalPageTemplate;
 // };
 
 function LegalPageTemplate({ introduction, sections }) {
-    const { title, text } = introduction;
+    const [{ title, text }={}] = introduction || [];
     return (
         <section className={styles.sections}>
             {title && <h1>{title}</h1>}

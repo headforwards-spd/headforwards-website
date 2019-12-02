@@ -51,6 +51,7 @@ function Layout({ seo, title, text, image, children, callToAction: pageCallToAct
                 youtubeURL
                 twitterURL
                 registeredAddress
+                callToAction
             }
         }
     `);
