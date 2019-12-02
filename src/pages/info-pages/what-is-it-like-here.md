@@ -5,12 +5,20 @@ type: info-page
 title: What is it like here?
 image: /uploads/delete 9.jpg
 introduction:
-  - text: >-
-      Headforwards’ success comes from its strong relationships within teams, collaborative nature with clients, and effective communication throughout projects.
-      
-      When a client partners with Headforwards, they’re involved right from the beginning—during initial team creation, developer interviews, and the project kick-off.
-      
-      With regular catchups and strategy meetings, strong relationships between clients and teams grow fast, and communication is made easy throughout the entire project.
+  - copy: >-
+      Headforwards’ success comes from its strong relationships within teams,
+      collaborative nature with clients, and effective communication throughout
+      projects.
+
+
+      When a client partners with Headforwards, they’re involved right from the
+      beginning—during initial team creation, developer interviews, and the
+      project kick-off.
+
+
+      With regular catchups and strategy meetings, strong relationships between
+      clients and teams grow fast, and communication is made easy throughout the
+      entire project.
 components:
   - jobTitle: Business Analyst
     name: Katherine Moore
@@ -32,3 +40,4 @@ components:
     type: quote-component
 callToAction: Want to learn more about what it’s like to work with Headforwards?
 ---
+
