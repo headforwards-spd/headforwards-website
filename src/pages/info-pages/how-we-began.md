@@ -35,7 +35,7 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: Dedicated teams
-    text: blah
+    text: ''
   - quote: >-
       We wanted to create teams that would be with the client for the long-term,
       so their knowledge could build up and be shared and retained.
@@ -45,7 +45,7 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: Collaborative relationships
-    text: blah
+    text: ''
   - quote: >-
       We wanted to involve clients in picking their teams, and to be transparent
       with them about our cost model. It makes for a much more productive and
