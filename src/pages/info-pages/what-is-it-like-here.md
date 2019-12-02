@@ -5,7 +5,7 @@ type: info-page
 title: What is it like here?
 image: /uploads/delete 9.jpg
 introduction:
-  - copy: >-
+  - text: >-
       Headforwards’ success comes from its strong relationships within teams,
       collaborative nature with clients, and effective communication throughout
       projects.
