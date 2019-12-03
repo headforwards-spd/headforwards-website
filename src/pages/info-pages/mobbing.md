@@ -43,7 +43,7 @@ components:
       easier to collaborate and solve problems as they appear.
     type: quote-component
   - isPostit: true
-    isRightImage: false
+    isRightImage: true
     isTwoColumns: false
     type: image-copy-component
     title: A win-win for everyone
