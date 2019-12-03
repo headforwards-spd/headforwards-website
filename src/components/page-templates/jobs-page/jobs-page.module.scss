@@ -15,7 +15,36 @@
 
     @include columns-component;
 
+    margin: #{-$gutter-small/2} #{-$gutter-small/2} #{$gutter-large - $gutter-small/2};
+    @media (min-width: $screen-md) {
+        margin: #{-$column-gutter/2} #{-$column-gutter/2} #{$gutter-medium - $column-gutter/2};
+    }
+    @media (min-width: $screen-md) {
+        margin: #{-$column-gutter/2} #{-$column-gutter/2} #{$gutter-large - $column-gutter/2};
+    }
+
     .role {
+
+        h1 {
+            @include headingFontMedium;
+        }
+
+        @include fontMedium;
+
+        @media(min-width: $screen-md) {
+            h1 {
+                @include headingFontLarge;
+            }
+
+            @include fontLarge;
+        }
+
+        margin: $gutter-small/2;
+        width: calc(100% - #{$gutter-small});
+        padding-bottom: calc(100% - #{$gutter-small});
+        @media (min-width: $screen-md) {
+            margin: $column-gutter/2;
+        }
 
         @media(min-width: $screen-lg) {
             width: calc(50% - #{$column-gutter});
@@ -34,20 +63,6 @@
             @media(min-width: $screen-md) {
                 padding: $column-gutter;
             }
-        }
-
-        h1 {
-            @include headingFontMedium;
-        }
-
-        @include fontMedium;
-
-        @media(min-width: $screen-md) {
-            h1 {
-                @include headingFontLarge;
-            }
-
-            @include fontLarge;
         }
 
         .link {
