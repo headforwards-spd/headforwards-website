@@ -48,8 +48,6 @@
         }
     }
 
-
-
     @media(min-width: $screen-lg) {
 
         .image {
@@ -57,22 +55,26 @@
         }
 
         > section {
-            margin: 0 auto $gutter-large;
+            margin: 0 auto 0;
+            padding-top: $gutter-small;
+            padding-bottom: $gutter-large;
         }
 
         &.hasBackground {
 
             position: relative;
             height: 100vh;
-            margin-bottom: $gutter-large;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
+            > nav {
+                background: linear-gradient(rgba(black,0.45), transparent);
+            }
+
             > section {
 
-                //max-width: 67.5%;
-                //margin: 0 2*$gutter-large $gutter-large;
+                background: linear-gradient(transparent, rgba(black,0.45));
 
                 h1 {
                     color: white;
@@ -81,6 +83,10 @@
                 h2 {
                     @include orange-type;
                     @include headingFontMedium;
+                }
+
+                :last-child {
+                    margin-bottom: 0;
                 }
 
                 &.hasSubTitle {

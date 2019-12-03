@@ -1,7 +1,7 @@
 const moment = require('moment');
 const TurndownService = require('turndown');
 const fetch = require('node-fetch');
-const minify = require('html-minifier').minify;
+const { minify } = require('html-minifier');
 
 const minifyOptions = {
     collapseWhitespace: true,
@@ -12,7 +12,7 @@ const minifyOptions = {
 
 const turndownService = new TurndownService();
 const getMarkdown = html => {
-    const minifiedHtml = minify(html, minifyOptions)
+    const minifiedHtml = minify(html, minifyOptions);
     const markdown = turndownService.turndown(minifiedHtml);
     return markdown;
 };

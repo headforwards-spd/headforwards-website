@@ -1,8 +1,10 @@
-import React from 'react';
-import { arrayOf, shape, string } from 'prop-types';
-import Image from '../../page-layout/image/image.component';
-import Link from '../../page-layout/link/link.component';
-import styles from './index-page.module.scss';
+import { graphql, useStaticQuery } from 'gatsby'
+import React                       from 'react';
+import { arrayOf, shape, string }  from 'prop-types';
+import ReactMarkdown               from 'react-markdown'
+import Image                       from '../../page-layout/image/image.component';
+import Link                        from '../../page-layout/link/link.component';
+import styles                      from './index-page.module.scss';
 
 const PageLinkPropTypes = {
     link: string,
@@ -26,14 +28,41 @@ export default function IndexPageTemplate({ pages }) {
 
 function PageLink({ link, linkText, page }) {
     const { frontmatter } = page || {};
-    const { image } = frontmatter || {};
+    const { introduction, image } = frontmatter || {};
+    const [{ text } = {}] = introduction || [];
+
+    const { logo, arrow } = useStaticQuery(graphql`
+        query {
+            logo: file(name: {eq: "icon.white"}) {
+                childImageSharp {
+                    fluid(maxWidth: 100, maxHeight: 100, quality: 100) {
+                        ...GatsbyImageSharpFluid_withWebp_noBase64
+                    }
+                }
+            }
+        }
+    `);
 
     return (
         <Link to={link}>
             <article className={styles.page}>
                 <h1>{linkText}</h1>
-                {!!image && <Image image={image} alt={linkText} />}
+                <section>
+                    {image && <Image image={image} alt={linkText} />}
+                    {text && <section className={styles.introduction}>
+                        <Image image={logo} alt={linkText} className={styles.logo}/>
+                        <ReactMarkdown source={truncate(text)} />
+                    </section>}
+                </section>
             </article>
         </Link>
     );
+}
+
+function truncate(string, maxLength = 150) {
+
+    const truncate1 = string.substr(0, maxLength);
+    const truncate2 = truncate1.substr(0, Math.min(truncate1.length, truncate1.lastIndexOf(' ')));
+
+    return truncate2 === string ? string : `${truncate2}\u2026`;
 }

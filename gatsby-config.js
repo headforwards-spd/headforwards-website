@@ -2,6 +2,7 @@ const gatsbyPluginSass = require('./gatsby/gatsby-plugin-sass');
 // const gatsbySourceWordpress = require('./gatsby/gatsby-source-wordpress');
 // const gatsbySourceFilesystemWordpress = require('./gatsby/gatsby-source-filesystem.wp-content');
 const gatsbySourceFilesystemUploads = require('./gatsby/gatsby-source-filesystem.uploads');
+const gatsbySourceFilesystemImages = require('./gatsby/gatsby-source-filesystem.images');
 const gatsbySourceFilesystemPages = require('./gatsby/gatsby-source-filesystem.pages');
 const gatsbySourceFilesystemData = require('./gatsby/gatsby-source-filesystem.data');
 const gatsbyTransformerRemark = require('./gatsby/gatsby-transformer-remark');
@@ -25,6 +26,7 @@ module.exports = {
         // Use WordPress Images
         // { ...gatsbySourceFilesystemWordpress },
         `gatsby-source-recruitee-api`,
+        { ...gatsbySourceFilesystemImages },
         { ...gatsbySourceFilesystemUploads },
         { ...gatsbySourceFilesystemPages },
         { ...gatsbySourceFilesystemData },

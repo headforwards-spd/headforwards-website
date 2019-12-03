@@ -33,7 +33,7 @@ export default class MenuItem extends Component {
 
         return (
             <li className={`${childrenClass} ${openClass}`}>
-                <Link to={link} activeStyle={{ color: '#ffb800' }}>
+                <Link to={link} activeStyle={{ color: '#ffb800' }} partiallyActive>
                     {linkText}
                     {hasChildren && (
                         <button type="button" onClick={toggleMenu.bind(this)}>

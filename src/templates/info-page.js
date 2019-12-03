@@ -23,8 +23,8 @@ InfoPagePage.propTypes = {
                 text: string,
                 introduction: shape({
                     title: string,
-                                        text: string.isRequired,
-                                    }),
+                    text: string.isRequired,
+                }),
                 callToAction: string,
                 seo: {
                     slug: string,

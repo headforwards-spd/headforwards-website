@@ -1,13 +1,12 @@
-import { shape, string }    from 'prop-types';
-import React                from 'react';
-import ReactMarkdown        from 'react-markdown'
-import * as uuid            from 'uuid';
+import { shape, string } from 'prop-types';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import * as uuid from 'uuid';
 import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
-import Footer               from '../../components/page-layout/footer/footer.component';
-import Header               from '../../components/page-layout/header/header.component';
-import PageComponent        from '../../components/page-components/page-component';
-import styles
-                            from '../../components/page-templates/info-page/info-page.module.scss'
+import Footer from '../../components/page-layout/footer/footer.component';
+import Header from '../../components/page-layout/header/header.component';
+import PageComponent from '../../components/page-components/page-component';
+import styles from '../../components/page-templates/info-page/info-page.module.scss';
 
 export default InfoPagePreview;
 
@@ -26,7 +25,7 @@ function InfoPagePreview({ entry }) {
     const { title = '', image = null, introduction, components, callToAction } = data;
     const header = { title, image };
 
-    const [{ title: introTitle, text: introText }={}] = introduction || [];
+    const [{ title: introTitle, text: introText } = {}] = introduction || [];
 
     !!components &&
         components.forEach(component => {
@@ -50,13 +49,18 @@ function InfoPagePreview({ entry }) {
         <>
             <Header {...headerProps} />
             <main>
-                {introText && <section className={styles.introduction}>
-                    {introTitle && <h1>{introTitle}</h1>}
-                    <ReactMarkdown source={introText} />
-                </section>}
-                {components && <section className={styles.components}>
-                    {!!components && components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
-                </section>}
+                {introText && (
+                    <section className={styles.introduction}>
+                        {introTitle && <h1>{introTitle}</h1>}
+                        <ReactMarkdown source={introText} />
+                    </section>
+                )}
+                {components && (
+                    <section className={styles.components}>
+                        {!!components &&
+                            components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
+                    </section>
+                )}
             </main>
             <Footer {...{ companyInfo, callToAction }} />
         </>

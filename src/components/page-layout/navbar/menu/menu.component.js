@@ -30,8 +30,6 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                         <MenuItem key={id} {...item} />
                     ))}
                     <MenuItem {...{ link: '/contact', linkText: 'Contact.' }} />
-                    {/* <MenuItem {...{ link: '/wordpress-pages', linkText: 'Old Pages.' }} /> */}
-                    {/* <MenuItem {...{ link: '/wordpress-posts', linkText: 'Old Posts.' }} /> */}
                 </ul>
                 <section className={styles.contactDetails}>
                     <dl>

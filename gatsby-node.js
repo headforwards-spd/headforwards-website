@@ -121,6 +121,9 @@ function getData(graphql) {
                         linkText
                         page {
                             frontmatter {
+                                introduction {
+                                    text
+                                }
                                 image {
                                     publicURL
                                     childImageSharp {
@@ -155,7 +158,11 @@ function getData(graphql) {
             }
 
             pages: allMarkdownRemark(
-                filter: { frontmatter: { type: { in: ["wordpress-page", "info-page", "legal-page", "home-page", "jobs-page"] } } }
+                filter: {
+                    frontmatter: {
+                        type: { in: ["wordpress-page", "info-page", "legal-page", "home-page", "jobs-page"] }
+                    }
+                }
             ) {
                 nodes {
                     id

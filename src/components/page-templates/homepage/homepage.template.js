@@ -19,7 +19,7 @@ export default HomepageTemplate;
 // };
 
 function HomepageTemplate({ introduction, sections }) {
-    const [{ title, text }={}] = introduction || [];
+    const [{ title, text } = {}] = introduction || [];
 
     return (
         <>
