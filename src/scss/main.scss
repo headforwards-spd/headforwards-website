@@ -10,6 +10,13 @@
 }
 
 body {
+    &.menuIsOpen {
+        overflow: hidden;
+        @media(min-width: $screen-lg) {
+            overflow: unset;
+        }
+
+    }
      font-family: "FS Albert Web", Arial, sans-serif;
 
     > div > div {

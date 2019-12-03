@@ -43,7 +43,12 @@
                 }
 
                 &:before {
-                    left: calc(-1rem - 0.52em);
+                    padding: 0;
+                    left: 0;
+                    @media(min-width: $screen-lg) {
+                        transform: translate(-50%, -25%);
+                        left: -$column-gutter;
+                    }
                 }
             }
 
@@ -63,7 +68,9 @@
     &.hasImage {
         @include columns-component;
         &.isRightImage {
-            flex-direction: row-reverse;
+            @media(min-width: $screen-lg) {
+                flex-direction: row-reverse;
+            }
         }
 
         .image, .postit {

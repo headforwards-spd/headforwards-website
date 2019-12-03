@@ -2,6 +2,7 @@
   "name": "headforwards-website",
   "author": "Headforwards Solutions Ltd.",
   "dependencies": {
+    "@airship/with-unstated": "^1.0.1",
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
@@ -49,6 +50,7 @@
     "slick-carousel": "^1.8.1",
     "slug": "^1.1.0",
     "turndown": "^5.0.3",
+    "unstated": "^2.1.1",
     "uuid": "^3.3.3",
     "wordpress-gatsby-migrator": "^1.0.6",
     "yamljs": "^0.3.0"

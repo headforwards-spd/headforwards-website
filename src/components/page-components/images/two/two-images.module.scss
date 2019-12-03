@@ -3,13 +3,7 @@
 
 .twoImages {
     @include component-gutter;
-    margin: 0 #{-$page-gutter-sm} 0;
-    @media(min-width: $screen-md) {
-        margin: 0 #{-$page-gutter-md} 0;
-    }
-    //@media(min-width: $screen-xxl) {
-    //    margin: 0 -#{$page-gutter-xxl - $column-gutter/2} 0 #{$column-gutter/2};
-    //}
+    margin: -#{$gutter-medium} #{-$page-gutter-sm} 0;
 
     position: relative;
     padding: $gutter-large 0;
@@ -68,7 +62,7 @@
 
     @media (min-width: $screen-lg) {
 
-        margin: 0 0 $gutter-large;
+        margin: -#{$gutter-small} 0 0;
         padding: $gutter-small 0 $gutter-large;
         display: flex;
         flex-direction: row;

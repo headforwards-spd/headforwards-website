@@ -97,8 +97,10 @@
         opacity: 0;
         &:hover {
             opacity: 1;
+            transition-delay: 0s;
         }
         transition: opacity ease 0.5s;
+        transition-delay: 25s;
 
         &, p, time {
             color: white;

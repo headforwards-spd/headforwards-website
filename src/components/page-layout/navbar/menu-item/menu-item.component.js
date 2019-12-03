@@ -8,9 +8,20 @@ import styles from '../navbar.module.scss';
 export default class MenuItem extends Component {
     static propTypes = menuItemPropTypes;
 
-    state = {
-        isOpen: false,
-    };
+    constructor(props) {
+
+        super(props);
+
+        const {link, location} = props;
+        const {pathname:path=''} = location || {};
+
+        const cleanLink = `/${link}/`.replace(/\/+/g, '/');
+        const cleanPath = `/${path}/`.replace(/\/+/g, '/');
+
+        this.state = {
+            isOpen: cleanPath.startsWith(cleanLink),
+        };
+    }
 
     toggleMenu(event) {
         event.preventDefault();

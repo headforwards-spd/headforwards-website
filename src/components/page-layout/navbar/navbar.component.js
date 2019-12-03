@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
-import Menu from './menu/menu.component';
-import { navbarPropTypes } from './navbar.prop-type';
+import AppContainer         from '../../../containers/app.container'
+import Menu                 from './menu/menu.component';
+import { navbarPropTypes }  from './navbar.prop-type';
+import withUnstated from '@airship/with-unstated';
 
-export default class Navbar extends Component {
+class Navbar extends Component {
     static propTypes = navbarPropTypes;
 
-    static defaultProps = { hasBackground: false };
-
-    state = {
-        isOpen: false,
+    static defaultProps = {
+        hasBackground: false,
     };
 
-    menuClick = () => {
-        const { isOpen } = this.state;
-        this.setState({ isOpen: !isOpen });
+    menuClick() {
+
+        const { appContainer } = this.props;
+        const { setMenuIsOpen, state } = appContainer;
+        const { menuIsOpen } = state;
+
+        setMenuIsOpen(!menuIsOpen);
     };
 
     render() {
-        const { isOpen } = this.state;
-        const activeClass = isOpen ? 'is-active' : '';
+        const { appContainer } = this.props;
+        const { menuIsOpen } = appContainer.state;
+        const activeClass = menuIsOpen ? 'is-active' : '';
         const { menuClick } = this;
         const { menu, hasBackground, companyInfo } = this.props;
 
@@ -33,3 +38,5 @@ export default class Navbar extends Component {
         return <Menu {...props} />;
     }
 }
+
+export default withUnstated(Navbar, { appContainer: AppContainer });

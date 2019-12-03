@@ -24,7 +24,7 @@ function Footer({ companyInfo, callToAction }) {
             <section className={styles.getInTouch}>
                 <h1>
                     {callToAction}
-                    <Link to="/get-in-touch">Get in touch</Link>
+                    <Link to="/contact">Get in touch</Link>
                 </h1>
             </section>
 
