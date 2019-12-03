@@ -47,8 +47,12 @@
         }
     }
 
+    transition: background-color ease 0.5s;
+
     > section {
         display: none;
+        opacity: 0;
+        transition: opacity ease 0.5s;
 
         > ul {
 
@@ -142,6 +146,7 @@
         }
     }
 
+
     &:global(.is-active) {
         background-color: $blue-background;
         display: flex;
@@ -158,6 +163,7 @@
         }
 
         > section {
+            opacity: 1;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
@@ -171,6 +177,7 @@
 
     @media screen and (min-width: $screen-lg) {
 
+        transition: unset;
 
         @include flexRow;
         align-items: stretch;
@@ -205,6 +212,7 @@
         }
 
         > section {
+            opacity: unset;
             display: block;
             @media (min-width: $screen-lg) {
                 margin-right: -$column-gutter/2;
@@ -248,7 +256,6 @@
                     }
 
                     > section {
-                        display: none;
                         padding: 20px;
                         background-color: white;
                         box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.4);
@@ -259,6 +266,13 @@
                         white-space: nowrap;
                         position: absolute;
                         right: 0;
+
+                        display: block;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition-property: opacity, visibility;
+                        transition-duration: .5s, 0s;
+                        transition-delay: 0s, .5s;
 
                         &:before {
                             top: -$gutter-small/2;
@@ -300,8 +314,9 @@
 
                     &:hover {
                         > section {
-                            display: block;
-                        }
+                            visibility: visible;
+                            opacity: 1;
+                            transition-delay: 0s, 0s;                        }
                     }
                 }
             }
