@@ -5,6 +5,8 @@
 
 @mixin columns-component {
     @include component-columns-gutter;
+    display: flex;
+    flex-direction: column;
 
     @media (min-width: $screen-lg) {
 

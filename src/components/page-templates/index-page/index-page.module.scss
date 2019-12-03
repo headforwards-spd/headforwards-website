@@ -8,6 +8,11 @@
         @media(min-width: $screen-lg) {
             width: calc(50% - #{$column-gutter});
         }
+        margin-top: 0;
+        margin-bottom: $gutter-medium;
+        @media(min-width: $screen-lg) {
+            margin-bottom: $gutter-large;
+        }
     }
 
     @media(min-width: $screen-lg) {
@@ -15,6 +20,7 @@
         > a {
                 width: calc(50% - #{$column-gutter});
         }
+        margin-bottom: 0;
     }
 
     .page {
