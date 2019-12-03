@@ -155,7 +155,7 @@ function getData(graphql) {
             }
 
             pages: allMarkdownRemark(
-                filter: { frontmatter: { type: { in: ["wordpress-page", "info-page", "legal-page", "home-page"] } } }
+                filter: { frontmatter: { type: { in: ["wordpress-page", "info-page", "legal-page", "home-page", "jobs-page"] } } }
             ) {
                 nodes {
                     id

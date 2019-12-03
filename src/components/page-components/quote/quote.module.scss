@@ -15,7 +15,10 @@
         margin: 0;
 
         > p {
-            padding: 1em 0 0;
+            padding: 1.5em 0 0;
+            @media (min-width: $screen-lg) {
+                padding-top: 1em;
+            }
             font-style: italic;
             position: relative;
             @include orange-type;
@@ -84,7 +87,7 @@
                 border-radius: 50%;
                 margin-right: $gutter-small;
 
-                @media (min-width: $screen-lg) {
+                @media (min-width: $screen-md) {
                     width: 3.5em;
                 }
 

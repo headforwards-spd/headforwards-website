@@ -16,13 +16,13 @@ Postit.defaultProps = {
     isRightImage: false,
     className: '',
 };
-function Postit({ image, isRightImage, className }) {
+function Postit({ image, isRightImage, className, children }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
     const version = Math.floor(Math.random() * 8 + 1);
 
     return (
         <div className={`${styles.postit} ${styles[`v${version}`]} ${imageClass} ${className}`}>
-            <Image image={image} ratio="100%" />
+            {children || <Image image={image} ratio="100%" />}
         </div>
     );
 }

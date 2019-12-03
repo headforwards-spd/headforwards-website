@@ -3,12 +3,15 @@ uuid: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
 parent: careers
 type: info-page
 title: BI & Data
+introduction:
+  - text: >-
+      We recently embarked on a new challenge, working with our local authority
+      as they look to improve the access and confidence that residents and
+      members have to technology
 components:
   - type: image-copy-component
     text: >-
-      We recently embarked on a new challenge, working with our local authority
-      as they look to improve the access and confidence that residentsand
-      members have to technology. We’re ensuring that people are able to access
+      We’re ensuring that people are able to access
       high-quality services through digital and technology channels. It’s an
       ambitious programme and one that we’re proud to be part of.It’s a
       high-profile project and it will play a big role in delivering key
