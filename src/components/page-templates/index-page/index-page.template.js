@@ -49,7 +49,7 @@ function PageLink({ link, linkText, page }) {
                 <h1>{linkText}</h1>
                 <section>
                     {image && <Image image={image} alt={linkText} />}
-                    {text && <section className={styles.introduction}>
+                    {image && text && <section className={styles.introduction}>
                         <Image image={logo} alt={linkText} className={styles.logo}/>
                         <ReactMarkdown source={truncate(text)} />
                     </section>}
