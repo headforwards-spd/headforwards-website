@@ -175,7 +175,7 @@ export const query = graphql`
                     imageTwoSquare: image {
                         publicURL
                         childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: ENTROPY, quality: 100) {
+                            fluid(maxWidth: 100, maxHeight: 100, cropFocus: ENTROPY, quality: 100) {
                                 ...GatsbyImageSharpFluid_withWebp
                             }
                         }

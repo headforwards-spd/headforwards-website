@@ -20,14 +20,12 @@ sections:
         title: People over process
       - jobTitle: Director & Co-Founder
         name: Toby Parkins
-        profilePic: /uploads/simon-minchin-author-copy-2.jpg
         quote: >-
           It's about picking the right people for each client, rather than
           running a bench. 
         type: quote-component
       - jobTitle: Director & Co-founder
         name: Craig Girvan
-        profilePic: ''
         quote: >-
           If something changes in our clients world, they've got to adapt,
           they've got to look for a new competitive advantage in their
@@ -42,10 +40,7 @@ sections:
           clients by continuously delivering business value.
         type: image-copy-component
         title: Building partnerships with clients
-      - jobTitle: ''
-        name: ''
-        profilePic: ''
-        quote: >-
+      - quote: >-
           We want to be a partner to our clients, to develop long-term
           relationships with trust on both sides.
         type: quote-component
@@ -60,10 +55,7 @@ sections:
           forefront of professional technical excellence.
         type: image-copy-component
         title: Careers without compromise
-      - jobTitle: ''
-        name: ''
-        profilePic: ''
-        quote: >-
+      - quote: >-
           There are no egos here. Team fit is the most important thing, so the
           people we hire need to be really positive and prepared to have each
           other’s backs.
