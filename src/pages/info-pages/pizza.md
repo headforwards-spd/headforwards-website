@@ -3,10 +3,9 @@ uuid: 92161650-0f9b-11ea-9e15-59d1e5da42db
 parent: careers
 type: info-page
 title: 'Pizza, beaches and beers'
-text: >-
-  Headforwards enjoys a lack of hierarchy, where everyone from developers to
-  directors are treated as equals. This – combined with good work-life balance –
-  makes it a great place to work.
+text: ''
+introduction:
+  - text: ''
 components:
   - isPostit: false
     isRightImage: false
@@ -34,6 +33,9 @@ components:
       employees. We can bring our friends and family along to a wide range of
       activities which appeal to everyone.
     type: quote-component
+  - imageOne: /uploads/toby-1.jpg
+    imageTwo: /uploads/toby-4.jpg
+    type: images-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: false
@@ -67,6 +69,9 @@ components:
 
       It’s an important part of life at the company because the more knowledge
       and experience the team develops, the better it can serve its clients.
+  - imageOne: /uploads/toby-3.jpg
+    imageTwo: /uploads/toby-2.jpg
+    type: images-component
   - quote: >-
       In addition to wide-ranging learning resources, we also have the
       opportunity to attend industry conferences like Agile on the Beach. It’s
