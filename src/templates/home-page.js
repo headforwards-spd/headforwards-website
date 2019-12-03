@@ -81,14 +81,14 @@ export const query = graphql`
                     components {
                         type
                         quote
-                        profilePic {
-                            publicURL
-                            childImageSharp {
-                                fluid(maxWidth: 100, maxHeight: 100, cropFocus: ENTROPY, quality: 100) {
-                                    ...GatsbyImageSharpFluid_withWebp
-                                }
-                            }
-                        }
+#                        profilePic {
+#                            publicURL
+#                            childImageSharp {
+#                                fluid(maxWidth: 100, maxHeight: 100, cropFocus: ENTROPY, quality: 100) {
+#                                    ...GatsbyImageSharpFluid_withWebp
+#                                }
+#                            }
+#                        }
                         name
                         jobTitle
                         text

@@ -28,20 +28,26 @@
         }
         h2 {
             color: black;
-            @include headingFontMedium;
+            @include headingFontXLarge;
         }
 
         > :last-child {
+            border-bottom: 1px solid $grey-6;
+            padding-bottom: 0.5em;
             margin-bottom: 0;
+            @media(min-width: $screen-lg) {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
         }
     }
 
-    .hasSubTitle {
-        h1, h2 {
-            font-size: 52px;
-        }
-
-    }
+    //.hasSubTitle {
+    //    h1, h2 {
+    //        font-size: 52px;
+    //    }
+    //
+    //}
 
     &.hasBackground {
         > section {
