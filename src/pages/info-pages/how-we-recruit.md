@@ -12,7 +12,7 @@ components:
     title: 'To do the best work, you need the best people. '
     text: "That’s why Headforwards is always looking for the perfect fit – for our clients and for our culture.   \n\nHeadforwards is a software business. But first and foremost, it’s a people business. \n\n\rIn its Cornwall offices, a fast-growing team contributes to an open and honest culture where everyone has their voice heard—and where working well together is the number one priority. \rThis is ‘the Headforwards type’: a team player. And it’s a team that’s always looking to grow."
     image: /uploads/smiley-face-doodle.png
-  - jobTitle: Headforwards Recruitment and Talent Specialist
+  - jobTitle: Recruitment and Talent Specialist
     name: Marie Ashton
     quote: >-
       There are no egos here. Team fit is the most important thing, so the
