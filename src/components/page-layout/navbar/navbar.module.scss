@@ -268,9 +268,9 @@
                             width: 0;
                             height: 0;
                             border: $gutter-small/2 solid;
-                            border-color: transparent transparent white white;
+                            border-color: white;
                             transform: rotate(135deg);
-                            box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+                            box-shadow: -3px 3px 2px 0 rgba(0, 0, 0, 0.1);
                         }
 
                         > ul {
