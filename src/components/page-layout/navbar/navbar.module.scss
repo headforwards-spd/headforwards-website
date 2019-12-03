@@ -23,7 +23,6 @@
         }
 
         a {
-            //@include fontLarge;
             margin: 0 $page-gutter-sm/2;
             @media (min-width: $screen-md) {
                 margin: 0 $page-gutter-md/2;
@@ -234,6 +233,10 @@
                         }
                     }
 
+                    li a {
+                            padding: 0;
+                        }
+
                     &.hasChildren > a {
                         button {
                             display: none;
@@ -250,7 +253,7 @@
                         background-color: white;
                         box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.4);
                         color: black;
-                        width: 37.5vw;
+                        //width: 37.5vw;
                         max-width: $max_width*0.375;
                         z-index: 1;
                         white-space: nowrap;
@@ -286,6 +289,8 @@
                         }
 
                         a {
+                            @include fontLarge;
+                            line-height: 2;
                             margin: 0;
                             @include arrow-link;
                             color: black;
