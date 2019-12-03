@@ -9,7 +9,7 @@ introduction:
 components:
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: Something for everyone
     text: >-
