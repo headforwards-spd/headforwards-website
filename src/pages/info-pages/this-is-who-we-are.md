@@ -3,7 +3,6 @@ uuid: 07758420-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: What we believe
-text:
 image: /uploads/delete-11.jpg
 components:
   - isPostit: false
@@ -19,7 +18,7 @@ components:
       Clients look to Headforwards to develop software that creates value. In a
       rapidly changing business environment, what constitutes value might change
       from one week to the next.
-  - jobTitle: co Founder
+  - jobTitle: cofounder & director
     name: Craig Girvan
     quote: >-
       If something changes in our client’s world, they've got to adapt, they've
