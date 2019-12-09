@@ -66,7 +66,7 @@ function createAllPages(createPage, { nodes: pages = [] }) {
             const { path, type, parent = '', seo } = frontmatter;
             const { slug: seoSlug } = seo || {};
             const slug = seoSlug || titleSlug;
-            const pagePath = type !== 'wordpress-page' ? `/${parent || ''}/${slug}` : `/old${path}`;
+            const pagePath = type !== 'wordpress-page' ? `/${parent || ''}/${slug}` : `/wordpress-pages${path}`;
 
             return createPage({
                 path: pagePath.replace(/\/+/g, '/'),
@@ -101,7 +101,7 @@ function createAllPosts(createPage, { nodes: posts = [] }) {
             const { id: nextId = '' } = index < lastIndex ? posts[index + 1] : {};
 
             return createPage({
-                path,
+                path: `/wordpress-posts${path}`,
                 component: resolve(`src/templates/${type}.js`),
                 context: { id, prevId, nextId },
             });

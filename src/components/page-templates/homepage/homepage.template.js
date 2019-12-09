@@ -1,12 +1,11 @@
-import { arrayOf, bool }                        from 'prop-types';
-import React                                    from 'react';
-import ReactMarkdown                            from 'react-markdown';
-import Image, { ImageSrcPropType }              from '../../page-layout/image/image.component';
+import { arrayOf, bool } from 'prop-types';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
-import Postit                                   from '../../page-components/postit/postit.component';
-import IntroductionComponent
-                                                from '../../page-layout/introduction/introduction.component'
-import styles                                   from './homepage.module.scss';
+import Postit from '../../page-components/postit/postit.component';
+import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import styles from './homepage.module.scss';
 
 // const homepagePropTypes = {
 //     page: [],
@@ -20,7 +19,6 @@ export default HomepageTemplate;
 // };
 
 function HomepageTemplate({ introduction, sections }) {
-
     return (
         <>
             {introduction && <IntroductionComponent introduction={introduction} />}

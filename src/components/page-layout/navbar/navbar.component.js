@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import AppContainer         from '../../../containers/app.container'
-import Menu                 from './menu/menu.component';
-import { navbarPropTypes }  from './navbar.prop-type';
 import withUnstated from '@airship/with-unstated';
+import AppContainer from '../../../containers/app.container';
+import Menu from './menu/menu.component';
+import { navbarPropTypes } from './navbar.prop-type';
 
 class Navbar extends Component {
     static propTypes = navbarPropTypes;
@@ -12,13 +12,12 @@ class Navbar extends Component {
     };
 
     menuClick() {
-
         const { appContainer } = this.props;
         const { setMenuIsOpen, state } = appContainer;
         const { menuIsOpen } = state;
 
         setMenuIsOpen(!menuIsOpen);
-    };
+    }
 
     render() {
         const { appContainer } = this.props;

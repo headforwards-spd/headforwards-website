@@ -1,10 +1,10 @@
-import { graphql, useStaticQuery } from 'gatsby'
-import React                       from 'react';
-import { arrayOf, shape, string }  from 'prop-types';
-import ReactMarkdown               from 'react-markdown'
-import Image                       from '../../page-layout/image/image.component';
-import Link                        from '../../page-layout/link/link.component';
-import styles                      from './index-page.module.scss';
+import { graphql, useStaticQuery } from 'gatsby';
+import React from 'react';
+import { arrayOf, shape, string } from 'prop-types';
+import ReactMarkdown from 'react-markdown';
+import Image from '../../page-layout/image/image.component';
+import Link from '../../page-layout/link/link.component';
+import styles from './index-page.module.scss';
 
 const PageLinkPropTypes = {
     link: string,
@@ -33,7 +33,7 @@ function PageLink({ link, linkText, page }) {
 
     const { logo, arrow } = useStaticQuery(graphql`
         query {
-            logo: file(name: {eq: "icon.white"}) {
+            logo: file(name: { eq: "icon.white" }) {
                 childImageSharp {
                     fluid(maxWidth: 100, maxHeight: 100, quality: 100) {
                         ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -49,10 +49,12 @@ function PageLink({ link, linkText, page }) {
                 <h1>{linkText}</h1>
                 <section>
                     {image && <Image image={image} alt={linkText} />}
-                    {image && text && <section className={styles.introduction}>
-                        <Image image={logo} alt={linkText} className={styles.logo}/>
-                        <ReactMarkdown source={truncate(text)} />
-                    </section>}
+                    {image && text && (
+                        <section className={styles.introduction}>
+                            <Image image={logo} alt={linkText} className={styles.logo} />
+                            <ReactMarkdown source={truncate(text)} />
+                        </section>
+                    )}
                 </section>
             </article>
         </Link>
@@ -60,7 +62,6 @@ function PageLink({ link, linkText, page }) {
 }
 
 function truncate(string, maxLength = 150) {
-
     const truncate1 = string.substr(0, maxLength);
     const truncate2 = truncate1.substr(0, Math.min(truncate1.length, truncate1.lastIndexOf(' ')));
 

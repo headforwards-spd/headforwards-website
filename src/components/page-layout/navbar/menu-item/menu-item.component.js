@@ -9,11 +9,10 @@ export default class MenuItem extends Component {
     static propTypes = menuItemPropTypes;
 
     constructor(props) {
-
         super(props);
 
-        const {link, location} = props;
-        const {pathname:path=''} = location || {};
+        const { link, location } = props;
+        const { pathname: path = '' } = location || {};
 
         const cleanLink = `/${link}/`.replace(/\/+/g, '/');
         const cleanPath = `/${path}/`.replace(/\/+/g, '/');

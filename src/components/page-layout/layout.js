@@ -1,39 +1,35 @@
-import { graphql, Link, useStaticQuery }                from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import { arrayOf, instanceOf, node, oneOfType, string } from 'prop-types';
-import React                                            from 'react';
-import Helmet                               from 'react-helmet';
-import { Provider }                         from 'unstated';
+import React from 'react';
+import Helmet from 'react-helmet';
+import { Provider } from 'unstated';
 import withUnstated from '@airship/with-unstated';
-import AppContainer
-                                            from '../../containers/app.container'
-import { ImageSrcPropType }                 from './image/image.component';
-import Header                               from './header/header.component';
-import Footer                               from './footer/footer.component';
+import AppContainer from '../../containers/app.container';
+import { ImageSrcPropType } from './image/image.component';
+import Header from './header/header.component';
+import Footer from './footer/footer.component';
 import '../../scss/main.scss';
-import Seo, { SeoPropType }                 from './seo';
+import Seo, { SeoPropType } from './seo';
 
 export default Layout;
 
-const UnstatedHelmet = withUnstated(({appContainer}) => {
+const UnstatedHelmet = withUnstated(
+    ({ appContainer }) => {
+        const { menuIsOpen } = appContainer.state;
+        const bodyAttributes = {
+            class: menuIsOpen ? 'menuIsOpen' : '',
+        };
 
-    const { menuIsOpen } = appContainer.state;
-    const bodyAttributes = {
-        class: menuIsOpen ? 'menuIsOpen' : '',
-    };
-
-    return <Helmet bodyAttributes={bodyAttributes}>
-        <link rel="preload"
-              href="/fonts/FSAlbertWeb/Bold.woff2"
-              as="font"/>
-        <link rel="preload"
-              href="/fonts/FSAlbertWeb/Regular.woff2"
-              as="font"/>
-        <link rel="preload"
-              href="/fonts/FSAlbertWeb/Italic.woff2"
-              as="font"/>
-    </Helmet>;
-
-}, {appContainer: AppContainer});
+        return (
+            <Helmet bodyAttributes={bodyAttributes}>
+                <link rel="preload" href="/fonts/FSAlbertWeb/Bold.woff2" as="font" />
+                <link rel="preload" href="/fonts/FSAlbertWeb/Regular.woff2" as="font" />
+                <link rel="preload" href="/fonts/FSAlbertWeb/Italic.woff2" as="font" />
+            </Helmet>
+        );
+    },
+    { appContainer: AppContainer }
+);
 
 Layout.propTypes = {
     appContainer: instanceOf(AppContainer).isRequired,
@@ -110,5 +106,3 @@ function Layout({ seo, title, text, image, children, callToAction: pageCallToAct
         </Provider>
     );
 }
-
-
