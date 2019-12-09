@@ -14,7 +14,7 @@ const gatsbyPluginOffline = require('./gatsby/gatsby-plugin-offline');
 
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://headforwards-website.netlify.com`,
+        siteUrl: `https://headforwards-website2.netlify.com`,
     },
     plugins: [
         'gatsby-plugin-react-helmet',
