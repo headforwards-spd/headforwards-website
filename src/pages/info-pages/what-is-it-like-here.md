@@ -4,8 +4,14 @@ parent: who-we-are
 type: info-page
 title: What is it like here?
 image: /uploads/delete 9.jpg
-introduction:
-  - text: >-
+introduction: []
+components:
+  - isPostit: false
+    isRightImage: false
+    isTwoColumns: true
+    type: image-copy-component
+    title: Where it all starts
+    text: >-
       Headforwards’ success comes from its strong relationships within teams,
       collaborative nature with clients, and effective communication throughout
       projects.
@@ -19,7 +25,6 @@ introduction:
       With regular catchups and strategy meetings, strong relationships between
       clients and teams grow fast, and communication is made easy throughout the
       entire project.
-components:
   - jobTitle: Business Analyst
     name: Katherine Moore
     quote: >-
@@ -29,15 +34,42 @@ components:
     type: quote-component
   - isPostit: false
     isRightImage: false
+    isTwoColumns: true
+    type: image-copy-component
+    title: The day-to-day process
+    text: >-
+      The weekly structure at Headforwards helps keep everyone on track. Every
+      day starts with a team stand-up; a chance to figure out any issues,
+      discuss what’s been completed and work out what’s going to happen in the
+      day ahead.
+
+
+      To touch base with clients, team members have regular catchups throughout
+      the week, and weekly strategy meetings present a chance to discuss
+      progress with the entire team.
+  - quote: >-
+      We’re always trying to keep the client up-to-date. Our weekly strategy
+      meetings are a good opportunity to reprioritise tasks, update the client
+      on our progress, or demo new software; overall, communication is key to a
+      successful project.
+    type: quote-component
+  - isPostit: false
+    isRightImage: false
     isTwoColumns: false
     type: image-copy-component
     title: The Headforwards structure
-    text: "Headforwards lack of hierarchy means teams are empowered to self-organise, play to each other’s strengths, and collaborate effectively—and clients see massive value from this.\r\n\nEvery team is built to create the perfect balance of skills, and individuals are encouraged to focus on what they do best, which means the client gets the most out of every person assigned to their project."
-  - quote: >-
-      Unlike previous places I’ve worked in, there’s no hierarchy at
-      Headforwards. Everybody’s opinion is listened to no matter what their role
-      is – and it helps us produce great work.
-    type: quote-component
+    text: >-
+      Headforwards lack of hierarchy means teams are empowered to self-organise,
+      play to each other’s strengths, and collaborate effectively—and clients
+      see massive value from this.
+
+
+      Every team is built to create the perfect balance of skills, and
+      individuals are encouraged to focus on what they do best, which means the
+      client gets the most out of every person assigned to their project.
+  - imageOne: /uploads/delete 11.jpg
+    imageTwo: /uploads/gash-9.jpg
+    type: images-component
 callToAction: Want to learn more about what it’s like to work with Headforwards?
 ---
 
