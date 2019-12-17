@@ -30,9 +30,12 @@ components:
       got to look for a new competitive advantage in their software and that’s
       always what we aim to deliver.
     type: quote-component
+  - imageOne: /uploads/delete 12.jpg
+    imageTwo: /uploads/delete 3.jpg
+    type: images-component
   - isPostit: false
-    isRightImage: true
-    isTwoColumns: false
+    isRightImage: false
+    isTwoColumns: true
     type: image-copy-component
     title: 'We believe in being Agile, we believe in empowering teams'
     text: >-
@@ -44,10 +47,7 @@ components:
 
       When team members feel empowered and engaged, they work to their full
       potential, and it shows in the quality of the software they deliver.
-    image: /uploads/delete 3.jpg
-  - imageOne: /uploads/delete 12.jpg
-    imageTwo: /uploads/delete 3.jpg
-    type: images-component
+    image: ''
   - quote: >-
       We believe the team is greater than the sum of its parts. We want to
       empower everybody who works for us and maximise their contribution – and
