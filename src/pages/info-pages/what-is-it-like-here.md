@@ -32,6 +32,9 @@ components:
       easier. Our developers feel confident approaching the client with issues,
       and the client isn’t afraid to tell us if we’re going down the wrong path.
     type: quote-component
+  - imageOne: /uploads/blog.png
+    imageTwo: /uploads/delete 11.jpg
+    type: images-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: true
