@@ -24,11 +24,6 @@ components:
       knowledge to the table. In my role as a Scrum Master, I work with
       influence and competency, rather than authority and seniority.
     type: quote-component
-  - quote: >-
-      One of the first things I tell clients when we bring them on board is:
-      ‘when we deploy through our systems, you’ll see when it succeeds, but
-      you’ll also see when it fails.’ That’s how open it is.
-    type: quote-component
   - isPostit: false
     isRightImage: true
     isTwoColumns: false
