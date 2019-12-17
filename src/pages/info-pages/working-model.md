@@ -8,7 +8,7 @@ image: /uploads/delete 11.jpg
 components:
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: A new approach to software outsourcing
     text: >-
@@ -42,8 +42,8 @@ components:
       Companies can choose to engage Headforwards in one of two ways: as a
       long-term partner or for a short-term project.
     image: /uploads/lightning-doodle.png
-  - isPostit: false
-    isRightImage: false
+  - isPostit: true
+    isRightImage: true
     isTwoColumns: false
     type: image-copy-component
     title: Long-term partnership
@@ -56,13 +56,9 @@ components:
       For this kind of engagement, Headforwards works with the client to recruit
       the team, so everyone is confident the right people are on board, and a
       strong bond forms from the start.
-  - quote: >-
-      As a team gets to know each other and the client, they become increasingly
-      productive. We have very high staff retention, so each team just keeps
-      getting better over time.
-    type: quote-component
+    image: /uploads/paper-airplane-doodle.png
   - isPostit: true
-    isRightImage: true
+    isRightImage: false
     isTwoColumns: false
     type: image-copy-component
     title: 'Short-term project '
