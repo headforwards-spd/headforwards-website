@@ -3,15 +3,20 @@ uuid: 45d05450-103a-11ea-9ef0-bd54961b4e30
 parent: what-we-do
 type: info-page
 title: People over process
-text:
-image:
 components:
   - isPostit: false
     isRightImage: false
-    isTwoColumns: true
+    isTwoColumns: false
     type: image-copy-component
-    title: Power to the people
+    title: ''
     text: "People make or break a project, so getting the right people – and helping them to be the best they can be – is an essential part of us doing great work for our clients. \n\nUnlike many software developers, Headforwards is people-centric rather than process-orientated, placing a strong focus on finding the right people and helping them develop their skills. \r\n\nThe result is an environment that rewards creative, independent thinking, and Headforwards’ clients recognise the benefits this approach can bring to their projects."
+  - isPostit: false
+    isRightImage: false
+    isTwoColumns: false
+    type: image-copy-component
+    title: 'Building open, honest relationships '
+    text: "Openness and honesty are the basis for all client work at Headforwards. Right from the off, both Headforwards teams and clients are included on instant messaging channels and deployment systems. \n\n\rThis creates complete transparency – so clients not only see what work is being done, they can react to it immediately with their thoughts and feedback."
+    image: /uploads/blog.png
   - jobTitle: Scrum Master
     name: Andy Roberts
     quote: >-
@@ -19,24 +24,18 @@ components:
       knowledge to the table. In my role as a Scrum Master, I work with
       influence and competency, rather than authority and seniority.
     type: quote-component
-  - isPostit: true
-    isRightImage: false
-    isTwoColumns: false
-    type: image-copy-component
-    title: 'Building open, honest relationships '
-    text: "Openness and honesty are the basis for all client work at Headforwards. Right from the off, both Headforwards teams and clients are included on instant messaging channels and deployment systems. \n\n\rThis creates complete transparency – so clients not only see what work is being done, they can react to it immediately with their thoughts and feedback."
-    image: /uploads/paper-airplane-doodle.png
   - quote: >-
       One of the first things I tell clients when we bring them on board is:
       ‘when we deploy through our systems, you’ll see when it succeeds, but
       you’ll also see when it fails.’ That’s how open it is.
     type: quote-component
   - isPostit: false
-    isRightImage: false
-    isTwoColumns: true
+    isRightImage: true
+    isTwoColumns: false
     type: image-copy-component
     title: The right team for every job
     text: "Headforwards builds its teams based on each job’s specific needs. That’s why an initial workshop with the client at the start of the relationship is key. \r\n\nIt’s an opportunity for clients to establish their exact requirements, so the team at Headforwards can estimate the project’s scope, and even make a start the very same day."
+    image: /uploads/delete 10.jpg
   - quote: >-
       Our people are so much more than developers. Yes, they design and build,
       but they also test, deploy, and provide on-going support. It means they’re
