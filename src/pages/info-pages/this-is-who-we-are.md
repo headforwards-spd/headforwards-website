@@ -7,7 +7,7 @@ image: /uploads/delete-11.jpg
 components:
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: We believe in creating value
     text: >-
@@ -31,7 +31,7 @@ components:
       always what we aim to deliver.
     type: quote-component
   - isPostit: false
-    isRightImage: false
+    isRightImage: true
     isTwoColumns: false
     type: image-copy-component
     title: 'We believe in being Agile, we believe in empowering teams'
