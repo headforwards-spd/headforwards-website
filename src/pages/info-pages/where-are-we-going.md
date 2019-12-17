@@ -33,7 +33,7 @@ components:
     type: quote-component
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: 'A core values-led strategy '
     text: "Headforwards has several strategic objectives for growth, powered by its core principles and its approach to client service. \r\n\nThe company truly believes that a relentless focus on the careers and wellbeing of its people – and a desire to continually improve the way it works – will help it grow, and keep existing clients coming back for more."
@@ -46,7 +46,7 @@ components:
     type: quote-component
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: Turning heads with great work
     text: >-
