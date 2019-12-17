@@ -10,7 +10,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: We look for clients we are excited to work with
+    title: We look for clients who are a good fit
     text: >-
       Whatever the size of your business, Headforwards focuses on building
       long-term partnerships with clients willing to take an Agile approach to
