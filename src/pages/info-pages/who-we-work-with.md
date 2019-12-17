@@ -32,31 +32,12 @@ components:
       us long-term. Our collaborative nature at Headforwards means long-term
       clients grow with us, and it creates a strong partnership moving forward.
     type: quote-component
-  - isPostit: false
-    isRightImage: false
-    isTwoColumns: false
-    type: image-copy-component
-    title: Partnerships built on trust
-    text: >-
-      Headforwards teams produce their best work when trusted to self-organise
-      and approach each project in their own way.
-
-
-      Working closely with the client throughout the process, the best
-      partnerships rely on each other’s expertise to develop software uniquely
-      suited to the client’s requirements.
-  - quote: >-
-      One of the biggest challenges in software development is problem solving,
-      and our teams have unique ways of approaching it. When partnerships have a
-      strong foundation of trust and communication, the challenge becomes much
-      easier to overcome.
-    type: quote-component
   - imageOne: /uploads/gash-1.jpg
     imageTwo: /uploads/delete 7.jpg
     type: images-component
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: Agile mentality
     text: >-
@@ -67,6 +48,25 @@ components:
       When both client and teams take a flexible approach to projects, they can
       easily collaborate to tackle issues and changes in direction, avoiding the
       challenges associated with waterfall-style project cycles.
+  - quote: >-
+      One of the biggest challenges in software development is problem solving,
+      and our teams have unique ways of approaching it. When partnerships have a
+      strong foundation of trust and communication, the challenge becomes much
+      easier to overcome.
+    type: quote-component
+  - isPostit: false
+    isRightImage: false
+    isTwoColumns: true
+    type: image-copy-component
+    title: Partnerships built on trust
+    text: >-
+      Headforwards teams produce their best work when trusted to self-organise
+      and approach each project in their own way.
+
+
+      Working closely with the client throughout the process, the best
+      partnerships rely on each other’s expertise to develop software uniquely
+      suited to the client’s requirements.
   - quote: >-
       Our Agile approach to software development means we’re not well suited to
       companies that insist on traditional processes – but those willing to
