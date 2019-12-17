@@ -53,9 +53,12 @@ components:
       on our progress, or demo new software; overall, communication is key to a
       successful project.
     type: quote-component
+  - imageOne: /uploads/delete 11.jpg
+    imageTwo: /uploads/gash-9.jpg
+    type: images-component
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: The Headforwards structure
     text: >-
@@ -67,9 +70,6 @@ components:
       Every team is built to create the perfect balance of skills, and
       individuals are encouraged to focus on what they do best, which means the
       client gets the most out of every person assigned to their project.
-  - imageOne: /uploads/delete 11.jpg
-    imageTwo: /uploads/gash-9.jpg
-    type: images-component
 callToAction: Want to learn more about what it’s like to work with Headforwards?
 ---
 
