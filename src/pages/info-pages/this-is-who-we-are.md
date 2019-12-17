@@ -12,18 +12,21 @@ components:
     type: image-copy-component
     title: We believe in creating value
     text: >-
-      Headforwards believes clients get the greatest business value when Agile
-      development teams are empowered to make their own decisions.
+      Headforwards believes clients get the greatest business value from
+      software outsourcing when development teams are empowered to make their
+      own decisions; when they follow an Agile methodology.
 
 
-      Clients look to Headforwards to develop software that creates value. In a
-      rapidly changing business environment, what constitutes value might change
-      from one week to the next.
+      Our clients look to us to develop software that creates value but, in a
+      rapidly changing business environment, what constitutes that value might
+      change from one week to the next.
 
 
-      Software can only deliver business value if development teams can adapt to
-      changing client needs. For Headforwards, that comes from being Agile in
-      the way they work with clients.
+      Software can only continue to deliver business value if the development
+      teams can adapt quickly and smoothly to changing client needs. A client
+      relationship based on trust, transparency and collaboration combined with
+      Agile working practices allows Headforwards to be able to respond to
+      changes in a constructive way.
   - jobTitle: cofounder & director
     name: Craig Girvan
     quote: >-
