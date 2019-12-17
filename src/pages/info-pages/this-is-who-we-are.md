@@ -7,7 +7,7 @@ image: /uploads/delete-11.jpg
 components:
   - isPostit: false
     isRightImage: false
-    isTwoColumns: true
+    isTwoColumns: false
     type: image-copy-component
     title: We believe in creating value
     text: >-
@@ -18,6 +18,11 @@ components:
       Clients look to Headforwards to develop software that creates value. In a
       rapidly changing business environment, what constitutes value might change
       from one week to the next.
+
+
+      Software can only deliver business value if development teams can adapt to
+      changing client needs. For Headforwards, that comes from being Agile in
+      the way they work with clients.
   - jobTitle: cofounder & director
     name: Craig Girvan
     quote: >-
@@ -26,16 +31,11 @@ components:
       always what we aim to deliver.
     type: quote-component
   - isPostit: false
-    isRightImage: true
+    isRightImage: false
     isTwoColumns: false
     type: image-copy-component
     title: 'We believe in being Agile, we believe in empowering teams'
     text: >-
-      Software can only deliver business value if development teams can adapt to
-      changing client needs. For Headforwards, that comes from being Agile in
-      the way they work with clients.
-
-
       The Agile Manifesto says quality software emerges from self-organising
       teams. That’s why there’s no management layer at Headforwards. Instead,
       decision-making responsibility lies with the team working on each client
