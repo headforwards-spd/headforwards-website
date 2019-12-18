@@ -19,7 +19,7 @@ function Homepage({ data }) {
     const { frontmatter } = page;
     const { introduction, sections, ...layoutProps } = frontmatter;
     return (
-        <Layout {...layoutProps}>
+        <Layout {...{...layoutProps, isHomePage:true}}>
             <HomepageTemplate {...{ introduction, sections }} />
         </Layout>
     );

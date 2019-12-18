@@ -15,15 +15,16 @@
 
         h1 {
             @include headingFontMedium;
+            margin-bottom: 0;
             font-weight: normal;
             @media (min-width: $screen-lg) {
-                @include headingFontXLarge;
+                @include headingFontLarge;
+                margin-bottom: 0;
                 font-weight: bold;
             }
 
             padding-top: 2em;
             padding-bottom: 2em;
-            //line-height: 1.5;
             color: white;
             margin-bottom: 0;
 

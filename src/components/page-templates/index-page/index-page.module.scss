@@ -18,6 +18,10 @@
 }
 .pages {
     @include columns-component;
+    margin-top: 0;
+    @media(min-width: $screen-lg) {
+        margin-top: 0;
+    }
     justify-content: flex-start;
 
     > a {

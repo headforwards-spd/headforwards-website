@@ -214,6 +214,7 @@
         transition: unset;
 
         @include flexRow;
+        margin-bottom: 0;
         align-items: stretch;
         flex-wrap: nowrap;
         border-bottom: none;
@@ -261,7 +262,7 @@
                 > li {
                     position: relative;
                     border: none;
-                    padding: $gutter-small/2 $gutter-medium/2;
+                    padding: 0 $gutter-medium/2;
 
                     &:last-child {
                         border: none;

@@ -23,7 +23,7 @@ function Hero({ title, text, isTwoColumns, className }) {
     const columnsClass = isTwoColumns ? styles.isTwoColumns : '';
     return (
         <section className={`${styles.hero} ${columnsClass} ${className}}`}>
-            <h1>{title}</h1>
+            {title && <h1>{title}</h1>}
             <section>
                 <ReactMarkdown source={text} />
             </section>
