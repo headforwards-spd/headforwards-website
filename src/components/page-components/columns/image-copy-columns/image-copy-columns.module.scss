@@ -11,7 +11,7 @@
         @include copy;
 
         @media (min-width: $screen-lg) {
-            width: calc(62.5% - #{$gutter-medium});
+            width: calc(50% - #{$gutter-medium});
             margin-bottom: $gutter-medium/2;
         }
     }
@@ -60,8 +60,8 @@
         }
 
         .postit {
-            width: calc(37.5% - #{$gutter-medium});
-            padding-bottom: calc(37.5% - #{$gutter-medium});
+            width: calc(50% - #{$gutter-medium});
+            padding-bottom: calc(50% - #{$gutter-medium});
             margin: $gutter-medium/2;
         }
     }
