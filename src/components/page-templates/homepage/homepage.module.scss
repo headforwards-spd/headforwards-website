@@ -26,15 +26,20 @@
             h1 {
                 @include headingFontLarge;
             }
+
+            :last-child {
+                margin-bottom: 0;
+            }
+
+            margin-bottom: $gutter-medium;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         blockquote {
-            //padding-left: 1rem;
             p {
                 @include fontLarge;
-                @media (min-width: $screen-lg) {
-                    padding: 0;
-                }
                 margin-bottom: 0;
 
                 &:before,
@@ -55,11 +60,9 @@
             footer {
                 h1 {
                     @include headingFontSmall;
+                    margin-bottom: 0;
                 }
                 @include fontSmall;
-                margin-left: calc(-2rem - #{$column-gutter}/2);
-                padding-left: calc(#{$column-gutter}/2 + 2rem);
-                background-color: white;
                 margin-top: 1rem;
             }
         }
@@ -71,6 +74,19 @@
             @media(min-width: $screen-lg) {
                 flex-direction: row-reverse;
             }
+        }
+
+        .image {
+            @media(min-width: $screen-lg) {
+                align-self: stretch;
+                > div {
+                    display: none;
+                }
+            }
+        }
+
+        .components {
+            padding: $gutter-medium 0;
         }
 
         .image, .postit {
