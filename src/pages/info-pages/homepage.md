@@ -2,6 +2,7 @@
 uuid: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
 type: home-page
 title: Forward thinking software
+text: ''
 image: /uploads/curlyhair.png
 introduction:
   - title: >-

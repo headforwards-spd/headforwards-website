@@ -30,6 +30,7 @@ export const query = graphql`
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
+                text
                 image {
                     publicURL
                     childImageSharp {
