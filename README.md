@@ -1,4 +1,6 @@
- # Project File Structure
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e724db27-83ca-4ed8-9ba1-dda675ffa17f/deploy-status)](https://app.netlify.com/sites/headforwards-website2/deploys)
+
+# Project File Structure
 
 ## [Storybook Config](https://storybook.js.org/docs/basics/introduction/)
 
