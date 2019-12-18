@@ -1,25 +1,38 @@
 import { graphql } from 'gatsby';
+import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 import HomepageTemplate from '../components/page-templates/homepage/homepage.template';
 import Layout from '../components/page-layout/layout';
 
-// const homepagePropTypes = {
-//     data: [],
-// };
+const homepagePropTypes = {
+    data: shape({
+        page: shape({
+            frontmatter: shape({
+                introduction: shape({
+                    title: string,
+                    text: string,
+                }),
+                sections: arrayOf(
+                    shape({
+                        title: string,
+                        text: string.isRequired,
+                    })
+                ),
+            }),
+        }),
+    }).isRequired,
+};
 
 export default Homepage;
 
-// Homepage.propTypes = homepagePropTypes;
-// Homepage.defaultProps = {
-//     data: [],
-// };
+Homepage.propTypes = homepagePropTypes;
 
 function Homepage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
     const { introduction, sections, ...layoutProps } = frontmatter;
     return (
-        <Layout {...{...layoutProps, isHomePage:true}}>
+        <Layout {...{ ...layoutProps, isHomePage: true }}>
             <HomepageTemplate {...{ introduction, sections }} />
         </Layout>
     );

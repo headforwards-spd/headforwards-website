@@ -1,21 +1,31 @@
-import { string } from 'prop-types';
+import { shape, arrayOf, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styles from './legal-page.module.scss';
 
-// const legalPagePropTypes = {
-//     introduction: string,
-//     privacyData: {},
-// };
+const legalPageSectionPropTypes = {
+    title: string,
+    text: string.isRequired,
+};
+
+const legalPagePropTypes = {
+    introduction: string,
+    sections: arrayOf(
+        shape({
+            id: string.isRequired,
+            ...legalPageSectionPropTypes,
+        })
+    ),
+};
 
 export default LegalPageTemplate;
 
-// LegalPageTemplate.propTypes = legalPagePropTypes;
-//
-// LegalPageTemplate.defaultProps = {
-//     introduction: null,
-//     privacyData: {},
-// };
+LegalPageTemplate.propTypes = legalPagePropTypes;
+
+LegalPageTemplate.defaultProps = {
+    introduction: null,
+    sections: [],
+};
 
 function LegalPageTemplate({ introduction, sections }) {
     const [{ title, text } = {}] = introduction || [];
@@ -23,12 +33,23 @@ function LegalPageTemplate({ introduction, sections }) {
         <section className={styles.sections}>
             {title && <h1>{title}</h1>}
             {text && <ReactMarkdown source={text} />}
-            {sections.map(({ id, title, text }) => (
-                <section key={id}>
-                    {title && <h1>{title}</h1>}
-                    <ReactMarkdown source={text} />
-                </section>
+            {sections.map(({ id, ...section }) => (
+                <LegalPageSection key={id} {...section} />
             ))}
+        </section>
+    );
+}
+
+LegalPageSection.propTypes = legalPageSectionPropTypes;
+LegalPageSection.defaultProps = {
+    title: null,
+};
+
+function LegalPageSection({ title, text }) {
+    return (
+        <section>
+            {title && <h1>{title}</h1>}
+            <ReactMarkdown source={text} />
         </section>
     );
 }

@@ -31,7 +31,7 @@ function PageLink({ link, linkText, page }) {
     const { introduction, image } = frontmatter || {};
     const [{ text } = {}] = introduction || [];
 
-    const { logo, arrow } = useStaticQuery(graphql`
+    const { logo } = useStaticQuery(graphql`
         query {
             logo: file(name: { eq: "icon.white" }) {
                 childImageSharp {
@@ -61,9 +61,9 @@ function PageLink({ link, linkText, page }) {
     );
 }
 
-function truncate(string, maxLength = 150) {
-    const truncate1 = string.substr(0, maxLength);
+function truncate(text, maxLength = 150) {
+    const truncate1 = text.substr(0, maxLength);
     const truncate2 = truncate1.substr(0, Math.min(truncate1.length, truncate1.lastIndexOf(' ')));
 
-    return truncate2 === string ? string : `${truncate2}\u2026`;
+    return truncate2 === text ? text : `${truncate2}\u2026`;
 }

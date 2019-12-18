@@ -1,9 +1,9 @@
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
-import React                                from 'react';
-import { Provider }                         from 'unstated'
-import generateImage                        from '../../../lib/generate-image';
-import generateMenu                         from '../../../lib/generate-menu';
-import Header                               from './header.component';
+import React from 'react';
+import { Provider } from 'unstated';
+import generateImage from '../../../lib/generate-image';
+import generateMenu from '../../../lib/generate-menu';
+import Header from './header.component';
 
 const faker = require('faker');
 
@@ -38,7 +38,11 @@ export const Title = () => {
             youtubeURL: faker.internet.url(),
         },
     };
-    return <Provider><Header {...props} /></Provider>;
+    return (
+        <Provider>
+            <Header {...props} />
+        </Provider>
+    );
 };
 
 export const TitleAndSubTitle = () => {
@@ -55,7 +59,11 @@ export const TitleAndSubTitle = () => {
             youtubeURL: faker.internet.url(),
         },
     };
-    return <Provider><Header {...props} /></Provider>;
+    return (
+        <Provider>
+            <Header {...props} />
+        </Provider>
+    );
 };
 
 export const ImageWithTitle = () => {
@@ -72,7 +80,11 @@ export const ImageWithTitle = () => {
             youtubeURL: faker.internet.url(),
         },
     };
-    return <Provider><Header {...props} /></Provider>;
+    return (
+        <Provider>
+            <Header {...props} />
+        </Provider>
+    );
 };
 
 export const ImageWithTitleAndSubTitle = () => {
@@ -89,7 +101,11 @@ export const ImageWithTitleAndSubTitle = () => {
             youtubeURL: faker.internet.url(),
         },
     };
-    return <Provider><Header {...props} /></Provider>;
+    return (
+        <Provider>
+            <Header {...props} />
+        </Provider>
+    );
 };
 
 export const interactive = () => {
@@ -108,5 +124,9 @@ export const interactive = () => {
             youtubeURL: text('YouTube URL', faker.internet.url(), 'Company Info'),
         },
     };
-    return <Provider><Header {...props} /></Provider>;
+    return (
+        <Provider>
+            <Header {...props} />
+        </Provider>
+    );
 };

@@ -22,11 +22,7 @@ LegalPage.propTypes = {
                 ),
             }),
         }),
-    }),
-};
-LegalPage.defaultProps = {
-    introduction: null,
-    sections: [],
+    }).isRequired,
 };
 
 function LegalPage({ data }) {

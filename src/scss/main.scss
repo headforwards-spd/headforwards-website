@@ -88,11 +88,14 @@ body {
         @include headingFontSmall;
     }
 
-    p, time {
+    p, time, li {
         margin: 0;
         @include fontMedium;
         color: $paragraph_grey;
-        font-weight: lighter;
+        font-weight: normal;
+    }
+    li {
+        margin-bottom: 0;
     }
 
     a {
@@ -115,5 +118,8 @@ body {
         > * {
             margin: $column-gutter/2;
         }
+    }
+    strong {
+        font-weight: bold;
     }
 }

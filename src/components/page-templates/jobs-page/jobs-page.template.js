@@ -9,28 +9,45 @@ import styles from './jobs-page.module.scss';
 
 export default JobsPageTemplate;
 
-JobsPageTemplate.propTypes = {
+const jobRolePropTypes = {
+    title: string.isRequired,
+    link: string.isRequired,
+    page: shape({
+        frontmatter: shape({
+            introduction: shape({
+                text: string,
+            }),
+        }),
+    }).isRequired,
+};
+const jobsPageTemplatePropTypes = {
     introduction: shape({
         title: string,
         text: string.isRequired,
     }),
+    jobRoles: arrayOf(shape(jobRolePropTypes)),
     components: arrayOf(PageComponentPropType),
 };
 
+JobsPageTemplate.propTypes = jobsPageTemplatePropTypes;
+
 JobsPageTemplate.defaultProps = {
     introduction: null,
+    jobRoles: null,
     components: null,
 };
 
 function JobsPageTemplate({ introduction, jobRoles, components = [] }) {
     return (
         <>
-            <IntroductionComponent introduction={introduction} />
-            <section className={styles.jobRoles}>
-                {jobRoles.map(jobRole => (
-                    <JobRole {...jobRole} />
-                ))}
-            </section>
+            <IntroductionComponent {...introduction} />
+            {jobRoles && (
+                <section className={styles.jobRoles}>
+                    {jobRoles.map(jobRole => (
+                        <JobRole {...jobRole} />
+                    ))}
+                </section>
+            )}
             {components && (
                 <section className={styles.components}>
                     {!!components &&
@@ -40,6 +57,8 @@ function JobsPageTemplate({ introduction, jobRoles, components = [] }) {
         </>
     );
 }
+
+JobRole.propTypes = jobRolePropTypes;
 
 function JobRole({ title, link, page }) {
     const { frontmatter } = page || {};
