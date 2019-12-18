@@ -6,9 +6,9 @@ title: Create effective teams
 components:
   - isPostit: false
     isRightImage: false
-    isTwoColumns: true
+    isTwoColumns: false
     type: image-copy-component
-    title: A dedicated team for every client
+    title: ''
     text: "Headforwards is different from other software outsource companies – and a big part of that difference is the company’s approach to resourcing projects. \r\n\nAt Headforwards, each client has a dedicated team, hand-picked to meet the client’s specific needs, and in place for the long term. To ensure a great cultural fit and a great start to the relationship, clients are involved at every step of the team recruitment process.\r\n\nClose collaboration means clients and the team get to know each other better every day, resulting in a strong partnership, the opportunity to share skills and knowledge, and a high quality of delivered software."
   - jobTitle: Client Account Manager
     name: Dave Longman
@@ -17,20 +17,20 @@ components:
       relationships with each other – it makes the challenges easier to
       overcome, and the successes even bigger.
     type: quote-component
-  - isPostit: true
+  - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: 'High-performing teams, high-quality software'
     text: >-
-      There can be a lot of difficult conversations during software development
-      – which route to go down, which technique to use, or even which skills are
+      There can be a lot of difficult conversations during software development;
+      which route to go down, which technique to use, or even which skills are
       needed on the team.
 
 
       But when there’s a strong bond between the individual team members and the
       client, finding the right solution becomes easier.
-    image: /uploads/smiley-face-doodle.png
+    image: ''
   - quote: >-
       It’s important everyone is trusted equally in our teams. The right mix of
       experiences and skills can generate some really exciting ideas and it
@@ -45,11 +45,6 @@ components:
   - imageOne: /uploads/delete 8.jpg
     imageTwo: /uploads/gash-3.jpg
     type: images-component
-  - quote: >-
-      Working together is essential for team success at Headforwards. That’s why
-      we encourage focusing on pair programming and mobbing – not only does it
-      grow relationships, but also develops our skillsets at the same time.
-    type: quote-component
 callToAction: Want to learn more about our team creation process?
 ---
 

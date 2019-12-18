@@ -3,6 +3,7 @@ uuid: 3c96d190-0fac-11ea-843f-932c76de5936
 parent: how-we-work
 type: info-page
 title: Mobbing
+image: /uploads/gash-6.jpg
 components:
   - type: image-copy-component
     title: The power of the mob

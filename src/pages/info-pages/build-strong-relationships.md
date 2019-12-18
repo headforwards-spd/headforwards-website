@@ -7,12 +7,12 @@ components:
   - image: null
     isPostit: false
     isRightImage: false
-    isTwoColumns: true
+    isTwoColumns: false
     link:
       - link: d1956170-ec44-11e9-914c-c376cef31113
         linkText: Read more
     type: image-copy-component
-    title: Strong relationships matter
+    title: ''
     text: >
 
       Whether it’s within teams across the company, or with clients across the
@@ -41,11 +41,13 @@ components:
     isRightImage: false
     type: image-copy-component
     title: A team dynamic focused on equality and respect
-    text: >
+    text: >-
       From the moment someone joins Headforwards, they’re treated as a valued
       member of the team – creating the feeling that they can come to work, be
       listened to and respected, and make a genuine difference to the client’s
       business.
+
+
 
       With the freedom to collaborate and the openness to explore new ideas,
       Headforwards builds strong relationships within its teams and across the
@@ -60,19 +62,20 @@ components:
     isRightImage: true
     type: image-copy-component
     title: Client relationships that go further
-    text: >
+    text: >-
       Headforwards works closely with clients to do much more than deliver to
       requirements. It’s always focused on the bigger picture, drawing on its
       teams’ skills and experience to provide advice and add value wherever
       possible.
+
+
 
       Empowered to chase big ideas without constraints, teams at Headforwards
       frequently go beyond clients’ expectations – from overdelivering on
       projects to co-creating new products that generate true business value.
   - quote: >-
       We’re always looking towards the future with our client relationships.
-      We’re not afraid to take the ‘what if’ risks each day, and some of our
-      clients have seen huge results from this.
+      We’re not afraid to take the ‘what if’ risks each day. 
     type: quote-component
 ---
 

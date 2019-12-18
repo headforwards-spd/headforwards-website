@@ -2,7 +2,7 @@
 uuid: 4bc8aa80-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
-title: What is it like here?
+title: How we work
 image: /uploads/delete 9.jpg
 introduction: []
 components:
@@ -32,6 +32,9 @@ components:
       easier. Our developers feel confident approaching the client with issues,
       and the client isn’t afraid to tell us if we’re going down the wrong path.
     type: quote-component
+  - imageOne: /uploads/blog.png
+    imageTwo: /uploads/delete 11.jpg
+    type: images-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: true
@@ -53,9 +56,12 @@ components:
       on our progress, or demo new software; overall, communication is key to a
       successful project.
     type: quote-component
+  - imageOne: /uploads/delete 11.jpg
+    imageTwo: /uploads/gash-9.jpg
+    type: images-component
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: The Headforwards structure
     text: >-
@@ -67,9 +73,6 @@ components:
       Every team is built to create the perfect balance of skills, and
       individuals are encouraged to focus on what they do best, which means the
       client gets the most out of every person assigned to their project.
-  - imageOne: /uploads/delete 11.jpg
-    imageTwo: /uploads/gash-9.jpg
-    type: images-component
 callToAction: Want to learn more about what it’s like to work with Headforwards?
 ---
 
