@@ -143,6 +143,33 @@
         }
     }
 
+    position: relative;
+    @media screen and (min-width: $screen-lg) {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            width: calc(100% - #{2*$page-gutter-lg});
+            background: #D8D8D8;
+        }
+    }
+    @media screen and (min-width: $screen-xl) {
+        &:after {
+            width: calc(100% - #{2*$page-gutter-xl});
+        }
+    }
+    @media screen and (min-width: $screen-xxl) {
+        &:after {
+            width: calc(100% - #{2*$page-gutter-xxl});
+        }
+    }
+    @media screen and (min-width: $screen-xxxl) {
+        &:after {
+            width: calc(100% - #{2*$page-gutter-xxxl});
+        }
+    }
 
     &:global(.is-active) {
         position: fixed;
@@ -189,7 +216,7 @@
         @include flexRow;
         align-items: stretch;
         flex-wrap: nowrap;
-        border-bottom: 1px solid #D8D8D8;
+        border-bottom: none;
 
         &:global(.is-active) {
             background-color: unset;
