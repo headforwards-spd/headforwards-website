@@ -12,13 +12,13 @@ $margin-bottom: 1em;
 }
 
 @mixin headingFontXXXLarge {
-    @include fluid-type($mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$min_font);
+    @include fluid-type($mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$max_font);
     line-height: $heading-line-height;
     margin-bottom: $heading-margin-bottom;
 }
 
 @mixin headingFontXXLarge {
-    @include fluid-type($mod_1*$mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$min_font);
+    @include fluid-type($mod_1*$mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$max_font);
     line-height: $heading-line-height;
     margin-bottom: $heading-margin-bottom;
 }
@@ -31,7 +31,7 @@ $margin-bottom: 1em;
 }
 
 @mixin headingFontXLarge {
-    @include fluid-type($mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$min_font);
+    @include fluid-type($mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$max_font);
     line-height: $heading-line-height;
     margin-bottom: $heading-margin-bottom;
 }
@@ -44,7 +44,7 @@ $margin-bottom: 1em;
 }
 
 @mixin headingFontLarge {
-    @include fluid-type($mod_1*$mod_1*$min_font, $mod_2*$mod_2*$min_font);
+    @include fluid-type($mod_1*$mod_1*$min_font, $mod_2*$mod_2*$max_font);
     line-height: $heading-line-height;
     margin-bottom: $heading-margin-bottom;
 }
@@ -57,7 +57,7 @@ $margin-bottom: 1em;
 }
 
 @mixin headingFontMedium {
-    @include fluid-type($mod_1*$min_font, $mod_2*$min_font);
+    @include fluid-type($mod_1*$min_font, $mod_2*$max_font);
     line-height: $heading-line-height;
     margin-bottom: $heading-margin-bottom;
 }
