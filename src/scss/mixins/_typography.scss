@@ -1,9 +1,9 @@
 @import "../variables";
 @import './mixins';
 
-$heading-line-height: $mod_1;
+$heading-line-height: 1.1;
 $heading-margin-bottom: 0.6em;
-$line-height: $mod_2;
+$line-height: 1.4;
 $margin-bottom: 1em;
 
 @mixin orange-type {

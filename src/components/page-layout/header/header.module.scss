@@ -30,6 +30,9 @@
         h2 {
             color: black;
             @include headingFontXLarge;
+            @media(min-width: $screen-lg) {
+                width: $singleColumnMaxWidth;
+            }
         }
 
         > :last-child {
@@ -108,14 +111,11 @@
                 h1 {
                     color: white;
                     @include headingFontXXXLarge;
+                    margin-bottom: 0;
                 }
                 h2 {
                     @include orange-type;
-                    @include headingFontMedium;
-                }
-
-                :last-child {
-                    margin-bottom: 0;
+                    @include headingFontLarge;
                 }
 
                 &.hasSubTitle {
