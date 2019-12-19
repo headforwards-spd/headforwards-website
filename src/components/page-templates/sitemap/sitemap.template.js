@@ -14,20 +14,25 @@ function SitemapTemplate({ sitemap }) {
 function makeLinks(pathList) {
     const items = {};
 
-    pathList.forEach(({ path }) => {
+    pathList.forEach(({ path:_path }) => {
+        const path = _path.replace('../','/');
         const parts = path.split('/').filter(part => !!part);
         const [parent] = parts;
 
-        switch (true) {
-            case parts.length === 1:
+        const item = items[parent] || {};
+        let {children=[]} = item;
+
+        try {
+                (parts.length > 1) && (children = [...children, path]);
+
                 items[parent] = {
-                    path,
-                    children: [],
-                };
-                break;
-            case parts.length > 1:
-                items[parent].children.push(path);
-                break;
+                    path:parent,
+                    children
+                }
+
+        } catch (error) {
+
+            console.log({parent, parts, path});
         }
     });
 
@@ -35,8 +40,9 @@ function makeLinks(pathList) {
         <ul className={styles.sitemap}>
             {Object.keys(items).map(key => {
                 const item = items[key];
+                const {path} = item;
 
-                return <SiteMapLink item={item} />;
+                return <SiteMapLink key={path} item={item} />;
             })}
         </ul>
     );
@@ -48,8 +54,6 @@ class SiteMapLink extends Component {
     };
 
     toggleChildren() {
-        console.log('click', this.props.item);
-
         this.setState(({ showChildren }) => ({ showChildren: !showChildren }));
     }
 
