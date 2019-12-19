@@ -30,7 +30,9 @@
             }
 
             > section, > dl {
-                width: calc(50% - #{$column-gutter});
+                @media(min-width: $screen-lg) {
+                    width: calc(50% - #{$column-gutter});
+                }
             }
 
             h1, span, dl {
