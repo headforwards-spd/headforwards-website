@@ -91,6 +91,14 @@
             margin: 0 auto $gutter-large;
             padding-top: $gutter-large;
             padding-bottom: $gutter-large;
+
+            &.hasSubTitle {
+                h1, h2 {
+                    @include headingFontXLarge;
+                    margin-bottom: 0;
+                    line-height: $mod_2;
+                }
+            }
         }
 
         &.hasBackground {
