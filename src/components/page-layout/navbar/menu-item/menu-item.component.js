@@ -33,7 +33,7 @@ export default class MenuItem extends Component {
     }
 
     render() {
-        const { link, linkText, children } = this.props;
+        const { link, linkText, showTitle=false, children } = this.props;
         const { isOpen } = this.state;
         const { toggleMenu } = this;
         const hasChildren = !!children;
@@ -45,7 +45,7 @@ export default class MenuItem extends Component {
             <li className={`${childrenClass} ${openClass}`}>
                 <Link to={link} activeStyle={{ color: '#ffb800' }} partiallyActive>
                     {linkText}
-                    {hasChildren && (
+                    {showTitle && hasChildren && (
                         <button type="button" onClick={toggleMenu.bind(this)}>
                             {(isOpen && <FontAwesomeIcon icon={faMinus} fixedWidth />) || (
                                 <FontAwesomeIcon icon={faPlus} fixedWidth />
@@ -55,7 +55,7 @@ export default class MenuItem extends Component {
                 </Link>
                 {!!hasChildren && (
                     <section>
-                        <h1>{linkText}</h1>
+                        {showTitle && <h1>{linkText}</h1>}
                         <ul>
                             {children.map(({ id, ...item }) => (
                                 <MenuItem key={id} {...item} />

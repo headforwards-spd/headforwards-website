@@ -38,5 +38,7 @@ components:
 
 
       LOGOS HERE
+seo:
+  slug: bi-and-big-data
 ---
 

@@ -81,7 +81,7 @@ function createAllJobs(createPage, { nodes: jobs = [] }) {
     return Promise.all(
         jobs.map(({ id, type, path }) => {
             return createPage({
-                path: `/careers/${path}`,
+                path: `/careers/jobs/${path}`,
                 component: resolve(`src/templates/${type}.js`),
                 context: { id },
             });
@@ -160,7 +160,7 @@ function getData(graphql) {
             pages: allMarkdownRemark(
                 filter: {
                     frontmatter: {
-                        type: { in: ["wordpress-page", "info-page", "legal-page", "home-page", "jobs-page"] }
+                        type: { in: ["wordpress-page", "info-page", "legal-page", "home-page", "tech-stack-page"] }
                     }
                 }
             ) {

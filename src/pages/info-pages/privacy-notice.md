@@ -183,6 +183,11 @@ sections:
       Personal Information from the EU and Switzerland, including the onward
       transfer liability provisions.
 seo:
+  title: Privacy Notice
+  description: >-
+                       This privacy notice is here to explain how we (Headforwards Solutions LTD) use
+                       and protect any information you give us whilst using our site. We want to
+                       ensure that your privacy is protected at all times.
   slug: privacy-notice
 ---
 

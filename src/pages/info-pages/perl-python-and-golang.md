@@ -54,5 +54,7 @@ components:
     type: quote-component
   - quote: 'Small teams, but the expertise of a bigger company.'
     type: quote-component
+seo:
+    slug: perl-python-and-golang
 ---
 

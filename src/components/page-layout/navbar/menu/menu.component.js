@@ -1,11 +1,13 @@
-import React from 'react';
-import { Location } from '@reach/router';
-import Link from '../../link/link.component';
-import Socials from '../../socials/socials.component';
-import Hamburger from '../hamburger/hamburger.component';
-import MenuItem from '../menu-item/menu-item.component';
-import styles from '../navbar.module.scss';
-import { menuPropTypes } from './menu.prop-type';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React               from 'react';
+import { Location }        from '@reach/router';
+import Link                from '../../link/link.component';
+import Socials             from '../../socials/socials.component';
+import Hamburger           from '../hamburger/hamburger.component';
+import MenuItem            from '../menu-item/menu-item.component';
+import styles              from '../navbar.module.scss';
+import { menuPropTypes }   from './menu.prop-type';
 
 export default Menu;
 
@@ -36,7 +38,7 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                         <section>
                             <ul>
                                 {menu.map(({ id, ...item }) => (
-                                    <MenuItem key={id} {...{ ...item, location }} />
+                                    <MenuItem key={id} {...{ ...item, location, showTitle: true }} />
                                 ))}
                                 <MenuItem
                                     {...{

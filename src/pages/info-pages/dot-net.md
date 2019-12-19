@@ -46,5 +46,7 @@ components:
       It does feel like a team, everyone working together and investing in
       success of team.
     type: quote-component
+seo:
+  slug: dot-net
 ---
 

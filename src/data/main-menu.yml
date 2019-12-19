@@ -5,8 +5,6 @@ menu:
         linkText: What we believe
       - link: 3b246990-0f6f-11ea-81de-ff3cb4003432
         linkText: How we began
-      - link: 3630b640-1033-11ea-9288-bf5475231968
-        linkText: Who we work with
       - link: 40718760-1033-11ea-9288-bf5475231968
         linkText: How we recruit
       - link: 4bc8aa80-1033-11ea-9288-bf5475231968
@@ -39,16 +37,28 @@ menu:
         linkText: Mobbing
     link: /how-we-work
     linkText: How we work.
-  - children:
-      - link: 92161650-0f9b-11ea-9e15-59d1e5da42db
-        linkText: 'Pizza, beaches and beer'
-      - link: 87ef9080-0f86-11ea-9e15-59d1e5da42db
-        linkText: Digital peninsular
-      - link: 97f70000-0fac-11ea-b2ae-07531833e614
-        linkText: 'Training, development and growth'
-      - link: 5fc0e4d0-0fac-11ea-8ab2-d74757235dd0
-        linkText: Working at Headforwards
-      - link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
-        linkText: Jobs
-    link: /careers
+  - link: /careers
     linkText: Careers.
+    children:
+      - linkText: Working at Headforwards
+        link: /careers/working-at-headforwards
+        children:
+          - linkText: 'Pizza, beaches and beer'
+            link: 92161650-0f9b-11ea-9e15-59d1e5da42db
+          - linkText: 'Digital peninsular'
+            link: 87ef9080-0f86-11ea-9e15-59d1e5da42db
+          - linkText: 'Training, development and growth'
+            link: 97f70000-0fac-11ea-b2ae-07531833e614
+      - linkText: 'Our tech stack'
+        link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
+        children:
+          - linkText: 'BI & Data'
+            link: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
+          - linkText: '.Net'
+            link: 4a8df080-1529-11ea-a6b5-63ea6add32fb
+          - linkText: 'Front End'
+            link: fe585b60-1528-11ea-a6b5-63ea6add32fb
+          - linkText: 'Perl, Python and Golang'
+            link: 7ccaa0e0-152c-11ea-a47f-c360f0875c84
+      - linkText: 'Jobs'
+        link: /careers/jobs

@@ -28,8 +28,8 @@ InfoPagePage.propTypes = {
                 callToAction: string,
                 seo: {
                     slug: string,
-                    title: string,
-                    description: string,
+                    // title: string,
+                    // description: string,
                 },
                 image: shape({
                     publicURL: string,

@@ -12,7 +12,7 @@ JobSummary.propTypes = {
 };
 function JobSummary({ path, title, created }) {
     return (
-        <Link to={`/careers/${path}`} className={styles.job}>
+        <Link to={`/careers/jobs/${path}`} className={styles.job}>
             {title} <span>(posted {created})</span>
         </Link>
     );

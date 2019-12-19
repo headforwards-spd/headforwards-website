@@ -61,6 +61,11 @@ function Layout({ isHomePage, seo, title, text, image, children, callToAction: p
                         id
                         linkText
                         link
+                        children {
+                            id
+                            linkText
+                            link
+                        }
                     }
                 }
             }

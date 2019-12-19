@@ -56,66 +56,74 @@
             border-top: 1px solid #383F51;
 
             > li > a {
-                display: block;
-                text-decoration: none;
-                color: white;
-                padding: $gutter-small 0;
-            }
 
-            > li > a {
-                @include fontLarge;
-                margin-bottom: 0;
-                color: white;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-            }
-
-            > li {
-                padding-left: $gutter-small;
-                &.hasChildren > a {
-                    display: flex;
-
-                    button {
-                        background: none;
-                        border: none;
-                        padding: $gutter-small;
-                        margin: -$gutter-small 0;
-                        color: white;
-                        width: 40px;
-                        display: flex;
-                        justify-content: center;
-
-                    }
-                }
-
-                border-bottom: 1px solid #383F51;
-                text-decoration: none;
-
-                h1 {
-                    display: none;
-                }
-
-                > section {
-                    display: none;
-
-                    ul {
-                        margin-bottom: $gutter-small;
-                    }
-
-                    a {
-                        color: #d7d7d6;
-                        display: block;
-                        padding: 0.5em 0;
-                    }
-                }
-
-                &.isOpen > section {
                     display: block;
+                    text-decoration: none;
+                    color: white;
+                    padding: $gutter-small 0;
+                }
+
+                > li > a {
+                    @include fontLarge;
+                    margin-bottom: 0;
+                    color: white;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                > li {
+                    padding-left: $gutter-small;
+
+                    &.hasChildren > a {
+                        display: flex;
+
+                        button {
+                            background: none;
+                            border: none;
+                            padding: $gutter-small;
+                            margin: -$gutter-small 0;
+                            color: white;
+                            width: 40px;
+                            display: flex;
+                            justify-content: center;
+
+                        }
+                    }
+
+                    border-bottom: 1px solid #383F51;
+                    text-decoration: none;
+
+                    h1 {
+                        display: none;
+                    }
+
+                    > section {
+                        display: none;
+
+                        ul {
+                            margin-bottom: $gutter-small;
+
+                            ul {
+                                margin-left: $column-gutter/2;
+                                @include fontMedium;
+                                margin-bottom: $gutter-small;
+                            }
+                        }
+
+                        a {
+                            color: #d7d7d6;
+                            display: block;
+                            padding: 0.5em 0;
+                        }
+                    }
+
+                    &.isOpen > section {
+                        display: block;
+                    }
                 }
             }
-        }
 
         dt, dd {
             display: block;
@@ -259,6 +267,9 @@
                     position: relative;
                     border: none;
                     padding: 0 $gutter-medium/2;
+                    &:hover > a {
+                        color: $orange;
+                    }
 
                     &:last-child {
                         border: none;
@@ -302,7 +313,7 @@
                         opacity: 0;
                         transition-property: opacity, visibility;
                         transition-duration: .5s, 0s;
-                        transition-delay: 0.25s, 0.75s;
+                        transition-delay: 0.1s, 0.75s;
 
                         &:before {
                             top: -$gutter-small/2;
@@ -346,7 +357,7 @@
                         > section {
                             visibility: visible;
                             opacity: 1;
-                            transition-delay: 0.25s, 0.25s;
+                            transition-delay: 0.1s, 0.1s;
                         }
                     }
                 }
@@ -370,8 +381,14 @@
 
             > section {
 
-                > ul > li > a {
-                    color: white;
+                > ul > li {
+                    > a {
+                        color: white;
+                    }
+
+                    &:hover > a {
+                        color: $orange;
+                    }
                 }
             }
 
