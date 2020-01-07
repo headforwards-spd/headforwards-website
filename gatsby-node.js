@@ -66,7 +66,8 @@ function createAllPages(createPage, { nodes: pages = [] }) {
             const { path, type, parent = '', seo } = frontmatter;
             const { slug: seoSlug } = seo || {};
             const slug = seoSlug || titleSlug;
-            const pagePath = type !== 'wordpress-page' ? `/${parent || ''}/${slug}` : `/wordpress-pages${path.replace('../', '/')}`;
+            const pagePath =
+                type !== 'wordpress-page' ? `/${parent || ''}/${slug}` : `/wordpress-pages${path.replace('../', '/')}`;
 
             return createPage({
                 path: pagePath.replace(/\/+/g, '/'),

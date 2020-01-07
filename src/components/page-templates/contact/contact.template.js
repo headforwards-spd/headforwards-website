@@ -65,7 +65,7 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                     </section>
                     <label>
                         Enquiry
-                        <textarea rows='6' />
+                        <textarea rows="6" />
                     </label>
                     <label className={styles.checkbox}>
                         <input type="checkbox" name="privacy" value="accept" />I agree to the terms outlined in the
@@ -95,7 +95,9 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                         If you are interested in joining the team here at Headforwards please take a look at our careers
                         page to see if we have any suitable vacancies available.{' '}
                     </p>
-                    <p><strong>We only recruit directly so, please, NO recruiters.</strong></p>
+                    <p>
+                        <strong>We only recruit directly so, please, NO recruiters.</strong>
+                    </p>
                     <p>
                         If you are a recruiter and still wish to call us then we will ask for a donation of at least £50
                         to the charity Shelter Box.
@@ -104,7 +106,9 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                 <section>
                     <h1>Our Registered Office:</h1>
                     <ul>
-                        {formattedRegAddress.map(item => <li>{item}</li>)}
+                        {formattedRegAddress.map(item => (
+                            <li>{item}</li>
+                        ))}
                     </ul>
                     <p>Headforwards is the trading name of Headforwards Solutions Ltd.</p>
                     <p>An Outsource Software Company registered in England and Wales with number 07576641</p>

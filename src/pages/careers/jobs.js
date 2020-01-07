@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
-import React               from 'react';
-import Layout              from '../../components/page-layout/layout';
+import React from 'react';
+import Layout from '../../components/page-layout/layout';
 import CareersPageTemplate from '../../components/page-templates/careers/careers.template';
 
 export default CareersPage;

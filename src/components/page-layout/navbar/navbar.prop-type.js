@@ -1,4 +1,4 @@
-import { bool, arrayOf, shape, func, instanceOf } from 'prop-types';
+import { bool, arrayOf, shape, instanceOf } from 'prop-types';
 import AppContainer from '../../../containers/app.container';
 import { MenuItemPropType } from './menu-item/menu-item.prop-type';
 import { CompanyInfoPropType } from '../company-info.prop-type';

@@ -33,7 +33,7 @@ export default class MenuItem extends Component {
     }
 
     render() {
-        const { link, linkText, showTitle=false, children } = this.props;
+        const { link, linkText, showTitle = false, children } = this.props;
         const { isOpen } = this.state;
         const { toggleMenu } = this;
         const hasChildren = !!children;
