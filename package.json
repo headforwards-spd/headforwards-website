@@ -44,6 +44,7 @@
     "netlify-cms-widget-object": "^2.2.3",
     "node-fetch": "^2.6.0",
     "prop-types": "^15.6.0",
+    "querystring": "^0.2.0",
     "react": "^16.8.4",
     "react-helmet": "^5.2.0",
     "react-immutable-proptypes": "^2.1.0",

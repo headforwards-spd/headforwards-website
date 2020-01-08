@@ -4,9 +4,12 @@ import { Formik, Form, useField, Field } from 'formik';
 import Reaptcha from 'reaptcha';
 import { object } from 'yup';
 import axios from 'axios';
+import qs  from 'querystring';
 import styles from './contact.module.scss';
 
 export default class ContactForm extends Component {
+    rcRef = createRef();
+
     static propTypes = {
         formName: any,
         schema: any,
@@ -17,8 +20,6 @@ export default class ContactForm extends Component {
         isSubmitting: false,
     };
 
-    rcRef = createRef();
-
     onVerify(token) {
         console.log('onVerify');
 
@@ -26,19 +27,20 @@ export default class ContactForm extends Component {
         const options = {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            data: JSON.stringify({ ...data, 'g-recaptcha-response': token }),
+            data: qs.stringify({ ...data, 'g-recaptcha-response': token }),
             url: '/',
         };
 
         axios(options)
             .then(console.info)
-            .catch(console.error)
+            .catch(error => console.error('axios.catch', error))
             .finally(() => this.setState({ isSubmitting: false, data: null }));
     }
 
     onSubmit(values) {
         console.log('onSubmit');
 
+        const { rcRef } = this;
         const { schema } = this.props;
 
         this.setState({ isSubmitting: true });
@@ -55,10 +57,10 @@ export default class ContactForm extends Component {
             'form-name': values['form-name'],
         })
             .then(data => this.setState({ data }))
-            .then(() => this.rcRef.current.execute())
+            .then(() => rcRef.current.execute())
             .catch(error => {
                 this.setState({ isSubmitting: false });
-                console.error(error);
+                console.error('Reaptcha.execute', error);
             });
     }
 
