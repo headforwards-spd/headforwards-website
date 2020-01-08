@@ -41,18 +41,11 @@ export default class ContactForm extends Component {
         console.log('onSubmit');
 
         const { rcRef } = this;
-        const { schema } = this.props;
 
         this.setState({ isSubmitting: true });
 
         Promise.resolve({
-            [schema.name.field.label]: values.name,
-            [schema.business.field.label]: values.business,
-            [schema.phone.field.label]: values.phone,
-            [schema.email.field.label]: values.email,
-            [schema.enquiry.field.label]: values.enquiry,
-            [schema.privacy.field.label]: values.privacy.length ? 'Yes' : 'No',
-            [schema.marketing.field.label]: values.marketing.length ? 'Yes' : 'No',
+            ...values,
             'bot-field': values['bot-field'],
             'form-name': values['form-name'],
         })
@@ -70,7 +63,7 @@ export default class ContactForm extends Component {
         const { onVerify, rcRef } = this;
         const rcProps = {
             ref: rcRef,
-            sitekey: '6Lc_M80UAAAAAAVKfHMS3d2MC9rGglvTEHm46wpA',
+            sitekey: '6Lc_M80UAAAAAAVKfHMS3d2MC9rGglvTEHm46wpA',//process.env.SITE_RECAPTCHA_KEY,
             size: 'invisible',
             onVerify: onVerify.bind(this),
         };
