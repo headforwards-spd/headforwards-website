@@ -4,7 +4,7 @@ parent: how-we-work
 type: info-page
 title: Two different working models
 text: ''
-image: /uploads/delete 11.jpg
+image: /uploads/headforwards-22.jpg
 components:
   - isPostit: false
     isRightImage: false
