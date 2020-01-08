@@ -3,7 +3,7 @@ uuid: 40718760-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: How we recruit
-image: /uploads/gash-8.jpg
+image: /uploads/headforwards-10.jpg
 components:
   - isPostit: true
     isRightImage: false
@@ -41,8 +41,8 @@ components:
     title: Round pegs in round holes
     text: "Happy people are more engaged at work, which is why Headforwards places so much emphasis on ensuring its staff, and the people around them, are well looked after. \r\n\nThat’s one reason you’re more likely to see Headforwards employees at one of the company’s many social events than burning the midnight oil. And it’s why Headforwards goes above and beyond to help its people feel right at home when relocating to Cornwall.    \n\n\rIt’s all about doing valuable work, in a beautiful place, for appreciative clients. With a ready-made social life just waiting to be enjoyed."
     image: ''
-  - imageOne: /uploads/blog.png
-    imageTwo: /uploads/delete 11.jpg
+  - imageOne: /uploads/headforwards-11.jpg
+    imageTwo: /uploads/headforwards-12.jpg
     type: images-component
   - quote: >-
       We want to make sure our people feel completely at home. That applies
