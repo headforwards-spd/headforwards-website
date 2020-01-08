@@ -4,7 +4,7 @@ parent: who-we-are
 type: info-page
 title: What we believe
 text: ''
-image: /uploads/delete-11.jpg
+image: /uploads/headforwards-2.jpg
 components:
   - isPostit: false
     isRightImage: false
