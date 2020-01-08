@@ -35,7 +35,7 @@ components:
       always what we aim to deliver.
     type: quote-component
   - imageOne: /uploads/headforwards-3.jpg
-    imageTwo: /uploads/delete 3.jpg
+    imageTwo: /uploads/headforwards-6.jpg
     type: images-component
   - isPostit: false
     isRightImage: false
