@@ -1,5 +1,5 @@
-import { bool, shape } from 'prop-types'
-import React           from 'react';
+import { bool, shape } from 'prop-types';
+import React from 'react';
 import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import styles from './two-images.module.scss';
 
@@ -17,7 +17,6 @@ TwoImages.defaultProps = {
     flip: false,
 };
 function TwoImages({ flip, leftImage, rightImage }) {
-
     const flipClass = flip ? styles.flip : '';
 
     return (
