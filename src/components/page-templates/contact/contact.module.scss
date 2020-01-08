@@ -67,7 +67,7 @@
                 @include fontMedium;
                 line-height: 2;
 
-                &.checkbox {
+                &[type="checkbox"] {
                     flex-direction: row;
                     align-items: baseline;
 

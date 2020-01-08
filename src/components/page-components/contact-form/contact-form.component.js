@@ -1,18 +1,18 @@
-import { any } from 'prop-types';
+import { string } from 'prop-types';
 import React, { Component, createRef } from 'react';
-import { Formik, Form, useField, Field } from 'formik';
+import { Formik, Form, Field } from 'formik';
 import Reaptcha from 'reaptcha';
 import { object } from 'yup';
 import axios from 'axios';
-import qs  from 'querystring';
-import styles from './contact.module.scss';
+import qs from 'querystring';
+import schema from './contact-form.schema';
+import { Input, Textarea, Checkbox } from './form-field.component';
 
 export default class ContactForm extends Component {
     rcRef = createRef();
 
     static propTypes = {
-        formName: any,
-        schema: any,
+        formName: string.isRequired,
     };
 
     state = {
@@ -58,12 +58,12 @@ export default class ContactForm extends Component {
     }
 
     render() {
-        const { formName, schema } = this.props;
+        const { formName } = this.props;
         const { isSubmitting } = this.state;
         const { onVerify, rcRef } = this;
         const rcProps = {
             ref: rcRef,
-            sitekey: '6Lc_M80UAAAAAAVKfHMS3d2MC9rGglvTEHm46wpA',//process.env.SITE_RECAPTCHA_KEY,
+            sitekey: '6Lc_M80UAAAAAAVKfHMS3d2MC9rGglvTEHm46wpA', // process.env.SITE_RECAPTCHA_KEY,
             size: 'invisible',
             onVerify: onVerify.bind(this),
         };
@@ -91,7 +91,7 @@ export default class ContactForm extends Component {
                     name={formName}
                     data-netlify="true"
                     data-netlify-recaptcha="true"
-                    netlify-honeypot="bot-field"
+                    data-netlify-honeypot="bot-field"
                     hidden
                 >
                     {Object.keys(schema).map(key => (
@@ -105,16 +105,16 @@ export default class ContactForm extends Component {
                         <Field type="hidden" name="bot-field" />
                         <Field type="hidden" name="form-name" />
                         <section>
-                            <FormInput {...schema.name.field} disabled={isSubmitting} />
-                            <FormInput {...schema.business.field} disabled={isSubmitting} />
+                            <Input {...schema.name.field} disabled={isSubmitting} />
+                            <Input {...schema.business.field} disabled={isSubmitting} />
                         </section>
                         <section>
-                            <FormInput {...schema.phone.field} disabled={isSubmitting} />
-                            <FormInput {...schema.email.field} disabled={isSubmitting} />
+                            <Input {...schema.phone.field} disabled={isSubmitting} />
+                            <Input {...schema.email.field} disabled={isSubmitting} />
                         </section>
-                        <FormTextarea {...schema.enquiry.field} disabled={isSubmitting} />
-                        <FormCheckbox {...schema.privacy.field} disabled={isSubmitting} />
-                        <FormCheckbox {...schema.marketing.field} disabled={isSubmitting} />
+                        <Textarea {...schema.enquiry.field} disabled={isSubmitting} />
+                        <Checkbox {...schema.privacy.field} disabled={isSubmitting} />
+                        <Checkbox {...schema.marketing.field} disabled={isSubmitting} />
                         <Reaptcha {...rcProps} />
                         <button type="submit" disabled={isSubmitting}>
                             Send form
@@ -124,47 +124,4 @@ export default class ContactForm extends Component {
             </>
         );
     }
-}
-
-function FormInput({ label, disabled, required: isRequired, ...props }) {
-    const [field, meta] = useField(props);
-    const { name } = props;
-
-    return (
-        <label htmlFor={name}>
-            {label} {isRequired && '*'}
-            <input id={name} {...field} {...props} disabled={disabled} />
-            <FormError {...meta} />
-        </label>
-    );
-}
-
-function FormTextarea({ label, disabled, required: isRequired, ...props }) {
-    const [field, meta] = useField(props);
-    const { name } = props;
-
-    return (
-        <label htmlFor={name}>
-            {label} {isRequired && '*'}
-            <textarea id={name} {...field} {...props} disabled={disabled} />
-            <FormError {...meta} />
-        </label>
-    );
-}
-
-function FormCheckbox({ label, disabled, required: isRequired, ...props }) {
-    const [field, meta] = useField({ ...props, value: label });
-    const { name } = props;
-
-    return (
-        <label htmlFor={name} className={styles.checkbox}>
-            <input id={name} {...field} {...props} disabled={disabled} />
-            {label} {isRequired && '*'}
-            <FormError {...meta} />
-        </label>
-    );
-}
-
-function FormError({ touched, error }) {
-    return touched && error ? <div className={styles.error}>{error}</div> : null;
 }

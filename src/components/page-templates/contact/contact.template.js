@@ -1,8 +1,7 @@
 import { string } from 'prop-types';
 import React from 'react';
-import ContactForm from './contact-form.component';
+import ContactForm from '../../page-components/contact-form/contact-form.component';
 import styles from './contact.module.scss';
-import schema from './contact.schema';
 
 const contactPropTypes = {
     email: string,
@@ -43,7 +42,7 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                         <dd>{email}</dd>
                     </dl>
                 </address>
-                <ContactForm formName="contact" schema={schema} />
+                <ContactForm formName="contact" />
             </section>
             <section className={styles.map}>
                 <iframe
