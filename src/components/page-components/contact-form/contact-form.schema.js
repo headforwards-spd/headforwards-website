@@ -40,7 +40,7 @@ const schema = {
             required: true,
         },
         validation: string()
-            .email()
+            .email('Must be a valid email.')
             .required('Email is required.'),
     },
     enquiry: {
