@@ -6,6 +6,7 @@
     overflow: hidden;
     @include fontMedium;
     line-height: 2;
+    cursor: pointer;
 
     &.checkbox {
         flex-direction: row;
