@@ -3,7 +3,7 @@ uuid: 4bc8aa80-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: How we work
-image: /uploads/delete 9.jpg
+image: /uploads/headforwards-13.jpg
 introduction: []
 components:
   - isPostit: false
@@ -32,8 +32,8 @@ components:
       easier. Our developers feel confident approaching the client with issues,
       and the client isn’t afraid to tell us if we’re going down the wrong path.
     type: quote-component
-  - imageOne: /uploads/blog.png
-    imageTwo: /uploads/delete 11.jpg
+  - imageOne: /uploads/headforwards-14.jpg
+    imageTwo: /uploads/headforwards-15.jpg
     type: images-component
   - isPostit: false
     isRightImage: false
