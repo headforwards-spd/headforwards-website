@@ -34,7 +34,7 @@ components:
       got to look for a new competitive advantage in their software and that’s
       always what we aim to deliver.
     type: quote-component
-  - imageOne: /uploads/delete 12.jpg
+  - imageOne: /uploads/headforwards-3.jpg
     imageTwo: /uploads/delete 3.jpg
     type: images-component
   - isPostit: false
