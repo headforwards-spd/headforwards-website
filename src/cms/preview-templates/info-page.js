@@ -1,4 +1,4 @@
-import { shape, string } from 'prop-types';
+import { func, shape, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Provider } from 'unstated';
@@ -19,23 +19,33 @@ InfoPagePreview.propTypes = {
             image: ImageSrcPropType,
         }),
     }).isRequired,
+    getAsset: func.isRequired,
 };
 
-function InfoPagePreview({ entry }) {
+function InfoPagePreview({ entry, getAsset }) {
     const { data } = entry.toJS();
-    const { title = '', image = null, introduction, components, callToAction } = data;
-    const header = { title, image };
-
+    const { title = '', image: imageRef = null, introduction, components, callToAction } = data;
     const [{ title: introTitle, text: introText } = {}] = introduction || [];
+    const image = imageRef ? getAsset(imageRef).toString() : null;
+
+    const header = { title, image };
 
     !!components &&
         components.forEach(component => {
-            const { articles } = component;
+            const { image: cImage = null, imageOne = null, imageTwo = null, profilePic = null, articles } = component;
             component.id = uuid.v1();
+
+            !!cImage && (component.image = getAsset(cImage).toString());
+            !!imageOne && (component.imageOne = getAsset(imageOne).toString());
+            !!imageTwo && (component.imageTwo = getAsset(imageTwo).toString());
+            !!profilePic && (component.profilePic = getAsset(profilePic).toString());
 
             !!articles &&
                 articles.forEach(article => {
+                    const { image: aImage = null } = article;
                     article.id = uuid.v1();
+
+                    !!aImage && (article.image = getAsset(aImage).toString());
                 });
         });
 
