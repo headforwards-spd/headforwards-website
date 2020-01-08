@@ -25,9 +25,8 @@ export default class ContactForm extends Component {
         const { data } = this.state;
         const options = {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json; charset=utf-8' },
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             data: JSON.stringify({ ...data, 'g-recaptcha-response': token }),
-            url: '/',
         };
 
         axios(options)
