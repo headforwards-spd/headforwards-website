@@ -5,7 +5,7 @@ type: info-page
 title: How we began.
 image: /uploads/headforwards-7.jpg
 components:
-  - image: /uploads/toby-craig.jpg
+  - image: /uploads/headforwards-8.jpg
     isPostit: false
     isRightImage: true
     isTwoColumns: false
