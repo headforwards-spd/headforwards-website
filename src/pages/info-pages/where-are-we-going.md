@@ -3,7 +3,7 @@ uuid: 550440a0-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: Where are we going?
-image: /uploads/gash-2.jpg
+image: /uploads/headforards-17.jpg
 introduction: []
 components:
   - isPostit: false
@@ -40,9 +40,8 @@ components:
   - jobTitle: director & cofounder
     name: Craig Girvan
     quote: >-
-      Growth for us means continuing to do what we’re doing. But key to this
-      strategy is constantly questioning how we do things to enhance our
-      offering.
+      Growth for us means continuing to do what we’re doing. But key to this is
+      constantly questioning how we can do things to enhance our offering.
     type: quote-component
   - isPostit: false
     isRightImage: false
@@ -60,8 +59,8 @@ components:
       of looking after people and doing great work. A knowledge-based economy is
       the way forward, and in this respect the company is helping lead the
       charge.
-  - imageOne: /uploads/founders.jpg
-    imageTwo: /uploads/delete 8.jpg
+  - imageOne: /uploads/headforwards-18.jpg
+    imageTwo: /uploads/headforwards-19.jpg
     type: images-component
 callToAction: Think this is a refreshing approach to software development?
 ---
