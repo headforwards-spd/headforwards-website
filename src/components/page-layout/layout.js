@@ -1,5 +1,5 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import { arrayOf, bool, instanceOf, node, oneOfType, string } from 'prop-types';
+import { arrayOf, bool, node, oneOfType, string } from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Provider } from 'unstated';
@@ -32,7 +32,6 @@ const UnstatedHelmet = withUnstated(
 );
 
 Layout.propTypes = {
-    appContainer: instanceOf(AppContainer).isRequired,
     isHomePage: bool,
     title: string.isRequired,
     text: string,

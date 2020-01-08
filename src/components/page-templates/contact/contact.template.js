@@ -1,6 +1,8 @@
 import { string } from 'prop-types';
 import React from 'react';
+import ContactForm from './contact-form.component';
 import styles from './contact.module.scss';
+import schema from './contact.schema';
 
 const contactPropTypes = {
     email: string,
@@ -31,7 +33,7 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                     <section>
                         <h1>REPLACE WITH CONSTANT</h1>
                         {formattedAddress.map(item => (
-                            <span>{item}</span>
+                            <span key={item}>{item}</span>
                         ))}
                     </section>
                     <dl>
@@ -41,42 +43,7 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                         <dd>{email}</dd>
                     </dl>
                 </address>
-                <form name="contact" method="POST" data-netlify="true">
-                    <h1>Send us a message...</h1>
-                    <section>
-                        <label>
-                            Your Name *
-                            <input type="text" />
-                        </label>
-                        <label>
-                            Your Business
-                            <input type="text" />
-                        </label>
-                    </section>
-                    <section>
-                        <label>
-                            Telephone Number *
-                            <input type="text" />
-                        </label>
-                        <label>
-                            Email Address *
-                            <input type="text" />
-                        </label>
-                    </section>
-                    <label>
-                        Enquiry
-                        <textarea rows="6" />
-                    </label>
-                    <label className={styles.checkbox}>
-                        <input type="checkbox" name="privacy" value="accept" />I agree to the terms outlined in the
-                        privacy policy
-                    </label>
-                    <label className={styles.checkbox}>
-                        <input type="checkbox" name="marketing" value="accept" />I would like to receive marketing
-                        communications.
-                    </label>
-                    <button type="submit">Send form</button>
-                </form>
+                <ContactForm formName="contact" schema={schema} />
             </section>
             <section className={styles.map}>
                 <iframe
@@ -107,7 +74,7 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                     <h1>Our Registered Office:</h1>
                     <ul>
                         {formattedRegAddress.map(item => (
-                            <li>{item}</li>
+                            <li key={item}>{item}</li>
                         ))}
                     </ul>
                     <p>Headforwards is the trading name of Headforwards Solutions Ltd.</p>
