@@ -2,6 +2,7 @@ import { useField } from 'formik';
 import { bool, string } from 'prop-types';
 import React from 'react';
 import FormError from './form-error.component';
+import styles from './contact-form.module.scss';
 
 const formFieldPropTypes = {
     name: string.isRequired,
@@ -20,7 +21,7 @@ export function Input({ label, disabled, required: isRequired, ...props }) {
     const { name } = props;
 
     return (
-        <label htmlFor={name}>
+        <label htmlFor={name} className={styles.field}>
             {label} {isRequired && '*'}
             <input id={name} {...field} {...props} disabled={disabled} />
             <FormError {...meta} />
@@ -38,7 +39,7 @@ export function Textarea({ label, disabled, required: isRequired, ...props }) {
     const { name } = props;
 
     return (
-        <label htmlFor={name}>
+        <label htmlFor={name} className={styles.field}>
             {label} {isRequired && '*'}
             <textarea id={name} {...field} {...props} disabled={disabled} />
             <FormError {...meta} />
@@ -56,7 +57,7 @@ export function Checkbox({ label, disabled, required: isRequired, ...props }) {
     const { name } = props;
 
     return (
-        <label htmlFor={name}>
+        <label htmlFor={name} className={`${styles.field} ${styles.checkbox}`}>
             <input id={name} {...field} {...props} disabled={disabled} />
             {label} {isRequired && '*'}
             <FormError {...meta} />

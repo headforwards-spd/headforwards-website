@@ -21,6 +21,7 @@
         @media(min-width: $screen-lg) {
             width: calc((100% * 2 / 3) - #{$column-gutter});
         }
+
         address {
             font-style: normal;
             @include columns-component;
@@ -53,66 +54,48 @@
                 }
             }
         }
+    }
 
+    form {
+        h1 {
+            @include headingFontMedium;
+        }
 
-        form {
-            h1 {
-                @include headingFontMedium;
-            }
-
-            label {
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-                @include fontMedium;
-                line-height: 2;
-
-                &[type="checkbox"] {
-                    flex-direction: row;
-                    align-items: baseline;
-
-                    input {
-                        flex-shrink: 1;
-                        margin-right: $column-gutter/2;
-                    }
-                }
-            }
-
-            input, textarea {
-                @include fontLarge;
-                padding: 0.5rem;
+        > section {
+            border: none;
+            padding: 0;
+            @include columns-component;
+            @media(min-width: $screen-lg) {
                 margin-bottom: 0;
-                border: 1px solid #B1B1B1;
-            }
-
-            button {
-                @include fontLarge;
-                margin-bottom: 0;
-                line-height: 1;
-                background-color: $orange;
-                color: white;
-                border: none;
-                display: flex;
-                align-items: center;
-                padding: 1rem;
-                @include arrow-link;
-
-                &:after {
-                    content: url(/images/hf-arrow.white.svg);
-                }
-            }
-
-            > section {
-                border: none;
-                padding: 0;
-                @include columns-component;
-                @media(min-width: $screen-lg) {
-                    margin-bottom: 0;
+                align-items: flex-start;
 
                 label {
                     width: calc(50% - #{$column-gutter});
                 }
             }
+        }
+
+        input, textarea {
+            @include fontLarge;
+            padding: 0.5rem;
+            margin-bottom: 0;
+            border: 1px solid #B1B1B1;
+        }
+
+        button {
+            @include fontLarge;
+            margin-bottom: 0;
+            line-height: 1;
+            background-color: $orange;
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            @include arrow-link;
+
+            &:after {
+                content: url(/images/hf-arrow.white.svg);
             }
         }
 
