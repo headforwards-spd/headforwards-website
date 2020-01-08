@@ -84,7 +84,7 @@ export default class ContactForm extends Component {
             initialValues: {
                 ...initialValues,
                 'bot-field': '',
-                'form-name': this.props.formName,
+                'form-name': formName,
             },
             validationSchema: object(validation),
             onSubmit: this.onSubmit.bind(this),
@@ -92,7 +92,13 @@ export default class ContactForm extends Component {
 
         return (
             <>
-                <form data-netlify data-netlify-recaptcha hidden name={formName} netlify-honeypot="bot-field">
+                <form
+                    name={formName}
+                    data-netlify="true"
+                    data-netlify-recaptcha="true"
+                    netlify-honeypot="bot-field"
+                    hidden
+                >
                     {Object.keys(schema).map(key => (
                         <input key={key} type="text" name={key} />
                     ))}
