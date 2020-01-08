@@ -148,6 +148,7 @@ export const query = graphql`
                             }
                         }
                     }
+                    flip
                     imageOne {
                         publicURL
                         childImageSharp {

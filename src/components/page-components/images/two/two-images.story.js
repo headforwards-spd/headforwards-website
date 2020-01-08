@@ -1,9 +1,10 @@
-import { files } from '@storybook/addon-knobs';
-import React from 'react';
+import { boolean, files } from '@storybook/addon-knobs'
+import React              from 'react';
 import generateImage from '../../../../lib/generate-image';
 import TwoImages from './two-images.component';
 
 export default function TwoImagesStory() {
+    const flipLabel = 'Flip Images';
     const leftImageLabel = 'Left Image';
     const leftImageValue = generateImage();
     const rightImageLabel = 'Right Image';
@@ -11,10 +12,12 @@ export default function TwoImagesStory() {
     const accept = '.png, .jpg, .jpeg';
     const groupId = 'img-group';
 
-    const leftImage = files(leftImageLabel, accept, leftImageValue, groupId);
+    const flip       = boolean(flipLabel, false, groupId);
+    const leftImage  = files(leftImageLabel, accept, leftImageValue, groupId);
     const rightImage = files(rightImageLabel, accept, rightImageValue, groupId);
 
     const twoImgProps = {
+        flip,
         leftImage,
         rightImage,
     };
