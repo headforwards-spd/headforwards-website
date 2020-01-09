@@ -34,7 +34,7 @@ sections:
           they've got to look for a new competitive advantage in their
           software. 
         type: quote-component
-    image: /uploads/founders.jpg
+    image: /uploads/toby-and-craig.jpg
     isPostit: false
     isRightImage: false
   - components:
