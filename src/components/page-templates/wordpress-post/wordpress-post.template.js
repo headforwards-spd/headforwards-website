@@ -57,7 +57,7 @@ function WordpressPostTemplate({ prev, next, html, author, categories, tags, dat
                 {prev && (
                     <Link to={`${prev.frontmatter.path}`} className={styles.prev}>
                         <section>
-                            <h1>{parseHtml(prev.frontmatter.title)}</h1>
+                            <h2>{parseHtml(prev.frontmatter.title)}</h2>
                             <p>{prev.frontmatter.excerpt}</p>
                             <p>{prev.frontmatter.date}</p>
                         </section>
@@ -66,7 +66,7 @@ function WordpressPostTemplate({ prev, next, html, author, categories, tags, dat
                 {next && (
                     <Link to={`${next.frontmatter.path}`} className={styles.next}>
                         <section>
-                            <h1>{parseHtml(next.frontmatter.title)}</h1>
+                            <h2>{parseHtml(next.frontmatter.title)}</h2>
                             <p>{next.frontmatter.excerpt}</p>
                             <p>{next.frontmatter.date}</p>
                         </section>

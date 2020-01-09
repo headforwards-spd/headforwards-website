@@ -22,7 +22,7 @@
         margin: 0 -#{$page-gutter-xxl} $gutter-large;
     }
 
-    > h1 {
+    > h2 {
         padding: 0 $page-gutter-sm;
         @media(min-width: $screen-md) {
             padding: 0 $page-gutter-md;
@@ -132,7 +132,7 @@
             padding: $page-gutter-md;
         }
 
-        > h1 {
+        > h2 {
             color: $orange;
             @include headingFontLarge;
             @media(min-width: $screen-lg) {
@@ -223,7 +223,7 @@
             padding: 5rem $page-gutter-xxl 5rem 0;
         }
 
-        > h1 {
+        > h2 {
             position: absolute;
             top: 5rem;
             padding: 0;
@@ -335,7 +335,7 @@
             flex-direction: column;
             padding: 1rem;
 
-            > h1 {
+            > h2 {
                 transition: opacity ease 250ms;
             }
 

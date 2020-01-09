@@ -31,7 +31,7 @@ function LegalPageTemplate({ introduction, sections }) {
     const [{ title, text } = {}] = introduction || [];
     return (
         <section className={styles.sections}>
-            {title && <h1>{title}</h1>}
+            {title && <h2>{title}</h2>}
             {text && <ReactMarkdown source={text} />}
             {sections.map(({ id, ...section }) => (
                 <LegalPageSection key={id} {...section} />
@@ -48,7 +48,7 @@ LegalPageSection.defaultProps = {
 function LegalPageSection({ title, text }) {
     return (
         <section>
-            {title && <h1>{title}</h1>}
+            {title && <h2>{title}</h2>}
             <ReactMarkdown source={text} />
         </section>
     );

@@ -37,7 +37,7 @@ function NewsPage({ data }) {
                     return (
                         <Link key={key} to={`/old/${path}`} className={styles.newsItem}>
                             <article>
-                                <h1>{title}</h1>
+                                <h2>{title}</h2>
                                 <p>{excerpt}</p>
                                 <Link to={`/old/${path}`} className={styles.readMore}>
                                     Read more

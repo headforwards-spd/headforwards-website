@@ -24,7 +24,7 @@ Quote.defaultProps = {
 function Quote({ title, quote, name, jobTitle, profilePic }) {
     return (
         <section className={styles.blockquoteContainer}>
-            {title && <h1>{title}</h1>}
+            {title && <h2>{title}</h2>}
             <blockquote>
                 <p>{quote}</p>
                 {!!name && (
@@ -35,7 +35,7 @@ function Quote({ title, quote, name, jobTitle, profilePic }) {
                             </div>
                         )}
                         <section>
-                            <h1>{name}</h1>
+                            <h2>{name}</h2>
                             {!!jobTitle && <p>{jobTitle}</p>}
                         </section>
                     </footer>

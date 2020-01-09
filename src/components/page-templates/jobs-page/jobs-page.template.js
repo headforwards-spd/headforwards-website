@@ -68,7 +68,7 @@ function JobRole({ title, link, page }) {
     return (
         <Postit className={styles.role}>
             <Link to={link}>
-                <h1>{title}</h1>
+                <h2>{title}</h2>
                 <ReactMarkdown source={text} />
                 <Link to={link} className={styles.link}>
                     Read more

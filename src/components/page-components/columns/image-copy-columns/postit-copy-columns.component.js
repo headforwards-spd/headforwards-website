@@ -35,7 +35,7 @@ function PostitCopyColumns({ image, isRightImage, title, text, link }) {
         <section className={`${styles.columnsWrapper} ${imageClass}`}>
             <Postit image={image} isRightImage={isRightImage} className={styles.postit} />
             <section className={styles.copy}>
-                {title && <h1>{title}</h1>}
+                {title && <h2>{title}</h2>}
                 {text && (
                     <section>
                         <ReactMarkdown source={text} />

@@ -101,7 +101,7 @@ export default class ContactForm extends Component {
                 </form>
                 <Formik {...formConfig}>
                     <Form noValidate>
-                        <h1>Send us a message...</h1>
+                        <h2>Send us a message...</h2>
                         <Field type="hidden" name="bot-field" />
                         <Field type="hidden" name="form-name" />
                         <section>

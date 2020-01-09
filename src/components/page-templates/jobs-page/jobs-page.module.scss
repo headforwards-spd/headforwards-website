@@ -2,7 +2,7 @@
 @import "../../page-components/columns/columns";
 
 .introduction {
-    > h1 {
+    > h2 {
         @include headingFontLarge;
     }
     @include fontMedium;
@@ -25,14 +25,14 @@
 
     .role {
 
-        h1 {
+        h2 {
             @include headingFontMedium;
         }
 
         @include fontMedium;
 
         @media(min-width: $screen-md) {
-            h1 {
+            h2 {
                 @include headingFontLarge;
             }
 

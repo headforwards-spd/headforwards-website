@@ -22,10 +22,10 @@ function Footer({ companyInfo, callToAction }) {
     return (
         <footer className={styles.footer}>
             <section className={styles.getInTouch}>
-                <h1>
+                <h2>
                     {callToAction}
                     <Link to="/contact">Get in touch</Link>
-                </h1>
+                </h2>
             </section>
 
             <Socials {...{ ...companyInfo, isFooter }} />

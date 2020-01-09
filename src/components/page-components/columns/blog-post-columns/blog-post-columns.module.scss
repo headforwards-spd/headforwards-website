@@ -8,7 +8,7 @@
 
     @include component-gutter;
 
-    > h1 {
+    > h2 {
         @include orange-type;
         @include headingFontXLarge;
         @media (min-width: $screen-lg) {
@@ -38,7 +38,7 @@
                     }
                 }
 
-                h1 {
+                h2 {
                     order: 2;
                     flex-grow: 1;
                     color: $header_black;

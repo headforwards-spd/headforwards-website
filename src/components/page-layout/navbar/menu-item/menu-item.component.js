@@ -55,7 +55,7 @@ export default class MenuItem extends Component {
                 </Link>
                 {!!hasChildren && (
                     <section>
-                        {showTitle && <h1>{linkText}</h1>}
+                        {showTitle && <h2>{linkText}</h2>}
                         <ul>
                             {children.map(({ id, ...item }) => (
                                 <MenuItem key={id} {...item} />

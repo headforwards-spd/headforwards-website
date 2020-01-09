@@ -32,7 +32,7 @@
                     @include fontMedium;
                 }
 
-                h1 {
+                h2 {
                     order: 2;
                     @include headingFontMedium;
                     margin-bottom: 0;
@@ -45,7 +45,7 @@
                 }
             }
 
-            h1 {
+            h2 {
                 @include headingFontMedium;
             }
 

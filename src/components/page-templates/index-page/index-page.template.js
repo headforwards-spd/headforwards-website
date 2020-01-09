@@ -46,7 +46,7 @@ function PageLink({ link, linkText, page }) {
     return (
         <Link to={link}>
             <article className={styles.page}>
-                <h1>{linkText}</h1>
+                <h2>{linkText}</h2>
                 <section>
                     {image && <Image image={image} alt={linkText} />}
                     {image && text && (

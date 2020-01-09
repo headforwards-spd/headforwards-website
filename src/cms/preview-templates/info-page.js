@@ -62,7 +62,7 @@ function InfoPagePreview({ entry, getAsset }) {
             <main>
                 {introText && (
                     <section className={styles.introduction}>
-                        {introTitle && <h1>{introTitle}</h1>}
+                        {introTitle && <h2>{introTitle}</h2>}
                         <ReactMarkdown source={introText} />
                     </section>
                 )}

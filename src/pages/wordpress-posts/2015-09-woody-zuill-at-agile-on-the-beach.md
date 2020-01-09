@@ -38,7 +38,7 @@ author:
 
 Mob Programming is a software development approach where the whole team works on the same thing, at the same time, in the same space, on the same computer.
 
-![Woody Zuill on Mob Programming](//headforwards.com/wp-content/uploads/2015/09/Mob-Programming-Woody-Zuill-at-Agile-on-the-Beach1.jpg)
+![Woody Zuill on Mob Programming](//headforwards.com/wp-content/uploads/2015/09/Mob-Programming-Woody-Zuill-at-Agile-on-the-Beach2.jpg)
 
 It is similar to [Pair Programming ](http://www.headforwards.com/2015/07/what-is-pair-programming/) where two people sit at the same computer and collaborate on code, however it expands further on this idea by involving the whole team.
 

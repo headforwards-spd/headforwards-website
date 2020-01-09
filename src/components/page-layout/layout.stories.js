@@ -53,18 +53,18 @@ export const Headings = () => {
 
     return (
         <section className={styles.wrapper}>
-            <h1 className={styles.xxxlarge}>XXXLarge: {title}</h1>
-            <h1 className={`${styles.xxxlarge} ${styles.fsAlbertWeb}`}>XXXLarge: {title}</h1>
-            <h1 className={styles.xxlarge}>XXLarge: {title}</h1>
-            <h1 className={`${styles.xxlarge} ${styles.fsAlbertWeb}`}>XXLarge: {title}</h1>
-            <h1 className={styles.xlarge}>XLarge: {title}</h1>
-            <h1 className={`${styles.xlarge} ${styles.fsAlbertWeb}`}>XLarge: {title}</h1>
-            <h1 className={styles.large}>Large: {title}</h1>
-            <h1 className={`${styles.large} ${styles.fsAlbertWeb}`}>Large: {title}</h1>
-            <h1 className={styles.medium}>Medium: {title}</h1>
-            <h1 className={`${styles.medium} ${styles.fsAlbertWeb}`}>Medium: {title}</h1>
-            <h1 className={styles.small}>Small: {title}</h1>
-            <h1 className={`${styles.small} ${styles.fsAlbertWeb}`}>Small: {title}</h1>
+            <h2 className={styles.xxxlarge}>XXXLarge: {title}</h2>
+            <h2 className={`${styles.xxxlarge} ${styles.fsAlbertWeb}`}>XXXLarge: {title}</h2>
+            <h2 className={styles.xxlarge}>XXLarge: {title}</h2>
+            <h2 className={`${styles.xxlarge} ${styles.fsAlbertWeb}`}>XXLarge: {title}</h2>
+            <h2 className={styles.xlarge}>XLarge: {title}</h2>
+            <h2 className={`${styles.xlarge} ${styles.fsAlbertWeb}`}>XLarge: {title}</h2>
+            <h2 className={styles.large}>Large: {title}</h2>
+            <h2 className={`${styles.large} ${styles.fsAlbertWeb}`}>Large: {title}</h2>
+            <h2 className={styles.medium}>Medium: {title}</h2>
+            <h2 className={`${styles.medium} ${styles.fsAlbertWeb}`}>Medium: {title}</h2>
+            <h2 className={styles.small}>Small: {title}</h2>
+            <h2 className={`${styles.small} ${styles.fsAlbertWeb}`}>Small: {title}</h2>
         </section>
     );
 };
@@ -177,7 +177,7 @@ Heading.defaultProps = {
     className: '',
 };
 function Heading({ text, className }) {
-    return <h1 className={className}>{text}</h1>;
+    return <h2 className={className}>{text}</h2>;
 }
 
 Paragraph.propTypes = {
@@ -209,7 +209,7 @@ Section.defaultProps = {
 function Section({ className, heading, headingClass, copy, copyClass }) {
     return (
         <section className={className}>
-            <h1 className={headingClass}>{heading}</h1>
+            <h2 className={headingClass}>{heading}</h2>
             {copy.map(paragraph => (
                 <p className={copyClass}>{paragraph}</p>
             ))}

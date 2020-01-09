@@ -20,7 +20,7 @@
 
 @mixin copy {
 
-    h1 {
+    h2 {
         @include headingFontLarge;
 
         //@media (min-width: $screen-lg) {

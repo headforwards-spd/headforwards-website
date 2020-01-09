@@ -7,7 +7,7 @@
         margin-bottom: $gutter-large - $gutter-medium/2;
         width: $singleColumnMaxWidth;
     }
-    h1 {
+    h2 {
         @include headingFontLarge;
     }
 }

@@ -26,11 +26,11 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
 
     return (
         <section className={styles.contactColumns}>
-            <h1>We would love to talk business with you.</h1>
+            <h2>We would love to talk business with you.</h2>
             <section>
                 <address>
                     <section>
-                        <h1>REPLACE WITH CONSTANT</h1>
+                        <h2>REPLACE WITH CONSTANT</h2>
                         {formattedAddress.map(item => (
                             <span key={item}>{item}</span>
                         ))}
@@ -56,7 +56,7 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
             </section>
             <section className={styles.office}>
                 <section>
-                    <h1>Recruitment</h1>
+                    <h2>Recruitment</h2>
                     <p>
                         If you are interested in joining the team here at Headforwards please take a look at our careers
                         page to see if we have any suitable vacancies available.{' '}
@@ -70,7 +70,7 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                     </p>
                 </section>
                 <section>
-                    <h1>Our Registered Office:</h1>
+                    <h2>Our Registered Office:</h2>
                     <ul>
                         {formattedRegAddress.map(item => (
                             <li key={item}>{item}</li>

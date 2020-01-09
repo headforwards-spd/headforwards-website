@@ -27,7 +27,7 @@ function NewsSummary({ title, headerImages, excerpt, path, date, dateString }) {
         <Link to={path} className={styles.newsItem}>
             <article>
                 <header>
-                    <h1>{title}</h1>
+                    <h2>{title}</h2>
                     {!!image && <Image image={image} alt={title} className={styles.image} />}
                     <time dateTime={date}>posted {dateString}</time>
                 </header>

@@ -20,7 +20,7 @@ function ArticleColumns({ title, articles }) {
     const columnsStyle = articles.length === 3 ? styles.isThreeColumns : '';
     return (
         <section className={styles.articleColumns}>
-            {!!title && <h1>{title}</h1>}
+            {!!title && <h2>{title}</h2>}
             {!!articles && (
                 <section className={columnsStyle}>
                     {articles.map(({ id, ...article }) => (

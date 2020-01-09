@@ -19,7 +19,7 @@ BlogPostColumns.defaultProps = {
 function BlogPostColumns({ title, articles }) {
     return (
         <section className={styles.blogPostColumns}>
-            {!!title && <h1>{title}</h1>}
+            {!!title && <h2>{title}</h2>}
             <section>
                 {articles.map(({ id, ...article }) => (
                     <BlogArticle key={id} {...article} />

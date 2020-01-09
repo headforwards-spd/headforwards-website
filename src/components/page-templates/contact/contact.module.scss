@@ -11,7 +11,7 @@
         align-items: flex-start;
     }
 
-    > h1 {
+    > h2 {
         @media(min-width: $screen-lg) {
             width: calc((100%/3) - #{$column-gutter});
         }
@@ -36,7 +36,7 @@
                 }
             }
 
-            h1, span, dl {
+            h2, span, dl {
                 @include fontLarge;
                 margin-bottom: 0;
             }
@@ -57,7 +57,7 @@
     }
 
     form {
-        h1 {
+        h2 {
             @include headingFontMedium;
         }
 
@@ -161,7 +161,7 @@
             align-items: flex-start;
             justify-content: flex-start;
         }
-        h1 {
+        h2 {
             @include headingFontMedium;
         }
 
@@ -190,7 +190,7 @@
 //    }
 //
 //    .header {
-//        h1 {
+//        h2 {
 //            margin-top: -$gutter-medium * 2;
 //        }
 //    }
@@ -293,12 +293,12 @@
 //        .flexContainer {
 //            display: flex;
 //
-//            > div, h1, form {
+//            > div, h2, form {
 //                padding: 0 $gutter-small;
 //            }
 //        }
 //        .header {
-//            h1 {
+//            h2 {
 //                margin-top: 0;
 //            }
 //        }

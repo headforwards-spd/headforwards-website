@@ -6,7 +6,7 @@
 
 .hero {
     @include component-gutter;
-    > h1 {
+    > h2 {
         @include headingFontLarge;
         //@media(min-width: $screen-lg) {
         //    @include headingFontXLarge;
@@ -37,11 +37,11 @@
             //margin-left: $gutter-medium/2;
             //margin-right: $gutter-medium/2;
             //
-            //> h1, > section {
+            //> h2, > section {
             //    padding: 0 $gutter-medium/2;
             //}
 
-            > h1 {
+            > h2 {
                 width: calc(37.5% - #{$column-gutter});
                 @include headingFontLarge;
                 //margin-bottom: 0;

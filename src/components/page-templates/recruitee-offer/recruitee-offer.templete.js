@@ -54,11 +54,11 @@ function RecruiteeOfferTemplate({
                 <dd>{created}</dd>
             </dl>
             <section className={styles.copy}>
-                <h1>Description</h1>
+                <h2>Description</h2>
                 {!!description && <ReactMarkdown source={description} />}
             </section>
             <section className={styles.copy}>
-                <h1>Requirements</h1>
+                <h2>Requirements</h2>
                 {!!requirements && <ReactMarkdown source={requirements} />}
 
                 <Link to={applyUrl} className={styles.apply}>

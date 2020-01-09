@@ -19,7 +19,7 @@ function Slide({ title, text, image }) {
     return (
         <section className={styles.slide}>
             <section>
-                <h1>{title}</h1>
+                <h2>{title}</h2>
                 <section>
                     <ReactMarkdown source={text} />
                 </section>

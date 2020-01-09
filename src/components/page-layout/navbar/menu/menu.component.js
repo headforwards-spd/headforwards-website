@@ -51,7 +51,7 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                                     <dd>{phone}</dd>
                                 </dl>
                                 <section>
-                                    <h1>Follow us.</h1>
+                                    <h2>Follow us.</h2>
                                     <Socials
                                         {...{
                                             ...companyInfo,

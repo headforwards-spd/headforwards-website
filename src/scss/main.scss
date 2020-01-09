@@ -69,23 +69,15 @@ body {
         @include fluid-type($min_font, $max_font);
     }
 
-    h1, h2, h3 {
+    h1, h2 {
         margin: 0;
         color: $header_black;
         font-weight: bold;
         text-shadow: none;
     }
 
-    h1 {
+    h1, h2 {
         @include headingFontLarge;
-    }
-
-    h2 {
-        @include headingFontMedium;
-    }
-
-    h3 {
-        @include headingFontSmall;
     }
 
     p, time, li {

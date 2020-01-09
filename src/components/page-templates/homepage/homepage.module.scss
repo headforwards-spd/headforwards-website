@@ -9,7 +9,7 @@
         margin-bottom: $gutter-large - $gutter-medium/2;
         width: 62.5%;
     }
-    h1 {
+    h2 {
         @include headingFontLarge;
     }
 }
@@ -23,7 +23,7 @@
 
         > * {
             margin: 0;
-            h1 {
+            h2 {
                 @include headingFontLarge;
             }
 
@@ -60,7 +60,7 @@
             }
 
             footer {
-                h1 {
+                h2 {
                     @include headingFontSmall;
                     margin-bottom: 0;
                 }

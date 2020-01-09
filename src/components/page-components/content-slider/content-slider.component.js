@@ -52,7 +52,7 @@ export default class ContentSlider extends Component {
 
         return (
             <section className={styles.contentSlider}>
-                <h1 className={headerClass}>{title}</h1>
+                <h2 className={headerClass}>{title}</h2>
                 <Slider {...settings}>
                     {articles.map(({ id, ...slide }) => (
                         <Slide key={id} {...slide} />

@@ -6,7 +6,7 @@
 
 .articleColumns {
 
-    > h1 {
+    > h2 {
         @include headingFontLarge;
         //@media(min-width: $screen-lg) {
         //    @include headingFontXLarge;
@@ -42,7 +42,7 @@
                 }
             }
 
-            > h1 {
+            > h2 {
                 order: 2;
                 @include headingFontMedium;
                 @media(min-width: $screen-lg) {
@@ -91,7 +91,7 @@
                 .article {
                     width: calc((100% / 2) - #{$gutter-medium});
 
-                    > h1 {
+                    > h2 {
                         @include headingFontMedium;
                     }
 

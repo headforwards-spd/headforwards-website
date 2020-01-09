@@ -19,7 +19,7 @@ function BlogArticle({ title, image, link }) {
     return (
         <Link to={link} aria-label={title}>
             <section className={styles.article}>
-                <h1>{title}</h1>
+                <h2>{title}</h2>
                 <Image className={styles.image} image={image} />
                 <Link to={link} aria-label={title}>
                     <Arrow />

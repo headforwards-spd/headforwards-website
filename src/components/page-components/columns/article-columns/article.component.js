@@ -26,7 +26,7 @@ function Article({ title, text, image, link, linkText }) {
 
     return (
         <section className={styles.article}>
-            <h1>{title}</h1>
+            <h2>{title}</h2>
             <Image image={image} className={styles.image} />
             <section>
                 <ReactMarkdown source={text} />

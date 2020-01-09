@@ -19,7 +19,7 @@ IntroductionComponent.defaultProps = {
 function IntroductionComponent({ title, text }) {
     return text ? (
         <section className={styles.introduction}>
-            {title && <h1>{title}</h1>}
+            {title && <h2>{title}</h2>}
             <ReactMarkdown source={text} />
         </section>
     ) : null;

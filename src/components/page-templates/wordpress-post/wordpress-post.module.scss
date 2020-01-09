@@ -30,7 +30,7 @@
 .prev, .next {
     margin: 0 $gutter-medium/2;
     width: calc(50% - #{$gutter-medium});
-    h1 {
+    h2 {
         @include headingFontSmall;
     }
     p {

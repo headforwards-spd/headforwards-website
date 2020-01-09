@@ -95,7 +95,7 @@
                     border-bottom: 1px solid #383F51;
                     text-decoration: none;
 
-                    h1 {
+                    h2 {
                         display: none;
                     }
 
@@ -132,7 +132,7 @@
             margin: 0;
         }
 
-        dt, h1 {
+        dt, h2 {
             text-transform: uppercase;
             @include orange-type;
             @include fontMedium;
@@ -293,7 +293,7 @@
                         }
                     }
 
-                    h1 {
+                    h2 {
                         display: block;
                     }
 
@@ -336,7 +336,7 @@
                             display: block;
                         }
 
-                        h1 {
+                        h2 {
                             @include fontMedium;
                             font-weight: lighter;
                             padding-bottom: $gutter-small;
