@@ -28,7 +28,7 @@ components:
       of trust. Quality often suffers, and outsourcing can become a false
       economy.
     type: quote-component
-  - isPostit: true
+  - isPostit: false
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
@@ -41,7 +41,7 @@ components:
 
       Companies can choose to engage Headforwards in one of two ways: as a
       long-term partner or for a short-term project.
-    image: /uploads/lightning-doodle.png
+    image: /uploads/head-7.jpg
   - isPostit: true
     isRightImage: true
     isTwoColumns: false
