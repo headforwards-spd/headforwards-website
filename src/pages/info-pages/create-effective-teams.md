@@ -43,8 +43,9 @@ components:
     type: image-copy-component
     title: Grow successful teams
     text: "Creating an effective team is only the first step. For a team to thrive, individual members must work closely together to reach their goals.\rHeadforwards takes an Agile approach to development, using techniques like pair programming and mob programming to bring team members together, share knowledge and skills, and ultimately deliver high quality software, fast.\n\n\rAt the same time, each team’s scrum master is there to keep up morale, encourage team cohesion and ensure the team is maximising its potential."
-  - imageOne: /uploads/delete 8.jpg
-    imageTwo: /uploads/gash-3.jpg
+  - flip: true
+    imageOne: /uploads/hf-steal-1.jpg
+    imageTwo: /uploads/hf-e.jpg
     type: images-component
 callToAction: Want to learn more about our team creation process?
 ---

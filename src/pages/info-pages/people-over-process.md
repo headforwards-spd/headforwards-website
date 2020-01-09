@@ -17,7 +17,7 @@ components:
     type: image-copy-component
     title: 'Building open, honest relationships '
     text: "Openness and honesty are the basis for all client work at Headforwards. Right from the off, both Headforwards teams and clients are included on instant messaging channels and deployment systems. \n\n\rThis creates complete transparency – so clients not only see what work is being done, they can react to it immediately with their thoughts and feedback."
-    image: /uploads/blog.png
+    image: /uploads/head-1.jpg
   - jobTitle: Scrum Master
     name: Andy Roberts
     quote: >-
@@ -31,7 +31,7 @@ components:
     type: image-copy-component
     title: The right team for every job
     text: "Headforwards builds its teams based on each job’s specific needs. That’s why an initial workshop with the client at the start of the relationship is key. \r\n\nIt’s an opportunity for clients to establish their exact requirements, so the team at Headforwards can estimate the project’s scope, and even make a start the very same day."
-    image: /uploads/delete 10.jpg
+    image: /uploads/head-8.jpg
   - quote: >-
       Our people are so much more than developers. Yes, they design and build,
       but they also test, deploy, and provide on-going support. It means they’re
@@ -43,7 +43,7 @@ components:
     type: image-copy-component
     title: Getting the best out of people
     text: "When people are assigned to a team at Headforwards, they’re not expected to hit the ground running. For a team to gel well enough to do great work it needs great coaching and strong, supportive relationships.  \n\n\rThese relationships are at the heart of everything Headforwards does, and play a big part in the great service the company offers to its clients."
-    image: /uploads/gash-6.jpg
+    image: /uploads/head-11.jpg
   - quote: >-
       It’s important to get teams working together to be the best they can be.
       This can only happen if your people gel and build their own relationships
