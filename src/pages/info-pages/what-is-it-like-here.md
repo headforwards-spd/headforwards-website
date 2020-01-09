@@ -56,7 +56,8 @@ components:
       on our progress, or demo new software; overall, communication is key to a
       successful project.
     type: quote-component
-  - imageOne: /uploads/headforwards-16.jpg
+  - flip: true
+    imageOne: /uploads/headforwards-16.jpg
     imageTwo: /uploads/headforwards-17.jpg
     type: images-component
   - isPostit: false
