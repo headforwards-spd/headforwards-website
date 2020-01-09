@@ -34,9 +34,9 @@ components:
     type: image-copy-component
     title: Two ways to work with Headforwards
     text: >-
-      Headforwards has deliberately avoided that model. Instead, it focuses on
-      forming effective teams who stay together long-term and continuously
-      develop new ways to deliver value to the client.
+      Headforwards has deliberately avoided that out-moded model. Instead, it
+      focuses on forming effective teams who stay together long-term and
+      continuously develop new ways to deliver value to the client.
 
 
       Companies can choose to engage Headforwards in one of two ways: as a
