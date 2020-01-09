@@ -150,4 +150,12 @@
             opacity: 0.95;
         }
     }
+
+    @media(min-width: $screen-xl) {
+
+        &.hasBackground {
+            height: 40vw;
+            min-height: 65vh;
+        }
+    }
 }
