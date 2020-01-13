@@ -78,6 +78,8 @@ components:
       everyone to work together effectively, we’re going to get a much better
       result for everyone.
     type: quote-component
-callToAction: Interested in working with us?
+callToAction: 'To learn more about how we collaborate with clients '
+seo:
+  slug: ''
 ---
 
