@@ -72,6 +72,6 @@ components:
       test and deploy software in just a few days. Developers can focus on one
       task at a time, and results are seen much earlier on.
     type: quote-component
-callToAction: Want to learn more about our continuous delivery process?
+callToAction: To learn more about our continuous delivery process
 ---
 
