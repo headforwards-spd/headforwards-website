@@ -57,6 +57,6 @@ components:
       empower everybody who works for us and maximise their contribution – and
       the client really benefits from that.
     type: quote-component
-callToAction: Want to know more about how we can create value for your organisation?
+callToAction: How can we create value for your organisation?
 ---
 
