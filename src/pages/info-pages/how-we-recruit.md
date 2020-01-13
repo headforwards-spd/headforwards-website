@@ -34,6 +34,7 @@ components:
       people we hire need to be really positive and prepared to have each
       other’s backs.
     type: quote-component
+    title: ''
   - isPostit: false
     isRightImage: false
     isTwoColumns: true
