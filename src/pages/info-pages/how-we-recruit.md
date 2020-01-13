@@ -51,5 +51,6 @@ components:
       equally to the projects they’re working on and the experience of being
       here.
     type: quote-component
+callToAction: Would you like to be part of our team?
 ---
 
