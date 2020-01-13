@@ -47,6 +47,6 @@ components:
     imageOne: /uploads/hf-steal-1.jpg
     imageTwo: /uploads/hf-e.jpg
     type: images-component
-callToAction: Want to learn more about our team creation process?
+callToAction: To learn more about our team creation process
 ---
 
