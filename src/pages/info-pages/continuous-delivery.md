@@ -64,8 +64,8 @@ components:
       functionality each day, so the client gets fully-tested, quality software
       that meets key priorities – without having to wait for the next monthly
       release.
-  - imageOne: /uploads/gash-10.jpg
-    imageTwo: /uploads/gash-5.jpg
+  - imageOne: /uploads/postit-1.jpg
+    imageTwo: /uploads/hf-c.jpg
     type: images-component
   - quote: >-
       When a client chooses to use continuous delivery, our teams can develop,
