@@ -32,7 +32,7 @@ components:
       cycles, clients can see major value early on.
     type: quote-component
   - isPostit: false
-    isRightImage: false
+    isRightImage: true
     isTwoColumns: true
     type: image-copy-component
     title: Made possible by Agile
@@ -45,6 +45,7 @@ components:
       And with weekly – or even daily – release cycles, clients can easily add
       or change requirements and barriers, such as approval stage gates, are
       removed from the process completely.
+    image: /uploads/postit-3.jpg
   - quote: >-
       Continuous delivery works really well with Agile development at
       Headforwards. Our teams are able to be more flexible, and it’s much easier
