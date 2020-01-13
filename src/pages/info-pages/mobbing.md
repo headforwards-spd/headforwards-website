@@ -63,6 +63,6 @@ components:
       team as people. And in the long run, it helps us grow as developers to
       produce better software, more quickly, with fewer issues.
     type: quote-component
-callToAction: 'Want to know more about how we use mobbing to deliver quality software? '
+callToAction: To learn how mobbing can deliver quality software
 ---
 
