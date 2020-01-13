@@ -3,7 +3,7 @@ uuid: 40718760-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: How we recruit
-image: /uploads/headforwards-10a.jpg
+image: /uploads/hf-recruit-header.jpg
 components:
   - isPostit: true
     isRightImage: false
