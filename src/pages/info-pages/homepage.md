@@ -6,7 +6,7 @@ image: /uploads/headforwards-1.jpg
 introduction:
   - text: >-
       Being true to the principles of an Agile methodology brings benefits to
-      both clients and the people who work in the business.
+      both our clients and the people who work in our business.
     title: >-
       Headforwards is a software development outsourcing company that builds
       strong relationships with clients in order to deliver exceptional
