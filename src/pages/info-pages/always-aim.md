@@ -76,6 +76,6 @@ components:
       so. By doing that, it’s worth its weight in gold for the client
       relationship, not least because it’s the right thing to do anyway.
     type: quote-component
-callToAction: Like the sound of open and honest software development?
+callToAction: For open and honest software development
 ---
 
