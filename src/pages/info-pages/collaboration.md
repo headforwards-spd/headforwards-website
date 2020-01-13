@@ -41,7 +41,7 @@ components:
       Clients can draw on the team’s software development experience, knowledge
       and ideas, all of which can contribute to better decision-making and
       better quality software.
-    image: /uploads/gash-9.jpg
+    image: /uploads/headforwards-16.jpg
   - quote: >-
       We want to be a partner to our clients, to develop long-term relationships
       with trust on both sides. With a dedicated team in place, trust and
@@ -62,10 +62,10 @@ components:
       By partnering with Headforwards, large organisations can immediately
       benefit from its Agile approach to software development – something that
       can be hard to achieve in-house.
-    image: /uploads/gash-1.jpg
+    image: /uploads/postit-2.jpg
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: A flexible approach to collaboration
     text: >-
