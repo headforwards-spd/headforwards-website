@@ -49,6 +49,6 @@ components:
       This can only happen if your people gel and build their own relationships
       before building one with a client.
     type: quote-component
-callToAction: 'Want to know more about how the right people can make all the difference? '
+callToAction: How do the right people make all the difference?
 ---
 
