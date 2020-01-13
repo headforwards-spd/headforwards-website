@@ -9,9 +9,6 @@ introduction:
       By delivering new functionality into production every day, Headforwards
       continuously creates business value for clients across industries.
 components:
-  - imageOne: /uploads/delete 6.jpg
-    imageTwo: /uploads/gash-7.jpg
-    type: images-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: false
