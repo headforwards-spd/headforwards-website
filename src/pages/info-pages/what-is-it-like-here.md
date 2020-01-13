@@ -74,6 +74,6 @@ components:
       Every team is built to create the perfect balance of skills, and
       individuals are encouraged to focus on what they do best, which means the
       client gets the most out of every person assigned to their project.
-callToAction: Want to learn more about what it’s like to work with Headforwards?
+callToAction: Would you like to work with us?
 ---
 
