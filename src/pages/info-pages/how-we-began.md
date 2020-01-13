@@ -42,5 +42,6 @@ components:
     type: image-copy-component
     title: Staying true to its principles
     text: "As clients increasingly look for outsource companies that deliver long-term value and competitive differentiation, Headforwards stands in good stead for the future. \r\n\n“Everything about our business is modelled around what a client could want. As long as we stay true to that, Headforwards will continue to grow.”"
+callToAction: 'Would you like to join us on our journey? '
 ---
 
