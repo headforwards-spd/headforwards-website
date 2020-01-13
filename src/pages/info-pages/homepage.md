@@ -14,6 +14,15 @@ introduction:
 sections:
   - components:
       - text: >-
+          Headforwards is a software development outsourcing company that builds
+          strong relationships with clients in order to deliver exceptional
+          software.
+
+
+          Being true to the principles of an Agile methodology brings benefits
+          to both clients and the people who work in the business.
+        type: image-copy-component
+      - text: >-
           Developers are recruited specifically for a client’s needs and teams
           are self-organising with the responsibility of producing software that
           delivers business value.
@@ -73,6 +82,8 @@ sections:
     isRightImage: false
     title: This is a title
     image: /uploads/paper-airplane-doodle.png
+  - isPostit: false
+    isRightImage: false
 seo:
   slug: /
 ---
