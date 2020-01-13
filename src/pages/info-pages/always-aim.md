@@ -28,8 +28,8 @@ components:
 
       It believes this is the best way to deliver quality work, and its clients
       think so too.
-  - imageOne: /uploads/delete 10.jpg
-    imageTwo: /uploads/delete 5.jpg
+  - imageOne: /uploads/team-6.jpg
+    imageTwo: /uploads/team-5.jpg
     type: images-component
   - jobTitle: scrum master
     name: Andy Roberts
@@ -55,9 +55,6 @@ components:
       Whether it’s an internal team, or a relationship with a client, trust
       should dominate everything.
     type: quote-component
-  - imageOne: /uploads/delete 7.jpg
-    imageTwo: /uploads/gash-4.jpg
-    type: images-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: true
