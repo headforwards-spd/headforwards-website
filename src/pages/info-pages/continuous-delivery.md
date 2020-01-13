@@ -11,7 +11,7 @@ introduction:
 components:
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: Clients see value faster
     text: >-
@@ -33,7 +33,7 @@ components:
     type: quote-component
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: Made possible by Agile
     text: >-
@@ -52,7 +52,7 @@ components:
     type: quote-component
   - isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: 'Small tasks, big results'
     text: >-
