@@ -5,6 +5,10 @@ type: info-page
 title: Two different working models
 text: ''
 image: /uploads/hf-i.jpg
+introduction:
+  - text: >-
+      Headforwards offers two engagement models to ensure you get the right mix
+      of quality and value for money.
 components:
   - isPostit: false
     isRightImage: false
