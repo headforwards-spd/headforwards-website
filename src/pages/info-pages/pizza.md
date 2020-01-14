@@ -6,7 +6,7 @@ title: 'Pizza, beaches and beers'
 image:
     show: false
     image:
-image:
+introduction:
     show: false
     text: CHANGEME
 components:
