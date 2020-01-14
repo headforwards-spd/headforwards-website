@@ -3,7 +3,12 @@ uuid: fe1a1d50-0fab-11ea-843f-932c76de5936
 parent: how-we-work
 type: info-page
 title: Do the right thing
-image: /uploads/headforwards-20.jpg
+image:
+    show: true
+    image: /uploads/headforwards-20.jpg
+introduction:
+    show: false
+    text: CHANGEME
 components:
   - isPostit: false
     isRightImage: false

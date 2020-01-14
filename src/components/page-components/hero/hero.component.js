@@ -21,8 +21,9 @@ Hero.defaultProps = {
 };
 function Hero({ title, text, isTwoColumns, className }) {
     const columnsClass = isTwoColumns ? styles.isTwoColumns : '';
+    const hasTitleClass = title ? styles.hasTitle : '';
     return (
-        <section className={`${styles.hero} ${columnsClass} ${className}}`}>
+        <section className={`${styles.hero} ${columnsClass} ${hasTitleClass} ${className}}`}>
             {title && <h2>{title}</h2>}
             <section>
                 <ReactMarkdown source={text} />

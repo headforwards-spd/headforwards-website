@@ -1,26 +1,18 @@
-import { shape, string } from 'prop-types';
+import { string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styles from './introduction.module.scss';
 
-const introductionComponentPropTypes = {
-    title: string,
-    text: string.isRequired,
-};
-
 export default IntroductionComponent;
-export const IntroductionComponentPropType = shape(introductionComponentPropTypes);
 
-IntroductionComponent.propTypes = introductionComponentPropTypes;
-IntroductionComponent.defaultProps = {
-    title: null,
+IntroductionComponent.propTypes = {
+    introduction: string.isRequired,
 };
 
-function IntroductionComponent({ title, text }) {
-    return text ? (
+function IntroductionComponent({ introduction }) {
+    return introduction ? (
         <section className={styles.introduction}>
-            {title && <h2>{title}</h2>}
-            <ReactMarkdown source={text} />
+            <ReactMarkdown source={introduction} />
         </section>
     ) : null;
 }

@@ -2,8 +2,7 @@
 uuid: 4b2bb870-13bb-11ea-9795-cb94363984ef
 type: legal-page
 title: Privacy Notice
-introduction:
-   - text: >-
+introduction: >-
         This privacy notice is here to explain how we (Headforwards Solutions LTD) use
         and protect any information you give us whilst using our site. We want to
         ensure that your privacy is protected at all times.

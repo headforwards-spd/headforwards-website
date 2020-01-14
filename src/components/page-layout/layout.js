@@ -1,6 +1,6 @@
-import { graphql, Link, useStaticQuery } from 'gatsby';
-import { arrayOf, bool, node, oneOfType, string } from 'prop-types';
-import React from 'react';
+import { graphql, Link, useStaticQuery }                 from 'gatsby';
+import { arrayOf, bool, node, oneOfType, shape, string } from 'prop-types';
+import React                                             from 'react';
 import Helmet from 'react-helmet';
 import { Provider } from 'unstated';
 import withUnstated from '@airship/with-unstated';
@@ -34,21 +34,24 @@ const UnstatedHelmet = withUnstated(
 Layout.propTypes = {
     isHomePage: bool,
     title: string.isRequired,
-    text: string,
+    subtitle: string,
     callToAction: string,
-    image: ImageSrcPropType,
+    image: shape({
+        show: bool,
+        image: ImageSrcPropType,
+    }),
     seo: SeoPropType,
     children: oneOfType([arrayOf(node), node, string]),
 };
 Layout.defaultProps = {
     isHomePage: false,
-    text: null,
+    subtitle: null,
     image: null,
     children: null,
     seo: null,
     callToAction: null,
 };
-function Layout({ isHomePage, seo, title, text, image, children, callToAction: pageCallToAction }) {
+function Layout({ isHomePage, seo, title, subtitle, image, children, callToAction: pageCallToAction }) {
     const { menuData, companyInfo } = useStaticQuery(graphql`
         query {
             menuData: dataYaml(title: { eq: "main-menu" }) {
@@ -87,11 +90,13 @@ function Layout({ isHomePage, seo, title, text, image, children, callToAction: p
 
     const { callToAction: defaultCallToAction } = companyInfo;
 
+    const { show: showImage, image: bannerImage } = image;
+
     const headerProps = {
         isHomePage,
         title,
-        text,
-        image,
+        subtitle,
+        image: showImage ? bannerImage : null,
         menu,
         companyInfo,
     };

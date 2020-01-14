@@ -3,8 +3,10 @@ uuid: 07758420-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: What we believe
-text: ''
+showImage: true
 image: /uploads/headforwards-2.jpg
+showIntroduction: false
+introduction: CHANGEME
 components:
   - isPostit: false
     isRightImage: false

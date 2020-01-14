@@ -3,7 +3,10 @@ uuid: 3b246990-0f6f-11ea-81de-ff3cb4003432
 parent: who-we-are
 type: info-page
 title: How we began.
+showImge: true
 image: /uploads/headforwards-7.jpg
+showIntroduction: false
+introduction: CHANGEME
 components:
   - image: /uploads/headforwards-8.jpg
     isPostit: false

@@ -29,7 +29,6 @@ export default function IndexPageTemplate({ pages }) {
 function PageLink({ link, linkText, page }) {
     const { frontmatter } = page || {};
     const { introduction, image } = frontmatter || {};
-    const [{ text } = {}] = introduction || [];
 
     const { logo } = useStaticQuery(graphql`
         query {
@@ -49,10 +48,10 @@ function PageLink({ link, linkText, page }) {
                 <h2>{linkText}</h2>
                 <section>
                     {image && <Image image={image} alt={linkText} />}
-                    {image && text && (
+                    {image && introduction && (
                         <section className={styles.introduction}>
                             <Image image={logo} alt={linkText} className={styles.logo} />
-                            <ReactMarkdown source={truncate(text)} />
+                            <ReactMarkdown source={introduction} />
                         </section>
                     )}
                 </section>
@@ -61,9 +60,9 @@ function PageLink({ link, linkText, page }) {
     );
 }
 
-function truncate(text, maxLength = 150) {
-    const truncate1 = text.substr(0, maxLength);
-    const truncate2 = truncate1.substr(0, Math.min(truncate1.length, truncate1.lastIndexOf(' ')));
-
-    return truncate2 === text ? text : `${truncate2}\u2026`;
-}
+// function truncate(text, maxLength = 150) {
+//     const truncate1 = text.substr(0, maxLength);
+//     const truncate2 = truncate1.substr(0, Math.min(truncate1.length, truncate1.lastIndexOf(' ')));
+//
+//     return truncate2 === text ? text : `${truncate2}\u2026`;
+// }

@@ -43,22 +43,17 @@ menu:
       - linkText: Working at Headforwards
         link: /careers/working-at-headforwards
         children:
-          - linkText: 'Pizza, beaches and beer'
+          - linkText: 'Our culture'
             link: 92161650-0f9b-11ea-9e15-59d1e5da42db
-          - linkText: 'Digital peninsular'
+          - linkText: 'Tech in Cornwall'
             link: 87ef9080-0f86-11ea-9e15-59d1e5da42db
           - linkText: 'Training, development and growth'
             link: 97f70000-0fac-11ea-b2ae-07531833e614
+          - linkText: 'Our Benefits'
+            link: 97f70000-0fac-11ea-b2ae-07531833e614
       - linkText: 'Our tech stack'
         link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
-        children:
-          - linkText: 'BI & Data'
-            link: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
-          - linkText: '.Net'
-            link: 4a8df080-1529-11ea-a6b5-63ea6add32fb
-          - linkText: 'Front End'
-            link: fe585b60-1528-11ea-a6b5-63ea6add32fb
-          - linkText: 'Perl, Python and Golang'
-            link: 7ccaa0e0-152c-11ea-a47f-c360f0875c84
+      - linkText: 'Living in Cornwall'
+        link: /careers/jobs
       - linkText: 'Jobs'
         link: /careers/jobs

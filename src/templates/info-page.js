@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import { objectOf, shape, string, any, arrayOf, oneOfType } from 'prop-types';
+import { objectOf, shape, string, any, arrayOf, oneOfType, bool } from 'prop-types';
 import Layout from '../components/page-layout/layout';
 import { ArticleColumnsPropType } from '../components/page-components/columns/article-columns/article-columns.component';
 import { ImageCopyColumnsPropType } from '../components/page-components/columns/image-copy-columns/image-copy-columns.component';
@@ -20,23 +20,26 @@ InfoPagePage.propTypes = {
         page: shape({
             frontmatter: shape({
                 title: string.isRequired,
-                text: string,
+                subtitle: string,
+                image: shape({
+                    show: bool.isRequired,
+                    image: shape({
+                        publicURL: string,
+                        childImageSharp: shape({
+                            fluid: objectOf(any),
+                        }),
+                    }),
+                }),
                 introduction: shape({
-                    title: string,
+                    show: bool.isRequired,
                     text: string.isRequired,
                 }),
                 callToAction: string,
                 seo: {
                     slug: string,
-                    // title: string,
-                    // description: string,
+                    title: string,
+                    description: string,
                 },
-                image: shape({
-                    publicURL: string,
-                    childImageSharp: shape({
-                        fluid: objectOf(any),
-                    }),
-                }),
                 components: arrayOf(
                     oneOfType([
                         ArticleColumnsPropType,
@@ -55,36 +58,42 @@ InfoPagePage.propTypes = {
     }).isRequired,
 };
 
+function InfoPagePage({ data }) {
+    const { page } = data;
+    const { frontmatter } = page;
+    const { introduction, components, ...header } = frontmatter;
+    const pageProps = {
+        introduction,
+        components,
+    };
+
+    return (
+        <Layout {...header}>
+            <InfoPageTemplate {...pageProps} />
+        </Layout>
+    );
+}
+
 export const query = graphql`
     query InfoPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
-                text
-                introduction {
-                    title
-                    text
-                }
-                callToAction
-                seo {
-                    title
-                    description
-                }
+                subtitle
                 image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 100) {
-                            ...GatsbyImageSharpFluid_withWebp
+                    show
+                    image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 100) {
+                                ...GatsbyImageSharpFluid_withWebp
+                            }
                         }
                     }
                 }
-                imageSquare: image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER, quality: 100) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
+                introduction {
+                    show
+                    text
                 }
                 components {
                     id
@@ -190,20 +199,12 @@ export const query = graphql`
                         }
                     }
                 }
+                callToAction
+                seo {
+                    title
+                    description
+                }
             }
         }
     }
 `;
-
-function InfoPagePage({ data }) {
-    const { page } = data;
-    const { frontmatter } = page;
-    const { introduction, components, ...header } = frontmatter;
-    const pageProps = { introduction, components };
-
-    return (
-        <Layout {...header}>
-            <InfoPageTemplate {...pageProps} />
-        </Layout>
-    );
-}

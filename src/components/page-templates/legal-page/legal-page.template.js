@@ -1,6 +1,7 @@
 import { shape, arrayOf, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 import styles from './legal-page.module.scss';
 
 const legalPageSectionPropTypes = {
@@ -28,11 +29,9 @@ LegalPageTemplate.defaultProps = {
 };
 
 function LegalPageTemplate({ introduction, sections }) {
-    const [{ title, text } = {}] = introduction || [];
     return (
         <section className={styles.sections}>
-            {title && <h2>{title}</h2>}
-            {text && <ReactMarkdown source={text} />}
+            <IntroductionComponent introduction={introduction} />
             {sections.map(({ id, ...section }) => (
                 <LegalPageSection key={id} {...section} />
             ))}

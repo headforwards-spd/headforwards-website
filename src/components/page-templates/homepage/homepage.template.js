@@ -1,11 +1,9 @@
-import { arrayOf, bool, shape } from 'prop-types';
+import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import Postit from '../../page-components/postit/postit.component';
-import IntroductionComponent, {
-    IntroductionComponentPropType,
-} from '../../page-layout/introduction/introduction.component';
+import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 import styles from './homepage.module.scss';
 
 const homePageSectionPropTypes = {
@@ -17,7 +15,7 @@ const homePageSectionPropTypes = {
     imageSquare: ImageSrcPropType,
 };
 const homepagePropTypes = {
-    introduction: IntroductionComponentPropType,
+    introduction: string,
     sections: arrayOf(shape(homePageSectionPropTypes)),
 };
 
@@ -32,7 +30,7 @@ HomepageTemplate.defaultProps = {
 function HomepageTemplate({ introduction, sections }) {
     return (
         <>
-            {introduction && <IntroductionComponent {...introduction} />}
+            <IntroductionComponent introduction={introduction} />
             {!!sections && sections.map(section => <HomePageSection {...{ ...section }} />)}
         </>
     );

@@ -20,11 +20,8 @@ JobsPagePage.propTypes = {
         page: shape({
             frontmatter: shape({
                 title: string.isRequired,
-                text: string,
-                introduction: shape({
-                    title: string,
-                    text: string.isRequired,
-                }),
+                subtitle: string,
+                introduction: string.isRequired,
                 callToAction: string,
                 seo: {
                     slug: string,
@@ -60,28 +57,19 @@ export const query = graphql`
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
-                text
-                introduction {
-                    title
-                    text
-                }
+                subtitle
+                showIntroduction
+                introduction
                 callToAction
                 seo {
                     title
                     description
                 }
+                showImage
                 image {
                     publicURL
                     childImageSharp {
                         fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 100) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
-                }
-                imageSquare: image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER, quality: 100) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -91,9 +79,7 @@ export const query = graphql`
                     link
                     page {
                         frontmatter {
-                            introduction {
-                                text
-                            }
+                            introduction
                         }
                     }
                 }

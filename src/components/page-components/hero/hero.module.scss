@@ -8,10 +8,6 @@
     @include component-gutter;
     > h2 {
         @include headingFontLarge;
-        //@media(min-width: $screen-lg) {
-        //    @include headingFontXLarge;
-        //
-        //}
     }
     > section {
         @include fontMedium;
@@ -31,25 +27,24 @@
     @media(min-width: $screen-lg) {
 
         &.isTwoColumns {
-            //display: flex;
-            //flex-direction: row;
             align-items: flex-start;
-            //margin-left: $gutter-medium/2;
-            //margin-right: $gutter-medium/2;
-            //
-            //> h2, > section {
-            //    padding: 0 $gutter-medium/2;
-            //}
-
-            > h2 {
-                width: calc(37.5% - #{$column-gutter});
-                @include headingFontLarge;
-                //margin-bottom: 0;
-            }
 
             > section {
-                width: calc(62.5% - #{$column-gutter});
-                //margin-bottom: 0;
+                column-count: 2;
+                column-gap: $gutter-large;
+            }
+
+            &.hasTitle {
+                > h2 {
+                    width: calc(37.5% - #{$column-gutter});
+                    @include headingFontLarge;
+                }
+
+                > section {
+                    width: calc(62.5% - #{$column-gutter});
+                    column-count: unset;
+                    column-gap: unset;
+                }
             }
         }
     }

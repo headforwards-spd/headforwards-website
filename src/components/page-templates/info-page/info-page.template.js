@@ -1,5 +1,5 @@
 import React from 'react';
-import { arrayOf, shape, string } from 'prop-types';
+import { arrayOf, bool, shape, string } from 'prop-types';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 import styles from './info-page.module.scss';
@@ -8,8 +8,8 @@ export default InfoPageTemplate;
 
 InfoPageTemplate.propTypes = {
     introduction: shape({
-        title: string,
-        text: string.isRequired,
+        show: bool,
+        text: string,
     }),
     components: arrayOf(PageComponentPropType),
 };
@@ -20,9 +20,11 @@ InfoPageTemplate.defaultProps = {
 };
 
 function InfoPageTemplate({ introduction, components = [] }) {
+    const { show, text } = introduction;
+
     return (
         <>
-            {introduction && <IntroductionComponent {...introduction} />}
+            {show && <IntroductionComponent introduction={text} />}
             {components && (
                 <section className={styles.components}>
                     {!!components &&

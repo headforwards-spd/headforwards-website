@@ -3,7 +3,10 @@ uuid: 45d05450-103a-11ea-9ef0-bd54961b4e30
 parent: what-we-do
 type: info-page
 title: People over process
+showImage: true
 image: /uploads/hf-d.jpg
+showIntroduction: false
+introduction: CHANGEME
 components:
   - isPostit: false
     isRightImage: false

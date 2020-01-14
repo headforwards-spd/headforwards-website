@@ -35,16 +35,19 @@ collections:
           - { label: "Careers", value: careers }
       - {label: "Type", name: type, widget: hidden, default: "info-page"}
       - {label: "Page Title", name: title, widget: string}
-      - {label: "Page Sub Title", name: text, widget: string, required: false, default: null}
-      - {label: "Header Image", name:  image, widget: image, required: false, default: null}
-      - label: "Introduction"
-        name: introduction
-        required: false
-        default: null
-        widget: optional-object
+      - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
+      - label: "Page Image (banner/menu image)"
+        name: image
+        widget: object
         fields:
-          - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: text, widget: markdown}
+          - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+          - {label: "Image", name:  image, widget: image, required: true}
+      - label: "Page Introduction (menu text)"
+        name: introduction
+        widget: object
+        fields:
+          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
+          - {label: "Text", name: introduction, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -163,16 +166,19 @@ collections:
           - { label: "Careers", value: careers }
       - {label: "Type", name: type, widget: hidden, default: "info-page"}
       - {label: "Page Title", name: title, widget: string}
-      - {label: "Page Sub Title", name: text, widget: string, required: false, default: null}
-      - {label: "Header Image", name:  image, widget: image, required: false, default: null}
-      - label: "Introduction"
-        name: introduction
-        required: false
-        default: null
-        widget: optional-object
+      - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
+      - label: "Page Image (banner/menu image)"
+        name: image
+        widget: object
         fields:
-          - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: text, widget: markdown}
+          - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+          - {label: "Image", name:  image, widget: image, required: true}
+      - label: "Page Introduction (menu text)"
+        name: introduction
+        widget: object
+        fields:
+          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
+          - {label: "Text", name: introduction, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -291,16 +297,19 @@ collections:
           - { label: "Careers", value: careers }
       - {label: "Type", name: type, widget: hidden, default: "info-page"}
       - {label: "Page Title", name: title, widget: string}
-      - {label: "Page Sub Title", name: text, widget: string, required: false, default: null}
-      - {label: "Header Image", name:  image, widget: image, required: false, default: null}
-      - label: "Introduction"
-        name: introduction
-        required: false
-        default: null
-        widget: optional-object
+      - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
+      - label: "Page Image (banner/menu image)"
+        name: image
+        widget: object
         fields:
-          - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: text, widget: markdown}
+          - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+          - {label: "Image", name:  image, widget: image, required: true}
+      - label: "Page Introduction (menu text)"
+        name: introduction
+        widget: object
+        fields:
+          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
+          - {label: "Text", name: introduction, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -419,16 +428,19 @@ collections:
           - { label: "Careers", value: careers }
       - {label: "Type", name: type, widget: hidden, default: "info-page"}
       - {label: "Page Title", name: title, widget: string}
-      - {label: "Page Sub Title", name: text, widget: string, required: false, default: null}
-      - {label: "Header Image", name:  image, widget: image, required: false, default: null}
-      - label: "Introduction"
-        name: introduction
-        required: false
-        default: null
-        widget: optional-object
+      - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
+      - label: "Page Image (banner/menu image)"
+        name: image
+        widget: object
         fields:
-          - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: text, widget: markdown}
+          - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+          - {label: "Image", name:  image, widget: image, required: true}
+      - label: "Page Introduction (menu text)"
+        name: introduction
+        widget: object
+        fields:
+          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
+          - {label: "Text", name: introduction, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -538,14 +550,13 @@ collections:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
       - {label: "Type", name: type, widget: hidden, default: "legal-page"}
       - {label: "Page Title", name: title, widget: string}
-      - label: "Introduction"
+      - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
+      - label: "Page Introduction (menu text)"
         name: introduction
-        required: false
-        default: null
-        widget: optional-object
+        widget: object
         fields:
-          - {label: "Title", name: title, widget: string, required, false, default: null}
-          - {label: "Copy", name: text, widget: markdown}
+          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
+          - {label: "Text", name: introduction, widget: markdown, required: true}
       - label: "Sections"
         name: sections
         widget: list
@@ -579,15 +590,19 @@ collections:
         - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
         - {label: "Type", name: type, widget: hidden, default: "home-page"}
         - {label: "Page Title", name: title, widget: string}
-        - {label: "Header Image", name:  image, widget: image, required: false, default: null}
-        - label: "Introduction"
-          name: introduction
-          required: false
-          default: null
-          widget: optional-object
+        - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
+        - label: "Page Image (banner/menu image)"
+          name: image
+          widget: object
           fields:
-            - {label: "Title", name: title, widget: string, required, false, default: null}
-            - {label: "Copy", name: text, widget: markdown}
+            - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+            - {label: "Image", name:  image, widget: image, required: true}
+        - label: "Page Introduction (menu text)"
+          name: introduction
+          widget: object
+          fields:
+            - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
+            - {label: "Text", name: introduction, widget: markdown, required: true}
         - label: "Sections"
           name: sections
           widget: list
@@ -665,30 +680,6 @@ collections:
           - {label: "Youtube URL",  name: youtubeURL, widget: string, required: false}
           - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
           - {label: "Registered Office Address", name: registeredAddress, widget: text}
-
-  - label: "WordPress Pages"
-    label_singular: "WordPress Page"
-    name: wordpress-pages
-    description: "Imported old WordPress pages."
-    folder: "src/pages/wordpress-pages"
-    identifier_field: title
-    fields:
-      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - {label: "Type", name: type, widget: hidden, default: "wordpress-page"}
-      - {label: "Page Title", name: title, widget: string}
-      - {label: "Copy", name: body, widget: markdown}
-
-  - label: "WordPress Posts"
-    label_singular: "WordPress Post"
-    name: wordpress-posts
-    description: "Imported old WordPress blog posts."
-    folder: "src/pages/wordpress-posts"
-    identifier_field: title
-    fields:
-      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - {label: "Type", name: type, widget: hidden, default: "wordpress-post"}
-      - {label: "Page Title", name: title, widget: string}
-      - {label: "Copy", name: body, widget: markdown}
 
   - label: "All Pages"
     label_singular: "Page"

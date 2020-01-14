@@ -3,7 +3,10 @@ uuid: 359e0550-009f-11ea-b6f6-d743f848720a
 parent: what-we-do
 type: info-page
 title: Build strong relationships
+showImage: true
 image: /uploads/hf-a.jpg
+showIntroduction: false
+introduction: CHANGEME
 components:
   - image: null
     isPostit: false
@@ -14,7 +17,7 @@ components:
         linkText: Read more
     type: image-copy-component
     title: ''
-    text: >
+    text: >-
 
       Whether it’s within teams across the company, or with clients across the
       world, strong relationships are key to Headforwards’ ability to create

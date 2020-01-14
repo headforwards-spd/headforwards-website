@@ -10,10 +10,8 @@ LegalPage.propTypes = {
         page: shape({
             frontmatter: shape({
                 title: string.isRequired,
-                introduction: shape({
-                    title: string,
-                    text: string,
-                }),
+                subtitle: string,
+                introduction: string,
                 sections: arrayOf(
                     shape({
                         title: string,
@@ -29,10 +27,11 @@ function LegalPage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
     const { introduction, sections, ...layoutProps } = frontmatter;
+    const templateProps = { introduction, sections };
 
     return (
         <Layout {...layoutProps}>
-            <LegalPageTemplate {...{ introduction, sections }} />
+            <LegalPageTemplate {...templateProps} />
         </Layout>
     );
 }
@@ -42,7 +41,9 @@ export const query = graphql`
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
-                introduction {
+                subtitle
+                introduction
+                sections {
                     title
                     text
                 }
@@ -50,26 +51,6 @@ export const query = graphql`
                 seo {
                     title
                     description
-                }
-                image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 100) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
-                }
-                imageSquare: image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER, quality: 100) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
-                }
-                sections {
-                    title
-                    text
                 }
             }
         }

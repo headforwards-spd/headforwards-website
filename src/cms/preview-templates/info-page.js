@@ -1,4 +1,4 @@
-import { func, shape, string } from 'prop-types';
+import { func, shape, string, bool } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Provider } from 'unstated';
@@ -15,8 +15,15 @@ InfoPagePreview.propTypes = {
     entry: shape({
         data: shape({
             title: string.isRequired,
-            text: string,
-            image: ImageSrcPropType,
+            subtitle: string,
+            image: shape({
+                show: bool,
+                image: ImageSrcPropType,
+            }),
+            introduction: shape({
+                show: bool,
+                text: string,
+            }),
         }),
     }).isRequired,
     getAsset: func.isRequired,
@@ -24,11 +31,19 @@ InfoPagePreview.propTypes = {
 
 function InfoPagePreview({ entry, getAsset }) {
     const { data } = entry.toJS();
-    const { title = '', image: imageRef = null, introduction, components, callToAction } = data;
+    const { title = '', image, introduction, components, callToAction } = data;
     const [{ title: introTitle, text: introText } = {}] = introduction || [];
-    const image = imageRef ? getAsset(imageRef).toString() : null;
 
-    const header = { title, image };
+    const { show: showImage = false, image: bannerImageRef = null } = image || {};
+    const bannerImage = bannerImageRef ? getAsset(bannerImageRef).toString() : null;
+
+    const header = {
+        title,
+        image: {
+            show: showImage,
+            image: bannerImage,
+        },
+    };
 
     !!components &&
         components.forEach(component => {

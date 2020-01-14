@@ -14,17 +14,12 @@ const jobRolePropTypes = {
     link: string.isRequired,
     page: shape({
         frontmatter: shape({
-            introduction: shape({
-                text: string,
-            }),
+            introduction: string.isRequired,
         }),
     }).isRequired,
 };
 const jobsPageTemplatePropTypes = {
-    introduction: shape({
-        title: string,
-        text: string.isRequired,
-    }),
+    introduction: string,
     jobRoles: arrayOf(shape(jobRolePropTypes)),
     components: arrayOf(PageComponentPropType),
 };
@@ -40,7 +35,7 @@ JobsPageTemplate.defaultProps = {
 function JobsPageTemplate({ introduction, jobRoles, components = [] }) {
     return (
         <>
-            <IntroductionComponent {...introduction} />
+            <IntroductionComponent introduction={introduction} />
             {jobRoles && (
                 <section className={styles.jobRoles}>
                     {jobRoles.map(jobRole => (
@@ -62,14 +57,13 @@ JobRole.propTypes = jobRolePropTypes;
 
 function JobRole({ title, link, page }) {
     const { frontmatter } = page || {};
-    const { introduction } = frontmatter || {};
-    const [{ text } = {}] = introduction || [];
+    const { introduction } = frontmatter;
 
     return (
         <Postit className={styles.role}>
             <Link to={link}>
                 <h2>{title}</h2>
-                <ReactMarkdown source={text} />
+                <ReactMarkdown source={introduction} />
                 <Link to={link} className={styles.link}>
                     Read more
                 </Link>

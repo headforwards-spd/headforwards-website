@@ -3,9 +3,13 @@ uuid: 97f70000-0fac-11ea-b2ae-07531833e614
 parent: careers
 type: info-page
 title: 'Training, development and growth'
-text: >-
+subtitle: >-
   We want our people to the get most from their time here, which is why we work
   hard to provide the perfect environment for people to learn and grow.
+showImage: false
+image: 
+showIntroduction: false
+introduction: CHANGEME
 components:
   - isPostit: false
     isRightImage: false

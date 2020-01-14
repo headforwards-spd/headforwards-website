@@ -12,31 +12,31 @@ export default Header;
 Header.propTypes = {
     isHomePage: bool,
     title: string.isRequired,
-    text: string,
+    subtitle: string,
     image: ImageSrcPropType,
     menu: arrayOf(MenuItemPropType).isRequired,
     companyInfo: CompanyInfoPropType.isRequired,
 };
 Header.defaultProps = {
     isHomePage: false,
-    text: null,
+    subtitle: null,
     image: null,
 };
-function Header({ isHomePage, title, text, image, menu, companyInfo }) {
+function Header({ isHomePage, title, subtitle, image, menu, companyInfo }) {
     const { publicURL } = image || {};
     const hasBackground = !!image || !!publicURL;
     let headerStyle = hasBackground ? styles.hasBackground : '';
 
     isHomePage && (headerStyle += ` ${styles.isHomePage}`);
 
-    const titleStyle = text ? styles.hasSubTitle : '';
+    const titleStyle = subtitle ? styles.hasSubTitle : '';
 
     return (
         <header className={`${styles.header} ${headerStyle}`}>
             <Navbar {...{ menu, companyInfo, hasBackground }} />
             <section className={titleStyle}>
                 <h1>{parseHtml(title)}</h1>
-                {!!text && <p>{text}</p>}
+                {!!subtitle && <p>{subtitle}</p>}
             </section>
             {!!image && <Image image={image} className={styles.image} />}
         </header>

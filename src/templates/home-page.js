@@ -8,10 +8,7 @@ const homepagePropTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
-                introduction: shape({
-                    title: string,
-                    text: string,
-                }),
+                introduction: string,
                 sections: arrayOf(
                     shape({
                         title: string,
@@ -31,9 +28,11 @@ function Homepage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
     const { introduction, sections, ...layoutProps } = frontmatter;
+    const templateProps = { introduction, sections };
+
     return (
-        <Layout {...{ ...layoutProps, isHomePage: true }}>
-            <HomepageTemplate {...{ introduction, sections }} />
+        <Layout {...layoutProps} isHomePage>
+            <HomepageTemplate {...templateProps} />
         </Layout>
     );
 }
@@ -43,7 +42,8 @@ export const query = graphql`
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
-                text
+                subtitle
+                introduction
                 image {
                     publicURL
                     childImageSharp {
@@ -51,18 +51,6 @@ export const query = graphql`
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
-                }
-                imageSquare: image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER, quality: 100) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
-                }
-                introduction {
-                    title
-                    text
                 }
                 sections {
                     image {

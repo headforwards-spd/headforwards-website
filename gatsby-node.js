@@ -18,10 +18,9 @@ exports.createPages = ({ actions, graphql }) => {
 
     return getData(graphql)
         .then(({ data, errors }) => (!errors ? Promise.resolve(data) : Promise.reject(errors)))
-        .then(({ indexPages, pages, posts, jobs }) => {
+        .then(({ indexPages, pages, jobs }) => {
             createAllIndexPages(createPage, indexPages);
             createAllPages(createPage, pages);
-            createAllPosts(createPage, posts);
             createAllJobs(createPage, jobs);
         });
 };
@@ -90,26 +89,6 @@ function createAllJobs(createPage, { nodes: jobs = [] }) {
     );
 }
 
-function createAllPosts(createPage, { nodes: posts = [] }) {
-    const firstIndex = 0;
-    const lastIndex = posts.length - 1;
-
-    return Promise.all(
-        posts.map(({ id, frontmatter }, index) => {
-            const { path, type } = frontmatter;
-
-            const { id: prevId = '' } = index > firstIndex ? posts[index - 1] : {};
-            const { id: nextId = '' } = index < lastIndex ? posts[index + 1] : {};
-
-            return createPage({
-                path: `/wordpress-posts${path}`,
-                component: resolve(`src/templates/${type}.js`),
-                context: { id, prevId, nextId },
-            });
-        })
-    );
-}
-
 function getData(graphql) {
     return graphql(`
         {
@@ -122,9 +101,7 @@ function getData(graphql) {
                         linkText
                         page {
                             frontmatter {
-                                introduction {
-                                    text
-                                }
+                                introduction
                                 image {
                                     publicURL
                                     childImageSharp {
@@ -141,19 +118,6 @@ function getData(graphql) {
                                 }
                             }
                         }
-                    }
-                }
-            }
-
-            posts: allMarkdownRemark(
-                filter: { frontmatter: { type: { eq: "wordpress-post" } } }
-                sort: { fields: frontmatter___date, order: DESC }
-            ) {
-                nodes {
-                    id
-                    frontmatter {
-                        type
-                        path
                     }
                 }
             }
