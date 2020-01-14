@@ -3,10 +3,12 @@ uuid: 3c96d190-0fac-11ea-843f-932c76de5936
 parent: how-we-work
 type: info-page
 title: Mobbing
-showImage: true
-image: /uploads/hf-e.jpg
-showIntroduction: false
-introduction: CHANGEME
+image:
+    show: true
+    image: /uploads/hf-e.jpg
+introduction:
+    show: false
+    text: CHANGEME
 components:
   - type: image-copy-component
     title: The power of the mob

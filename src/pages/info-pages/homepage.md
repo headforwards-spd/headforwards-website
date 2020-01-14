@@ -2,15 +2,19 @@
 uuid: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
 type: home-page
 title: Forward thinking software
-image: /uploads/headforwards-1.jpg
-introduction: >-
-    Headforwards is a software development outsourcing company that builds
-    strong relationships with clients in order to deliver exceptional
-    software.
-    
-    
-    Being true to the principles of an Agile methodology brings benefits
-    to both clients and the people who work in the business.
+image:
+    show: true
+    image: /uploads/headforwards-1.jpg
+introduction:
+    show: true
+    text: >-
+        Headforwards is a software development outsourcing company that builds
+        strong relationships with clients in order to deliver exceptional
+        software.
+        
+        
+        Being true to the principles of an Agile methodology brings benefits
+        to both clients and the people who work in the business.
 sections:
   - components:
       - text: >-

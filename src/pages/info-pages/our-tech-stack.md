@@ -3,7 +3,12 @@ uuid: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
 parent: careers
 type: tech-stack-page
 title: Our tech stack
-introduction: CHANGEME
+image:
+    show: false
+    image:
+introduction:
+    show: false
+    text: CHANGEME
 jobRoles:
   - title: Front End
     link: fe585b60-1528-11ea-a6b5-63ea6add32fb

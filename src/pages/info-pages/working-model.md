@@ -3,12 +3,14 @@ uuid: 7332ebd0-0fac-11ea-8f1d-b7c7fe6e2260
 parent: how-we-work
 type: info-page
 title: Two different working models
-showImage: true
-image: /uploads/hf-i.jpg
-showIntroduction: false
-introduction: >-
-      Headforwards offers two engagement models to ensure you get the right mix
-      of quality and value for money.
+image:
+    show: true
+    image: /uploads/hf-i.jpg
+introduction:
+    show: false
+    text: >-
+          Headforwards offers two engagement models to ensure you get the right mix
+          of quality and value for money.
 components:
   - isPostit: false
     isRightImage: false

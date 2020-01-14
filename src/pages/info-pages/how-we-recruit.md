@@ -3,10 +3,12 @@ uuid: 40718760-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: How we recruit
-showImage: true
-image: /uploads/hf-recruit-header.jpg
-showIntroduction: false
-introduction: CHANGEME
+image:
+    show: true
+    image: /uploads/hf-recruit-header.jpg
+introduction:
+    show: false
+    text: CHANGEME
 components:
   - isPostit: true
     isRightImage: false

@@ -3,10 +3,12 @@ uuid: 4bc8aa80-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: How we work
-showImage: true
-image: /uploads/headforwards-13.jpg
-showIntroduction: false
-introduction: CHANGEME
+image:
+    show: true
+    image: /uploads/headforwards-13.jpg
+introduction:
+    show: false
+    text: CHANGEME
 components:
   - isPostit: false
     isRightImage: false

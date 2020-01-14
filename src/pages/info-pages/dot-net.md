@@ -3,12 +3,14 @@ uuid: 4a8df080-1529-11ea-a6b5-63ea6add32fb
 parent: careers
 type: info-page
 title: .Net
-showImage: false
 image:
-showIntroduction: true
-introduction: >-
-      We have 35 people working in 6 different .NET teams, for 3 different
-      clients. That’s a lot of people to learn from and share knowledge with.
+    show: false
+    image:
+introduction:
+    show: true
+    text: >-
+          We have 35 people working in 6 different .NET teams, for 3 different
+          clients. That’s a lot of people to learn from and share knowledge with.
 components:
   - type: image-copy-component
     text: >-

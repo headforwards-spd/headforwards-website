@@ -6,10 +6,12 @@ title: 'Training, development and growth'
 subtitle: >-
   We want our people to the get most from their time here, which is why we work
   hard to provide the perfect environment for people to learn and grow.
-showImage: false
-image: 
-showIntroduction: false
-introduction: CHANGEME
+image:
+    show: false
+    image:
+introduction: 
+    show: false
+    text: CHANGEME
 components:
   - isPostit: false
     isRightImage: false

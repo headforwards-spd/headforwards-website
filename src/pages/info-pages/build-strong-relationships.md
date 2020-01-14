@@ -3,10 +3,12 @@ uuid: 359e0550-009f-11ea-b6f6-d743f848720a
 parent: what-we-do
 type: info-page
 title: Build strong relationships
-showImage: true
-image: /uploads/hf-a.jpg
-showIntroduction: false
-introduction: CHANGEME
+image:
+    show: true
+    image: /uploads/hf-a.jpg
+introduction:
+    show: false
+    text: CHANGEME
 components:
   - image: null
     isPostit: false

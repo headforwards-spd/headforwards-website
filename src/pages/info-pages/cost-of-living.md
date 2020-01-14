@@ -3,10 +3,12 @@ uuid: 943ab7e0-1529-11ea-a6b5-63ea6add32fb
 parent: careers
 type: info-page
 title: Cost of living
-showImage: false
 image:
-showIntroduction: false
+    show: false
+    image:
 introduction:
+    show: false
+    text:
 components:
   - isPostit: false
     isRightImage: false

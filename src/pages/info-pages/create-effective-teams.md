@@ -3,10 +3,12 @@ uuid: 6b233b00-103a-11ea-9ef0-bd54961b4e30
 parent: what-we-do
 type: info-page
 title: Create effective teams
-showImage: true
-image: /uploads/hf-b.jpg
-showIntroduction: false
-introduction: CHANGEME
+image:
+    show: true
+    image: /uploads/hf-b.jpg
+introduction:
+    show: false
+    text: CHANGEME
 components:
   - isPostit: false
     isRightImage: false

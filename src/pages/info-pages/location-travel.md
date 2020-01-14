@@ -3,10 +3,12 @@ uuid: afee1680-1529-11ea-a6b5-63ea6add32fb
 parent: careers
 type: info-page
 title: Location & travel
-showImage: false
 image:
-showIntroduction: false
-introduction: CHANGEME
+    show: false
+    image:
+introduction:
+    show: false
+    text: CHANGEME
 components:
   - quote: 'Cornwall, that''s near Glastonbury isn''t it?'
     type: quote-component
