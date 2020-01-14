@@ -62,11 +62,10 @@ function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
         pages.map(({ id, fields, frontmatter }) => {
             const { slug: titleSlug } = fields;
-            const { path, type, parent = '', seo } = frontmatter;
+            const { type, parent = '', seo } = frontmatter;
             const { slug: seoSlug } = seo || {};
             const slug = seoSlug || titleSlug;
-            const pagePath =
-                type !== 'wordpress-page' ? `/${parent || ''}/${slug}` : `/wordpress-pages${path.replace('../', '/')}`;
+            const pagePath = `/${parent || ''}/${slug}`;
 
             return createPage({
                 path: pagePath.replace(/\/+/g, '/'),
@@ -129,11 +128,7 @@ function getData(graphql) {
             }
 
             pages: allMarkdownRemark(
-                filter: {
-                    frontmatter: {
-                        type: { in: ["wordpress-page", "info-page", "legal-page", "home-page", "tech-stack-page"] }
-                    }
-                }
+                filter: { frontmatter: { type: { in: ["info-page", "legal-page", "home-page", "tech-stack-page"] } } }
             ) {
                 nodes {
                     id
@@ -142,7 +137,6 @@ function getData(graphql) {
                     }
                     frontmatter {
                         type
-                        path
                         parent
                         seo {
                             slug

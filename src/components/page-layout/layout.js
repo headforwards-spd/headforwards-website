@@ -1,4 +1,4 @@
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import { arrayOf, bool, node, oneOfType, shape, string } from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -90,7 +90,7 @@ function Layout({ isHomePage, seo, title, subtitle, image, children, callToActio
 
     const { callToAction: defaultCallToAction } = companyInfo;
 
-    const { show: showImage, image: bannerImage } = image;
+    const { show: showImage, image: bannerImage } = image || {};
 
     const headerProps = {
         isHomePage,
@@ -110,11 +110,6 @@ function Layout({ isHomePage, seo, title, subtitle, image, children, callToActio
             <Header {...headerProps} />
             <main>{children}</main>
             <Footer {...{ companyInfo, callToAction }} />
-            <section className="dev-links">
-                <Link to="/recruitee-jobs">Recruitee Jobs</Link>
-                <Link to="/wordpress-pages">Old WP Pages</Link>
-                <Link to="/wordpress-posts">Old WP Posts</Link>
-            </section>
         </Provider>
     );
 }
