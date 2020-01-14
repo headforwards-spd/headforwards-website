@@ -1,12 +1,12 @@
 import { func, shape, string, bool } from 'prop-types';
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import { Provider } from 'unstated';
 import * as uuid from 'uuid';
 import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
 import Footer from '../../components/page-layout/footer/footer.component';
 import Header from '../../components/page-layout/header/header.component';
 import PageComponent from '../../components/page-components/page-component';
+import IntroductionComponent from '../../components/page-layout/introduction/introduction.component';
 import styles from '../../components/page-templates/info-page/info-page.module.scss';
 
 export default InfoPagePreview;
@@ -32,17 +32,12 @@ InfoPagePreview.propTypes = {
 function InfoPagePreview({ entry, getAsset }) {
     const { data } = entry.toJS();
     const { title = '', image, introduction, components, callToAction } = data;
-    const [{ title: introTitle, text: introText } = {}] = introduction || [];
-
     const { show: showImage = false, image: bannerImageRef = null } = image || {};
     const bannerImage = bannerImageRef ? getAsset(bannerImageRef).toString() : null;
 
     const header = {
         title,
-        image: {
-            show: showImage,
-            image: bannerImage,
-        },
+        image: showImage ? bannerImage : null,
     };
 
     !!components &&
@@ -71,16 +66,13 @@ function InfoPagePreview({ entry, getAsset }) {
         companyInfo,
     };
 
+    const { show: showIntro, text: introText } = introduction;
+
     return (
         <Provider>
             <Header {...headerProps} />
             <main>
-                {introText && (
-                    <section className={styles.introduction}>
-                        {introTitle && <h2>{introTitle}</h2>}
-                        <ReactMarkdown source={introText} />
-                    </section>
-                )}
+                {showIntro && <IntroductionComponent introduction={introText} />}
                 {components && (
                     <section className={styles.components}>
                         {!!components &&

@@ -40,14 +40,14 @@ collections:
         name: image
         widget: object
         fields:
-          - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+          - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
           - {label: "Image", name:  image, widget: image, required: true}
       - label: "Page Introduction (menu text)"
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
-          - {label: "Text", name: introduction, widget: markdown, required: true}
+          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -171,14 +171,14 @@ collections:
         name: image
         widget: object
         fields:
-          - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+          - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
           - {label: "Image", name:  image, widget: image, required: true}
       - label: "Page Introduction (menu text)"
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
-          - {label: "Text", name: introduction, widget: markdown, required: true}
+          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -302,14 +302,14 @@ collections:
         name: image
         widget: object
         fields:
-          - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+          - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
           - {label: "Image", name:  image, widget: image, required: true}
       - label: "Page Introduction (menu text)"
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
-          - {label: "Text", name: introduction, widget: markdown, required: true}
+          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -433,14 +433,14 @@ collections:
         name: image
         widget: object
         fields:
-          - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+          - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
           - {label: "Image", name:  image, widget: image, required: true}
       - label: "Page Introduction (menu text)"
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
-          - {label: "Text", name: introduction, widget: markdown, required: true}
+          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
         name: components
@@ -555,8 +555,8 @@ collections:
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
-          - {label: "Text", name: introduction, widget: markdown, required: true}
+          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Text", name: text, widget: markdown, required: true}
       - label: "Sections"
         name: sections
         widget: list
@@ -595,14 +595,14 @@ collections:
           name: image
           widget: object
           fields:
-            - {label: "Show Banner Image?", name:  showImage, widget: boolean, required: false, default: false}
+            - {label: "Show Banner Image?", name: show, widget: hidden, required: true, default: true}
             - {label: "Image", name:  image, widget: image, required: true}
         - label: "Page Introduction (menu text)"
           name: introduction
           widget: object
           fields:
-            - {label: "Show Introduction?", name: showIntroduction, widget: boolean, required: false, default: false}
-            - {label: "Text", name: introduction, widget: markdown, required: true}
+            - {label: "Show Introduction?", name: show, widget: hidden, required: true, default: true}
+            - {label: "Text", name: text, widget: markdown, required: true}
         - label: "Sections"
           name: sections
           widget: list

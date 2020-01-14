@@ -1,6 +1,6 @@
-import { graphql, Link, useStaticQuery }                 from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import { arrayOf, bool, node, oneOfType, shape, string } from 'prop-types';
-import React                                             from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 import { Provider } from 'unstated';
 import withUnstated from '@airship/with-unstated';
