@@ -42,7 +42,10 @@ export const query = graphql`
             frontmatter {
                 title
                 subtitle
-                introduction
+                introduction {
+                    show
+                    text
+                }
                 sections {
                     title
                     text

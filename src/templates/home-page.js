@@ -43,12 +43,18 @@ export const query = graphql`
             frontmatter {
                 title
                 subtitle
-                introduction
-                image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 100) {
-                            ...GatsbyImageSharpFluid_withWebp
+                introduction {
+                    show
+                    text
+                }
+                image{
+                    show
+                    image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 100) {
+                                ...GatsbyImageSharpFluid_withWebp
+                            }
                         }
                     }
                 }

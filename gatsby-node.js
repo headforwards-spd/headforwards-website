@@ -101,18 +101,24 @@ function getData(graphql) {
                         linkText
                         page {
                             frontmatter {
-                                introduction
+                                introduction {
+                                    show
+                                    text
+                                }
                                 image {
-                                    publicURL
-                                    childImageSharp {
-                                        fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER) {
-                                            aspectRatio
-                                            base64
-                                            sizes
-                                            src
-                                            srcSet
-                                            srcSetWebp
-                                            srcWebp
+                                    show
+                                    image {
+                                        publicURL
+                                        childImageSharp {
+                                            fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER) {
+                                                aspectRatio
+                                                base64
+                                                sizes
+                                                src
+                                                srcSet
+                                                srcSetWebp
+                                                srcWebp
+                                            }
                                         }
                                     }
                                 }

@@ -52,34 +52,54 @@ JobsPagePage.propTypes = {
     }).isRequired,
 };
 
+function JobsPagePage({ data }) {
+
+    const { page } = data;
+    const { frontmatter } = page;
+    const { introduction, jobRoles, components, ...header } = frontmatter;
+    const pageProps = { introduction, jobRoles, components };
+    return (
+        <Layout {...header}>
+            <JobsPageTemplate {...pageProps} />
+        </Layout>
+    );
+
+}
 export const query = graphql`
     query JobsPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
                 subtitle
-                showIntroduction
-                introduction
+                image {
+                    show
+                    image {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 100) {
+                                ...GatsbyImageSharpFluid_withWebp
+                            }
+                        }
+                    }
+                }
+                introduction {
+                    show
+                    text
+                }
                 callToAction
                 seo {
                     title
                     description
-                }
-                showImage
-                image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 100) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
                 }
                 jobRoles {
                     title
                     link
                     page {
                         frontmatter {
-                            introduction
+                            introduction {
+                                show
+                                text
+                            }
                         }
                     }
                 }
@@ -190,16 +210,3 @@ export const query = graphql`
         }
     }
 `;
-
-function JobsPagePage({ data }) {
-    const { page } = data;
-    const { frontmatter } = page;
-    const { introduction, jobRoles, components, ...header } = frontmatter;
-    const pageProps = { introduction, jobRoles, components };
-
-    return (
-        <Layout {...header}>
-            <JobsPageTemplate {...pageProps} />
-        </Layout>
-    );
-}
