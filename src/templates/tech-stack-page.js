@@ -53,7 +53,6 @@ JobsPagePage.propTypes = {
 };
 
 function JobsPagePage({ data }) {
-
     const { page } = data;
     const { frontmatter } = page;
     const { introduction, jobRoles, components, ...header } = frontmatter;
@@ -63,7 +62,6 @@ function JobsPagePage({ data }) {
             <JobsPageTemplate {...pageProps} />
         </Layout>
     );
-
 }
 export const query = graphql`
     query JobsPage($id: String!) {

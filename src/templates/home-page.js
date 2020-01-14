@@ -47,7 +47,7 @@ export const query = graphql`
                     show
                     text
                 }
-                image{
+                image {
                     show
                     image {
                         publicURL
