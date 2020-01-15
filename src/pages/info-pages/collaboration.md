@@ -15,16 +15,18 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: There’s no ‘us and them’
-    text: >-
-      There’s no one size fits all solution to software development. It’s why
-      Headforwards works closely with you to deliver software that creates value
-      for your organisation. 
-
-
-      Headforwards abides by one of the Agile Manifesto’s core values: customer
-      collaboration over contract negotiation. That’s not to say it doesn’t
-      believe in contracts – rather it believes problems are better solved
-      together with the client.
+    content:
+      - type: markdown
+        text: >-
+          There’s no one size fits all solution to software development. It’s why
+          Headforwards works closely with you to deliver software that creates value
+          for your organisation. 
+    
+    
+          Headforwards abides by one of the Agile Manifesto’s core values: customer
+          collaboration over contract negotiation. That’s not to say it doesn’t
+          believe in contracts – rather it believes problems are better solved
+          together with the client.
   - jobTitle: cofounder & director
     name: Craig Girvan
     quote: >-
@@ -37,15 +39,17 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: 'The right team for each project '
-    text: >-
-      No two clients or projects are the same. That’s why Headforwards works
-      with each client to create the right team for their needs; a team that
-      stays in place for the entire life of the project. 
-
-
-      Clients can draw on the team’s software development experience, knowledge
-      and ideas, all of which can contribute to better decision-making and
-      better quality software.
+    content:
+      - type: markdown
+        text: >-
+          No two clients or projects are the same. That’s why Headforwards works
+          with each client to create the right team for their needs; a team that
+          stays in place for the entire life of the project. 
+    
+    
+          Clients can draw on the team’s software development experience, knowledge
+          and ideas, all of which can contribute to better decision-making and
+          better quality software.
     image: /uploads/headforwards-16.jpg
   - quote: >-
       We want to be a partner to our clients, to develop long-term relationships
@@ -58,26 +62,30 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: A faster way to become Agile
-    text: >-
-      Some organisations want to move to an Agile approach, but legacy processes
-      and modes of software development get in the way. That’s where
-      collaborating with Headforwards can help.  
-
-
-      By partnering with Headforwards, large organisations can immediately
-      benefit from its Agile approach to software development – something that
-      can be hard to achieve in-house.
+    content:
+      - type: markdown
+        text: >-
+          Some organisations want to move to an Agile approach, but legacy processes
+          and modes of software development get in the way. That’s where
+          collaborating with Headforwards can help.  
+    
+    
+          By partnering with Headforwards, large organisations can immediately
+          benefit from its Agile approach to software development – something that
+          can be hard to achieve in-house.
     image: /uploads/postit-2.jpg
   - isPostit: false
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
     title: A flexible approach to collaboration
-    text: >-
-      Headforwards may be an Agile outsource partner, but there’s nothing
-      dogmatic about its approach. The company believes that the most value
-      comes from working with each client to establish the most productive way
-      of working.
+    content:
+      - type: markdown
+        text: >-
+          Headforwards may be an Agile outsource partner, but there’s nothing
+          dogmatic about its approach. The company believes that the most value
+          comes from working with each client to establish the most productive way
+          of working.
   - quote: >-
       We believe in people and teams over dogma and principles. If we can get
       everyone to work together effectively, we’re going to get a much better

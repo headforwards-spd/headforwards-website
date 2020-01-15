@@ -15,20 +15,22 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: Where it all starts
-    text: >-
-      Headforwards’ success comes from its strong relationships within teams,
-      collaborative nature with clients, and effective communication throughout
-      projects.
-
-
-      When a client partners with Headforwards, they’re involved right from the
-      beginning—during initial team creation, developer interviews, and the
-      project kick-off.
-
-
-      With regular catchups and strategy meetings, strong relationships between
-      clients and teams grow fast, and communication is made easy throughout the
-      entire project.
+    content:
+      - type: markdown
+        text: >-
+          Headforwards’ success comes from its strong relationships within teams,
+          collaborative nature with clients, and effective communication throughout
+          projects.
+    
+    
+          When a client partners with Headforwards, they’re involved right from the
+          beginning—during initial team creation, developer interviews, and the
+          project kick-off.
+    
+    
+          With regular catchups and strategy meetings, strong relationships between
+          clients and teams grow fast, and communication is made easy throughout the
+          entire project.
   - jobTitle: Business Analyst
     name: Katherine Moore
     quote: >-
@@ -44,16 +46,18 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: The day-to-day process
-    text: >-
-      The weekly structure at Headforwards helps keep everyone on track. Every
-      day starts with a team stand-up; a chance to figure out any issues,
-      discuss what’s been completed and work out what’s going to happen in the
-      day ahead.
-
-
-      To touch base with clients, team members have regular catchups throughout
-      the week, and weekly strategy meetings present a chance to discuss
-      progress with the entire team.
+    content:
+      - type: markdown
+        text: >-
+          The weekly structure at Headforwards helps keep everyone on track. Every
+          day starts with a team stand-up; a chance to figure out any issues,
+          discuss what’s been completed and work out what’s going to happen in the
+          day ahead.
+    
+    
+          To touch base with clients, team members have regular catchups throughout
+          the week, and weekly strategy meetings present a chance to discuss
+          progress with the entire team.
   - quote: >-
       We’re always trying to keep the client up-to-date. Our weekly strategy
       meetings are a good opportunity to reprioritise tasks, update the client
@@ -69,15 +73,17 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: The Headforwards structure
-    text: >-
-      Headforwards lack of hierarchy means teams are empowered to self-organise,
-      play to each other’s strengths, and collaborate effectively—and clients
-      see massive value from this.
-
-
-      Every team is built to create the perfect balance of skills, and
-      individuals are encouraged to focus on what they do best, which means the
-      client gets the most out of every person assigned to their project.
+    content:
+      - type: markdown
+        text: >-
+          Headforwards lack of hierarchy means teams are empowered to self-organise,
+          play to each other’s strengths, and collaborate effectively—and clients
+          see massive value from this.
+    
+    
+          Every team is built to create the perfect balance of skills, and
+          individuals are encouraged to focus on what they do best, which means the
+          client gets the most out of every person assigned to their project.
 callToAction: Would you like to work with us?
 ---
 

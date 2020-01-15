@@ -15,20 +15,22 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: Something for everyone
-    text: >-
-      Employee wellbeing is hot on the agenda for Headforwards.  That’s why so
-      much effort is put into organising social and community-orientated
-      activities that benefit people both inside and outside the organisation. 
-
-
-      Photos of Headforwards are just as likely to show the founding partners
-      cooking at a barbecue or someone raising a glass of ‘Devhops’ – the
-      companies own home-brew – as coding at their computer.
-
-
-      The annual highlight of these events is Headstock, their own mini-festival
-      – a whole weekend in the summer where friends and family are invited to
-      camp and eat great food in the heart of the Cornish countryside.
+    content:
+      - type: markdown
+        text: >-
+          Employee wellbeing is hot on the agenda for Headforwards.  That’s why so
+          much effort is put into organising social and community-orientated
+          activities that benefit people both inside and outside the organisation. 
+    
+    
+          Photos of Headforwards are just as likely to show the founding partners
+          cooking at a barbecue or someone raising a glass of ‘Devhops’ – the
+          companies own home-brew – as coding at their computer.
+    
+    
+          The annual highlight of these events is Headstock, their own mini-festival
+          – a whole weekend in the summer where friends and family are invited to
+          camp and eat great food in the heart of the Cornish countryside.
   - jobTitle: Quality Analyst
     name: Gowri Thota
     quote: >-
@@ -44,15 +46,17 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: 'Happy people do great work. Simple. '
-    text: >-
-      It’s no secret that people who feel looked after and valued are more
-      likely to excel and do better work. The fact that the nearest beach is
-      only 5 miles away probably does no harm to people’s outlook either.
-
-
-      But it’s the company’s culture of openness and regular communication that
-      underpins its entire operation – and makes its work so valuable to
-      clients.
+    content:
+      - type: markdown
+        text: >-
+          It’s no secret that people who feel looked after and valued are more
+          likely to excel and do better work. The fact that the nearest beach is
+          only 5 miles away probably does no harm to people’s outlook either.
+    
+    
+          But it’s the company’s culture of openness and regular communication that
+          underpins its entire operation – and makes its work so valuable to
+          clients.
   - quote: >-
       Headforwards’ directors talk to every employee on a regular basis to check
       if any improvements can be made, get any suggestions they have for the
@@ -63,15 +67,17 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: 'The more you know '
-    text: >-
-      Headforwards’ people never stop learning. Aside from being able to draw on
-      a wealth of knowledge in the office, employees have access to a wide range
-      of training resources, conferences, and regular sessions on specific
-      topics. 
-
-
-      It’s an important part of life at the company because the more knowledge
-      and experience the team develops, the better it can serve its clients.
+    content:
+      - type: markdown
+        text: >-
+          Headforwards’ people never stop learning. Aside from being able to draw on
+          a wealth of knowledge in the office, employees have access to a wide range
+          of training resources, conferences, and regular sessions on specific
+          topics. 
+    
+    
+          It’s an important part of life at the company because the more knowledge
+          and experience the team develops, the better it can serve its clients.
   - imageOne: /uploads/toby-3.jpg
     imageTwo: /uploads/toby-2.jpg
     type: images-component

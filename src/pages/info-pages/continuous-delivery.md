@@ -17,16 +17,18 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: Clients see value faster
-    text: >-
-      Unlike developers who work to a monthly release cycle, Headforwards teams
-      are geared up to deliver new software into production every day – so
-      clients get valuable new features fast.
-
-
-      Almost all Headforwards’ clients benefit from continuous delivery. From
-      retail organisations to financial services providers, continuous delivery
-      gives clients a commercial advantage, as it means they can offer new
-      services and functionality faster than their competitors.
+    content:
+      - type: markdown
+        text: >-
+          Unlike developers who work to a monthly release cycle, Headforwards teams
+          are geared up to deliver new software into production every day – so
+          clients get valuable new features fast.
+    
+    
+          Almost all Headforwards’ clients benefit from continuous delivery. From
+          retail organisations to financial services providers, continuous delivery
+          gives clients a commercial advantage, as it means they can offer new
+          services and functionality faster than their competitors.
   - jobTitle: Senior developer
     name: Mike Tonks
     quote: >-
@@ -39,15 +41,17 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: Made possible by Agile
-    text: >-
-      Continuous delivery is made possible by Agile practices. By breaking
-      projects down into small packets of work and working on them in sprints,
-      Headforwards teams can deliver against clients’ priorities faster.
-
-
-      And with weekly – or even daily – release cycles, clients can easily add
-      or change requirements and barriers, such as approval stage gates, are
-      removed from the process completely.
+    content:
+      - type: markdown
+        text: >-
+          Continuous delivery is made possible by Agile practices. By breaking
+          projects down into small packets of work and working on them in sprints,
+          Headforwards teams can deliver against clients’ priorities faster.
+    
+    
+          And with weekly – or even daily – release cycles, clients can easily add
+          or change requirements and barriers, such as approval stage gates, are
+          removed from the process completely.
     image: /uploads/postit-3.jpg
   - quote: >-
       Continuous delivery works really well with Agile development at
@@ -59,15 +63,17 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: 'Small tasks, big results'
-    text: >-
-      Teams at Headforwards are self-organising and comprised of developers and
-      testers – which make them well suited for continuous delivery.
-
-
-      Teams can focus on developing, testing and delivering small pieces of
-      functionality each day, so the client gets fully-tested, quality software
-      that meets key priorities – without having to wait for the next monthly
-      release.
+    content:
+      - type: markdown
+        text: >-
+          Teams at Headforwards are self-organising and comprised of developers and
+          testers – which make them well suited for continuous delivery.
+    
+    
+          Teams can focus on developing, testing and delivering small pieces of
+          functionality each day, so the client gets fully-tested, quality software
+          that meets key priorities – without having to wait for the next monthly
+          release.
   - imageOne: /uploads/postit-1.jpg
     imageTwo: /uploads/hf-c.jpg
     type: images-component

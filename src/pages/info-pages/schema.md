@@ -2,8 +2,21 @@
 uuid: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
 sections:
   - components:
-      - profilePic: /uploads/headforwards.png
+        - content:
+              - type: force value
+                text: force value
+              - quote: force value
+                name: force value
+                jobRole: force value
+                profilePic: /uploads/headforwards.png
 components:
+  - content:
+        - type: force value
+          text: force value
+        - quote: force value
+          name: force value
+          jobRole: force value
+          profilePic: /uploads/headforwards.png
   - flip: false
   - profilePic: /uploads/headforwards.png
   - articles:

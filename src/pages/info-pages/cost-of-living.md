@@ -14,15 +14,17 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    text: >-
-      People often think that it is really expensive to live in Cornwall. Yes,
-      there are lots of people who have second homes here, and yes the cost of
-      housing is increasing. It is true that in some areas local people struggle
-      to buy, but isn't that the case everywhere? Living on the sea front in St
-      Ives or Falmouth is pretty pricey, but there are plenty of houses in other
-      coastal towns and villages which are very reasonable. Houses a bit
-      furtherinland can be even cheaper to rent and to buy. Housing close to our
-      office is very reasonable and it is still only 4 miles from the beach.
+    content:
+      - type: markdown
+        text: >-
+          People often think that it is really expensive to live in Cornwall. Yes,
+          there are lots of people who have second homes here, and yes the cost of
+          housing is increasing. It is true that in some areas local people struggle
+          to buy, but isn't that the case everywhere? Living on the sea front in St
+          Ives or Falmouth is pretty pricey, but there are plenty of houses in other
+          coastal towns and villages which are very reasonable. Houses a bit
+          furtherinland can be even cheaper to rent and to buy. Housing close to our
+          office is very reasonable and it is still only 4 miles from the beach.
   - quote: >-
       I was paying £1200 a month for a 1 bed flat in Wembley.I'm moving to
       Cornwall for a higher salary and I can rent areally nice 3 bed house for

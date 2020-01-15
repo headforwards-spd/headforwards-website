@@ -15,23 +15,24 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: 'To do the best work, you need the best people'
-    text: >-
-      Headforwards is a software business. But first and foremost, it’s a people
-      business. That’s why Headforwards is always looking for the perfect fit –
-      for our clients and for our culture.
-
-
-      Headforwards was founded on the principle of recruiting the right team for
-      each client. Rather than go it alone, we get clients involved in the
-      process, so everyone is confident from the start that the right people are
-      on board.
-
-
-      When those people are on board, Headforwards makes sure they always feel
-      engaged and fulfilled in their work. That’s why the company has such a
-      high staff retention rate, and why it’s able to build such strong and
-      lasting partnerships with clients.
-    image: ''
+    content:
+      - type: markdown
+        text: >-
+          Headforwards is a software business. But first and foremost, it’s a people
+          business. That’s why Headforwards is always looking for the perfect fit –
+          for our clients and for our culture.
+    
+    
+          Headforwards was founded on the principle of recruiting the right team for
+          each client. Rather than go it alone, we get clients involved in the
+          process, so everyone is confident from the start that the right people are
+          on board.
+    
+    
+          When those people are on board, Headforwards makes sure they always feel
+          engaged and fulfilled in their work. That’s why the company has such a
+          high staff retention rate, and why it’s able to build such strong and
+          lasting partnerships with clients.
   - jobTitle: Recruitment and Talent Specialist
     name: Marie Ashton
     quote: >-
@@ -45,8 +46,9 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: Round pegs in round holes
-    text: "Happy people are more engaged at work, which is why Headforwards places so much emphasis on ensuring its staff, and the people around them, are well looked after. \r\n\nThat’s one reason you’re more likely to see Headforwards employees at one of the company’s many social events than burning the midnight oil. And it’s why Headforwards goes above and beyond to help its people feel right at home when relocating to Cornwall.    \n\n\rIt’s all about doing valuable work, in a beautiful place, for appreciative clients. With a ready-made social life just waiting to be enjoyed."
-    image: ''
+    content:
+      - type: markdown
+        text: "Happy people are more engaged at work, which is why Headforwards places so much emphasis on ensuring its staff, and the people around them, are well looked after. \r\n\nThat’s one reason you’re more likely to see Headforwards employees at one of the company’s many social events than burning the midnight oil. And it’s why Headforwards goes above and beyond to help its people feel right at home when relocating to Cornwall.    \n\n\rIt’s all about doing valuable work, in a beautiful place, for appreciative clients. With a ready-made social life just waiting to be enjoyed."
   - flip: true
     imageOne: /uploads/headforwards-11.jpg
     imageTwo: /uploads/headforwards-12.jpg

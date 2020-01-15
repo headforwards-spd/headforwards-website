@@ -17,65 +17,69 @@ introduction:
         to both clients and the people who work in the business.
 sections:
   - components:
-      - text: >-
-          Developers are recruited specifically for a client’s needs and teams
-          are self-organising with the responsibility of producing software that
-          delivers business value.
-        type: image-copy-component
+      - type: image-copy-component
         title: People over process
-      - jobTitle: Director & Co-Founder
-        name: Toby Parkins
-        profilePic: null
-        quote: >-
-          It's about picking the right people for each client, rather than
-          running a bench. 
-        type: quote-component
-      - jobTitle: Director & Co-founder
-        name: Craig Girvan
-        profilePic: null
-        quote: >-
-          If something changes in our clients world, they've got to adapt,
-          they've got to look for a new competitive advantage in their
-          software. 
-        type: quote-component
+        content:
+          - type: markdown
+            text: >-
+              Developers are recruited specifically for a client’s needs and teams
+              are self-organising with the responsibility of producing software that
+              delivers business value.
+          - type: quote-component
+            quote: >-
+              It's about picking the right people for each client, rather than
+              running a bench. 
+            name: Toby Parkins
+            jobTitle: Director & Co-Founder
+            profilePic: null
+          - type: quote-component
+            quote: >-
+              If something changes in our clients world, they've got to adapt,
+              they've got to look for a new competitive advantage in their
+              software. 
+            name: Craig Girvan
+            jobTitle: Director & Co-founder
+            profilePic: null
     image: /uploads/toby-and-craig.jpg
     isPostit: false
     isRightImage: false
   - components:
-      - text: >-
-          Headforwards looks to develop trust between themselves and their
-          clients by continuously delivering business value.
-        type: image-copy-component
+      - type: image-copy-component
         title: Building partnerships with clients
-      - jobTitle: null
-        name: null
-        profilePic: null
-        quote: >-
-          We want to be a partner to our clients, to develop long-term
-          relationships with trust on both sides.
-        type: quote-component
+        content:
+          - type: markdown
+            text: >-
+              Headforwards looks to develop trust between themselves and their
+              clients by continuously delivering business value.
+          - type: quote-component
+            quote: >-
+              We want to be a partner to our clients, to develop long-term
+              relationships with trust on both sides.
+            name: null
+            jobTitle: null
+            profilePic: null
     isPostit: true
     isRightImage: true
-    title: This is a title
     image: /uploads/smiley-face-doodle.png
   - components:
-      - text: >-
-          Headforwards offer the ability to live in one of the most beautiful
-          and relaxing parts of the UK while at the same time working at the
-          forefront of professional technical excellence.
-        type: image-copy-component
+      - type: image-copy-component
         title: Careers without compromise
-      - jobTitle: null
-        name: null
-        profilePic: null
-        quote: >-
-          There are no egos here. Team fit is the most important thing, so the
-          people we hire need to be really positive and prepared to have each
-          other’s backs.
-        type: quote-component
+        content:
+          - type: markdown
+            text: >-
+              Headforwards offer the ability to live in one of the most beautiful
+              and relaxing parts of the UK while at the same time working at the
+              forefront of professional technical excellence.
+          - type: quote-component
+            quote: >-
+              There are no egos here. Team fit is the most important thing, so the
+              people we hire need to be really positive and prepared to have each
+              other’s backs.
+            name: null
+            jobTitle: null
+            profilePic: null
     isPostit: true
     isRightImage: false
-    title: This is a title
     image: /uploads/paper-airplane-doodle.png
   - isPostit: false
     isRightImage: false

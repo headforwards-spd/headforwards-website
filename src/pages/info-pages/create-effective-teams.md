@@ -15,7 +15,18 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: ''
-    text: "Headforwards is different from other software outsource companies – and a big part of that difference is the company’s approach to resourcing projects. \r\n\nAt Headforwards, each client has a dedicated team, hand-picked to meet the client’s specific needs, and in place for the long term. To ensure a great cultural fit and a great start to the relationship, clients are involved at every step of the team recruitment process.\r\n\nClose collaboration means clients and the team get to know each other better every day, resulting in a strong partnership, the opportunity to share skills and knowledge, and a high quality of delivered software."
+    content:
+      - type: markdown
+        text: >-
+             Headforwards is different from other software outsource companies – and a big part of that difference is
+             the company’s approach to resourcing projects.
+             
+             At Headforwards, each client has a dedicated team, hand-picked to meet the client’s specific needs, and in
+             place for the long term. To ensure a great cultural fit and a great start to the relationship, clients are
+             involved at every step of the team recruitment process.
+             
+             Close collaboration means clients and the team get to know each other better every day, resulting in a
+             strong partnership, the opportunity to share skills and knowledge, and a high quality of delivered software.
   - jobTitle: Client Account Manager
     name: Dave Longman
     quote: >-
@@ -28,15 +39,16 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: 'High-performing teams, high-quality software'
-    text: >-
-      There can be a lot of difficult conversations during software development;
-      which route to go down, which technique to use, or even which skills are
-      needed on the team.
-
-
-      But when there’s a strong bond between the individual team members and the
-      client, finding the right solution becomes easier.
-    image: ''
+    content:
+      - type: markdown
+        text: >-
+          There can be a lot of difficult conversations during software development;
+          which route to go down, which technique to use, or even which skills are
+          needed on the team.
+    
+    
+          But when there’s a strong bond between the individual team members and the
+          client, finding the right solution becomes easier.
   - quote: >-
       It’s important everyone is trusted equally in our teams. The right mix of
       experiences and skills can generate some really exciting ideas and it
@@ -47,7 +59,9 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: Grow successful teams
-    text: "Creating an effective team is only the first step. For a team to thrive, individual members must work closely together to reach their goals.\rHeadforwards takes an Agile approach to development, using techniques like pair programming and mob programming to bring team members together, share knowledge and skills, and ultimately deliver high quality software, fast.\n\n\rAt the same time, each team’s scrum master is there to keep up morale, encourage team cohesion and ensure the team is maximising its potential."
+    content:
+      - type: markdown
+        text: "Creating an effective team is only the first step. For a team to thrive, individual members must work closely together to reach their goals.\rHeadforwards takes an Agile approach to development, using techniques like pair programming and mob programming to bring team members together, share knowledge and skills, and ultimately deliver high quality software, fast.\n\n\rAt the same time, each team’s scrum master is there to keep up morale, encourage team cohesion and ensure the team is maximising its potential."
   - flip: true
     imageOne: /uploads/hf-steal-1.jpg
     imageTwo: /uploads/hf-e.jpg
