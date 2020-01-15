@@ -33,13 +33,13 @@ components:
           relationship based on trust, transparency and collaboration combined with
           Agile working practices allows Headforwards to be able to respond to
           changes in a constructive way.
-  - jobTitle: cofounder & director
-    name: Craig Girvan
-    quote: >-
-      If something changes in our client’s world, they've got to adapt, they've
-      got to look for a new competitive advantage in their software and that’s
-      always what we aim to deliver.
-    type: quote-component
+      - jobTitle: cofounder & director
+        name: Craig Girvan
+        quote: >-
+          If something changes in our client’s world, they've got to adapt, they've
+          got to look for a new competitive advantage in their software and that’s
+          always what we aim to deliver.
+        type: quote-component
   - imageOne: /uploads/headforwards-3.jpg
     imageTwo: /uploads/headforwards-6.jpg
     type: images-component
@@ -59,7 +59,6 @@ components:
     
           When team members feel empowered and engaged, they work to their full
           potential, and it shows in the quality of the software they deliver.
-    image: ''
   - quote: >-
       We believe the team is greater than the sum of its parts. We want to
       empower everybody who works for us and maximise their contribution – and

@@ -27,7 +27,7 @@ components:
     content:
       - type: markdown-component
         text: "Toby took the idea to Craig Girvan – a fellow Agile practitioner – who had been thinking down similar lines. \n\nThey agreed that clients were short-changed by traditional outsourcers, who tend to prioritise their own business over that of their clients. \rThey sketched out a vision of a new kind of outsource company, built on three principles:"
-    image: /uploads/lightning-doodle.png
+    image: /uploads/001-01.svg
   - quote: >-
       It’s about picking the right people for each client, rather than running a
       bench. It may be slightly less efficient for us, but the client gets much
