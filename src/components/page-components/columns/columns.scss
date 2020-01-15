@@ -20,14 +20,14 @@
 
 @mixin copy {
 
-    h2 {
+    > h2 {
         @include headingFontLarge;
 
         //@media (min-width: $screen-lg) {
         //    @include headingFontXLarge;
         //}
     }
-    > section {
+    > section  > :not(section) {
         @include fontMedium;
         @media (min-width: $screen-lg) {
             @include fontLarge;

@@ -9,7 +9,7 @@
     > h2 {
         @include headingFontLarge;
     }
-    > section {
+    > section > :not(section) {
         @include fontMedium;
         @media(min-width: $screen-lg) {
             @include fontLarge;

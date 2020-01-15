@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string } from 'prop-types';
+import { bool, shape, string } from 'prop-types';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
 import styles from './quote.module.scss';
 
@@ -9,6 +9,7 @@ const quotePropTypes = {
     name: string,
     jobTitle: string,
     profilePic: ImageSrcPropType,
+    fullWidth: bool,
 };
 
 export default Quote;
@@ -20,10 +21,13 @@ Quote.defaultProps = {
     name: null,
     jobTitle: null,
     profilePic: null,
+    fullWidth: false,
 };
-function Quote({ title, quote, name, jobTitle, profilePic }) {
+function Quote({ title, quote, name, jobTitle, profilePic, fullWidth }) {
+    const fullWidthClass = fullWidth ? styles.fullWidth : '';
+
     return (
-        <section className={styles.blockquoteContainer}>
+        <section className={`${styles.blockquoteContainer} ${fullWidthClass}`}>
             {title && <h2>{title}</h2>}
             <blockquote>
                 <p>{quote}</p>

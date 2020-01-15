@@ -88,19 +88,22 @@ export const query = graphql`
                     isRightImage
                     components {
                         type
-                        quote
-                        profilePic {
-                            publicURL
-                            childImageSharp {
-                                fluid(maxWidth: 100, maxHeight: 100, cropFocus: CENTER, quality: 100) {
-                                    ...GatsbyImageSharpFluid_withWebp
+                        title
+                        content {
+                            type
+                            quote
+                            profilePic {
+                                publicURL
+                                childImageSharp {
+                                    fluid(maxWidth: 100, maxHeight: 100, cropFocus: CENTER, quality: 100) {
+                                        ...GatsbyImageSharpFluid_withWebp
+                                    }
                                 }
                             }
+                            name
+                            jobTitle
+                            text
                         }
-                        name
-                        jobTitle
-                        text
-                        title
                     }
                 }
             }

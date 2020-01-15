@@ -100,6 +100,21 @@ export const query = graphql`
                     type
                     title
                     text
+                    content {
+                        type
+                        text
+                        quote
+                        name
+                        jobTitle
+                        profilePic {
+                            publicURL
+                            childImageSharp {
+                                fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
+                            }
+                        }
+                    }
                     quote
                     name
                     jobTitle

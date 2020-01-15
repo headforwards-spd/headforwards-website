@@ -108,11 +108,12 @@
 
     .blockquoteContainer {
 
+        width: $singleColumnMaxWidth;
+
         blockquote {
             border-left: 1px solid #D8D8D8;
             padding-top: 0;
             padding-left: $gutter-medium;
-            width: $singleColumnMaxWidth;
 
             > p {
                 &:before {
@@ -126,6 +127,14 @@
                     height: 0.5em;
                 }
             }
+        }
+
+        &.fullWidth {
+            margin-bottom: $margin-bottom;
+            &:not(:first-child) {
+                margin: $gutter-medium 0;
+            }
+            width: unset;
         }
     }
 }

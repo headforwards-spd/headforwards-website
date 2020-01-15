@@ -28,9 +28,11 @@ HomepageTemplate.defaultProps = {
 };
 
 function HomepageTemplate({ introduction, sections }) {
+    const { show: showIntroduction, text: introText } = introduction;
+
     return (
         <>
-            <IntroductionComponent introduction={introduction} />
+            {showIntroduction && <IntroductionComponent introduction={introText} />}
             {!!sections && sections.map(section => <HomePageSection {...{ ...section }} />)}
         </>
     );
@@ -46,7 +48,8 @@ HomePageSection.defaultProps = {
     imageSquare: null,
 };
 
-function HomePageSection({ components, isPostit, isRightImage, image, imagePostit, imageSquare }) {
+function HomePageSection(props) {
+    const { components, isPostit, isRightImage, image, imagePostit, imageSquare } = props;
     const hasImage = !!image || !!imagePostit || imageSquare;
     const wrapperStyles = [
         styles.section,

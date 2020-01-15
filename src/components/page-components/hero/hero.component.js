@@ -1,11 +1,12 @@
 import React from 'react';
-import { shape, string, bool } from 'prop-types';
+import { shape, string, bool, arrayOf, any } from 'prop-types';
 import ReactMarkdown from 'react-markdown';
+import Quote from '../quote/quote.component';
 import styles from './hero.module.scss';
 
 const heroPropTypes = {
     title: string.isRequired,
-    text: string,
+    content: arrayOf(any),
     isTwoColumns: bool,
     className: string,
 };
@@ -15,18 +16,23 @@ export const HeroPropType = shape(heroPropTypes);
 
 Hero.propTypes = heroPropTypes;
 Hero.defaultProps = {
-    text: null,
+    content: [],
     isTwoColumns: false,
     className: '',
 };
-function Hero({ title, text, isTwoColumns, className }) {
+function Hero({ title, content, isTwoColumns, className }) {
     const columnsClass = isTwoColumns ? styles.isTwoColumns : '';
     const hasTitleClass = title ? styles.hasTitle : '';
     return (
         <section className={`${styles.hero} ${columnsClass} ${hasTitleClass} ${className}}`}>
             {title && <h2>{title}</h2>}
             <section>
-                <ReactMarkdown source={text} />
+                {content.map(({ type, ...item }) => (
+                    <>
+                        {type === 'markdown-component' && <ReactMarkdown source={item.text} />}
+                        {type === 'quote-component' && <Quote {...item} fullWidth />}
+                    </>
+                ))}
             </section>
         </section>
     );

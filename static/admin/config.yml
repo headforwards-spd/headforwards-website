@@ -77,7 +77,24 @@ collections:
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string, required: false, default: null}
-              - {label: "Copy", name: text, widget: markdown, required: false, default: null}
+              - label: "Content"
+                name: content
+                widget: list
+                types:
+                  - label: "Copy"
+                    name: markdown-component
+                    widget: object
+                    fields:
+                      - {label: "Copy", name: text, widget: markdown}
+                  - label: "Quote"
+                    name: quote-component
+                    widget: object
+                    fields:
+                      - {label: "Title", name: title, widget: string, required: false, default: null}
+                      - {label: "Quote", name: quote, widget: text}
+                      - {label: "Name", name: name, widget: string, required: false, default: null}
+                      - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
+                      - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
               - label: "Link"
                 name: link
                 required: false
@@ -208,7 +225,24 @@ collections:
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string, required: false, default: null}
-              - {label: "Copy", name: text, widget: markdown, required: false, default: null}
+              - label: "Content"
+                name: content
+                widget: list
+                types:
+                  - label: "Copy"
+                    name: markdown-component
+                    widget: object
+                    fields:
+                      - {label: "Copy", name: text, widget: markdown}
+                  - label: "Quote"
+                    name: quote-component
+                    widget: object
+                    fields:
+                      - {label: "Title", name: title, widget: string, required: false, default: null}
+                      - {label: "Quote", name: quote, widget: text}
+                      - {label: "Name", name: name, widget: string, required: false, default: null}
+                      - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
+                      - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
               - label: "Link"
                 name: link
                 required: false
@@ -339,7 +373,24 @@ collections:
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string, required: false, default: null}
-              - {label: "Copy", name: text, widget: markdown, required: false, default: null}
+              - label: "Content"
+                name: content
+                widget: list
+                types:
+                  - label: "Copy"
+                    name: markdown-component
+                    widget: object
+                    fields:
+                      - {label: "Copy", name: text, widget: markdown}
+                  - label: "Quote"
+                    name: quote-component
+                    widget: object
+                    fields:
+                      - {label: "Title", name: title, widget: string, required: false, default: null}
+                      - {label: "Quote", name: quote, widget: text}
+                      - {label: "Name", name: name, widget: string, required: false, default: null}
+                      - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
+                      - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
               - label: "Link"
                 name: link
                 required: false
@@ -470,7 +521,24 @@ collections:
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string, required: false, default: null}
-              - {label: "Copy", name: text, widget: markdown, required: false, default: null}
+              - label: "Content"
+                name: content
+                widget: list
+                types:
+                  - label: "Copy"
+                    name: markdown-component
+                    widget: object
+                    fields:
+                      - {label: "Copy", name: text, widget: markdown}
+                  - label: "Quote"
+                    name: quote-component
+                    widget: object
+                    fields:
+                      - {label: "Title", name: title, widget: string, required: false, default: null}
+                      - {label: "Quote", name: quote, widget: text}
+                      - {label: "Name", name: name, widget: string, required: false, default: null}
+                      - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
+                      - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
               - label: "Link"
                 name: link
                 required: false
