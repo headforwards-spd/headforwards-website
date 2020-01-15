@@ -141,7 +141,7 @@ collections:
             fields:
               - {label: "Component Title", name: title, widget: string}
               - label: "Slides"
-                name: "articles"
+                name: articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}

@@ -105,7 +105,6 @@ export const query = graphql`
                     id
                     type
                     title
-                    text
                     quote
                     name
                     jobTitle

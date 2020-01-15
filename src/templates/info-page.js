@@ -99,7 +99,6 @@ export const query = graphql`
                     id
                     type
                     title
-                    text
                     content {
                         type
                         text

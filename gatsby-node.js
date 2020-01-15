@@ -1,4 +1,3 @@
-// const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 const makeSlug = require('slug');
 
@@ -36,7 +35,6 @@ exports.onCreateNode = ({ node, actions }) => {
         const { title } = frontmatter;
         const value = makeSlug(title, slugOptions);
 
-        // const value = createFilePath({ node, getNode });
         return createNodeField({
             name: `slug`,
             node,
