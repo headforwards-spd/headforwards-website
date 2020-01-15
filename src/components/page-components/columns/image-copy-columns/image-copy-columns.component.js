@@ -37,14 +37,16 @@ function ImageCopyColumns({ image, isRightImage, title, content, link }) {
             <SingularImage image={image} ratio="100%" className={styles.image} />
             <section className={styles.copy}>
                 {title && <h2>{title}</h2>}
-                {content && <section>
-                    {content.map(({ type, ...item }) => (
-                        <>
-                            {type === 'markdown-component' && <ReactMarkdown source={item.text} />}
-                            {type === 'quote-component' && <Quote {...item} fullWidth />}
-                        </>
-                    ))}
-                </section>}
+                {content && (
+                    <section>
+                        {content.map(({ type, ...item }) => (
+                            <>
+                                {type === 'markdown-component' && <ReactMarkdown source={item.text} />}
+                                {type === 'quote-component' && <Quote {...item} fullWidth />}
+                            </>
+                        ))}
+                    </section>
+                )}
                 {hasLink && <Link to={link.link}>{link.linkText}</Link>}
             </section>
         </section>

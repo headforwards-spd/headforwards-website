@@ -23,7 +23,7 @@ components:
           to buy, but isn't that the case everywhere? Living on the sea front in St
           Ives or Falmouth is pretty pricey, but there are plenty of houses in other
           coastal towns and villages which are very reasonable. Houses a bit
-          furtherinland can be even cheaper to rent and to buy. Housing close to our
+          further inland can be even cheaper to rent and to buy. Housing close to our
           office is very reasonable and it is still only 4 miles from the beach.
   - quote: >-
       I was paying £1200 a month for a 1 bed flat in Wembley.I'm moving to
@@ -34,9 +34,11 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    text: >-
-      One bedroom places are from £450 a month to rent. Some of our staff have
-      mortgages on 3 bedroom houses with garages, for £550 a month. It honestly
-      isn't as expensive as you might think.
+    content:
+      - type: markdown-component
+        text: >-
+          One bedroom places are from £450 a month to rent. Some of our staff have
+          mortgages on 3 bedroom houses with garages, for £550 a month. It honestly
+          isn't as expensive as you might think.
 ---
 

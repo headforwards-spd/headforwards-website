@@ -26,14 +26,16 @@ function Hero({ title, content, isTwoColumns, className }) {
     return (
         <section className={`${styles.hero} ${columnsClass} ${hasTitleClass} ${className}}`}>
             {title && <h2>{title}</h2>}
-            {content && <section>
-                {content.map(({ type, ...item }) => (
-                    <>
-                        {type === 'markdown-component' && <ReactMarkdown source={item.text} />}
-                        {type === 'quote-component' && <Quote {...item} fullWidth />}
-                    </>
-                ))}
-            </section>}
+            {content && (
+                <section>
+                    {content.map(({ type, ...item }) => (
+                        <>
+                            {type === 'markdown-component' && <ReactMarkdown source={item.text} />}
+                            {type === 'quote-component' && <Quote {...item} fullWidth />}
+                        </>
+                    ))}
+                </section>
+            )}
         </section>
     );
 }
