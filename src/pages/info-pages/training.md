@@ -8,7 +8,7 @@ subtitle: >-
   hard to provide the perfect environment for people to learn and grow.
 image:
     show: false
-    image:
+    image: /uploads/icon.black.png
 introduction: 
     show: false
     text: CHANGEME

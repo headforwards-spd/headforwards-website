@@ -5,7 +5,7 @@ type: tech-stack-page
 title: Our tech stack
 image:
     show: false
-    image:
+    image: /uploads/icon.black.png
 introduction:
     show: false
     text: CHANGEME

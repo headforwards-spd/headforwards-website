@@ -5,7 +5,7 @@ type: info-page
 title: 'Pizza, beaches and beers'
 image:
     show: false
-    image:
+    image: /uploads/icon.black.png
 introduction:
     show: false
     text: CHANGEME

@@ -5,7 +5,7 @@ type: info-page
 title: Digital peninsular
 image:
     show: false
-    image:
+    image: /uploads/icon.black.png
 introduction:
     show: false
     text: CHANGEME
