@@ -59,11 +59,11 @@ components:
     
           When team members feel empowered and engaged, they work to their full
           potential, and it shows in the quality of the software they deliver.
-  - quote: >-
-      We believe the team is greater than the sum of its parts. We want to
-      empower everybody who works for us and maximise their contribution – and
-      the client really benefits from that.
-    type: quote-component
+      - quote: >-
+          We believe the team is greater than the sum of its parts. We want to
+          empower everybody who works for us and maximise their contribution – and
+          the client really benefits from that.
+        type: quote-component
 callToAction: How can we create value for your organisation?
 ---
 

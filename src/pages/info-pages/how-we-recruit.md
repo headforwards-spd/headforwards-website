@@ -33,14 +33,13 @@ components:
           engaged and fulfilled in their work. That’s why the company has such a
           high staff retention rate, and why it’s able to build such strong and
           lasting partnerships with clients.
-  - jobTitle: Recruitment and Talent Specialist
-    name: Marie Ashton
-    quote: >-
-      There are no egos here. Team fit is the most important thing, so the
-      people we hire need to be really positive and prepared to have each
-      other’s backs.
-    type: quote-component
-    title: ''
+      - jobTitle: Recruitment and Talent Specialist
+        name: Marie Ashton
+        quote: >-
+          There are no egos here. Team fit is the most important thing, so the
+          people we hire need to be really positive and prepared to have each
+          other’s backs.
+        type: quote-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: true

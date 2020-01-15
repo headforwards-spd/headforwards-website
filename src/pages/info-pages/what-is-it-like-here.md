@@ -2,7 +2,7 @@
 uuid: 4bc8aa80-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
-title: How we work
+title: What is it like here?
 image:
     show: true
     image: /uploads/headforwards-13.jpg
@@ -31,13 +31,13 @@ components:
           With regular catchups and strategy meetings, strong relationships between
           clients and teams grow fast, and communication is made easy throughout the
           entire project.
-  - jobTitle: Business Analyst
-    name: Katherine Moore
-    quote: >-
-      When clients and teams work closely together, communication becomes much
-      easier. Our developers feel confident approaching the client with issues,
-      and the client isn’t afraid to tell us if we’re going down the wrong path.
-    type: quote-component
+      - jobTitle: Business Analyst
+        name: Katherine Moore
+        quote: >-
+          When clients and teams work closely together, communication becomes much
+          easier. Our developers feel confident approaching the client with issues,
+          and the client isn’t afraid to tell us if we’re going down the wrong path.
+        type: quote-component
   - imageOne: /uploads/headforwards-14.jpg
     imageTwo: /uploads/headforwards-15.jpg
     type: images-component
@@ -58,12 +58,12 @@ components:
           To touch base with clients, team members have regular catchups throughout
           the week, and weekly strategy meetings present a chance to discuss
           progress with the entire team.
-  - quote: >-
-      We’re always trying to keep the client up-to-date. Our weekly strategy
-      meetings are a good opportunity to reprioritise tasks, update the client
-      on our progress, or demo new software; overall, communication is key to a
-      successful project.
-    type: quote-component
+      - quote: >-
+          We’re always trying to keep the client up-to-date. Our weekly strategy
+          meetings are a good opportunity to reprioritise tasks, update the client
+          on our progress, or demo new software; overall, communication is key to a
+          successful project.
+        type: quote-component
   - flip: true
     imageOne: /uploads/headforwards-16.jpg
     imageTwo: /uploads/headforwards-17.jpg

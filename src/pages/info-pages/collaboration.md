@@ -27,13 +27,13 @@ components:
           collaboration over contract negotiation. That’s not to say it doesn’t
           believe in contracts – rather it believes problems are better solved
           together with the client.
-  - jobTitle: cofounder & director
-    name: Craig Girvan
-    quote: >-
-      We work with our clients to deliver tangible business value. That only
-      comes from engaging key stakeholders at every stage – even sometimes
-      embedding them within our own teams.
-    type: quote-component
+      - jobTitle: cofounder & director
+        name: Craig Girvan
+        quote: >-
+          We work with our clients to deliver tangible business value. That only
+          comes from engaging key stakeholders at every stage – even sometimes
+          embedding them within our own teams.
+        type: quote-component
   - isPostit: false
     isRightImage: true
     isTwoColumns: false
@@ -86,11 +86,11 @@ components:
           dogmatic about its approach. The company believes that the most value
           comes from working with each client to establish the most productive way
           of working.
-  - quote: >-
-      We believe in people and teams over dogma and principles. If we can get
-      everyone to work together effectively, we’re going to get a much better
-      result for everyone.
-    type: quote-component
+      - quote: >-
+          We believe in people and teams over dogma and principles. If we can get
+          everyone to work together effectively, we’re going to get a much better
+          result for everyone.
+        type: quote-component
 callToAction: 'To learn more about how we collaborate with clients '
 seo:
   slug: ''

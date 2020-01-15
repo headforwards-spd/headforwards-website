@@ -48,10 +48,10 @@ components:
           The whole team comes to know each other, and everyone feels aligned and
           motivated to deliver a great product. It all makes for a strong working
           partnership – something Headforwards strives to build with every client.
-  - quote: >-
-      Most of our mobs include developers from the client’s end. It’s much
-      easier to collaborate and solve problems as they appear.
-    type: quote-component
+      - quote: >-
+          Most of our mobs include developers from the client’s end. It’s much
+          easier to collaborate and solve problems as they appear.
+        type: quote-component
   - isPostit: true
     isRightImage: true
     isTwoColumns: false

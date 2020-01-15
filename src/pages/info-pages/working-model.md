@@ -28,14 +28,14 @@ components:
           Headforwards was founded on the belief that clients are short-changed by
           traditional software outsource companies – mainly due to the
           “on-the-bench” model of project resourcing.
-  - jobTitle: DIRECTOR & CO-FOUNDER
-    name: Toby Parkins
-    quote: >-
-      When you just pull whoever’s available off the bench to work on a client
-      project, there’s no continuity, no knowledge retention, and no foundation
-      of trust. Quality often suffers, and outsourcing can become a false
-      economy.
-    type: quote-component
+      - jobTitle: DIRECTOR & CO-FOUNDER
+        name: Toby Parkins
+        quote: >-
+          When you just pull whoever’s available off the bench to work on a client
+          project, there’s no continuity, no knowledge retention, and no foundation
+          of trust. Quality often suffers, and outsourcing can become a false
+          economy.
+        type: quote-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: false

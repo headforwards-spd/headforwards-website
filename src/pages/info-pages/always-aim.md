@@ -60,10 +60,10 @@ components:
               Through honest and frank conversations with clients the company is able to
               build stronger relationships, and work to its full potential – which means
               a better end product and happier customers.
-  - quote: >-
-      Whether it’s an internal team, or a relationship with a client, trust
-      should dominate everything.
-    type: quote-component
+      - quote: >-
+          Whether it’s an internal team, or a relationship with a client, trust
+          should dominate everything.
+        type: quote-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: true
@@ -79,11 +79,11 @@ components:
         
               What’s more, integrity is an invaluable attribute for all of its people –
               something the company prides itself in fostering.
-  - quote: >-
-      If we ever get things wrong, we’re the first to hold our hands up and say
-      so. By doing that, it’s worth its weight in gold for the client
-      relationship, not least because it’s the right thing to do anyway.
-    type: quote-component
+      - quote: >-
+          If we ever get things wrong, we’re the first to hold our hands up and say
+          so. By doing that, it’s worth its weight in gold for the client
+          relationship, not least because it’s the right thing to do anyway.
+        type: quote-component
 callToAction: For open and honest software development
 ---
 

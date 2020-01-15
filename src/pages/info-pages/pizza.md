@@ -31,13 +31,13 @@ components:
           The annual highlight of these events is Headstock, their own mini-festival
           – a whole weekend in the summer where friends and family are invited to
           camp and eat great food in the heart of the Cornish countryside.
-  - jobTitle: Quality Analyst
-    name: Gowri Thota
-    quote: >-
-      Headforwards has events going on all the time, and they’re not just for
-      employees. We can bring our friends and family along to a wide range of
-      activities which appeal to everyone.
-    type: quote-component
+      - jobTitle: Quality Analyst
+        name: Gowri Thota
+        quote: >-
+          Headforwards has events going on all the time, and they’re not just for
+          employees. We can bring our friends and family along to a wide range of
+          activities which appeal to everyone.
+        type: quote-component
   - imageOne: /uploads/toby-1.jpg
     imageTwo: /uploads/toby-4.jpg
     type: images-component

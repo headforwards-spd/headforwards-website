@@ -49,11 +49,11 @@ components:
     
           But when there’s a strong bond between the individual team members and the
           client, finding the right solution becomes easier.
-  - quote: >-
-      It’s important everyone is trusted equally in our teams. The right mix of
-      experiences and skills can generate some really exciting ideas and it
-      completely shapes the way the project runs.
-    type: quote-component
+      - quote: >-
+          It’s important everyone is trusted equally in our teams. The right mix of
+          experiences and skills can generate some really exciting ideas and it
+          completely shapes the way the project runs.
+        type: quote-component
   - isPostit: false
     isRightImage: false
     isTwoColumns: true

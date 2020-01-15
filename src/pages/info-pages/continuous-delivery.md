@@ -29,13 +29,13 @@ components:
           retail organisations to financial services providers, continuous delivery
           gives clients a commercial advantage, as it means they can offer new
           services and functionality faster than their competitors.
-  - jobTitle: Senior developer
-    name: Mike Tonks
-    quote: >-
-      Switching to a continuous delivery cycle can be a big jump, but it can
-      bring some huge benefits. With less time spent on testing and release
-      cycles, clients can see major value early on.
-    type: quote-component
+      - jobTitle: Senior developer
+        name: Mike Tonks
+        quote: >-
+          Switching to a continuous delivery cycle can be a big jump, but it can
+          bring some huge benefits. With less time spent on testing and release
+          cycles, clients can see major value early on.
+        type: quote-component
   - isPostit: false
     isRightImage: true
     isTwoColumns: true
