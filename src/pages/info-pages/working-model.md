@@ -7,7 +7,7 @@ image:
     show: true
     image: /uploads/hf-i.jpg
 introduction:
-    show: false
+    show: true
     text: >-
           Headforwards offers two engagement models to ensure you get the right mix
           of quality and value for money.
