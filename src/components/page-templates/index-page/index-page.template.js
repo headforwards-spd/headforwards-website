@@ -29,8 +29,8 @@ export default function IndexPageTemplate({ pages }) {
 function PageLink({ link, linkText, page }) {
     const { frontmatter } = page || {};
     const { introduction, image } = frontmatter || {};
-    const { image: introImage } = image;
-    const { text: introText } = introduction;
+    const { image: introImage } = image || {};
+    const { text: introText } = introduction || {};
 
     const { logo } = useStaticQuery(graphql`
         query {
