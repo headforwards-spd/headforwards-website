@@ -37,14 +37,14 @@ function PostitCopyColumns({ image, isRightImage, title, content, link }) {
             <Postit image={image} isRightImage={isRightImage} className={styles.postit} />
             <section className={styles.copy}>
                 {title && <h2>{title}</h2>}
-                <section>
+                {content && <section>
                     {content.map(({ type, ...item }) => (
                         <>
                             {type === 'markdown-component' && <ReactMarkdown source={item.text} />}
                             {type === 'quote-component' && <Quote {...item} fullWidth />}
                         </>
                     ))}
-                </section>
+                </section>}
                 {hasLink && (
                     <Link to={link.link} className={styles.arrowLink}>
                         {link.linkText}
