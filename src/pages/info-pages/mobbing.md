@@ -4,26 +4,26 @@ parent: how-we-work
 type: info-page
 title: Mobbing
 image:
-    show: true
-    image: /uploads/hf-e.jpg
+  image: /uploads/hf-e.jpg
+  show: true
 introduction:
-    show: false
-    text: CHANGEME
+  show: false
+  text: CHANGEME
 components:
-  - type: image-copy-component
-    title: The power of the mob
-    content:
-      - type: markdown-component
-        text: >-
-          An entire dev team, gathered around one computer, all working on the same
-          client project. It sounds like chaos, but it’s a brilliant way of
+  - content:
+      - text: >-
+          An entire dev team, gathered around one computer, all working on the
+          same client project. It sounds like chaos, but it’s a brilliant way of
           delivering high quality software, fast. 
-    
-    
-          Mob programming is used a lot at Headforwards. It’s a chance to apply a
-          whole team’s ideas and knowledge to one project – and because they test as
-          they go, any bugs can be instantly squashed.
-    image: /uploads/paper-airplane-doodle.png
+
+
+          Mob programming is used a lot at Headforwards. It’s a chance to apply
+          a whole team’s ideas and knowledge to one project – and because they
+          test as they go, any bugs can be instantly squashed.
+        type: markdown-component
+    type: image-copy-component
+    title: The power of the mob
+    image: /uploads/001-01.svg
     isPostit: true
     isRightImage: true
   - jobTitle: Software Developer
@@ -33,41 +33,44 @@ components:
       will be coded, issues are picked up on fast, and we’re quicker to spot
       potential traps in the process.
     type: quote-component
-  - isPostit: false
-    isRightImage: false
-    isTwoColumns: true
-    type: image-copy-component
-    title: Clients are welcome
-    content:
-      - type: markdown-component
-        text: >-
+  - content:
+      - text: >-
           Mobbing gets even better when clients are involved, whether they’re
-          visiting Headforwards in person, or videoconferencing in from their site. 
-    
-    
-          The whole team comes to know each other, and everyone feels aligned and
-          motivated to deliver a great product. It all makes for a strong working
-          partnership – something Headforwards strives to build with every client.
+          visiting Headforwards in person, or videoconferencing in from their
+          site. 
+
+
+          The whole team comes to know each other, and everyone feels aligned
+          and motivated to deliver a great product. It all makes for a strong
+          working partnership – something Headforwards strives to build with
+          every client.
+        type: markdown-component
       - quote: >-
           Most of our mobs include developers from the client’s end. It’s much
           easier to collaborate and solve problems as they appear.
         type: quote-component
-  - isPostit: true
+    isPostit: false
+    isRightImage: false
+    isTwoColumns: true
+    type: image-copy-component
+    title: Clients are welcome
+  - content:
+      - text: >-
+          But once a team tries mobbing, they often find they really enjoy
+          working in such a collaborative way. Everyone at Headforwards has a
+          specialist skill – whether it’s front-end development, database coding
+          or web services – and mobbing means that knowledge gets shared.
+
+
+          It’s a win-win: the client gets great quality software fast, and the
+          devs and testers enjoy working together to create something of real
+          value.
+        type: markdown-component
+    isPostit: true
     isRightImage: true
     isTwoColumns: false
     type: image-copy-component
     title: A win-win for everyone
-    content:
-      - type: markdown-component
-        text: >-
-          But once a team tries mobbing, they often find they really enjoy working
-          in such a collaborative way. Everyone at Headforwards has a specialist
-          skill – whether it’s front-end development, database coding or web
-          services – and mobbing means that knowledge gets shared.
-    
-    
-          It’s a win-win: the client gets great quality software fast, and the devs
-          and testers enjoy working together to create something of real value.
     image: /uploads/smiley-face-doodle.png
   - quote: >-
       There’s a great social side to mobbing – it helps you learn about your
