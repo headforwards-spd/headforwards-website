@@ -15,7 +15,7 @@ introduction:
 components:
   - type: image-copy-component
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           If you watch sport (F1 and the Tour de France) then
           you will have seen our client’s data dashboards too.

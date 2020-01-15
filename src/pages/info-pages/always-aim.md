@@ -16,7 +16,7 @@ components:
     type: image-copy-component
     title: Realistic expectations
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Doing the right thing sounds straightforward, but it can be one of the
           most challenging aspects of running a business. The secret? It’s all about
@@ -51,7 +51,7 @@ components:
     type: image-copy-component
     title: 'Trust is everything '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
               Headforwards’ client relationships are based on a solid foundation of
               trust – maintained by a culture of complete transparency. 
@@ -70,7 +70,7 @@ components:
     type: image-copy-component
     title: 'Principles are second nature '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
               Headforwards has few formal working rules. Instead it relies on people’s
               positive attitudes to work responsibly and transparently to get the job

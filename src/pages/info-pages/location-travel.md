@@ -17,7 +17,7 @@ components:
     isTwoColumns: false
     type: image-copy-component
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           You could also insert Somerset, Bournemouth, Devon... well, we are next to
           Devon I suppose! But Cornwall is 125 miles long, we are actually pretty

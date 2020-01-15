@@ -16,7 +16,7 @@ components:
     type: image-copy-component
     title: Something for everyone
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Employee wellbeing is hot on the agenda for Headforwards.  That’s why so
           much effort is put into organising social and community-orientated
@@ -47,7 +47,7 @@ components:
     type: image-copy-component
     title: 'Happy people do great work. Simple. '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           It’s no secret that people who feel looked after and valued are more
           likely to excel and do better work. The fact that the nearest beach is
@@ -68,7 +68,7 @@ components:
     type: image-copy-component
     title: 'The more you know '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Headforwards’ people never stop learning. Aside from being able to draw on
           a wealth of knowledge in the office, employees have access to a wide range

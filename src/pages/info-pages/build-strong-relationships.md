@@ -20,7 +20,7 @@ components:
     type: image-copy-component
     title: ''
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
     
           Whether it’s within teams across the company, or with clients across the
@@ -50,7 +50,7 @@ components:
     type: image-copy-component
     title: A team dynamic focused on equality and respect
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           From the moment someone joins Headforwards, they’re treated as a valued
           member of the team – creating the feeling that they can come to work, be
@@ -73,7 +73,7 @@ components:
     type: image-copy-component
     title: Client relationships that go further
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Headforwards works closely with clients to do much more than deliver to
           requirements. It’s always focused on the bigger picture, drawing on its

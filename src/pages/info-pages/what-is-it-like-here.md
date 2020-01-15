@@ -16,7 +16,7 @@ components:
     type: image-copy-component
     title: Where it all starts
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Headforwards’ success comes from its strong relationships within teams,
           collaborative nature with clients, and effective communication throughout
@@ -47,7 +47,7 @@ components:
     type: image-copy-component
     title: The day-to-day process
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           The weekly structure at Headforwards helps keep everyone on track. Every
           day starts with a team stand-up; a chance to figure out any issues,
@@ -74,7 +74,7 @@ components:
     type: image-copy-component
     title: The Headforwards structure
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Headforwards lack of hierarchy means teams are empowered to self-organise,
           play to each other’s strengths, and collaborate effectively—and clients

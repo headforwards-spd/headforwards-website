@@ -13,7 +13,7 @@ introduction:
 components:
   - type: image-copy-component
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           We build scalable, rich user interfaces that we are very proud of.
     

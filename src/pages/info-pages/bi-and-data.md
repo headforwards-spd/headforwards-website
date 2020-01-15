@@ -15,7 +15,7 @@ introduction:
 components:
   - type: image-copy-component
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
               We’re ensuring that people are able to access
               high-quality services through digital and technology channels. It’s an

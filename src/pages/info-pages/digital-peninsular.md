@@ -26,7 +26,7 @@ components:
     type: image-copy-component
     title: The Digital Peninsula
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           As one of the fastest growing tech hubs in the UK, Cornwall has been a key
           part of the success of Headforwards.
@@ -54,7 +54,7 @@ components:
     type: image-copy-component
     title: Connected Cornwall
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Geographically, Headforwards may sit at the tip of the UK, but Cornwall’s
           advanced infrastructure means the company enjoys all the advantages of its
@@ -76,7 +76,7 @@ components:
     type: image-copy-component
     title: Software by the seaside
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           It’s not just the thriving tech sector that makes Cornwall an ideal
           location for Headforwards – it’s also the unique landscape that surrounds

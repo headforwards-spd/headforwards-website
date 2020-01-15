@@ -19,7 +19,7 @@ components:
     type: image-copy-component
     title: 'Sharing, learning and growing '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           When it comes to talent development Headforwards doesn’t rely on
           traditional training programs. Instead it has created an open,
@@ -43,7 +43,7 @@ components:
     type: image-copy-component
     title: Self-directed learning
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           An appetite for learning is a key characteristic of a Headforwards team
           member, so self-motivators will find ample opportunities to learn from
@@ -67,7 +67,7 @@ components:
     type: image-copy-component
     title: 'The career progression framework '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Self-directed learning is great, but it’s also important that people know
           what opportunities are available. That’s why Headforwards developed a

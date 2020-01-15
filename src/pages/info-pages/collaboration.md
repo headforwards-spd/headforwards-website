@@ -16,7 +16,7 @@ components:
     type: image-copy-component
     title: There’s no ‘us and them’
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           There’s no one size fits all solution to software development. It’s why
           Headforwards works closely with you to deliver software that creates value
@@ -40,7 +40,7 @@ components:
     type: image-copy-component
     title: 'The right team for each project '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           No two clients or projects are the same. That’s why Headforwards works
           with each client to create the right team for their needs; a team that
@@ -63,7 +63,7 @@ components:
     type: image-copy-component
     title: A faster way to become Agile
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Some organisations want to move to an Agile approach, but legacy processes
           and modes of software development get in the way. That’s where
@@ -80,7 +80,7 @@ components:
     type: image-copy-component
     title: A flexible approach to collaboration
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Headforwards may be an Agile outsource partner, but there’s nothing
           dogmatic about its approach. The company believes that the most value

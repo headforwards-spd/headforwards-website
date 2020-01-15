@@ -15,7 +15,7 @@ components:
     isTwoColumns: false
     type: image-copy-component
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           People often think that it is really expensive to live in Cornwall. Yes,
           there are lots of people who have second homes here, and yes the cost of

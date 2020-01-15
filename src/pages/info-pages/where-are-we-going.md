@@ -16,7 +16,7 @@ components:
     type: image-copy-component
     title: 'People-driven growth '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Most organisations have a plan for the future, but what makes Headforwards
           different is its focus on people-driven growth and how it constantly
@@ -43,7 +43,7 @@ components:
     type: image-copy-component
     title: 'A core values-led strategy '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
             Headforwards has several strategic objectives for growth, powered by its core principles
             and its approach to client service.
@@ -63,7 +63,7 @@ components:
     type: image-copy-component
     title: Turning heads with great work
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Critical mass is vitally important for Headforwards. It’s not only how it
           fosters the best talent to serve its existing clients, but it’s also how

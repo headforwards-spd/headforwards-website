@@ -13,7 +13,7 @@ components:
   - type: image-copy-component
     title: The power of the mob
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           An entire dev team, gathered around one computer, all working on the same
           client project. It sounds like chaos, but it’s a brilliant way of
@@ -39,7 +39,7 @@ components:
     type: image-copy-component
     title: Clients are welcome
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Mobbing gets even better when clients are involved, whether they’re
           visiting Headforwards in person, or videoconferencing in from their site. 
@@ -58,7 +58,7 @@ components:
     type: image-copy-component
     title: A win-win for everyone
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           But once a team tries mobbing, they often find they really enjoy working
           in such a collaborative way. Everyone at Headforwards has a specialist

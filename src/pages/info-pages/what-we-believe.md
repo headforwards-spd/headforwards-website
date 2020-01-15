@@ -16,7 +16,7 @@ components:
     type: image-copy-component
     title: We believe in creating value
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Headforwards believes clients get the greatest business value from
           software outsourcing when development teams are empowered to make their
@@ -49,7 +49,7 @@ components:
     type: image-copy-component
     title: 'We believe in being Agile, we believe in empowering teams'
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           The Agile Manifesto says quality software emerges from self-organising
           teams. That’s why there’s no management layer at Headforwards. Instead,

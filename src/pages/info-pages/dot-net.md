@@ -14,7 +14,7 @@ introduction:
 components:
   - type: image-copy-component
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           All our teams are small, they range from 3-7 people max. The applications
           are all a bit different but the core theme is building responsive web

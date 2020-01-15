@@ -20,7 +20,7 @@ sections:
       - type: image-copy-component
         title: People over process
         content:
-          - type: markdown
+          - type: markdown-component
             text: >-
               Developers are recruited specifically for a client’s needs and teams
               are self-organising with the responsibility of producing software that
@@ -47,7 +47,7 @@ sections:
       - type: image-copy-component
         title: Building partnerships with clients
         content:
-          - type: markdown
+          - type: markdown-component
             text: >-
               Headforwards looks to develop trust between themselves and their
               clients by continuously delivering business value.
@@ -65,7 +65,7 @@ sections:
       - type: image-copy-component
         title: Careers without compromise
         content:
-          - type: markdown
+          - type: markdown-component
             text: >-
               Headforwards offer the ability to live in one of the most beautiful
               and relaxing parts of the UK while at the same time working at the

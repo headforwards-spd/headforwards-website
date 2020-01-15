@@ -16,7 +16,7 @@ components:
     type: image-copy-component
     title: ''
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
              Headforwards is different from other software outsource companies – and a big part of that difference is
              the company’s approach to resourcing projects.
@@ -40,7 +40,7 @@ components:
     type: image-copy-component
     title: 'High-performing teams, high-quality software'
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           There can be a lot of difficult conversations during software development;
           which route to go down, which technique to use, or even which skills are
@@ -60,7 +60,7 @@ components:
     type: image-copy-component
     title: Grow successful teams
     content:
-      - type: markdown
+      - type: markdown-component
         text: "Creating an effective team is only the first step. For a team to thrive, individual members must work closely together to reach their goals.\rHeadforwards takes an Agile approach to development, using techniques like pair programming and mob programming to bring team members together, share knowledge and skills, and ultimately deliver high quality software, fast.\n\n\rAt the same time, each team’s scrum master is there to keep up morale, encourage team cohesion and ensure the team is maximising its potential."
   - flip: true
     imageOne: /uploads/hf-steal-1.jpg

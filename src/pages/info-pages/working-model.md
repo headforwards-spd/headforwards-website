@@ -18,7 +18,7 @@ components:
     type: image-copy-component
     title: A new approach to software outsourcing
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Different clients look for different things from an outsource software
           partner. Headforwards offers two engagement models to ensure you get the
@@ -42,7 +42,7 @@ components:
     type: image-copy-component
     title: Two ways to work with Headforwards
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Headforwards has deliberately avoided that out-moded model. Instead, it
           focuses on forming effective teams who stay together long-term and
@@ -58,7 +58,7 @@ components:
     type: image-copy-component
     title: Long-term partnership
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           The cloud has made continuous delivery the norm, so many clients are
           looking for long-term, ongoing and cost-effective support from their
@@ -75,7 +75,7 @@ components:
     type: image-copy-component
     title: 'Short-term project '
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Not every organisation is looking for a long-term partnership. Some want
           to outsource a discrete short-term project, like a prototype, proof of

@@ -18,7 +18,7 @@ components:
     type: image-copy-component
     title: Clients see value faster
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Unlike developers who work to a monthly release cycle, Headforwards teams
           are geared up to deliver new software into production every day – so
@@ -42,7 +42,7 @@ components:
     type: image-copy-component
     title: Made possible by Agile
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Continuous delivery is made possible by Agile practices. By breaking
           projects down into small packets of work and working on them in sprints,
@@ -64,7 +64,7 @@ components:
     type: image-copy-component
     title: 'Small tasks, big results'
     content:
-      - type: markdown
+      - type: markdown-component
         text: >-
           Teams at Headforwards are self-organising and comprised of developers and
           testers – which make them well suited for continuous delivery.
