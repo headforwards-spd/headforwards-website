@@ -71,7 +71,7 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: A win-win for everyone
-    image: /uploads/smiley-face-doodle.png
+    image: /uploads/007.svg
   - quote: >-
       There’s a great social side to mobbing – it helps you learn about your
       team as people. And in the long run, it helps us grow as developers to
