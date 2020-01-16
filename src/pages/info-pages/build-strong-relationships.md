@@ -80,7 +80,7 @@ components:
           overdelivering on projects to co-creating new products that generate
           true business value.
         type: markdown-component
-    image: /uploads/paper-airplane-doodle.png
+    image: /uploads/002.svg
     isPostit: true
     isRightImage: true
     type: image-copy-component
