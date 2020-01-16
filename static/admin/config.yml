@@ -149,6 +149,15 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
+      - label: "Footer Links"
+        name: footerLinks
+        widget: optional-object
+        fields:
+          - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
+          - {label: "Link", name: link1, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link2, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link3, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
       # SEO
@@ -719,13 +728,19 @@ collections:
             widget: list
             fields:
               - {label: "Label", name: linkText, widget: string, default: 'Read more'}
-              - {label: "Link", name: link, widget: string}
+              - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
               - label: "Children"
                 name: children
                 widget: list
                 fields:
                   - {label: "Label", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+                  - label: "Children"
+                    name: children
+                    widget: list
+                    fields:
+                      - {label: "Label", name: linkText, widget: string, default: 'Read more'}
+                      - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - file: "src/data/company-info.yml"
         label: "Company Information"

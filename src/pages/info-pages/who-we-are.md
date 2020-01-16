@@ -8,7 +8,6 @@ image:
     image: /uploads/icon.black.png
 introduction:
     show: false
-    text:
 
 components:
 

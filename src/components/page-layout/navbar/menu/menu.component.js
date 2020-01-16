@@ -36,7 +36,7 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                         <section>
                             <ul>
                                 {menu.map(({ id, ...item }) => (
-                                    <MenuItem key={id} {...{ ...item, location, showTitle: true }} />
+                                    <MenuItem key={id} {...item} {...{ location, showTitle: true }} />
                                 ))}
                                 <MenuItem
                                     {...{

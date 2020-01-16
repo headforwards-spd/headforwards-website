@@ -14,7 +14,6 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: ''
     content:
       - type: markdown-component
         text: "People make or break a project, so getting the right people – and helping them to be the best they can be – is an essential part of us doing great work for our clients. \n\nUnlike many software developers, Headforwards is people-centric rather than process-orientated, placing a strong focus on finding the right people and helping them develop their skills. \r\n\nThe result is an environment that rewards creative, independent thinking, and Headforwards’ clients recognise the benefits this approach can bring to their projects."

@@ -92,7 +92,5 @@ components:
           result for everyone.
         type: quote-component
 callToAction: 'To learn more about how we collaborate with clients '
-seo:
-  slug: ''
 ---
 

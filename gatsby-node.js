@@ -45,15 +45,30 @@ exports.onCreateNode = ({ node, actions }) => {
 };
 
 function createAllIndexPages(createPage, { menu: pages }) {
-    return Promise.all(
-        pages.map(({ linkText: title, link: path, children }) => {
-            return createPage({
+    const promises = [];
+
+    pages.forEach(page => createIndexPage(createPage, promises, page));
+
+    return Promise.all(promises);
+}
+
+function createIndexPage(createPage, promises, page) {
+    const { uuid, linkText: title, link: path, children } = page;
+
+    !!children &&
+        promises.push(
+            createPage({
                 path,
                 component: resolve(`src/templates/index-page.js`),
-                context: { title, children },
-            });
-        })
-    );
+                context: {
+                    uuid,
+                    title,
+                    children,
+                },
+            })
+        );
+
+    !!children && children.forEach(child => createIndexPage(createPage, promises, child));
 }
 
 function createAllPages(createPage, { nodes: pages = [] }) {
@@ -76,10 +91,10 @@ function createAllPages(createPage, { nodes: pages = [] }) {
 
 function createAllJobs(createPage, { nodes: jobs = [] }) {
     return Promise.all(
-        jobs.map(({ id, type, path }) => {
+        jobs.map(({ id, path }) => {
             return createPage({
                 path: `/careers/jobs/${path}`,
-                component: resolve(`src/templates/${type}.js`),
+                component: resolve(`src/templates/job-page.js`),
                 context: { id },
             });
         })
@@ -91,15 +106,16 @@ function getData(graphql) {
         {
             indexPages: dataYaml(title: { eq: "main-menu" }) {
                 menu {
-                    linkText
+                    uuid
                     link
+                    linkText
                     children {
+                        uuid
                         link
                         linkText
                         page {
                             frontmatter {
                                 introduction {
-                                    show
                                     text
                                 }
                                 image {
@@ -121,12 +137,41 @@ function getData(graphql) {
                                 }
                             }
                         }
+                        children {
+                            uuid
+                            link
+                            linkText
+                            page {
+                                frontmatter {
+                                    introduction {
+                                        text
+                                    }
+                                    image {
+                                        show
+                                        image {
+                                            publicURL
+                                            childImageSharp {
+                                                fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER) {
+                                                    aspectRatio
+                                                    base64
+                                                    sizes
+                                                    src
+                                                    srcSet
+                                                    srcSetWebp
+                                                    srcWebp
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
 
             pages: allMarkdownRemark(
-                filter: { frontmatter: { type: { in: ["info-page", "legal-page", "home-page", "tech-stack-page"] } } }
+                filter: { frontmatter: { type: { in: ["info-page", "legal-page", "home-page", "jobs-page"] } } }
             ) {
                 nodes {
                     id

@@ -1,23 +1,35 @@
-import { bool, shape, string } from 'prop-types';
+import { bool, oneOfType, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { ImageSrcPropType } from '../page-layout/image/image.component';
-import ArticleColumns from './columns/article-columns/article-columns.component';
-import PostitCopyColumns from './columns/image-copy-columns/postit-copy-columns.component';
-import Hero from './hero/hero.component';
-import ImageCopyColumns from './columns/image-copy-columns/image-copy-columns.component';
-import ContentSlider from './content-slider/content-slider.component';
-import BlogPostColumns from './columns/blog-post-columns/blog-post-columns.component';
-import FullWidthImage from './images/full-width/full-width-image.component';
-import TwoImages from './images/two/two-images.component';
-import Quote from './quote/quote.component';
+import ArticleColumns, { ArticleColumnsPropType } from './columns/article-columns/article-columns.component';
+import PostitCopyColumns, {
+    PostitCopyColumnsPropType,
+} from './columns/image-copy-columns/postit-copy-columns.component';
+import Hero, { HeroPropType } from './hero/hero.component';
+import ImageCopyColumns, { ImageCopyColumnsPropType } from './columns/image-copy-columns/image-copy-columns.component';
+import ContentSlider, { ContentSliderPropType } from './content-slider/content-slider.component';
+import BlogPostColumns, { BlogPostColumnsPropType } from './columns/blog-post-columns/blog-post-columns.component';
+import FullWidthImage, { FullWidthImageSrcPropType } from './images/full-width/full-width-image.component';
+import TwoImages, { TwoImagesPropType } from './images/two/two-images.component';
+import Quote, { QuotePropType } from './quote/quote.component';
 
 const pageComponentPropTypes = {
     type: string.isRequired,
 };
 
 export default PageComponent;
-export const PageComponentPropType = shape(pageComponentPropTypes);
+export const PageComponentPropType = oneOfType([
+    ArticleColumnsPropType,
+    ImageCopyColumnsPropType,
+    PostitCopyColumnsPropType,
+    HeroPropType,
+    ContentSliderPropType,
+    BlogPostColumnsPropType,
+    FullWidthImageSrcPropType,
+    TwoImagesPropType,
+    QuotePropType,
+]);
 
 PageComponent.propTypes = pageComponentPropTypes;
 function PageComponent({ type, ...component }) {

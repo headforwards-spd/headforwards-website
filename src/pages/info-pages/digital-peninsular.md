@@ -40,9 +40,7 @@ components:
           As a founder member of key development communities such as Software
           Cornwall and Agile on the Beach, and the largest tech employer in the
           county, Headforwards plays a central role in Cornwall’s tech ecosystem.
-  - jobTitle: ''
-    name: ''
-    quote: >-
+  - quote: >-
       When clients decide to partner with Headforwards, they don’t just get the
       value of an in-house team – they get the value of Cornwall’s entire tech
       ecosystem.

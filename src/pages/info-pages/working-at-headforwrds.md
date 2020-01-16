@@ -18,12 +18,5 @@ components:
         title: Location & travel
         image: /uploads/living-by-the-beach.jpg
     type: blog-post-component
-    
-callToAction:
-
-seo:
-    slug:
-    title:
-    description:
 ---
 

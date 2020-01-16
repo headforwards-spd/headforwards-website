@@ -5,11 +5,31 @@
 
 .footer {
 
+    .footerLinks {
+        background-color: $blue-background;
+        display: flex;
+        padding: $gutter-medium $column-gutter;
+        @media (min-width: $screen-lg) {
+            flex-direction: row;
+
+            > * {
+                width: calc(100% / 3);
+            }
+
+            section {
+                display: block;
+
+                padding: $column-gutter $column-gutter/2;
+                background: white;
+            }
+        }
+    }
+
     .getInTouch {
 
         @include flexRow(row, nowrap, normal);
         background-color: $blue-background;
-        background-image: url('/images/footer-bg.webp');
+        //background-image: url('/images/footer-bg.webp');
         background-position: center;
         background-size: cover;
 

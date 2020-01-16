@@ -35,6 +35,13 @@ Layout.propTypes = {
     isHomePage: bool,
     title: string.isRequired,
     subtitle: string,
+    footerLinks: arrayOf(
+        shape({
+            link1: string.isRequired,
+            link2: string.isRequired,
+            link3: string.isRequired,
+        })
+    ),
     callToAction: string,
     image: shape({
         show: bool,
@@ -49,9 +56,10 @@ Layout.defaultProps = {
     image: null,
     children: null,
     seo: null,
+    footerLinks: null,
     callToAction: null,
 };
-function Layout({ isHomePage, seo, title, subtitle, image, children, callToAction: pageCallToAction }) {
+function Layout({ isHomePage, seo, title, subtitle, image, children, footerLinks, callToAction: pageCallToAction }) {
     const { menuData, companyInfo } = useStaticQuery(graphql`
         query {
             menuData: dataYaml(title: { eq: "main-menu" }) {
@@ -109,7 +117,7 @@ function Layout({ isHomePage, seo, title, subtitle, image, children, callToActio
             <Seo {...{ title, ...seo }} />
             <Header {...headerProps} />
             <main>{children}</main>
-            <Footer {...{ companyInfo, callToAction }} />
+            <Footer {...{ footerLinks, companyInfo, callToAction }} />
         </Provider>
     );
 }

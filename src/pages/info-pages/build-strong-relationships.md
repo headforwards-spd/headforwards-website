@@ -10,15 +10,13 @@ introduction:
     show: false
     text: CHANGEME
 components:
-  - image: null
-    isPostit: false
+  - isPostit: false
     isRightImage: false
     isTwoColumns: false
     link:
       - link: d1956170-ec44-11e9-914c-c376cef31113
         linkText: Read more
     type: image-copy-component
-    title: ''
     content:
       - type: markdown-component
         text: >-

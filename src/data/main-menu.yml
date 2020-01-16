@@ -43,26 +43,26 @@ menu:
       - linkText: Working at Headforwards
         link: 5fc0e4d0-0fac-11ea-8ab2-d74757235dd0
         children:
-          - linkText: 'Our culture'
+          - linkText: Our culture
             link: 92161650-0f9b-11ea-9e15-59d1e5da42db
-          - linkText: 'Tech in Cornwall'
+          - linkText: Tech in Cornwall
             link: 87ef9080-0f86-11ea-9e15-59d1e5da42db
-          - linkText: 'Training, development and growth'
+          - linkText: Training, development and growth
             link: 97f70000-0fac-11ea-b2ae-07531833e614
-          - linkText: 'Our Benefits'
+          - linkText: Our Benefits
             link: 97f70000-0fac-11ea-b2ae-07531833e614
-      - linkText: 'Our tech stack'
+      - linkText: Our tech stack
         link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
         children:
-          - linkText: 'BI & Data'
+          - linkText: BI & Data
             link: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
-          - linkText: '.Net'
+          - linkText: .Net
             link: 4a8df080-1529-11ea-a6b5-63ea6add32fb
-          - linkText: 'Front End'
+          - linkText: Front End
             link: fe585b60-1528-11ea-a6b5-63ea6add32fb
-          - linkText: 'Perl, Python and Golang'
+          - linkText: Perl, Python and Golang
             link: 7ccaa0e0-152c-11ea-a47f-c360f0875c84
-      - linkText: 'Living in Cornwall'
+      - linkText: Living in Cornwall
         link: 22fe4ade-37d3-11ea-aec2-2e728ce88125
-      - linkText: 'Jobs'
-        link: /careers/jobs
+      - linkText: Jobs
+        link: 16f53e5e-3847-11ea-a137-2e728ce88125

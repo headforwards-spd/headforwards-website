@@ -26,6 +26,7 @@ exports.onCreateNode = ({ node, getNodes }) => {
 
         item.id = uuid.v1();
         item.page___NODE = id;
+        item.uuid = link;
         item.link = path;
         !!children && (item.children = children.map(transformChildren));
 

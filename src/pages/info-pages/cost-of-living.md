@@ -5,10 +5,8 @@ type: info-page
 title: Cost of living
 image:
     show: false
-    image:
 introduction:
     show: false
-    text:
 components:
   - isPostit: false
     isRightImage: false

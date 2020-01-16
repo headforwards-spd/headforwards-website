@@ -5,7 +5,7 @@ type: info-page
 title: 'Perl, Python and Golang'
 image:
     show: false
-    image:
+    image: /uploads/icon.black.png
 introduction:
     show: true
     text: >-

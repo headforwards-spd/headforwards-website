@@ -5,7 +5,7 @@ type: info-page
 title: Front End
 image:
     show: false
-    image:
+    image: /uploads/icon.black.png
 introduction:
     show: true
     text: >-

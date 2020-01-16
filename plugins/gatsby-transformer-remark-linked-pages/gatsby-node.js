@@ -14,7 +14,7 @@ exports.sourceNodes = gatsby => {
 
     pages.forEach(page => {
         const { frontmatter } = page || {};
-        const { components = [], jobRoles = [] } = frontmatter || {};
+        const { components = [], jobRoles = [], footerLinks = [] } = frontmatter || {};
 
         if (components && components.length) {
             components.forEach(component => {
@@ -46,6 +46,22 @@ exports.sourceNodes = gatsby => {
             });
 
             page.frontmatter.jobRoles = [...jobRoles];
+        }
+
+        if (footerLinks && footerLinks.length) {
+            footerLinks.forEach(footerLink => {
+                const { link1 = null, link2 = null, link3 = null } = footerLink;
+
+                footerLink.id = uuid.v1();
+                footerLink.link1 = getPageLink(link1);
+                footerLink.link2 = getPageLink(link2);
+                footerLink.link3 = getPageLink(link3);
+                footerLink.page1___NODE = getPageId(link1);
+                footerLink.page2___NODE = getPageId(link2);
+                footerLink.page3___NODE = getPageId(link3);
+            });
+
+            page.frontmatter.footerLinks = [...footerLinks];
         }
     });
 

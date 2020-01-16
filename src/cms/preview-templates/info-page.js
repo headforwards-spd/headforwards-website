@@ -31,9 +31,11 @@ InfoPagePreview.propTypes = {
 
 function InfoPagePreview({ entry, getAsset }) {
     const { data } = entry.toJS();
-    const { title = '', subtitle, image, introduction, components, callToAction } = data;
+    const { title = '', subtitle, image, introduction, components, footerLinks, callToAction } = data;
     const { show: showImage = false, image: bannerImageRef = null } = image || {};
     const bannerImage = bannerImageRef ? getAsset(bannerImageRef).toString() : null;
+
+    console.log({ footerLinks });
 
     const header = {
         title,

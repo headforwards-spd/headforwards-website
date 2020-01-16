@@ -5,7 +5,6 @@ type: info-page
 title: Location & travel
 image:
     show: false
-    image:
 introduction:
     show: false
     text: CHANGEME

@@ -14,7 +14,6 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: ''
     content:
       - type: markdown-component
         text: >-

@@ -56,11 +56,13 @@ export default class MenuItem extends Component {
                 {!!hasChildren && (
                     <section>
                         {showTitle && <h2>{linkText}</h2>}
-                        <ul>
-                            {children.map(({ id, ...item }) => (
-                                <MenuItem key={id} {...item} />
-                            ))}
-                        </ul>
+                        {showTitle && (
+                            <ul>
+                                {children.map(({ id, ...item }) => (
+                                    <MenuItem key={id} {...item} />
+                                ))}
+                            </ul>
+                        )}
                     </section>
                 )}
             </li>

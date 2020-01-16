@@ -4,7 +4,6 @@ type: legal-page
 title: Privacy Notice
 image:
     show: false
-    image:
 introduction:
     show: true
     text: >-

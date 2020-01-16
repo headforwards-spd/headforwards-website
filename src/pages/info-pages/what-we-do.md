@@ -8,8 +8,7 @@ image:
     image: /uploads/icon.black.png
 introduction:
     show: false
-    text:
-
+    text: CHANGEME
 components:
 
 callToAction:
