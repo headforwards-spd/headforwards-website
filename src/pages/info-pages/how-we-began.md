@@ -27,7 +27,7 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: A new kind of software outsource company
-    image: /uploads/001-01-1.svg
+    image: /uploads/003.svg
   - quote: >-
       It’s about picking the right people for each client, rather than running a
       bench. It may be slightly less efficient for us, but the client gets much
