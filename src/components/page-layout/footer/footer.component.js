@@ -37,18 +37,6 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
     const hasFooterLinks = link1 && link2 && link3;
 
     return (
-        <>
-            <section className="tester">
-                <section />
-                <section>
-                    <h2>Tester Title</h2>
-                    <p>Tester text 1.</p>
-                    <p>Tester text 2.</p>
-                    <p>Tester text 3.</p>
-                    <p>Tester text 4.</p>
-                </section>
-            </section>
-
             <footer className={styles.footer}>
                 <section className={styles.getInTouch}>
                     {hasFooterLinks && (
@@ -86,6 +74,5 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
                     </section>
                 </address>
             </footer>
-        </>
     );
 }

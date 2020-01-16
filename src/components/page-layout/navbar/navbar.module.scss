@@ -30,9 +30,6 @@
             @media (min-width: $screen-lg) {
                 margin: 0;
             }
-            @media (min-width: $screen-xxl) {
-                margin-left: -3.25rem;
-            }
 
             text-indent: -1000vw;
             background-image: url("/images/headforwards.black.png");
@@ -162,16 +159,6 @@
     @media screen and (min-width: $screen-xl) {
         &:after {
             width: calc(100% - #{2*$page-gutter-xl});
-        }
-    }
-    @media screen and (min-width: $screen-xxl) {
-        &:after {
-            width: calc(100% - #{2*$page-gutter-xxl});
-        }
-    }
-    @media screen and (min-width: $screen-xxxl) {
-        &:after {
-            width: calc(100% - #{2*$page-gutter-xxxl});
         }
     }
 

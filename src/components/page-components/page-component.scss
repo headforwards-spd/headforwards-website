@@ -1,7 +1,7 @@
 @import "../../scss/variables";
 @mixin component-gutter {
     margin: 0 0 $gutter-medium;
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-md) {
         margin-bottom: $gutter-large;
     }
 }
@@ -14,7 +14,7 @@
         margin-bottom: $gutter-small;
     }
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-md) {
         margin: #{-$column-gutter/2} #{-$column-gutter/2} #{$gutter-large - $column-gutter/2};
         > * {
             margin: $column-gutter/2;

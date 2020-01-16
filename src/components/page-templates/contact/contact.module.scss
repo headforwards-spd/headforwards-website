@@ -133,16 +133,6 @@
             margin-right: -$page-gutter-xl;
             width: calc(100% + #{2*$page-gutter-xl} - #{$column-gutter});
         }
-        @media(min-width: $screen-xxl) {
-            margin-left: -$page-gutter-xxl;
-            margin-right: -$page-gutter-xxl;
-            width: calc(100% + #{2*$page-gutter-xxl} - #{$column-gutter});
-        }
-        @media(min-width: $screen-xxxl) {
-            margin-left: -$page-gutter-xxxl;
-            margin-right: -$page-gutter-xxxl;
-            width: calc(100% + #{2*$page-gutter-xxxl} - #{$column-gutter});
-        }
         iframe {
             position: absolute;
             top: 0;

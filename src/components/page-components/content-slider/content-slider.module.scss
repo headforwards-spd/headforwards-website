@@ -18,9 +18,6 @@
     @media(min-width: $screen-xl) {
         margin: 0 -#{$page-gutter-xl} $gutter-large;
     }
-    @media(min-width: $screen-xxl) {
-        margin: 0 -#{$page-gutter-xxl} $gutter-large;
-    }
 
     > h2 {
         padding: 0 $page-gutter-sm;
@@ -219,9 +216,6 @@
         @media(min-width: $screen-xl) {
             padding: 5rem $page-gutter-xl 5rem 0;
         }
-        @media(min-width: $screen-xxl) {
-            padding: 5rem $page-gutter-xxl 5rem 0;
-        }
 
         > h2 {
             position: absolute;
@@ -233,18 +227,12 @@
             @media(min-width: $screen-xl) {
                 left: $page-gutter-xl;
             }
-            @media(min-width: $screen-xxl) {
-                left: $page-gutter-xxl;
-            }
         }
 
         :global(.slick-list) {
             margin-right: -$page-gutter-lg;
             @media(min-width: $screen-xl) {
                 margin-right: -$page-gutter-xl;
-            }
-            @media(min-width: $screen-xxl) {
-                margin-right: -$page-gutter-xxl;
             }
         }
 
@@ -256,9 +244,6 @@
             width: calc(20% + #{$page-gutter-lg*0.2} - #{$page-gutter-lg});
             @media(min-width: $screen-xl) {
                 width: calc(20% + #{$page-gutter-xl*0.2} - #{$page-gutter-xl});
-            }
-            @media(min-width: $screen-xxl) {
-                width: calc(20% + #{$page-gutter-xxl*0.2} - #{$page-gutter-xxl});
             }
 
             button:before {
@@ -278,9 +263,6 @@
             @media(min-width: $screen-xl) {
                 width: calc(10% + #{$page-gutter-xl*0.1} - #{$page-gutter-xl/2});
             }
-            @media(min-width: $screen-xxl) {
-                width: calc(10% + #{$page-gutter-xxl*0.1} - #{$page-gutter-xxl/2});
-            }
 
             svg {
                 padding: 1.5rem 0;
@@ -291,9 +273,6 @@
                 right: calc(10% + #{$page-gutter-lg*0.1} - #{$page-gutter-lg/2});
                 @media(min-width: $screen-xl) {
                     right: calc(10% + #{$page-gutter-xl*0.1} - #{$page-gutter-xl/2});
-                }
-                @media(min-width: $screen-xxl) {
-                    right: calc(10% + #{$page-gutter-xxl*0.1} - #{$page-gutter-xxl/2});
                 }
             }
 
@@ -323,9 +302,6 @@
         margin-left: calc(#{$page-gutter-lg} - #{$column-gutter/2});
         @media(min-width: $screen-xl) {
             margin-left: calc(#{$page-gutter-xl} - #{$column-gutter/2});
-        }
-        @media(min-width: $screen-xxl) {
-            margin-left: calc(#{$page-gutter-xxl} - #{$column-gutter/2});
         }
 
         > section {

@@ -11,7 +11,7 @@
     }
     > section > :not(section) {
         @include fontMedium;
-        @media(min-width: $screen-lg) {
+        @media(min-width: $screen-md) {
             @include fontLarge;
         }
         margin-bottom: 0;
@@ -24,14 +24,14 @@
     &.isTwoColumns {
         @include columns-component;
     }
-    @media(min-width: $screen-lg) {
+    @media(min-width: $screen-md) {
 
         &.isTwoColumns {
             align-items: flex-start;
 
             > section {
                 column-count: 2;
-                column-gap: $gutter-large;
+                column-gap: $gutter-medium;
             }
 
             &.hasTitle {
