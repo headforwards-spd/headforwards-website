@@ -37,42 +37,42 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
     const hasFooterLinks = link1 && link2 && link3;
 
     return (
-            <footer className={styles.footer}>
-                <section className={styles.getInTouch}>
-                    {hasFooterLinks && (
-                        <section className={styles.footerLinks}>
-                            {title && <h2>{title}</h2>}
-                            <FooterLink {...{ showImages, link: link1, page: page1 }} />
-                            <FooterLink {...{ showImages, link: link2, page: page2 }} />
-                            <FooterLink {...{ showImages, link: link3, page: page3 }} />
-                        </section>
-                    )}
-                    <h2>
-                        {callToAction}
-                        <Link to="/contact">Get in touch</Link>
-                    </h2>
-                </section>
-
-                <Socials {...{ ...companyInfo, isFooter }} />
-
-                <address>
-                    {(email || phone) && (
-                        <section className={styles.contact}>
-                            {!!email && <Link to={`mailto:${email}`}>{email}</Link>}
-                            {!!phone && <Link to={`tel:${phone}`}>{phone}</Link>}
-                        </section>
-                    )}
-                    <section>
-                        <section className={styles.copyright}>
-                            &copy; {thisYear} {companyName}
-                        </section>
-                        <section className={styles.address}>{address}</section>
-                        <section className={styles.legal}>
-                            <Link to="/privacy-notice">Privacy Policy</Link>
-                            <Link to="/terms-of-use">Terms of Use</Link>
-                        </section>
+        <footer className={styles.footer}>
+            <section className={styles.getInTouch}>
+                {hasFooterLinks && (
+                    <section className={styles.footerLinks}>
+                        {title && <h2>{title}</h2>}
+                        <FooterLink {...{ showImages, link: link1, page: page1 }} />
+                        <FooterLink {...{ showImages, link: link2, page: page2 }} />
+                        <FooterLink {...{ showImages, link: link3, page: page3 }} />
                     </section>
-                </address>
-            </footer>
+                )}
+                <h2>
+                    {callToAction}
+                    <Link to="/contact">Get in touch</Link>
+                </h2>
+            </section>
+
+            <Socials {...{ ...companyInfo, isFooter }} />
+
+            <address>
+                {(email || phone) && (
+                    <section className={styles.contact}>
+                        {!!email && <Link to={`mailto:${email}`}>{email}</Link>}
+                        {!!phone && <Link to={`tel:${phone}`}>{phone}</Link>}
+                    </section>
+                )}
+                <section>
+                    <section className={styles.copyright}>
+                        &copy; {thisYear} {companyName}
+                    </section>
+                    <section className={styles.address}>{address}</section>
+                    <section className={styles.legal}>
+                        <Link to="/privacy-notice">Privacy Policy</Link>
+                        <Link to="/terms-of-use">Terms of Use</Link>
+                    </section>
+                </section>
+            </address>
+        </footer>
     );
 }
