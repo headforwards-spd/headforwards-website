@@ -65,7 +65,8 @@ components:
           the client really benefits from that.
         type: quote-component
 footerLinks:
-    - showImages: true
+    - title: See how awesome we are
+      showImages: true
       link1: fe1a1d50-0fab-11ea-843f-932c76de5936
       link2: c8419b2c-37c9-11ea-978f-2e728ce88125
       link3: 92161650-0f9b-11ea-9e15-59d1e5da42db

@@ -38,7 +38,6 @@ body {
         > footer > ul,
         > footer > address,
         > footer > section > * {
-            max-width: calc(#{$max_width} + #{2*$page-gutter-xxl});
             margin: 0 auto;
             width: 100%;
             padding: 0 $page-gutter-sm;
@@ -46,16 +45,8 @@ body {
                 padding: 0 $page-gutter-md;
             }
             @media(min-width: $screen-lg) {
+                max-width: calc(#{$max_width} + #{2*$page-gutter-lg});
                 padding: 0 $page-gutter-lg;
-            }
-            @media(min-width: $screen-xl) {
-                padding: 0 $page-gutter-xl;
-            }
-            @media(min-width: $screen-xxl) {
-                padding: 0 $page-gutter-xxl;
-            }
-            @media(min-width: $screen-xxxl) {
-                padding: 0 $page-gutter-xxxl;
             }
         }
 

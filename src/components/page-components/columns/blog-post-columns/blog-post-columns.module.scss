@@ -11,7 +11,7 @@
     > h2 {
         @include orange-type;
         @include headingFontXLarge;
-        @media (min-width: $screen-lg) {
+        @media (min-width: $screen-md) {
             @include headingFontXXLarge;
         }
     }

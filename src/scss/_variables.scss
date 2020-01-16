@@ -38,23 +38,17 @@ $gutter-large:  6rem;
 $screen-sm:      320px;
 $page-gutter-sm: 1rem;
 
-$screen-md:      620px;
+$screen-md:      768px;
 $page-gutter-md: 2rem;
 
 $screen-lg:      1024px;
 $page-gutter-lg: 3rem;
 
-$screen-xl:      1200px;
-$page-gutter-xl: 4rem;
-
-$screen-xxl:      1440px;
-$page-gutter-xxl: 8rem;
-
-$screen-xxxl:     2200px;
-$page-gutter-xxxl: 16rem;
+$screen-xl:      1440px;
+$page-gutter-xl: 0;
 
 $min_width: $screen-sm;
-$max_width: $screen-xxl;
+$max_width: 1170px;
 $min_font: 16px;
 $max_font: 20px;
 

@@ -3,8 +3,8 @@
 .introduction {
     @include component-gutter;
     @include fontLarge;
-    @media (min-width: $screen-lg) {
-        margin-bottom: $gutter-large - $gutter-medium/2;
+    @media (min-width: $screen-md) {
+        margin-bottom: $gutter-large -$gutter-medium/2;
         width: $singleColumnMaxWidth;
     }
     h2 {

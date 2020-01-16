@@ -149,10 +149,12 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
+      # FOOTERLINKS
       - label: "Footer Links"
         name: footerLinks
         widget: optional-object
         fields:
+          - {label: "Title", name: title, widget: string, required: false, default: null}
           - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
           - {label: "Link", name: link1, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
           - {label: "Link", name: link2, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
@@ -305,6 +307,17 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
+      # FOOTERLINKS
+      - label: "Footer Links"
+        name: footerLinks
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required: false, default: null}
+          - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
+          - {label: "Link", name: link1, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link2, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link3, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
       # SEO
@@ -451,6 +464,17 @@ collections:
                   - {label: "Copy", name: text, widget: text}
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
+      # FOOTERLINKS
+      - label: "Footer Links"
+        name: footerLinks
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required: false, default: null}
+          - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
+          - {label: "Link", name: link1, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link2, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link3, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
@@ -599,6 +623,17 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
+      # FOOTERLINKS
+      - label: "Footer Links"
+        name: footerLinks
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required: false, default: null}
+          - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
+          - {label: "Link", name: link1, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link2, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link3, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
       # SEO
@@ -637,6 +672,17 @@ collections:
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
           - {label: "Copy", name: text, widget: markdown}
+
+      # FOOTERLINKS
+      - label: "Footer Links"
+        name: footerLinks
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required: false, default: null}
+          - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
+          - {label: "Link", name: link1, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link2, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link3, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 

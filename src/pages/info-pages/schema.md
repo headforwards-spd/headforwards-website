@@ -77,6 +77,13 @@ components:
           text: force value
           linkText: force value
           link: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
+          
+footerLinks:
+    - title: force value
+      showImages: false
+      link1: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
+      link2: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
+      link3: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
 
 callToAction: force value
 

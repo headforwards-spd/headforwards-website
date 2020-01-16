@@ -6,13 +6,16 @@
 .columnsWrapper {
 
     @include columns-component;
+    @media (min-width: $screen-md) {
+        align-items: unset;
+    }
 
     .copy {
         @include copy;
 
-        @media (min-width: $screen-lg) {
+        @media (min-width: $screen-md) {
             width: calc(50% - #{$gutter-medium});
-            margin-bottom: $gutter-medium/2;
+            margin: calc(14vw - 100px) 1rem;
         }
     }
 
@@ -21,39 +24,22 @@
         margin-right: -$page-gutter-sm;
 
         @media(min-width: $screen-md) {
-            margin-left: -$page-gutter-md;
-            margin-right: -$page-gutter-md;
-        }
-        @media(min-width: $screen-lg) {
-            flex-grow: 1;
-            margin: 0 #{$column-gutter/2} 0 #{$column-gutter/2 - $page-gutter-lg};
-        }
-        @media(min-width: $screen-xl) {
-            margin: 0 #{$column-gutter/2} 0 #{$column-gutter/2 - $page-gutter-xl};
-        }
-        @media(min-width: $screen-xxl) {
-            margin: 0 #{$column-gutter/2} 0 #{$column-gutter/2 - $page-gutter-xxl};
-        }
-        @media(min-width: $screen-xxxl) {
-            margin: 0 #{$column-gutter/2} 0 #{$column-gutter/2 - $page-gutter-xxxl};
+            > div {
+                display: none;
+            }
+
+            width: calc(50vw - 1rem);
+            margin: 0 $gutter-medium/2 0 calc(-50vw + 50%);
         }
     }
     &.isRightImage .image {
-        @media(min-width: $screen-lg) {
-            margin: 0 #{$column-gutter/2 - $page-gutter-lg} 0 #{$column-gutter/2};
-        }
-        @media(min-width: $screen-xl) {
-            margin: 0 #{$column-gutter/2 - $page-gutter-xl} 0 #{$column-gutter/2};
-        }
-        @media(min-width: $screen-xxl) {
-            margin: 0 #{$column-gutter/2 - $page-gutter-xxl} 0 #{$column-gutter/2};
-        }
-        @media(min-width: $screen-xxxl) {
-            margin: 0 #{$column-gutter/2 - $page-gutter-xxxl} 0 #{$column-gutter/2};
+        @media(min-width: $screen-md) {
+            margin: 0 calc(-50vw + 50%) 0 $gutter-medium/2;
+
         }
     }
 
-    @media(min-width: $screen-lg) {
+    @media(min-width: $screen-md) {
 
         &.isRightImage {
             flex-direction: row-reverse;

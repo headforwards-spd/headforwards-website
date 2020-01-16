@@ -17,7 +17,7 @@
     > section {
         @include columns-component;
 
-        @media(min-width: $screen-lg) {
+        @media(min-width: $screen-md) {
             align-items: stretch;
         }
 
@@ -26,7 +26,7 @@
             display: flex;
             flex-direction: column;
             @include fontMedium;
-            @media(min-width: $screen-lg) {
+            @media(min-width: $screen-md) {
                 @include fontLarge;
 
             }
@@ -45,7 +45,7 @@
             > h2 {
                 order: 2;
                 @include headingFontMedium;
-                @media(min-width: $screen-lg) {
+                @media(min-width: $screen-md) {
                     @include headingFontLarge;
 
                 }
@@ -66,7 +66,7 @@
                 font-weight: normal;
                 display: block;
                 margin-top: $gutter-small;
-                @media(min-width: $screen-lg) {
+                @media(min-width: $screen-md) {
                     margin-top: $gutter-medium;
                 }
             }
@@ -107,7 +107,7 @@
             }
         }
 
-        @media(min-width: $screen-lg) {
+        @media(min-width: $screen-md) {
 
             .article {
                 width: calc((100%/2) - #{$gutter-medium});

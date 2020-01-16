@@ -37,6 +37,8 @@ Layout.propTypes = {
     subtitle: string,
     footerLinks: arrayOf(
         shape({
+            title: string,
+            showImages: bool,
             link1: string.isRequired,
             link2: string.isRequired,
             link3: string.isRequired,
