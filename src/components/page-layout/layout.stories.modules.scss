@@ -2,62 +2,105 @@
 @import "../../scss/mixins/typography";
 @import "../../scss/variables";
 
+.storiesLayout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: $gutter-medium 0;
+
+    > header, > footer {
+        flex-shrink: 0;
+    }
+
+    > main {
+        flex-grow: 1;
+    }
+
+    > header > *,
+    > main,
+    > footer > ul,
+    > footer > address,
+    > footer > section > * {
+        margin: 0 auto;
+        width: 100%;
+        padding: $page-gutter-sm;
+        overflow: visible;
+        @media(min-width: $screen-md) {
+            padding: $page-gutter-md;
+        }
+        @media(min-width: $screen-lg) {
+            max-width: calc(#{$max_width} + #{2*$page-gutter-lg});
+            padding: $page-gutter-lg;
+        }
+    }
+
+    > header, > footer {
+        width: 100%;
+    }
+}
+
 .wrapper {
-    padding: $gutter-medium;
+    padding: $gutter-small;
     > :last-child {
         margin-bottom: 0;
     }
 
-    @media screen and (min-width: $screen-lg) {
+    @media screen and (min-width: $screen-md) {
         margin: $gutter-small;
         border: 1px solid $paragraph_grey;
         box-shadow: 0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
     }
 }
 
+.columns {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
 h2 {
-    &.xxxlarge {
+    &.xxxl {
         @include headingFontXXXLarge;
     }
 
-    &.xxlarge {
+    &.xxl {
         @include headingFontXXLarge;
     }
 
-    &.xlarge {
+    &.xl {
         @include headingFontXLarge;
     }
 
-    &.large {
+    &.lg {
         @include headingFontLarge;
     }
 
-    &.medium {
+    &.md {
         @include headingFontMedium;
     }
 
-    &.small {
+    &.sm {
         @include headingFontSmall;
     }
 }
 p {
-    &.xxlarge {
+    &.xxl {
         @include fontXXLarge;
     }
 
-    &.xlarge {
+    &.xl {
         @include fontXLarge;
     }
 
-    &.large {
+    &.lg {
         @include fontLarge;
     }
 
-    &.medium {
+    &.md {
         @include fontMedium;
     }
 
-    &.small {
+    &.sm {
         @include fontSmall;
     }
 }
@@ -129,8 +172,4 @@ p {
     .grey10 {
         background: $grey-10;
     }
-}
-
-.fsAlbertWeb {
-    font-family: 'FS ALbert Web';
 }

@@ -2,57 +2,51 @@ const desktopRatio = 5/8;
 const mobileRatio = 9/16;
 
 export default {
-    desktopL: {
-        name: 'Desktop L',
-        type: 'desktop',
-        styles: getDesktopStyles(1440)
-    },
-    // desktopS: {
-    //     name: 'Desktop S',
-    //     type: 'desktop',
-    //     styles: getDesktopStyles(1439)
-    // },
-
-    tabletL: {
-        name: 'Tablet L',
-        type: 'tablet',
-        styles: getDesktopStyles(1200)
-    },
-    // tabletM: {
-    //     name: 'Tablet M',
-    //     type: 'tablet',
-    //     styles: getDesktopStyles(1199)
-    // },
-    tabletS: {
-        name: 'Tablet S',
-        type: 'tablet',
-        styles: getDesktopStyles(1024),
-    },
-
-    mobileXL: {
-        name: 'Mobile XL',
+    mobile1: {
+        name: '< $screen-sm (319)',
         type: 'mobile',
-        styles: getMobileStyles(1024)
+        styles: getMobileStyles(319)
     },
-    // mobileL: {
-    //     name: 'Mobile L',
-    //     type: 'mobile',
-    //     styles: getMobileStyles(1023)
-    // },
-    mobileM: {
-        name: 'Mobile M',
-        type: 'mobile',
-        styles: getMobileStyles(620)
-    },
-    // mobileS: {
-    //     name: 'Mobile S',
-    //     type: 'mobile',
-    //     styles: getMobileStyles(619)
-    // },
-    mobileXS: {
-        name: 'Mobile XS',
+    mobile2: {
+        name: '$screen-sm (320px)',
         type: 'mobile',
         styles: getMobileStyles(320)
+    },
+    mobile3: {
+        name: '< $screen-md (767)',
+        type: 'tablet',
+        styles: getMobileStyles(767)
+    },
+    mobile4: {
+        name: '$screen-md (768)',
+        type: 'tablet',
+        styles: getMobileStyles(768),
+    },
+
+    mobile5: {
+        name: '< $screen-lg (1023)',
+        type: 'mobile',
+        styles: getMobileStyles(1023)
+    },
+    tablet1: {
+        name: '$screen-lg',
+        type: 'tablet',
+        styles: getDesktopStyles(1024)
+    },
+    tablet2: {
+        name: '< $screen-xl (1439)',
+        type: 'tablet',
+        styles: getDesktopStyles(1439)
+    },
+    desktop1: {
+        name: '$screen-xl (1440)',
+        type: 'mobile',
+        styles: getDesktopStyles(1440)
+    },
+    desktop2: {
+        name: '> $screen-xl (2560)',
+        type: 'mobile',
+        styles: getDesktopStyles(2560)
     }
 };
 

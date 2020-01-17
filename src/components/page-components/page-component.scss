@@ -1,8 +1,11 @@
 @import "../../scss/variables";
-@mixin component-gutter {
+@mixin component-gutter($fullWidth:false) {
     margin: 0 0 $gutter-medium;
+    @if $fullWidth {
+        margin: 0 -#{$page-gutter-sm} $gutter-medium;
+    }
     @media (min-width: $screen-md) {
-        margin-bottom: $gutter-large;
+        margin: 0 0 $gutter-large;
     }
 }
 

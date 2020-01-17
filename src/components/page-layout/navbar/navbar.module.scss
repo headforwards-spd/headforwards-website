@@ -30,6 +30,9 @@
             @media (min-width: $screen-lg) {
                 margin: 0;
             }
+            @media (min-width: $screen-xl) {
+                margin-left: -10%;
+            }
 
             text-indent: -1000vw;
             background-image: url("/images/headforwards.black.png");
@@ -180,6 +183,7 @@
             a {
                 background-image: url("/images/headforwards.white.png");
             }
+
         }
 
         > section {

@@ -94,7 +94,7 @@
                 }
             }
 
-            @media (min-width: $screen-lg) {
+            @media (min-width: $screen-md) {
 
                 width: calc(50% - #{$gutter-medium});
 

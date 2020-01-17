@@ -17,10 +17,6 @@
     > section {
         @include columns-component;
 
-        @media(min-width: $screen-md) {
-            align-items: stretch;
-        }
-
         .article {
 
             display: flex;
@@ -78,36 +74,7 @@
 
         @media(min-width: $screen-md) {
 
-            &.isThreeColumns {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                margin: #{-$column-gutter/2} #{-$column-gutter/2} #{$gutter-large - $column-gutter/2};
-                > * {
-                    margin: $column-gutter/2;
-                }
-                .article {
-                    width: calc((100% / 2) - #{$gutter-medium});
-
-                    > h2 {
-                        @include headingFontMedium;
-                    }
-
-                    > section {
-                        @include fontMedium;
-                    }
-
-                    .image {
-                        margin: 0;
-                        @include fontSmall;
-                    }
-                }
-            }
-        }
-
-        @media(min-width: $screen-md) {
+            align-items: stretch;
 
             .article {
                 width: calc((100%/2) - #{$gutter-medium});

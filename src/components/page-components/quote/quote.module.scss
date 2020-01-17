@@ -130,9 +130,12 @@
         }
 
         &.fullWidth {
-            margin-bottom: $margin-bottom;
-            &:not(:first-child) {
-                margin: $gutter-medium 0;
+            margin: $gutter-medium 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
             }
             width: unset;
         }

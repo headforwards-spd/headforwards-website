@@ -2,19 +2,53 @@
 @import "../../../scss/mixins/mixins";
 @import "../../../scss/mixins/typography";
 @import "../../page-components/page-component";
+@import "../../page-components/columns/columns";
 
 .footer {
 
     .footerLinks {
+        @include columns-component;
         display: flex;
-        padding: $gutter-medium $column-gutter;
-        @media (min-width: $screen-lg) {
+        padding: $gutter-medium $column-gutter 0;
+
+        > h2 {
+            color: $orange;
+        }
+        section {
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            flex-grow: 1;
+            padding: $gutter-small;
+
+            @include fontMedium;
+            :last-child {
+                margin-bottom: 0;
+            }
+
+            h2 {
+                order: 0;
+                @include headingFontMedium;
+            }
+            .footerLinkImage {
+                order: -1;
+                margin: -$gutter-small;
+                margin-bottom: 1rem;
+            }
+
+        }
+
+        @media (min-width: $screen-md) {
+            margin-bottom: -$column-gutter/2;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: stretch;
+            align-items: stretch;
+            margin-left: auto;
+            margin-right: auto;
 
             > * {
-                width: calc(100% / 3);
+                width: calc((100% / 3) - #{$column-gutter});
                 display: flex;
                 flex-direction: column;
             }
@@ -23,23 +57,6 @@
                 width: 100%;
                 color: $orange;
                 margin-bottom: $heading-margin-bottom;
-            }
-
-            section {
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1;
-
-                padding: $column-gutter;
-                background: white;
-
-                h2 {
-                    order: 0;
-                }
-                .footerLinkImage {
-                    order: -1;
-                }
-
             }
         }
     }
@@ -51,11 +68,12 @@
         background-position: center;
         background-size: cover;
 
-        h2 {
+        > :last-child h2 {
             @include headingFontMedium;
             margin-bottom: 0;
             font-weight: normal;
             @media (min-width: $screen-lg) {
+                max-width: $singleColumnMaxWidth;
                 @include headingFontLarge;
                 line-height: $line-height;
                 margin-bottom: 0;
@@ -65,7 +83,6 @@
             padding-top: 2.25em;
             padding-bottom: 2.25em;
             color: white;
-            margin-bottom: 0;
 
             a {
                 display: block;
@@ -87,13 +104,13 @@
     address {
         @include fontSmall;
         @include component-gutter;
-        margin: 0 auto;
-        margin-bottom: $gutter-medium;
+        margin: 0 auto $gutter-medium;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-style: normal;
-        @media (min-width: $screen-lg) {
+        @media (min-width: $screen-md) {
+            margin: 0 auto $gutter-large;
             :first-child :first-child {
                 &:after {
                     content: '//';
@@ -105,7 +122,7 @@
         }
 
         :first-child a {
-            @media (min-width: $screen-lg) {
+            @media (min-width: $screen-md) {
                 @include fontMedium;
             }
         }

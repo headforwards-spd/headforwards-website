@@ -1,6 +1,7 @@
 import { object, text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
 import generateImage from '../../../../lib/generate-image';
+import StoriesLayout from '../../../page-layout/stories-layout.component';
 import ArticleColumns from './article-columns.component';
 
 const faker = require('faker');
@@ -25,7 +26,11 @@ export const TwoColumns = () => {
         articles: [generateArticle(), generateArticle()],
     };
 
-    return <ArticleColumns {...props} />;
+    return (
+        <StoriesLayout>
+            <ArticleColumns {...props} />
+        </StoriesLayout>
+    );
 };
 
 export const ThreeColumns = () => {
@@ -34,7 +39,11 @@ export const ThreeColumns = () => {
         articles: [generateArticle(), generateArticle(), generateArticle()],
     };
 
-    return <ArticleColumns {...props} />;
+    return (
+        <StoriesLayout>
+            <ArticleColumns {...props} />
+        </StoriesLayout>
+    );
 };
 
 export const Interactive = () => {
@@ -46,7 +55,11 @@ export const Interactive = () => {
         ],
     };
 
-    return <ArticleColumns {...articleProps} />;
+    return (
+        <StoriesLayout>
+            <ArticleColumns {...articleProps} />
+        </StoriesLayout>
+    );
 };
 
 function generateArticle() {

@@ -13,68 +13,46 @@ $margin-bottom: 1em;
 
 @mixin headingFontXXXLarge {
     @include fluid-type($mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$max_font);
-    line-height: $heading-line-height;
-    margin-bottom: $heading-margin-bottom;
 }
 
 @mixin headingFontXXLarge {
     @include fluid-type($mod_1*$mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$max_font);
-    line-height: $heading-line-height;
-    margin-bottom: $heading-margin-bottom;
 }
 @mixin headingFontXLarge {
     @include fluid-type($mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$max_font);
-    line-height: $heading-line-height;
-    margin-bottom: $heading-margin-bottom;
 }
 @mixin headingFontLarge {
     @include fluid-type($mod_1*$mod_1*$min_font, $mod_2*$mod_2*$max_font);
-    line-height: $heading-line-height;
-    margin-bottom: $heading-margin-bottom;
 }
 @mixin headingFontMedium {
     @include fluid-type($mod_1*$min_font, $mod_2*$max_font);
-    line-height: $heading-line-height;
-    margin-bottom: $heading-margin-bottom;
 }
 @mixin headingFontSmall {
     @include fluid-type($min_font, $max_font);
-    line-height: $heading-line-height;
-    margin-bottom: $heading-margin-bottom;
 }
 
 @mixin fontXXLarge {
     &, p {
         @include fluid-type($mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$min_font);
     }
-    line-height: $line-height;
-    margin-bottom: $margin-bottom;
 }
 @mixin fontXLarge {
     &, p {
         @include fluid-type($mod_1*$mod_1*$min_font, $mod_2*$mod_2*$min_font);
     }
-    line-height: $line-height;
-    margin-bottom: $margin-bottom;
 }
 @mixin fontLarge {
     &, p {
         @include fluid-type($mod_1*$min_font, $mod_2*$min_font);
     }
-    line-height: $line-height;
-    margin-bottom: $margin-bottom;
 }
 @mixin fontMedium {
     &, p {
         @include fluid-type($min_font, $min_font);
     }
-    line-height: $line-height;
-    margin-bottom: $margin-bottom;
 }
 @mixin fontSmall {
     &, p {
         @include fluid-type($min_font/$mod_1, $min_font/$mod_2);
     }
-    line-height: $line-height;
-    margin-bottom: $margin-bottom;
 }

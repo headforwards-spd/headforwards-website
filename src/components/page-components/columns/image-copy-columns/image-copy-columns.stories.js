@@ -1,6 +1,7 @@
 import { boolean, files, text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
 import generateImage from '../../../../lib/generate-image';
+import StoriesLayout from '../../../page-layout/stories-layout.component';
 import ImageCopyColumns from './image-copy-columns.component';
 
 const faker = require('faker');
@@ -34,37 +35,60 @@ export default {
 export const ImageOnLeft = () => {
     const props = {
         title: titleValue(),
-        text: textValue(),
+        content: [{ type: 'markdown-component', text: textValue() }],
         isRightImage: false,
         image: imageValue(),
-        linkText: linkTextValue(),
-        link: linkValue(),
+        link: {
+            linkText: linkTextValue(),
+            link: linkValue(),
+        },
     };
 
-    return <ImageCopyColumns {...props} />;
+    return (
+        <StoriesLayout>
+            <ImageCopyColumns {...props} />
+        </StoriesLayout>
+    );
 };
 export const ImageOnRight = () => {
     const props = {
         title: titleValue(),
-        text: textValue(),
+        content: [{ type: 'markdown-component', text: textValue() }],
         isRightImage: true,
         image: imageValue(),
-        linkText: linkTextValue(),
-        link: linkValue(),
+        link: {
+            linkText: linkTextValue(),
+            link: linkValue(),
+        },
     };
 
-    return <ImageCopyColumns {...props} />;
+    return (
+        <StoriesLayout>
+            <ImageCopyColumns {...props} />
+        </StoriesLayout>
+    );
 };
 
 export const Interactive = () => {
     const props = {
         title: text(titleLabel, titleValue(), groupId),
-        text: text(textLabel, textValue(), groupId),
+        content: [
+            {
+                type: 'markdown-component',
+                text: text(textLabel, textValue(), groupId),
+            },
+        ],
         isRightImage: boolean(isRightImageLabel, isRightImageValue(), groupId),
         image: files(imageLabel, accept, imageValue(), groupId),
-        linkText: text(linkTextLabel, linkTextValue(), groupId),
-        link: text(linkLabel, linkValue(), groupId),
+        link: {
+            linkText: text(linkTextLabel, linkTextValue(), groupId),
+            link: text(linkLabel, linkValue(), groupId),
+        },
     };
 
-    return <ImageCopyColumns {...props} />;
+    return (
+        <StoriesLayout>
+            <ImageCopyColumns {...props} />
+        </StoriesLayout>
+    );
 };

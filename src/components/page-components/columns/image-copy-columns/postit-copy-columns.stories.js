@@ -1,6 +1,6 @@
 import { boolean, files, text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
-import generateImage from '../../../../lib/generate-image';
+import StoriesLayout from '../../../page-layout/stories-layout.component';
 import PostitCopyColumns from './postit-copy-columns.component';
 
 const faker = require('faker');
@@ -24,7 +24,7 @@ const isRightImageValue = () => true;
 
 const imageLabel = 'Postit';
 const accept = '.png, .jpg, .jpeg';
-const imageValue = () => generateImage(true);
+const imageValue = () => '/uploads/icon.black.png'; // generateImage(true);
 
 export default {
     decorators: [withKnobs],
@@ -34,37 +34,55 @@ export default {
 export const PostitOnLeft = () => {
     const props = {
         title: titleValue(),
-        text: textValue(),
+        content: [{ type: 'markdown-component', text: textValue() }],
         isRightImage: false,
         image: imageValue(),
-        linkText: linkTextValue(),
-        link: linkValue(),
+        link: {
+            linkText: linkTextValue(),
+            link: linkValue(),
+        },
     };
 
-    return <PostitCopyColumns {...props} />;
+    return (
+        <StoriesLayout>
+            <PostitCopyColumns {...props} />
+        </StoriesLayout>
+    );
 };
 export const PostitOnRight = () => {
     const props = {
         title: titleValue(),
-        text: textValue(),
+        content: [{ type: 'markdown-component', text: textValue() }],
         isRightImage: true,
         image: imageValue(),
-        linkText: linkTextValue(),
-        link: linkValue(),
+        link: {
+            linkText: linkTextValue(),
+            link: linkValue(),
+        },
     };
 
-    return <PostitCopyColumns {...props} />;
+    return (
+        <StoriesLayout>
+            <PostitCopyColumns {...props} />
+        </StoriesLayout>
+    );
 };
 
 export const Interactive = () => {
     const props = {
         title: text(titleLabel, titleValue(), groupId),
-        text: text(textLabel, textValue(), groupId),
+        content: [{ type: 'markdown-component', text: text(textLabel, textValue(), groupId) }],
         isRightImage: boolean(isRightImageLabel, isRightImageValue(), groupId),
         image: files(imageLabel, accept, imageValue(), groupId),
-        linkText: text(linkTextLabel, linkTextValue(), groupId),
-        link: text(linkLabel, linkValue(), groupId),
+        link: {
+            linkText: text(linkTextLabel, linkTextValue(), groupId),
+            link: text(linkLabel, linkValue(), groupId),
+        },
     };
 
-    return <PostitCopyColumns {...props} />;
+    return (
+        <StoriesLayout>
+            <PostitCopyColumns {...props} />
+        </StoriesLayout>
+    );
 };

@@ -1,6 +1,7 @@
 import { boolean, files } from '@storybook/addon-knobs';
 import React from 'react';
 import generateImage from '../../../../lib/generate-image';
+import StoriesLayout from '../../../page-layout/stories-layout.component';
 import TwoImages from './two-images.component';
 
 export default function TwoImagesStory() {
@@ -22,5 +23,9 @@ export default function TwoImagesStory() {
         rightImage,
     };
 
-    return <TwoImages {...twoImgProps} />;
+    return (
+        <StoriesLayout>
+            <TwoImages {...twoImgProps} />
+        </StoriesLayout>
+    );
 }

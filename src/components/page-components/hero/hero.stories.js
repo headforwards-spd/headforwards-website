@@ -1,5 +1,6 @@
 import React from 'react';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import StoriesLayout from '../../page-layout/stories-layout.component';
 import Hero from './hero.component';
 
 const faker = require('faker');
@@ -23,28 +24,40 @@ const isTwoColumnsValue = () => false;
 export const oneColumn = () => {
     const props = {
         title: titleValue(),
-        text: textValue(),
+        content: [{ type: 'markdown-component', text: textValue() }],
     };
 
-    return <Hero {...props} />;
+    return (
+        <StoriesLayout>
+            <Hero {...props} />
+        </StoriesLayout>
+    );
 };
 
 export const twoColumns = () => {
     const props = {
         title: titleValue(),
-        text: textValue(),
+        content: [{ type: 'markdown-component', text: textValue() }],
         isTwoColumns: true,
     };
 
-    return <Hero {...props} />;
+    return (
+        <StoriesLayout>
+            <Hero {...props} />
+        </StoriesLayout>
+    );
 };
 
 export const interactive = () => {
     const props = {
         title: text(titleLabel, titleValue(), groupId),
-        text: text(textLabel, textValue(), groupId),
+        content: [{ type: 'markdown-component', text: text(textLabel, textValue(), groupId) }],
         isTwoColumns: boolean(isTwoColumnsLabel, isTwoColumnsValue(), groupId),
     };
 
-    return <Hero {...props} />;
+    return (
+        <StoriesLayout>
+            <Hero {...props} />
+        </StoriesLayout>
+    );
 };

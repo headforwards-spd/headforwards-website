@@ -3,6 +3,7 @@ import { string } from 'prop-types';
 import React from 'react';
 
 import styles from './layout.stories.modules.scss';
+import StoriesLayout from './stories-layout.component';
 
 const faker = require('faker');
 
@@ -15,36 +16,38 @@ export default {
 
 export const Colours = () => {
     return (
-        <dl className={styles.colours}>
-            <dt className={styles.orange1} />
-            <dd>Orange 1 (#ffb900)</dd>
-            <dt className={styles.orange2} />
-            <dd>Orange 2 (#ffcc55)</dd>
-            <dt className={styles.blue1} />
-            <dd>Blue 1 (#141122)</dd>
-            <dt className={styles.blue2} />
-            <dd>Blue 2 (#1D1F32)</dd>
-            <dt className={styles.grey1} />
-            <dd>Grey 1 (#383F51)</dd>
-            <dt className={styles.grey2} />
-            <dd>Grey 2 (#4A4A4A)</dd>
-            <dt className={styles.grey3} />
-            <dd>Grey 3 (#4D4D4D)</dd>
-            <dt className={styles.grey4} />
-            <dd>Grey 4 (#6E7087)</dd>
-            <dt className={styles.grey5} />
-            <dd>Grey 5 (#b4b4b5)</dd>
-            <dt className={styles.grey6} />
-            <dd>Grey 6 (#B8B8B8)</dd>
-            <dt className={styles.grey7} />
-            <dd>Grey 7 (#c3c3c3)</dd>
-            <dt className={styles.grey8} />
-            <dd>Grey 8 (#d7d7d6)</dd>
-            <dt className={styles.grey9} />
-            <dd>Grey 9 (#D8D8D8)</dd>
-            <dt className={styles.grey10} />
-            <dd>Grey 10 (#eeeeee)</dd>
-        </dl>
+        <StoriesLayout>
+            <dl className={styles.colours}>
+                <dt className={styles.orange1} />
+                <dd>Orange 1 (#ffb900)</dd>
+                <dt className={styles.orange2} />
+                <dd>Orange 2 (#ffcc55)</dd>
+                <dt className={styles.blue1} />
+                <dd>Blue 1 (#141122)</dd>
+                <dt className={styles.blue2} />
+                <dd>Blue 2 (#1D1F32)</dd>
+                <dt className={styles.grey1} />
+                <dd>Grey 1 (#383F51)</dd>
+                <dt className={styles.grey2} />
+                <dd>Grey 2 (#4A4A4A)</dd>
+                <dt className={styles.grey3} />
+                <dd>Grey 3 (#4D4D4D)</dd>
+                <dt className={styles.grey4} />
+                <dd>Grey 4 (#6E7087)</dd>
+                <dt className={styles.grey5} />
+                <dd>Grey 5 (#b4b4b5)</dd>
+                <dt className={styles.grey6} />
+                <dd>Grey 6 (#B8B8B8)</dd>
+                <dt className={styles.grey7} />
+                <dd>Grey 7 (#c3c3c3)</dd>
+                <dt className={styles.grey8} />
+                <dd>Grey 8 (#d7d7d6)</dd>
+                <dt className={styles.grey9} />
+                <dd>Grey 9 (#D8D8D8)</dd>
+                <dt className={styles.grey10} />
+                <dd>Grey 10 (#eeeeee)</dd>
+            </dl>
+        </StoriesLayout>
     );
 };
 
@@ -52,20 +55,16 @@ export const Headings = () => {
     const title = testText;
 
     return (
-        <section className={styles.wrapper}>
-            <h2 className={styles.xxxlarge}>XXXLarge: {title}</h2>
-            <h2 className={`${styles.xxxlarge} ${styles.fsAlbertWeb}`}>XXXLarge: {title}</h2>
-            <h2 className={styles.xxlarge}>XXLarge: {title}</h2>
-            <h2 className={`${styles.xxlarge} ${styles.fsAlbertWeb}`}>XXLarge: {title}</h2>
-            <h2 className={styles.xlarge}>XLarge: {title}</h2>
-            <h2 className={`${styles.xlarge} ${styles.fsAlbertWeb}`}>XLarge: {title}</h2>
-            <h2 className={styles.large}>Large: {title}</h2>
-            <h2 className={`${styles.large} ${styles.fsAlbertWeb}`}>Large: {title}</h2>
-            <h2 className={styles.medium}>Medium: {title}</h2>
-            <h2 className={`${styles.medium} ${styles.fsAlbertWeb}`}>Medium: {title}</h2>
-            <h2 className={styles.small}>Small: {title}</h2>
-            <h2 className={`${styles.small} ${styles.fsAlbertWeb}`}>Small: {title}</h2>
-        </section>
+        <StoriesLayout>
+            <section className={styles.wrapper}>
+                <h2 className={styles.xxxl}>XXXLarge: {title}</h2>
+                <h2 className={styles.xxl}>XXLarge: {title}</h2>
+                <h2 className={styles.xl}>XLarge: {title}</h2>
+                <h2 className={styles.lg}>Large: {title}</h2>
+                <h2 className={styles.md}>Medium: {title}</h2>
+                <h2 className={styles.sm}>Small: {title}</h2>
+            </section>
+        </StoriesLayout>
     );
 };
 
@@ -73,18 +72,15 @@ export const Paragraphs = () => {
     const copy = faker.lorem.paragraph();
 
     return (
-        <section className={styles.wrapper}>
-            <p className={styles.xxlarge}>XXLarge: {copy}</p>
-            <p className={`${styles.xxlarge} ${styles.fsAlbertWeb}`}>XXLarge: {copy}</p>
-            <p className={styles.xlarge}>XLarge: {copy}</p>
-            <p className={`${styles.xlarge} ${styles.fsAlbertWeb}`}>XLarge: {copy}</p>
-            <p className={styles.large}>Large: {copy}</p>
-            <p className={`${styles.large} ${styles.fsAlbertWeb}`}>Large: {copy}</p>
-            <p className={styles.medium}>Medium: {copy}</p>
-            <p className={`${styles.medium} ${styles.fsAlbertWeb}`}>Medium: {copy}</p>
-            <p className={styles.small}>Small: {copy}</p>
-            <p className={`${styles.small} ${styles.fsAlbertWeb}`}>Small: {copy}</p>
-        </section>
+        <StoriesLayout>
+            <section className={styles.wrapper}>
+                <p className={styles.xxl}>XXLarge: {copy}</p>
+                <p className={styles.xl}>XLarge: {copy}</p>
+                <p className={styles.lg}>Large: {copy}</p>
+                <p className={styles.md}>Medium: {copy}</p>
+                <p className={styles.sm}>Small: {copy}</p>
+            </section>
+        </StoriesLayout>
     );
 };
 
@@ -92,15 +88,18 @@ export const SmallCopy = () => {
     const className = styles.wrapper;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.medium;
-    const headingClass = styles.small;
-    const copyClass = styles.small;
+    const largeHeadingClass = styles.md;
+    const headingClass = styles.sm;
+    const copyClass = styles.sm;
 
     return (
-        <>
-            <Section {...{ className, heading, headingClass, copy, copyClass }} />
-            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
-        </>
+        <StoriesLayout>
+            <section className={styles.columns}>
+                <Section {...{ className, heading: `${heading} ${heading}`, headingClass, copy, copyClass }} />
+                <Section {...{ className, heading, headingClass, copy, copyClass }} />
+                <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
+            </section>
+        </StoriesLayout>
     );
 };
 
@@ -108,15 +107,15 @@ export const MediumCopy = () => {
     const className = styles.wrapper;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.large;
-    const headingClass = styles.medium;
-    const copyClass = styles.medium;
+    const largeHeadingClass = styles.lg;
+    const headingClass = styles.md;
+    const copyClass = styles.md;
 
     return (
-        <>
+        <StoriesLayout>
             <Section {...{ className, heading, headingClass, copy, copyClass }} />
             <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
-        </>
+        </StoriesLayout>
     );
 };
 
@@ -124,15 +123,15 @@ export const LargeCopy = () => {
     const className = styles.wrapper;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.xlarge;
-    const headingClass = styles.large;
-    const copyClass = styles.large;
+    const largeHeadingClass = styles.xl;
+    const headingClass = styles.lg;
+    const copyClass = styles.lg;
 
     return (
-        <>
+        <StoriesLayout>
             <Section {...{ className, heading, headingClass, copy, copyClass }} />
             <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
-        </>
+        </StoriesLayout>
     );
 };
 
@@ -140,15 +139,15 @@ export const XLargeCopy = () => {
     const className = styles.wrapper;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.xxlarge;
-    const headingClass = styles.xlarge;
-    const copyClass = styles.xLarge;
+    const largeHeadingClass = styles.xxl;
+    const headingClass = styles.xl;
+    const copyClass = styles.xl;
 
     return (
-        <>
+        <StoriesLayout>
             <Section {...{ className, heading, headingClass, copy, copyClass }} />
             <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
-        </>
+        </StoriesLayout>
     );
 };
 
@@ -156,15 +155,15 @@ export const XXLargeCopy = () => {
     const className = styles.wrapper;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.xxxlarge;
-    const headingClass = styles.xxlarge;
-    const copyClass = styles.xxLarge;
+    const largeHeadingClass = styles.xxxl;
+    const headingClass = styles.xxl;
+    const copyClass = styles.xxl;
 
     return (
-        <>
+        <StoriesLayout>
             <Section {...{ className, heading, headingClass, copy, copyClass }} />
             <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
-        </>
+        </StoriesLayout>
     );
 };
 

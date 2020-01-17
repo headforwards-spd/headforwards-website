@@ -9,13 +9,13 @@
     > h2 {
         @include headingFontLarge;
     }
-    > section > :not(section) {
-        @include fontMedium;
-        @media(min-width: $screen-md) {
-            @include fontLarge;
+    > section {
+        > :not(section) {
+            @include fontMedium;
+            @media(min-width: $screen-md) {
+                @include fontLarge;
+            }
         }
-        margin-bottom: 0;
-
         :last-child {
             margin-bottom: 0;
         }
@@ -23,10 +23,16 @@
 
     &.isTwoColumns {
         @include columns-component;
+        > h2 {
+            margin-bottom: $gutter-small;
+        }
     }
     @media(min-width: $screen-md) {
 
+        max-width: $singleColumnMaxWidth;
+
         &.isTwoColumns {
+            max-width: unset;
             align-items: flex-start;
 
             > section {

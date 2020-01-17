@@ -1,5 +1,6 @@
 import React from 'react';
 import { withKnobs, text, files } from '@storybook/addon-knobs';
+import StoriesLayout from '../../page-layout/stories-layout.component';
 import Quote from './quote.component';
 
 const faker = require('faker');
@@ -29,7 +30,11 @@ export const SimpleQuote = () => {
         quote: quoteValue(),
     };
 
-    return <Quote {...props} />;
+    return (
+        <StoriesLayout>
+            <Quote {...props} />
+        </StoriesLayout>
+    );
 };
 
 export const QuoteWithName = () => {
@@ -38,7 +43,11 @@ export const QuoteWithName = () => {
         name: nameValue(),
     };
 
-    return <Quote {...props} />;
+    return (
+        <StoriesLayout>
+            <Quote {...props} />
+        </StoriesLayout>
+    );
 };
 export const QuoteWithNameAndJob = () => {
     const props = {
@@ -47,7 +56,11 @@ export const QuoteWithNameAndJob = () => {
         jobTitle: jobTitleValue(),
     };
 
-    return <Quote {...props} />;
+    return (
+        <StoriesLayout>
+            <Quote {...props} />
+        </StoriesLayout>
+    );
 };
 export const QuoteWithNameJobAndImage = () => {
     const props = {
@@ -57,7 +70,11 @@ export const QuoteWithNameJobAndImage = () => {
         profilePic: profilePicValue(),
     };
 
-    return <Quote {...props} />;
+    return (
+        <StoriesLayout>
+            <Quote {...props} />
+        </StoriesLayout>
+    );
 };
 
 export const InteractiveQuote = () => {
@@ -75,5 +92,9 @@ export const InteractiveQuote = () => {
         },
     };
 
-    return <Quote {...props} />;
+    return (
+        <StoriesLayout>
+            <Quote {...props} />
+        </StoriesLayout>
+    );
 };

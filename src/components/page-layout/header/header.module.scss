@@ -148,8 +148,11 @@
     @media(min-width: $screen-xl) {
 
         &.hasBackground {
-            height: 40vw;
             min-height: 65vh;
+            > section {
+                min-height: 30vw;
+                justify-content: flex-end;
+            }
         }
     }
 }

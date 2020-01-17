@@ -1,6 +1,5 @@
 import React from 'react';
 import { arrayOf, bool, shape, string } from 'prop-types';
-import ReactMarkdown from 'react-markdown';
 import Link from '../link/link.component';
 import styles from './footer.module.scss';
 import Socials from '../socials/socials.component';
@@ -47,10 +46,12 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
                         <FooterLink {...{ showImages, link: link3, page: page3 }} />
                     </section>
                 )}
-                <h2>
-                    {callToAction}
-                    <Link to="/contact">Get in touch</Link>
-                </h2>
+                <section>
+                    <h2>
+                        {callToAction}
+                        <Link to="/contact">Get in touch</Link>
+                    </h2>
+                </section>
             </section>
 
             <Socials {...{ ...companyInfo, isFooter }} />

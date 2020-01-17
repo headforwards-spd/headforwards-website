@@ -16,9 +16,6 @@
 
         &:first-child {
             margin-right: 2*$page-gutter-sm;
-            @media (min-width: $screen-md) {
-                margin-right: 2*$page-gutter-md;
-            }
             &:before {
                 position: absolute;
                 content: url('/images/hf-arrow.orange.svg');
@@ -32,9 +29,6 @@
 
         &:last-child {
             margin-left: 2*$page-gutter-sm;
-            @media (min-width: $screen-md) {
-                margin-left: 2*$page-gutter-md;
-            }
             margin-bottom: 0;
             &:after {
                 position: absolute;
@@ -86,7 +80,7 @@
         }
     }
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-md) {
 
         margin: -#{$gutter-small} 0 0;
         padding: $gutter-small 0 $gutter-large;
@@ -125,11 +119,7 @@
             padding-bottom: 30%;
             top: $gutter-small;
             right: 0;
-            transform: none;
-            margin-right: -$page-gutter-lg;
-            @media (min-width: $screen-xl) {
-                margin-right: -$page-gutter-xl;
-            }
+            transform: translate(50%, 0);
         }
 
         &.flip {

@@ -16,7 +16,7 @@
         padding: 0 $gutter-small/2 $gutter-small/2;
         @include headingFontXXXLarge;
         margin-bottom: 0;
-        @media (min-width: $screen-lg) {
+        @media (min-width: $screen-md) {
             @include headingFontLarge;
             margin-bottom: 0;
         }

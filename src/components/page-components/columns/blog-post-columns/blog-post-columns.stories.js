@@ -1,6 +1,7 @@
 import React from 'react';
 import { object, text, withKnobs } from '@storybook/addon-knobs';
 import generateImage from '../../../../lib/generate-image';
+import StoriesLayout from '../../../page-layout/stories-layout.component';
 import BlogPostColumns from './blog-post-columns.component';
 
 const faker = require('faker');
@@ -27,7 +28,11 @@ export function Component() {
         articles,
     };
 
-    return <BlogPostColumns {...blogProps} />;
+    return (
+        <StoriesLayout>
+            <BlogPostColumns {...blogProps} />
+        </StoriesLayout>
+    );
 }
 
 function generateArticle() {

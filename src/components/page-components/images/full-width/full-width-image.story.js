@@ -1,6 +1,7 @@
 import { files } from '@storybook/addon-knobs';
 import React from 'react';
 import generateImage from '../../../../lib/generate-image';
+import StoriesLayout from '../../../page-layout/stories-layout.component';
 import FullWidthImage from './full-width-image.component';
 
 export default function FullWidthImageStory() {
@@ -15,5 +16,9 @@ export default function FullWidthImageStory() {
         image: fullWidthImg,
     };
 
-    return <FullWidthImage {...imgProps} />;
+    return (
+        <StoriesLayout>
+            <FullWidthImage {...imgProps} />
+        </StoriesLayout>
+    );
 }

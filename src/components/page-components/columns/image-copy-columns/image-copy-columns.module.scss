@@ -6,17 +6,27 @@
 .columnsWrapper {
 
     @include columns-component;
-    @media (min-width: $screen-md) {
-        align-items: unset;
+    &.isImage {
+        @media (min-width: $screen-md) {
+            align-items: unset;
+        }
     }
 
     .copy {
         @include copy;
-
         @media (min-width: $screen-md) {
             width: calc(50% - #{$gutter-medium});
+        }
+    }
+
+    &.isImage .copy {
+        @media (min-width: $screen-md) {
             margin: calc(14vw - 100px) 1rem;
         }
+    }
+
+    &.isPostit .copy {
+        margin-top: $gutter-small;
     }
 
     .image {
@@ -32,10 +42,12 @@
             margin: 0 $gutter-medium/2 0 calc(-50vw + 50%);
         }
     }
+    .postit {
+        margin: 0;
+    }
     &.isRightImage .image {
         @media(min-width: $screen-md) {
             margin: 0 calc(-50vw + 50%) 0 $gutter-medium/2;
-
         }
     }
 
