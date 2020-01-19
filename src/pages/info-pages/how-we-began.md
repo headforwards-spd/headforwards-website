@@ -7,8 +7,10 @@ image:
   image: /uploads/headforwards-7.jpg
   show: true
 introduction:
-  show: false
-  text: CHANGEME
+  show: true
+  text: >-
+    The brainchild of Craig Girvan and Toby Parkin, Headforwards was
+    incorporated in 2011 and has grown into a company of well over 100 people.
 components:
   - content:
       - text: "Headforwards might never have existed if it weren’t for a chance conversation at a barbecue. \rAgile practitioner Toby Parkins was talking with a product owner from a global corporation when the discussion turned to the difficulty of getting really good outsource developers.\r\n\n“He was talking about how you never get the right people, and how outsource companies just pull anyone off the bench to work on a project,” says Toby. “I knew instantly that I could put together a brilliant team for him – and the whole concept of Headforwards was founded in that moment.”"
@@ -53,6 +55,12 @@ components:
     isTwoColumns: false
     type: image-copy-component
     title: Staying true to its principles
+footerLinks:
+  - link1: 53629a60-103a-11ea-9ef0-bd54961b4e30
+    link2: 3c96d190-0fac-11ea-843f-932c76de5936
+    link3: fe1a1d50-0fab-11ea-843f-932c76de5936
+    showImages: true
+    title: Find out more about Headforwards
 callToAction: 'Would you like to join us on our journey? '
 ---
 
