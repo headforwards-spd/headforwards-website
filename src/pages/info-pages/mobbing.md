@@ -8,7 +8,9 @@ image:
   show: true
 introduction:
   show: false
-  text: CHANGEME
+  text: >-
+    Mob programming is a chance to apply a whole team’s ideas and knowledge to
+    one project
 components:
   - content:
       - text: >-
@@ -77,6 +79,12 @@ components:
       team as people. And in the long run, it helps us grow as developers to
       produce better software, more quickly, with fewer issues.
     type: quote-component
+footerLinks:
+  - link1: 0cd74ed0-0fac-11ea-843f-932c76de5936
+    link2: c841a072-37c9-11ea-978f-2e728ce88125
+    link3: 53629a60-103a-11ea-9ef0-bd54961b4e30
+    showImages: true
+    title: get uality software fast
 callToAction: To learn how mobbing can deliver quality software
 ---
 
