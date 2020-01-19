@@ -68,12 +68,12 @@ components:
           devs and testers enjoy working together to create something of real
           value.
         type: markdown-component
-    isPostit: true
+    isPostit: false
     isRightImage: true
     isTwoColumns: false
     type: image-copy-component
     title: A win-win for everyone
-    image: /uploads/007.svg
+    image: /uploads/hf-steal-1.jpg
   - quote: >-
       There’s a great social side to mobbing – it helps you learn about your
       team as people. And in the long run, it helps us grow as developers to
