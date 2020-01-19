@@ -78,8 +78,8 @@ sections:
             type: quote-component
         type: image-copy-component
         title: Careers without compromise
-    image: /uploads/paper-airplane-doodle.png
-    isPostit: true
+    image: /uploads/team-2.jpg
+    isPostit: false
     isRightImage: false
   - isPostit: false
     isRightImage: false
