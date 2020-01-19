@@ -8,7 +8,9 @@ image:
   show: true
 introduction:
   show: false
-  text: CHANGEME
+  text: >-
+    Strong relationships are key to Headforwards’ ability to create value
+    through software
 components:
   - content:
       - text: >-
@@ -89,6 +91,14 @@ components:
       We’re always looking towards the future with our client relationships.
       We’re not afraid to take the ‘what if’ risks each day. 
     type: quote-component
+footerLinks:
+  - link1: 40718760-1033-11ea-9288-bf5475231968
+    link2: fe1a1d50-0fab-11ea-843f-932c76de5936
+    link3: 0cd74ed0-0fac-11ea-843f-932c76de5936
+    showImages: true
+    title: >-
+      Everyone is listened to, everyone is trusted equally, and we’re all a
+      united team
 callToAction: To find out more about how we build relationships
 ---
 
