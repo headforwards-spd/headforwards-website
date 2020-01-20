@@ -153,6 +153,7 @@ collections:
       - label: "Footer Links"
         name: footerLinks
         widget: optional-object
+        required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
           - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
@@ -311,6 +312,7 @@ collections:
       - label: "Footer Links"
         name: footerLinks
         widget: optional-object
+        required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
           - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
@@ -469,6 +471,7 @@ collections:
       - label: "Footer Links"
         name: footerLinks
         widget: optional-object
+        required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
           - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
@@ -627,6 +630,7 @@ collections:
       - label: "Footer Links"
         name: footerLinks
         widget: optional-object
+        required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
           - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
@@ -777,6 +781,7 @@ collections:
       - label: "Footer Links"
         name: footerLinks
         widget: optional-object
+        required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
           - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
@@ -827,6 +832,7 @@ collections:
       - label: "Footer Links"
         name: footerLinks
         widget: optional-object
+        required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
           - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
