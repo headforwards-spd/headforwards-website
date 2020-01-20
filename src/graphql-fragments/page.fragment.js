@@ -154,6 +154,11 @@ export const PageFragment = graphql`
                         image {
                             image {
                                 publicURL
+                                childImageSharp {
+                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 100) {
+                                        ...GatsbyImageSharpFluid_withWebp
+                                    }
+                                }
                             }
                         }
                     }
@@ -167,6 +172,11 @@ export const PageFragment = graphql`
                         image {
                             image {
                                 publicURL
+                                childImageSharp {
+                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 100) {
+                                        ...GatsbyImageSharpFluid_withWebp
+                                    }
+                                }    
                             }
                         }
                     }
@@ -180,6 +190,11 @@ export const PageFragment = graphql`
                         image {
                             image {
                                 publicURL
+                                childImageSharp {
+                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 100) {
+                                        ...GatsbyImageSharpFluid_withWebp
+                                    }
+                                }
                             }
                         }
                     }
