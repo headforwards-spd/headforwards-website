@@ -2,12 +2,9 @@
 @import "../../page-components/columns/columns";
 .introduction {
     @include component-gutter;
-    @include fontLarge;
+    @include fontMedium;
     @media (min-width: $screen-md) {
         margin-bottom: $gutter-large -$gutter-medium/2;
         width: $singleColumnMaxWidth;
-    }
-    h2 {
-        @include headingFontLarge;
     }
 }

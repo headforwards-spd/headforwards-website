@@ -6,16 +6,9 @@
 
 .hero {
     @include component-gutter;
-    > h2 {
-        @include headingFontLarge;
-    }
+    @include fontMedium;
+
     > section {
-        > :not(section) {
-            @include fontMedium;
-            @media(min-width: $screen-md) {
-                @include fontLarge;
-            }
-        }
         :last-child {
             margin-bottom: 0;
         }
@@ -43,7 +36,6 @@
             &.hasTitle {
                 > h2 {
                     width: calc(37.5% - #{$column-gutter});
-                    @include headingFontLarge;
                 }
 
                 > section {

@@ -5,6 +5,8 @@
 
 .header {
 
+    @include fontXLarge;
+
     display: flex;
     flex-direction: column;
 
@@ -22,14 +24,13 @@
 
         h1 {
             @include orange-type;
-            @include headingFontXXXLarge;
             @media(min-width: $screen-lg) {
                 width: $singleColumnMaxWidth;
             }
         }
         p {
+            @include fontLarge;
             color: black;
-            @include headingFontXLarge;
             font-weight: bold;
             @media(min-width: $screen-lg) {
                 width: $singleColumnMaxWidth;
@@ -89,9 +90,9 @@
 
             &.hasSubTitle {
                 h1, p {
-                    @include headingFontXLarge;
+                    @include headingFontLarge;
                     margin-bottom: 0;
-                    line-height: $mod_2;
+                    line-height: $mod_1;
                 }
             }
         }
@@ -113,12 +114,11 @@
 
                 h1 {
                     color: white;
-                    @include headingFontXXXLarge;
                     margin-bottom: 0;
                 }
                 p {
+                    @include fontLarge;
                     @include orange-type;
-                    @include headingFontLarge;
                 }
 
                 &.hasSubTitle {

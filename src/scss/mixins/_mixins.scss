@@ -12,6 +12,16 @@
     @return $value / ($value * 0 + 1);
 }
 
+@function pow($base, $exponents) {
+    $raised: 1;
+
+    @for $i from 1 through $exponents {
+        $raised: $raised * $base;
+    }
+
+    @return $raised;
+}
+
 @mixin fluid-type($min-font-size, $max-font-size) {
 
     $min-vw: $screen-sm;

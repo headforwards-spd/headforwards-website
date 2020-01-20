@@ -20,31 +20,20 @@
 
 @mixin copy {
 
-    > h2 {
-        @include headingFontLarge;
-    }
+    @include fontMedium;
     > section {
 
         > :last-child {
             margin-bottom: 0;
         }
-
-        > :not(section) {
-            @include fontMedium;
-            @media (min-width: $screen-md) {
-                @include fontLarge;
-            }
-        }
     }
     a {
+        @include fontLarge;
+        display: block;
         @include arrow-link;
         margin-top: $gutter-small;
         @media(min-width: $screen-md) {
             margin-top: $gutter-medium;
-        }
-        @include fontMedium;
-        @media (min-width: $screen-md) {
-            @include fontLarge;
         }
         font-weight: normal;
     }

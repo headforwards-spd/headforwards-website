@@ -21,6 +21,7 @@ Article.defaultProps = {
     link: null,
     linkText: null,
 };
+
 function Article({ title, text, image, link, linkText }) {
     const hasLink = !!link && !!linkText;
 

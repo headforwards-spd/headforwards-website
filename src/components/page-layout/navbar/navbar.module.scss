@@ -23,6 +23,7 @@
         }
 
         a {
+            @include headingFontLarge;
             margin: 0 $page-gutter-sm/2;
             @media (min-width: $screen-md) {
                 margin: 0 $page-gutter-md/2;
@@ -31,7 +32,7 @@
                 margin: 0;
             }
             @media (min-width: $screen-xl) {
-                margin-left: -10%;
+                margin-left: -0.95em;
             }
 
             text-indent: -1000vw;
@@ -60,11 +61,10 @@
                     display: block;
                     text-decoration: none;
                     color: white;
-                    padding: $gutter-small 0;
+                    line-height: 2;
                 }
 
                 > li > a {
-                    @include fontLarge;
                     margin-bottom: 0;
                     color: white;
                     display: flex;
@@ -74,12 +74,14 @@
                 }
 
                 > li {
+                    @include fontXLarge;
                     padding-left: $gutter-small;
 
                     &.hasChildren > a {
                         display: flex;
 
                         button {
+                            @include fontSmall;
                             background: none;
                             border: none;
                             padding: $gutter-small;
@@ -103,11 +105,11 @@
                         display: none;
 
                         ul {
+                            @include fontLarge;
                             margin-bottom: $gutter-small;
 
                             ul {
                                 margin-left: $column-gutter/2;
-                                @include fontMedium;
                                 margin-bottom: $gutter-small;
                             }
                         }
@@ -126,23 +128,25 @@
             }
 
         dt, dd {
+            @include fontSmall;
             display: block;
             color: white;
             padding: 0;
             margin: 0;
         }
 
+        h2 {
+            @include headingFontSmall;
+        }
+
         dt, h2 {
             text-transform: uppercase;
             @include orange-type;
-            @include fontMedium;
-            margin-bottom: 0;
             font-weight: normal;
         }
 
         dd {
             line-height: 2;
-            @include fontLarge;
             margin-bottom: 0;
         }
     }
@@ -207,11 +211,13 @@
     @media screen and (min-width: $screen-lg) {
 
         transition: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
 
-        @include flexRow;
         margin-bottom: 0;
-        align-items: stretch;
-        flex-wrap: nowrap;
         border-bottom: none;
 
         &:global(.is-active) {
@@ -237,17 +243,18 @@
         > header {
             width: 37.5%;
             flex-shrink: 0;
+            flex-grow: 1;
             margin-bottom: 0;
         }
 
         > section {
+            max-width: 100%;
             opacity: unset;
             display: block;
-            @media (min-width: $screen-lg) {
-                margin-right: -$column-gutter/2;
-            }
 
             > ul {
+                @include fontMedium;
+                margin: 0 -#{$gutter-medium/2};
                 border-top: none;
                 display: flex;
                 flex-direction: row;
@@ -320,7 +327,8 @@
                         }
 
                         > ul {
-                            margin: 0;
+                            @include fontMedium;
+                            margin: $gutter-small 0 0;
                         }
 
                         > li {
@@ -328,14 +336,14 @@
                         }
 
                         h2 {
-                            @include fontMedium;
+                            @include headingFontXSmall;
+                            margin: 0;
                             font-weight: lighter;
                             padding-bottom: $gutter-small;
                             border-bottom: 1px solid #D8D8D8;
                         }
 
                         a {
-                            @include fontLarge;
                             line-height: 2;
                             margin: 0;
                             @include arrow-link;
@@ -349,6 +357,7 @@
                             visibility: visible;
                             opacity: 1;
                             transition-delay: 0.1s, 0.1s;
+                            z-index: 99999;
                         }
                     }
                 }

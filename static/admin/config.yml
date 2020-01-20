@@ -645,6 +645,156 @@ collections:
           - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
           - {label: "SEO Description", name: description, widget: string, required: false, default: null}
 
+  - label: "Index Pages."
+    label_singular: "Index Page"
+    name: index-pages
+    description: "Index pages"
+    folder: "src/pages/info-pages"
+    create: false
+    delete: false
+    slug: "{{slug}}"
+    identifier_field: title
+    filter: {field: "type", value: "index-page"}
+    fields:
+      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "Type", name: type, widget: hidden, default: "index-page"}
+      - {label: "Page Title", name: title, widget: string}
+      - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
+      - label: "Page Image (banner/menu image)"
+        name: image
+        widget: object
+        fields:
+          - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Image", name:  image, widget: image, required: true}
+      - label: "Page Introduction (menu text)"
+        name: introduction
+        widget: object
+        fields:
+          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Text", name: text, widget: markdown, required: true}
+      # COMPONENTS
+      - label: "Page Components"
+        name: components
+        widget: list
+        types:
+          - label: "Images"
+            name: images-component
+            widget: object
+            fields:
+              - {label: "Flip images?", name: flip, widget: boolean, required: false, default:false}
+              - {label: "Image One", name: imageOne, widget: image}
+              - {label: "Image Two", name: imageTwo, widget: image, required: false, default: null}
+
+          - label: "Quote"
+            name: quote-component
+            widget: object
+            fields:
+              - {label: "Title", name: title, widget: string, required: false, default: null}
+              - {label: "Quote", name: quote, widget: text}
+              - {label: "Name", name: name, widget: string, required: false, default: null}
+              - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
+              - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
+
+          - label: "Image & Copy"
+            name: image-copy-component
+            widget: object
+            fields:
+              - {label: "Image", name: image, widget: image, required: false, default: null}
+              - {label: "Title", name: title, widget: string, required: false, default: null}
+              - label: "Content"
+                name: content
+                widget: list
+                types:
+                  - label: "Copy"
+                    name: markdown-component
+                    widget: object
+                    fields:
+                      - {label: "Copy", name: text, widget: markdown}
+                  - label: "Quote"
+                    name: quote-component
+                    widget: object
+                    fields:
+                      - {label: "Quote", name: quote, widget: text}
+                      - {label: "Name", name: name, widget: string, required: false, default: null}
+                      - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
+                      - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
+              - label: "Link"
+                name: link
+                required: false
+                default: null
+                widget: optional-object
+                fields:
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+              - {label: "Image on right?", name: isRightImage, widget: boolean, required: false, default: false}
+              - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
+              - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
+
+          - label: "Articles"
+            name: article-component
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string, required: false, default: null}
+              - label: "Articles"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Copy", name: text, widget: markdown}
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
+          - label: "Blog Posts"
+            name: blog-post-component
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string, required: false, default: null}
+              - label: "Blog Posts"
+                name: articles
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name:  image, widget: image}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
+          - label: "Content Slider"
+            name: content-slider-component
+            widget: object
+            fields:
+              - {label: "Component Title", name: title, widget: string}
+              - label: "Slides"
+                name: "articles"
+                widget: list
+                fields:
+                  - {label: "Title", name: title, widget: string}
+                  - {label: "Image", name: image, widget: image}
+                  - {label: "Copy", name: text, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                  - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
+      # FOOTERLINKS
+      - label: "Footer Links"
+        name: footerLinks
+        widget: optional-object
+        fields:
+          - {label: "Title", name: title, widget: string, required: false, default: null}
+          - {label: "Show Images?", name: showImages, widget: boolean, required: false, default: false }
+          - {label: "Link", name: link1, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link2, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - {label: "Link", name: link3, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+
+      - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
+
+      # SEO
+      - label: "SEO"
+        name: seo
+        widget: object
+        fields:
+          - {label: "SEO Slug",        name: slug,        widget: string, required: false, default: null}
+          - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
+          - {label: "SEO Description", name: description, widget: string, required: false, default: null}
+
   - label: "Legal Pages."
     label_singular: "Page"
     name: pages

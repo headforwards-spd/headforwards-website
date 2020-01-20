@@ -53,55 +53,65 @@
 }
 
 .columns {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-h2 {
-    &.xxxl {
-        @include headingFontXXXLarge;
-    }
-
-    &.xxl {
-        @include headingFontXXLarge;
-    }
-
-    &.xl {
-        @include headingFontXLarge;
-    }
-
-    &.lg {
-        @include headingFontLarge;
-    }
-
-    &.md {
-        @include headingFontMedium;
-    }
-
-    &.sm {
-        @include headingFontSmall;
+    @media screen and (min-width: $screen-md) {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
     }
 }
-p {
-    &.xxl {
-        @include fontXXLarge;
-    }
 
-    &.xl {
-        @include fontXLarge;
+.xxxl {
+    @include fontXXXLarge;
+    h1, h2 {
+        text-transform: capitalize;
     }
-
-    &.lg {
-        @include fontLarge;
+    p::first-letter {
+        text-transform: uppercase;
     }
-
-    &.md {
-        @include fontMedium;
+}
+.xxl {
+    @include fontXXLarge;
+    h1, h2 {
+        text-transform: capitalize;
     }
-
-    &.sm {
-        @include fontSmall;
+    p::first-letter {
+        text-transform: uppercase;
+    }
+}
+.xl {
+    @include fontXLarge;
+    h1, h2 {
+        text-transform: capitalize;
+    }
+    p::first-letter {
+        text-transform: uppercase;
+    }
+}
+.lg {
+    @include fontLarge;
+    h1, h2 {
+        text-transform: capitalize;
+    }
+    p::first-letter {
+        text-transform: uppercase;
+    }
+}
+.md {
+    @include fontMedium;
+    h1, h2 {
+        text-transform: capitalize;
+    }
+    p::first-letter {
+        text-transform: uppercase;
+    }
+}
+.sm {
+    @include fontSmall;
+    h1, h2 {
+        text-transform: capitalize;
+    }
+    p::first-letter {
+        text-transform: uppercase;
     }
 }
 

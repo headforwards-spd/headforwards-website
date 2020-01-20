@@ -10,11 +10,18 @@
         margin-bottom: 0;
     }
 
+    > h2 {
+        @include headingFontMedium;
+    }
+
     blockquote {
+
+        @include fontLarge;
 
         margin: 0;
 
         > p {
+            margin-bottom: #{$rhythm-unit/0.8}em;
             padding: 1.5em 0 0;
             @media (min-width: $screen-md) {
                 padding: 0;
@@ -22,7 +29,6 @@
             font-style: italic;
             position: relative;
             @include orange-type;
-            @include fontXLarge;
             font-weight: normal;
 
             &:before,
@@ -56,6 +62,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            @include fontSmall;
 
             section > :last-child {
                 margin-bottom: 0;
@@ -64,11 +71,10 @@
             h2 {
                 color: black;
                 font-weight: bold;
-                @include headingFontLarge;
                 margin-bottom: $heading-margin-bottom/2;
                 @media (min-width: $screen-lg) {
-                    @include headingFontMedium;
-                    margin-bottom: $heading-margin-bottom/2;
+                    margin-bottom: 0;
+                    //margin-bottom: $heading-margin-bottom/2;
                 }
             }
 
@@ -77,10 +83,7 @@
                 text-transform: uppercase;
                 margin: 0;
                 font-style: italic;
-                @include fontSmall;
-                @media (min-width: $screen-lg) {
-                    @include fontMedium;
-                }
+
             }
 
             .imageCropper {

@@ -37,21 +37,21 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
 
     return (
         <footer className={styles.footer}>
-            <section className={styles.getInTouch}>
+            <section>
                 {hasFooterLinks && (
                     <section className={styles.footerLinks}>
                         {title && <h2>{title}</h2>}
-                        <FooterLink {...{ showImages, link: link1, page: page1 }} />
-                        <FooterLink {...{ showImages, link: link2, page: page2 }} />
-                        <FooterLink {...{ showImages, link: link3, page: page3 }} />
+                        <section>
+                            <FooterLink {...{ showImages, link: link1, page: page1 }} />
+                            <FooterLink {...{ showImages, link: link2, page: page2 }} />
+                            <FooterLink {...{ showImages, link: link3, page: page3 }} />
+                        </section>
                     </section>
                 )}
-                <section>
-                    <h2>
-                        {callToAction}
-                        <Link to="/contact">Get in touch</Link>
-                    </h2>
-                </section>
+                <h2 className={styles.getInTouch}>
+                    {callToAction}
+                    <Link to="/contact">Get in touch</Link>
+                </h2>
             </section>
 
             <Socials {...{ ...companyInfo, isFooter }} />

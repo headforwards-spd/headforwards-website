@@ -5,15 +5,12 @@
 @import "../columns";
 
 .blogPostColumns {
+    @include fontMedium;
 
     @include component-gutter;
 
     > h2 {
         @include orange-type;
-        @include headingFontXLarge;
-        @media (min-width: $screen-md) {
-            @include headingFontXXLarge;
-        }
     }
 
     > section {
@@ -22,6 +19,7 @@
         > a {
 
             .article {
+                @include fontMediumVr;
 
                 position: relative;
                 display: flex;
@@ -30,23 +28,13 @@
                 .image {
                     order: 1;
                     margin: 0 -#{$gutter-small};
-                    @include fontMedium;
-
-                    @media (min-width: $screen-md) {
-                        margin: 0 -#{$gutter-medium};
-                        @include fontMedium;
-                    }
+                    margin-bottom: 1em * $rhythm-unit;
                 }
 
                 h2 {
                     order: 2;
                     flex-grow: 1;
                     color: $header_black;
-                    margin-bottom: 0;
-                    @include headingFontMedium;
-                    @media (min-width: $screen-lg) {
-                        @include headingFontLarge;
-                    }
                 }
 
                 &:before {
@@ -101,8 +89,7 @@
                 .article {
 
                     .image {
-                        margin: 0;
-                        @include fontMedium;
+                        margin: 0 0 1em * $rhythm-unit;
                     }
 
                     &:before {

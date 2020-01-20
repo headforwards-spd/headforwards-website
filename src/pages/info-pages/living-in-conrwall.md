@@ -5,6 +5,7 @@ type: info-page
 title: Living in cornwall
 image:
     show: false
+    image: /uploads/icon.black.png
 introduction:
     show: false
     text: CHANGEME

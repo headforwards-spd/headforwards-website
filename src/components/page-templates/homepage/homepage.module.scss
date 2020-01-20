@@ -1,18 +1,6 @@
 @import "../../page-components/columns/columns";
 @import "../../../scss/variables";
 
-
-.introduction {
-    @include component-gutter;
-    @include fontLarge;
-    @media (min-width: $screen-lg) {
-        margin-bottom: $gutter-large - $gutter-medium/2;
-        width: 62.5%;
-    }
-    h2 {
-        @include headingFontLarge;
-    }
-}
 .section {
     @include component-gutter;
     @media (min-width: $screen-lg) {
@@ -20,12 +8,10 @@
     }
 
     .components {
+        @include fontMedium;
 
         > * {
             margin: 0;
-            h2 {
-                @include headingFontLarge;
-            }
 
             :last-child {
                 margin-bottom: 0;
@@ -39,7 +25,7 @@
 
         blockquote {
             p {
-                @include fontLarge;
+                @include fontMedium;
                 font-weight: bold;
                 margin-bottom: 0;
 
@@ -60,11 +46,10 @@
             }
 
             footer {
+                @include fontXSmall;
                 h2 {
-                    @include headingFontSmall;
                     margin-bottom: 0;
                 }
-                @include fontSmall;
                 margin-top: 1rem;
             }
         }

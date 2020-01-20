@@ -9,14 +9,5 @@ image:
 introduction:
     show: false
     text: CHANGEME
-components:
-  - articles:
-      - link: 943ab7e0-1529-11ea-a6b5-63ea6add32fb
-        title: Cost of living
-        image: /uploads/cost-of-living.jpg
-      - link: afee1680-1529-11ea-a6b5-63ea6add32fb
-        title: Location & travel
-        image: /uploads/living-by-the-beach.jpg
-    type: blog-post-component
 ---
 

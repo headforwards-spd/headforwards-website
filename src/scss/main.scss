@@ -11,6 +11,10 @@
 }
 
 body {
+
+    @include fontBase;
+    overflow-x: hidden;
+
     &.menuIsOpen {
         overflow: hidden;
         @media(min-width: $screen-lg) {
@@ -52,33 +56,6 @@ body {
         }
     }
 
-    body {
-        overflow-x: hidden;
-
-        @include fluid-type($min_font, $max_font);
-        line-height: $line-height;
-    }
-
-    h1, h2 {
-        margin: 0;
-        color: $header_black;
-        font-weight: bold;
-        text-shadow: none;
-    }
-
-    h1, h2 {
-        @include headingFontLarge;
-        line-height: $heading-line-height;
-        margin-bottom: $heading-margin-bottom;
-    }
-
-    p, time, li {
-        margin: 0;
-        @include fontMedium;
-        margin-bottom: $margin-bottom;
-        color: $paragraph_grey;
-        font-weight: normal;
-    }
     li {
         margin-bottom: 0;
     }

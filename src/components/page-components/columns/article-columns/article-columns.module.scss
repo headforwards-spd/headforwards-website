@@ -5,46 +5,25 @@
 @import '../columns';
 
 .articleColumns {
-
-    > h2 {
-        @include headingFontLarge;
-        //@media(min-width: $screen-lg) {
-        //    @include headingFontXLarge;
-        //
-        //}
-    }
+    @include fontMedium;
 
     > section {
         @include columns-component;
 
         .article {
+            @include fontMediumVr;
 
             display: flex;
             flex-direction: column;
-            @include fontMedium;
-            @media(min-width: $screen-md) {
-                @include fontLarge;
-
-            }
 
             .image {
                 order: 1;
                 margin: 0 -#{$gutter-small};
-                @include fontMedium;
-
-                @media(min-width: $screen-md) {
-                    margin: 0 -#{$gutter-medium};
-                    @include fontLarge;
-                }
+                margin-bottom: 1em * $rhythm-unit;
             }
 
             > h2 {
                 order: 2;
-                @include headingFontMedium;
-                @media(min-width: $screen-md) {
-                    @include headingFontLarge;
-
-                }
             }
 
             > section {

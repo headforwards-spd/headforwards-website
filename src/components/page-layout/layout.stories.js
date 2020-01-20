@@ -85,84 +85,91 @@ export const Paragraphs = () => {
 };
 
 export const SmallCopy = () => {
-    const className = styles.wrapper;
+    const className = `${styles.wrapper} ${styles.sm}`;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.md;
-    const headingClass = styles.sm;
-    const copyClass = styles.sm;
 
     return (
         <StoriesLayout>
             <section className={styles.columns}>
-                <Section {...{ className, heading: `${heading} ${heading}`, headingClass, copy, copyClass }} />
-                <Section {...{ className, heading, headingClass, copy, copyClass }} />
-                <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
+                <Section {...{ className, heading, copy }} />
+                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
+                <Section
+                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
+                />
             </section>
         </StoriesLayout>
     );
 };
 
 export const MediumCopy = () => {
-    const className = styles.wrapper;
+    const className = `${styles.wrapper} ${styles.md}`;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.lg;
-    const headingClass = styles.md;
-    const copyClass = styles.md;
 
     return (
         <StoriesLayout>
-            <Section {...{ className, heading, headingClass, copy, copyClass }} />
-            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
+            <section className={styles.columns}>
+                <Section {...{ className, heading, copy }} />
+                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
+                <Section
+                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
+                />
+            </section>
         </StoriesLayout>
     );
 };
 
 export const LargeCopy = () => {
-    const className = styles.wrapper;
+    const className = `${styles.wrapper} ${styles.lg}`;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.xl;
-    const headingClass = styles.lg;
-    const copyClass = styles.lg;
 
     return (
         <StoriesLayout>
-            <Section {...{ className, heading, headingClass, copy, copyClass }} />
-            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
+            <section className={styles.columns}>
+                <Section {...{ className, heading, copy }} />
+                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
+                <Section
+                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
+                />
+            </section>
         </StoriesLayout>
     );
 };
 
 export const XLargeCopy = () => {
-    const className = styles.wrapper;
+    const className = `${styles.wrapper} ${styles.xl}`;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.xxl;
-    const headingClass = styles.xl;
-    const copyClass = styles.xl;
 
     return (
         <StoriesLayout>
-            <Section {...{ className, heading, headingClass, copy, copyClass }} />
-            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
+            <section className={styles.columns}>
+                <Section {...{ className, heading, copy }} />
+                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
+                <Section
+                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
+                />
+            </section>
         </StoriesLayout>
     );
 };
 
 export const XXLargeCopy = () => {
-    const className = styles.wrapper;
+    const className = `${styles.wrapper} ${styles.xxl}`;
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
-    const largeHeadingClass = styles.xxxl;
-    const headingClass = styles.xxl;
-    const copyClass = styles.xxl;
 
     return (
         <StoriesLayout>
-            <Section {...{ className, heading, headingClass, copy, copyClass }} />
-            <Section {...{ className, heading, headingClass: largeHeadingClass, copy, copyClass }} />
+            <section className={styles.columns}>
+                <Section {...{ className, heading, copy }} />
+                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
+                <Section
+                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
+                />
+            </section>
         </StoriesLayout>
     );
 };
@@ -205,12 +212,12 @@ Section.defaultProps = {
     copy: testText,
     copyClass: '',
 };
-function Section({ className, heading, headingClass, copy, copyClass }) {
+function Section({ className, heading, copy }) {
     return (
         <section className={className}>
-            <h2 className={headingClass}>{heading}</h2>
+            <h2>{heading}</h2>
             {copy.map(paragraph => (
-                <p className={copyClass}>{paragraph}</p>
+                <p>{paragraph}</p>
             ))}
         </section>
     );
