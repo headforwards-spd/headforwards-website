@@ -21,8 +21,6 @@ export default class ContactForm extends Component {
     };
 
     onVerify(token) {
-        console.log('onVerify');
-
         const { data } = this.state;
         const options = {
             method: 'POST',
@@ -38,8 +36,6 @@ export default class ContactForm extends Component {
     }
 
     onSubmit(values) {
-        console.log('onSubmit');
-
         const { rcRef } = this;
 
         this.setState({ isSubmitting: true });

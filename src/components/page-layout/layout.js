@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import { Provider } from 'unstated';
 import withUnstated from '@airship/with-unstated';
 import AppContainer from '../../containers/app.container';
+import { FooterLinkPropType } from './footer/footer-link.component';
 import { ImageSrcPropType } from './image/image.component';
 import Header from './header/header.component';
 import Footer from './footer/footer.component';
@@ -35,15 +36,10 @@ Layout.propTypes = {
     isHomePage: bool,
     title: string.isRequired,
     subtitle: string,
-    footerLinks: arrayOf(
-        shape({
-            title: string,
-            showImages: bool,
-            link1: string.isRequired,
-            link2: string.isRequired,
-            link3: string.isRequired,
-        })
-    ),
+    footerLinks: shape({
+        title: string,
+        links: arrayOf(FooterLinkPropType),
+    }),
     callToAction: string,
     image: shape({
         show: bool,

@@ -201,16 +201,12 @@ function Paragraph({ text, className }) {
 Section.propTypes = {
     className: string,
     heading: string,
-    headingClass: string,
     copy: string,
-    copyClass: string,
 };
 Section.defaultProps = {
     className: '',
     heading: testText,
-    headingClass: '',
     copy: testText,
-    copyClass: '',
 };
 function Section({ className, heading, copy }) {
     return (

@@ -31,11 +31,9 @@ InfoPagePreview.propTypes = {
 
 function InfoPagePreview({ entry, getAsset }) {
     const { data } = entry.toJS();
-    const { title = '', subtitle, image, introduction, components, footerLinks, callToAction } = data;
+    const { title = '', subtitle, image, introduction, components, footerLinks: rawFooterLinks, callToAction } = data;
     const { show: showImage = false, image: bannerImageRef = null } = image || {};
     const bannerImage = bannerImageRef ? getAsset(bannerImageRef).toString() : null;
-
-    console.log({ footerLinks });
 
     const header = {
         title,
@@ -70,6 +68,18 @@ function InfoPagePreview({ entry, getAsset }) {
     };
 
     const { show: showIntro, text: introText } = introduction;
+
+    const [footerLinks] = rawFooterLinks || {};
+    const { showImages: showFooterImages } = footerLinks || {};
+    footerLinks.links = [...Array(3)].map((v, k) => {
+        return {
+            showImages: showFooterImages,
+            link: '/',
+            title: `Link ${k + 1}`,
+            image: { image: '/uploads/icon.black.png' },
+            introduction: { text: 'Introduction...' },
+        };
+    });
 
     return (
         <Provider>

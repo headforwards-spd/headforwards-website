@@ -1,24 +1,19 @@
 import React from 'react';
-import { arrayOf, bool, shape, string } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import Link from '../link/link.component';
 import styles from './footer.module.scss';
 import Socials from '../socials/socials.component';
 import { CompanyInfoPropType } from '../company-info.prop-type';
-import FooterLink from './footer-link.component';
+import FooterLink, { FooterLinkPropType } from './footer-link.component';
 
 export default Footer;
 
 Footer.propTypes = {
     companyInfo: CompanyInfoPropType.isRequired,
-    footerLinks: arrayOf(
-        shape({
-            title: string,
-            showImages: bool,
-            link1: string.isRequired,
-            link2: string.isRequired,
-            link3: string.isRequired,
-        })
-    ),
+    footerLinks: shape({
+        title: string,
+        links: arrayOf(FooterLinkPropType),
+    }),
     callToAction: string,
 };
 
@@ -30,21 +25,18 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
     const { companyName, email, address, phone } = companyInfo;
     const isFooter = true;
     const thisYear = new Date().getFullYear();
-
-    const [{ title, showImages, link1, link2, link3, page1, page2, page3 }] = footerLinks || [{}];
-
-    const hasFooterLinks = link1 && link2 && link3;
+    const { title: footerLinksTitle, links } = footerLinks || {};
 
     return (
         <footer className={styles.footer}>
             <section>
-                {hasFooterLinks && (
+                {!!links && (
                     <section className={styles.footerLinks}>
-                        {title && <h2>{title}</h2>}
+                        {!!footerLinksTitle && <h2>{footerLinksTitle}</h2>}
                         <section>
-                            <FooterLink {...{ showImages, link: link1, page: page1 }} />
-                            <FooterLink {...{ showImages, link: link2, page: page2 }} />
-                            <FooterLink {...{ showImages, link: link3, page: page3 }} />
+                            {links.map(link => (
+                                <FooterLink {...link} />
+                            ))}
                         </section>
                     </section>
                 )}
