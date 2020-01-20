@@ -26,7 +26,8 @@
     }
     justify-content: flex-start;
 
-    > a {
+    > article {
+        @include fontMedium;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -42,17 +43,16 @@
 
     @media(min-width: $screen-md) {
         justify-content: flex-start;
-        > a {
+        > article {
                 width: calc(50% - #{$column-gutter});
         }
         margin-bottom: 0;
     }
 
-    .page {
+    .page > a {
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-        @include fontMedium;
 
         h2 {
             @include arrow-link;

@@ -38,7 +38,7 @@ function Header({ isHomePage, title, subtitle, image, menu, companyInfo }) {
                 <h1>{parseHtml(title)}</h1>
                 {!!subtitle && <p>{subtitle}</p>}
             </section>
-            {!!image && <Image image={image} className={styles.image} />}
+            {!!image && <Image image={image} alt={title} className={styles.image} />}
         </header>
     );
 }

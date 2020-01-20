@@ -5,6 +5,7 @@ import styles from './postit.module.scss';
 
 const postitPropTypes = {
     image: ImageSrcPropType.isRequired,
+    alt: string,
     isRightImage: bool,
     className: string,
     children: node,
@@ -15,16 +16,17 @@ export default Postit;
 Postit.propTypes = postitPropTypes;
 Postit.defaultProps = {
     isRightImage: false,
+    alt: null,
     className: '',
     children: null,
 };
-function Postit({ image, isRightImage, className, children }) {
+function Postit({ image, alt, isRightImage, className, children }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
     const version = Math.floor(Math.random() * 8 + 1);
 
     return (
         <div className={`${styles.postit} ${styles[`v${version}`]} ${imageClass} ${className}`}>
-            {children || <Image image={image} ratio="100%" />}
+            {children || <Image image={image} alt={alt} ratio="100%" />}
         </div>
     );
 }

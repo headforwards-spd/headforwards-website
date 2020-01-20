@@ -7,7 +7,12 @@
         justify-content: flex-start;
     }
     li {
-        width: calc((100% / 3) - #{$column-gutter});
+        @media (min-width: $screen-md) {
+            width: calc((100% / 2) - #{$column-gutter});
+        }
+        @media (min-width: $screen-lg) {
+            width: calc((100% / 3) - #{$column-gutter});
+        }
         display: flex;
         flex-direction: column;
     }

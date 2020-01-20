@@ -100,6 +100,7 @@ export const PageFragment = graphql`
                 flip
                 imageOne {
                     publicURL
+                    name
                     childImageSharp {
                         fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 100) {
                             ...GatsbyImageSharpFluid_withWebp
@@ -108,6 +109,7 @@ export const PageFragment = graphql`
                 }
                 imageOneSquare: image {
                     publicURL
+                    name
                     childImageSharp {
                         fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 100) {
                             ...GatsbyImageSharpFluid_withWebp
@@ -116,6 +118,7 @@ export const PageFragment = graphql`
                 }
                 imageTwo {
                     publicURL
+                    name
                     childImageSharp {
                         fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 100) {
                             ...GatsbyImageSharpFluid_withWebp
@@ -124,6 +127,7 @@ export const PageFragment = graphql`
                 }
                 imageTwoSquare: image {
                     publicURL
+                    name
                     childImageSharp {
                         fluid(maxWidth: 100, maxHeight: 100, cropFocus: CENTER, quality: 100) {
                             ...GatsbyImageSharpFluid_withWebp
@@ -176,7 +180,7 @@ export const PageFragment = graphql`
                                     fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 100) {
                                         ...GatsbyImageSharpFluid_withWebp
                                     }
-                                }    
+                                }
                             }
                         }
                     }

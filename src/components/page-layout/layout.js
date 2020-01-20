@@ -37,14 +37,14 @@ Layout.propTypes = {
     title: string.isRequired,
     subtitle: string,
     footerLinks: shape({
-        title: string,
-        links: arrayOf(FooterLinkPropType),
-    }),
+                           title: string,
+                           links: arrayOf(FooterLinkPropType),
+                       }),
     callToAction: string,
     image: shape({
-        show: bool,
-        image: ImageSrcPropType,
-    }),
+                     show: bool,
+                     image: ImageSrcPropType,
+                 }),
     seo: SeoPropType,
     children: oneOfType([arrayOf(node), node, string]),
 };
@@ -61,37 +61,14 @@ function Layout({ isHomePage, seo, title, subtitle, image, children, footerLinks
     const { menuData, companyInfo } = useStaticQuery(graphql`
         query {
             menuData: dataYaml(title: { eq: "main-menu" }) {
-                menu {
-                    id
-                    linkText
-                    link
-                    children {
-                        id
-                        linkText
-                        link
-                        children {
-                            id
-                            linkText
-                            link
-                        }
-                    }
-                }
+                ...MenuFragment
             }
             companyInfo: dataYaml(title: { eq: "company-info" }) {
-                companyName
-                email
-                phone
-                address
-                facebookURL
-                instagramURL
-                linkedInURL
-                youtubeURL
-                twitterURL
-                registeredAddress
-                callToAction
+                ...CompanyInfoFragment
             }
         }
     `);
+    const {title:seoTitle=null} = seo || {};
     const { menu } = menuData || [];
 
     const { callToAction: defaultCallToAction } = companyInfo;
@@ -107,15 +84,22 @@ function Layout({ isHomePage, seo, title, subtitle, image, children, footerLinks
         companyInfo,
     };
 
+    const seoProps = {
+        ...seo,
+        title: seoTitle || title,
+    };
+
     const callToAction = pageCallToAction || defaultCallToAction;
+
+    const footerProps = { footerLinks, companyInfo, callToAction };
 
     return (
         <Provider>
             <UnstatedHelmet />
-            <Seo {...{ title, ...seo }} />
+            <Seo {...seoProps} />
             <Header {...headerProps} />
             <main>{children}</main>
-            <Footer {...{ footerLinks, companyInfo, callToAction }} />
+            <Footer {...footerProps} />
         </Provider>
     );
 }

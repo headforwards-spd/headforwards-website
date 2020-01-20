@@ -19,10 +19,18 @@ TwoImages.defaultProps = {
 function TwoImages({ flip, leftImage, rightImage }) {
     const flipClass = flip ? styles.flip : '';
 
+    const {name: leftImageName=''} = leftImage || {};
+    const {name: rightImageName=''} = rightImage || {};
+
+    const leftImageAlt = leftImageName.replace(/[-_]/g, ' ').toLowerCase();
+    const rightImageAlt = rightImageName.replace(/[-_]/g, ' ').toLowerCase();
+
+    console.log({leftImage});
+
     return (
         <section className={`${styles.twoImages} ${flipClass}`}>
-            <Image image={leftImage} />
-            <Image image={rightImage} />
+            <Image image={leftImage} alt={leftImageAlt}/>
+            <Image image={rightImage} alt={rightImageAlt}/>
         </section>
     );
 }

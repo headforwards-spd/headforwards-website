@@ -3,8 +3,10 @@
 
 .jobDetails {
     @include fontMediumVr;
-    column-count: 2;
-    column-gap: $gutter-large;
+    @media (min-width: $screen-md) {
+        column-count: 2;
+        column-gap: $gutter-large;
+    }
 
     ul {
         margin: 0 0 #{$rhythm-unit}em;

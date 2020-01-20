@@ -41,8 +41,8 @@ function PageLink({ link, linkText, page }) {
     `);
 
     return (
-        <Link to={link}>
             <article className={styles.page}>
+                <Link to={link} >
                 <h2>{linkText}</h2>
                 <section>
                     {introImage && <Image image={introImage} alt={linkText} />}
@@ -53,7 +53,7 @@ function PageLink({ link, linkText, page }) {
                         </section>
                     )}
                 </section>
+                </Link>
             </article>
-        </Link>
     );
 }

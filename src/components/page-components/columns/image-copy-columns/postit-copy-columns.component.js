@@ -35,7 +35,7 @@ function PostitCopyColumns({ image, isRightImage, title, content, link }) {
 
     return (
         <section className={`${styles.columnsWrapper} ${imageClass} ${styles.isPostit}`}>
-            <Postit image={image} isRightImage={isRightImage} className={styles.postit} />
+            <Postit image={image} alt={title} isRightImage={isRightImage} className={styles.postit} />
             <section className={styles.copy}>
                 {title && <h2>{title}</h2>}
                 {content && (

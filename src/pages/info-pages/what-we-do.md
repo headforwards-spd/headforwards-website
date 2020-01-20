@@ -9,12 +9,4 @@ image:
 introduction:
     show: false
     text: CHANGEME
-components:
-
-callToAction:
-
-seo:
-    slug:
-    title:
-    description:
 ---

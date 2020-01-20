@@ -33,7 +33,7 @@ function HomepageTemplate({ introduction, sections }) {
     return (
         <>
             {showIntroduction && <IntroductionComponent introduction={introText} />}
-            {!!sections && sections.map(section => <HomePageSection {...{ ...section }} />)}
+            {!!sections && sections.map(section => <HomePageSection {...section} />)}
         </>
     );
 }
@@ -48,8 +48,7 @@ HomePageSection.defaultProps = {
     imageSquare: null,
 };
 
-function HomePageSection(props) {
-    const { components, isPostit, isRightImage, image, imagePostit, imageSquare } = props;
+function HomePageSection({ components, isPostit, isRightImage, image, imagePostit, imageSquare }) {
     const hasImage = !!image || !!imagePostit || imageSquare;
     const wrapperStyles = [
         styles.section,
@@ -57,11 +56,13 @@ function HomePageSection(props) {
         hasImage ? styles.hasImage : '',
     ].join(' ');
 
+    const [{title}] = components || [{}];
+
     return (
         <section className={wrapperStyles}>
-            {!!hasImage && <HomePageImage {...{ isPostit, image, imagePostit, imageSquare, isRightImage }} />}
+            {!!hasImage && <HomePageImage {...{ isPostit, image, alt:title, imagePostit, imageSquare, isRightImage }} />}
             <section className={styles.components}>
-                {!!components && components.map(component => <PageComponent {...component} />)}
+                {!!components && components.map(component => <PageComponent {...component} title={title}/>)}
             </section>
         </section>
     );
@@ -69,6 +70,7 @@ function HomePageSection(props) {
 
 const homePageImagePropTypes = {
     image: ImageSrcPropType.isRequired,
+    alt: string,
     imagePostit: ImageSrcPropType,
     imageSquare: ImageSrcPropType,
     isPostit: bool,
@@ -77,15 +79,16 @@ const homePageImagePropTypes = {
 
 HomePageImage.propTypes = homePageImagePropTypes;
 HomePageImage.defaultProps = {
+    alt: null,
     imagePostit: null,
     imageSquare: null,
     isPostit: false,
     isRightImage: false,
 };
-function HomePageImage({ isPostit, image, imagePostit, imageSquare, isRightImage }) {
+function HomePageImage({ isPostit, image, alt, imagePostit, imageSquare, isRightImage }) {
     return isPostit ? (
-        <Postit className={styles.postit} image={imagePostit || image} isRightImage={isRightImage} />
+        <Postit className={styles.postit} image={imagePostit || image} alt={alt} isRightImage={isRightImage} />
     ) : (
-        <Image className={styles.image} image={imageSquare || image} ratio="100%" />
+        <Image className={styles.image} image={imageSquare || image} alt={alt} ratio="100%" />
     );
 }

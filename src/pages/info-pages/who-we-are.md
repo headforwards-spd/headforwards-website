@@ -8,6 +8,5 @@ image:
 introduction:
   show: false
   text: CHANGEME
-seo: {}
 ---
 
