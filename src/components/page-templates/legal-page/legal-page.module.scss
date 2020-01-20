@@ -1,28 +1,16 @@
 @import "../../../scss/variables";
+@import "../../../scss/mixins/typography";
+@import "../../../scss/mixins/column-list";
 .sections {
-    column-count: 1;
+    @include fontMediumVr;
     @media (min-width: $screen-lg) {
         column-count: 2;
+        column-gap: $gutter-large;
     }
     margin-bottom: $gutter-large;
-    column-gap: $gutter-large;
-
-    h2 {
-        color: $header_black;
-    }
-
-    p, ul, li {
-        color: #4D4D4D;
-    }
 
     ul {
-        list-style-type: unset;
-        font-weight: lighter;
-        margin-left: $gutter-medium;
-    }
-
-    li {
-        line-height: 24px;
+        @include columnsList;
     }
 }
 

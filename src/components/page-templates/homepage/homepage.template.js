@@ -56,13 +56,15 @@ function HomePageSection({ components, isPostit, isRightImage, image, imagePosti
         hasImage ? styles.hasImage : '',
     ].join(' ');
 
-    const [{title}] = components || [{}];
+    const [{ title }] = components || [{}];
 
     return (
         <section className={wrapperStyles}>
-            {!!hasImage && <HomePageImage {...{ isPostit, image, alt:title, imagePostit, imageSquare, isRightImage }} />}
+            {!!hasImage && (
+                <HomePageImage {...{ isPostit, image, alt: title, imagePostit, imageSquare, isRightImage }} />
+            )}
             <section className={styles.components}>
-                {!!components && components.map(component => <PageComponent {...component} title={title}/>)}
+                {!!components && components.map(component => <PageComponent {...component} title={title} />)}
             </section>
         </section>
     );

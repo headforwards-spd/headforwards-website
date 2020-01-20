@@ -12,8 +12,7 @@ export const FullWidthImageSrcPropType = shape(fullWidthImageSrcPropTypes);
 
 FullWidthImage.propTypes = fullWidthImageSrcPropTypes;
 function FullWidthImage({ image }) {
-
-    const {name: imageName=''} = image || {};
+    const { name: imageName = '' } = image || {};
     const alt = imageName.replace(/[-_]/g, ' ').toLowerCase();
 
     return <Image className={styles.fullWidthImage} image={image} alt={alt} />;

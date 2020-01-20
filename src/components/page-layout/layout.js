@@ -37,14 +37,14 @@ Layout.propTypes = {
     title: string.isRequired,
     subtitle: string,
     footerLinks: shape({
-                           title: string,
-                           links: arrayOf(FooterLinkPropType),
-                       }),
+        title: string,
+        links: arrayOf(FooterLinkPropType),
+    }),
     callToAction: string,
     image: shape({
-                     show: bool,
-                     image: ImageSrcPropType,
-                 }),
+        show: bool,
+        image: ImageSrcPropType,
+    }),
     seo: SeoPropType,
     children: oneOfType([arrayOf(node), node, string]),
 };
@@ -68,7 +68,7 @@ function Layout({ isHomePage, seo, title, subtitle, image, children, footerLinks
             }
         }
     `);
-    const {title:seoTitle=null} = seo || {};
+    const { title: seoTitle = null } = seo || {};
     const { menu } = menuData || [];
 
     const { callToAction: defaultCallToAction } = companyInfo;
