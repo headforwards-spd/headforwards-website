@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import { any, arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 import { PageComponentPropType } from '../components/page-components/page-component';
+import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
 import Layout from '../components/page-layout/layout';
 import IndexPageTemplate from '../components/page-templates/index-page/index-page.template';
 
@@ -27,12 +28,13 @@ IndexPage.propTypes = {
 function IndexPage({ data, pageContext }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { introduction, components, ...header } = frontmatter;
+    const { introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
+    const footerLinks = extractFooterLinks(rawFooterLinks);
     const { children: pages } = pageContext || {};
     const templateProps = { introduction, pages, components };
 
     return (
-        <Layout {...header}>
+        <Layout {...layoutProps} footerLinks={footerLinks}>
             <IndexPageTemplate {...templateProps} />
         </Layout>
     );

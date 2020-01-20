@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 import { PageComponentPropType } from '../components/page-components/page-component';
+import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
 import Layout from '../components/page-layout/layout';
 import JobsPageTemplate from '../components/page-templates/jobs-page/jobs-page.template';
 
@@ -40,7 +41,8 @@ JobsPage.propTypes = {
 function JobsPage({ data }) {
     const { page, jobNodes } = data;
     const { frontmatter } = page;
-    const { introduction, components, ...header } = frontmatter;
+    const { introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
+    const footerLinks = extractFooterLinks(rawFooterLinks);
     const { nodes: jobs } = jobNodes;
     const pageProps = {
         introduction,
@@ -49,7 +51,7 @@ function JobsPage({ data }) {
     };
 
     return (
-        <Layout {...header}>
+        <Layout {...layoutProps} footerLinks={footerLinks}>
             <JobsPageTemplate {...pageProps} />
         </Layout>
     );

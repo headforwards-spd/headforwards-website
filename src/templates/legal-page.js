@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
+import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
 import Layout from '../components/page-layout/layout';
 import LegalPageTemplate from '../components/page-templates/legal-page/legal-page.template';
 
@@ -26,11 +27,12 @@ LegalPage.propTypes = {
 function LegalPage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { introduction, sections, ...layoutProps } = frontmatter;
+    const { introduction, sections, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
+    const footerLinks = extractFooterLinks(rawFooterLinks);
     const templateProps = { introduction, sections };
 
     return (
-        <Layout {...layoutProps}>
+        <Layout {...layoutProps} footerLinks={footerLinks}>
             <LegalPageTemplate {...templateProps} />
         </Layout>
     );
