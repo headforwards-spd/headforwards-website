@@ -2,11 +2,11 @@ import { graphql } from 'gatsby';
 import { shape, string } from 'prop-types';
 import React from 'react';
 import Layout from '../components/page-layout/layout';
-import RecruiteeOfferTemplate from '../components/page-templates/recruitee-offer/recruitee-offer.templete';
+import JobPageTemplate from '../components/page-templates/job-page/job-page.templete';
 
-export default RecruiteeOfferPage;
+export default JobPage;
 
-RecruiteeOfferPage.propTypes = {
+JobPage.propTypes = {
     data: shape({
         job: shape({
             description: string,
@@ -25,9 +25,11 @@ RecruiteeOfferPage.propTypes = {
 };
 
 export const query = graphql`
-    query RecruiteeOfferPage($id: String!) {
+    query JobPage($id: String!) {
         job: recruiteeOffer(id: { eq: $id }) {
             title
+            subtitle
+            salary
             description
             requirements
             careers_apply_url
@@ -43,17 +45,18 @@ export const query = graphql`
     }
 `;
 
-function RecruiteeOfferPage({ data }) {
+function JobPage({ data }) {
     const { job } = data;
-    const { title, ...props } = job;
+    const { title, subtitle, ...props } = job;
 
     const headerProps = {
         title,
+        subtitle,
     };
 
     return (
         <Layout {...headerProps}>
-            <RecruiteeOfferTemplate {...props} />
+            <JobPageTemplate {...props} />
         </Layout>
     );
 }

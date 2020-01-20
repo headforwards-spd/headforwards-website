@@ -2,8 +2,8 @@ import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
-import styles from '../info-page/info-page.module.scss';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
+import styles from './jobs-page.module.scss';
 
 export default JobsPageTemplate;
 
@@ -27,7 +27,7 @@ function JobsPageTemplate({ introduction, jobs, components }) {
         <>
             {show && <IntroductionComponent introduction={text} />}
             {jobs && (
-                <ul>
+                <ul className={styles.jobsList}>
                     {jobs.map(({ id: key, ...job }) => (
                         <li>
                             <JobSummaryComponent key={key} {...job} />

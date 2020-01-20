@@ -6,17 +6,24 @@ import styles from './jobs-page.module.scss';
 const jobSummaryPropTypes = {
     path: string.isRequired,
     title: string.isRequired,
-    created: string.isRequired,
+    salary: string,
 };
 
 export default JobSummaryComponent;
 export const JobsSummaryComponentPropType = shape(jobSummaryPropTypes);
 JobSummaryComponent.propTypes = jobSummaryPropTypes;
+JobSummaryComponent.defaultProps = {
+    salary: null,
+};
 
-function JobSummaryComponent({ path, title, created }) {
+function JobSummaryComponent({ path, title, salary }) {
     return (
         <Link to={`/careers/jobs/${path}`} className={styles.job}>
-            {title} <span>(posted {created})</span>
+            <section>
+                <h2>{title}</h2>
+                {salary && <p>{salary}</p>}
+            </section>
+            <button type="button">More details</button>
         </Link>
     );
 }

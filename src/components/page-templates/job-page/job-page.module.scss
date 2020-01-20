@@ -1,6 +1,22 @@
 @import "../../../scss/mixins/typography";
 @import "../../page-components/columns/columns";
 
+.jobDetails {
+    @include fontMediumVr;
+    column-count: 2;
+    column-gap: $gutter-large;
+
+    ul {
+        margin: 0 0 #{$rhythm-unit}em;
+        list-style-type: "\2013\2002";
+        list-style-position: outside;
+        li {
+            margin: 0;
+            margin-left: 1em;
+        }
+    }
+}
+
 .dataTable {
     @include component-gutter;
     display: flex;
@@ -20,20 +36,5 @@
         width: 62.5%;
         margin: 0;
         padding-left: $gutter-small;
-    }
-}
-
-.copy {
-    @include fontMedium;
-    @include component-gutter;
-    h2 {
-        @include headingFontMedium;
-    }
-
-    .apply {
-        display: block;
-        text-align: right;
-        @include arrow-link;
-        @include fontLarge;
     }
 }

@@ -46,6 +46,8 @@ export const Colours = () => {
                 <dd>Grey 9 (#D8D8D8)</dd>
                 <dt className={styles.grey10} />
                 <dd>Grey 10 (#eeeeee)</dd>
+                <dt className={styles.grey11} />
+                <dd>Grey 11 (#d6d7da)</dd>
             </dl>
         </StoriesLayout>
     );

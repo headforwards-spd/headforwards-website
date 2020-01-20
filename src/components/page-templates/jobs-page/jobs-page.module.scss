@@ -1,11 +1,92 @@
 @import "../../page-components/columns/columns";
 
-.job {
-    @include component-gutter;
-    display: block;
+.jobsList {
+    @include columns-component;
+    @media (min-width: $screen-md) {
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+    li {
+        width: calc((100% / 3) - #{$column-gutter});
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-    span {
-        font-weight: lighter;
-        color: black;
+.job {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: $jobs-grey;
+    padding: $gutter-medium;
+
+    transition: background-color 500ms ease;
+    transition-delay: 100ms;
+    section {
+        flex-grow: 1;
+        margin-bottom: 0;
+        @include fontMediumVr;
+
+        & {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            margin-bottom: 0;
+            transition: color 500ms ease;
+            transition-delay: 100ms;
+        }
+        &, p, li, time {
+            transition: color 500ms ease;
+            transition-delay: 100ms;
+        }
+
+        &:before {
+            padding-bottom: 62.5%; /* Minimum aspect ratio */
+            content: '';
+            float: left;
+        }
+
+        &:after {
+            display: table;
+            content: '';
+            clear: both;
+        }
+
+    }
+    button {
+        @include fontMedium;
+        flex-grow: 0;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background: unset;
+        text-align: left;
+        line-height: $line-height;
+        transition: color 500ms ease;
+        transition-delay: 100ms;
+        @include arrow-link;
+        &:after {
+            content: url('/images/hf-arrow.svg');
+            transition: content 500ms ease;
+            transition-delay: 100ms;
+        }
+    }
+    &:hover {
+        background: $blue-background;
+        section {
+            h2 {
+                color: $orange;
+            }
+            &, p, li, time {
+                color: white;
+            }
+        }
+        button {
+            color: white;
+            &:after {
+                content: url('/images/hf-arrow.orange.svg');
+            }
+        }
     }
 }

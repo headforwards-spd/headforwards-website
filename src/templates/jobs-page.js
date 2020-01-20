@@ -63,6 +63,7 @@ export const query = graphql`
             nodes {
                 id
                 title
+                salary
                 path
                 created(fromNow: true)
             }
