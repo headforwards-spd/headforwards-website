@@ -16,15 +16,30 @@
 .job {
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: $jobs-grey;
     padding: $gutter-medium;
 
     transition: background-color 500ms ease;
     transition-delay: 100ms;
+
+    &:before {
+        padding-bottom: 62.5%; /* Minimum aspect ratio */
+        content: '';
+        float: left;
+    }
+
+    &:after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+
     section {
         flex-grow: 1;
         margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
         @include fontMediumVr;
 
         & {
@@ -40,28 +55,18 @@
             transition: color 500ms ease;
             transition-delay: 100ms;
         }
-
-        &:before {
-            padding-bottom: 62.5%; /* Minimum aspect ratio */
-            content: '';
-            float: left;
-        }
-
-        &:after {
-            display: table;
-            content: '';
-            clear: both;
-        }
-
     }
     button {
         @include fontMedium;
         flex-grow: 0;
         border: none;
         padding: 0;
-        margin: 0;
+        margin: auto 0 0;
+        @media (min-width: $screen-md) {
+            margin: auto 0 0;
+        }
         background: unset;
-        text-align: left;
+        align-self: flex-start;
         line-height: $line-height;
         transition: color 500ms ease;
         transition-delay: 100ms;

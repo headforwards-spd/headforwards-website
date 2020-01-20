@@ -22,8 +22,8 @@ function JobSummaryComponent({ path, title, salary }) {
             <section>
                 <h2>{title}</h2>
                 {salary && <p>{salary}</p>}
+                <button type="button">More details</button>
             </section>
-            <button type="button">More details</button>
         </Link>
     );
 }

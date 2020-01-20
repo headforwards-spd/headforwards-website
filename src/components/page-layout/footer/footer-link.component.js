@@ -32,6 +32,7 @@ function FooterLink({ showImages, link, title, image, introduction }) {
                 <h2>{title}</h2>
                 {showImages && <Image alt={title} image={bannerImage} className={styles.footerLinkImage} />}
                 <ReactMarkdown source={text} />
+                <button type='button'>Read more</button>
             </section>
         </Link>
     );

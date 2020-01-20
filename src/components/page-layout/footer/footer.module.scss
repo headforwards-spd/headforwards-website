@@ -29,24 +29,31 @@
             @include columns-component;
             margin-bottom: -$column-gutter/2;
             @media (min-width: $screen-md) {
+                align-items: stretch;
                 margin-bottom: -$column-gutter/2;
             }
             > a {
                 width: 100%;
+
                 @media (min-width: $screen-md) {
                     width: calc((100% / 3) - #{$column-gutter});
+                    display: flex;
+                    flex-direction: column;
                 }
             }
 
             section {
                 @include fontSmallVr;
+                padding: $gutter-small;
                 background: white;
                 display: flex;
                 flex-direction: column;
                 justify-content: stretch;
                 flex-grow: 1;
-                padding: $gutter-small;
-
+                margin-bottom: 0;
+                @media (min-width: $screen-md) {
+                    margin-bottom: 0;
+                }
                 :last-child {
                     margin-bottom: 0;
                 }
@@ -59,6 +66,17 @@
                     order: -1;
                     margin: -$gutter-small;
                     margin-bottom: 1rem;
+                }
+
+                button {
+                    flex-grow: 0;
+                    align-self: flex-start;
+                    margin: auto 0 0;
+                    border: none;
+                    padding: 0;
+                    background: unset;
+                    line-height: $line-height;
+                    @include arrow-link;
                 }
             }
         }
