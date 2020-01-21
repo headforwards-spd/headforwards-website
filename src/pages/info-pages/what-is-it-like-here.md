@@ -42,7 +42,7 @@ components:
     type: image-copy-component
     title: Where it all starts
   - imageOne: /uploads/headforwards-14.jpg
-    imageTwo: /uploads/headforwards-15.jpg
+    imageTwo: /uploads/postit-2.jpg
     type: images-component
   - content:
       - text: >-
