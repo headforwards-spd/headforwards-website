@@ -2,7 +2,7 @@
 uuid: 3b246990-0f6f-11ea-81de-ff3cb4003432
 parent: who-we-are
 type: info-page
-title: How we began.
+title: How we began
 image:
   image: /uploads/headforwards-7.jpg
   show: true
