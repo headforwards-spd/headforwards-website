@@ -91,5 +91,12 @@ components:
       models in place, there’s still room for flexibility – we’ll always work
       with our clients to co-create the right model for their needs.
     type: quote-component
+footerLinks:
+  - link1: 359e0550-009f-11ea-b6f6-d743f848720a
+    link2: 3c96d190-0fac-11ea-843f-932c76de5936
+    link3: 21a08160-0fac-11ea-843f-932c76de5936
+    showImages: true
+    title: How we can work with you
+callToAction: Do you want to know more about how we build winning teams?
 ---
 
