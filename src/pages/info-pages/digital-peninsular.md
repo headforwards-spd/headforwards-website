@@ -17,7 +17,7 @@ components:
       value of an in-house team – they get the value of Cornwall’s entire tech
       ecosystem.
     type: quote-component
-  - imageOne: /uploads/speed-test.jpg
+  - imageOne: /uploads/headforwards-speed-test.png
     imageTwo: /uploads/gash-8.jpg
     type: images-component
   - isPostit: false

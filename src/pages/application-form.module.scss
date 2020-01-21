@@ -1,0 +1,206 @@
+@import "../components/page-components/columns/columns";
+@import "../scss/mixins/typography";
+
+.applicationForm {
+    @include component-gutter;
+
+    > section {
+        border-top: 1px solid #eee;
+        @include columns-component;
+        @include fontMediumVr;
+        @media (min-width: $screen-md) {
+
+            align-items: flex-start;
+            margin-bottom: 0;
+        }
+
+        &:last-child {
+            :last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        header {
+            @media (min-width: $screen-md) {
+
+                width: calc((100% / 3) - #{$column-gutter});
+            }
+
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+
+        input[type=checkbox], input[type=radio] {
+            @include fontMediumVr;
+            position: relative;
+            height: 1em;
+            width: 1em;
+            margin: 0 0.5em 0 0;
+            @media (min-width: $screen-md) {
+                margin-bottom: 0;
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid;
+                background-color: white;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                background: white;
+                top: 3px;
+                left: 3px;
+                right: 3px;
+                bottom: 3px;
+                text-align: center;
+            }
+            &:checked:after {
+                background: $grey-4;
+            }
+
+            &[type=radio] {
+                &:before, &:after {
+                    border-radius: 100%;
+                }
+            }
+        }
+
+        .fileUpload {
+            @media (min-width: $screen-md) {
+
+                flex-direction: row;
+            }
+            width: 100%;
+        }
+
+        > section {
+            @media (min-width: $screen-md) {
+
+                width: calc((100% * 2 / 3));
+                margin-left: auto;
+            }
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-right: 0;
+            @include fontMediumVr;
+
+            @media (min-width: $screen-md) {
+
+                margin-bottom: $column-gutter/2;
+            }
+
+            > label {
+                width: 100%;
+                @media (min-width: $screen-md) {
+
+                    width: calc((100% / 2) - #{$column-gutter});
+                    margin: 0 $column-gutter/2 #{$rhythm-unit}em;
+                }
+                &.fullWidth {
+                    width: calc((100% / 1) - #{$column-gutter});
+                    flex-direction: row;
+
+                }
+                line-height: $rhythm-unit;
+                display: flex;
+                flex-direction: column;
+            }
+
+            input {
+                padding: 0 $gutter-small/2;
+                line-height: #{1.5*$rhythm-unit}em;
+                margin: calc(#{$rhythm-unit/4}em - 1px) 0;
+                border: 1px solid;
+            }
+
+            textarea {
+                height: auto;
+                line-height: $rhythm-unit;
+                padding: calc(#{$gutter-small/2} - 1px);
+                border: 1px solid red;
+                width: 100%;
+                @media (min-width: $screen-md) {
+
+                    width: calc((100% / 1) - #{$column-gutter});
+                    margin: -#{$gutter-small/2} $column-gutter/2 #{$rhythm-unit}em;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                @include fontMedium;
+                margin-top: calc(#{($rhythm-unit - 1)/2}em - 0.5em);
+                margin-bottom: 0;
+                line-height: 1;
+                background-color: $orange;
+                color: white;
+                border: none;
+                display: flex;
+                align-items: center;
+                padding: 0.5em;
+                @include arrow-link;
+
+                @media (min-width: $screen-md) {
+                    margin-right: 0.5em;
+
+                }
+
+                &:after {
+                    content: url(/images/hf-arrow.white.svg);
+                }
+
+                &.submit {
+                    @include fontLarge;
+                }
+            }
+
+            &.questions {
+                > * {
+                    width: 100%;
+                }
+            }
+
+            [role="group"] {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: #{$rhythm-unit}em;
+
+                > * {
+                    @media (min-width:$screen-md) {
+
+                        margin-left: $column-gutter/2;
+                        margin-right: $column-gutter/2;
+                    }
+                }
+
+                h2 {
+                    @include fontMediumVr;
+                    line-height: $rhythm-unit;
+                    margin-bottom: #{$rhythm-unit}em;
+                    font-weight: normal;
+                }
+
+                label {
+                    cursor: pointer;
+
+                    line-height: $rhythm-unit;
+                }
+
+                button {
+                    @include fontLarge;
+                    margin-top: #{$rhythm-unit}em;
+                    padding: 0.5em;
+                }
+            }
+        }
+    }
+}
