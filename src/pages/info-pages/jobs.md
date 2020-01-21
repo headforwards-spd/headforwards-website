@@ -5,12 +5,12 @@ type: jobs-page
 title: Jobs at Headforwards
 subtitle: Get a job at Headforwards
 image:
-    show: true
-    image: /uploads/headforwards-20.jpg
+  image: /uploads/team-3.jpg
+  show: true
 introduction:
-    show: true
-    text: CHANGEME
+  show: true
+  text: CHANGEME
 seo:
-    slug: jobs
+  slug: jobs
 ---
 
