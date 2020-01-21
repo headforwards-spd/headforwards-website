@@ -9,7 +9,7 @@ image:
 introduction:
   show: false
   text: >-
-    At Headforwards, each client has a dedicated team, hand-picked to meet their
+    At Headforwards each client has a dedicated team hand-picked to meet their
     specific needs
 components:
   - content:
@@ -18,10 +18,14 @@ components:
           and a big part of that difference is the company’s approach to
           resourcing projects.
 
+
+
           At Headforwards, each client has a dedicated team, hand-picked to meet
           the client’s specific needs, and in place for the long term. To ensure
           a great cultural fit and a great start to the relationship, clients
           are involved at every step of the team recruitment process.
+
+
 
           Close collaboration means clients and the team get to know each other
           better every day, resulting in a strong partnership, the opportunity
