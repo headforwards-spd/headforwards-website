@@ -1,6 +1,6 @@
-import React  from 'react';
+import React from 'react';
 import Layout from '../components/page-layout/layout';
-import Link   from '../components/page-layout/link/link.component'
+import Link from '../components/page-layout/link/link.component';
 import styles from './application-form.module.scss';
 
 export default ApplicationForm;
@@ -124,148 +124,152 @@ function ApplicationForm() {
     return (
         <Layout title="Application Form" subtitle={offer.title}>
             <form className={styles.applicationForm}>
-                    <section>
-                        <header>
-                            <h2>Personal information</h2>
-                            <p>Tell us something about yourself</p>
-                        </header>
-                        <section>
-                            <label className="string required control-label" htmlFor="candidate_name">
-                                Full name
-                                <input
-                                    className="string required form-control"
-                                    required="required"
-                                    aria-required="true"
-                                    placeholder="Your full name"
-                                    type="text"
-                                    name="candidate[name]"
-                                    id="candidate_name"
-                                />
-                            </label>
-                            <label className="email required control-label" htmlFor="candidate_email">
-                                Email address
-                                <input
-                                    className="string email required form-control form-control"
-                                    required="required"
-                                    aria-required="true"
-                                    placeholder="Your email address"
-                                    type="email"
-                                    name="candidate[email]"
-                                    id="candidate_email"
-                                />
-                            </label>
-                            <label className="tel required control-label" htmlFor="candidate_phone">
-                                Phone number
-                                <input
-                                    className="string tel required form-control form-control"
-                                    required="required"
-                                    aria-required="true"
-                                    placeholder="Your phone number"
-                                    type="tel"
-                                    name="candidate[phone]"
-                                    id="candidate_phone"
-                                />
-                            </label>
-                        </section>
-                    </section>
-                     <section>
-                        <header>
-                            <h2>CV / Resume</h2>
-                            <p>Upload your CV or resume file</p>
-                        </header>
-                        <section>
-                            <label className={styles.fileUpload}>
-                            <button name="button" type="button">Add file</button>
-                            We accept PDF, DOC, DOCX, JPG and PNG files
-                            </label>
-                        </section>
-                     </section>
                 <section>
-                        <header>
-                            <h2>CV / Resume</h2>
-                            <p>Upload your CV or resume file</p>
-                        </header>
-                        <section>
-                            <label className={styles.fileUpload}>
-                            file-name.pdf [x]
-                            </label>
-                        </section>
-                     </section>
+                    <header>
+                        <h2>Personal information</h2>
+                        <p>Tell us something about yourself</p>
+                    </header>
                     <section>
-                        <header>
-                            <h2>Cover letter</h2>
-                            <p>Insert your cover letter here</p>
-                        </header>
-                        <section>
-                            <textarea
-                                rows="6"
-                                className="text optional form-control"
-                                name="candidate[cover_letter]"
-                                id="candidate_cover_letter"
-                                spellCheck="false"
+                        <label className="string required control-label" htmlFor="candidate_name">
+                            Full name
+                            <input
+                                className="string required form-control"
+                                required="required"
+                                aria-required="true"
+                                placeholder="Your full name"
+                                type="text"
+                                name="candidate[name]"
+                                id="candidate_name"
                             />
-                        </section>
+                        </label>
+                        <label className="email required control-label" htmlFor="candidate_email">
+                            Email address
+                            <input
+                                className="string email required form-control form-control"
+                                required="required"
+                                aria-required="true"
+                                placeholder="Your email address"
+                                type="email"
+                                name="candidate[email]"
+                                id="candidate_email"
+                            />
+                        </label>
+                        <label className="tel required control-label" htmlFor="candidate_phone">
+                            Phone number
+                            <input
+                                className="string tel required form-control form-control"
+                                required="required"
+                                aria-required="true"
+                                placeholder="Your phone number"
+                                type="tel"
+                                name="candidate[phone]"
+                                id="candidate_phone"
+                            />
+                        </label>
                     </section>
+                </section>
+                <section>
+                    <header>
+                        <h2>CV / Resume</h2>
+                        <p>Upload your CV or resume file</p>
+                    </header>
                     <section>
-                        <header>
-                            <h2>Questions</h2>
-                            <p>Please fill in additional questions</p>
-                        </header>
-                        <section className={styles.questions}>
+                        <label className={styles.fileUpload}>
+                            <button name="button" type="button">
+                                Add file
+                            </button>
+                            We accept PDF, DOC, DOCX, JPG and PNG files
+                        </label>
+                    </section>
+                </section>
+                <section>
+                    <header>
+                        <h2>CV / Resume</h2>
+                        <p>Upload your CV or resume file</p>
+                    </header>
+                    <section>
+                        <label className={styles.fileUpload}>[file icon] file-name.pdf [x]</label>
+                    </section>
+                </section>
+                <section>
+                    <header>
+                        <h2>Cover letter</h2>
+                        <p>Insert your cover letter here</p>
+                    </header>
+                    <section>
+                        <textarea
+                            rows="6"
+                            className="text optional form-control"
+                            name="candidate[cover_letter]"
+                            id="candidate_cover_letter"
+                            spellCheck="false"
+                        />
+                    </section>
+                </section>
+                <section>
+                    <header>
+                        <h2>Questions</h2>
+                        <p>Please fill in additional questions</p>
+                    </header>
+                    <section className={styles.questions}>
+                        <label>
+                            Are you aware that this role is based in Cornwall, South West United Kingdom? Please don't
+                            apply unless you can relocate or are already based here. We do not offer remote working.
+                            <input type="text" />
+                        </label>
+                        <div role="group">
+                            <h2>What is your citizenship status?</h2>
                             <label>
-                                Are you aware that this role is based in Cornwall, South West United Kingdom? Please
-                                don't apply unless you can relocate or are already based here. We do not offer remote
-                                working.
-                                <input type="text" />
+                                <input type="checkbox" value="UK Citizen" />
+                                UK Citizen
                             </label>
-                            <div role="group">
-                                <h2>What is your citizenship status?</h2>
-                                <label>
-                                    <input type="checkbox" value="UK Citizen" />
-                                    UK Citizen
-                                </label>
-                                <label>
-                                    <input type="checkbox" value="EU / EEA Citizen" />
-                                    EU / EEA Citizen
-                                </label>
-                                <label>
-                                    <input type="checkbox" value="Non EU / EEA Citizen" />
-                                    Non EU / EEA Citizen
-                                </label>
-                            </div>
-                            <div role="group">
-                                <h2>
-                                    Would you like us to email you about exciting new job opportunities, Headforwards
-                                    news and event information?
-                                </h2>
-                                <label>
-                                    <input name="contactMe" type="radio" value="Yes" />
-                                    Yes
-                                </label>
-                                <label>
-                                    <input name="contactMe" type="radio" value="'No'" />
-                                    No
-                                </label>
-                            </div>
-                        </section>
+                            <label>
+                                <input type="checkbox" value="EU / EEA Citizen" />
+                                EU / EEA Citizen
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Non EU / EEA Citizen" />
+                                Non EU / EEA Citizen
+                            </label>
+                        </div>
+                        <div role="group">
+                            <h2>
+                                Would you like us to email you about exciting new job opportunities, Headforwards news
+                                and event information?
+                            </h2>
+                            <label>
+                                <input name="contactMe" type="radio" value="Yes" />
+                                Yes
+                            </label>
+                            <label>
+                                <input name="contactMe" type="radio" value="'No'" />
+                                No
+                            </label>
+                        </div>
                     </section>
-                    <section>
-                        <section>
-                            <div role='group'>
+                </section>
+                <section>
+                    <section className={styles.submit}>
+                        <div role="group">
                             <label className={styles.fullWidth}>
-                                <input required="required"
-                                       type="checkbox"
-                                       value="212"
-                                       name="candidate[terms][]"
-                                       id="candidate_terms_212" />
+                                <input
+                                    required="required"
+                                    type="checkbox"
+                                    value="212"
+                                    name="candidate[terms][]"
+                                    id="candidate_terms_212"
+                                />
                                 I agree to the&nbsp;
-                                <Link to="/privacy-notice/"
-                                      target="_blank">Privacy Policy</Link>
+                                <Link to="/privacy-notice/" target="_blank">
+                                    Privacy Policy
+                                </Link>
                             </label>
-                                <button type='button' className={styles.submit}>Submit Application</button>
-                            </div>
-                        </section>
+                            <button type="button" className={styles.submit}>
+                                Submit Application
+                            </button>
+                        </div>
                     </section>
+                </section>
             </form>
         </Layout>
     );

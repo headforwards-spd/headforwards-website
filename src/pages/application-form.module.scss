@@ -5,16 +5,16 @@
     @include component-gutter;
 
     > section {
-        border-top: 1px solid #eee;
         @include columns-component;
         @include fontMediumVr;
         @media (min-width: $screen-md) {
 
             align-items: flex-start;
-            margin-bottom: 0;
+            margin-bottom: #{$gutter-large - $column-gutter/2};
         }
 
         &:last-child {
+            margin-bottom: 0;
             :last-child {
                 margin-bottom: 0;
             }
@@ -29,6 +29,11 @@
             h2 {
                 margin-bottom: 0;
             }
+
+            :last-child {
+                margin-bottom: 0;
+            }
+            margin-bottom: 1em;
         }
 
         input[type=checkbox], input[type=radio] {
@@ -36,9 +41,13 @@
             position: relative;
             height: 1em;
             width: 1em;
+            visibility: hidden;
             margin: 0 0.5em 0 0;
-            @media (min-width: $screen-md) {
-                margin-bottom: 0;
+            display: inline-block;
+            vertical-align: baseline;
+
+            &:before, &:after {
+                visibility: visible;
             }
 
             &:before {
@@ -46,22 +55,20 @@
                 content: '';
                 top: 0;
                 left: 0;
-                right: 0;
-                bottom: 0;
-                border: 1px solid;
-                background-color: white;
+                width:100%;
+                padding-bottom: 100%;
+                border: 1px solid $input-grey;
             }
 
             &:after {
                 position: absolute;
                 content: '';
-                background: white;
                 top: 3px;
                 left: 3px;
-                right: 3px;
-                bottom: 3px;
-                text-align: center;
+                width: calc(100% - 4px);
+                padding-bottom: calc(100% - 4px);
             }
+
             &:checked:after {
                 background: $grey-4;
             }
@@ -73,43 +80,48 @@
             }
         }
 
-        .fileUpload {
-            @media (min-width: $screen-md) {
-
-                flex-direction: row;
-            }
-            width: 100%;
-        }
-
         > section {
-            @media (min-width: $screen-md) {
-
-                width: calc((100% * 2 / 3));
-                margin-left: auto;
-            }
             display: flex;
+
             flex-direction: row;
             flex-wrap: wrap;
             margin-right: 0;
             @include fontMediumVr;
 
+            &:last-child {
+                margin-bottom: 0;
+            }
+
             @media (min-width: $screen-md) {
 
-                margin-bottom: $column-gutter/2;
+                &, &:last-child {
+                    width: calc((100% * 2 / 3));
+                    margin-left: auto;
+                    margin-bottom: calc(#{$column-gutter/2} - #{$rhythm-unit}em);
+                }
             }
 
             > label {
                 width: 100%;
+
+                &:last-child {
+                    input {
+                        margin-bottom: 0;
+                    }
+                }
+
                 @media (min-width: $screen-md) {
 
                     width: calc((100% / 2) - #{$column-gutter});
-                    margin: 0 $column-gutter/2 #{$rhythm-unit}em;
+                        margin: 0 $column-gutter/2 #{$rhythm-unit}em;
                 }
+
                 &.fullWidth {
                     width: calc((100% / 1) - #{$column-gutter});
                     flex-direction: row;
 
                 }
+
                 line-height: $rhythm-unit;
                 display: flex;
                 flex-direction: column;
@@ -118,15 +130,19 @@
             input {
                 padding: 0 $gutter-small/2;
                 line-height: #{1.5*$rhythm-unit}em;
-                margin: calc(#{$rhythm-unit/4}em - 1px) 0;
-                border: 1px solid;
+                border: 1px solid $input-grey;
+                margin-bottom: #{$rhythm-unit/2}em;
+                @media (min-width: $screen-md) {
+
+                    margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+                }
             }
 
             textarea {
                 height: auto;
                 line-height: $rhythm-unit;
                 padding: calc(#{$gutter-small/2} - 1px);
-                border: 1px solid red;
+                border: 1px solid $input-grey;
                 width: 100%;
                 @media (min-width: $screen-md) {
 
@@ -167,40 +183,97 @@
                 > * {
                     width: 100%;
                 }
-            }
 
-            [role="group"] {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: #{$rhythm-unit}em;
+                > label {
+                    input {
+                        margin-bottom: 0;
+                        @media (min-width: $screen-md) {
 
-                > * {
-                    @media (min-width:$screen-md) {
+                            margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+                        }
+                    }
 
-                        margin-left: $column-gutter/2;
-                        margin-right: $column-gutter/2;
+                    margin-bottom: #{$rhythm-unit}em;
+                }
+
+                [role="group"] {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: #{$rhythm-unit}em;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    > * {
+                        @media (min-width: $screen-md) {
+
+                            margin-left: $column-gutter/2;
+                            margin-right: $column-gutter/2;
+                        }
+                    }
+
+                    h2 {
+                        @include fontMediumVr;
+                        line-height: $rhythm-unit;
+                        font-weight: normal;
+
+                        & {
+                            margin-bottom: #{$rhythm-unit/2}em;
+                        }
+
+                        @media (min-width: $screen-md) {
+
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    label {
+                        cursor: pointer;
+
+                        line-height: $rhythm-unit;
+
+                        input {
+                            margin-bottom: 0;
+                            @media (min-width: $screen-md) {
+                                margin-bottom: #{($rhythm-unit - 1)/4}em;
+                            }
+                        }
                     }
                 }
+            }
 
-                h2 {
-                    @include fontMediumVr;
-                    line-height: $rhythm-unit;
-                    margin-bottom: #{$rhythm-unit}em;
-                    font-weight: normal;
+            .fileUpload {
+
+                align-items: flex-start;
+                flex-direction: row;
+                width: 100%;
+
+                button {
+                    flex-shrink: 0;
+                    margin-right: 0.5em;
                 }
+            }
+        }
+
+            .submit {
+
 
                 label {
-                    cursor: pointer;
-
-                    line-height: $rhythm-unit;
+                    display: block;
+                    margin-bottom: #{$rhythm-unit}em;
+                    @media (min-width: $screen-md) {
+                        margin-bottom: #{$rhythm-unit}em;
+                    }
+                    input {
+                        margin: 0 0.5em 0 0 ;
+                    }
                 }
 
                 button {
                     @include fontLarge;
-                    margin-top: #{$rhythm-unit}em;
                     padding: 0.5em;
                 }
             }
         }
     }
-}
