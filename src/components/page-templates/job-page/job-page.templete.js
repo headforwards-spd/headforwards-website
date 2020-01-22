@@ -7,12 +7,12 @@ import Link from '../../page-layout/link/link.component';
 export default JobPageTemplate;
 
 JobPageTemplate.propTypes = {
+    path: string.isRequired,
     description: string.isRequired,
     requirements: string.isRequired,
-    careers_apply_url: string.isRequired,
 };
 
-function JobPageTemplate({ description, requirements, careers_apply_url: applyUrl }) {
+function JobPageTemplate({ path, description, requirements }) {
     return (
         <>
             <section className={styles.jobDetails}>
@@ -29,7 +29,7 @@ function JobPageTemplate({ description, requirements, careers_apply_url: applyUr
                     </section>
                 )}
             </section>
-            <Link to={applyUrl} className={styles.apply}>
+            <Link to={`${path}/application-form/`} className={styles.apply}>
                 Apply
             </Link>
         </>

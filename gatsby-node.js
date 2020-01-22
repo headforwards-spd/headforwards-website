@@ -90,15 +90,26 @@ function createAllPages(createPage, { nodes: pages = [] }) {
 }
 
 function createAllJobs(createPage, { nodes: jobs = [] }) {
-    return Promise.all(
-        jobs.map(({ id, path }) => {
-            return createPage({
+    const promises = [];
+
+    jobs.forEach(({ id, path }) => {
+        promises.push(
+            createPage({
                 path: `/careers/jobs/${path}`,
                 component: resolve(`src/templates/job-page.js`),
                 context: { id },
-            });
-        })
-    );
+            })
+        );
+        promises.push(
+            createPage({
+                path: `/careers/jobs/${path}/application-form/`,
+                component: resolve(`src/templates/application-form-page.js`),
+                context: { id },
+            })
+        );
+    });
+
+    return Promise.all(promises);
 }
 
 function getData(graphql) {

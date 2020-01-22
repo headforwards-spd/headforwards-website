@@ -9,45 +9,15 @@ export default JobPage;
 JobPage.propTypes = {
     data: shape({
         job: shape({
-            description: string,
-            requirements: string,
-            careers_apply_url: string,
-            tags: string,
-            position: string,
-            education_code: string,
-            experience_code: string,
-            employment_type_code: string,
-            category_code: string,
-            department: string,
-            created: string,
+            title: string.isRequired,
+            subtitle: string,
         }),
     }).isRequired,
 };
 
-export const query = graphql`
-    query JobPage($id: String!) {
-        job: recruiteeOffer(id: { eq: $id }) {
-            title
-            subtitle
-            salary
-            description
-            requirements
-            careers_apply_url
-            tags
-            position
-            education_code
-            experience_code
-            employment_type_code
-            category_code
-            department
-            created(fromNow: true)
-        }
-    }
-`;
-
-function JobPage({ data }) {
+function JobPage({ path, data }) {
     const { job } = data;
-    const { title, subtitle, ...props } = job;
+    const { title, subtitle, ...templateProps } = job;
 
     const headerProps = {
         title,
@@ -56,7 +26,15 @@ function JobPage({ data }) {
 
     return (
         <Layout {...headerProps}>
-            <JobPageTemplate {...props} />
+            <JobPageTemplate {...templateProps} path={path} />
         </Layout>
     );
 }
+
+export const query = graphql`
+    query JobPage($id: String!) {
+        job: recruiteeOffer(id: { eq: $id }) {
+            ...JobFragment
+        }
+    }
+`;
