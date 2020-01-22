@@ -7,6 +7,7 @@ import JobPageTemplate from '../components/page-templates/job-page/job-page.temp
 export default JobPage;
 
 JobPage.propTypes = {
+    path: string.isRequired,
     data: shape({
         job: shape({
             title: string.isRequired,

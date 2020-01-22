@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../../page-layout/layout';
 import Link from '../../page-layout/link/link.component';
 import styles from './application-form.module.scss';
 
