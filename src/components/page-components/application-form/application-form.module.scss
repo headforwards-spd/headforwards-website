@@ -1,4 +1,4 @@
-@import "../../page-components/columns/columns";
+@import "../columns/columns";
 @import "../../../scss/mixins/typography";
 
 .applicationForm {
@@ -34,6 +34,10 @@
                 margin-bottom: 0;
             }
             margin-bottom: 1em;
+        }
+
+        input[type=file] {
+            display: none;
         }
 
         input[type=checkbox], input[type=radio] {
@@ -107,6 +111,10 @@
                 &:last-child {
                     input {
                         margin-bottom: 0;
+                        @media (min-width: $screen-md) {
+
+                            margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+                        }
                     }
                 }
 
@@ -139,6 +147,7 @@
             }
 
             textarea {
+                display: block;
                 height: auto;
                 line-height: $rhythm-unit;
                 padding: calc(#{$gutter-small/2} - 1px);
@@ -147,7 +156,23 @@
                 @media (min-width: $screen-md) {
 
                     width: calc((100% / 1) - #{$column-gutter});
-                    margin: -#{$gutter-small/2} $column-gutter/2 #{$rhythm-unit}em;
+                    margin: -#{$gutter-small/2} $column-gutter/2 calc(#{$rhythm-unit}em - #{$gutter-small/2});
+                }
+            }
+            [role=group] {
+                width: 100%;
+                @media (min-width: $screen-md) {
+
+                    width: calc((100% / 1) - #{$column-gutter});
+                }
+                > div {
+                    @include fontMedium;
+                    display: inline-block;
+                    line-height: #{$rhythm-unit}em;
+                    @media (min-width: $screen-md) {
+
+                        margin: 0 $column-gutter/2 #{$rhythm-unit}em;
+                    }
                 }
             }
 

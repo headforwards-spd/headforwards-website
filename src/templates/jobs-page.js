@@ -32,12 +32,6 @@ JobsPage.propTypes = {
     }).isRequired,
 };
 
-// CareersPage.propTypes = {
-//     data: shape({
-//         n
-//     }).isRequired,
-// };
-
 function JobsPage({ data }) {
     const { page, jobNodes } = data;
     const { frontmatter } = page;
@@ -59,7 +53,7 @@ function JobsPage({ data }) {
 
 export const query = graphql`
     query JobsPage($id: String!) {
-        jobNodes: allRecruiteeOffer(sort: { fields: created, order: DESC }) {
+        jobNodes: allRecruiteeOffer(sort: { fields: position, order: DESC }) {
             nodes {
                 id
                 title

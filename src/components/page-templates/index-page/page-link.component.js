@@ -32,7 +32,7 @@ function PageLink({ link, linkText, page }) {
         query {
             logo: file(name: { eq: "icon.white" }) {
                 childImageSharp {
-                    fluid(maxWidth: 100, maxHeight: 100, quality: 100) {
+                    fluid(maxWidth: 100, maxHeight: 100, quality: 85) {
                         ...GatsbyImageSharpFluid_withWebp_noBase64
                     }
                 }

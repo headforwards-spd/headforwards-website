@@ -11,7 +11,7 @@ export const PageFragment = graphql`
                 image {
                     publicURL
                     childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 100) {
+                        fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 85) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -34,7 +34,7 @@ export const PageFragment = graphql`
                     profilePic {
                         publicURL
                         childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                                 ...GatsbyImageSharpFluid_withWebp
                             }
                         }
@@ -59,7 +59,7 @@ export const PageFragment = graphql`
                     image {
                         publicURL
                         childImageSharp {
-                            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                                 ...GatsbyImageSharpFluid_withWebp
                             }
                         }
@@ -67,7 +67,7 @@ export const PageFragment = graphql`
                     imageSquare: image {
                         publicURL
                         childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                                 ...GatsbyImageSharpFluid_withWebp
                             }
                         }
@@ -76,7 +76,7 @@ export const PageFragment = graphql`
                 image {
                     publicURL
                     childImageSharp {
-                        fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                        fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -84,7 +84,7 @@ export const PageFragment = graphql`
                 imageSquare: image {
                     publicURL
                     childImageSharp {
-                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -92,7 +92,7 @@ export const PageFragment = graphql`
                 imagePostit: image {
                     publicURL
                     childImageSharp {
-                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                             ...GatsbyImageSharpFluid_withWebp_noBase64
                         }
                     }
@@ -102,7 +102,7 @@ export const PageFragment = graphql`
                     publicURL
                     name
                     childImageSharp {
-                        fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                        fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -111,7 +111,7 @@ export const PageFragment = graphql`
                     publicURL
                     name
                     childImageSharp {
-                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -120,7 +120,7 @@ export const PageFragment = graphql`
                     publicURL
                     name
                     childImageSharp {
-                        fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                        fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -129,7 +129,7 @@ export const PageFragment = graphql`
                     publicURL
                     name
                     childImageSharp {
-                        fluid(maxWidth: 100, maxHeight: 100, cropFocus: CENTER, quality: 100) {
+                        fluid(maxWidth: 100, maxHeight: 100, cropFocus: CENTER, quality: 85) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -137,7 +137,7 @@ export const PageFragment = graphql`
                 profilePic {
                     publicURL
                     childImageSharp {
-                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 100) {
+                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -159,7 +159,7 @@ export const PageFragment = graphql`
                             image {
                                 publicURL
                                 childImageSharp {
-                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 100) {
+                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 85) {
                                         ...GatsbyImageSharpFluid_withWebp
                                     }
                                 }
@@ -177,7 +177,7 @@ export const PageFragment = graphql`
                             image {
                                 publicURL
                                 childImageSharp {
-                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 100) {
+                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 85) {
                                         ...GatsbyImageSharpFluid_withWebp
                                     }
                                 }
@@ -195,7 +195,7 @@ export const PageFragment = graphql`
                             image {
                                 publicURL
                                 childImageSharp {
-                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 100) {
+                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 85) {
                                         ...GatsbyImageSharpFluid_withWebp
                                     }
                                 }

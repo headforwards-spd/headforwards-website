@@ -6,7 +6,7 @@ import styles from './contact-form.module.scss';
 
 const formFieldPropTypes = {
     name: string.isRequired,
-    label: string.isRequired,
+    label: string,
     disabled: bool,
     required: bool,
 };
@@ -33,17 +33,23 @@ Textarea.propTypes = formFieldPropTypes;
 Textarea.defaultProps = {
     disabled: false,
     required: false,
+    label: null,
 };
 export function Textarea({ label, disabled, required: isRequired, ...props }) {
     const [field, meta] = useField(props);
     const { name } = props;
 
-    return (
+    return label ? (
         <label htmlFor={name} className={styles.field}>
             {label} {isRequired && '*'}
             <textarea id={name} {...field} {...props} disabled={disabled} />
             <FormError {...meta} />
         </label>
+    ) : (
+        <>
+            <textarea id={name} {...field} {...props} disabled={disabled} />
+            <FormError {...meta} />
+        </>
     );
 }
 
