@@ -259,7 +259,10 @@
             .submit {
 
                 [role="group"] {
-                    margin: 0 $column-gutter/2;
+                    @media (min-width: $screen-md) {
+
+                        margin: 0 $column-gutter/2;
+                    }
                 }
 
                 label {

@@ -2,6 +2,8 @@ const moment = require('moment');
 const TurndownService = require('turndown');
 const fetch = require('node-fetch');
 const { minify } = require('html-minifier');
+const sanitizeHtml = require('sanitize-html');
+const pretty = require('pretty');
 
 const minifyOptions = {
     collapseWhitespace: true,
@@ -12,8 +14,29 @@ const minifyOptions = {
 
 const turndownService = new TurndownService();
 const getMarkdown = html => {
-    const minifiedHtml = minify(html, minifyOptions);
-    const markdown = turndownService.turndown(minifiedHtml);
+    const minifiedHtml = minify(html, minifyOptions)
+        .replace('\n', '')
+        .replace(/\s*<br>\s*/gm, '')
+        .replace(/>\s*/gm, '>')
+        .replace(/\s*</gm, '<')
+        .replace('<b>', '<strong>')
+        .replace('</b>', '</strong>')
+        .replace('<i>', '<em>')
+        .replace('</i>', '</em>')
+        .replace(/\s*<strong>\s*<strong>\s*/gm, '<strong>')
+        .replace(/\s*<\/strong>\s*<\/strong>\s*/gm, '</strong>')
+        .replace(/\s*<strong>\s*<em>\s*/gm, '<strong><em>')
+        .replace(/\s*<\/em>\s*<\/strong>\s*/gm, '</em></strong>')
+        .replace(/\s*<em>\s*<\/em>\s*/gm, '')
+        .replace(/\s*<strong>\s*<\/strong>\s*/gm, '')
+        .replace(/\s*<p>\s*<\/p>\s*/gm, '')
+        .replace(/\s*<li>\s*<p>\s*/gm, '<li>')
+        .replace(/\s*<\/p>\s*<\/li>\s*/gm, '</li>');
+
+    const sanitizedHtml = sanitizeHtml(minifiedHtml);
+    const prettyHtml = pretty(sanitizedHtml, { ocd: true });
+    const markdown = turndownService.turndown(prettyHtml);
+
     return markdown.replace(/\s*(?:\\n){2,}\s*(?:\\n){2,}\s*/g, '\n\n');
 };
 
