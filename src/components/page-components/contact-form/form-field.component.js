@@ -11,7 +11,7 @@ const formFieldPropTypes = {
     required: bool,
 };
 
-Input.propTypes = formFieldPropTypes;
+Input.propTypes = { ...formFieldPropTypes, label: string.isRequired };
 Input.defaultProps = {
     disabled: false,
     required: false,
@@ -42,8 +42,8 @@ export function Textarea({ label, disabled, required: isRequired, ...props }) {
     return label ? (
         <label htmlFor={name} className={styles.field}>
             {label} {isRequired && '*'}
-            <textarea id={name} {...field} {...props} disabled={disabled} />
             <FormError {...meta} />
+            <textarea id={name} {...field} {...props} disabled={disabled} />
         </label>
     ) : (
         <>
@@ -53,7 +53,7 @@ export function Textarea({ label, disabled, required: isRequired, ...props }) {
     );
 }
 
-Checkbox.propTypes = formFieldPropTypes;
+Checkbox.propTypes = { ...formFieldPropTypes, label: string.isRequired };
 Checkbox.defaultProps = {
     disabled: false,
     required: false,
@@ -64,7 +64,7 @@ export function Checkbox({ label, disabled, required: isRequired, ...props }) {
 
     return (
         <label htmlFor={name} className={`${styles.field} ${styles.checkbox}`}>
-            <input id={name} {...field} {...props} disabled={disabled} />
+            <input id={name} {...field} {...props} disabled={disabled} />g
             {label} {isRequired && '*'}
             <FormError {...meta} />
         </label>

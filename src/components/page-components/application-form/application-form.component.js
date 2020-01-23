@@ -5,13 +5,14 @@ import qs from 'querystring';
 import React, { Component, createRef } from 'react';
 import Reaptcha from 'reaptcha';
 import { object } from 'yup';
-import Link from '../../page-layout/link/link.component';
 import { Checkbox, Input, Textarea } from '../contact-form/form-field.component';
 import schema from './application-form.schema';
 import styles from './application-form.module.scss';
 
 export default class ApplicationForm extends Component {
     rcRef = createRef();
+
+    resetform = null;
 
     static propTypes = {
         formName: string.isRequired,
@@ -20,6 +21,8 @@ export default class ApplicationForm extends Component {
     state = {
         data: null,
         isSubmitting: false,
+        successMessage: null,
+        errorMessage: null,
     };
 
     onVerify(token) {
@@ -31,33 +34,43 @@ export default class ApplicationForm extends Component {
             url: '/',
         };
 
+        this.rcRef.current.reset();
+        this.setState({ isSubmitting: true });
+
         axios(options)
-            .then(console.info)
-            .catch(error => console.error('axios.catch', error))
-            .finally(() => this.setState({ isSubmitting: false, data: null }));
+            .then(
+                ({ status }) =>
+                    (status === 200 && Promise.resolve()) || Promise.reject(`${status} Error submitting form.`)
+            )
+            .then(() => new Promise(resolve => setTimeout(resolve, 1000)))
+            .then(() => this.resetform())
+            .catch(error => this.setState({ errorMessage: error }))
+            .finally(() => {
+                this.resetform = null;
+                this.setState({ isSubmitting: false, data: null });
+            });
     }
 
-    onSubmit(values) {
+    onSubmit(values, { resetForm }) {
         const { rcRef } = this;
 
-        this.setState({ isSubmitting: true });
+        this.resetform = resetForm;
 
         Promise.resolve({
             ...values,
             'bot-field': values['bot-field'],
             'form-name': values['form-name'],
         })
-            .then(data => this.setState({ data }))
+            .then(data => this.setState({ data, errorMessage: null, successMessage: null }))
             .then(() => rcRef.current.execute())
             .catch(error => {
-                this.setState({ isSubmitting: false });
+                this.resetform = null;
                 console.error('Reaptcha.execute', error);
-            });
+            })
+            .finally(console.info);
     }
 
     render() {
-        console.log({ props: this.props });
-
         const { options_phone: phoneOptions, options_cover_letter: coverLetterOptions } = this.props;
 
         const showPhone = phoneOptions !== 'off';
@@ -67,13 +80,16 @@ export default class ApplicationForm extends Component {
         const coverLetterRequired = coverLetterOptions === 'required';
 
         const { formName } = this.props;
-        const { isSubmitting } = this.state;
-        const { onVerify, rcRef } = this;
+        const { isSubmitting, successMessage, errorMessage } = this.state;
+        const { onVerify, onSubmit, rcRef } = this;
         const rcProps = {
             ref: rcRef,
             sitekey: '6Lc_M80UAAAAAAVKfHMS3d2MC9rGglvTEHm46wpA', // process.env.SITE_RECAPTCHA_KEY,
             size: 'invisible',
             onVerify: onVerify.bind(this),
+            onError: () => this.setState({ errorMessage: 'reCAPTCHA verfication error.' }),
+            onExpire: event => console.info('rcOnExpire', event),
+            onRender: event => console.info('rcOnRender', event),
         };
 
         const initialValues = {};
@@ -86,8 +102,6 @@ export default class ApplicationForm extends Component {
         phoneRequired && (validation.phone = validation.phone.required('This is required.'));
         coverLetterRequired && (validation.cover_letter = validation.cover_letter.required('This is required.'));
 
-        console.log({ coverLetterOptions });
-
         const formConfig = {
             initialValues: {
                 ...initialValues,
@@ -95,8 +109,10 @@ export default class ApplicationForm extends Component {
                 'form-name': formName,
             },
             validationSchema: object(validation),
-            onSubmit: this.onSubmit.bind(this),
+            onSubmit: onSubmit.bind(this),
         };
+
+        const submittingClass = isSubmitting ? styles.isSubmitting : '';
 
         return (
             <>
@@ -105,6 +121,7 @@ export default class ApplicationForm extends Component {
                     data-netlify="true"
                     data-netlify-recaptcha="true"
                     data-netlify-honeypot="bot-field"
+                    type="file"
                     hidden
                 >
                     {Object.keys(schema).map(key => (
@@ -113,7 +130,7 @@ export default class ApplicationForm extends Component {
                     <input name="bot-field" type="hidden" />
                 </form>
                 <Formik {...formConfig}>
-                    <Form className={styles.applicationForm} noValidate>
+                    <Form className={`${styles.applicationForm} ${submittingClass}`} noValidate>
                         <Field type="hidden" name="bot-field" />
                         <Field type="hidden" name="form-name" />
                         <section>
@@ -123,22 +140,10 @@ export default class ApplicationForm extends Component {
                             </header>
                             <section>
                                 <Input {...schema.name.field} disabled={isSubmitting} />
-                                {/* <label htmlFor="candidate-name"> */}
-                                {/*    Full name */}
-                                {/*    <input type="text" id="candidate-name" /> */}
-                                {/* </label> */}
                                 <Input {...schema.email.field} disabled={isSubmitting} />
-                                {/* <label htmlFor="candidate-email"> */}
-                                {/*    Email address */}
-                                {/*    <input type="email" id="candidate-email" /> */}
-                                {/* </label> */}
                                 {showPhone && (
                                     <Input {...schema.phone.field} disabled={isSubmitting} required={phoneRequired} />
                                 )}
-                                {/* <label htmlFor="candidate-phone"> */}
-                                {/*    Phone number */}
-                                {/*    <input type="tel" id="candidate-phone" /> */}
-                                {/* </label> */}
                             </section>
                         </section>
                         {/* <section> */}
@@ -202,17 +207,12 @@ export default class ApplicationForm extends Component {
                             <section className={styles.submit}>
                                 <div role="group">
                                     <Checkbox {...schema.privacy.field} disabled={isSubmitting} />
-                                    {/* <label className={styles.fullWidth} htmlFor="candidate-terms"> */}
-                                    {/*    <input required="required" type="checkbox" id="candidate-terms" /> */}
-                                    {/*    I agree to the&nbsp; */}
-                                    {/*    <Link to="/privacy-notice/" target="_blank"> */}
-                                    {/*        Privacy Policy */}
-                                    {/*    </Link> */}
-                                    {/* </label> */}
                                     <Reaptcha {...rcProps} />
                                     <button type="submit" className={styles.submit} disabled={isSubmitting}>
                                         Submit Application
                                     </button>
+                                    {errorMessage && <div>{errorMessage}</div>}
+                                    {successMessage && <div>{successMessage}</div>}
                                 </div>
                             </section>
                         </section>

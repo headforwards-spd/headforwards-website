@@ -1,6 +1,10 @@
 @import "../columns/columns";
 @import "../../../scss/mixins/typography";
 
+.isSubmitting {
+    background: red;
+}
+
 .applicationForm {
     @include component-gutter;
 
@@ -299,6 +303,10 @@
                     input {
                         margin: 0 0.5em 0 0 ;
                     }
+                }
+
+                :global(.g-recaptcha) {
+                    margin: 0 0 #{$rhythm-unit}em;
                 }
 
                 button {
