@@ -51,7 +51,7 @@ menu:
             link: 97f70000-0fac-11ea-b2ae-07531833e614
           - linkText: Our Benefits
             link: 22fe4f48-37d3-11ea-aec2-2e728ce88125
-      - linkText: Our tech stack
+      - linkText: Teams and tech
         link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
         children:
           - linkText: BI & Data
