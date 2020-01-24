@@ -71,7 +71,10 @@ function InfoPagePreview({ entry, getAsset }) {
 
     const [footerLinks] = rawFooterLinks || {};
     const { showImages: showFooterImages } = footerLinks || {};
-    footerLinks.links = [...Array(3)].map((v, k) => {
+
+    console.log({rawFooterLinks, footerLinks});
+
+    footerLinks && (footerLinks.links = [...Array(3)].map((v, k) => {
         return {
             showImages: showFooterImages,
             link: '/',
@@ -79,7 +82,7 @@ function InfoPagePreview({ entry, getAsset }) {
             image: { image: '/uploads/icon.black.png' },
             introduction: { text: 'Introduction...' },
         };
-    });
+    }));
 
     return (
         <Provider>
