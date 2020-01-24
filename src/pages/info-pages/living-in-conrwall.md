@@ -4,10 +4,10 @@ parent: careers
 type: info-page
 title: Living in cornwall
 image:
-    show: false
-    image: /uploads/icon.black.png
+  image: /uploads/careers 4.jpg
+  show: false
 introduction:
-    show: false
-    text: CHANGEME
+  show: false
+  text: CHANGEME
 ---
 
