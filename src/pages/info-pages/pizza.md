@@ -4,7 +4,7 @@ parent: careers
 type: info-page
 title: 'Pizza, beaches and beers'
 image:
-  image: /uploads/HF careers 1.jpg
+  image: /uploads/toby cooking.jpg
   show: false
 introduction:
   show: false
