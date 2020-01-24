@@ -4,7 +4,7 @@ parent: careers
 type: jobs-page
 title: Jobs at Headforwards
 image:
-  image: /uploads/icon.black.png
+  image: /uploads/HF careers 3.jpg
   show: false
 introduction:
   show: false
