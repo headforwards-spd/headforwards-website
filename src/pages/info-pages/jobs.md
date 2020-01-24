@@ -5,7 +5,7 @@ type: jobs-page
 title: Jobs at Headforwards
 image:
   image: /uploads/HF careers 3.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: CHANGEME
