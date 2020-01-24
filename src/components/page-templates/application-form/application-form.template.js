@@ -1,6 +1,6 @@
 import { arrayOf, string } from 'prop-types';
 import React from 'react';
-import ApplicationForm from '../../page-components/application-form/application-form.component';
+import ApplicationForm from '../../page-components/forms/application-form/application-form.component';
 
 export default ApplicationFormTemplate;
 

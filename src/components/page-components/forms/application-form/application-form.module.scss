@@ -1,0 +1,209 @@
+@import "../../columns/columns";
+@import "../../../../scss/mixins/typography";
+
+.applicationForm {
+    @include component-gutter;
+    @include fontMediumVr;
+
+    transition: opacity 100ms ease;
+
+    &.isSubmitting {
+        opacity: 0.5;
+    }
+
+    abbr {
+        text-decoration: none;
+        color: $error-color;
+    }
+
+    > section {
+        @include columns-component;
+        margin-bottom: 0;
+
+        @media (min-width: $screen-md) {
+
+            align-items: flex-start;
+            margin-bottom: calc(#{$gutter-large - $column-gutter/2} - #{$rhythm-unit}em);
+        }
+
+        header {
+            @media (min-width: $screen-md) {
+
+                width: calc((100% / 3) - #{$column-gutter});
+            }
+
+            h2 {
+                margin-bottom: 0;
+            }
+
+            :last-child {
+                margin-bottom: 0;
+            }
+
+            margin-bottom: 1em;
+        }
+
+        > section {
+            margin-bottom: 0;
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-right: 0;
+
+            @media (min-width: $screen-md) {
+
+                &, &:last-child {
+                    width: calc((100% * 2 / 3));
+                    margin-left: auto;
+                    margin-bottom: calc(#{$column-gutter/2} - #{$rhythm-unit}em);
+                }
+            }
+
+            > label {
+                width: 100%;
+
+                @media (min-width: $screen-md) {
+
+                    width: calc((100% / 2) - #{$column-gutter});
+                    margin-left: $column-gutter/2;
+                    margin-right: $column-gutter/2;
+                    //#{$rhythm-unit}em;
+                }
+
+                &.fullWidth {
+                    width: 100%;
+
+                    textarea {
+                        width: 100%;
+                        @media (min-width: $screen-md) {
+
+                            padding: calc(#{$rhythm-unit*3/4}em) $gutter-small;
+                            margin: calc(#{$rhythm-unit/4}em - 1px) 0;
+                        }
+                    }
+                }
+            }
+
+            button {
+                cursor: pointer;
+            //    @include fontMedium;
+            //    margin-top: calc(#{($rhythm-unit - 1)/2}em - 0.5em);
+            //    margin-bottom: 0;
+                line-height: 1;
+                background-color: $orange;
+                color: white;
+                border: none;
+                display: flex;
+                align-items: center;
+                padding: 0.75em $gutter-small/2;
+                @include arrow-link;
+            //
+            //    @media (min-width: $screen-md) {
+            //        margin-right: 0.5em;
+            //
+            //    }
+            //
+                &:after {
+                    content: url(/images/hf-arrow.white.svg);
+                }
+
+            //    &.submit {
+            //        @include fontLarge;
+            //    }
+            }
+
+            &.questions {
+                > * {
+                    width: 100%;
+                }
+
+                > label {
+                    input {
+                        @media (min-width: $screen-md) {
+
+                            margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+                        }
+                    }
+                }
+            }
+
+            [role="group"] {
+                > * {
+                    @media (min-width: $screen-md) {
+
+                        margin-left: $column-gutter/2;
+                        margin-right: $column-gutter/2;
+                    }
+                }
+            }
+
+            .fileUpload {
+                @include fontMediumVr;
+                width: 100%;
+
+                [type=file] {
+                    display: none;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+                    @media (min-width: $screen-md) {
+                        align-items: center;
+                    }
+                }
+
+                button {
+                    flex-shrink: 0;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+
+        .submit {
+
+            > label {
+                width: 100%;
+                @media (min-width: $screen-md) {
+                    width: 100%;
+                }
+            }
+
+            :global(.g-recaptcha) {
+                margin: 0;
+            }
+
+            > div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                @media (min-width: $screen-md) {
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+
+                button {
+                    @include fontLarge;
+                    justify-content: space-between;
+                    padding: 0.5em;
+                    flex-shrink: 0;
+                }
+
+                .messages {
+                    margin-top: #{$rhythm-unit}em;
+                }
+
+                @media (min-width: $screen-md) {
+                    flex-direction: row;
+                    .messages {
+                        margin: 0.5em $column-gutter/2;
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
+}

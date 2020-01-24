@@ -1,0 +1,47 @@
+@import "../../../scss/mixins/typography";
+
+@mixin checkbox{
+        @include fontMediumVr;
+        position: relative;
+        height: 1em;
+        width: 1em;
+        visibility: hidden;
+        & {
+            margin: 0 0.5em 0 0;
+        }
+        display: inline-block;
+        vertical-align: baseline;
+
+        &:before, &:after {
+            visibility: visible;
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width:100%;
+            padding-bottom: 100%;
+            border: 1px solid $input-grey;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: 3px;
+            width: calc(100% - 4px);
+            padding-bottom: calc(100% - 4px);
+        }
+
+        &:checked:after {
+            background: $grey-4;
+        }
+
+        &[type=radio] {
+            &:before, &:after {
+                border-radius: 100%;
+            }
+        }
+}

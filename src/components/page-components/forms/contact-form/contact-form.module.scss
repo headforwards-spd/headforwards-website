@@ -1,0 +1,149 @@
+@import "../../../../scss/mixins/typography";
+@import "../forms";
+
+.field {
+    display: block;
+    @include fontMedium;
+    line-height: $rhythm-unit;
+    padding-bottom: #{$rhythm-unit}em;
+    margin-bottom: #{$rhythm-unit/2}em;
+    @media (min-width: $screen-md) {
+        margin-bottom: #{$rhythm-unit}em;
+    }
+
+    &[role=group] {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+
+        h2 {
+            @include fontMediumVr;
+            line-height: $rhythm-unit;
+            font-weight: normal;
+
+            & {
+                margin-bottom: #{$rhythm-unit/2}em;
+            }
+
+            @media (min-width: $screen-md) {
+
+                margin-bottom: 0;
+            }
+        }
+
+        label {
+            cursor: pointer;
+            margin-bottom: 0;
+            &:not(:last-child) {
+                padding-bottom: 0;
+            }
+            line-height: $rhythm-unit;
+
+            input {
+                margin-bottom: 0;
+                @media (min-width: $screen-md) {
+                    margin-bottom: #{($rhythm-unit - 1)/4}em;
+                }
+            }
+        }
+    }
+
+    abbr {
+        text-decoration: none;
+        color: red;
+    }
+    input[type=checkbox], input[type=radio] {
+        @include checkbox;
+    }
+
+    &.file {
+        width: 100%;
+        div:not(.error) {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+
+            button {
+                flex-shrink: 0;
+                margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+                padding: 0 0.5em;
+            }
+
+            input[type=text] {
+                border-left: none;
+            }
+            &.hasValue {
+                input[type=text] {
+                    border-right: none;
+                }
+            }
+            input[type=file] {
+                z-index: 10;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            button:last-child {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                z-index: 20;
+                width: 2em;
+                &:after {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &.hasError {
+        padding-bottom: 0;
+        input, textarea {
+            &, &:before {
+                border-color: $error-color;
+            }
+        }
+    }
+
+    input, textarea {
+        @include fontMedium;
+        width: 100%;
+        border: 1px solid $input-grey;
+        margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+    }
+
+    input {
+        padding: 0 $gutter-small/2;
+        line-height: #{1.5*$rhythm-unit}em;
+    }
+
+    textarea {
+        display: block;
+        padding: calc(#{$gutter-small/2} - 1px);
+        line-height: $rhythm-unit;
+
+        @media (min-width: $screen-md) {
+            width: calc((100% / 1) - #{$column-gutter});
+            margin: -#{$gutter-small/2} $column-gutter/2 calc(#{$rhythm-unit}em - #{$gutter-small/2});
+        }
+    }
+
+    .error {
+        font-size: 0.85em;
+        width: 100%;
+        color: $error-color;
+        text-align: right;
+        min-height: #{$rhythm-unit/0.85}em;
+    }
+    &.checkbox, &[role=group] {
+        .error {
+            text-align: left;
+        }
+    }
+}

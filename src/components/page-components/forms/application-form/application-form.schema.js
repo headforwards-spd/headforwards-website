@@ -1,4 +1,4 @@
-import { string } from 'yup';
+import { string, object, mixed } from 'yup'
 
 const schema = {
     name: {
@@ -8,7 +8,7 @@ const schema = {
             type: 'text',
             required: true,
         },
-        validation: string().required('This is required.'),
+        validation: string().required('This field is Required.'),
     },
     email: {
         field: {
@@ -19,7 +19,7 @@ const schema = {
         },
         validation: string()
             .email('Must be a valid email.')
-            .required('This is required.'),
+            .required('This field is Required.'),
     },
     phone: {
         field: {
@@ -29,9 +29,29 @@ const schema = {
         },
         validation: string(),
     },
+    photo: {
+        field: {
+            name: 'photo',
+            label: 'Photo',
+            type: 'file',
+            accept: '.png,.jpg,.jpeg',
+            placeholder: 'We accept PNG, .JPG and .JPEG files',
+        },
+        validation: string(),
+    },
+    cv: {
+        field:      {
+            name:        'cv',
+            type:        'file',
+            accept:      '.doc,.docx,.pdf,.odt,.rtf,.txt,.png,.jpg',
+            placeholder: 'We accept PDF, DOC, DOCX, JPG and PNG files',
+        },
+        validation: string(),
+    },
     cover_letter: {
         field: {
             name: 'cover_letter',
+            // label: 'Cover letter',
             type: 'textarea',
             rows: 6,
         },
@@ -41,6 +61,7 @@ const schema = {
         field: {
             name: 'privacy',
             label: 'I agree to the terms outlined in the privacy policy.',
+            value: 'I agree to the terms outlined in the privacy policy.',
             type: 'checkbox',
             required: true,
         },

@@ -49,7 +49,14 @@ function Image({ image, alt, ratio, className = '', ...props }) {
     return (
         <div className={`${styles.imageWrapper} ${className}`} {...props}>
             <div className={styles.padder} style={{ paddingBottom: ratio }} />
-            <img {...{ src, alt }} className={styles.image} alt={alt} />
+            <img
+                {...{
+                    src,
+                    alt,
+                }}
+                className={styles.image}
+                alt={alt}
+            />
         </div>
     );
 }

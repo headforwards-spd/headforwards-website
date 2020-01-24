@@ -22,42 +22,36 @@ body {
         }
 
     }
-    font-family: "FS Albert Web", Arial, sans-serif;
+     font-family: "FS Albert Web", Arial, sans-serif;
 
-    > div {
+    > div > div {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
 
-        > div {
+        > header, > footer {
+            flex-shrink: 0;
+        }
 
-            &#gatsby-focus-wrapper {
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-                overflow-x: hidden;
+        > main {
+            flex-grow: 1;
+        }
+
+        > header > *,
+        > main,
+        > footer > ul,
+        > footer > address,
+        > footer > section > * {
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 $page-gutter-sm;
+            @media(min-width: $screen-md) {
+                padding: 0 $page-gutter-md;
             }
-
-            > header, > footer {
-                flex-shrink: 0;
-            }
-
-            > main {
-                flex-grow: 1;
-            }
-
-            > header > *,
-            > main,
-            > footer > ul,
-            > footer > address,
-            > footer > section > * {
-                margin: 0 auto;
-                width: 100%;
-                padding: 0 $page-gutter-sm;
-                @media(min-width: $screen-md) {
-                    padding: 0 $page-gutter-md;
-                }
-                @media(min-width: $screen-lg) {
-                    max-width: calc(#{$max_width} + #{2*$page-gutter-lg});
-                    padding: 0 $page-gutter-lg;
-                }
+            @media(min-width: $screen-lg) {
+                max-width: calc(#{$max_width} + #{2*$page-gutter-lg});
+                padding: 0 $page-gutter-lg;
             }
         }
     }

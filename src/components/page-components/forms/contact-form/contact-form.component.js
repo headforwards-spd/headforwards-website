@@ -6,7 +6,7 @@ import { object } from 'yup';
 import axios from 'axios';
 import qs from 'querystring';
 import schema from './contact-form.schema';
-import { Input, Textarea, Checkbox } from './form-field.component';
+import { Input, Textarea, Checkbox } from '../form-field.component';
 
 export default class ContactForm extends Component {
     rcRef = createRef();

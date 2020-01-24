@@ -72,17 +72,16 @@ function InfoPagePreview({ entry, getAsset }) {
     const [footerLinks] = rawFooterLinks || {};
     const { showImages: showFooterImages } = footerLinks || {};
 
-    console.log({rawFooterLinks, footerLinks});
-
-    footerLinks && (footerLinks.links = [...Array(3)].map((v, k) => {
-        return {
-            showImages: showFooterImages,
-            link: '/',
-            title: `Link ${k + 1}`,
-            image: { image: '/uploads/icon.black.png' },
-            introduction: { text: 'Introduction...' },
-        };
-    }));
+    footerLinks &&
+        (footerLinks.links = [...Array(3)].map((v, k) => {
+            return {
+                showImages: showFooterImages,
+                link: '/',
+                title: `Link ${k + 1}`,
+                image: { image: '/uploads/icon.black.png' },
+                introduction: { text: 'Introduction...' },
+            };
+        }));
 
     return (
         <Provider>

@@ -58,6 +58,7 @@ const schema = {
         field: {
             name: 'privacy',
             label: 'I agree to the terms outlined in the privacy policy.',
+            value: 'I agree to the terms outlined in the privacy policy.',
             type: 'checkbox',
             required: true,
         },

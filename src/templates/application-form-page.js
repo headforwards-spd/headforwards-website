@@ -14,7 +14,11 @@ ApplicationFormPage.propTypes = {
     }).isRequired,
 };
 
-function ApplicationFormPage({ data }) {
+function ApplicationFormPage(props) {
+
+    console.log({props});
+
+    const { data } = props;
     const { form } = data;
     const { title: subtitle, ...templateProps } = form;
 

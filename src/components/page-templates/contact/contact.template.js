@@ -1,6 +1,6 @@
 import { string } from 'prop-types';
 import React from 'react';
-import ContactForm from '../../page-components/contact-form/contact-form.component';
+import ContactForm from '../../page-components/forms/contact-form/contact-form.component';
 import styles from './contact.module.scss';
 
 const contactPropTypes = {
