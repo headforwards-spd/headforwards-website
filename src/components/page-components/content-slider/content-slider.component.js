@@ -1,4 +1,4 @@
-import { shape, string, arrayOf } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import { ReactComponent as Arrow } from '../../../../static/images/hf-arrow.svg';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, arrayOf } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import BlogArticle, { BlogArticlePropType } from './blog-article.component';
 import styles from './blog-post-columns.module.scss';
 

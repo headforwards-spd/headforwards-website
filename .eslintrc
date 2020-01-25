@@ -22,6 +22,9 @@
         "sourceType":                  "module"
     },
     "rules":         {
+        "sort-imports": [
+            "error"
+        ],
         "no-param-reassign":            [
             "error",
             {

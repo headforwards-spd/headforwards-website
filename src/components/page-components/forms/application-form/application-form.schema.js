@@ -1,4 +1,4 @@
-import { string, object, mixed } from 'yup'
+import { mixed, object, string } from 'yup';
 
 const schema = {
     name: {
@@ -40,10 +40,10 @@ const schema = {
         validation: string(),
     },
     cv: {
-        field:      {
-            name:        'cv',
-            type:        'file',
-            accept:      '.doc,.docx,.pdf,.odt,.rtf,.txt,.png,.jpg',
+        field: {
+            name: 'cv',
+            type: 'file',
+            accept: '.doc,.docx,.pdf,.odt,.rtf,.txt,.png,.jpg',
             placeholder: 'We accept PDF, DOC, DOCX, JPG and PNG files',
         },
         validation: string(),

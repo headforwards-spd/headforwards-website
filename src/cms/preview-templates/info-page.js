@@ -1,4 +1,4 @@
-import { func, shape, string, bool } from 'prop-types';
+import { bool, func, shape, string } from 'prop-types';
 import React from 'react';
 import { Provider } from 'unstated';
 import * as uuid from 'uuid';

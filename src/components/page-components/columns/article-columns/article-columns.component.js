@@ -1,4 +1,4 @@
-import { shape, string, arrayOf } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 import Article, { ArticlePropType } from './article.component';
 import styles from './article-columns.module.scss';

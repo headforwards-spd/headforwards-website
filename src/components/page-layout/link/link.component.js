@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOfType, arrayOf, node } from 'prop-types';
+import { arrayOf, node, oneOfType, shape, string } from 'prop-types';
 import { Link as GatsbyLink } from 'gatsby';
 
 const linkPropTypes = {

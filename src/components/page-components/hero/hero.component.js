@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, bool, arrayOf, any } from 'prop-types';
+import { any, arrayOf, bool, shape, string } from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import Quote from '../quote/quote.component';
 import styles from './hero.module.scss';

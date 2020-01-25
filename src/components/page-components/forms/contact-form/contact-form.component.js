@@ -1,12 +1,12 @@
 import { string } from 'prop-types';
 import React, { Component, createRef } from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Field, Form, Formik } from 'formik';
 import Reaptcha from 'reaptcha';
 import { object } from 'yup';
 import axios from 'axios';
 import qs from 'querystring';
 import schema from './contact-form.schema';
-import { Input, Textarea, Checkbox } from '../form-field.component';
+import { Checkbox, Input, Textarea } from '../form-field.component';
 
 export default class ContactForm extends Component {
     rcRef = createRef();

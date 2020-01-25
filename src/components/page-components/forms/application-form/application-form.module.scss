@@ -5,11 +5,9 @@
     @include component-gutter;
     @include fontMediumVr;
 
-    transition: opacity 100ms ease;
+    transition: opacity 250ms ease;
 
-    &.isSubmitting {
-        opacity: 0.5;
-    }
+
 
     abbr {
         text-decoration: none;
@@ -190,6 +188,8 @@
                     justify-content: space-between;
                     padding: 0.5em;
                     flex-shrink: 0;
+
+                    transition: all 250ms ease;
                 }
 
                 .messages {
@@ -199,10 +199,44 @@
                 @media (min-width: $screen-md) {
                     flex-direction: row;
                     .messages {
-                        margin: 0.5em $column-gutter/2;
+                        margin: 0 $column-gutter/2;
                         flex-grow: 1;
                     }
                 }
+            }
+
+            .messages {
+                .error {
+                    display: flex;
+                    flex-direction: row;
+                    svg {
+                        color: $error-color;
+                        margin-right: 0.5em;
+                        flex-shrink: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    &.error .submit {
+        button {
+            background: $input-grey;
+            opacity: 0.5;
+        }
+    }
+
+    &.isSubmitting {
+        opacity: 0.5;
+
+        .submit button {
+            svg {
+                height: 0.8em;
+                width: 0.8em;
+                margin-left: 1em;
+            }
+            &:after {
+                content: none;
             }
         }
     }

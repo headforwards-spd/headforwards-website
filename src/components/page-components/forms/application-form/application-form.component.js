@@ -1,3 +1,5 @@
+import { faSpinner, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import { Field, Form, Formik } from 'formik';
 import { string } from 'prop-types';
@@ -5,6 +7,7 @@ import * as Yup from 'yup';
 import qs from 'querystring';
 import React, { Component, createRef } from 'react';
 import Reaptcha from 'reaptcha';
+import Link from '../../../page-layout/link/link.component';
 import { Checkbox, File, Input, Textarea } from '../form-field.component';
 import schema from './application-form.schema';
 import styles from './application-form.module.scss';
@@ -28,23 +31,32 @@ export default class ApplicationForm extends Component {
 
     onVerify(token) {
         const { data } = this.state;
-        const {'bot-field':botField, 'form-name':formName, name='', email='', phone='', cv='', cover_letter=''} = data;
+        const {
+            'bot-field': botField,
+            'form-name': formName,
+            name = '',
+            email = '',
+            phone = '',
+            cv = '',
+            cover_letter = '',
+        } = data;
         const questions = Object.keys(data).filter(key => key.startsWith('q-'));
 
-        const formData = new FormData;
+        const formData = new FormData();
 
-        Object.keys({ name, email, phone, cv, cover_letter})
-              .forEach(key => formData.append(`candidate[${key}]`, data[key]));
+        Object.keys({ name, email, phone, cv, cover_letter }).forEach(key => formData.append(`${key}`, data[key]));
         questions.forEach((key, index) => {
             const id = key.replace('q-', '');
             const content = data[key];
 
-            formData.append(`candidate[open_question_answers_attributes][${index}][open_question_id]`, id);
-            if(typeof content === 'string') {
-                formData.append(`candidate[open_question_answers_attributes][${index}][content]`, content);
-            } else {
-                content.map(value => formData.append(`candidate[open_question_answers_attributes][${index}][][multi_content]`, value));
-            }
+            formData.append(`questions[${id}]`, content);
+
+            // formData.append(`candidate[open_question_answers_attributes][${index}][open_question_id]`, id);
+            // if(typeof content === 'string') {
+            //     formData.append(`candidate[open_question_answers_attributes][${index}][content]`, content);
+            // } else {
+            //     content.map(value => formData.append(`candidate[open_question_answers_attributes][${index}][][multi_content]`, value));
+            // }
         });
 
         formData.append('bot-field', botField);
@@ -56,7 +68,7 @@ export default class ApplicationForm extends Component {
             headers: { 'Content-Type': 'multipart/form-data' },
             // data: new FormData({ ...data, 'g-recaptcha-response': token }),
             data: formData,
-            url: '/',
+            url: 'https://headforwards-website2.netlify.com/',
         };
 
         this.rcRef.current.reset();
@@ -67,9 +79,14 @@ export default class ApplicationForm extends Component {
                 ({ status }) =>
                     (status === 200 && Promise.resolve()) || Promise.reject(`${status} Error submitting form.`)
             )
-            .then(() => new Promise(resolve => setTimeout(resolve, 5000)))
+            .then(() => new Promise(resolve => setTimeout(resolve, 10000)))
             .then(() => this.resetform())
-            .catch(error => this.setState({ errorMessage: error }))
+            .catch(error => {
+                this.setState({
+                    errorMessage: 'There was an error trying to send your message. Please try again later.',
+                });
+                console.error(error);
+            })
             .finally(() => {
                 this.resetform = null;
                 this.setState({ isSubmitting: false, data: null });
@@ -117,7 +134,7 @@ export default class ApplicationForm extends Component {
         const showCv = cvOptions !== 'off';
         const cvRequired = true || cvOptions === 'required';
 
-        const { formName:baseFormName } = this.props;
+        const { formName: baseFormName } = this.props;
         const formName = `${baseFormName}-${path}`;
         const { isSubmitting, successMessage, errorMessage } = this.state;
         const { onVerify, onSubmit, rcRef } = this;
@@ -169,25 +186,40 @@ export default class ApplicationForm extends Component {
                     data-netlify="true"
                     data-netlify-recaptcha="true"
                     data-netlify-honeypot="bot-field"
-                    type="file"
                     hidden
                 >
                     {Object.keys(schema).map(key => (
-                        <input key={key} type="text" name={key} />
+                        <input key={key} type={['photo', 'cv'].includes(key) ? 'file' : 'text'} name={key} />
                     ))}
-                    {questions.length &&
+                    {!!questions.length &&
                         questions.map(question => (
-                            <input key={question.id} type="text" name={`questions[${question.id}]`} />
+                            <input key={question.id} type='text' name={`questions[${question.id}]`} />
                         ))}
                     <input name="bot-field" type="hidden" />
                 </form>
                 <Formik {...formConfig}>
-                    {({ handleSubmit, values, errors }) => {
+                    {props => {
+                        const { handleSubmit, isValid } = props;
+
+                        const hasError = !isValid;
+
+                        const errorClass = hasError ? styles.error : '';
 
                         return (
                             <Form
                                 onSubmit={handleSubmit}
-                                className={`${styles.applicationForm} ${submittingClass}`}
+                                onChange={() => {
+                                    const { errorMessage: currentError, successMessage: currentSuccess } = this.state;
+
+                                    console.log('onchange', { currentError, currentSuccess });
+
+                                    (currentError || currentSuccess) &&
+                                        this.setState({
+                                            errorMessage: null,
+                                            successMessage: null,
+                                        });
+                                }}
+                                className={`${styles.applicationForm} ${errorClass} ${submittingClass}`}
                                 noValidate
                             >
                                 <Field type="hidden" name="bot-field" />
@@ -226,11 +258,7 @@ export default class ApplicationForm extends Component {
                                             <p>Upload your CV or resume file</p>
                                         </header>
                                         <section>
-                                            <File
-                                                {...schema.cv.field}
-                                                required={cvRequired}
-                                                disabled={isSubmitting}
-                                            />
+                                            <File {...schema.cv.field} required={cvRequired} disabled={isSubmitting} />
                                         </section>
                                     </section>
                                 )}
@@ -276,11 +304,27 @@ export default class ApplicationForm extends Component {
                                             <Reaptcha {...rcProps} className={styles.recaptcha} />
                                             <button type="submit" disabled={isSubmitting}>
                                                 Submit application
+                                                {isSubmitting && <FontAwesomeIcon icon={faSpinner} spin />}
                                             </button>
                                             <div className={styles.messages}>
-                                                <abbr title="required">*&nbsp;</abbr>
-                                                required fields
-                                                {errorMessage && <div>{errorMessage}</div>}
+                                                {isValid && !errorMessage && !successMessage && (
+                                                    <>
+                                                        <abbr title="required">*&nbsp;</abbr>
+                                                        required fields
+                                                    </>
+                                                )}
+                                                {hasError && (
+                                                    <div className={styles.error}>
+                                                        <FontAwesomeIcon icon={faTimesCircle} size="lg" />
+                                                        One or more fields have an error.
+                                                    </div>
+                                                )}
+                                                {errorMessage && (
+                                                    <div className={styles.error}>
+                                                        <FontAwesomeIcon icon={faTimesCircle} size="lg" />
+                                                        {errorMessage}
+                                                    </div>
+                                                )}
                                                 {successMessage && <div>{successMessage}</div>}
                                             </div>
                                         </div>

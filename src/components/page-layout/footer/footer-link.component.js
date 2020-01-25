@@ -1,4 +1,4 @@
-import { bool, string, shape } from 'prop-types';
+import { bool, shape, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import Image, { ImageSrcPropType } from '../image/image.component';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text, object, boolean } from '@storybook/addon-knobs';
+import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import generateMenu from '../../../lib/generate-menu';
 import generateImage from '../../../lib/generate-image';
 import Navbar from './navbar.component';

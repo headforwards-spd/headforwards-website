@@ -1,3 +1,5 @@
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useField } from 'formik';
 import { bool, string } from 'prop-types';
 import React from 'react';
@@ -116,18 +118,17 @@ export function File({ label, required: isRequired, ...props }) {
     const [field, meta, actions] = useField(props);
     const { name, placeholder } = props;
     const { touched, error } = meta;
-    const {setValue} = actions;
-    const {value} = field;
-    const {name: fileName=''} = value || {};
+    const { setValue } = actions;
+    const { value } = field;
+    const { name: fileName = '' } = value || {};
     const hasLabel = !!label;
     const errorClass = touched && error ? styles.hasError : '';
 
     const inputClass = value ? styles.hasValue : '';
 
     const handleFileChange = e => {
-
-        const {target} = e || {};
-        const {files} = target || {};
+        const { target } = e || {};
+        const { files } = target || {};
         const [file] = files;
 
         !!file && setValue(file);
@@ -144,8 +145,12 @@ export function File({ label, required: isRequired, ...props }) {
             <div className={`${inputClass}`}>
                 <button type="button">Add file</button>
                 <input type="text" readOnly value={fileName} placeholder={placeholder} />
-                <input id={name} type='file' onChange={handleFileChange} />
-                {!!fileName && <button type='button' onClick={() => setValue('')}>x</button>}
+                <input id={name} type="file" value="" onChange={handleFileChange} />
+                {!!fileName && (
+                    <button type="button" onClick={() => setValue('')}>
+                        <FontAwesomeIcon icon={faTrash} />
+                    </button>
+                )}
             </div>
             <FormError {...meta} />
         </label>

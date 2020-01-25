@@ -15,8 +15,7 @@ ApplicationFormPage.propTypes = {
 };
 
 function ApplicationFormPage(props) {
-
-    console.log({props});
+    console.log({ props });
 
     const { data } = props;
     const { form } = data;

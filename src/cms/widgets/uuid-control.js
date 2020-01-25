@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as uuid from 'uuid';
-import { string, func } from 'prop-types';
+import { func, string } from 'prop-types';
 
 const uuidControlPropTypes = {
     value: string,

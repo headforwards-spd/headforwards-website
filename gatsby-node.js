@@ -44,6 +44,16 @@ exports.onCreateNode = ({ node, actions }) => {
     return Promise.resolve();
 };
 
+exports.onCreateWebpackConfig = ({ actions }) => {
+    actions.setWebpackConfig({
+        devServer: {
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+            },
+        },
+    });
+};
+
 function createAllIndexPages(createPage, { menu: pages }) {
     const promises = [];
 

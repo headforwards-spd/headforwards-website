@@ -105,11 +105,14 @@
         bottom: -$gutter-small;
         height: calc(100% - #{$column-gutter/2});
 
-        @include alphaBackgroundColor($orange, 0.75);
 
-        padding: $gutter-small;
+        background-color: rgba(orange, 0.5);
+        border: 1px rgba($orange, 0.1) solid;
+        border-left: $column-gutter/2 $orange solid;
+        border-bottom: $column-gutter/2 $orange solid;
+
+        padding: $column-gutter $column-gutter $column-gutter/2 $column-gutter/2;
         @media(min-width: $screen-md) {
-            padding: $column-gutter;
             margin-bottom: 0;
         }
     }
