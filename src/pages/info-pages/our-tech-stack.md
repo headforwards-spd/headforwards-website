@@ -20,7 +20,7 @@ components:
           Our most popular languages are C#, Python, Perl, PHP and JavaScript.
 
 
-          Specifi business teams tend to concentrate on teh languages that are
+          Specifi business teams tend to concentrate on the languages that are
           most suited for their client.
         type: markdown-component
     isPostit: false
