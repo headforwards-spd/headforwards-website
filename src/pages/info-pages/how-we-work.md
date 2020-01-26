@@ -4,7 +4,7 @@ type: index-page
 title: How we work
 image:
   image: /uploads/head-11.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: CHANGEME
