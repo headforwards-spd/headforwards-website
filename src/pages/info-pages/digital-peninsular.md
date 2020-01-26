@@ -14,25 +14,33 @@ introduction:
 components:
   - content:
       - text: >-
-          Cornwall has more Fibre to Premises than any other region in the UK,
-          with speeds of over 300MBPS and the highest usage in the UK This has
-          contributed to the thriving tech scene here. 
+          As one of the fastest growing tech hubs in the UK, Cornwall has been a
+          key part of the success of Headforwards.
 
 
-          Cornwall has a history of being home to engineering pioneers, now
-          digital pioneers are at the forefront of the tech industry.
+          With a growing ecosystem of technology businesses, impressive
+          connectivity and unique surroundings, Cornwall has been critical to
+          Headforwards’ growth.
+
+
+          As a founder member of key development communities such as Software
+          Cornwall and Agile on the Beach, and the largest tech employer in the
+          county, Headforwards plays a central role in Cornwall’s tech
+          ecosystem.
         type: markdown-component
+      - jobTitle: Travel solutions director
+        name: John Howell
+        quote: >-
+          There’s a misconception that Cornwall is outside of the UK’s tech
+          sector – but it couldn’t be more different. With the rapidly growing
+          infrastructure we have here, we have all the benefits of a city and
+          more.
+        type: quote-component
     isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
-  - jobTitle: Travel Solutions Director
-    name: John Howell
-    quote: >-
-      When clients decide to partner with Headforwards, they don’t just get the
-      value of an in-house team – they get the value of Cornwall’s entire tech
-      ecosystem.
-    type: quote-component
+    title: Connected Cornwall
   - flip: true
     imageOne: /uploads/headforwards-speed-test copy.jpg
     imageTwo: /uploads/team-2.jpg
