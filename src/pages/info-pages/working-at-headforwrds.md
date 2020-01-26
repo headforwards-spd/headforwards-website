@@ -4,10 +4,10 @@ parent: careers
 type: index-page
 title: Working at Headforwards
 image:
-    show: false
-    image: /uploads/icon.black.png
+  image: /uploads/careers-at-headforwards.jpg
+  show: false
 introduction:
-    show: false
-    text: CHANGEME
+  show: false
+  text: CHANGEME
 ---
 
