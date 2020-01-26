@@ -87,6 +87,7 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: Software by the seaside
+    image: /uploads/careers-5.jpg
 footerLinks:
   - link1: 3c96d190-0fac-11ea-843f-932c76de5936
     link2: 16f53e5e-3847-11ea-a137-2e728ce88125
