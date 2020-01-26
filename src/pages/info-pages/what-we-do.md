@@ -4,7 +4,7 @@ type: index-page
 title: What we do
 image:
   image: /uploads/postit-2.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: CHANGEME
