@@ -4,7 +4,7 @@ parent: careers
 type: info-page
 title: Digital peninsular
 image:
-  image: /uploads/icon.black.png
+  image: /uploads/hf-d.jpg
   show: false
 introduction:
   show: false
