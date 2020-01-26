@@ -5,7 +5,7 @@ type: info-page
 title: 'Pizza, beaches and beers'
 image:
   image: /uploads/toby cooking.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: >-
