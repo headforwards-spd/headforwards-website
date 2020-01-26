@@ -56,7 +56,7 @@ components:
         type: markdown-component
     isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: Self-directed learning
   - quote: >-
@@ -77,7 +77,7 @@ components:
         type: markdown-component
     isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: 'The career progression framework '
   - quote: >-
