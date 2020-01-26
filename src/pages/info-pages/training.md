@@ -85,8 +85,12 @@ components:
       intelligent people that are always open to sharing knowledge, then this is
       a great place to learn and progress your career.
     type: quote-component
-callToAction: >-
-  Want to join the Headforwards team? Browse our current opportunities, or get
-  in touch.
+footerLinks:
+  - link1: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+    link2: c841a202-37c9-11ea-978f-2e728ce88125
+    link3: c841a072-37c9-11ea-978f-2e728ce88125
+    showImages: true
+    title: Self -directed learning
+callToAction: Grow your career with Headforwards
 ---
 
