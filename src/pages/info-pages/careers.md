@@ -4,7 +4,7 @@ type: index-page
 title: Careers
 image:
   image: /uploads/careers-at-headforwards.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: CHANGEME
