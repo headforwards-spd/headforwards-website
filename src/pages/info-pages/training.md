@@ -6,7 +6,7 @@ title: 'Training, development and growth'
 subtitle: ''
 image:
   image: /uploads/training-banner.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: >-
@@ -28,7 +28,7 @@ components:
         type: markdown-component
     isPostit: false
     isRightImage: false
-    isTwoColumns: false
+    isTwoColumns: true
     type: image-copy-component
     title: 'Sharing, learning and growing '
   - jobTitle: 'Headforwards Recruitment and Talent Specialist '
