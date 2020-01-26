@@ -5,7 +5,7 @@ type: info-page
 title: Digital peninsular
 image:
   image: /uploads/hf-d.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: >-
