@@ -5,7 +5,7 @@ type: info-page
 title: Living in cornwall
 image:
   image: /uploads/careers 4.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: CHANGEME
