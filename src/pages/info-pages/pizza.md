@@ -8,7 +8,9 @@ image:
   show: false
 introduction:
   show: false
-  text: CHANGEME
+  text: >-
+    It’s no secret that people who feel looked after and valued are more likely
+    to excel and do better work.
 components:
   - content:
       - text: >-
