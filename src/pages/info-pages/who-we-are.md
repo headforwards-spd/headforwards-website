@@ -4,7 +4,7 @@ type: index-page
 title: Who we are
 image:
   image: /uploads/HF careers 3.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: CHANGEME
