@@ -105,5 +105,11 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: Software by the seaside
+footerLinks:
+  - link1: 3c96d190-0fac-11ea-843f-932c76de5936
+    link2: 16f53e5e-3847-11ea-a137-2e728ce88125
+    link3: c841a202-37c9-11ea-978f-2e728ce88125
+    showImages: true
+    title: Learn more about how we work and where
 ---
 
