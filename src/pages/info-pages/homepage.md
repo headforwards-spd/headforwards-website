@@ -9,7 +9,7 @@ introduction:
   show: true
   text: >-
     Headforwards is a software development outsourcing company that builds
-    strong relationships with our clients in order to deliver exceptional
+    strong relationships with their clients in order to deliver exceptional
     software.
 
 
