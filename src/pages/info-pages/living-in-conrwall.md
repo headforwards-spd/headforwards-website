@@ -8,7 +8,7 @@ image:
   show: true
 introduction:
   show: false
-  text: CHANGEME
+  text: 'Walking, surfing, Poldark and .Net. What could be better?'
 components:
   - content:
       - text: >-
