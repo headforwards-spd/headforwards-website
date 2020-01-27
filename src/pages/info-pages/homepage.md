@@ -47,7 +47,7 @@ sections:
       - content:
           - text: >-
               Headforwards looks to develop trust between themselves and their
-              clients by continuously delivering business value.
+              client's by continuously delivering business value.
             type: markdown-component
           - jobTitle: null
             name: null
