@@ -29,7 +29,7 @@ components:
           providing the right support and work-life balance for its people will
           always be a priority.
         type: markdown-component
-      - jobTitle: dirctor & cofounder
+      - jobTitle: Director & Co-founder
         name: Toby Parkins
         quote: >-
           We want to grow in the right way, with the aim of enabling all people
@@ -50,7 +50,7 @@ components:
           it works – will help it grow, and keep existing clients coming back
           for more.
         type: markdown-component
-      - jobTitle: director & cofounder
+      - jobTitle: Director & Co-founder
         name: Craig Girvan
         quote: >-
           Growth for us means continuing to do what we’re doing. But key to this
