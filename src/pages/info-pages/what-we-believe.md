@@ -30,7 +30,7 @@ components:
           collaboration combined with Agile working practices allows
           Headforwards to be able to respond to changes in a constructive way.
         type: markdown-component
-      - jobTitle: cofounder & director
+      - jobTitle: Director & Co-founder
         name: Craig Girvan
         quote: >-
           If something changes in our client’s world, they've got to adapt,
