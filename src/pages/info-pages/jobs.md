@@ -8,7 +8,7 @@ image:
   show: true
 introduction:
   show: false
-  text: CHANGEME
+  text: Apply for a specific job at Headforwards or just register your interest.
 seo:
   slug: jobs
 ---
