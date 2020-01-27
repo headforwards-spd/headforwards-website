@@ -24,7 +24,7 @@ components:
           delivery gives clients a commercial advantage, as it means they can
           offer new services and functionality faster than their competitors.
         type: markdown-component
-      - jobTitle: Senior developer
+      - jobTitle: Software developer
         name: Mike Tonks
         quote: >-
           Switching to a continuous delivery cycle can be a big jump, but it can
@@ -39,9 +39,9 @@ components:
   - content:
       - text: >-
           Continuous delivery is made possible by Agile practices. By breaking
-          projects down into small packets of work and working on them in
-          sprints, Headforwards teams can deliver against clients’ priorities
-          faster.
+          projects down into small packets of work and working on them
+          iteratively, Headforwards teams can deliver against clients’
+          priorities faster.
 
 
           And with weekly – or even daily – release cycles, clients can easily
