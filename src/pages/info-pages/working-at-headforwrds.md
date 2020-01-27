@@ -7,6 +7,6 @@ image:
   show: true
 introduction:
   show: false
-  text: CHANGEME
+  text: 'At Headforwards, we believe we are unique. What does that feel like?'
 ---
 
