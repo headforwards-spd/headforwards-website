@@ -9,12 +9,12 @@ image:
 introduction:
   show: false
   text: >-
-    The brainchild of Craig Girvan and Toby Parkin, Headforwards was
+    The brainchild of Craig Girvan and Toby Parkins, Headforwards was
     incorporated in 2011 and has grown into a company of well over 100 people.
 components:
   - content:
       - text: >-
-          The brainchild of Craig Girvan and Toby Parkin, Headforwards was
+          The brainchild of Craig Girvan and Toby Parkins, Headforwards was
           incorporated in 2011 and has grown into a company of well over 100
           people.
 
