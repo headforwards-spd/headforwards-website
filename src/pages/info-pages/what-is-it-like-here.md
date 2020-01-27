@@ -73,7 +73,7 @@ components:
     type: images-component
   - content:
       - text: >-
-          Headforwards lack of hierarchy means teams are empowered to
+          Headforwards' lack of hierarchy means teams are empowered to
           self-organise, play to each other’s strengths, and collaborate
           effectively—and clients see massive value from this.
 
