@@ -36,13 +36,34 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                         </header>
                         <section>
                             <ul>
+                                <MenuItem
+                                    className={styles.navHomeLink}
+                                    {...{
+                                        id: 'nav-home-link',
+                                        showTitle: true,
+                                        location,
+                                        link: '/',
+                                        linkText: 'Home.',
+                                        children: [
+                                            {
+                                                id: 'nav-home-contact-page-link',
+                                                location,
+                                                link: '/contact',
+                                                linkText: 'Contact',
+                                            },
+                                        ],
+                                    }}
+                                />
                                 {menu.map(({ id, ...item }) => (
                                     <MenuItem key={id} {...item} {...{ location, showTitle: true }} />
                                 ))}
                                 <MenuItem
+                                    className={styles.navContactLink}
                                     {...{
+                                        id: 'nav-contact-link',
                                         link: '/contact',
                                         linkText: 'Contact.',
+                                        location,
                                     }}
                                 />
                             </ul>

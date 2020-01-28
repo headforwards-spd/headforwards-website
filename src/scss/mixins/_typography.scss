@@ -176,13 +176,15 @@ $line-height: $rhythm-unit;
         @include fluid-type($min_font*$scale1_m, $max_font*$scale1_d);
     }
 }
+@mixin headingFontMediumVr {
+    @include fluid-type($min_font*$scale1_m*$heading-scale-vr, $max_font*$scale1_d*$heading-scale-vr);
+    line-height: $rhythm-unit/$heading-scale-vr;
+    margin-bottom: #{$rhythm-unit/$heading-scale-vr}em;
+}
 @mixin fontMediumVr {
 
     h1, h2 {
-        @include fluid-type($min_font*$scale1_m*$heading-scale-vr, $max_font*$scale1_d*$heading-scale-vr);
-        line-height: $rhythm-unit/$heading-scale-vr;
-        margin-bottom: #{$rhythm-unit/$heading-scale-vr}em;
-
+        @include headingFontMediumVr;
     }
     &, p, time, li {
         @include fluid-type($min_font*$scale1_m, $max_font*$scale1_d);
@@ -204,13 +206,16 @@ $line-height: $rhythm-unit;
         @include fluid-type($min_font/$scale2_m, $max_font/$scale2_d);
     }
 }
+@mixin headingFontSmallVr {
+    @include fluid-type($min_font/$scale2_m*$heading-scale-vr, $max_font/$scale2_d*$heading-scale-vr);
+    line-height: $rhythm-unit/$heading-scale-vr;
+    margin-bottom: #{$rhythm-unit/$heading-scale-vr}em;
+}
 @mixin fontSmallVr {
 
     h1, h2 {
-        @include fluid-type($min_font/$scale2_m*$heading-scale-vr, $max_font/$scale2_d*$heading-scale-vr);
-        line-height: $rhythm-unit/$heading-scale-vr;
-        margin-bottom: #{$rhythm-unit/$heading-scale-vr}em;
 
+@include headingFontSmallVr;
     }
     &, p, time, li {
         @include fluid-type($min_font/$scale2_m, $max_font/$scale2_d);

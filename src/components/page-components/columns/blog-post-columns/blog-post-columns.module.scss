@@ -66,7 +66,7 @@
                     }
 
                     &:after {
-                        content: url(/images/hf-arrow.white.svg);
+                        background-image: url(/images/hf-arrow.white.svg);
                         position: absolute;
                         right: $column-gutter-sm*2;
                         bottom: $column-gutter-sm;

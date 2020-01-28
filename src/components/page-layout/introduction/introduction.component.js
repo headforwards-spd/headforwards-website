@@ -1,7 +1,7 @@
-import { string }    from 'prop-types';
-import React    from 'react';
-import Markdown from '../../page-components/markdown'
+import { string } from 'prop-types';
+import React from 'react';
 
+import Markdown from '../../page-components/markdown';
 import styles from './introduction.module.scss';
 
 export default IntroductionComponent;

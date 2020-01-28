@@ -1,7 +1,7 @@
 import { any, arrayOf, bool, shape, string } from 'prop-types';
-import React    from 'react';
-import Markdown from '../markdown'
+import React from 'react';
 
+import Markdown from '../markdown';
 import Quote from '../quote/quote.component';
 import styles from './hero.module.scss';
 

@@ -53,7 +53,7 @@
     flex-direction: row;
     justify-content: space-between;
     &:after {
-        content: url('/images/hf-arrow.white.svg');
+        background-image: url('/images/hf-arrow.white.svg');
     }
 }
 

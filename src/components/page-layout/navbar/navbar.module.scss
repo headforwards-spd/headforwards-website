@@ -74,6 +74,16 @@
             margin: 0;
             border-top: 1px solid #383F51;
 
+            .navHomeLink {
+                display: none;
+            }
+
+            .isOpen {
+                > a {
+                    color: $orange;
+                }
+            }
+
             > li > a {
 
                     display: block;
@@ -93,7 +103,6 @@
 
                 > li {
                     @include fontXLarge;
-                    //padding-left: $gutter-small;
 
                     &.hasChildren > a {
                         display: flex;
@@ -102,8 +111,6 @@
                             @include fontSmall;
                             background: none;
                             border: none;
-                            //padding: $gutter-small;
-                            //margin: -$gutter-small 0;
                             color: white;
                             width: 40px;
                             display: flex;
@@ -124,12 +131,6 @@
 
                         ul {
                             @include fontLarge;
-                            //margin-bottom: $gutter-small;
-
-                            ul {
-                                //margin-left: $column-gutter/2;
-                                //margin-bottom: $gutter-small;
-                            }
                         }
 
                         a {
@@ -139,22 +140,23 @@
                         }
                     }
 
-                    &.isOpen > section {
-                        display: block;
+                    &.isOpen {
+                        > section {
+                            display: block;
+                        }
                     }
                 }
             }
 
-        dt, dd {
+        dt, dd, h2, li {
             @include fontSmall;
+            margin-bottom: 0;
+        }
+        dt, dd {
             display: block;
             color: white;
             padding: 0;
             margin: 0;
-        }
-
-        h2 {
-            @include headingFontSmall;
         }
 
         dt, h2 {
@@ -163,16 +165,20 @@
             font-weight: normal;
         }
 
-        dd {
+        dd, li {
             line-height: 2;
             margin-bottom: 0;
+        }
+
+        ul {
+            margin-bottom: $column-gutter-sm/2;
         }
     }
 
     &:global(.is-active) {
         position: fixed;
         @media screen and (min-width: $screen-lg) {
-            position: unset;
+            position: relative;
         }
         z-index: 100;
         background-color: $blue-background;
@@ -205,6 +211,76 @@
                 @media screen and (min-width: $screen-lg) {
                     overflow-x: unset;
                 }
+            }
+        }
+    }
+
+    @media (min-width: $screen-md) {
+
+        > section {
+            margin-top: 0;
+            > ul {
+                border-top: none;
+                @include fontMedium;
+                margin: $component-gutter-md -#{$column-gutter-md/2};
+                display: flex;
+                flex-direction: row;
+
+                .navHomeLink {
+                    display: unset;
+                }
+                .navContactLink {
+                    display: none;
+                }
+
+                > li {
+                    margin: 0 $column-gutter-md/2;
+                    width: calc((100% /5) - #{$column-gutter-md});
+                    border-bottom: none;
+
+                    > a {
+                        @include fontMedium;
+                        border-bottom: 1px solid rgba($grey-9, 0.2);
+                    }
+
+                    > section {
+                        ul li {
+                            @include fontSmall;
+                            line-height: 1.2;
+                            margin: 1.2em 0;
+                        }
+                        a {
+                            font-weight: normal;
+                            padding: 0;
+
+                        }
+                    }
+
+                    &.hasChildren {
+                        > a button {
+                            display: none;
+                        }
+                        > section {
+                            display: unset;
+                        }
+                    }
+                }
+            }
+
+            > section {
+                display: flex;
+                margin: 0 -#{$column-gutter-md/2};
+
+                > * {
+                    margin: 0 $column-gutter-md/2;
+                    min-width: calc((100% /5) - #{$column-gutter-md});
+                }
+            }
+        }
+
+        &:global(.is-active) {
+            > section {
+                margin-top: 0;
             }
         }
     }
@@ -251,6 +327,7 @@
             > section {
                 overflow: visible;
                 padding-top: unset;
+                margin-top: $component-gutter-sm/2;
             }
         }
 
@@ -265,6 +342,7 @@
             max-width: 100%;
             opacity: unset;
             display: block;
+            margin-top: $component-gutter-sm/2;
 
             > ul {
                 @include fontMedium;
@@ -275,10 +353,18 @@
                 justify-content: flex-end;
                 flex-wrap: wrap;
 
+                .navHomeLink {
+                    display: none;
+                }
+                .navContactLink {
+                    display: unset;
+                }
+
                 > li {
+                    width: unset;
                     position: relative;
                     border: none;
-                    padding: 0 $column-gutter-lg/2;
+                    margin: 0 $column-gutter-lg/2;
                     &:hover > a {
                         color: $orange;
                     }
@@ -288,6 +374,7 @@
                     }
 
                     a {
+                        border-bottom: unset;
                         color: black;
 
                         &:hover {
@@ -295,9 +382,12 @@
                         }
                     }
 
-                    li a {
+                    li {
+                        a {
+
                             padding: 0;
                         }
+                    }
 
                     &.hasChildren > a {
                         button {
@@ -310,15 +400,16 @@
                     }
 
                     > section {
-                        padding: 20px;
+                        @include fontMedium;
+                        padding: 0 $column-gutter-lg/2;
                         background-color: white;
                         box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.4);
                         color: black;
+                        min-width: 15em;
                         max-width: $max_width*0.375;
                         z-index: 1;
-                        white-space: nowrap;
                         position: absolute;
-                        right: 0;
+                        right: -$column-gutter-lg/2;
 
                         display: block;
                         visibility: hidden;
@@ -328,13 +419,13 @@
                         transition-delay: 0.1s, 0.75s;
 
                         &:before {
-                            //top: -$gutter-small/2;
-                            right: 2rem;
+                            top: -0.25em;
+                            right: $column-gutter-lg*1.5;
                             content: '';
                             position: absolute;
                             width: 0;
                             height: 0;
-                            //border: $gutter-small/2 solid;
+                            border: 0.25em solid;
                             border-color: white;
                             transform: rotate(135deg);
                             box-shadow: -3px 3px 2px 0 rgba(0, 0, 0, 0.1);
@@ -342,25 +433,27 @@
 
                         > ul {
                             @include fontMedium;
-                            //margin: $gutter-small 0 0;
-                        }
-
-                        > li {
-                            display: block;
+                            margin: $column-gutter-lg/2 0;
+                            li {
+                                margin: 0;
+                            }
                         }
 
                         h2 {
-                            @include headingFontXSmall;
+                            @include fontSmall;
                             margin: 0;
-                            font-weight: lighter;
-                            //padding-bottom: $gutter-small;
+                            padding: $column-gutter-lg/2 0;
+                            line-height: 2;
+                            font-weight: normal;
                             border-bottom: 1px solid #D8D8D8;
                         }
 
                         a {
-                            line-height: 2;
-                            margin: 0;
+                            @include fontMedium;
+                            line-height: #{$rhythm-unit}em;
+                            margin: #{1 - ($rhythm-unit/2)}em;
                             @include arrow-link;
+                            font-weight: bold;
                             color: black;
                             display: block;
                         }

@@ -7,13 +7,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Provider } from 'unstated';
 
-import AppContainer           from '../../containers/app.container';
+import AppContainer from '../../containers/app.container';
 import { FooterLinkPropType } from './footer/footer-link.component';
-import Footer                 from './footer/footer.component';
-import Header                 from './header/header.component';
-import { ImageSrcPropType }   from './image/image.component';
-import JobHeader              from './job-header/job-header.component'
-import Seo, { SeoPropType }   from './seo';
+import Footer from './footer/footer.component';
+import Header from './header/header.component';
+import { ImageSrcPropType } from './image/image.component';
+import JobHeader from './job-header/job-header.component';
+import Seo, { SeoPropType } from './seo';
 
 export default Layout;
 
@@ -40,10 +40,10 @@ Layout.propTypes = {
     title: string.isRequired,
     subtitle: string,
     jobDetails: shape({
-                          salary: string.isRequired,
-                          tags: arrayOf(string).isRequired,
-                          path: string.isRequired,
-                      }),
+        salary: string.isRequired,
+        tags: arrayOf(string).isRequired,
+        path: string.isRequired,
+    }),
     footerLinks: shape({
         title: string,
         links: arrayOf(FooterLinkPropType),
@@ -66,7 +66,17 @@ Layout.defaultProps = {
     footerLinks: null,
     callToAction: null,
 };
-function Layout({ isHomePage, seo, title, subtitle, jobDetails, image, children, footerLinks, callToAction: pageCallToAction }) {
+function Layout({
+    isHomePage,
+    seo,
+    title,
+    subtitle,
+    jobDetails,
+    image,
+    children,
+    footerLinks,
+    callToAction: pageCallToAction,
+}) {
     const { menuData, companyInfo } = useStaticQuery(graphql`
         query {
             menuData: dataYaml(title: { eq: "main-menu" }) {
@@ -107,7 +117,7 @@ function Layout({ isHomePage, seo, title, subtitle, jobDetails, image, children,
         <Provider>
             <UnstatedHelmet />
             <Seo {...seoProps} />
-            {!isJobPage && <Header {...headerProps} /> || <JobHeader {...headerProps} jobDetails={jobDetails} />}
+            {(!isJobPage && <Header {...headerProps} />) || <JobHeader {...headerProps} jobDetails={jobDetails} />}
             <main>{children}</main>
             <Footer {...footerProps} />
         </Provider>

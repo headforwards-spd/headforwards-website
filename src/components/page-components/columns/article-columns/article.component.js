@@ -1,9 +1,9 @@
 import { shape, string } from 'prop-types';
-import React    from 'react';
-import Markdown from '../../markdown'
+import React from 'react';
 
 import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import Link from '../../../page-layout/link/link.component';
+import Markdown from '../../markdown';
 import styles from './article-columns.module.scss';
 
 const articlePropTypes = {

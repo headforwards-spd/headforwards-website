@@ -1,13 +1,13 @@
-import axios                           from 'axios';
-import { Field, Form, Formik }         from 'formik';
-import { string }                      from 'prop-types';
-import qs                              from 'querystring';
+import axios from 'axios';
+import { Field, Form, Formik } from 'formik';
+import { string } from 'prop-types';
+import qs from 'querystring';
 import React, { Component, createRef } from 'react';
-import Reaptcha                        from 'reaptcha';
-import { object }                      from 'yup';
-import styles from './contact-form.module.scss'
+import Reaptcha from 'reaptcha';
+import { object } from 'yup';
 
 import { Checkbox, Input, Textarea } from '../form-field.component';
+import styles from './contact-form.module.scss';
 import schema from './contact-form.schema';
 
 export default class ContactForm extends Component {

@@ -6,10 +6,10 @@
     @include fontMedium;
     line-height: $rhythm-unit;
     padding-bottom: #{$rhythm-unit}em;
-    margin-bottom: #{$rhythm-unit/2}em;
-    @media (min-width: $screen-md) {
-        margin-bottom: #{$rhythm-unit}em;
-    }
+    //margin-bottom: #{$rhythm-unit/2}em;
+    //@media (min-width: $screen-md) {
+    //    margin-bottom: #{$rhythm-unit}em;
+    //}
 
     &[role=group] {
         display: flex;
@@ -34,9 +34,11 @@
         label {
             cursor: pointer;
             margin-bottom: 0;
+
             &:not(:last-child) {
                 padding-bottom: 0;
             }
+
             line-height: $rhythm-unit;
 
             input {
@@ -44,6 +46,18 @@
                 @media (min-width: $screen-md) {
                     margin-bottom: #{($rhythm-unit - 1)/4}em;
                 }
+            }
+        }
+    }
+    &.fullWidth {
+        width: 100%;
+
+        textarea {
+            width: 100%;
+            @media (min-width: $screen-md) {
+
+                padding: calc(#{$rhythm-unit*3/4}em) $component-gutter-sm/2;
+                margin: calc(#{$rhythm-unit/4}em - 1px) 0;
             }
         }
     }

@@ -92,7 +92,7 @@
         transition-delay: 100ms;
         @include arrow-link;
         &:after {
-            content: url('/images/hf-arrow.svg');
+            background-image: url('/images/hf-arrow.svg');
             transition: content 500ms ease;
             transition-delay: 100ms;
         }
@@ -110,7 +110,7 @@
         button {
             color: white;
             &:after {
-                content: url('/images/hf-arrow.orange.svg');
+                background-image: url('/images/hf-arrow.orange.svg');
             }
         }
     }

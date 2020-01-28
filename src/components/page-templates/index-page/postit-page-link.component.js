@@ -1,7 +1,7 @@
 import { shape, string } from 'prop-types';
-import React    from 'react';
-import Markdown from '../../page-components/markdown'
+import React from 'react';
 
+import Markdown from '../../page-components/markdown';
 import Postit from '../../page-components/postit/postit.component';
 import Link from '../../page-layout/link/link.component';
 import styles from '../teams-and-tech/jobs-page.module.scss';

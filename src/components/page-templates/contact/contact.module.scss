@@ -52,7 +52,7 @@
             }
 
             h2, span, dl {
-                @include fontLarge;
+                //@include fontLarge;
                 margin-bottom: 0;
             }
 
@@ -72,33 +72,47 @@
     }
 
     form {
-        h2 {
-            @include headingFontMedium;
-        }
+        @include fontMediumVr;
+        //h2 {
+        //    @include headingFontMedium;
+        //}
 
         > section {
             border: none;
             padding: 0;
             @include columns-component;
+            label {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
             @media (min-width: $screen-md) {
                 flex-wrap: nowrap;
-            }
-            @media(min-width: $screen-lg) {
-                margin-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 0;
                 align-items: flex-start;
 
                 label {
-                    //width: calc(50% - #{$column-gutter});
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    width: calc(50% - #{$column-gutter-md});
+                }
+            }
+            @media (min-width: $screen-lg) {
+                margin-top: 0;
+            margin-bottom: 0;
+                label {
+                    width: calc(50% - #{$column-gutter-lg});
                 }
             }
         }
 
-        input, textarea {
-            @include fontLarge;
-            padding: 0.5rem;
-            margin-bottom: 0;
-            border: 1px solid $input-grey;
-        }
+        //input, textarea {
+        //    //@include fontLarge;
+        //    padding: 0.5rem;
+        //    margin-bottom: 0;
+        //    border: 1px solid $input-grey;
+        //}
 
         button {
             @include fontLarge;
@@ -113,7 +127,7 @@
             @include arrow-link;
 
             &:after {
-                content: url(/images/hf-arrow.white.svg);
+                background-image: url(/images/hf-arrow.white.svg);
             }
         }
 
@@ -155,42 +169,47 @@
 
     .office {
         @include columns-component;
-        @include fontMediumVr;
+        margin-left: 0;
+        margin-right: 0;
         width: 100%;
         ul {
+
             margin: 0 0 #{$rhythm-unit}em;
         }
         li {
             margin-bottom: 0;
         }
         margin-top: 0;
-        margin-bottom: $component-gutter-sm - $column-gutter-sm/2;
+        margin-bottom: 0;
         @media (min-width: $screen-md) {
             margin-top: 0;
+            align-items: flex-start;
+            justify-content: flex-start;
             margin-bottom: $component-gutter-md - $column-gutter-md/2;
         }
         @media(min-width: $screen-lg) {
             margin-bottom: $component-gutter-lg - $column-gutter-lg/2;
-            align-items: flex-start;
-            justify-content: flex-start;
         }
 
         > section {
+            h2 {
+                @include headingFontSmall;
+            }
+            & > * {
+                @include fontSmallVr;
+                li {
+                    margin-bottom: 0;
+                }
+            }
             > :last-child {
                 margin-bottom: 0;
             }
+            width: calc((100%/1) - #{$column-gutter-sm});
             @media(min-width: $screen-md) {
                 width: calc((100%/2) - #{$column-gutter-md});
             }
-        }
-        > section:first-child {
             @media(min-width: $screen-lg) {
                 width: calc((100%/3) - #{$column-gutter-lg});
-            }
-        }
-        > section:last-child {
-            @media(min-width: $screen-lg) {
-                width: calc((100%*2/3) - #{$column-gutter-lg});
             }
         }
     }

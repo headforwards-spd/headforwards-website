@@ -32,7 +32,7 @@ function ContactTemplate({ companyName, email, jobsEmail, phone, address, regist
     return (
         <section className={styles.contactColumns}>
             <header>
-            <h2>We would love to talk business with you.</h2>
+                <h2>We would love to talk business with you.</h2>
             </header>
             <section>
                 <address>

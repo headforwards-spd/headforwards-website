@@ -15,11 +15,12 @@ export default class MenuItem extends Component {
         const { link, location } = props;
         const { pathname: path = '' } = location || {};
 
-        const cleanLink = `/${link}/`.replace(/\/+/g, '/');
-        const cleanPath = `/${path}/`.replace(/\/+/g, '/');
+        const cleanLink = `/${link}/`.replace(/\/+/g, '/').replace(/^\/$/, 'homepage');
+        const cleanPath = `/${path}/`.replace(/\/+/g, '/').replace(/^\/$/, 'homepage');
+        const isOpen = cleanPath.startsWith(cleanLink);
 
         this.state = {
-            isOpen: cleanPath.startsWith(cleanLink),
+            isOpen,
         };
     }
 
@@ -34,7 +35,7 @@ export default class MenuItem extends Component {
     }
 
     render() {
-        const { link, linkText, showTitle = false, children } = this.props;
+        const { location, link, linkText, showTitle = false, children, className = '' } = this.props;
         const { isOpen } = this.state;
         const { toggleMenu } = this;
         const hasChildren = !!children;
@@ -43,8 +44,8 @@ export default class MenuItem extends Component {
         const childrenClass = hasChildren ? styles.hasChildren : '';
 
         return (
-            <li className={`${childrenClass} ${openClass}`}>
-                <Link to={link} activeStyle={{ color: '#ffb800' }} partiallyActive>
+            <li className={`${childrenClass} ${openClass} ${className}`}>
+                <Link to={link}>
                     {linkText}
                     {showTitle && hasChildren && (
                         <button type="button" onClick={toggleMenu.bind(this)}>
@@ -60,7 +61,7 @@ export default class MenuItem extends Component {
                         {showTitle && (
                             <ul>
                                 {children.map(({ id, ...item }) => (
-                                    <MenuItem key={id} {...item} />
+                                    <MenuItem key={id} {...item} location={location} />
                                 ))}
                             </ul>
                         )}
