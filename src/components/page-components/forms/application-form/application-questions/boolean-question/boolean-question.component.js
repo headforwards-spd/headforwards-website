@@ -1,9 +1,10 @@
 import { useField } from 'formik';
 import { bool, number, string } from 'prop-types';
 import React from 'react';
+
+import styles from '../../../contact-form/contact-form.module.scss';
 import FormError from '../../../contact-form/form-error.component';
 import { Radio } from '../../../form-field.component';
-import styles from '../../../contact-form/contact-form.module.scss';
 
 export default BooleanQuestion;
 

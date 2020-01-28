@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
+
 import Layout from '../components/page-layout/layout';
 import ContactTemplate from '../components/page-templates/contact/contact.template';
 
@@ -15,6 +16,7 @@ function Contact() {
             companyInfo: dataYaml(title: { eq: "company-info" }) {
                 companyName
                 email
+                jobsEmail
                 phone
                 address
                 registeredAddress

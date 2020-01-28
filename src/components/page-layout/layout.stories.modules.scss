@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: $gutter-medium 0;
+    //margin: $gutter-medium 0;
 
     > header, > footer {
         flex-shrink: 0;
@@ -22,15 +22,13 @@
     > footer > address,
     > footer > section > * {
         margin: 0 auto;
-        width: 100%;
-        padding: $page-gutter-sm;
-        overflow: visible;
+        padding: 0 $column-gutter-sm;
         @media(min-width: $screen-md) {
-            padding: $page-gutter-md;
+            padding: 0 $column-gutter-md;
         }
         @media(min-width: $screen-lg) {
-            max-width: calc(#{$max_width} + #{2*$page-gutter-lg});
-            padding: $page-gutter-lg;
+            max-width: calc(#{$max_width} + #{$column-gutter-lg});
+            padding: 0 $column-gutter-lg;
         }
     }
 
@@ -40,13 +38,13 @@
 }
 
 .wrapper {
-    padding: $gutter-small;
+    //padding: $gutter-small;
     > :last-child {
         margin-bottom: 0;
     }
 
     @media screen and (min-width: $screen-md) {
-        margin: $gutter-small;
+        //margin: $gutter-small;
         border: 1px solid $paragraph_grey;
         box-shadow: 0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
     }

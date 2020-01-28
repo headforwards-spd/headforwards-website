@@ -1,4 +1,5 @@
 import React from 'react';
+
 import BooleanQuestion from './boolean-question/boolean-question.component';
 import MultiChoiceQuestion from './multi-choice-question/multi-choice-question.component';
 import SingleChoiceQuestion from './single-choice-question/single-choice-question.component';

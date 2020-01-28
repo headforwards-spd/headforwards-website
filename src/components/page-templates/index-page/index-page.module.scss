@@ -18,8 +18,10 @@
 }
 .pages {
     @include columns-component;
+    margin-bottom: 0;
     align-items: stretch;
     margin-top: 0;
+    //width: calc(100% + #{$column-gutter-sm});
     @media(min-width: $screen-md) {
         margin-top: 0;
         align-items: stretch;
@@ -30,23 +32,30 @@
         @include fontMedium;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        @media(min-width: $screen-md) {
-            width: calc(50% - #{$column-gutter});
-        }
         margin-top: 0;
-        margin-bottom: $gutter-medium;
+        margin-bottom: $component-gutter-md;
         @media(min-width: $screen-md) {
-            margin-bottom: $gutter-large;
+            margin-bottom: $component-gutter-md - ($column-gutter-md/2);
+        }
+        @media(min-width: $screen-lg) {
+            margin-bottom: $component-gutter-lg - ($column-gutter-lg/2);
         }
     }
 
+    > article {
+        width: calc(100% - #{$column-gutter-sm});
+    }
     @media(min-width: $screen-md) {
         justify-content: flex-start;
         > article {
-                width: calc(50% - #{$column-gutter});
+                width: calc(50% - #{$column-gutter-md});
         }
         margin-bottom: 0;
+    }
+    @media(min-width: $screen-lg) {
+        > article {
+                width: calc(50% - #{$column-gutter-lg});
+        }
     }
 
     .page > a {
@@ -94,24 +103,41 @@
 
         &, p, time {
             color: white;
-            @include headingFontMedium;
+            @include headingFontSmall;
+            font-weight: bold;
             line-height: $mod_1;
         }
         margin-bottom: 0;
-
-        position: absolute;
-        left: -$column-gutter/2;
-        width: calc(100% - #{$column-gutter/2});
-        bottom: -$gutter-small;
-        height: calc(100% - #{$column-gutter/2});
-
-
-        background-color: rgba(orange, 0.5);
         border: 1px rgba($orange, 0.1) solid;
-        border-left: $column-gutter/2 $orange solid;
-        border-bottom: $column-gutter/2 $orange solid;
+        background-color: rgba(orange, 0.5);
+        position: absolute;
 
-        padding: $column-gutter $column-gutter $column-gutter/2 $column-gutter/2;
+        width: calc(100% - #{$column-gutter-sm/2});
+        height: calc(100% - #{$column-gutter-sm/2});
+        left: -$column-gutter-sm/2;
+        border-left: $column-gutter-sm/2 $orange solid;
+        bottom: -$column-gutter-sm/2;
+        border-bottom: $column-gutter-sm/2 $orange solid;
+        padding: $column-gutter-sm $column-gutter-sm $column-gutter-sm/2 $column-gutter-sm/2;
+        @media (min-width: $screen-md) {
+            width: calc(100% - #{$column-gutter-md/4});
+            height: calc(100% - #{$column-gutter-md/4});
+            left: -$column-gutter-md/4;
+            border-left: $column-gutter-md/4 $orange solid;
+            bottom: -$column-gutter-md/4;
+            border-bottom: $column-gutter-md/4 $orange solid;
+            padding: $column-gutter-md/2 $column-gutter-md/2 $column-gutter-md/4 $column-gutter-md/4;
+        }
+        @media (min-width: $screen-lg) {
+            width: calc(100% - #{$column-gutter-lg/4});
+            height: calc(100% - #{$column-gutter-lg/4});
+            left: -$column-gutter-lg/4;
+            border-left: $column-gutter-lg/4 $orange solid;
+            bottom: -$column-gutter-lg/4;
+            border-bottom: $column-gutter-lg/4 $orange solid;
+            padding: $column-gutter-lg/2 $column-gutter-lg/2 $column-gutter-lg/4 $column-gutter-lg/4;
+        }
+
         @media(min-width: $screen-md) {
             margin-bottom: 0;
         }

@@ -1,5 +1,6 @@
-import React from 'react';
 import { bool, shape, string } from 'prop-types';
+import React from 'react';
+
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
 import styles from './quote.module.scss';
 

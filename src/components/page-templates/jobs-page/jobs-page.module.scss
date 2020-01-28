@@ -8,10 +8,10 @@
     }
     li {
         @media (min-width: $screen-md) {
-            width: calc((100% / 2) - #{$column-gutter});
+            width: calc((100% / 2) - #{$column-gutter-md});
         }
         @media (min-width: $screen-lg) {
-            width: calc((100% / 3) - #{$column-gutter});
+            width: calc((100% / 3) - #{$column-gutter-lg});
         }
         display: flex;
         flex-direction: column;
@@ -23,21 +23,32 @@
     display: flex;
     flex-direction: row;
     background: $jobs-grey;
-    padding: $gutter-medium;
+    padding: $column-gutter-sm;
+    @media (min-width: $screen-md) {
+        padding: $column-gutter-md;
+
+    }
+    @media (min-width: $screen-lg) {
+        padding: $column-gutter-lg;
+
+    }
 
     transition: background-color 500ms ease;
     transition-delay: 100ms;
 
-    &:before {
-        padding-bottom: 62.5%; /* Minimum aspect ratio */
-        content: '';
-        float: left;
-    }
+    @media (min-width: $screen-md) {
 
-    &:after {
-        display: table;
-        content: '';
-        clear: both;
+        &:before {
+            padding-bottom: 62.5%; /* Minimum aspect ratio */
+            content: '';
+            float: left;
+        }
+
+        &:after {
+            display: table;
+            content: '';
+            clear: both;
+        }
     }
 
     section {
@@ -60,6 +71,10 @@
             transition: color 500ms ease;
             transition-delay: 100ms;
         }
+
+        p {
+            margin-bottom: #{$rhythm-unit*2}em;
+        };
     }
     button {
         @include fontMedium;

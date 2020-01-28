@@ -1,10 +1,13 @@
 import { string } from 'prop-types';
 import React from 'react';
+
 import ContactForm from '../../page-components/forms/contact-form/contact-form.component';
 import styles from './contact.module.scss';
 
 const contactPropTypes = {
+    companyName: string,
     email: string,
+    jobsEmail: string,
     phone: string,
     address: string,
     registeredAddress: string,
@@ -14,23 +17,27 @@ export default ContactTemplate;
 
 ContactTemplate.propTypes = contactPropTypes;
 ContactTemplate.defaultProps = {
+    companyName: '',
     email: '',
+    jobsEmail: '',
     phone: '',
     address: '',
     registeredAddress: string,
 };
 
-function ContactTemplate({ email, phone, address, registeredAddress }) {
+function ContactTemplate({ companyName, email, jobsEmail, phone, address, registeredAddress }) {
     const formattedAddress = address.split(',');
     const formattedRegAddress = registeredAddress.split(',');
 
     return (
         <section className={styles.contactColumns}>
+            <header>
             <h2>We would love to talk business with you.</h2>
+            </header>
             <section>
                 <address>
                     <section>
-                        <h2>REPLACE WITH CONSTANT</h2>
+                        <h2>{companyName}</h2>
                         {formattedAddress.map(item => (
                             <span key={item}>{item}</span>
                         ))}
@@ -40,13 +47,14 @@ function ContactTemplate({ email, phone, address, registeredAddress }) {
                         <dd>{phone}</dd>
                         <dt>Email.</dt>
                         <dd>{email}</dd>
+                        <dd>{jobsEmail}</dd>
                     </dl>
                 </address>
                 <ContactForm formName="contact" />
             </section>
             <section className={styles.map}>
                 <iframe
-                    title="Headforwards"
+                    title={companyName}
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10209.86529296384!2d-5.277547317504885!3d50.22719254513101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2e9abde5167232ca!2sHeadforwards!5e0!3m2!1sen!2suk!4v1523621792407"
                     width="100%"
                     height="100%"

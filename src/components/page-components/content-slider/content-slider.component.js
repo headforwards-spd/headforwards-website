@@ -1,9 +1,11 @@
+import './slick.css';
+import './slick-theme.css';
+
 import { arrayOf, shape, string } from 'prop-types';
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+
 import { ReactComponent as Arrow } from '../../../../static/images/hf-arrow.svg';
-import './slick.css';
-import './slick-theme.css';
 import styles from './content-slider.module.scss';
 import Slide, { SlidePropType } from './slide.component';
 

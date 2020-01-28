@@ -1,332 +1,332 @@
-@import "../../../scss/variables";
-@import "../../../scss/mixins/mixins";
-@import "../../../scss/mixins/typography";
-@import '../page-component';
-
-.contentSlider {
-    background: $blue-background;
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 48px);
-    margin: 0 -#{$page-gutter-sm} $gutter-large;
-    @media(min-width: $screen-md) {
-        margin: 0 -#{$page-gutter-md} $gutter-large;
-    }
-    @media(min-width: $screen-lg) {
-        margin: 0 -#{$page-gutter-lg} $gutter-large;
-    }
-    @media(min-width: $screen-xl) {
-        margin: 0 -#{$page-gutter-xl} $gutter-large;
-    }
-
-    > h2 {
-        padding: 0 $page-gutter-sm;
-        @media(min-width: $screen-md) {
-            padding: 0 $page-gutter-md;
-        }
-        @include headingFontSmall;
-        flex-shrink: 0;
-
-        line-height: calc(1em + #{2*$gutter-small});
-
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        margin: 0 30% 0  0;
-        font-weight: normal;
-        color: #6E7087;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        opacity: 1;
-        transition: opacity ease-in 100ms;
-        &:global(.changing) {
-            opacity: 0;
-        }
-    }
-    :global(.slick-slider) {
-        flex-grow: 1;
-    }
-
-    :global(.slick-slider), :global(.slick-list), :global(.slick-track), :global(.slick-slide) > div {
-        height: 100%;
-    }
-
-    :global(.slick-dots) {
-        @include headingFontSmall;
-        margin-bottom: 0;
-        top: calc(-1em - #{2*$gutter-small});
-        height: calc(1em + #{2*$gutter-small});
-        right: 0;
-        width: 30%;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        button:before {
-            background: #6E7087;
-        }
-
-        :global(.slick-active) button:before, button:hover:before {
-            background: $orange;
-        }
-    }
-
-    :global(.slick-arrow) {
-
-        position: absolute;
-
-        top: calc(50vw - 2rem);
-        width: 4rem;
-        height: 4rem;
-
-        svg {
-            padding: 1rem;
-            height: 100%;
-            width: 100%;
-        }
-
-        &:global(.slick-prev) {
-            z-index: 1;
-            left: 0;
-            transform: rotate(180deg) translateY(50%);
-        }
-
-        &:global(.slick-next) {
-            right: 0;
-        }
-
-        &:before {
-            display: none;
-        }
-
-        path {
-            fill: $orange;
-        }
-    }
-}
-
-.slide {
-
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    .slideImage {
-        order: 1;
-    }
-
-    > section {
-
-        order: 2;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        padding: $page-gutter-sm;
-        @media(min-width: $screen-md) {
-            padding: $page-gutter-md;
-        }
-
-        > h2 {
-            color: $orange;
-            @include headingFontLarge;
-            @media(min-width: $screen-lg) {
-                @include headingFontXLarge;
-
-            }
-            margin-top: 2em;
-        }
-
-        > section {
-            position: relative;
-            flex-grow: 1;
-            &, p, time {
-                color: #b4b4b5;
-            }
-            overflow: hidden;
-            @include fontMedium;
-            @media(min-width: $screen-lg) {
-                @include fontLarge;
-
-            }
-            > :last-child {
-                margin-bottom: 0;
-            }
-
-            &:after {
-                content: '';
-                height: 2.5em * $line-height;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                display: block;
-                background: linear-gradient(transparent, $blue-background);
-            }
-        }
-
-        > a {
-            @include arrow-link;
-            font-weight: normal;
-            margin-bottom: 0;
-            @include fontMedium;
-            @media(min-width: $screen-lg) {
-                @include fontLarge;
-
-            }
-        }
-    }
-}
-
-@media(min-width: $screen-lg) {
-
-    .slide {
-        max-height: 366px;
-
-        .slideImage {
-            max-height: 366px;
-            max-width: 586px;
-        }
-
-    }
-}
-
-@media(min-width: $screen-xl) {
-
-    .slide {
-        max-height: 512px;
-
-        .slideImage {
-            max-height: 512px;
-            max-width: 820px;
-        }
-
-    }
-}
-
-
-@media(min-width: $screen-lg) {
-    .contentSlider {
-        background: linear-gradient(to right, $blue-background 0%, $blue-background 80%, $blue-background 80%, #ffffff 80%, #ffffff 100%);
-        position: relative;
-        height: auto;
-        padding: 5rem $page-gutter-lg 5rem 0;
-        @media(min-width: $screen-xl) {
-            padding: 5rem $page-gutter-xl 5rem 0;
-        }
-
-        > h2 {
-            position: absolute;
-            top: 5rem;
-            padding: 0;
-            margin: 0;
-            z-index: 10;
-            left: $page-gutter-lg;
-            @media(min-width: $screen-xl) {
-                left: $page-gutter-xl;
-            }
-        }
-
-        :global(.slick-list) {
-            margin-right: -$page-gutter-lg;
-            @media(min-width: $screen-xl) {
-                margin-right: -$page-gutter-xl;
-            }
-        }
-
-        :global(.slick-dots) {
-            position: absolute;
-            top: -5rem;
-            height: 5rem;
-            right: 0;
-            width: calc(20% + #{$page-gutter-lg*0.2} - #{$page-gutter-lg});
-            @media(min-width: $screen-xl) {
-                width: calc(20% + #{$page-gutter-xl*0.2} - #{$page-gutter-xl});
-            }
-
-            button:before {
-                font-size: 0.8rem;
-            }
-
-            :global(.slick-active) button:before, button:hover:before {
-                color: $orange;
-            }
-        }
-
-        :global(.slick-arrow) {
-
-            top: calc(100% + 2.5rem);
-            height: 5rem;
-            width: calc(10% + #{$page-gutter-lg*0.1} - #{$page-gutter-lg/2});
-            @media(min-width: $screen-xl) {
-                width: calc(10% + #{$page-gutter-xl*0.1} - #{$page-gutter-xl/2});
-            }
-
-            svg {
-                padding: 1.5rem 0;
-            }
-
-            &:global(.slick-prev) {
-                left: unset;
-                right: calc(10% + #{$page-gutter-lg*0.1} - #{$page-gutter-lg/2});
-                @media(min-width: $screen-xl) {
-                    right: calc(10% + #{$page-gutter-xl*0.1} - #{$page-gutter-xl/2});
-                }
-            }
-
-            &:global(.slick-next) {
-                left: unset;
-                right: 0;
-            }
-
-        }
-
-        :global(.slick-slide) {
-            opacity: 0.98;
-            transition: opacity ease 250ms;
-
-            &:global(.slick-active) {
-                opacity: 1;
-            }
-        }
-    }
-
-    .slide {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: calc(90vh - 10rem);
-        background: $blue-background;
-        margin-left: calc(#{$page-gutter-lg} - #{$column-gutter/2});
-        @media(min-width: $screen-xl) {
-            margin-left: calc(#{$page-gutter-xl} - #{$column-gutter/2});
-        }
-
-        > section {
-            order: 1;
-            flex-shrink: 1;
-            display: flex;
-            flex-direction: column;
-            padding: 1rem;
-
-            > h2 {
-                transition: opacity ease 250ms;
-            }
-
-            > section {
-                flex-grow: 1;
-            }
-        }
-
-        .slideImage {
-            order: 2;
-            flex-shrink: 0;
-            flex-grow: 0;
-            height: calc(90vh - 10rem);
-            width: calc((90vh - 10rem) / .625);
-        }
-
-    }
-}
+//@import "../../../scss/variables";
+//@import "../../../scss/mixins/mixins";
+//@import "../../../scss/mixins/typography";
+//@import '../page-component';
+//
+//.contentSlider {
+//    background: $blue-background;
+//    display: flex;
+//    flex-direction: column;
+//    height: calc(100vh - 48px);
+//    margin: 0 -#{$page-gutter-sm} $gutter-large;
+//    @media(min-width: $screen-md) {
+//        margin: 0 -#{$page-gutter-md} $gutter-large;
+//    }
+//    @media(min-width: $screen-lg) {
+//        margin: 0 -#{$page-gutter-lg} $gutter-large;
+//    }
+//    @media(min-width: $screen-xl) {
+//        margin: 0 -#{$page-gutter-xl} $gutter-large;
+//    }
+//
+//    > h2 {
+//        padding: 0 $page-gutter-sm;
+//        @media(min-width: $screen-md) {
+//            padding: 0 $page-gutter-md;
+//        }
+//        @include headingFontSmall;
+//        flex-shrink: 0;
+//
+//        line-height: calc(1em + #{2*$gutter-small});
+//
+//        white-space: nowrap;
+//        overflow: hidden;
+//        text-overflow: ellipsis;
+//
+//        margin: 0 30% 0  0;
+//        font-weight: normal;
+//        color: #6E7087;
+//        letter-spacing: 0.2em;
+//        text-transform: uppercase;
+//        opacity: 1;
+//        transition: opacity ease-in 100ms;
+//        &:global(.changing) {
+//            opacity: 0;
+//        }
+//    }
+//    :global(.slick-slider) {
+//        flex-grow: 1;
+//    }
+//
+//    :global(.slick-slider), :global(.slick-list), :global(.slick-track), :global(.slick-slide) > div {
+//        height: 100%;
+//    }
+//
+//    :global(.slick-dots) {
+//        @include headingFontSmall;
+//        margin-bottom: 0;
+//        top: calc(-1em - #{2*$gutter-small});
+//        height: calc(1em + #{2*$gutter-small});
+//        right: 0;
+//        width: 30%;
+//        display: flex !important;
+//        align-items: center;
+//        justify-content: center;
+//        flex-wrap: wrap;
+//
+//        button:before {
+//            background: #6E7087;
+//        }
+//
+//        :global(.slick-active) button:before, button:hover:before {
+//            background: $orange;
+//        }
+//    }
+//
+//    :global(.slick-arrow) {
+//
+//        position: absolute;
+//
+//        top: calc(50vw - 2rem);
+//        width: 4rem;
+//        height: 4rem;
+//
+//        svg {
+//            padding: 1rem;
+//            height: 100%;
+//            width: 100%;
+//        }
+//
+//        &:global(.slick-prev) {
+//            z-index: 1;
+//            left: 0;
+//            transform: rotate(180deg) translateY(50%);
+//        }
+//
+//        &:global(.slick-next) {
+//            right: 0;
+//        }
+//
+//        &:before {
+//            display: none;
+//        }
+//
+//        path {
+//            fill: $orange;
+//        }
+//    }
+//}
+//
+//.slide {
+//
+//    height: 100%;
+//    display: flex;
+//    flex-direction: column;
+//
+//    .slideImage {
+//        order: 1;
+//    }
+//
+//    > section {
+//
+//        order: 2;
+//        flex-grow: 1;
+//        display: flex;
+//        flex-direction: column;
+//        overflow: hidden;
+//        padding: $page-gutter-sm;
+//        @media(min-width: $screen-md) {
+//            padding: $page-gutter-md;
+//        }
+//
+//        > h2 {
+//            color: $orange;
+//            @include headingFontLarge;
+//            @media(min-width: $screen-lg) {
+//                @include headingFontXLarge;
+//
+//            }
+//            margin-top: 2em;
+//        }
+//
+//        > section {
+//            position: relative;
+//            flex-grow: 1;
+//            &, p, time {
+//                color: #b4b4b5;
+//            }
+//            overflow: hidden;
+//            @include fontMedium;
+//            @media(min-width: $screen-lg) {
+//                @include fontLarge;
+//
+//            }
+//            > :last-child {
+//                margin-bottom: 0;
+//            }
+//
+//            &:after {
+//                content: '';
+//                height: 2.5em * $line-height;
+//                position: absolute;
+//                bottom: 0;
+//                left: 0;
+//                right: 0;
+//                display: block;
+//                background: linear-gradient(transparent, $blue-background);
+//            }
+//        }
+//
+//        > a {
+//            @include arrow-link;
+//            font-weight: normal;
+//            margin-bottom: 0;
+//            @include fontMedium;
+//            @media(min-width: $screen-lg) {
+//                @include fontLarge;
+//
+//            }
+//        }
+//    }
+//}
+//
+//@media(min-width: $screen-lg) {
+//
+//    .slide {
+//        max-height: 366px;
+//
+//        .slideImage {
+//            max-height: 366px;
+//            max-width: 586px;
+//        }
+//
+//    }
+//}
+//
+//@media(min-width: $screen-xl) {
+//
+//    .slide {
+//        max-height: 512px;
+//
+//        .slideImage {
+//            max-height: 512px;
+//            max-width: 820px;
+//        }
+//
+//    }
+//}
+//
+//
+//@media(min-width: $screen-lg) {
+//    .contentSlider {
+//        background: linear-gradient(to right, $blue-background 0%, $blue-background 80%, $blue-background 80%, #ffffff 80%, #ffffff 100%);
+//        position: relative;
+//        height: auto;
+//        padding: 5rem $page-gutter-lg 5rem 0;
+//        @media(min-width: $screen-xl) {
+//            padding: 5rem $page-gutter-xl 5rem 0;
+//        }
+//
+//        > h2 {
+//            position: absolute;
+//            top: 5rem;
+//            padding: 0;
+//            margin: 0;
+//            z-index: 10;
+//            left: $page-gutter-lg;
+//            @media(min-width: $screen-xl) {
+//                left: $page-gutter-xl;
+//            }
+//        }
+//
+//        :global(.slick-list) {
+//            margin-right: -$page-gutter-lg;
+//            @media(min-width: $screen-xl) {
+//                margin-right: -$page-gutter-xl;
+//            }
+//        }
+//
+//        :global(.slick-dots) {
+//            position: absolute;
+//            top: -5rem;
+//            height: 5rem;
+//            right: 0;
+//            width: calc(20% + #{$page-gutter-lg*0.2} - #{$page-gutter-lg});
+//            @media(min-width: $screen-xl) {
+//                width: calc(20% + #{$page-gutter-xl*0.2} - #{$page-gutter-xl});
+//            }
+//
+//            button:before {
+//                font-size: 0.8rem;
+//            }
+//
+//            :global(.slick-active) button:before, button:hover:before {
+//                color: $orange;
+//            }
+//        }
+//
+//        :global(.slick-arrow) {
+//
+//            top: calc(100% + 2.5rem);
+//            height: 5rem;
+//            width: calc(10% + #{$page-gutter-lg*0.1} - #{$page-gutter-lg/2});
+//            @media(min-width: $screen-xl) {
+//                width: calc(10% + #{$page-gutter-xl*0.1} - #{$page-gutter-xl/2});
+//            }
+//
+//            svg {
+//                padding: 1.5rem 0;
+//            }
+//
+//            &:global(.slick-prev) {
+//                left: unset;
+//                right: calc(10% + #{$page-gutter-lg*0.1} - #{$page-gutter-lg/2});
+//                @media(min-width: $screen-xl) {
+//                    right: calc(10% + #{$page-gutter-xl*0.1} - #{$page-gutter-xl/2});
+//                }
+//            }
+//
+//            &:global(.slick-next) {
+//                left: unset;
+//                right: 0;
+//            }
+//
+//        }
+//
+//        :global(.slick-slide) {
+//            opacity: 0.98;
+//            transition: opacity ease 250ms;
+//
+//            &:global(.slick-active) {
+//                opacity: 1;
+//            }
+//        }
+//    }
+//
+//    .slide {
+//        display: flex;
+//        flex-direction: row;
+//        justify-content: space-between;
+//        height: calc(90vh - 10rem);
+//        background: $blue-background;
+//        margin-left: calc(#{$page-gutter-lg} - #{$column-gutter/2});
+//        @media(min-width: $screen-xl) {
+//            margin-left: calc(#{$page-gutter-xl} - #{$column-gutter/2});
+//        }
+//
+//        > section {
+//            order: 1;
+//            flex-shrink: 1;
+//            display: flex;
+//            flex-direction: column;
+//            padding: 1rem;
+//
+//            > h2 {
+//                transition: opacity ease 250ms;
+//            }
+//
+//            > section {
+//                flex-grow: 1;
+//            }
+//        }
+//
+//        .slideImage {
+//            order: 2;
+//            flex-shrink: 0;
+//            flex-grow: 0;
+//            height: calc(90vh - 10rem);
+//            width: calc((90vh - 10rem) / .625);
+//        }
+//
+//    }
+//}

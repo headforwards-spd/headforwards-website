@@ -1,6 +1,7 @@
 import { useField } from 'formik';
 import { bool, number, string } from 'prop-types';
 import React from 'react';
+
 import { Input } from '../../../form-field.component';
 
 export default StringQuestion;

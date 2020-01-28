@@ -1,7 +1,7 @@
-import React from 'react';
 import { shape, string } from 'prop-types';
+import React from 'react';
+
 import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
-import { ReactComponent as Arrow } from '../../../../../static/images/hf-arrow.svg';
 import Link from '../../../page-layout/link/link.component';
 import styles from './blog-post-columns.module.scss';
 
@@ -21,9 +21,6 @@ function BlogArticle({ title, image, link }) {
             <section className={styles.article}>
                 <h2>{title}</h2>
                 <Image className={styles.image} image={image} />
-                <Link to={link} aria-label={title}>
-                    <Arrow />
-                </Link>
             </section>
         </Link>
     );

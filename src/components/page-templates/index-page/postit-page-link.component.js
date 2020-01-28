@@ -1,6 +1,7 @@
 import { shape, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+
 import Postit from '../../page-components/postit/postit.component';
 import Link from '../../page-layout/link/link.component';
 import styles from '../teams-and-tech/jobs-page.module.scss';

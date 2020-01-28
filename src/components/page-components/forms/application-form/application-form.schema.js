@@ -1,6 +1,10 @@
-import { mixed, object, string } from 'yup';
+import { string } from 'yup';
 
-const schema = {
+export const messages = {
+    success: job => `All done! Your application for the ${job} position is submitted successfully.`,
+};
+
+export const schema = {
     name: {
         field: {
             name: 'name',
@@ -70,4 +74,3 @@ const schema = {
             .required('You must agree to the privacy policy.'),
     },
 };
-export default schema;

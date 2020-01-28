@@ -16,16 +16,12 @@
 
     blockquote {
 
-        @include fontLarge;
-
         margin: 0;
 
         > p {
-            margin-bottom: #{$rhythm-unit/0.8}em;
+            @include fontLarge;
+            margin-bottom: #{$rhythm-unit/2}em;
             padding: 1.5em 0 0;
-            @media (min-width: $screen-md) {
-                padding: 0;
-            }
             font-style: italic;
             position: relative;
             @include orange-type;
@@ -33,17 +29,17 @@
 
             &:before,
             &:after {
-                font-weight: bold;
-                color: #c3c3c3;
-                font-size: 2em;
+                font-weight: normal;
+                color: $quotemark-grey;
+                font-size: 2.5em;
             }
 
             &:before {
                 position: absolute;
                 content: '“';
-                left: -2rem;
+                //left: -2em;
                 top: 0;
-                padding-left: 30px;
+                //padding-left: 30px;
             }
 
             &:after {
@@ -62,7 +58,6 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            @include fontSmall;
 
             section > :last-child {
                 margin-bottom: 0;
@@ -71,14 +66,11 @@
             h2 {
                 color: black;
                 font-weight: bold;
-                margin-bottom: $heading-margin-bottom/2;
-                @media (min-width: $screen-lg) {
-                    margin-bottom: 0;
-                    //margin-bottom: $heading-margin-bottom/2;
-                }
+                margin-bottom: 0;
             }
 
             p {
+                @include fontSmall;
                 color: #B8B8B8;
                 text-transform: uppercase;
                 margin: 0;
@@ -91,7 +83,7 @@
                 position: relative;
                 overflow: hidden;
                 border-radius: 50%;
-                margin-right: $gutter-small;
+                margin-right: 0.5em;
 
                 @media (min-width: $screen-md) {
                     width: 3.5em;
@@ -116,16 +108,19 @@
         blockquote {
             border-left: 1px solid #D8D8D8;
             padding-top: 0;
-            padding-left: $gutter-medium;
+            padding-left: $column-gutter-md;
 
             > p {
+                padding: 0;
+                margin-bottom: #{$rhythm-unit}em;
                 &:before {
                     top: 0;
                     background-color: #ffffff;
                     padding-left: 0;
                     line-height: 1;
                     display: inline-block;
-                    left: calc(-2rem - 0.25em);
+                    left: -0.4em;
+                    transform: translateX(-50%);
                     width: 0.5em;
                     height: 0.5em;
                 }
@@ -133,7 +128,7 @@
         }
 
         &.fullWidth {
-            margin: $gutter-medium 0;
+            margin: $component-gutter-md/4 0;
             &:first-child {
                 margin-top: 0;
             }
@@ -141,6 +136,49 @@
                 margin-bottom: 0;
             }
             width: unset;
+
+            blockquote {
+                padding-left: $column-gutter-md/2;
+                margin-left: -$column-gutter-md/2;
+                > p {
+                    &:before {
+                        left: -0.2em;
+                    }
+                }
+
+                footer h2 {
+                    @include headingFontSmall;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-lg) {
+
+    .blockquoteContainer {
+
+        blockquote {
+            padding-left: $column-gutter-lg;
+            > p {
+                &:before {
+                    left: -0.5em;
+                }
+            }
+        }
+
+        &.fullWidth {
+            margin: $component-gutter-lg/4 0;
+
+            blockquote {
+                padding-left: $column-gutter-lg/2;
+                margin-left: -$column-gutter-lg/2;
+                > p {
+                    &:before {
+                        left: -0.25em;
+                    }
+                }
+            }
         }
     }
 }

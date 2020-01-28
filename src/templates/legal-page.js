@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
+
 import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
 import Layout from '../components/page-layout/layout';
 import LegalPageTemplate from '../components/page-templates/legal-page/legal-page.template';

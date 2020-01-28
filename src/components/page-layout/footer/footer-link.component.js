@@ -1,6 +1,7 @@
 import { bool, shape, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+
 import Image, { ImageSrcPropType } from '../image/image.component';
 import Link from '../link/link.component';
 import styles from './footer.module.scss';

@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import { shape, string } from 'prop-types';
 import React from 'react';
+
 import Layout from '../components/page-layout/layout';
 import JobPageTemplate from '../components/page-templates/job-page/job-page.templete';
 
@@ -19,10 +20,16 @@ JobPage.propTypes = {
 function JobPage({ path, data }) {
     const { job } = data;
     const { title, subtitle, ...templateProps } = job;
+    const { salary, tags } = job;
 
     const headerProps = {
         title,
         subtitle,
+        jobDetails: {
+            salary,
+            tags,
+            path,
+        },
     };
 
     return (

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './hamburger.module.scss';
 import { hamburgerPropTypes } from './hamburger.prop-type';
 

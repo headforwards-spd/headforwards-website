@@ -21,13 +21,17 @@
         @media (min-width: $screen-md) {
 
             align-items: flex-start;
-            margin-bottom: calc(#{$gutter-large - $column-gutter/2} - #{$rhythm-unit}em);
+            //margin-bottom: calc(#{$gutter-large - $column-gutter/2} - #{$rhythm-unit}em);
         }
 
         header {
+            width: calc((100%/1) - #{$column-gutter-sm});
             @media (min-width: $screen-md) {
+                width: calc((100% / 3) - #{$column-gutter-md});
+            }
+            @media (min-width: $screen-lg) {
 
-                width: calc((100% / 3) - #{$column-gutter});
+                width: calc((100% / 3) - #{$column-gutter-lg});
             }
 
             h2 {
@@ -38,35 +42,44 @@
                 margin-bottom: 0;
             }
 
-            margin-bottom: 1em;
+            //margin-bottom: 1em;
         }
 
         > section {
-            margin-bottom: 0;
             display: flex;
-
             flex-direction: row;
             flex-wrap: wrap;
-            margin-right: 0;
+            margin: 0;
 
             @media (min-width: $screen-md) {
 
                 &, &:last-child {
                     width: calc((100% * 2 / 3));
                     margin-left: auto;
-                    margin-bottom: calc(#{$column-gutter/2} - #{$rhythm-unit}em);
+                    margin-bottom: calc(#{$column-gutter-md/2} - #{$rhythm-unit}em);
+                }
+            }
+            @media (min-width: $screen-lg) {
+                &, &:last-child {
+                    margin-bottom: calc(#{$column-gutter-lg/2} - #{$rhythm-unit}em);
                 }
             }
 
             > label {
-                width: 100%;
 
+                width: calc((100% / 1) - #{$column-gutter-sm/2});
+                margin-left: $column-gutter-sm/2;
+                margin-right: $column-gutter-sm/2;
                 @media (min-width: $screen-md) {
-
-                    width: calc((100% / 2) - #{$column-gutter});
-                    margin-left: $column-gutter/2;
-                    margin-right: $column-gutter/2;
+                    width: calc((100% / 2) - #{$column-gutter-md});
+                    margin-left: $column-gutter-md/2;
+                    margin-right: $column-gutter-md/2;
                     //#{$rhythm-unit}em;
+                }
+                @media (min-width: $screen-lg) {
+                    width: calc((100% / 2) - #{$column-gutter-lg});
+                    margin-left: $column-gutter-lg/2;
+                    margin-right: $column-gutter-lg/2;
                 }
 
                 &.fullWidth {
@@ -76,7 +89,7 @@
                         width: 100%;
                         @media (min-width: $screen-md) {
 
-                            padding: calc(#{$rhythm-unit*3/4}em) $gutter-small;
+                            padding: calc(#{$rhythm-unit*3/4}em) $component-gutter-sm;
                             margin: calc(#{$rhythm-unit/4}em - 1px) 0;
                         }
                     }
@@ -94,7 +107,7 @@
                 border: none;
                 display: flex;
                 align-items: center;
-                padding: 0.75em $gutter-small/2;
+                padding: 0.75em $component-gutter-sm/2;
                 @include arrow-link;
             //
             //    @media (min-width: $screen-md) {
@@ -128,10 +141,32 @@
 
             [role="group"] {
                 > * {
+                    margin-left: $column-gutter-sm/2;
+                    margin-right: $column-gutter-sm/2;
                     @media (min-width: $screen-md) {
 
-                        margin-left: $column-gutter/2;
-                        margin-right: $column-gutter/2;
+                        margin-left: $column-gutter-md/2;
+                        margin-right: $column-gutter-md/2;
+                    }
+                    @media (min-width: $screen-lg) {
+
+                        margin-left: $column-gutter-lg/2;
+                        margin-right: $column-gutter-lg/2;
+                    }
+
+                    &.error {
+                        margin-left: $column-gutter-sm/2/0.85;
+                        margin-right: $column-gutter-sm/2/0.85;
+                        @media (min-width: $screen-md) {
+
+                            margin-left: $column-gutter-md/2/0.85;
+                            margin-right: $column-gutter-md/2/0.85;
+                        }
+                        @media (min-width: $screen-lg) {
+
+                            margin-left: $column-gutter-lg/2/0.85;
+                            margin-right: $column-gutter-lg/2/0.85;
+                        }
                     }
                 }
             }
@@ -178,13 +213,24 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                margin-left: $column-gutter-sm/2;
+                margin-right: $column-gutter-sm/2;
                 @media (min-width: $screen-md) {
                     flex-direction: row;
                     align-items: flex-start;
+                    margin-left: $column-gutter-md/2;
+                    margin-right: $column-gutter-md/2;
+                }
+                @media (min-width: $screen-lg) {
+                    margin-left: $column-gutter-lg/2;
+                    margin-right: $column-gutter-lg/2;
                 }
 
                 button {
                     @include fontLarge;
+                    display: inline-block;
+                    align-self: flex-start;
+                    margin: 0;
                     justify-content: space-between;
                     padding: 0.5em;
                     flex-shrink: 0;
@@ -193,24 +239,42 @@
                 }
 
                 .messages {
-                    margin-top: #{$rhythm-unit}em;
+                    margin: #{$rhythm-unit}em 0 0 0;
                 }
 
                 @media (min-width: $screen-md) {
                     flex-direction: row;
                     .messages {
-                        margin: 0 $column-gutter/2;
+                        margin: 0 0 0 $column-gutter-md;
                         flex-grow: 1;
+                    }
+                }
+                @media (min-width: $screen-lg) {
+                    .messages {
+                        margin: 0 0 0 $column-gutter-lg;
                     }
                 }
             }
 
             .messages {
-                .error {
+                .success, .error {
                     display: flex;
                     flex-direction: row;
+                    align-items: center;
+                    @media (min-width: $screen-md) {
+                        align-items: flex-start;
+                    }
+                }
+                .error {
                     svg {
                         color: $error-color;
+                        margin-right: 0.5em;
+                        flex-shrink: 1;
+                    }
+                }
+                .success {
+                    svg {
+                        color:$success-color;
                         margin-right: 0.5em;
                         flex-shrink: 1;
                     }

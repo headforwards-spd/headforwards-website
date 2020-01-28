@@ -2,10 +2,11 @@ import { bool, func, shape, string } from 'prop-types';
 import React from 'react';
 import { Provider } from 'unstated';
 import * as uuid from 'uuid';
-import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
+
+import PageComponent from '../../components/page-components/page-component';
 import Footer from '../../components/page-layout/footer/footer.component';
 import Header from '../../components/page-layout/header/header.component';
-import PageComponent from '../../components/page-components/page-component';
+import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
 import IntroductionComponent from '../../components/page-layout/introduction/introduction.component';
 import styles from '../../components/page-templates/info-page/info-page.module.scss';
 

@@ -2,10 +2,10 @@ import CMS from 'netlify-cms-app';
 
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
 import styles from '!css-loader!sass-loader!../scss/main.scss';
-import OptionalObjectControl from './widgets/optional-object-control';
-import UuidControl from './widgets/uuid-control';
 
 import InfoPagePreview from './preview-templates/info-page';
+import OptionalObjectControl from './widgets/optional-object-control';
+import UuidControl from './widgets/uuid-control';
 
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 

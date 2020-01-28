@@ -3,9 +3,17 @@
 @mixin flexRow($direction: row, $wrap: wrap, $justify-content: space-between) {
     display: flex;
     flex-direction: $direction;
-    margin-bottom: $gutter-medium;
     flex-wrap: $wrap;
     justify-content: $justify-content;
+    margin-bottom: $column-gutter-sm;
+    @media (min-width: $screen-md) {
+        margin-bottom: $column-gutter-md;
+
+    }
+    @media (min-width: $screen-lg) {
+        margin-bottom: $column-gutter-lg;
+
+    }
 }
 
 @function strip-unit($value) {

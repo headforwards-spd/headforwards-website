@@ -1,9 +1,10 @@
 import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
+
 import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
-import HomepageTemplate from '../components/page-templates/homepage/homepage.template';
 import Layout from '../components/page-layout/layout';
+import HomepageTemplate from '../components/page-templates/homepage/homepage.template';
 
 const homepagePropTypes = {
     data: shape({

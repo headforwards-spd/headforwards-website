@@ -1,6 +1,7 @@
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
 import { Provider } from 'unstated';
+
 import generateImage from '../../../lib/generate-image';
 import generateMenu from '../../../lib/generate-menu';
 import Header from './header.component';

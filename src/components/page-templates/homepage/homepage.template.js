@@ -1,8 +1,9 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
-import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
+
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import Postit from '../../page-components/postit/postit.component';
+import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 import styles from './homepage.module.scss';
 

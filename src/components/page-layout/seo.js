@@ -1,7 +1,7 @@
-import React from 'react';
-import { arrayOf, object, shape, string } from 'prop-types';
-import Helmet from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
+import { arrayOf, object, shape, string } from 'prop-types';
+import React from 'react';
+import Helmet from 'react-helmet';
 
 const seoPropTypes = {
     title: string,

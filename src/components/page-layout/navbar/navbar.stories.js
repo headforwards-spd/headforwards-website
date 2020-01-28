@@ -1,8 +1,10 @@
-import React from 'react';
 import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
-import generateMenu from '../../../lib/generate-menu';
+import React                                from 'react';
+import { Provider }                         from 'unstated'
+
 import generateImage from '../../../lib/generate-image';
-import Navbar from './navbar.component';
+import generateMenu  from '../../../lib/generate-menu';
+import Navbar        from './navbar.component';
 
 const faker = require('faker');
 
@@ -51,8 +53,10 @@ export const Interactive = () => {
     };
 
     return (
+        <Provider>
         <section style={style}>
             <Navbar {...props} />
         </section>
+        </Provider>
     );
 };

@@ -6544,6 +6544,17 @@ eslint-module-utils@^2.4.0:
     debug "^2.6.8"
     pkg-dir "^2.0.0"
 
+eslint-plugin-autofix@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-autofix/-/eslint-plugin-autofix-0.0.9.tgz#956f4b2500737333199fa42884a968c54450be48"
+  integrity sha512-xnTw1fi9oV/8KAqSwOuhX0xBUL6B8MIm2ATl+TPrHWjwPse/60PqQxvmjlzCyGCVbXLHXn7psbLFtsGOyYq/sw==
+  dependencies:
+    eslint-rule-composer "^0.3.0"
+    espree "^6.0.0"
+    esutils "^2.0.2"
+    lodash "^4.17.15"
+    string-similarity "^3.0.0"
+
 eslint-plugin-eslint-plugin@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-plugin/-/eslint-plugin-eslint-plugin-2.1.0.tgz#a7a00f15a886957d855feacaafee264f039e62d5"
@@ -6624,6 +6635,16 @@ eslint-plugin-react@^7.14.3, eslint-plugin-react@^7.16.0:
     prop-types "^15.7.2"
     resolve "^1.13.1"
 
+eslint-plugin-simple-import-sort@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-5.0.1.tgz#fd47d3ed2af30db3dd2cadaed285ad510dde479b"
+  integrity sha512-s6Hjp9rcIDYT1h7tuTulblbY7+XQNZK+014uUkNJSKRXEHZO2i7CTr16HOpfgD9HDnUOpl0fwphPsr0oxZqgGg==
+
+eslint-rule-composer@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-rule-composer/-/eslint-rule-composer-0.3.0.tgz#79320c927b0c5c0d3d3d2b76c8b4a488f25bbaf9"
+  integrity sha512-bt+Sh8CtDmn2OajxvNO+BX7Wn4CIWMpTRm3MaiKPCQcnnlm0CS2mhui6QaoeQugs+3Kj2ESKEEGJUdVafwhiCg==
+
 eslint-scope@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-4.0.3.tgz#ca03833310f6889a3264781aa82e63eb9cfe7848"
@@ -6700,7 +6721,7 @@ esm@3.2.25:
   resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
   integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
 
-espree@^6.1.2:
+espree@^6.0.0, espree@^6.1.2:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/espree/-/espree-6.1.2.tgz#6c272650932b4f91c3714e5e7b5f5e2ecf47262d"
   integrity sha512-2iUPuuPP+yW1PZaMSDM9eyVf8D5P0Hi8h83YtZ5bPc/zHYjII5khoixIUTMO794NOY8F/ThF1Bo8ncZILarUTA==
@@ -17450,6 +17471,11 @@ string-similarity@^1.2.2:
     lodash.foreach "^4.5.0"
     lodash.map "^4.6.0"
     lodash.maxby "^4.6.0"
+
+string-similarity@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/string-similarity/-/string-similarity-3.0.0.tgz#07b0bc69fae200ad88ceef4983878d03793847c7"
+  integrity sha512-7kS7LyTp56OqOI2BDWQNVnLX/rCxIQn+/5M0op1WV6P8Xx6TZNdajpuqQdiJ7Xx+p1C5CsWMvdiBp9ApMhxzEQ==
 
 string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"

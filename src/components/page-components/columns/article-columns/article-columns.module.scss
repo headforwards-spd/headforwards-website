@@ -18,7 +18,7 @@
 
             .image {
                 order: 1;
-                margin: 0 -#{$gutter-small};
+                margin: 0 -#{$column-gutter-sm};
                 margin-bottom: 1em * $rhythm-unit;
             }
 
@@ -40,10 +40,7 @@
                 @include arrow-link;
                 font-weight: normal;
                 display: block;
-                margin-top: $gutter-small;
-                @media(min-width: $screen-md) {
-                    margin-top: $gutter-medium;
-                }
+                margin-top: 1em * $rhythm-unit;
             }
 
             > :last-child {
@@ -56,7 +53,7 @@
             align-items: stretch;
 
             .article {
-                width: calc((100%/2) - #{$gutter-medium});
+                width: calc((100%/2) - #{$column-gutter-md});
 
                 .image {
                     margin-left: 0;
@@ -65,7 +62,20 @@
             }
 
             &.isThreeColumns .article {
-                width: calc((100%/3) - #{$gutter-medium});
+                width: calc((100%/3) - #{$column-gutter-md});
+            }
+        }
+
+        @media(min-width: $screen-lg) {
+
+            align-items: stretch;
+
+            .article {
+                width: calc((100%/2) - #{$column-gutter-lg});
+            }
+
+            &.isThreeColumns .article {
+                width: calc((100%/3) - #{$column-gutter-lg});
             }
         }
     }

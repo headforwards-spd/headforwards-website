@@ -1,6 +1,7 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+
 import styles from './legal-page.module.scss';
 
 const legalPageSectionPropTypes = {

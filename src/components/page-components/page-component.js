@@ -1,15 +1,16 @@
 import { bool, oneOfType, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+
 import { ImageSrcPropType } from '../page-layout/image/image.component';
 import ArticleColumns, { ArticleColumnsPropType } from './columns/article-columns/article-columns.component';
+import BlogPostColumns, { BlogPostColumnsPropType } from './columns/blog-post-columns/blog-post-columns.component';
+import ImageCopyColumns, { ImageCopyColumnsPropType } from './columns/image-copy-columns/image-copy-columns.component';
 import PostitCopyColumns, {
     PostitCopyColumnsPropType,
 } from './columns/image-copy-columns/postit-copy-columns.component';
-import Hero, { HeroPropType } from './hero/hero.component';
-import ImageCopyColumns, { ImageCopyColumnsPropType } from './columns/image-copy-columns/image-copy-columns.component';
 import ContentSlider, { ContentSliderPropType } from './content-slider/content-slider.component';
-import BlogPostColumns, { BlogPostColumnsPropType } from './columns/blog-post-columns/blog-post-columns.component';
+import Hero, { HeroPropType } from './hero/hero.component';
 import FullWidthImage, { FullWidthImageSrcPropType } from './images/full-width/full-width-image.component';
 import TwoImages, { TwoImagesPropType } from './images/two/two-images.component';
 import Quote, { QuotePropType } from './quote/quote.component';

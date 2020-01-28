@@ -1,5 +1,6 @@
-import React from 'react';
 import { Location } from '@reach/router';
+import React from 'react';
+
 import Link from '../../link/link.component';
 import Socials from '../../socials/socials.component';
 import Hamburger from '../hamburger/hamburger.component';

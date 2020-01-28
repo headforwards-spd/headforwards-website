@@ -1,6 +1,6 @@
-import React from 'react';
-import { arrayOf, node, oneOfType, shape, string } from 'prop-types';
 import { Link as GatsbyLink } from 'gatsby';
+import { arrayOf, node, oneOfType, shape, string } from 'prop-types';
+import React from 'react';
 
 const linkPropTypes = {
     to: string.isRequired,

@@ -1,6 +1,7 @@
+import parseHtml from 'html-react-parser';
 import PropTypes from 'prop-types';
 import React from 'react';
-import parseHtml from 'html-react-parser';
+
 import styles from './wordpress-content.module.scss';
 
 export default WordpressContent;

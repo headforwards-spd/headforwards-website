@@ -4,7 +4,8 @@ $orange-1: $orange;
 $postit-bg: #ffcc55;
 $orange-2: $postit-bg;
 
-$error-color: red;
+$success-color: $orange;
+$error-color: #d40900;
 
 $blue-background: #141122;
 $blue-1: $blue-background;
@@ -36,29 +37,23 @@ $grey-11: $jobs-grey;
 $input-grey: #b1b1b1;
 $grey-12: $input-grey;
 
-$gutter-small:  1rem;
-$gutter-medium: 2rem;
-$gutter-large:  6rem;
+$column-gutter-sm: 1em;
+$column-gutter-md: 1.5em;
+$column-gutter-lg: 2em;
+
+$component-gutter-sm: 1.75em;
+$component-gutter-md: 3em;
+$component-gutter-lg: 4.5em;
 
 // Breakpoints
 $screen-sm:      320px;
-$page-gutter-sm: 1rem;
-
 $screen-md:      768px;
-$page-gutter-md: 2rem;
-
 $screen-lg:      1024px;
-$page-gutter-lg: 1.4rem;
-
 $screen-xl:      1440px;
-$page-gutter-xl: 0;
 
 $min_width: $screen-sm;
 $max_width: 1170px;
 $min_font: 16px;
 $max_font: 21px;
-
-$page-gutter: $gutter-large;
-$column-gutter: $gutter-medium;
 
 $singleColumnMaxWidth: 85%;

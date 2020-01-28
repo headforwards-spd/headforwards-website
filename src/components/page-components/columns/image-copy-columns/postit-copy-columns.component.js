@@ -1,6 +1,7 @@
-import React from 'react';
 import { any, arrayOf, bool, shape, string } from 'prop-types';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
+
 import { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import Link from '../../../page-layout/link/link.component';
 import Postit from '../../postit/postit.component';

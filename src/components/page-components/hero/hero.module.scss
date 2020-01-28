@@ -7,6 +7,16 @@
 .hero {
     @include component-gutter;
     @include fontMedium;
+    margin: 0;
+    margin-bottom: $component-gutter-sm;
+    @media (min-width: $screen-md) {
+        margin: 0;
+        margin-bottom: $component-gutter-md;
+    }
+    @media (min-width: $screen-lg) {
+        margin: 0;
+        margin-bottom: $component-gutter-lg;
+    }
 
     > section {
         :last-child {
@@ -14,35 +24,51 @@
         }
     }
 
-    &.isTwoColumns {
-        @include columns-component;
-        > h2 {
-            margin-bottom: $gutter-small;
-        }
-    }
     @media(min-width: $screen-md) {
 
         max-width: $singleColumnMaxWidth;
 
         &.isTwoColumns {
+            display: flex;
             max-width: unset;
             align-items: flex-start;
 
             > section {
                 column-count: 2;
-                column-gap: $gutter-medium;
+                column-gap: 2*$column-gutter-md;
             }
 
             &.hasTitle {
-                > h2 {
-                    width: calc(37.5% - #{$column-gutter});
+
+                h2 {
+                    flex-shrink: 1;
+                    flex-grow: 1;
                 }
 
                 > section {
-                    width: calc(62.5% - #{$column-gutter});
+                    width: calc(62.5% - #{$column-gutter-md/2});
+                    flex-shrink: 0;
+                    margin-left: $column-gutter-md;
                     column-count: unset;
                     column-gap: unset;
                 }
+            }
+        }
+    }
+    @media(min-width: $screen-lg) {
+
+
+        &.isTwoColumns {
+
+            > section {
+                column-gap: 2*$column-gutter-lg;
+            }
+
+            &.hasTitle {
+
+                > section {
+                    width: calc(62.5% - #{$column-gutter-lg/2});
+                    margin-left: $column-gutter-lg;                }
             }
         }
     }

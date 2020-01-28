@@ -1,16 +1,15 @@
-import { faSpinner, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import axios from 'axios';
-import { Field, Form, Formik } from 'formik';
-import { string } from 'prop-types';
-import * as Yup from 'yup';
-import qs from 'querystring';
+import { faSpinner, faTimesCircle, faCheckCircle }    from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon }             from '@fortawesome/react-fontawesome';
+import axios                           from 'axios';
+import { Field, Form, Formik }         from 'formik';
+import { string }                      from 'prop-types';
 import React, { Component, createRef } from 'react';
-import Reaptcha from 'reaptcha';
-import Link from '../../../page-layout/link/link.component';
+import Reaptcha                        from 'reaptcha';
+import * as Yup                        from 'yup';
+
 import { Checkbox, File, Input, Textarea } from '../form-field.component';
-import schema from './application-form.schema';
 import styles from './application-form.module.scss';
+import { messages, schema } from './application-form.schema';
 import ApplicationQuestions from './application-questions/applicaton-questions.component';
 
 export default class ApplicationForm extends Component {
@@ -30,16 +29,17 @@ export default class ApplicationForm extends Component {
     };
 
     onVerify(token) {
+        const { job } = this.props;
         const { data } = this.state;
         const {
-            'bot-field': botField,
-            'form-name': formName,
-            name = '',
-            email = '',
-            phone = '',
-            cv = '',
-            cover_letter = '',
-        } = data;
+                  'bot-field': botField,
+                  'form-name': formName,
+                  name = '',
+                  email = '',
+                  phone = '',
+                  cv = '',
+                  cover_letter = '',
+              } = data;
         const questions = Object.keys(data).filter(key => key.startsWith('q-'));
 
         const formData = new FormData();
@@ -80,16 +80,24 @@ export default class ApplicationForm extends Component {
                     (status === 200 && Promise.resolve()) || Promise.reject(`${status} Error submitting form.`)
             )
             .then(() => new Promise(resolve => setTimeout(resolve, 10000)))
-            .then(() => this.resetform())
+            .then(() => {
+                this.resetform();
+                this.setState({
+                                  isSubmitting: false,
+                                  data: null,
+                                  successMessage: messages.success(job),
+                              });
+            })
             .catch(error => {
                 this.setState({
-                    errorMessage: 'There was an error trying to send your message. Please try again later.',
-                });
+                                  isSubmitting: false,
+                                  data: null,
+                                  errorMessage: 'There was an error trying to send your message. Please try again later.',
+                              });
                 console.error(error);
             })
             .finally(() => {
                 this.resetform = null;
-                this.setState({ isSubmitting: false, data: null });
             });
     }
 
@@ -99,28 +107,30 @@ export default class ApplicationForm extends Component {
         this.resetform = resetForm;
 
         Promise.resolve({
-            ...values,
-            'bot-field': values['bot-field'],
-            'form-name': values['form-name'],
-        })
-            .then(data => this.setState({ data, errorMessage: null, successMessage: null }))
-            .then(() => rcRef.current.execute())
-            .catch(error => {
-                this.resetform = null;
-                console.error('Reaptcha.execute', error);
-            })
-            .finally(console.info);
+                            ...values,
+                            'bot-field': values['bot-field'],
+                            'form-name': values['form-name'],
+                        })
+               .then(data => this.setState({ data, errorMessage: null, successMessage: null }))
+               .then(() => rcRef.current.execute())
+               .catch(error => {
+                   this.resetform = null;
+                   console.error('Reaptcha.execute', error);
+               })
+               .finally(console.info);
     }
 
     render() {
         const {
-            options_phone: phoneOptions,
-            options_photo: photoOptions,
-            options_cover_letter: coverLetterOptions,
-            options_cv: cvOptions,
-            open_questions: questions,
-            path,
-        } = this.props;
+                  options_phone: phoneOptions,
+                  options_photo: photoOptions,
+                  options_cover_letter: coverLetterOptions,
+                  options_cv: cvOptions,
+                  open_questions: questions,
+                  path,
+              } = this.props;
+
+        console.log({ props: this.props });
 
         const showPhone = phoneOptions !== 'off';
         const phoneRequired = phoneOptions === 'required';
@@ -154,13 +164,13 @@ export default class ApplicationForm extends Component {
         });
 
         questions &&
-            questions.forEach(({ id, kind, required }) => {
-                let fieldValidation = kind !== 'multi_choice' ? Yup.string() : Yup.array();
-                required && (fieldValidation = fieldValidation.required('This field is Required.'));
+        questions.forEach(({ id, kind, required }) => {
+            let fieldValidation = kind !== 'multi_choice' ? Yup.string() : Yup.array();
+            required && (fieldValidation = fieldValidation.required('This field is Required.'));
 
-                initialValues[`q-${id}`] = kind !== 'multi_choice' ? '' : [];
-                validation[`q-${id}`] = fieldValidation;
-            });
+            initialValues[`q-${id}`] = kind !== 'multi_choice' ? '' : [];
+            validation[`q-${id}`] = fieldValidation;
+        });
 
         phoneRequired && (validation.phone = validation.phone.required('This field is Required.'));
         photoRequired && (validation.photo = validation.photo.required('This field is Required.'));
@@ -192,9 +202,9 @@ export default class ApplicationForm extends Component {
                         <input key={key} type={['photo', 'cv'].includes(key) ? 'file' : 'text'} name={key} />
                     ))}
                     {!!questions.length &&
-                        questions.map(question => (
-                            <input key={question.id} type='text' name={`questions[${question.id}]`} />
-                        ))}
+                     questions.map(question => (
+                         <input key={question.id} type="text" name={`questions[${question.id}]`} />
+                     ))}
                     <input name="bot-field" type="hidden" />
                 </form>
                 <Formik {...formConfig}>
@@ -214,10 +224,10 @@ export default class ApplicationForm extends Component {
                                     console.log('onchange', { currentError, currentSuccess });
 
                                     (currentError || currentSuccess) &&
-                                        this.setState({
-                                            errorMessage: null,
-                                            successMessage: null,
-                                        });
+                                    this.setState({
+                                                      errorMessage: null,
+                                                      successMessage: null,
+                                                  });
                                 }}
                                 className={`${styles.applicationForm} ${errorClass} ${submittingClass}`}
                                 noValidate
@@ -325,7 +335,12 @@ export default class ApplicationForm extends Component {
                                                         {errorMessage}
                                                     </div>
                                                 )}
-                                                {successMessage && <div>{successMessage}</div>}
+                                                {successMessage && (
+                                                    <div className={styles.success}>
+                                                        <FontAwesomeIcon icon={faCheckCircle} size="lg" />
+                                                        {successMessage}
+                                                    </div>
+                                                )}
                                             </div>
                                         </div>
                                     </section>

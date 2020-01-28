@@ -1,6 +1,7 @@
 import { arrayOf, bool, func, shape, string } from 'prop-types';
-import { MenuItemPropType } from '../menu-item/menu-item.prop-type';
+
 import { CompanyInfoPropType } from '../../company-info.prop-type';
+import { MenuItemPropType } from '../menu-item/menu-item.prop-type';
 
 export const menuPropTypes = {
     menuClick: func.isRequired,

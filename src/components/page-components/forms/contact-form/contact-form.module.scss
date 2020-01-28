@@ -119,19 +119,8 @@
     }
 
     input {
-        padding: 0 $gutter-small/2;
+        padding: 0 $column-gutter-sm/2;
         line-height: #{1.5*$rhythm-unit}em;
-    }
-
-    textarea {
-        display: block;
-        padding: calc(#{$gutter-small/2} - 1px);
-        line-height: $rhythm-unit;
-
-        @media (min-width: $screen-md) {
-            width: calc((100% / 1) - #{$column-gutter});
-            margin: -#{$gutter-small/2} $column-gutter/2 calc(#{$rhythm-unit}em - #{$gutter-small/2});
-        }
     }
 
     .error {

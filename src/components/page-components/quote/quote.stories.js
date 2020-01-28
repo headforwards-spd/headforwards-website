@@ -1,5 +1,6 @@
-import React from 'react';
 import { files, text, withKnobs } from '@storybook/addon-knobs';
+import React from 'react';
+
 import StoriesLayout from '../../page-layout/stories-layout.component';
 import Quote from './quote.component';
 

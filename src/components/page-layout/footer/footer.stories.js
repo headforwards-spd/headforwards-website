@@ -1,5 +1,6 @@
 import { text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
+
 import Footer from './footer.component';
 
 const faker = require('faker');
@@ -19,6 +20,8 @@ const addressValue = () => {
 };
 
 export const Interactive = () => {
+    const callToAction = text('Call to action', faker.company.catchPhrase());
+
     const companyInfo = {
         companyName: text('Company Name', faker.company.companyName()),
         email: text('Email Address', faker.internet.email()),
@@ -31,5 +34,5 @@ export const Interactive = () => {
         youtubeURL: text('YouTube URL', faker.internet.url()),
     };
 
-    return <Footer {...{ companyInfo }} />;
+    return <Footer {...{ companyInfo, callToAction }} />;
 };

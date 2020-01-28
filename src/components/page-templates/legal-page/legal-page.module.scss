@@ -1,16 +1,16 @@
-@import "../../../scss/variables";
-@import "../../../scss/mixins/typography";
-@import "../../../scss/mixins/column-list";
-.sections {
-    @include fontMediumVr;
-    @media (min-width: $screen-lg) {
-        column-count: 2;
-        column-gap: $gutter-large;
-    }
-    margin-bottom: $gutter-large;
-
-    ul {
-        @include columnsList;
-    }
-}
-
+//@import "../../../scss/variables";
+//@import "../../../scss/mixins/typography";
+//@import "../../../scss/mixins/column-list";
+//.sections {
+//    @include fontMediumVr;
+//    @media (min-width: $screen-lg) {
+//        column-count: 2;
+//        column-gap: $gutter-large;
+//    }
+//    margin-bottom: $gutter-large;
+//
+//    ul {
+//        @include columnsList;
+//    }
+//}
+//

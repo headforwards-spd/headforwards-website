@@ -1,5 +1,6 @@
 import { shape, string } from 'prop-types';
 import React from 'react';
+
 import Link from '../../page-layout/link/link.component';
 import styles from './jobs-page.module.scss';
 

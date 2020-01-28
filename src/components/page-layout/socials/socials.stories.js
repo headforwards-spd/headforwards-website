@@ -1,5 +1,6 @@
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
+
 import Socials from './socials.component';
 
 const faker = require('faker');

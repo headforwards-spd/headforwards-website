@@ -15,39 +15,57 @@
     .copy {
         @include copy;
         @media (min-width: $screen-md) {
-            width: calc(50% - #{$gutter-medium});
+            width: calc(50% - #{$column-gutter-md});
+        }
+        @media (min-width: $screen-lg) {
+            width: calc(50% - #{$column-gutter-lg});
         }
     }
 
     &.isImage .copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         @media (min-width: $screen-md) {
-            margin: calc(14vw - 100px) 1rem;
+            margin: $component-gutter-md #{$column-gutter-md/2};
+        }
+        @media (min-width: $screen-lg) {
+            margin: $component-gutter-lg #{$column-gutter-lg/2};
         }
     }
 
-    &.isPostit .copy {
-        margin-top: $gutter-small;
-    }
+    //&.isPostit .copy {
+    //    //margin-top: $gutter-small;
+    //}
 
     .image {
-        margin-left: -$page-gutter-sm;
-        margin-right: -$page-gutter-sm;
+        margin-left: -$column-gutter-sm/2;
+        margin-right: -$column-gutter-sm/2;
 
         @media(min-width: $screen-md) {
+            min-height: 62.5vh;
             > div {
                 display: none;
             }
 
-            width: calc(50vw - 1rem);
-            margin: 0 $gutter-medium/2 0 calc(-50vw + 50%);
+            width: calc(50vw - #{$column-gutter-md/2});
+            margin: 0 $column-gutter-md/2 0 calc(-50vw + 50%);
+        }
+        @media(min-width: $screen-lg) {
+            width: calc(50vw - #{$column-gutter-lg/2});
+            margin-right: $column-gutter-lg/2;
         }
     }
     .postit {
-        margin: 0;
+        width: calc(100% - #{$column-gutter-sm});
+        padding-bottom: calc(100% - #{$column-gutter-sm});
     }
     &.isRightImage .image {
         @media(min-width: $screen-md) {
-            margin: 0 calc(-50vw + 50%) 0 $gutter-medium/2;
+            margin:  0 calc(-50vw + 50%) 0 $column-gutter-md/2;
+        }
+        @media(min-width: $screen-lg) {
+            margin-left: $column-gutter-lg/2;
         }
     }
 
@@ -58,10 +76,17 @@
         }
 
         .postit {
-            width: calc(50% - #{$gutter-medium});
-            padding-bottom: calc(50% - #{$gutter-medium});
-            margin: $gutter-medium/2;
+            width: calc(50% - #{$column-gutter-md});
+            padding-bottom: calc(50% - #{$column-gutter-md});
+            margin: $column-gutter-md/2;
         }
     }
+    @media(min-width: $screen-lg) {
 
+        .postit {
+            width: calc(50% - #{$column-gutter-lg});
+            padding-bottom: calc(50% - #{$column-gutter-lg});
+            margin: $column-gutter-lg/2;
+        }
+    }
 }

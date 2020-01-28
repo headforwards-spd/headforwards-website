@@ -4,35 +4,51 @@
 @import '../../page-components/page-component';
 
 .menu {
+    padding-top: $component-gutter-sm/4;
+    padding-bottom: $component-gutter-sm/4;
+    @media (min-width: $screen-md) {
+        padding-top: $component-gutter-md/4;
+        padding-bottom: $component-gutter-md/4;
+    }
     @media (min-width: $screen-lg) {
-        padding-top: $page-gutter-lg;
-        padding-bottom: $page-gutter-lg;
+        padding-top: $component-gutter-lg/4;
+        padding-bottom: $component-gutter-lg/4;
     }
 
     background-color: white;
     border-bottom: 1px solid #D8D8D8;
 
     > header {
-        @include flexRow;
-        margin: $page-gutter-sm/2 -#{$page-gutter-sm/2};
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 -#{$column-gutter-sm/2};
         @media (min-width: $screen-md) {
-            margin: $page-gutter-md/2 -#{$page-gutter-md/2};
+            margin: 0 -#{$column-gutter-md/2};
         }
         @media (min-width: $screen-lg) {
-            margin: 0 0 $gutter-medium;
+            margin: 0 -#{$column-gutter-lg/2};
         }
 
         a {
-            @include headingFontLarge;
-            margin: 0 $page-gutter-sm/2;
+            &:after{
+                content: '';
+                @include headingFontLarge;
+                height: #{$rhythm-unit}em;
+                display: inline-block;
+            }
+            margin: 0 $column-gutter-sm/2;
             @media (min-width: $screen-md) {
-                margin: 0 $page-gutter-md/2;
+                margin: 0 $column-gutter-md/2;
+                &:after {
+                    @include headingFontMedium;
+                }
             }
             @media (min-width: $screen-lg) {
-                margin: 0;
+                margin: 0 $column-gutter-lg/2;
             }
             @media (min-width: $screen-xl) {
-                margin-left: -0.95em;
+                margin-left: -1.5em;
             }
 
             text-indent: -1000vw;
@@ -75,7 +91,7 @@
 
                 > li {
                     @include fontXLarge;
-                    padding-left: $gutter-small;
+                    //padding-left: $gutter-small;
 
                     &.hasChildren > a {
                         display: flex;
@@ -84,8 +100,8 @@
                             @include fontSmall;
                             background: none;
                             border: none;
-                            padding: $gutter-small;
-                            margin: -$gutter-small 0;
+                            //padding: $gutter-small;
+                            //margin: -$gutter-small 0;
                             color: white;
                             width: 40px;
                             display: flex;
@@ -106,11 +122,11 @@
 
                         ul {
                             @include fontLarge;
-                            margin-bottom: $gutter-small;
+                            //margin-bottom: $gutter-small;
 
                             ul {
-                                margin-left: $column-gutter/2;
-                                margin-bottom: $gutter-small;
+                                //margin-left: $column-gutter/2;
+                                //margin-bottom: $gutter-small;
                             }
                         }
 
@@ -159,13 +175,16 @@
             position: absolute;
             bottom: 0;
             height: 1px;
-            width: calc(100% - #{2*$page-gutter-lg});
+            width: calc(100% - #{2*$column-gutter-lg});
             background: #D8D8D8;
+        }
+        &:global(.with-bg):after {
+            opacity: 0.2;
         }
     }
     @media screen and (min-width: $screen-xl) {
         &:after {
-            width: calc(100% - #{2*$page-gutter-xl});
+            //width: calc(100% - #{2*$page-gutter-xl});
         }
     }
 
@@ -191,6 +210,7 @@
         }
 
         > section {
+            margin-top: $component-gutter-sm/2;
             overflow: hidden;
             opacity: 1;
             flex-grow: 1;
@@ -254,7 +274,7 @@
 
             > ul {
                 @include fontMedium;
-                margin: 0 -#{$gutter-medium/2};
+                margin: 0 -#{$column-gutter-lg/2};
                 border-top: none;
                 display: flex;
                 flex-direction: row;
@@ -264,7 +284,7 @@
                 > li {
                     position: relative;
                     border: none;
-                    padding: 0 $gutter-medium/2;
+                    padding: 0 $column-gutter-lg/2;
                     &:hover > a {
                         color: $orange;
                     }
@@ -314,13 +334,13 @@
                         transition-delay: 0.1s, 0.75s;
 
                         &:before {
-                            top: -$gutter-small/2;
+                            //top: -$gutter-small/2;
                             right: 2rem;
                             content: '';
                             position: absolute;
                             width: 0;
                             height: 0;
-                            border: $gutter-small/2 solid;
+                            //border: $gutter-small/2 solid;
                             border-color: white;
                             transform: rotate(135deg);
                             box-shadow: -3px 3px 2px 0 rgba(0, 0, 0, 0.1);
@@ -328,7 +348,7 @@
 
                         > ul {
                             @include fontMedium;
-                            margin: $gutter-small 0 0;
+                            //margin: $gutter-small 0 0;
                         }
 
                         > li {
@@ -339,7 +359,7 @@
                             @include headingFontXSmall;
                             margin: 0;
                             font-weight: lighter;
-                            padding-bottom: $gutter-small;
+                            //padding-bottom: $gutter-small;
                             border-bottom: 1px solid #D8D8D8;
                         }
 

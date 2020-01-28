@@ -1,9 +1,10 @@
 import { faFacebookSquare, faInstagram, faLinkedinIn, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
 import { bool, string } from 'prop-types';
-import styles from './socials.module.scss';
+import React from 'react';
+
 import Link from '../link/link.component';
+import styles from './socials.module.scss';
 
 export default Socials;
 

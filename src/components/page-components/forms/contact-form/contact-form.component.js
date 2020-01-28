@@ -1,12 +1,14 @@
-import { string } from 'prop-types';
+import axios                           from 'axios';
+import { Field, Form, Formik }         from 'formik';
+import { string }                      from 'prop-types';
+import qs                              from 'querystring';
 import React, { Component, createRef } from 'react';
-import { Field, Form, Formik } from 'formik';
-import Reaptcha from 'reaptcha';
-import { object } from 'yup';
-import axios from 'axios';
-import qs from 'querystring';
-import schema from './contact-form.schema';
+import Reaptcha                        from 'reaptcha';
+import { object }                      from 'yup';
+import styles from './contact-form.module.scss'
+
 import { Checkbox, Input, Textarea } from '../form-field.component';
+import schema from './contact-form.schema';
 
 export default class ContactForm extends Component {
     rcRef = createRef();
@@ -108,7 +110,7 @@ export default class ContactForm extends Component {
                             <Input {...schema.phone.field} disabled={isSubmitting} />
                             <Input {...schema.email.field} disabled={isSubmitting} />
                         </section>
-                        <Textarea {...schema.enquiry.field} disabled={isSubmitting} />
+                        <Textarea {...schema.enquiry.field} disabled={isSubmitting} className={styles.fullWidth} />
                         <Checkbox {...schema.privacy.field} disabled={isSubmitting} />
                         <Checkbox {...schema.marketing.field} disabled={isSubmitting} />
                         <Reaptcha {...rcProps} />

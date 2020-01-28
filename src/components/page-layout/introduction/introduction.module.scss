@@ -4,7 +4,7 @@
     @include component-gutter;
     @include fontMedium;
     @media (min-width: $screen-md) {
-        margin-bottom: $gutter-large -$gutter-medium/2;
+        //margin-bottom: $gutter-large -$gutter-medium/2;
         width: $singleColumnMaxWidth;
     }
 }

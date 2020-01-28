@@ -6,6 +6,7 @@
         "prettier/react"
     ],
     "plugins":       [
+        "eslint-plugin-simple-import-sort",
         "react",
         "prettier"
     ],
@@ -22,9 +23,7 @@
         "sourceType":                  "module"
     },
     "rules":         {
-        "sort-imports": [
-            "error"
-        ],
+        "simple-import-sort/sort": "error",
         "no-param-reassign":            [
             "error",
             {

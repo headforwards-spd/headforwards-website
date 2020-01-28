@@ -31,9 +31,12 @@
         @include fontLarge;
         display: block;
         @include arrow-link;
-        margin-top: $gutter-small;
+        margin-top: $component-gutter-sm;
         @media(min-width: $screen-md) {
-            margin-top: $gutter-medium;
+            margin-top: $component-gutter-md;
+        }
+        @media(min-width: $screen-lg) {
+            margin-top: $component-gutter-lg;
         }
         font-weight: normal;
     }

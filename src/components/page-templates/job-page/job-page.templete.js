@@ -1,8 +1,9 @@
 import { string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import styles from './job-page.module.scss';
+
 import Link from '../../page-layout/link/link.component';
+import styles from './job-page.module.scss';
 
 export default JobPageTemplate;
 
@@ -30,7 +31,7 @@ function JobPageTemplate({ path, description, requirements }) {
                 )}
             </section>
             <Link to={`${path}/application-form/`} className={styles.apply}>
-                Apply
+                Apply Online
             </Link>
         </>
     );

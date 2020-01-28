@@ -1,5 +1,6 @@
-import React from 'react';
 import { arrayOf, string } from 'prop-types';
+import React from 'react';
+
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 import PostitPageLink, { PostitPageLinkPropType } from '../index-page/postit-page-link.component';

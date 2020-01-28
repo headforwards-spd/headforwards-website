@@ -48,15 +48,16 @@ body {
             > footer > ul,
             > footer > address,
             > footer > section > * {
+                @include fontMedium;
                 margin: 0 auto;
                 width: 100%;
-                padding: 0 $page-gutter-sm;
+                padding: 0 $column-gutter-sm;
                 @media(min-width: $screen-md) {
-                    padding: 0 $page-gutter-md;
+                    padding: 0 $column-gutter-md;
                 }
                 @media(min-width: $screen-lg) {
-                    max-width: calc(#{$max_width} + #{2*$page-gutter-lg});
-                    padding: 0 $page-gutter-lg;
+                    max-width: calc(#{$max_width} + #{$column-gutter-lg});
+                    padding: 0 $column-gutter-lg;
                 }
             }
         }

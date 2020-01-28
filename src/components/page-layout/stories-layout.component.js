@@ -1,5 +1,6 @@
 import { node } from 'prop-types';
 import React from 'react';
+
 import styles from './layout.stories.modules.scss';
 
 export default StoriesLayout;

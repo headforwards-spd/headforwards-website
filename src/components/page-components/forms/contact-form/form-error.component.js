@@ -1,5 +1,6 @@
 import { bool, string } from 'prop-types';
 import React from 'react';
+
 import styles from './contact-form.module.scss';
 
 export default FormError;

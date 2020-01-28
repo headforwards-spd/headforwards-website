@@ -1,5 +1,6 @@
 import { boolean, files } from '@storybook/addon-knobs';
 import React from 'react';
+
 import generateImage from '../../../../lib/generate-image';
 import StoriesLayout from '../../../page-layout/stories-layout.component';
 import TwoImages from './two-images.component';

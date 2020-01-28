@@ -1,5 +1,6 @@
 import { boolean, files, text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
+
 import StoriesLayout from '../../../page-layout/stories-layout.component';
 import PostitCopyColumns from './postit-copy-columns.component';
 

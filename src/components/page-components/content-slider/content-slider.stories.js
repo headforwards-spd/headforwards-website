@@ -1,5 +1,6 @@
-import React from 'react';
 import { object, text, withKnobs } from '@storybook/addon-knobs';
+import React from 'react';
+
 import generateImage from '../../../lib/generate-image';
 import ContentSlider from './content-slider.component';
 

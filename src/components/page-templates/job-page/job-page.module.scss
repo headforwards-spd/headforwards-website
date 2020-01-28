@@ -6,11 +6,19 @@
     @include fontMediumVr;
     @media (min-width: $screen-md) {
         column-count: 2;
-        column-gap: $gutter-large;
+        column-gap: $column-gutter-md*2;
+    }
+    @media (min-width: $screen-lg) {
+        column-gap: $column-gutter-lg*2;
     }
 
     ul {
         @include columnsList;
+    }
+
+    strong em {
+        font-style: normal;
+        border-bottom: 2px solid $orange;
     }
 }
 
@@ -32,6 +40,24 @@
     dd {
         width: 62.5%;
         margin: 0;
-        padding-left: $gutter-small;
+        padding-left: 0.5em;
+    }
+}
+
+.apply {
+    @include fontMedium;
+    @include button-link;
+    margin-bottom: $component-gutter-sm;
+
+    display: inline-block;
+    @media (min-width: $screen-md) {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: $component-gutter-sm;
+    }
+    @media (min-width: $screen-lg) {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: $component-gutter-lg;
     }
 }

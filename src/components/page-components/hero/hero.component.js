@@ -1,6 +1,7 @@
-import React from 'react';
 import { any, arrayOf, bool, shape, string } from 'prop-types';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
+
 import Quote from '../quote/quote.component';
 import styles from './hero.module.scss';
 
@@ -24,7 +25,7 @@ function Hero({ title, content, isTwoColumns, className }) {
     const columnsClass = isTwoColumns ? styles.isTwoColumns : '';
     const hasTitleClass = title ? styles.hasTitle : '';
     return (
-        <section className={`${styles.hero} ${columnsClass} ${hasTitleClass} ${className}}`}>
+        <section className={`${styles.hero} ${columnsClass} ${hasTitleClass} ${className}`}>
             {title && <h2>{title}</h2>}
             {content && (
                 <section>

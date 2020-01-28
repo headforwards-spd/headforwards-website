@@ -10,6 +10,12 @@
     //    margin-right: -$page-gutter-md;
     //}
     //margin-bottom: $gutter-large;
-    max-height: calc(100vh - #{$gutter-large*2});
+    max-height: calc(100vh - #{$component-gutter-sm*2});
+    @media (min-width: $screen-md) {
+        max-height: calc(100vh - #{$component-gutter-md*2});
+    }
+    @media (min-width: $screen-lg) {
+        max-height: calc(100vh - #{$component-gutter-lg*2});
+    }
 
 }

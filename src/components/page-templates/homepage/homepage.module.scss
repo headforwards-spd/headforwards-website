@@ -3,9 +3,6 @@
 
 .section {
     @include component-gutter;
-    @media (min-width: $screen-lg) {
-        margin-bottom: $gutter-large - $gutter-medium/2;
-    }
 
     .components {
         @include fontMedium;
@@ -17,40 +14,42 @@
                 margin-bottom: 0;
             }
 
-            margin-bottom: $gutter-medium;
             &:last-child {
                 margin-bottom: 0;
             }
         }
 
         blockquote {
+            margin-left: 0;
+            @media (min-width: $screen-md) {
+                padding-left: $column-gutter-md/2;
+            }
+            @media (min-width: $screen-lg) {
+                padding-left: $column-gutter-lg/2;
+            }
             p {
-                @include fontMedium;
-                font-weight: bold;
-                margin-bottom: 0;
-
-                &:before,
-                &:after {
-                    font-size: 3rem;
-                    font-width: normal;
+                @include fontLarge;
+                @media (min-width: $screen-md) {
+                    @include fontMedium;
                 }
-
                 &:before {
-                    padding: 0;
-                    left: 0;
-                    @media(min-width: $screen-lg) {
-                        transform: translate(-50%, -25%);
-                        left: -$column-gutter;
+                    @media (min-width: $screen-md) {
+                        left: -0.3em;
+                    }
+                    @media (min-width: $screen-lg) {
+                        left: -0.4em;
                     }
                 }
             }
-
             footer {
                 @include fontXSmall;
                 h2 {
                     margin-bottom: 0;
                 }
                 margin-top: 1rem;
+                p {
+                    @include fontSmall;
+                }
             }
         }
     }
@@ -58,46 +57,59 @@
     &.hasImage {
         @include columns-component;
         &.isRightImage {
-            @media(min-width: $screen-lg) {
+            @media(min-width: $screen-md) {
                 flex-direction: row-reverse;
             }
         }
 
         .image {
-            @media(min-width: $screen-lg) {
+            margin-left: -$column-gutter-sm/2;
+            margin-right: -$column-gutter-sm/2;
+            @media(min-width: $screen-md) {
+                margin: $column-gutter-md/2;
                 align-self: stretch;
                 > div {
                     display: none;
                 }
             }
+            @media(min-width: $screen-lg) {
+                margin: $column-gutter-lg/2;
+            }
         }
 
         .components {
-            padding: $gutter-medium 0;
+            padding: $component-gutter-sm/2 0;
+            @media (min-width: $screen-md) {
+                padding: $component-gutter-md/2 0;
+
+            }
+            @media (min-width: $screen-lg) {
+                padding: $component-gutter-lg/2 0;
+
+            }
         }
 
         .image, .postit {
-            width: 100%;
             @include fontMedium;
-
-            &.postit {
-                padding-bottom: 100%;
-            }
-
-            @media(min-width: $screen-md) {
-                width: 62.5%;
-                &.postit {
-                    padding-bottom: 62.5%;
-                }
-            }
         }
+
+        .postit {
+                width: calc(100% - #{$column-gutter-sm});
+                padding-bottom: calc(100% - #{$column-gutter-sm});
+            }
 
         .image, .postit, .components {
 
-            @media(min-width: $screen-lg) {
-                width: calc(50% - #{$gutter-medium});
+            @media(min-width: $screen-md) {
+                width: calc(50% - #{$column-gutter-md});
                 &.postit {
-                    padding-bottom: calc(50% - #{$gutter-medium});
+                    padding-bottom: calc(50% - #{$column-gutter-md});
+                }
+            }
+            @media(min-width: $screen-lg) {
+                width: calc(50% - #{$column-gutter-lg});
+                &.postit {
+                    padding-bottom: calc(50% - #{$column-gutter-lg});
                 }
             }
         }

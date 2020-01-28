@@ -1,5 +1,6 @@
-import React from 'react';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
+import React from 'react';
+
 import StoriesLayout from '../../page-layout/stories-layout.component';
 import Hero from './hero.component';
 

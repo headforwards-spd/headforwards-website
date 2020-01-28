@@ -1,5 +1,6 @@
 import { shape } from 'prop-types';
 import React from 'react';
+
 import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import styles from './full-width-image.module.scss';
 

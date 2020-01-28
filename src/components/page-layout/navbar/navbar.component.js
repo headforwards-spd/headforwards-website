@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
 import withUnstated from '@airship/with-unstated';
+import React, { Component } from 'react';
+
 import AppContainer from '../../../containers/app.container';
 import Menu from './menu/menu.component';
 import { navbarPropTypes } from './navbar.prop-type';

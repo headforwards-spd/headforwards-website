@@ -1,5 +1,6 @@
 import { string } from 'prop-types';
 import React from 'react';
+
 import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
 
 const singularImagePropTypes = {

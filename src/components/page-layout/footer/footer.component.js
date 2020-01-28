@@ -1,10 +1,11 @@
-import React from 'react';
 import { arrayOf, shape, string } from 'prop-types';
-import Link from '../link/link.component';
-import styles from './footer.module.scss';
-import Socials from '../socials/socials.component';
+import React from 'react';
+
 import { CompanyInfoPropType } from '../company-info.prop-type';
+import Link from '../link/link.component';
+import Socials from '../socials/socials.component';
 import FooterLink, { FooterLinkPropType } from './footer-link.component';
+import styles from './footer.module.scss';
 
 export default Footer;
 
@@ -40,10 +41,11 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
                         </section>
                     </section>
                 )}
-                <h2 className={styles.getInTouch}>
-                    {callToAction}
-                    <Link to="/contact">Get in touch</Link>
-                </h2>
+                <section className={styles.getInTouch}>
+                    <h2>
+                        {callToAction}&nbsp;<Link to="/contact">Get in touch</Link>
+                    </h2>
+                </section>
             </section>
 
             <Socials {...{ ...companyInfo, isFooter }} />

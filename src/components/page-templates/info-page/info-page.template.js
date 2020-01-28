@@ -1,5 +1,6 @@
-import React from 'react';
 import { arrayOf, bool, shape, string } from 'prop-types';
+import React from 'react';
+
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 import styles from './info-page.module.scss';

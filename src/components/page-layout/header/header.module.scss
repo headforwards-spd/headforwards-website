@@ -5,24 +5,35 @@
 
 .header {
 
-    @include fontXLarge;
-
+    @include fontMedium;
+    position: relative;
     display: flex;
     flex-direction: column;
 
     .image {
         order: 1;
         padding: 0;
-        margin-bottom: $gutter-large;
+        margin-bottom: 0;
+        height: 100vw;
+        > div {
+            display: none;
+        }
+        @media (min-width: $screen-md) {
+            height: unset;
+            > div {
+                display: block;
+            }
+        }
     }
     > section {
         order: 2;
-        margin: $gutter-large auto;
 
         display: flex;
         flex-direction: column;
 
+
         h1 {
+            @include headingFontXLarge;
             @include orange-type;
             @media(min-width: $screen-lg) {
                 width: $singleColumnMaxWidth;
@@ -36,57 +47,59 @@
                 width: $singleColumnMaxWidth;
             }
         }
-
-        > :last-child {
-            padding-bottom: 0.5em;
+        :last-child {
             margin-bottom: 0;
-            @media(min-width: $screen-lg) {
-                border-bottom: none;
-                padding-bottom: 0;
-            }
         }
 
-        position: relative;
+        padding-bottom: $component-gutter-sm;
+        margin: $component-gutter-sm auto;
         &:after {
             content: '';
             display: block;
             position: absolute;
             bottom: 0;
-            width: calc(100% - #{2*$page-gutter-sm});
-            height: 1px;
-            background: $grey-6;
+            height: 2px;
+            background: $grey-8;
+            width: calc(100% - #{2*$column-gutter-sm});
             @media(min-width: $screen-md) {
-                width: calc(100% - #{2*$page-gutter-md});
+                width: calc(100% - #{2*$column-gutter-md});
             }
             @media(min-width: $screen-lg) {
-                width: calc(100% - #{2*$page-gutter-lg});
-            }
-            @media(min-width: $screen-xl) {
-                width: calc(100% - #{2*$page-gutter-xl});
+                width: calc(100% - #{2*$column-gutter-lg});
             }
         }
-    }
+        @media (min-width: $screen-md) {
+            margin: $component-gutter-md auto;
+            padding-bottom: 0;
 
-    &.hasBackground {
-        > section {
-            margin-top: 0;
-            margin-bottom: 0;
-            &:after {
-                display: none;
+            h1 {
+                @include headingFontXLarge;
+            }
+            h1, p {
+                max-width: $singleColumnMaxWidth;
             }
         }
+        @media (min-width: $screen-lg) {
+            margin: $component-gutter-lg auto;
+        }
+
+        position: relative;
     }
 
-    @media(min-width: $screen-lg) {
+    @media(min-width: $screen-md) {
+
+        margin-bottom: $component-gutter-md;
 
         .image {
             margin: 0;
         }
 
         > section {
-            margin: 0 auto $gutter-large;
-            padding-top: $gutter-large;
-            padding-bottom: $gutter-large;
+            margin-bottom: 0;
+            padding-bottom: $component-gutter-md/2;
+            //margin: 0 auto $gutter-large;
+            //padding-top: $gutter-large;
+            //padding-bottom: $gutter-large;
 
             &.hasSubTitle {
                 h1, p {
@@ -104,13 +117,16 @@
             &.isHomePage {
                 min-height: 100vh;
             }
-            margin-bottom: $gutter-large;
+            //margin-bottom: $gutter-large;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             background: linear-gradient(rgba(black, 0.45), transparent 175px, transparent calc(100% - 400px), rgba(black, 0.45));
 
             > section {
+
+                margin-bottom: $component-gutter-md;
+                padding-bottom: 0;
 
                 h1 {
                     color: white;
@@ -119,6 +135,10 @@
                 p {
                     @include fontLarge;
                     @include orange-type;
+                }
+
+                &:after {
+                    display: none;
                 }
 
                 &.hasSubTitle {
@@ -145,12 +165,26 @@
         }
     }
 
+    @media(min-width: $screen-lg) {
+
+        margin-bottom: $component-gutter-lg;
+
+        &.hasBackground {
+
+            > section {
+
+                margin-bottom: $component-gutter-lg;
+            }
+
+        }
+    }
+
     @media(min-width: $screen-xl) {
 
         &.hasBackground {
             min-height: 65vh;
             > section {
-                min-height: 30vw;
+                min-height: 20vw;
                 justify-content: flex-end;
             }
         }

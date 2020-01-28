@@ -1,10 +1,12 @@
 @import '../../../../scss/variables';
 
+$line-thickness: 3px;
+
 .hamburger {
     background-color: transparent;
-    padding: 1rem $gutter-small/2;
+    padding: 0 $column-gutter-sm/2;
     @media (min-width: $screen-md) {
-        padding: 1rem $gutter-medium/2;
+        padding: 0 $column-gutter-md/2;
     }
     display: flex;
     cursor: pointer;
@@ -38,8 +40,8 @@
     }
 
     .hamburgerBox {
-        width: 40px;
-        height: 24px;
+        width: 1.5em;
+        height: 1.5em;
         display: inline-block;
         position: relative;
     }
@@ -55,42 +57,39 @@
 .hamburgerInner {
     display: block;
     top: 50%;
-    margin-top: -2px;
-    width: 40px;
-    height: 4px;
+    transform: translateY(-50%);
+    width: 100%;
+    height: $line-thickness;
     background-color: $orange;
-    border-radius: 4px;
+    border-radius: $line-thickness;
     position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
 
     &::before {
-        width: 40px;
-        height: 4px;
+        width: 100%;
+        height: $line-thickness;
         background-color: $orange;
-        border-radius: 4px;
+        border-radius: $line-thickness;
         position: absolute;
         transition-property: transform;
-        transition-duration: 0.15s;
+        transition-duration: 150ms;
         transition-timing-function: ease;
         content: "";
         display: block;
-        top: -10px;
+        top: -0.5em;
     }
 
     &::after {
-        width: 40px;
-        height: 4px;
+        width: 100%;
+        height: $line-thickness;
         background-color: $orange;
-        border-radius: 4px;
+        border-radius: $line-thickness;
         position: absolute;
         transition-property: transform;
-        transition-duration: 0.15s;
+        transition-duration: 150ms;
         transition-timing-function: ease;
         content: "";
         display: block;
-        bottom: -10px;
+        bottom: -0.5em;
     }
 }
 
@@ -98,31 +97,17 @@
 
     &:global(.is-active) {
         .hamburgerInner {
-            transform: translate3d(0, 10px, 0) rotate(45deg);
+            visibility: hidden;
 
             &::before {
-                transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
-                opacity: 0;
+                visibility: visible;
+                transform: translateY(0.5em) rotate(-45deg);
             }
 
             &::after {
-                transform: translate3d(0, -20px, 0) rotate(-90deg);
+                visibility: visible;
+                transform: translateY(-0.5em) rotate(45deg);
             }
-        }
-    }
-
-    .hamburgerInner {
-        top: 2px;
-
-        &::before {
-            top: 10px;
-            transition-property: transform, opacity;
-            transition-timing-function: ease;
-            transition-duration: 0.15s;
-        }
-
-        &::after {
-            top: 20px;
         }
     }
 }

@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useField } from 'formik';
 import { bool, string } from 'prop-types';
 import React from 'react';
-import FormError from './contact-form/form-error.component';
+
 import styles from './contact-form/contact-form.module.scss';
+import FormError from './contact-form/form-error.component';
 
 const formFieldPropTypes = {
     name: string.isRequired,

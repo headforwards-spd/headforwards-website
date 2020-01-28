@@ -1,6 +1,7 @@
-import React from 'react';
 import { shape, string } from 'prop-types';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
+
 import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import Link from '../../../page-layout/link/link.component';
 import styles from './article-columns.module.scss';
