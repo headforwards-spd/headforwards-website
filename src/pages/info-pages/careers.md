@@ -7,6 +7,8 @@ image:
   show: true
 introduction:
   show: false
-  text: CHANGEME
+  text: >-
+    At Headforwards you’ll find cutting-edge projects in a truly agile
+    environment.
 ---
 

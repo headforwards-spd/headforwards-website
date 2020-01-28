@@ -56,9 +56,8 @@ components:
           countryside.
         type: markdown-component
       - quote: >-
-          We have events going on all the time, and they’re not just for
-          employees. Friends and family are welcome to a wide range of
-          activities designed to appeal to everyone.
+          “Working here you experience lots of small gestures that add up to
+          make a huge difference – things like champagne on your birthday.
         type: quote-component
     isPostit: false
     isRightImage: false
