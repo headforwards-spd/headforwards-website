@@ -76,6 +76,10 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: 'A county full of interest and intrigue '
+  - flip: true
+    imageOne: /uploads/hf-beach-2.jpg
+    imageTwo: /uploads/headforwards-12.jpg
+    type: images-component
   - content:
       - text: >-
           Cornwall really is a special place to live. We’re not all rushing
@@ -103,6 +107,7 @@ components:
           often relocate from London and sometimes take a small pay cut, but
           their rent or mortgages are often halved.
         type: markdown-component
+    flip: true
     isPostit: false
     isRightImage: false
     isTwoColumns: true
