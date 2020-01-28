@@ -80,10 +80,10 @@ components:
     type: quote-component
 footerLinks:
   - link1: 6b233b00-103a-11ea-9ef0-bd54961b4e30
-    link2: c841a202-37c9-11ea-978f-2e728ce88125
-    link3: c841a072-37c9-11ea-978f-2e728ce88125
+    link2: 359e0550-009f-11ea-b6f6-d743f848720a
+    link3: 6b233b00-103a-11ea-9ef0-bd54961b4e30
     showImages: true
-    title: Self -directed learning
+    title: What can you learn here?
 callToAction: Grow your career with Headforwards
 ---
 
