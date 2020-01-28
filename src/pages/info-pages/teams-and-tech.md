@@ -7,12 +7,7 @@ image:
   image: /uploads/hf-g.jpg
   show: false
 introduction:
-  show: true
-  text: >-
-      We are language agnostic. We love new tech and any opportunity to use it. We
-      do of course have core languages but we always try to use the right tool for
-      the job. Our most popular languages are C#, Python, Perl, PHP and JavaScript.
-      Specific business teams tend to concentrate on the languages that are most
-      suited for their client.
+  show: false
+  text: We are language agnostic. We love new tech and any opportunity to use it.
 ---
 

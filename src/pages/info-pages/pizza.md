@@ -42,7 +42,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: Great software. Great lifestyle. Great careers
+    title: 'Great software. Great lifestyle. '
   - imageOne: /uploads/toby-1.jpg
     imageTwo: /uploads/toby-4.jpg
     type: images-component
