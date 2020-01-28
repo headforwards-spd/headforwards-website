@@ -1,6 +1,6 @@
 import { any, arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React    from 'react';
+import Markdown from '../../markdown'
 
 import { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import Link from '../../../page-layout/link/link.component';
@@ -43,7 +43,7 @@ function PostitCopyColumns({ image, isRightImage, title, content, link }) {
                     <section>
                         {content.map(({ type, ...item }) => (
                             <>
-                                {type === 'markdown-component' && <ReactMarkdown source={item.text} />}
+                                {type === 'markdown-component' && <Markdown source={item.text} />}
                                 {type === 'quote-component' && <Quote {...item} fullWidth />}
                             </>
                         ))}

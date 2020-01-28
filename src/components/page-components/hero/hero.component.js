@@ -1,6 +1,6 @@
 import { any, arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React    from 'react';
+import Markdown from '../markdown'
 
 import Quote from '../quote/quote.component';
 import styles from './hero.module.scss';
@@ -31,7 +31,7 @@ function Hero({ title, content, isTwoColumns, className }) {
                 <section>
                     {content.map(({ type, ...item }) => (
                         <>
-                            {type === 'markdown-component' && <ReactMarkdown source={item.text} />}
+                            {type === 'markdown-component' && <Markdown source={item.text} />}
                             {type === 'quote-component' && <Quote {...item} fullWidth />}
                         </>
                     ))}

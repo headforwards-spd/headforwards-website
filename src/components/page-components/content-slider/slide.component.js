@@ -1,6 +1,6 @@
 import { shape, string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React    from 'react';
+import Markdown from '../markdown'
 
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
 import Link from '../../page-layout/link/link.component';
@@ -22,7 +22,7 @@ function Slide({ title, text, image }) {
             <section>
                 <h2>{title}</h2>
                 <section>
-                    <ReactMarkdown source={text} />
+                    <Markdown source={text} />
                 </section>
                 <Link to="/">Read the case study</Link>
             </section>

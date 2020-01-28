@@ -1,6 +1,6 @@
-import { string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import { string }    from 'prop-types';
+import React    from 'react';
+import Markdown from '../../page-components/markdown'
 
 import Link from '../../page-layout/link/link.component';
 import styles from './job-page.module.scss';
@@ -20,13 +20,13 @@ function JobPageTemplate({ path, description, requirements }) {
                 {!!description && (
                     <section>
                         <h2>Job description</h2>
-                        <ReactMarkdown source={description} />
+                        <Markdown source={description} />
                     </section>
                 )}
                 {!!requirements && (
                     <section>
                         <h2>Requirements</h2>
-                        <ReactMarkdown source={requirements} />
+                        <Markdown source={requirements} />
                     </section>
                 )}
             </section>

@@ -1,6 +1,6 @@
 import { shape, string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React    from 'react';
+import Markdown from '../../page-components/markdown'
 
 import Postit from '../../page-components/postit/postit.component';
 import Link from '../../page-layout/link/link.component';
@@ -29,7 +29,7 @@ function PostitPageLink({ title, link, page }) {
         <Postit className={styles.role}>
             <Link to={link}>
                 <h2>{title}</h2>
-                <ReactMarkdown source={introduction} />
+                <Markdown source={introduction} />
                 <Link to={link} className={styles.link}>
                     Read more
                 </Link>

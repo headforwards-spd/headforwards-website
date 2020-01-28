@@ -1,6 +1,6 @@
-import { string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import { string }    from 'prop-types';
+import React    from 'react';
+import Markdown from '../../page-components/markdown'
 
 import styles from './introduction.module.scss';
 
@@ -13,7 +13,7 @@ IntroductionComponent.propTypes = {
 function IntroductionComponent({ introduction }) {
     return introduction ? (
         <section className={styles.introduction}>
-            <ReactMarkdown source={introduction} />
+            <Markdown source={introduction} />
         </section>
     ) : null;
 }

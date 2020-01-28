@@ -1,6 +1,6 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React    from 'react';
+import Markdown from '../../page-components/markdown'
 
 import styles from './legal-page.module.scss';
 
@@ -38,7 +38,7 @@ function LegalPageTemplate({ introduction, sections }) {
         <section className={styles.sections}>
             {show && (
                 <section>
-                    <ReactMarkdown source={text} />
+                    <Markdown source={text} />
                 </section>
             )}
             {sections.map(({ id, ...section }) => (
@@ -57,7 +57,7 @@ function LegalPageSection({ title, text }) {
     return (
         <section>
             {title && <h2>{title}</h2>}
-            <ReactMarkdown source={text} />
+            <Markdown source={text} />
         </section>
     );
 }

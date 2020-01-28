@@ -31,7 +31,7 @@ function Quote({ title, quote, name, jobTitle, profilePic, fullWidth }) {
         <section className={`${styles.blockquoteContainer} ${fullWidthClass}`}>
             {title && <h2>{title}</h2>}
             <blockquote>
-                <p>{quote}</p>
+                <p>{quote.trim()}</p>
                 {!!name && (
                     <footer>
                         {!!profilePic && (

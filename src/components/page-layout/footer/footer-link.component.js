@@ -1,6 +1,6 @@
 import { bool, shape, string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React    from 'react';
+import Markdown from '../../page-components/markdown'
 
 import Image, { ImageSrcPropType } from '../image/image.component';
 import Link from '../link/link.component';
@@ -32,7 +32,7 @@ function FooterLink({ showImages, link, title, image, introduction }) {
             <section>
                 <h2>{title}</h2>
                 {showImages && <Image alt={title} image={bannerImage} className={styles.footerLinkImage} />}
-                <ReactMarkdown source={text} />
+                <Markdown source={text} />
                 <button type="button">Read more</button>
             </section>
         </Link>

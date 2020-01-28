@@ -1,6 +1,6 @@
 import { bool, oneOfType, string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React    from 'react';
+import Markdown from './markdown'
 
 import { ImageSrcPropType } from '../page-layout/image/image.component';
 import ArticleColumns, { ArticleColumnsPropType } from './columns/article-columns/article-columns.component';
@@ -48,7 +48,7 @@ function PageComponent({ type, ...component }) {
         case 'content-slider-component':
             return <ContentSlider {...component} />;
         default:
-            return <ReactMarkdown source={component.text} />;
+            return <Markdown source={component.text} />;
     }
 }
 

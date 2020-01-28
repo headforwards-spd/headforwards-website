@@ -1,6 +1,6 @@
 import { shape, string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React    from 'react';
+import Markdown from '../../markdown'
 
 import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import Link from '../../../page-layout/link/link.component';
@@ -31,7 +31,7 @@ function Article({ title, text, image, link, linkText }) {
             <h2>{title}</h2>
             <Image image={image} className={styles.image} />
             <section>
-                <ReactMarkdown source={text} />
+                <Markdown source={text} />
             </section>
             {hasLink && <Link to={link}>{linkText}</Link>}
         </section>

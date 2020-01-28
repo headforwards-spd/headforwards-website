@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { shape, string } from 'prop-types';
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import { shape, string }           from 'prop-types';
+import React    from 'react';
+import Markdown from '../../page-components/markdown'
 
 import Image from '../../page-layout/image/image.component';
 import Link from '../../page-layout/link/link.component';
@@ -50,7 +50,7 @@ function PageLink({ link, linkText, page }) {
                     {introImage && introText && (
                         <section className={styles.introduction}>
                             <Image image={logo} alt={linkText} className={styles.logo} />
-                            <ReactMarkdown source={introText} />
+                            <Markdown source={introText} />
                         </section>
                     )}
                 </section>

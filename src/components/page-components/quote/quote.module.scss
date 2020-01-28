@@ -37,20 +37,15 @@
             &:before {
                 position: absolute;
                 content: '“';
-                //left: -2em;
                 top: 0;
-                //padding-left: 30px;
             }
 
             &:after {
-                content: '”';
-                display: inline-block;
-                transform: translateY(-50%);
-                height: calc(1.4em / 3);
-                line-height: 1.4em;
-                vertical-align: middle;
-                text-align: center;
-                width: 0.5em;
+                content: '\00a0”';
+                display: inline;
+                vertical-align: text-bottom;
+                line-height: 0;
+                margin-left: -0.2em;
             }
         }
 
