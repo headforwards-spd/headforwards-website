@@ -15,11 +15,10 @@ introduction:
 components:
   - content:
       - text: >-
-          When it comes to talent development Headforwards doesn’t rely on
-          traditional training programs. Instead it has created an open,
-          knowledge-sharing culture where those eager to progress can learn from
-          some of the best in the business—and share their own experiences in
-          turn. 
+          When it comes to talent development, we don’t rely on traditional
+          training programs. Instead, we’ve created an open, knowledge-sharing
+          culture where those eager to progress can learn from some of the best
+          in the business—and share their own experiences in turn.
 
 
           For the curious, dedicated and determined, this presents the perfect
@@ -41,18 +40,15 @@ components:
   - content:
       - text: >-
           An appetite for learning is a key characteristic of a Headforwards
-          team member, so self-motivators will find ample opportunities to learn
+          team member so self-motivators will find ample opportunities to learn
           from their peers. 
 
 
-          As well as its emphasis on knowledge sharing, Headforwards organises
-          event visits, courses and expert-led talks to help its people stay up
-          to date with the latest industry developments. 
-
-
-          Mini-workshops also provide regular opportunities to exchange ideas,
-          learn from each other and practise important skills like public
-          speaking.
+          As well as our emphasis on knowledge sharing, we organise event
+          visits, courses and expert-led talks to help our people stay up to
+          date with the latest industry developments. Mini workshops also
+          provide regular opportunities to exchange ideas, learn from each other
+          and practice important skills like public speaking.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -66,13 +62,10 @@ components:
   - content:
       - text: >-
           Self-directed learning is great, but it’s also important that people
-          know what opportunities are available. That’s why Headforwards
-          developed a framework to help its employees identify potential career
-          paths. 
-
-
-          Typical of its inclusive environment, Headforwards’ career progression
-          framework was developed together with the whole team, so everyone has
+          know what opportunities are available. That’s why we developed a
+          framework to help our employees identify potential career paths.
+          Typical of our inclusive environment, Headforwards’ career progression
+          framework was created together with the whole team, so everyone has
           input into their own development.
         type: markdown-component
     isPostit: false
