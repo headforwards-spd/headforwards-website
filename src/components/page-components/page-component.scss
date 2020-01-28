@@ -37,11 +37,10 @@
 
 @mixin arrow-link {
     &:after {
-        display: inline-block;
-        content: url('/images/hf-arrow.orange.svg');
-        height: 0.8em;
-        width: 0.8em;
-        margin-left: 1em;
+        display: inline;
+        content: '\00a0\00a0\00a0\00a0\00a0';
+        background: url('/images/hf-arrow.orange.svg') no-repeat center right;
+        background-size: 55%;
     }
 }
 
