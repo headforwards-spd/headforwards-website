@@ -2,59 +2,61 @@
 uuid: 92161650-0f9b-11ea-9e15-59d1e5da42db
 parent: careers
 type: info-page
-title: 'Pizza, beaches and beers'
+title: Our culture
 image:
   image: /uploads/toby cooking.jpg
   show: true
 introduction:
   show: false
   text: >-
-    It’s no secret that people who feel looked after and valued are more likely
-    to excel and do better work.
+    Discover a very different technology business built around a supportive,
+    collaborative culture.
 components:
   - content:
       - text: >-
-          Employee wellbeing is hot on the agenda for Headforwards.  That’s why
-          so much effort is put into organising social and community-orientated
-          activities that benefit people both inside and outside the
-          organisation. 
+          We’re no ordinary software development business. In fact, we think
+          we’re pretty unique.
 
 
-          Photos of Headforwards are just as likely to show the founding
-          partners cooking at a barbecue or someone raising a glass of ‘Devhops’
-          – the companies own home-brew – as coding at their computer.
+          At Headforwards you’ll find cutting-edge projects in a truly agile
+          environment, a flat structure with no egos, and a friendly team
+          environment where everyone’s equal.
 
 
-          The annual highlight of these events is Headstock, their own
-          mini-festival – a whole weekend in the summer where friends and family
-          are invited to camp and eat great food in the heart of the Cornish
-          countryside.
+          Working here gives you the chance to tackle new challenges and build
+          your skills, alongside a team of experts who are always hungry to
+          explore new technologies and learn new things. 
+
+
+          Most of all, it’s a place where you and your family can enjoy a
+          fantastic lifestyle and an unrivaled quality of life – because joining
+          us isn’t just a career choice, it’s a life choice.
         type: markdown-component
       - jobTitle: Quality Analyst
         name: Gowri Thota
         quote: >-
-          Headforwards has events going on all the time, and they’re not just
-          for employees. We can bring our friends and family along to a wide
-          range of activities which appeal to everyone.
+          At Headforwards there are people from all walks of life, culture and
+          religion. And it is especially good being a female developer.
         type: quote-component
     isPostit: false
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: Something for everyone
+    title: Great software. Great lifestyle. Great careers
   - imageOne: /uploads/toby-1.jpg
     imageTwo: /uploads/toby-4.jpg
     type: images-component
   - content:
       - text: >-
-          It’s no secret that people who feel looked after and valued are more
-          likely to excel and do better work. The fact that the nearest beach is
-          only 5 miles away probably does no harm to people’s outlook either.
+          Join Headforwards and you’ll discover a very different technology
+          business: a fun atmosphere with flexible hours, a strong team spirit,
+          and a place that genuinely cares about your - and your family’s -
+          wellbeing. 
 
 
-          But it’s the company’s culture of openness and regular communication
-          that underpins its entire operation – and makes its work so valuable
-          to clients.
+          All of this combines to create an environment where work is enjoyable,
+          not stressful. And outside of work, you’re in Cornwall – so there’s a
+          fantastic lifestyle to enjoy.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -86,11 +88,33 @@ components:
   - imageOne: /uploads/toby-3.jpg
     imageTwo: /uploads/toby-2.jpg
     type: images-component
+  - content:
+      - text: >-
+          We might be growing fast, but there’s no ‘us and them’ here. Our
+          business model is flat and fluid, which means everyone is on an equal
+          footing and good ideas are recognised wherever they come from.
+
+
+          This means your career can really go places, because our leaders are
+          all around you. And they’re great at spotting talented people who
+          always give their all.
+        type: markdown-component
+    isPostit: false
+    isRightImage: false
+    isTwoColumns: false
+    type: image-copy-component
+    title: Leadership not management.
   - quote: >-
       In addition to wide-ranging learning resources, we also have the
       opportunity to attend industry conferences like Agile on the Beach. It’s
       just another way we constantly improve our combined knowledge to benefit
       our clients.
     type: quote-component
+footerLinks:
+  - link1: fe1a1d50-0fab-11ea-843f-932c76de5936
+    link2: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+    link3: 16f53e5e-3847-11ea-a137-2e728ce88125
+    showImages: true
+    title: Descover more about our culture
 ---
 
