@@ -59,7 +59,6 @@ export default class ContactForm extends Component {
                     data: null,
                     errorMessage: 'There was an error trying to send your message. Please try again later.',
                 });
-                console.error(error);
             })
             .finally(() => {
                 this.resetForm = null;
@@ -81,7 +80,6 @@ export default class ContactForm extends Component {
             .catch(error => {
                 this.resetForm = null;
                 this.setState({ isSubmitting: false, errorMessage: messages.recaptchaError });
-                console.error('Reaptcha.execute', error);
             });
     }
 
@@ -94,7 +92,7 @@ export default class ContactForm extends Component {
             sitekey: '6Lc_M80UAAAAAAVKfHMS3d2MC9rGglvTEHm46wpA',
             size: 'invisible',
             onVerify: onVerify.bind(this),
-            onError: () => this.setState({ errorMessage: 'reCAPTCHA verfication error.' }),
+            onError: () => this.setState({ errorMessage: 'reCAPTCHA verification error.' }),
         };
 
         const initialValues = {};
