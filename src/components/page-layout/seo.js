@@ -26,9 +26,10 @@ function Seo({ location, image, title: pageTitle, description: pageDescripton, l
     const { companyInfo } = useStaticQuery(graphql`
         query {
             companyInfo: dataYaml(title: { eq: "company-info" }) {
+                url
+                companyName
                 metaTitle
                 metaDescription
-                companyName
                 googleSiteVerification
                 facebookPagesId
             }
@@ -36,6 +37,7 @@ function Seo({ location, image, title: pageTitle, description: pageDescripton, l
     `);
 
     const {
+        url,
         companyName,
         metaTitle: companyTitle,
         metaDescription: companyDescription,
@@ -46,9 +48,9 @@ function Seo({ location, image, title: pageTitle, description: pageDescripton, l
     const { childImageSharp } = image || {};
     const { fixed } = childImageSharp || {};
     const { src, width, height } = fixed || {};
-    const { origin, href } = location;
+    const { pathname } = location;
 
-    const imageContent = origin && src ? `${origin}${src}` : null;
+    const imageContent = src ? `${url}${src}` : null;
     const description = pageDescripton || companyDescription;
 
     return (
@@ -67,7 +69,7 @@ function Seo({ location, image, title: pageTitle, description: pageDescripton, l
 
             <meta property="og:locale" content="en_GB" />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content={href} />
+            {pathname && <meta property="og:url" content={`${url}${pathname}`} />}
             <meta property="og:site_name" content={companyName} />
             <meta property="og:title" content={pageTitle} />
             <meta property="og:description" content={description} />

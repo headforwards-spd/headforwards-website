@@ -117,15 +117,13 @@ function Layout({
         companyInfo,
     };
 
-    console.log({ seoImage, defaultSeoImage });
-
     const { text: description } = introduction || {};
 
     const seoProps = {
         ...seo,
         image: seoImage || defaultSeoImage,
         title: seoTitle || title,
-        description: seoDescription || description,
+        description: seoDescription || (isJobPage ? subtitle : description),
         bannerImage,
     };
 
