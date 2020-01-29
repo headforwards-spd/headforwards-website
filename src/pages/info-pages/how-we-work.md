@@ -7,6 +7,8 @@ image:
   show: true
 introduction:
   show: false
-  text: CHANGEME
+  text: >-
+    At Headforwards we work in agile, self managing teams to get the best
+    possible results
 ---
 
