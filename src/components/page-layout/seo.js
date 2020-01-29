@@ -41,6 +41,8 @@ function Seo({ location, image, title, description, lang, meta }) {
 
     const { origin, href } = location;
 
+    console.log({origin, href, src, width, height});
+
 
     const metaDescription = description || companyInfo.metaDescription;
 
@@ -51,8 +53,8 @@ function Seo({ location, image, title, description, lang, meta }) {
             }}
             title={title}
             titleTemplate={`%s | ${companyInfo.metaTitle}`}
-            meta={meta}
         >
+            {meta.map((v,k) => <meta name={k} content={v} />)}
             <meta name="description" content={metaDescription} />
 
             <meta property="og:locale" content="en_GB" />
@@ -67,13 +69,11 @@ function Seo({ location, image, title, description, lang, meta }) {
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={metaDescription} />
 
-            {src && <>
-                <meta name="image" content={`${origin}${src}`} />
-                <meta property="og:image" content={`${origin}${src}`} />
-                <meta name="twitter:image" content={`${origin}${src}`} />
-                {width && <meta property="og:image:width" content={width} />}
-                {height && <meta property="og:image:height" content={height} />}
-            </>}
+            {src && <meta name="image" content={`${origin}${src}`} />}
+            {src && <meta property="og:image" content={`${origin}${src}`} />}
+            {src && <meta name="twitter:image" content={`${origin}${src}`} />}
+            {width && <meta property="og:image:width" content={width} />}
+            {height && <meta property="og:image:height" content={height} />}
 
             {/*<meta property="fb:app_id" content="your_app_id" />*/}
             <meta name="google-site-verification" content={companyInfo.googleSiteVerification} />
