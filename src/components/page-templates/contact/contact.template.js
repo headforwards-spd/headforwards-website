@@ -50,7 +50,7 @@ function ContactTemplate({ companyName, email, jobsEmail, phone, address, regist
                         <dd>{jobsEmail}</dd>
                     </dl>
                 </address>
-                <ContactForm formName="contact" />
+                <ContactForm formName="contact" className={styles.contactForm} />
             </section>
             <section className={styles.map}>
                 <iframe

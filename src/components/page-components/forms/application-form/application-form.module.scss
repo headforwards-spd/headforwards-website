@@ -47,8 +47,6 @@
             :last-child {
                 margin-bottom: 0;
             }
-
-            //margin-bottom: 1em;
         }
 
         > section {
@@ -62,12 +60,6 @@
                 &, &:last-child {
                     width: calc((100% * 2 / 3));
                     margin-left: auto;
-                    margin-bottom: calc(#{$column-gutter-md/2} - #{$rhythm-unit}em);
-                }
-            }
-            @media (min-width: $screen-lg) {
-                &, &:last-child {
-                    margin-bottom: calc(#{$column-gutter-lg/2} - #{$rhythm-unit}em);
                 }
             }
 
@@ -189,7 +181,12 @@
             }
         }
 
-        .submit {
+        > .submit {
+
+            margin: $column-gutter-sm/2 0;
+            @media (min-width: $screen-md) {
+                margin: 0;
+            }
 
             > label {
                 width: 100%;

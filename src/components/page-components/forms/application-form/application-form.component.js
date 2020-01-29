@@ -93,7 +93,7 @@ export default class ApplicationForm extends Component {
         const photoRequired = photoOptions === 'required';
 
         const showCoverLetter = coverLetterOptions !== 'off';
-        const coverLetterRequired = coverLetterOptions === 'required';
+        const coverLetterRequired = true || coverLetterOptions === 'required';
 
         const showCv = cvOptions !== 'off';
         const cvRequired = cvOptions === 'required';

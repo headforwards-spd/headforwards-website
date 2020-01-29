@@ -22,7 +22,7 @@
     }
 
     > section {
-        width: calc((100%/ 1) - #{$column-gutter-sm});
+        width: calc((100% / 1) - #{$column-gutter-sm});
         @media(min-width: $screen-lg) {
             width: calc((100% * 2 / 3) - #{$column-gutter-lg});
         }
@@ -64,59 +64,62 @@
                 font-weight: bold;
             }
         }
-    }
 
-    form {
-        @include fontMediumVr;
+        form {
+            @include fontMediumVr;
 
-        > section {
-            border: none;
-            padding: 0;
-            @include columns-component;
-            label {
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-
-            @media (min-width: $screen-md) {
-                flex-wrap: nowrap;
-            margin-top: 0;
-            margin-bottom: 0;
-                align-items: flex-start;
+            > section {
+                border: none;
+                padding: 0;
+                @include columns-component;
 
                 label {
                     margin-top: 0;
                     margin-bottom: 0;
-                    width: calc(50% - #{$column-gutter-md});
+                }
+
+                @media (min-width: $screen-md) {
+                    flex-wrap: nowrap;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    align-items: flex-start;
+
+                    label {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        width: calc(50% - #{$column-gutter-md});
+                    }
+                }
+                @media (min-width: $screen-lg) {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    label {
+                        width: calc(50% - #{$column-gutter-lg});
+                    }
                 }
             }
-            @media (min-width: $screen-lg) {
-                margin-top: 0;
-            margin-bottom: 0;
-                label {
-                    width: calc(50% - #{$column-gutter-lg});
+
+            button {
+                @include fontLarge;
+                margin-bottom: 0;
+                line-height: 1;
+                background-color: $orange;
+                color: white;
+                border: none;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                @include arrow-link;
+
+                &:after {
+                    background-image: url(/images/hf-arrow.white.svg);
                 }
             }
-        }
 
-        button {
-            @include fontLarge;
-            margin-bottom: 0;
-            line-height: 1;
-            background-color: $orange;
-            color: white;
-            border: none;
-            display: flex;
-            align-items: center;
-            padding: 1rem;
-            @include arrow-link;
-
-            &:after {
-                background-image: url(/images/hf-arrow.white.svg);
+            & {
+                margin-bottom: 0;
             }
         }
-
-        margin-bottom: 0;
     }
 
     .map {
