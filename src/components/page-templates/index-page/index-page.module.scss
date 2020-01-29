@@ -101,9 +101,9 @@
         transition: opacity ease 0.5s;
         transition-delay: 0.5s;
 
-        &, p, time {
+        > * {
+            @include headingFontMedium;
             color: white;
-            @include headingFontSmall;
             font-weight: bold;
             line-height: $mod_1;
         }
