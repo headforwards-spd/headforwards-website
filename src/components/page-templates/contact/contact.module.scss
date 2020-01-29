@@ -52,7 +52,6 @@
             }
 
             h2, span, dl {
-                //@include fontLarge;
                 margin-bottom: 0;
             }
 
@@ -63,19 +62,12 @@
             dd {
                 margin: 0;
                 font-weight: bold;
-
-                &:first-of-type {
-                    //margin-bottom: $column-gutter;
-                }
             }
         }
     }
 
     form {
         @include fontMediumVr;
-        //h2 {
-        //    @include headingFontMedium;
-        //}
 
         > section {
             border: none;
@@ -106,13 +98,6 @@
                 }
             }
         }
-
-        //input, textarea {
-        //    //@include fontLarge;
-        //    padding: 0.5rem;
-        //    margin-bottom: 0;
-        //    border: 1px solid $input-grey;
-        //}
 
         button {
             @include fontLarge;

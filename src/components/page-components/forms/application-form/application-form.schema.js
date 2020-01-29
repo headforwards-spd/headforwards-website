@@ -2,6 +2,7 @@ import { string } from 'yup';
 
 export const messages = {
     success: job => `All done! Your application for the ${job} position is submitted successfully.`,
+    error: 'There was an error trying to send your message. Please try again later.',
 };
 
 export const schema = {
@@ -65,12 +66,12 @@ export const schema = {
         field: {
             name: 'privacy',
             label: 'I agree to the terms outlined in the privacy policy.',
-            value: 'I agree to the terms outlined in the privacy policy.',
+            value: '212',
             type: 'checkbox',
             required: true,
         },
         validation: string()
-            .test('privacy', 'You must agree to the privacy policy.', value => value === schema.privacy.field.label)
+            .test('privacy', 'You must agree to the privacy policy.', value => value && value.includes(schema.privacy.field.value))
             .required('You must agree to the privacy policy.'),
     },
 };

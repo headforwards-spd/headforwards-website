@@ -6,10 +6,6 @@
     @include fontMedium;
     line-height: $rhythm-unit;
     padding-bottom: #{$rhythm-unit}em;
-    //margin-bottom: #{$rhythm-unit/2}em;
-    //@media (min-width: $screen-md) {
-    //    margin-bottom: #{$rhythm-unit}em;
-    //}
 
     &[role=group] {
         display: flex;
@@ -133,8 +129,11 @@
     }
 
     input {
-        padding: 0 $column-gutter-sm/2;
         line-height: #{1.5*$rhythm-unit}em;
+        padding: 0 $column-gutter-sm/2;
+    }
+    textarea {
+        padding: $column-gutter-sm/2;
     }
 
     .error {
@@ -149,4 +148,92 @@
             text-align: left;
         }
     }
+    &.error .submit {
+        button {
+            background: $input-grey;
+            opacity: 0.5;
+        }
+    }
+
+    &.isSubmitting {
+        opacity: 0.5;
+
+        .submit button {
+            svg {
+                height: 0.8em;
+                width: 0.8em;
+                margin-left: 1em;
+            }
+            &:after {
+                content: none;
+            }
+        }
+    }
 }
+
+.submit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-md) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    button {
+        @include fontLarge;
+        display: inline-block;
+        align-self: flex-start;
+        margin: 0;
+        justify-content: space-between;
+        padding: 0.5em;
+        flex-shrink: 0;
+
+        transition: all 250ms ease;
+    }
+
+    .messages {
+        margin: #{$rhythm-unit}em 0 0 0;
+        .success, .error {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @media (min-width: $screen-md) {
+                align-items: flex-start;
+            }
+        }
+        .error {
+            svg {
+                color: $error-color;
+                margin-right: 0.5em;
+                flex-shrink: 1;
+            }
+        }
+        .success {
+            svg {
+                color:$success-color;
+                margin-right: 0.5em;
+                flex-shrink: 1;
+            }
+        }
+    }
+
+    @media (min-width: $screen-md) {
+        flex-direction: row;
+        .messages {
+            margin: 0 0 0 $column-gutter-md;
+            flex-grow: 1;
+        }
+    }
+    @media (min-width: $screen-lg) {
+        .messages {
+            margin: 0 0 0 $column-gutter-lg;
+        }
+    }
+
+    abbr {
+        text-decoration: none;
+        color: $error-color;
+    }
+}
+

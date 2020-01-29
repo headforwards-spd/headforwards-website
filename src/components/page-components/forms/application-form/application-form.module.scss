@@ -7,8 +7,6 @@
 
     transition: opacity 250ms ease;
 
-
-
     abbr {
         text-decoration: none;
         color: $error-color;
@@ -106,9 +104,6 @@
 
             button {
                 cursor: pointer;
-            //    @include fontMedium;
-            //    margin-top: calc(#{($rhythm-unit - 1)/2}em - 0.5em);
-            //    margin-bottom: 0;
                 line-height: 1;
                 background-color: $orange;
                 color: white;
@@ -117,19 +112,9 @@
                 align-items: center;
                 padding: 0.75em $component-gutter-sm/2;
                 @include arrow-link;
-            //
-            //    @media (min-width: $screen-md) {
-            //        margin-right: 0.5em;
-            //
-            //    }
-            //
                 &:after {
                     background-image: url(/images/hf-arrow.white.svg);
                 }
-
-            //    &.submit {
-            //        @include fontLarge;
-            //    }
             }
 
             &.questions {

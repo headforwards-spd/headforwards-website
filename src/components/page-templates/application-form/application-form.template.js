@@ -16,5 +16,5 @@ ApplicationFormTemplate.defaultProps = {
     tags: [],
 };
 function ApplicationFormTemplate({ job, salary, tags, ...form }) {
-    return <ApplicationForm job={job} {...form} formName="job-application-form" />;
+    return <ApplicationForm job={job} {...form} />;
 }

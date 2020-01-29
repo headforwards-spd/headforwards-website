@@ -1,6 +1,11 @@
 import { string } from 'yup';
 
-const schema = {
+export const messages = {
+    success: 'Thank you for your message. We will respond to you as soon as possible.',
+    recaptchaError: 'reCAPTCHA validation failed. Please try again.',
+};
+
+export const schema = {
     name: {
         field: {
             name: 'name',
@@ -70,6 +75,7 @@ const schema = {
         field: {
             name: 'marketing',
             label: 'I would like to receive marketing communications.',
+            value: 'I would like to receive marketing communications.',
             type: 'checkbox',
             required: false,
         },
