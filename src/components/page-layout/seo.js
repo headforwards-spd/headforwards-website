@@ -41,37 +41,8 @@ function Seo({ location, image, title, description, lang, meta }) {
 
     const { origin, href } = location;
 
-    console.log({ origin, image });
-
-    // facebook 1200 x 630
-    // <meta property=“og:image” content=“http://example.com/picture.jpg ” />
-    // <meta property="og:image:width" content="1200" />
-    // <meta property="og:image:height" content="630" />
 
     const metaDescription = description || companyInfo.metaDescription;
-
-    const metaTags = {
-        description: metaDescription,
-        'og:locale': 'en_GB',
-        'og:type': 'website',
-        'og:url': href,
-        'og:site_name': companyInfo.companyName,
-
-        'og:title': title,
-        'og:description': description,
-
-        'twitter:card': 'summary_large_image',
-
-        // <meta property="fb:app_id" content="your_app_id" />
-        'twitter:site': '@headforwards', // TODO: Extract from URL
-
-        'google-site-verification': companyInfo.googleSiteVerification,
-        'fb:pages': companyInfo.facebookPagesId,
-    };
-
-    src && (metaTags['og:image'] = `${origin}${src}`);
-    width && (metaTags['og:image:width'] = width);
-    height && (metaTags['og:image:height'] = height);
 
     return (
         <Helmet
@@ -80,9 +51,33 @@ function Seo({ location, image, title, description, lang, meta }) {
             }}
             title={title}
             titleTemplate={`%s | ${companyInfo.metaTitle}`}
-            meta={Object.keys(metaTags)
-                .map(key => ({ name: key, content: metaTags[key] }))
-                .concat(meta)}
-        />
+            meta={meta}
+        >
+            <meta name="description" content={metaDescription} />
+
+            <meta property="og:locale" content="en_GB" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content={href} />
+            <meta property="og:site_name" content={companyInfo.companyName} />
+            <meta property="og:title" content={title} />
+            <meta property="og:description" content={metaDescription} />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@headforwards" />
+            <meta name="twitter:title" content={title} />
+            <meta name="twitter:description" content={metaDescription} />
+
+            {src && <>
+                <meta name="image" content={`${origin}${src}`} />
+                <meta property="og:image" content={`${origin}${src}`} />
+                <meta name="twitter:image" content={`${origin}${src}`} />
+                {width && <meta property="og:image:width" content={width} />}
+                {height && <meta property="og:image:height" content={height} />}
+            </>}
+
+            {/*<meta property="fb:app_id" content="your_app_id" />*/}
+            <meta name="google-site-verification" content={companyInfo.googleSiteVerification} />
+            <meta name="fb:pages" content={companyInfo.facebookPagesId} />
+        </Helmet>
     );
 }
