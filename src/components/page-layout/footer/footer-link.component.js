@@ -32,7 +32,7 @@ function FooterLink({ showImages, link, title, image, introduction }) {
             <section>
                 <h2>{title}</h2>
                 {showImages && <Image alt={title} image={bannerImage} className={styles.footerLinkImage} />}
-                <Markdown source={text} />
+                <Markdown source={text} truncate maxLength={100} />
                 <button type="button">Read more</button>
             </section>
         </Link>

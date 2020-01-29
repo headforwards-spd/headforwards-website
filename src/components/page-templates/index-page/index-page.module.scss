@@ -108,34 +108,38 @@
             line-height: $mod_1;
         }
         margin-bottom: 0;
-        border: 1px rgba($orange, 0.1) solid;
-        background-color: rgba(orange, 0.5);
+        @include alphaBackgroundColor($orange, 0.7);
+        //border: 1px rgba($orange, 0.1) solid;
+        //background-color: rgba(orange, 0.5);
         position: absolute;
 
         width: calc(100% - #{$column-gutter-sm/2});
         height: calc(100% - #{$column-gutter-sm/2});
         left: -$column-gutter-sm/2;
-        border-left: $column-gutter-sm/2 $orange solid;
         bottom: -$column-gutter-sm/2;
-        border-bottom: $column-gutter-sm/2 $orange solid;
-        padding: $column-gutter-sm $column-gutter-sm $column-gutter-sm/2 $column-gutter-sm/2;
+        //padding: $column-gutter-sm $column-gutter-sm $column-gutter-sm/2 $column-gutter-sm/2;
+        padding: $column-gutter-sm $column-gutter-sm;
+        //border-left: $column-gutter-sm/2 $orange solid;
+        //border-bottom: $column-gutter-sm/2 $orange solid;
         @media (min-width: $screen-md) {
             width: calc(100% - #{$column-gutter-md/4});
             height: calc(100% - #{$column-gutter-md/4});
             left: -$column-gutter-md/4;
-            border-left: $column-gutter-md/4 $orange solid;
             bottom: -$column-gutter-md/4;
-            border-bottom: $column-gutter-md/4 $orange solid;
-            padding: $column-gutter-md/2 $column-gutter-md/2 $column-gutter-md/4 $column-gutter-md/4;
+            //padding: $column-gutter-md/2 $column-gutter-md/2 $column-gutter-md/4 $column-gutter-md/4;
+            padding: $column-gutter-md/2 $column-gutter-md/2;
+            //border-left: $column-gutter-md/4 $orange solid;
+            //border-bottom: $column-gutter-md/4 $orange solid;
         }
         @media (min-width: $screen-lg) {
             width: calc(100% - #{$column-gutter-lg/4});
             height: calc(100% - #{$column-gutter-lg/4});
             left: -$column-gutter-lg/4;
-            border-left: $column-gutter-lg/4 $orange solid;
             bottom: -$column-gutter-lg/4;
-            border-bottom: $column-gutter-lg/4 $orange solid;
-            padding: $column-gutter-lg/2 $column-gutter-lg/2 $column-gutter-lg/4 $column-gutter-lg/4;
+            //padding: $column-gutter-lg/2 $column-gutter-lg/2 $column-gutter-lg/4 $column-gutter-lg/4;
+            padding: $column-gutter-lg/2 $column-gutter-lg/2;
+            //border-left: $column-gutter-lg/4 $orange solid;
+            //border-bottom: $column-gutter-lg/4 $orange solid;
         }
 
         @media(min-width: $screen-md) {

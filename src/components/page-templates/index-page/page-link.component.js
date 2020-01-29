@@ -50,7 +50,7 @@ function PageLink({ link, linkText, page }) {
                     {introImage && introText && (
                         <section className={styles.introduction}>
                             <Image image={logo} alt={linkText} className={styles.logo} />
-                            <Markdown source={introText} />
+                            <Markdown source={introText} truncate />
                         </section>
                     )}
                 </section>

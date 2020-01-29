@@ -11,38 +11,34 @@ import { messages, schema } from './application-form.schema';
 import ApplicationQuestions from './application-questions/applicaton-questions.component';
 
 export default class ApplicationForm extends Component {
-
     state = {
         isSubmitting: false,
         successMessage: null,
         errorMessage: null,
     };
 
-    onSubmit(data, {resetForm}) {
+    onSubmit(data, { resetForm }) {
         const { path, job } = this.props;
-        const {
-            name = '',
-            email = '',
-            phone = '',
-            cv = '',
-            cover_letter = '',
-            privacy = '',
-        } = data;
+        const { name = '', email = '', phone = '', cv = '', cover_letter = '', privacy = '' } = data;
         const questions = Object.keys(data).filter(key => key.startsWith('q-'));
 
         const formData = new FormData();
 
-        Object.keys({ name, email, phone, cv, cover_letter }).forEach(key => formData.append(`candidate[${key}]`, data[key]));
+        Object.keys({ name, email, phone, cv, cover_letter }).forEach(key =>
+            formData.append(`candidate[${key}]`, data[key])
+        );
         formData.append(`candidate[privacy][]`, privacy);
         questions.forEach((key, index) => {
             const id = key.replace('q-', '');
             const content = data[key];
 
             formData.append(`candidate[open_question_answers_attributes][${index}][open_question_id]`, id);
-            if(typeof content === 'string') {
+            if (typeof content === 'string') {
                 formData.append(`candidate[open_question_answers_attributes][${index}][content]`, content);
             } else {
-                content.map(value => formData.append(`candidate[open_question_answers_attributes][${index}][multi_content][]`, value));
+                content.map(value =>
+                    formData.append(`candidate[open_question_answers_attributes][${index}][multi_content][]`, value)
+                );
             }
         });
 
@@ -63,10 +59,9 @@ export default class ApplicationForm extends Component {
                     successMessage: messages.success(job),
                 });
             })
-            .catch(({response}) => {
-
-                const {data} = response || {};
-                const {error} = data || {};
+            .catch(({ response }) => {
+                const { data } = response || {};
+                const { error } = data || {};
 
                 const errorMessage = error ? error.join('\n') : messages.error;
 

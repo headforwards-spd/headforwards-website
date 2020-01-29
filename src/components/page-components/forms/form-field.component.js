@@ -78,7 +78,10 @@ export function Checkbox({ label, required: isRequired, isGroup, ...props }) {
     const errorClass = touched && error ? styles.hasError : '';
 
     const { name, value } = props;
-    const id = `${name}.${value.replace('.', '').replace(/\s+/gm, '-').toLowerCase()}`;
+    const id = `${name}.${value
+        .replace('.', '')
+        .replace(/\s+/gm, '-')
+        .toLowerCase()}`;
 
     return (
         <label htmlFor={id} className={`${styles.field} ${styles.checkbox} ${errorClass}`}>

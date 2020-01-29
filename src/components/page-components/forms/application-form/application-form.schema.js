@@ -71,7 +71,11 @@ export const schema = {
             required: true,
         },
         validation: string()
-            .test('privacy', 'You must agree to the privacy policy.', value => value && value.includes(schema.privacy.field.value))
+            .test(
+                'privacy',
+                'You must agree to the privacy policy.',
+                value => value && value.includes(schema.privacy.field.value)
+            )
             .required('You must agree to the privacy policy.'),
     },
 };

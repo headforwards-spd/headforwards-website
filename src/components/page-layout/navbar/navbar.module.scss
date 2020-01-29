@@ -493,7 +493,7 @@
                         color: white;
                     }
 
-                    &:hover > a {
+                    &.isOpen > a, &:hover > a {
                         color: $orange;
                     }
                 }

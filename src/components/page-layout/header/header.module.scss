@@ -97,9 +97,6 @@
         > section {
             margin-bottom: 0;
             padding-bottom: $component-gutter-md/2;
-            //margin: 0 auto $gutter-large;
-            //padding-top: $gutter-large;
-            //padding-bottom: $gutter-large;
 
             &.hasSubTitle {
                 h1, p {
@@ -117,7 +114,6 @@
             &.isHomePage {
                 min-height: 100vh;
             }
-            //margin-bottom: $gutter-large;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
