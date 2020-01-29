@@ -10,7 +10,7 @@ const gatsbyPluginSitemap = require('./gatsby/gatsby-plugin-sitemap');
 const gatsbyPluginRobotsTxt = require('./gatsby/gatsby-plugin-robots-txt');
 const gatsbyPluginOffline = require('./gatsby/gatsby-plugin-offline');
 const gatsbyPluginGoogleTagmanger = require('./gatsby/gatsby-plugin-google-tagmanager');
-const gatsbyPluginFacebookPixel = require('./gatsby/gatsby-plugin-facebook-pixel');
+// const gatsbyPluginFacebookPixel = require('./gatsby/gatsby-plugin-facebook-pixel');
 
 module.exports = {
     siteMetadata: {
@@ -37,7 +37,7 @@ module.exports = {
         { ...gatsbyPluginSitemap },
         { ...gatsbyPluginRobotsTxt },
         { ...gatsbyPluginGoogleTagmanger },
-        { ...gatsbyPluginFacebookPixel },
+        // { ...gatsbyPluginFacebookPixel },
         { ...gatsbyPluginNetlifyCms },
         `gatsby-plugin-netlify-cache`,
         'gatsby-plugin-netlify',
