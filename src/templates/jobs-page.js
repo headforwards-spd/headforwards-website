@@ -46,7 +46,7 @@ function JobsPage({ data }) {
     };
 
     return (
-        <Layout {...layoutProps} footerLinks={footerLinks}>
+        <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks}>
             <JobsPageTemplate {...pageProps} />
         </Layout>
     );

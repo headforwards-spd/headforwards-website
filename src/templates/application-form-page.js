@@ -18,16 +18,17 @@ ApplicationFormPage.propTypes = {
 function ApplicationFormPage(props) {
     const { data } = props;
     const { form } = data;
-    const { title: subtitle, ...templateProps } = form;
+    const { title: subtitle, introduction, ...templateProps } = form;
 
     const headerProps = {
         title: 'Application Form',
         subtitle,
+        introduction: subtitle,
     };
 
     return (
         <Layout {...headerProps}>
-            <ApplicationFormTemplate {...templateProps} job={subtitle} />
+            <ApplicationFormTemplate {...templateProps} introduction={introduction} job={subtitle} />
         </Layout>
     );
 }

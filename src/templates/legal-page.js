@@ -33,7 +33,7 @@ function LegalPage({ data }) {
     const templateProps = { introduction, sections };
 
     return (
-        <Layout {...layoutProps} footerLinks={footerLinks}>
+        <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks}>
             <LegalPageTemplate {...templateProps} />
         </Layout>
     );

@@ -19,12 +19,13 @@ JobPage.propTypes = {
 
 function JobPage({ path, data }) {
     const { job } = data;
-    const { title, subtitle, ...templateProps } = job;
+    const { title, subtitle, introduction, ...templateProps } = job;
     const { salary, tags } = job;
 
-    const headerProps = {
+    const layoutProps = {
         title,
         subtitle,
+        introduction,
         jobDetails: {
             salary,
             tags,
@@ -33,8 +34,8 @@ function JobPage({ path, data }) {
     };
 
     return (
-        <Layout {...headerProps}>
-            <JobPageTemplate {...templateProps} path={path} />
+        <Layout {...layoutProps}>
+            <JobPageTemplate {...templateProps} introduction={introduction} path={path} />
         </Layout>
     );
 }

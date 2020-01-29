@@ -34,7 +34,7 @@ function Homepage({ data }) {
     const templateProps = { introduction, sections };
 
     return (
-        <Layout {...layoutProps} footerLinks={footerLinks} isHomePage>
+        <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks} isHomePage>
             <HomepageTemplate {...templateProps} />
         </Layout>
     );

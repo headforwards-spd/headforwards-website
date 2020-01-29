@@ -19,8 +19,8 @@ export const ApplicationFormFragment = graphql`
         options_phone
         options_photo
         salary
-        subtitle
         title
+        subtitle
         tags
     }
 `;

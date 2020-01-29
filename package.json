@@ -21,6 +21,8 @@
     "formik": "^2.1.1",
     "gatsby": "^2.17.13",
     "gatsby-image": "^2.2.32",
+    "gatsby-plugin-facebook-pixel": "^1.0.3",
+    "gatsby-plugin-google-tagmanager": "^2.1.24",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-mdx": "^1.0.56",
     "gatsby-plugin-netlify-cache": "^1.2.0",

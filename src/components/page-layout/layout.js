@@ -1,11 +1,12 @@
 import '../../scss/main.scss';
 
-import withUnstated from '@airship/with-unstated';
-import { graphql, useStaticQuery } from 'gatsby';
+import withUnstated                                      from '@airship/with-unstated';
+import { Location }                                      from '@reach/router'
+import { graphql, useStaticQuery }                       from 'gatsby';
 import { arrayOf, bool, node, oneOfType, shape, string } from 'prop-types';
-import React from 'react';
-import Helmet from 'react-helmet';
-import { Provider } from 'unstated';
+import React                                             from 'react';
+import Helmet                                            from 'react-helmet';
+import { Provider }                                      from 'unstated';
 
 import AppContainer from '../../containers/app.container';
 import { FooterLinkPropType } from './footer/footer-link.component';
@@ -39,6 +40,7 @@ Layout.propTypes = {
     isHomePage: bool,
     title: string.isRequired,
     subtitle: string,
+    introduction: string,
     jobDetails: shape({
         salary: string.isRequired,
         tags: arrayOf(string).isRequired,
@@ -59,6 +61,7 @@ Layout.propTypes = {
 Layout.defaultProps = {
     isHomePage: false,
     subtitle: null,
+    introduction: null,
     jobDetails: null,
     image: null,
     children: null,
@@ -70,6 +73,7 @@ function Layout({
     isHomePage,
     seo,
     title,
+    introduction,
     subtitle,
     jobDetails,
     image,
@@ -77,8 +81,17 @@ function Layout({
     footerLinks,
     callToAction: pageCallToAction,
 }) {
-    const { menuData, companyInfo } = useStaticQuery(graphql`
+    const { menuData, companyInfo, seoImage: defaultSeoImage } = useStaticQuery(graphql`
         query {
+            seoImage: file(name: { eq: "icon" }) {
+                childImageSharp {
+                    fixed(width: 1200, height: 630, fit: CONTAIN, quality: 85, background: "white") {
+                        src
+                        width
+                        height
+                    }
+                }
+            }
             menuData: dataYaml(title: { eq: "main-menu" }) {
                 ...MenuFragment
             }
@@ -87,13 +100,13 @@ function Layout({
             }
         }
     `);
-    const { title: seoTitle = null } = seo || {};
+    const { title: seoTitle = null, description: seoDescription = null } = seo || {};
     const { menu } = menuData || [];
     const isJobPage = !!jobDetails;
 
     const { callToAction: defaultCallToAction } = companyInfo;
 
-    const { show: showImage, image: bannerImage } = image || {};
+    const { show: showImage, image: bannerImage, seoImage } = image || {};
 
     const headerProps = {
         isHomePage,
@@ -104,9 +117,16 @@ function Layout({
         companyInfo,
     };
 
+    console.log({ seoImage, defaultSeoImage});
+
+    const { text: description } = introduction || {};
+
     const seoProps = {
         ...seo,
+        image: seoImage || defaultSeoImage,
         title: seoTitle || title,
+        description: seoDescription || description,
+        bannerImage,
     };
 
     const callToAction = pageCallToAction || defaultCallToAction;
@@ -116,7 +136,7 @@ function Layout({
     return (
         <Provider>
             <UnstatedHelmet />
-            <Seo {...seoProps} />
+            <Location>{({ location }) => (<Seo {...seoProps} location={location} />)}</Location>
             {(!isJobPage && <Header {...headerProps} />) || <JobHeader {...headerProps} jobDetails={jobDetails} />}
             <main>{children}</main>
             <Footer {...footerProps} />
