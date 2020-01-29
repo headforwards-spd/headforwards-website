@@ -69,7 +69,7 @@ function Seo({ location, image, title: pageTitle, description: pageDescripton, l
 
             <meta property="og:locale" content="en_GB" />
             <meta property="og:type" content="website" />
-            {pathname && <meta property="og:url" content={`${url}${pathname}`} />}
+            {pathname && <meta property="og:url" content={`${url}${pathname}/`} />}
             <meta property="og:site_name" content={companyName} />
             <meta property="og:title" content={pageTitle} />
             <meta property="og:description" content={description} />
