@@ -22,7 +22,7 @@ Seo.defaultProps = {
     meta: [],
 };
 
-function Seo({ location, image, title, description, lang, meta }) {
+function Seo({ location, image, title: pageTitle, description: pageDescripton, lang, meta }) {
     const { companyInfo } = useStaticQuery(graphql`
         query {
             companyInfo: dataYaml(title: { eq: "company-info" }) {
@@ -35,49 +35,57 @@ function Seo({ location, image, title, description, lang, meta }) {
         }
     `);
 
-    const {childImageSharp} = image || {};
-    const {fixed} = childImageSharp || {};
-    const {src, width, height} = fixed || {};
+    const {
+        companyName,
+        metaTitle: companyTitle,
+        metaDescription: companyDescription,
+        googleSiteVerification,
+        facebookPagesId,
+    } = companyInfo;
 
+    const { childImageSharp } = image || {};
+    const { fixed } = childImageSharp || {};
+    const { src, width, height } = fixed || {};
     const { origin, href } = location;
 
-    console.log({origin, href, src, width, height});
-
-
-    const metaDescription = description || companyInfo.metaDescription;
+    const imageContent = origin && src ? `${origin}${src}` : null;
+    const description = pageDescripton || companyDescription;
 
     return (
         <Helmet
             htmlAttributes={{
                 lang,
             }}
-            title={title}
-            titleTemplate={`%s | ${companyInfo.metaTitle}`}
+            title={pageTitle}
+            titleTemplate={`%s | ${companyTitle}`}
         >
-            {meta.map((v,k) => <meta name={k} content={v} />)}
-            <meta name="description" content={metaDescription} />
+            {meta.map((v, k) => (
+                <meta name={k} content={v} />
+            ))}
+
+            <meta name="description" content={description} />
 
             <meta property="og:locale" content="en_GB" />
             <meta property="og:type" content="website" />
             <meta property="og:url" content={href} />
-            <meta property="og:site_name" content={companyInfo.companyName} />
-            <meta property="og:title" content={title} />
-            <meta property="og:description" content={metaDescription} />
+            <meta property="og:site_name" content={companyName} />
+            <meta property="og:title" content={pageTitle} />
+            <meta property="og:description" content={description} />
 
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@headforwards" />
-            <meta name="twitter:title" content={title} />
-            <meta name="twitter:description" content={metaDescription} />
+            <meta name="twitter:title" content={pageTitle} />
+            <meta name="twitter:description" content={description} />
 
-            {src && <meta name="image" content={`${origin}${src}`} />}
-            {src && <meta property="og:image" content={`${origin}${src}`} />}
-            {src && <meta name="twitter:image" content={`${origin}${src}`} />}
+            {imageContent && <meta name="image" content={imageContent} />}
+            {imageContent && <meta property="og:image" content={imageContent} />}
+            {imageContent && <meta name="twitter:image" content={imageContent} />}
             {width && <meta property="og:image:width" content={width} />}
             {height && <meta property="og:image:height" content={height} />}
 
-            {/*<meta property="fb:app_id" content="your_app_id" />*/}
-            <meta name="google-site-verification" content={companyInfo.googleSiteVerification} />
-            <meta name="fb:pages" content={companyInfo.facebookPagesId} />
+            {/* <meta property="fb:app_id" content="your_app_id" /> */}
+            <meta name="google-site-verification" content={googleSiteVerification} />
+            <meta property="fb:pages" content={facebookPagesId} />
         </Helmet>
     );
 }

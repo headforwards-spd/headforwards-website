@@ -1,12 +1,12 @@
 import '../../scss/main.scss';
 
-import withUnstated                                      from '@airship/with-unstated';
-import { Location }                                      from '@reach/router'
-import { graphql, useStaticQuery }                       from 'gatsby';
+import withUnstated from '@airship/with-unstated';
+import { Location } from '@reach/router';
+import { graphql, useStaticQuery } from 'gatsby';
 import { arrayOf, bool, node, oneOfType, shape, string } from 'prop-types';
-import React                                             from 'react';
-import Helmet                                            from 'react-helmet';
-import { Provider }                                      from 'unstated';
+import React from 'react';
+import Helmet from 'react-helmet';
+import { Provider } from 'unstated';
 
 import AppContainer from '../../containers/app.container';
 import { FooterLinkPropType } from './footer/footer-link.component';
@@ -117,7 +117,7 @@ function Layout({
         companyInfo,
     };
 
-    console.log({ seoImage, defaultSeoImage});
+    console.log({ seoImage, defaultSeoImage });
 
     const { text: description } = introduction || {};
 
@@ -136,7 +136,7 @@ function Layout({
     return (
         <Provider>
             <UnstatedHelmet />
-            <Location>{({ location }) => (<Seo {...seoProps} location={location} />)}</Location>
+            <Location>{({ location }) => <Seo {...seoProps} location={location} />}</Location>
             {(!isJobPage && <Header {...headerProps} />) || <JobHeader {...headerProps} jobDetails={jobDetails} />}
             <main>{children}</main>
             <Footer {...footerProps} />
