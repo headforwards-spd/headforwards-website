@@ -1,6 +1,8 @@
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 const makeSlug = require('slug');
 
+const webpack = require(`webpack`);
+
 const slugOptions = {
     replacement: '-',
     symbols: true,
@@ -44,19 +46,14 @@ exports.onCreateNode = ({ node, actions }) => {
     return Promise.resolve();
 };
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-    if (stage === 'build-html') {
-        actions.setWebpackConfig({
-            module: {
-                rules: [
-                    {
-                        test: /netlify-identity-widget/,
-                        use: loaders.null(),
-                    },
-                ],
-            },
-        });
-    }
+exports.onCreateWebpackConfig = ({ actions }) => {
+    actions.setWebpackConfig({
+        plugins: [
+            new webpack.IgnorePlugin({
+                resourceRegExp: /^netlify-identity-widget$/,
+            }),
+        ],
+    });
 };
 
 function createAllIndexPages(createPage, { menu: pages }) {
