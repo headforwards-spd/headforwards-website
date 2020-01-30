@@ -4,7 +4,7 @@ import Layout from '../components/page-layout/layout';
 
 export default () => {
     const props = {
-        title: '404: Not Found',
+        title: 'Page Not Found',
     };
 
     return (

@@ -2,6 +2,7 @@
 @import "../../../scss/mixins/mixins";
 @import "../../../scss/mixins/typography";
 @import '../../page-components/page-component';
+@import "./sticky-nav";
 
 .header {
     @include fontMedium;
@@ -9,85 +10,7 @@
     display: flex;
     flex-direction: column;
 
-    nav {
-        transition-property:        transform, background-color, padding, max-width;
-        transition-timing-function: ease,      ease,             ease,    ease;
-        transition-duration:        0s,        300ms,            0s,      0s;
-        transition-delay:           0s,        0s,               300ms,   300ms;
-    }
-
-    &.isScrollingUp, &.isScrollingDown {
-
-        padding-top: 5em;
-        transition-property:        transform, background-color, padding, max-width;
-        transition-timing-function: ease,      ease,             ease,    ease;
-        transition-duration:        0s,        300ms,            0s,      0s;
-        transition-delay:           0s,        0s,               0s,      0s;
-
-        > nav {
-            position: fixed;
-            left: 0;
-            right: 0;
-            z-index: 100;
-            transition-duration: 300ms;
-            margin-top: -10em;
-            :not(&:global(.is-active)) {
-                background: white;
-            }
-            &:after {
-                transform: translateY(50%);
-                opacity: unset;
-            }
-        }
-
-        @media (min-width: $screen-lg) {
-
-            padding-top: 5.5em;
-
-            > nav {
-                margin-top: -11em;
-                background: rgba(white, 0.9);
-
-                > header > a {
-                    background-image: url(/images/headforwards.black.png);
-                }
-
-                > section > ul > li > a {
-                    color: black;
-                }
-            }
-
-            &.isScrollingUp nav {
-                transform: translateY(5.5em);
-            }
-        }
-        @media (min-width: $screen-xl) {
-
-            > nav {
-                padding-left: $column-gutter-lg*2;
-                padding-right: $column-gutter-lg*2;
-                max-width: calc(#{$max_width} + #{$column-gutter-lg*3});
-
-                &:after {
-                    width: calc(100% - #{$column-gutter-lg*4});
-                }
-            }
-
-        }
-
-            > section {
-            margin-top: auto;
-        }
-
-        &.isScrollingUp nav {
-            position: fixed;
-            transform: translateY(5em);
-            transition-delay: 250ms;
-        }
-        &.isScrollingDown nav {
-            transform: translateY(0);
-        }
-    }
+    @include sticky-nav;
 
     .image {
         order: 1;

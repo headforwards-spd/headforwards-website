@@ -1,105 +1,105 @@
 # Expired Jobs
-/careers/jobs/:job/application-form /careers/jobs 410
-/careers/jobs/:job                  /careers/jobs 410
+/careers/jobs/:job/application-form	/careers/jobs	410
+/careers/jobs/:job	/careers/jobs	410
 
 
 # careers.headforwards.com
-/o/:job/c/new                    /careers/jobs/:job/application-form 301
-/o/:job                          /careers/jobs/:job                  301
-https://careers.headforwards.com /careers                            301
-
-
-# All WordPress Posts
-/news/upcoming-events /410 410
-/news                 /410 410
-/category/*           /410 410
-/tag/*                /410 410
-/author/*             /410 410
-/2014/:month/*        /410 410
-/2015/:month/*        /410 410
-/2016/:month/*        /410 410
-/2017/:month/*        /410 410
-/2018/:month/*        /410 410
-/2019/:month/*        /410 410
-/2020/:month/*        /410 410
-
-
-# WordPress Legal Pages
-# /privacy-notice /privacy-notice 200
-# /terms-of-use   /terms-of-use   200
-/contactus /contact 301
-/thank-you /contact 410
+/o/:job/c/new	/careers/jobs/:job/application-form	301
+/o/:job	/careers/jobs/:job	301
+https://careers.headforwards.com	/careers	301
 
 
 # WordPress Info Pages
-/special-projects-division       /how-we-work/two-different-working-models 301
-/headforwards-to-cornwall        /how-we-work                              301
-/late-summer-bbq                 /careers/our-culture                      301
-/the-agile-manifesto             /how-we-work                              301
-/agile-excellence                /how-we-work                              301
-/headtalks                       https://www.youtube.com/channel/UC6EL0AsCvG7duu-PVsSQIXg 301
-/what-we-do-software-development-outsourcing-in-the-uk /what-we-do         301
-/welcome-screen                  /                                         301
-/location                        /careers/living-in-cornwall               301
-/erdf                            /who-we-are/where-are-we-going            301
-/vr                              https://play.google.com/store/apps/developer?id=Headforwards 301
-/home                            /                                         301
-/headforwards-engagement-process /how-we-work                              301
-/our-values                      /who-we-are                               301
-/benefits-of-outsourcing         /what-we-do                               301
-# /who-we-are                    /who-we-are                               200
+/special-projects-division	/how-we-work/two-different-working-models	301
+/headforwards-to-cornwall	/how-we-work	301
+/late-summer-bbq	/careers/our-culture	301
+/the-agile-manifesto	/how-we-work	301
+/agile-excellence	/how-we-work	301
+/headtalks	https://www.youtube.com/channel/UC6EL0AsCvG7duu-PVsSQIXg	301
+/what-we-do-software-development-outsourcing-in-the-uk	/what-we-do	301
+/welcome-screen	/	301
+/location	/careers/living-in-cornwall	301
+/erdf	/who-we-are/where-are-we-going	301
+/vr	https://play.google.com/store/apps/developer?id=Headforwards	301
+/home	/	301
+/headforwards-engagement-process	/how-we-work	301
+/our-values	/who-we-are	301
+/benefits-of-outsourcing	/what-we-do	301
+# /who-we-are	/who-we-are	200
+
+
+# WordPress Legal Pages
+# /privacy-notice	/privacy-notice	200
+# /terms-of-use	/terms-of-use	200
+/contactus	/contact	301
+/thank-you	/contact	410
 
 
 # WordPress Careers Pages
-/stage-two-application-form       /careers    410
-/careers-old/application-form     /careers    410
-/job-application-new              /careers    410
-/applying-to-work-at-headforwards /careers    410
+/stage-two-application-form	/careers	410
+/careers-old/application-form	/careers	410
+/job-application-new	/careers	410
+/applying-to-work-at-headforwards	/careers	410
 
-/techcareers                      /careers    301
-/careers-old                      /careers    301
+/techcareers	/careers	301
+/careers-old	/careers	301
 
-/advantages-working-headforwards /careers/working-at-headforwards 301
-/python-developers               /careers/teams-and-tech          301
-/graduate-jobs-for-programmers   /careers/teams-and-tech          301
-/net-developer-careers           /careers/teams-and-tech          301
+/advantages-working-headforwards	/careers/working-at-headforwards	301
+/python-developers	/careers/teams-and-tech	301
+/graduate-jobs-for-programmers	/careers/teams-and-tech	301
+/net-developer-careers	/careers/teams-and-tech	301
 
 
 # WordPress Jobs
-/ruby-on-rails-developer             /careers/jobs    410
-/integration-services-architect      /careers/jobs    410
-/lead-front-end-developer            /careers/jobs    410
-/senior-qa-software-tester           /careers/jobs    410
-/webmethods-developer                /careers/jobs    410
-/senior-vmware-engineer              /careers/jobs    410
-/cpp-software-developer              /careers/jobs    410
-/qa-automation-engineer              /careers/jobs    410
-/product-owner                       /careers/jobs    410
-/web-designer-old                    /careers/jobs    410
-/ios-app-developer                   /careers/jobs    410
-/web-designer                        /careers/jobs    410
-/technical-support-manager           /careers/jobs    410
-/ui-ux-front-end-developer           /careers/jobs    410
-/java-software-developers            /careers/jobs    410
-/content-and-communication-co-ordinator /careers/jobs 410
-/scrum-master-job                    /careers/jobs    410
-/software-engineer-job               /careers/jobs    410
-/technical-support-analyst-job       /careers/jobs    410
-/qa-software-testers-job             /careers/jobs    410
-/marketing-assistant-job             /careers/jobs    410
-/test-analyst-job                    /careers/jobs    410
-/java-developer-job                  /careers/jobs    410
-/ui-developer-job                    /careers/jobs    410
-/system-administrator-job            /careers/jobs    410
-/javascript-developer-job            /careers/jobs    410
-/front-end-web-developer-job         /careers/jobs    410
-/software-tester-job                 /careers/jobs    410
-/outsource-software-development-specialists-for-the-travel-industry /careers/jobs    410
-/developer-security-specialism       /careers/jobs    410
-/php-developer-job                   /careers/jobs    410
-/perl-developer-job                  /careers/jobs    410
-/full-stack-javascript-developer-job /careers/jobs    410
-/net-developer-job                   /careers/jobs    410
-/net-developer-jobs                  /careers/jobs    410
-/python-developer-job                /careers/jobs    410
-/front-end-javascript-developer-job  /careers/jobs    410
+/ruby-on-rails-developer	/careers/jobs	410
+/integration-services-architect	/careers/jobs	410
+/lead-front-end-developer	/careers/jobs	410
+/senior-qa-software-tester	/careers/jobs	410
+/webmethods-developer	/careers/jobs	410
+/senior-vmware-engineer	/careers/jobs	410
+/cpp-software-developer	/careers/jobs	410
+/qa-automation-engineer	/careers/jobs	410
+/product-owner	/careers/jobs	410
+/web-designer-old	/careers/jobs	410
+/ios-app-developer	/careers/jobs	410
+/web-designer	/careers/jobs	410
+/technical-support-manager	/careers/jobs	410
+/ui-ux-front-end-developer	/careers/jobs	410
+/java-software-developers	/careers/jobs	410
+/content-and-communication-co-ordinator	/careers/jobs	410
+/scrum-master-job	/careers/jobs	410
+/software-engineer-job	/careers/jobs	410
+/technical-support-analyst-job	/careers/jobs	410
+/qa-software-testers-job	/careers/jobs	410
+/marketing-assistant-job	/careers/jobs	410
+/test-analyst-job	/careers/jobs	410
+/java-developer-job	/careers/jobs	410
+/ui-developer-job	/careers/jobs	410
+/system-administrator-job	/careers/jobs	410
+/javascript-developer-job	/careers/jobs	410
+/front-end-web-developer-job	/careers/jobs	410
+/software-tester-job	/careers/jobs	410
+/outsource-software-development-specialists-for-the-travel-industry	/careers/jobs	410
+/developer-security-specialism	/careers/jobs	410
+/php-developer-job	/careers/jobs	410
+/perl-developer-job	/careers/jobs	410
+/full-stack-javascript-developer-job	/careers/jobs	410
+/net-developer-job	/careers/jobs	410
+/net-developer-jobs	/careers/jobs	410
+/python-developer-job	/careers/jobs	410
+/front-end-javascript-developer-job	/careers/jobs	410
+
+
+# WordPress Posts
+/news/upcoming-events	/410	410
+/news	/410	410
+/category/*	/410	410
+/tag/*	/410	410
+/author/*	/410	410
+/2014/:month/*	/410	410
+/2015/:month/*	/410	410
+/2016/:month/*	/410	410
+/2017/:month/*	/410	410
+/2018/:month/*	/410	410
+/2019/:month/*	/410	410
+/2020/:month/*	/410	410

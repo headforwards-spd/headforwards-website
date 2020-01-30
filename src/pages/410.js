@@ -4,7 +4,7 @@ import Layout from '../components/page-layout/layout';
 
 export default () => {
     const props = {
-        title: '410: Gone',
+        title: 'Page Gone',
     };
 
     return (
