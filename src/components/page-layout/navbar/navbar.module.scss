@@ -4,6 +4,11 @@
 @import '../../page-components/page-component';
 
 .menu {
+
+    @include fontMedium;
+    line-height: 1;
+    margin-bottom: 0;
+
     position: relative;
 
     background-color: white;

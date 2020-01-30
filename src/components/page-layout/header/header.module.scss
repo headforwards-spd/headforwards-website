@@ -4,11 +4,83 @@
 @import '../../page-components/page-component';
 
 .header {
-
     @include fontMedium;
     position: relative;
     display: flex;
     flex-direction: column;
+
+    nav {
+        transition-property:        transform, background-color, padding, max-width;
+        transition-timing-function: ease,      ease,             ease,    ease;
+        transition-duration:        0s,        300ms,            0s,      0s;
+        transition-delay:           0s,        0s,               300ms,   300ms;
+    }
+
+    &.isScrollingUp, &.isScrollingDown {
+
+        padding-top: 5em;
+        transition-property:        transform, background-color, padding, max-width;
+        transition-timing-function: ease,      ease,             ease,    ease;
+        transition-duration:        0s,        300ms,            0s,      0s;
+        transition-delay:           0s,        0s,               0s,      0s;
+
+        > nav {
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transition-duration: 300ms;
+            margin-top: -10em;
+            :not(&:global(.is-active)) {
+                background: white;
+            }
+        }
+
+        @media (min-width: $screen-lg) {
+
+            padding-top: 5.5em;
+
+            > nav {
+                margin-top: -11em;
+                background: rgba(white, 0.9);
+                border-bottom: 1px solid $grey-6;
+
+                > header > a {
+                    background-image: url(/images/headforwards.black.png);
+                }
+
+                > section > ul > li > a {
+                    color: black;
+                }
+            }
+
+            &.isScrollingUp nav {
+                transform: translateY(5.5em);
+            }
+        }
+        @media (min-width: $screen-xl) {
+
+            > nav {
+                padding-left: $column-gutter-lg*2;
+                padding-right: $column-gutter-lg*2;
+                max-width: calc(#{$max_width} + #{$column-gutter-lg*3});
+            }
+
+        }
+
+            > section {
+            margin-top: auto;
+        }
+
+        &.isScrollingUp nav {
+            position: fixed;
+            transform: translateY(5em);
+            transition-delay: 250ms;
+        }
+        &.isScrollingDown nav {
+            transform: translateY(0);
+        }
+    }
 
     .image {
         order: 1;
