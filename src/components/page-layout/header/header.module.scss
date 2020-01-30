@@ -47,7 +47,6 @@
             > nav {
                 margin-top: -11em;
                 background: rgba(white, 0.9);
-                //border-bottom: 1px solid $grey-6;
 
                 > header > a {
                     background-image: url(/images/headforwards.black.png);
@@ -68,6 +67,10 @@
                 padding-left: $column-gutter-lg*2;
                 padding-right: $column-gutter-lg*2;
                 max-width: calc(#{$max_width} + #{$column-gutter-lg*3});
+
+                &:after {
+                    width: calc(100% - #{$column-gutter-lg*4});
+                }
             }
 
         }
