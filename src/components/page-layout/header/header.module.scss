@@ -34,6 +34,10 @@
             :not(&:global(.is-active)) {
                 background: white;
             }
+            &:after {
+                transform: translateY(50%);
+                opacity: unset;
+            }
         }
 
         @media (min-width: $screen-lg) {
@@ -43,7 +47,7 @@
             > nav {
                 margin-top: -11em;
                 background: rgba(white, 0.9);
-                border-bottom: 1px solid $grey-6;
+                //border-bottom: 1px solid $grey-6;
 
                 > header > a {
                     background-image: url(/images/headforwards.black.png);
