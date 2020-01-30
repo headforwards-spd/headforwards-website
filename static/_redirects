@@ -15,7 +15,13 @@ https://careers.headforwards.com /careers                            301
 /category/*           /410 410
 /tag/*                /410 410
 /author/*             /410 410
-/20:year/:month/*     /410 410
+/2014/:month/*        /410 410
+/2015/:month/*        /410 410
+/2016/:month/*        /410 410
+/2017/:month/*        /410 410
+/2018/:month/*        /410 410
+/2019/:month/*        /410 410
+/2020/:month/*        /410 410
 
 
 # WordPress Legal Pages
