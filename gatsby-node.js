@@ -44,14 +44,19 @@ exports.onCreateNode = ({ node, actions }) => {
     return Promise.resolve();
 };
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-    actions.setWebpackConfig({
-        devServer: {
-            headers: {
-                'Access-Control-Allow-Origin': '*',
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    if (stage === 'build-html') {
+        actions.setWebpackConfig({
+            module: {
+                rules: [
+                    {
+                        test: /netlify-identity-widget/,
+                        use: loaders.null(),
+                    },
+                ],
             },
-        },
-    });
+        });
+    }
 };
 
 function createAllIndexPages(createPage, { menu: pages }) {
