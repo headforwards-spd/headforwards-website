@@ -94,6 +94,7 @@
 
 
                 button {
+                    @include arrow-link;
                     color: $orange;
                     font-weight: bold;
                     flex-grow: 0;
@@ -103,7 +104,6 @@
                     padding: 0;
                     background: unset;
                     line-height: $line-height;
-                    @include arrow-link;
                 }
             }
         }

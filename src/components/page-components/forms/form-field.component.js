@@ -84,12 +84,14 @@ export function Checkbox({ label, required: isRequired, isGroup, ...props }) {
         .toLowerCase()}`;
 
     return (
-        <label htmlFor={id} className={`${styles.field} ${styles.checkbox} ${errorClass}`}>
-            <input {...{ id, ...field, ...props }} />
-            {label || name}
-            {isRequired && <abbr title="required">&nbsp;*</abbr>}
-            {isRequired && <FormError {...meta} />}
-        </label>
+        <>
+            <input {...{ id, ...field, ...props }} className={`${styles.field}`} />
+            <label htmlFor={id} className={`${styles.field} ${errorClass}`}>
+                {label || name}
+                {isRequired && <abbr title="required">&nbsp;*</abbr>}
+                {isRequired && <FormError {...meta} />}
+            </label>
+        </>
     );
 }
 
@@ -107,12 +109,14 @@ export function Radio({ label, required: isRequired, isGroup, ...props }) {
     const errorClass = touched && error ? styles.hasError : '';
 
     return (
-        <label htmlFor={id} className={`${styles.field} ${errorClass}`}>
-            <input id={id} {...field} {...props} />
-            {label || name}
-            {isRequired && <abbr title="required">&nbsp;*</abbr>}
-            {isRequired && <FormError {...meta} />}
-        </label>
+        <>
+            <input id={id} {...field} {...props} className={`${styles.field}`} />
+            <label htmlFor={id} className={`${styles.field} ${errorClass}`}>
+                {label || name}
+                {isRequired && <abbr title="required">&nbsp;*</abbr>}
+                {isRequired && <FormError {...meta} />}
+            </label>
+        </>
     );
 }
 

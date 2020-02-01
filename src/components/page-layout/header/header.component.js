@@ -11,7 +11,7 @@ import styles from './header.module.scss';
 export default class Header extends Component {
     scrollTop = 0;
 
-    debounceTime = 15;
+    debounceTime = 20;
 
     debounceScroll = null;
 
@@ -47,18 +47,26 @@ export default class Header extends Component {
         debounceScroll && clearTimeout(debounceScroll);
         this.debounceScroll = setTimeout(() => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const isAtTop = scrollTop < 5;
-            const isNearTop = scrollTop < 200;
+            const isAtTop = scrollTop < 2;
+            const isNearTop = scrollTop < 250;
 
             const { isScrollingUp, isScrollingDown } = this.state;
 
             const isScrollingUpNext = scrollTop < this.scrollTop && (!isNearTop || isScrollingUp);
             const isScrollingDownNext = scrollTop > this.scrollTop && (!isNearTop || isScrollingDown);
 
-            if (isAtTop && (isScrollingUp || isScrollingDown)) {
-                this.setState({ isScrollingUp: false, isScrollingDown: false });
-            } else if (isScrollingUp !== isScrollingUpNext || isScrollingDown !== isScrollingDownNext) {
-                this.setState({ isScrollingUp: isScrollingUpNext, isScrollingDown: isScrollingDownNext });
+            switch(true) {
+                case scrollTop === this.scrollTop:
+                    // do nothing
+                    break;
+                case (isAtTop && (isScrollingUp || isScrollingDown)):
+                    this.setState({ isScrollingUp: false, isScrollingDown: false });
+                    break;
+                case (isScrollingUp !== isScrollingUpNext || isScrollingDown !== isScrollingDownNext):
+                    this.setState({ isScrollingUp: isScrollingUpNext, isScrollingDown: isScrollingDownNext });
+                    break;
+                default:
+                    // do nothing
             }
 
             this.scrollTop = scrollTop;

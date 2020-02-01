@@ -53,7 +53,10 @@ $screen-xl:      1440px;
 
 $min_width: $screen-sm;
 $max_width: 1170px;
+$max_width_gutter: $max_width + 84px;
 $min_font: 16px;
 $max_font: 21px;
 
 $singleColumnMaxWidth: 85%;
+
+$transitionTime: 300ms;

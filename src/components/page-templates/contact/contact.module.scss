@@ -100,16 +100,10 @@
             }
 
             button {
+                @include button-link;
                 @include fontLarge;
                 margin-bottom: 0;
-                line-height: 1;
-                background-color: $orange;
-                color: white;
-                border: none;
-                display: flex;
-                align-items: center;
                 padding: 1rem;
-                @include arrow-link;
 
                 &:after {
                     background-image: url(/images/hf-arrow.white.svg);

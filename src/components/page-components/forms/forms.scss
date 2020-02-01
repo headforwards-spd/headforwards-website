@@ -1,29 +1,35 @@
 @import "../../../scss/mixins/typography";
 
 @mixin checkbox{
-        @include fontMediumVr;
+        //@include fontMediumVr;
+        //position: relative;
+        //height: 1em;
+        //width: 1em;
+        //visibility: hidden;
+        //& {
+        //    margin: 0 0.5em 0 0;
+        //}
+        //display: inline-block;
+        //vertical-align: baseline;
+    display: none;
+
+    & + label {
+
         position: relative;
-        height: 1em;
-        width: 1em;
-        visibility: hidden;
-        & {
-            margin: 0 0.5em 0 0;
-        }
-        display: inline-block;
-        vertical-align: baseline;
+
+        padding-left: 1.5em;
 
         &:before, &:after {
-            visibility: visible;
+            position: absolute;
+            left: 0;
         }
 
         &:before {
             position: absolute;
             content: '';
-            top: 0;
-            left: 0;
-            width:100%;
-            padding-bottom: 100%;
             border: 1px solid $input-grey;
+            width: 1em;
+            height: 1em;
         }
 
         &:after {
@@ -31,17 +37,18 @@
             content: '';
             top: 3px;
             left: 3px;
-            width: calc(100% - 4px);
-            padding-bottom: calc(100% - 4px);
+            width: calc(1em - 4px);
+            padding-bottom: calc(1em - 4px);
         }
+    }
 
-        &:checked:after {
-            background: $grey-4;
-        }
+    &:checked + label:after {
+        background: $grey-4;
+    }
 
-        &[type=radio] {
-            &:before, &:after {
-                border-radius: 100%;
-            }
+    &[type=radio] + label {
+        &:before, &:after {
+            border-radius: 100%;
         }
+    }
 }

@@ -8,12 +8,15 @@ import MenuItem from '../menu-item/menu-item.component';
 import styles from '../navbar.module.scss';
 import { menuPropTypes } from './menu.prop-type';
 
-// Menu.propTypes = menuPropTypes;
-// Menu.defaultProps = {
-//     hasBackground: false,
-//     activeClass: null,
-// };
 export default class Menu extends Component {
+
+    static propTypes = menuPropTypes;
+
+    static defaultProps = {
+        hasBackground: false,
+        activeClass: null,
+    };
+
     render() {
         const { menuClick, hasBackground, activeClass, menu, companyInfo } = this.props;
         const { companyName, phone } = companyInfo;

@@ -177,18 +177,16 @@ export default class ContactForm extends Component {
                                         {isSubmitting && <FontAwesomeIcon icon={faSpinner} spin />}
                                     </button>
                                     <div className={styles.messages}>
-                                        {isValid && !errorMessage && !successMessage && (
-                                            <>
-                                                <abbr title="required">*&nbsp;</abbr>
-                                                required fields
-                                            </>
-                                        )}
-                                        {hasError && (
-                                            <div className={styles.error}>
-                                                <FontAwesomeIcon icon={faTimesCircle} size="lg" />
-                                                One or more fields have an error.
-                                            </div>
-                                        )}
+                                        <>
+                                            <abbr title="required">*&nbsp;</abbr>
+                                            required fields
+                                        </>
+                                        {/*{hasError && (*/}
+                                        {/*    <div className={styles.error}>*/}
+                                        {/*        <FontAwesomeIcon icon={faTimesCircle} size="lg" />*/}
+                                        {/*        One or more fields have an error.*/}
+                                        {/*    </div>*/}
+                                        {/*)}*/}
                                         {errorMessage && (
                                             <div className={styles.error}>
                                                 <FontAwesomeIcon icon={faTimesCircle} size="lg" />

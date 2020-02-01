@@ -27,7 +27,7 @@
             padding: 0 $column-gutter-md;
         }
         @media(min-width: $screen-lg) {
-            max-width: calc(#{$max_width} + #{$column-gutter-lg});
+            max-width: calc(#{$max_width} + #{$column-gutter-lg*2});
             padding: 0 $column-gutter-lg;
         }
     }

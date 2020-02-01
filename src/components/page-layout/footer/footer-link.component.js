@@ -49,9 +49,9 @@ export function extractFooterLinks(footerLinks) {
     return {
         title,
         links: [
-            { link: link1, page: page1 },
-            { link: link2, page: page2 },
-            { link: link3, page: page3 },
+            { id: 'footer-link-1', link: link1, page: page1 },
+            { id: 'footer-link-2', link: link2, page: page2 },
+            { id: 'footer-link-3', link: link3, page: page3 },
         ].map(({ link, page }) => {
             const { frontmatter } = page || {};
 

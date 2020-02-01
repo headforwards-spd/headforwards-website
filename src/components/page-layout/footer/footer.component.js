@@ -35,8 +35,8 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
                     <section className={styles.footerLinks}>
                         {!!footerLinksTitle && <h2>{footerLinksTitle}</h2>}
                         <section>
-                            {links.map(link => (
-                                <FooterLink {...link} />
+                            {links.map(({ id, ...link }) => (
+                                <FooterLink key={id} {...link} />
                             ))}
                         </section>
                     </section>

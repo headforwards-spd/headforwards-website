@@ -1,4 +1,5 @@
 @import "../../../../scss/mixins/typography";
+@import "../../page-component";
 @import "../forms";
 
 .field {
@@ -65,8 +66,25 @@
         color: red;
     }
 
-    input[type=checkbox], input[type=radio] {
+    &[type=checkbox], &[type=radio] {
         @include checkbox;
+
+        & + label {
+
+            &.hasError:before {
+                border-color: $error-color;
+            }
+
+            .error {
+                text-align: left;
+                margin-left: calc(-1.5em / 0.85);
+            }
+        }
+
+    }
+
+    &[role=group] .error {
+        text-align: left;
     }
 
     &.file {
@@ -79,6 +97,7 @@
             align-items: stretch;
 
             button {
+                @include button-link;
                 flex-shrink: 0;
                 margin: calc(#{$rhythm-unit/4}em - 2px) 0;
                 padding: 0 0.5em;
@@ -153,12 +172,6 @@
         min-height: #{$rhythm-unit/0.85}em;
     }
 
-    &.checkbox, &[role=group] {
-        .error {
-            text-align: left;
-        }
-    }
-
     &.error .submit {
         button {
             background: $input-grey;
@@ -203,7 +216,7 @@
             padding: 0.5em;
             flex-shrink: 0;
 
-            transition: all 250ms ease;
+            transition: all $transitionTime ease;
         }
 
         .messages {

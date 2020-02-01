@@ -9,27 +9,27 @@ import { menuItemPropTypes } from './menu-item.prop-type';
 export default class MenuItem extends Component {
     static propTypes = menuItemPropTypes;
 
-    constructor(props) {
-        super(props);
+    state = {
+        isOpen: false,
+    };
 
-        const { link, location } = props;
+    componentDidMount() {
+
+        const { link, location } = this.props;
         const { pathname: path = '' } = location || {};
 
         const cleanLink = `/${link}/`.replace(/\/+/g, '/').replace(/^\/$/, 'homepage');
         const cleanPath = `/${path}/`.replace(/\/+/g, '/').replace(/^\/$/, 'homepage');
         const isOpen = cleanPath.startsWith(cleanLink);
 
-        this.state = {
-            isOpen,
-        };
+        this.state.isOpen = isOpen;
     }
 
     toggleMenu(event) {
         event.preventDefault();
         event.stopPropagation();
 
-        const { isOpen } = this.state;
-        this.setState({ isOpen: !isOpen });
+        this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
 
         return false;
     }

@@ -5,7 +5,6 @@
 
 .menu {
 
-    @include fontMedium;
     line-height: 1;
     margin-bottom: 0;
 
@@ -14,7 +13,7 @@
     background-color: white;
     border-bottom: 1px solid $grey-9;
 
-    transition: background-color ease 0.5s;
+    transition: background-color ease $transitionTime;
 
     padding-top: $component-gutter-sm/4;
     padding-bottom: $component-gutter-sm/4;
@@ -31,6 +30,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         margin: 0 -#{$column-gutter-sm/2};
         @media (min-width: $screen-md) {
             margin: 0 -#{$column-gutter-md/2};
@@ -40,18 +40,10 @@
         }
 
         a {
-            &:after{
-                content: '';
-                @include headingFontLarge;
-                height: #{$rhythm-unit}em;
-                display: inline-block;
-            }
+            line-height: 3;
             margin: 0 $column-gutter-sm/2;
             @media (min-width: $screen-md) {
                 margin: 0 $column-gutter-md/2;
-                &:after {
-                    @include headingFontMedium;
-                }
             }
             @media (min-width: $screen-lg) {
                 margin: 0 $column-gutter-lg/2;
@@ -72,7 +64,7 @@
     > section {
         display: none;
         opacity: 0;
-        transition: opacity ease 0.5s;
+        transition: opacity ease $transitionTime;
 
         > ul {
 

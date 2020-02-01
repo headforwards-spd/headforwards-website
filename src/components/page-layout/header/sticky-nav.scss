@@ -1,51 +1,90 @@
 @import "../../../scss/variables";
 
 @mixin sticky-nav {
+
+    @include fontMedium;
+    position: relative;
+    margin-top: 4em;
+
     nav {
-        transition-property:        transform, background-color, padding, max-width;
-        transition-timing-function: ease,      ease,             ease,    ease;
-        transition-duration:        0s,        300ms,            0s,      0s;
-        transition-delay:           0s,        0s,               300ms,   300ms;
+        @include fontMedium;
+        transition: background-color $transitionTime/2 ease;
+        position: absolute;
+        top: calc(2px - 4em);;
+        z-index: 1;
+
+        //    //transition:                 transform, background-color, padding,           max-width;
+        //    //transition-timing-function: ease,      ease,             ease,              ease;
+        //    //transition-duration:        0s,        $transitionTime,  0s,                0s;
+        //    //transition-delay:           0s,        0s,               $transitionTime,   $transitionTime;
     }
 
     &.isScrollingUp, &.isScrollingDown {
 
-        padding-top: 5em;
-        transition-property:        transform, background-color, padding, max-width;
-        transition-timing-function: ease,      ease,             ease,    ease;
-        transition-duration:        0s,        300ms,            0s,      0s;
-        transition-delay:           0s,        0s,               0s,      0s;
-
         > nav {
+            transition: transform $transitionTime ease;
             position: fixed;
             left: 0;
             right: 0;
             z-index: 100;
-            transition-duration: 300ms;
-            margin-top: -10em;
+
             :not(&:global(.is-active)) {
                 background: white;
             }
-            &:after {
-                transform: translateY(50%);
-                opacity: unset;
-            }
         }
 
-        @media (min-width: $screen-md) {
-
-            > section {
-                margin-top: auto;
-            }
+        &.isScrollingUp nav {
+            transform: translateY(calc(4em - 3px));
         }
 
-        @media (min-width: $screen-lg) {
+        &.isScrollingDown nav {
+            transform: translateY(calc(-100% - 8em));
+        }
+    }
 
-            padding-top: 5.5em;
+    @media (min-width: $screen-md) {
+
+        margin-top: 4.5em;
+
+        > nav {
+            top: -4.5em;
+        }
+
+        &.isScrollingUp, &.isScrollingDown {
 
             > nav {
-                margin-top: -11em;
-                background: rgba(white, 0.9);
+                &:after {
+                    transform: translateY(50%);
+                    opacity: unset;
+                }
+            }
+
+            &.isScrollingUp nav {
+                transform: translateY(4.5em);
+            }
+
+            &.isScrollingDown nav {
+                transform: translateY(calc(-100% - 9em));
+            }
+        }
+    }
+
+    @media (min-width: $screen-lg) {
+
+        margin-top: 0;
+        padding-top: calc(5em + 2px);
+
+        &.isScrollingUp, &.isScrollingDown {
+
+            > nav {
+                top: calc(-5em - 2px);
+                background: rgba(white, 0.975);
+                &:after {
+                    width: 100vw;
+                    margin: 0;
+                    left: 0;
+                    right: 0;
+                }
 
                 > header > a {
                     background-image: url(/images/headforwards.black.png);
@@ -57,30 +96,28 @@
             }
 
             &.isScrollingUp nav {
-                transform: translateY(5.5em);
-            }
-        }
-        @media (min-width: $screen-xl) {
-
-            > nav {
-                padding-left: $column-gutter-lg*2;
-                padding-right: $column-gutter-lg*2;
-                max-width: calc(#{$max_width} + #{$column-gutter-lg*3});
-
-                &:after {
-                    width: calc(100% - #{$column-gutter-lg*4});
-                }
+                transform: translateY(5em);
             }
 
+            &.isScrollingDown nav {
+                transform: translateY(calc(-100% - 10em));
+            }
         }
+    }
 
-        &.isScrollingUp nav {
-            position: fixed;
-            transform: translateY(5em);
-            transition-delay: 250ms;
-        }
-        &.isScrollingDown nav {
-            transform: translateY(0);
+    @media (min-width: $max_width_gutter) {
+        > nav {
+            top: 0;
+            left: 0;
+            right: 0;
+
+            max-width: unset;
+            padding-left: calc(50vw - #{$max_width/2});
+            padding-right: calc(50vw - #{$max_width/2});
+
+            &:after {
+                width: $max_width;
+            }
         }
     }
 }
