@@ -198,6 +198,15 @@
 
 .contactForm {
 
+    p {
+        width: 100%;
+    }
+
+    abbr {
+        text-decoration: none;
+        color: $error-color;
+    }
+
     .submit {
         width: 100%;
         display: flex;
@@ -259,11 +268,6 @@
             .messages {
                 margin: 0 0 0 $column-gutter-lg;
             }
-        }
-
-        abbr {
-            text-decoration: none;
-            color: $error-color;
         }
     }
 

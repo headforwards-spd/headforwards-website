@@ -170,6 +170,10 @@ export default class ContactForm extends Component {
                                 />
                                 <Checkbox {...schema.privacy.field} disabled={isSubmitting} />
                                 <Checkbox {...schema.marketing.field} disabled={isSubmitting} />
+                                <p>
+                                    <abbr title="required">*&nbsp;</abbr>
+                                    required fields
+                                </p>
                                 <div role="group" className={styles.submit}>
                                     <Reaptcha {...rcProps} className={styles.recaptcha} />
                                     <button type="submit" disabled={isSubmitting}>
@@ -177,16 +181,12 @@ export default class ContactForm extends Component {
                                         {isSubmitting && <FontAwesomeIcon icon={faSpinner} spin />}
                                     </button>
                                     <div className={styles.messages}>
-                                        <>
-                                            <abbr title="required">*&nbsp;</abbr>
-                                            required fields
-                                        </>
-                                        {/*{hasError && (*/}
-                                        {/*    <div className={styles.error}>*/}
-                                        {/*        <FontAwesomeIcon icon={faTimesCircle} size="lg" />*/}
-                                        {/*        One or more fields have an error.*/}
-                                        {/*    </div>*/}
-                                        {/*)}*/}
+                                        {hasError && (
+                                            <div className={styles.error}>
+                                                <FontAwesomeIcon icon={faTimesCircle} size="lg" />
+                                                One or more fields have an error.
+                                            </div>
+                                        )}
                                         {errorMessage && (
                                             <div className={styles.error}>
                                                 <FontAwesomeIcon icon={faTimesCircle} size="lg" />

@@ -226,22 +226,22 @@ export default class ApplicationForm extends Component {
                                 <section>
                                     <section className={styles.submit}>
                                         <Checkbox {...schema.privacy.field} disabled={isSubmitting} />
+                                        <p>
+                                            <abbr title="required">*&nbsp;</abbr>
+                                            required fields
+                                        </p>
                                         <div role="group">
                                             <button type="submit" disabled={isSubmitting}>
                                                 Submit application
                                                 {isSubmitting && <FontAwesomeIcon icon={faSpinner} spin />}
                                             </button>
                                             <div className={styles.messages}>
-                                                <>
-                                                    <abbr title="required">*&nbsp;</abbr>
-                                                    required fields
-                                                </>
-                                                {/*{hasError && (*/}
-                                                {/*    <div className={styles.error}>*/}
-                                                {/*        <FontAwesomeIcon icon={faTimesCircle} size="lg" />*/}
-                                                {/*        One or more fields have an error.*/}
-                                                {/*    </div>*/}
-                                                {/*)}*/}
+                                                {hasError && (
+                                                    <div className={styles.error}>
+                                                        <FontAwesomeIcon icon={faTimesCircle} size="lg" />
+                                                        One or more fields have an error.
+                                                    </div>
+                                                )}
                                                 {errorMessage && (
                                                     <div className={styles.error}>
                                                         <FontAwesomeIcon icon={faTimesCircle} size="lg" />
