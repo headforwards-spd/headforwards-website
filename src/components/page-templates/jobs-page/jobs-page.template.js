@@ -1,105 +1,163 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
-import React, { Component }             from 'react';
-import slugify                          from 'slugify'
+import React, { Component } from 'react';
+import slugifyOrig from 'slugify';
 
-import PageComponent, { PageComponentPropType }              from '../../page-components/page-component';
-import IntroductionComponent                                 from '../../page-layout/introduction/introduction.component';
+import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
+import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
-import styles                                                from './jobs-page.module.scss';
+import styles from './jobs-page.module.scss';
 
-// JobsPageTemplate.propTypes = {
-//     introduction: shape({
-//                             show: bool,
-//                             text: string,
-//                         }),
-//     jobs: arrayOf(JobsSummaryComponentPropType),
-//     components: arrayOf(PageComponentPropType),
-// };
-// JobsPageTemplate.defaultProps = {
-//     introduction: null,
-//     jobs: null,
-//     components: null,
-// };
+const slugify = value => value.replace(/([A-Z])/gm, '-$1')
+                              .replace(/([^a-zA-Z0-9])/gm, '-')
+                              .replace(/-+/gm, '-')
+                              .replace(/^-*(.*)-*$/gm, '$1')
+                              .toLowerCase();
+
 export default class JobsPageTemplate extends Component {
+    static propTypes = {
+        introduction: shape({
+            show: bool,
+            text: string,
+        }),
+        jobs: arrayOf(JobsSummaryComponentPropType),
+        components: arrayOf(PageComponentPropType),
+    };
+
+    static defaultProps = {
+        introduction: null,
+        jobs: null,
+        components: null,
+    };
 
     state = {
         showFilters: false,
         selectedFilters: [],
     };
 
-    toggleFilter(label) {
-        this.setState(({selectedFilters}) => {
+    toggleFilters() {
+        this.setState(({ showFilters }) => ({ showFilters: !showFilters }));
+    }
 
+    toggleFilter(label) {
+        this.setState(({ selectedFilters: oldSelectedFilters }) => {
             const slug = slugify(label);
 
-            const hasFilter = selectedFilters.includes(slug);
+            const hasFilter = oldSelectedFilters.includes(slug);
 
-            const newSelectedFilters = hasFilter ? selectedFilters.filter(value => value !== slug) : [...selectedFilters, slug];
+            const selectedFilters = hasFilter
+                ? oldSelectedFilters.filter(value => value !== slug)
+                : [...oldSelectedFilters, slug];
 
-            return {selectedFilters: newSelectedFilters};
+            return { selectedFilters };
         });
     }
 
-    render () {
-        const { tags: allTags, filters, introduction, jobs, components } = this.props;
-        const { show, text } = introduction;
-        const { tags }       = filters;
-        const {showFilters, selectedFilters} = this.state;
+    isSelected(label) {
+        const slug = slugify(label);
+        const { selectedFilters } = this.state;
 
-        const filteredTags = tags.filter(
-            ({ label }) => allTags.includes(label));
+        return selectedFilters.includes(slug);
+    }
+
+    clearFilters() {
+        this.setState({ selectedFilters: [] });
+    }
+
+    selectedTags() {
+        const { selectedFilters } = this.state;
+        const { filters } = this.props;
+        const { tags: allowedTags } = filters;
+
+        return allowedTags.filter(({ label }) => selectedFilters.includes(slugify(label)));
+    }
+
+    tagList() {
+        const { filters, tags } = this.props;
+        const { tags: allowedTags = [] } = filters || {};
+        const slugs = tags.map(slugify);
+
+        return allowedTags.filter(({ label }) => slugs.includes(slugify(label)));
+    }
+
+    filteredJobs() {
+        const { jobs } = this.props;
+        const { selectedFilters } = this.state;
+
+        if (!selectedFilters.length) {
+            return jobs;
+        }
+
+        return jobs.filter(({ tags = [] }) => {
+            const selectedTags = tags.filter(value => selectedFilters.includes(slugify(value)));
+
+            return !!selectedTags.length;
+        });
+    }
+
+    render() {
+        const { introduction, components } = this.props;
+        const { show, text } = introduction;
+        const { showFilters } = this.state;
 
         const filtersClass = showFilters ? styles.showFilters : '';
 
+        const tagList = this.tagList();
+        const selectedTags = this.selectedTags();
+        const jobsList = this.filteredJobs();
+
         return (
             <>
-                {show && <IntroductionComponent introduction={text}/>}
-                <section className={styles.filters}>
-                    <ul className={styles.selectedTags}>
-                        {filteredTags.filter(({label}) => selectedFilters.includes(slugify(label))).map(({ label, slug }) => (
-                            <li key={slug}><label htmlFor={slug}>{label}</label>
-                            </li>))}
-                    </ul>
-                    <section className={`${styles.allTags} ${filtersClass}`}>
-                        <button className={styles.filter} onClick={() => this.setState(({showFilters }) => ({showFilters: !showFilters}))}>Filter jobs
-                            by&hellip;</button>
-                        <ul>
-                            {filteredTags.map(({ label, slug }) => (
+                {show && <IntroductionComponent introduction={text} />}
+                {tagList && (
+                    <section className={styles.filters}>
+                        <ul className={styles.selectedTags}>
+                            {selectedTags.map(({ label, slug }) => (
                                 <li key={slug}>
-                                    <input id={slug} type='checkbox' checked={selectedFilters.includes(slugify(label))} onChange={() => this.toggleFilter(label)}/>
                                     <label htmlFor={slug}>{label}</label>
-                                </li>))}
-                            <li className={styles.clearAll}>
-                                <button type='button' onClick={() => this.setState({selectedFilters: []})}>Clear All</button>
-                            </li>
+                                </li>
+                            ))}
                         </ul>
+                        <section className={`${styles.allTags} ${filtersClass}`}>
+                            <button className={styles.filter} onClick={() => this.toggleFilters()}>
+                                Filter jobs by&hellip;
+                            </button>
+                            <section>
+                            <ul>
+                                {tagList.map(({ label, slug }) => (
+                                    <li key={slug}>
+                                        <input
+                                            id={slug}
+                                            type="checkbox"
+                                            checked={this.isSelected(label)}
+                                            onChange={() => this.toggleFilter(label)}
+                                        />
+                                        <label htmlFor={slug}>{label}</label>
+                                    </li>
+                                ))}
+                            </ul>
+                            <button type="button" onClick={() => this.clearFilters()}>
+                                Clear All
+                            </button>
+                            </section>
+                        </section>
                     </section>
-                </section>
-                {jobs && (
+                )}
+                {jobsList && (
                     <ul className={styles.jobsList}>
-                        {jobs.filter(({tags=[]}) => {
-
-                            console.log({tags});
-
-                            if (!selectedFilters.length) {
-                                return true;
-                            }
-
-                            const selectedTags = tags.filter(value => selectedFilters.includes(slugify(value)));
-
-                            return selectedTags.length;
-
-                        }).map(({ id: key, ...job }) => (
+                        {jobsList.map(({ id: key, ...job }) => (
                             <li>
                                 <JobSummaryComponent key={key} {...job} />
-                            </li>))}
-                    </ul>)}
+                            </li>
+                        ))}
+                    </ul>
+                )}
                 {components && (
                     <section className={styles.components}>
-                        {!!components && components.map(
-                            ({ id, ...component }) =>
-                                <PageComponent key={id} {...component} />)}
-                    </section>)}
-            </>);
+                        {!!components &&
+                            components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
+                    </section>
+                )}
+            </>
+        );
     }
 }

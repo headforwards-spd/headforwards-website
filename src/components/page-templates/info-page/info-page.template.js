@@ -25,6 +25,7 @@ InfoPageTemplate.defaultProps = {
 
 function InfoPageTemplate({ introduction, components = [], jobs }) {
     const { show, text } = introduction;
+    const hasJobs = !!(jobs && jobs.length);
 
     console.log({ jobs });
 
@@ -37,7 +38,7 @@ function InfoPageTemplate({ introduction, components = [], jobs }) {
                         components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
                 </section>
             )}
-            {jobs && (
+            {hasJobs && (
                 <section className={styles.jobs}>
                     <h2>CHANGEME</h2>
                     <ul className={styles.jobsList}>

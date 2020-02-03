@@ -51,12 +51,12 @@ JobsPage.propTypes = {
 };
 
 function JobsPage({ data }) {
-    const { page, jobNodes, filters, tags:tagData } = data;
+    const { page, jobNodes, filters, tags: tagData } = data;
     const { frontmatter } = page;
     const { introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
     const { nodes: jobs } = jobNodes;
-    const {distinct:tags} = tagData;
+    const { distinct: tags } = tagData;
     const pageProps = {
         introduction,
         tags,
