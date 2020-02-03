@@ -1,0 +1,31 @@
+title: careers
+departments:
+  - label: Healthcare
+    slug: healthcare
+  - label: Local Authority
+    slug: local-authority
+  - label: Telecomms
+    slug: telecomms
+tags:
+  - label: Azure
+    slug: azure
+  - label: .NET
+    slug: dotnet
+  - label: Dell Boomi
+    slug: dell-boomi
+  - label: Integration
+    slug: integration
+  - label: Dynamics 365
+    slug: dynamics-365
+  - label: BI / Data
+    slug: bi-data
+  - label: Golang
+    slug: golang
+  - label: Python
+    slug: python
+  - label: Linux
+    slug: linux
+  - label: Sys Admin
+    slug: sysadmin
+  - label: React
+    slug: react

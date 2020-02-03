@@ -89,7 +89,7 @@ function createAllPages(createPage, { nodes: pages = [] }) {
             const { slug: titleSlug } = fields;
             const { type, parent = '', seo, careers } = frontmatter;
             const { slug: seoSlug } = seo || {};
-            const { department='' } = careers || {};
+            const { department = '' } = careers || {};
             const slug = seoSlug || titleSlug;
             const pagePath = `/${parent || ''}/${slug}`;
 

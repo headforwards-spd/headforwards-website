@@ -28,7 +28,7 @@ function InfoPagePage({ data }) {
     const { frontmatter } = page;
     const { introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
-    const {nodes: jobs} = jobNodes;
+    const { nodes: jobs } = jobNodes;
     const pageProps = {
         introduction,
         components,
@@ -47,7 +47,7 @@ export const query = graphql`
         page: markdownRemark(id: { eq: $id }) {
             ...PageFragment
         }
-        jobs: allRecruiteeOffer(filter: {department: {eq: $department}}) {
+        jobs: allRecruiteeOffer(filter: { department: { eq: $department } }) {
             nodes {
                 title
                 salary

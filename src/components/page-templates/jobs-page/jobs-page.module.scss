@@ -1,4 +1,133 @@
 @import "../../page-components/columns/columns";
+@import "../../page-components/forms/forms";
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: -$column-gutter-sm/4;
+    margin-bottom: $component-gutter-sm - $column-gutter-sm/4;
+    @media (min-width: $screen-md) {
+        margin: -$column-gutter-md/4;
+        margin-bottom: $component-gutter-md - $column-gutter-md/4;
+    }
+    @media (min-width: $screen-lg) {
+        margin: -$column-gutter-lg/4;
+        margin-bottom: $component-gutter-lg - $column-gutter-lg/4;
+    }
+}
+.allTags {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0;
+    border: 1px solid $grey-6;
+    margin: $column-gutter-sm/4;
+    @media (min-width: $screen-md) {
+        margin: $column-gutter-md/4;
+    }
+    @media (min-width: $screen-lg) {
+        width: calc((100%/4) - #{$column-gutter-lg/2});
+        margin: $column-gutter-lg/4;
+    }
+
+    .filter {
+        @include button-link;
+        @include fontSmall;
+        line-height: 2;
+        border: 1px solid $grey-6;
+        margin: -1px;
+        background-color: white;
+        color: $paragraph_grey;
+        &:after {
+            content: '\00a0\00a0\00a0\00a0';
+            background: url('/images/hf-arrow.orange.svg') no-repeat center right;
+            transform: rotate(90deg);
+        }
+        &:hover {
+            background-color: white;
+        }
+    }
+
+    ul {
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        left: -1px;
+        width: calc(100% + 2px);
+        border: 1px solid $grey-6;
+        z-index: 100;
+        display: none;
+        padding: 0.5em;
+        margin: 0;
+    }
+    &.showFilters ul {
+        display: block;
+    }
+
+    input {
+        @include checkbox;
+    }
+    input + label {
+        @include fontSmallVr;
+        & {
+            margin-bottom: 0;
+        }
+    }
+
+    .clearAll {
+            button {
+                @include fontSmallVr;
+                @include button-link;
+                & {
+                    margin-bottom: 0;
+                    margin-top: #{$rhythm-unit}em;
+                }
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+.selectedTags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    margin: 0;
+    margin-top: 0.5em;
+
+    li {
+        margin: $column-gutter-sm/4;
+        @media (min-width: $screen-md) {
+            margin: $column-gutter-md/4;
+        }
+        @media (min-width: $screen-lg) {
+            margin: $column-gutter-lg/4;
+        }
+        label {
+            @include fontSmall;
+            line-height: 1;
+            padding: 0.5em;
+            background-color: $grey-10;
+            transition: all $transitionTime ease;
+            font-weight: 700;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &:after {
+                @include fontMedium;
+                content: '\00d7';
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
 
 .jobsList {
     @include columns-component;

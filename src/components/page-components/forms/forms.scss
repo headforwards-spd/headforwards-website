@@ -1,20 +1,11 @@
 @import "../../../scss/mixins/typography";
 
 @mixin checkbox{
-        //@include fontMediumVr;
-        //position: relative;
-        //height: 1em;
-        //width: 1em;
-        //visibility: hidden;
-        //& {
-        //    margin: 0 0.5em 0 0;
-        //}
-        //display: inline-block;
-        //vertical-align: baseline;
     display: none;
 
     & + label {
 
+        display: block;
         position: relative;
 
         padding-left: 1.5em;

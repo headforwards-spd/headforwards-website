@@ -30,17 +30,38 @@ JobsPage.propTypes = {
                 })
             ),
         },
+        filters: shape({
+            departments: arrayOf(
+                shape({
+                    label: string.isRequired,
+                    slug: string.isRequired,
+                })
+            ),
+            tags: arrayOf(
+                shape({
+                    label: string.isRequired,
+                    slug: string.isRequired,
+                })
+            ),
+        }).isRequired,
+        tags: shape({
+            distinct: arrayOf(string),
+        }).isRequired,
     }).isRequired,
 };
 
 function JobsPage({ data }) {
-    const { page, jobNodes } = data;
+    const { page, jobNodes, filters, tags:tagData } = data;
     const { frontmatter } = page;
     const { introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
     const { nodes: jobs } = jobNodes;
+    const {distinct:tags} = tagData;
     const pageProps = {
         introduction,
+        tags,
+        filters,
+        tags,
         jobs,
         components,
     };
@@ -54,12 +75,22 @@ function JobsPage({ data }) {
 
 export const query = graphql`
     query JobsPage($id: String!) {
+        filters: dataYaml(title: { eq: "careers" }) {
+            tags {
+                label
+                slug
+            }
+        }
+        tags: allRecruiteeOffer {
+            distinct(field: tags)
+        }
         jobNodes: allRecruiteeOffer(sort: { fields: position, order: DESC }) {
             nodes {
                 id
                 title
                 salary
                 path
+                tags
                 created(fromNow: true)
             }
         }
