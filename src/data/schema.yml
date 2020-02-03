@@ -1,9 +1,0 @@
-menu:
-  - link: force value
-    linkText: force value
-    children:
-      - link: force value
-        linkText: force value
-        children:
-          - link: force value
-            linkText: force value

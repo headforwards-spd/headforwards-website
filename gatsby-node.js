@@ -87,15 +87,16 @@ function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
         pages.map(({ id, fields, frontmatter }) => {
             const { slug: titleSlug } = fields;
-            const { type, parent = '', seo } = frontmatter;
+            const { type, parent = '', seo, careers } = frontmatter;
             const { slug: seoSlug } = seo || {};
+            const { department='' } = careers || {};
             const slug = seoSlug || titleSlug;
             const pagePath = `/${parent || ''}/${slug}`;
 
             return createPage({
                 path: pagePath.replace(/\/+/g, '/'),
                 component: resolve(`src/templates/${type}.js`),
-                context: { id },
+                context: { id, department },
             });
         })
     );
@@ -158,6 +159,9 @@ function getData(graphql) {
                                         }
                                     }
                                 }
+                                careers {
+                                    department
+                                }
                             }
                         }
                         children {
@@ -186,6 +190,9 @@ function getData(graphql) {
                                             }
                                         }
                                     }
+                                    careers {
+                                        department
+                                    }
                                 }
                             }
                         }
@@ -206,6 +213,9 @@ function getData(graphql) {
                         parent
                         seo {
                             slug
+                        }
+                        careers {
+                            department
                         }
                     }
                 }

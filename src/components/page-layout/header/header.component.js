@@ -55,18 +55,18 @@ export default class Header extends Component {
             const isScrollingUpNext = scrollTop < this.scrollTop && (!isNearTop || isScrollingUp);
             const isScrollingDownNext = scrollTop > this.scrollTop && (!isNearTop || isScrollingDown);
 
-            switch(true) {
+            switch (true) {
                 case scrollTop === this.scrollTop:
                     // do nothing
                     break;
-                case (isAtTop && (isScrollingUp || isScrollingDown)):
+                case isAtTop && (isScrollingUp || isScrollingDown):
                     this.setState({ isScrollingUp: false, isScrollingDown: false });
                     break;
-                case (isScrollingUp !== isScrollingUpNext || isScrollingDown !== isScrollingDownNext):
+                case isScrollingUp !== isScrollingUpNext || isScrollingDown !== isScrollingDownNext:
                     this.setState({ isScrollingUp: isScrollingUpNext, isScrollingDown: isScrollingDownNext });
                     break;
                 default:
-                    // do nothing
+                // do nothing
             }
 
             this.scrollTop = scrollTop;

@@ -54,5 +54,7 @@ components:
     type: quote-component
 seo:
   slug: dot-net
+careers:
+    department: Healthcare
 ---
 

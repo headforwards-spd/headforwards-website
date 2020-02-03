@@ -24,13 +24,15 @@ InfoPagePage.propTypes = {
 };
 
 function InfoPagePage({ data }) {
-    const { page } = data;
+    const { page, jobs: jobNodes } = data;
     const { frontmatter } = page;
     const { introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
+    const {nodes: jobs} = jobNodes;
     const pageProps = {
         introduction,
         components,
+        jobs,
     };
 
     return (
@@ -41,9 +43,16 @@ function InfoPagePage({ data }) {
 }
 
 export const query = graphql`
-    query InfoPage($id: String!) {
+    query InfoPage($id: String!, $department: String!) {
         page: markdownRemark(id: { eq: $id }) {
             ...PageFragment
+        }
+        jobs: allRecruiteeOffer(filter: {department: {eq: $department}}) {
+            nodes {
+                title
+                salary
+                path
+            }
         }
     }
 `;

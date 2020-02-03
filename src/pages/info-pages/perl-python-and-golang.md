@@ -62,5 +62,7 @@ components:
     type: quote-component
 seo:
     slug: perl-python-and-golang
+careers:
+    department: Telecomms
 ---
 

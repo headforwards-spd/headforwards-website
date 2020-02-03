@@ -21,3 +21,28 @@ twitterURL: 'https://twitter.com/headforwards/'
 registeredAddress: 'The Engine House, Wheal Kitty, St Agnes, Cornwall, TR5 0RD'
 googleSiteVerification: R4whsvsFY0tjaw_cTINsgy_EVjfxEuXSudUGrWxIGNk
 facebookPagesId: 181090048630633
+jobTags:
+  - label: Azure
+    slug: azure
+  - label: .NET
+    slug: dotnet
+  - label: Dell Boomi
+    slug: dell-boomi
+  - label: Integration
+    slug: integration
+  - label: Dynamics 365
+    slug: dynamics-365
+  - label: BI
+    slug: bi
+  - label: Data
+    slug: data
+  - label: Golang
+    slug: golang
+  - label: Python
+    slug: python
+  - label: Linux
+    slug: linux
+  - label: Sys Admin
+    slug: sysadmin
+  - label: React
+    slug: react

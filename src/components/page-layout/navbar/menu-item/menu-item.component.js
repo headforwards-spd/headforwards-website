@@ -14,7 +14,6 @@ export default class MenuItem extends Component {
     };
 
     componentDidMount() {
-
         const { link, location } = this.props;
         const { pathname: path = '' } = location || {};
 

@@ -91,4 +91,7 @@ seo:
     slug: force-value
     title: force value
     description: force value
+    
+careers:
+    department: force value
 ---

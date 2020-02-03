@@ -50,5 +50,7 @@ components:
     type: quote-component
   - quote: 'The calibre of the people here, its cutting edge.'
     type: quote-component
+careers:
+    department: Telecomms
 ---
 

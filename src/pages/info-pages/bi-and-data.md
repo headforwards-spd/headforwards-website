@@ -43,8 +43,10 @@ components:
               stack includes:
         
         
-              LOGOS HERE
+              CHANGEME
 seo:
   slug: bi-and-big-data
+careers:
+    department: Local Authority
 ---
 

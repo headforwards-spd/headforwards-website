@@ -9,7 +9,6 @@ import styles from '../navbar.module.scss';
 import { menuPropTypes } from './menu.prop-type';
 
 export default class Menu extends Component {
-
     static propTypes = menuPropTypes;
 
     static defaultProps = {
