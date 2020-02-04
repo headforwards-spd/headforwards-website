@@ -14,13 +14,13 @@ introduction:
 components:
   - content:
       - text: >-
-          We recently asked our employees what they thought of the benefits we
-          offer, and got some great feedback on what people appreciated and what
-          they felt we could do better. 
+          When we wanted to improve our benefits offering, the first thing we
+          did was to speak to our staff. We got some great feedback on what
+          people appreciated and what they felt we could do better. 
 
 
           We’ve since given people five days more annual leave, a salary
-          sacrifice car leasing scheme and a medical cash plan. 
+          sacrifice car leasing scheme and a medical cashback plan. 
 
 
           And that’s just the start – we’re constantly looking to improve our
@@ -69,5 +69,6 @@ footerLinks:
     link3: c841a202-37c9-11ea-978f-2e728ce88125
     showImages: true
     title: The benefits of working at Headforwards
+callToAction: 'Want to work somewhere that cares about you and your family? '
 ---
 
