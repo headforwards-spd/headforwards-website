@@ -9,9 +9,8 @@ image:
 introduction:
   show: false
   text: >-
-    At Headforwards, we understand that happy people do better work. That’s why
-    we provide a range of employee benefits and community activities to keep
-    people smiling.
+    We believe that happy people do better work. That’s why we provide a range
+    of employee benefits and community activities for staff and their families.
 components:
   - content:
       - text: >-
