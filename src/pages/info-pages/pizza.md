@@ -115,6 +115,7 @@ footerLinks:
     link2: 16f53e5e-3847-11ea-a137-2e728ce88125
     link3: 87ef9080-0f86-11ea-9e15-59d1e5da42db
     showImages: true
-    title: 'Want to progress your career in a more relaxed location? '
+    title: Discover more about our culture
+callToAction: 'Want to progress your career in a more relaxed location? '
 ---
 
