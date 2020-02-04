@@ -22,21 +22,26 @@
         }
     }
 
-    &.isImage .copy {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    &.isImage {
         @media (min-width: $screen-md) {
-            margin: $component-gutter-md #{$column-gutter-md/2};
+            margin-top: 0;
+            margin-bottom: $component-gutter-md;
         }
         @media (min-width: $screen-lg) {
-            margin: $component-gutter-lg #{$column-gutter-lg/2};
+            margin-bottom: $component-gutter-lg;
+        }
+        .copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (min-width: $screen-md) {
+                margin: $component-gutter-md #{$column-gutter-md/2};
+            }
+            @media (min-width: $screen-lg) {
+                margin: $component-gutter-lg #{$column-gutter-lg/2};
+            }
         }
     }
-
-    //&.isPostit .copy {
-    //    //margin-top: $gutter-small;
-    //}
 
     .image {
         margin-left: -$column-gutter-sm/2;

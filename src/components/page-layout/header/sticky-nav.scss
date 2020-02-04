@@ -10,34 +10,29 @@
         @include fontMedium;
         transition: background-color $transitionTime/2 ease;
         position: absolute;
-        top: calc(2px - 4em);;
+        top: calc(2px - 4em);
         z-index: 1;
 
-        //    //transition:                 transform, background-color, padding,           max-width;
-        //    //transition-timing-function: ease,      ease,             ease,              ease;
-        //    //transition-duration:        0s,        $transitionTime,  0s,                0s;
-        //    //transition-delay:           0s,        0s,               $transitionTime,   $transitionTime;
+        &:global(.is-active) {
+            top: 0;
+        }
     }
 
     &.isScrollingUp, &.isScrollingDown {
 
-        > nav {
+        > nav:not(:global(.is-active)) {
             transition: transform $transitionTime ease;
             position: fixed;
             left: 0;
             right: 0;
             z-index: 100;
-
-            :not(&:global(.is-active)) {
-                background: white;
-            }
+            background-color: white;
         }
-
-        &.isScrollingUp nav {
+        &.isScrollingUp nav:not(:global(.is-active)) {
             transform: translateY(calc(4em - 3px));
         }
 
-        &.isScrollingDown nav {
+        &.isScrollingDown nav:not(:global(.is-active)) {
             transform: translateY(calc(-100% - 8em));
         }
     }
@@ -46,24 +41,30 @@
 
         margin-top: 4.5em;
 
-        > nav {
+        nav {
             top: -4.5em;
         }
 
         &.isScrollingUp, &.isScrollingDown {
 
-            > nav {
+            > nav:not(:global(.is-active)) {
+                top: -4.5em;
+
+                &:global(.is-active) {
+                    top: -4.5em;
+                }
+
                 &:after {
                     transform: translateY(50%);
                     opacity: unset;
                 }
             }
 
-            &.isScrollingUp nav {
+            &.isScrollingUp nav:not(:global(.is-active)) {
                 transform: translateY(4.5em);
             }
 
-            &.isScrollingDown nav {
+            &.isScrollingDown nav:not(:global(.is-active)) {
                 transform: translateY(calc(-100% - 9em));
             }
         }
@@ -74,9 +75,17 @@
         margin-top: 0;
         padding-top: calc(5em + 2px);
 
+        nav {
+            top: 0;
+
+            &:global(.is-active) {
+                top: calc(-5em - 2px);
+            }
+        }
+
         &.isScrollingUp, &.isScrollingDown {
 
-            > nav {
+            > nav:not(:global(.is-active)) {
                 top: calc(-5em - 2px);
                 background: rgba(white, 0.975);
                 &:after {
@@ -84,6 +93,10 @@
                     margin: 0;
                     left: 0;
                     right: 0;
+                }
+
+                &:global(.is-active) {
+                    top: calc(-5em - 2px);
                 }
 
                 > header > a {
@@ -95,11 +108,11 @@
                 }
             }
 
-            &.isScrollingUp nav {
+            &.isScrollingUp nav:not(:global(.is-active)) {
                 transform: translateY(5em);
             }
 
-            &.isScrollingDown nav {
+            &.isScrollingDown nav:not(:global(.is-active)) {
                 transform: translateY(calc(-100% - 10em));
             }
         }

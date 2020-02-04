@@ -29,6 +29,7 @@ $scale6_d: pow($mod_2, 5);
 
 $heading-margin-bottom: #{$rhythm-unit/$heading-scale*0.8}em;
 $line-height: $rhythm-unit;
+$homeHeadingFontScale: 1.125;
 
 @mixin fontBase {
 
@@ -105,6 +106,14 @@ $line-height: $rhythm-unit;
         @include fluid-type($min_font*$scale4_m, $max_font*$scale4_d);
         margin-bottom: #{$rhythm-unit}em;
     }
+}
+@mixin headingFontHomePage {
+    @include fluid-type($min_font*$scale3_m*$heading-scale-vr*$homeHeadingFontScale, $max_font*$scale3_d*$heading-scale*$homeHeadingFontScale);
+    @media (min-width: $screen-lg) {
+        @include fluid-type($min_font*$scale3_m*$heading-scale*$homeHeadingFontScale, $max_font*$scale3_d*$heading-scale*$homeHeadingFontScale);
+        line-height: 1;
+    }
+
 }
 @mixin headingFontXLarge {
     @include fluid-type($min_font*$scale3_m*$heading-scale-vr, $max_font*$scale3_d*$heading-scale);

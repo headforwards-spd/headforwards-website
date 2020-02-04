@@ -40,7 +40,7 @@ function InfoPageTemplate({ introduction, components = [], jobs }) {
             )}
             {hasJobs && (
                 <section className={styles.jobs}>
-                    <h2>CHANGEME</h2>
+                    <h2>Current job availability</h2>
                     <ul className={styles.jobsList}>
                         {jobs.map(({ id: key, ...job }) => (
                             <li>

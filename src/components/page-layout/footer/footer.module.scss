@@ -19,7 +19,7 @@
             color: $orange;
             align-items: stretch;
             @include headingFontMedium;
-            padding: calc(1.25em - #{$rhythm-unit/2}em) 0;
+            padding: calc(1.45em) 0 0.35em;
             margin-bottom:0;
             @media (min-width: $screen-md) {
                 margin-bottom: 0;

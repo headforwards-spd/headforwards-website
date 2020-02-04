@@ -38,9 +38,9 @@
 @mixin arrow-link {
     &:after {
         display: inline;
-        content: '\00a0\00a0\00a0\00a0\00a0';
+        content: '\00a0\00a0\00a0\00a0';
         background: url('/images/hf-arrow.orange.svg') no-repeat center right;
-        background-size: 55%;
+        background-size: 60%;
     }
 }
 

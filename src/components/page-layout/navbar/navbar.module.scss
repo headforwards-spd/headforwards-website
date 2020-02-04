@@ -145,30 +145,33 @@
                 }
             }
 
-        dt, dd, h2, li {
-            @include fontSmall;
-            margin-bottom: 0;
-        }
-        dt, dd {
-            display: block;
-            color: white;
-            padding: 0;
-            margin: 0;
-        }
+        .contactDetails {
+            dt, dd, h2, li {
+                @include fontSmall;
+                margin-bottom: 0;
+            }
 
-        dt, h2 {
-            text-transform: uppercase;
-            @include orange-type;
-            font-weight: normal;
-        }
+            dt, dd {
+                display: block;
+                color: white;
+                padding: 0;
+                margin: 0;
+            }
 
-        dd, li {
-            line-height: 2;
-            margin-bottom: 0;
-        }
+            dt, h2 {
+                text-transform: uppercase;
+                @include orange-type;
+                font-weight: normal;
+            }
 
-        ul {
-            margin-bottom: $column-gutter-sm/2;
+            dd, li {
+                line-height: 2;
+                margin-bottom: 0;
+            }
+
+            ul {
+                margin-bottom: $column-gutter-sm/2;
+            }
         }
     }
 

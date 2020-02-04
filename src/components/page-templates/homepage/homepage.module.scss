@@ -27,30 +27,16 @@
             @media (min-width: $screen-lg) {
                 padding-left: $column-gutter-lg/2;
             }
-            p {
-                @include fontLarge;
-                @media (min-width: $screen-md) {
-                    @include fontMedium;
-                }
-                &:before {
-                    @media (min-width: $screen-md) {
-                        left: -0.3em;
-                    }
-                    @media (min-width: $screen-lg) {
-                        left: -0.4em;
-                    }
-                }
-            }
-            footer {
-                @include fontXSmall;
-                h2 {
-                    margin-bottom: 0;
-                }
-                margin-top: 1rem;
-                p {
-                    @include fontSmall;
-                }
-            }
+            //footer {
+            //    @include fontXSmall;
+            //    h2 {
+            //        margin-bottom: 0;
+            //    }
+            //    margin-top: 1rem;
+            //    p {
+            //        @include fontSmall;
+            //    }
+            //}
         }
     }
 
