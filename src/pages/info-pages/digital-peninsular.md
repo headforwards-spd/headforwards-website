@@ -43,7 +43,7 @@ components:
     type: image-copy-component
     title: Rapid tech growth
   - flip: true
-    imageOne: /uploads/headforwards-speed-test copy.jpg
+    imageOne: /uploads/headforwards-speed-test.jpg
     imageTwo: /uploads/team-2.jpg
     type: images-component
   - content:

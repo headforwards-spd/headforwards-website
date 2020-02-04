@@ -7,11 +7,13 @@ import IntroductionComponent from '../../page-layout/introduction/introduction.c
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
 import styles from './jobs-page.module.scss';
 
-const slugify = value => value.replace(/([A-Z])/gm, '-$1')
-                              .replace(/([^a-zA-Z0-9])/gm, '-')
-                              .replace(/-+/gm, '-')
-                              .replace(/^-*(.*)-*$/gm, '$1')
-                              .toLowerCase();
+const slugify = value =>
+    value
+        .replace(/([A-Z])/gm, '-$1')
+        .replace(/([^a-zA-Z0-9])/gm, '-')
+        .replace(/-+/gm, '-')
+        .replace(/^-*(.*)-*$/gm, '$1')
+        .toLowerCase();
 
 export default class JobsPageTemplate extends Component {
     static propTypes = {
@@ -122,22 +124,22 @@ export default class JobsPageTemplate extends Component {
                                 Filter jobs by&hellip;
                             </button>
                             <section>
-                            <ul>
-                                {tagList.map(({ label, slug }) => (
-                                    <li key={slug}>
-                                        <input
-                                            id={slug}
-                                            type="checkbox"
-                                            checked={this.isSelected(label)}
-                                            onChange={() => this.toggleFilter(label)}
-                                        />
-                                        <label htmlFor={slug}>{label}</label>
-                                    </li>
-                                ))}
-                            </ul>
-                            <button type="button" onClick={() => this.clearFilters()}>
-                                Clear All
-                            </button>
+                                <ul>
+                                    {tagList.map(({ label, slug }) => (
+                                        <li key={slug}>
+                                            <input
+                                                id={slug}
+                                                type="checkbox"
+                                                checked={this.isSelected(label)}
+                                                onChange={() => this.toggleFilter(label)}
+                                            />
+                                            <label htmlFor={slug}>{label}</label>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <button type="button" onClick={() => this.clearFilters()}>
+                                    Clear All
+                                </button>
                             </section>
                         </section>
                     </section>

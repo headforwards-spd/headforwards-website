@@ -76,7 +76,7 @@ components:
     type: image-copy-component
     title: 'Small tasks, big results'
   - imageOne: /uploads/postit-1.jpg
-    imageTwo: /uploads/hf-c-no-baccy.jpg
+    imageTwo: /uploads/hf-c.jpg
     type: images-component
   - quote: >-
       When a client chooses to use continuous delivery, our teams can develop,
