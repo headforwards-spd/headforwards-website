@@ -7,6 +7,6 @@ image:
   show: true
 introduction:
   show: false
-  text: CHANGEME
+  text: We believe that strong individuals make a strong team
 ---
 
