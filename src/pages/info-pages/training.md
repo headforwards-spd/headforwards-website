@@ -39,9 +39,9 @@ components:
     type: quote-component
   - content:
       - text: >-
-          An appetite for learning is a key characteristic of a Headforwards
-          team member so self-motivators will find ample opportunities to learn
-          from their peers. 
+          An appetite for learning is a key characteristic of our people. If you
+          are self-motivated, you’ll fit in well and you will find ample
+          opportunities to learn from some fantastic people.  
 
 
           As well as our emphasis on knowledge sharing, we organise event
@@ -81,7 +81,7 @@ components:
 footerLinks:
   - link1: 6b233b00-103a-11ea-9ef0-bd54961b4e30
     link2: 359e0550-009f-11ea-b6f6-d743f848720a
-    link3: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+    link3: 16f53e5e-3847-11ea-a137-2e728ce88125
     showImages: true
     title: What can you learn here?
 callToAction: Grow your career with Headforwards
