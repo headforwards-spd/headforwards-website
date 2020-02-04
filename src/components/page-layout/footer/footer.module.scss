@@ -132,6 +132,12 @@
                 }
                 font-weight: normal;
                 @include arrow-link;
+                &:hover {
+                    color: white;
+                    &:after {
+                        background-image: url('/images/hf-arrow.white.svg');
+                    }
+                }
                 @media (min-width: $screen-md) {
                     display: inline-block;
                     padding-top: unset;
@@ -189,6 +195,13 @@
 
         .address, .copyright, .legal a {
             font-weight: lighter;
+        }
+
+        .legal a {
+            transition: all $transitionTime ease;
+            &:hover {
+                color: $orange;
+            }
         }
 
         section {

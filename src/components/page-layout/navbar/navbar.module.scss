@@ -66,7 +66,14 @@
         opacity: 0;
         transition: opacity ease $transitionTime;
 
+
         > ul {
+            a {
+                transition: all $transitionTime ease;
+                &:hover {
+                    color: $orange;
+                }
+            }
 
             margin: 0;
             border-top: 1px solid #383F51;
@@ -128,12 +135,15 @@
 
                         ul {
                             @include fontLarge;
+                            margin: #{$rhythm-unit/2}em 0 #{$rhythm-unit}em;
                         }
 
                         a {
-                            color: #d7d7d6;
+                            line-height: $rhythm-unit;
+                            color: #7c8c9c;
+                            font-weight: 400;
                             display: block;
-                            padding: 0.5em 0;
+                            padding: 0.2em 0;
                         }
                     }
 
@@ -397,6 +407,8 @@
 
                     h2 {
                         display: block;
+                        text-transform: uppercase;
+                        color: $orange;
                     }
 
                     > section {

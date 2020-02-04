@@ -31,9 +31,10 @@
             padding: $column-gutter-sm/2;
             text-decoration: none;
             color: #d7d7d6;
+            transition: all $transitionTime ease;
 
             &:hover {
-                text-decoration: underline;
+                color: $blue-background;
             }
         }
     }
@@ -53,6 +54,11 @@
             height: 1em;
             width: 1em;
             color: $grey-6;
+            transition: all $transitionTime ease;
+
+            &:hover {
+                color: $orange;
+            }
         }
     }
 }
