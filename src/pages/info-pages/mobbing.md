@@ -84,7 +84,7 @@ footerLinks:
     link2: c841a072-37c9-11ea-978f-2e728ce88125
     link3: 53629a60-103a-11ea-9ef0-bd54961b4e30
     showImages: true
-    title: get uality software fast
-callToAction: To learn how mobbing can deliver quality software
+    title: Get quality software fast
+callToAction: Learn how mobbing can deliver quality software
 ---
 

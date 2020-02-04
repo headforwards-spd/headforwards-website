@@ -90,14 +90,18 @@ export default class JobHeader extends Component {
                     </section>
                     <section className={styles.jobDetails}>
                         <dl>
-                            {salary && <>
-                            <dt>Salary</dt>
-                            <dd>{salary}</dd>
-                            </>}
-                            {!!tags.length && <>
-                            <dt>Tags</dt>
-                            <dd>{tags.join(', ')}</dd>
-                            </>}
+                            {salary && (
+                                <>
+                                    <dt>Salary</dt>
+                                    <dd>{salary}</dd>
+                                </>
+                            )}
+                            {!!tags.length && (
+                                <>
+                                    <dt>Tags</dt>
+                                    <dd>{tags.join(', ')}</dd>
+                                </>
+                            )}
                         </dl>
                         <Link to={`${path}/application-form/`}>Apply Online</Link>
                     </section>

@@ -2,9 +2,9 @@ import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
-import IntroductionComponent                    from '../../page-layout/introduction/introduction.component';
-import styles                                   from './index-page.module.scss';
-import PageLink, { PageLinkPropType }           from './page-link.component';
+import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import styles from './index-page.module.scss';
+import PageLink, { PageLinkPropType } from './page-link.component';
 
 IndexPageTemplate.propTypes = {
     introduction: shape({
@@ -28,7 +28,7 @@ export default function IndexPageTemplate({ introduction, pages, components }) {
             {show && <IntroductionComponent introduction={text} />}
             <section className={styles.pages}>
                 {!!pages && pages.map(page => <PageLink {...page} />)}
-                {hasArrow && <img src='/images/hf-arrow.svg' alt='arrow' className={styles.page}/>}
+                {hasArrow && <img src="/images/hf-arrow.svg" alt="arrow" className={styles.page} />}
             </section>
             {components && (
                 <section className={styles.components}>

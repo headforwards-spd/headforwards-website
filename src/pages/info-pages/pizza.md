@@ -32,8 +32,8 @@ components:
           fantastic lifestyle and an unrivaled quality of life – because joining
           us isn’t just a career choice, it’s a life choice.
         type: markdown-component
-      - jobTitle: Quality Analyst
-        name: Gowri Thota
+      - jobTitle: ''
+        name: ''
         quote: >-
           At Headforwards there are people from all walks of life, culture and
           religion. And it is especially good being a female developer.
@@ -64,8 +64,8 @@ components:
     type: image-copy-component
     title: 'Happy people do great work. Simple. '
   - quote: >-
-      Headforwards’ directors talk to every employee on a regular basis to check
-      if any improvements can be made, get any suggestions they have for the
+      Headforwards’ directors talk to employees on a regular basis to check if
+      any improvements can be made, get any suggestions they have for the
       company, or simply to offer general support.
     type: quote-component
   - content:
@@ -111,10 +111,11 @@ components:
       our clients.
     type: quote-component
 footerLinks:
-  - link1: fe1a1d50-0fab-11ea-843f-932c76de5936
-    link2: 6b233b00-103a-11ea-9ef0-bd54961b4e30
-    link3: 16f53e5e-3847-11ea-a137-2e728ce88125
+  - link1: 22fe4ade-37d3-11ea-aec2-2e728ce88125
+    link2: 16f53e5e-3847-11ea-a137-2e728ce88125
+    link3: 87ef9080-0f86-11ea-9e15-59d1e5da42db
     showImages: true
     title: Discover more about our culture
+callToAction: 'Want to progress your career in a more relaxed location? '
 ---
 

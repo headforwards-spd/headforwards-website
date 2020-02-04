@@ -14,20 +14,15 @@ introduction:
 components:
   - content:
       - text: >-
-          As a founding member of key development communities like Software
-          Cornwall and Agile on the Beach, and the largest tech employer in the
-          county, Headforwards plays a central role in Cornwall’s technological
-          landscape.
+          We are a founding member of key development communities like Software
+          Cornwall and Agile on the Beach, and we are the largest tech employer
+          in the county. We are very proud that Headforwards plays a central
+          role in Cornwall’s technological landscape.
 
 
           And with a growing ecosystem of technology businesses, impressive
           connectivity and unique surroundings, Cornwall has been critical to
-          our growth. 
-
-
-          Geographically, Headforwards may sit at the tip of the UK, but
-          Cornwall’s advanced infrastructure means we enjoy all the advantages
-          of an enviable location with none of the traditional downsides.
+          our growth.
         type: markdown-component
       - jobTitle: Travel solutions director
         name: John Howell
@@ -49,9 +44,8 @@ components:
   - content:
       - text: >-
           Geographically, Headforwards may sit at the tip of the UK, but
-          Cornwall’s advanced infrastructure means the company enjoys all the
-          advantages of its enviable location, with none of the traditional
-          downsides. 
+          Cornwall’s advanced infrastructure means we enjoy all the advantages
+          of an enviable location with none of the traditional downsides.
 
 
           With fibre broadband reaching 95% of the county thanks to the
@@ -95,5 +89,6 @@ footerLinks:
     link3: 21a08160-0fac-11ea-843f-932c76de5936
     showImages: true
     title: Learn more about how we work
+callToAction: 'Want to work in a company that believes in the power of teams? '
 ---
 
