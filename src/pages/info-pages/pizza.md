@@ -115,6 +115,6 @@ footerLinks:
     link2: 6b233b00-103a-11ea-9ef0-bd54961b4e30
     link3: 16f53e5e-3847-11ea-a137-2e728ce88125
     showImages: true
-    title: Descover more about our culture
+    title: Discover more about our culture
 ---
 
