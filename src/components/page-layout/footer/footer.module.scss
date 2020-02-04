@@ -8,9 +8,9 @@
 
     > section {
         background-color: $blue-background;
-        background-image: url('/images/footer-bg.webp');
-        background-position: center;
-        background-size: cover;
+        //background-image: url('/images/footer-bg.webp');
+        //background-position: center;
+        //background-size: cover;
     }
 
     .footerLinks {
@@ -26,7 +26,7 @@
             }
         }
         > section {
-            @include columns-component;
+            @include columns-component-tight;
             margin-bottom: -$column-gutter-sm/2;
             @media (min-width: $screen-md) {
                 align-items: stretch;
@@ -36,14 +36,14 @@
                 margin-bottom: -$column-gutter-lg/2;
             }
             > a {
-                width: calc((100% / 1) - #{$column-gutter-sm});
+                width: calc((100% / 1) - #{$column-gutter-sm/2});
                 @media (min-width: $screen-md) {
-                    width: calc((100% / 3) - #{$column-gutter-md});
+                    width: calc((100% / 3) - #{$column-gutter-md/2});
                     display: flex;
                     flex-direction: column;
                 }
                 @media (min-width: $screen-lg) {
-                    width: calc((100% / 3) - #{$column-gutter-lg});
+                    width: calc((100% / 3) - #{$column-gutter-lg/2});
                 }
             }
 
@@ -107,22 +107,6 @@
                 }
             }
         }
-
-        @media (min-width: $screen-md) {
-            //        margin-bottom: -$column-gutter/2;
-            //        flex-direction: row;
-            //        flex-wrap: wrap;
-            //        align-items: stretch;
-            //        margin-left: auto;
-            //        margin-right: auto;
-            //
-            //        > * {
-            //            width: calc((100% / 3) - #{$column-gutter});
-            //            display: flex;
-            //            flex-direction: column;
-            //        }
-            //
-        }
     }
 
     .getInTouch {
@@ -136,23 +120,10 @@
                 max-width: $singleColumnMaxWidth;
                 margin-bottom: 0;
             }
-
-            @media (min-width: $screen-lg) {
-                //padding-right: calc(#{$component-gutter-lg} + (#{$max_width} * 0.15));
-            }
-            //margin-bottom: 0;
-            //font-weight: normal;
-            //        @media (min-width: $screen-lg) {
-            //            max-width: $singleColumnMaxWidth;
-            //            line-height: $line-height;
-            //            margin-bottom: 0;
-            //            font-weight: bold;
-            //        }
-            //
             padding-top: 1.85em;
             padding-bottom: 1.85em;
             color: white;
-            //
+
             a {
                 display: block;
                 padding-top: 2em;

@@ -4,11 +4,14 @@
 
 .jobDetails {
     @include fontMediumVr;
+    margin-bottom: 0;
     @media (min-width: $screen-md) {
+        margin-bottom: 0;
         column-count: 2;
         column-gap: $column-gutter-md*2;
     }
     @media (min-width: $screen-lg) {
+        margin-bottom: 0;
         column-gap: $column-gutter-lg*2;
     }
 
@@ -47,17 +50,15 @@
 .apply {
     @include fontMedium;
     @include button-link;
-    margin-bottom: $component-gutter-sm;
+    margin: $component-gutter-sm/2 0;
 
     display: inline-block;
     @media (min-width: $screen-md) {
-        margin-left: 50%;
+        margin: $component-gutter-md/2 0 $component-gutter-md 50%;
         transform: translateX(-50%);
-        margin-bottom: $component-gutter-sm;
     }
     @media (min-width: $screen-lg) {
-        margin-left: 50%;
+        margin: $component-gutter-lg/2 0 $component-gutter-lg 50%;
         transform: translateX(-50%);
-        margin-bottom: $component-gutter-lg;
     }
 }

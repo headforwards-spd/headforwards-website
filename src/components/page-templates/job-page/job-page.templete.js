@@ -16,13 +16,9 @@ JobPageTemplate.propTypes = {
 function JobPageTemplate({ path, description, requirements }) {
     return (
         <>
+            <h2>Job description</h2>
             <section className={styles.jobDetails}>
-                {!!description && (
-                    <section>
-                        <h2>Job description</h2>
-                        <Markdown source={description} />
-                    </section>
-                )}
+                {!!description && <Markdown source={description} />}
                 {!!requirements && (
                     <section>
                         <h2>Requirements</h2>

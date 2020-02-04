@@ -17,6 +17,20 @@
         flex-wrap: wrap;
     }
 }
+@mixin columns-component-tight {
+    @include component-columns-gutter-tight;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
 
 @mixin copy {
 

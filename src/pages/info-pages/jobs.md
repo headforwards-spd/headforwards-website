@@ -7,7 +7,7 @@ image:
   image: /uploads/headforwards-jobs.jpg
   show: true
 introduction:
-  show: true 
+  show: false 
   text: Apply for a specific job at Headforwards or just register your interest.
 seo:
   slug: jobs

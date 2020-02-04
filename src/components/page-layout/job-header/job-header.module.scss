@@ -29,6 +29,10 @@
         padding-bottom: $component-gutter-sm;
         @media (min-width: $screen-md) {
             flex-direction: row;
+            margin: $component-gutter-md auto 0;
+        }
+        @media (min-width: $screen-lg) {
+            margin: $component-gutter-lg auto 0;
         }
 
         > section {
