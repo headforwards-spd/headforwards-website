@@ -7,6 +7,6 @@ image:
   show: true
 introduction:
   show: false
-  text: CHANGEME
+  text: Headforwards make teams that make software
 ---
 
