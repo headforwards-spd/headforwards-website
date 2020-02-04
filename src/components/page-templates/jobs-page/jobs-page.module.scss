@@ -247,7 +247,7 @@
         @include arrow-link;
         &:after {
             background-image: url('/images/hf-arrow.svg');
-            transition: content 500ms ease;
+            transition: background-image 500ms ease;
             transition-delay: 100ms;
         }
     }
