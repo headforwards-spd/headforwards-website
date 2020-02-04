@@ -81,8 +81,6 @@ sections:
     image: /uploads/team-2.jpg
     isPostit: false
     isRightImage: false
-  - isPostit: false
-    isRightImage: false
 seo:
   slug: /
 ---

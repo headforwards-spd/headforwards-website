@@ -4,8 +4,43 @@
 .section {
     @include component-gutter;
 
+    &.first {
+        position: relative;
+        &:after {
+            @media (min-width: $screen-md) {
+
+                content: url(/images/hf-arrow.orange.svg);
+                position: absolute;
+                width: 50%;
+                left: -37.5%;
+                bottom: -25%;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    &:last-child {
+        position: relative;
+        &:before {
+            @media (min-width: $screen-md) {
+                content: url(/images/hf-arrow.svg);
+                position: absolute;
+                opacity: 0.05;
+                width: 20%;
+
+                bottom: -$component-gutter-md/2;
+                right: -$column-gutter-md*2;
+            }
+            @media (min-width: $screen-lg) {
+                bottom: -$component-gutter-lg/2;
+                right: -$column-gutter-lg*2;
+            }
+        }
+    }
+
     .components {
         @include fontMedium;
+
 
         > * {
             margin: 0;
@@ -27,16 +62,6 @@
             @media (min-width: $screen-lg) {
                 padding-left: $column-gutter-lg/2;
             }
-            //footer {
-            //    @include fontXSmall;
-            //    h2 {
-            //        margin-bottom: 0;
-            //    }
-            //    margin-top: 1rem;
-            //    p {
-            //        @include fontSmall;
-            //    }
-            //}
         }
     }
 

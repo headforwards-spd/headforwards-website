@@ -45,7 +45,7 @@
     > img {
         display: none;
         align-self: flex-end;
-        opacity: 0.1;
+        opacity: 0.05;
         @media(min-width: $screen-md) {
             display: block;
             padding: $column-gutter-md*2;

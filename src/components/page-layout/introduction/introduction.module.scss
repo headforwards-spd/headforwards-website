@@ -4,7 +4,20 @@
     @include component-gutter;
     @include fontMedium;
     @media (min-width: $screen-md) {
-        //margin-bottom: $gutter-large -$gutter-medium/2;
+        position: relative;
         width: $singleColumnMaxWidth;
+        &:after {
+            @media (min-width: $screen-md) {
+                content: url(/images/hf-arrow.svg);
+                position: absolute;
+                top: -$component-gutter-md + $column-gutter-md/2;
+                right: -50%;
+                width: 62.5%;
+                opacity: 0.05;
+            }
+            @media (min-width: $screen-lg) {
+                top: -$component-gutter-lg + $column-gutter-lg/2;
+            }
+        }
     }
 }

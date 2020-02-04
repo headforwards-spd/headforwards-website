@@ -34,7 +34,7 @@ function HomepageTemplate({ introduction, sections }) {
     return (
         <>
             {showIntroduction && <IntroductionComponent introduction={introText} />}
-            {!!sections && sections.map(section => <HomePageSection {...section} />)}
+            {!!sections && sections.map((section, index) => <HomePageSection {...section} first={index === 0} />)}
         </>
     );
 }
@@ -49,7 +49,7 @@ HomePageSection.defaultProps = {
     imageSquare: null,
 };
 
-function HomePageSection({ components, isPostit, isRightImage, image, imagePostit, imageSquare }) {
+function HomePageSection({ first, components, isPostit, isRightImage, image, imagePostit, imageSquare }) {
     const hasImage = !!image || !!imagePostit || imageSquare;
     const wrapperStyles = [
         styles.section,
@@ -58,9 +58,10 @@ function HomePageSection({ components, isPostit, isRightImage, image, imagePosti
     ].join(' ');
 
     const [{ title }] = components || [{}];
+    const firstClass = first ? styles.first : '';
 
     return (
-        <section className={wrapperStyles}>
+        <section className={`${wrapperStyles} ${firstClass}`}>
             {!!hasImage && (
                 <HomePageImage {...{ isPostit, image, alt: title, imagePostit, imageSquare, isRightImage }} />
             )}
