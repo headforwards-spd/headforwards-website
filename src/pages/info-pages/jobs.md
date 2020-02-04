@@ -37,6 +37,7 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
+callToAction: Not ready to apply for a job right now? We still want to hear from you
 seo:
   slug: jobs
 ---
