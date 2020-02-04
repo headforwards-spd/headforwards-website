@@ -8,6 +8,7 @@
         width: $singleColumnMaxWidth;
         &:after {
             @media (min-width: $screen-md) {
+                z-index: -1;
                 content: url(/images/hf-arrow.svg);
                 position: absolute;
                 top: -$component-gutter-md + $column-gutter-md/2;

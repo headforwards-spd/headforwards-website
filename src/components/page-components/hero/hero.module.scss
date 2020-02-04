@@ -24,8 +24,27 @@
         }
     }
 
+    //&:first-child:after {
+    //    @media (min-width: $screen-md) {
+    //        z-index: -1;
+    //        content: url(/images/hf-arrow.svg);
+    //        position: absolute;
+    //        top: -$component-gutter-md + $column-gutter-md/2;
+    //        right: -50%;
+    //        width: 62.5%;
+    //        opacity: 0.05;
+    //    }
+    //    @media (min-width: $screen-lg) {
+    //        top: -$component-gutter-lg + $column-gutter-lg/2;
+    //    }
+    //}
+    //&.isTwoColumns:after {
+    //    display: none;
+    //}
+
     @media(min-width: $screen-md) {
 
+        position: relative;
         max-width: $singleColumnMaxWidth;
 
         &.isTwoColumns {
