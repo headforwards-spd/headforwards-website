@@ -36,6 +36,25 @@ export default class JobsPageTemplate extends Component {
         selectedFilters: [],
     };
 
+    componentDidMount() {
+        document.addEventListener('click', this.handleClickOutside.bind(this), true);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('click', this.handleClickOutside.bind(this), true);
+    }
+
+    handleClickOutside({target}) {
+
+        const {nodeName=''} = target || {};
+
+        const {showFilters} = this.state || {};
+
+        const isControl = !!nodeName.match(/(INPUT|BUTTON|LABEL)/gm);
+
+        showFilters && !isControl && this.setState({showFilters: false});
+    }
+
     toggleFilters() {
         this.setState(({ showFilters }) => ({ showFilters: !showFilters }));
     }
@@ -62,7 +81,7 @@ export default class JobsPageTemplate extends Component {
     }
 
     clearFilters() {
-        this.setState({ selectedFilters: [] });
+        this.setState({ showFilters: false, selectedFilters: [] });
     }
 
     selectedTags() {
