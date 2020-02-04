@@ -71,7 +71,7 @@ footerLinks:
     link2: 21a08160-0fac-11ea-843f-932c76de5936
     link3: 16f53e5e-3847-11ea-a137-2e728ce88125
     showImages: true
-    title: CHANGEME
+    title: Find out more about our beliefs and values
 callToAction: How can we create value for your organisation?
 ---
 
