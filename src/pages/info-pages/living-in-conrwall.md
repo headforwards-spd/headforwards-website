@@ -47,13 +47,7 @@ components:
           might not be for you. But other than that, there’s something for
           everyone. For nightlife and bars you have Truro, Newquay and Falmouth,
           and if you’re seeking a quiet life by the coast there are no end of
-          historic villages to choose from. 
-
-
-          You can find out more, here.
-
-
-          https://www.visitcornwall.com/
+          historic villages to choose from.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -69,7 +63,19 @@ components:
 
 
           We’re also home to Goonhilly Earth Station, whose mission is "to
-          create the UK’s space communications gateway…”
+          create the UK’s space communications gateway.”
+
+
+          You can find out more, here;
+
+
+          https://www.visitcornwall.com/
+
+
+          https://spaceportcornwall.com/
+
+
+          https://www.goonhilly.org/
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -78,7 +84,7 @@ components:
     title: 'A county full of interest and intrigue '
   - flip: true
     imageOne: /uploads/hf-beach-2.jpg
-    imageTwo: /uploads/headforwards-12.jpg
+    imageTwo: /uploads/HF careers 1.jpg
     type: images-component
   - content:
       - text: >-
@@ -113,5 +119,12 @@ components:
     isTwoColumns: true
     type: image-copy-component
     title: It really isn’t that expensive to live here
+footerLinks:
+  - link1: 87ef9080-0f86-11ea-9e15-59d1e5da42db
+    link2: c841a202-37c9-11ea-978f-2e728ce88125
+    link3: 16f53e5e-3847-11ea-a137-2e728ce88125
+    showImages: true
+    title: Take a look around
+callToAction: 'Tired of the rat race? Find a different type of tech career with us '
 ---
 
