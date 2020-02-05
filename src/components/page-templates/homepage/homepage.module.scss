@@ -79,8 +79,12 @@
         }
 
         blockquote {
+            p {
+                @include fontLarge;
+            }
             margin-left: 0;
             @media (min-width: $screen-md) {
+                @include fontMedium;
                 padding-left: $column-gutter-md/2;
             }
             @media (min-width: $screen-lg) {
