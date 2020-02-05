@@ -37,7 +37,7 @@ function Image({ image, alt, ratio, className = '', ...props }) {
     if (childImageSharp) {
         const { fluid } = childImageSharp;
         const sizes = [
-            '(max-width: 320px) calc(100vw - 2em)',
+            '(max-width: 319px) calc(100vw - 2em)',
             '(max-width: 767px) calc(100vw - 2em)',
             '(max-width: 1023px) calc(100vw - 3em)',
             '(max-width: 1254px) 1170px',
