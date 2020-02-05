@@ -7,11 +7,17 @@ image:
   image: /uploads/hf-i.jpg
   show: true
 introduction:
-  show: true
+  show: false
   text: >-
     Headforwards offers two engagement models to ensure you get the right mix of
     quality and value for money.
 components:
+  - type: image-copy-component
+    content:
+      - type: markdown-component
+        text: >-
+            Headforwards offers two engagement models to ensure you get the right mix of
+            quality and value for money.
   - content:
       - text: >-
           Different clients look for different things from an outsource software

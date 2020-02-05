@@ -7,12 +7,19 @@ image:
    show: false
    image: /uploads/icon.black.png
 introduction:
-    show: true
+    show: false
     text: >-
           We recently embarked on a new challenge, working with our local authority
           as they look to improve the access and confidence that residents and
           members have to technology
 components:
+  - type: image-copy-component
+    content:
+      - type: markdown-component
+        text: >-
+          We recently embarked on a new challenge, working with our local authority
+          as they look to improve the access and confidence that residents and
+          members have to technology
   - type: image-copy-component
     content:
       - type: markdown-component
@@ -37,13 +44,6 @@ components:
               the initiation, formation and standardisation of best practices to support
               ETL procedures, data quality measurement, data retention, master data
               management and role management.
-        
-        
-              Our local authority team is using a Microsoft-first approach and the tech
-              stack includes:
-        
-        
-              CHANGEME
 seo:
   slug: bi-and-big-data
 careers:

@@ -1,9 +1,7 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
-import React, { Component } from 'react';
-import slugifyOrig from 'slugify';
-
+import React, { Component }             from 'react';
+import Markdown                         from '../../page-components/markdown'
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
 import styles from './jobs-page.module.scss';
 
@@ -116,7 +114,7 @@ export default class JobsPageTemplate extends Component {
     }
 
     render() {
-        const { introduction, components } = this.props;
+        const { introduction, components, footerText } = this.props;
         const { show, text } = introduction;
         const { showFilters } = this.state;
 
@@ -128,7 +126,12 @@ export default class JobsPageTemplate extends Component {
 
         return (
             <>
-                {show && <IntroductionComponent introduction={text} />}
+                {components && (
+                    <section className={styles.components}>
+                        {!!components &&
+                         components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
+                    </section>
+                )}
                 {tagList && (
                     <section className={styles.filters}>
                         <ul className={styles.selectedTags}>
@@ -172,12 +175,7 @@ export default class JobsPageTemplate extends Component {
                         ))}
                     </ul>
                 )}
-                {components && (
-                    <section className={styles.components}>
-                        {!!components &&
-                            components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
-                    </section>
-                )}
+                {footerText && <footer className={styles.footerText}><Markdown source={footerText} /></footer>}
             </>
         );
     }

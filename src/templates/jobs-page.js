@@ -18,6 +18,7 @@ JobsPage.propTypes = {
                     text: string.isRequired,
                 }),
                 components: arrayOf(PageComponentPropType),
+                footerText: string,
             }),
         }),
         jobs: {
@@ -53,17 +54,17 @@ JobsPage.propTypes = {
 function JobsPage({ data }) {
     const { page, jobNodes, filters, tags: tagData } = data;
     const { frontmatter } = page;
-    const { introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
+    const { introduction, components, footerText, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
     const { nodes: jobs } = jobNodes;
     const { distinct: tags } = tagData;
     const pageProps = {
         introduction,
-        tags,
         filters,
         tags,
         jobs,
         components,
+        footerText,
     };
 
     return (

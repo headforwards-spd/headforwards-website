@@ -7,10 +7,15 @@ image:
     show: false
     image: /uploads/icon.black.png
 introduction:
-    show: true
+    show: false
     text: >-
           JavaScript and particularly React are the tools of choice for most front ends across our applications.
 components:
+  - type: image-copy-component
+    content:
+      - type: markdown-component
+        text: >-
+          JavaScript and particularly React are the tools of choice for most front ends across our applications.
   - type: image-copy-component
     content:
       - type: markdown-component

@@ -1,89 +1,51 @@
 @import '../../../scss/variables';
 @import "../../../scss/mixins/typography";
 
-$postit1: rotate(0deg)   scaleX(1);
-$image1:  rotate(-0deg);
-$postit2: rotate(90deg)  scaleX(1);
-$image2:  rotate(-90deg);
-$postit3: rotate(180deg) scaleX(1);
-$image3:  rotate(-180deg);
-$postit4: rotate(270deg) scaleX(1);
-$image4:  rotate(-270deg);
-
-$postit5: rotate(0deg)   scaleX(-1);
-$image5:  rotate(0deg)   scaleX(-1);
-$postit6: rotate(90deg)  scaleX(-1);
-$image6:  rotate(90deg)  scaleX(-1);
-$postit7: rotate(180deg) scaleX(-1);
-$image7:  rotate(180deg) scaleX(-1);
-$postit8: rotate(270deg) scaleX(-1);
-$image8:  rotate(270deg) scaleX(-1);
-
 $postitLeft: perspective(24rem) rotateY(1deg);
 $postitRight: perspective(24rem) rotateY(-1deg);
 
 .postit {
-    background: #ffcc55 url("/images/postit-background.100.webp");
+    position: relative;
+    background-color: #ffcc55;
     background-size: cover;
 
     width: 100%;
     padding-bottom: 100%;
 
     > * {
-        position: absolute !important;
+        position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
     }
+    transform: $postitLeft;
 
     &.v1 {
-        transform: $postitLeft $postit1;
-        > * {
-            transform: $image1;
-        }
+        background-image:  url("/images/postit-background.1.webp");
     }
     &.v2 {
-        transform: $postitLeft $postit2;
-        > * {
-            transform: $image2;
-        }
+        background-image:  url("/images/postit-background.2.webp");
+
     }
     &.v3 {
-        transform: $postitLeft $postit3;
-        > * {
-            transform: $image3;
-        }
+        background-image:  url("/images/postit-background.3.webp");
+
     }
     &.v4 {
-        transform: $postitLeft $postit4;
-        > * {
-            transform: $image4;
-        }
+        background-image:  url("/images/postit-background.4.webp");
     }
     &.v5 {
-        transform: $postitLeft $postit5;
-        > * {
-            transform: $image5;
-        }
+        background-image:  url("/images/postit-background.5.webp");
     }
     &.v6 {
-        transform: $postitLeft $postit6;
-        > * {
-            transform: $image6;
-        }
+        background-image:  url("/images/postit-background.6.webp");
     }
     &.v7 {
-        transform: $postitLeft $postit7;
-        > * {
-            transform: $image7;
-        }
+        background-image:  url("/images/postit-background.7.webp");
     }
     &.v8 {
-        transform: $postitLeft $postit8;
-        > * {
-            transform: $image8;
-        }
+        background-image:  url("/images/postit-background.8.webp");
     }
 }
 
@@ -91,33 +53,8 @@ $postitRight: perspective(24rem) rotateY(-1deg);
 @media (min-width: $screen-lg) {
 
     .postit {
-
         &.isRightImage {
-
-            &.v1 {
-                transform: $postitRight $postit1;
-            }
-            &.v2 {
-                transform: $postitRight $postit2;
-            }
-            &.v3 {
-                transform: $postitRight $postit3;
-            }
-            &.v4 {
-                transform: $postitRight $postit4;
-            }
-            &.v5 {
-                transform: $postitRight $postit5;
-            }
-            &.v6 {
-                transform: $postitRight $postit6;
-            }
-            &.v7 {
-                transform: $postitRight $postit7;
-            }
-            &.v8 {
-                transform: $postitRight $postit8;
-            }
+            transform: $postitRight;
         }
     }
 }

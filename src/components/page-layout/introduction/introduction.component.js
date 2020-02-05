@@ -8,11 +8,16 @@ export default IntroductionComponent;
 
 IntroductionComponent.propTypes = {
     introduction: string.isRequired,
+    className: string,
 };
 
-function IntroductionComponent({ introduction }) {
+IntroductionComponent.defaultProps = {
+    className: '',
+};
+
+function IntroductionComponent({ introduction, className }) {
     return introduction ? (
-        <section className={styles.introduction}>
+        <section className={`${styles.introduction} ${className}`}>
             <Markdown source={introduction} />
         </section>
     ) : null;

@@ -269,3 +269,13 @@
         }
     }
 }
+
+.footerText {
+    margin-bottom: $component-gutter-sm;
+    @media (min-width: $screen-md) {
+        margin-bottom: $component-gutter-md;
+    }
+    @media (min-width: $screen-lg) {
+        margin-bottom: $component-gutter-lg;
+    }
+}

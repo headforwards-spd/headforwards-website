@@ -33,7 +33,7 @@ function HomepageTemplate({ introduction, sections }) {
 
     return (
         <>
-            {showIntroduction && <IntroductionComponent introduction={introText} />}
+            {showIntroduction && <IntroductionComponent introduction={introText} className={styles.intro} />}
             {!!sections && sections.map((section, index) => <HomePageSection {...section} first={index === 0} />)}
         </>
     );

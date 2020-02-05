@@ -27,8 +27,6 @@ function InfoPageTemplate({ introduction, components = [], jobs }) {
     const { show, text } = introduction;
     const hasJobs = !!(jobs && jobs.length);
 
-    console.log({ jobs });
-
     return (
         <>
             {show && <IntroductionComponent introduction={text} />}

@@ -46,7 +46,7 @@ collections:
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
@@ -205,7 +205,7 @@ collections:
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
@@ -364,7 +364,7 @@ collections:
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
@@ -523,7 +523,7 @@ collections:
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
       - label: "Page Components"
@@ -810,7 +810,7 @@ collections:
     identifier_field: title
     filter: {field: "type", value: "legal-page"}
     fields:
-      - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+      - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
       - {label: "Type", name: type, widget: hidden, default: "legal-page"}
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
@@ -818,7 +818,7 @@ collections:
         name: introduction
         widget: object
         fields:
-          - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
+          - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       - label: "Sections"
         name: sections

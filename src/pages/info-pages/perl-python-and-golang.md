@@ -7,12 +7,19 @@ image:
     show: false
     image: /uploads/icon.black.png
 introduction:
-    show: true
+    show: false
     text: >-
           Our global communications team is 45 people, again all in small teams of
           3-7. They work on cutting edge web applications which are used by millions
           of people globally!
 components:
+  - type: image-copy-component
+    content:
+      - type: markdown-component
+        text: >-
+            Our global communications team is 45 people, again all in small teams of
+            3-7. They work on cutting edge web applications which are used by millions
+            of people globally!
   - type: image-copy-component
     content:
       - type: markdown-component

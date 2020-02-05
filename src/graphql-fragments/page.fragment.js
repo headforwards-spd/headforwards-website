@@ -213,6 +213,7 @@ export const PageFragment = graphql`
                     }
                 }
             }
+            footerText
             callToAction
             seo {
                 title

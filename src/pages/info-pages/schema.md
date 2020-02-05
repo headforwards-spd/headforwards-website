@@ -78,6 +78,8 @@ components:
           linkText: force value
           link: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
           
+footerText: force value
+          
 footerLinks:
     - title: force value
       showImages: false
