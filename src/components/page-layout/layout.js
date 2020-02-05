@@ -30,6 +30,14 @@ const UnstatedHelmet = withUnstated(
                 <link rel="preload" href="/fonts/FSAlbertWeb/Bold.woff2" as="font" />
                 <link rel="preload" href="/fonts/FSAlbertWeb/Regular.woff2" as="font" />
                 <link rel="preload" href="/fonts/FSAlbertWeb/Italic.woff2" as="font" />
+                <link rel="preconnect" href="https://www.google.com" />
+                <link rel="preconnect" href="https://www.facebook.com" />
+                <link rel="preconnect" href="https://www.googletagmanager.com" />
+                <link rel="preconnect" href="https://d.adroll.mgr.consensu.org" />
+                <link rel="preconnect" href="https://d.adroll.com" />
+                <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+                <link rel="preconnect" href="https://www.google-analytics.com" />
+                <link rel="preconnect" href="https://connect.facebook.net" />
             </Helmet>
         );
     },
