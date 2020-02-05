@@ -36,7 +36,7 @@ function PageLink({ isPostit, link, linkText, page }) {
         query {
             logo: file(name: { eq: "icon.white" }) {
                 childImageSharp {
-                    fluid(maxWidth: 100, maxHeight: 100, quality: 85) {
+                    fluid(maxWidth: 100, maxHeight: 100) {
                         ...GatsbyImageSharpFluid_withWebp_noBase64
                     }
                 }
