@@ -4,13 +4,13 @@ parent: force value
 type: force value
 title: force value
 subtitle: force value
+isPostits: false
 image: 
     show: false
     image: /uploads/headforwards.png
 introduction:
     show: false
     text: force value
-    
 sections:
   - components:
     - content:

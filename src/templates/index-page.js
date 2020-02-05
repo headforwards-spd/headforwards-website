@@ -13,6 +13,7 @@ IndexPage.propTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
+                isPostits: bool,
                 introduction: shape({
                     show: bool.isRequired,
                     text: string.isRequired,
@@ -29,10 +30,11 @@ IndexPage.propTypes = {
 function IndexPage({ data, pageContext }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
+    const { isPostits, introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
     const { children: pages } = pageContext || {};
     const templateProps = {
+        isPostits,
         introduction,
         pages,
         components,

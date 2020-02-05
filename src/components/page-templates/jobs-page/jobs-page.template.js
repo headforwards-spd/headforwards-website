@@ -1,6 +1,7 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
-import React, { Component }             from 'react';
-import Markdown                         from '../../page-components/markdown'
+import React, { Component } from 'react';
+
+import Markdown from '../../page-components/markdown';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
 import styles from './jobs-page.module.scss';
@@ -21,12 +22,14 @@ export default class JobsPageTemplate extends Component {
         }),
         jobs: arrayOf(JobsSummaryComponentPropType),
         components: arrayOf(PageComponentPropType),
+        footerText: string,
     };
 
     static defaultProps = {
         introduction: null,
         jobs: null,
         components: null,
+        footerText: null,
     };
 
     state = {
@@ -42,15 +45,14 @@ export default class JobsPageTemplate extends Component {
         document.removeEventListener('click', this.handleClickOutside.bind(this), true);
     }
 
-    handleClickOutside({target}) {
+    handleClickOutside({ target }) {
+        const { nodeName = '' } = target || {};
 
-        const {nodeName=''} = target || {};
-
-        const {showFilters} = this.state || {};
+        const { showFilters } = this.state || {};
 
         const isControl = !!nodeName.match(/(INPUT|BUTTON|LABEL)/gm);
 
-        showFilters && !isControl && this.setState({showFilters: false});
+        showFilters && !isControl && this.setState({ showFilters: false });
     }
 
     toggleFilters() {
@@ -114,8 +116,7 @@ export default class JobsPageTemplate extends Component {
     }
 
     render() {
-        const { introduction, components, footerText } = this.props;
-        const { show, text } = introduction;
+        const { components, footerText } = this.props;
         const { showFilters } = this.state;
 
         const filtersClass = showFilters ? styles.showFilters : '';
@@ -129,7 +130,7 @@ export default class JobsPageTemplate extends Component {
                 {components && (
                     <section className={styles.components}>
                         {!!components &&
-                         components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
+                            components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
                     </section>
                 )}
                 {tagList && (
@@ -175,7 +176,11 @@ export default class JobsPageTemplate extends Component {
                         ))}
                     </ul>
                 )}
-                {footerText && <footer className={styles.footerText}><Markdown source={footerText} /></footer>}
+                {footerText && (
+                    <footer className={styles.footerText}>
+                        <Markdown source={footerText} />
+                    </footer>
+                )}
             </>
         );
     }

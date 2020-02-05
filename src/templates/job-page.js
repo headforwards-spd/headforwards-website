@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { shape, string } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import Layout from '../components/page-layout/layout';
@@ -14,11 +14,25 @@ JobPage.propTypes = {
             title: string.isRequired,
             subtitle: string,
         }),
+        filters: shape({
+            departments: arrayOf(
+                shape({
+                    label: string.isRequired,
+                    slug: string.isRequired,
+                })
+            ),
+            tags: arrayOf(
+                shape({
+                    label: string.isRequired,
+                    slug: string.isRequired,
+                })
+            ),
+        }).isRequired,
     }).isRequired,
 };
 
 function JobPage({ path, data }) {
-    const { job } = data;
+    const { job, filters } = data;
     const { title, subtitle, introduction, ...templateProps } = job;
     const { salary, tags } = job;
 
@@ -30,6 +44,7 @@ function JobPage({ path, data }) {
             salary,
             tags,
             path,
+            filters,
         },
     };
 
@@ -42,6 +57,12 @@ function JobPage({ path, data }) {
 
 export const query = graphql`
     query JobPage($id: String!) {
+        filters: dataYaml(title: { eq: "careers" }) {
+            tags {
+                label
+                slug
+            }
+        }
         job: recruiteeOffer(id: { eq: $id }) {
             ...JobFragment
         }

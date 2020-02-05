@@ -6,6 +6,7 @@ export const PageFragment = graphql`
         frontmatter {
             title
             subtitle
+            isPostits
             image {
                 show
                 image {

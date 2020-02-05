@@ -3,6 +3,7 @@ uuid: 16f53e5e-3847-11ea-a137-2e728ce88125
 parent: careers
 type: jobs-page
 title: Jobs at Headforwards
+isPostits: true
 image:
   image: /uploads/headforwards-jobs.jpg
   show: false

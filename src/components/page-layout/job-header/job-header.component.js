@@ -8,6 +8,14 @@ import { MenuItemPropType } from '../navbar/menu-item/menu-item.prop-type';
 import Navbar from '../navbar/navbar.component';
 import styles from './job-header.module.scss';
 
+const slugify = value =>
+    value
+        .replace(/([A-Z])/gm, '-$1')
+        .replace(/([^a-zA-Z0-9])/gm, '-')
+        .replace(/-+/gm, '-')
+        .replace(/^-*(.*)-*$/gm, '$1')
+        .toLowerCase();
+
 export default class JobHeader extends Component {
     scrollTop = 0;
 
@@ -19,6 +27,20 @@ export default class JobHeader extends Component {
         title: string.isRequired,
         subtitle: string,
         jobDetails: shape({
+            filters: shape({
+                departments: arrayOf(
+                    shape({
+                        label: string.isRequired,
+                        slug: string.isRequired,
+                    })
+                ),
+                tags: arrayOf(
+                    shape({
+                        label: string.isRequired,
+                        slug: string.isRequired,
+                    })
+                ),
+            }).isRequired,
             salary: string.isRequired,
             tags: arrayOf(string).isRequired,
             path: string.isRequired,
@@ -40,6 +62,15 @@ export default class JobHeader extends Component {
         this.scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
+
+    tagList() {
+        const { jobDetails } = this.props;
+        const { filters, tags } = jobDetails;
+        const { tags: allowedTags = [] } = filters || {};
+        const slugs = tags.map(slugify);
+
+        return allowedTags.filter(({ label }) => slugs.includes(slugify(label)));
     }
 
     handleScroll() {
@@ -78,7 +109,8 @@ export default class JobHeader extends Component {
 
         const scrollingClass = isScrollingUp ? styles.isScrollingUp : isScrollingDown ? styles.isScrollingDown : '';
 
-        const { salary, tags, path } = jobDetails;
+        const { salary, path } = jobDetails;
+        const tags = this.tagList();
 
         return (
             <header className={`${styles.jobHeader} ${scrollingClass}`}>
@@ -99,7 +131,7 @@ export default class JobHeader extends Component {
                             {!!tags.length && (
                                 <>
                                     <dt>Tags</dt>
-                                    <dd>{tags.join(', ')}</dd>
+                                    <dd>{tags.map(({ label }) => label).join(', ')}</dd>
                                 </>
                             )}
                         </dl>
