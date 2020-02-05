@@ -5,7 +5,7 @@ type: jobs-page
 title: Jobs at Headforwards
 image:
   image: /uploads/headforwards-jobs.jpg
-  show: true
+  show: false
 introduction:
   show: true
   text: Apply for a specific job at Headforwards or just register your interest.
