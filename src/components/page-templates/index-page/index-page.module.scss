@@ -138,6 +138,18 @@
 
         > section {
             position: relative;
+            > div {
+                padding-bottom: 37.5%;
+                > div {
+                    display: none;
+                }
+                @media (min-width: $screen-md) {
+                    padding-bottom: unset;
+                    > div {
+                        display: flex;
+                    }
+                }
+            }
         }
     }
 

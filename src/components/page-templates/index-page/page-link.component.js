@@ -60,12 +60,12 @@ function PageLink({ isPostit, link, linkText, page }) {
             </Link>
         </article>
     ) : (
-            <Postit className={`${styles.postit}`}>
-        <Link to={link}>
+        <Postit className={`${styles.postit}`}>
+            <Link to={link}>
                 <h2>{linkText}</h2>
                 <Markdown source={introText} truncate />
                 <Link to={link}>Read more</Link>
-        </Link>
-            </Postit>
+            </Link>
+        </Postit>
     );
 }
