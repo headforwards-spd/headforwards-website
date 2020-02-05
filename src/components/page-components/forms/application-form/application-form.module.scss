@@ -145,34 +145,6 @@
                     }
                 }
             }
-
-            //.fileUpload {
-            //    @include fontMediumVr;
-            //    width: 100%;
-            //
-            //    [type=file] {
-            //        display: none;
-            //    }
-            //
-            //    div {
-            //        display: flex;
-            //        flex-direction: row;
-            //        align-items: flex-start;
-            //        margin: calc(#{$rhythm-unit/4}em - 2px) 0;
-            //        @media (min-width: $screen-md) {
-            //            align-items: center;
-            //        }
-            //    }
-            //
-            //    button {
-            //        @include button-link;
-            //        flex-shrink: 0;
-            //        margin-right: 0.5em;
-            //    }
-            //    &:hover button {
-            //        background-color: $blue-background;
-            //    }
-            //}
         }
 
         > .submit {
@@ -210,7 +182,7 @@
                 }
             }
 
-            > div, > p {
+            > div {
                 display: flex;
                 flex-direction: column;
                 @media (min-width: $screen-md) {

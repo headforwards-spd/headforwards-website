@@ -27,10 +27,11 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
     const isFooter = true;
     const thisYear = new Date().getFullYear();
     const { title: footerLinksTitle, links } = footerLinks || {};
+    const hasFooterLinksClass = !!links ? styles.hasFooterLinks : '';
 
     return (
         <footer className={styles.footer}>
-            <section>
+            <section className={hasFooterLinksClass}>
                 {!!links && (
                     <section className={styles.footerLinks}>
                         {!!footerLinksTitle && <h2>{footerLinksTitle}</h2>}

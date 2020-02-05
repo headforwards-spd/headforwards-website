@@ -7,15 +7,40 @@
 .footer {
 
     > section {
+        overflow: hidden;
         background-color: $blue-background;
-        //background-image: url('/images/footer-bg.webp');
-        //background-position: center;
-        //background-size: cover;
+        //background-image: url(/images/hf-arrow.orange.svg);
+        //background-repeat: no-repeat;
+        //background-size: 75% auto;
+        //@media (min-width: $screen-md) {
+        //    background-position: $column-gutter-md/2 35%;
+        //}
+        //@media (min-width: $screen-lg) {
+        //    background-position: $column-gutter-lg/2 35%;
+        //}
+        //@media (min-width: $screen-xl) {
+        //    background-size: 50% auto;
+        //    background-position: 37.5% 35%;
+        //}
+        //
+        //&.hasFooterLinks {
+        //    background-position: 0 90vh;
+        //    @media (min-width: $screen-md) {
+        //        background-position: $column-gutter-md/2 35%;
+        //    }
+        //    @media (min-width: $screen-lg) {
+        //        background-position: $column-gutter-lg/2 35%;
+        //    }
+        //    @media (min-width: $screen-xl) {
+        //        background-position: 37.5% 35%;
+        //    }
+        //}
     }
 
     .footerLinks {
 
         > h2 {
+            position: relative;
             color: $orange;
             align-items: stretch;
             @include headingFontMedium;
@@ -36,6 +61,7 @@
                 margin-bottom: -$column-gutter-lg/2;
             }
             > a {
+                z-index: 100;
                 width: calc((100% / 1) - #{$column-gutter-sm/2});
                 @media (min-width: $screen-md) {
                     width: calc((100% / 3) - #{$column-gutter-md/2});
@@ -113,8 +139,22 @@
     .getInTouch {
 
         margin-bottom: 0;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: url(/images/hf-arrow.footer.svg);
+            top: 75%;
+            left: 0;
+            transform: translateY(-50%);
+            height: auto;
+            width: 100%;
+            @media (min-width: $screen-md) {
+                width: $singleColumnMaxWidth;
+            }
+        }
 
         h2 {
+            position: relative;
             @include headingFontMedium;
             margin-bottom: 0;
             @media (min-width: $screen-md) {
