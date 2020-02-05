@@ -21,12 +21,25 @@
     margin-bottom: 0;
     align-items: stretch;
     margin-top: 0;
-    //width: calc(100% + #{$column-gutter-sm});
     @media(min-width: $screen-md) {
         margin-top: 0;
         align-items: stretch;
     }
     justify-content: flex-start;
+
+    &.postits {
+        margin-top: -$column-gutter-sm/2;
+        margin-bottom: $component-gutter-sm - $column-gutter-sm/2;
+        @media (min-width: $screen-md) {
+            margin-top: -$column-gutter-md/2;
+            margin-bottom: $component-gutter-md - $column-gutter-md/2;
+        }
+        @media (min-width: $screen-lg) {
+            margin-top: -$column-gutter-lg/2;
+
+            margin-bottom: $component-gutter-lg - $column-gutter-lg/2;
+        }
+    }
 
     > article, > img {
         @include fontMedium;
@@ -55,19 +68,61 @@
         }
     }
 
-    > article, img {
+    > article, > .postit, img {
         width: calc(100% - #{$column-gutter-sm});
     }
     @media(min-width: $screen-md) {
         justify-content: flex-start;
-        > article, img {
+        > article, > .postit, img {
                 width: calc(50% - #{$column-gutter-md});
         }
         margin-bottom: 0;
     }
     @media(min-width: $screen-lg) {
-        > article, img {
+        > article, > .postit, img {
                 width: calc(50% - #{$column-gutter-lg});
+        }
+    }
+
+    .postit {
+        @include fontLarge;
+        padding-bottom: 70%;
+        @media (min-width: $screen-md) {
+            @include fontMedium;
+            padding-bottom: 35%;
+        }
+        @media (min-width: $screen-lg) {
+            padding-bottom: 31.25%;
+        }
+        > a {
+            padding: $column-gutter-sm*2;
+            @media (min-width: $screen-md) {
+                padding: $column-gutter-md;
+            }
+            @media (min-width: $screen-lg) {
+                padding: $column-gutter-lg;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            &, p, li, time {
+                color: black;
+            }
+
+            a {
+                margin-top: auto;
+                @include headingFontLargeVr;
+                @include arrow-link;
+                margin-bottom: 0;
+                color: black;
+                &:after {
+                    background-image: url(/images/hf-arrow.svg);
+                }
+                @media (min-width: $screen-md) {
+                    @include headingFontMediumVr;
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 

@@ -131,12 +131,14 @@ $homeHeadingFontScale: 1.125;
         @include fluid-type($min_font*$scale3_m, $max_font*$scale3_d);
     }
 }
+@mixin headingFontLargeVr {
+    @include fluid-type($min_font*$scale3_m*$heading-scale-vr, $max_font*$scale3_d*$heading-scale-vr);
+    line-height: $rhythm-unit/$heading-scale-vr;
+    margin-bottom: #{$rhythm-unit/$heading-scale-vr}em;
+}
 @mixin fontXLargeVr {
     h1, h2 {
-        @include fluid-type($min_font*$scale3_m*$heading-scale-vr, $max_font*$scale3_d*$heading-scale-vr);
-        line-height: $rhythm-unit/$heading-scale-vr;
-        margin-bottom: #{$rhythm-unit/$heading-scale-vr}em;
-
+        @include headingFontLargeVr;
     }
     &, p, time, li {
         @include fluid-type($min_font*$scale3_m, $max_font*$scale3_d);

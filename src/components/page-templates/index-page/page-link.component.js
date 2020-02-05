@@ -1,8 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { shape, string } from 'prop-types';
+import { bool, shape, string } from 'prop-types';
 import React from 'react';
 
 import Markdown from '../../page-components/markdown';
+import Postit from '../../page-components/postit/postit.component';
 import Image from '../../page-layout/image/image.component';
 import Link from '../../page-layout/link/link.component';
 import styles from './index-page.module.scss';
@@ -11,6 +12,7 @@ const pageLinkPropTypes = {
     link: string,
     linkText: string,
     page: {},
+    isPostit: bool,
 };
 
 export default PageLink;
@@ -21,9 +23,10 @@ PageLink.defaultProps = {
     link: '',
     linkText: '',
     page: {},
+    isPostit: false,
 };
 
-function PageLink({ link, linkText, page }) {
+function PageLink({ isPostit, link, linkText, page }) {
     const { frontmatter } = page || {};
     const { introduction, image } = frontmatter || {};
     const { image: introImage } = image || {};
@@ -41,7 +44,7 @@ function PageLink({ link, linkText, page }) {
         }
     `);
 
-    return (
+    return !isPostit ? (
         <article className={styles.page}>
             <Link to={link}>
                 <h2>{linkText}</h2>
@@ -56,5 +59,13 @@ function PageLink({ link, linkText, page }) {
                 </section>
             </Link>
         </article>
+    ) : (
+            <Postit className={`${styles.postit}`}>
+        <Link to={link}>
+                <h2>{linkText}</h2>
+                <Markdown source={introText} truncate />
+                <Link to={link}>Read more</Link>
+        </Link>
+            </Postit>
     );
 }

@@ -12,7 +12,7 @@ Markdown.propTypes = {
 Markdown.defaultProps = {
     source: null,
     truncate: false,
-    maxLength: 150,
+    maxLength: 125,
 };
 function Markdown({ source, truncate, maxLength }) {
     const text = truncate ? truncateString(source, maxLength) : source.trim();

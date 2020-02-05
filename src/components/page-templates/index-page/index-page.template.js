@@ -18,16 +18,17 @@ IndexPageTemplate.defaultProps = {
     pages: null,
     components: null,
 };
-export default function IndexPageTemplate({ introduction, pages, components }) {
+export default function IndexPageTemplate({ isPostits, introduction, pages, components }) {
     const { show, text } = introduction || {};
 
     const hasArrow = !!pages && pages.length % 2 !== 0;
+    const postitClass = isPostits ? styles.postits : '';
 
     return (
         <>
             {show && <IntroductionComponent introduction={text} />}
-            <section className={styles.pages}>
-                {!!pages && pages.map(page => <PageLink {...page} />)}
+            <section className={`${styles.pages} ${postitClass}`}>
+                {!!pages && pages.map(page => <PageLink {...page} isPostit={isPostits} />)}
                 {hasArrow && <img src="/images/hf-arrow.svg" alt="arrow" className={styles.page} />}
             </section>
             {components && (
