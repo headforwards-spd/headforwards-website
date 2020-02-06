@@ -86,7 +86,8 @@
 
     .postit {
         @include fontLarge;
-        padding-bottom: 70%;
+        overflow: hidden;
+        padding-bottom: calc(100% - #{$column-gutter-sm});
         @media (min-width: $screen-md) {
             @include fontMedium;
             padding-bottom: 35%;
@@ -95,7 +96,7 @@
             padding-bottom: 31.25%;
         }
         > a {
-            padding: $column-gutter-sm*2;
+            padding: $column-gutter-sm;
             @media (min-width: $screen-md) {
                 padding: $column-gutter-md;
             }
@@ -105,13 +106,14 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            overflow: hidden;
             &, p, li, time {
                 color: black;
             }
 
             a {
                 margin-top: auto;
-                @include headingFontLargeVr;
+                @include headingFontMediumVr;
                 @include arrow-link;
                 margin-bottom: 0;
                 color: black;
