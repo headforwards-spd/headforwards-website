@@ -4,9 +4,14 @@
 
 
 # careers.headforwards.com
-/o/:job/c/new	/careers/jobs/:job/application-form	301
-/o/:job	/careers/jobs/:job	301
-https://careers.headforwards.com	/careers	301
+/o/:job/c/new	                     /careers/jobs/:job/application-form 301
+/o/:job	                             /careers/jobs/:job 301
+https://www.careers.headforwards.com /careers           301
+https://careers.headforwards.com	 /careers           301
+
+
+# Netlify
+https://headforwards-website2.netlify.com/* https://www.headforwards.com/:splat 301!
 
 
 # WordPress Info Pages
