@@ -82,6 +82,9 @@
             p {
                 @include fontLarge;
             }
+            footer p {
+                @include fontSmall;
+            }
             margin-left: 0;
             @media (min-width: $screen-md) {
                 @include fontMedium;
