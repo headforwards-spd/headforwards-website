@@ -38,6 +38,7 @@ const UnstatedHelmet = withUnstated(
                 <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
                 <link rel="preconnect" href="https://www.google-analytics.com" />
                 <link rel="preconnect" href="https://connect.facebook.net" />
+                <link rel="preconnect" href="https://vc.hotjar.io" />
             </Helmet>
         );
     },
