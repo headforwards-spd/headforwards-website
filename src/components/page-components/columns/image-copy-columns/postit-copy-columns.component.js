@@ -41,12 +41,7 @@ function PostitCopyColumns({ image, isRightImage, title, content, link }) {
                 {title && <h2>{title}</h2>}
                 {content && (
                     <section>
-                        {content.map(({ type, ...item }) => (
-                            <>
-                                {type === 'markdown-component' && <Markdown source={item.text} />}
-                                {type === 'quote-component' && <Quote {...item} fullWidth />}
-                            </>
-                        ))}
+                        {content.map(({ id, type, ...item }) => <ContentComponent key={id} type={type} {...item} />)}
                     </section>
                 )}
                 {hasLink && (
@@ -57,4 +52,19 @@ function PostitCopyColumns({ image, isRightImage, title, content, link }) {
             </section>
         </section>
     );
+}
+ContentComponent.propTypes = {
+    type: string.isRequired,
+};
+function ContentComponent({ type, ...item }) {
+
+    const { text } = item || {};
+    switch (type) {
+        case 'markdown-component':
+            return <Markdown source={text} />;
+        case 'quote-component':
+            return <Quote {...item} fullWidth />;
+        default:
+            return null;
+    }
 }

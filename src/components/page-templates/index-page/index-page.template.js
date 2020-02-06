@@ -28,7 +28,7 @@ export default function IndexPageTemplate({ isPostits, introduction, pages, comp
         <>
             {show && <IntroductionComponent introduction={text} />}
             <section className={`${styles.pages} ${postitClass}`}>
-                {!!pages && pages.map(page => <PageLink {...page} isPostit={isPostits} />)}
+                {!!pages && pages.map(({uuid, ...page}) => <PageLink key={uuid} {...page} isPostit={isPostits} />)}
                 {hasArrow && <img src="/images/hf-arrow.svg" alt="arrow" className={styles.page} />}
             </section>
             {components && (

@@ -1,6 +1,19 @@
 const uuid = require('uuid');
 const { getIndexedPages, getIndexedPage } = require('../lib/indexed-pages');
 
+const setItemIds = items =>
+    items &&
+    items.length &&
+    items.forEach(item => {
+        item.id = uuid.v1();
+        const { components, sections, content, articles } = item;
+
+        components && components.length && setItemIds(components);
+        sections && sections.length && setItemIds(sections);
+        content && content.length && setItemIds(content);
+        articles && articles.length && setItemIds(articles);
+    });
+
 exports.sourceNodes = gatsby => {
     const { getNodes } = gatsby;
     const nodes = getNodes();
@@ -14,20 +27,22 @@ exports.sourceNodes = gatsby => {
 
     pages.forEach(page => {
         const { frontmatter } = page || {};
-        const { components = [], jobRoles = [], footerLinks = [] } = frontmatter || {};
+        const { sections = [], components = [], jobRoles = [], footerLinks = [] } = frontmatter || {};
+
+        sections && sections.length && setItemIds(sections);
+        components && components.length && setItemIds(components);
+        jobRoles && jobRoles.length && setItemIds(jobRoles);
 
         if (components && components.length) {
             components.forEach(component => {
                 const { link = null, articles = [] } = component;
 
-                component.id = uuid.v1();
                 component.link = getPageLink(link);
                 component.page___NODE = getPageId(link);
 
                 articles.forEach(article => {
                     const { link: childLink = null } = article || {};
 
-                    article.id = uuid.v1();
                     article.link = getPageLink(childLink);
                     article.page___NODE = getPageId(childLink);
                 });
@@ -40,7 +55,6 @@ exports.sourceNodes = gatsby => {
             jobRoles.forEach(jobRole => {
                 const { link = null } = jobRole;
 
-                jobRole.id = uuid.v1();
                 jobRole.link = getPageLink(link);
                 jobRole.page___NODE = getPageId(link);
             });

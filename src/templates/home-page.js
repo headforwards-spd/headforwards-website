@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { arrayOf, shape, string } from 'prop-types';
+import { any, arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 
 import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
@@ -10,13 +10,11 @@ const homepagePropTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
-                introduction: string,
-                sections: arrayOf(
-                    shape({
-                        title: string,
-                        text: string.isRequired,
-                    })
-                ),
+                introduction: shape({
+                    show: bool.isRequired,
+                    text: string,
+                }),
+                sections: arrayOf(any),
             }),
         }),
     }).isRequired,
@@ -71,6 +69,7 @@ export const query = graphql`
                     }
                 }
                 sections {
+                    id
                     image {
                         publicURL
                         childImageSharp {
@@ -99,9 +98,11 @@ export const query = graphql`
                     title
                     isRightImage
                     components {
+                        id
                         type
                         title
                         content {
+                            id
                             type
                             quote
                             profilePic {
