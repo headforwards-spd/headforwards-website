@@ -64,6 +64,13 @@ export default class JobHeader extends Component {
         window.addEventListener('scroll', this.handleScroll.bind(this));
     }
 
+    componentWillUnmount(){
+        window.removeEventListener('scroll', this.handleScroll.bind(this));
+        const { debounceScroll } = this;
+
+        debounceScroll && clearTimeout(debounceScroll);
+    }
+
     tagList() {
         const { jobDetails } = this.props;
         const { filters, tags } = jobDetails;

@@ -46,16 +46,21 @@ export function extractFooterLinks(footerLinks) {
         return null;
     }
 
+    const {id:page1Id} = page1;
+    const {id:page2Id} = page2;
+    const {id:page3Id} = page3;
+
     return {
         title,
         links: [
-            { id: 'footer-link-1', link: link1, page: page1 },
-            { id: 'footer-link-2', link: link2, page: page2 },
-            { id: 'footer-link-3', link: link3, page: page3 },
-        ].map(({ link, page }) => {
+            { id: page1Id, link: link1, page: page1 },
+            { id: page2Id, link: link2, page: page2 },
+            { id: page3Id, link: link3, page: page3 },
+        ].map(({ id, link, page }) => {
             const { frontmatter } = page || {};
 
             return {
+                id,
                 showImages,
                 link,
                 ...frontmatter,

@@ -49,7 +49,10 @@ Layout.propTypes = {
     isHomePage: bool,
     title: string.isRequired,
     subtitle: string,
-    introduction: string,
+    introduction: shape({
+        show: bool.isRequired,
+        text: string,
+    }),
     jobDetails: shape({
         salary: string.isRequired,
         tags: arrayOf(string).isRequired,

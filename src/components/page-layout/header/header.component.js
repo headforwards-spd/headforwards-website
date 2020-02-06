@@ -35,10 +35,22 @@ export default class Header extends Component {
         isScrollingDown: false,
     };
 
+    constructor(props){
+        super(props);
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
     componentDidMount() {
         this.scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        window.addEventListener('scroll', this.handleScroll.bind(this));
+        window.addEventListener('scroll', this.handleScroll, false);
+    }
+
+    componentWillUnmount(){
+        window.removeEventListener('scroll', this.handleScroll, false);
+        const { debounceScroll } = this;
+
+        debounceScroll && clearTimeout(debounceScroll);
     }
 
     handleScroll() {

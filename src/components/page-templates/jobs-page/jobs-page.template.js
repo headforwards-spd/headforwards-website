@@ -169,9 +169,9 @@ export default class JobsPageTemplate extends Component {
                 )}
                 {jobsList && (
                     <ul className={styles.jobsList}>
-                        {jobsList.map(({ id: key, ...job }) => (
-                            <li>
-                                <JobSummaryComponent key={key} {...job} />
+                        {jobsList.map(job => (
+                            <li key={job.path}>
+                                <JobSummaryComponent {...job} />
                             </li>
                         ))}
                     </ul>
