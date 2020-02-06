@@ -9,37 +9,35 @@ import { menuItemPropTypes } from './menu-item.prop-type';
 export default class MenuItem extends Component {
     static propTypes = menuItemPropTypes;
 
-    state = {
-        isOpen: false,
-    };
+    constructor(props) {
+        super(props);
 
-    componentDidMount() {
-        const { link, location } = this.props;
+        const { link, location } = props;
         const { pathname: path = '' } = location || {};
 
         const cleanLink = `/${link}/`.replace(/\/+/g, '/').replace(/^\/$/, 'homepage');
         const cleanPath = `/${path}/`.replace(/\/+/g, '/').replace(/^\/$/, 'homepage');
-        const isOpen = cleanPath.startsWith(cleanLink);
+        const isActive = cleanPath.startsWith(cleanLink);
 
-        this.state.isOpen = isOpen;
+        this.state = { isActive };
     }
 
     toggleMenu(event) {
         event.preventDefault();
         event.stopPropagation();
 
-        this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
+        this.setState(({ isActive }) => ({ isActive: !isActive }));
 
         return false;
     }
 
     render() {
         const { location, link, linkText, showTitle = false, children, className = '' } = this.props;
-        const { isOpen } = this.state;
+        const { isActive } = this.state;
         const { toggleMenu } = this;
         const hasChildren = !!children;
 
-        const openClass = isOpen ? styles.isOpen : '';
+        const openClass = isActive ? styles.isActive : '';
         const childrenClass = hasChildren ? styles.hasChildren : '';
 
         return (
@@ -48,7 +46,7 @@ export default class MenuItem extends Component {
                     {linkText}
                     {showTitle && hasChildren && (
                         <button type="button" onClick={toggleMenu.bind(this)}>
-                            {(isOpen && <FontAwesomeIcon icon={faMinus} fixedWidth />) || (
+                            {(isActive && <FontAwesomeIcon icon={faMinus} fixedWidth />) || (
                                 <FontAwesomeIcon icon={faPlus} fixedWidth />
                             )}
                         </button>

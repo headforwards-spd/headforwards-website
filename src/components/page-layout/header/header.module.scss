@@ -2,16 +2,13 @@
 @import "../../../scss/mixins/mixins";
 @import "../../../scss/mixins/typography";
 @import '../../page-components/page-component';
-@import "./sticky-nav";
+@import "./mixins";
 
 .header {
-    z-index: 500;
-    @include fontMedium;
-    position: relative;
     display: flex;
     flex-direction: column;
 
-    @include sticky-nav;
+    @include header;
 
     .image {
         order: 1;

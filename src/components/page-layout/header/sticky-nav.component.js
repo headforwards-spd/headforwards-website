@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-import styles from './job-header.module.scss';
+import styles from './sticky-nav.module.scss';
 
 export default class StickyNav extends Component {
     scrollTop = 0;

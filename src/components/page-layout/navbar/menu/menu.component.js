@@ -19,7 +19,7 @@ Menu.defaultProps = {
 
 function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
     const { companyName, phone } = companyInfo;
-    const backgroundImg = hasBackground ? 'with-bg' : 'without-bg';
+    const backgroundImg = hasBackground ? 'with-bg' : '';
 
     return (
         <Location>

@@ -12,7 +12,7 @@ export default {
 
 export const SocialMediaIcons = () => {
     const props = {
-        activeClass: 'is-active',
+        activeClass: 'menu-open',
         twitterURL: text('Twitter URL', faker.internet.url()),
         facebookURL: text('Facebook URL', faker.internet.url()),
         instagramURL: text('Instagram URL', faker.internet.url()),

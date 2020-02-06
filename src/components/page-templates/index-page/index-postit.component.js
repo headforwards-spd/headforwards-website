@@ -1,4 +1,4 @@
-import { Requireable as string, shape } from 'prop-types';
+import { shape, string } from 'prop-types';
 import React from 'react';
 
 import Postit from '../../page-components/postit/postit.component';

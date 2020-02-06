@@ -2,12 +2,12 @@
 @import "../../../scss/mixins/mixins";
 @import "../../../scss/mixins/typography";
 @import '../../page-components/page-component';
-@import "sticky-nav";
+@import "./mixins";
 
 
 .jobHeader {
 
-    @include sticky-nav;
+    @include header;
 
     @include fontMedium;
     margin-bottom: $component-gutter-sm;
