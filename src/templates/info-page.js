@@ -39,8 +39,11 @@ function InfoPagePage({ data }) {
         careers,
     };
 
+    const {applicationForm} = careers || null;
+    const jobDetails = applicationForm ? { path: `/careers/jobs/${applicationForm}`, tags: [] } : null;
+
     return (
-        <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks}>
+        <Layout {...{...layoutProps, jobDetails}} introduction={introduction} footerLinks={footerLinks}>
             <InfoPageTemplate {...pageProps} />
         </Layout>
     );
