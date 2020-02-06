@@ -5,6 +5,7 @@
 @import "./sticky-nav";
 
 .header {
+    z-index: 500;
     @include fontMedium;
     position: relative;
     display: flex;

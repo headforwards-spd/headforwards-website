@@ -24,13 +24,11 @@ components:
           connectivity and unique surroundings, Cornwall has been critical to
           our growth.
         type: markdown-component
-      - jobTitle: Travel solutions director
-        name: John Howell
-        quote: >-
-          There’s a misconception that Cornwall is outside of the UK’s tech
-          sector – but it couldn’t be more different. With the rapidly growing
-          infrastructure we have here, we have all the benefits of a city and
-          more.
+      - quote: >-
+          Too often, Cornwall is seen as a place to slow down your career. In
+          reality, the developers here are at the top of their career, without
+          the added stresses of living in a city – and it really shows in work
+          we do.
         type: quote-component
     isPostit: false
     isRightImage: false
@@ -53,11 +51,13 @@ components:
           cities, and major EU investment in the county’s roads, rail network
           and airport, Cornwall is truly connected.
         type: markdown-component
-      - quote: >-
-          Too often, Cornwall is seen as a place to slow down your career. In
-          reality, the developers here are at the top of their career, without
-          the added stresses of living in a city – and it really shows in work
-          we do.
+      - jobTitle: Travel solutions director
+        name: John Howell
+        quote: >-
+          There’s a misconception that Cornwall is outside of the UK’s tech
+          sector – but it couldn’t be more different. With the rapidly growing
+          infrastructure we have here, we have all the benefits of a city and
+          more.
         type: quote-component
     isPostit: false
     isRightImage: false

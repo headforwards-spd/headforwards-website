@@ -4,7 +4,6 @@
 @import '../../page-components/page-component';
 
 .menu {
-
     line-height: 1;
     margin-bottom: 0;
 
@@ -190,7 +189,7 @@
         @media screen and (min-width: $screen-lg) {
             position: relative;
         }
-        z-index: 100;
+        z-index: 500;
         background-color: $blue-background;
         display: flex;
         flex-direction: column;
@@ -476,7 +475,7 @@
                             visibility: visible;
                             opacity: 1;
                             transition-delay: 0.1s, 0.1s;
-                            z-index: 99999;
+                            z-index: 1000;
                         }
                     }
                 }

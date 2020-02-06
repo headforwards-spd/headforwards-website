@@ -45,7 +45,7 @@ components:
               ETL procedures, data quality measurement, data retention, master data
               management and role management.
 seo:
-  slug: bi-and-big-data
+  slug: bi-and-data
 careers:
     department: Local Authority
 ---
