@@ -20,6 +20,7 @@ function Contact() {
                 phone
                 address
                 registeredAddress
+                mapUrl
             }
         }
     `);

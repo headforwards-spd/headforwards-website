@@ -9,27 +9,19 @@ export default ApplicationQuestions;
 
 function ApplicationQuestions({ questions, isSubmitting, ...props }) {
     return questions.map(({ kind, ...question }) => {
-        let component;
         const { id: key } = question;
 
         switch (kind) {
             case 'string':
-                component = <StringQuestion key={key} {...question} disabled={isSubmitting} {...props} />;
-                break;
+                return <StringQuestion key={key} {...question} disabled={isSubmitting} {...props} />;
             case 'single_choice':
-                component = <SingleChoiceQuestion key={key} {...question} disabled={isSubmitting} {...props} />;
-                break;
+                return <SingleChoiceQuestion key={key} {...question} disabled={isSubmitting} {...props} />;
             case 'multi_choice':
-                component = <MultiChoiceQuestion key={key} {...question} disabled={isSubmitting} {...props} />;
-                break;
+                return <MultiChoiceQuestion key={key} {...question} disabled={isSubmitting} {...props} />;
             case 'boolean':
-                component = <BooleanQuestion key={key} {...question} disabled={isSubmitting} {...props} />;
-                break;
+                return <BooleanQuestion key={key} {...question} disabled={isSubmitting} {...props} />;
             default:
-                component = null;
-                console.error({ kind, question });
+                return <></>;
         }
-
-        return component;
     });
 }

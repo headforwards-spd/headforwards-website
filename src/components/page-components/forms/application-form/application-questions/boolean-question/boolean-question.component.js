@@ -22,7 +22,8 @@ function BooleanQuestion({ id, body: label, required, disabled }) {
     const name = `q-${id}`;
     const type = 'radio';
 
-    const [field, meta] = useField({ name });
+    // eslint-disable-next-line no-unused-vars
+    const [notUsed, meta] = useField({ name });
 
     const radioField = {
         name,

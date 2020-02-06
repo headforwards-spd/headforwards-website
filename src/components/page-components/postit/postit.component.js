@@ -16,7 +16,7 @@ export default Postit;
 
 Postit.propTypes = postitPropTypes;
 Postit.defaultProps = {
-    image:null,
+    image: null,
     isRightImage: false,
     alt: null,
     className: '',

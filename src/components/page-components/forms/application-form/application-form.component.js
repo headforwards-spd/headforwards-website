@@ -2,6 +2,7 @@ import { faCheckCircle, faSpinner, faTimesCircle } from '@fortawesome/free-solid
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import { Form, Formik } from 'formik';
+import { string } from 'prop-types';
 import React, { Component } from 'react';
 import * as Yup from 'yup';
 
@@ -11,6 +12,24 @@ import { messages, schema } from './application-form.schema';
 import ApplicationQuestions from './application-questions/applicaton-questions.component';
 
 export default class ApplicationForm extends Component {
+    static propTypes = {
+        jobTitle: string.isRequired,
+        path: string.isRequired,
+        options_phone: string,
+        options_photo: string,
+        options_cover_letter: string,
+        options_cv: string,
+        open_questions: string,
+    };
+
+    static defaultProps = {
+        options_phone: null,
+        options_photo: null,
+        options_cover_letter: null,
+        options_cv: null,
+        open_questions: null,
+    };
+
     state = {
         isSubmitting: false,
         successMessage: null,
@@ -18,7 +37,8 @@ export default class ApplicationForm extends Component {
     };
 
     onSubmit(data, { resetForm }) {
-        const { path, job } = this.props;
+        const { path, jobTitle } = this.props;
+        // eslint-disable-next-line camelcase
         const { name = '', email = '', phone = '', cv = '', cover_letter = '', privacy = '' } = data;
         const questions = Object.keys(data).filter(key => key.startsWith('q-'));
 
@@ -56,12 +76,12 @@ export default class ApplicationForm extends Component {
                 resetForm();
                 this.setState({
                     isSubmitting: false,
-                    successMessage: messages.success(job),
+                    successMessage: messages.success(jobTitle),
                 });
             })
             .catch(({ response }) => {
-                const { data } = response || {};
-                const { error } = data || {};
+                const { data: responseData } = response || {};
+                const { error } = responseData || {};
 
                 const errorMessage = error ? error.join('\n') : messages.error;
 

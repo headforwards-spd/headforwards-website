@@ -12,8 +12,8 @@ import AppContainer from '../../containers/app.container';
 import { FooterLinkPropType } from './footer/footer-link.component';
 import Footer from './footer/footer.component';
 import Header from './header/header.component';
+import JobHeader from './header/job-header.component';
 import { ImageSrcPropType } from './image/image.component';
-import JobHeader from './job-header/job-header.component';
 import Seo, { SeoPropType } from './seo';
 
 export default Layout;

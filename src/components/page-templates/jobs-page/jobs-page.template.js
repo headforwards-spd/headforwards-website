@@ -1,18 +1,11 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
 import React, { Component } from 'react';
 
-import Markdown from '../../page-components/markdown';
+import slugify from '../../../lib/slugify';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
+import Markdown from '../../page-layout/markdown';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
 import styles from './jobs-page.module.scss';
-
-const slugify = value =>
-    value
-        .replace(/([A-Z])/gm, '-$1')
-        .replace(/([^a-zA-Z0-9])/gm, '-')
-        .replace(/-+/gm, '-')
-        .replace(/^-*(.*)-*$/gm, '$1')
-        .toLowerCase();
 
 export default class JobsPageTemplate extends Component {
     static propTypes = {
@@ -20,6 +13,15 @@ export default class JobsPageTemplate extends Component {
             show: bool,
             text: string,
         }),
+        filters: shape({
+            tags: arrayOf(
+                shape({
+                    label: string.isRequired,
+                    slug: string.isRequired,
+                })
+            ),
+        }).isRequired,
+        tags: arrayOf(string).isRequired,
         jobs: arrayOf(JobsSummaryComponentPropType),
         components: arrayOf(PageComponentPropType),
         footerText: string,
@@ -37,12 +39,17 @@ export default class JobsPageTemplate extends Component {
         selectedFilters: [],
     };
 
+    constructor(props) {
+        super(props);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+    }
+
     componentDidMount() {
-        document.addEventListener('click', this.handleClickOutside.bind(this), true);
+        document.addEventListener('click', this.handleClickOutside, true);
     }
 
     componentWillUnmount() {
-        document.removeEventListener('click', this.handleClickOutside.bind(this), true);
+        document.removeEventListener('click', this.handleClickOutside, true);
     }
 
     handleClickOutside({ target }) {
@@ -59,10 +66,10 @@ export default class JobsPageTemplate extends Component {
         this.setState(({ showFilters }) => ({ showFilters: !showFilters }));
     }
 
-    toggleFilter(label) {
-        this.setState(({ selectedFilters: oldSelectedFilters }) => {
-            const slug = slugify(label);
+    toggleFilter({ target }) {
+        const { id: slug = '' } = target;
 
+        this.setState(({ selectedFilters: oldSelectedFilters }) => {
             const hasFilter = oldSelectedFilters.includes(slug);
 
             const selectedFilters = hasFilter
@@ -73,8 +80,7 @@ export default class JobsPageTemplate extends Component {
         });
     }
 
-    isSelected(label) {
-        const slug = slugify(label);
+    isSelected(slug) {
         const { selectedFilters } = this.state;
 
         return selectedFilters.includes(slug);
@@ -125,6 +131,8 @@ export default class JobsPageTemplate extends Component {
         const selectedTags = this.selectedTags();
         const jobsList = this.filteredJobs();
 
+        const { toggleFilters, toggleFilter, clearFilters, isSelected } = this;
+
         return (
             <>
                 {components && (
@@ -143,7 +151,7 @@ export default class JobsPageTemplate extends Component {
                             ))}
                         </ul>
                         <section className={`${styles.allTags} ${filtersClass}`}>
-                            <button className={styles.filter} onClick={() => this.toggleFilters()}>
+                            <button type="button" className={styles.filter} onClick={toggleFilters.bind(this)}>
                                 Filter jobs by&hellip;
                             </button>
                             <section>
@@ -151,16 +159,16 @@ export default class JobsPageTemplate extends Component {
                                     {tagList.map(({ label, slug }) => (
                                         <li key={slug}>
                                             <input
-                                                id={slug}
+                                                id={slugify(label)}
                                                 type="checkbox"
-                                                checked={this.isSelected(label)}
-                                                onChange={() => this.toggleFilter(label)}
+                                                checked={isSelected.bind(this)(slugify(label))}
+                                                onChange={toggleFilter.bind(this)}
                                             />
-                                            <label htmlFor={slug}>{label}</label>
+                                            <label htmlFor={slugify(label)}>{label}</label>
                                         </li>
                                     ))}
                                 </ul>
-                                <button type="button" onClick={() => this.clearFilters()}>
+                                <button type="button" onClick={clearFilters.bind(this)}>
                                     Clear All
                                 </button>
                             </section>
