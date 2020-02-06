@@ -140,6 +140,8 @@ function Layout({
 
     const footerProps = { footerLinks, companyInfo, callToAction };
 
+    console.log('Layout', {seoProps});
+
     return (
         <Provider>
             <UnstatedHelmet />

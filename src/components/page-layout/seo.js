@@ -36,6 +36,8 @@ function Seo({ location, image, title: pageTitle, description: pageDescripton, l
         }
     `);
 
+    console.log('Seo', {image});
+
     const {
         url,
         companyName,
@@ -85,7 +87,6 @@ function Seo({ location, image, title: pageTitle, description: pageDescripton, l
             {width && <meta property="og:image:width" content={width} />}
             {height && <meta property="og:image:height" content={height} />}
 
-            {/* <meta property="fb:app_id" content="your_app_id" /> */}
             <meta name="google-site-verification" content={googleSiteVerification} />
             <meta property="fb:pages" content={facebookPagesId} />
         </Helmet>

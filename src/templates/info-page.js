@@ -18,6 +18,9 @@ InfoPagePage.propTypes = {
                     text: string.isRequired,
                 }),
                 components: arrayOf(PageComponentPropType),
+                careers: shape({
+                    applicationForm: string,
+                               })
             }),
         }),
     }).isRequired,
@@ -26,13 +29,14 @@ InfoPagePage.propTypes = {
 function InfoPagePage({ data }) {
     const { page, jobs: jobNodes } = data;
     const { frontmatter } = page;
-    const { introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
+    const { introduction, components, careers, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
     const { nodes: jobs } = jobNodes;
     const pageProps = {
         introduction,
         components,
         jobs,
+        careers,
     };
 
     return (

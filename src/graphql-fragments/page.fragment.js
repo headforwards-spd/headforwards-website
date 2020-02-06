@@ -216,6 +216,9 @@ export const PageFragment = graphql`
             }
             footerText
             callToAction
+            careers {
+                applicationForm
+            }
             seo {
                 title
                 description
