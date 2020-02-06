@@ -1,5 +1,4 @@
 const gatsbyPluginSass = require('./gatsby/gatsby-plugin-sass');
-const gatsbyPluginSharp = require('./gatsby/gatsby-plugin-sharp');
 const gatsbySourceFilesystemUploads = require('./gatsby/gatsby-source-filesystem.uploads');
 const gatsbySourceFilesystemImages = require('./gatsby/gatsby-source-filesystem.images');
 const gatsbySourceFilesystemPages = require('./gatsby/gatsby-source-filesystem.pages');
@@ -21,7 +20,7 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         { ...gatsbyPluginSass },
         `gatsby-plugin-svgr`,
-        { ...gatsbyPluginSharp },
+        'gatsby-plugin-sharp',
         `gatsby-source-recruitee-api`,
         { ...gatsbySourceFilesystemImages },
         { ...gatsbySourceFilesystemUploads },

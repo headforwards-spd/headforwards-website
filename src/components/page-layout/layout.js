@@ -93,7 +93,7 @@ function Layout({
         query {
             seoImage: file(name: { eq: "icon" }) {
                 childImageSharp {
-                    fixed(width: 1200, height: 630, fit: CONTAIN, background: "white") {
+                    fixed(width: 1200, height: 630, fit: CONTAIN, quality: 85, background: "white") {
                         src
                         width
                         height

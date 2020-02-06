@@ -36,17 +36,8 @@ function Image({ image, alt, ratio, className = '', ...props }) {
     let src;
     if (childImageSharp) {
         const { fluid } = childImageSharp;
-        const sizes = [
-            '(max-width: 319px) calc(100vw - 2em)',
-            '(max-width: 767px) calc(100vw - 2em)',
-            '(max-width: 1023px) calc(100vw - 3em)',
-            '(max-width: 1254px) 1170px',
-            '1440px',
-        ].join(', ');
 
-        return (
-            <GatsbyImage fluid={{...fluid, sizes}} alt={alt} durationFadeIn={500} className={className} {...props} />
-        );
+        return <GatsbyImage fluid={fluid} alt={alt} durationFadeIn={500} className={className} {...props} />;
     }
 
     if (typeof image === 'string') {
