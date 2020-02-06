@@ -60,6 +60,15 @@ export const query = graphql`
                             }
                         }
                     }
+                    seoImage: image {
+                        childImageSharp {
+                            fixed(width: 1200, height: 630, cropFocus: CENTER, quality: 85) {
+                                src
+                                width
+                                height
+                            }
+                        }
+                    }
                 }
                 sections {
                     image {
