@@ -40,11 +40,10 @@ function InfoPageTemplate({ introduction, components = [], jobs }) {
                 <section className={styles.jobs}>
                     <h2>Current job availability</h2>
                     <ul className={styles.jobsList}>
-                        {jobs.map(({ id: key, ...job }) => (
-                            <li>
-                                <JobSummaryComponent key={key} {...job} />
+                        {jobs.map(job => <li key={job.path}>
+                                <JobSummaryComponent {...job} />
                             </li>
-                        ))}
+                        )}
                     </ul>
                 </section>
             )}

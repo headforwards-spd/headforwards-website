@@ -16,7 +16,10 @@ const homePageSectionPropTypes = {
     imageSquare: ImageSrcPropType,
 };
 const homepagePropTypes = {
-    introduction: string,
+    introduction: shape({
+        show: bool.isRequired,
+        text: string,
+    }),
     sections: arrayOf(shape(homePageSectionPropTypes)),
 };
 
@@ -34,7 +37,10 @@ function HomepageTemplate({ introduction, sections }) {
     return (
         <>
             {showIntroduction && <IntroductionComponent introduction={introText} className={styles.intro} />}
-            {!!sections && sections.map((section, index) => <HomePageSection {...section} first={index === 0} />)}
+            {!!sections &&
+                sections.map(({ id, ...section }, index) => (
+                    <HomePageSection key={id} {...section} first={index === 0} />
+                ))}
         </>
     );
 }
@@ -66,7 +72,10 @@ function HomePageSection({ first, components, isPostit, isRightImage, image, ima
                 <HomePageImage {...{ isPostit, image, alt: title, imagePostit, imageSquare, isRightImage }} />
             )}
             <section className={styles.components}>
-                {!!components && components.map(component => <PageComponent {...component} title={title} />)}
+                {!!components &&
+                    components.map(({ id, ...component }) => (
+                        <PageComponent key={id} {...component} title={title} />
+                    ))}
             </section>
         </section>
     );

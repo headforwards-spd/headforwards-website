@@ -1,6 +1,6 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import { bool, shape, string } from 'prop-types';
-import React from 'react';
+import { graphql, useStaticQuery }  from 'gatsby';
+import { any, bool, shape, string } from 'prop-types';
+import React                        from 'react';
 
 import Markdown from '../../page-components/markdown';
 import Postit from '../../page-components/postit/postit.component';
@@ -11,7 +11,7 @@ import styles from './index-page.module.scss';
 const pageLinkPropTypes = {
     link: string,
     linkText: string,
-    page: {},
+    page: any,
     isPostit: bool,
 };
 
@@ -22,7 +22,7 @@ PageLink.propTypes = pageLinkPropTypes;
 PageLink.defaultProps = {
     link: '',
     linkText: '',
-    page: {},
+    page: null,
     isPostit: false,
 };
 
@@ -64,7 +64,7 @@ function PageLink({ isPostit, link, linkText, page }) {
             <Link to={link}>
                 <h2>{linkText}</h2>
                 <Markdown source={introText} truncate />
-                <Link to={link}>Read more</Link>
+                <div className={styles.readMore}>Read more</div>
             </Link>
         </Postit>
     );

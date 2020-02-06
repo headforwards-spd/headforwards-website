@@ -30,9 +30,7 @@ function PostitPageLink({ title, link, page }) {
             <Link to={link}>
                 <h2>{title}</h2>
                 <Markdown source={introduction} />
-                <Link to={link} className={styles.link}>
-                    Read more
-                </Link>
+                <div className={styles.link}>Read more</div>
             </Link>
         </Postit>
     );
