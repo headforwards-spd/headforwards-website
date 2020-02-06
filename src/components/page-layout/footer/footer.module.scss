@@ -9,32 +9,6 @@
     > section {
         overflow: hidden;
         background-color: $blue-background;
-        //background-image: url(/images/hf-arrow.orange.svg);
-        //background-repeat: no-repeat;
-        //background-size: 75% auto;
-        //@media (min-width: $screen-md) {
-        //    background-position: $column-gutter-md/2 35%;
-        //}
-        //@media (min-width: $screen-lg) {
-        //    background-position: $column-gutter-lg/2 35%;
-        //}
-        //@media (min-width: $screen-xl) {
-        //    background-size: 50% auto;
-        //    background-position: 37.5% 35%;
-        //}
-        //
-        //&.hasFooterLinks {
-        //    background-position: 0 90vh;
-        //    @media (min-width: $screen-md) {
-        //        background-position: $column-gutter-md/2 35%;
-        //    }
-        //    @media (min-width: $screen-lg) {
-        //        background-position: $column-gutter-lg/2 35%;
-        //    }
-        //    @media (min-width: $screen-xl) {
-        //        background-position: 37.5% 35%;
-        //    }
-        //}
     }
 
     .footerLinks {
@@ -52,13 +26,16 @@
         }
         > section {
             @include columns-component-tight;
+            margin-top: $column-gutter-sm/2;
             margin-bottom: -$column-gutter-sm/2;
             @media (min-width: $screen-md) {
                 align-items: stretch;
-                margin-bottom: -$column-gutter-md/2;
+                margin-top: $column-gutter-md/4;
+                margin-bottom: -$column-gutter-md/4;
             }
             @media (min-width: $screen-lg) {
-                margin-bottom: -$column-gutter-lg/2;
+                margin-top: $column-gutter-lg/4;
+                margin-bottom: -$column-gutter-lg/4;
             }
             > a {
                 z-index: 100;
@@ -132,6 +109,16 @@
                     background: unset;
                     line-height: $line-height;
                 }
+            }
+        }
+
+        h2 + section {
+            margin-top: -$column-gutter-sm/2;
+            @media (min-width: $screen-md) {
+                margin-top: -$column-gutter-md/2;
+            }
+            @media (min-width: $screen-lg) {
+                margin-top: -$column-gutter-lg/2;
             }
         }
     }

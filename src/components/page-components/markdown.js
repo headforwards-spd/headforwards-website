@@ -14,10 +14,10 @@ Markdown.defaultProps = {
     truncate: false,
     maxLength: 125,
 };
-function Markdown({ source, truncate, maxLength }) {
+function Markdown({ source='', truncate, maxLength }) {
     const text = truncate ? truncateString(source, maxLength) : source.trim();
 
-    const fancyText = text.replace(/ ([^ ]*)$/gm, '\xa0$1');
+    const fancyText = text ? text.replace(/ ([^ ]*)$/gm, '\xa0$1') : '';
     if (!fancyText) {
         return null;
     }
@@ -28,7 +28,7 @@ function Markdown({ source, truncate, maxLength }) {
 function truncateString(string = '', maxLength = 150, ellipsis = `\u2026`) {
     // `\u2026`) {
 
-    if (string.length <= maxLength) {
+    if (!string || string.length <= maxLength) {
         return string;
     }
     const truncatedString = string
