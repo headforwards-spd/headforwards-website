@@ -39,7 +39,7 @@ function InfoPagePage({ data }) {
         careers,
     };
 
-    const {applicationForm} = careers || null;
+    const {applicationForm} = careers || {};
     const jobDetails = applicationForm ? { path: `/careers/jobs/${applicationForm}`, tags: [] } : null;
 
     return (

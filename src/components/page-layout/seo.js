@@ -36,8 +36,6 @@ function Seo({ location, image, title: pageTitle, description: pageDescripton, l
         }
     `);
 
-    console.log('Seo', {image});
-
     const {
         url,
         companyName,
