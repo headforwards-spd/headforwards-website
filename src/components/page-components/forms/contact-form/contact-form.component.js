@@ -8,6 +8,7 @@ import React, { Component, createRef } from 'react';
 import Reaptcha from 'reaptcha';
 import { object } from 'yup';
 
+import { contactFormSubmitEvent } from '../../../../lib/datalayer-event';
 import { Checkbox, Input, Textarea } from '../form-field.component';
 import styles from './contact-form.module.scss';
 import { messages, schema } from './contact-form.schema';
@@ -53,6 +54,7 @@ export default class ContactForm extends Component {
                     data: null,
                     successMessage: messages.success,
                 });
+                contactFormSubmitEvent();
             })
             .catch(() => {
                 this.setState({
