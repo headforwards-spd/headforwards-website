@@ -6,6 +6,7 @@ import { arrayOf, bool, number, shape, string } from 'prop-types';
 import React, { Component } from 'react';
 import * as Yup from 'yup';
 
+import { applicationFormSubmitEvent } from '../../../../lib/datalayer-event';
 import { Checkbox, File, Input, Textarea } from '../form-field.component';
 import styles from './application-form.module.scss';
 import { messages, schema } from './application-form.schema';
@@ -90,6 +91,7 @@ export default class ApplicationForm extends Component {
                     isSubmitting: false,
                     successMessage: messages.success(jobTitle),
                 });
+                applicationFormSubmitEvent(path);
             })
             .catch(({ response }) => {
                 const { data: responseData } = response || {};
