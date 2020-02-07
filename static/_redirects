@@ -4,8 +4,8 @@
 
 
 # careers.headforwards.com
-/o/:job/c/new	                     /careers/jobs/:job/application-form 301
-/o/:job	                             /careers/jobs/:job 301
+/o/:job/c/new	                     https://www.headforwards.com/careers/jobs/:job/application-form 301
+/o/:job	                             https://www.headforwards.com/careers/jobs/:job 301
 https://www.careers.headforwards.com /careers           301
 https://careers.headforwards.com	 /careers           301
 
