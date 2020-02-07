@@ -12,8 +12,8 @@ import AppContainer from '../../containers/app.container';
 import { FooterLinkPropType } from './footer/footer-link.component';
 import Footer from './footer/footer.component';
 import Header from './header/header.component';
+import JobHeader from './header/job-header.component';
 import { ImageSrcPropType } from './image/image.component';
-import JobHeader from './job-header/job-header.component';
 import Seo, { SeoPropType } from './seo';
 
 export default Layout;
@@ -27,9 +27,9 @@ const UnstatedHelmet = withUnstated(
 
         return (
             <Helmet bodyAttributes={bodyAttributes}>
-                <link rel="preload" href="/fonts/FSAlbertWeb/Bold.woff2" as="font" />
-                <link rel="preload" href="/fonts/FSAlbertWeb/Regular.woff2" as="font" />
-                <link rel="preload" href="/fonts/FSAlbertWeb/Italic.woff2" as="font" />
+                {/* <link rel="preload" href="/fonts/FSAlbertWeb/Bold.woff2" as="font" /> */}
+                {/* <link rel="preload" href="/fonts/FSAlbertWeb/Regular.woff2" as="font" /> */}
+                {/* <link rel="preload" href="/fonts/FSAlbertWeb/Italic.woff2" as="font" /> */}
                 <link rel="preconnect" href="https://www.google.com" />
                 <link rel="preconnect" href="https://www.facebook.com" />
                 <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -150,18 +150,6 @@ function Layout({
             {(!isJobPage && <Header {...headerProps} />) || <JobHeader {...headerProps} jobDetails={jobDetails} />}
             <main>{children}</main>
             <Footer {...footerProps} />
-            <script
-                id="browser-update-script"
-                dangerouslySetInnerHTML={{
-                    __html: `
-var $buoop = {required:{e:-2,f:-2,o:-2,s:-2,c:-2},insecure:true,unsupported:true,api:2020.02};
-function $buo_f(){var e = document.createElement("script");
-e.src = "//browser-update.org/update.min.js";
-document.body.appendChild(e);};
-try {document.addEventListener("DOMContentLoaded", $buo_f,false)}catch(e){window.attachEvent("onload", $buo_f)}
-            `,
-                }}
-            />
         </Provider>
     );
 }

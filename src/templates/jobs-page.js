@@ -21,7 +21,7 @@ JobsPage.propTypes = {
                 footerText: string,
             }),
         }),
-        jobs: {
+        jobs: shape({
             nodes: arrayOf(
                 shape({
                     id: string,
@@ -30,7 +30,7 @@ JobsPage.propTypes = {
                     created: string,
                 })
             ),
-        },
+        }),
         filters: shape({
             departments: arrayOf(
                 shape({

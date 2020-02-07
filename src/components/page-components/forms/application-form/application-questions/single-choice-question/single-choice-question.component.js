@@ -28,7 +28,8 @@ function SingleChoiceQuestion({ id, body: label, open_question_options: options,
     const name = `q-${id}`;
     const type = 'radio';
 
-    const [field, meta] = useField({ name });
+    // eslint-disable-next-line no-unused-vars
+    const [notUsed, meta] = useField({ name });
 
     return (
         <div role="group" className={styles.field}>

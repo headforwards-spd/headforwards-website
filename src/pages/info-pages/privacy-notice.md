@@ -34,7 +34,7 @@ sections:
       Headforwards Solutions Ltd collects information in two possible ways:
 
 
-      _**When you directly give it to us (“Directly Provided Data”)**_\
+      **When you directly give it to us (“Directly Provided Data”)**
 
       When you communicate with us, you may choose to voluntarily give us
       certain information – for example, by filling in text boxes or completing
@@ -42,8 +42,8 @@ sections:
       at that time in order for us to receive it.
 
 
-      _**When you give us permission to obtain from other accounts (“User
-      Authorised Data”)**_\
+      **When you give us permission to obtain from other accounts (“User
+      Authorised Data”)**
 
       Depending on your settings or the privacy policies for other online
       services, you may give us permission to obtain information from your

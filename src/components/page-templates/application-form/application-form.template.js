@@ -1,4 +1,4 @@
-import { arrayOf, string } from 'prop-types';
+import { string } from 'prop-types';
 import React from 'react';
 
 import ApplicationForm from '../../page-components/forms/application-form/application-form.component';
@@ -6,15 +6,9 @@ import ApplicationForm from '../../page-components/forms/application-form/applic
 export default ApplicationFormTemplate;
 
 ApplicationFormTemplate.propTypes = {
-    subtitle: string,
-    salary: string,
-    tags: arrayOf(string),
+    jobTitle: string.isRequired,
+    subtitle: string.isRequired,
 };
-ApplicationFormTemplate.defaultProps = {
-    subtitle: '',
-    salary: '',
-    tags: [],
-};
-function ApplicationFormTemplate({ job, salary, tags, ...form }) {
-    return <ApplicationForm job={job} {...form} />;
+function ApplicationFormTemplate({ jobTitle, ...form }) {
+    return <ApplicationForm jobTitle={jobTitle} {...form} />;
 }

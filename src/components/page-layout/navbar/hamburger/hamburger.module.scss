@@ -25,7 +25,7 @@ $line-thickness: 3px;
         outline: none;
     }
 
-    &:global(.is-active) {
+    &:global(.menu-open) {
 
         .hamburgerInner {
             background-color: $orange;
@@ -96,7 +96,7 @@ $line-thickness: 3px;
 
 .hamburgerSlider {
 
-    &:global(.is-active) {
+    &:global(.menu-open) {
         .hamburgerInner {
             visibility: hidden;
 

@@ -1,9 +1,9 @@
 import { bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import Markdown from '../../page-components/markdown';
 import Image, { ImageSrcPropType } from '../image/image.component';
 import Link from '../link/link.component';
+import Markdown from '../markdown';
 import styles from './footer.module.scss';
 
 const footerLinkPropTypes = {
@@ -46,9 +46,9 @@ export function extractFooterLinks(footerLinks) {
         return null;
     }
 
-    const {id:page1Id} = page1;
-    const {id:page2Id} = page2;
-    const {id:page3Id} = page3;
+    const { id: page1Id } = page1;
+    const { id: page2Id } = page2;
+    const { id: page3Id } = page3;
 
     return {
         title,
