@@ -3,7 +3,7 @@ import CMS from 'netlify-cms-app';
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
 import styles from '!css-loader!sass-loader!../scss/main.scss';
 
-import InfoPagePreview from './preview-templates/info-page';
+import InfoPagePreview from './preview-templates/info-page-preview';
 import OptionalObjectControl from './widgets/optional-object-control';
 import UuidControl from './widgets/uuid-control';
 

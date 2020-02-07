@@ -32,7 +32,15 @@ InfoPagePreview.propTypes = {
 
 function InfoPagePreview({ entry, getAsset }) {
     const { data } = entry.toJS();
-    const { title = '', subtitle, image, introduction, components, footerLinks: rawFooterLinks, callToAction } = data;
+    const {
+        title = '',
+        subtitle,
+        image,
+        introduction,
+        components = [],
+        footerLinks: rawFooterLinks,
+        callToAction,
+    } = data;
     const { show: showImage = false, image: bannerImageRef = null } = image || {};
     const bannerImage = bannerImageRef ? getAsset(bannerImageRef).toString() : null;
 
@@ -42,24 +50,22 @@ function InfoPagePreview({ entry, getAsset }) {
         image: showImage ? bannerImage : null,
     };
 
-    !!components &&
-        components.forEach(component => {
-            const { image: cImage = null, imageOne = null, imageTwo = null, profilePic = null, articles } = component;
-            component.id = uuid.v1();
+    components.forEach(component => {
+        const { image: cImage = null, imageOne = null, imageTwo = null, profilePic = null, articles = [] } = component;
+        component.id = uuid.v1();
 
-            !!cImage && (component.image = getAsset(cImage).toString());
-            !!imageOne && (component.imageOne = getAsset(imageOne).toString());
-            !!imageTwo && (component.imageTwo = getAsset(imageTwo).toString());
-            !!profilePic && (component.profilePic = getAsset(profilePic).toString());
+        component.image = cImage ? getAsset(cImage).toString() : cImage;
+        component.imageOne = imageOne ? getAsset(imageOne).toString() : imageOne;
+        component.imageTwo = imageTwo ? getAsset(imageTwo).toString() : imageTwo;
+        component.profilePic = profilePic ? getAsset(profilePic).toString() : profilePic;
 
-            !!articles &&
-                articles.forEach(article => {
-                    const { image: aImage = null } = article;
-                    article.id = uuid.v1();
+        articles.forEach(article => {
+            const { image: aImage = null } = article;
+            article.id = uuid.v1();
 
-                    !!aImage && (article.image = getAsset(aImage).toString());
-                });
+            !!aImage && (article.image = getAsset(aImage).toString());
         });
+    });
 
     const companyInfo = {};
     const headerProps = {
@@ -73,16 +79,17 @@ function InfoPagePreview({ entry, getAsset }) {
     const [footerLinks] = rawFooterLinks || {};
     const { showImages: showFooterImages } = footerLinks || {};
 
-    footerLinks &&
-        (footerLinks.links = [...Array(3)].map((v, k) => {
-            return {
-                showImages: showFooterImages,
-                link: '/',
-                title: `Link ${k + 1}`,
-                image: { image: '/uploads/icon.black.png' },
-                introduction: { text: 'Introduction...' },
-            };
-        }));
+    footerLinks.links = footerLinks
+        ? [...Array(3)].map((v, k) => {
+              return {
+                  showImages: showFooterImages,
+                  link: '/',
+                  title: `Link ${k + 1}`,
+                  image: { image: '/uploads/icon.black.png' },
+                  introduction: { text: 'Introduction...' },
+              };
+          })
+        : footerLinks;
 
     return (
         <Provider>
