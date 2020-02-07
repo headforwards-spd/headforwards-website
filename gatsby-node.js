@@ -108,7 +108,7 @@ function createAllJobs(createPage, { nodes: jobs = [] }) {
     jobs.forEach(({ id, path }) => {
         promises.push(
             createPage({
-                path: `/careers/jobs/${path}`,
+                path: `/careers/jobs/${path}/`,
                 component: resolve(`src/templates/job-page.js`),
                 context: { id },
             })
