@@ -136,7 +136,7 @@ export default class JobsPageTemplate extends Component {
         return (
             <>
                 {components && (
-                    <section className={styles.components}>
+                    <section>
                         {!!components &&
                             components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
                     </section>
