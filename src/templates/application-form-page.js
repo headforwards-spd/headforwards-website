@@ -23,7 +23,6 @@ function ApplicationFormPage(props) {
     const headerProps = {
         title: 'Application Form',
         subtitle,
-        introduction: subtitle,
     };
 
     return (

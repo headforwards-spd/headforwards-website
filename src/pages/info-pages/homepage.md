@@ -14,7 +14,7 @@ introduction:
 
 
     Being true to the principles of an Agile methodology brings benefits to both
-    our clients and the people who work in our business.
+    their clients and the people who work in their business.
 sections:
   - components:
       - content:
@@ -34,7 +34,7 @@ sections:
             name: Craig Girvan
             profilePic: null
             quote: >-
-              If something changes in our clients world, they've got to adapt,
+              If something changes in our client's world, they've got to adapt,
               they've got to look for a new competitive advantage in their
               software. 
             type: quote-component

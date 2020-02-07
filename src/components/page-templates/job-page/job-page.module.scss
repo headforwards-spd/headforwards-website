@@ -51,13 +51,17 @@
     @include fontMedium;
     @include button-link;
     margin: $component-gutter-sm/2 0;
-
     display: inline-block;
     @media (min-width: $screen-md) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: calc(37.5% - #{$column-gutter-md/2});
         margin: $component-gutter-md/2 0 $component-gutter-md 50%;
         transform: translateX(-50%);
     }
     @media (min-width: $screen-lg) {
+        width: calc(25% - #{$column-gutter-lg/2});
         margin: $component-gutter-lg/2 0 $component-gutter-lg 50%;
         transform: translateX(-50%);
     }

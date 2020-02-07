@@ -101,8 +101,8 @@
             &.hasSubTitle {
                 h1, p {
                     @include headingFontLarge;
+                    line-height: 1.15;
                     margin-bottom: 0;
-                    line-height: 1;
                 }
             }
         }

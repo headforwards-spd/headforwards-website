@@ -3,6 +3,7 @@ import React from 'react';
 
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import Link from '../../page-layout/link/link.component';
 import JobSummaryComponent from '../jobs-page/job-summary.component';
 import styles from './info-page.module.scss';
 
@@ -15,17 +16,23 @@ InfoPageTemplate.propTypes = {
     }),
     components: arrayOf(PageComponentPropType),
     jobs: arrayOf(any),
+    careers: shape({
+        applicationForm: string,
+    }),
 };
 
 InfoPageTemplate.defaultProps = {
     introduction: null,
     components: null,
     jobs: null,
+    careers: null,
 };
 
-function InfoPageTemplate({ introduction, components = [], jobs }) {
+function InfoPageTemplate({ introduction, components = [], jobs, careers }) {
     const { show, text } = introduction;
     const hasJobs = !!(jobs && jobs.length);
+    const { applicationForm } = careers || {};
+    const hasApplicationForm = !!applicationForm;
 
     return (
         <>
@@ -35,6 +42,11 @@ function InfoPageTemplate({ introduction, components = [], jobs }) {
                     {!!components &&
                         components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
                 </section>
+            )}
+            {hasApplicationForm && (
+                <Link to={`/careers/${applicationForm}/application-form/`} className={styles.apply}>
+                    Apply Online
+                </Link>
             )}
             {hasJobs && (
                 <section>

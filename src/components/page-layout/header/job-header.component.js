@@ -28,9 +28,9 @@ export default class JobHeader extends StickyNav {
                         slug: string.isRequired,
                     })
                 ),
-            }).isRequired,
-            salary: string.isRequired,
-            tags: arrayOf(string).isRequired,
+            }),
+            salary: string,
+            tags: arrayOf(string),
             path: string.isRequired,
         }),
         menu: arrayOf(MenuItemPropType).isRequired,
@@ -71,7 +71,7 @@ export default class JobHeader extends StickyNav {
                         <h1>{parseHtml(title)}</h1>
                         <p>{subtitle}</p>
                     </section>
-                    <section className={styles.jobDetails}>
+                    <section>
                         <dl>
                             {salary && (
                                 <>
