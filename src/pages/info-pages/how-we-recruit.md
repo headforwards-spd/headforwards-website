@@ -10,7 +10,7 @@ introduction:
   show: false
   text: >-
     Headforwards was founded on the principle of recruiting the right team for
-    each client.
+    each client
 components:
   - content:
       - text: >-
