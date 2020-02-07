@@ -31,19 +31,20 @@ function InfoPageTemplate({ introduction, components = [], jobs }) {
         <>
             {show && <IntroductionComponent introduction={text} />}
             {components && (
-                <section className={styles.components}>
+                <section>
                     {!!components &&
                         components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
                 </section>
             )}
             {hasJobs && (
-                <section className={styles.jobs}>
+                <section>
                     <h2>Current job availability</h2>
                     <ul className={styles.jobsList}>
-                        {jobs.map(job => <li key={job.path}>
+                        {jobs.map(job => (
+                            <li key={job.path}>
                                 <JobSummaryComponent {...job} />
                             </li>
-                        )}
+                        ))}
                     </ul>
                 </section>
             )}

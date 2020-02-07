@@ -11,6 +11,7 @@ const contactPropTypes = {
     phone: string,
     address: string,
     registeredAddress: string,
+    mapUrl: string,
 };
 
 export default ContactTemplate;
@@ -22,10 +23,11 @@ ContactTemplate.defaultProps = {
     jobsEmail: '',
     phone: '',
     address: '',
-    registeredAddress: string,
+    registeredAddress: '',
+    mapUrl: null,
 };
 
-function ContactTemplate({ companyName, email, jobsEmail, phone, address, registeredAddress }) {
+function ContactTemplate({ companyName, mapUrl, email, jobsEmail, phone, address, registeredAddress }) {
     const formattedAddress = address.split(',');
     const formattedRegAddress = registeredAddress.split(',');
 
@@ -50,18 +52,20 @@ function ContactTemplate({ companyName, email, jobsEmail, phone, address, regist
                         <dd>{jobsEmail}</dd>
                     </dl>
                 </address>
-                <ContactForm formName="contact" className={styles.contactForm} />
+                <ContactForm formName="contact" />
             </section>
-            <section className={styles.map}>
-                <iframe
-                    title={companyName}
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10209.86529296384!2d-5.277547317504885!3d50.22719254513101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2e9abde5167232ca!2sHeadforwards!5e0!3m2!1sen!2suk!4v1523621792407"
-                    width="100%"
-                    height="100%"
-                    frameBorder="0"
-                    allowFullScreen
-                />
-            </section>
+            {mapUrl && (
+                <section className={styles.map}>
+                    <iframe
+                        title={companyName}
+                        src={mapUrl}
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        allowFullScreen
+                    />
+                </section>
+            )}
             <section className={styles.office}>
                 <section>
                     <h2>Recruitment</h2>

@@ -11,6 +11,11 @@ const formFieldPropTypes = {
     name: string.isRequired,
     label: string,
     required: bool,
+    className: string,
+};
+const checkboxPropTypes = {
+    ...formFieldPropTypes,
+    isGroup: bool,
 };
 
 Input.propTypes = { ...formFieldPropTypes };
@@ -65,8 +70,7 @@ export function Textarea({ label, required: isRequired, className, ...props }) {
         </label>
     );
 }
-
-Checkbox.propTypes = { ...formFieldPropTypes, isGroup: bool };
+Checkbox.propTypes = { ...checkboxPropTypes };
 Checkbox.defaultProps = {
     label: null,
     required: false,
@@ -95,7 +99,7 @@ export function Checkbox({ label, required: isRequired, isGroup, ...props }) {
     );
 }
 
-Radio.propTypes = { ...formFieldPropTypes, isGroup: bool };
+Radio.propTypes = { ...checkboxPropTypes };
 Radio.defaultProps = {
     label: null,
     required: false,
@@ -120,8 +124,15 @@ export function Radio({ label, required: isRequired, isGroup, ...props }) {
     );
 }
 
-File.propTypes = {};
-File.defaultProps = {};
+File.propTypes = {
+    ...formFieldPropTypes,
+    name: string,
+    placeholder: string,
+};
+File.defaultProps = {
+    name: null,
+    placeholder: null,
+};
 export function File({ label, required: isRequired, ...props }) {
     const [field, meta, actions] = useField(props);
     const { name, placeholder } = props;

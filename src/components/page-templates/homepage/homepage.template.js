@@ -8,6 +8,7 @@ import IntroductionComponent from '../../page-layout/introduction/introduction.c
 import styles from './homepage.module.scss';
 
 const homePageSectionPropTypes = {
+    isFirstSection: bool,
     isRightImage: bool,
     components: arrayOf(PageComponentPropType),
     isPostit: bool,
@@ -39,7 +40,7 @@ function HomepageTemplate({ introduction, sections }) {
             {showIntroduction && <IntroductionComponent introduction={introText} className={styles.intro} />}
             {!!sections &&
                 sections.map(({ id, ...section }, index) => (
-                    <HomePageSection key={id} {...section} first={index === 0} />
+                    <HomePageSection key={id} {...section} isFirstSection={index === 0} />
                 ))}
         </>
     );
@@ -47,6 +48,7 @@ function HomepageTemplate({ introduction, sections }) {
 
 HomePageSection.propTypes = homePageSectionPropTypes;
 HomePageSection.defaultProps = {
+    isFirstSection: false,
     isRightImage: false,
     components: [],
     isPostit: false,
@@ -55,7 +57,7 @@ HomePageSection.defaultProps = {
     imageSquare: null,
 };
 
-function HomePageSection({ first, components, isPostit, isRightImage, image, imagePostit, imageSquare }) {
+function HomePageSection({ isFirstSection, components, isPostit, isRightImage, image, imagePostit, imageSquare }) {
     const hasImage = !!image || !!imagePostit || imageSquare;
     const wrapperStyles = [
         styles.section,
@@ -64,7 +66,7 @@ function HomePageSection({ first, components, isPostit, isRightImage, image, ima
     ].join(' ');
 
     const [{ title }] = components || [{}];
-    const firstClass = first ? styles.first : '';
+    const firstClass = isFirstSection ? styles.first : '';
 
     return (
         <section className={`${wrapperStyles} ${firstClass}`}>
@@ -73,9 +75,7 @@ function HomePageSection({ first, components, isPostit, isRightImage, image, ima
             )}
             <section className={styles.components}>
                 {!!components &&
-                    components.map(({ id, ...component }) => (
-                        <PageComponent key={id} {...component} title={title} />
-                    ))}
+                    components.map(({ id, ...component }) => <PageComponent key={id} {...component} title={title} />)}
             </section>
         </section>
     );

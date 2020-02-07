@@ -19,23 +19,22 @@ function Markdown({ source = '', truncate, maxLength }) {
 
     const fancyText = text ? text.replace(/ ([^ ]*)$/gm, '\xa0$1') : '';
     if (!fancyText) {
-        return null;
+        return <></>;
     }
 
     return !truncate ? <ReactMarkdown source={fancyText} /> : <p>{fancyText}</p>;
 }
 
-function truncateString(string = '', maxLength = 150, ellipsis = `\u2026`) {
-    // `\u2026`) {
-
-    if (!string || string.length <= maxLength) {
-        return string;
+function truncateString(text = '', maxLength = 150, ellipsis = `\u2026`) {
+    if (!text || text.length <= maxLength) {
+        return text;
     }
-    const truncatedString = string
+
+    const truncatedString = text
         .replace(/\n/gm, ' ')
         .replace(/\s+/gm, ' ')
         .trim()
-        .substr(0, string.lastIndexOf(' ', maxLength));
+        .substr(0, text.lastIndexOf(' ', maxLength));
 
     return `${truncatedString}${ellipsis}`.replace(/\s*[–.,:;].$/gm, ellipsis);
 }

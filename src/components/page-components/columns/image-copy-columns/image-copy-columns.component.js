@@ -1,11 +1,9 @@
 import { any, arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import { ImageSrcPropType } from '../../../page-layout/image/image.component';
+import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import Link from '../../../page-layout/link/link.component';
-import SingularImage from '../../images/singular/singular-image.component';
-import Markdown from '../../markdown';
-import Quote from '../../quote/quote.component';
+import ContentComponent from '../../content.component';
 import styles from './image-copy-columns.module.scss';
 
 const imageCopyColumnsPropTypes = {
@@ -35,31 +33,18 @@ function ImageCopyColumns({ image, isRightImage, title, content, link }) {
 
     return (
         <section className={`${styles.columnsWrapper} ${imageClass} ${styles.isImage}`}>
-            <SingularImage image={image} ratio="100%" alt={title} className={styles.image} />
+            <Image image={image} ratio="100%" alt={title} className={styles.image} />
             <section className={styles.copy}>
                 {title && <h2>{title}</h2>}
                 {content && (
                     <section>
-                        {content.map(({ id, type, ...item }) => <ContentComponent key={id} type={type} {...item} />)}
+                        {content.map(({ id, type, ...item }) => (
+                            <ContentComponent key={id} type={type} {...item} />
+                        ))}
                     </section>
                 )}
                 {hasLink && <Link to={link.link}>{link.linkText}</Link>}
             </section>
         </section>
     );
-}
-ContentComponent.propTypes = {
-    type: string.isRequired,
-};
-function ContentComponent({ type, ...item }) {
-
-    const { text } = item || {};
-    switch (type) {
-        case 'markdown-component':
-            return <Markdown source={text} />;
-        case 'quote-component':
-            return <Quote {...item} fullWidth />;
-        default:
-            return null;
-    }
 }

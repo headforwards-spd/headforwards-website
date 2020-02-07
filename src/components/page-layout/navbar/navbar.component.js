@@ -23,7 +23,7 @@ class Navbar extends Component {
     render() {
         const { appContainer } = this.props;
         const { menuIsOpen } = appContainer.state;
-        const activeClass = menuIsOpen ? 'is-active' : '';
+        const activeClass = menuIsOpen ? 'menu-open' : '';
         const { menuClick } = this;
         const { menu, hasBackground, companyInfo } = this.props;
 

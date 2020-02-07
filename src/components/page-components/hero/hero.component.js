@@ -1,8 +1,7 @@
 import { any, arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import Markdown from '../markdown';
-import Quote from '../quote/quote.component';
+import ContentComponent from '../content.component';
 import styles from './hero.module.scss';
 
 const heroPropTypes = {
@@ -31,26 +30,10 @@ function Hero({ title, content, isTwoColumns, className }) {
             {content && (
                 <section>
                     {content.map(({ id, ...item }) => (
-                        <HeroContentComponent key={id} {...item} />
+                        <ContentComponent key={id} {...item} />
                     ))}
                 </section>
             )}
         </section>
     );
-}
-
-HeroContentComponent.propTypes = {
-    type: string.isRequired,
-};
-function HeroContentComponent({ type, ...item }) {
-
-    const { text } = item || {};
-    switch (type) {
-        case 'markdown-component':
-            return <Markdown source={text} />;
-        case 'quote-component':
-            return <Quote {...item} fullWidth />;
-        default:
-            return null;
-    }
 }
