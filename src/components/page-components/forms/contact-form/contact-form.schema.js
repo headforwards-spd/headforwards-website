@@ -1,4 +1,7 @@
+import React from 'react';
 import { string } from 'yup';
+
+import Link from '../../../page-layout/link/link.component';
 
 export const messages = {
     success: 'Thank you for your message. We will respond to you as soon as possible.',
@@ -62,7 +65,15 @@ export const schema = {
     privacy: {
         field: {
             name: 'privacy',
-            label: 'I agree to the terms outlined in the privacy policy.',
+            label: (
+                <>
+                    I agree to the terms outlined in the{' '}
+                    <Link to="/privacy-notice/" target="_blank">
+                        privacy policy
+                    </Link>
+                    .
+                </>
+            ),
             value: 'I agree to the terms outlined in the privacy policy.',
             type: 'checkbox',
             required: true,
