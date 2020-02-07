@@ -105,17 +105,21 @@ function createAllPages(createPage, { nodes: pages = [] }) {
 function createAllJobs(createPage, { nodes: jobs = [] }) {
     const promises = [];
 
-    jobs.forEach(({ id, path }) => {
+    jobs.forEach(({ id, path, title = '' }) => {
+        const isRegister = title.toLowerCase().includes('register');
+        const applyPath = !isRegister ? `jobs/${path}` : 'register-interest';
+
+        !isRegister &&
+            promises.push(
+                createPage({
+                    path: `/careers/jobs/${path}/`,
+                    component: resolve(`src/templates/job-page.js`),
+                    context: { id },
+                })
+            );
         promises.push(
             createPage({
-                path: `/careers/jobs/${path}/`,
-                component: resolve(`src/templates/job-page.js`),
-                context: { id },
-            })
-        );
-        promises.push(
-            createPage({
-                path: `/careers/jobs/${path}/application-form/`,
+                path: `/careers/${applyPath}/application-form/`,
                 component: resolve(`src/templates/application-form-page.js`),
                 context: { id },
             })
@@ -224,6 +228,7 @@ function getData(graphql) {
             jobs: allRecruiteeOffer(sort: { fields: created, order: DESC }) {
                 nodes {
                     id
+                    title
                     type
                     path
                 }

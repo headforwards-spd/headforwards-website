@@ -2,7 +2,7 @@ import { faCheckCircle, faSpinner, faTimesCircle } from '@fortawesome/free-solid
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import { Form, Formik } from 'formik';
-import { string } from 'prop-types';
+import { arrayOf, bool, number, shape, string } from 'prop-types';
 import React, { Component } from 'react';
 import * as Yup from 'yup';
 
@@ -19,7 +19,19 @@ export default class ApplicationForm extends Component {
         options_photo: string,
         options_cover_letter: string,
         options_cv: string,
-        open_questions: string,
+        open_questions: arrayOf(
+            shape({
+                id: number.isRequired,
+                kind: string.isRequired,
+                required: bool.isRequired,
+                open_question_options: arrayOf(
+                    shape({
+                        id: number.isRequired,
+                        body: string.isRequired,
+                    })
+                ).isRequired,
+            })
+        ),
     };
 
     static defaultProps = {

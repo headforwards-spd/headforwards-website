@@ -85,7 +85,10 @@ export const query = graphql`
         tags: allRecruiteeOffer {
             distinct(field: tags)
         }
-        jobNodes: allRecruiteeOffer(sort: { fields: position, order: DESC }) {
+        jobNodes: allRecruiteeOffer(
+            sort: { fields: position, order: DESC }
+            filter: { title: { regex: "/^((?!register).)*$/i" } }
+        ) {
             nodes {
                 id
                 title

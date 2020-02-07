@@ -54,8 +54,8 @@ Layout.propTypes = {
         text: string,
     }),
     jobDetails: shape({
-        salary: string.isRequired,
-        tags: arrayOf(string).isRequired,
+        salary: string,
+        tags: arrayOf(string),
         path: string.isRequired,
     }),
     footerLinks: shape({

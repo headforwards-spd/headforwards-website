@@ -1,7 +1,7 @@
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useField } from 'formik';
-import { bool, string } from 'prop-types';
+import { bool, node, string } from 'prop-types';
 import React from 'react';
 
 import styles from './contact-form/contact-form.module.scss';
@@ -9,7 +9,7 @@ import FormError from './contact-form/form-error.component';
 
 const formFieldPropTypes = {
     name: string.isRequired,
-    label: string,
+    label: node,
     required: bool,
     className: string,
 };

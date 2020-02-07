@@ -2,6 +2,8 @@ import { bool, number, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
+import preventOrphans from '../../lib/prevent-orphans';
+
 export default Markdown;
 
 Markdown.propTypes = {
@@ -15,9 +17,9 @@ Markdown.defaultProps = {
     maxLength: 125,
 };
 function Markdown({ source = '', truncate, maxLength }) {
-    const text = truncate ? truncateString(source, maxLength) : source.trim();
+    const text = truncate ? truncateString(source, maxLength) : source;
 
-    const fancyText = text ? text.replace(/ ([^ ]*)$/gm, '\xa0$1') : '';
+    const fancyText = text ? preventOrphans(text) : '';
     if (!fancyText) {
         return <></>;
     }

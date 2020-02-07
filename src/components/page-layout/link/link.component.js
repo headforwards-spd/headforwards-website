@@ -4,6 +4,7 @@ import React from 'react';
 
 const linkPropTypes = {
     to: string.isRequired,
+    target: string,
     children: oneOfType([arrayOf(node), node, string]),
 };
 
@@ -11,13 +12,17 @@ export default Link;
 export const LinkPropType = shape(linkPropTypes);
 
 Link.propTypes = linkPropTypes;
-Link.defaultProps = { children: null };
+Link.defaultProps = {
+    target: null,
+    children: null,
+};
 function Link({ to, children, ...props }) {
     if (!to) {
         return null;
     }
+    const { target } = props;
 
-    const isExternalLink = to.match(/^(?:tel:|(?:(?:http(?:s)?:)?\/\/|mailto:)[^.]+\.\S+)/g);
+    const isExternalLink = target || to.match(/^(?:tel:|(?:(?:http(?:s)?:)?\/\/|mailto:)[^.]+\.\S+)/g);
 
     return isExternalLink ? (
         <a href={to} {...props}>
