@@ -1,13 +1,13 @@
 # Expired Jobs
 /careers/jobs/register-interest-redruth/* /careers/register-interest/:splat 301
-/careers/jobs/:job/*	                  /careers/jobs	                    410
+/careers/jobs/:job/*	                  /careers/jobs 	                410
 
 
 # careers.headforwards.com
 /o/:job/c/new	                     https://www.headforwards.com/careers/jobs/:job/application-form 301
 /o/:job	                             https://www.headforwards.com/careers/jobs/:job 301
-https://www.careers.headforwards.com /careers           301
-https://careers.headforwards.com	 /careers           301
+https://www.careers.headforwards.com/* /careers/:splat    301
+https://careers.headforwards.com/*	   /careers/:splat    301
 
 
 # Netlify
@@ -38,6 +38,7 @@ https://headforwards-website2.netlify.com/* https://www.headforwards.com/:splat 
 
 
 # WordPress Legal Pages
+/privacy-policy /privacy-notice	301
 # /privacy-notice	/privacy-notice	200
 # /terms-of-use	/terms-of-use	200
 /contactus	/contact	301
