@@ -1,12 +1,12 @@
 import { faCheckCircle, faSpinner, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon }                         from '@fortawesome/react-fontawesome';
-import axios                                       from 'axios';
-import { Form, Formik }                            from 'formik';
-import { arrayOf, bool, number, shape, string }    from 'prop-types';
-import React, { Component }                        from 'react';
-import * as Yup                                    from 'yup';
-import { applicationFormSubmitEvent }              from '../../../../lib/datalayer-event'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import axios from 'axios';
+import { Form, Formik } from 'formik';
+import { arrayOf, bool, number, shape, string } from 'prop-types';
+import React, { Component } from 'react';
+import * as Yup from 'yup';
 
+import { applicationFormSubmitEvent } from '../../../../lib/datalayer-event';
 import { Checkbox, File, Input, Textarea } from '../form-field.component';
 import styles from './application-form.module.scss';
 import { messages, schema } from './application-form.schema';
