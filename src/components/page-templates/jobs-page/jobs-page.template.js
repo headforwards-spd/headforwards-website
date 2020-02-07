@@ -146,7 +146,7 @@ export default class JobsPageTemplate extends Component {
                         <ul className={styles.selectedTags}>
                             {selectedTags.map(({ label, slug }) => (
                                 <li key={slug}>
-                                    <label htmlFor={slug}>{label}</label>
+                                    <label htmlFor={slugify(label)}>{label}</label>
                                 </li>
                             ))}
                         </ul>
