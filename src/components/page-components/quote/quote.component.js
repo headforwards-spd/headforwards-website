@@ -1,6 +1,7 @@
 import { bool, shape, string } from 'prop-types';
 import React from 'react';
 
+import preventOrphans from '../../../lib/prevent-orphans';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
 import styles from './quote.module.scss';
 
@@ -31,7 +32,7 @@ function Quote({ title, quote, name, jobTitle, profilePic, fullWidth }) {
         <section className={`${styles.blockquoteContainer} ${fullWidthClass}`}>
             {title && <h2>{title}</h2>}
             <blockquote>
-                <p>{quote.trim()}</p>
+                <p>{preventOrphans(quote)}</p>
                 {!!name && (
                     <footer>
                         {!!profilePic && (

@@ -2,6 +2,8 @@ import { bool, number, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
+import preventOrphans from '../../lib/prevent-orphans';
+
 export default Markdown;
 
 Markdown.propTypes = {
@@ -14,28 +16,28 @@ Markdown.defaultProps = {
     truncate: false,
     maxLength: 125,
 };
-function Markdown({ source='', truncate, maxLength }) {
-    const text = truncate ? truncateString(source, maxLength) : source.trim();
+function Markdown({ source = '', truncate, maxLength }) {
+    const text = truncate ? truncateString(source, maxLength) : source;
 
-    const fancyText = text ? text.replace(/ ([^ ]*)$/gm, '\xa0$1') : '';
+    const fancyText = text ? preventOrphans(text) : '';
     if (!fancyText) {
-        return null;
+        return <></>;
     }
 
     return !truncate ? <ReactMarkdown source={fancyText} /> : <p>{fancyText}</p>;
 }
 
-function truncateString(string = '', maxLength = 150, ellipsis = `\u2026`) {
+function truncateString(text = '', maxLength = 150, ellipsis = `\u2026`) {
+    if (!text || text.length <= maxLength) {
+        return text;
+    }
     // `\u2026`) {
 
-    if (!string || string.length <= maxLength) {
-        return string;
-    }
-    const truncatedString = string
+    const truncatedString = text
         .replace(/\n/gm, ' ')
         .replace(/\s+/gm, ' ')
         .trim()
-        .substr(0, string.lastIndexOf(' ', maxLength));
+        .substr(0, text.lastIndexOf(' ', maxLength));
 
     return `${truncatedString}${ellipsis}`.replace(/\s*[–.,:;].$/gm, ellipsis);
 }

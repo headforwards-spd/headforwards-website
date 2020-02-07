@@ -1,12 +1,11 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
 import React, { Component } from 'react';
 
-import Markdown                                              from '../../page-components/markdown';
-import PageComponent, { PageComponentPropType }              from '../../page-components/page-component';
-import Link
-                                                             from '../../page-layout/link/link.component'
+import Markdown from '../../page-components/markdown';
+import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
+import Link from '../../page-layout/link/link.component';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
-import styles                                                from './jobs-page.module.scss';
+import styles from './jobs-page.module.scss';
 
 const slugify = value =>
     value
@@ -177,7 +176,7 @@ export default class JobsPageTemplate extends Component {
                             </li>
                         ))}
                         <li>
-                            <Link to={`/careers/register-interest`} className={styles.job}>
+                            <Link to="/careers/register-interest" className={styles.job}>
                                 <section>
                                     <h2>Register interest</h2>
                                     <button type="button">More details</button>

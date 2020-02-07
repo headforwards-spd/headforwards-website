@@ -105,18 +105,18 @@ function createAllPages(createPage, { nodes: pages = [] }) {
 function createAllJobs(createPage, { nodes: jobs = [] }) {
     const promises = [];
 
-    jobs.forEach(({ id, path, title='' }) => {
-
+    jobs.forEach(({ id, path, title = '' }) => {
         const isRegister = title.toLowerCase().includes('register');
         const applyPath = !isRegister ? path : 'register-interest';
 
-        !isRegister && promises.push(
-            createPage({
-                path: `/careers/jobs/${path}`,
-                component: resolve(`src/templates/job-page.js`),
-                context: { id },
-            })
-        );
+        !isRegister &&
+            promises.push(
+                createPage({
+                    path: `/careers/jobs/${path}`,
+                    component: resolve(`src/templates/job-page.js`),
+                    context: { id },
+                })
+            );
         promises.push(
             createPage({
                 path: `/careers/jobs/${applyPath}/application-form/`,

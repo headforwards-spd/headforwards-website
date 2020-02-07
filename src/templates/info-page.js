@@ -20,7 +20,7 @@ InfoPagePage.propTypes = {
                 components: arrayOf(PageComponentPropType),
                 careers: shape({
                     applicationForm: string,
-                               })
+                }),
             }),
         }),
     }).isRequired,
@@ -39,11 +39,11 @@ function InfoPagePage({ data }) {
         careers,
     };
 
-    const {applicationForm} = careers || {};
+    const { applicationForm } = careers || {};
     const jobDetails = applicationForm ? { path: `/careers/jobs/${applicationForm}`, tags: [] } : null;
 
     return (
-        <Layout {...{...layoutProps, jobDetails}} introduction={introduction} footerLinks={footerLinks}>
+        <Layout {...{ ...layoutProps, jobDetails }} introduction={introduction} footerLinks={footerLinks}>
             <InfoPageTemplate {...pageProps} />
         </Layout>
     );
