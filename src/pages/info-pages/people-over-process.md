@@ -8,7 +8,7 @@ image:
   show: true
 introduction:
   show: false
-  text: Headforwards builds its teams based on each job’s specific needs.
+  text: Headforwards builds its teams based on each job’s specific needs
 components:
   - content:
       - text: >-
