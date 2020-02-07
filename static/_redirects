@@ -38,6 +38,7 @@ https://headforwards-website2.netlify.com/* https://www.headforwards.com/:splat 
 
 
 # WordPress Legal Pages
+/privacy-policy /privacy-notice	301
 # /privacy-notice	/privacy-notice	200
 # /terms-of-use	/terms-of-use	200
 /contactus	/contact	301
