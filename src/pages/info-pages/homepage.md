@@ -14,7 +14,7 @@ introduction:
 
 
     Being true to the principles of an Agile methodology brings benefits to both
-    our clients and the people who work in our business.
+    their clients and the people who work in their business.
 sections:
   - components:
       - content:

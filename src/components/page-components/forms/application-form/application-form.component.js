@@ -1,8 +1,9 @@
 import { faCheckCircle, faSpinner, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
-import { Form, Formik } from 'formik';
-import React, { Component } from 'react';
+import { Form, Formik }                         from 'formik';
+import { arrayOf, bool, number, shape, string } from 'prop-types';
+import React, { Component }                     from 'react';
 import * as Yup from 'yup';
 
 import { Checkbox, File, Input, Textarea } from '../form-field.component';
@@ -11,6 +12,33 @@ import { messages, schema } from './application-form.schema';
 import ApplicationQuestions from './application-questions/applicaton-questions.component';
 
 export default class ApplicationForm extends Component {
+    static propTypes = {
+        jobTitle: string.isRequired,
+        path: string.isRequired,
+        options_phone: string,
+        options_photo: string,
+        options_cover_letter: string,
+        options_cv: string,
+        open_questions: arrayOf(shape({
+            id: number.isRequired,
+            kind: string.isRequired,
+            required: bool.isRequired,
+            open_question_options: arrayOf(shape({
+                id: number.isRequired,
+                body: string.isRequired,
+                                                 })).isRequired
+
+                                      })),
+    };
+
+    static defaultProps = {
+        options_phone: null,
+        options_photo: null,
+        options_cover_letter: null,
+        options_cv: null,
+        open_questions: null,
+    };
+
     state = {
         isSubmitting: false,
         successMessage: null,
@@ -18,7 +46,8 @@ export default class ApplicationForm extends Component {
     };
 
     onSubmit(data, { resetForm }) {
-        const { path, job } = this.props;
+        const { path, jobTitle } = this.props;
+        // eslint-disable-next-line camelcase
         const { name = '', email = '', phone = '', cv = '', cover_letter = '', privacy = '' } = data;
         const questions = Object.keys(data).filter(key => key.startsWith('q-'));
 
@@ -56,12 +85,12 @@ export default class ApplicationForm extends Component {
                 resetForm();
                 this.setState({
                     isSubmitting: false,
-                    successMessage: messages.success(job),
+                    successMessage: messages.success(jobTitle),
                 });
             })
             .catch(({ response }) => {
-                const { data } = response || {};
-                const { error } = data || {};
+                const { data: responseData } = response || {};
+                const { error } = responseData || {};
 
                 const errorMessage = error ? error.join('\n') : messages.error;
 
@@ -80,6 +109,10 @@ export default class ApplicationForm extends Component {
             options_cv: cvOptions,
             open_questions: questions,
         } = this.props;
+
+        console.log({
+            phoneOptions, photoOptions, coverLetterOptions, cvOptions, questions,
+                    });
 
         const showPhone = phoneOptions !== 'off';
         const phoneRequired = phoneOptions === 'required';

@@ -3,9 +3,8 @@ import React from 'react';
 
 import { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import Link from '../../../page-layout/link/link.component';
-import Markdown from '../../markdown';
+import ContentComponent from '../../content.component';
 import Postit from '../../postit/postit.component';
-import Quote from '../../quote/quote.component';
 import styles from './image-copy-columns.module.scss';
 
 const postitCopyColumnsPropTypes = {
@@ -41,11 +40,8 @@ function PostitCopyColumns({ image, isRightImage, title, content, link }) {
                 {title && <h2>{title}</h2>}
                 {content && (
                     <section>
-                        {content.map(({ type, ...item }) => (
-                            <>
-                                {type === 'markdown-component' && <Markdown source={item.text} />}
-                                {type === 'quote-component' && <Quote {...item} fullWidth />}
-                            </>
+                        {content.map(({ id, type, ...item }) => (
+                            <ContentComponent key={id} type={type} {...item} />
                         ))}
                     </section>
                 )}

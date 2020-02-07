@@ -1,28 +1,16 @@
 import parseHtml from 'html-react-parser';
 import { arrayOf, shape, string } from 'prop-types';
-import React, { Component } from 'react';
+import React from 'react';
 
+import slugify from '../../../lib/slugify';
 import { CompanyInfoPropType } from '../company-info.prop-type';
 import Link from '../link/link.component';
 import { MenuItemPropType } from '../navbar/menu-item/menu-item.prop-type';
 import Navbar from '../navbar/navbar.component';
 import styles from './job-header.module.scss';
+import StickyNav from './sticky-nav.component';
 
-const slugify = value =>
-    value
-        .replace(/([A-Z])/gm, '-$1')
-        .replace(/([^a-zA-Z0-9])/gm, '-')
-        .replace(/-+/gm, '-')
-        .replace(/^-*(.*)-*$/gm, '$1')
-        .toLowerCase();
-
-export default class JobHeader extends Component {
-    scrollTop = 0;
-
-    debounceTime = 15;
-
-    debounceScroll = null;
-
+export default class JobHeader extends StickyNav {
     static propTypes = {
         title: string.isRequired,
         subtitle: string,
@@ -40,9 +28,9 @@ export default class JobHeader extends Component {
                         slug: string.isRequired,
                     })
                 ),
-            }).isRequired,
-            salary: string.isRequired,
-            tags: arrayOf(string).isRequired,
+            }),
+            salary: string,
+            tags: arrayOf(string),
             path: string.isRequired,
         }),
         menu: arrayOf(MenuItemPropType).isRequired,
@@ -53,17 +41,6 @@ export default class JobHeader extends Component {
         subtitle: null,
     };
 
-    state = {
-        isScrollingUp: false,
-        isScrollingDown: false,
-    };
-
-    componentDidMount() {
-        this.scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        window.addEventListener('scroll', this.handleScroll.bind(this));
-    }
-
     tagList() {
         const { jobDetails } = this.props;
         const { filters, tags } = jobDetails;
@@ -71,30 +48,6 @@ export default class JobHeader extends Component {
         const slugs = tags.map(slugify);
 
         return allowedTags.filter(({ label }) => slugs.includes(slugify(label)));
-    }
-
-    handleScroll() {
-        const { debounceTime, debounceScroll } = this;
-
-        debounceScroll && clearTimeout(debounceScroll);
-        this.debounceScroll = setTimeout(() => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const isAtTop = scrollTop < 5;
-            const isNearTop = scrollTop < 200;
-
-            const { isScrollingUp, isScrollingDown } = this.state;
-
-            const isScrollingUpNext = scrollTop < this.scrollTop && (!isNearTop || isScrollingUp);
-            const isScrollingDownNext = scrollTop > this.scrollTop && (!isNearTop || isScrollingDown);
-
-            if (isAtTop && (isScrollingUp || isScrollingDown)) {
-                this.setState({ isScrollingUp: false, isScrollingDown: false });
-            } else if (isScrollingUp !== isScrollingUpNext || isScrollingDown !== isScrollingDownNext) {
-                this.setState({ isScrollingUp: isScrollingUpNext, isScrollingDown: isScrollingDownNext });
-            }
-
-            this.scrollTop = scrollTop;
-        }, debounceTime);
     }
 
     render() {
@@ -105,9 +58,7 @@ export default class JobHeader extends Component {
             hasBackground: false,
         };
 
-        const { isScrollingUp, isScrollingDown } = this.state;
-
-        const scrollingClass = isScrollingUp ? styles.isScrollingUp : isScrollingDown ? styles.isScrollingDown : '';
+        const scrollingClass = this.getScrollingClass();
 
         const { salary, path } = jobDetails;
         const tags = this.tagList();
@@ -120,7 +71,7 @@ export default class JobHeader extends Component {
                         <h1>{parseHtml(title)}</h1>
                         <p>{subtitle}</p>
                     </section>
-                    <section className={styles.jobDetails}>
+                    <section>
                         <dl>
                             {salary && (
                                 <>

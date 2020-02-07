@@ -1,17 +1,19 @@
-import { graphql, useStaticQuery } from 'gatsby';
 import { bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import Markdown from '../../page-components/markdown';
-import Postit from '../../page-components/postit/postit.component';
-import Image from '../../page-layout/image/image.component';
-import Link from '../../page-layout/link/link.component';
-import styles from './index-page.module.scss';
+import { ImageSrcPropType } from '../../page-layout/image/image.component';
+import IndexArticle from './index-article.component';
+import IndexPostit from './index-postit.component';
 
 const pageLinkPropTypes = {
     link: string,
     linkText: string,
-    page: {},
+    page: shape({
+        frontmatter: shape({
+            introduction: shape({ text: string }),
+            image: shape({ image: ImageSrcPropType }),
+        }),
+    }),
     isPostit: bool,
 };
 
@@ -22,50 +24,22 @@ PageLink.propTypes = pageLinkPropTypes;
 PageLink.defaultProps = {
     link: '',
     linkText: '',
-    page: {},
+    page: null,
     isPostit: false,
 };
 
-function PageLink({ isPostit, link, linkText, page }) {
+function PageLink({ isPostit, link, linkText: title, page }) {
     const { frontmatter } = page || {};
-    const { introduction, image } = frontmatter || {};
-    const { image: introImage } = image || {};
-    const { text: introText } = introduction || {};
+    const { introduction: introductionObject, image: imageObject } = frontmatter || {};
+    const { image } = imageObject || {};
+    const { text: introduction } = introductionObject || {};
 
-    const { logo } = useStaticQuery(graphql`
-        query {
-            logo: file(name: { eq: "icon.white" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100, maxHeight: 100, quality: 85) {
-                        ...GatsbyImageSharpFluid_withWebp_noBase64
-                    }
-                }
-            }
-        }
-    `);
+    const pageLinkProps = {
+        link,
+        title,
+        image,
+        introduction,
+    };
 
-    return !isPostit ? (
-        <article className={styles.page}>
-            <Link to={link}>
-                <h2>{linkText}</h2>
-                <section>
-                    {introImage && <Image image={introImage} alt={linkText} />}
-                    {introImage && introText && (
-                        <section className={styles.introduction}>
-                            <Image image={logo} alt={linkText} className={styles.logo} />
-                            <Markdown source={introText} truncate />
-                        </section>
-                    )}
-                </section>
-            </Link>
-        </article>
-    ) : (
-        <Postit className={`${styles.postit}`}>
-            <Link to={link}>
-                <h2>{linkText}</h2>
-                <Markdown source={introText} truncate />
-                <Link to={link}>Read more</Link>
-            </Link>
-        </Postit>
-    );
+    return !isPostit ? <IndexArticle {...pageLinkProps} /> : <IndexPostit {...pageLinkProps} />;
 }

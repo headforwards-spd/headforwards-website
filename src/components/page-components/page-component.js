@@ -2,6 +2,7 @@ import { bool, oneOfType, string } from 'prop-types';
 import React from 'react';
 
 import { ImageSrcPropType } from '../page-layout/image/image.component';
+import Markdown from '../page-layout/markdown';
 import ArticleColumns, { ArticleColumnsPropType } from './columns/article-columns/article-columns.component';
 import BlogPostColumns, { BlogPostColumnsPropType } from './columns/blog-post-columns/blog-post-columns.component';
 import ImageCopyColumns, { ImageCopyColumnsPropType } from './columns/image-copy-columns/image-copy-columns.component';
@@ -12,7 +13,6 @@ import ContentSlider, { ContentSliderPropType } from './content-slider/content-s
 import Hero, { HeroPropType } from './hero/hero.component';
 import FullWidthImage, { FullWidthImageSrcPropType } from './images/full-width/full-width-image.component';
 import TwoImages, { TwoImagesPropType } from './images/two/two-images.component';
-import Markdown from './markdown';
 import Quote, { QuotePropType } from './quote/quote.component';
 
 const pageComponentPropTypes = {

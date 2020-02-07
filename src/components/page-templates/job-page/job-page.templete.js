@@ -1,8 +1,8 @@
 import { string } from 'prop-types';
 import React from 'react';
 
-import Markdown from '../../page-components/markdown';
 import Link from '../../page-layout/link/link.component';
+import Markdown from '../../page-layout/markdown';
 import styles from './job-page.module.scss';
 
 export default JobPageTemplate;

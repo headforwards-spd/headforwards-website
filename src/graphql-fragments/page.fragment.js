@@ -36,6 +36,7 @@ export const PageFragment = graphql`
                 type
                 title
                 content {
+                    id
                     type
                     text
                     quote
@@ -160,6 +161,7 @@ export const PageFragment = graphql`
                 link2
                 link3
                 page1 {
+                    id
                     frontmatter {
                         title
                         introduction {
@@ -178,6 +180,7 @@ export const PageFragment = graphql`
                     }
                 }
                 page2 {
+                    id
                     frontmatter {
                         title
                         introduction {
@@ -196,6 +199,7 @@ export const PageFragment = graphql`
                     }
                 }
                 page3 {
+                    id
                     frontmatter {
                         title
                         introduction {

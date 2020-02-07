@@ -38,23 +38,23 @@ function InfoPageTemplate({ introduction, components = [], jobs, careers }) {
         <>
             {show && <IntroductionComponent introduction={text} />}
             {components && (
-                <section className={styles.components}>
+                <section>
                     {!!components &&
                         components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
                 </section>
             )}
             {hasApplicationForm && (
-                <Link to={`/careers/jobs/${applicationForm}/application-form/`} className={styles.apply}>
+                <Link to={`/careers/${applicationForm}/application-form/`} className={styles.apply}>
                     Apply Online
                 </Link>
             )}
             {hasJobs && (
-                <section className={styles.jobs}>
+                <section>
                     <h2>Current job availability</h2>
                     <ul className={styles.jobsList}>
-                        {jobs.map(({ id: key, ...job }) => (
-                            <li>
-                                <JobSummaryComponent key={key} {...job} />
+                        {jobs.map(job => (
+                            <li key={job.path}>
+                                <JobSummaryComponent {...job} />
                             </li>
                         ))}
                     </ul>

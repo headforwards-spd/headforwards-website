@@ -1,0 +1,86 @@
+@import "../../../scss/variables";
+
+.isScrollingUp, .isScrollingDown {
+
+    > nav:not(:global(.menu-open)) {
+        transition: transform $transitionTime ease;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background-color: white;
+    }
+}
+
+.isScrollingUp nav:not(:global(.menu-open)) {
+    transform: translateY(calc(4em - 3px));
+}
+
+.isScrollingDown nav:not(:global(.menu-open)) {
+    transform: translateY(calc(-100% - 8em));
+}
+
+@media (min-width: $screen-md) {
+
+    .isScrollingUp, &.isScrollingDown {
+
+        > nav:not(:global(.menu-open)) {
+            top: -4.5em;
+
+            &:global(.menu-open) {
+                top: -4.5em;
+            }
+
+            &:after {
+                transform: translateY(50%);
+                opacity: unset;
+            }
+        }
+    }
+
+    .isScrollingUp nav:not(:global(.menu-open)) {
+        transform: translateY(4.5em);
+    }
+
+    .isScrollingDown nav:not(:global(.menu-open)) {
+        transform: translateY(calc(-100% - 9em));
+    }
+}
+
+@media (min-width: $screen-lg) {
+
+    .isScrollingUp, .isScrollingDown {
+
+        > nav:not(:global(.menu-open)) {
+            top: calc(-5em - 2px);
+            background: rgba(white, 0.975);
+
+            &:after {
+                width: 100vw;
+                margin: 0;
+                left: 0;
+                right: 0;
+            }
+
+            &:global(.menu-open) {
+                top: calc(-5em - 2px);
+            }
+
+            > header > a {
+                background-image: url(/images/headforwards.black.png);
+            }
+
+            > section > ul > li > a {
+                color: black;
+            }
+        }
+    }
+
+    .isScrollingUp nav:not(:global(.menu-open)) {
+        transform: translateY(5em);
+    }
+
+    .isScrollingDown nav:not(:global(.menu-open)) {
+        transform: translateY(calc(-100% - 10em));
+    }
+}

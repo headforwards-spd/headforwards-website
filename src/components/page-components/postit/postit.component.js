@@ -5,7 +5,7 @@ import Image, { ImageSrcPropType } from '../../page-layout/image/image.component
 import styles from './postit.module.scss';
 
 const postitPropTypes = {
-    image: ImageSrcPropType.isRequired,
+    image: ImageSrcPropType,
     alt: string,
     isRightImage: bool,
     className: string,
@@ -16,6 +16,7 @@ export default Postit;
 
 Postit.propTypes = postitPropTypes;
 Postit.defaultProps = {
+    image: null,
     isRightImage: false,
     alt: null,
     className: '',

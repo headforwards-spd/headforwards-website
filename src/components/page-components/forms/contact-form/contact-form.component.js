@@ -43,7 +43,8 @@ export default class ContactForm extends Component {
         axios(options)
             .then(
                 ({ status }) =>
-                    (status === 200 && Promise.resolve()) || Promise.reject(`${status} Error submitting form.`)
+                    (status === 200 && Promise.resolve()) ||
+                    Promise.reject(new Error(`${status} Error submitting form.`))
             )
             .then(() => {
                 this.resetForm();
@@ -53,7 +54,7 @@ export default class ContactForm extends Component {
                     successMessage: messages.success,
                 });
             })
-            .catch(error => {
+            .catch(() => {
                 this.setState({
                     isSubmitting: false,
                     data: null,
@@ -77,7 +78,7 @@ export default class ContactForm extends Component {
         })
             .then(data => this.setState({ data, errorMessage: null, successMessage: null }))
             .then(() => rcRef.current.execute())
-            .catch(error => {
+            .catch(() => {
                 this.resetForm = null;
                 this.setState({ isSubmitting: false, errorMessage: messages.recaptchaError });
             });

@@ -11,10 +11,12 @@ IndexPageTemplate.propTypes = {
         show: bool,
         text: string,
     }).isRequired,
+    isPostits: bool,
     pages: arrayOf(PageLinkPropType),
     components: arrayOf(PageComponentPropType),
 };
 IndexPageTemplate.defaultProps = {
+    isPostits: false,
     pages: null,
     components: null,
 };
@@ -28,11 +30,11 @@ export default function IndexPageTemplate({ isPostits, introduction, pages, comp
         <>
             {show && <IntroductionComponent introduction={text} />}
             <section className={`${styles.pages} ${postitClass}`}>
-                {!!pages && pages.map(page => <PageLink {...page} isPostit={isPostits} />)}
+                {!!pages && pages.map(({ uuid, ...page }) => <PageLink key={uuid} {...page} isPostit={isPostits} />)}
                 {hasArrow && <img src="/images/hf-arrow.svg" alt="arrow" className={styles.page} />}
             </section>
             {components && (
-                <section className={styles.components}>
+                <section>
                     {!!components &&
                         components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
                 </section>

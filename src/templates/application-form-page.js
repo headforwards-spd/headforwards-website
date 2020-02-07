@@ -9,7 +9,7 @@ export default ApplicationFormPage;
 
 ApplicationFormPage.propTypes = {
     data: shape({
-        job: shape({
+        jobTitle: shape({
             title: string.isRequired,
         }),
     }).isRequired,
@@ -22,13 +22,12 @@ function ApplicationFormPage(props) {
 
     const headerProps = {
         title: 'Application Form',
-        subtitle,
-        introduction: subtitle,
+        subtitle
     };
 
     return (
         <Layout {...headerProps}>
-            <ApplicationFormTemplate {...templateProps} introduction={introduction} job={subtitle} />
+            <ApplicationFormTemplate {...templateProps} introduction={introduction} jobTitle={subtitle} />
         </Layout>
     );
 }

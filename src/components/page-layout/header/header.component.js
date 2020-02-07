@@ -1,14 +1,15 @@
 import parseHtml from 'html-react-parser';
 import { arrayOf, bool, string } from 'prop-types';
-import React, { Component } from 'react';
+import React from 'react';
 
 import { CompanyInfoPropType } from '../company-info.prop-type';
 import Image, { ImageSrcPropType } from '../image/image.component';
 import { MenuItemPropType } from '../navbar/menu-item/menu-item.prop-type';
 import Navbar from '../navbar/navbar.component';
 import styles from './header.module.scss';
+import StickyNav from './sticky-nav.component';
 
-export default class Header extends Component {
+export default class Header extends StickyNav {
     scrollTop = 0;
 
     debounceTime = 20;
@@ -30,55 +31,8 @@ export default class Header extends Component {
         image: null,
     };
 
-    state = {
-        isScrollingUp: false,
-        isScrollingDown: false,
-    };
-
-    componentDidMount() {
-        this.scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        window.addEventListener('scroll', this.handleScroll.bind(this));
-    }
-
-    handleScroll() {
-        const { debounceTime, debounceScroll } = this;
-
-        debounceScroll && clearTimeout(debounceScroll);
-        this.debounceScroll = setTimeout(() => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const isAtTop = scrollTop < 2;
-            const isNearTop = scrollTop < 250;
-
-            const { isScrollingUp, isScrollingDown } = this.state;
-
-            const isScrollingUpNext = scrollTop < this.scrollTop && (!isNearTop || isScrollingUp);
-            const isScrollingDownNext = scrollTop > this.scrollTop && (!isNearTop || isScrollingDown);
-
-            switch (true) {
-                case scrollTop === this.scrollTop:
-                    // do nothing
-                    break;
-                case isAtTop && (isScrollingUp || isScrollingDown):
-                    this.setState({ isScrollingUp: false, isScrollingDown: false });
-                    break;
-                case isScrollingUp !== isScrollingUpNext || isScrollingDown !== isScrollingDownNext:
-                    this.setState({ isScrollingUp: isScrollingUpNext, isScrollingDown: isScrollingDownNext });
-                    break;
-                default:
-                // do nothing
-            }
-
-            this.scrollTop = scrollTop;
-        }, debounceTime);
-    }
-
     render() {
         const { isHomePage, title, subtitle, image, menu, companyInfo } = this.props;
-
-        const { isScrollingUp, isScrollingDown } = this.state;
-
-        const scrollingClass = isScrollingUp ? styles.isScrollingUp : isScrollingDown ? styles.isScrollingDown : '';
 
         const { publicURL } = image || {};
         const hasBackground = !!image || !!publicURL;
@@ -87,6 +41,8 @@ export default class Header extends Component {
         isHomePage && (headerStyle += ` ${styles.isHomePage}`);
 
         const titleStyle = subtitle ? styles.hasSubTitle : '';
+
+        const scrollingClass = this.getScrollingClass();
 
         return (
             <header className={`${styles.header} ${headerStyle} ${scrollingClass}`}>

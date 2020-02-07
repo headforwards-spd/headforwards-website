@@ -5,7 +5,6 @@ import { arrayOf, shape, string } from 'prop-types';
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 
-import { ReactComponent as Arrow } from '../../../../static/images/hf-arrow.svg';
 import styles from './content-slider.module.scss';
 import Slide, { SlidePropType } from './slide.component';
 
@@ -38,16 +37,8 @@ export default class ContentSlider extends Component {
             slidesToScroll: 1,
             beforeChange: () => this.setState({ isChanging: true }),
             afterChange: () => this.setState({ isChanging: false }),
-            prevArrow: (
-                <button type="button" className={styles.prevArrow} aria-label="Previous Slide">
-                    <Arrow />
-                </button>
-            ),
-            nextArrow: (
-                <button type="button" className={styles.nextArrow} aria-label="Next Slide">
-                    <Arrow />
-                </button>
-            ),
+            prevArrow: <button type="button" className={styles.prevArrow} aria-label="Previous Slide" />,
+            nextArrow: <button type="button" className={styles.nextArrow} aria-label="Next Slide" />,
         };
 
         const headerClass = isChanging ? 'changing' : '';

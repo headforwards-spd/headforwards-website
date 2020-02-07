@@ -1,5 +1,5 @@
 import { Location } from '@reach/router';
-import React, { Component } from 'react';
+import React from 'react';
 
 import Link from '../../link/link.component';
 import Socials from '../../socials/socials.component';
@@ -8,93 +8,92 @@ import MenuItem from '../menu-item/menu-item.component';
 import styles from '../navbar.module.scss';
 import { menuPropTypes } from './menu.prop-type';
 
-export default class Menu extends Component {
-    static propTypes = menuPropTypes;
+export default Menu;
 
-    static defaultProps = {
-        hasBackground: false,
-        activeClass: null,
-    };
+Menu.propTypes = menuPropTypes;
 
-    render() {
-        const { menuClick, hasBackground, activeClass, menu, companyInfo } = this.props;
-        const { companyName, phone } = companyInfo;
-        const backgroundImg = hasBackground ? 'with-bg' : 'without-bg';
+Menu.defaultProps = {
+    hasBackground: false,
+    activeClass: null,
+};
 
-        return (
-            <Location>
-                {({ location }) => (
-                    <>
-                        <nav className={`${activeClass} ${styles.menu} ${backgroundImg}`}>
-                            <header>
-                                <Link to="/">{companyName}</Link>
-                                <Hamburger
+function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
+    const { companyName, phone } = companyInfo;
+    const backgroundImg = hasBackground ? 'with-bg' : '';
+
+    return (
+        <Location>
+            {({ location }) => (
+                <>
+                    <nav className={`${activeClass} ${styles.menu} ${backgroundImg}`}>
+                        <header>
+                            <Link to="/">{companyName}</Link>
+                            <Hamburger
+                                {...{
+                                    activeClass,
+                                    onClick: menuClick,
+                                }}
+                            />
+                        </header>
+                        <section>
+                            <ul>
+                                <MenuItem
+                                    className={styles.navHomeLink}
                                     {...{
-                                        activeClass,
-                                        onClick: menuClick,
+                                        id: 'nav-home-link',
+                                        showTitle: true,
+                                        location,
+                                        link: '/',
+                                        linkText: 'Home.',
+                                        children: [
+                                            {
+                                                id: 'nav-home-contact-page-link',
+                                                location,
+                                                link: '/contact',
+                                                linkText: 'Contact',
+                                            },
+                                        ],
                                     }}
                                 />
-                            </header>
-                            <section>
-                                <ul>
+                                {menu.map(({ id, ...item }) => (
                                     <MenuItem
-                                        className={styles.navHomeLink}
+                                        key={id}
+                                        {...item}
                                         {...{
-                                            id: 'nav-home-link',
+                                            location,
                                             showTitle: true,
-                                            location,
-                                            link: '/',
-                                            linkText: 'Home.',
-                                            children: [
-                                                {
-                                                    id: 'nav-home-contact-page-link',
-                                                    location,
-                                                    link: '/contact',
-                                                    linkText: 'Contact',
-                                                },
-                                            ],
                                         }}
                                     />
-                                    {menu.map(({ id, ...item }) => (
-                                        <MenuItem
-                                            key={id}
-                                            {...item}
-                                            {...{
-                                                location,
-                                                showTitle: true,
-                                            }}
-                                        />
-                                    ))}
-                                    <MenuItem
-                                        className={styles.navContactLink}
+                                ))}
+                                <MenuItem
+                                    className={styles.navContactLink}
+                                    {...{
+                                        id: 'nav-contact-link',
+                                        link: '/contact',
+                                        linkText: 'Contact.',
+                                        location,
+                                    }}
+                                />
+                            </ul>
+                            <section className={styles.contactDetails}>
+                                <dl>
+                                    <dt>Call us.</dt>
+                                    <dd>{phone}</dd>
+                                </dl>
+                                <section>
+                                    <h2>Follow us.</h2>
+                                    <Socials
                                         {...{
-                                            id: 'nav-contact-link',
-                                            link: '/contact',
-                                            linkText: 'Contact.',
-                                            location,
+                                            ...companyInfo,
+                                            activeClass,
                                         }}
                                     />
-                                </ul>
-                                <section className={styles.contactDetails}>
-                                    <dl>
-                                        <dt>Call us.</dt>
-                                        <dd>{phone}</dd>
-                                    </dl>
-                                    <section>
-                                        <h2>Follow us.</h2>
-                                        <Socials
-                                            {...{
-                                                ...companyInfo,
-                                                activeClass,
-                                            }}
-                                        />
-                                    </section>
                                 </section>
                             </section>
-                        </nav>
-                    </>
-                )}
-            </Location>
-        );
-    }
+                        </section>
+                    </nav>
+                </>
+            )}
+        </Location>
+    );
 }
