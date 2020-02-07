@@ -184,7 +184,7 @@ export default class JobsPageTemplate extends Component {
                             </li>
                         ))}
                         <li>
-                            <Link to="/careers/register-interest" className={styles.job}>
+                            <Link to="/careers/register-interest/" className={styles.job}>
                                 <section>
                                     <h2>Register interest</h2>
                                     <button type="button">More details</button>
