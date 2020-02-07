@@ -150,18 +150,6 @@ function Layout({
             {(!isJobPage && <Header {...headerProps} />) || <JobHeader {...headerProps} jobDetails={jobDetails} />}
             <main>{children}</main>
             <Footer {...footerProps} />
-            <script
-                id="browser-update-script"
-                dangerouslySetInnerHTML={{
-                    __html: `
-var $buoop = {required:{e:-2,f:-2,o:-2,s:-2,c:-2},insecure:true,unsupported:true,api:2020.02};
-function $buo_f(){var e = document.createElement("script");
-e.src = "//browser-update.org/update.min.js";
-document.body.appendChild(e);};
-try {document.addEventListener("DOMContentLoaded", $buo_f,false)}catch(e){window.attachEvent("onload", $buo_f)}
-            `,
-                }}
-            />
         </Provider>
     );
 }
