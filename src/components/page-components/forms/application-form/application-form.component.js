@@ -1,9 +1,9 @@
 import { faCheckCircle, faSpinner, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
-import { Form, Formik }                         from 'formik';
+import { Form, Formik } from 'formik';
 import { arrayOf, bool, number, shape, string } from 'prop-types';
-import React, { Component }                     from 'react';
+import React, { Component } from 'react';
 import * as Yup from 'yup';
 
 import { Checkbox, File, Input, Textarea } from '../form-field.component';
@@ -19,16 +19,19 @@ export default class ApplicationForm extends Component {
         options_photo: string,
         options_cover_letter: string,
         options_cv: string,
-        open_questions: arrayOf(shape({
-            id: number.isRequired,
-            kind: string.isRequired,
-            required: bool.isRequired,
-            open_question_options: arrayOf(shape({
+        open_questions: arrayOf(
+            shape({
                 id: number.isRequired,
-                body: string.isRequired,
-                                                 })).isRequired
-
-                                      })),
+                kind: string.isRequired,
+                required: bool.isRequired,
+                open_question_options: arrayOf(
+                    shape({
+                        id: number.isRequired,
+                        body: string.isRequired,
+                    })
+                ).isRequired,
+            })
+        ),
     };
 
     static defaultProps = {
@@ -109,10 +112,6 @@ export default class ApplicationForm extends Component {
             options_cv: cvOptions,
             open_questions: questions,
         } = this.props;
-
-        console.log({
-            phoneOptions, photoOptions, coverLetterOptions, cvOptions, questions,
-                    });
 
         const showPhone = phoneOptions !== 'off';
         const phoneRequired = phoneOptions === 'required';

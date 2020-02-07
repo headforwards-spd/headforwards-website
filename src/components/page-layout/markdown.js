@@ -16,7 +16,7 @@ Markdown.defaultProps = {
     truncate: false,
     maxLength: 125,
 };
-function Markdown({ source='', truncate, maxLength }) {
+function Markdown({ source = '', truncate, maxLength }) {
     const text = truncate ? truncateString(source, maxLength) : source;
 
     const fancyText = text ? preventOrphans(text) : '';
@@ -40,4 +40,3 @@ function truncateString(text = '', maxLength = 150, ellipsis = `\u2026`) {
 
     return `${truncatedString}${ellipsis}`.replace(/\s*[–.,:;].$/gm, ellipsis);
 }
-

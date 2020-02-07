@@ -2,9 +2,9 @@ import { arrayOf, bool, shape, string } from 'prop-types';
 import React, { Component } from 'react';
 
 import slugify from '../../../lib/slugify';
-import Markdown from '../../page-layout/markdown';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import Link from '../../page-layout/link/link.component';
+import Markdown from '../../page-layout/markdown';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
 import styles from './jobs-page.module.scss';
 
