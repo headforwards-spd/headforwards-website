@@ -1,10 +1,11 @@
 import { faCheckCircle, faSpinner, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import axios from 'axios';
-import { Form, Formik } from 'formik';
-import { arrayOf, bool, number, shape, string } from 'prop-types';
-import React, { Component } from 'react';
-import * as Yup from 'yup';
+import { FontAwesomeIcon }                         from '@fortawesome/react-fontawesome';
+import axios                                       from 'axios';
+import { Form, Formik }                            from 'formik';
+import { arrayOf, bool, number, shape, string }    from 'prop-types';
+import React, { Component }                        from 'react';
+import * as Yup                                    from 'yup';
+import { applicationFormSubmitEvent }              from '../../../../lib/datalayer-event'
 
 import { Checkbox, File, Input, Textarea } from '../form-field.component';
 import styles from './application-form.module.scss';
@@ -90,6 +91,7 @@ export default class ApplicationForm extends Component {
                     isSubmitting: false,
                     successMessage: messages.success(jobTitle),
                 });
+                applicationFormSubmitEvent(path);
             })
             .catch(({ response }) => {
                 const { data: responseData } = response || {};

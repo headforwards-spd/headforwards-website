@@ -1,12 +1,13 @@
 import { faCheckCircle, faSpinner, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import axios from 'axios';
-import { Field, Form, Formik } from 'formik';
-import { string } from 'prop-types';
-import qs from 'querystring';
-import React, { Component, createRef } from 'react';
-import Reaptcha from 'reaptcha';
-import { object } from 'yup';
+import { FontAwesomeIcon }                         from '@fortawesome/react-fontawesome';
+import axios                                       from 'axios';
+import { Field, Form, Formik }                     from 'formik';
+import { string }                                  from 'prop-types';
+import qs                                          from 'querystring';
+import React, { Component, createRef }             from 'react';
+import Reaptcha                                    from 'reaptcha';
+import { object }                                  from 'yup';
+import { contactFormSubmitEvent }                  from '../../../../lib/datalayer-event'
 
 import { Checkbox, Input, Textarea } from '../form-field.component';
 import styles from './contact-form.module.scss';
@@ -53,6 +54,7 @@ export default class ContactForm extends Component {
                     data: null,
                     successMessage: messages.success,
                 });
+                contactFormSubmitEvent();
             })
             .catch(() => {
                 this.setState({
