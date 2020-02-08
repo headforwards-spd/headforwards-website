@@ -16,7 +16,7 @@ exports.onCreateNode = ({ node, getNodes }) => {
 
     const { menu = [] } = node;
 
-    !!menu.length && (node.menu = menu.map(transformChildren));
+    node.menu = menu.length ? menu.map(transformChildren) : node.menu;
 
     return node;
 
@@ -28,7 +28,7 @@ exports.onCreateNode = ({ node, getNodes }) => {
         item.page___NODE = id;
         item.uuid = link;
         item.link = path;
-        !!children && (item.children = children.map(transformChildren));
+        item.children = children ? children.map(transformChildren) : children;
 
         return item;
     }

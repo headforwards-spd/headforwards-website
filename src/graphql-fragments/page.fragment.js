@@ -7,26 +7,7 @@ export const PageFragment = graphql`
             title
             subtitle
             isPostits
-            image {
-                show
-                image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
-                }
-                seoImage: image {
-                    childImageSharp {
-                        fixed(width: 1200, height: 630, cropFocus: CENTER, quality: 85) {
-                            src
-                            width
-                            height
-                        }
-                    }
-                }
-            }
+            ...BannerImageFragment
             introduction {
                 show
                 text
@@ -68,82 +49,25 @@ export const PageFragment = graphql`
                     linkText
                     link
                     image {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...ImageFragment
                     }
                     imageSquare: image {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...ImageSquareFragment
                     }
                 }
-                image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
-                }
-                imageSquare: image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
-                }
-                imagePostit: image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp_noBase64
-                        }
-                    }
-                }
+                ...SectionImageFragment
                 flip
                 imageOne {
-                    publicURL
-                    name
-                    childImageSharp {
-                        fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
+                    ...ImageFragment
                 }
                 imageOneSquare: image {
-                    publicURL
-                    name
-                    childImageSharp {
-                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
+                    ...ImageSquareFragment
                 }
                 imageTwo {
-                    publicURL
-                    name
-                    childImageSharp {
-                        fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
+                    ...ImageFragment
                 }
                 imageTwoSquare: image {
-                    publicURL
-                    name
-                    childImageSharp {
-                        fluid(maxWidth: 100, maxHeight: 100, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
+                    ...ImageSquareFragment
                 }
                 profilePic {
                     publicURL
@@ -161,61 +85,13 @@ export const PageFragment = graphql`
                 link2
                 link3
                 page1 {
-                    id
-                    frontmatter {
-                        title
-                        introduction {
-                            text
-                        }
-                        image {
-                            image {
-                                publicURL
-                                childImageSharp {
-                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 85) {
-                                        ...GatsbyImageSharpFluid_withWebp
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    ...FooterLinkFragment
                 }
                 page2 {
-                    id
-                    frontmatter {
-                        title
-                        introduction {
-                            text
-                        }
-                        image {
-                            image {
-                                publicURL
-                                childImageSharp {
-                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 85) {
-                                        ...GatsbyImageSharpFluid_withWebp
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    ...FooterLinkFragment
                 }
                 page3 {
-                    id
-                    frontmatter {
-                        title
-                        introduction {
-                            text
-                        }
-                        image {
-                            image {
-                                publicURL
-                                childImageSharp {
-                                    fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 85) {
-                                        ...GatsbyImageSharpFluid_withWebp
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    ...FooterLinkFragment
                 }
             }
             footerText

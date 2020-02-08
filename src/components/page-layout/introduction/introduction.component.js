@@ -4,18 +4,18 @@ import React from 'react';
 import Markdown from '../markdown';
 import styles from './introduction.module.scss';
 
-export default IntroductionComponent;
+export default Introduction;
 
-IntroductionComponent.propTypes = {
+Introduction.propTypes = {
     introduction: string.isRequired,
     className: string,
 };
 
-IntroductionComponent.defaultProps = {
+Introduction.defaultProps = {
     className: '',
 };
 
-function IntroductionComponent({ introduction, className }) {
+function Introduction({ introduction, className }) {
     return introduction ? (
         <section className={`${styles.introduction} ${className}`}>
             <Markdown source={introduction} />

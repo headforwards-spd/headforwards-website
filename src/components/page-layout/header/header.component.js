@@ -38,7 +38,7 @@ export default class Header extends StickyNav {
         const hasBackground = !!image || !!publicURL;
         let headerStyle = hasBackground ? styles.hasBackground : '';
 
-        isHomePage && (headerStyle += ` ${styles.isHomePage}`);
+        headerStyle += isHomePage ? ` ${styles.isHomePage}` : '';
 
         const titleStyle = subtitle ? styles.hasSubTitle : '';
 

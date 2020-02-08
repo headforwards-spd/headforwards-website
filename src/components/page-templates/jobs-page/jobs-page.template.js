@@ -8,7 +8,7 @@ import Markdown from '../../page-layout/markdown';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
 import styles from './jobs-page.module.scss';
 
-export default class JobsPageTemplate extends Component {
+export default class JobsPage extends Component {
     static propTypes = {
         introduction: shape({
             show: bool,

@@ -6,6 +6,8 @@ import Hero from './hero.component';
 
 const faker = require('faker');
 
+const type = 'markdown-component';
+
 export default {
     decorators: [withKnobs],
     title: 'Page Components/Hero',
@@ -25,7 +27,7 @@ const isTwoColumnsValue = () => false;
 export const oneColumn = () => {
     const props = {
         title: titleValue(),
-        content: [{ type: 'markdown-component', text: textValue() }],
+        content: [{ type, text: textValue() }],
     };
 
     return (
@@ -38,7 +40,7 @@ export const oneColumn = () => {
 export const twoColumns = () => {
     const props = {
         title: titleValue(),
-        content: [{ type: 'markdown-component', text: textValue() }],
+        content: [{ type, text: textValue() }],
         isTwoColumns: true,
     };
 
@@ -52,7 +54,7 @@ export const twoColumns = () => {
 export const interactive = () => {
     const props = {
         title: text(titleLabel, titleValue(), groupId),
-        content: [{ type: 'markdown-component', text: text(textLabel, textValue(), groupId) }],
+        content: [{ type, text: text(textLabel, textValue(), groupId) }],
         isTwoColumns: boolean(isTwoColumnsLabel, isTwoColumnsValue(), groupId),
     };
 

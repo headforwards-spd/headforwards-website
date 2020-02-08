@@ -1,32 +1,26 @@
 import { boolean, files, text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
 
-import generateImage from '../../../../lib/generate-image';
 import StoriesLayout from '../../../page-layout/stories-layout.component';
 import ImageCopyColumns from './image-copy-columns.component';
+import {
+    accept,
+    groupId,
+    imageLabel,
+    imageValue,
+    isRightImageLabel,
+    isRightImageValue,
+    linkLabel,
+    linkTextLabel,
+    linkTextValue,
+    linkValue,
+    textLabel,
+    textValue,
+    titleLabel,
+    titleValue,
+} from './story-props';
 
-const faker = require('faker');
-
-const groupId = 'header-group';
-
-const titleLabel = 'Title';
-const titleValue = faker.lorem.sentence;
-
-const textLabel = 'Copy';
-const textValue = faker.lorem.paragraph;
-
-const linkTextLabel = 'Link Text';
-const linkTextValue = faker.lorem.words;
-
-const linkLabel = 'Link Destination';
-const linkValue = () => `/${faker.lorem.slug()}`;
-
-const isRightImageLabel = 'Image on the right';
-const isRightImageValue = () => true;
-
-const imageLabel = 'Image';
-const accept = '.png, .jpg, .jpeg';
-const imageValue = () => generateImage(true);
+const type = 'markdown-component';
 
 export default {
     decorators: [withKnobs],
@@ -36,7 +30,7 @@ export default {
 export const ImageOnLeft = () => {
     const props = {
         title: titleValue(),
-        content: [{ type: 'markdown-component', text: textValue() }],
+        content: [{ type, text: textValue() }],
         isRightImage: false,
         image: imageValue(),
         link: {
@@ -54,7 +48,7 @@ export const ImageOnLeft = () => {
 export const ImageOnRight = () => {
     const props = {
         title: titleValue(),
-        content: [{ type: 'markdown-component', text: textValue() }],
+        content: [{ type, text: textValue() }],
         isRightImage: true,
         image: imageValue(),
         link: {
@@ -75,7 +69,7 @@ export const Interactive = () => {
         title: text(titleLabel, titleValue(), groupId),
         content: [
             {
-                type: 'markdown-component',
+                type,
                 text: text(textLabel, textValue(), groupId),
             },
         ],

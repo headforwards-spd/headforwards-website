@@ -3,6 +3,9 @@ import { string } from 'yup';
 
 import Link from '../../../page-layout/link/link.component';
 
+export const requiredText = 'This field is Required.';
+export const fieldErrorText = 'One or more fields have an error.';
+
 export const messages = {
     success: job => `All done! Your application for the ${job} position is submitted successfully.`,
     error: 'There was an error trying to send your message. Please try again later.',
@@ -16,7 +19,7 @@ export const schema = {
             type: 'text',
             required: true,
         },
-        validation: string().required('This field is Required.'),
+        validation: string().required(requiredText),
     },
     email: {
         field: {
@@ -27,7 +30,7 @@ export const schema = {
         },
         validation: string()
             .email('Must be a valid email.')
-            .required('This field is Required.'),
+            .required(requiredText),
     },
     phone: {
         field: {

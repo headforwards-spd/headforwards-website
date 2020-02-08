@@ -50,22 +50,7 @@ function InfoPagePreview({ entry, getAsset }) {
         image: showImage ? bannerImage : null,
     };
 
-    components.forEach(component => {
-        const { image: cImage = null, imageOne = null, imageTwo = null, profilePic = null, articles = [] } = component;
-        component.id = uuid.v1();
-
-        component.image = cImage ? getAsset(cImage).toString() : cImage;
-        component.imageOne = imageOne ? getAsset(imageOne).toString() : imageOne;
-        component.imageTwo = imageTwo ? getAsset(imageTwo).toString() : imageTwo;
-        component.profilePic = profilePic ? getAsset(profilePic).toString() : profilePic;
-
-        articles.forEach(article => {
-            const { image: aImage = null } = article;
-            article.id = uuid.v1();
-
-            !!aImage && (article.image = getAsset(aImage).toString());
-        });
-    });
+    components.forEach(component => setComponent(component, getAsset));
 
     const companyInfo = {};
     const headerProps = {
@@ -79,17 +64,7 @@ function InfoPagePreview({ entry, getAsset }) {
     const [footerLinks] = rawFooterLinks || {};
     const { showImages: showFooterImages } = footerLinks || {};
 
-    footerLinks.links = footerLinks
-        ? [...Array(3)].map((v, k) => {
-              return {
-                  showImages: showFooterImages,
-                  link: '/',
-                  title: `Link ${k + 1}`,
-                  image: { image: '/uploads/icon.black.png' },
-                  introduction: { text: 'Introduction...' },
-              };
-          })
-        : footerLinks;
+    footerLinks && setFooterLinks(footerLinks, showFooterImages);
 
     return (
         <Provider>
@@ -106,4 +81,35 @@ function InfoPagePreview({ entry, getAsset }) {
             <Footer {...{ footerLinks, companyInfo, callToAction }} />
         </Provider>
     );
+}
+
+function setArticle(article, getAsset) {
+    const { image: aImage = null } = article;
+    article.id = uuid.v1();
+
+    article.image = aImage ? getAsset(aImage).toString() : !!aImage;
+}
+
+function setComponent(component, getAsset) {
+    const { image: cImage = null, imageOne = null, imageTwo = null, profilePic = null, articles = [] } = component;
+    component.id = uuid.v1();
+
+    component.image = cImage ? getAsset(cImage).toString() : cImage;
+    component.imageOne = imageOne ? getAsset(imageOne).toString() : imageOne;
+    component.imageTwo = imageTwo ? getAsset(imageTwo).toString() : imageTwo;
+    component.profilePic = profilePic ? getAsset(profilePic).toString() : profilePic;
+
+    articles.forEach(article => setArticle(article, getAsset));
+}
+
+function setFooterLinks(footerLinks, showImages) {
+    footerLinks.links = [...Array(3)].map((v, k) => {
+        return {
+            showImages,
+            link: '/',
+            title: `Link ${k + 1}`,
+            image: { image: '/uploads/icon.black.png' },
+            introduction: { text: 'Introduction...' },
+        };
+    });
 }

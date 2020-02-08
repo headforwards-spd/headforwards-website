@@ -4,6 +4,7 @@ import { Provider } from 'unstated';
 
 import generateImage from '../../../lib/generate-image';
 import generateMenu from '../../../lib/generate-menu';
+import companyInfoStoryProps from '../company-info-story-props';
 import Header from './header.component';
 
 const faker = require('faker');
@@ -117,13 +118,7 @@ export const interactive = () => {
         text: text(textLabel, textValue(), groupId),
         image: hasBackground ? generateImage() : null,
         menu: object(menuLabel, generateMenu(), groupId),
-        companyInfo: {
-            twitterURL: text('Twitter URL', faker.internet.url(), 'Company Info'),
-            facebookURL: text('Facebook URL', faker.internet.url(), 'Company Info'),
-            instagramURL: text('Instagram URL', faker.internet.url(), 'Company Info'),
-            linkedInURL: text('LinkedIn URL', faker.internet.url(), 'Company Info'),
-            youtubeURL: text('YouTube URL', faker.internet.url(), 'Company Info'),
-        },
+        companyInfo: companyInfoStoryProps,
     };
     return (
         <Provider>

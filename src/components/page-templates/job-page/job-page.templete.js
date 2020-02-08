@@ -5,15 +5,15 @@ import Link from '../../page-layout/link/link.component';
 import Markdown from '../../page-layout/markdown';
 import styles from './job-page.module.scss';
 
-export default JobPageTemplate;
+export default JobPage;
 
-JobPageTemplate.propTypes = {
+JobPage.propTypes = {
     path: string.isRequired,
     description: string.isRequired,
     requirements: string.isRequired,
 };
 
-function JobPageTemplate({ path, description, requirements }) {
+function JobPage({ path, description, requirements }) {
     return (
         <>
             <h2>Job description</h2>

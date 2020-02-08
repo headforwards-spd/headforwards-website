@@ -24,15 +24,15 @@ const homepagePropTypes = {
     sections: arrayOf(shape(homePageSectionPropTypes)),
 };
 
-export default HomepageTemplate;
+export default Homepage;
 
-HomepageTemplate.propTypes = homepagePropTypes;
-HomepageTemplate.defaultProps = {
+Homepage.propTypes = homepagePropTypes;
+Homepage.defaultProps = {
     introduction: null,
     sections: null,
 };
 
-function HomepageTemplate({ introduction, sections }) {
+function Homepage({ introduction, sections }) {
     const { show: showIntroduction, text: introText } = introduction;
 
     return (

@@ -3,29 +3,25 @@ import React from 'react';
 
 import StoriesLayout from '../../../page-layout/stories-layout.component';
 import PostitCopyColumns from './postit-copy-columns.component';
+import {
+    accept,
+    groupId,
+    imageLabel,
+    isRightImageLabel,
+    isRightImageValue,
+    linkLabel,
+    linkTextLabel,
+    linkTextValue,
+    linkValue,
+    textLabel,
+    textValue,
+    titleLabel,
+    titleValue,
+} from './story-props';
 
-const faker = require('faker');
+const imageValue = () => '/uploads/icon.black.png';
 
-const groupId = 'header-group';
-
-const titleLabel = 'Header';
-const titleValue = faker.lorem.sentence;
-
-const textLabel = 'Paragraph';
-const textValue = faker.lorem.paragraph;
-
-const linkTextLabel = 'Link Text';
-const linkTextValue = faker.lorem.words;
-
-const linkLabel = 'Link Destination';
-const linkValue = () => `/${faker.lorem.slug()}`;
-
-const isRightImageLabel = 'Postit on the right';
-const isRightImageValue = () => true;
-
-const imageLabel = 'Postit';
-const accept = '.png, .jpg, .jpeg';
-const imageValue = () => '/uploads/icon.black.png'; // generateImage(true);
+const type = 'markdown-component';
 
 export default {
     decorators: [withKnobs],
@@ -35,7 +31,7 @@ export default {
 export const PostitOnLeft = () => {
     const props = {
         title: titleValue(),
-        content: [{ type: 'markdown-component', text: textValue() }],
+        content: [{ type, text: textValue() }],
         isRightImage: false,
         image: imageValue(),
         link: {
@@ -53,7 +49,7 @@ export const PostitOnLeft = () => {
 export const PostitOnRight = () => {
     const props = {
         title: titleValue(),
-        content: [{ type: 'markdown-component', text: textValue() }],
+        content: [{ type, text: textValue() }],
         isRightImage: true,
         image: imageValue(),
         link: {
@@ -72,7 +68,7 @@ export const PostitOnRight = () => {
 export const Interactive = () => {
     const props = {
         title: text(titleLabel, titleValue(), groupId),
-        content: [{ type: 'markdown-component', text: text(textLabel, textValue(), groupId) }],
+        content: [{ type, text: text(textLabel, textValue(), groupId) }],
         isRightImage: boolean(isRightImageLabel, isRightImageValue(), groupId),
         image: files(imageLabel, accept, imageValue(), groupId),
         link: {

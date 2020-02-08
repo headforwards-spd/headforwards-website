@@ -22,16 +22,16 @@ const legalPagePropTypes = {
     ),
 };
 
-export default LegalPageTemplate;
+export default LegalPage;
 
-LegalPageTemplate.propTypes = legalPagePropTypes;
+LegalPage.propTypes = legalPagePropTypes;
 
-LegalPageTemplate.defaultProps = {
+LegalPage.defaultProps = {
     introduction: null,
     sections: [],
 };
 
-function LegalPageTemplate({ introduction, sections }) {
+function LegalPage({ introduction, sections }) {
     const { show, text } = introduction || {};
 
     return (

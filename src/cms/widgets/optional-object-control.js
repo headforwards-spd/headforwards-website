@@ -3,8 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import styled from '@emotion/styled';
-import { jsx, css, ClassNames } from '@emotion/core';
-import { List, Map, fromJS } from 'immutable';
+import { css, ClassNames } from '@emotion/core';
+import { List as iList, Map as iMap, fromJS } from 'immutable';
 import { partial, isEmpty } from 'lodash';
 import { SortableContainer, SortableElement, SortableHandle } from 'react-sortable-hoc';
 import NetlifyCmsWidgetObject from 'netlify-cms-widget-object';
@@ -97,7 +97,7 @@ export default class OptionalObjectControl extends React.Component {
     };
 
     static defaultProps = {
-        value: List(),
+        value: iList(),
     };
 
     constructor(props) {
@@ -107,7 +107,7 @@ export default class OptionalObjectControl extends React.Component {
         const itemsCollapsed = value && Array(value.size).fill(allItemsCollapsed);
 
         this.state = {
-            itemsCollapsed: List(itemsCollapsed),
+            itemsCollapsed: iList(itemsCollapsed),
             value: valueToString(value),
         };
     }
@@ -147,7 +147,7 @@ export default class OptionalObjectControl extends React.Component {
 
         const parsedValue = valueToString(listValue);
         this.setState({ value: parsedValue });
-        onChange(List(listValue.map(val => val.trim())));
+        onChange(iList(listValue.map(val => val.trim())));
     };
 
     handleFocus = () => {
@@ -171,7 +171,7 @@ export default class OptionalObjectControl extends React.Component {
                 ? this.singleDefault()
                 : fromJS(this.multipleDefault(field.get('fields')));
         this.setState({ itemsCollapsed: this.state.itemsCollapsed.push(false) });
-        onChange((value || List()).push(parsedValue));
+        onChange((value || iList()).push(parsedValue));
     };
 
     singleDefault = () => {
@@ -186,7 +186,7 @@ export default class OptionalObjectControl extends React.Component {
         const { value, onChange } = this.props;
         const parsedValue = fromJS(this.mixedDefault(typeKey, type));
         this.setState({ itemsCollapsed: this.state.itemsCollapsed.push(false) });
-        onChange((value || List()).push(parsedValue));
+        onChange((value || iList()).push(parsedValue));
     };
 
     mixedDefault = (typeKey, type) => {
@@ -199,19 +199,19 @@ export default class OptionalObjectControl extends React.Component {
     getFieldsDefault = (fields, initialValue = {}) => {
         return fields.reduce((acc, item) => {
             const subfields = item.get('field') || item.get('fields');
-            const object = item.get('widget') == 'object';
+            const object = item.get('widget') === 'object';
             const name = item.get('name');
             const defaultValue = item.get('default', null);
 
-            if (List.isList(subfields) && object) {
+            if (iList.isList(subfields) && object) {
                 const subDefaultValue = this.getFieldsDefault(subfields);
-                !isEmpty(subDefaultValue) && (acc[name] = subDefaultValue);
+                if(!isEmpty(subDefaultValue)) { acc[name] = subDefaultValue; }
                 return acc;
             }
 
-            if (Map.isMap(subfields) && object) {
+            if (iMap.isMap(subfields) && object) {
                 const subDefaultValue = this.getFieldsDefault([subfields]);
-                !isEmpty(subDefaultValue) && (acc[name] = subDefaultValue);
+                if(!isEmpty(subDefaultValue)) { acc[name] = subDefaultValue; }
                 return acc;
             }
 
@@ -239,7 +239,7 @@ export default class OptionalObjectControl extends React.Component {
      * e.g. when debounced, always get the latest object value instead of using
      * `this.props.value` directly.
      */
-    getObjectValue = idx => this.props.value.get(idx) || Map();
+    getObjectValue = idx => this.props.value.get(idx) || iMap();
 
     handleChangeFor(index) {
         return (fieldName, newValue, newMetadata) => {
@@ -293,7 +293,7 @@ export default class OptionalObjectControl extends React.Component {
         const { value } = this.props;
         const { itemsCollapsed } = this.state;
         const allItemsCollapsed = itemsCollapsed.every(val => val === true);
-        this.setState({ itemsCollapsed: List(Array(value.size).fill(!allItemsCollapsed)) });
+        this.setState({ itemsCollapsed: iList(Array(value.size).fill(!allItemsCollapsed)) });
     };
 
     objectLabel(item) {
@@ -411,7 +411,7 @@ export default class OptionalObjectControl extends React.Component {
     renderListControl() {
         const { value, forID, field, classNameWrapper } = this.props;
         const { itemsCollapsed } = this.state;
-        const items = value || List();
+        const items = value || iList();
         const label = field.get('label', field.get('name'));
         const labelSingular = field.get('label_singular') || field.get('label', field.get('name'));
         const listLabel = items.size === 1 ? labelSingular.toLowerCase() : label.toLowerCase();

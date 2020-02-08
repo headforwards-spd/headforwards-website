@@ -3,9 +3,9 @@ import React from 'react';
 
 import generateImage from '../../../../lib/generate-image';
 import StoriesLayout from '../../../page-layout/stories-layout.component';
-import FullWidthImage from './full-width-image.component';
+import Image from './full-width-image.component';
 
-export default function FullWidthImageStory() {
+export default function FullWidthImage() {
     const fullWidthImageLabel = 'Full Width Image';
     const accept = '.png, .jpg, .jpeg';
     const defaultImgValue = generateImage();
@@ -19,7 +19,7 @@ export default function FullWidthImageStory() {
 
     return (
         <StoriesLayout>
-            <FullWidthImage {...imgProps} />
+            <Image {...imgProps} />
         </StoriesLayout>
     );
 }

@@ -7,9 +7,9 @@ import Link from '../../page-layout/link/link.component';
 import JobSummaryComponent from '../jobs-page/job-summary.component';
 import styles from './info-page.module.scss';
 
-export default InfoPageTemplate;
+export default InfoPage;
 
-InfoPageTemplate.propTypes = {
+InfoPage.propTypes = {
     introduction: shape({
         show: bool,
         text: string,
@@ -21,14 +21,14 @@ InfoPageTemplate.propTypes = {
     }),
 };
 
-InfoPageTemplate.defaultProps = {
+InfoPage.defaultProps = {
     introduction: null,
     components: null,
     jobs: null,
     careers: null,
 };
 
-function InfoPageTemplate({ introduction, components = [], jobs, careers }) {
+function InfoPage({ introduction, components = [], jobs, careers }) {
     const { show, text } = introduction;
     const hasJobs = !!(jobs && jobs.length);
     const { applicationForm } = careers || {};

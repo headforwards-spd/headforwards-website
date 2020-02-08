@@ -88,92 +88,32 @@ export const Paragraphs = () => {
 
 export const SmallCopy = () => {
     const className = `${styles.wrapper} ${styles.sm}`;
-    const heading = faker.lorem.words();
-    const copy = faker.lorem.paragraphs().split('\n');
 
-    return (
-        <StoriesLayout>
-            <section className={styles.columns}>
-                <Section {...{ className, heading, copy }} />
-                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
-                <Section
-                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
-                />
-            </section>
-        </StoriesLayout>
-    );
+    return <CopySection className={className} />;
 };
 
 export const MediumCopy = () => {
     const className = `${styles.wrapper} ${styles.md}`;
-    const heading = faker.lorem.words();
-    const copy = faker.lorem.paragraphs().split('\n');
 
-    return (
-        <StoriesLayout>
-            <section className={styles.columns}>
-                <Section {...{ className, heading, copy }} />
-                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
-                <Section
-                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
-                />
-            </section>
-        </StoriesLayout>
-    );
+    return <CopySection className={className} />;
 };
 
 export const LargeCopy = () => {
     const className = `${styles.wrapper} ${styles.lg}`;
-    const heading = faker.lorem.words();
-    const copy = faker.lorem.paragraphs().split('\n');
 
-    return (
-        <StoriesLayout>
-            <section className={styles.columns}>
-                <Section {...{ className, heading, copy }} />
-                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
-                <Section
-                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
-                />
-            </section>
-        </StoriesLayout>
-    );
+    return <CopySection className={className} />;
 };
 
 export const XLargeCopy = () => {
     const className = `${styles.wrapper} ${styles.xl}`;
-    const heading = faker.lorem.words();
-    const copy = faker.lorem.paragraphs().split('\n');
 
-    return (
-        <StoriesLayout>
-            <section className={styles.columns}>
-                <Section {...{ className, heading, copy }} />
-                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
-                <Section
-                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
-                />
-            </section>
-        </StoriesLayout>
-    );
+    return <CopySection className={className} />;
 };
 
 export const XXLargeCopy = () => {
     const className = `${styles.wrapper} ${styles.xxl}`;
-    const heading = faker.lorem.words();
-    const copy = faker.lorem.paragraphs().split('\n');
 
-    return (
-        <StoriesLayout>
-            <section className={styles.columns}>
-                <Section {...{ className, heading, copy }} />
-                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
-                <Section
-                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
-                />
-            </section>
-        </StoriesLayout>
-    );
+    return <CopySection className={className} />;
 };
 
 Heading.propTypes = {
@@ -218,5 +158,23 @@ function Section({ className, heading, copy }) {
                 <p>{paragraph}</p>
             ))}
         </section>
+    );
+}
+
+CopySection.propTypes = { className: string.isRequired };
+function CopySection({ className }) {
+    const heading = faker.lorem.words();
+    const copy = faker.lorem.paragraphs().split('\n');
+
+    return (
+        <StoriesLayout>
+            <section className={styles.columns}>
+                <Section {...{ className, heading, copy }} />
+                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
+                <Section
+                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
+                />
+            </section>
+        </StoriesLayout>
     );
 }
