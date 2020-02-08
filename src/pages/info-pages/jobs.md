@@ -8,7 +8,7 @@ image:
   show: false
 introduction:
   show: false
-  text: Apply for a specific job at Headforwards or just register your interest.
+  text: Apply for a specific job at Headforwards or just register your interest
 components:
   - content:
       - text: >-
@@ -24,18 +24,6 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-footerText: >-
-    We aim to respond to everyone and we don’t just keep your details on
-    file, never to be seen again! We’ve hired lots of people who we’ve
-    been in touch with for a while. 
-    
-    
-    We can keep you updated with our latest jobs, invite you to our
-    events, share tech talks and insight. 
-    
-    
-    All this will help you to find out more about us before the right
-    thing comes along.
 callToAction: Not ready to apply for a job right now? We still want to hear from you
 seo:
   slug: jobs
