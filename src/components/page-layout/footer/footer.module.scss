@@ -7,43 +7,45 @@
 .footer {
 
     > section {
-        overflow: hidden;
         background-color: $blue-background;
+        overflow:         hidden;
     }
 
     .footerLinks {
 
         > h2 {
-            position: relative;
-            color: $orange;
-            align-items: stretch;
+            align-items:   stretch;
+            color:         $orange;
+            margin-bottom: 0;
             @include headingFontMedium;
-            padding: calc(1.45em) 0 0.35em;
-            margin-bottom:0;
+            padding:       calc(1.45em) 0 0.35em;
+            position:      relative;
             @media (min-width: $screen-md) {
                 margin-bottom: 0;
             }
         }
+
         > section {
             @include columns-component-tight;
-            margin-top: $column-gutter-sm/2;
             margin-bottom: -$column-gutter-sm/2;
+            margin-top:    $column-gutter-sm/2;
             @media (min-width: $screen-md) {
-                align-items: stretch;
-                margin-top: $column-gutter-md/4;
+                align-items:   stretch;
                 margin-bottom: -$column-gutter-md/4;
+                margin-top:    $column-gutter-md/4;
             }
             @media (min-width: $screen-lg) {
-                margin-top: $column-gutter-lg/4;
                 margin-bottom: -$column-gutter-lg/4;
+                margin-top:    $column-gutter-lg/4;
             }
+
             > a {
+                width:   calc((100% / 1) - #{$column-gutter-sm/2});
                 z-index: 100;
-                width: calc((100% / 1) - #{$column-gutter-sm/2});
                 @media (min-width: $screen-md) {
-                    width: calc((100% / 3) - #{$column-gutter-md/2});
-                    display: flex;
+                    display:        flex;
                     flex-direction: column;
+                    width:          calc((100% / 3) - #{$column-gutter-md/2});
                 }
                 @media (min-width: $screen-lg) {
                     width: calc((100% / 3) - #{$column-gutter-lg/2});
@@ -52,7 +54,13 @@
 
             section {
                 @include fontSmallVr;
-                padding: $column-gutter-sm/2;
+                background:      white;
+                display:         flex;
+                flex-direction:  column;
+                flex-grow:       1;
+                justify-content: stretch;
+                margin:          $column-gutter-sm/2 $column-gutter-sm/4;
+                padding:         $column-gutter-sm/2;
                 @media (min-width: $screen-md) {
                     padding: $column-gutter-md/2;
 
@@ -61,19 +69,11 @@
                     padding: $column-gutter-lg/2;
 
                 }
-                background: white;
-                display: flex;
-                flex-direction: column;
-                justify-content: stretch;
-                flex-grow: 1;
-                & {
-                    margin-bottom: 0;
-                    margin: $column-gutter-sm/2 $column-gutter-sm/4;
 
-                    @media (min-width: $screen-md) {
-                        margin-bottom: 0;
-                    }
+                @media (min-width: $screen-md) {
+                    margin-bottom: 0;
                 }
+
                 :last-child {
                     margin-bottom: 0;
                 }
@@ -83,31 +83,30 @@
                 }
 
                 .footerLinkImage {
-                    order: -1;
-                    margin: -$column-gutter-sm/2;
+                    margin:        -$column-gutter-sm/2;
                     margin-bottom: $column-gutter-sm;
+                    order:         -1;
                     @media (min-width: $screen-md) {
-                        margin: -$column-gutter-md/2;
+                        margin:        -$column-gutter-md/2;
                         margin-bottom: $column-gutter-md;
                     }
                     @media (min-width: $screen-lg) {
-                        margin: -$column-gutter-lg/2;
+                        margin:        -$column-gutter-lg/2;
                         margin-bottom: $column-gutter-lg;
                     }
                 }
 
-
                 button {
                     @include arrow-link;
-                    color: $orange;
+                    align-self:  flex-start;
+                    background:  unset;
+                    border:      none;
+                    color:       $orange;
+                    flex-grow:   0;
                     font-weight: bold;
-                    flex-grow: 0;
-                    align-self: flex-start;
-                    margin: auto 0 0;
-                    border: none;
-                    padding: 0;
-                    background: unset;
                     line-height: $line-height;
+                    margin:      auto 0 0;
+                    padding:     0;
                 }
             }
         }
@@ -126,68 +125,74 @@
     .getInTouch {
 
         margin-bottom: 0;
-        position: relative;
+        position:      relative;
+
         &:before {
-            position: absolute;
-            content: url(/images/hf-arrow.footer.svg);
-            top: 75%;
-            left: 0;
+            content:   url(/images/hf-arrow.footer.svg);
+            height:    auto;
+            left:      0;
+            position:  absolute;
+            top:       75%;
             transform: translateY(-50%);
-            height: auto;
-            width: 100%;
+            width:     100%;
             @media (min-width: $screen-md) {
                 width: $singleColumnMaxWidth;
             }
         }
 
         h2 {
-            position: relative;
+            color:          white;
             @include headingFontMedium;
-            margin-bottom: 0;
-            @media (min-width: $screen-md) {
-                max-width: $singleColumnMaxWidth;
-                margin-bottom: 0;
-            }
-            padding-top: 1.85em;
+            margin-bottom:  0;
             padding-bottom: 1.85em;
-            color: white;
+            padding-top:    1.85em;
+            position:       relative;
+            @media (min-width: $screen-md) {
+                margin-bottom: 0;
+                max-width:     $singleColumnMaxWidth;
+            }
 
             a {
-                display: block;
-                padding-top: 2em;
-                &:before {
-                    content: ' ';
-                }
+                display:     block;
                 font-weight: normal;
+
+                padding-top: 2em;
+
+                &:before {
+                    content: " ";
+                }
                 @include arrow-link;
+
                 &:hover {
                     color: white;
+
                     &:after {
-                        background-image: url('/images/hf-arrow.white.svg');
+                        background-image: url("/images/hf-arrow.white.svg");
                     }
                 }
+
                 @media (min-width: $screen-md) {
-                    display: inline-block;
-                    padding-top: unset;
+                    display:     inline-block;
                     font-weight: bold;
+                    padding-top: unset;
                 }
             }
         }
     }
-    //
+
     address {
         @include component-gutter;
-        margin: -1em auto $component-gutter-sm;
-        display: flex;
+        align-items:    center;
+        display:        flex;
         flex-direction: column;
-        align-items: center;
-        font-style: normal;
+        font-style:     normal;
+        margin:         -1em auto $component-gutter-sm;
         @media (min-width: $screen-md) {
             margin: -$column-gutter-md auto $component-gutter-md;
             :first-child :first-child {
                 &:after {
-                    content: '//';
-                    font-weight: bold;
+                    content:      "//";
+                    font-weight:  bold;
                     @include orange-type;
                     padding-left: 0.5em;
                 }
@@ -197,24 +202,19 @@
             margin: -$column-gutter-lg auto $component-gutter-lg;
             :first-child :first-child {
                 &:after {
-                    content: '//';
-                    font-weight: bold;
+                    content:      "//";
+                    font-weight:  bold;
                     @include orange-type;
                     padding-left: $column-gutter-sm;
                 }
             }
         }
 
-        :first-child a {
-            @media (min-width: $screen-md) {
-            }
-        }
-
         a, .address, .copyright {
-            padding: 0 $column-gutter-sm/2;
+            color:       black;
+            display:     block;
             line-height: 2;
-            color: black;
-            display: block;
+            padding:     0 $column-gutter-sm/2;
         }
 
         a {
@@ -227,18 +227,19 @@
 
         .legal a {
             transition: all $transitionTime ease;
+
             &:hover {
                 color: $orange;
             }
         }
 
         section {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            align-items:     center;
+            display:         flex;
+            flex-direction:  row;
+            flex-wrap:       wrap;
             justify-content: center;
-            flex-wrap: wrap;
-            text-align: center;
+            text-align:      center;
         }
     }
 }

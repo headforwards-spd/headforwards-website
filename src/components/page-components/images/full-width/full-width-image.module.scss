@@ -1,9 +1,9 @@
 @import "../../../../scss/variables";
-@import '../../page-component';
+@import "../../page-component";
 
 .fullWidthImage {
 
-    @include component-gutter($fullWidth:true);
+    @include component-gutter($fullWidth: true);
 
     //@media(min-width: $screen-md) {
     //    margin-left: -$page-gutter-md;

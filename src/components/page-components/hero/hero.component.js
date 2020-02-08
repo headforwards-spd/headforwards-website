@@ -21,6 +21,7 @@ Hero.defaultProps = {
     isTwoColumns: false,
     className: '',
 };
+
 function Hero({ title, content, isTwoColumns, className }) {
     const columnsClass = isTwoColumns ? styles.isTwoColumns : '';
     const hasTitleClass = title ? styles.hasTitle : '';

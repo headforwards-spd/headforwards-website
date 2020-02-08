@@ -3,13 +3,15 @@
 @import "../../scss/variables";
 
 .storiesLayout {
-    display: flex;
+    display:        flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height:     100vh;
     //margin: $gutter-medium 0;
 
     > header, > footer {
         flex-shrink: 0;
+
+        width:       100%;
     }
 
     > main {
@@ -21,19 +23,15 @@
     > footer > ul,
     > footer > address,
     > footer > section > * {
-        margin: 0 auto;
+        margin:  0 auto;
         padding: 0 $column-gutter-sm;
         @media(min-width: $screen-md) {
             padding: 0 $column-gutter-md;
         }
         @media(min-width: $screen-lg) {
             max-width: calc(#{$max_width} + #{$column-gutter-lg*2});
-            padding: 0 $column-gutter-lg;
+            padding:   0 $column-gutter-lg;
         }
-    }
-
-    > header, > footer {
-        width: 100%;
     }
 }
 
@@ -45,69 +43,86 @@
 
     @media screen and (min-width: $screen-md) {
         //margin: $gutter-small;
-        border: 1px solid $paragraph_grey;
+        border:     1px solid $paragraph_grey;
         box-shadow: 0.125rem 0.125rem 0.25rem 0 rgba($paragraph_grey, 0.1);
     }
 }
 
 .columns {
     @media screen and (min-width: $screen-md) {
-        display: flex;
+        align-items:    stretch;
+        display:        flex;
         flex-direction: row;
-        align-items: stretch;
     }
 }
 
 .xxxl {
     @include fontXXXLarge;
+
     h1, h2 {
         text-transform: capitalize;
     }
+
     p::first-letter {
         text-transform: uppercase;
     }
 }
+
 .xxl {
     @include fontXXLarge;
+
     h1, h2 {
         text-transform: capitalize;
     }
+
     p::first-letter {
         text-transform: uppercase;
     }
 }
+
 .xl {
     @include fontXLarge;
+
     h1, h2 {
         text-transform: capitalize;
     }
+
     p::first-letter {
         text-transform: uppercase;
     }
 }
+
 .lg {
     @include fontLarge;
+
     h1, h2 {
         text-transform: capitalize;
     }
+
     p::first-letter {
         text-transform: uppercase;
     }
 }
+
 .md {
     @include fontMedium;
+
     h1, h2 {
         text-transform: capitalize;
     }
+
     p::first-letter {
         text-transform: uppercase;
     }
 }
+
 .sm {
     @include fontSmall;
+
     h1, h2 {
         text-transform: capitalize;
     }
+
     p::first-letter {
         text-transform: uppercase;
     }
@@ -115,30 +130,32 @@
 
 .colours {
 
-    display: flex;
+    align-items:    center;
+    display:        flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap:      wrap;
 
     dd, dt {
         display: block;
-        margin: 0.5rem;
+        margin:  0.5rem;
         padding: 0;
     }
 
     dt {
-        width: 2rem;
-        height: 2rem;
         border: 1px solid black;
+        height: 2rem;
+        width:  2rem;
     }
+
     dd {
-        width: calc(100% - 2rem - 2rem);
         flex-shrink: 0;
+        width:       calc(100% - 2rem - 2rem);
     }
 
     .orange1 {
         background: $orange-1;
     }
+
     .orange2 {
         background: $orange-2;
     }
@@ -146,6 +163,7 @@
     .blue1 {
         background: $blue-1;
     }
+
     .blue2 {
         background: $blue-2;
     }
@@ -153,33 +171,43 @@
     .grey1 {
         background: $grey-1;
     }
+
     .grey2 {
         background: $grey-2;
     }
+
     .grey3 {
         background: $grey-3;
     }
+
     .grey4 {
         background: $grey-4;
     }
+
     .grey5 {
         background: $grey-5;
     }
+
     .grey6 {
         background: $grey-6;
     }
+
     .grey7 {
         background: $grey-7;
     }
+
     .grey8 {
         background: $grey-8;
     }
+
     .grey9 {
         background: $grey-9;
     }
+
     .grey10 {
         background: $grey-10;
     }
+
     .grey11 {
         background: $grey-11;
     }

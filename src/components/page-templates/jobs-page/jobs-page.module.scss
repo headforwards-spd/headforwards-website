@@ -2,82 +2,87 @@
 @import "../../page-components/forms/forms";
 
 .filters {
-    display: flex;
+    display:        flex;
     flex-direction: column;
-    margin: -$column-gutter-sm/4;
-    margin-bottom: $component-gutter-sm/2 - $column-gutter-sm/2;
+    margin:         -$column-gutter-sm/4;
+    margin-bottom:  $component-gutter-sm/2 - $column-gutter-sm/2;
     @media (min-width: $screen-md) {
-        flex-direction: row;
+        align-items:     flex-start;
+        flex-direction:  row;
         justify-content: space-between;
-        align-items: flex-start;
-        margin: -$column-gutter-md/4;
-        margin-bottom: $component-gutter-md/2 - $column-gutter-md/2;
+        margin:          -$column-gutter-md/4;
+        margin-bottom:   $component-gutter-md/2 - $column-gutter-md/2;
     }
     @media (min-width: $screen-lg) {
-        margin: -$column-gutter-lg/4;
+        margin:        -$column-gutter-lg/4;
         margin-bottom: $component-gutter-lg/2 - $column-gutter-lg/2;
     }
 }
-.allTags {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    margin: 0;
-    border: 1px solid $grey-6;
 
-    order: 1;
-    margin: $column-gutter-sm/4;
-    width: calc((100%/1) - #{$column-gutter-sm/2});
+.allTags {
+    border:         1px solid $grey-6;
+    display:        flex;
+    flex-direction: column;
+    flex-shrink:    0;
+    margin:         $column-gutter-sm/4;
+
+    order:          1;
+    position:       relative;
+    width:          calc((100% / 1) - #{$column-gutter-sm/2});
     @media (min-width: $screen-md) {
-        order: 2;
-        width: calc((100%/2) - #{$column-gutter-md/2});
         margin: $column-gutter-md/4;
+        order:  2;
+        width:  calc((100% / 2) - #{$column-gutter-md/2});
     }
     @media (min-width: $screen-lg) {
-        width: calc((100%/3) - #{$column-gutter-lg/2});
         margin: $column-gutter-lg/4;
+        width:  calc((100% / 3) - #{$column-gutter-lg/2});
     }
 
     .filter {
         @include button-link;
         @include fontSmall;
-        line-height: 2;
-        border: 1px solid $grey-6;
-        margin: -1px;
         background-color: white;
-        color: $paragraph_grey;
+        border:           1px solid $grey-6;
+        color:            $paragraph_grey;
+        line-height:      2;
+        margin:           -1px;
+
         &:after {
-            content: '\00a0\00a0\00a0\00a0';
-            background: url('/images/hf-arrow.orange.svg') no-repeat center right;
-            transform: rotate(90deg);
+            background: url("/images/hf-arrow.orange.svg") no-repeat center right;
+            content:    "\00a0\00a0\00a0\00a0";
+            transform:  rotate(90deg);
             transition: all $transitionTime/2 ease;
         }
+
         &:hover {
             background-color: white;
         }
     }
+
     &.showFilters .filter:after {
         transform: rotate(270deg);
     }
 
     section {
-        position: absolute;
         background-color: white;
-        top: 100%;
-        left: -1px;
-        width: calc(100% + 2px);
-        border: 1px solid $grey-6;
-        z-index: 100;
-        display: none;
-        padding: 0.5em;
-        margin: 0;
+        border:           1px solid $grey-6;
+        display:          none;
+        left:             -1px;
+        margin:           0;
+        padding:          0.5em;
+        position:         absolute;
+        top:              100%;
+        width:            calc(100% + 2px);
+        z-index:          100;
+
         ul {
-            margin-top: 0;
-            columns: 2;
             column-gap: $component-gutter-sm;
+            columns:    2;
+            margin-top: 0;
         }
     }
+
     &.showFilters {
         section {
             display: block;
@@ -87,9 +92,10 @@
     input {
         @include checkbox;
     }
+
     input + label {
         @include fontSmallVr;
-        & {
+        &, p, li, time {
             margin-bottom: 0;
         }
     }
@@ -97,7 +103,7 @@
     button {
         @include fontSmallVr;
         @include button-link;
-        & {
+        &, p, li, time {
             margin-bottom: 0;
         }
 
@@ -108,19 +114,16 @@
 }
 
 .selectedTags {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display:         flex;
+    flex-direction:  row;
+    flex-shrink:     1;
+    flex-wrap:       wrap;
     justify-content: flex-start;
-    flex-shrink: 1;
-    margin: 0;
-    margin-top: 0.5em;
-
-    order: 2;
-    margin: $column-gutter-sm/4 0;
+    margin:          $column-gutter-sm/4 0;
+    order:           2;
     @media (min-width: $screen-md) {
-        order: 1;
         margin: $column-gutter-md/4 0;
+        order:  1;
     }
     @media (min-width: $screen-lg) {
         margin: $column-gutter-lg/4 0;
@@ -134,19 +137,21 @@
         @media (min-width: $screen-lg) {
             margin: $column-gutter-lg/4;
         }
+
         label {
             @include fontSmall;
-            line-height: 1;
-            padding: 0.5em;
+            align-items:      center;
             background-color: $grey-10;
-            transition: all $transitionTime ease;
-            font-weight: 700;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            display:          flex;
+            flex-direction:   row;
+            font-weight:      700;
+            line-height:      1;
+            padding:          0.5em;
+            transition:       all $transitionTime ease;
+
             &:after {
                 @include fontMedium;
-                content: '\00d7';
+                content:     "\00d7";
                 margin-left: 0.5em;
             }
         }
@@ -156,28 +161,32 @@
 .jobsList {
     @include columns-component-tight;
     @media (min-width: $screen-md) {
-        align-items: stretch;
+        align-items:     stretch;
         justify-content: flex-start;
     }
+
     li {
+        display:        flex;
+        flex-direction: column;
         @media (min-width: $screen-md) {
             width: calc((100% / 2) - #{$column-gutter-md/2});
         }
         @media (min-width: $screen-lg) {
             width: calc((100% / 3) - #{$column-gutter-lg/2});
         }
-        display: flex;
-        flex-direction: column;
     }
 }
 
 .job {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    background: $jobs-grey;
-    padding: $column-gutter-sm;
-    min-height: 10em;
+    background:       $jobs-grey;
+    display:          flex;
+    flex-direction:   row;
+    flex-grow:        1;
+    min-height:       10em;
+    padding:          $column-gutter-sm;
+    transition:       background-color 500ms ease;
+    transition-delay: 100ms;
+
     @media (min-width: $screen-md) {
         padding: $column-gutter-md;
 
@@ -187,84 +196,87 @@
 
     }
 
-    transition: background-color 500ms ease;
-    transition-delay: 100ms;
-
     @media (min-width: $screen-lg) {
 
         &:before {
+            content:        "";
+            float:          left;
             padding-bottom: 62.5%; /* Minimum aspect ratio */
-            content: '';
-            float: left;
         }
 
         &:after {
+            clear:   both;
+            content: "";
             display: table;
-            content: '';
-            clear: both;
         }
     }
 
     section {
-        flex-grow: 1;
-        margin-bottom: 0;
-        display: flex;
+        display:        flex;
         flex-direction: column;
+        flex-grow:      1;
         @include fontMediumVr;
-
-        & {
-            margin-bottom: 0;
+        &, p, li, time {
+            margin-bottom:  0;
         }
 
         h2 {
-            margin-bottom: 0;
-            transition: color 500ms ease;
+            margin-bottom:    0;
+            transition:       color 500ms ease;
             transition-delay: 100ms;
         }
+
         &, p, li, time {
-            transition: color 500ms ease;
+            transition:       color 500ms ease;
             transition-delay: 100ms;
         }
 
         p {
             margin-bottom: #{$rhythm-unit*2}em;
-        };
+        }
     }
+
     button {
         @include fontMedium;
-        flex-grow: 0;
-        border: none;
-        padding: 0;
-        margin: auto 0 0;
+        align-self:       flex-start;
+        background:       unset;
+        border:           none;
+        flex-grow:        0;
+        line-height:      $line-height;
+        margin:           auto 0 0;
+        padding:          0;
+        transition:       color 500ms ease;
+        transition-delay: 100ms;
         @media (min-width: $screen-md) {
             margin: auto 0 0;
         }
-        background: unset;
-        align-self: flex-start;
-        line-height: $line-height;
-        transition: color 500ms ease;
-        transition-delay: 100ms;
         @include arrow-link;
+
         &:after {
-            background-image: url('/images/hf-arrow.svg');
-            transition: background-image 500ms ease;
+            background-image: url("/images/hf-arrow.svg");
+            transition:       background-image 500ms ease;
             transition-delay: 100ms;
         }
     }
+
     &:hover {
         background: $blue-background;
+
         section {
             h2 {
                 color: $orange;
             }
+
             &, p, li, time {
                 color: white;
             }
         }
+
         button {
             color: white;
+
             &:after {
-                background-image: url('/images/hf-arrow.orange.svg');
+                background-image: url("/images/hf-arrow.orange.svg");
             }
         }
     }

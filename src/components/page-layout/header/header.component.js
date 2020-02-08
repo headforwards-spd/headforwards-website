@@ -10,12 +10,6 @@ import styles from './header.module.scss';
 import StickyNav from './sticky-nav.component';
 
 export default class Header extends StickyNav {
-    scrollTop = 0;
-
-    debounceTime = 20;
-
-    debounceScroll = null;
-
     static propTypes = {
         isHomePage: bool,
         title: string.isRequired,
@@ -30,6 +24,12 @@ export default class Header extends StickyNav {
         subtitle: null,
         image: null,
     };
+
+    debounceScroll = null;
+
+    debounceTime = 20;
+
+    scrollTop = 0;
 
     render() {
         const { isHomePage, title, subtitle, image, menu, companyInfo } = this.props;
@@ -46,7 +46,13 @@ export default class Header extends StickyNav {
 
         return (
             <header className={`${styles.header} ${headerStyle} ${scrollingClass}`}>
-                <Navbar {...{ menu, companyInfo, hasBackground }} />
+                <Navbar
+                    {...{
+                        menu,
+                        companyInfo,
+                        hasBackground,
+                    }}
+                />
                 <section className={titleStyle}>
                     <h1>{parseHtml(title)}</h1>
                     {!!subtitle && <p>{subtitle}</p>}

@@ -33,6 +33,7 @@ export const PageComponentPropType = oneOfType([
 ]);
 
 PageComponent.propTypes = pageComponentPropTypes;
+
 function PageComponent({ type, ...component }) {
     switch (type) {
         case 'images-component':
@@ -60,11 +61,23 @@ ImagesComponent.propTypes = imagesComponentPropTypes;
 ImagesComponent.defaultProps = {
     imageTwo: null,
 };
+
 function ImagesComponent({ imageOne, imageTwo, ...props }) {
     return !imageTwo ? (
-        <FullWidthImage {...{ ...props, image: imageOne }} />
+        <FullWidthImage
+            {...{
+                ...props,
+                image: imageOne,
+            }}
+        />
     ) : (
-        <TwoImages {...{ ...props, leftImage: imageOne, rightImage: imageTwo }} />
+        <TwoImages
+            {...{
+                ...props,
+                leftImage: imageOne,
+                rightImage: imageTwo,
+            }}
+        />
     );
 }
 
@@ -81,6 +94,7 @@ ImageCopyComponent.defaultProps = {
     imagePostit: null,
     isPostit: false,
 };
+
 function ImageCopyComponent({ image, imageSquare, imagePostit, isPostit, ...props }) {
     switch (true) {
         case !image:

@@ -5,12 +5,14 @@
     > h2 {
         @include headingFontLarge;
     }
+
     @include fontMedium;
     @media(min-width: $screen-lg) {
         @include fontLarge;
     }
     @include component-gutter;
 }
+
 .jobRoles {
 
     @include columns-component;
@@ -25,12 +27,16 @@
 
     .role {
 
-        h2 {
-            @include headingFontMedium;
-        }
+        margin:         $gutter-small/2;
 
         @include fontMedium;
 
+        padding-bottom: calc(100% - #{$gutter-small});
+
+        width:          calc(100% - #{$gutter-small});
+        h2 {
+            @include headingFontMedium;
+        }
         @media(min-width: $screen-md) {
             h2 {
                 @include headingFontLarge;
@@ -38,40 +44,36 @@
 
             @include fontLarge;
         }
-
-        margin: $gutter-small/2;
-        width: calc(100% - #{$gutter-small});
-        padding-bottom: calc(100% - #{$gutter-small});
         @media (min-width: $screen-md) {
             margin: $column-gutter/2;
         }
 
         @media(min-width: $screen-lg) {
-            width: calc(50% - #{$column-gutter});
             padding-bottom: calc(50% - #{$column-gutter});
+            width:          calc(50% - #{$column-gutter});
         }
 
         > a {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: flex;
+            bottom:         0;
+            display:        flex;
             flex-direction: column;
-            padding: $gutter-small;
+            left:           0;
+            padding:        $gutter-small;
+            position:       absolute;
+            right:          0;
+            top:            0;
             @media(min-width: $screen-md) {
                 padding: $column-gutter;
             }
         }
 
         .link {
-            color: $header_black;
+            color:      $header_black;
             @include arrow-link;
             margin-top: auto;
 
             &:after {
-                background-image: url('/images/hf-arrow.svg');
+                background-image: url("/images/hf-arrow.svg");
             }
         }
     }

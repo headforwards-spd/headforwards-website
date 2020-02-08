@@ -8,8 +8,8 @@
     transition: opacity $transitionTime ease;
 
     abbr {
+        color:           $error-color;
         text-decoration: none;
-        color: $error-color;
     }
 
     > section {
@@ -17,27 +17,27 @@
         margin-bottom: 0;
 
         @media (min-width: $screen-md) {
-            margin-top: 0;
+            align-items:   flex-start;
             margin-bottom: $component-gutter-md;
 
-            align-items: flex-start;
+            margin-top:    0;
         }
         @media (min-width: $screen-lg) {
-            margin-top: 0;
             margin-bottom: $component-gutter-lg;
+            margin-top:    0;
         }
 
         header {
-            width: calc((100%/1) - #{$column-gutter-sm});
+            width: calc((100% / 1) - #{$column-gutter-sm});
             @media (min-width: $screen-md) {
-                margin-top: 0;
                 margin-bottom: 0;
-                width: calc((100% / 3) - #{$column-gutter-md});
+                margin-top:    0;
+                width:         calc((100% / 3) - #{$column-gutter-md});
             }
             @media (min-width: $screen-lg) {
-                margin-top: 0;
                 margin-bottom: 0;
-                width: calc((100% / 3) - #{$column-gutter-lg});
+                margin-top:    0;
+                width:         calc((100% / 3) - #{$column-gutter-lg});
             }
 
             h2 {
@@ -50,34 +50,34 @@
         }
 
         > section {
-            display: flex;
+            display:        flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            margin: 0;
+            flex-wrap:      wrap;
+            margin:         0;
 
             @media (min-width: $screen-md) {
 
                 &, &:last-child {
-                    width: calc((100% * 2 / 3));
                     margin-left: auto;
+                    width:       calc((100% * 2 / 3));
                 }
             }
 
             > label {
 
-                width: calc((100% / 1) - #{$column-gutter-sm/2});
-                margin-left: $column-gutter-sm/2;
+                margin-left:  $column-gutter-sm/2;
                 margin-right: $column-gutter-sm/2;
+                width:        calc((100% / 1) - #{$column-gutter-sm/2});
                 @media (min-width: $screen-md) {
-                    width: calc((100% / 2) - #{$column-gutter-md});
-                    margin-left: $column-gutter-md/2;
+                    margin-left:  $column-gutter-md/2;
                     margin-right: $column-gutter-md/2;
+                    width:        calc((100% / 2) - #{$column-gutter-md});
                     //#{$rhythm-unit}em;
                 }
                 @media (min-width: $screen-lg) {
-                    width: calc((100% / 2) - #{$column-gutter-lg});
-                    margin-left: $column-gutter-lg/2;
+                    margin-left:  $column-gutter-lg/2;
                     margin-right: $column-gutter-lg/2;
+                    width:        calc((100% / 2) - #{$column-gutter-lg});
                 }
 
                 &.fullWidth {
@@ -87,8 +87,8 @@
                         width: 100%;
                         @media (min-width: $screen-md) {
 
+                            margin:  calc(#{$rhythm-unit/4}em - 1px) 0;
                             padding: calc(#{$rhythm-unit*3/4}em) $component-gutter-sm/2;
-                            margin: calc(#{$rhythm-unit/4}em - 1px) 0;
                         }
                     }
                 }
@@ -116,30 +116,30 @@
 
             [role="group"] {
                 > * {
-                    margin-left: $column-gutter-sm/2;
+                    margin-left:  $column-gutter-sm/2;
                     margin-right: $column-gutter-sm/2;
                     @media (min-width: $screen-md) {
 
-                        margin-left: $column-gutter-md/2;
+                        margin-left:  $column-gutter-md/2;
                         margin-right: $column-gutter-md/2;
                     }
                     @media (min-width: $screen-lg) {
 
-                        margin-left: $column-gutter-lg/2;
+                        margin-left:  $column-gutter-lg/2;
                         margin-right: $column-gutter-lg/2;
                     }
 
                     &.error {
-                        margin-left: $column-gutter-sm/2/0.85;
+                        margin-left:  $column-gutter-sm/2/0.85;
                         margin-right: $column-gutter-sm/2/0.85;
                         @media (min-width: $screen-md) {
 
-                            margin-left: $column-gutter-md/2/0.85;
+                            margin-left:  $column-gutter-md/2/0.85;
                             margin-right: $column-gutter-md/2/0.85;
                         }
                         @media (min-width: $screen-lg) {
 
-                            margin-left: $column-gutter-lg/2/0.85;
+                            margin-left:  $column-gutter-lg/2/0.85;
                             margin-right: $column-gutter-lg/2/0.85;
                         }
                     }
@@ -148,7 +148,6 @@
         }
 
         > .submit {
-
 
             margin: $column-gutter-sm/2 0;
             @media (min-width: $screen-md) {
@@ -167,39 +166,39 @@
             }
 
             > div, > p {
-                width: 100%;
-                margin-left: $column-gutter-sm/2;
+                margin-left:  $column-gutter-sm/2;
                 margin-right: $column-gutter-sm/2;
+                width:        100%;
                 @media (min-width: $screen-md) {
+                    align-items:    flex-start;
                     flex-direction: row;
-                    align-items: flex-start;
-                    margin-left: $column-gutter-md/2;
-                    margin-right: $column-gutter-md/2;
+                    margin-left:    $column-gutter-md/2;
+                    margin-right:   $column-gutter-md/2;
                 }
                 @media (min-width: $screen-lg) {
-                    margin-left: $column-gutter-lg/2;
+                    margin-left:  $column-gutter-lg/2;
                     margin-right: $column-gutter-lg/2;
                 }
             }
 
             > div {
-                display: flex;
+                display:        flex;
                 flex-direction: column;
                 @media (min-width: $screen-md) {
+                    align-items:    flex-start;
                     flex-direction: row;
-                    align-items: flex-start;
                 }
 
                 button {
                     @include fontLarge;
-                    display: inline-block;
-                    align-self: flex-start;
-                    margin: 0;
+                    align-self:      flex-start;
+                    display:         inline-block;
+                    flex-shrink:     0;
                     justify-content: space-between;
-                    padding: 0.5em;
-                    flex-shrink: 0;
+                    margin:          0;
+                    padding:         0.5em;
 
-                    transition: all $transitionTime ease;
+                    transition:      all $transitionTime ease;
                 }
 
                 .messages {
@@ -209,8 +208,8 @@
                 @media (min-width: $screen-md) {
                     flex-direction: row;
                     .messages {
-                        margin: 0 0 0 $column-gutter-md;
                         flex-grow: 1;
+                        margin:    0 0 0 $column-gutter-md;
                     }
                 }
                 @media (min-width: $screen-lg) {
@@ -222,25 +221,27 @@
 
             .messages {
                 .success, .error {
-                    display: flex;
+                    align-items:    center;
+                    display:        flex;
                     flex-direction: row;
-                    align-items: center;
                     @media (min-width: $screen-md) {
                         align-items: flex-start;
                     }
                 }
+
                 .error {
                     svg {
-                        color: $error-color;
+                        color:        $error-color;
+                        flex-shrink:  1;
                         margin-right: 0.5em;
-                        flex-shrink: 1;
                     }
                 }
+
                 .success {
                     svg {
-                        color:$success-color;
+                        color:        $success-color;
+                        flex-shrink:  1;
                         margin-right: 0.5em;
-                        flex-shrink: 1;
                     }
                 }
             }
@@ -250,7 +251,7 @@
     &.error .submit {
         button {
             background: $input-grey;
-            opacity: 0.5;
+            opacity:    0.5;
         }
     }
 
@@ -259,10 +260,11 @@
 
         .submit button {
             svg {
-                height: 0.8em;
-                width: 0.8em;
+                height:      0.8em;
                 margin-left: 1em;
+                width:       0.8em;
             }
+
             &:after {
                 content: none;
             }

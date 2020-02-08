@@ -7,6 +7,7 @@ import styles from '../application-form.module.scss';
 
 export default ErrorSection;
 ErrorSection.propTypes = { message: string.isRequired };
+
 function ErrorSection({ message }) {
     return (
         <div className={styles.error}>

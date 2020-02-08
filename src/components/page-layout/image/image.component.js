@@ -31,6 +31,7 @@ Image.defaultProps = {
     ratio: '62.5%',
     className: '',
 };
+
 function Image({ image, alt, ratio, className = '', ...props }) {
     const { childImageSharp = null } = image || {};
     let src;

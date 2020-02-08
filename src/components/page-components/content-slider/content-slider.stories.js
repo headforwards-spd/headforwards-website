@@ -32,7 +32,10 @@ export const interactive = () => {
 };
 
 function generateSlides() {
-    const count = faker.random.number({ min: 2, max: 10 });
+    const count = faker.random.number({
+        min: 2,
+        max: 10,
+    });
     const articles = [];
 
     for (let i = 0; i < count; i += 1) {

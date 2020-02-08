@@ -71,7 +71,7 @@ export const schema = {
                     <Link to="/privacy-notice/" target="_blank">
                         privacy policy
                     </Link>
-                    .
+                    .{' '}
                 </>
             ),
             value: 'I agree to the terms outlined in the privacy policy.',

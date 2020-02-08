@@ -12,6 +12,7 @@ QuestionSection.propTypes = {
 QuestionSection.defaultProps = {
     isSubmitting: false,
 };
+
 function QuestionSection({ questions, isSubmitting }) {
     return (
         <section>

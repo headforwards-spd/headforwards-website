@@ -1,19 +1,21 @@
 //@import "./fonts/fs-albert";
 @import "./fonts/fs-albert-web";
-@import '~normalize.css';
+@import "~normalize.css";
 @import "variables";
 @import "mixins/typography";
 @import "../components/page-layout/navbar/navbar.module";
 
 * {
     box-sizing: border-box;
-    outline: none;
+    outline:    none;
 }
 
 body {
 
     @include fontBase;
-    overflow-x: hidden;
+    font-family: "FS Albert Web", Arial, sans-serif;
+
+    overflow-x:  hidden;
 
     &.menuIsOpen {
         overflow: hidden;
@@ -22,17 +24,16 @@ body {
         }
 
     }
-    font-family: "FS Albert Web", Arial, sans-serif;
 
     > div {
 
         > div {
 
             &#gatsby-focus-wrapper {
-                display: flex;
+                display:        flex;
                 flex-direction: column;
-                min-height: 100vh;
-                overflow-x: hidden;
+                min-height:     100vh;
+                overflow-x:     hidden;
             }
 
             > header, > footer {
@@ -49,15 +50,15 @@ body {
             > footer > address,
             > footer > section > * {
                 @include fontMedium;
-                margin: 0 auto;
-                width: 100%;
+                margin:  0 auto;
                 padding: 0 $column-gutter-sm;
+                width:   100%;
                 @media(min-width: $screen-md) {
                     padding: 0 $column-gutter-md;
                 }
                 @media(min-width: $screen-lg) {
                     max-width: calc(#{$max_width} + #{$column-gutter-lg*2});
-                    padding: 0 $column-gutter-lg;
+                    padding:   0 $column-gutter-lg;
                 }
             }
         }
@@ -73,9 +74,9 @@ body {
     }
 
     ul {
-        list-style: none;
-        padding-left: 0;
         justify-content: center;
+        list-style:      none;
+        padding-left:    0;
     }
 
     strong {

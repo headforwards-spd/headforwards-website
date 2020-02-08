@@ -34,7 +34,10 @@ export default class ContactForm extends Component {
         const options = {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            data: qs.stringify({ ...data, 'g-recaptcha-response': token }),
+            data: qs.stringify({
+                ...data,
+                'g-recaptcha-response': token,
+            }),
             url: '/',
         };
 
@@ -78,11 +81,20 @@ export default class ContactForm extends Component {
             'bot-field': values['bot-field'],
             'form-name': values['form-name'],
         })
-            .then(data => this.setState({ data, errorMessage: null, successMessage: null }))
+            .then(data =>
+                this.setState({
+                    data,
+                    errorMessage: null,
+                    successMessage: null,
+                })
+            )
             .then(() => rcRef.current.execute())
             .catch(() => {
                 this.resetForm = null;
-                this.setState({ isSubmitting: false, errorMessage: messages.recaptchaError });
+                this.setState({
+                    isSubmitting: false,
+                    errorMessage: messages.recaptchaError,
+                });
             });
     }
 
@@ -175,7 +187,7 @@ export default class ContactForm extends Component {
                                 <Checkbox {...schema.marketing.field} disabled={isSubmitting} />
                                 <p>
                                     <abbr title="required">*&nbsp;</abbr>
-                                    required fields
+                                    required fields{' '}
                                 </p>
                                 <div role="group" className={styles.submit}>
                                     <Reaptcha {...rcProps} className={styles.recaptcha} />
@@ -187,7 +199,7 @@ export default class ContactForm extends Component {
                                         {hasError && (
                                             <div className={styles.error}>
                                                 <FontAwesomeIcon icon={faTimesCircle} size="lg" />
-                                                One or more fields have an error.
+                                                One or more fields have an error.{' '}
                                             </div>
                                         )}
                                         {errorMessage && (

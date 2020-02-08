@@ -1,37 +1,37 @@
-@import '../../../scss/mixins/mixins';
-@import '../../../scss/mixins/typography';
-@import '../../page-components/page-component';
+@import "../../../scss/mixins/mixins";
+@import "../../../scss/mixins/typography";
+@import "../../page-components/page-component";
 
 /* Footer social */
 .footerSection {
-    line-height: 1;
+    align-items:    center;
     @include component-gutter;
-    margin: 0 auto;
+    display:        flex;
+    flex-direction: row;
+
+    line-height:    1;
+    margin:         0 auto;
     @media (min-width: $screen-md) {
         margin: 0 auto;
     }
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
     li {
         @include headingFontXLarge;
-        line-height: 3;
+        line-height:   3;
         margin-bottom: 0;
         @media (min-width: $screen-md) {
             @include headingFontMedium;
-            line-height: 3.5;
+            line-height:   3.5;
             margin-bottom: 0;
         }
 
         a {
-            width: 1em;
-            height: 1em;
-            padding: $column-gutter-sm/2;
+            color:           #d7d7d6;
+            height:          1em;
+            padding:         $column-gutter-sm/2;
             text-decoration: none;
-            color: #d7d7d6;
-            transition: all $transitionTime ease;
+            transition:      all $transitionTime ease;
+            width:           1em;
 
             &:hover {
                 color: $blue-background;
@@ -42,19 +42,20 @@
 }
 
 .headerSection {
-    display: flex;
-    flex-direction: row;
+    display:         flex;
+    flex-direction:  row;
     justify-content: flex-start;
-    margin-top: 0;
+    margin-top:      0;
+
     li {
-        line-height: 1;
+        line-height:   1;
         padding-right: 0.56em;
 
         a {
-            height: 1em;
-            width: 1em;
-            color: $grey-6;
+            color:      $grey-6;
+            height:     1em;
             transition: all $transitionTime ease;
+            width:      1em;
 
             &:hover {
                 color: $orange;

@@ -29,7 +29,10 @@ function Homepage({ data }) {
     const { frontmatter } = page;
     const { introduction, sections, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
-    const templateProps = { introduction, sections };
+    const templateProps = {
+        introduction,
+        sections,
+    };
 
     return (
         <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks} isHomePage>

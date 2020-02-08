@@ -13,6 +13,7 @@ CvSection.defaultProps = {
     isRequired: false,
     isSubmitting: false,
 };
+
 function CvSection({ isRequired, isSubmitting }) {
     return (
         <section>

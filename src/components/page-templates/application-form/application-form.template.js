@@ -9,6 +9,7 @@ ApplicationForm.propTypes = {
     jobTitle: string.isRequired,
     subtitle: string.isRequired,
 };
+
 function ApplicationForm({ jobTitle, ...form }) {
     return <Form jobTitle={jobTitle} {...form} />;
 }

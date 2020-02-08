@@ -88,7 +88,10 @@ export default class JobsPage extends Component {
     }
 
     clearFilters() {
-        this.setState({ showFilters: false, selectedFilters: [] });
+        this.setState({
+            showFilters: false,
+            selectedFilters: [],
+        });
     }
 
     selectedTags() {

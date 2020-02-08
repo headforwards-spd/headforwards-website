@@ -3,30 +3,30 @@ backend:
   repo: andyweirheadforwards/headforwards-website
 #publish_mode: editorial_workflow
 
-site_url: https://headforwards-website2.netlify.com
-display_url: https://headforwards.com
-logo_url: https://headforwards-website2.netlify.com/images/headforwards.black.png
+site_url:           https://headforwards-website2.netlify.com
+display_url:        https://headforwards.com
+logo_url:           https://headforwards-website2.netlify.com/images/headforwards.black.png
 show_preview_links: true
 
-media_folder: static/uploads
-public_folder: /uploads
+media_folder:       static/uploads
+public_folder:      /uploads
 
 collections:
 
-  - label: "Who we are."
-    label_singular: "Page"
-    name: who-we-are
-    description: "Who we are pages"
-    folder: "src/pages/info-pages"
-    create: true
-    slug: "{{slug}}"
+  - label:            "Who we are."
+    label_singular:   "Page"
+    name:             who-we-are
+    description:      "Who we are pages"
+    folder:           "src/pages/info-pages"
+    create:           true
+    slug:             "{{slug}}"
     identifier_field: title
     filter: {field: "parent", value: who-we-are}
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - label: "Parent"
-        name: parent
-        widget: select
+      - label:   "Parent"
+        name:    parent
+        widget:  select
         default: who-we-are
         options:
           - { label: "Who we are.", value: who-we-are }
@@ -36,33 +36,33 @@ collections:
       - {label: "Type", name: type, widget: hidden, default: "info-page"}
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
-      - label: "Page Image (banner/menu image)"
-        name: image
+      - label:  "Page Image (banner/menu image)"
+        name:   image
         widget: object
         fields:
           - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
           - {label: "Image", name:  image, widget: image, required: true}
-      - label: "Page Introduction (menu text)"
-        name: introduction
+      - label:  "Page Introduction (menu text)"
+        name:   introduction
         widget: object
         fields:
           - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
-      - label: "Page Components"
-        name: components
+      - label:  "Page Components"
+        name:   components
         widget: list
         types:
-          - label: "Images"
-            name: images-component
+          - label:  "Images"
+            name:   images-component
             widget: object
             fields:
               - {label: "Flip images?", name: flip, widget: boolean, required: false, default:false}
               - {label: "Image One", name: imageOne, widget: image}
               - {label: "Image Two", name: imageTwo, widget: image, required: false, default: null}
 
-          - label: "Quote"
-            name: quote-component
+          - label:  "Quote"
+            name:   quote-component
             widget: object
             fields:
               - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -71,34 +71,34 @@ collections:
               - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
               - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
 
-          - label: "Image & Copy"
-            name: image-copy-component
+          - label:  "Image & Copy"
+            name:   image-copy-component
             widget: object
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string, required: false, default: null}
-              - label: "Content"
-                name: content
+              - label:  "Content"
+                name:   content
                 widget: list
                 types:
-                  - label: "Copy"
-                    name: markdown-component
+                  - label:  "Copy"
+                    name:   markdown-component
                     widget: object
                     fields:
                       - {label: "Copy", name: text, widget: markdown}
-                  - label: "Quote"
-                    name: quote-component
+                  - label:  "Quote"
+                    name:   quote-component
                     widget: object
                     fields:
                       - {label: "Quote", name: quote, widget: text}
                       - {label: "Name", name: name, widget: string, required: false, default: null}
                       - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
                       - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
-              - label: "Link"
-                name: link
+              - label:    "Link"
+                name:     link
                 required: false
-                default: null
-                widget: optional-object
+                default:  null
+                widget:   optional-object
                 fields:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
@@ -106,13 +106,13 @@ collections:
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
               - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
 
-          - label: "Articles"
-            name: article-component
+          - label:  "Articles"
+            name:   article-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Articles"
-                name: articles
+              - label:  "Articles"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -121,26 +121,26 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Blog Posts"
-            name: blog-post-component
+          - label:  "Blog Posts"
+            name:   blog-post-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Blog Posts"
-                name: articles
+              - label:  "Blog Posts"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Content Slider"
-            name: content-slider-component
+          - label:  "Content Slider"
+            name:   content-slider-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
-              - label: "Slides"
-                name: articles
+              - label:  "Slides"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -150,9 +150,9 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       # FOOTERLINKS
-      - label: "Footer Links"
-        name: footerLinks
-        widget: optional-object
+      - label:    "Footer Links"
+        name:     footerLinks
+        widget:   optional-object
         required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -164,28 +164,28 @@ collections:
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
       # SEO
-      - label: "SEO"
-        name: seo
+      - label:  "SEO"
+        name:   seo
         widget: object
         fields:
           - {label: "SEO Slug",        name: slug,        widget: string, required: false, default: null}
           - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
           - {label: "SEO Description", name: description, widget: string, required: false, default: null}
 
-  - label: "What we do."
-    label_singular: "Page"
-    name: what-we-do
-    description: "What we do pages"
-    folder: "src/pages/info-pages"
-    create: true
-    slug: "{{slug}}"
+  - label:            "What we do."
+    label_singular:   "Page"
+    name:             what-we-do
+    description:      "What we do pages"
+    folder:           "src/pages/info-pages"
+    create:           true
+    slug:             "{{slug}}"
     identifier_field: title
     filter: {field: "parent", value: what-we-do}
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - label: "Parent"
-        name: parent
-        widget: select
+      - label:   "Parent"
+        name:    parent
+        widget:  select
         default: what-we-do
         options:
           - { label: "Who we are.", value: who-we-are }
@@ -195,33 +195,33 @@ collections:
       - {label: "Type", name: type, widget: hidden, default: "info-page"}
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
-      - label: "Page Image (banner/menu image)"
-        name: image
+      - label:  "Page Image (banner/menu image)"
+        name:   image
         widget: object
         fields:
           - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
           - {label: "Image", name:  image, widget: image, required: true}
-      - label: "Page Introduction (menu text)"
-        name: introduction
+      - label:  "Page Introduction (menu text)"
+        name:   introduction
         widget: object
         fields:
           - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
-      - label: "Page Components"
-        name: components
+      - label:  "Page Components"
+        name:   components
         widget: list
         types:
-          - label: "Images"
-            name: images-component
+          - label:  "Images"
+            name:   images-component
             widget: object
             fields:
               - {label: "Flip images?", name: flip, widget: boolean, required: false, default:false}
               - {label: "Image One", name: imageOne, widget: image}
               - {label: "Image Two", name: imageTwo, widget: image, required: false, default: null}
 
-          - label: "Quote"
-            name: quote-component
+          - label:  "Quote"
+            name:   quote-component
             widget: object
             fields:
               - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -230,34 +230,34 @@ collections:
               - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
               - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
 
-          - label: "Image & Copy"
-            name: image-copy-component
+          - label:  "Image & Copy"
+            name:   image-copy-component
             widget: object
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string, required: false, default: null}
-              - label: "Content"
-                name: content
+              - label:  "Content"
+                name:   content
                 widget: list
                 types:
-                  - label: "Copy"
-                    name: markdown-component
+                  - label:  "Copy"
+                    name:   markdown-component
                     widget: object
                     fields:
                       - {label: "Copy", name: text, widget: markdown}
-                  - label: "Quote"
-                    name: quote-component
+                  - label:  "Quote"
+                    name:   quote-component
                     widget: object
                     fields:
                       - {label: "Quote", name: quote, widget: text}
                       - {label: "Name", name: name, widget: string, required: false, default: null}
                       - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
                       - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
-              - label: "Link"
-                name: link
+              - label:    "Link"
+                name:     link
                 required: false
-                default: null
-                widget: optional-object
+                default:  null
+                widget:   optional-object
                 fields:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
@@ -265,13 +265,13 @@ collections:
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
               - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
 
-          - label: "Articles"
-            name: article-component
+          - label:  "Articles"
+            name:   article-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Articles"
-                name: articles
+              - label:  "Articles"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -280,26 +280,26 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Blog Posts"
-            name: blog-post-component
+          - label:  "Blog Posts"
+            name:   blog-post-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Blog Posts"
-                name: articles
+              - label:  "Blog Posts"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Content Slider"
-            name: content-slider-component
+          - label:  "Content Slider"
+            name:   content-slider-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
-              - label: "Slides"
-                name: "articles"
+              - label:  "Slides"
+                name:   "articles"
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -309,9 +309,9 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       # FOOTERLINKS
-      - label: "Footer Links"
-        name: footerLinks
-        widget: optional-object
+      - label:    "Footer Links"
+        name:     footerLinks
+        widget:   optional-object
         required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -323,28 +323,28 @@ collections:
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
       # SEO
-      - label: "SEO"
-        name: seo
+      - label:  "SEO"
+        name:   seo
         widget: object
         fields:
           - {label: "SEO Slug",        name: slug,        widget: string, required: false, default: null}
           - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
           - {label: "SEO Description", name: description, widget: string, required: false, default: null}
 
-  - label: "How we work."
-    label_singular: "Page"
-    name: how-we-work
-    description: "How we work pages"
-    folder: "src/pages/info-pages"
-    create: true
-    slug: "{{slug}}"
+  - label:            "How we work."
+    label_singular:   "Page"
+    name:             how-we-work
+    description:      "How we work pages"
+    folder:           "src/pages/info-pages"
+    create:           true
+    slug:             "{{slug}}"
     identifier_field: title
     filter: {field: "parent", value: how-we-work}
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - label: "Parent"
-        name: parent
-        widget: select
+      - label:   "Parent"
+        name:    parent
+        widget:  select
         default: how-we-work
         options:
           - { label: "Who we are.", value: who-we-are }
@@ -354,33 +354,33 @@ collections:
       - {label: "Type", name: type, widget: hidden, default: "info-page"}
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
-      - label: "Page Image (banner/menu image)"
-        name: image
+      - label:  "Page Image (banner/menu image)"
+        name:   image
         widget: object
         fields:
           - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
           - {label: "Image", name:  image, widget: image, required: true}
-      - label: "Page Introduction (menu text)"
-        name: introduction
+      - label:  "Page Introduction (menu text)"
+        name:   introduction
         widget: object
         fields:
           - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
-      - label: "Page Components"
-        name: components
+      - label:  "Page Components"
+        name:   components
         widget: list
         types:
-          - label: "Images"
-            name: images-component
+          - label:  "Images"
+            name:   images-component
             widget: object
             fields:
               - {label: "Flip images?", name: flip, widget: boolean, required: false, default:false}
               - {label: "Image One", name: imageOne, widget: image}
               - {label: "Image Two", name: imageTwo, widget: image, required: false, default: null}
 
-          - label: "Quote"
-            name: quote-component
+          - label:  "Quote"
+            name:   quote-component
             widget: object
             fields:
               - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -389,34 +389,34 @@ collections:
               - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
               - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
 
-          - label: "Image & Copy"
-            name: image-copy-component
+          - label:  "Image & Copy"
+            name:   image-copy-component
             widget: object
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string, required: false, default: null}
-              - label: "Content"
-                name: content
+              - label:  "Content"
+                name:   content
                 widget: list
                 types:
-                  - label: "Copy"
-                    name: markdown-component
+                  - label:  "Copy"
+                    name:   markdown-component
                     widget: object
                     fields:
                       - {label: "Copy", name: text, widget: markdown}
-                  - label: "Quote"
-                    name: quote-component
+                  - label:  "Quote"
+                    name:   quote-component
                     widget: object
                     fields:
                       - {label: "Quote", name: quote, widget: text}
                       - {label: "Name", name: name, widget: string, required: false, default: null}
                       - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
                       - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
-              - label: "Link"
-                name: link
+              - label:    "Link"
+                name:     link
                 required: false
-                default: null
-                widget: optional-object
+                default:  null
+                widget:   optional-object
                 fields:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
@@ -424,13 +424,13 @@ collections:
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
               - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
 
-          - label: "Articles"
-            name: article-component
+          - label:  "Articles"
+            name:   article-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Articles"
-                name: articles
+              - label:  "Articles"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -439,26 +439,26 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Blog Posts"
-            name: blog-post-component
+          - label:  "Blog Posts"
+            name:   blog-post-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Blog Posts"
-                name: articles
+              - label:  "Blog Posts"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Content Slider"
-            name: content-slider-component
+          - label:  "Content Slider"
+            name:   content-slider-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
-              - label: "Slides"
-                name: "articles"
+              - label:  "Slides"
+                name:   "articles"
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -468,9 +468,9 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       # FOOTERLINKS
-      - label: "Footer Links"
-        name: footerLinks
-        widget: optional-object
+      - label:    "Footer Links"
+        name:     footerLinks
+        widget:   optional-object
         required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -482,28 +482,28 @@ collections:
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
       # SEO
-      - label: "SEO"
-        name: seo
+      - label:  "SEO"
+        name:   seo
         widget: object
         fields:
           - {label: "SEO Slug",        name: slug,        widget: string, required: false, default: null}
           - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
           - {label: "SEO Description", name: description, widget: string, required: false, default: null}
 
-  - label: "Careers."
-    label_singular: "Page"
-    name: careers
-    description: "Careers pages"
-    folder: "src/pages/info-pages"
-    create: true
-    slug: "{{slug}}"
+  - label:            "Careers."
+    label_singular:   "Page"
+    name:             careers
+    description:      "Careers pages"
+    folder:           "src/pages/info-pages"
+    create:           true
+    slug:             "{{slug}}"
     identifier_field: title
     filter: {field: "parent", value: "careers"}
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-      - label: "Parent"
-        name: parent
-        widget: select
+      - label:   "Parent"
+        name:    parent
+        widget:  select
         default: careers
         options:
           - { label: "Who we are.", value: who-we-are }
@@ -513,33 +513,33 @@ collections:
       - {label: "Type", name: type, widget: hidden, default: "info-page"}
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
-      - label: "Page Image (banner/menu image)"
-        name: image
+      - label:  "Page Image (banner/menu image)"
+        name:   image
         widget: object
         fields:
           - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
           - {label: "Image", name:  image, widget: image, required: true}
-      - label: "Page Introduction (menu text)"
-        name: introduction
+      - label:  "Page Introduction (menu text)"
+        name:   introduction
         widget: object
         fields:
           - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
-      - label: "Page Components"
-        name: components
+      - label:  "Page Components"
+        name:   components
         widget: list
         types:
-          - label: "Images"
-            name: images-component
+          - label:  "Images"
+            name:   images-component
             widget: object
             fields:
               - {label: "Flip images?", name: flip, widget: boolean, required: false, default:false}
               - {label: "Image One", name: imageOne, widget: image}
               - {label: "Image Two", name: imageTwo, widget: image, required: false, default: null}
 
-          - label: "Quote"
-            name: quote-component
+          - label:  "Quote"
+            name:   quote-component
             widget: object
             fields:
               - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -548,34 +548,34 @@ collections:
               - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
               - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
 
-          - label: "Image & Copy"
-            name: image-copy-component
+          - label:  "Image & Copy"
+            name:   image-copy-component
             widget: object
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string, required: false, default: null}
-              - label: "Content"
-                name: content
+              - label:  "Content"
+                name:   content
                 widget: list
                 types:
-                  - label: "Copy"
-                    name: markdown-component
+                  - label:  "Copy"
+                    name:   markdown-component
                     widget: object
                     fields:
                       - {label: "Copy", name: text, widget: markdown}
-                  - label: "Quote"
-                    name: quote-component
+                  - label:  "Quote"
+                    name:   quote-component
                     widget: object
                     fields:
                       - {label: "Quote", name: quote, widget: text}
                       - {label: "Name", name: name, widget: string, required: false, default: null}
                       - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
                       - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
-              - label: "Link"
-                name: link
+              - label:    "Link"
+                name:     link
                 required: false
-                default: null
-                widget: optional-object
+                default:  null
+                widget:   optional-object
                 fields:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
@@ -583,13 +583,13 @@ collections:
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
               - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
 
-          - label: "Articles"
-            name: article-component
+          - label:  "Articles"
+            name:   article-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Articles"
-                name: articles
+              - label:  "Articles"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -598,26 +598,26 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Blog Posts"
-            name: blog-post-component
+          - label:  "Blog Posts"
+            name:   blog-post-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Blog Posts"
-                name: articles
+              - label:  "Blog Posts"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Content Slider"
-            name: content-slider-component
+          - label:  "Content Slider"
+            name:   content-slider-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
-              - label: "Slides"
-                name: "articles"
+              - label:  "Slides"
+                name:   "articles"
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -627,9 +627,9 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       # FOOTERLINKS
-      - label: "Footer Links"
-        name: footerLinks
-        widget: optional-object
+      - label:    "Footer Links"
+        name:     footerLinks
+        widget:   optional-object
         required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -641,22 +641,22 @@ collections:
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
       # SEO
-      - label: "SEO"
-        name: seo
+      - label:  "SEO"
+        name:   seo
         widget: object
         fields:
           - {label: "SEO Slug",        name: slug,        widget: string, required: false, default: null}
           - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
           - {label: "SEO Description", name: description, widget: string, required: false, default: null}
 
-  - label: "Index Pages."
-    label_singular: "Index Page"
-    name: index-pages
-    description: "Index pages"
-    folder: "src/pages/info-pages"
-    create: false
-    delete: false
-    slug: "{{slug}}"
+  - label:            "Index Pages."
+    label_singular:   "Index Page"
+    name:             index-pages
+    description:      "Index pages"
+    folder:           "src/pages/info-pages"
+    create:           false
+    delete:           false
+    slug:             "{{slug}}"
     identifier_field: title
     filter: {field: "type", value: "index-page"}
     fields:
@@ -665,33 +665,33 @@ collections:
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
       - {label: "Postits?", name: isPostits, widget: boolean, required: false, default: false}
-      - label: "Page Image (banner/menu image)"
-        name: image
+      - label:  "Page Image (banner/menu image)"
+        name:   image
         widget: object
         fields:
           - {label: "Show Banner Image?", name: show, widget: boolean, required: false, default: false}
           - {label: "Image", name:  image, widget: image, required: true}
-      - label: "Page Introduction (menu text)"
-        name: introduction
+      - label:  "Page Introduction (menu text)"
+        name:   introduction
         widget: object
         fields:
           - {label: "Show Introduction?", name: show, widget: boolean, required: false, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
       # COMPONENTS
-      - label: "Page Components"
-        name: components
+      - label:  "Page Components"
+        name:   components
         widget: list
         types:
-          - label: "Images"
-            name: images-component
+          - label:  "Images"
+            name:   images-component
             widget: object
             fields:
               - {label: "Flip images?", name: flip, widget: boolean, required: false, default:false}
               - {label: "Image One", name: imageOne, widget: image}
               - {label: "Image Two", name: imageTwo, widget: image, required: false, default: null}
 
-          - label: "Quote"
-            name: quote-component
+          - label:  "Quote"
+            name:   quote-component
             widget: object
             fields:
               - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -700,34 +700,34 @@ collections:
               - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
               - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
 
-          - label: "Image & Copy"
-            name: image-copy-component
+          - label:  "Image & Copy"
+            name:   image-copy-component
             widget: object
             fields:
               - {label: "Image", name: image, widget: image, required: false, default: null}
               - {label: "Title", name: title, widget: string, required: false, default: null}
-              - label: "Content"
-                name: content
+              - label:  "Content"
+                name:   content
                 widget: list
                 types:
-                  - label: "Copy"
-                    name: markdown-component
+                  - label:  "Copy"
+                    name:   markdown-component
                     widget: object
                     fields:
                       - {label: "Copy", name: text, widget: markdown}
-                  - label: "Quote"
-                    name: quote-component
+                  - label:  "Quote"
+                    name:   quote-component
                     widget: object
                     fields:
                       - {label: "Quote", name: quote, widget: text}
                       - {label: "Name", name: name, widget: string, required: false, default: null}
                       - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
                       - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
-              - label: "Link"
-                name: link
+              - label:    "Link"
+                name:     link
                 required: false
-                default: null
-                widget: optional-object
+                default:  null
+                widget:   optional-object
                 fields:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
@@ -735,13 +735,13 @@ collections:
               - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
               - {label: "Two columns (no image)?", name: isTwoColumns, widget: boolean, required: false, default: false}
 
-          - label: "Articles"
-            name: article-component
+          - label:  "Articles"
+            name:   article-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Articles"
-                name: articles
+              - label:  "Articles"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -750,26 +750,26 @@ collections:
                   - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Blog Posts"
-            name: blog-post-component
+          - label:  "Blog Posts"
+            name:   blog-post-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string, required: false, default: null}
-              - label: "Blog Posts"
-                name: articles
+              - label:  "Blog Posts"
+                name:   articles
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
                   - {label: "Image", name:  image, widget: image}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-          - label: "Content Slider"
-            name: content-slider-component
+          - label:  "Content Slider"
+            name:   content-slider-component
             widget: object
             fields:
               - {label: "Component Title", name: title, widget: string}
-              - label: "Slides"
-                name: "articles"
+              - label:  "Slides"
+                name:   "articles"
                 widget: list
                 fields:
                   - {label: "Title", name: title, widget: string}
@@ -779,9 +779,9 @@ collections:
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
       # FOOTERLINKS
-      - label: "Footer Links"
-        name: footerLinks
-        widget: optional-object
+      - label:    "Footer Links"
+        name:     footerLinks
+        widget:   optional-object
         required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -793,21 +793,21 @@ collections:
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
       # SEO
-      - label: "SEO"
-        name: seo
+      - label:  "SEO"
+        name:   seo
         widget: object
         fields:
           - {label: "SEO Slug",        name: slug,        widget: string, required: false, default: null}
           - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
           - {label: "SEO Description", name: description, widget: string, required: false, default: null}
 
-  - label: "Legal Pages."
-    label_singular: "Page"
-    name: pages
-    description: "Site legal pages"
-    folder: "src/pages/info-pages"
-    create: false
-    slug: "{{slug}}"
+  - label:            "Legal Pages."
+    label_singular:   "Page"
+    name:             pages
+    description:      "Site legal pages"
+    folder:           "src/pages/info-pages"
+    create:           false
+    slug:             "{{slug}}"
     identifier_field: title
     filter: {field: "type", value: "legal-page"}
     fields:
@@ -815,24 +815,24 @@ collections:
       - {label: "Type", name: type, widget: hidden, default: "legal-page"}
       - {label: "Page Title", name: title, widget: string}
       - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
-      - label: "Page Introduction (menu text)"
-        name: introduction
+      - label:  "Page Introduction (menu text)"
+        name:   introduction
         widget: object
         fields:
           - {label: "Show Introduction?", name: show, widget: hidden, default: false}
           - {label: "Text", name: text, widget: markdown, required: true}
-      - label: "Sections"
-        name: sections
-        widget: list
+      - label:    "Sections"
+        name:     sections
+        widget:   list
         required: true
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
           - {label: "Copy", name: text, widget: markdown}
 
       # FOOTERLINKS
-      - label: "Footer Links"
-        name: footerLinks
-        widget: optional-object
+      - label:    "Footer Links"
+        name:     footerLinks
+        widget:   optional-object
         required: false
         fields:
           - {label: "Title", name: title, widget: string, required: false, default: null}
@@ -844,110 +844,110 @@ collections:
       - {label: "Call to action", name: callToAction, widget: string, required: false, default: null}
 
       # SEO
-      - label: "SEO"
-        name: seo
+      - label:  "SEO"
+        name:   seo
         widget: object
         fields:
           - {label: "SEO Slug",        name: slug,        widget: string, required: false, default: null}
           - {label: "SEO Title",       name: title,       widget: string, required: false, default: null}
           - {label: "SEO Description", name: description, widget: string, required: false, default: null}
 
-  - name: "settings"
-    label: "Site Settings"
+  - name:        "settings"
+    label:       "Site Settings"
     description: "Website settings & meta data"
     files:
 
-      - file: "src/pages/info-pages/homepage.md"
-        label: "Home Page"
-        name: home-page
+      - file:   "src/pages/info-pages/homepage.md"
+        label:  "Home Page"
+        name:   home-page
         create: false
         delete: false
         fields:
-        - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
-        - {label: "Type", name: type, widget: hidden, default: "home-page"}
-        - {label: "Page Title", name: title, widget: string}
-        - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
-        - label: "Page Image (banner/menu image)"
-          name: image
-          widget: object
-          fields:
-            - {label: "Show Banner Image?", name: show, widget: hidden, required: true, default: true}
-            - {label: "Image", name:  image, widget: image, required: true}
-        - label: "Page Introduction (menu text)"
-          name: introduction
-          widget: object
-          fields:
-            - {label: "Show Introduction?", name: show, widget: hidden, required: true, default: true}
-            - {label: "Text", name: text, widget: markdown, required: true}
-        - label: "Sections"
-          name: sections
-          widget: list
-          fields:
-            - {label: "Title", name: title, widget: string, required: false, default: null}
-            - {label: "Image on right?", name: isRightImage, widget: boolean, required: false, default: false}
-            - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
-            - {label: "Image", name: image, widget: image, required: false, default: null}
-            - label: "Components"
-              name: components
-              widget: list
-              types:
-                - label: "Quote"
-                  name: quote-component
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string, required: false, default: null}
-                    - {label: "Quote", name: quote, widget: text}
-                    - {label: "Name", name: name, widget: string, required: false, default: null}
-                    - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
-                    - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
+          - {label: "ID", name: uuid, widget: uuid, required: false, default: null}
+          - {label: "Type", name: type, widget: hidden, default: "home-page"}
+          - {label: "Page Title", name: title, widget: string}
+          - {label: "Page Sub Title", name: subtitle, widget: string, required: false, default: null}
+          - label:  "Page Image (banner/menu image)"
+            name:   image
+            widget: object
+            fields:
+              - {label: "Show Banner Image?", name: show, widget: hidden, required: true, default: true}
+              - {label: "Image", name:  image, widget: image, required: true}
+          - label:  "Page Introduction (menu text)"
+            name:   introduction
+            widget: object
+            fields:
+              - {label: "Show Introduction?", name: show, widget: hidden, required: true, default: true}
+              - {label: "Text", name: text, widget: markdown, required: true}
+          - label:  "Sections"
+            name:   sections
+            widget: list
+            fields:
+              - {label: "Title", name: title, widget: string, required: false, default: null}
+              - {label: "Image on right?", name: isRightImage, widget: boolean, required: false, default: false}
+              - {label: "Postit?", name: isPostit, widget: boolean, required: false, default: false}
+              - {label: "Image", name: image, widget: image, required: false, default: null}
+              - label:  "Components"
+                name:   components
+                widget: list
+                types:
+                  - label:  "Quote"
+                    name:   quote-component
+                    widget: object
+                    fields:
+                      - {label: "Title", name: title, widget: string, required: false, default: null}
+                      - {label: "Quote", name: quote, widget: text}
+                      - {label: "Name", name: name, widget: string, required: false, default: null}
+                      - {label: "Job Title", name: jobTitle, widget: string, required: false, default: null}
+                      - {label: "Profile Picture", name: profilePic, widget: image, required: false, default: null}
 
-                - label: "Copy"
-                  name: image-copy-component
-                  widget: object
-                  fields:
-                    - {label: "Title", name: title, widget: string, required: false, default: null}
-                    - {label: "Copy", name: text, widget: markdown, required: false, default: null}
-                    - label: "Link"
-                      name: link
-                      required: false
-                      default: null
-                      widget: optional-object
-                      fields:
-                        - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
-                        - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
-        - name: seo
-          widget: hidden
-          default: { slug: "/" }
+                  - label:  "Copy"
+                    name:   image-copy-component
+                    widget: object
+                    fields:
+                      - {label: "Title", name: title, widget: string, required: false, default: null}
+                      - {label: "Copy", name: text, widget: markdown, required: false, default: null}
+                      - label:    "Link"
+                        name:     link
+                        required: false
+                        default:  null
+                        widget:   optional-object
+                        fields:
+                          - {label: "Link Text", name: linkText, widget: string, default: 'Read more'}
+                          - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
+          - name:   seo
+            widget: hidden
+            default: { slug: "/" }
 
-      - file: "src/data/main-menu.yml"
-        label: "Main Menu"
-        name: main-menu
+      - file:   "src/data/main-menu.yml"
+        label:  "Main Menu"
+        name:   main-menu
         create: false
         delete: false
         fields:
           - {label: "Title", name: title, widget: hidden, default: "main-menu"}
-          - label: "Items"
-            name: menu
+          - label:  "Items"
+            name:   menu
             widget: list
             fields:
               - {label: "Label", name: linkText, widget: string, default: 'Read more'}
               - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
-              - label: "Children"
-                name: children
+              - label:  "Children"
+                name:   children
                 widget: list
                 fields:
                   - {label: "Label", name: linkText, widget: string, default: 'Read more'}
                   - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
-                  - label: "Children"
-                    name: children
+                  - label:  "Children"
+                    name:   children
                     widget: list
                     fields:
                       - {label: "Label", name: linkText, widget: string, default: 'Read more'}
                       - {label: "Link", name: link, widget: relation, collection: info-pages, searchFields: [title], valueField: uuid, displayFields: [title]}
 
-      - file: "src/data/company-info.yml"
+      - file:  "src/data/company-info.yml"
         label: "Company Information"
-        name: company-info
+        name:  company-info
         fields:
           - {label: "Title", name: title, widget: hidden, default: "company-info"}
           - {label: "Meta Title", name: metaTitle, widget: string}
@@ -963,13 +963,13 @@ collections:
           - {label: "Twitter URL",  name: twitterURL, widget: string, required: false}
           - {label: "Registered Office Address", name: registeredAddress, widget: text}
 
-  - label: "All Pages"
-    label_singular: "Page"
-    name: info-pages
-    description: "Nothing to see here - allows linking to pages DO NOT EDIT PAGES!"
-    folder: "src/pages/info-pages"
-    create: false
-    delete: false
+  - label:            "All Pages"
+    label_singular:   "Page"
+    name:             info-pages
+    description:      "Nothing to see here - allows linking to pages DO NOT EDIT PAGES!"
+    folder:           "src/pages/info-pages"
+    create:           false
+    delete:           false
     identifier_field: title
     fields:
       - {label: "ID", name: uuid, widget: uuid, required: false, default: null}

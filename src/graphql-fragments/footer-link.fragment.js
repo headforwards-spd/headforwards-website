@@ -11,7 +11,7 @@ export const FooterLinkFragment = graphql`
             }
             image {
                 image {
-                    ...ImageFragment
+                    ...FooterImageFragment
                 }
             }
         }

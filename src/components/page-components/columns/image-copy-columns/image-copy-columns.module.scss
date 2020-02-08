@@ -1,16 +1,11 @@
 @import "../../../../scss/variables";
 @import "../../../../scss/mixins/mixins";
-@import '../../page-component';
-@import '../columns';
+@import "../../page-component";
+@import "../columns";
 
 .columnsWrapper {
 
     @include columns-component;
-    &.isImage {
-        @media (min-width: $screen-md) {
-            align-items: unset;
-        }
-    }
 
     .copy {
         @include copy;
@@ -24,15 +19,18 @@
 
     &.isImage {
         @media (min-width: $screen-md) {
-            margin-top: 0;
+            align-items:   unset;
+
             margin-bottom: $component-gutter-md;
+            margin-top:    0;
         }
         @media (min-width: $screen-lg) {
             margin-bottom: $component-gutter-lg;
         }
+
         .copy {
-            display: flex;
-            flex-direction: column;
+            display:         flex;
+            flex-direction:  column;
             justify-content: center;
             @media (min-width: $screen-md) {
                 margin: $component-gutter-md #{$column-gutter-md/2};
@@ -44,30 +42,32 @@
     }
 
     .image {
-        margin-left: -$column-gutter-sm/2;
+        margin-left:  -$column-gutter-sm/2;
         margin-right: -$column-gutter-sm/2;
 
         @media(min-width: $screen-md) {
+            margin:     0 $column-gutter-md/2 0 calc(-50vw + 50%);
             min-height: 62.5vh;
+
+            width:      calc(50vw - #{$column-gutter-md/2});
             > div {
                 display: none;
             }
-
-            width: calc(50vw - #{$column-gutter-md/2});
-            margin: 0 $column-gutter-md/2 0 calc(-50vw + 50%);
         }
         @media(min-width: $screen-lg) {
-            width: calc(50vw - #{$column-gutter-lg/2});
             margin-right: $column-gutter-lg/2;
+            width:        calc(50vw - #{$column-gutter-lg/2});
         }
     }
+
     .postit {
-        width: calc(100% - #{$column-gutter-sm});
         padding-bottom: calc(100% - #{$column-gutter-sm});
+        width:          calc(100% - #{$column-gutter-sm});
     }
+
     &.isRightImage .image {
         @media(min-width: $screen-md) {
-            margin:  0 calc(-50vw + 50%) 0 $column-gutter-md/2;
+            margin: 0 calc(-50vw + 50%) 0 $column-gutter-md/2;
         }
         @media(min-width: $screen-lg) {
             margin-left: $column-gutter-lg/2;
@@ -81,17 +81,17 @@
         }
 
         .postit {
-            width: calc(50% - #{$column-gutter-md});
+            margin:         $column-gutter-md/2;
             padding-bottom: calc(50% - #{$column-gutter-md});
-            margin: $column-gutter-md/2;
+            width:          calc(50% - #{$column-gutter-md});
         }
     }
     @media(min-width: $screen-lg) {
 
         .postit {
-            width: calc(50% - #{$column-gutter-lg});
+            margin:         $column-gutter-lg/2;
             padding-bottom: calc(50% - #{$column-gutter-lg});
-            margin: $column-gutter-lg/2;
+            width:          calc(50% - #{$column-gutter-lg});
         }
     }
 }

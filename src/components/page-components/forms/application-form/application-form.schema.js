@@ -61,8 +61,7 @@ export const schema = {
     },
     cover_letter: {
         field: {
-            name: 'cover_letter',
-            // label: 'Cover letter',
+            name: 'cover_letter', // label: 'Cover letter',
             type: 'textarea',
             rows: 6,
         },
@@ -77,7 +76,7 @@ export const schema = {
                     <Link to="/privacy-notice/" target="_blank">
                         privacy policy
                     </Link>
-                    .
+                    .{' '}
                 </>
             ),
             value: '212',

@@ -250,7 +250,8 @@ export default class ApplicationForm extends Component {
 
     render() {
         const formConfig = this.getFormConfig();
+        const form = this.getForm.bind(this);
 
-        return <Formik {...formConfig}>{this.getForm}</Formik>;
+        return <Formik {...formConfig}>{form}</Formik>;
     }
 }

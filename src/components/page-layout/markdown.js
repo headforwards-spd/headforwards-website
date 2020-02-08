@@ -16,6 +16,7 @@ Markdown.defaultProps = {
     truncate: false,
     maxLength: 125,
 };
+
 function Markdown({ source = '', truncate, maxLength }) {
     const text = truncate ? truncateString(source, maxLength) : source;
 

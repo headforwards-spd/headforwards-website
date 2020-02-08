@@ -14,6 +14,7 @@ CoverLetterSection.defaultProps = {
     isRequired: false,
     isSubmitting: false,
 };
+
 function CoverLetterSection({ isRequired, isSubmitting }) {
     return (
         <section>

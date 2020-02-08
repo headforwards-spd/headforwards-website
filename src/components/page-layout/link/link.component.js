@@ -16,6 +16,7 @@ Link.defaultProps = {
     target: null,
     children: null,
 };
+
 function Link({ to, children, ...props }) {
     if (!to) {
         return null;

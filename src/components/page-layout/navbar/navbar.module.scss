@@ -1,36 +1,36 @@
-@import '../../../scss/variables';
-@import '../../../scss/mixins/mixins';
-@import '../../../scss/mixins/typography';
-@import '../../page-components/page-component';
+@import "../../../scss/variables";
+@import "../../../scss/mixins/mixins";
+@import "../../../scss/mixins/typography";
+@import "../../page-components/page-component";
 
 .menu {
-    line-height: 1;
-    margin-bottom: 0;
-
-    position: relative;
-
     background-color: white;
-    border-bottom: 1px solid $grey-9;
+    border-bottom:    1px solid $grey-9;
 
-    transition: background-color ease $transitionTime;
+    line-height:      1;
 
-    padding-top: $component-gutter-sm/4;
-    padding-bottom: $component-gutter-sm/4;
+    margin-bottom:    0;
+    padding-bottom:   $component-gutter-sm/4;
+
+    padding-top:      $component-gutter-sm/4;
+
+    position:         relative;
+    transition:       background-color ease $transitionTime;
     @media (min-width: $screen-md) {
-        padding-top: $component-gutter-md/4;
         padding-bottom: $component-gutter-md/4;
+        padding-top:    $component-gutter-md/4;
     }
     @media (min-width: $screen-lg) {
-        padding-top: $component-gutter-lg/4;
         padding-bottom: $component-gutter-lg/4;
+        padding-top:    $component-gutter-lg/4;
     }
 
     > header {
-        display: flex;
-        flex-direction: row;
+        align-items:     center;
+        display:         flex;
+        flex-direction:  row;
         justify-content: space-between;
-        align-items: center;
-        margin: 0 -#{$column-gutter-sm/2};
+        margin:          0 -#{$column-gutter-sm/2};
         @media (min-width: $screen-md) {
             margin: 0 -#{$column-gutter-md/2};
         }
@@ -39,8 +39,15 @@
         }
 
         a {
-            line-height: 3;
-            margin: 0 $column-gutter-sm/2;
+            background-image:    url("/images/headforwards.black.png");
+            background-position: 0 center;
+            background-repeat:   no-repeat;
+            background-size:     contain;
+            flex:                1;
+
+            line-height:         3;
+            margin:              0 $column-gutter-sm/2;
+            text-indent:         -1000vw;
             @media (min-width: $screen-md) {
                 margin: 0 $column-gutter-md/2;
             }
@@ -50,32 +57,25 @@
             @media (min-width: $screen-xl) {
                 margin-left: -1.5em;
             }
-
-            text-indent: -1000vw;
-            background-image: url("/images/headforwards.black.png");
-            background-size: contain;
-            flex: 1;
-            background-repeat: no-repeat;
-            background-position: 0 center;
         }
     }
 
     > section {
-        display: none;
-        opacity: 0;
+        display:    none;
+        opacity:    0;
         transition: opacity ease $transitionTime;
 
-
         > ul {
+            border-top: 1px solid #383f51;
+
+            margin:     0;
             a {
                 transition: all $transitionTime ease;
+
                 &:hover {
                     color: $orange;
                 }
             }
-
-            margin: 0;
-            border-top: 1px solid #383F51;
 
             .navHomeLink {
                 display: none;
@@ -88,71 +88,65 @@
             }
 
             > li > a {
+                align-items:     center;
+                color:           white;
+                display:         flex;
+                flex-direction:  row;
+                justify-content: space-between;
+                line-height:     2;
+                margin-bottom:   0;
+                text-decoration: none;
+            }
 
-                    display: block;
-                    text-decoration: none;
-                    color: white;
-                    line-height: 2;
-                }
+            > li {
+                @include fontXLarge;
 
-                > li > a {
-                    margin-bottom: 0;
-                    color: white;
+                border-bottom:   1px solid #383f51;
+
+                text-decoration: none;
+                &.hasChildren > a {
                     display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
+
+                    button {
+                        @include fontSmall;
+                        background:      none;
+                        border:          none;
+                        color:           white;
+                        display:         flex;
+                        justify-content: center;
+                        width:           40px;
+
+                    }
                 }
 
-                > li {
-                    @include fontXLarge;
+                h2 {
+                    display: none;
+                }
 
-                    &.hasChildren > a {
-                        display: flex;
+                > section {
+                    display: none;
 
-                        button {
-                            @include fontSmall;
-                            background: none;
-                            border: none;
-                            color: white;
-                            width: 40px;
-                            display: flex;
-                            justify-content: center;
-
-                        }
+                    ul {
+                        @include fontLarge;
+                        margin: #{$rhythm-unit/2}em 0 #{$rhythm-unit}em;
                     }
 
-                    border-bottom: 1px solid #383F51;
-                    text-decoration: none;
-
-                    h2 {
-                        display: none;
+                    a {
+                        color:       #7c8c9c;
+                        display:     block;
+                        font-weight: 400;
+                        line-height: $rhythm-unit;
+                        padding:     0.2em 0;
                     }
+                }
 
+                &.isActive {
                     > section {
-                        display: none;
-
-                        ul {
-                            @include fontLarge;
-                            margin: #{$rhythm-unit/2}em 0 #{$rhythm-unit}em;
-                        }
-
-                        a {
-                            line-height: $rhythm-unit;
-                            color: #7c8c9c;
-                            font-weight: 400;
-                            display: block;
-                            padding: 0.2em 0;
-                        }
-                    }
-
-                    &.isActive {
-                        > section {
-                            display: block;
-                        }
+                        display: block;
                     }
                 }
             }
+        }
 
         .contactDetails {
             dt, dd, h2, li {
@@ -161,20 +155,20 @@
             }
 
             dt, dd {
+                color:   white;
                 display: block;
-                color: white;
+                margin:  0;
                 padding: 0;
-                margin: 0;
             }
 
             dt, h2 {
-                text-transform: uppercase;
+                font-weight:    normal;
                 @include orange-type;
-                font-weight: normal;
+                text-transform: uppercase;
             }
 
             dd, li {
-                line-height: 2;
+                line-height:   2;
                 margin-bottom: 0;
             }
 
@@ -185,17 +179,17 @@
     }
 
     &:global(.menu-open) {
-        position: fixed;
+        background-color: $blue-background;
+        border-bottom:    none;
+        display:          flex;
+        flex-direction:   column;
+        height:           100vh;
+        overflow:         hidden;
+        position:         fixed;
+        z-index:          500;
         @media screen and (min-width: $screen-lg) {
             position: relative;
         }
-        z-index: 500;
-        background-color: $blue-background;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        overflow: hidden;
-        border-bottom: none;
 
         > header {
 
@@ -206,17 +200,17 @@
         }
 
         > section {
-            margin-top: $component-gutter-sm/2;
-            overflow: hidden;
-            opacity: 1;
-            flex-grow: 1;
-            display: flex;
+            display:        flex;
             flex-direction: column;
+            flex-grow:      1;
+            margin-top:     $component-gutter-sm/2;
+            opacity:        1;
+            overflow:       hidden;
 
             ul {
-                flex-grow: 1;
+                flex-grow:   1;
                 flex-shrink: 1;
-                overflow-x: auto;
+                overflow-x:  auto;
                 @media screen and (min-width: $screen-lg) {
                     overflow-x: unset;
                 }
@@ -228,24 +222,26 @@
 
         > section {
             margin-top: 0;
+
             > ul {
-                border-top: none;
+                border-top:     none;
                 @include fontMedium;
-                margin: $component-gutter-md -#{$column-gutter-md/2};
-                display: flex;
+                display:        flex;
                 flex-direction: row;
+                margin:         $component-gutter-md -#{$column-gutter-md/2};
 
                 .navHomeLink {
                     display: unset;
                 }
+
                 .navContactLink {
                     display: none;
                 }
 
                 > li {
-                    margin: 0 $column-gutter-md/2;
-                    width: calc((100% /5) - #{$column-gutter-md});
                     border-bottom: none;
+                    margin:        0 $column-gutter-md/2;
+                    width:         calc((100% / 5) - #{$column-gutter-md});
 
                     > a {
                         @include fontMedium;
@@ -256,11 +252,12 @@
                         ul li {
                             @include fontSmall;
                             line-height: 1.2;
-                            margin: 1.2em 0;
+                            margin:      1.2em 0;
                         }
+
                         a {
                             font-weight: normal;
-                            padding: 0;
+                            padding:     0;
 
                         }
                     }
@@ -269,6 +266,7 @@
                         > a button {
                             display: none;
                         }
+
                         > section {
                             display: unset;
                         }
@@ -278,11 +276,11 @@
 
             > section {
                 display: flex;
-                margin: 0 -#{$column-gutter-md/2};
+                margin:  0 -#{$column-gutter-md/2};
 
                 > * {
-                    margin: 0 $column-gutter-md/2;
-                    min-width: calc((100% /5) - #{$column-gutter-md});
+                    margin:    0 $column-gutter-md/2;
+                    min-width: calc((100% / 5) - #{$column-gutter-md});
                 }
             }
         }
@@ -296,24 +294,24 @@
 
     @media screen and (min-width: $screen-lg) {
 
-        transition: unset;
-        display: flex;
-        flex-direction: row;
+        align-items:     center;
+        border-bottom:   none;
+        display:         flex;
+        flex-direction:  row;
+        flex-wrap:       wrap;
         justify-content: flex-start;
-        flex-wrap: wrap;
-        align-items: center;
 
-        margin-bottom: 0;
-        border-bottom: none;
+        margin-bottom:   0;
+        transition:      unset;
 
         &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0;
-            height: 1px;
-            width: calc(100% - #{2*$column-gutter-lg});
-            background: #D8D8D8;
+            background: #d8d8d8;
+            bottom:     0;
+            content:    "";
+            display:    block;
+            height:     1px;
+            position:   absolute;
+            width:      calc(100% - #{2*$column-gutter-lg});
         }
         &:global(.with-bg):after {
             opacity: 0.2;
@@ -321,10 +319,10 @@
 
         &:global(.menu-open) {
             background-color: unset;
-            height: unset;
-            overflow: visible;
-            border-bottom: 1px solid #D8D8D8;
-            flex-direction: row;
+            border-bottom:    1px solid #d8d8d8;
+            flex-direction:   row;
+            height:           unset;
+            overflow:         visible;
 
             > header {
 
@@ -334,46 +332,48 @@
             }
 
             > section {
-                overflow: visible;
+                margin-top:  $component-gutter-sm/2;
+                overflow:    visible;
                 padding-top: unset;
-                margin-top: $component-gutter-sm/2;
             }
         }
 
         > header {
-            width: 37.5%;
-            flex-shrink: 0;
-            flex-grow: 1;
+            flex-grow:     1;
+            flex-shrink:   0;
             margin-bottom: 0;
+            width:         37.5%;
         }
 
         > section {
-            max-width: 100%;
-            opacity: unset;
-            display: block;
+            display:    block;
             margin-top: $component-gutter-sm/2;
+            max-width:  100%;
+            opacity:    unset;
 
             > ul {
                 @include fontMedium;
-                margin: 0 -#{$column-gutter-lg/2};
-                border-top: none;
-                display: flex;
-                flex-direction: row;
+                border-top:      none;
+                display:         flex;
+                flex-direction:  row;
+                flex-wrap:       wrap;
                 justify-content: flex-end;
-                flex-wrap: wrap;
+                margin:          0 -#{$column-gutter-lg/2};
 
                 .navHomeLink {
                     display: none;
                 }
+
                 .navContactLink {
                     display: unset;
                 }
 
                 > li {
-                    width: unset;
+                    border:   none;
+                    margin:   0 $column-gutter-lg/2;
                     position: relative;
-                    border: none;
-                    margin: 0 $column-gutter-lg/2;
+                    width:    unset;
+
                     &:hover > a {
                         color: $orange;
                     }
@@ -384,7 +384,7 @@
 
                     a {
                         border-bottom: unset;
-                        color: black;
+                        color:         black;
 
                         &:hover {
                             @include orange-type;
@@ -405,46 +405,47 @@
                     }
 
                     h2 {
-                        display: block;
+                        color:          $orange;
+                        display:        block;
                         text-transform: uppercase;
-                        color: $orange;
                     }
 
                     > section {
                         @include fontMedium;
-                        padding: 0 $column-gutter-lg/2;
-                        background-color: white;
-                        box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.4);
-                        color: black;
-                        min-width: 15em;
-                        max-width: $max_width*0.375;
-                        z-index: 1;
-                        position: absolute;
-                        right: -$column-gutter-lg/2;
+                        background-color:    white;
+                        box-shadow:          0 0 11px 0 rgba(0, 0, 0, 0.4);
+                        color:               black;
+                        display:             block;
+                        max-width:           $max_width*0.375;
+                        min-width:           15em;
+                        opacity:             0;
+                        padding:             0 $column-gutter-lg/2;
+                        position:            absolute;
 
-                        display: block;
-                        visibility: hidden;
-                        opacity: 0;
-                        transition-property: opacity, visibility;
+                        right:               -$column-gutter-lg/2;
+                        transition-delay:    0.1s, 0.75s;
                         transition-duration: .5s, 0s;
-                        transition-delay: 0.1s, 0.75s;
+                        transition-property: opacity, visibility;
+                        visibility:          hidden;
+                        z-index:             1;
 
                         &:before {
-                            top: -0.25em;
-                            right: $column-gutter-lg*1.5;
-                            content: '';
-                            position: absolute;
-                            width: 0;
-                            height: 0;
-                            border: 0.25em solid;
+                            border:       0.25em solid;
                             border-color: white;
-                            transform: rotate(135deg);
-                            box-shadow: -3px 3px 2px 0 rgba(0, 0, 0, 0.1);
+                            box-shadow:   -3px 3px 2px 0 rgba(0, 0, 0, 0.1);
+                            content:      "";
+                            height:       0;
+                            position:     absolute;
+                            right:        $column-gutter-lg*1.5;
+                            top:          -0.25em;
+                            transform:    rotate(135deg);
+                            width:        0;
                         }
 
                         > ul {
                             @include fontMedium;
                             margin: $column-gutter-lg/2 0;
+
                             li {
                                 margin: 0;
                             }
@@ -452,30 +453,30 @@
 
                         h2 {
                             @include fontSmall;
-                            margin: 0;
-                            padding: $column-gutter-lg/2 0;
-                            line-height: 2;
-                            font-weight: normal;
-                            border-bottom: 1px solid #D8D8D8;
+                            border-bottom: 1px solid #d8d8d8;
+                            font-weight:   normal;
+                            line-height:   2;
+                            margin:        0;
+                            padding:       $column-gutter-lg/2 0;
                         }
 
                         a {
                             @include fontMedium;
-                            line-height: #{$rhythm-unit}em;
-                            margin: #{1 - ($rhythm-unit/2)}em;
+                            color:       black;
+                            display:     block;
                             @include arrow-link;
                             font-weight: bold;
-                            color: black;
-                            display: block;
+                            line-height: #{$rhythm-unit}em;
+                            margin:      #{1 - ($rhythm-unit/2)}em;
                         }
                     }
 
                     &:hover {
                         > section {
-                            visibility: visible;
-                            opacity: 1;
+                            opacity:          1;
                             transition-delay: 0.1s, 0.1s;
-                            z-index: 1000;
+                            visibility:       visible;
+                            z-index:          1000;
                         }
                     }
                 }
@@ -488,8 +489,8 @@
 
         &:global(.with-bg) {
             background-color: transparent;
-            color: white;
-            border-bottom: none;
+            border-bottom:    none;
+            color:            white;
 
             > header {
                 a {
@@ -503,6 +504,7 @@
                     > a {
                         color: white;
                     }
+
                     &.isActive > a, &:hover > a {
                         color: $orange;
                     }

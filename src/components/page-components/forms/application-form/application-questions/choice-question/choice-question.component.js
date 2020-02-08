@@ -26,6 +26,7 @@ ChoiceQuestion.defaultProps = {
     required: false,
     disabled: false,
 };
+
 function ChoiceQuestion({ isMulti, id, body: label, open_question_options: options, required, disabled }) {
     const name = `q-${id}`;
     const type = 'checkbox';

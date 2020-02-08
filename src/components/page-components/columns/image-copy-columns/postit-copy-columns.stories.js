@@ -1,27 +1,11 @@
-import { boolean, files, text, withKnobs } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
 
 import StoriesLayout from '../../../page-layout/stories-layout.component';
 import PostitCopyColumns from './postit-copy-columns.component';
-import {
-    accept,
-    groupId,
-    imageLabel,
-    isRightImageLabel,
-    isRightImageValue,
-    linkLabel,
-    linkTextLabel,
-    linkTextValue,
-    linkValue,
-    textLabel,
-    textValue,
-    titleLabel,
-    titleValue,
-} from './story-props';
+import { getInteractiveProps, getProps } from './story-props';
 
 const imageValue = () => '/uploads/icon.black.png';
-
-const type = 'markdown-component';
 
 export default {
     decorators: [withKnobs],
@@ -30,56 +14,32 @@ export default {
 
 export const PostitOnLeft = () => {
     const props = {
-        title: titleValue(),
-        content: [{ type, text: textValue() }],
-        isRightImage: false,
+        ...getProps(),
         image: imageValue(),
-        link: {
-            linkText: linkTextValue(),
-            link: linkValue(),
-        },
     };
 
-    return (
-        <StoriesLayout>
-            <PostitCopyColumns {...props} />
-        </StoriesLayout>
-    );
+    return <Story {...props} />;
 };
 export const PostitOnRight = () => {
     const props = {
-        title: titleValue(),
-        content: [{ type, text: textValue() }],
+        ...getProps(),
         isRightImage: true,
         image: imageValue(),
-        link: {
-            linkText: linkTextValue(),
-            link: linkValue(),
-        },
     };
 
-    return (
-        <StoriesLayout>
-            <PostitCopyColumns {...props} />
-        </StoriesLayout>
-    );
+    return <Story {...props} />;
 };
 
 export const Interactive = () => {
-    const props = {
-        title: text(titleLabel, titleValue(), groupId),
-        content: [{ type, text: text(textLabel, textValue(), groupId) }],
-        isRightImage: boolean(isRightImageLabel, isRightImageValue(), groupId),
-        image: files(imageLabel, accept, imageValue(), groupId),
-        link: {
-            linkText: text(linkTextLabel, linkTextValue(), groupId),
-            link: text(linkLabel, linkValue(), groupId),
-        },
-    };
+    const props = getInteractiveProps();
 
+    return <Story {...props} />;
+};
+
+function Story(props) {
     return (
         <StoriesLayout>
             <PostitCopyColumns {...props} />
         </StoriesLayout>
     );
-};
+}

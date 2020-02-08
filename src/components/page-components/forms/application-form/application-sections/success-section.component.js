@@ -8,6 +8,7 @@ import styles from '../application-form.module.scss';
 export default SuccessSection;
 
 SuccessSection.propTypes = { message: string.isRequired };
+
 function SuccessSection({ message }) {
     return (
         <div className={styles.success}>

@@ -1,8 +1,8 @@
 @import "../../../../scss/variables";
 @import "../../../../scss/mixins/mixins";
 @import "../../../../scss/mixins/typography";
-@import '../../page-component';
-@import '../columns';
+@import "../../page-component";
+@import "../columns";
 
 .articleColumns {
     @include fontMedium;
@@ -13,13 +13,13 @@
         .article {
             @include fontMediumVr;
 
-            display: flex;
+            display:        flex;
             flex-direction: column;
 
             .image {
-                order: 1;
-                margin: 0 -#{$column-gutter-sm};
+                margin:        0 -#{$column-gutter-sm};
                 margin-bottom: 1em * $rhythm-unit;
+                order:         1;
             }
 
             > h2 {
@@ -27,8 +27,8 @@
             }
 
             > section {
-                order: 3;
                 flex-grow: 1;
+                order:     3;
 
                 > :last-child {
                     margin-bottom: 0;
@@ -36,11 +36,11 @@
             }
 
             > a {
-                order: 4;
+                display:     block;
                 @include arrow-link;
                 font-weight: normal;
-                display: block;
-                margin-top: 1em * $rhythm-unit;
+                margin-top:  1em * $rhythm-unit;
+                order:       4;
             }
 
             > :last-child {
@@ -53,16 +53,16 @@
             align-items: stretch;
 
             .article {
-                width: calc((100%/2) - #{$column-gutter-md});
+                width: calc((100% / 2) - #{$column-gutter-md});
 
                 .image {
-                    margin-left: 0;
+                    margin-left:  0;
                     margin-right: 0;
                 }
             }
 
             &.isThreeColumns .article {
-                width: calc((100%/3) - #{$column-gutter-md});
+                width: calc((100% / 3) - #{$column-gutter-md});
             }
         }
 
@@ -71,11 +71,11 @@
             align-items: stretch;
 
             .article {
-                width: calc((100%/2) - #{$column-gutter-lg});
+                width: calc((100% / 2) - #{$column-gutter-lg});
             }
 
             &.isThreeColumns .article {
-                width: calc((100%/3) - #{$column-gutter-lg});
+                width: calc((100% / 3) - #{$column-gutter-lg});
             }
         }
     }

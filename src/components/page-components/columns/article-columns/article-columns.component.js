@@ -17,6 +17,7 @@ ArticleColumns.defaultProps = {
     title: null,
     articles: [],
 };
+
 function ArticleColumns({ title, articles }) {
     const columnsStyle = articles.length === 3 ? styles.isThreeColumns : '';
     return (

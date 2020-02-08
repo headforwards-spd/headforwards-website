@@ -71,7 +71,16 @@ function HomePageSection({ isFirstSection, components, isPostit, isRightImage, i
     return (
         <section className={`${wrapperStyles} ${firstClass}`}>
             {!!hasImage && (
-                <HomePageImage {...{ isPostit, image, alt: title, imagePostit, imageSquare, isRightImage }} />
+                <HomePageImage
+                    {...{
+                        isPostit,
+                        image,
+                        alt: title,
+                        imagePostit,
+                        imageSquare,
+                        isRightImage,
+                    }}
+                />
             )}
             <section className={styles.components}>
                 {!!components &&
@@ -98,6 +107,7 @@ HomePageImage.defaultProps = {
     isPostit: false,
     isRightImage: false,
 };
+
 function HomePageImage({ isPostit, image, alt, imagePostit, imageSquare, isRightImage }) {
     return isPostit ? (
         <Postit className={styles.postit} image={imagePostit || image} alt={alt} isRightImage={isRightImage} />

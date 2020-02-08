@@ -124,6 +124,7 @@ Heading.defaultProps = {
     text: testText,
     className: '',
 };
+
 function Heading({ text, className }) {
     return <h2 className={className}>{text}</h2>;
 }
@@ -136,6 +137,7 @@ Paragraph.defaultProps = {
     text: testText,
     className: '',
 };
+
 function Paragraph({ text, className }) {
     return <p className={className}>{text}</p>;
 }
@@ -150,6 +152,7 @@ Section.defaultProps = {
     heading: testText,
     copy: testText,
 };
+
 function Section({ className, heading, copy }) {
     return (
         <section className={className}>
@@ -162,6 +165,7 @@ function Section({ className, heading, copy }) {
 }
 
 CopySection.propTypes = { className: string.isRequired };
+
 function CopySection({ className }) {
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
@@ -169,10 +173,26 @@ function CopySection({ className }) {
     return (
         <StoriesLayout>
             <section className={styles.columns}>
-                <Section {...{ className, heading, copy }} />
-                <Section {...{ className: `${className} ${styles.verticalRhythm}`, heading, copy }} />
                 <Section
-                    {...{ className: `${className} ${styles.verticalRhythm}`, heading: `${heading} ${heading}`, copy }}
+                    {...{
+                        className,
+                        heading,
+                        copy,
+                    }}
+                />
+                <Section
+                    {...{
+                        className: `${className} ${styles.verticalRhythm}`,
+                        heading,
+                        copy,
+                    }}
+                />
+                <Section
+                    {...{
+                        className: `${className} ${styles.verticalRhythm}`,
+                        heading: `${heading} ${heading}`,
+                        copy,
+                    }}
                 />
             </section>
         </StoriesLayout>

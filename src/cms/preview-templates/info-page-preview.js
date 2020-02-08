@@ -78,7 +78,13 @@ function InfoPagePreview({ entry, getAsset }) {
                     </section>
                 )}
             </main>
-            <Footer {...{ footerLinks, companyInfo, callToAction }} />
+            <Footer
+                {...{
+                    footerLinks,
+                    companyInfo,
+                    callToAction,
+                }}
+            />
         </Provider>
     );
 }

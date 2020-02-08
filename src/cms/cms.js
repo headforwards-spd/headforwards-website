@@ -9,8 +9,14 @@ import UuidControl from './widgets/uuid-control';
 
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
-CMS.registerWidget({ name: 'uuid', controlComponent: UuidControl });
-CMS.registerWidget({ name: 'optional-object', controlComponent: OptionalObjectControl });
+CMS.registerWidget({
+    name: 'uuid',
+    controlComponent: UuidControl,
+});
+CMS.registerWidget({
+    name: 'optional-object',
+    controlComponent: OptionalObjectControl,
+});
 
 CMS.registerPreviewTemplate('who-we-are', InfoPagePreview);
 CMS.registerPreviewTemplate('what-we-do', InfoPagePreview);

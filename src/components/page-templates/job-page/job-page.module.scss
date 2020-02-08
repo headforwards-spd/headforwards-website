@@ -6,13 +6,13 @@
     @include fontMediumVr;
     margin-bottom: 0;
     @media (min-width: $screen-md) {
+        column-count:  2;
+        column-gap:    $column-gutter-md*2;
         margin-bottom: 0;
-        column-count: 2;
-        column-gap: $column-gutter-md*2;
     }
     @media (min-width: $screen-lg) {
+        column-gap:    $column-gutter-lg*2;
         margin-bottom: 0;
-        column-gap: $column-gutter-lg*2;
     }
 
     ul {
@@ -20,49 +20,51 @@
     }
 
     strong em {
-        font-style: normal;
         border-bottom: 2px solid $orange;
+        font-style:    normal;
     }
 }
 
 .dataTable {
     @include component-gutter;
-    display: flex;
+    display:        flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:      wrap;
     @media(min-width: $screen-lg) {
         width: 37.5%;
     }
+
     dt {
         font-weight: bold;
-        width: 37.5%;
-        margin: 0;
-        padding: 0;
-        text-align: right;
+        margin:      0;
+        padding:     0;
+        text-align:  right;
+        width:       37.5%;
     }
+
     dd {
-        width: 62.5%;
-        margin: 0;
+        margin:       0;
         padding-left: 0.5em;
+        width:        62.5%;
     }
 }
 
 .apply {
     @include fontMedium;
     @include button-link;
-    margin: $component-gutter-sm/2 0;
     display: inline-block;
+    margin:  $component-gutter-sm/2 0;
     @media (min-width: $screen-md) {
-        display: flex;
-        flex-direction: row;
+        display:         flex;
+        flex-direction:  row;
         justify-content: space-between;
-        width: calc(37.5% - #{$column-gutter-md/2});
-        margin: $component-gutter-md/2 0 $component-gutter-md 50%;
-        transform: translateX(-50%);
+        margin:          $component-gutter-md/2 0 $component-gutter-md 50%;
+        transform:       translateX(-50%);
+        width:           calc(37.5% - #{$column-gutter-md/2});
     }
     @media (min-width: $screen-lg) {
-        width: calc(25% - #{$column-gutter-lg/2});
-        margin: $component-gutter-lg/2 0 $component-gutter-lg 50%;
+        margin:    $component-gutter-lg/2 0 $component-gutter-lg 50%;
         transform: translateX(-50%);
+        width:     calc(25% - #{$column-gutter-lg/2});
     }
 }

@@ -81,6 +81,7 @@ Layout.defaultProps = {
     footerLinks: null,
     callToAction: null,
 };
+
 function Layout({
     isHomePage,
     seo,
@@ -93,25 +94,27 @@ function Layout({
     footerLinks,
     callToAction: pageCallToAction,
 }) {
-    const { menuData, companyInfo, seoImage: defaultSeoImage } = useStaticQuery(graphql`
-        query {
-            seoImage: file(name: { eq: "icon" }) {
-                childImageSharp {
-                    fixed(width: 1200, height: 630, fit: CONTAIN, quality: 85, background: "white") {
-                        src
-                        width
-                        height
+    const { menuData, companyInfo, seoImage: defaultSeoImage } = useStaticQuery(
+        graphql`
+            query {
+                seoImage: file(name: { eq: "icon" }) {
+                    childImageSharp {
+                        fixed(width: 1200, height: 630, fit: CONTAIN, quality: 85, background: "white") {
+                            src
+                            width
+                            height
+                        }
                     }
                 }
+                menuData: dataYaml(title: { eq: "main-menu" }) {
+                    ...MenuFragment
+                }
+                companyInfo: dataYaml(title: { eq: "company-info" }) {
+                    ...CompanyInfoFragment
+                }
             }
-            menuData: dataYaml(title: { eq: "main-menu" }) {
-                ...MenuFragment
-            }
-            companyInfo: dataYaml(title: { eq: "company-info" }) {
-                ...CompanyInfoFragment
-            }
-        }
-    `);
+        `
+    );
     const { title: seoTitle = null, description: seoDescription = null } = seo || {};
     const { menu } = menuData || [];
     const isJobPage = !!jobDetails;
@@ -141,7 +144,11 @@ function Layout({
 
     const callToAction = pageCallToAction || defaultCallToAction;
 
-    const footerProps = { footerLinks, companyInfo, callToAction };
+    const footerProps = {
+        footerLinks,
+        companyInfo,
+        callToAction,
+    };
 
     return (
         <Provider>

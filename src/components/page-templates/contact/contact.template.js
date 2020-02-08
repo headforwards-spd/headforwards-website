@@ -78,7 +78,7 @@ function Contact({ companyName, mapUrl, email, jobsEmail, phone, address, regist
                     </p>
                     <p>
                         If you are a recruiter and still wish to call us then we will ask for a donation of at least £50
-                        to the charity Shelter Box.
+                        to the charity Shelter Box.{' '}
                     </p>
                 </section>
                 <section>

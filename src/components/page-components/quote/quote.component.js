@@ -25,6 +25,7 @@ Quote.defaultProps = {
     profilePic: null,
     fullWidth: false,
 };
+
 function Quote({ title, quote, name, jobTitle, profilePic, fullWidth }) {
     const fullWidthClass = fullWidth ? styles.fullWidth : '';
 

@@ -1,34 +1,35 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins/mixins";
 @import "../../../scss/mixins/typography";
-@import '../page-component';
+@import "../page-component";
 
 @mixin columns-component {
     @include component-columns-gutter;
-    display: flex;
+    display:        flex;
     flex-direction: column;
 
     @media (min-width: $screen-md) {
 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display:         flex;
+        flex-direction:  row;
+        align-items:     center;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap:       wrap;
     }
 }
+
 @mixin columns-component-tight {
     @include component-columns-gutter-tight;
-    display: flex;
+    display:        flex;
     flex-direction: column;
 
     @media (min-width: $screen-md) {
 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display:         flex;
+        flex-direction:  row;
+        align-items:     center;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap:       wrap;
     }
 }
 
@@ -43,9 +44,9 @@
     }
     a {
         @include fontLarge;
-        display: block;
+        display:     block;
         @include arrow-link;
-        margin-top: $component-gutter-sm;
+        margin-top:  $component-gutter-sm;
         @media(min-width: $screen-md) {
             margin-top: $component-gutter-md;
         }

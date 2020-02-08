@@ -1,20 +1,20 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins/mixins";
 @import "../../../scss/mixins/typography";
-@import '../page-component';
+@import "../page-component";
 @import "../columns/columns";
 
 .hero {
     @include component-gutter;
     @include fontMedium;
-    margin: 0;
+    margin:        0;
     margin-bottom: $component-gutter-sm;
     @media (min-width: $screen-md) {
-        margin: 0;
+        margin:        0;
         margin-bottom: $component-gutter-md;
     }
     @media (min-width: $screen-lg) {
-        margin: 0;
+        margin:        0;
         margin-bottom: $component-gutter-lg;
     }
 
@@ -26,56 +26,56 @@
 
     &:first-child:after {
         @media (min-width: $screen-md) {
-            z-index: -1;
-            content: url(/images/hf-arrow.svg);
+            content:  url(/images/hf-arrow.svg);
+            opacity:  0.05;
             position: absolute;
-            top: -$component-gutter-md + $column-gutter-md/2;
-            right: -50%;
-            width: 62.5%;
-            opacity: 0.05;
+            right:    -50%;
+            top:      -$component-gutter-md + $column-gutter-md/2;
+            width:    62.5%;
+            z-index:  -1;
         }
         @media (min-width: $screen-lg) {
             top: -$component-gutter-lg + $column-gutter-lg/2;
         }
     }
+
     &.isTwoColumns:after {
         display: none;
     }
 
     @media(min-width: $screen-md) {
 
-        position: relative;
         max-width: $singleColumnMaxWidth;
+        position:  relative;
 
         &.isTwoColumns {
-            display: flex;
-            max-width: unset;
             align-items: flex-start;
+            display:     flex;
+            max-width:   unset;
 
             > section {
                 column-count: 2;
-                column-gap: 2*$column-gutter-md;
+                column-gap:   2*$column-gutter-md;
             }
 
             &.hasTitle {
 
                 h2 {
+                    flex-grow:   1;
                     flex-shrink: 1;
-                    flex-grow: 1;
                 }
 
                 > section {
-                    width: calc(62.5% - #{$column-gutter-md/2});
-                    flex-shrink: 0;
-                    margin-left: $column-gutter-md;
                     column-count: unset;
-                    column-gap: unset;
+                    column-gap:   unset;
+                    flex-shrink:  0;
+                    margin-left:  $column-gutter-md;
+                    width:        calc(62.5% - #{$column-gutter-md/2});
                 }
             }
         }
     }
     @media(min-width: $screen-lg) {
-
 
         &.isTwoColumns {
 
@@ -86,8 +86,9 @@
             &.hasTitle {
 
                 > section {
-                    width: calc(62.5% - #{$column-gutter-lg/2});
-                    margin-left: $column-gutter-lg;                }
+                    margin-left: $column-gutter-lg;
+                    width:       calc(62.5% - #{$column-gutter-lg/2});
+                }
             }
         }
     }

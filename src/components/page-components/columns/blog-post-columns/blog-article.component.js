@@ -15,6 +15,7 @@ export default BlogArticle;
 export const BlogArticlePropType = shape(blogArticlePropTypes);
 
 BlogArticle.propTypes = blogArticlePropTypes;
+
 function BlogArticle({ title, image, link }) {
     return (
         <Link to={link} aria-label={title}>

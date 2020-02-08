@@ -17,6 +17,7 @@ TwoImages.propTypes = twoImagesPropTypes;
 TwoImages.defaultProps = {
     flip: false,
 };
+
 function TwoImages({ flip, leftImage, rightImage }) {
     const flipClass = flip ? styles.flip : '';
 

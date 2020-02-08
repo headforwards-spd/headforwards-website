@@ -1,25 +1,25 @@
-@import '../../../../scss/variables';
+@import "../../../../scss/variables";
 
 $line-thickness: 3px;
 
 .hamburger {
     background-color: transparent;
-    padding: 0 $column-gutter-sm/2;
-    @media (min-width: $screen-md) {
-        padding: 0 $column-gutter-md/2;
-    }
-    display: flex;
-    cursor: pointer;
+    border:           0;
+    color:            $orange;
+    cursor:           pointer;
+    display:          flex;
     //transition-property: opacity;
     //transition-duration: $transitionTime;
     //transition-timing-function: linear;
     //transition-delay: 1ms;
-    font: inherit;
-    color: $orange;
-    text-transform: none;
-    border: 0;
-    margin: 0;
-    overflow: visible;
+    font:             inherit;
+    margin:           0;
+    overflow:         visible;
+    padding:          0 $column-gutter-sm/2;
+    text-transform:   none;
+    @media (min-width: $screen-md) {
+        padding: 0 $column-gutter-md/2;
+    }
 
     &:focus {
         outline: none;
@@ -41,10 +41,10 @@ $line-thickness: 3px;
     }
 
     .hamburgerBox {
-        width: 1.5em;
-        height: 1.5em;
-        display: inline-block;
+        display:  inline-block;
+        height:   1.5em;
         position: relative;
+        width:    1.5em;
     }
 }
 
@@ -56,41 +56,41 @@ $line-thickness: 3px;
 }
 
 .hamburgerInner {
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: $line-thickness;
     background-color: $orange;
-    border-radius: $line-thickness;
-    position: absolute;
+    border-radius:    $line-thickness;
+    display:          block;
+    height:           $line-thickness;
+    position:         absolute;
+    top:              50%;
+    transform:        translateY(-50%);
+    width:            100%;
 
     &::before {
-        width: 100%;
-        height: $line-thickness;
         background-color: $orange;
-        border-radius: $line-thickness;
-        position: absolute;
+        border-radius:    $line-thickness;
+        content:          "";
+        display:          block;
+        height:           $line-thickness;
         //transition-property: transform;
         //transition-duration: $transitionTime;
         //transition-timing-function: ease;
-        content: "";
-        display: block;
-        top: -0.5em;
+        position:         absolute;
+        top:              -0.5em;
+        width:            100%;
     }
 
     &::after {
-        width: 100%;
-        height: $line-thickness;
         background-color: $orange;
-        border-radius: $line-thickness;
-        position: absolute;
+        border-radius:    $line-thickness;
+        bottom:           -0.5em;
+        content:          "";
+        display:          block;
         //transition-property: transform;
         //transition-duration: $transitionTime;
         //transition-timing-function: ease;
-        content: "";
-        display: block;
-        bottom: -0.5em;
+        height:           $line-thickness;
+        position:         absolute;
+        width:            100%;
     }
 }
 
@@ -101,13 +101,13 @@ $line-thickness: 3px;
             visibility: hidden;
 
             &::before {
+                transform:  translateY(0.5em) rotate(-45deg);
                 visibility: visible;
-                transform: translateY(0.5em) rotate(-45deg);
             }
 
             &::after {
+                transform:  translateY(-0.5em) rotate(45deg);
                 visibility: visible;
-                transform: translateY(-0.5em) rotate(45deg);
             }
         }
     }

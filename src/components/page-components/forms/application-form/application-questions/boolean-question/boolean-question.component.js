@@ -18,6 +18,7 @@ BooleanQuestion.defaultProps = {
     required: false,
     disabled: false,
 };
+
 function BooleanQuestion({ id, body: label, required, disabled }) {
     const name = `q-${id}`;
     const type = 'radio';

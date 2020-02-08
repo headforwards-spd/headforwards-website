@@ -16,6 +16,7 @@ export default IndexPostit;
 export const IndexPostitPropType = shape(indexPostitPropTypes);
 
 IndexPostit.propTypes = indexPostitPropTypes;
+
 function IndexPostit({ link, title, introduction }) {
     return (
         <Postit className={`${styles.postit}`}>

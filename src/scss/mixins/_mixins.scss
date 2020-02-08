@@ -1,11 +1,11 @@
 @import "../variables";
 
 @mixin flexRow($direction: row, $wrap: wrap, $justify-content: space-between) {
-    display: flex;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
+    display:         flex;
+    flex-direction:  $direction;
+    flex-wrap:       $wrap;
     justify-content: $justify-content;
-    margin-bottom: $column-gutter-sm;
+    margin-bottom:   $column-gutter-sm;
     @media (min-width: $screen-md) {
         margin-bottom: $column-gutter-md;
 
@@ -35,10 +35,10 @@
     $min-vw: $screen-sm;
     $max-vw: $screen-xl;
 
-    $u1: unit($min-vw);
-    $u2: unit($max-vw);
-    $u3: unit($min-font-size);
-    $u4: unit($max-font-size);
+    $u1:     unit($min-vw);
+    $u2:     unit($max-vw);
+    $u3:     unit($min-font-size);
+    $u4:     unit($max-font-size);
 
     @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
         & {

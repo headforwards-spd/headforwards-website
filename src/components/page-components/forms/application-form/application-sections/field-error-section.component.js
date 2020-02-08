@@ -6,6 +6,7 @@ import styles from '../application-form.module.scss';
 import { fieldErrorText } from '../application-form.schema';
 
 export default FieldErrorSection;
+
 function FieldErrorSection() {
     return (
         <div className={styles.error}>

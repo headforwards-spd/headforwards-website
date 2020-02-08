@@ -1,34 +1,34 @@
 @import "../../../scss/mixins/typography";
 
-@mixin checkbox{
+@mixin checkbox {
     display: none;
 
     & + label {
 
-        display: block;
-        position: relative;
+        display:      block;
+        position:     relative;
 
         padding-left: 1.5em;
 
         &:before, &:after {
             position: absolute;
-            left: 0;
+            left:     0;
         }
 
         &:before {
             position: absolute;
-            content: '';
-            border: 1px solid $input-grey;
-            width: 1em;
-            height: 1em;
+            content:  "";
+            border:   1px solid $input-grey;
+            width:    1em;
+            height:   1em;
         }
 
         &:after {
-            position: absolute;
-            content: '';
-            top: 3px;
-            left: 3px;
-            width: calc(1em - 4px);
+            position:       absolute;
+            content:        "";
+            top:            3px;
+            left:           3px;
+            width:          calc(1em - 4px);
             padding-bottom: calc(1em - 4px);
         }
     }

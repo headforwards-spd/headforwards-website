@@ -9,6 +9,7 @@ Hamburger.propTypes = hamburgerPropTypes;
 Hamburger.defaultProps = {
     activeClass: '',
 };
+
 function Hamburger({ activeClass, onClick }) {
     return (
         <button
