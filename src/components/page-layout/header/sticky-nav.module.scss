@@ -22,7 +22,7 @@
 
 @media (min-width: $screen-md) {
   .isScrollingUp,
-  &.isScrollingDown {
+  .isScrollingDown {
     > nav:not(:global(.menu-open)) {
       top: -4.5em;
 
