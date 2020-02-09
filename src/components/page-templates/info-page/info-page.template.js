@@ -15,8 +15,10 @@ InfoPage.propTypes = {
         text: string,
     }),
     components: arrayOf(PageComponentPropType),
+    jobsTitle: string,
     jobs: arrayOf(any),
     careers: shape({
+        title: string,
         applicationForm: string,
     }),
 };
@@ -24,14 +26,15 @@ InfoPage.propTypes = {
 InfoPage.defaultProps = {
     introduction: null,
     components: null,
+    jobsTitle: null,
     jobs: null,
     careers: null,
 };
 
-function InfoPage({ introduction, components = [], jobs, careers }) {
+function InfoPage({ introduction, components = [], jobsTitle: defaultJobsTitle, jobs, careers }) {
     const { show, text } = introduction;
     const hasJobs = !!(jobs && jobs.length);
-    const { applicationForm } = careers || {};
+    const { title: jobsTitle, applicationForm } = careers || {};
     const hasApplicationForm = !!applicationForm;
 
     return (
@@ -50,7 +53,7 @@ function InfoPage({ introduction, components = [], jobs, careers }) {
             )}
             {hasJobs && (
                 <section>
-                    <h2>Current job availability</h2>
+                    <h2>{jobsTitle || defaultJobsTitle}</h2>
                     <ul className={styles.jobsList}>
                         {jobs.map(job => (
                             <li key={job.path}>

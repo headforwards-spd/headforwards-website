@@ -2,8 +2,8 @@
 @import "../../page-component";
 
 .twoImages {
-  margin: $component-gutter-sm #{-$column-gutter-sm};
   @include component-gutter;
+  margin: $component-gutter-sm #{-$column-gutter-sm};
   padding: $component-gutter-sm 0;
 
   position: relative;

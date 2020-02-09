@@ -26,83 +26,87 @@
     > section {
       @include columns-component-tight;
       margin-bottom: -$column-gutter-sm/2;
-      margin-top: $column-gutter-sm/2;
       @media (min-width: $screen-md) {
         align-items: stretch;
-        margin-bottom: -$column-gutter-md/4;
-        margin-top: $column-gutter-md/4;
+        margin-left: -$column-gutter-md/4;
+        margin-right: -$column-gutter-md/4;
+        margin-bottom: -$column-gutter-md/2;
       }
       @media (min-width: $screen-lg) {
-        margin-bottom: -$column-gutter-lg/4;
-        margin-top: $column-gutter-lg/4;
+        margin-left: -$column-gutter-lg/4;
+        margin-right: -$column-gutter-lg/4;
+        margin-bottom: -$column-gutter-lg/2;
       }
 
       > a {
         width: calc((100% / 1) - #{$column-gutter-sm/2});
+        margin: $column-gutter-sm/2 $column-gutter-sm/4;
         z-index: 100;
         @media (min-width: $screen-md) {
           display: flex;
           flex-direction: column;
+          margin: $column-gutter-md/2 $column-gutter-md/4;
           width: calc((100% / 3) - #{$column-gutter-md/2});
         }
         @media (min-width: $screen-lg) {
+          margin: $column-gutter-lg/2 $column-gutter-lg/4;
           width: calc((100% / 3) - #{$column-gutter-lg/2});
         }
-      }
 
-      section {
-        @include fontSmallVr;
-        background: white;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: stretch;
-        margin: $column-gutter-sm/2 $column-gutter-sm/4;
-        padding: $column-gutter-sm/2;
-        @media (min-width: $screen-md) {
-          padding: $column-gutter-md/2;
-        }
-        @media (min-width: $screen-lg) {
-          padding: $column-gutter-lg/2;
-        }
-
-        @media (min-width: $screen-md) {
-          margin-bottom: 0;
-        }
-
-        :last-child {
-          margin-bottom: 0;
-        }
-
-        h2 {
-          order: 0;
-        }
-
-        .footerLinkImage {
-          margin: -$column-gutter-sm/2;
-          margin-bottom: $column-gutter-sm;
-          order: -1;
+        section {
+          @include fontMedium;
+          background: white;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          justify-content: stretch;
+          padding: $column-gutter-sm/2;
           @media (min-width: $screen-md) {
-            margin: -$column-gutter-md/2;
-            margin-bottom: $column-gutter-md;
+            @include fontSmallVr;
+            padding: $column-gutter-md/2;
           }
           @media (min-width: $screen-lg) {
-            margin: -$column-gutter-lg/2;
-            margin-bottom: $column-gutter-lg;
+            padding: $column-gutter-lg/2;
           }
-        }
 
-        button {
-          @include arrow-link;
-          align-self: flex-start;
-          background: unset;
-          border: none;
-          color: $orange;
-          flex-grow: 0;
-          font-weight: bold;
-          line-height: $line-height;
-          margin: auto 0 0;
-          padding: 0;
+          @media (min-width: $screen-md) {
+            margin-bottom: 0;
+          }
+
+          :last-child {
+            margin-bottom: 0;
+          }
+
+          h2 {
+            order: 0;
+          }
+
+          .footerLinkImage {
+            margin: -$column-gutter-sm/2;
+            margin-bottom: $column-gutter-sm;
+            order: -1;
+            @media (min-width: $screen-md) {
+              margin: -$column-gutter-md/2;
+              margin-bottom: $column-gutter-md;
+            }
+            @media (min-width: $screen-lg) {
+              margin: -$column-gutter-lg/2;
+              margin-bottom: $column-gutter-lg;
+            }
+          }
+
+          button {
+            @include arrow-link;
+            align-self: flex-start;
+            background: unset;
+            border: none;
+            color: $orange;
+            flex-grow: 0;
+            font-weight: bold;
+            line-height: $line-height;
+            margin: auto 0 0;
+            padding: 0;
+          }
         }
       }
     }

@@ -41,11 +41,23 @@
 
   .filter {
     @include button-link;
-    @include fontSmall;
+    @include fontMediumVr;
+    line-height: 2;
+    &,
+    p,
+    li,
+    time {
+      margin-bottom: -1px;
+    }
+    @media (min-width: $screen-lg) {
+      @include headingFontSmallVr;
+      line-height: 2;
+      font-weight: 400;
+      margin-bottom: -1px;
+    }
     background-color: white;
     border: 1px solid $grey-6;
     color: $paragraph_grey;
-    line-height: 2;
     margin: -1px;
 
     &:after {
@@ -94,22 +106,31 @@
   }
 
   input + label {
-    @include fontSmallVr;
+    @include fontMediumVr;
     &,
     p,
     li,
     time {
       margin-bottom: 0;
     }
+    @media (min-width: $screen-lg) {
+      @include headingFontSmallVr;
+      margin-bottom: 0;
+    }
   }
 
   button {
-    @include fontSmallVr;
+    @include fontMediumVr;
     @include button-link;
     &,
     p,
     li,
     time {
+      margin-bottom: 0;
+    }
+    @media (min-width: $screen-lg) {
+      @include headingFontSmallVr;
+      font-weight: 400;
       margin-bottom: 0;
     }
 

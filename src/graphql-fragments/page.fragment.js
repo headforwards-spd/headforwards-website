@@ -97,6 +97,8 @@ export const PageFragment = graphql`
             footerText
             callToAction
             careers {
+                title
+                department
                 applicationForm
             }
             seo {

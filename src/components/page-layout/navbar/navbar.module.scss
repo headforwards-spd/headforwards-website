@@ -152,8 +152,16 @@
       dd,
       h2,
       li {
-        @include fontSmall;
-        margin-bottom: 0;
+        &,
+        h2 {
+          margin-bottom: 0;
+        }
+        @media (min-width: $screen-md) {
+          &,
+          h2 {
+            margin-bottom: 0;
+          }
+        }
       }
 
       dt,
@@ -166,15 +174,27 @@
 
       dt,
       h2 {
-        font-weight: normal;
+        @include headingFontSmall;
+        font-weight: 400;
+        margin-bottom: 0;
         @include orange-type;
         text-transform: uppercase;
+        @media (min-width: $screen-md) {
+          @include headingFontSmallVr;
+          margin-bottom: 0;
+          font-weight: 400;
+        }
       }
 
       dd,
       li {
+        @include headingFontMedium;
         line-height: 2;
         margin-bottom: 0;
+        @media (min-width: $screen-md) {
+          @include fontMedium;
+          margin-bottom: 0;
+        }
       }
 
       ul {
@@ -206,7 +226,7 @@
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      margin-top: $component-gutter-sm/2;
+      margin-top: $component-gutter-sm/4;
       opacity: 1;
       overflow: hidden;
 

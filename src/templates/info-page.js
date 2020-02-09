@@ -19,6 +19,8 @@ InfoPagePage.propTypes = {
                 }),
                 components: arrayOf(PageComponentPropType),
                 careers: shape({
+                    title: string,
+                    department: string,
                     applicationForm: string,
                 }),
             }),
@@ -27,14 +29,16 @@ InfoPagePage.propTypes = {
 };
 
 function InfoPagePage({ data }) {
-    const { page, jobs: jobNodes } = data;
+    const { page, careers: careersSettings, jobs: jobNodes } = data;
     const { frontmatter } = page;
     const { introduction, components, careers, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
+    const { jobsTitle } = careersSettings;
     const { nodes: jobs } = jobNodes;
     const pageProps = {
         introduction,
         components,
+        jobsTitle,
         jobs,
         careers,
     };
@@ -65,6 +69,9 @@ export const query = graphql`
     query InfoPage($id: String!, $department: String!) {
         page: markdownRemark(id: { eq: $id }) {
             ...PageFragment
+        }
+        careers: dataYaml(title: { eq: "careers" }) {
+            jobsTitle
         }
         jobs: allRecruiteeOffer(filter: { department: { eq: $department } }) {
             nodes {
