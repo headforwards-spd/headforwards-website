@@ -57,6 +57,7 @@
   }
 
   abbr {
+    display: inline;
     color: red;
     text-decoration: none;
   }
@@ -199,6 +200,7 @@
   }
 
   abbr {
+    display: inline;
     color: $error-color;
     text-decoration: none;
   }

@@ -74,9 +74,9 @@ export const schema = {
                 <>
                     I agree to the terms outlined in the{' '}
                     <Link to="/privacy-notice/" target="_blank">
-                        privacy policy
+                        privacy&nbsp;policy
                     </Link>
-                    .{' '}
+                    .
                 </>
             ),
             value: '212',

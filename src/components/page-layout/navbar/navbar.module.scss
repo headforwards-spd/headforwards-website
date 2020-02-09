@@ -106,6 +106,7 @@
         text-decoration: none;
         &.hasChildren > a {
           display: flex;
+          align-items: stretch;
 
           button {
             @include fontSmall;

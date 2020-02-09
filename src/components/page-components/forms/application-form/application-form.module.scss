@@ -8,6 +8,7 @@
   transition: opacity $transitionTime ease;
 
   abbr {
+    display: inline;
     color: $error-color;
     text-decoration: none;
   }
