@@ -3,22 +3,22 @@ uuid: 4b2bb870-13bb-11ea-9795-cb94363984ef
 type: legal-page
 title: Privacy Notice
 image:
-    show: false
+  show: false
 introduction:
-    show: true
-    text: >-
-        This privacy notice is here to explain how we (Headforwards Solutions LTD) use
-        and protect any information you give us whilst using our site. We want to
-        ensure that your privacy is protected at all times.
-        
-        
-        We will only ever use your data in the way you intended it when you provided
-        it to us. This should be explicitly clear, if you are unsure please contact
-        us. We will regularly review and revise our privacy policy, to ensure you are
-        protected.
-        
-        
-        This policy was last updated on 24th May 2018.
+  show: true
+  text: >-
+    This privacy notice is here to explain how we (Headforwards Solutions LTD) use
+    and protect any information you give us whilst using our site. We want to
+    ensure that your privacy is protected at all times.
+
+
+    We will only ever use your data in the way you intended it when you provided
+    it to us. This should be explicitly clear, if you are unsure please contact
+    us. We will regularly review and revise our privacy policy, to ensure you are
+    protected.
+
+
+    This policy was last updated on 24th May 2018.
 sections:
   - title: Personal Data
     text: >-
@@ -36,6 +36,7 @@ sections:
 
       **When you directly give it to us (“Directly Provided Data”)**
 
+
       When you communicate with us, you may choose to voluntarily give us
       certain information – for example, by filling in text boxes or completing
       registration forms. All this information requires a direct action by you
@@ -44,6 +45,7 @@ sections:
 
       **When you give us permission to obtain from other accounts (“User
       Authorised Data”)**
+
 
       Depending on your settings or the privacy policies for other online
       services, you may give us permission to obtain information from your
@@ -58,8 +60,6 @@ sections:
       provide the Services to you, or (in the case of any contact you may have
       with our Customer Care team) for as long as is necessary to provide
       support-related reporting and trend analysis only.
-
-
 
 
       If legally required, or if it is reasonably necessary to meet regulatory
@@ -164,8 +164,6 @@ sections:
       select no, you will not be added to our marketing mailing list.
 
 
-
-
       We will periodically send marketing communications to you on the basis
       that you have given us consent to do so. You can withdraw your consent and
       unsubscribe from receiving marketing emails from us by clicking the
@@ -173,12 +171,8 @@ sections:
       no longer receive any marketing emails from us.
 
 
-
-
       When you withdraw your consent for marketing communications we will retain
       that information about you to ensure that we comply with your wishes.
-
-
 
 
       Data used for email marketing will be stored in Mailchimp. Mailchimp
@@ -188,9 +182,8 @@ sections:
 seo:
   title: Privacy Notice
   description: >-
-                       This privacy notice is here to explain how we (Headforwards Solutions LTD) use
-                       and protect any information you give us whilst using our site. We want to
-                       ensure that your privacy is protected at all times.
+    This privacy notice is here to explain how we (Headforwards Solutions LTD) use
+    and protect any information you give us whilst using our site. We want to
+    ensure that your privacy is protected at all times.
   slug: privacy-notice
 ---
-

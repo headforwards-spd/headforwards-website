@@ -73,6 +73,5 @@ footerLinks:
     link3: fe1a1d50-0fab-11ea-843f-932c76de5936
     showImages: true
     title: Find out more about Headforwards
-callToAction: 'Would you like to join us on our journey? '
+callToAction: "Would you like to join us on our journey?"
 ---
-

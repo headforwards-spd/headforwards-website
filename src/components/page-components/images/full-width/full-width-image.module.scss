@@ -2,20 +2,18 @@
 @import "../../page-component";
 
 .fullWidthImage {
+  @include component-gutter($fullWidth: true);
 
-    @include component-gutter($fullWidth: true);
-
-    //@media(min-width: $screen-md) {
-    //    margin-left: -$page-gutter-md;
-    //    margin-right: -$page-gutter-md;
-    //}
-    //margin-bottom: $gutter-large;
-    max-height: calc(100vh - #{$component-gutter-sm*2});
-    @media (min-width: $screen-md) {
-        max-height: calc(100vh - #{$component-gutter-md*2});
-    }
-    @media (min-width: $screen-lg) {
-        max-height: calc(100vh - #{$component-gutter-lg*2});
-    }
-
+  //@media(min-width: $screen-md) {
+  //    margin-left: -$page-gutter-md;
+  //    margin-right: -$page-gutter-md;
+  //}
+  //margin-bottom: $gutter-large;
+  max-height: calc(100vh - #{$component-gutter-sm * 2});
+  @media (min-width: $screen-md) {
+    max-height: calc(100vh - #{$component-gutter-md * 2});
+  }
+  @media (min-width: $screen-lg) {
+    max-height: calc(100vh - #{$component-gutter-lg * 2});
+  }
 }

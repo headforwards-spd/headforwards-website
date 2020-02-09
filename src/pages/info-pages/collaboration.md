@@ -51,7 +51,7 @@ components:
     isRightImage: true
     isTwoColumns: false
     type: image-copy-component
-    title: 'The right team for each project '
+    title: "The right team for each project"
     image: /uploads/headforwards-16.jpg
   - quote: >-
       We want to be a partner to our clients, to develop long-term relationships
@@ -99,6 +99,5 @@ footerLinks:
     link3: 3c96d190-0fac-11ea-843f-932c76de5936
     showImages: true
     title: Let's work together
-callToAction: 'To learn more about how we collaborate with clients '
+callToAction: "To learn more about how we collaborate with clients"
 ---
-

@@ -5,202 +5,201 @@
 @import "./mixins";
 
 .header {
-    display:        flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    @include header;
+  @include header;
 
-    .image {
-        height:        100vw;
-        margin-bottom: 0;
-        order:         1;
-        padding:       0;
+  .image {
+    height: 100vw;
+    margin-bottom: 0;
+    order: 1;
+    padding: 0;
 
-        > div {
-            display: none;
-        }
-
-        @media (min-width: $screen-md) {
-            height: unset;
-            > div {
-                display: block;
-            }
-        }
+    > div {
+      display: none;
     }
 
+    @media (min-width: $screen-md) {
+      height: unset;
+      > div {
+        display: block;
+      }
+    }
+  }
+
+  > section {
+    display: flex;
+
+    flex-direction: column;
+    margin: $component-gutter-sm auto;
+
+    order: 2;
+
+    padding-bottom: $component-gutter-sm;
+
+    position: relative;
+
+    h1 {
+      @include headingFontXLarge;
+      @include orange-type;
+      @media (min-width: $screen-lg) {
+        width: $singleColumnMaxWidth;
+      }
+    }
+    p {
+      @include fontLarge;
+      color: black;
+      font-weight: bold;
+      @media (min-width: $screen-lg) {
+        width: $singleColumnMaxWidth;
+      }
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      background: $grey-8;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      width: calc(100% - #{2 * $column-gutter-sm});
+      @media (min-width: $screen-md) {
+        width: calc(100% - #{2 * $column-gutter-md});
+      }
+      @media (min-width: $screen-lg) {
+        width: calc(100% - #{2 * $column-gutter-lg});
+      }
+    }
+    @media (min-width: $screen-md) {
+      margin: $component-gutter-md auto;
+      padding-bottom: 0;
+
+      h1 {
+        @include headingFontXLarge;
+      }
+      h1,
+      p {
+        max-width: $singleColumnMaxWidth;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: $component-gutter-lg auto;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    margin-bottom: $component-gutter-md;
+
     > section {
-        display:        flex;
+      margin-bottom: 0;
+      padding-bottom: $component-gutter-md/2;
 
-        flex-direction: column;
-        margin:         $component-gutter-sm auto;
+      &.hasSubTitle {
+        h1,
+        p {
+          @include headingFontLarge;
+          line-height: 1.15;
+          margin-bottom: 0;
+        }
+      }
+    }
 
-        order:          2;
+    &.hasBackground {
+      background: linear-gradient(
+        rgba(black, 1),
+        transparent 175px,
+        transparent calc(100% - 400px),
+        rgba(black, 1)
+      );
+      display: flex;
 
-        padding-bottom: $component-gutter-sm;
+      flex-direction: column;
 
-        position:       relative;
+      justify-content: space-between;
+      min-height: 62.5vh;
+      position: relative;
+      &.isHomePage {
+        min-height: calc(100vh - 4.5em);
+      }
+
+      > section {
+        margin-bottom: $component-gutter-md;
+        margin-top: auto;
+        padding-bottom: 0;
 
         h1 {
-            @include headingFontXLarge;
-            @include orange-type;
-            @media(min-width: $screen-lg) {
-                width: $singleColumnMaxWidth;
-            }
-        }
-        p {
-            @include fontLarge;
-            color:       black;
-            font-weight: bold;
-            @media(min-width: $screen-lg) {
-                width: $singleColumnMaxWidth;
-            }
+          color: white;
+          margin-bottom: 0;
         }
 
-        :last-child {
-            margin-bottom: 0;
+        p {
+          @include fontLarge;
+          @include orange-type;
         }
 
         &:after {
-            background: $grey-8;
-            bottom:     0;
-            content:    "";
-            display:    block;
-            height:     2px;
-            position:   absolute;
-            width:      calc(100% - #{2*$column-gutter-sm});
-            @media(min-width: $screen-md) {
-                width: calc(100% - #{2*$column-gutter-md});
-            }
-            @media(min-width: $screen-lg) {
-                width: calc(100% - #{2*$column-gutter-lg});
-            }
-        }
-        @media (min-width: $screen-md) {
-            margin:         $component-gutter-md auto;
-            padding-bottom: 0;
-
-            h1 {
-                @include headingFontXLarge;
-            }
-            h1, p {
-                max-width: $singleColumnMaxWidth;
-            }
+          display: none;
         }
 
-        @media (min-width: $screen-lg) {
-            margin: $component-gutter-lg auto;
+        &.hasSubTitle {
+          p {
+            order: 1;
+          }
+
+          h1 {
+            order: 2;
+          }
         }
+      }
     }
 
-    @media(min-width: $screen-md) {
+    .image {
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      max-width: unset;
+      opacity: 0.9;
+      position: absolute !important;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
 
-        margin-bottom: $component-gutter-md;
+  @media (min-width: $screen-lg) {
+    margin-bottom: $component-gutter-lg;
+
+    &.hasBackground {
+      &.isHomePage {
+        min-height: 100vh;
 
         > section {
-            margin-bottom:  0;
-            padding-bottom: $component-gutter-md/2;
-
-            &.hasSubTitle {
-                h1, p {
-                    @include headingFontLarge;
-                    line-height:   1.15;
-                    margin-bottom: 0;
-                }
-            }
+          h1 {
+            @include headingFontHomePage;
+          }
         }
+      }
 
-        &.hasBackground {
-
-            background:      linear-gradient(rgba(black, 1), transparent 175px, transparent calc(100% - 400px), rgba(black, 1));
-            display:         flex;
-
-            flex-direction:  column;
-
-            justify-content: space-between;
-            min-height:      62.5vh;
-            position:        relative;
-            &.isHomePage {
-                min-height: calc(100vh - 4.5em);
-            }
-
-            > section {
-
-                margin-bottom:  $component-gutter-md;
-                margin-top:     auto;
-                padding-bottom: 0;
-
-                h1 {
-                    color:         white;
-                    margin-bottom: 0;
-                }
-
-                p {
-                    @include fontLarge;
-                    @include orange-type;
-                }
-
-                &:after {
-                    display: none;
-                }
-
-                &.hasSubTitle {
-                    p {
-                        order: 1;
-                    }
-
-                    h1 {
-                        order: 2;
-                    }
-                }
-            }
-        }
-
-        .image {
-            bottom:    0;
-            left:      0;
-            margin:    0;
-            max-width: unset;
-            opacity:   0.9;
-            position:  absolute !important;
-            right:     0;
-            top:       0;
-            z-index:   -1;
-        }
+      > section {
+        margin-bottom: $component-gutter-lg/2;
+      }
     }
+  }
 
-    @media(min-width: $screen-lg) {
+  @media (min-width: $screen-xl) {
+    &.hasBackground {
+      min-height: 65vh;
 
-        margin-bottom: $component-gutter-lg;
-
-        &.hasBackground {
-
-            &.isHomePage {
-                min-height: 100vh;
-
-                > section {
-                    h1 {
-                        @include headingFontHomePage;
-                    }
-                }
-            }
-
-            > section {
-
-                margin-bottom: $component-gutter-lg/2;
-            }
-
-        }
+      > section {
+        justify-content: flex-end;
+        min-height: 20vw;
+      }
     }
-
-    @media(min-width: $screen-xl) {
-
-        &.hasBackground {
-            min-height: 65vh;
-
-            > section {
-                justify-content: flex-end;
-                min-height:      20vw;
-            }
-        }
-    }
+  }
 }

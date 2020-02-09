@@ -39,7 +39,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'People-driven growth '
+    title: "People-driven growth"
   - content:
       - text: >-
           Headforwards has several strategic objectives for growth, powered by
@@ -61,7 +61,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'A core values-led strategy '
+    title: "A core values-led strategy"
   - content:
       - text: >-
           Critical mass is vitally important for Headforwards. It’s not only how
@@ -91,4 +91,3 @@ footerLinks:
     title: How we see our future
 callToAction: Think this is a refreshing approach to software development?
 ---
-

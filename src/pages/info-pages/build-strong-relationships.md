@@ -38,7 +38,7 @@ components:
       - link: d1956170-ec44-11e9-914c-c376cef31113
         linkText: Read more
     type: image-copy-component
-  - jobTitle: 'Project Manager and Scrum Master '
+  - jobTitle: "Project Manager and Scrum Master"
     name: Helen Stembridge
     quote: >-
       Trust is at the core of our relationships at Headforwards. We’re free to
@@ -89,7 +89,7 @@ components:
     title: Client relationships that go further
   - quote: >-
       We’re always looking towards the future with our client relationships.
-      We’re not afraid to take the ‘what if’ risks each day. 
+      We’re not afraid to take the ‘what if’ risks each day.
     type: quote-component
 footerLinks:
   - link1: 40718760-1033-11ea-9288-bf5475231968
@@ -101,4 +101,3 @@ footerLinks:
       team
 callToAction: To find out more about how we build relationships
 ---
-

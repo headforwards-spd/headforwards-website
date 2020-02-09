@@ -48,4 +48,3 @@ components:
 seo:
   slug: bi-and-data
 ---
-

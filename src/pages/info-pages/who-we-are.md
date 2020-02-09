@@ -9,4 +9,3 @@ introduction:
   show: false
   text: We believe that strong individuals make a strong team
 ---
-

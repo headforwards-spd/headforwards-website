@@ -5,101 +5,102 @@
 @import "../columns";
 
 .blogPostColumns {
-    @include fontMedium;
+  @include fontMedium;
 
-    @include component-gutter;
+  @include component-gutter;
 
-    > h2 {
-        @include orange-type;
-        margin-bottom: #{$rhythm-unit/2}em;
-    }
+  > h2 {
+    @include orange-type;
+    margin-bottom: #{$rhythm-unit/2}em;
+  }
 
-    > section {
-        @include columns-component;
+  > section {
+    @include columns-component;
 
-        > a {
+    > a {
+      .article {
+        @include fontMediumVr;
+        display: flex;
+        flex-direction: column;
 
-            .article {
-                @include fontMediumVr;
-                display:        flex;
-                flex-direction: column;
-
-                margin-bottom:  0;
-                position:       relative;
-                @media (min-width: $screen-md) {
-                    margin-bottom: 0;
-                }
-
-                h2 {
-                    color:         $header_black;
-                    flex-grow:     1;
-                    margin-bottom: 0;
-                    order:         2;
-                }
-
-                .image {
-                    margin:        0 -#{$column-gutter-sm};
-                    margin-bottom: 1em * $rhythm-unit;
-                    order:         1;
-                    position:      relative;
-
-                    &:before {
-                        @include fontMedium;
-                        background:     linear-gradient(315deg, rgba(#FFB800, 0.6) 50%, transparent 50%);
-                        border-radius:  0 0 $column-gutter-sm/2 0;
-                        bottom:         -$column-gutter-sm/2;
-                        content:        "";
-                        padding-bottom: 37.5%;
-                        position:       absolute;
-                        right:          $column-gutter-sm/2;
-                        width:          37.5%;
-                        z-index:        10;
-                        @media (min-width: $screen-md) {
-                            bottom: -$column-gutter-md/2;
-                            right:  -$column-gutter-md/2;
-                            //right: $gutter-small - $gutter-medium;
-                            //margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small});
-                        }
-                    }
-
-                    &:after {
-                        background-image: url(/images/hf-arrow.white.svg);
-                        bottom:           $column-gutter-sm;
-                        position:         absolute;
-                        right:            $column-gutter-sm*2;
-                        width:            15%;
-                        z-index:          20;
-                        @media (min-width: $screen-md) {
-                            bottom: 0;
-                            right:  $column-gutter-md/2;
-                            //right: 1.5*$gutter-small - $gutter-medium;
-                            //margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small/4});
-                        }
-                    }
-                }
-            }
-
-            @media (min-width: $screen-md) {
-
-                width: calc(50% - #{$column-gutter-md});
-
-                .article {
-
-                    .image {
-                        margin: 0 0 #{$rhythm-unit}em;
-                    }
-
-                    //&:before {
-                    //    right: $gutter-small;
-                    //    margin-top: calc(62.5% + #{$gutter-small});
-                    //}
-                    //
-                    //a {
-                    //    right: $gutter-small;
-                    //    margin-top: calc(62.5% + #{$gutter-small});
-                    //}
-                }
-            }
+        margin-bottom: 0;
+        position: relative;
+        @media (min-width: $screen-md) {
+          margin-bottom: 0;
         }
+
+        h2 {
+          color: $header_black;
+          flex-grow: 1;
+          margin-bottom: 0;
+          order: 2;
+        }
+
+        .image {
+          margin: 0 -#{$column-gutter-sm};
+          margin-bottom: 1em * $rhythm-unit;
+          order: 1;
+          position: relative;
+
+          &:before {
+            @include fontMedium;
+            background: linear-gradient(
+              315deg,
+              rgba(#ffb800, 0.6) 50%,
+              transparent 50%
+            );
+            border-radius: 0 0 $column-gutter-sm/2 0;
+            bottom: -$column-gutter-sm/2;
+            content: "";
+            padding-bottom: 37.5%;
+            position: absolute;
+            right: $column-gutter-sm/2;
+            width: 37.5%;
+            z-index: 10;
+            @media (min-width: $screen-md) {
+              bottom: -$column-gutter-md/2;
+              right: -$column-gutter-md/2;
+              //right: $gutter-small - $gutter-medium;
+              //margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small});
+            }
+          }
+
+          &:after {
+            background-image: url(/images/hf-arrow.white.svg);
+            bottom: $column-gutter-sm;
+            position: absolute;
+            right: $column-gutter-sm * 2;
+            width: 15%;
+            z-index: 20;
+            @media (min-width: $screen-md) {
+              bottom: 0;
+              right: $column-gutter-md/2;
+              //right: 1.5*$gutter-small - $gutter-medium;
+              //margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small/4});
+            }
+          }
+        }
+      }
+
+      @media (min-width: $screen-md) {
+        width: calc(50% - #{$column-gutter-md});
+
+        .article {
+          .image {
+            margin: 0 0 #{$rhythm-unit}em;
+          }
+
+          //&:before {
+          //    right: $gutter-small;
+          //    margin-top: calc(62.5% + #{$gutter-small});
+          //}
+          //
+          //a {
+          //    right: $gutter-small;
+          //    margin-top: calc(62.5% + #{$gutter-small});
+          //}
+        }
+      }
     }
+  }
 }

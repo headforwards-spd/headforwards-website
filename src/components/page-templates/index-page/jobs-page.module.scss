@@ -2,79 +2,80 @@
 @import "../../page-components/columns/columns";
 
 .introduction {
-    > h2 {
-        @include headingFontLarge;
-    }
+  > h2 {
+    @include headingFontLarge;
+  }
 
-    @include fontMedium;
-    @media(min-width: $screen-lg) {
-        @include fontLarge;
-    }
-    @include component-gutter;
+  @include fontMedium;
+  @media (min-width: $screen-lg) {
+    @include fontLarge;
+  }
+  @include component-gutter;
 }
 
 .jobRoles {
+  @include columns-component;
 
-    @include columns-component;
+  margin: #{-$gutter-small/2} #{-$gutter-small/2} #{$gutter-large -
+    $gutter-small/2};
+  @media (min-width: $screen-md) {
+    margin: #{-$column-gutter/2} #{-$column-gutter/2} #{$gutter-medium -
+      $column-gutter/2};
+  }
+  @media (min-width: $screen-md) {
+    margin: #{-$column-gutter/2} #{-$column-gutter/2} #{$gutter-large -
+      $column-gutter/2};
+  }
 
-    margin: #{-$gutter-small/2} #{-$gutter-small/2} #{$gutter-large - $gutter-small/2};
-    @media (min-width: $screen-md) {
-        margin: #{-$column-gutter/2} #{-$column-gutter/2} #{$gutter-medium - $column-gutter/2};
+  .role {
+    margin: $gutter-small/2;
+
+    @include fontMedium;
+
+    padding-bottom: calc(100% - #{$gutter-small});
+
+    width: calc(100% - #{$gutter-small});
+    h2 {
+      @include headingFontMedium;
     }
     @media (min-width: $screen-md) {
-        margin: #{-$column-gutter/2} #{-$column-gutter/2} #{$gutter-large - $column-gutter/2};
+      h2 {
+        @include headingFontLarge;
+      }
+
+      @include fontLarge;
+    }
+    @media (min-width: $screen-md) {
+      margin: $column-gutter/2;
     }
 
-    .role {
-
-        margin:         $gutter-small/2;
-
-        @include fontMedium;
-
-        padding-bottom: calc(100% - #{$gutter-small});
-
-        width:          calc(100% - #{$gutter-small});
-        h2 {
-            @include headingFontMedium;
-        }
-        @media(min-width: $screen-md) {
-            h2 {
-                @include headingFontLarge;
-            }
-
-            @include fontLarge;
-        }
-        @media (min-width: $screen-md) {
-            margin: $column-gutter/2;
-        }
-
-        @media(min-width: $screen-lg) {
-            padding-bottom: calc(50% - #{$column-gutter});
-            width:          calc(50% - #{$column-gutter});
-        }
-
-        > a {
-            bottom:         0;
-            display:        flex;
-            flex-direction: column;
-            left:           0;
-            padding:        $gutter-small;
-            position:       absolute;
-            right:          0;
-            top:            0;
-            @media(min-width: $screen-md) {
-                padding: $column-gutter;
-            }
-        }
-
-        .link {
-            color:      $header_black;
-            @include arrow-link;
-            margin-top: auto;
-
-            &:after {
-                background-image: url("/images/hf-arrow.svg");
-            }
-        }
+    @media (min-width: $screen-lg) {
+      padding-bottom: calc(50% - #{$column-gutter});
+      width: calc(50% - #{$column-gutter});
     }
+
+    > a {
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      left: 0;
+      padding: $gutter-small;
+      position: absolute;
+      right: 0;
+      top: 0;
+      @media (min-width: $screen-md) {
+        padding: $column-gutter;
+      }
+    }
+
+    .link {
+      color: $header_black;
+      @include arrow-link;
+      margin-top: auto;
+
+      &:after {
+        background-image: url("/images/hf-arrow.svg");
+      }
+    }
+  }
 }

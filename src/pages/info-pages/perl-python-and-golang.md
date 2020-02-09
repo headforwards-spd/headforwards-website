@@ -2,44 +2,44 @@
 uuid: 7ccaa0e0-152c-11ea-a47f-c360f0875c84
 parent: careers
 type: info-page
-title: 'Perl, Python and Golang'
+title: "Perl, Python and Golang"
 image:
-    show: false
-    image: /uploads/icon.black.png
+  show: false
+  image: /uploads/icon.black.png
 introduction:
-    show: false
-    text: >-
-          Our global communications team is 45 people, again all in small teams of
-          3-7. They work on cutting edge web applications which are used by millions
-          of people globally!
+  show: false
+  text: >-
+    Our global communications team is 45 people, again all in small teams of
+    3-7. They work on cutting edge web applications which are used by millions
+    of people globally!
 components:
   - type: image-copy-component
     content:
       - type: markdown-component
         text: >-
-            Our global communications team is 45 people, again all in small teams of
-            3-7. They work on cutting edge web applications which are used by millions
-            of people globally!
+          Our global communications team is 45 people, again all in small teams of
+          3-7. They work on cutting edge web applications which are used by millions
+          of people globally!
   - type: image-copy-component
     content:
       - type: markdown-component
         text: >-
           If you watch sport (F1 and the Tour de France) then
           you will have seen our client’s data dashboards too.
-    
-    
+
+
           The teams write the back ends in Perl, Python and more commonly now,
           Golang. We’re using Docker and Kubernetes to allow us to release
           multipletimes a day across various different regions. If you are
           interested in Continuous Delivery and bleeding the edges of your
           experience then you will fit in well here.
-    
-    
+
+
           We strongly believe that great Developers can pick up new skills and
           languages easily. Even if you don’t have experience in the languages we
           use, we are keen to hear from you. If you do then even better!
-    
-    
+
+
           We recruit Developers, Testers, UI/UX Designers, Scrum Masters, BA’s and
           Sys Admins.
            
@@ -49,8 +49,8 @@ components:
           aplace that genuinely cares about your - and your family’s -well-being. So
           work becomes more enjoyable and less stressful. And outside work, you’rein
           Cornwall, so there’s a fantastic lifestyle to enjoy.
-    
-    
+
+
           We might be growing fast, but there’s no ‘us and them’. Our business
           model’s flat and fluid. There are no ivory towers, so it’s all about
           teamwork. And we recognise good ideas, wherever they come from. So, prove
@@ -65,11 +65,10 @@ components:
     type: quote-component
   - quote: A smaller team where individual contribution is valued.
     type: quote-component
-  - quote: 'Small teams, but the expertise of a bigger company.'
+  - quote: "Small teams, but the expertise of a bigger company."
     type: quote-component
 seo:
-    slug: perl-python-and-golang
+  slug: perl-python-and-golang
 careers:
-    department: Telecomms
+  department: Telecomms
 ---
-

@@ -5,91 +5,86 @@
 @import "../columns/columns";
 
 .hero {
-    @include component-gutter;
-    @include fontMedium;
-    margin:        0;
-    margin-bottom: $component-gutter-sm;
+  @include component-gutter;
+  @include fontMedium;
+  margin: 0;
+  margin-bottom: $component-gutter-sm;
+  @media (min-width: $screen-md) {
+    margin: 0;
+    margin-bottom: $component-gutter-md;
+  }
+  @media (min-width: $screen-lg) {
+    margin: 0;
+    margin-bottom: $component-gutter-lg;
+  }
+
+  > section {
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:first-child:after {
     @media (min-width: $screen-md) {
-        margin:        0;
-        margin-bottom: $component-gutter-md;
+      content: url(/images/hf-arrow.svg);
+      opacity: 0.05;
+      position: absolute;
+      right: -50%;
+      top: -$component-gutter-md + $column-gutter-md/2;
+      width: 62.5%;
+      z-index: -1;
     }
     @media (min-width: $screen-lg) {
-        margin:        0;
-        margin-bottom: $component-gutter-lg;
+      top: -$component-gutter-lg + $column-gutter-lg/2;
     }
+  }
 
-    > section {
-        :last-child {
-            margin-bottom: 0;
+  &.isTwoColumns:after {
+    display: none;
+  }
+
+  @media (min-width: $screen-md) {
+    max-width: $singleColumnMaxWidth;
+    position: relative;
+
+    &.isTwoColumns {
+      align-items: flex-start;
+      display: flex;
+      max-width: unset;
+
+      > section {
+        column-count: 2;
+        column-gap: 2 * $column-gutter-md;
+      }
+
+      &.hasTitle {
+        h2 {
+          flex-grow: 1;
+          flex-shrink: 1;
         }
-    }
 
-    &:first-child:after {
-        @media (min-width: $screen-md) {
-            content:  url(/images/hf-arrow.svg);
-            opacity:  0.05;
-            position: absolute;
-            right:    -50%;
-            top:      -$component-gutter-md + $column-gutter-md/2;
-            width:    62.5%;
-            z-index:  -1;
+        > section {
+          column-count: unset;
+          column-gap: unset;
+          flex-shrink: 0;
+          margin-left: $column-gutter-md;
+          width: calc(62.5% - #{$column-gutter-md/2});
         }
-        @media (min-width: $screen-lg) {
-            top: -$component-gutter-lg + $column-gutter-lg/2;
+      }
+    }
+  }
+  @media (min-width: $screen-lg) {
+    &.isTwoColumns {
+      > section {
+        column-gap: 2 * $column-gutter-lg;
+      }
+
+      &.hasTitle {
+        > section {
+          margin-left: $column-gutter-lg;
+          width: calc(62.5% - #{$column-gutter-lg/2});
         }
+      }
     }
-
-    &.isTwoColumns:after {
-        display: none;
-    }
-
-    @media(min-width: $screen-md) {
-
-        max-width: $singleColumnMaxWidth;
-        position:  relative;
-
-        &.isTwoColumns {
-            align-items: flex-start;
-            display:     flex;
-            max-width:   unset;
-
-            > section {
-                column-count: 2;
-                column-gap:   2*$column-gutter-md;
-            }
-
-            &.hasTitle {
-
-                h2 {
-                    flex-grow:   1;
-                    flex-shrink: 1;
-                }
-
-                > section {
-                    column-count: unset;
-                    column-gap:   unset;
-                    flex-shrink:  0;
-                    margin-left:  $column-gutter-md;
-                    width:        calc(62.5% - #{$column-gutter-md/2});
-                }
-            }
-        }
-    }
-    @media(min-width: $screen-lg) {
-
-        &.isTwoColumns {
-
-            > section {
-                column-gap: 2*$column-gutter-lg;
-            }
-
-            &.hasTitle {
-
-                > section {
-                    margin-left: $column-gutter-lg;
-                    width:       calc(62.5% - #{$column-gutter-lg/2});
-                }
-            }
-        }
-    }
+  }
 }

@@ -9,4 +9,3 @@ introduction:
   show: false
   text: Headforwards make teams that make software
 ---
-

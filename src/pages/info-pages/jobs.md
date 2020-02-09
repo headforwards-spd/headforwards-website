@@ -18,7 +18,7 @@ components:
 
 
           If you don’t see something that fits your skills or timing, then
-          please register your interest. 
+          please register your interest.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -28,4 +28,3 @@ callToAction: Not ready to apply for a job right now? We still want to hear from
 seo:
   slug: jobs
 ---
-

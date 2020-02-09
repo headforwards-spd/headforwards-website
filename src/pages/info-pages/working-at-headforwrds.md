@@ -8,6 +8,5 @@ image:
   show: true
 introduction:
   show: false
-  text: 'At Headforwards, we believe we are unique. What does that feel like?'
+  text: "At Headforwards, we believe we are unique. What does that feel like?"
 ---
-

@@ -1,18 +1,18 @@
 .imageWrapper {
-    position: relative;
+  position: relative;
 }
 
 .padder {
-    width: 100%;
+  width: 100%;
 }
 
 .image {
-    height:          100%;
-    left:            0;
-    max-width:       unset;
-    object-fit:      cover;
-    object-position: center center;
-    position:        absolute;
-    top:             0;
-    width:           100%;
+  height: 100%;
+  left: 0;
+  max-width: unset;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

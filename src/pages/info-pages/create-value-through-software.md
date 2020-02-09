@@ -59,4 +59,3 @@ footerLinks:
     showImages: true
     title: Software with the client’s overall business objectives in mind
 ---
-

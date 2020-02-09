@@ -81,7 +81,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'A county full of interest and intrigue '
+    title: "A county full of interest and intrigue"
   - flip: true
     imageOne: /uploads/hf-beach-2.jpg
     imageTwo: /uploads/HF careers 1.jpg
@@ -125,6 +125,5 @@ footerLinks:
     link3: 16f53e5e-3847-11ea-a137-2e728ce88125
     showImages: true
     title: Take a look around
-callToAction: 'Tired of the rat race? Find a different type of tech career with us '
+callToAction: "Tired of the rat race? Find a different type of tech career with us"
 ---
-
