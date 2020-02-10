@@ -37,7 +37,8 @@ https://headforwards-website2.netlify.com/* https://www.headforwards.com/:splat 
 
 
 # WordPress Media Files
-/wp-content/uploads/2020/01/Headforwards-Way.pdf /documents/Headforwards-Way.pdf
+/wp-content/uploads/2017/11/headforwards-logo.png /images/headforwards.png        301
+/wp-content/uploads/2020/01/Headforwards-Way.pdf  /documents/Headforwards-Way.pdf 301
 
 
 # WordPress Legal Pages
