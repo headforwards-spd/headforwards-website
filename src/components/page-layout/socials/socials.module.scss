@@ -48,13 +48,26 @@
 
   li {
     line-height: 1;
-    padding-right: 0.56em;
+    margin-right: 0.5em;
+    position: relative;
+    width: 1.1em;
+    padding-bottom: 2em;
 
-    a {
+    > a {
+      position: absolute;
       color: $grey-6;
-      height: 1em;
       transition: all $transitionTime ease;
-      width: 1em;
+      width: 100%;
+      height: 100%;
+
+      svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        //font-size: 110%;
+      }
 
       &:hover {
         color: $orange;
