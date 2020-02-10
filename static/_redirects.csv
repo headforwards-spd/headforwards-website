@@ -4,9 +4,9 @@
 
 
 # careers.headforwards.com
-https://careers.headforwards.com/v/events/:id https://headforwards.recruitee.com/v/events/:id
 /o/:job/c/new https://www.headforwards.com/careers/jobs/:job/application-form/ 301!
 /o/:job https://www.headforwards.com/careers/jobs/:job/ 301!
+/v/events/:id https://headforwards.recruitee.com/v/events/:id 301
 http://www.careers.headforwards.com/* https://www.headforwards.com/careers/:splat 301!
 https://www.careers.headforwards.com/* https://www.headforwards.com/careers/:splat 301!
 http://careers.headforwards.com/*	 https://www.headforwards.com/careers/:splat 301!
