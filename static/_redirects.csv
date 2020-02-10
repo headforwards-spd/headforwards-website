@@ -4,12 +4,13 @@
 
 
 # careers.headforwards.com
-/o/:job/c/new                          https://www.headforwards.com/careers/jobs/:job/application-form/ 301!
-/o/:job                                https://www.headforwards.com/careers/jobs/:job/ 301!
-http://www.careers.headforwards.com/*  https://www.headforwards.com/careers/:splat 301!
+/o/:job/c/new https://www.headforwards.com/careers/jobs/:job/application-form/ 301!
+/o/:job https://www.headforwards.com/careers/jobs/:job/ 301!
+/v/events/:id https://headforwards.recruitee.com/v/events/:id 301
+http://www.careers.headforwards.com/* https://www.headforwards.com/careers/:splat 301!
 https://www.careers.headforwards.com/* https://www.headforwards.com/careers/:splat 301!
-http://careers.headforwards.com/*	   https://www.headforwards.com/careers/:splat 301!
-https://careers.headforwards.com/*	   https://www.headforwards.com/careers/:splat 301!
+http://careers.headforwards.com/*	 https://www.headforwards.com/careers/:splat 301!
+https://careers.headforwards.com/*	 https://www.headforwards.com/careers/:splat 301!
 
 
 # Netlify
@@ -103,6 +104,44 @@ https://headforwards-website2.netlify.com/* https://www.headforwards.com/:splat 
 
 
 # WordPress Posts
+/tag/toby-parkins /who-we-are/how-we-began/ 301
+
+/2017/04/waterfall-vs-agile /how-we-work/ 301
+/2016/08/bdd /how-we-work/ 301
+/2017/08/how-outsourcing-your-software-development-with-headforwards-works /how-we-work/ 301
+
+/2016/07/headforwards-merger /how-we-work/two-different-working-models/ 301
+/2015/07/what-is-pair-programming /how-we-work/mobbing/ 301
+
+/tag/careers /careers/ 301
+
+/2016/04/cornwall-the-unlikely-high-tech-hub /careers/technology-in-cornwall/ 301
+/2017/05/why-cornwall-is-disrupting-the-software-industry /careers/technology-in-cornwall/ 301
+
+/2015/12/top-10-reasons-to-relocate-to-cornwall /careers/living-in-cornwall/ 301
+/2016/04/cornwall-becoming-california-of-the-uk /careers/living-in-cornwall/ 301
+/2015/10/top-10-things-to-do-on-your-lunch-break /careers/living-in-cornwall/ 301
+
+/2012/09/ntt-partner-with-headforwards-for-software-development /careers/perl-python-and-golang/ 301
+
+/2014/06/meal-at-the-wheelhouse-crab-and-oyster-bar /careers/our-culture/ 301
+/2017/03/skinners-brewery-tour/ /careers/our-culture/ 301
+/2017/10/headstock-2017/ /careers/our-culture/ 301
+/2019/07/headstock-2019/ /careers/our-culture/ 301
+/category/the-headforwards-team /careers/our-culture/ 301
+
+#/news/
+#
+#/2017/08/attending-agile-on-the-beach-2017/
+#/2018/03/agile-on-the-beach-code-retreat/
+#/2017/03/21st-century-skill-teaching-kids-code/
+#/2015/06/do-you-want-to-learn-code-in-cornwall/
+#/2017/03/learn-code-online-resources-beginners/
+#/2016/12/cornish-business-year-2016/
+#/2017/01/headforwards-appoints-howell-lead-new-travel-division/
+#/2018/03/increase-knowledge-sharing-organisation/
+
+
 /news/upcoming-events/ /410/ 410
 /news /410/ 410
 /category/* /410/ 410
