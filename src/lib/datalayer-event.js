@@ -8,5 +8,8 @@ export function applicationFormSubmitEvent(jobId) {
 
 export function datalayerEvent(event, data = null) {
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event, data });
+    window.dataLayer.push({
+        event,
+        data,
+    });
 }

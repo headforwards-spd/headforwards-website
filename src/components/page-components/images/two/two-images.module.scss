@@ -1,187 +1,191 @@
 @import "../../../../scss/variables";
-@import '../../page-component';
+@import "../../page-component";
 
 .twoImages {
-    z-index: -1;
-    @include component-gutter;
-    margin: $component-gutter-sm #{-$column-gutter-sm};
+  @include component-gutter;
+  margin: $component-gutter-sm #{-$column-gutter-sm};
+  padding: $component-gutter-sm 0;
 
+  position: relative;
+  z-index: -1;
+
+  > div {
+    margin: 0 0 $component-gutter-sm;
+    overflow: visible !important;
     position: relative;
-    padding: $component-gutter-sm 0;
 
+    &:first-child {
+      margin-bottom: $column-gutter-sm;
+      margin-right: $column-gutter-sm;
+
+      &:before {
+        content: url("/images/hf-arrow.orange.svg");
+        height: 100%;
+        position: absolute;
+        right: $column-gutter-sm;
+        top: -37.5%;
+        width: 30%;
+        z-index: 1;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-left: $column-gutter-sm;
+
+      &:after {
+        bottom: -37.5%;
+        content: url("/images/hf-arrow.orange.svg");
+        height: 100%;
+        left: -37.5%;
+        opacity: 0.6;
+        position: absolute;
+        width: 60%;
+        z-index: 1;
+      }
+    }
+  }
+
+  &:after {
+    background: rgba($orange, 0.6);
+    content: "";
+    height: 37.5%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 37.5%;
+  }
+
+  &.flip {
     > div {
-
-        margin: 0 0 $component-gutter-sm;
-        overflow: visible !important;
-        position: relative;
-
-        &:first-child {
-            margin-right: $column-gutter-sm;
-            margin-bottom: $column-gutter-sm;
-            &:before {
-                position: absolute;
-                content: url('/images/hf-arrow.orange.svg');
-                width: 30%;
-                height: 100%;
-                z-index: 1;
-                top: -37.5%;
-                right: $column-gutter-sm;
-            }
+      &:first-child {
+        &:before {
+          opacity: 0.6;
+          right: 0;
         }
+      }
 
-        &:last-child {
-            margin-left: $column-gutter-sm;
-            margin-bottom: 0;
-            &:after {
-                position: absolute;
-                content: url('/images/hf-arrow.orange.svg');
-                width: 60%;
-                height: 100%;
-                z-index: 1;
-                left: -37.5%;
-                bottom: -37.5%;
-                opacity: 0.6;
-            }
+      &:last-child {
+        &:after {
+          display: none;
         }
+      }
     }
 
     &:after {
-        position: absolute;
-        content: '';
-        width: 37.5%;
-        height: 37.5%;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        background: rgba($orange, 0.6);
+      background: none;
+      content: url(/images/hf-arrow.orange.svg);
+      height: 100%;
+      left: calc((-100% / 0.625) + 25%);
+      opacity: 0.6;
+      width: calc(100% / 0.625);
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-direction: row;
+
+    > div {
+      //width: calc(50% - #{$column-gutter-md});
+      width: calc(100% + #{$column-gutter-md});
+
+      &:first-child {
+        margin-bottom: 10%;
+        margin-left: -$column-gutter-md;
+        margin-right: $column-gutter-md/2;
+
+        &:before {
+          height: 100%;
+          right: -$column-gutter-md * 2;
+          top: -$component-gutter-md/2;
+          transform: translateX(100%);
+          width: 18.75%;
+        }
+      }
+
+      &:last-child {
+        margin-left: $column-gutter-md/2;
+        margin-right: -$column-gutter-md;
+        margin-top: 10%;
+
+        &:after {
+          bottom: 0;
+          left: calc(-100% - #{$component-gutter-md});
+          transform: translate(-50%, 30%);
+        }
+      }
+    }
+
+    &:after {
+      height: 0;
+      padding-bottom: 30%;
+      right: 0;
+      top: $component-gutter-md/2;
+      transform: translate(50%, 0);
+      width: 30%;
     }
 
     &.flip {
-        > div {
-            &:first-child {
-                &:before {
-                    right: 0;
-                    opacity: 0.6;
-                }
-            }
+      > div {
+        &:first-child {
+          margin-bottom: 0;
+          margin-top: 10%;
 
-            &:last-child {
-                &:after {
-                    display: none;
-                }
-            }
+          &:before {
+            height: calc(37.5% / 0.625);
+            left: 37.5%;
+            top: -50%;
+            transform: translateX(-50%);
+            width: 37.5%;
+          }
         }
+
+        &:last-child {
+          margin-bottom: 10%;
+          margin-top: 0;
+
+          &:after {
+            display: block;
+            left: 0;
+            transform: translate(-37.5%, 44%);
+          }
+        }
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    > div {
+      width: calc(100% + #{$column-gutter-lg});
+
+      &:first-child {
+        margin-left: -$column-gutter-lg;
+        margin-right: $column-gutter-lg/2;
+
+        &:before {
+          right: -$column-gutter-lg * 2;
+          top: -$component-gutter-lg/2;
+        }
+      }
+
+      &:last-child {
+        margin-left: $column-gutter-lg/2;
+        margin-right: -$column-gutter-lg;
 
         &:after {
-            content: url(/images/hf-arrow.orange.svg);
-            width: calc(100% / 0.625);
-            left: calc((-100% / 0.625) + 25%);
-            height: 100%;
-            opacity: 0.6;
-            background: none;
+          left: calc(-100% - #{$component-gutter-lg});
         }
+      }
     }
 
-    @media (min-width: $screen-md) {
-
-        display: flex;
-        flex-direction: row;
-
-        > div {
-            //width: calc(50% - #{$column-gutter-md});
-            width: calc(100% + #{$column-gutter-md});
-
-            &:first-child {
-                margin-left: -$column-gutter-md;
-                margin-right: $column-gutter-md/2;
-                margin-bottom: 10%;
-                &:before {
-                    top: -$component-gutter-md/2;
-                    right: -$column-gutter-md*2;
-                    height: 100%;
-                    width: 18.75%;
-                    transform: translateX(100%);
-                }
-            }
-
-            &:last-child {
-                margin-right: -$column-gutter-md;
-                margin-left: $column-gutter-md/2;
-                margin-top: 10%;
-                &:after {
-                    left: calc(-100% - #{$component-gutter-md});
-                    bottom: 0;
-                    transform: translate(-50%, 30%);
-                }
-            }
-        }
-
-        &:after {
-            width: 30%;
-            height: 0;
-            padding-bottom: 30%;
-            top: $component-gutter-md/2;
-            right: 0;
-            transform: translate(50%, 0);
-        }
-
-        &.flip {
-            > div {
-                &:first-child {
-                    margin-top: 10%;
-                    margin-bottom: 0;
-                    &:before {
-                        width: 37.5%;
-                        height: calc(37.5% / 0.625);
-                        top: -50%;
-                        left: 37.5%;
-                        transform: translateX(-50%);
-                    }
-                }
-
-                &:last-child {
-                    margin-top: 0;
-                    margin-bottom: 10%;
-                    &:after {
-                        display: block;
-                        left: 0;
-                        transform: translate(-37.5%, 44%);
-                    }
-                }
-            }
-
-            &:after {
-                display: none;
-            }
-        }
+    &:after {
+      top: $component-gutter-lg/2;
     }
-
-    @media (min-width: $screen-lg) {
-
-        > div {
-            width: calc(100% + #{$column-gutter-lg});
-
-            &:first-child {
-                margin-left: -$column-gutter-lg;
-                margin-right: $column-gutter-lg/2;
-                &:before {
-                    top: -$component-gutter-lg/2;
-                    right: -$column-gutter-lg*2;
-                }
-            }
-
-            &:last-child {
-                margin-right: -$column-gutter-lg;
-                margin-left: $column-gutter-lg/2;
-                &:after {
-                    left: calc(-100% - #{$component-gutter-lg});
-                }
-            }
-        }
-
-        &:after {
-            top: $component-gutter-lg/2;
-        }
-    }
-
+  }
 }

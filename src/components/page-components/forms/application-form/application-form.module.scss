@@ -2,270 +2,267 @@
 @import "../../../../scss/mixins/typography";
 
 .applicationForm {
-    @include component-gutter;
-    @include fontMediumVr;
+  @include component-gutter;
+  @include fontMediumVr;
 
-    transition: opacity $transitionTime ease;
+  transition: opacity $transitionTime ease;
 
-    abbr {
-        text-decoration: none;
-        color: $error-color;
+  abbr {
+    display: inline;
+    color: $error-color;
+    text-decoration: none;
+  }
+
+  > section {
+    @include columns-component;
+    margin-bottom: 0;
+
+    @media (min-width: $screen-md) {
+      align-items: flex-start;
+      margin-bottom: $component-gutter-md;
+
+      margin-top: 0;
+    }
+    @media (min-width: $screen-lg) {
+      margin-bottom: $component-gutter-lg;
+      margin-top: 0;
+    }
+
+    header {
+      width: calc((100% / 1) - #{$column-gutter-sm});
+      @media (min-width: $screen-md) {
+        margin-bottom: 0;
+        margin-top: 0;
+        width: calc((100% / 3) - #{$column-gutter-md});
+      }
+      @media (min-width: $screen-lg) {
+        margin-bottom: 0;
+        margin-top: 0;
+        width: calc((100% / 3) - #{$column-gutter-lg});
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      :last-child {
+        margin-bottom: 0;
+      }
     }
 
     > section {
-        @include columns-component;
-        margin-bottom: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0;
 
+      @media (min-width: $screen-md) {
+        &,
+        &:last-child {
+          margin-left: auto;
+          width: calc((100% * 2 / 3));
+        }
+      }
+
+      > label {
+        margin-left: $column-gutter-sm/2;
+        margin-right: $column-gutter-sm/2;
+        width: calc((100% / 1) - #{$column-gutter-sm/2});
         @media (min-width: $screen-md) {
-            margin-top: 0;
-            margin-bottom: $component-gutter-md;
-
-            align-items: flex-start;
+          margin-left: $column-gutter-md/2;
+          margin-right: $column-gutter-md/2;
+          width: calc((100% / 2) - #{$column-gutter-md});
+          //#{$rhythm-unit}em;
         }
         @media (min-width: $screen-lg) {
-            margin-top: 0;
-            margin-bottom: $component-gutter-lg;
+          margin-left: $column-gutter-lg/2;
+          margin-right: $column-gutter-lg/2;
+          width: calc((100% / 2) - #{$column-gutter-lg});
         }
 
-        header {
-            width: calc((100%/1) - #{$column-gutter-sm});
+        &.fullWidth {
+          width: 100%;
+
+          textarea {
+            width: 100%;
             @media (min-width: $screen-md) {
-                margin-top: 0;
-                margin-bottom: 0;
-                width: calc((100% / 3) - #{$column-gutter-md});
+              margin: calc(#{$rhythm-unit/4}em - 1px) 0;
+              padding: calc(#{$rhythm-unit * 3 / 4}em) $component-gutter-sm/2;
+            }
+          }
+        }
+      }
+
+      button {
+        @include button-link;
+        padding: 0.75em $component-gutter-sm/2;
+      }
+
+      &.questions {
+        > * {
+          width: 100%;
+        }
+
+        > label {
+          input {
+            @media (min-width: $screen-md) {
+              margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+            }
+          }
+        }
+      }
+
+      [role="group"] {
+        > * {
+          margin-left: $column-gutter-sm/2;
+          margin-right: $column-gutter-sm/2;
+          @media (min-width: $screen-md) {
+            margin-left: $column-gutter-md/2;
+            margin-right: $column-gutter-md/2;
+          }
+          @media (min-width: $screen-lg) {
+            margin-left: $column-gutter-lg/2;
+            margin-right: $column-gutter-lg/2;
+          }
+
+          &.error {
+            margin-left: $column-gutter-sm/2/0.85;
+            margin-right: $column-gutter-sm/2/0.85;
+            @media (min-width: $screen-md) {
+              margin-left: $column-gutter-md/2/0.85;
+              margin-right: $column-gutter-md/2/0.85;
             }
             @media (min-width: $screen-lg) {
-                margin-top: 0;
-                margin-bottom: 0;
-                width: calc((100% / 3) - #{$column-gutter-lg});
+              margin-left: $column-gutter-lg/2/0.85;
+              margin-right: $column-gutter-lg/2/0.85;
             }
-
-            h2 {
-                margin-bottom: 0;
-            }
-
-            :last-child {
-                margin-bottom: 0;
-            }
+          }
         }
-
-        > section {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin: 0;
-
-            @media (min-width: $screen-md) {
-
-                &, &:last-child {
-                    width: calc((100% * 2 / 3));
-                    margin-left: auto;
-                }
-            }
-
-            > label {
-
-                width: calc((100% / 1) - #{$column-gutter-sm/2});
-                margin-left: $column-gutter-sm/2;
-                margin-right: $column-gutter-sm/2;
-                @media (min-width: $screen-md) {
-                    width: calc((100% / 2) - #{$column-gutter-md});
-                    margin-left: $column-gutter-md/2;
-                    margin-right: $column-gutter-md/2;
-                    //#{$rhythm-unit}em;
-                }
-                @media (min-width: $screen-lg) {
-                    width: calc((100% / 2) - #{$column-gutter-lg});
-                    margin-left: $column-gutter-lg/2;
-                    margin-right: $column-gutter-lg/2;
-                }
-
-                &.fullWidth {
-                    width: 100%;
-
-                    textarea {
-                        width: 100%;
-                        @media (min-width: $screen-md) {
-
-                            padding: calc(#{$rhythm-unit*3/4}em) $component-gutter-sm/2;
-                            margin: calc(#{$rhythm-unit/4}em - 1px) 0;
-                        }
-                    }
-                }
-            }
-
-            button {
-                @include button-link;
-                padding: 0.75em $component-gutter-sm/2;
-            }
-
-            &.questions {
-                > * {
-                    width: 100%;
-                }
-
-                > label {
-                    input {
-                        @media (min-width: $screen-md) {
-
-                            margin: calc(#{$rhythm-unit/4}em - 2px) 0;
-                        }
-                    }
-                }
-            }
-
-            [role="group"] {
-                > * {
-                    margin-left: $column-gutter-sm/2;
-                    margin-right: $column-gutter-sm/2;
-                    @media (min-width: $screen-md) {
-
-                        margin-left: $column-gutter-md/2;
-                        margin-right: $column-gutter-md/2;
-                    }
-                    @media (min-width: $screen-lg) {
-
-                        margin-left: $column-gutter-lg/2;
-                        margin-right: $column-gutter-lg/2;
-                    }
-
-                    &.error {
-                        margin-left: $column-gutter-sm/2/0.85;
-                        margin-right: $column-gutter-sm/2/0.85;
-                        @media (min-width: $screen-md) {
-
-                            margin-left: $column-gutter-md/2/0.85;
-                            margin-right: $column-gutter-md/2/0.85;
-                        }
-                        @media (min-width: $screen-lg) {
-
-                            margin-left: $column-gutter-lg/2/0.85;
-                            margin-right: $column-gutter-lg/2/0.85;
-                        }
-                    }
-                }
-            }
-        }
-
-        > .submit {
-
-
-            margin: $column-gutter-sm/2 0;
-            @media (min-width: $screen-md) {
-                margin: 0;
-            }
-
-            > label {
-                width: 100%;
-                @media (min-width: $screen-md) {
-                    width: 100%;
-                }
-            }
-
-            :global(.g-recaptcha) {
-                margin: 0;
-            }
-
-            > div, > p {
-                width: 100%;
-                margin-left: $column-gutter-sm/2;
-                margin-right: $column-gutter-sm/2;
-                @media (min-width: $screen-md) {
-                    flex-direction: row;
-                    align-items: flex-start;
-                    margin-left: $column-gutter-md/2;
-                    margin-right: $column-gutter-md/2;
-                }
-                @media (min-width: $screen-lg) {
-                    margin-left: $column-gutter-lg/2;
-                    margin-right: $column-gutter-lg/2;
-                }
-            }
-
-            > div {
-                display: flex;
-                flex-direction: column;
-                @media (min-width: $screen-md) {
-                    flex-direction: row;
-                    align-items: flex-start;
-                }
-
-                button {
-                    @include fontLarge;
-                    display: inline-block;
-                    align-self: flex-start;
-                    margin: 0;
-                    justify-content: space-between;
-                    padding: 0.5em;
-                    flex-shrink: 0;
-
-                    transition: all $transitionTime ease;
-                }
-
-                .messages {
-                    margin: #{$rhythm-unit}em 0 0 0;
-                }
-
-                @media (min-width: $screen-md) {
-                    flex-direction: row;
-                    .messages {
-                        margin: 0 0 0 $column-gutter-md;
-                        flex-grow: 1;
-                    }
-                }
-                @media (min-width: $screen-lg) {
-                    .messages {
-                        margin: 0 0 0 $column-gutter-lg;
-                    }
-                }
-            }
-
-            .messages {
-                .success, .error {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    @media (min-width: $screen-md) {
-                        align-items: flex-start;
-                    }
-                }
-                .error {
-                    svg {
-                        color: $error-color;
-                        margin-right: 0.5em;
-                        flex-shrink: 1;
-                    }
-                }
-                .success {
-                    svg {
-                        color:$success-color;
-                        margin-right: 0.5em;
-                        flex-shrink: 1;
-                    }
-                }
-            }
-        }
+      }
     }
 
-    &.error .submit {
+    > .submit {
+      margin: $column-gutter-sm/2 0;
+      @media (min-width: $screen-md) {
+        margin: 0;
+      }
+
+      > label {
+        width: 100%;
+        @media (min-width: $screen-md) {
+          width: 100%;
+        }
+      }
+
+      :global(.g-recaptcha) {
+        margin: 0;
+      }
+
+      > div,
+      > p {
+        margin-left: $column-gutter-sm/2;
+        margin-right: $column-gutter-sm/2;
+        width: 100%;
+        @media (min-width: $screen-md) {
+          align-items: flex-start;
+          flex-direction: row;
+          margin-left: $column-gutter-md/2;
+          margin-right: $column-gutter-md/2;
+        }
+        @media (min-width: $screen-lg) {
+          margin-left: $column-gutter-lg/2;
+          margin-right: $column-gutter-lg/2;
+        }
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $screen-md) {
+          align-items: flex-start;
+          flex-direction: row;
+        }
+
         button {
-            background: $input-grey;
-            opacity: 0.5;
-        }
-    }
+          @include fontLarge;
+          align-self: flex-start;
+          display: inline-block;
+          flex-shrink: 0;
+          justify-content: space-between;
+          margin: 0;
+          padding: 0.5em;
 
-    &.isSubmitting {
-        opacity: 0.5;
-
-        .submit button {
-            svg {
-                height: 0.8em;
-                width: 0.8em;
-                margin-left: 1em;
-            }
-            &:after {
-                content: none;
-            }
+          transition: all $transitionTime ease;
         }
+
+        .messages {
+          margin: #{$rhythm-unit}em 0 0 0;
+        }
+
+        @media (min-width: $screen-md) {
+          flex-direction: row;
+          .messages {
+            flex-grow: 1;
+            margin: 0 0 0 $column-gutter-md;
+          }
+        }
+        @media (min-width: $screen-lg) {
+          .messages {
+            margin: 0 0 0 $column-gutter-lg;
+          }
+        }
+      }
+
+      .messages {
+        .success,
+        .error {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          @media (min-width: $screen-md) {
+            align-items: flex-start;
+          }
+        }
+
+        .error {
+          svg {
+            color: $error-color;
+            flex-shrink: 1;
+            margin-right: 0.5em;
+          }
+        }
+
+        .success {
+          svg {
+            color: $success-color;
+            flex-shrink: 1;
+            margin-right: 0.5em;
+          }
+        }
+      }
     }
+  }
+
+  &.error .submit {
+    button {
+      background: $input-grey;
+      opacity: 0.5;
+    }
+  }
+
+  &.isSubmitting {
+    opacity: 0.5;
+
+    .submit button {
+      svg {
+        height: 0.8em;
+        margin-left: 1em;
+        width: 0.8em;
+      }
+
+      &:after {
+        content: none;
+      }
+    }
+  }
 }

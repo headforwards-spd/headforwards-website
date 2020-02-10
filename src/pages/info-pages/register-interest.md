@@ -7,13 +7,13 @@ subtitle: >-
   If you didn't see a role you'd like to apply for, but you are interested in working for
   us then please let us know here.
 image:
-    show: false
-    image: /uploads/icon.black.png
+  show: false
+  image: /uploads/icon.black.png
 introduction:
-    show: false
-    text: >-
-          If you didn't see a role you'd like to apply for, but you are interested in
-          working for us then please let us know here.
+  show: false
+  text: >-
+    If you didn't see a role you'd like to apply for, but you are interested in
+    working for us then please let us know here.
 components:
   - type: image-copy-component
     isTwoColumns: true
@@ -24,8 +24,8 @@ components:
           or want to relocate to Cornwall.  We'll happily discuss your career with you so
           that we can understand more about your plans.  Then when we have something
           relevant that comes up, we can let you know right away!
-          
-          
+
+
           If you could let us know in your covering letter what types of roles you are
           looking for and why you want to work for Headforwards that would be really
           helpful to us :)
@@ -35,7 +35,6 @@ components:
           cutting-edge technologies and a desire to be part of a forward-thinking Agile
           team.
 careers:
-  department: ''
+  department: ""
   applicationForm: register-interest
 ---
-

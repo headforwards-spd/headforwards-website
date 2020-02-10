@@ -12,6 +12,7 @@ export default ContentComponent;
 export const ContentComponentPropType = shape(contentComponentPropTypes);
 
 ContentComponent.propTypes = contentComponentPropTypes;
+
 function ContentComponent({ type, ...item }) {
     const { text } = item || {};
 

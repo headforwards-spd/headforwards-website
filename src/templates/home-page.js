@@ -29,7 +29,10 @@ function Homepage({ data }) {
     const { frontmatter } = page;
     const { introduction, sections, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
-    const templateProps = { introduction, sections };
+    const templateProps = {
+        introduction,
+        sections,
+    };
 
     return (
         <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks} isHomePage>
@@ -48,26 +51,7 @@ export const query = graphql`
                     show
                     text
                 }
-                image {
-                    show
-                    image {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 1440, maxHeight: 900, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
-                    }
-                    seoImage: image {
-                        childImageSharp {
-                            fixed(width: 1200, height: 630, cropFocus: CENTER, quality: 85) {
-                                src
-                                width
-                                height
-                            }
-                        }
-                    }
-                }
+                ...BannerImageFragment
                 sections {
                     id
                     image {

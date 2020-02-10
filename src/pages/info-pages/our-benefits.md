@@ -69,6 +69,5 @@ footerLinks:
     link3: c841a202-37c9-11ea-978f-2e728ce88125
     showImages: true
     title: The benefits of working at Headforwards
-callToAction: 'Want to work somewhere that cares about you and your family? '
+callToAction: "Want to work somewhere that cares about you and your family?"
 ---
-

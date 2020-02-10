@@ -1,61 +1,59 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins/typography";
+
 @mixin header {
+  z-index: 500;
 
-    z-index: 500;
+  @include fontMedium;
+  position: relative;
+  margin-top: 4em;
 
+  nav {
     @include fontMedium;
-    position: relative;
-    margin-top: 4em;
+    transition: background-color $transitionTime/2 ease;
+    position: absolute;
+    top: calc(2px - 4em);
+    z-index: 1;
+
+    &:global(.menu-open) {
+      top: 0;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    margin-top: 4.5em;
 
     nav {
-        @include fontMedium;
-        transition: background-color $transitionTime/2 ease;
-        position: absolute;
-        top: calc(2px - 4em);
-        z-index: 1;
-
-        &:global(.menu-open) {
-            top: 0;
-        }
+      top: -4.5em;
     }
+  }
 
-    @media (min-width: $screen-md) {
+  @media (min-width: $screen-lg) {
+    margin-top: 0;
+    padding-top: calc(5em + 2px);
 
-        margin-top: 4.5em;
+    nav {
+      top: 0;
 
-        nav {
-            top: -4.5em;
-        }
+      &:global(.menu-open) {
+        top: calc(-5em - 2px);
+      }
     }
+  }
 
-    @media (min-width: $screen-lg) {
+  @media (min-width: $max_width_gutter) {
+    > nav {
+      top: 0;
+      left: 0;
+      right: 0;
 
-        margin-top: 0;
-        padding-top: calc(5em + 2px);
+      max-width: unset;
+      padding-left: calc(50vw - #{$max_width/2});
+      padding-right: calc(50vw - #{$max_width/2});
 
-        nav {
-            top: 0;
-
-            &:global(.menu-open) {
-                top: calc(-5em - 2px);
-            }
-        }
+      &:after {
+        width: $max_width;
+      }
     }
-
-    @media (min-width: $max_width_gutter) {
-        > nav {
-            top: 0;
-            left: 0;
-            right: 0;
-
-            max-width: unset;
-            padding-left: calc(50vw - #{$max_width/2});
-            padding-right: calc(50vw - #{$max_width/2});
-
-            &:after {
-                width: $max_width;
-            }
-        }
-    }
+  }
 }

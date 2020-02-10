@@ -1,14 +1,15 @@
 import { string } from 'prop-types';
 import React from 'react';
 
-import ApplicationForm from '../../page-components/forms/application-form/application-form.component';
+import Form from '../../page-components/forms/application-form/application-form.component';
 
-export default ApplicationFormTemplate;
+export default ApplicationForm;
 
-ApplicationFormTemplate.propTypes = {
+ApplicationForm.propTypes = {
     jobTitle: string.isRequired,
     subtitle: string.isRequired,
 };
-function ApplicationFormTemplate({ jobTitle, ...form }) {
-    return <ApplicationForm jobTitle={jobTitle} {...form} />;
+
+function ApplicationForm({ jobTitle, ...form }) {
+    return <Form jobTitle={jobTitle} {...form} />;
 }

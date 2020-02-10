@@ -90,7 +90,7 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: 'Short-term project '
+    title: "Short-term project"
     image: /uploads/005.svg
   - quote: >-
       It’s all about getting the right team on to the project. While we have two
@@ -105,4 +105,3 @@ footerLinks:
     title: How we can work with you
 callToAction: Do you want to know more about how we build winning teams?
 ---
-

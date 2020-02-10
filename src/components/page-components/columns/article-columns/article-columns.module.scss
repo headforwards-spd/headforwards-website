@@ -1,82 +1,80 @@
 @import "../../../../scss/variables";
 @import "../../../../scss/mixins/mixins";
 @import "../../../../scss/mixins/typography";
-@import '../../page-component';
-@import '../columns';
+@import "../../page-component";
+@import "../columns";
 
 .articleColumns {
-    @include fontMedium;
+  @include fontMedium;
 
-    > section {
-        @include columns-component;
+  > section {
+    @include columns-component;
 
-        .article {
-            @include fontMediumVr;
+    .article {
+      @include fontMediumVr;
 
-            display: flex;
-            flex-direction: column;
+      display: flex;
+      flex-direction: column;
 
-            .image {
-                order: 1;
-                margin: 0 -#{$column-gutter-sm};
-                margin-bottom: 1em * $rhythm-unit;
-            }
+      .image {
+        margin: 0 -#{$column-gutter-sm};
+        margin-bottom: 1em * $rhythm-unit;
+        order: 1;
+      }
 
-            > h2 {
-                order: 2;
-            }
+      > h2 {
+        order: 2;
+      }
 
-            > section {
-                order: 3;
-                flex-grow: 1;
+      > section {
+        flex-grow: 1;
+        order: 3;
 
-                > :last-child {
-                    margin-bottom: 0;
-                }
-            }
-
-            > a {
-                order: 4;
-                @include arrow-link;
-                font-weight: normal;
-                display: block;
-                margin-top: 1em * $rhythm-unit;
-            }
-
-            > :last-child {
-                margin-bottom: 0;
-            }
+        > :last-child {
+          margin-bottom: 0;
         }
+      }
 
-        @media(min-width: $screen-md) {
+      > a {
+        display: block;
+        @include arrow-link;
+        font-weight: normal;
+        margin-top: 1em * $rhythm-unit;
+        order: 4;
+      }
 
-            align-items: stretch;
-
-            .article {
-                width: calc((100%/2) - #{$column-gutter-md});
-
-                .image {
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-            }
-
-            &.isThreeColumns .article {
-                width: calc((100%/3) - #{$column-gutter-md});
-            }
-        }
-
-        @media(min-width: $screen-lg) {
-
-            align-items: stretch;
-
-            .article {
-                width: calc((100%/2) - #{$column-gutter-lg});
-            }
-
-            &.isThreeColumns .article {
-                width: calc((100%/3) - #{$column-gutter-lg});
-            }
-        }
+      > :last-child {
+        margin-bottom: 0;
+      }
     }
+
+    @media (min-width: $screen-md) {
+      align-items: stretch;
+
+      .article {
+        width: calc((100% / 2) - #{$column-gutter-md});
+
+        .image {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      &.isThreeColumns .article {
+        width: calc((100% / 3) - #{$column-gutter-md});
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      align-items: stretch;
+
+      .article {
+        width: calc((100% / 2) - #{$column-gutter-lg});
+      }
+
+      &.isThreeColumns .article {
+        width: calc((100% / 3) - #{$column-gutter-lg});
+      }
+    }
+  }
 }

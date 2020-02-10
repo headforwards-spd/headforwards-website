@@ -89,6 +89,5 @@ footerLinks:
     link3: 21a08160-0fac-11ea-843f-932c76de5936
     showImages: true
     title: Learn more about how we work
-callToAction: 'Want to work in a company that believes in the power of teams? '
+callToAction: "Want to work in a company that believes in the power of teams?"
 ---
-

@@ -1,234 +1,258 @@
 @import "../../page-components/columns/columns";
 
-@mixin alphaBackgroundColor ($desired_colour, $desired_alpha, $background_colour: white) {
-    $r3: red($desired_colour);
-    $g3: green($desired_colour);
-    $b3: blue($desired_colour);
+@mixin alphaBackgroundColor(
+  $desired_colour,
+  $desired_alpha,
+  $background_colour: white
+) {
+  $r3: red($desired_colour);
+  $g3: green($desired_colour);
+  $b3: blue($desired_colour);
 
-    $r2: red($background_colour);
-    $g2: green($background_colour);
-    $b2: blue($background_colour);
+  $r2: red($background_colour);
+  $g2: green($background_colour);
+  $b2: blue($background_colour);
 
-    // r1 = (r3 - r2 + r2 * a1) / a1
-    $r1: ( $r3 - $r2 + ($r2 * $desired_alpha) ) / $desired_alpha;
-    $g1: ( $g3 - $g2 + ($g2 * $desired_alpha) ) / $desired_alpha;
-    $b1: ( $b3 - $b2 + ($b2 * $desired_alpha) ) / $desired_alpha;
+  // r1 = (r3 - r2 + r2 * a1) / a1
+  $r1: ($r3 - $r2 + ($r2 * $desired_alpha)) / $desired_alpha;
+  $g1: ($g3 - $g2 + ($g2 * $desired_alpha)) / $desired_alpha;
+  $b1: ($b3 - $b2 + ($b2 * $desired_alpha)) / $desired_alpha;
 
-    background-color: rgba($r1*1.1, $g1*1.1, $b1*1.1, $desired_alpha);
+  background-color: rgba($r1 * 1.1, $g1 * 1.1, $b1 * 1.1, $desired_alpha);
 }
+
 .pages {
-    @include columns-component;
-    margin-bottom: 0;
+  @include columns-component;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  margin-top: 0;
+  @media (min-width: $screen-md) {
     align-items: stretch;
     margin-top: 0;
-    @media(min-width: $screen-md) {
-        margin-top: 0;
-        align-items: stretch;
+  }
+
+  &.postits {
+    margin-bottom: $component-gutter-sm - $column-gutter-sm/2;
+    margin-top: -$column-gutter-sm/2;
+    @media (min-width: $screen-md) {
+      margin-bottom: $component-gutter-md - $column-gutter-md/2;
+      margin-top: -$column-gutter-md/2;
     }
+    @media (min-width: $screen-lg) {
+      margin-bottom: $component-gutter-lg - $column-gutter-lg/2;
+
+      margin-top: -$column-gutter-lg/2;
+    }
+  }
+
+  > article,
+  > img {
+    @include fontMedium;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $component-gutter-md;
+    margin-top: 0;
+    @media (min-width: $screen-md) {
+      margin-bottom: $component-gutter-md - ($column-gutter-md/2);
+    }
+    @media (min-width: $screen-lg) {
+      margin-bottom: $component-gutter-lg - ($column-gutter-lg/2);
+    }
+  }
+
+  > img {
+    align-self: flex-end;
+    display: none;
+    opacity: 0.05;
+    @media (min-width: $screen-md) {
+      display: block;
+      padding: $column-gutter-md * 2;
+    }
+    @media (min-width: $screen-lg) {
+      padding: $column-gutter-lg * 2;
+    }
+  }
+
+  > article,
+  > .postit,
+  img {
+    width: calc(100% - #{$column-gutter-sm});
+  }
+
+  @media (min-width: $screen-md) {
     justify-content: flex-start;
+    margin-bottom: 0;
+    > article,
+    > .postit,
+    img {
+      width: calc(50% - #{$column-gutter-md});
+    }
+  }
+  @media (min-width: $screen-lg) {
+    > article,
+    > .postit,
+    img {
+      width: calc(50% - #{$column-gutter-lg});
+    }
+  }
 
-    &.postits {
-        margin-top: -$column-gutter-sm/2;
-        margin-bottom: $component-gutter-sm - $column-gutter-sm/2;
-        @media (min-width: $screen-md) {
-            margin-top: -$column-gutter-md/2;
-            margin-bottom: $component-gutter-md - $column-gutter-md/2;
-        }
-        @media (min-width: $screen-lg) {
-            margin-top: -$column-gutter-lg/2;
-
-            margin-bottom: $component-gutter-lg - $column-gutter-lg/2;
-        }
+  .postit {
+    @include fontLarge;
+    overflow: hidden;
+    padding-bottom: calc(100% - #{$column-gutter-sm});
+    @media (min-width: $screen-md) {
+      @include fontMedium;
+      padding-bottom: 35%;
+    }
+    @media (min-width: $screen-lg) {
+      padding-bottom: 31.25%;
     }
 
-    > article, > img {
-        @include fontMedium;
-        display: flex;
-        flex-direction: column;
-        margin-top: 0;
-        margin-bottom: $component-gutter-md;
-        @media(min-width: $screen-md) {
-            margin-bottom: $component-gutter-md - ($column-gutter-md/2);
-        }
-        @media(min-width: $screen-lg) {
-            margin-bottom: $component-gutter-lg - ($column-gutter-lg/2);
-        }
-    }
+    > a {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: hidden;
+      padding: $column-gutter-sm;
+      @media (min-width: $screen-md) {
+        padding: $column-gutter-md;
+      }
+      @media (min-width: $screen-lg) {
+        padding: $column-gutter-lg;
+      }
 
-    > img {
-        display: none;
-        align-self: flex-end;
-        opacity: 0.05;
-        @media(min-width: $screen-md) {
-            display: block;
-            padding: $column-gutter-md*2;
-        }
-        @media(min-width: $screen-lg) {
-            padding: $column-gutter-lg*2;
-        }
-    }
+      &,
+      p,
+      li,
+      time {
+        color: black;
+      }
 
-    > article, > .postit, img {
-        width: calc(100% - #{$column-gutter-sm});
-    }
-    @media(min-width: $screen-md) {
-        justify-content: flex-start;
-        > article, > .postit, img {
-                width: calc(50% - #{$column-gutter-md});
-        }
+      .readMore {
+        color: black;
+        @include headingFontMediumVr;
+        @include arrow-link;
         margin-bottom: 0;
-    }
-    @media(min-width: $screen-lg) {
-        > article, > .postit, img {
-                width: calc(50% - #{$column-gutter-lg});
+        margin-top: auto;
+
+        &:after {
+          background-image: url(/images/hf-arrow.svg);
         }
+
+        @media (min-width: $screen-md) {
+          @include headingFontMediumVr;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .page > a {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    h2 {
+      @include arrow-link;
+      flex-grow: 1;
     }
 
-    .postit {
-        @include fontLarge;
-        overflow: hidden;
-        padding-bottom: calc(100% - #{$column-gutter-sm});
+    > section {
+      position: relative;
+
+      > div {
+        padding-bottom: 37.5%;
+
+        > div {
+          display: none;
+        }
+
         @media (min-width: $screen-md) {
-            @include fontMedium;
-            padding-bottom: 35%;
-        }
-        @media (min-width: $screen-lg) {
-            padding-bottom: 31.25%;
-        }
-        > a {
-            padding: $column-gutter-sm;
-            @media (min-width: $screen-md) {
-                padding: $column-gutter-md;
-            }
-            @media (min-width: $screen-lg) {
-                padding: $column-gutter-lg;
-            }
+          padding-bottom: unset;
+          > div {
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            overflow: hidden;
-            &, p, li, time {
-                color: black;
-            }
-
-            .readMore {
-                margin-top: auto;
-                @include headingFontMediumVr;
-                @include arrow-link;
-                margin-bottom: 0;
-                color: black;
-                &:after {
-                    background-image: url(/images/hf-arrow.svg);
-                }
-                @media (min-width: $screen-md) {
-                    @include headingFontMediumVr;
-                    margin-bottom: 0;
-                }
-            }
+          }
         }
+      }
+    }
+  }
+
+  .placeholder {
+    opacity: 0.3;
+  }
+
+  .logo {
+    height: 5rem;
+    margin-bottom: auto;
+    width: 5rem;
+  }
+
+  .introduction {
+    bottom: -$column-gutter-sm/2;
+    display: flex;
+    flex-direction: column;
+
+    height: calc(100% - #{$column-gutter-sm/2});
+
+    left: -$column-gutter-sm/2;
+
+    margin-bottom: 0;
+
+    opacity: 0;
+    overflow: hidden;
+
+    padding: $column-gutter-sm;
+
+    position: absolute;
+    @include alphaBackgroundColor($orange, 0.7);
+    //border: 1px rgba($orange, 0.1) solid;
+    //background-color: rgba(orange, 0.5);
+    transition: opacity ease 0.5s;
+
+    transition-delay: 0.5s;
+    width: calc(100% - #{$column-gutter-sm/2});
+    > :last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      @media (min-width: $screen-md) {
+        opacity: 1;
+        transition-delay: 0s;
+      }
+    }
+    //padding: $column-gutter-sm $column-gutter-sm $column-gutter-sm/2 $column-gutter-sm/2;
+    > * {
+      @include headingFontMedium;
+      color: white;
+      font-weight: bold;
+      line-height: $mod_1;
+    }
+    //border-left: $column-gutter-sm/2 $orange solid;
+    //border-bottom: $column-gutter-sm/2 $orange solid;
+    @media (min-width: $screen-md) {
+      bottom: -$column-gutter-md/4;
+      height: calc(100% - #{$column-gutter-md/4});
+      left: -$column-gutter-md/4;
+      padding: $column-gutter-md;
+      //padding: $column-gutter-md/2 $column-gutter-md/2 $column-gutter-md/4 $column-gutter-md/4;
+      width: calc(100% - #{$column-gutter-md/4});
+      //border-left: $column-gutter-md/4 $orange solid;
+      //border-bottom: $column-gutter-md/4 $orange solid;
+    }
+    @media (min-width: $screen-lg) {
+      bottom: -$column-gutter-lg/4;
+      height: calc(100% - #{$column-gutter-lg/4});
+      left: -$column-gutter-lg/4;
+      padding: $column-gutter-lg;
+      //padding: $column-gutter-lg/2 $column-gutter-lg/2 $column-gutter-lg/4 $column-gutter-lg/4;
+      width: calc(100% - #{$column-gutter-lg/4});
+      //border-left: $column-gutter-lg/4 $orange solid;
+      //border-bottom: $column-gutter-lg/4 $orange solid;
     }
 
-    .page > a {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-            @include arrow-link;
-            flex-grow: 1;
-        }
-
-        > section {
-            position: relative;
-            > div {
-                padding-bottom: 37.5%;
-                > div {
-                    display: none;
-                }
-                @media (min-width: $screen-md) {
-                    padding-bottom: unset;
-                    > div {
-                        display: flex;
-                    }
-                }
-            }
-        }
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
     }
-
-    .placeholder {
-        opacity: 0.3;
-    }
-
-    .logo {
-        width: 5rem;
-        height: 5rem;
-        margin-bottom: auto;
-    }
-
-    .introduction {
-
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-
-        > :last-child  {
-            margin-bottom: 0;
-        }
-
-        opacity: 0;
-        &:hover {
-            @media (min-width: $screen-md) {
-
-            opacity: 1;
-            transition-delay: 0s;
-            }
-        }
-        transition: opacity ease 0.5s;
-        transition-delay: 0.5s;
-
-        > * {
-            @include headingFontMedium;
-            color: white;
-            font-weight: bold;
-            line-height: $mod_1;
-        }
-        margin-bottom: 0;
-        @include alphaBackgroundColor($orange, 0.7);
-        //border: 1px rgba($orange, 0.1) solid;
-        //background-color: rgba(orange, 0.5);
-        position: absolute;
-
-        width: calc(100% - #{$column-gutter-sm/2});
-        height: calc(100% - #{$column-gutter-sm/2});
-        left: -$column-gutter-sm/2;
-        bottom: -$column-gutter-sm/2;
-        //padding: $column-gutter-sm $column-gutter-sm $column-gutter-sm/2 $column-gutter-sm/2;
-        padding: $column-gutter-sm;
-        //border-left: $column-gutter-sm/2 $orange solid;
-        //border-bottom: $column-gutter-sm/2 $orange solid;
-        @media (min-width: $screen-md) {
-            width: calc(100% - #{$column-gutter-md/4});
-            height: calc(100% - #{$column-gutter-md/4});
-            left: -$column-gutter-md/4;
-            bottom: -$column-gutter-md/4;
-            //padding: $column-gutter-md/2 $column-gutter-md/2 $column-gutter-md/4 $column-gutter-md/4;
-            padding: $column-gutter-md;
-            //border-left: $column-gutter-md/4 $orange solid;
-            //border-bottom: $column-gutter-md/4 $orange solid;
-        }
-        @media (min-width: $screen-lg) {
-            width: calc(100% - #{$column-gutter-lg/4});
-            height: calc(100% - #{$column-gutter-lg/4});
-            left: -$column-gutter-lg/4;
-            bottom: -$column-gutter-lg/4;
-            //padding: $column-gutter-lg/2 $column-gutter-lg/2 $column-gutter-lg/4 $column-gutter-lg/4;
-            padding: $column-gutter-lg;
-            //border-left: $column-gutter-lg/4 $orange solid;
-            //border-bottom: $column-gutter-lg/4 $orange solid;
-        }
-
-        @media(min-width: $screen-md) {
-            margin-bottom: 0;
-        }
-    }
+  }
 }

@@ -1,5 +1,5 @@
-import './slick.css';
 import './slick-theme.css';
+import './slick.css';
 
 import { arrayOf, shape, string } from 'prop-types';
 import React, { Component } from 'react';

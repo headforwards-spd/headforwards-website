@@ -1,6 +1,24 @@
 {
   "name": "headforwards-website",
   "author": "Headforwards Solutions Ltd.",
+  "scripts": {
+    "build": "run-p build:**",
+    "build:app": "npm run clean && gatsby build",
+    "build:storybook": "NODE_ENV=production build-storybook -s ./public,./static",
+    "clean": "gatsby clean",
+    "lint": "eslint '**/*.{js,jsx}'",
+    "lint:fix": "run-p lint:fix:**",
+    "lint:fix:javascript": "eslint --fix '**/*.js'",
+    "lint:fix:others": "prettier --write --loglevel warn '**/*.{json,md,yml}'",
+    "lint:fix:styles": "stylelint --fix '**/*.scss'",
+    "lint:report": "eslint --fix -f json -o reports/eslint.json '**/*.js'",
+    "sanitise:wordpress": "node src/lib/sanitise-wordpress-markdown.js",
+    "sonar": "npm run lint:report; npm run test; sonar-scanner",
+    "start": "run-p start:**",
+    "start:app": "npm run clean && gatsby develop",
+    "start:storybook": "NODE_ENV=production start-storybook -s ./public,./static",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
   "dependencies": {
     "@airship/with-unstated": "^1.0.1",
     "@emotion/core": "^10.0.22",
@@ -102,27 +120,16 @@
     "npm-run-all": "^4.1.5",
     "pre-commit": "^1.2.2",
     "prettier": "^1.19.1",
+    "prettier-plugin-package": "^0.3.1",
     "react-dom": "^16.8.4",
     "react-test-renderer": "^16.8.6",
     "storybook": "^5.1.11",
+    "stylelint": "^13.1.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-prettier": "^1.1.2",
     "webpack": "^4.41.2"
   },
   "pre-commit": [
     "lint:fix"
-  ],
-  "scripts": {
-    "clean": "gatsby clean",
-    "start": "run-p start:**",
-    "build": "run-p build:**",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "lint": "eslint '**/*.{js,jsx}'",
-    "lint:fix": "eslint --fix '**/*.{js,jsx}'",
-    "lint:report": "eslint --fix -f json -o reports/eslint.json '**/*.{js,jsx}'",
-    "start:app": "npm run clean && gatsby develop",
-    "build:app": "npm run clean && gatsby build",
-    "build:storybook": "NODE_ENV=production build-storybook -s ./public,./static",
-    "start:storybook": "NODE_ENV=production start-storybook -s ./public,./static",
-    "sonar": "npm run lint:report; npm run test; sonar-scanner",
-    "sanitise:wordpress": "node src/lib/sanitise-wordpress-markdown.js"
-  }
+  ]
 }

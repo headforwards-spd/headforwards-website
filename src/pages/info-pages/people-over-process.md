@@ -37,7 +37,7 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: 'Building open, honest relationships '
+    title: "Building open, honest relationships"
     image: /uploads/head-1.jpg
   - jobTitle: Scrum Master
     name: Andy Roberts
@@ -82,4 +82,3 @@ footerLinks:
     title: We are a 'people business'
 callToAction: How do the right people make all the difference?
 ---
-

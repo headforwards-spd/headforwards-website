@@ -5,194 +5,203 @@
 @import "../../page-components/columns/columns";
 
 .contactColumns {
-    @include columns-component;
-    @media(min-width: $screen-lg) {
-        margin-bottom: 0;
-        align-items: flex-start;
+  @include columns-component;
+  @media (min-width: $screen-lg) {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  > header {
+    width: calc((100% / 1) - #{$column-gutter-sm});
+    @media (min-width: $screen-lg) {
+      width: calc((100% / 3) - #{$column-gutter-lg});
     }
 
-    > header {
-        width: calc((100%/1) - #{$column-gutter-sm});
-        @media(min-width: $screen-lg) {
-            width: calc((100%/3) - #{$column-gutter-lg});
+    h2 {
+      @include headingFontMedium;
+    }
+  }
+
+  > section {
+    width: calc((100% / 1) - #{$column-gutter-sm});
+    @media (min-width: $screen-lg) {
+      width: calc((100% * 2 / 3) - #{$column-gutter-lg});
+    }
+
+    address {
+      @include fontMediumVr;
+      font-style: normal;
+      @include columns-component;
+      @media (min-width: $screen-md) {
+        align-items: flex-start;
+      }
+
+      > section,
+      > dl {
+        width: calc(100% - #{$column-gutter-sm});
+
+        dt:not(:first-child) {
+          margin-top: #{$rhythm-unit}em;
         }
-        h2 {
-            @include headingFontMedium;
+        @media (min-width: $screen-md) {
+          width: calc(50% - #{$column-gutter-md});
         }
+        @media (min-width: $screen-lg) {
+          width: calc(50% - #{$column-gutter-lg});
+        }
+      }
+
+      h2,
+      span,
+      dl {
+        margin-bottom: 0;
+      }
+
+      span {
+        display: block;
+      }
+
+      dd {
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+
+    form {
+      @include fontMediumVr;
+
+      margin-bottom: 0;
+
+      > section {
+        border: none;
+        padding: 0;
+        @include columns-component;
+
+        label {
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+
+        @media (min-width: $screen-md) {
+          align-items: flex-start;
+          flex-wrap: nowrap;
+          margin-bottom: 0;
+          margin-top: 0;
+
+          label {
+            margin-bottom: 0;
+            margin-top: 0;
+            width: calc(50% - #{$column-gutter-md});
+          }
+        }
+        @media (min-width: $screen-lg) {
+          margin-bottom: 0;
+          margin-top: 0;
+          label {
+            width: calc(50% - #{$column-gutter-lg});
+          }
+        }
+      }
+
+      button {
+        @include button-link;
+        @include fontLarge;
+        margin-bottom: 0;
+        padding: 1rem;
+
+        &:after {
+          background-image: url(/images/hf-arrow.white.svg);
+        }
+      }
+    }
+  }
+
+  .map {
+    margin-left: -$column-gutter-sm;
+
+    margin-right: -$column-gutter-sm;
+
+    position: relative;
+    width: calc(100% + #{2 * $column-gutter-sm});
+    &:before {
+      content: "";
+      display: block;
+      padding-bottom: calc(100% + #{2 * $column-gutter-sm});
+    }
+    @media (min-width: $screen-md) {
+      margin-left: -$column-gutter-md;
+      margin-right: -$column-gutter-md;
+      &:before {
+        padding-bottom: calc(100% + #{2 * $column-gutter-md});
+      }
+    }
+    @media (min-width: $screen-lg) {
+      margin-left: -$column-gutter-lg;
+      margin-right: -$column-gutter-lg;
+      &:before {
+        padding-bottom: 37.5%;
+      }
+    }
+
+    iframe {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .office {
+    @include columns-component;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    margin-top: 0;
+
+    width: 100%;
+
+    ul {
+      margin: 0 0 #{$rhythm-unit}em;
+    }
+    li {
+      margin-bottom: 0;
+    }
+    @media (min-width: $screen-md) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: $component-gutter-md - $column-gutter-md/2;
+      margin-top: 0;
+    }
+    @media (min-width: $screen-lg) {
+      margin-bottom: $component-gutter-lg - $column-gutter-lg/2;
     }
 
     > section {
-        width: calc((100% / 1) - #{$column-gutter-sm});
-        @media(min-width: $screen-lg) {
-            width: calc((100% * 2 / 3) - #{$column-gutter-lg});
-        }
+      width: calc((100% / 1) - #{$column-gutter-sm});
 
-        address {
-            @include fontMediumVr;
-            font-style: normal;
-            @include columns-component;
-            @media(min-width: $screen-md) {
+      h2 {
+        @include headingFontSmall;
+      }
 
-                align-items: flex-start;
-            }
+      & > * {
+        @include fontSmallVr;
 
-            > section, > dl {
-
-                dt:not(:first-child) {
-                    margin-top: #{$rhythm-unit}em;
-                }
-
-                width: calc(100% - #{$column-gutter-sm});
-                @media(min-width: $screen-md) {
-                    width: calc(50% - #{$column-gutter-md});
-                }
-                @media(min-width: $screen-lg) {
-                    width: calc(50% - #{$column-gutter-lg});
-                }
-            }
-
-            h2, span, dl {
-                margin-bottom: 0;
-            }
-
-            span {
-                display: block;
-            }
-
-            dd {
-                margin: 0;
-                font-weight: bold;
-            }
-        }
-
-        form {
-            @include fontMediumVr;
-
-            > section {
-                border: none;
-                padding: 0;
-                @include columns-component;
-
-                label {
-                    margin-top: 0;
-                    margin-bottom: 0;
-                }
-
-                @media (min-width: $screen-md) {
-                    flex-wrap: nowrap;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    align-items: flex-start;
-
-                    label {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        width: calc(50% - #{$column-gutter-md});
-                    }
-                }
-                @media (min-width: $screen-lg) {
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    label {
-                        width: calc(50% - #{$column-gutter-lg});
-                    }
-                }
-            }
-
-            button {
-                @include button-link;
-                @include fontLarge;
-                margin-bottom: 0;
-                padding: 1rem;
-
-                &:after {
-                    background-image: url(/images/hf-arrow.white.svg);
-                }
-            }
-
-            & {
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    .map {
-        position: relative;
-        &:before {
-            content: '';
-            display: block;
-            padding-bottom: calc(100% + #{2*$column-gutter-sm});
-        }
-        margin-left: -$column-gutter-sm;
-        margin-right: -$column-gutter-sm;
-        width: calc(100% + #{2*$column-gutter-sm});
-        @media(min-width: $screen-md) {
-            margin-left: -$column-gutter-md;
-            margin-right: -$column-gutter-md;
-            &:before {
-                padding-bottom: calc(100% + #{2*$column-gutter-md});
-            }
-        }
-        @media(min-width: $screen-lg) {
-            margin-left: -$column-gutter-lg;
-            margin-right: -$column-gutter-lg;
-            &:before {
-                padding-bottom: 37.5%;
-            }
-        }
-        iframe {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-    }
-
-    .office {
-        @include columns-component;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        ul {
-
-            margin: 0 0 #{$rhythm-unit}em;
-        }
         li {
-            margin-bottom: 0;
+          margin-bottom: 0;
         }
-        margin-top: 0;
-        margin-bottom: 0;
-        @media (min-width: $screen-md) {
-            margin-top: 0;
-            align-items: flex-start;
-            justify-content: flex-start;
-            margin-bottom: $component-gutter-md - $column-gutter-md/2;
-        }
-        @media(min-width: $screen-lg) {
-            margin-bottom: $component-gutter-lg - $column-gutter-lg/2;
-        }
+      }
 
-        > section {
-            h2 {
-                @include headingFontSmall;
-            }
-            & > * {
-                @include fontSmallVr;
-                li {
-                    margin-bottom: 0;
-                }
-            }
-            > :last-child {
-                margin-bottom: 0;
-            }
-            width: calc((100%/1) - #{$column-gutter-sm});
-            @media(min-width: $screen-md) {
-                width: calc((100%/2) - #{$column-gutter-md});
-            }
-            @media(min-width: $screen-lg) {
-                width: calc((100%/3) - #{$column-gutter-lg});
-            }
-        }
+      > :last-child {
+        margin-bottom: 0;
+      }
+      @media (min-width: $screen-md) {
+        width: calc((100% / 2) - #{$column-gutter-md});
+      }
+      @media (min-width: $screen-lg) {
+        width: calc((100% / 3) - #{$column-gutter-lg});
+      }
     }
+  }
 }

@@ -27,6 +27,7 @@ ImageCopyColumns.defaultProps = {
     title: null,
     content: [],
 };
+
 function ImageCopyColumns({ image, isRightImage, title, content, link }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
     const hasLink = !!link;

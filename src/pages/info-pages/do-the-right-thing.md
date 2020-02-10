@@ -8,7 +8,7 @@ image:
   show: true
 introduction:
   show: false
-  text: 'It’s all about creating a culture of openness, transparency, and trust'
+  text: "It’s all about creating a culture of openness, transparency, and trust"
 components:
   - content:
       - text: >-
@@ -63,7 +63,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'Trust is everything '
+    title: "Trust is everything"
   - content:
       - text: >-
           Headforwards has few formal working rules. Instead it relies on
@@ -83,13 +83,12 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'Principles are second nature '
+    title: "Principles are second nature"
 footerLinks:
   - link1: 6b233b00-103a-11ea-9ef0-bd54961b4e30
     link2: 3b246990-0f6f-11ea-81de-ff3cb4003432
     link3: 40718760-1033-11ea-9288-bf5475231968
     showImages: true
-    title: 'A culture of openness, transparency, and trust'
+    title: "A culture of openness, transparency, and trust"
 callToAction: For open and honest software development
 ---
-

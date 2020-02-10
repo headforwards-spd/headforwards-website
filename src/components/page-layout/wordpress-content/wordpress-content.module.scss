@@ -3,61 +3,60 @@
 @import "../../page-components/columns/columns";
 
 .content {
+  @include component-gutter;
+  @include fontMedium;
 
-    @include component-gutter;
+  > h2 {
+    @include headingFontMedium;
+  }
+
+  > :global(.gatsby-resp-image-wrapper),
+  > img {
+    max-width: 62.5%;
+  }
+
+  > img {
+    display: block;
+    margin: 0 auto;
+    @include fontMedium;
+  }
+
+  > :global(.gallery) {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0;
     @include fontMedium;
 
-    > h2 {
-        @include headingFontMedium;
+    @media (min-width: $screen-md) {
+      margin-left: -$gutter-medium/2;
+      margin-right: -$gutter-medium/2;
     }
 
-    > :global(.gatsby-resp-image-wrapper), > img {
-        max-width: 62.5%;
-    }
+    :global(.gatsby-resp-image-wrapper),
+    img {
+      //width: 62.5%;
+      margin: 0 auto;
+      width: 100%;
+      @include fontMedium;
 
-    > img {
-        display: block;
-        margin: 0 auto;
+      @media (min-width: $screen-md) {
+        margin: 0 $gutter-medium/2;
         @include fontMedium;
+        width: calc(100% / 2 - #{$gutter-medium});
+      }
+      @media (min-width: $screen-lg) {
+        width: calc(100% / 3 - #{$gutter-medium});
+      }
+      @media (min-width: $screen-xl) {
+        width: calc(100% / 4 - #{$gutter-medium});
+      }
     }
+  }
 
-    > :global(.gallery) {
-
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-
-        margin: 0;
-        @include fontMedium;
-
-        @media(min-width: $screen-md) {
-            margin-left: -$gutter-medium/2;
-            margin-right: -$gutter-medium/2;
-        }
-
-        :global(.gatsby-resp-image-wrapper), img {
-
-            //width: 62.5%;
-            width: 100%;
-            margin: 0 auto;
-            @include fontMedium;
-
-            @media(min-width: $screen-md) {
-                margin: 0 $gutter-medium/2;
-                @include fontMedium;
-                width: calc(100% / 2 - #{$gutter-medium});
-            }
-            @media(min-width: $screen-lg) {
-                width: calc(100% / 3 - #{$gutter-medium});
-            }
-            @media(min-width: $screen-xl) {
-                width: calc(100% / 4 - #{$gutter-medium});
-            }
-        }
-    }
-
-    > :last-child {
-        margin-bottom: 0;
-    }
+  > :last-child {
+    margin-bottom: 0;
+  }
 }

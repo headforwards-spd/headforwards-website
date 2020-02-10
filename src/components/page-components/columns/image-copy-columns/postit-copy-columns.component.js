@@ -28,6 +28,7 @@ PostitCopyColumns.defaultProps = {
     title: null,
     content: [],
 };
+
 function PostitCopyColumns({ image, isRightImage, title, content, link }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
 

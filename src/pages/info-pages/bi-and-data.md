@@ -47,5 +47,7 @@ components:
     type: image-copy-component
 seo:
   slug: bi-and-data
+careers:
+  title: Current job availability
+  department: Local Authority
 ---
-

@@ -16,6 +16,7 @@ export default Slide;
 export const SlidePropType = shape(slidePropTypes);
 
 Slide.propTypes = slidePropTypes;
+
 function Slide({ title, text, image }) {
     return (
         <section className={styles.slide}>

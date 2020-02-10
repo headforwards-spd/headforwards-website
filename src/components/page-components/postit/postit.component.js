@@ -22,12 +22,14 @@ Postit.defaultProps = {
     className: '',
     children: null,
 };
+
 function Postit({ image, alt, isRightImage, className, children }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
     const version = Math.floor(Math.random() * 8 + 1);
+    const versionStyle = styles[`v${version}`];
 
     return (
-        <div className={`${styles.postit} ${styles[`v${version}`]} ${imageClass} ${className}`}>
+        <div className={`${styles.postit} ${versionStyle} ${imageClass} ${className}`}>
             {children || <Image image={image} alt={alt} ratio="100%" />}
         </div>
     );

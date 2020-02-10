@@ -28,7 +28,7 @@ sections:
             profilePic: null
             quote: >-
               It's about picking the right people for each client, rather than
-              running a bench. 
+              running a bench.
             type: quote-component
           - jobTitle: Director & Co-founder
             name: Craig Girvan
@@ -36,7 +36,7 @@ sections:
             quote: >-
               If something changes in our client's world, they've got to adapt,
               they've got to look for a new competitive advantage in their
-              software. 
+              software.
             type: quote-component
         type: image-copy-component
         title: People over process
@@ -84,4 +84,3 @@ sections:
 seo:
   slug: /
 ---
-

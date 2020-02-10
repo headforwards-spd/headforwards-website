@@ -17,6 +17,7 @@ BlogPostColumns.defaultProps = {
     title: null,
     articles: [],
 };
+
 function BlogPostColumns({ title, articles }) {
     return (
         <section className={styles.blogPostColumns}>

@@ -1,6 +1,7 @@
 @import "../../page-components/page-component";
 @import "../../page-components/columns/columns";
+
 .introduction {
-    @include component-gutter;
-    @include fontMedium;
+  @include component-gutter;
+  @include fontMedium;
 }

@@ -57,8 +57,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
             title.match(
                 /(?:\s*-?\s*)(?:\s*\(?\s*)((?:(?:up\s*to)|(?:£?[\d]+\s*-))\s*£?[\d]+)(?:[k]?)(?:\s*\)?\s*)$/im
             ) || [];
-        // eslint-disable-next-line no-unused-vars
-        const [x = null, subtitle = null] = description ? getMarkdown(description).match(/^(.*)(?:\n\n)/m) : [];
+        const [, subtitle = null] = description ? getMarkdown(description).match(/^(.*)(?:\n\n)/m) : [];
 
         const nodeId = createNodeId(`recruitee-offer-${id}`);
         const nodeData = {

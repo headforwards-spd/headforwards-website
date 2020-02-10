@@ -1,6 +1,6 @@
 {
-    "name": "gatsby-transformer-yaml-menu",
-    "dependencies": {
-        "uuid": "^3.3.3"
-    }
+  "name": "gatsby-transformer-yaml-menu",
+  "dependencies": {
+    "uuid": "^3.3.3"
+  }
 }

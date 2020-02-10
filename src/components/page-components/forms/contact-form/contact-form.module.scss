@@ -3,295 +3,293 @@
 @import "../forms";
 
 .field {
-    display: block;
-    @include fontMedium;
-    line-height: $rhythm-unit;
-    padding-bottom: #{$rhythm-unit}em;
+  display: block;
+  @include fontMedium;
+  line-height: $rhythm-unit;
+  padding-bottom: #{$rhythm-unit}em;
 
-    &[role=group] {
-        display: flex;
-        flex-direction: column;
+  &[role="group"] {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    h2 {
+      @include fontMediumVr;
+      font-weight: normal;
+      line-height: $rhythm-unit;
+      margin-bottom: #{$rhythm-unit/2}em;
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 0;
+      }
+    }
+
+    label {
+      cursor: pointer;
+      line-height: $rhythm-unit;
+
+      margin-bottom: 0;
+
+      &:not(:last-child) {
         padding-bottom: 0;
+      }
 
-        h2 {
-            @include fontMediumVr;
-            line-height: $rhythm-unit;
-            font-weight: normal;
-
-            & {
-                margin-bottom: #{$rhythm-unit/2}em;
-            }
-
-            @media (min-width: $screen-md) {
-
-                margin-bottom: 0;
-            }
+      input {
+        margin-bottom: 0;
+        @media (min-width: $screen-md) {
+          margin-bottom: #{($rhythm-unit - 1) / 4}em;
         }
-
-        label {
-            cursor: pointer;
-            margin-bottom: 0;
-
-            &:not(:last-child) {
-                padding-bottom: 0;
-            }
-
-            line-height: $rhythm-unit;
-
-            input {
-                margin-bottom: 0;
-                @media (min-width: $screen-md) {
-                    margin-bottom: #{($rhythm-unit - 1)/4}em;
-                }
-            }
-        }
+      }
     }
+  }
 
-    &.fullWidth {
-        width: 100%;
-
-        textarea {
-            width: 100%;
-            display: block;
-            @media (min-width: $screen-md) {
-
-                padding: calc(#{$rhythm-unit*3/4}em) $component-gutter-sm/2;
-                margin: calc(#{$rhythm-unit/4}em - 1px) 0;
-            }
-        }
-    }
-
-    abbr {
-        text-decoration: none;
-        color: red;
-    }
-
-    &[type=checkbox], &[type=radio] {
-        @include checkbox;
-
-        & + label {
-
-            &.hasError:before {
-                border-color: $error-color;
-            }
-
-            .error {
-                text-align: left;
-                margin-left: calc(-1.5em / 0.85);
-            }
-        }
-
-    }
-
-    &[role=group] .error {
-        text-align: left;
-    }
-
-    &.file {
-        width: 100%;
-
-        div:not(.error) {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
-
-            button {
-                @include button-link;
-                flex-shrink: 0;
-                margin: calc(#{$rhythm-unit/4}em - 2px) 0;
-                padding: 0 0.5em;
-            }
-
-            input[type=text] {
-                border-left: none;
-            }
-
-            &.hasValue {
-                input[type=text] {
-                    border-right: none;
-                }
-            }
-
-            input[type=file] {
-                z-index: 10;
-                opacity: 0;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
-
-            button:last-child {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                z-index: 20;
-                width: 2em;
-
-                &:after {
-                    content: none;
-                }
-            }
-        }
-    }
-
-    &.hasError {
-        padding-bottom: 0;
-
-        input, textarea {
-            &, &:before {
-                border-color: $error-color;
-            }
-        }
-    }
-
-    input, textarea {
-        @include fontMedium;
-        width: 100%;
-        border: 1px solid $input-grey;
-        margin: calc(#{$rhythm-unit/4}em - 2px) 0;
-    }
-
-    input {
-        line-height: #{1.5*$rhythm-unit}em;
-        padding: 0 $column-gutter-sm/2;
-    }
+  &.fullWidth {
+    width: 100%;
 
     textarea {
-        padding: $column-gutter-sm/2;
+      display: block;
+      width: 100%;
+      @media (min-width: $screen-md) {
+        margin: calc(#{$rhythm-unit/4}em - 1px) 0;
+        padding: calc(#{$rhythm-unit * 3 / 4}em) $component-gutter-sm/2;
+      }
     }
+  }
 
-    .error {
-        font-size: 0.85em;
-        width: 100%;
-        color: $error-color;
-        text-align: right;
-        min-height: #{$rhythm-unit/0.85}em;
+  abbr {
+    display: inline;
+    color: red;
+    text-decoration: none;
+  }
+
+  &[type="checkbox"],
+  &[type="radio"] {
+    @include checkbox;
+
+    & + label {
+      &.hasError:before {
+        border-color: $error-color;
+      }
+
+      .error {
+        margin-left: calc(-1.5em / 0.85);
+        text-align: left;
+      }
     }
+  }
 
-    &.error .submit {
-        button {
-            background: $input-grey;
-            opacity: 0.5;
+  &[role="group"] .error {
+    text-align: left;
+  }
+
+  &.file {
+    width: 100%;
+
+    div:not(.error) {
+      align-items: stretch;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      button {
+        @include button-link;
+        flex-shrink: 0;
+        margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+        padding: 0 0.5em;
+      }
+
+      input[type="text"] {
+        border-left: none;
+      }
+
+      &.hasValue {
+        input[type="text"] {
+          border-right: none;
         }
-    }
+      }
 
-    &.isSubmitting {
-        opacity: 0.5;
+      input[type="file"] {
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+      }
 
-        .submit button {
-            svg {
-                height: 0.8em;
-                width: 0.8em;
-                margin-left: 1em;
-            }
+      button:last-child {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 2em;
+        z-index: 20;
 
-            &:after {
-                content: none;
-            }
+        &:after {
+          content: none;
         }
+      }
     }
+  }
+
+  &.hasError {
+    padding-bottom: 0;
+
+    input,
+    textarea {
+      &,
+      &:before {
+        border-color: $error-color;
+      }
+    }
+  }
+
+  input,
+  textarea {
+    @include fontMedium;
+    border: 1px solid $input-grey;
+    margin: calc(#{$rhythm-unit/4}em - 2px) 0;
+    width: 100%;
+  }
+
+  input {
+    line-height: #{1.5 * $rhythm-unit}em;
+    padding: 0 $column-gutter-sm/2;
+  }
+
+  textarea {
+    padding: $column-gutter-sm/2;
+  }
+
+  .error {
+    color: $error-color;
+    font-size: 0.85em;
+    min-height: #{$rhythm-unit/0.85}em;
+    text-align: right;
+    width: 100%;
+  }
+
+  &.error .submit {
+    button {
+      background: $input-grey;
+      opacity: 0.5;
+    }
+  }
+
+  &.isSubmitting {
+    opacity: 0.5;
+
+    .submit button {
+      svg {
+        height: 0.8em;
+        margin-left: 1em;
+        width: 0.8em;
+      }
+
+      &:after {
+        content: none;
+      }
+    }
+  }
 }
 
 .contactForm {
+  p {
+    width: 100%;
+  }
 
-    p {
-        width: 100%;
+  abbr {
+    display: inline;
+    color: $error-color;
+    text-decoration: none;
+  }
+
+  .submit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: $screen-md) {
+      align-items: flex-start;
+      flex-direction: row;
     }
 
-    abbr {
-        text-decoration: none;
-        color: $error-color;
+    button {
+      @include fontLarge;
+      align-self: flex-start;
+      display: inline-block;
+      flex-shrink: 0;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0.5em;
+
+      transition: all $transitionTime ease;
     }
 
-    .submit {
-        width: 100%;
+    .messages {
+      margin: #{$rhythm-unit}em 0 0 0;
+
+      .success,
+      .error {
+        align-items: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         @media (min-width: $screen-md) {
-            flex-direction: row;
-            align-items: flex-start;
+          align-items: flex-start;
         }
+      }
 
-        button {
-            @include fontLarge;
-            display: inline-block;
-            align-self: flex-start;
-            margin: 0;
-            justify-content: space-between;
-            padding: 0.5em;
-            flex-shrink: 0;
-
-            transition: all $transitionTime ease;
+      .error {
+        svg {
+          color: $error-color;
+          flex-shrink: 1;
+          margin-right: 0.5em;
         }
+      }
 
-        .messages {
-            margin: #{$rhythm-unit}em 0 0 0;
-
-            .success, .error {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                @media (min-width: $screen-md) {
-                    align-items: flex-start;
-                }
-            }
-
-            .error {
-                svg {
-                    color: $error-color;
-                    margin-right: 0.5em;
-                    flex-shrink: 1;
-                }
-            }
-
-            .success {
-                svg {
-                    color: $success-color;
-                    margin-right: 0.5em;
-                    flex-shrink: 1;
-                }
-            }
+      .success {
+        svg {
+          color: $success-color;
+          flex-shrink: 1;
+          margin-right: 0.5em;
         }
-
-        @media (min-width: $screen-md) {
-            flex-direction: row;
-            .messages {
-                margin: 0 0 0 $column-gutter-md;
-                flex-grow: 1;
-            }
-        }
-        @media (min-width: $screen-lg) {
-            .messages {
-                margin: 0 0 0 $column-gutter-lg;
-            }
-        }
+      }
     }
 
-    &.error .submit {
-        button {
-            background: $input-grey;
-            opacity: 0.5;
-        }
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      .messages {
+        flex-grow: 1;
+        margin: 0 0 0 $column-gutter-md;
+      }
     }
-
-    &.isSubmitting {
-        opacity: 0.5;
-
-        .submit button {
-            svg {
-                height: 0.8em;
-                width: 0.8em;
-                margin-left: 1em;
-            }
-
-            &:after {
-                content: none;
-            }
-        }
+    @media (min-width: $screen-lg) {
+      .messages {
+        margin: 0 0 0 $column-gutter-lg;
+      }
     }
+  }
+
+  &.error .submit {
+    button {
+      background: $input-grey;
+      opacity: 0.5;
+    }
+  }
+
+  &.isSubmitting {
+    opacity: 0.5;
+
+    .submit button {
+      svg {
+        height: 0.8em;
+        margin-left: 1em;
+        width: 0.8em;
+      }
+
+      &:after {
+        content: none;
+      }
+    }
+  }
 }
-

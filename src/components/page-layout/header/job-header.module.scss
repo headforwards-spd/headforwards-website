@@ -1,159 +1,164 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins/mixins";
 @import "../../../scss/mixins/typography";
-@import '../../page-components/page-component';
+@import "../../page-components/page-component";
 @import "./mixins";
 
-
 .jobHeader {
+  @include header;
 
-    @include header;
+  @include fontMedium;
+  margin-bottom: $component-gutter-sm;
+  @media (min-width: $screen-md) {
+    margin-bottom: $component-gutter-md;
+  }
+  @media (min-width: $screen-lg) {
+    margin-bottom: $component-gutter-lg;
+  }
 
-    @include fontMedium;
-    margin-bottom: $component-gutter-sm;
+  > section {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: $component-gutter-sm;
+    padding-top: $component-gutter-sm;
+    position: relative;
     @media (min-width: $screen-md) {
-        margin-bottom: $component-gutter-md;
-
+      flex-direction: row;
+      margin: $component-gutter-md auto 0;
     }
-    @media (min-width: $screen-lg) {
-        margin-bottom: $component-gutter-lg;
 
+    @media (min-width: $screen-lg) {
+      margin: $component-gutter-lg auto 0;
     }
 
     > section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin: 0 auto;
-        padding-top: $component-gutter-sm;
-        padding-bottom: $component-gutter-sm;
+      width: 100%;
+
+      &:first-child {
+        h1 {
+          color: $orange;
+          @include headingFontXLarge;
+          line-height: $mod_1;
+          @media (min-width: $screen-md) {
+            @include headingFontLarge;
+          }
+        }
+
+        :last-child {
+          @include fontLarge;
+          margin-bottom: 0;
+        }
+
         @media (min-width: $screen-md) {
-            flex-direction: row;
-            margin: $component-gutter-md auto 0;
+          margin-left: -$column-gutter-md/2;
+          padding: 0 $column-gutter-md/2;
+          width: calc(62.5% + #{$column-gutter-md/2});
         }
         @media (min-width: $screen-lg) {
-            margin: $component-gutter-lg auto 0;
+          width: calc(75% + #{$column-gutter-md/2});
+        }
+      }
+
+      &:last-child {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (min-width: $screen-md) {
+          margin-right: -$column-gutter-md/2;
+          padding: 0 $column-gutter-md/2;
+          width: calc(37.5% + #{$column-gutter-md/2});
+        }
+        @media (min-width: $screen-lg) {
+          width: calc(25% + #{$column-gutter-md/2});
         }
 
-        > section {
+        dl {
+          @include fontMedium;
+          display: flex;
+          flex-direction: column;
+          line-height: $rhythm-unit;
+          margin: #{$rhythm-unit}em 0;
+          @media (min-width: $screen-md) {
+            @include fontSmall;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            margin-top: 0;
+          }
+
+          dt,
+          dd {
+            margin: 0;
             width: 100%;
-            &:first-child {
+          }
 
-                h1 {
-                    color: $orange;
-                    @include headingFontXLarge;
-                    line-height: $mod_1;
-                    @media (min-width: $screen-md) {
-                        @include headingFontLarge;
-                    }
-                }
+          dt {
+            font-weight: bold;
 
-                :last-child {
-                    @include fontLarge;
-                    margin-bottom: 0;
-                }
-
-                @media (min-width: $screen-md) {
-                    margin-left: -$column-gutter-md/2;
-                    padding: 0 $column-gutter-md/2;
-                    width: calc(62.5% + #{$column-gutter-md/2});
-                }
-                @media (min-width: $screen-lg) {
-                    width: calc(75% + #{$column-gutter-md/2});
-                }
+            &:after {
+              content: ":";
             }
+          }
+
+          dd {
+            margin-bottom: #{$rhythm-unit}em;
+
             &:last-child {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-self: stretch;
-
-                @media (min-width: $screen-md) {
-                    margin-right: -$column-gutter-md/2;
-                    padding: 0 $column-gutter-md/2;
-                    width: calc(37.5% + #{$column-gutter-md/2});
-                }
-                @media (min-width: $screen-lg) {
-                    width: calc(25% + #{$column-gutter-md/2});
-                }
-
-                dl {
-                    @include fontMedium;
-                    margin: #{$rhythm-unit}em 0;
-                    display: flex;
-                    flex-direction: column;
-                    line-height: $rhythm-unit;
-                    @media (min-width: $screen-md) {
-                        @include fontSmall;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-
-                        margin-top: 0;
-                    }
-                    dt, dd {
-                        width: 100%;
-                        margin: 0;
-                    }
-                    dt {
-                        font-weight: bold;
-                        &:after {
-                            content: ':';
-                        }
-                    }
-                    dd {
-                        margin-bottom: #{$rhythm-unit}em;
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                    }
-                    @media (min-width: $screen-md) {
-                        dt {
-                            font-weight: bold;
-                            width: 37.5%;
-                            &:after {
-                                content: ':';
-                            }
-                        }
-                        dd {
-                            width: 62.5%;
-                            padding-left: 0.5em;
-                            margin-left: auto;
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-
-                a {
-                    @include fontMedium;
-                    @include button-link;
-                    display: inline-block;
-                    align-self: flex-start;
-                    @media (min-width: $screen-md) {
-                        align-self: unset;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                    }
-                }
+              margin-bottom: 0;
             }
+          }
 
+          @media (min-width: $screen-md) {
+            dt {
+              font-weight: bold;
+              width: 37.5%;
+
+              &:after {
+                content: ":";
+              }
+            }
+            dd {
+              margin-bottom: 0;
+              margin-left: auto;
+              padding-left: 0.5em;
+              width: 62.5%;
+            }
+          }
         }
 
-        position: relative;
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0;
-            width: calc(100% - #{2*$column-gutter-sm});
-            height: 1px;
-            background: $grey-6;
-            @media(min-width: $screen-md) {
-                width: calc(100% - #{2*$column-gutter-md});
-            }
-            @media(min-width: $screen-lg) {
-                width: calc(100% - #{2*$column-gutter-lg});
-            }
+        a {
+          @include fontMedium;
+          @include button-link;
+          align-self: flex-start;
+          display: inline-block;
+          @media (min-width: $screen-md) {
+            align-self: unset;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
         }
+      }
     }
+
+    &:after {
+      background: $grey-6;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      width: calc(100% - #{2 * $column-gutter-sm});
+      @media (min-width: $screen-md) {
+        width: calc(100% - #{2 * $column-gutter-md});
+      }
+      @media (min-width: $screen-lg) {
+        width: calc(100% - #{2 * $column-gutter-lg});
+      }
+    }
+  }
 }

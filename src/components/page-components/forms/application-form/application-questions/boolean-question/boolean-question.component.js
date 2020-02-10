@@ -18,12 +18,12 @@ BooleanQuestion.defaultProps = {
     required: false,
     disabled: false,
 };
+
 function BooleanQuestion({ id, body: label, required, disabled }) {
     const name = `q-${id}`;
     const type = 'radio';
 
-    // eslint-disable-next-line no-unused-vars
-    const [notUsed, meta] = useField({ name });
+    const [, meta] = useField({ name });
 
     const radioField = {
         name,

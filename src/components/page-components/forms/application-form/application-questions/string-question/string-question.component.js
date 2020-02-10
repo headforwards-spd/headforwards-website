@@ -15,6 +15,7 @@ StringQuestion.defaultProps = {
     required: false,
     disabled: false,
 };
+
 function StringQuestion({ id, body: question, required, disabled, ...props }) {
     const field = {
         name: `q-${id}`,

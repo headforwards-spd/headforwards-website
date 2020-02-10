@@ -1,20 +1,20 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins/typography";
 @import "../../../scss/mixins/column-list";
+
 .sections {
-    @include fontMediumVr;
-    @media (min-width: $screen-md) {
-        column-count: 2;
-        column-gap: $component-gutter-md*2;
-        margin-bottom: $component-gutter-md;
-    }
-    @media (min-width: $screen-lg) {
-        column-gap: $component-gutter-lg*2;
-        margin-bottom: $component-gutter-lg;
-    }
+  @include fontMediumVr;
+  @media (min-width: $screen-md) {
+    column-count: 2;
+    column-gap: $component-gutter-md * 2;
+    margin-bottom: $component-gutter-md;
+  }
+  @media (min-width: $screen-lg) {
+    column-gap: $component-gutter-lg * 2;
+    margin-bottom: $component-gutter-lg;
+  }
 
-    ul {
-        @include columnsList;
-    }
+  ul {
+    @include columnsList;
+  }
 }
-

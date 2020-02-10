@@ -62,7 +62,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'High-performing teams, high-quality software'
+    title: "High-performing teams, high-quality software"
   - content:
       - text: "Creating an effective team is only the first step. For a team to thrive, individual members must work closely together to reach their goals.\rHeadforwards takes an Agile approach to development, using techniques like pair programming and mob programming to bring team members together, share knowledge and skills, and ultimately deliver high quality software, fast.\n\n\rAt the same time, each team’s scrum master is there to keep up morale, encourage team cohesion and ensure the team is maximising its potential."
         type: markdown-component
@@ -83,4 +83,3 @@ footerLinks:
     title: Headforwards takes an Agile approach to development
 callToAction: To learn more about our team creation process
 ---
-

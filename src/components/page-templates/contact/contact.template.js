@@ -1,7 +1,7 @@
 import { string } from 'prop-types';
 import React from 'react';
 
-import ContactForm from '../../page-components/forms/contact-form/contact-form.component';
+import Form from '../../page-components/forms/contact-form/contact-form.component';
 import styles from './contact.module.scss';
 
 const contactPropTypes = {
@@ -14,10 +14,10 @@ const contactPropTypes = {
     mapUrl: string,
 };
 
-export default ContactTemplate;
+export default Contact;
 
-ContactTemplate.propTypes = contactPropTypes;
-ContactTemplate.defaultProps = {
+Contact.propTypes = contactPropTypes;
+Contact.defaultProps = {
     companyName: '',
     email: '',
     jobsEmail: '',
@@ -27,7 +27,7 @@ ContactTemplate.defaultProps = {
     mapUrl: null,
 };
 
-function ContactTemplate({ companyName, mapUrl, email, jobsEmail, phone, address, registeredAddress }) {
+function Contact({ companyName, mapUrl, email, jobsEmail, phone, address, registeredAddress }) {
     const formattedAddress = address.split(',');
     const formattedRegAddress = registeredAddress.split(',');
 
@@ -52,7 +52,7 @@ function ContactTemplate({ companyName, mapUrl, email, jobsEmail, phone, address
                         <dd>{jobsEmail}</dd>
                     </dl>
                 </address>
-                <ContactForm formName="contact" />
+                <Form formName="contact" />
             </section>
             {mapUrl && (
                 <section className={styles.map}>
@@ -78,7 +78,7 @@ function ContactTemplate({ companyName, mapUrl, email, jobsEmail, phone, address
                     </p>
                     <p>
                         If you are a recruiter and still wish to call us then we will ask for a donation of at least £50
-                        to the charity Shelter Box.
+                        to the charity Shelter Box.{' '}
                     </p>
                 </section>
                 <section>

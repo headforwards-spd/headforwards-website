@@ -2,52 +2,53 @@
 @import "../../page-components/columns/columns";
 
 .introduction {
-    > h2 {
-        @include headingFontLarge;
-    }
-    @include fontMedium;
-    @media(min-width: $screen-lg) {
-        @include fontLarge;
-    }
-    @include component-gutter;
+  > h2 {
+    @include headingFontLarge;
+  }
+
+  @include fontMedium;
+  @media (min-width: $screen-lg) {
+    @include fontLarge;
+  }
+  @include component-gutter;
 }
 
 .apply {
-    @include fontMedium;
-    @include button-link;
-    margin: 0 0 $component-gutter-sm 50%;
+  @include fontMedium;
+  @include button-link;
+  display: inline-block;
+  margin: 0 0 $component-gutter-sm 50%;
+
+  transform: translateX(-50%);
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: $component-gutter-md;
+    width: calc(37.5% - #{$column-gutter-md/2});
+  }
+  @media (min-width: $screen-lg) {
+    margin-bottom: $component-gutter-lg;
     transform: translateX(-50%);
-
-    display: inline-block;
-    @media (min-width: $screen-md) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: calc(37.5% - #{$column-gutter-md/2});
-        margin-bottom: $component-gutter-md;
-    }
-    @media (min-width: $screen-lg) {
-        width: calc(25% - #{$column-gutter-lg/2});
-        margin-bottom: $component-gutter-lg;
-        transform: translateX(-50%);
-    }
-
+    width: calc(25% - #{$column-gutter-lg/2});
+  }
 }
 
 .jobsList {
-    @include columns-component-tight;
+  @include columns-component-tight;
+  @media (min-width: $screen-md) {
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
     @media (min-width: $screen-md) {
-        align-items: stretch;
-        justify-content: flex-start;
+      width: calc((100% / 2) - #{$column-gutter-md/2});
     }
-    li {
-        @media (min-width: $screen-md) {
-            width: calc((100% / 2) - #{$column-gutter-md/2});
-        }
-        @media (min-width: $screen-lg) {
-            width: calc((100% / 3) - #{$column-gutter-lg/2});
-        }
-        display: flex;
-        flex-direction: column;
+    @media (min-width: $screen-lg) {
+      width: calc((100% / 3) - #{$column-gutter-lg/2});
     }
+  }
 }

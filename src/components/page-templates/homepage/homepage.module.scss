@@ -2,158 +2,162 @@
 @import "../../../scss/variables";
 
 .intro {
-    @media (min-width: $screen-md) {
-        position: relative;
-        width: $singleColumnMaxWidth;
-        &:after {
-            @media (min-width: $screen-md) {
-                z-index: -1;
-                content: url(/images/hf-arrow.svg);
-                position: absolute;
-                top: -$component-gutter-md + $column-gutter-md/2;
-                right: -50%;
-                width: 62.5%;
-                opacity: 0.05;
-            }
-            @media (min-width: $screen-lg) {
-                top: -$component-gutter-lg + $column-gutter-lg/2;
-            }
-        }
+  @media (min-width: $screen-md) {
+    position: relative;
+    width: $singleColumnMaxWidth;
+    &:after {
+      @media (min-width: $screen-md) {
+        content: url(/images/hf-arrow.svg);
+        opacity: 0.05;
+        position: absolute;
+        right: -50%;
+        top: -$component-gutter-md + $column-gutter-md/2;
+        width: 62.5%;
+        z-index: -1;
+      }
+      @media (min-width: $screen-lg) {
+        top: -$component-gutter-lg + $column-gutter-lg/2;
+      }
     }
+  }
 }
 
 .section {
-    @include component-gutter;
+  @include component-gutter;
 
-    &.first {
-        position: relative;
-        &:after {
-            @media (min-width: $screen-md) {
+  &.first {
+    position: relative;
 
-                content: url(/images/hf-arrow.orange.svg);
-                position: absolute;
-                width: 50%;
-                left: -37.5%;
-                bottom: -25%;
-                opacity: 0.6;
-            }
-        }
+    &:after {
+      @media (min-width: $screen-md) {
+        bottom: -25%;
+        content: url(/images/hf-arrow.orange.svg);
+        left: -37.5%;
+        opacity: 0.6;
+        position: absolute;
+        width: 50%;
+      }
+    }
+  }
+
+  &:last-child {
+    position: relative;
+
+    &:before {
+      @media (min-width: $screen-md) {
+        bottom: -$component-gutter-md/2;
+        content: url(/images/hf-arrow.svg);
+        opacity: 0.05;
+        position: absolute;
+
+        right: -$column-gutter-md * 2;
+        width: 20%;
+      }
+      @media (min-width: $screen-lg) {
+        bottom: -$component-gutter-lg/2;
+        right: -$column-gutter-lg * 2;
+      }
+    }
+  }
+
+  .components {
+    @include fontMedium;
+
+    > :first-child:after {
+      display: none;
     }
 
-    &:last-child {
-        position: relative;
-        &:before {
-            @media (min-width: $screen-md) {
-                content: url(/images/hf-arrow.svg);
-                position: absolute;
-                opacity: 0.05;
-                width: 20%;
+    > * {
+      margin: 0;
 
-                bottom: -$component-gutter-md/2;
-                right: -$column-gutter-md*2;
-            }
-            @media (min-width: $screen-lg) {
-                bottom: -$component-gutter-lg/2;
-                right: -$column-gutter-lg*2;
-            }
+      :last-child {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    blockquote {
+      margin-left: 0;
+
+      p {
+        @include fontLarge;
+      }
+
+      footer p {
+        @include fontSmall;
+      }
+      @media (min-width: $screen-md) {
+        @include fontMedium;
+        padding-left: $column-gutter-md/2;
+      }
+      @media (min-width: $screen-lg) {
+        padding-left: $column-gutter-lg/2;
+      }
+    }
+  }
+
+  &.hasImage {
+    @include columns-component;
+
+    &.isRightImage {
+      @media (min-width: $screen-md) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .image {
+      margin-left: -$column-gutter-sm/2;
+      margin-right: -$column-gutter-sm/2;
+      @media (min-width: $screen-md) {
+        align-self: stretch;
+        margin: $column-gutter-md/2;
+        > div {
+          display: none;
         }
+      }
+      @media (min-width: $screen-lg) {
+        margin: $column-gutter-lg/2;
+      }
     }
 
     .components {
-        @include fontMedium;
-
-        > :first-child:after {
-            display: none;
-        }
-
-        > * {
-            margin: 0;
-
-            :last-child {
-                margin-bottom: 0;
-            }
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-
-        blockquote {
-            p {
-                @include fontLarge;
-            }
-            footer p {
-                @include fontSmall;
-            }
-            margin-left: 0;
-            @media (min-width: $screen-md) {
-                @include fontMedium;
-                padding-left: $column-gutter-md/2;
-            }
-            @media (min-width: $screen-lg) {
-                padding-left: $column-gutter-lg/2;
-            }
-        }
+      padding: $component-gutter-sm/2 0;
+      @media (min-width: $screen-md) {
+        padding: $component-gutter-md/2 0;
+      }
+      @media (min-width: $screen-lg) {
+        padding: $component-gutter-lg/2 0;
+      }
     }
 
-    &.hasImage {
-        @include columns-component;
-        &.isRightImage {
-            @media(min-width: $screen-md) {
-                flex-direction: row-reverse;
-            }
-        }
-
-        .image {
-            margin-left: -$column-gutter-sm/2;
-            margin-right: -$column-gutter-sm/2;
-            @media(min-width: $screen-md) {
-                margin: $column-gutter-md/2;
-                align-self: stretch;
-                > div {
-                    display: none;
-                }
-            }
-            @media(min-width: $screen-lg) {
-                margin: $column-gutter-lg/2;
-            }
-        }
-
-        .components {
-            padding: $component-gutter-sm/2 0;
-            @media (min-width: $screen-md) {
-                padding: $component-gutter-md/2 0;
-
-            }
-            @media (min-width: $screen-lg) {
-                padding: $component-gutter-lg/2 0;
-
-            }
-        }
-
-        .image, .postit {
-            @include fontMedium;
-        }
-
-        .postit {
-                width: calc(100% - #{$column-gutter-sm});
-                padding-bottom: calc(100% - #{$column-gutter-sm});
-            }
-
-        .image, .postit, .components {
-
-            @media(min-width: $screen-md) {
-                width: calc(50% - #{$column-gutter-md});
-                &.postit {
-                    padding-bottom: calc(50% - #{$column-gutter-md});
-                }
-            }
-            @media(min-width: $screen-lg) {
-                width: calc(50% - #{$column-gutter-lg});
-                &.postit {
-                    padding-bottom: calc(50% - #{$column-gutter-lg});
-                }
-            }
-        }
+    .image,
+    .postit {
+      @include fontMedium;
     }
+
+    .postit {
+      padding-bottom: calc(100% - #{$column-gutter-sm});
+      width: calc(100% - #{$column-gutter-sm});
+    }
+
+    .image,
+    .postit,
+    .components {
+      @media (min-width: $screen-md) {
+        width: calc(50% - #{$column-gutter-md});
+        &.postit {
+          padding-bottom: calc(50% - #{$column-gutter-md});
+        }
+      }
+      @media (min-width: $screen-lg) {
+        width: calc(50% - #{$column-gutter-lg});
+        &.postit {
+          padding-bottom: calc(50% - #{$column-gutter-lg});
+        }
+      }
+    }
+  }
 }

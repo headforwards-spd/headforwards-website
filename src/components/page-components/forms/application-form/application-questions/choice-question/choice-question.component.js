@@ -4,11 +4,12 @@ import React from 'react';
 
 import styles from '../../../contact-form/contact-form.module.scss';
 import FormError from '../../../contact-form/form-error.component';
-import { Radio } from '../../../form-field.component';
+import { Checkbox, Radio } from '../../../form-field.component';
 
-export default SingleChoiceQuestion;
+export default ChoiceQuestion;
 
-SingleChoiceQuestion.propTypes = {
+ChoiceQuestion.propTypes = {
+    isMulti: bool,
     id: number.isRequired,
     body: string.isRequired,
     open_question_options: arrayOf(
@@ -20,16 +21,17 @@ SingleChoiceQuestion.propTypes = {
     required: bool,
     disabled: bool,
 };
-SingleChoiceQuestion.defaultProps = {
+ChoiceQuestion.defaultProps = {
+    isMulti: false,
     required: false,
     disabled: false,
 };
-function SingleChoiceQuestion({ id, body: label, open_question_options: options, required, disabled }) {
-    const name = `q-${id}`;
-    const type = 'radio';
 
-    // eslint-disable-next-line no-unused-vars
-    const [notUsed, meta] = useField({ name });
+function ChoiceQuestion({ isMulti, id, body: label, open_question_options: options, required, disabled }) {
+    const name = `q-${id}`;
+    const type = 'checkbox';
+
+    const [, meta] = useField({ name });
 
     return (
         <div role="group" className={styles.field}>
@@ -47,7 +49,7 @@ function SingleChoiceQuestion({ id, body: label, open_question_options: options,
                     isGroup: true,
                 };
 
-                return <Radio key={value} {...field} />;
+                return isMulti ? <Checkbox key={value} {...field} /> : <Radio key={value} {...field} />;
             })}
             <FormError {...meta} />
         </div>

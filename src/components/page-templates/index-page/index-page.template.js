@@ -6,7 +6,7 @@ import IntroductionComponent from '../../page-layout/introduction/introduction.c
 import styles from './index-page.module.scss';
 import PageLink, { PageLinkPropType } from './page-link.component';
 
-IndexPageTemplate.propTypes = {
+IndexPage.propTypes = {
     introduction: shape({
         show: bool,
         text: string,
@@ -15,12 +15,12 @@ IndexPageTemplate.propTypes = {
     pages: arrayOf(PageLinkPropType),
     components: arrayOf(PageComponentPropType),
 };
-IndexPageTemplate.defaultProps = {
+IndexPage.defaultProps = {
     isPostits: false,
     pages: null,
     components: null,
 };
-export default function IndexPageTemplate({ isPostits, introduction, pages, components }) {
+export default function IndexPage({ isPostits, introduction, pages, components }) {
     const { show, text } = introduction || {};
 
     const hasArrow = !!pages && pages.length % 2 !== 0;

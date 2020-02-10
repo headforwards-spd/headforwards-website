@@ -64,11 +64,17 @@ export default class StickyNav extends Component {
                     // do nothing
                     break;
                 case isAtTop && (isScrollingUp || isScrollingDown):
-                    this.setState({ isScrollingUp: false, isScrollingDown: false });
+                    this.setState({
+                        isScrollingUp: false,
+                        isScrollingDown: false,
+                    });
                     break;
                 case isScrollingUp !== isScrollingUpNext:
                 case isScrollingDown !== isScrollingDownNext:
-                    this.setState({ isScrollingUp: isScrollingUpNext, isScrollingDown: isScrollingDownNext });
+                    this.setState({
+                        isScrollingUp: isScrollingUpNext,
+                        isScrollingDown: isScrollingDownNext,
+                    });
                     break;
                 default:
                 // do nothing

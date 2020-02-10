@@ -22,6 +22,7 @@ Footer.defaultProps = {
     footerLinks: null,
     callToAction: '',
 };
+
 function Footer({ footerLinks, companyInfo, callToAction }) {
     const { companyName, email, address, phone } = companyInfo;
     const isFooter = true;
@@ -49,7 +50,12 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
                 </section>
             </section>
 
-            <Socials {...{ ...companyInfo, isFooter }} />
+            <Socials
+                {...{
+                    ...companyInfo,
+                    isFooter,
+                }}
+            />
 
             <address>
                 {(email || phone) && (

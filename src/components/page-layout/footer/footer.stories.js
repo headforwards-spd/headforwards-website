@@ -34,5 +34,12 @@ export const Interactive = () => {
         youtubeURL: text('YouTube URL', faker.internet.url()),
     };
 
-    return <Footer {...{ companyInfo, callToAction }} />;
+    return (
+        <Footer
+            {...{
+                companyInfo,
+                callToAction,
+            }}
+        />
+    );
 };

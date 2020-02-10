@@ -21,6 +21,7 @@ IndexArticle.propTypes = indexArticlePropTypes;
 IndexArticle.defaultProps = {
     image: null,
 };
+
 function IndexArticle({ link, title, image, introduction }) {
     const { logo } = useStaticQuery(graphql`
         query {

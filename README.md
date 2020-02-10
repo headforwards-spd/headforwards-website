@@ -5,12 +5,13 @@
 ## [Storybook Config](https://storybook.js.org/docs/basics/introduction/)
 
 ```
-+-- .storybook           
-|   +-- lib              
-|   +-- addons.js        
-|   +-- config.js        
++-- .storybook
+|   +-- lib
+|   +-- addons.js
+|   +-- config.js
 |   +-- webpack.config.js
 ```
+
 ## [Gatsby Plugins Config](https://www.gatsbyjs.org/docs/plugins/)
 
 ```
@@ -19,6 +20,7 @@
 |   + gatsby-source-X.js
 |   + gatsby-transformer-X.js
 ```
+
 ## [Gatsby Custom Plugins](https://www.gatsbyjs.org/docs/creating-plugins/)
 
 ```
@@ -32,9 +34,9 @@
 
 ### [NetlifyCMS Custom Previews](https://www.netlifycms.org/docs/customization/)
 
-* `src/cms/preview-templates` - Preview templates
-* `src/cms/widgets` - [Custom widgets](https://www.netlifycms.org/docs/custom-widgets/)
-* `src/cms/cms.js` - Configuration
+- `src/cms/preview-templates` - Preview templates
+- `src/cms/widgets` - [Custom widgets](https://www.netlifycms.org/docs/custom-widgets/)
+- `src/cms/cms.js` - Configuration
 
 ```
 +-- src
@@ -48,9 +50,9 @@
 
 ### React Components
 
-* `src/components/page-components` - Flexible Layouts
-* `src/components/page-layout` - Common page components (e.g. Header, Nav, Footer etc.)
-* `src/components/page-templates` - Individual page components (e.g. Page, Post, Job etc.)
+- `src/components/page-components` - Flexible Layouts
+- `src/components/page-layout` - Common page components (e.g. Header, Nav, Footer etc.)
+- `src/components/page-templates` - Individual page components (e.g. Page, Post, Job etc.)
 
 ```
 +-- src
@@ -81,8 +83,8 @@ Site-wide constants accessible via GraphQL (and potentially editable in CMS).
 
 ### Page Data
 
-* `.md` files are added to GraphQL by  `gatsby-node.js`
-* `.js` files are mapped to site URL's (without js extension)
+- `.md` files are added to GraphQL by `gatsby-node.js`
+- `.js` files are mapped to site URL's (without js extension)
 
 ```
 +-- src
@@ -98,7 +100,7 @@ Site-wide constants accessible via GraphQL (and potentially editable in CMS).
 
 ### Page Templates
 
-`gatsby-node.js` uses these templates to render pages - `context` variables (e.g. `id`, `prevId`, `nextId`) are available in GraphQL queries. 
+`gatsby-node.js` uses these templates to render pages - `context` variables (e.g. `id`, `prevId`, `nextId`) are available in GraphQL queries.
 
 ```
 +-- src
@@ -107,9 +109,9 @@ Site-wide constants accessible via GraphQL (and potentially editable in CMS).
 
 ## Static Files
 
-* `static/admin/config.yml` - [NetlifyCMS Config](https://www.netlifycms.org/docs/configuration-options/)
-* `static/images` - (referenced in scss files: `url('/images/filename.jpg')`)
-* `static/uploads` - NetlifyCMS media library
+- `static/admin/config.yml` - [NetlifyCMS Config](https://www.netlifycms.org/docs/configuration-options/)
+- `static/images` - (referenced in scss files: `url('/images/filename.jpg')`)
+- `static/uploads` - NetlifyCMS media library
 
 ```
 +-- static
@@ -121,9 +123,9 @@ Site-wide constants accessible via GraphQL (and potentially editable in CMS).
 
 ## Gatsby Config
 
-* `gatsby-browser.js` - [Gatsby Browser API's](https://www.gatsbyjs.org/docs/browser-apis/)
-* `gatsby-config.js` - [Gatsby Config API's](https://www.gatsbyjs.org/docs/gatsby-config/) (Site configuration options)
-* `gatsby-node.js` - [Gatsby Node API's](https://www.gatsbyjs.org/docs/node-apis/) (APIs for controlling site data in the GraphQL data layer)
+- `gatsby-browser.js` - [Gatsby Browser API's](https://www.gatsbyjs.org/docs/browser-apis/)
+- `gatsby-config.js` - [Gatsby Config API's](https://www.gatsbyjs.org/docs/gatsby-config/) (Site configuration options)
+- `gatsby-node.js` - [Gatsby Node API's](https://www.gatsbyjs.org/docs/node-apis/) (APIs for controlling site data in the GraphQL data layer)
 
 ```
 +-- gatsby-browser.js

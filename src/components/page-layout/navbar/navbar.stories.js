@@ -1,12 +1,11 @@
-import { boolean, object, text, withKnobs } from '@storybook/addon-knobs';
+import { boolean, object, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
 import { Provider } from 'unstated';
 
 import generateImage from '../../../lib/generate-image';
 import generateMenu from '../../../lib/generate-menu';
+import companyInfoStoryProps from '../company-info-story-props';
 import Navbar from './navbar.component';
-
-const faker = require('faker');
 
 export default {
     decorators: [withKnobs],
@@ -43,13 +42,7 @@ export const Interactive = () => {
     const props = {
         hasBackground,
         menu: object(menuLabel, generateMenu(), groupId),
-        companyInfo: {
-            twitterURL: text('Twitter URL', faker.internet.url(), 'Company Info'),
-            facebookURL: text('Facebook URL', faker.internet.url(), 'Company Info'),
-            instagramURL: text('Instagram URL', faker.internet.url(), 'Company Info'),
-            linkedInURL: text('LinkedIn URL', faker.internet.url(), 'Company Info'),
-            youtubeURL: text('YouTube URL', faker.internet.url(), 'Company Info'),
-        },
+        companyInfo: companyInfoStoryProps,
     };
 
     return (

@@ -1,60 +1,64 @@
-@import '../../../scss/variables';
+@import "../../../scss/variables";
 @import "../../../scss/mixins/typography";
 
 $postitLeft: perspective(24rem) rotateY(1deg);
 $postitRight: perspective(24rem) rotateY(-1deg);
 
 .postit {
-    position: relative;
-    background-color: #ffcc55;
-    background-size: cover;
+  background-color: #ffcc55;
+  background-size: cover;
+  padding-bottom: 100%;
 
-    width: 100%;
-    padding-bottom: 100%;
+  position: relative;
+  transform: $postitLeft;
 
-    > * {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-    transform: $postitLeft;
+  width: 100%;
 
-    &.v1 {
-        background-image:  url("/images/postit-background.1.webp");
-    }
-    &.v2 {
-        background-image:  url("/images/postit-background.2.webp");
+  > * {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
-    }
-    &.v3 {
-        background-image:  url("/images/postit-background.3.webp");
+  &.v1 {
+    background-image: url("/images/postit-background.1.webp");
+  }
 
-    }
-    &.v4 {
-        background-image:  url("/images/postit-background.4.webp");
-    }
-    &.v5 {
-        background-image:  url("/images/postit-background.5.webp");
-    }
-    &.v6 {
-        background-image:  url("/images/postit-background.6.webp");
-    }
-    &.v7 {
-        background-image:  url("/images/postit-background.7.webp");
-    }
-    &.v8 {
-        background-image:  url("/images/postit-background.8.webp");
-    }
+  &.v2 {
+    background-image: url("/images/postit-background.2.webp");
+  }
+
+  &.v3 {
+    background-image: url("/images/postit-background.3.webp");
+  }
+
+  &.v4 {
+    background-image: url("/images/postit-background.4.webp");
+  }
+
+  &.v5 {
+    background-image: url("/images/postit-background.5.webp");
+  }
+
+  &.v6 {
+    background-image: url("/images/postit-background.6.webp");
+  }
+
+  &.v7 {
+    background-image: url("/images/postit-background.7.webp");
+  }
+
+  &.v8 {
+    background-image: url("/images/postit-background.8.webp");
+  }
 }
 
-
 @media (min-width: $screen-lg) {
-
-    .postit {
-        &.isRightImage {
-            transform: $postitRight;
-        }
+  .postit {
+    &.isRightImage {
+      transform: $postitRight;
     }
+  }
 }

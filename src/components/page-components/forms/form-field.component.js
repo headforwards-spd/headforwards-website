@@ -23,6 +23,7 @@ Input.defaultProps = {
     label: null,
     required: false,
 };
+
 export function Input({ label, required: isRequired, ...props }) {
     const [field, meta] = useField(props);
     const { name } = props;
@@ -45,6 +46,7 @@ Textarea.defaultProps = {
     label: null,
     className: '',
 };
+
 export function Textarea({ label, required: isRequired, className, ...props }) {
     const [field, meta] = useField(props);
     const { name } = props;
@@ -70,12 +72,14 @@ export function Textarea({ label, required: isRequired, className, ...props }) {
         </label>
     );
 }
+
 Checkbox.propTypes = { ...checkboxPropTypes };
 Checkbox.defaultProps = {
     label: null,
     required: false,
     isGroup: false,
 };
+
 export function Checkbox({ label, required: isRequired, isGroup, ...props }) {
     const [field, meta] = useField(props);
     const { touched, error } = meta;
@@ -105,6 +109,7 @@ Radio.defaultProps = {
     required: false,
     isGroup: false,
 };
+
 export function Radio({ label, required: isRequired, isGroup, ...props }) {
     const [field, meta] = useField(props);
     const { name, value } = props;
@@ -133,6 +138,7 @@ File.defaultProps = {
     name: null,
     placeholder: null,
 };
+
 export function File({ label, required: isRequired, ...props }) {
     const [field, meta, actions] = useField(props);
     const { name, placeholder } = props;

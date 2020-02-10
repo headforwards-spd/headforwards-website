@@ -1,86 +1,84 @@
 @import "../../../scss/variables";
 
-.isScrollingUp, .isScrollingDown {
-
-    > nav:not(:global(.menu-open)) {
-        transition: transform $transitionTime ease;
-        position: fixed;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        background-color: white;
-    }
+.isScrollingUp,
+.isScrollingDown {
+  > nav:not(:global(.menu-open)) {
+    background-color: white;
+    left: 0;
+    position: fixed;
+    right: 0;
+    transition: transform $transitionTime ease;
+    z-index: 100;
+  }
 }
 
 .isScrollingUp nav:not(:global(.menu-open)) {
-    transform: translateY(calc(4em - 3px));
+  transform: translateY(calc(4em - 3px));
 }
 
 .isScrollingDown nav:not(:global(.menu-open)) {
-    transform: translateY(calc(-100% - 8em));
+  transform: translateY(calc(-100% - 8em));
 }
 
 @media (min-width: $screen-md) {
+  .isScrollingUp,
+  .isScrollingDown {
+    > nav:not(:global(.menu-open)) {
+      top: -4.5em;
 
-    .isScrollingUp, &.isScrollingDown {
+      &:global(.menu-open) {
+        top: -4.5em;
+      }
 
-        > nav:not(:global(.menu-open)) {
-            top: -4.5em;
-
-            &:global(.menu-open) {
-                top: -4.5em;
-            }
-
-            &:after {
-                transform: translateY(50%);
-                opacity: unset;
-            }
-        }
+      &:after {
+        opacity: unset;
+        transform: translateY(50%);
+      }
     }
+  }
 
-    .isScrollingUp nav:not(:global(.menu-open)) {
-        transform: translateY(4.5em);
-    }
+  .isScrollingUp nav:not(:global(.menu-open)) {
+    transform: translateY(4.5em);
+  }
 
-    .isScrollingDown nav:not(:global(.menu-open)) {
-        transform: translateY(calc(-100% - 9em));
-    }
+  .isScrollingDown nav:not(:global(.menu-open)) {
+    transform: translateY(calc(-100% - 9em));
+  }
 }
 
 @media (min-width: $screen-lg) {
+  .isScrollingUp,
+  .isScrollingDown {
+    > nav:not(:global(.menu-open)) {
+      background: rgba(white, 0.975);
+      top: calc(-5em - 2px);
 
-    .isScrollingUp, .isScrollingDown {
+      &:after {
+        left: 0;
+        margin: 0;
+        right: 0;
+        width: 100vw;
+      }
 
-        > nav:not(:global(.menu-open)) {
-            top: calc(-5em - 2px);
-            background: rgba(white, 0.975);
+      &:global(.menu-open) {
+        top: calc(-5em - 2px);
+      }
 
-            &:after {
-                width: 100vw;
-                margin: 0;
-                left: 0;
-                right: 0;
-            }
+      > header > a {
+        background-image: url(/images/headforwards.black.png);
+      }
 
-            &:global(.menu-open) {
-                top: calc(-5em - 2px);
-            }
-
-            > header > a {
-                background-image: url(/images/headforwards.black.png);
-            }
-
-            > section > ul > li > a {
-                color: black;
-            }
-        }
+      > section > ul > li > a {
+        color: black;
+      }
     }
+  }
 
-    .isScrollingUp nav:not(:global(.menu-open)) {
-        transform: translateY(5em);
-    }
+  .isScrollingUp nav:not(:global(.menu-open)) {
+    transform: translateY(5em);
+  }
 
-    .isScrollingDown nav:not(:global(.menu-open)) {
-        transform: translateY(calc(-100% - 10em));
-    }
+  .isScrollingDown nav:not(:global(.menu-open)) {
+    transform: translateY(calc(-100% - 10em));
+  }
 }

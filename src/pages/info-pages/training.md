@@ -2,7 +2,7 @@
 uuid: 97f70000-0fac-11ea-b2ae-07531833e614
 parent: careers
 type: info-page
-title: 'Training, development and growth'
+title: "Training, development and growth"
 image:
   image: /uploads/training-banner.jpg
   show: true
@@ -28,8 +28,8 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'Sharing, learning and growing '
-  - jobTitle: 'Headforwards Recruitment and Talent Specialist '
+    title: "Sharing, learning and growing "
+  - jobTitle: "Headforwards Recruitment and Talent Specialist "
     name: Marie Ashton
     quote: >-
       We don’t offer any formal or structured training, but we do provide the
@@ -71,7 +71,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'The career progression framework '
+    title: "The career progression framework "
   - quote: >-
       If you want to be surrounded by the latest technology and really
       intelligent people that are always open to sharing knowledge, then this is
@@ -85,4 +85,3 @@ footerLinks:
     title: What can you learn here?
 callToAction: Grow your career with Headforwards
 ---
-

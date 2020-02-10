@@ -3,9 +3,9 @@ import React from 'react';
 
 import generateImage from '../../../../lib/generate-image';
 import StoriesLayout from '../../../page-layout/stories-layout.component';
-import TwoImages from './two-images.component';
+import Images from './two-images.component';
 
-export default function TwoImagesStory() {
+export default function TwoImages() {
     const flipLabel = 'Flip Images';
     const leftImageLabel = 'Left Image';
     const leftImageValue = generateImage();
@@ -26,7 +26,7 @@ export default function TwoImagesStory() {
 
     return (
         <StoriesLayout>
-            <TwoImages {...twoImgProps} />
+            <Images {...twoImgProps} />
         </StoriesLayout>
     );
 }

@@ -1,6 +1,6 @@
 import { Container } from 'unstated';
 
-export default class AppContainer extends Container {
+export default class App extends Container {
     state = {
         menuIsOpen: false,
     };
