@@ -14,7 +14,7 @@ const gatsbyPluginNetlify = require('./gatsby/gatsby-plugin-netlify');
 
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://headforwards-website2.netlify.com`,
+        siteUrl: `https://www.headforwards.com`,
     },
     plugins: [
         'gatsby-plugin-react-helmet',
