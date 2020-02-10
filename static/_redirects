@@ -4,10 +4,12 @@
 
 
 # careers.headforwards.com
-/o/:job/c/new https://www.headforwards.com/careers/jobs/:job/application-form/ 301!
-/o/:job https://www.headforwards.com/careers/jobs/:job/ 301!
-https://www.careers.headforwards.com/* /careers/:splat 301!
-https://careers.headforwards.com/*	 /careers/:splat 301!
+/o/:job/c/new                          https://www.headforwards.com/careers/jobs/:job/application-form/ 301!
+/o/:job                                https://www.headforwards.com/careers/jobs/:job/ 301!
+http://www.careers.headforwards.com/*  https://www.headforwards.com/careers/:splat 301!
+https://www.careers.headforwards.com/* https://www.headforwards.com/careers/:splat 301!
+http://careers.headforwards.com/*	   https://www.headforwards.com/careers/:splat 301!
+https://careers.headforwards.com/*	   https://www.headforwards.com/careers/:splat 301!
 
 
 # Netlify
