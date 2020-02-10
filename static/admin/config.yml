@@ -1194,6 +1194,13 @@ collections:
           - { label: "How we work.", value: how-we-work }
           - { label: "Careers", value: careers }
       - { label: "Type", name: type, widget: hidden, default: "info-page" }
+      - {
+          label: "Postits?",
+          name: isPostits,
+          widget: hidden,
+          required: false,
+          default: false,
+        }
       - { label: "Page Title", name: title, widget: string }
       - {
           label: "Page Sub Title",
@@ -1605,13 +1612,6 @@ collections:
           widget: string,
           required: false,
           default: null,
-        }
-      - {
-          label: "Postits?",
-          name: isPostits,
-          widget: boolean,
-          required: false,
-          default: false,
         }
       - label: "Page Image (banner/menu image)"
         name: image
