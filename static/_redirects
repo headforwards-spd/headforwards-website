@@ -18,6 +18,9 @@ https://careers.headforwards.com/*	 https://www.headforwards.com/careers/:splat 
 https://headforwards-website2.netlify.com/* https://www.headforwards.com/:splat 301!
 
 
+/vr-content/* https://vr.headforwards.com/vr-content/:splat 301
+
+
 # WordPress Info Pages
 /special-projects-division /how-we-work/two-different-working-models/ 301
 /headforwards-to-cornwall /how-we-work/ 301
