@@ -89,14 +89,15 @@ function createAllPages(createPage, { nodes: pages = [] }) {
             const { slug: titleSlug } = fields;
             const { type, parent = '', seo, careers } = frontmatter;
             const { slug: seoSlug } = seo || {};
-            const { department = '' } = careers || {};
+            const { department = '', tag } = careers || {};
             const slug = seoSlug || titleSlug;
             const pagePath = `/${parent || ''}/${slug}`;
+            const tagRegex = tag ? `/${tag}/i` : '/.*/';
 
             return createPage({
                 path: pagePath.replace(/\/+/g, '/'),
                 component: resolve(`src/templates/${type}.js`),
-                context: { id, department },
+                context: { id, department, tagRegex },
             });
         })
     );
@@ -194,9 +195,6 @@ function getData(graphql) {
                                             }
                                         }
                                     }
-                                    careers {
-                                        department
-                                    }
                                 }
                             }
                         }
@@ -220,6 +218,7 @@ function getData(graphql) {
                         }
                         careers {
                             department
+                            tag
                         }
                     }
                 }

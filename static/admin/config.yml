@@ -5,7 +5,7 @@ backend:
 
 site_url: https://www.headforwards.com
 display_url: https://www.headforwards.com
-logo_url: https://www.headforwards.com/images/headforwards.png
+logo_url: https://www.headforwards.com/images/headforwards.black.png
 show_preview_links: true
 
 media_folder: static/uploads
@@ -1578,6 +1578,13 @@ collections:
               required: false,
               default: null,
             }
+          - {
+              label: "Recruitee Tag",
+              name: tag,
+              widget: string,
+              required: false,
+              default: null,
+          }
           - {
               label: "Application Form",
               name: applicationForm,

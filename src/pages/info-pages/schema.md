@@ -97,5 +97,6 @@ seo:
 careers:
   title: force value
   department: force value
+  tag: force value
   applicationForm: force value
 ---
