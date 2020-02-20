@@ -1584,7 +1584,7 @@ collections:
               widget: string,
               required: false,
               default: null,
-          }
+            }
           - {
               label: "Application Form",
               name: applicationForm,
