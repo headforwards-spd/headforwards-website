@@ -8,6 +8,6 @@ image:
   show: true
 introduction:
   show: false
-  text: Test Workflow
+  text: Test Workflow builds
 ---
 
