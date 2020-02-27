@@ -390,8 +390,6 @@ export default class OptionalObjectControl extends React.Component {
             return `No ${labelField.get('name')}`;
         }
 
-        console.log({item});
-
         const value = multiFields ? item.get(multiFields.first().get('name')) : singleField.get('label');
         return (value || `No ${labelField.get('name')}`).toString();
     }

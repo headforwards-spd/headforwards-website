@@ -33,6 +33,4 @@ CMS.registerPreviewTemplate('how-we-work', InfoPagePreview);
 CMS.registerPreviewTemplate('careers', InfoPagePreview);
 CMS.registerPreviewTemplate('index-pages', InfoPagePreview);
 
-console.log({ config });
-
 init({ config });
