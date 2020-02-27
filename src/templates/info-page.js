@@ -66,14 +66,14 @@ function InfoPagePage({ data }) {
 }
 
 export const query = graphql`
-    query InfoPage($id: String!, $department: String!) {
+    query InfoPage($id: String!, $department: String!, $tagRegex: String!) {
         page: markdownRemark(id: { eq: $id }) {
             ...PageFragment
         }
         careers: dataYaml(title: { eq: "careers" }) {
             jobsTitle
         }
-        jobs: allRecruiteeOffer(filter: { department: { eq: $department } }) {
+        jobs: allRecruiteeOffer(filter: { department: { eq: $department }, tags: { regex: $tagRegex } }) {
             nodes {
                 title
                 salary

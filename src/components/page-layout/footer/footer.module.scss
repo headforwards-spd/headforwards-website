@@ -26,11 +26,17 @@
     > section {
       @include columns-component-tight;
       margin-bottom: -$column-gutter-sm/2;
+      &:first-child {
+        margin-top: $column-gutter-sm/2;
+      }
       @media (min-width: $screen-md) {
         align-items: stretch;
         margin-left: -$column-gutter-md/4;
         margin-right: -$column-gutter-md/4;
         margin-bottom: -$column-gutter-md/2;
+        &:first-child {
+          margin-top: 0;
+        }
       }
       @media (min-width: $screen-lg) {
         margin-left: -$column-gutter-lg/4;

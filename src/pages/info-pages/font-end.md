@@ -57,4 +57,5 @@ components:
     type: quote-component
 careers:
   department: Telecomms
+  tag: front end
 ---
