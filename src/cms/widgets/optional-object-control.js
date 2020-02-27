@@ -377,20 +377,21 @@ export default class OptionalObjectControl extends React.Component {
     }
 
     objectLabel (item) {
+
         const { field } = this.props;
         if (this.getValueType() === valueTypes.MIXED) {
-            return getTypedFieldForValue(field, item)
-                .get('label', field.get('name'));
+            return getTypedFieldForValue(field, item).get('label', field.get('name'));
         }
         const multiFields = field.get('fields');
         const singleField = field.get('field');
-        const labelField  = (
-                                multiFields && multiFields.first()) || singleField;
-        const value       = multiFields ? item.get(multiFields.first()
-                                                              .get('name'))
-            : singleField.get('label');
-        return (
-            value || `No ${labelField.get('name')}`).toString();
+        const labelField  = (multiFields && multiFields.first()) || singleField;
+
+        if(!item) {
+            return `No ${labelField.get('name')}`;
+        }
+
+        const value = multiFields ? item.get(multiFields.first().get('name')) : singleField.get('label');
+        return (value || `No ${labelField.get('name')}`).toString();
     }
 
     renderErroneousTypedItem (index, item) {
