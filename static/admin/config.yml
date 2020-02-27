@@ -328,7 +328,7 @@ collections:
               name: showImages,
               widget: boolean,
               required: false,
-              default: false,
+              default: null,
             }
           - {
               label: "Link",
@@ -714,7 +714,7 @@ collections:
               name: showImages,
               widget: boolean,
               required: false,
-              default: false,
+              default: null,
             }
           - {
               label: "Link",
@@ -1100,7 +1100,7 @@ collections:
               name: showImages,
               widget: boolean,
               required: false,
-              default: false,
+              default: null,
             }
           - {
               label: "Link",
@@ -1493,7 +1493,7 @@ collections:
               name: showImages,
               widget: boolean,
               required: false,
-              default: false,
+              default: null,
             }
           - {
               label: "Link",
@@ -1905,7 +1905,7 @@ collections:
               name: showImages,
               widget: boolean,
               required: false,
-              default: false,
+              default: null,
             }
           - {
               label: "Link",
@@ -2039,7 +2039,7 @@ collections:
               name: showImages,
               widget: boolean,
               required: false,
-              default: false,
+              default: null,
             }
           - {
               label: "Link",
