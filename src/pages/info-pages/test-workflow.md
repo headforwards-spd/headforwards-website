@@ -5,7 +5,7 @@ type: info-page
 title: Test Workflow
 image:
   image: /uploads/HF careers 1.jpg
-  show: false
+  show: true
 introduction:
   show: false
   text: Test Workflow
