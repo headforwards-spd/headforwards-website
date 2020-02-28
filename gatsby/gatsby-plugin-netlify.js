@@ -1,4 +1,4 @@
-const sitePassword = process.env.SITE_PASSWORD || null;
+const sitePassword = process.env.SITE_PASSWORD || 'password';
 const config = {
     resolve: `gatsby-plugin-netlify`,
     options: {
@@ -13,5 +13,7 @@ const config = {
 };
 
 sitePassword && (config.options.headers['/*'] = [`Basic-Auth: login:${sitePassword}`]);
+
+console.log({sitePassword, envPassword: process.env.SITE_PASSWORD, envKeys: Object.keys(process.env)});
 
 module.exports = config;
