@@ -14,6 +14,6 @@ const config = {
 
 sitePassword && (config.options.headers['/*'] = [`Basic-Auth: login:${sitePassword}`]);
 
-console.log({sitePassword, envPassword: process.env.SITE_PASSWORD, envKeys: Object.keys(process.env)});
+console.log({ sitePassword, envPassword: process.env.SITE_PASSWORD, envKeys: Object.keys(process.env) });
 
 module.exports = config;

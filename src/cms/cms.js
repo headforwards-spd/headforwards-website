@@ -17,7 +17,7 @@ const config = {
     },
 };
 
-branch === 'master' && (config['publish_mode'] = 'editorial_workflow');
+branch === 'master' && (config.publish_mode = 'editorial_workflow');
 
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
