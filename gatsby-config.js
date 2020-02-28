@@ -12,33 +12,45 @@ const gatsbyPluginOffline = require('./gatsby/gatsby-plugin-offline');
 const gatsbyPluginGoogleTagmanger = require('./gatsby/gatsby-plugin-google-tagmanager');
 const gatsbyPluginNetlify = require('./gatsby/gatsby-plugin-netlify');
 
+const sitePassword = process.env.SITE_PASSWORD || null;
+const siteMetadata = {
+    siteUrl: `https://www.headforwards.com`,
+};
+const plugins = [
+    'gatsby-plugin-react-helmet',
+    { ...gatsbyPluginSass },
+    `gatsby-plugin-svgr`,
+    'gatsby-plugin-sharp',
+    `gatsby-source-recruitee-api`,
+    { ...gatsbySourceFilesystemImages },
+    { ...gatsbySourceFilesystemUploads },
+    { ...gatsbySourceFilesystemPages },
+    { ...gatsbySourceFilesystemData },
+    'gatsby-transformer-sharp',
+    { ...gatsbyTransformerRemark },
+    'gatsby-transformer-yaml',
+    'gatsby-transformer-json',
+    `gatsby-transformer-remark-linked-pages`,
+    `gatsby-transformer-yaml-menu`,
+    { ...gatsbyPluginManifest },
+    { ...gatsbyPluginOffline },
+    { ...gatsbyPluginSitemap },
+    { ...gatsbyPluginRobotsTxt },
+    { ...gatsbyPluginGoogleTagmanger },
+    { ...gatsbyPluginNetlifyCms },
+    `gatsby-plugin-netlify-cache`,
+    { ...gatsbyPluginNetlify },
+];
+
+sitePassword &&
+    plugins.push({
+        resolve: '@mkitio/gatsby-theme-password-protect',
+        options: {
+            password: sitePassword, // delete or `undefined` to disable password protection
+        },
+    });
+
 module.exports = {
-    siteMetadata: {
-        siteUrl: `https://www.headforwards.com`,
-    },
-    plugins: [
-        'gatsby-plugin-react-helmet',
-        { ...gatsbyPluginSass },
-        `gatsby-plugin-svgr`,
-        'gatsby-plugin-sharp',
-        `gatsby-source-recruitee-api`,
-        { ...gatsbySourceFilesystemImages },
-        { ...gatsbySourceFilesystemUploads },
-        { ...gatsbySourceFilesystemPages },
-        { ...gatsbySourceFilesystemData },
-        'gatsby-transformer-sharp',
-        { ...gatsbyTransformerRemark },
-        'gatsby-transformer-yaml',
-        'gatsby-transformer-json',
-        `gatsby-transformer-remark-linked-pages`,
-        `gatsby-transformer-yaml-menu`,
-        { ...gatsbyPluginManifest },
-        { ...gatsbyPluginOffline },
-        { ...gatsbyPluginSitemap },
-        { ...gatsbyPluginRobotsTxt },
-        { ...gatsbyPluginGoogleTagmanger },
-        { ...gatsbyPluginNetlifyCms },
-        `gatsby-plugin-netlify-cache`,
-        { ...gatsbyPluginNetlify },
-    ],
+    siteMetadata,
+    plugins,
 };
