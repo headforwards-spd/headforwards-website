@@ -34,7 +34,7 @@ sections:
             name: Craig Girvan
             profilePic: null
             quote: >-
-              If something changes in our client's world, they've got to adapt,
+              If something changes in our clients world, they've got to adapt,
               they've got to look for a new competitive advantage in their
               software.
             type: quote-component
