@@ -7,14 +7,17 @@ import InfoPagePreview from './preview-templates/info-page-preview';
 import OptionalObjectControl from './widgets/optional-object-control';
 import UuidControl from './widgets/uuid-control';
 
+const branch = process.env.GATSBY_CMS_BRANCH || 'master';
+
 const config = {
     backend: {
         name: 'github',
         repo: 'andyweirheadforwards/headforwards-website',
-        publish_mode: 'editorial_workflow',
-        branch: process.env.GATSBY_CMS_BRANCH,
+        branch,
     },
 };
+
+branch === 'master' && (config.publish_mode = 'editorial_workflow');
 
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 

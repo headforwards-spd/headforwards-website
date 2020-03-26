@@ -240,7 +240,7 @@ export default class OptionalObjectControl extends React.Component {
 
         this.setState({ itemsCollapsed: itemsCollapsed.delete(index) });
 
-        onChange(value.remove(index), parsedMetadata);
+        onChange(CookieBar.remove(index), parsedMetadata);
         clearFieldErrors();
 
         // Remove deleted item object validation

@@ -15,6 +15,7 @@ collections:
     folder: "src/pages/info-pages"
     create: true
     slug: "{{slug}}"
+    preview_path: "{{parent}}/{{slug}}"
     identifier_field: title
     filter: { field: "parent", value: who-we-are }
     fields:
@@ -401,6 +402,7 @@ collections:
     folder: "src/pages/info-pages"
     create: true
     slug: "{{slug}}"
+    preview_path: "{{parent}}/{{slug}}"
     identifier_field: title
     filter: { field: "parent", value: what-we-do }
     fields:
@@ -787,6 +789,7 @@ collections:
     folder: "src/pages/info-pages"
     create: true
     slug: "{{slug}}"
+    preview_path: "{{parent}}/{{slug}}"
     identifier_field: title
     filter: { field: "parent", value: how-we-work }
     fields:
@@ -1173,6 +1176,7 @@ collections:
     folder: "src/pages/info-pages"
     create: true
     slug: "{{slug}}"
+    preview_path: "{{parent}}/{{slug}}"
     identifier_field: title
     filter: { field: "parent", value: "careers" }
     fields:
@@ -1600,6 +1604,7 @@ collections:
     create: false
     delete: false
     slug: "{{slug}}"
+    preview_path: "{{slug}}"
     identifier_field: title
     filter: { field: "type", value: "index-page" }
     fields:
@@ -1977,6 +1982,7 @@ collections:
     folder: "src/pages/info-pages"
     create: false
     slug: "{{slug}}"
+    preview_path: "{{slug}}"
     identifier_field: title
     filter: { field: "type", value: "legal-page" }
     fields:
