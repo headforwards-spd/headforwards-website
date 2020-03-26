@@ -77,7 +77,10 @@ function Contact({ companyName, mapUrl, email, jobsEmail, phone, address, regist
                         <strong>We only recruit directly so, please, NO recruiters.</strong>
                     </p>
                     <p>
-                        We have a great in-house team and we have never used an agency. We don't see this changing, we don't have a PSL and we don't keep details of anyone who does call or email us. All of our recruitment goes through the team, not directly with any of the Hiring Managers. We just want to save your time by letting you know this so please don't contact us. Thank you for understanding.{' '}
+                        We have a great in-house team and we have never used an agency. We don't see this changing, we
+                        don't have a PSL and we don't keep details of anyone who does call or email us. All of our
+                        recruitment goes through the team, not directly with any of the Hiring Managers. We just want to
+                        save your time by letting you know this so please don't contact us. Thank you for understanding.{' '}
                     </p>
                 </section>
                 <section>
