@@ -8,14 +8,14 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Provider } from 'unstated';
 
-import AppContainer           from '../../containers/app.container';
-import CookieBar              from './cookie-bar/cookie-bar.component';
+import AppContainer from '../../containers/app.container';
+import CookieBar from './cookie-bar/cookie-bar.component';
 import { FooterLinkPropType } from './footer/footer-link.component';
-import Footer                 from './footer/footer.component';
-import Header                 from './header/header.component';
-import JobHeader              from './header/job-header.component';
-import { ImageSrcPropType }   from './image/image.component';
-import Seo, { SeoPropType }   from './seo';
+import Footer from './footer/footer.component';
+import Header from './header/header.component';
+import JobHeader from './header/job-header.component';
+import { ImageSrcPropType } from './image/image.component';
+import Seo, { SeoPropType } from './seo';
 
 export default Layout;
 
