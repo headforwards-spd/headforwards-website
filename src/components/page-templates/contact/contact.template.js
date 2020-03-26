@@ -77,8 +77,7 @@ function Contact({ companyName, mapUrl, email, jobsEmail, phone, address, regist
                         <strong>We only recruit directly so, please, NO recruiters.</strong>
                     </p>
                     <p>
-                        If you are a recruiter and still wish to call us then we will ask for a donation of at least £50
-                        to the charity Shelter Box.{' '}
+                        We have a great in-house team and we have never used an agency. We don't see this changing, we don't have a PSL and we don't keep details of anyone who does call or email us. All of our recruitment goes through the team, not directly with any of the Hiring Managers. We just want to save your time by letting you know this so please don't contact us. Thank you for understanding.{' '}
                     </p>
                 </section>
                 <section>
