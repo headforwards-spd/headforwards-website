@@ -62,7 +62,7 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: 'Happy people do great work. Simple. '
+    title: Happy people do great work.
   - quote: >-
       Headforwards’ directors talk to employees on a regular basis to check if
       any improvements can be made, get any suggestions they have for the
