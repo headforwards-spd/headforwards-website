@@ -12,12 +12,8 @@ introduction:
     By delivering new functionality into production every day Headforwards
     continuously creates business value for clients across industries.
 components:
-  - type: image-copy-component
-    content:
-      - type: markdown-component
-        text: >-
-          By delivering new functionality into production every day Headforwards
-          continuously creates business value for clients across industries.
+  - content: []
+    type: image-copy-component
   - content:
       - text: >-
           Unlike developers who work to a monthly release cycle, Headforwards
@@ -80,7 +76,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: "Small tasks, big results"
+    title: 'Small tasks, big results'
   - imageOne: /uploads/postit-1.jpg
     imageTwo: /uploads/hf-c.jpg
     type: images-component
@@ -94,6 +90,7 @@ footerLinks:
     link2: c841a072-37c9-11ea-978f-2e728ce88125
     link3: 40718760-1033-11ea-9288-bf5475231968
     showImages: true
-    title: "Our teams can develop, test and deploy software in just a few days"
+    title: 'Our teams can develop, test and deploy software in just a few days'
 callToAction: To learn more about our continuous delivery process
 ---
+
