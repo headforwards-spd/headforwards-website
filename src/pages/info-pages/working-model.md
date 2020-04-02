@@ -2,7 +2,7 @@
 uuid: 7332ebd0-0fac-11ea-8f1d-b7c7fe6e2260
 parent: how-we-work
 type: info-page
-title: Two different working models
+title: Our working models
 image:
   image: /uploads/hf-i.jpg
   show: true
@@ -12,22 +12,10 @@ introduction:
     Headforwards offers two engagement models to ensure you get the right mix of
     quality and value for money
 components:
-  - content:
-      - text: >-
-          Headforwards offers two engagement models to ensure you get the right
-          mix of quality and value for money.
-        type: markdown-component
+  - content: []
     type: image-copy-component
   - content:
-      - text: >-
-          Different clients look for different things from an outsource software
-          partner. Headforwards offers two engagement models to ensure you get
-          the right mix of quality and value for money. 
-
-
-          Headforwards was founded on the belief that clients are short-changed
-          by traditional software outsource companies – mainly due to the
-          “on-the-bench” model of project resourcing.
+      - text: "Headforwards was founded on the belief that clients are short-changed by traditional software outsource companies – mainly due to the “on-the-bench” model of project resourcing.\r\n\n\rTo ensure clients get the right mix of quality and value for money, Headforwards offers two choices of engagement models: a long term partnership or a short term project."
         type: markdown-component
       - jobTitle: DIRECTOR & CO-FOUNDER
         name: Toby Parkins
@@ -43,31 +31,7 @@ components:
     type: image-copy-component
     title: A new approach to software outsourcing
   - content:
-      - text: >-
-          Headforwards has deliberately avoided that out-moded model. Instead,
-          it focuses on forming effective teams who stay together long-term and
-          continuously develop new ways to deliver value to the client.
-
-
-          Companies can choose to engage Headforwards in one of two ways: as a
-          long-term partner or for a short-term project.
-        type: markdown-component
-    isPostit: false
-    isRightImage: false
-    isTwoColumns: false
-    type: image-copy-component
-    title: Two ways to work with Headforwards
-    image: /uploads/head-7.jpg
-  - content:
-      - text: >-
-          The cloud has made continuous delivery the norm, so many clients are
-          looking for long-term, ongoing and cost-effective support from their
-          outsource partner. 
-
-
-          For this kind of engagement, Headforwards works with the client to
-          recruit the team, so everyone is confident the right people are on
-          board, and a strong bond forms from the start.
+      - text: "The cloud has made continuous delivery the norm, so many clients are looking for long-term, ongoing and cost-effective support from their outsource partner.\r\n\nFor this kind of engagement, Headforwards works with the client to handpick the perfect team, so everyone is confident the right people are on board from the start."
         type: markdown-component
     isPostit: true
     isRightImage: true
@@ -90,12 +54,12 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: "Short-term project"
+    title: Short-term project
     image: /uploads/005.svg
   - quote: >-
       It’s all about getting the right team on to the project. While we have two
-      models in place, there’s still room for flexibility – we’ll always work
-      with our clients to co-create the right model for their needs.
+      core engagement models, there’s still room for flexibility – we’ll always
+      work with our clients to co-create the right model for their needs.
     type: quote-component
 footerLinks:
   - link1: 359e0550-009f-11ea-b6f6-d743f848720a
@@ -105,3 +69,4 @@ footerLinks:
     title: How we can work with you
 callToAction: Do you want to know more about how we build winning teams?
 ---
+
