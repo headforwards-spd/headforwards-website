@@ -8,13 +8,11 @@ image:
 introduction:
   show: true
   text: >-
-    Headforwards is a software development outsourcing company that builds
-    strong relationships with their clients in order to deliver exceptional
-    software.
+    Headforwards is an outsource software development company. 
 
 
-    Being true to the principles of an Agile methodology brings benefits to both
-    their clients and the people who work in their business.
+    Using Agile principles and dedicated teams recruited specifically for their
+    clients, Headforwards delivers software that creates real business value.
 sections:
   - components:
       - content:
@@ -64,9 +62,9 @@ sections:
   - components:
       - content:
           - text: >-
-              Headforwards offer the ability to live in one of the most
-              beautiful and relaxing parts of the UK while at the same time
-              working at the forefront of professional technical excellence.
+              Headforwards is based in one of the most beautiful and inspiring
+              parts of the UK - at the same time working at the forefront of
+              professional technical excellence.
             type: markdown-component
           - jobTitle: null
             name: null
