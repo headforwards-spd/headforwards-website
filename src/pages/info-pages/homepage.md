@@ -1,7 +1,7 @@
 ---
 uuid: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
 type: home-page
-title: Software that creates real value
+title: Forward thinking software
 image:
   image: /uploads/headforwards-1.jpg
   show: true
