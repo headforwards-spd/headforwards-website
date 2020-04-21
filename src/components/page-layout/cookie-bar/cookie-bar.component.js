@@ -1,3 +1,5 @@
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 
 import styles from './cookie-bar.module.scss';
@@ -14,6 +16,7 @@ export default class CookieBar extends Component {
     }
 
     render() {
+        const { active } = this.state;
         const { toggleClass } = this;
 
         const dismissed = typeof window !== 'undefined' ? localStorage.getItem('covidDismiss') : false;
@@ -21,12 +24,6 @@ export default class CookieBar extends Component {
             <div>
                 {!dismissed && (
                     <div className="dismissed">
-                        <input
-                            className={styles.checkbox}
-                            id="checkbox"
-                            type="checkbox"
-                            onClick={toggleClass.bind(this)}
-                        />
                         <div className={styles.cookieBar}>
                             <span className={styles.message}>
                                 <h1>COVID-19</h1>
@@ -36,9 +33,13 @@ export default class CookieBar extends Component {
                                 All phones and emails are being monitored as usual so if you have an enquiry or any
                                 questions, please get in touch.
                             </span>
-                            <label htmlFor="checkbox" className={styles.close}>
-                                x
-                            </label>
+                            <button
+                                type="button"
+                                className={`${styles.close} ${!active && 'hide'} hide`}
+                                onClick={toggleClass.bind(this)}
+                            >
+                                <FontAwesomeIcon icon={faTimes} />
+                            </button>
                         </div>
                     </div>
                 )}
