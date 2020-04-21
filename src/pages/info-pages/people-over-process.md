@@ -31,10 +31,10 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: 'Open, honest relationships'
+    title: "Open, honest relationships"
     image: /uploads/head-1.jpg
-  - jobTitle: ''
-    name: ''
+  - jobTitle: ""
+    name: ""
     quote: >-
       Everyone in my team is equal, and they each bring important skills and
       knowledge to the table. In my role as a Scrum Master, I work with
@@ -62,4 +62,3 @@ footerLinks:
     title: We are a 'people business'
 callToAction: How do the right people make all the difference?
 ---
-

@@ -41,7 +41,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'To do the best work, you need the best people'
+    title: "To do the best work, you need the best people"
   - content:
       - text: "Happy people are more engaged at work, which is why Headforwards places so much emphasis on ensuring its staff, and the people around them, are well looked after. \r\n\nThat’s one reason you’re more likely to see Headforwards employees at one of the company’s many social events than burning the midnight oil. And it’s why Headforwards goes above and beyond to help its people feel right at home when relocating to Cornwall.    \n\n\rIt’s all about doing valuable work, in a beautiful place, for appreciative clients. With a ready-made social life just waiting to be enjoyed."
         type: markdown-component
@@ -67,4 +67,3 @@ footerLinks:
     title: Would you like us to build a team for you?
 callToAction: Would you like to be part of our team?
 ---
-

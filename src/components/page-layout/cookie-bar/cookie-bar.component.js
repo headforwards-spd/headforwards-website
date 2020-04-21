@@ -1,3 +1,5 @@
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 
 import styles from './cookie-bar.module.scss';
@@ -23,7 +25,7 @@ export default class CookieBar extends Component {
                     <div className="dismissed">
                         <input
                             className={styles.checkbox}
-                            id="checkbox"
+                            id="dismiss-notice"
                             type="checkbox"
                             onClick={toggleClass.bind(this)}
                         />
@@ -36,9 +38,7 @@ export default class CookieBar extends Component {
                                 All phones and emails are being monitored as usual so if you have an enquiry or any
                                 questions, please get in touch.
                             </span>
-                            <label htmlFor="checkbox" className={styles.close}>
-                                x
-                            </label>
+                            <FontAwesomeIcon icon={faTimes} className={styles.close} />
                         </div>
                     </div>
                 )}
