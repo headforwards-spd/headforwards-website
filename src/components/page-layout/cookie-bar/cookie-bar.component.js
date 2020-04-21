@@ -23,12 +23,6 @@ export default class CookieBar extends Component {
             <div>
                 {!dismissed && (
                     <div className="dismissed">
-                        <input
-                            className={styles.checkbox}
-                            id="dismiss-notice"
-                            type="checkbox"
-                            onClick={toggleClass.bind(this)}
-                        />
                         <div className={styles.cookieBar}>
                             <span className={styles.message}>
                                 <h1>COVID-19</h1>
@@ -38,7 +32,9 @@ export default class CookieBar extends Component {
                                 All phones and emails are being monitored as usual so if you have an enquiry or any
                                 questions, please get in touch.
                             </span>
-                            <FontAwesomeIcon icon={faTimes} className={styles.close} />
+                            <button type="button" className={styles.close} onClick={toggleClass.bind(this)}>
+                                <FontAwesomeIcon icon={faTimes} />
+                            </button>
                         </div>
                     </div>
                 )}
