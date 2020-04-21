@@ -16,12 +16,12 @@ components:
       - text: >-
           Headforwards believes clients get the greatest business value from
           software outsourcing when development teams are empowered to make
-          their own decisions; when they follow an Agile methodology.
+          their own decisions.
 
 
-          Our clients look to us to develop software that creates value but, in
-          a rapidly changing business environment, what constitutes that value
-          might change from one week to the next.
+          Clients look to Headforwards to develop software that creates value
+          but, in a rapidly changing business environment, what constitutes that
+          value might change from one week to the next.
 
 
           Software can only continue to deliver business value if the
@@ -48,8 +48,7 @@ components:
   - content:
       - text: >-
           The Agile Manifesto says quality software emerges from self-organising
-          teams. That’s why there’s no management layer at Headforwards.
-          Instead, decision-making responsibility lies with the team working on
+          teams. Decision-making responsibility lies with the team working on
           each client project.
 
 

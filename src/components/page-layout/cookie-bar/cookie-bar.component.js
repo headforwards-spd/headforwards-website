@@ -16,7 +16,6 @@ export default class CookieBar extends Component {
     }
 
     render() {
-        const { active } = this.state;
         const { toggleClass } = this;
 
         const dismissed = typeof window !== 'undefined' ? localStorage.getItem('covidDismiss') : false;
@@ -33,11 +32,7 @@ export default class CookieBar extends Component {
                                 All phones and emails are being monitored as usual so if you have an enquiry or any
                                 questions, please get in touch.
                             </span>
-                            <button
-                                type="button"
-                                className={`${styles.close} ${!active && 'hide'} hide`}
-                                onClick={toggleClass.bind(this)}
-                            >
+                            <button type="button" className={styles.close} onClick={toggleClass.bind(this)}>
                                 <FontAwesomeIcon icon={faTimes} />
                             </button>
                         </div>

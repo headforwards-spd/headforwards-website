@@ -13,43 +13,22 @@ introduction:
     incorporated in 2011 and has grown into a company of well over 100 people.
 components:
   - content:
-      - text: >-
-          The brainchild of Craig Girvan and Toby Parkins, Headforwards was
-          incorporated in 2011 and has grown into a company of well over 100
-          people.
-
-
-          Everything about the business is modeled around a client's needs and
-          desired outcomes.
-
-
-          As clients increasingly look for outsource companies that deliver
-          long-term value and competitive differentiation, Headforwards stands
-          in good stead for the future.
+      - text: "Headforwards might never have existed if it weren’t for a chance conversation at a barbecue. Agile practitioner Toby Parkins was talking with a product owner from a global corporation, when the discussion turned to the difficulty of getting really good outsource developers.\r\n\n“He was talking about how you never get the right people, and how outsource companies just pull anyone off the bench to work on a project,” says Toby. \n\n“I knew instantly that I could put together a brilliant team for him – and the whole concept of Headforwards was founded in that moment.”"
         type: markdown-component
     isPostit: false
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: Forward looking software
+    title: ""
   - content:
-      - text: "Headforwards might never have existed if it weren’t for a chance conversation at a barbecue. \rAgile practitioner Toby Parkins was talking with a product owner from a global corporation when the discussion turned to the difficulty of getting really good outsource developers.\r\n\n“He was talking about how you never get the right people, and how outsource companies just pull anyone off the bench to work on a project,” says Toby. “I knew instantly that I could put together a brilliant team for him – and the whole concept of Headforwards was founded in that moment.”"
+      - text: "Toby took the idea to Craig Girvan – a fellow Agile practitioner – who had been thinking along similar lines.\r\n\nThey agreed that clients were short-changed by traditional outsourcers, who tend to prioritise their own business over that of their clients. They sketched out a vision of a new kind of outsource company, built on three principles:"
         type: markdown-component
     image: /uploads/headforwards-8.jpg
     isPostit: false
     isRightImage: true
     isTwoColumns: false
     type: image-copy-component
-    title: The spark of a business idea
-  - content:
-      - text: "Toby took the idea to Craig Girvan – a fellow Agile practitioner – who had been thinking down similar lines. \n\nThey agreed that clients were short-changed by traditional outsourcers, who tend to prioritise their own business over that of their clients. \rThey sketched out a vision of a new kind of outsource company, built on three principles:"
-        type: markdown-component
-    isPostit: true
-    isRightImage: false
-    isTwoColumns: false
-    type: image-copy-component
     title: A new kind of software outsource company
-    image: /uploads/003.svg
   - quote: >-
       It’s about picking the right people for each client, rather than running a
       bench. It may be slightly less efficient for us, but the client gets much
@@ -67,11 +46,20 @@ components:
       trusting relationship.
     type: quote-component
     title: Collaborative relationships
+  - content:
+      - text: "Headforwards was formally incorporated in 2011, and has grown into a company of well over 100 people. \r\n\nAs clients increasingly look for outsource companies that deliver long-term value and competitive differentiation, Headforwards stands in good stead for the future."
+        type: markdown-component
+    isPostit: true
+    isRightImage: false
+    isTwoColumns: false
+    type: image-copy-component
+    title: Forward-looking software
+    image: /uploads/003.svg
 footerLinks:
   - link1: 53629a60-103a-11ea-9ef0-bd54961b4e30
     link2: 3c96d190-0fac-11ea-843f-932c76de5936
     link3: fe1a1d50-0fab-11ea-843f-932c76de5936
     showImages: true
     title: Find out more about Headforwards
-callToAction: "Would you like to join us on our journey?"
+callToAction: Would you like to join us on our journey?
 ---

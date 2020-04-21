@@ -30,3 +30,7 @@ tags:
     slug: sysadmin
   - label: React
     slug: react
+  - label: Front end
+    slug: front-end
+  - label: Back end
+    slug: back-end

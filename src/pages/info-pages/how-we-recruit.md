@@ -49,7 +49,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: Round pegs in round holes
+    title: The right people in the right roles
   - flip: true
     imageOne: /uploads/headforwards-11.jpg
     imageTwo: /uploads/headforwards-12.jpg
