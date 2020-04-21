@@ -82,4 +82,3 @@ sections:
 seo:
   slug: /
 ---
-

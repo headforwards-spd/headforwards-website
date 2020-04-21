@@ -32,8 +32,8 @@ components:
           fantastic lifestyle and quality of life – because joining us isn’t
           just a career choice, it’s a life choice.
         type: markdown-component
-      - jobTitle: ''
-        name: ''
+      - jobTitle: ""
+        name: ""
         quote: >-
           At Headforwards there are people from all walks of life, culture and
           religion. And it is especially good being a female developer.
@@ -118,4 +118,3 @@ footerLinks:
     title: Discover more about our culture
 callToAction: Want to progress your career in a more relaxed location?
 ---
-

@@ -19,7 +19,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: ''
+    title: ""
   - content:
       - text: "Toby took the idea to Craig Girvan – a fellow Agile practitioner – who had been thinking along similar lines.\r\n\nThey agreed that clients were short-changed by traditional outsourcers, who tend to prioritise their own business over that of their clients. They sketched out a vision of a new kind of outsource company, built on three principles:"
         type: markdown-component
@@ -63,4 +63,3 @@ footerLinks:
     title: Find out more about Headforwards
 callToAction: Would you like to join us on our journey?
 ---
-
