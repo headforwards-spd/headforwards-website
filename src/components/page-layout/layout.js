@@ -9,6 +9,7 @@ import Helmet from 'react-helmet';
 import { Provider } from 'unstated';
 
 import AppContainer from '../../containers/app.container';
+import CookieBar from './cookie-bar/cookie-bar.component';
 import { FooterLinkPropType } from './footer/footer-link.component';
 import Footer from './footer/footer.component';
 import Header from './header/header.component';
@@ -27,9 +28,9 @@ const UnstatedHelmet = withUnstated(
 
         return (
             <Helmet bodyAttributes={bodyAttributes}>
-                {/* <link rel="preload" href="/fonts/FSAlbertWeb/Bold.woff2" as="font" /> */}
-                {/* <link rel="preload" href="/fonts/FSAlbertWeb/Regular.woff2" as="font" /> */}
-                {/* <link rel="preload" href="/fonts/FSAlbertWeb/Italic.woff2" as="font" /> */}
+                {/* <linkFields rel="preload" href="/fonts/FSAlbertWeb/Bold.woff2" as="font" /> */}
+                {/* <linkFields rel="preload" href="/fonts/FSAlbertWeb/Regular.woff2" as="font" /> */}
+                {/* <linkFields rel="preload" href="/fonts/FSAlbertWeb/Italic.woff2" as="font" /> */}
                 <link rel="preconnect" href="https://www.google.com" />
                 <link rel="preconnect" href="https://www.facebook.com" />
                 <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -157,6 +158,7 @@ function Layout({
             {(!isJobPage && <Header {...headerProps} />) || <JobHeader {...headerProps} jobDetails={jobDetails} />}
             <main>{children}</main>
             <Footer {...footerProps} />
+            <CookieBar />
         </Provider>
     );
 }

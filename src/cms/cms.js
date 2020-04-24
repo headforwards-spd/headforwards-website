@@ -3,6 +3,7 @@ import CMS, { init } from 'netlify-cms-app';
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
 import styles from '!css-loader!sass-loader!../scss/main.scss';
 
+import cmsConfig from './config';
 import InfoPagePreview from './preview-templates/info-page-preview';
 import OptionalObjectControl from './widgets/optional-object-control';
 import UuidControl from './widgets/uuid-control';
@@ -17,7 +18,10 @@ const config = {
     },
 };
 
-branch === 'master' && (config.publish_mode = 'editorial_workflow');
+if (branch === 'master') {
+    config.publish_mode = 'editorial_workflow';
+    config.show_preview_links = true;
+}
 
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
@@ -36,4 +40,9 @@ CMS.registerPreviewTemplate('how-we-work', InfoPagePreview);
 CMS.registerPreviewTemplate('careers', InfoPagePreview);
 CMS.registerPreviewTemplate('index-pages', InfoPagePreview);
 
-init({ config });
+init({
+    config: {
+        ...config,
+        ...cmsConfig,
+    },
+});

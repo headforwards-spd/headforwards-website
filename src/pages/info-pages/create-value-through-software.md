@@ -13,7 +13,7 @@ introduction:
     clients’ objectives
 components:
   - content:
-      - text: "At every step of each Headforwards project, development is centred around the clients’ objectives. This is how you know the software will be of genuine value to your overall business strategy.\n\nWhen a project begins with challenges to overcome and clear goals to accomplish, the result is always more valuable. That’s why Headforwards creates software with the client’s overall business objectives in mind.\r\n\nThat said, the people at Headforwards know that software development is rarely straightforward. That’s why they work closely with clients throughout the duration of a project to ensure the end result creates the most value for their business."
+      - text: "When a project begins with challenges to overcome and clear goals to accomplish, the result is always more valuable. That’s why Headforwards creates software with the client’s overall business objectives in mind.\r\n\nHeadforwards aligns development work with client objectives at every step so you know the software will be of genuine value to your overall business strategy.\r\n\nThat said, Headforwards knows that software development is rarely straightforward. That’s why they work closely with clients throughout the duration of a project to ensure the best end result possible"
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -31,7 +31,15 @@ components:
       produce will really help them reach their goals.
     type: quote-component
   - content:
-      - text: "Headforwards’ teams embed themselves in the business they’re working with at the start of every project. It’s the best way to ensure they can understand and meet the client’s needs every step of the way. \r\n\nAgile principles are tightly integrated to the development lifecycle, which means teams can develop each iteration fast, and adapt quickly as requirements change."
+      - text: >-
+          Headforwards’ teams immerse themselves in the business they’re working
+          with at the start of every project. It’s the best way to ensure they
+          can understand and meet the client’s needs every step of the way. 
+
+
+          Agile principles are tightly integrated to the development lifecycle,
+          which means teams can develop each iteration fast, and adapt quickly
+          as requirements change.
         type: markdown-component
     isPostit: false
     isRightImage: false
