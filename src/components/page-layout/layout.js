@@ -28,9 +28,6 @@ const UnstatedHelmet = withUnstated(
 
         return (
             <Helmet bodyAttributes={bodyAttributes}>
-                {/* <linkFields rel="preload" href="/fonts/FSAlbertWeb/Bold.woff2" as="font" /> */}
-                {/* <linkFields rel="preload" href="/fonts/FSAlbertWeb/Regular.woff2" as="font" /> */}
-                {/* <linkFields rel="preload" href="/fonts/FSAlbertWeb/Italic.woff2" as="font" /> */}
                 <link rel="preconnect" href="https://www.google.com" />
                 <link rel="preconnect" href="https://www.facebook.com" />
                 <link rel="preconnect" href="https://www.googletagmanager.com" />
