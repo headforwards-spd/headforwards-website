@@ -40,14 +40,14 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                                 <MenuItem
                                     className={styles.navHomeLink}
                                     {...{
-                                        id: 'nav-home-link',
+                                        id: 'nav-home-linkFields',
                                         showTitle: true,
                                         location,
                                         link: '/',
                                         linkText: 'Home.',
                                         children: [
                                             {
-                                                id: 'nav-home-contact-page-link',
+                                                id: 'nav-home-contact-page-linkFields',
                                                 location,
                                                 link: '/contact',
                                                 linkText: 'Contact',
@@ -68,7 +68,7 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                                 <MenuItem
                                     className={styles.navContactLink}
                                     {...{
-                                        id: 'nav-contact-link',
+                                        id: 'nav-contact-linkFields',
                                         link: '/contact',
                                         linkText: 'Contact.',
                                         location,
