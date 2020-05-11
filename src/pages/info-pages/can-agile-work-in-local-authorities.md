@@ -49,7 +49,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'Turning the tanker '
+    title: "Turning the tanker "
   - content:
       - text: >-
           In local authority, public sector and even some commercial
@@ -79,7 +79,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'Agile in local authority? '
+    title: "Agile in local authority? "
   - content:
       - text: >-
           The Coronavirus outbreak has put pressure on a lot of companies, but
@@ -99,7 +99,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'Agile in a crisis '
+    title: "Agile in a crisis "
   - content:
       - text: >-
           From the little seed planted at Agile on the Beach, Cornwall Council
@@ -119,5 +119,5 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'No more business as usual '
+    title: "No more business as usual "
 ---

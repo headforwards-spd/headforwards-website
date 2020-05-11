@@ -1,9 +1,9 @@
 import { bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import preventOrphans              from '../../../lib/prevent-orphans';
+import preventOrphans from '../../../lib/prevent-orphans';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
-import styles                      from '../bio/bio.module.scss';
+import styles from '../bio/bio.module.scss';
 
 const quotePropTypes = {
     title: string,
