@@ -1,9 +1,9 @@
 import { bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import preventOrphans              from '../../../lib/prevent-orphans';
+import preventOrphans from '../../../lib/prevent-orphans';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
-import styles                      from './author.module.scss';
+import styles from './author.module.scss';
 
 const authorPropTypes = {
     title: string,
@@ -30,7 +30,6 @@ function Author({ title, quote, name, jobTitle, profilePic, fullWidth }) {
     const fullWidthClass = fullWidth ? styles.fullWidth : '';
 
     return (
-
         <section className={`${styles.blockquoteContainer} ${fullWidthClass}`}>
             {title && <h2>{title}</h2>}
             <blockquote>

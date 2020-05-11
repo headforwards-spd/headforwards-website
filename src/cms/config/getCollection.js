@@ -1,11 +1,12 @@
-import articleComponent from './components/article-component';
-import blogPostComponent from './components/blog-post-component';
+import articleComponent       from './components/article-component';
+import authorComponent        from './components/author-component';
+import blogPostComponent      from './components/blog-post-component';
 import contentSliderComponent from './components/content-slider-component';
-import imageCopyComponent from './components/image-copy-component';
-import imagesComponent from './components/images-component';
-import linkFields from './components/link-fields';
-import quoteComponent from './components/quote-component';
-import parentOptions from './parentOptions';
+import imageCopyComponent     from './components/image-copy-component';
+import imagesComponent        from './components/images-component';
+import linkFields             from './components/link-fields';
+import quoteComponent         from './components/quote-component';
+import parentOptions          from './parentOptions';
 
 export default getCollection;
 
@@ -112,6 +113,7 @@ export const pageComponents = {
         imageCopyComponent,
         articleComponent,
         blogPostComponent,
+        authorComponent,
         contentSliderComponent,
     ],
 };
