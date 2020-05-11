@@ -23,17 +23,17 @@
         "sourceType":                  "module"
     },
     "rules":         {
-        "simple-import-sort/sort": "error",
-        "no-param-reassign":            [
+        "simple-import-sort/sort":         "error",
+        "no-param-reassign":               [
             "error",
             {
                 "props": false
             }
         ],
-        "prettier/prettier":            [
+        "prettier/prettier":               [
             "error"
         ],
-        "react/jsx-filename-extension": [
+        "react/jsx-filename-extension":    [
             1,
             {
                 "extensions": [
@@ -42,16 +42,16 @@
                 ]
             }
         ],
-        "react/jsx-props-no-spreading": 0,
+        "react/jsx-props-no-spreading":    0,
         "react/static-property-placement": 0,
-        "react/state-in-constructor": 0,
-        "no-use-before-define":         [
+        "react/state-in-constructor":      0,
+        "no-use-before-define":            [
             "error",
             {
                 "functions": false
             }
         ],
-        "no-unused-expressions":        [
+        "no-unused-expressions":           [
             "error",
             {
                 "allowShortCircuit": true,
