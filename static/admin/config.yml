@@ -126,6 +126,40 @@ collections:
                   default: null,
                 }
 
+          -   label: "Bio"
+              name: bio-component
+              widget: object
+              fields:
+                  - {
+                      label: "Title",
+                      name: title,
+                      widget: string,
+                      required: false,
+                      default: null,
+                  }
+                  - { label: "Quote", name: quote, widget: text }
+                  - {
+                      label: "Name",
+                      name: name,
+                      widget: string,
+                      required: false,
+                      default: null,
+                  }
+                  - {
+                      label: "Job Title",
+                      name: jobTitle,
+                      widget: string,
+                      required: false,
+                      default: null,
+                  }
+                  - {
+                      label: "Profile Picture",
+                      name: profilePic,
+                      widget: image,
+                      required: false,
+                      default: null,
+                  }
+
           - label: "Image & Copy"
             name: image-copy-component
             widget: object

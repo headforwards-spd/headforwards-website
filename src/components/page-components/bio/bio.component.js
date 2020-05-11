@@ -1,11 +1,11 @@
 import { bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import preventOrphans              from '../../../lib/prevent-orphans';
+import preventOrphans from '../../../lib/prevent-orphans';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
-import styles                      from '../bio/bio.module.scss';
+import styles from './bio.module.scss';
 
-const quotePropTypes = {
+const bioPropTypes = {
     title: string,
     quote: string.isRequired,
     name: string,
@@ -14,11 +14,11 @@ const quotePropTypes = {
     fullWidth: bool,
 };
 
-export default Quote;
-export const QuotePropType = shape(quotePropTypes);
+export default Bio;
+export const BioPropType = shape(bioPropTypes);
 
-Quote.propTypes = quotePropTypes;
-Quote.defaultProps = {
+Bio.propTypes = bioPropTypes;
+Bio.defaultProps = {
     title: null,
     name: null,
     jobTitle: null,
@@ -26,7 +26,7 @@ Quote.defaultProps = {
     fullWidth: false,
 };
 
-function Quote({ title, quote, name, jobTitle, profilePic, fullWidth }) {
+function Bio({ title, quote, name, jobTitle, profilePic, fullWidth }) {
     const fullWidthClass = fullWidth ? styles.fullWidth : '';
 
     return (
