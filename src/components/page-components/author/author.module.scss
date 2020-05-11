@@ -26,27 +26,6 @@
       padding: 1.5em 0 0;
       @include orange-type;
       position: relative;
-
-      &:before,
-      &:after {
-        color: $quotemark-grey;
-        font-size: 2.5em;
-        font-weight: normal;
-      }
-
-      &:before {
-        content: "“";
-        position: absolute;
-        top: 0;
-      }
-
-      &:after {
-        content: "\00a0”";
-        display: inline;
-        line-height: 0;
-        margin-left: -0.2em;
-        vertical-align: text-bottom;
-      }
     }
 
     > footer {

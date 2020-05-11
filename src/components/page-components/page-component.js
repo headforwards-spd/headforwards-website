@@ -1,16 +1,16 @@
 import { bool, oneOfType, string } from 'prop-types';
 import React from 'react';
 
-import { ImageSrcPropType } from '../page-layout/image/image.component';
-import Markdown from '../page-layout/markdown';
-import Bio, { BioPropType } from './bio/bio.component';
-import ArticleColumns, { ArticleColumnsPropType } from './columns/article-columns/article-columns.component';
-import BlogPostColumns, { BlogPostColumnsPropType } from './columns/blog-post-columns/blog-post-columns.component';
+import { ImageSrcPropType }                           from '../page-layout/image/image.component';
+import Markdown                                       from '../page-layout/markdown';
+import Author, { AuthorPropType }                           from './author/author.component';
+import ArticleColumns, { ArticleColumnsPropType }     from './columns/article-columns/article-columns.component';
+import BlogPostColumns, { BlogPostColumnsPropType }   from './columns/blog-post-columns/blog-post-columns.component';
 import ImageCopyColumns, { ImageCopyColumnsPropType } from './columns/image-copy-columns/image-copy-columns.component';
 import PostitCopyColumns, {
     PostitCopyColumnsPropType,
-} from './columns/image-copy-columns/postit-copy-columns.component';
-import ContentSlider, { ContentSliderPropType } from './content-slider/content-slider.component';
+}                                                     from './columns/image-copy-columns/postit-copy-columns.component';
+import ContentSlider, { ContentSliderPropType }       from './content-slider/content-slider.component';
 import Hero, { HeroPropType } from './hero/hero.component';
 import FullWidthImage, { FullWidthImageSrcPropType } from './images/full-width/full-width-image.component';
 import TwoImages, { TwoImagesPropType } from './images/two/two-images.component';
@@ -31,7 +31,7 @@ export const PageComponentPropType = oneOfType([
     FullWidthImageSrcPropType,
     TwoImagesPropType,
     QuotePropType,
-    BioPropType,
+    AuthorPropType,
 ]);
 
 PageComponent.propTypes = pageComponentPropTypes;
@@ -51,7 +51,7 @@ function PageComponent({ type, ...component }) {
         case 'content-slider-component':
             return <ContentSlider {...component} />;
         case 'bio-component':
-            return <Bio {...component} />;
+            return <Author {...component} />;
         default:
             return <Markdown source={component.text} />;
     }

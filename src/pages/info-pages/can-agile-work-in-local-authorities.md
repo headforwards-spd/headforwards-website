@@ -1,7 +1,7 @@
 ---
 uuid: d4bb7510-861d-11ea-81f7-196976a6717d
 parent: who-we-are
-type: info-page
+type: blog-page
 title: Can Agile work in local authorities?
 image:
   image: /uploads/hf-d.jpg

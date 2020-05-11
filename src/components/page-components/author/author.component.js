@@ -1,11 +1,11 @@
 import { bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import preventOrphans from '../../../lib/prevent-orphans';
+import preventOrphans              from '../../../lib/prevent-orphans';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
-import styles from './bio.module.scss';
+import styles                      from './author.module.scss';
 
-const bioPropTypes = {
+const authorPropTypes = {
     title: string,
     quote: string.isRequired,
     name: string,
@@ -14,11 +14,11 @@ const bioPropTypes = {
     fullWidth: bool,
 };
 
-export default Bio;
-export const BioPropType = shape(bioPropTypes);
+export default Author;
+export const AuthorPropType = shape(authorPropTypes);
 
-Bio.propTypes = bioPropTypes;
-Bio.defaultProps = {
+Author.propTypes = authorPropTypes;
+Author.defaultProps = {
     title: null,
     name: null,
     jobTitle: null,
@@ -26,10 +26,11 @@ Bio.defaultProps = {
     fullWidth: false,
 };
 
-function Bio({ title, quote, name, jobTitle, profilePic, fullWidth }) {
+function Author({ title, quote, name, jobTitle, profilePic, fullWidth }) {
     const fullWidthClass = fullWidth ? styles.fullWidth : '';
 
     return (
+
         <section className={`${styles.blockquoteContainer} ${fullWidthClass}`}>
             {title && <h2>{title}</h2>}
             <blockquote>
