@@ -84,7 +84,7 @@ export default class ApplicationForm extends Component {
             }
         });
 
-        formData.append('referrer', 'website');
+        formData.append('candidate[referrer]', 'website');
 
         const options = {
             method: 'POST',
