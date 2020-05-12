@@ -1,7 +1,7 @@
 ---
 uuid: 5fafcbb0-13bb-11ea-9795-cb94363984ef
 type: legal-page
-title: Website usage terms and conditions``
+title: Website usage terms and conditions
 image:
   show: false
   image:
