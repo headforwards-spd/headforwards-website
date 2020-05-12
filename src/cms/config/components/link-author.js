@@ -1,9 +1,9 @@
 const linkAuthor = {
     widget: 'relation',
     collection: 'author-pages',
-    searchFields: ['name'],
+    searchFields: ['title'],
     valueField: 'uuid',
-    displayFields: ['name'],
+    displayFields: ['title'],
 };
 
 export default linkAuthor;
