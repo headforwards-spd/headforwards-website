@@ -6,6 +6,21 @@ export const PageFragment = graphql`
         frontmatter {
             title
             subtitle
+            author {
+                id
+                frontmatter {
+                    name
+                    bio
+                    profilePic {
+                        publicURL
+                        childImageSharp {
+                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
+                                ...GatsbyImageSharpFluid_withWebp
+                            }
+                        }
+                    }
+                }
+            }
             isPostits
             ...BannerImageFragment
             introduction {

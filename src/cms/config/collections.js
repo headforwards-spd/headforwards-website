@@ -52,6 +52,22 @@ export default [
         ],
     },
     {
+        label: 'Blog Pages',
+        label_singular: 'Blog Page',
+        name: 'blog-pages',
+        description: 'Blog Pages',
+        folder: 'src/pages/blog-pages',
+        create: true,
+        slug: '{{slug}}',
+        preview_path: '{{slug}}',
+        identifier_field: 'title',
+        filter: {
+            field: 'type',
+            value: 'blog-page',
+        },
+        fields: [page.title, page.subTitle],
+    },
+    {
         label: 'Legal Pages',
         label_singular: 'Legal Page',
         name: 'pages',

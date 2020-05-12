@@ -3,6 +3,7 @@ uuid: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
 parent: force value
 type: force value
 title: force value
+author: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
 subtitle: force value
 isPostits: false
 image:

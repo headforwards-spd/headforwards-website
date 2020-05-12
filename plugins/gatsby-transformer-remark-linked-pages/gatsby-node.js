@@ -27,7 +27,10 @@ exports.sourceNodes = gatsby => {
 
     pages.forEach(page => {
         const { frontmatter } = page || {};
-        const { sections = [], components = [], jobRoles = [], footerLinks = [] } = frontmatter || {};
+        const { author, sections = [], components = [], jobRoles = [], footerLinks = [] } = frontmatter || {};
+
+        author && (frontmatter.author___NODE = getPageId(author));
+        frontmatter.author = undefined;
 
         sections && sections.length && setItemIds(sections);
         components && components.length && setItemIds(components);
