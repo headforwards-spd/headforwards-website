@@ -1,5 +1,6 @@
 import { any, arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
+import React                                 from 'react';
+import Author                                from '../../page-components/author/author.component';
 
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
@@ -19,12 +20,13 @@ BlogPage.defaultProps = {
     components: null,
 };
 
-function BlogPage({ introduction, components = [] }) {
+function BlogPage({ introduction, components = [], author }) {
     const { show, text } = introduction;
 
     return (
         <>
             {show && <IntroductionComponent introduction={text} />}
+            {author && <Author {...author} />}
             {components && (
                 <section>
                     {!!components &&

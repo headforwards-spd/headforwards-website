@@ -1,4 +1,4 @@
-import { bool, shape, string } from 'prop-types';
+import { shape, string } from 'prop-types';
 import React from 'react';
 
 import preventOrphans from '../../../lib/prevent-orphans';
@@ -6,12 +6,9 @@ import Image, { ImageSrcPropType } from '../../page-layout/image/image.component
 import styles from './author.module.scss';
 
 const authorPropTypes = {
-    title: string,
-    quote: string.isRequired,
+    bio: string.isRequired,
     name: string,
-    jobTitle: string,
     profilePic: ImageSrcPropType,
-    fullWidth: bool,
 };
 
 export default Author;
@@ -19,21 +16,14 @@ export const AuthorPropType = shape(authorPropTypes);
 
 Author.propTypes = authorPropTypes;
 Author.defaultProps = {
-    title: null,
     name: null,
-    jobTitle: null,
     profilePic: null,
-    fullWidth: false,
 };
 
-function Author({ title, quote, name, jobTitle, profilePic, fullWidth }) {
-    const fullWidthClass = fullWidth ? styles.fullWidth : '';
-
+function Author({ bio, profilePic, name }) {
     return (
-        <section className={`${styles.blockquoteContainer} ${fullWidthClass}`}>
-            {title && <h2>{title}</h2>}
+        <section className={`${styles.blockquoteContainer}`}>
             <blockquote>
-                <p>{preventOrphans(quote)}</p>
                 {!!name && (
                     <footer>
                         {!!profilePic && (
@@ -41,12 +31,9 @@ function Author({ title, quote, name, jobTitle, profilePic, fullWidth }) {
                                 <Image className={styles.image} image={profilePic} ratio="100%" />
                             </div>
                         )}
-                        <section>
-                            <h2>{name}</h2>
-                            {!!jobTitle && <p>{jobTitle}</p>}
-                        </section>
                     </footer>
                 )}
+                <p>{preventOrphans(bio)}</p>
             </blockquote>
         </section>
     );

@@ -28,14 +28,13 @@ function BlogPagePage({ data }) {
     const { frontmatter } = page;
     const { introduction, author: authorPage, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
+    const { frontmatter: author } = authorPage || {};
     const pageProps = {
         introduction,
+        author,
         components,
     };
 
-    const { frontmatter: author } = authorPage || {};
-
-    console.log({ author });
 
     return (
         <Layout
