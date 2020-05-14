@@ -8,6 +8,9 @@ import InfoPagePreview from './preview-templates/info-page-preview';
 import OptionalObjectControl from './widgets/optional-object-control';
 import UuidControl from './widgets/uuid-control';
 
+// eslint-disable-next-line no-underscore-dangle
+window.___loader = { enqueue: () => {}, hovering: () => {} };
+
 const branch = process.env.GATSBY_CMS_BRANCH || 'master';
 
 const config = {
