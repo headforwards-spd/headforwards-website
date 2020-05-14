@@ -102,7 +102,7 @@ export default [
             },
             {
                 label: 'Author Name',
-                name: 'name',
+                name: 'author',
                 ...linkAuthor,
             },
             page.pageComponents,

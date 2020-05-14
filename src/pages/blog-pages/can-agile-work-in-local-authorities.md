@@ -10,7 +10,7 @@ introduction:
     Agile and best practice, but it’s also a great place for people to get to
     understand the principals of an Agile methodology. For our local authority,
     Agile on the Beach sparked the question, “How could we become more Agile?”
-name: John Howell
+author: c038aaac-943e-11ea-bb37-0242ac130002
 components:
   - content:
       - text: >-
