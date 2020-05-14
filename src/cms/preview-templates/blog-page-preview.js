@@ -1,19 +1,18 @@
 import { bool, func, shape, string } from 'prop-types';
-import React from 'react';
 import { Provider } from 'unstated';
 import * as uuid from 'uuid';
 
 import Footer from '../../components/page-layout/footer/footer.component';
 import Header from '../../components/page-layout/header/header.component';
 import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
-import InfoPage from '../../components/page-templates/info-page/info-page.template';
+import BlogPage from '../../components/page-templates/blog-page/blog-page.template';
 
-export default InfoPagePreview;
+export default BlogPagePreview;
 
-InfoPagePreview.propTypes = {
+BlogPagePreview.propTypes = {
     entry: shape({
         data: shape({
-            title: string.isRequired,
+            title: string,
             subtitle: string,
             image: shape({
                 show: bool,
@@ -23,14 +22,19 @@ InfoPagePreview.propTypes = {
                 show: bool,
                 text: string,
             }),
+            author: string,
         }),
     }).isRequired,
     fieldsMetaData: func.isRequired,
     getAsset: func.isRequired,
 };
 
-function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
+function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
     const { data } = entry.toJS();
+    const authorId = entry.getIn(['data', 'author']);
+    const authorMeta = fieldsMetaData.getIn(['author', 'author-pages', authorId]);
+    const author = authorMeta ? authorMeta.toJS() : null;
+
     const {
         title = '',
         subtitle,
@@ -55,13 +59,13 @@ function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
         const footerLinksValue = footerLinksArray ? footerLinksArray.get(0) : null;
         const footerLinksMeta = fieldsMetaData ? fieldsMetaData.getIn(['footerLinks'], footerLinksValue) : null;
         const link1 = footerLinksValue
-            ? footerLinksMeta.getIn(['link1', 'info-pages', footerLinksValue.getIn(['link1'])])
+            ? footerLinksMeta.getIn(['link1', 'blog-pages', footerLinksValue.getIn(['link1'])])
             : null;
         const link2 = footerLinksValue
-            ? footerLinksMeta.getIn(['link2', 'info-pages', footerLinksValue.getIn(['link2'])])
+            ? footerLinksMeta.getIn(['link2', 'blog-pages', footerLinksValue.getIn(['link2'])])
             : null;
         const link3 = footerLinksValue
-            ? footerLinksMeta.getIn(['link3', 'info-pages', footerLinksValue.getIn(['link3'])])
+            ? footerLinksMeta.getIn(['link3', 'blog-pages', footerLinksValue.getIn(['link3'])])
             : null;
 
         const link1Page = link1 ? link1.toJS() : null;
@@ -97,14 +101,16 @@ function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
 
     const pageProps = {
         introduction,
+        author,
         components,
     };
 
+    console.log(pageProps);
     return (
         <Provider>
             <Header {...headerProps} />
             <main>
-                <InfoPage {...pageProps} />
+                <BlogPage {...pageProps} />
             </main>
             <Footer
                 {...{

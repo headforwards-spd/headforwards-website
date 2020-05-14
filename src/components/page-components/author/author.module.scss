@@ -16,37 +16,18 @@
 
   blockquote {
     margin: 0;
+    display: flex;
 
     > p {
-      @include fontLarge;
-      font-style: italic;
+      //@include fontLarge;
+      //font-style: italic;
       font-weight: normal;
       line-height: 1.3;
-      margin-bottom: #{$rhythm-unit/2}em;
+      //margin-bottom: #{$rhythm-unit/2}em;
+      margin-bottom: 0;
       padding: 1.5em 0 0;
-      @include orange-type;
+      //@include orange-type;
       position: relative;
-
-      &:before,
-      &:after {
-        color: $quotemark-grey;
-        font-size: 2.5em;
-        font-weight: normal;
-      }
-
-      &:before {
-        content: "“";
-        position: absolute;
-        top: 0;
-      }
-
-      &:after {
-        content: "\00a0”";
-        display: inline;
-        line-height: 0;
-        margin-left: -0.2em;
-        vertical-align: text-bottom;
-      }
     }
 
     > footer {
@@ -73,8 +54,8 @@
       }
 
       .imageCropper {
-        border-radius: 50%;
-        margin-right: 0.5em;
+        //border-radius: 50%;
+        margin-right: 1em;
         overflow: hidden;
         position: relative;
         width: 3em;
@@ -96,25 +77,12 @@
     width: $singleColumnMaxWidth;
 
     blockquote {
-      border-left: 1px solid #d8d8d8;
-      padding-left: $column-gutter-md * 2/3;
+      //border-left: 1px solid #d8d8d8;
+      //padding-left: $column-gutter-md * 2/3;
       padding-top: 0;
 
       > p {
-        margin-bottom: #{$rhythm-unit}em;
         padding: 0;
-
-        &:before {
-          background-color: #ffffff;
-          display: inline-block;
-          height: 0.5em;
-          left: -0.3em;
-          line-height: 1;
-          padding-left: 0;
-          top: 0;
-          transform: translateX(-50%);
-          width: 0.5em;
-        }
       }
 
       footer h2 {
@@ -168,6 +136,7 @@
 @media (min-width: $screen-lg) {
   .blockquoteContainer {
     blockquote {
+      margin-top: -3em;
       padding-left: $column-gutter-lg/2;
 
       > p {

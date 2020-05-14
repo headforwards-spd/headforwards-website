@@ -8,9 +8,9 @@ import Header from '../../components/page-layout/header/header.component';
 import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
 import InfoPage from '../../components/page-templates/info-page/info-page.template';
 
-export default InfoPagePreview;
+export default CareersPagePreview;
 
-InfoPagePreview.propTypes = {
+CareersPagePreview.propTypes = {
     entry: shape({
         data: shape({
             title: string.isRequired,
@@ -29,7 +29,7 @@ InfoPagePreview.propTypes = {
     getAsset: func.isRequired,
 };
 
-function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
+function CareersPagePreview({ entry, fieldsMetaData, getAsset }) {
     const { data } = entry.toJS();
     const {
         title = '',
@@ -38,6 +38,7 @@ function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
         introduction,
         components = [],
         footerLinks: rawFooterLinks,
+        careers,
         callToAction,
     } = data;
     const { show: showImage = false, image: bannerImageRef = null } = image || {};
@@ -98,6 +99,8 @@ function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
     const pageProps = {
         introduction,
         components,
+        careers,
+        jobs: getJobs(careers),
     };
 
     return (
@@ -147,4 +150,18 @@ function getFooterLink({ showImages, page }) {
         image,
         introduction,
     };
+}
+
+function getJobs({ tag = '', department = '' }) {
+    const hasJobs = tag || department;
+
+    return hasJobs
+        ? [
+              {
+                  path: uuid(),
+                  title: `Recruitee Job: ${tag} ${department}`,
+                  salary: 'Salary',
+              },
+          ]
+        : null;
 }
