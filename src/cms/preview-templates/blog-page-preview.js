@@ -1,11 +1,11 @@
 import { bool, func, shape, string } from 'prop-types';
+import { Provider } from 'unstated';
+import * as uuid from 'uuid';
 
-import { Provider }         from 'unstated';
-import * as uuid            from 'uuid';
-import Footer               from '../../components/page-layout/footer/footer.component';
-import Header               from '../../components/page-layout/header/header.component';
+import Footer from '../../components/page-layout/footer/footer.component';
+import Header from '../../components/page-layout/header/header.component';
 import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
-import BlogPage             from '../../components/page-templates/blog-page/blog-page.template';
+import BlogPage from '../../components/page-templates/blog-page/blog-page.template';
 
 export default BlogPagePreview;
 
@@ -131,7 +131,7 @@ function setArticle(article, getAsset) {
 }
 
 function setComponent(component, getAsset) {
-    const { image: cImage =null, imageOne = null, imageTwo = null, profilePic = null, articles = [] } = component;
+    const { image: cImage = null, imageOne = null, imageTwo = null, profilePic = null, articles = [] } = component;
     component.id = uuid.v1();
 
     component.image = cImage ? getAsset(cImage).toString() : cImage;

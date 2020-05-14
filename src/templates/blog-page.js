@@ -35,7 +35,6 @@ function BlogPagePage({ data }) {
         components,
     };
 
-
     return (
         <Layout
             {...{

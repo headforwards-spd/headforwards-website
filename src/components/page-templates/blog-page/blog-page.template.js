@@ -1,7 +1,7 @@
 import { any, arrayOf, bool, shape, string } from 'prop-types';
-import React                                 from 'react';
-import Author                                from '../../page-components/author/author.component';
+import React from 'react';
 
+import Author from '../../page-components/author/author.component';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 
