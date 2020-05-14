@@ -23,17 +23,24 @@ IndexArticle.defaultProps = {
 };
 
 function IndexArticle({ link, title, image, introduction }) {
-    const { logo } = useStaticQuery(graphql`
-        query {
-            logo: file(name: { eq: "icon.white" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100, maxHeight: 100, quality: 85) {
-                        ...GatsbyImageSharpFluid_withWebp_noBase64
+    let logo;
+
+    try {
+        const { logo: graphLogo } = useStaticQuery(graphql`
+            query {
+                logo: file(name: { eq: "icon.white" }) {
+                    childImageSharp {
+                        fluid(maxWidth: 100, maxHeight: 100, quality: 85) {
+                            ...GatsbyImageSharpFluid_withWebp_noBase64
+                        }
                     }
                 }
             }
-        }
-    `);
+        `);
+        logo = graphLogo;
+    } catch (e) {
+        logo = '/images/icon.white.png';
+    }
 
     return (
         <article className={styles.page}>
