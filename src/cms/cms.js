@@ -3,9 +3,16 @@ import CMS, { init } from 'netlify-cms-app';
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
 import styles from '!css-loader!sass-loader!../scss/main.scss';
 
+<<<<<<< HEAD
 import cmsConfig             from './config';
 import BlogPagePreview       from './preview-templates/blog-page-preview';
 import InfoPagePreview       from './preview-templates/info-page-preview';
+=======
+import cmsConfig from './config';
+import CareersPagePreview from './preview-templates/careers-page-preview';
+import IndexPagePreview from './preview-templates/index-page-preview';
+import InfoPagePreview from './preview-templates/info-page-preview';
+>>>>>>> 985762f8ab2661ca02e7ac92cd4b06f87115a38b
 import OptionalObjectControl from './widgets/optional-object-control';
 import UuidControl           from './widgets/uuid-control';
 
@@ -38,12 +45,14 @@ CMS.registerWidget({
     controlComponent: OptionalObjectControl,
 });
 
+CMS.registerPreviewTemplate('index-pages', IndexPagePreview);
+
 CMS.registerPreviewTemplate('who-we-are', InfoPagePreview);
 CMS.registerPreviewTemplate('what-we-do', InfoPagePreview);
 CMS.registerPreviewTemplate('how-we-work', InfoPagePreview);
-CMS.registerPreviewTemplate('careers', InfoPagePreview);
 CMS.registerPreviewTemplate('index-pages', InfoPagePreview);
 CMS.registerPreviewTemplate('blog-pages', BlogPagePreview);
+CMS.registerPreviewTemplate('careers', CareersPagePreview);
 
 init({
     config: {
