@@ -16,6 +16,8 @@
 
   blockquote {
     margin: 0;
+    display: flex;
+
 
     > p {
       //@include fontLarge;
@@ -136,7 +138,6 @@
   .blockquoteContainer {
     blockquote {
       margin-top: -3em;
-      display: flex;
       padding-left: $column-gutter-lg/2;
 
       > p {
