@@ -1,4 +1,5 @@
 import { bool, func, shape, string } from 'prop-types';
+import React from 'react';
 import { Provider } from 'unstated';
 import * as uuid from 'uuid';
 
@@ -105,7 +106,6 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
         components,
     };
 
-    console.log(pageProps);
     return (
         <Provider>
             <Header {...headerProps} />

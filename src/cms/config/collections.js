@@ -92,13 +92,25 @@ export default [
         fields: [
             page.title,
             page.subTitle,
-            page.introduction,
             {
-                label: 'Show Introduction?',
-                name: 'show',
-                widget: 'boolean',
-                required: false,
-                default: true,
+                label: 'Page Introduction (menu text)',
+                name: 'introduction',
+                widget: 'object',
+                fields: [
+                    {
+                        label: 'Show Introduction?',
+                        name: 'show',
+                        widget: 'boolean',
+                        required: false,
+                        default: false,
+                    },
+                    {
+                        label: 'Text',
+                        name: 'text',
+                        widget: 'markdown',
+                        required: true,
+                    },
+                ],
             },
             {
                 label: 'Author Name',
