@@ -17,7 +17,11 @@ module.exports = config => {
         ],
     });
 
-    config.plugins.push(new CopyWebpackPlugin([{ from: 'static' }]));
+    config.plugins.push(
+        new CopyWebpackPlugin({
+            patterns: [{ from: 'static' }],
+        })
+    );
 
     config.resolve.mainFields = ['browser', 'module', 'main'];
     const cssLoaderIndex = config.module.rules.findIndex(rule => rule.test.source === `\\.css$`);

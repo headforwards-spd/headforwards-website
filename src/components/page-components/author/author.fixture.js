@@ -2,25 +2,26 @@ import faker from 'faker/locale/en_GB';
 import React from 'react';
 import { useValue } from 'react-cosmos/fixture';
 
+import FixtureLayout from '../../page-layout/FixtureLayout';
 import Author from './author.component';
 
-const defaultProfilePic = `https://loremflickr.com/300/300/headshot`;
-const defaultName = `${faker.name.firstName()} ${faker.name.lastName()}`;
-const defaultJobTitle = faker.name.jobTitle();
-const defaultBio = faker.lorem.paragraph();
-
-export default () => {
-    const [profilePic] = useValue('Profile Pic', { defaultValue: defaultProfilePic });
-    const [name] = useValue('Name', { defaultValue: defaultName });
-    const [jobTitle] = useValue('Job Title', { defaultValue: defaultJobTitle });
-    const [bio] = useValue('Bio', { defaultValue: defaultBio });
-
-    const props = {
-        bio,
-        name,
-        profilePic,
-        jobTitle,
-    };
-
-    return <Author {...props} />;
+export default {
+    'Author Component': Component,
 };
+
+const defaultValue = {
+    bio: faker.lorem.paragraph(),
+    name: `${faker.name.firstName()} ${faker.name.lastName()}`,
+    profilePic: faker.image.avatar(),
+    jobTitle: faker.name.jobTitle(),
+};
+
+function Component() {
+    const [props] = useValue('Props', { defaultValue });
+
+    return (
+        <FixtureLayout>
+            <Author {...props} />
+        </FixtureLayout>
+    );
+}

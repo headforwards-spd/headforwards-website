@@ -2,6 +2,5 @@
   "watchDirs": ["src"],
   "webpack": {
     "overridePath": "webpack.cosmos.js"
-  },
-  "globalImports": ["src/scss/main.scss", "src/scss/storybook.scss"]
+  }
 }
