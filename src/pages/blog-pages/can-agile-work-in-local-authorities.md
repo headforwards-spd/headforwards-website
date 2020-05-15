@@ -15,16 +15,18 @@ author: 8d241049-6ed4-45ff-aaf8-488d06871310
 components:
   - content:
       - text: >-
-          Cornwall Council turned to Headforwards with this question. The IT
-          team had developed a project called Turning the tanker, the name
-          itself demonstrating they were under no illusions as to the scale of
-          the challenge they were undertaking. The IT team were working on a
-          list of 70 projects, running simultaneously. They were struggling to
-          move the entire council workforce onto a new operating system and they
-          were planning to undertake a digital transformation of all their data.
-          The challenge for the leadership was significant and they were
-          prepared to change approach and adopt an Agile methodology if it could
-          help them move things forward.
+          [Cornwall Council](https://www.cornwall.gov.uk/) turned to
+          Headforwards with this question. The IT team had developed a project
+          called Turning the tanker, the name itself demonstrating they were
+          under no illusions as to the scale of the challenge they were
+          undertaking. The IT team were working on a list of 70 projects,
+          running simultaneously. They were struggling to move the entire
+          council workforce onto a new operating system and they were planning
+          to undertake a digital transformation of all their data. The challenge
+          for the leadership was significant and they were prepared to change
+          approach and adopt an [Agile
+          methodology](https://deploy-preview-41--headforwards-website2.netlify.app/what-we-do/create-value-through-software/)
+          if it could help them move things forward.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -83,23 +85,28 @@ components:
     type: image-copy-component
   - content:
       - text: >-
-          From the little seed planted at Agile on the Beach, Cornwall Council
-          have gone through some impressive change.   They’ve restructured their
-          IT Team and have evolved from a project to a product based approach
-          (need more details on exactly what this means) and using Agile to
-          deliver results. Headforwards is supporting with a number of
-          development projects and we’re continuing to help them bed into an
-          Agile methodology, encompassing and accommodating issues within the
-          plan rather than wasting time trying to work around them.   Agile
-          really can help local authorities deliver value and make the difficult
+          From the little seed planted at [Agile on the
+          Beach](https://agileonthebeach.com/), Cornwall Council have gone
+          through some impressive change.   They’ve restructured their IT Team
+          and have evolved from a project to a product based approach (need more
+          details on exactly what this means) and using Agile to deliver
+          results. Headforwards is supporting with a number of development
+          projects and we’re continuing to help them bed into an Agile
+          methodology, encompassing and accommodating issues within the plan
+          rather than wasting time trying to work around them.   Agile really
+          can help local authorities deliver value and make the difficult
           changes to how they manage their data in the future. But there’s no
           use trying to drive the tanker as you would a speedboat.
         type: markdown-component
     isPostit: false
     isRightImage: false
     isTwoColumns: true
+    linkFields:
+      - linkText: Read more
     title: 'No more business as usual '
     type: image-copy-component
+footerLinks:
+  - {}
 uuid: d4bb7510-861d-11ea-81f7-196976a6717d
 type: blog-page
 ---
