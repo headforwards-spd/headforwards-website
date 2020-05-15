@@ -10,6 +10,7 @@ introduction:
     Agile and best practice, but it’s also a great place for people to get to
     understand the principals of an Agile methodology. For our local authority,
     Agile on the Beach sparked the question, “How could we become more Agile?”
+show: true
 author: 8d241049-6ed4-45ff-aaf8-488d06871310
 components:
   - content:
