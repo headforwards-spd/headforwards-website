@@ -44,7 +44,7 @@ menu:
           - link: 87ef9080-0f86-11ea-9e15-59d1e5da42db
             linkText: Tech in Cornwall
           - link: 97f70000-0fac-11ea-b2ae-07531833e614
-            linkText: 'Training, development and growth'
+            linkText: "Training, development and growth"
           - link: 22fe4f48-37d3-11ea-aec2-2e728ce88125
             linkText: Our Benefits
         link: 5fc0e4d0-0fac-11ea-8ab2-d74757235dd0
@@ -57,7 +57,7 @@ menu:
           - link: fe585b60-1528-11ea-a6b5-63ea6add32fb
             linkText: Front End
           - link: 7ccaa0e0-152c-11ea-a47f-c360f0875c84
-            linkText: 'Perl, Python and Golang'
+            linkText: "Perl, Python and Golang"
         link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
         linkText: Teams and tech
       - link: 22fe4ade-37d3-11ea-aec2-2e728ce88125
