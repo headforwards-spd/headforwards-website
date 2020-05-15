@@ -106,7 +106,11 @@ components:
     title: 'No more business as usual '
     type: image-copy-component
 footerLinks:
-  - {}
+  - link1: 53629a60-103a-11ea-9ef0-bd54961b4e30
+    link2: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+    link3: 359e0550-009f-11ea-b6f6-d743f848720a
+    showImages: false
+    title: Similar reading
 uuid: d4bb7510-861d-11ea-81f7-196976a6717d
 type: blog-page
 ---
