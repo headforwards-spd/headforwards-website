@@ -6,6 +6,7 @@
     "build:app": "npm run clean && gatsby build",
     "build:storybook": "NODE_ENV=production build-storybook -s ./public,./static",
     "clean": "gatsby clean",
+    "cosmos": "cosmos",
     "lint": "eslint '**/*.{js,jsx}'",
     "lint:fix": "run-p lint:fix:**",
     "lint:fix:javascript": "eslint --fix '**/*.js'",
@@ -72,6 +73,7 @@
     "prop-types": "^15.6.0",
     "querystring": "^0.2.0",
     "react": "^16.8.4",
+    "react-cosmos": "^5.2.1",
     "react-helmet": "^5.2.0",
     "react-immutable-proptypes": "^2.1.0",
     "react-is-scrolling": "^1.0.1",
@@ -87,7 +89,8 @@
     "uuid": "^3.3.3",
     "wordpress-gatsby-migrator": "^1.0.6",
     "yamljs": "^0.3.0",
-    "yup": "^0.28.0"
+    "yup": "^0.28.0",
+    "copy-webpack-plugin": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
