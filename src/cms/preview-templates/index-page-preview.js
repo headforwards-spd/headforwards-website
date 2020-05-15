@@ -6,11 +6,11 @@ import * as uuid from 'uuid';
 import Footer from '../../components/page-layout/footer/footer.component';
 import Header from '../../components/page-layout/header/header.component';
 import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
-import InfoPage from '../../components/page-templates/info-page/info-page.template';
+import IndexPage from '../../components/page-templates/index-page/index-page.template';
 
-export default InfoPagePreview;
+export default IndexPagePreview;
 
-InfoPagePreview.propTypes = {
+IndexPagePreview.propTypes = {
     entry: shape({
         data: shape({
             title: string.isRequired,
@@ -29,7 +29,7 @@ InfoPagePreview.propTypes = {
     getAsset: func.isRequired,
 };
 
-function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
+function IndexPagePreview({ entry, fieldsMetaData, getAsset }) {
     const { data } = entry.toJS();
     const {
         title = '',
@@ -98,13 +98,14 @@ function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
     const pageProps = {
         introduction,
         components,
+        pages: getPages(),
     };
 
     return (
         <Provider>
             <Header {...headerProps} />
             <main>
-                <InfoPage {...pageProps} />
+                <IndexPage {...pageProps} />
             </main>
             <Footer
                 {...{
@@ -147,4 +148,20 @@ function getFooterLink({ showImages, page }) {
         image,
         introduction,
     };
+}
+
+function getPages() {
+    return [
+        {
+            uuid: uuid(),
+            link: uuid(),
+            linkText: 'Page title here.',
+            page: {
+                frontmatter: {
+                    introduction: { text: 'Page introduction here.' },
+                    image: { image: '/uploads/icon.black.png' },
+                },
+            },
+        },
+    ];
 }

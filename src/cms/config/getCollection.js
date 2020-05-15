@@ -1,4 +1,5 @@
 import articleComponent from './components/article-component';
+import authorComponent from './components/author-component';
 import blogPostComponent from './components/blog-post-component';
 import contentSliderComponent from './components/content-slider-component';
 import imageCopyComponent from './components/image-copy-component';
@@ -112,6 +113,7 @@ export const pageComponents = {
         imageCopyComponent,
         articleComponent,
         blogPostComponent,
+        authorComponent,
         contentSliderComponent,
     ],
 };

@@ -34,8 +34,8 @@ exports.onCreateNode = ({ node, actions }) => {
 
     if (type === `MarkdownRemark`) {
         const { frontmatter } = node;
-        const { title } = frontmatter;
-        const value = makeSlug(title, slugOptions);
+        const { title, name } = frontmatter;
+        const value = makeSlug(title, slugOptions) || makeSlug(name, slugOptions);
 
         return createNodeField({
             name: `slug`,
@@ -203,7 +203,9 @@ function getData(graphql) {
             }
 
             pages: allMarkdownRemark(
-                filter: { frontmatter: { type: { in: ["info-page", "legal-page", "home-page", "jobs-page"] } } }
+                filter: {
+                    frontmatter: { type: { in: ["info-page", "legal-page", "home-page", "jobs-page", "blog-page"] } }
+                }
             ) {
                 nodes {
                     id

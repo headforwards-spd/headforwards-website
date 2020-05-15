@@ -1,4 +1,5 @@
 import imageCopyComponent from './components/image-copy-component';
+import linkAuthor from './components/link-author';
 import getCollection, * as page from './getCollection';
 import parentOptions from './parentOptions';
 
@@ -42,6 +43,67 @@ export default [
                         required: true,
                     },
                 ],
+            },
+            page.pageComponents,
+            page.footerLinks,
+            page.callToAction,
+            page.seo,
+            page.uuid,
+            page.type,
+        ],
+    },
+    {
+        label: 'Authors',
+        label_singular: 'Author',
+        name: 'author-pages',
+        folder: 'src/pages/author-pages',
+        create: false,
+        delete: false,
+        identifier_field: 'name',
+        fields: [
+            {
+                label: 'ID',
+                name: 'uuid',
+                widget: 'uuid',
+                required: false,
+                default: null,
+            },
+            {
+                label: 'Author Name',
+                name: 'name',
+                widget: 'string',
+            },
+        ],
+    },
+    {
+        label: 'Blog Pages',
+        label_singular: 'Blog Page',
+        name: 'blog-pages',
+        description: 'Blog Pages',
+        folder: 'src/pages/blog-pages',
+        create: true,
+        slug: '{{slug}}',
+        preview_path: '{{slug}}',
+        identifier_field: 'title',
+        filter: {
+            field: 'type',
+            value: 'blog-page',
+        },
+        fields: [
+            page.title,
+            page.subTitle,
+            page.introduction,
+            {
+                label: 'Show Introduction?',
+                name: 'show',
+                widget: 'boolean',
+                required: false,
+                default: true,
+            },
+            {
+                label: 'Author Name',
+                name: 'author',
+                ...linkAuthor,
             },
             page.pageComponents,
             page.footerLinks,
