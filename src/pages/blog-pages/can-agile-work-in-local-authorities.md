@@ -10,7 +10,8 @@ introduction:
     Agile and best practice, but it’s also a great place for people to get to
     understand the principals of an Agile methodology. For our local authority,
     Agile on the Beach sparked the question, “How could we become more Agile?”
-author: c038aaac-943e-11ea-bb37-0242ac130002
+show: true
+author: 8d241049-6ed4-45ff-aaf8-488d06871310
 components:
   - content:
       - text: >-
@@ -28,7 +29,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Turning the tanker "
+    title: 'Turning the tanker '
     type: image-copy-component
   - content:
       - text: >-
@@ -58,7 +59,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Agile in local authority? "
+    title: 'Agile in local authority? '
     type: image-copy-component
   - content:
       - text: >-
@@ -78,7 +79,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Agile in a crisis "
+    title: 'Agile in a crisis '
     type: image-copy-component
   - content:
       - text: >-
@@ -97,8 +98,9 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "No more business as usual "
+    title: 'No more business as usual '
     type: image-copy-component
 uuid: d4bb7510-861d-11ea-81f7-196976a6717d
 type: blog-page
 ---
+
