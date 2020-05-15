@@ -93,6 +93,11 @@ export default [
             page.title,
             page.subTitle,
             {
+                label: 'Author Name',
+                name: 'author',
+                ...linkAuthor,
+            },
+            {
                 label: 'Page Introduction (menu text)',
                 name: 'introduction',
                 widget: 'object',
@@ -111,11 +116,6 @@ export default [
                         required: true,
                     },
                 ],
-            },
-            {
-                label: 'Author Name',
-                name: 'author',
-                ...linkAuthor,
             },
             page.pageComponents,
             page.footerLinks,

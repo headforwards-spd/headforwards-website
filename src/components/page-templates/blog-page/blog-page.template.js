@@ -29,12 +29,13 @@ BlogPage.defaultProps = {
 };
 
 function BlogPage({ introduction, components = [], author }) {
+    console.log(introduction);
     const { show, text } = introduction;
 
     return (
         <>
-            {show && <IntroductionComponent introduction={text} />}
             {author && <Author {...author} />}
+            {show && <IntroductionComponent introduction={text} />}
             {components && (
                 <section>
                     {!!components &&
