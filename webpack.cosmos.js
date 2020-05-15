@@ -20,14 +20,11 @@ module.exports = config => {
     config.plugins.push(new CopyWebpackPlugin([{ from: 'static' }]));
 
     config.resolve.mainFields = ['browser', 'module', 'main'];
-    // Find Storybook's default CSS processing rule
     const cssLoaderIndex = config.module.rules.findIndex(rule => rule.test.source === `\\.css$`);
     if (!Number.isInteger(cssLoaderIndex)) {
         throw new Error("Could not find Storybook's CSS loader");
     }
-    // Exclude CSS Modules from Storybook's standard CSS processing
     config.module.rules[cssLoaderIndex].exclude = /\.module\.css$/;
-    // Add specific loader rule for CSS Modules
     config.module.rules.push({
         test: /\.scss$/,
         loaders: [
@@ -55,7 +52,6 @@ module.exports = config => {
         return rule;
     });
 
-    // use svgr for svg files
     config.module.rules.push({
         test: /\.svg$/,
         use: ['@svgr/webpack', 'url-loader'],
