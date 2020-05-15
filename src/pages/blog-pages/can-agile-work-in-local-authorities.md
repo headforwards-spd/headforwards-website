@@ -25,7 +25,7 @@ components:
           to undertake a digital transformation of all their data. The challenge
           for the leadership was significant and they were prepared to change
           approach and adopt an [Agile
-          methodology](https://deploy-preview-41--headforwards-website2.netlify.app/what-we-do/create-value-through-software/)
+          methodology](/what-we-do/create-value-through-software/)
           if it could help them move things forward.
         type: markdown-component
     isPostit: false
