@@ -2,10 +2,10 @@
 import '../../scss/main.scss';
 import '../../scss/cosmos.scss';
 
-import { node } from 'prop-types';
-import React from 'react';
+import { node, string } from "prop-types";
+import React            from 'react';
 
-import styles from './layout.stories.modules.scss';
+import styles from './theme.modules.scss';
 
 // Gatsby's Link overrides:
 // Gatsby defines a global called ___loader to prevent its method calls from creating console errors you override it here
@@ -21,15 +21,17 @@ window.___navigate = () => {};
 export default FixtureLayout;
 
 FixtureLayout.propTypes = {
+    className: string,
     children: node,
 };
 FixtureLayout.defaultProps = {
+    className: '',
     children: null,
 };
 
-function FixtureLayout({ children }) {
+function FixtureLayout({ className, children }) {
     return (
-        <div className={styles.storiesLayout}>
+        <div className={`${styles.storiesLayout} ${className}`}>
             <main>{children}</main>
         </div>
     );

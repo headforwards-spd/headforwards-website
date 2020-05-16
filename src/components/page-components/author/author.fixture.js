@@ -4,6 +4,7 @@ import { useValue } from 'react-cosmos/fixture';
 
 import FixtureLayout from '../../page-layout/FixtureLayout';
 import Author from './author.component';
+import styles from './author.module.scss';
 
 export default {
     'Author Component': Component,
@@ -20,7 +21,7 @@ function Component() {
     const [props] = useValue('Props', { defaultValue });
 
     return (
-        <FixtureLayout>
+        <FixtureLayout className={styles.fixture}>
             <Author {...props} />
         </FixtureLayout>
     );
