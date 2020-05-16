@@ -23,7 +23,7 @@ function SocialMediaIcons() {
 
     return (
         <FixtureLayout>
-            <Socials {...props} activeClass={'menu-open'} />
+            <Socials {...props} activeClass="menu-open" />
         </FixtureLayout>
     );
 }

@@ -6,9 +6,9 @@ import FixtureLayout from './FixtureLayout';
 import styles from './theme.modules.scss';
 
 export default {
-    Colours: Colours,
-    Headings: Headings,
-    Paragraphs: Paragraphs,
+    Colours,
+    Headings,
+    Paragraphs,
     'Small Copy': SmallCopy,
     'Medium Copy': MediumCopy,
     'Large Copy': LargeCopy,

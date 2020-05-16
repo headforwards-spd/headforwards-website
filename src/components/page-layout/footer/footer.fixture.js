@@ -1,10 +1,9 @@
-import React from 'react';
-import FixtureLayout from '../FixtureLayout';
-
-import Footer from './footer.component';
-
 import faker from 'faker/locale/en_GB';
+import React from 'react';
 import { useValue } from 'react-cosmos/fixture';
+
+import FixtureLayout from '../FixtureLayout';
+import Footer from './footer.component';
 
 export default {
     'Footer Component': Component,
