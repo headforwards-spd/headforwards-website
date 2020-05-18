@@ -1,35 +1,29 @@
-import { object, text, withKnobs } from '@storybook/addon-knobs';
+import faker from 'faker/locale/en_GB';
 import React from 'react';
+import { useValue } from 'react-cosmos/fixture';
 
 import generateImage from '../../../lib/generate-image';
 import ContentSlider from './content-slider.component';
 
-const faker = require('faker');
-
 export default {
-    decorators: [withKnobs],
-    title: 'Page Components/Image Slider',
+    'Content Slider Component': Component,
 };
 
-const groupId = 'slider-group';
-
-const titleLabel = 'Header';
 const titleValue = faker.lorem.words;
-
 const textValue = faker.lorem.paragraph;
-
 const linkTextValue = faker.lorem.sentence;
-
 const linkValue = () => `/${faker.lorem.slug()}`;
 
-export const interactive = () => {
-    const props = {
-        title: text(titleLabel, titleValue(), groupId),
-        articles: object('Articles', generateSlides(), groupId),
-    };
+const defaultValue = {
+    title: titleValue(),
+    articles: generateSlides(),
+};
+
+function Component() {
+    const [props] = useValue('Props', { defaultValue });
 
     return <ContentSlider {...props} />;
-};
+}
 
 function generateSlides() {
     const count = faker.random.number({
@@ -47,6 +41,7 @@ function generateSlides() {
 
 function generateSlide() {
     return {
+        id: faker.random.uuid(),
         title: titleValue(),
         image: generateImage(),
         text: textValue(),

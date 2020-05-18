@@ -6,7 +6,6 @@
 
 .blogPostColumns {
   @include fontMedium;
-
   @include component-gutter;
 
   > h2 {
@@ -49,34 +48,36 @@
               rgba(#ffb800, 0.6) 50%,
               transparent 50%
             );
-            border-radius: 0 0 $column-gutter-sm/2 0;
+            border-radius: 0 0 $column-gutter-sm 0;
             bottom: -$column-gutter-sm/2;
             content: "";
-            padding-bottom: 37.5%;
+            padding-bottom: 25%;
             position: absolute;
             right: $column-gutter-sm/2;
-            width: 37.5%;
+            width: 25%;
             z-index: 10;
             @media (min-width: $screen-md) {
-              bottom: -$column-gutter-md/2;
-              right: -$column-gutter-md/2;
-              //right: $gutter-small - $gutter-medium;
-              //margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small});
+              bottom: -$column-gutter-md/4;
+              right: $column-gutter-md/4;
+            }
+            @media (min-width: $screen-lg) {
+              bottom: -$column-gutter-lg/4;
+              right: $column-gutter-lg/4;
             }
           }
 
           &:after {
-            background-image: url(/images/hf-arrow.white.svg);
-            bottom: $column-gutter-sm;
+            content: "";
             position: absolute;
-            right: $column-gutter-sm * 2;
-            width: 15%;
+            background: url(/images/hf-arrow.white.svg);
+            bottom: $column-gutter-sm;
+            right: $column-gutter-sm * 1.5;
+            width: 1.5em;
+            height: 1.5em;
             z-index: 20;
             @media (min-width: $screen-md) {
-              bottom: 0;
-              right: $column-gutter-md/2;
-              //right: 1.5*$gutter-small - $gutter-medium;
-              //margin-top: calc(62.5% + #{1.25*$gutter-medium} + #{$gutter-small/4});
+              bottom: $column-gutter-md/2;
+              right: $column-gutter-md;
             }
           }
         }
@@ -89,17 +90,10 @@
           .image {
             margin: 0 0 #{$rhythm-unit}em;
           }
-
-          //&:before {
-          //    right: $gutter-small;
-          //    margin-top: calc(62.5% + #{$gutter-small});
-          //}
-          //
-          //a {
-          //    right: $gutter-small;
-          //    margin-top: calc(62.5% + #{$gutter-small});
-          //}
         }
+      }
+      @media (min-width: $screen-lg) {
+        width: calc(50% - #{$column-gutter-lg});
       }
     }
   }

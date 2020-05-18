@@ -4,8 +4,8 @@
   "scripts": {
     "build": "run-p build:**",
     "build:app": "npm run clean && gatsby build",
-    "build:storybook": "NODE_ENV=production build-storybook -s ./public,./static",
     "clean": "gatsby clean",
+    "cosmos": "cosmos",
     "lint": "eslint '**/*.{js,jsx}'",
     "lint:fix": "run-p lint:fix:**",
     "lint:fix:javascript": "eslint --fix '**/*.js'",
@@ -16,7 +16,6 @@
     "sonar": "npm run lint:report; npm run test; sonar-scanner",
     "start": "run-p start:**",
     "start:app": "npm run clean && gatsby develop",
-    "start:storybook": "NODE_ENV=production start-storybook -s ./public,./static",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
@@ -30,8 +29,6 @@
     "@mdx-js/react": "^1.5.1",
     "@mkitio/gatsby-theme-password-protect": "^2.1.1",
     "@reach/router": "^1.2.1",
-    "@storybook/addon-knobs": "^5.2.6",
-    "@storybook/addon-links": "^5.2.6",
     "axios": "^0.19.0",
     "core-js": "3",
     "eslint-plugin-autofix": "^0.0.9",
@@ -72,6 +69,7 @@
     "prop-types": "^15.6.0",
     "querystring": "^0.2.0",
     "react": "^16.8.4",
+    "react-cosmos": "^5.2.1",
     "react-helmet": "^5.2.0",
     "react-immutable-proptypes": "^2.1.0",
     "react-is-scrolling": "^1.0.1",
@@ -87,15 +85,11 @@
     "uuid": "^3.3.3",
     "wordpress-gatsby-migrator": "^1.0.6",
     "yamljs": "^0.3.0",
-    "yup": "^0.28.0"
+    "yup": "^0.28.0",
+    "copy-webpack-plugin": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@storybook/addon-storysource": "^5.2.6",
-    "@storybook/addon-viewport": "^5.2.6",
-    "@storybook/addons": "^5.2.6",
-    "@storybook/react": "^5.2.6",
     "@svgr/webpack": "^4.3.3",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
@@ -126,7 +120,6 @@
     "prettier-plugin-package": "^0.3.1",
     "react-dom": "^16.8.4",
     "react-test-renderer": "^16.8.6",
-    "storybook": "^5.1.11",
     "stylelint": "^13.1.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-prettier": "^1.1.2",
