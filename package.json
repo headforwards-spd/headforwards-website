@@ -69,7 +69,6 @@
     "prop-types": "^15.6.0",
     "querystring": "^0.2.0",
     "react": "^16.8.4",
-    "react-cosmos": "^5.2.1",
     "react-helmet": "^5.2.0",
     "react-immutable-proptypes": "^2.1.0",
     "react-is-scrolling": "^1.0.1",
@@ -85,8 +84,7 @@
     "uuid": "^3.3.3",
     "wordpress-gatsby-migrator": "^1.0.6",
     "yamljs": "^0.3.0",
-    "yup": "^0.28.0",
-    "copy-webpack-plugin": "^6.0.0"
+    "yup": "^0.28.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -118,6 +116,7 @@
     "pre-commit": "^1.2.2",
     "prettier": "^1.19.1",
     "prettier-plugin-package": "^0.3.1",
+    "react-cosmos": "^5.2.1",
     "react-dom": "^16.8.4",
     "react-test-renderer": "^16.8.6",
     "stylelint": "^13.1.0",
