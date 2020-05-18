@@ -38,7 +38,6 @@ function Author({ bio, profilePic, name, jobTitle }) {
                             {!!jobTitle && <p>{jobTitle}</p>}
                         </section>
                     </footer>
-
                 )}
                 <p>{preventOrphans(bio)}</p>
             </blockquote>

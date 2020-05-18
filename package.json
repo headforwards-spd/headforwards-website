@@ -86,14 +86,14 @@
     "uuid": "^3.3.3",
     "wordpress-gatsby-migrator": "^1.0.6",
     "yamljs": "^0.3.0",
-    "yup": "^0.28.0"
+    "yup": "^0.28.0",
+    "copy-webpack-plugin": "~5"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@svgr/webpack": "^4.3.3",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
-    "copy-webpack-plugin": "~5",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.0.0",
