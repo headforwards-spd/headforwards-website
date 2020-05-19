@@ -33,8 +33,8 @@ function BlogPage({ introduction, components = [], author }) {
 
     return (
         <>
-            {show && <IntroductionComponent introduction={text} />}
             {author && <Author {...author} />}
+            {show && <IntroductionComponent introduction={text} />}
             {components && (
                 <section>
                     {!!components &&

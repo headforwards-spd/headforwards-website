@@ -1,7 +1,8 @@
 import { string } from 'prop-types';
 import React from 'react';
 
-import Form from '../../page-components/forms/contact-form/contact-form.component';
+import Form   from '../../page-components/forms/contact-form/contact-form.component';
+import Link   from '../../page-layout/link/link.component';
 import styles from './contact.module.scss';
 
 const contactPropTypes = {
@@ -46,10 +47,16 @@ function Contact({ companyName, mapUrl, email, jobsEmail, phone, address, regist
                     </section>
                     <dl>
                         <dt>Telephone.</dt>
-                        <dd>{phone}</dd>
+                        <dd>
+                            <Link to={`tel:${phone}`}>{phone}</Link>
+                        </dd>
                         <dt>Email.</dt>
-                        <dd>{email}</dd>
-                        <dd>{jobsEmail}</dd>
+                        <dd>
+                            <Link to={`mailto:${email}`}>{email}</Link>
+                        </dd>
+                        <dd>
+                            <Link to={`mailto:${jobsEmail}`}>{jobsEmail}</Link>
+                        </dd>
                     </dl>
                 </address>
                 <Form formName="contact" />

@@ -1,15 +1,11 @@
-import { text } from '@storybook/addon-knobs';
-
-const faker = require('faker');
-
-const companyInfoGroup = 'Company Info';
+import faker from 'faker/locale/en_GB';
 
 const companyInfoStoryProps = {
-    twitterURL: text('Twitter URL', faker.internet.url(), companyInfoGroup),
-    facebookURL: text('Facebook URL', faker.internet.url(), companyInfoGroup),
-    instagramURL: text('Instagram URL', faker.internet.url(), companyInfoGroup),
-    linkedInURL: text('LinkedIn URL', faker.internet.url(), companyInfoGroup),
-    youtubeURL: text('YouTube URL', faker.internet.url(), companyInfoGroup),
+    twitterURL: faker.internet.url(),
+    facebookURL: faker.internet.url(),
+    instagramURL: faker.internet.url(),
+    linkedInURL: faker.internet.url(),
+    youtubeURL: faker.internet.url(),
 };
 
 export default companyInfoStoryProps;

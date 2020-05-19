@@ -1,22 +1,26 @@
-import { withKnobs } from '@storybook/addon-knobs';
+import faker from 'faker/locale/en_GB';
 import { string } from 'prop-types';
 import React from 'react';
 
-import styles from './layout.stories.modules.scss';
-import StoriesLayout from './stories-layout.component';
+import FixtureLayout from './FixtureLayout';
+import styles from './theme.modules.scss';
 
-const faker = require('faker');
+export default {
+    Colours,
+    Headings,
+    Paragraphs,
+    'Small Copy': SmallCopy,
+    'Medium Copy': MediumCopy,
+    'Large Copy': LargeCopy,
+    'Extra Large Copy': XLargeCopy,
+    '2X Large Copy': XXLargeCopy,
+};
 
 const testText = `The quick brown fox jumps over the lazy dog. $123.45!`;
 
-export default {
-    title: 'Page Layout/Typography',
-    decorators: [withKnobs],
-};
-
-export const Colours = () => {
+function Colours() {
     return (
-        <StoriesLayout>
+        <FixtureLayout>
             <dl className={styles.colours}>
                 <dt className={styles.orange1} />
                 <dd>Orange 1 (#ffb900)</dd>
@@ -49,15 +53,15 @@ export const Colours = () => {
                 <dt className={styles.grey11} />
                 <dd>Grey 11 (#d6d7da)</dd>
             </dl>
-        </StoriesLayout>
+        </FixtureLayout>
     );
-};
+}
 
-export const Headings = () => {
+function Headings() {
     const title = testText;
 
     return (
-        <StoriesLayout>
+        <FixtureLayout>
             <section className={styles.wrapper}>
                 <h2 className={styles.xxxl}>XXXLarge: {title}</h2>
                 <h2 className={styles.xxl}>XXLarge: {title}</h2>
@@ -66,15 +70,15 @@ export const Headings = () => {
                 <h2 className={styles.md}>Medium: {title}</h2>
                 <h2 className={styles.sm}>Small: {title}</h2>
             </section>
-        </StoriesLayout>
+        </FixtureLayout>
     );
-};
+}
 
-export const Paragraphs = () => {
+function Paragraphs() {
     const copy = faker.lorem.paragraph();
 
     return (
-        <StoriesLayout>
+        <FixtureLayout>
             <section className={styles.wrapper}>
                 <p className={styles.xxl}>XXLarge: {copy}</p>
                 <p className={styles.xl}>XLarge: {copy}</p>
@@ -82,39 +86,39 @@ export const Paragraphs = () => {
                 <p className={styles.md}>Medium: {copy}</p>
                 <p className={styles.sm}>Small: {copy}</p>
             </section>
-        </StoriesLayout>
+        </FixtureLayout>
     );
-};
+}
 
-export const SmallCopy = () => {
+function SmallCopy() {
     const className = `${styles.wrapper} ${styles.sm}`;
 
     return <CopySection className={className} />;
-};
+}
 
-export const MediumCopy = () => {
+function MediumCopy() {
     const className = `${styles.wrapper} ${styles.md}`;
 
     return <CopySection className={className} />;
-};
+}
 
-export const LargeCopy = () => {
+function LargeCopy() {
     const className = `${styles.wrapper} ${styles.lg}`;
 
     return <CopySection className={className} />;
-};
+}
 
-export const XLargeCopy = () => {
+function XLargeCopy() {
     const className = `${styles.wrapper} ${styles.xl}`;
 
     return <CopySection className={className} />;
-};
+}
 
-export const XXLargeCopy = () => {
+function XXLargeCopy() {
     const className = `${styles.wrapper} ${styles.xxl}`;
 
     return <CopySection className={className} />;
-};
+}
 
 Heading.propTypes = {
     text: string,
@@ -124,7 +128,6 @@ Heading.defaultProps = {
     text: testText,
     className: '',
 };
-
 function Heading({ text, className }) {
     return <h2 className={className}>{text}</h2>;
 }
@@ -137,7 +140,6 @@ Paragraph.defaultProps = {
     text: testText,
     className: '',
 };
-
 function Paragraph({ text, className }) {
     return <p className={className}>{text}</p>;
 }
@@ -152,7 +154,6 @@ Section.defaultProps = {
     heading: testText,
     copy: testText,
 };
-
 function Section({ className, heading, copy }) {
     return (
         <section className={className}>
@@ -165,13 +166,12 @@ function Section({ className, heading, copy }) {
 }
 
 CopySection.propTypes = { className: string.isRequired };
-
 function CopySection({ className }) {
     const heading = faker.lorem.words();
     const copy = faker.lorem.paragraphs().split('\n');
 
     return (
-        <StoriesLayout>
+        <FixtureLayout>
             <section className={styles.columns}>
                 <Section
                     {...{
@@ -195,6 +195,6 @@ function CopySection({ className }) {
                     }}
                 />
             </section>
-        </StoriesLayout>
+        </FixtureLayout>
     );
 }

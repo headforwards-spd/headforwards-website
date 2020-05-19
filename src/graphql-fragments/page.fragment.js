@@ -11,6 +11,7 @@ export const PageFragment = graphql`
                 frontmatter {
                     name
                     bio
+                    jobTitle
                     profilePic {
                         publicURL
                         childImageSharp {

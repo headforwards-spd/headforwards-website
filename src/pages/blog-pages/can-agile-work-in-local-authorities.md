@@ -1,7 +1,8 @@
 ---
 title: Can Agile work in local authorities?
+author: 8d241049-6ed4-45ff-aaf8-488d06871310
 introduction:
-  show: false
+  show: true
   text: >-
     The annual Agile on the Beach conference, co-founded by one of Headforwards’
     founders, Toby Parkins is now one of the most respected agile conferences in
@@ -10,8 +11,6 @@ introduction:
     Agile and best practice, but it’s also a great place for people to get to
     understand the principals of an Agile methodology. For our local authority,
     Agile on the Beach sparked the question, “How could we become more Agile?”
-show: true
-author: 8d241049-6ed4-45ff-aaf8-488d06871310
 components:
   - content:
       - text: >-
@@ -25,7 +24,7 @@ components:
           to undertake a digital transformation of all their data. The challenge
           for the leadership was significant and they were prepared to change
           approach and adopt an [Agile
-          methodology](https://deploy-preview-41--headforwards-website2.netlify.app/what-we-do/create-value-through-software/)
+          methodology](/what-we-do/create-value-through-software/)
           if it could help them move things forward.
         type: markdown-component
     isPostit: false

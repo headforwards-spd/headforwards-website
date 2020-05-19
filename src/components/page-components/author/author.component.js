@@ -9,6 +9,7 @@ const authorPropTypes = {
     bio: string.isRequired,
     name: string,
     profilePic: ImageSrcPropType,
+    jobTitle: string,
 };
 
 export default Author;
@@ -18,9 +19,10 @@ Author.propTypes = authorPropTypes;
 Author.defaultProps = {
     name: null,
     profilePic: null,
+    jobTitle: null,
 };
 
-function Author({ bio, profilePic, name }) {
+function Author({ bio, profilePic, name, jobTitle }) {
     return (
         <section className={`${styles.blockquoteContainer}`}>
             <blockquote>
@@ -31,6 +33,10 @@ function Author({ bio, profilePic, name }) {
                                 <Image className={styles.image} image={profilePic} ratio="100%" />
                             </div>
                         )}
+                        <section>
+                            <h2>{name}</h2>
+                            {!!jobTitle && <p>{jobTitle}</p>}
+                        </section>
                     </footer>
                 )}
                 <p>{preventOrphans(bio)}</p>
