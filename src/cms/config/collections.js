@@ -80,7 +80,7 @@ export default [
         label_singular: 'Blog Page',
         name: 'blog-pages',
         description: 'Blog Pages',
-        folder: 'src/pages/blog-pages',
+        folder: 'src/pages/info-pages',
         create: true,
         slug: '{{slug}}',
         preview_path: '{{slug}}',
