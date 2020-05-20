@@ -1,8 +1,8 @@
 import { string } from 'prop-types';
 import React from 'react';
 
-import Form   from '../../page-components/forms/contact-form/contact-form.component';
-import Link   from '../../page-layout/link/link.component';
+import Form from '../../page-components/forms/contact-form/contact-form.component';
+import Link from '../../page-layout/link/link.component';
 import styles from './contact.module.scss';
 
 const contactPropTypes = {

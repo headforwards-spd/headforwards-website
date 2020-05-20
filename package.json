@@ -31,6 +31,7 @@
     "@mkitio/gatsby-theme-password-protect": "^2.1.1",
     "@reach/router": "^1.2.1",
     "axios": "^0.19.0",
+    "copy-webpack-plugin": "~5",
     "core-js": "3",
     "eslint-plugin-autofix": "^0.0.9",
     "eslint-plugin-simple-import-sort": "^5.0.1",
@@ -40,6 +41,7 @@
     "gatsby-cli": "^2.8.30",
     "gatsby-image": "^2.2.32",
     "gatsby-plugin-facebook-pixel": "^1.0.3",
+    "gatsby-plugin-force-trailing-slashes": "^1.0.4",
     "gatsby-plugin-google-tagmanager": "^2.1.24",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-mdx": "^1.0.56",
@@ -86,8 +88,7 @@
     "uuid": "^3.3.3",
     "wordpress-gatsby-migrator": "^1.0.6",
     "yamljs": "^0.3.0",
-    "yup": "^0.28.0",
-    "copy-webpack-plugin": "~5"
+    "yup": "^0.28.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
