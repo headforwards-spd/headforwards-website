@@ -34,6 +34,7 @@ const plugins = [
     `gatsby-transformer-yaml-menu`,
     { ...gatsbyPluginManifest },
     { ...gatsbyPluginOffline },
+    `gatsby-plugin-force-trailing-slashes`,
     { ...gatsbyPluginSitemap },
     { ...gatsbyPluginRobotsTxt },
     { ...gatsbyPluginGoogleTagmanger },
