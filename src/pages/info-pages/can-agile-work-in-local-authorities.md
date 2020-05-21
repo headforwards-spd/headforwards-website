@@ -1,6 +1,7 @@
 ---
 title: Can Agile work in local authorities?
 author: 8d241049-6ed4-45ff-aaf8-488d06871310
+publishedDate: 2020-05-21T14:59:33.673Z
 introduction:
   show: true
   text: >-
