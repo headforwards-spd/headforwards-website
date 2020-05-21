@@ -32,7 +32,7 @@ BlogPage.defaultProps = {
 
 function BlogPage({ introduction, components = [], author, publishedDate }) {
     const { show, text } = introduction;
-console.log(publishedDate);
+    console.log(publishedDate);
     return (
         <>
             {author && <Author {...author} />}

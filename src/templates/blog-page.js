@@ -26,7 +26,14 @@ BlogPagePage.propTypes = {
 function BlogPagePage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { introduction, author: authorPage, components, footerLinks: rawFooterLinks, publishedDate, ...layoutProps } = frontmatter;
+    const {
+        introduction,
+        author: authorPage,
+        components,
+        footerLinks: rawFooterLinks,
+        publishedDate,
+        ...layoutProps
+    } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
     const { frontmatter: author } = authorPage || {};
     const pageProps = {
