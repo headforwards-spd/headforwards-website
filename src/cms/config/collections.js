@@ -4,7 +4,12 @@ import getCollection, * as page from './getCollection';
 import parentOptions from './parentOptions';
 
 export default [
-    ...parentOptions.map(({ label: title, value: slug }) => getCollection({ title, slug })),
+    ...parentOptions.map(({ label: title, value: slug }) =>
+        getCollection({
+            title,
+            slug,
+        })
+    ),
     {
         label: 'Index Pages',
         label_singular: 'Index Page',
@@ -96,6 +101,15 @@ export default [
                 label: 'Author Name',
                 name: 'author',
                 ...linkAuthor,
+            },
+            {
+                label: 'Publish Date',
+                name: 'publishedDate',
+                widget: 'datetime',
+                timeFormat: false,
+                dateFormat: 'DD.MM.YYYY',
+                required: false,
+                // hidden: true
             },
             {
                 label: 'Page Introduction (menu text)',
