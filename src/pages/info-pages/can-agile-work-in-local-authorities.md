@@ -24,85 +24,91 @@ components:
           to undertake a digital transformation of all their data. The challenge
           for the leadership was significant and they were prepared to change
           approach and adopt an [Agile
-          methodology](/what-we-do/create-value-through-software/)
-          if it could help them move things forward.
+          methodology](/what-we-do/create-value-through-software/) if it could
+          help them move things forward.
         type: markdown-component
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Turning the tanker "
+    title: 'Turning the tanker '
     type: image-copy-component
   - content:
       - text: >-
           In local authority, public sector and even some commercial
-          organisations, I’ve seen occasions where IT teams require a mandate to
-          get projects started. By the time it’s signed by all the relevant
-          people, the budget has been queried, refined and resubmitted, four
-          months or more have gone by and nothing has happened.  Local
-          authorities generally have fixed budgets with projects requiring
-          clearly defined outcomes and Agile, wrongfully, has a reputation for
-          lacking rules. The conversation between us and the council wasn’t to
-          force anything, we just encouraged them to start off by giving it a
-          try, see how it felt and review whether it was working.   The
-          advantage of Agile for local authorities is that you can start
-          producing software right away. With so many projects running, our
-          starting point was to cut through the noise and identify projects that
-          would add value quickly and that we could get moving on. In this case,
-          a new CXP for the HR department. We didn’t waste time creating an
-          infrastructure, developing gantt charts and deciding what the final
-          project would look like, we just starting building.   Within a week
-          the HR team had something to look at, they had something to feed back
-          to us on and within 6 months we had delivered two apps which they
-          could embed into their process right away. They have something of
-          value really quickly and now we’re building the backbone into it and
-          adding additional features.
+          organisations, I’ve often seen long winded processes requiring
+          mandates and multiple approval stages in order to get started. By the
+          time it’s signed by all the relevant people, the budget has been
+          queried, refined and resubmitted and many months could have passed.
+
+
+          I always say to people to just try something. It might not solve all
+          of your issues, but just have a go and see what it feels like. Agile
+          is often accused of lacking rules, but actually it has a really clear
+          structure. Challenging people and processes aren’t dodged but instead
+          encompassed within the approach, finding the best resolution to work
+          with and accommodate them, rather than worked around. 
+
+
+          We were able to start working with Cornwall Council so that
+          developments were delivered right away. We didn’t create an end to end
+          project plan and decide exactly what the final outcome would look like
+          in detail, we just started building. 
+
+
+          The Council has placed significant focus on customer experience and
+          our workshop approach meant the team could start looking at things
+          really quickly. In 6 months we have delivered two valuable
+          applications which the team are already using, quickly giving them
+          something of value. Now in use we are continually adding additional
+          features with the ability to test and adjust as we go.
+
+
+          The other area we have focused on is Business Intelligence which is
+          part of a digital transformation. There’s a huge amount of data, but
+          again using our methods we’ve moved quickly and delivered value very
+          quickly. I’ll get into the detail of this in another post.
         type: markdown-component
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Agile in local authority? "
+    title: 'Agile in local authority? '
     type: image-copy-component
   - content:
       - text: >-
-          The Coronavirus outbreak has put pressure on a lot of companies, but
-          the need for the council to respond quickly is enormous. As well as
-          their responsibility to support individuals, communities and
-          businesses, the council has XX employees of its own who, within a
-          matter of days all had to move from offices to home working.   The
-          digital transformation focused on the vast quantities of data the
-          council stores, but once the Coronavirus outbreak hit the urgent task
-          became establishing and supporting homeworking. They needed to know
-          who was working where and what they were doing and suddenly the data
-          had to wait. Because Headforwards is an Agile organisation we were
-          able to change our focus really quickly and redeploy our support
-          resources where they were needed.
+          Since the Coronavirus outbreak hit, the urgent task became less about
+          digital transformation and more about helping establish home working
+          support and working on priorities supporting the people of Cornwall.
+          Because we work to an agile methodology, we were able to change focus
+          and support them in the right way when they needed it. 
+
+
+          Aside from software development, our role with the council is
+          supportive and consultative. They’ve been through a process of immense
+          change, restructuring their IT Team and moving from a project to a
+          product based approach. Within the new structure, people have new
+          roles and we’ve worked closely with the core team to identify what
+          products the team are really working on, rather than managing a list
+          of many projects simultaneously that clearly aren’t all being moved
+          forward.
         type: markdown-component
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Agile in a crisis "
+    title: 'Agile in a crisis '
     type: image-copy-component
   - content:
       - text: >-
-          From the little seed planted at [Agile on the
-          Beach](https://agileonthebeach.com/), Cornwall Council have gone
-          through some impressive change.   They’ve restructured their IT Team
-          and have evolved from a project to a product based approach (need more
-          details on exactly what this means) and using Agile to deliver
-          results. Headforwards is supporting with a number of development
-          projects and we’re continuing to help them bed into an Agile
-          methodology, encompassing and accommodating issues within the plan
-          rather than wasting time trying to work around them.   Agile really
-          can help local authorities deliver value and make the difficult
-          changes to how they manage their data in the future. But there’s no
-          use trying to drive the tanker as you would a speedboat.
+          From that little seed planted at [Agile on the
+          Beach](https://agileonthebeach.com/), ur local authority has gone
+          through a real transformation in how they’re structured, how they
+          manage products and, of course in their new Agile approach.
         type: markdown-component
     isPostit: false
     isRightImage: false
     isTwoColumns: true
     linkFields:
       - linkText: Read more
-    title: "No more business as usual "
+    title: 'No more business as usual '
     type: image-copy-component
 footerLinks:
   - link1: 53629a60-103a-11ea-9ef0-bd54961b4e30
@@ -113,3 +119,4 @@ footerLinks:
 uuid: d4bb7510-861d-11ea-81f7-196976a6717d
 type: blog-page
 ---
+
