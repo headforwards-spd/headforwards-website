@@ -13,6 +13,7 @@ BlogPage.propTypes = {
         show: bool,
         text: string,
     }),
+    // publishedDate: string,
     components: arrayOf(PageComponentPropType),
     author: shape({
         uuid: string,
@@ -25,12 +26,12 @@ BlogPage.propTypes = {
 BlogPage.defaultProps = {
     introduction: null,
     components: null,
+    // publishedDate: null,
     author: null,
 };
 
-function BlogPage({ introduction, components = [], author }) {
+function BlogPage({ introduction, components = [], author, publishedDate }) {
     const { show, text } = introduction;
-
     return (
         <>
             {author && <Author {...author} />}

@@ -1,6 +1,7 @@
 ---
 title: Can Agile work in local authorities?
 author: 8d241049-6ed4-45ff-aaf8-488d06871310
+publishedDate: 2020-05-21T14:59:33.673Z
 introduction:
   show: true
   text: >-
@@ -24,8 +25,8 @@ components:
           to undertake a digital transformation of all their data. The challenge
           for the leadership was significant and they were prepared to change
           approach and adopt an [Agile
-          methodology](/what-we-do/create-value-through-software/)
-          if it could help them move things forward.
+          methodology](/what-we-do/create-value-through-software/) if it could
+          help them move things forward.
         type: markdown-component
     isPostit: false
     isRightImage: false
