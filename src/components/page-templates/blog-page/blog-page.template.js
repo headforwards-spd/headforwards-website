@@ -31,7 +31,6 @@ BlogPage.defaultProps = {
 };
 
 function BlogPage({ introduction, components = [], author, publishedDate }) {
-
     const { show, text } = introduction;
     return (
         <>
