@@ -3,7 +3,7 @@ const authorPages = {
     label_singular: 'Author',
     name: 'author-pages',
     folder: 'src/pages/author-pages',
-    create: false,
+    create: true,
     delete: false,
     identifier_field: 'name',
     fields: [

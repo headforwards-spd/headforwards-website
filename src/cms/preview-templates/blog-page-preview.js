@@ -1,4 +1,4 @@
-import { bool, func, shape, string } from 'prop-types';
+import { func, shape, string } from 'prop-types';
 import React from 'react';
 import { Provider } from 'unstated';
 import * as uuid from 'uuid';
@@ -15,12 +15,10 @@ BlogPagePreview.propTypes = {
         data: shape({
             title: string,
             subtitle: string,
-            image: shape({
-                show: bool,
+            bannerImage: ImageSrcPropType,
+            introduction: string,
+            summary: shape({
                 image: ImageSrcPropType,
-            }),
-            introduction: shape({
-                show: bool,
                 text: string,
             }),
             author: string,
@@ -39,20 +37,19 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
     const {
         title = '',
         subtitle,
-        image,
+        bannerImage: bannerImageRef = null,
         introduction,
         components = [],
         footerLinks: rawFooterLinks,
         callToAction,
     } = data;
-    const { show: showImage = false, image: bannerImageRef = null } = image || {};
     const bannerImage = bannerImageRef ? getAsset(bannerImageRef).toString() : null;
     const [footerLinks] = rawFooterLinks || [];
 
     const header = {
         title,
         subtitle,
-        image: showImage ? bannerImage : null,
+        image: bannerImage,
     };
 
     if (footerLinks) {
@@ -60,13 +57,13 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
         const footerLinksValue = footerLinksArray ? footerLinksArray.get(0) : null;
         const footerLinksMeta = fieldsMetaData ? fieldsMetaData.getIn(['footerLinks'], footerLinksValue) : null;
         const link1 = footerLinksValue
-            ? footerLinksMeta.getIn(['link1', 'blog-pages', footerLinksValue.getIn(['link1'])])
+            ? footerLinksMeta.getIn(['link1', 'info-pages', footerLinksValue.getIn(['link1'])])
             : null;
         const link2 = footerLinksValue
-            ? footerLinksMeta.getIn(['link2', 'blog-pages', footerLinksValue.getIn(['link2'])])
+            ? footerLinksMeta.getIn(['link2', 'info-pages', footerLinksValue.getIn(['link2'])])
             : null;
         const link3 = footerLinksValue
-            ? footerLinksMeta.getIn(['link3', 'blog-pages', footerLinksValue.getIn(['link3'])])
+            ? footerLinksMeta.getIn(['link3', 'info-pages', footerLinksValue.getIn(['link3'])])
             : null;
 
         const link1Page = link1 ? link1.toJS() : null;
@@ -143,14 +140,16 @@ function setComponent(component, getAsset) {
 }
 
 function getFooterLink({ showImages, page }) {
-    const { title = 'Link', image = { image: '/uploads/icon.black.png' }, introduction = { text: 'Introduction...' } } =
-        page || {};
+    const { title = 'Link', summary } = page || {};
+    const { image, text } = summary || {};
 
     return {
         showImages,
         link: '/',
         title,
-        image,
-        introduction,
+        summary: {
+            image: image || '/uploads/icon.black.png',
+            text: text || 'Link text here...',
+        },
     };
 }

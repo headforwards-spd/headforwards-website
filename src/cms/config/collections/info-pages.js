@@ -33,7 +33,7 @@ function getCollection({ title: label, slug }) {
             value: slug,
         },
         fields: [
-            header,
+            ...header,
             summary,
             {
                 label: 'Parent',

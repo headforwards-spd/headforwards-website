@@ -22,7 +22,7 @@ const indexPages = {
         value: 'index-page',
     },
     fields: [
-        header,
+        ...header,
         summary,
         pageComponents,
         footerLinks,

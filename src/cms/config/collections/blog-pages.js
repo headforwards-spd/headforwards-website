@@ -23,7 +23,7 @@ const blogPages = {
         value: 'blog-page',
     },
     fields: [
-        header,
+        ...header,
         summary,
         author,
         publishDate,

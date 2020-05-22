@@ -26,11 +26,6 @@ export const introduction = {
     required: false,
 };
 
-const header = {
-    bannerImage,
-    title,
-    subTitle,
-    introduction,
-};
+const header = [bannerImage, title, subTitle, introduction];
 
 export default header;

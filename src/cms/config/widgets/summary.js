@@ -1,6 +1,6 @@
 const summary = {
     label: 'Page Summary',
-    name: 'pageSummary',
+    name: 'summary',
     widget: 'object',
     fields: [
         {
