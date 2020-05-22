@@ -6,7 +6,6 @@ export const PageFragment = graphql`
         frontmatter {
             title
             subtitle
-            publishedDate
             author {
                 id
                 frontmatter {

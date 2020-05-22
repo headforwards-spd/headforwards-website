@@ -31,7 +31,7 @@ function BlogPagePage({ data }) {
         author: authorPage,
         components,
         footerLinks: rawFooterLinks,
-        publishedDate,
+        // publishedDate,
         ...layoutProps
     } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
@@ -39,7 +39,7 @@ function BlogPagePage({ data }) {
     const pageProps = {
         introduction,
         author,
-        publishedDate,
+        // publishedDate,
         components,
     };
     // console.log(pageProps);

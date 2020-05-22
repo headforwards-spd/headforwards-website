@@ -62,8 +62,8 @@ export default [
         label_singular: 'Author',
         name: 'author-pages',
         folder: 'src/pages/author-pages',
-        create: false,
-        delete: false,
+        create: true,
+        delete: true,
         identifier_field: 'name',
         fields: [
             {
@@ -77,6 +77,25 @@ export default [
                 label: 'Author Name',
                 name: 'name',
                 widget: 'string',
+            },
+            {
+                label: 'Job Title',
+                name: 'jobTitle',
+                widget: 'string',
+                required: false,
+                default: null,
+            },
+            {
+                label: 'Profile Picture',
+                name: 'profilePic',
+                widget: 'image',
+                required: false,
+                default: null,
+            },
+            {
+                label: 'Bio',
+                name: 'bio',
+                widget: 'text',
             },
         ],
     },
@@ -102,15 +121,15 @@ export default [
                 name: 'author',
                 ...linkAuthor,
             },
-            {
-                label: 'Publish Date',
-                name: 'publishedDate',
-                widget: 'datetime',
-                timeFormat: false,
-                dateFormat: 'DD.MM.YYYY',
-                required: false,
-                // hidden: true
-            },
+            // {
+            //     label: 'Publish Date',
+            //     name: 'publishedDate',
+            //     widget: 'datetime',
+            //     timeFormat: false,
+            //     dateFormat: 'DD.MM.YYYY',
+            //     required: false,
+            //     // hidden: true
+            // },
             {
                 label: 'Page Introduction (menu text)',
                 name: 'introduction',
