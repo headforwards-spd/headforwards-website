@@ -5,6 +5,7 @@ const publishDate = {
     timeFormat: false,
     dateFormat: 'DD.MM.YYYY',
     required: false,
+    // hidden: true
 };
 
 export default publishDate;
