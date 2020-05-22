@@ -1,4 +1,4 @@
-import { any, arrayOf, bool, shape, string } from 'prop-types';
+import { any, arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
@@ -10,10 +10,7 @@ import styles from './info-page.module.scss';
 export default InfoPage;
 
 InfoPage.propTypes = {
-    introduction: shape({
-        show: bool,
-        text: string,
-    }),
+    introduction: string,
     components: arrayOf(PageComponentPropType),
     jobsTitle: string,
     jobs: arrayOf(any),
@@ -32,14 +29,13 @@ InfoPage.defaultProps = {
 };
 
 function InfoPage({ introduction, components = [], jobsTitle: defaultJobsTitle, jobs, careers }) {
-    const { show, text } = introduction;
     const hasJobs = !!(jobs && jobs.length);
     const { title: jobsTitle, applicationForm } = careers || {};
     const hasApplicationForm = !!applicationForm;
 
     return (
         <>
-            {show && <IntroductionComponent introduction={text} />}
+            {introduction && <IntroductionComponent introduction={introduction} />}
             {components && (
                 <section>
                     {!!components &&

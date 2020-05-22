@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { any, arrayOf, bool, shape, string } from 'prop-types';
+import { any, arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
@@ -10,10 +10,7 @@ const homepagePropTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
-                introduction: shape({
-                    show: bool.isRequired,
-                    text: string,
-                }),
+                introduction: string,
                 sections: arrayOf(any),
             }),
         }),
@@ -45,13 +42,7 @@ export const query = graphql`
     query HomePage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
-                title
-                subtitle
-                introduction {
-                    show
-                    text
-                }
-                ...BannerImageFragment
+                ...HeaderFragment
                 sections {
                     id
                     image {

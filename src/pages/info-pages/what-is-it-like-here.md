@@ -3,11 +3,9 @@ uuid: 4bc8aa80-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: What is it like here?
-image:
+bannerImage: /uploads/headforwards-13.jpg
+summary:
   image: /uploads/headforwards-13.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     With regular catchups and strategy meetings, strong relationships between
     clients and teams grow fast

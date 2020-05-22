@@ -1,4 +1,4 @@
-const linkAuthor = {
+export const authorLink = {
     widget: 'relation',
     collection: 'author-pages',
     searchFields: ['name'],
@@ -6,4 +6,10 @@ const linkAuthor = {
     displayFields: ['name'],
 };
 
-export default linkAuthor;
+const author = {
+    label: 'Author Name',
+    name: 'author',
+    ...authorLink,
+};
+
+export default author;

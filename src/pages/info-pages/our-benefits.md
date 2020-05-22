@@ -3,11 +3,9 @@ uuid: 22fe4f48-37d3-11ea-aec2-2e728ce88125
 parent: careers
 type: info-page
 title: Our benefits
-image:
+bannerImage: /uploads/hf-biz-card.jpg
+summary:
   image: /uploads/hf-biz-card.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     We believe that happy people do better work. That’s why we provide a range
     of employee benefits and community activities for staff and their families.

@@ -1,4 +1,4 @@
-import linkFields from './link-fields';
+import linkFields from '../widgets/link-fields';
 
 const articleComponent = {
     label: 'Articles',

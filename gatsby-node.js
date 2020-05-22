@@ -144,11 +144,8 @@ function getData(graphql) {
                         linkText
                         page {
                             frontmatter {
-                                introduction {
+                                summary {
                                     text
-                                }
-                                image {
-                                    show
                                     image {
                                         publicURL
                                         childImageSharp {
@@ -175,11 +172,8 @@ function getData(graphql) {
                             linkText
                             page {
                                 frontmatter {
-                                    introduction {
+                                    summary {
                                         text
-                                    }
-                                    image {
-                                        show
                                         image {
                                             publicURL
                                             childImageSharp {
