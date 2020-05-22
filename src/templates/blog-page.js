@@ -1,6 +1,7 @@
-import { graphql } from 'gatsby';
+import { graphql }                      from 'gatsby';
+import moment                           from 'moment';
 import { arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
+import React                            from 'react';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
 import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
@@ -31,18 +32,18 @@ function BlogPagePage({ data }) {
         author: authorPage,
         components,
         footerLinks: rawFooterLinks,
-        // publishedDate,
+        publishedDate,
         ...layoutProps
     } = frontmatter;
     const footerLinks = extractFooterLinks(rawFooterLinks);
     const { frontmatter: author } = authorPage || {};
+    const formattedPublishedDate = moment(publishedDate).format('Do MMMM YYYY');
     const pageProps = {
         introduction,
         author,
-        // publishedDate,
+        formattedPublishedDate,
         components,
     };
-    // console.log(pageProps);
 
     return (
         <Layout

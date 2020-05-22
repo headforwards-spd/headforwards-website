@@ -121,15 +121,15 @@ export default [
                 name: 'author',
                 ...linkAuthor,
             },
-            // {
-            //     label: 'Publish Date',
-            //     name: 'publishedDate',
-            //     widget: 'datetime',
-            //     timeFormat: false,
-            //     dateFormat: 'DD.MM.YYYY',
-            //     required: false,
-            //     // hidden: true
-            // },
+            {
+                label: 'Publish Date',
+                name: 'publishedDate',
+                widget: 'datetime',
+                timeFormat: false,
+                dateFormat: 'DD.MM.YYYY',
+                required: false,
+                // hidden: true
+            },
             {
                 label: 'Page Introduction (menu text)',
                 name: 'introduction',

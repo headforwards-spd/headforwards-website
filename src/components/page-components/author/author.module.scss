@@ -36,6 +36,7 @@
       padding: 1.5em 0 0;
       position: relative;
       @include fontSmallVr;
+      display: none;
     }
 
     > footer {
@@ -82,17 +83,11 @@
 
 @media (min-width: $screen-md) {
   .blockquoteContainer {
-    //width: $singleColumnMaxWidth;
 
     blockquote {
       align-items: flex-end;
       display: flex;
       max-width: unset;
-      //
-      //> p {
-      //  column-count: 2;
-      //  column-gap: 2 * $column-gutter-md;
-      //}
 
       footer {
         flex-grow: 1;
@@ -105,15 +100,11 @@
         flex-shrink: 0;
         margin-left: $column-gutter-md;
         width: calc(62.5% - #{$column-gutter-md/2});
-      }
-
-      //border-left: 1px solid #d8d8d8;
-      //padding-left: $column-gutter-md * 2/3;
-      padding-top: 0;
-
-      > p {
         padding: 0;
+        display: flex;
       }
+
+      padding-top: 0;
 
       footer h2 {
         @include headingFontSmall;
