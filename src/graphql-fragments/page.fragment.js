@@ -4,9 +4,8 @@ import { graphql } from 'gatsby';
 export const PageFragment = graphql`
     fragment PageFragment on MarkdownRemark {
         frontmatter {
-            title
-            subtitle
-            publishedDate
+            isPostits
+            ...HeaderFragment
             author {
                 id
                 frontmatter {
@@ -14,21 +13,11 @@ export const PageFragment = graphql`
                     bio
                     jobTitle
                     profilePic {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...ProfilePicFragment
                     }
                 }
             }
-            isPostits
-            ...BannerImageFragment
-            introduction {
-                show
-                text
-            }
+            publishedDate
             components {
                 id
                 type

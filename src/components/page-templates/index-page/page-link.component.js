@@ -10,8 +10,10 @@ const pageLinkPropTypes = {
     linkText: string,
     page: shape({
         frontmatter: shape({
-            introduction: shape({ text: string }),
-            image: shape({ image: ImageSrcPropType }),
+            summary: shape({
+                image: ImageSrcPropType,
+                text: string,
+            }),
         }),
     }),
     isPostit: bool,
@@ -30,9 +32,8 @@ PageLink.defaultProps = {
 
 function PageLink({ isPostit, link, linkText: title, page }) {
     const { frontmatter } = page || {};
-    const { introduction: introductionObject, image: imageObject } = frontmatter || {};
-    const { image } = imageObject || {};
-    const { text: introduction } = introductionObject || {};
+    const { summary } = frontmatter || {};
+    const { image, text: introduction } = summary || {};
 
     const pageLinkProps = {
         link,

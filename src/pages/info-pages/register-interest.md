@@ -6,11 +6,8 @@ title: Register Interest
 subtitle: >-
   If you didn't see a role you'd like to apply for, but you are interested in working for
   us then please let us know here.
-image:
-  show: false
+summary:
   image: /uploads/icon.black.png
-introduction:
-  show: false
   text: >-
     If you didn't see a role you'd like to apply for, but you are interested in
     working for us then please let us know here.

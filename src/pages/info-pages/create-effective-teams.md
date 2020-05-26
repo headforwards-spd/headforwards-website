@@ -3,11 +3,9 @@ uuid: 6b233b00-103a-11ea-9ef0-bd54961b4e30
 parent: what-we-do
 type: info-page
 title: Create effective teams
-image:
+bannerImage: /uploads/hf-b.jpg
+summary:
   image: /uploads/hf-b.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     At Headforwards each client has a dedicated team hand-picked to meet their
     specific needs

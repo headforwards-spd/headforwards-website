@@ -1,7 +1,7 @@
-import { graphql }                      from 'gatsby';
-import moment                           from 'moment';
-import { arrayOf, bool, shape, string } from 'prop-types';
-import React                            from 'react';
+import { graphql } from 'gatsby';
+import moment from 'moment';
+import { arrayOf, shape, string } from 'prop-types';
+import React from 'react';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
 import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
@@ -14,10 +14,7 @@ BlogPagePage.propTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
-                introduction: shape({
-                    show: bool.isRequired,
-                    text: string.isRequired,
-                }),
+                introduction: string,
                 components: arrayOf(PageComponentPropType),
             }),
         }),
@@ -50,7 +47,6 @@ function BlogPagePage({ data }) {
             {...{
                 ...layoutProps,
             }}
-            introduction={introduction}
             footerLinks={footerLinks}
         >
             <BlogPageTemplate {...pageProps} />

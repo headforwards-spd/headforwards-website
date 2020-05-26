@@ -14,10 +14,7 @@ IndexPage.propTypes = {
         page: shape({
             frontmatter: shape({
                 isPostits: bool,
-                introduction: shape({
-                    show: bool.isRequired,
-                    text: string.isRequired,
-                }),
+                introduction: string,
                 components: arrayOf(PageComponentPropType),
             }),
         }),

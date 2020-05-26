@@ -45,12 +45,13 @@ const UnstatedHelmet = withUnstated(
 
 Layout.propTypes = {
     isHomePage: bool,
+    bannerImage: ImageSrcPropType,
     title: string.isRequired,
     subtitle: string,
-    introduction: shape({
-        show: bool.isRequired,
+    summary: shape({
+        seoImage: ImageSrcPropType,
         text: string,
-    }),
+    }).isRequired,
     jobDetails: shape({
         salary: string,
         tags: arrayOf(string),
@@ -61,19 +62,14 @@ Layout.propTypes = {
         links: arrayOf(FooterLinkPropType),
     }),
     callToAction: string,
-    image: shape({
-        show: bool,
-        image: ImageSrcPropType,
-    }),
     seo: SeoPropType,
     children: oneOfType([arrayOf(node), node, string]),
 };
 Layout.defaultProps = {
     isHomePage: false,
+    bannerImage: null,
     subtitle: null,
-    introduction: null,
     jobDetails: null,
-    image: null,
     children: null,
     seo: null,
     footerLinks: null,
@@ -83,11 +79,11 @@ Layout.defaultProps = {
 function Layout({
     isHomePage,
     seo,
+    bannerImage,
     title,
-    introduction,
+    summary,
     subtitle,
     jobDetails,
-    image,
     children,
     footerLinks,
     callToAction: pageCallToAction,
@@ -119,25 +115,22 @@ function Layout({
 
     const { callToAction: defaultCallToAction } = companyInfo;
 
-    const { show: showImage, image: bannerImage, seoImage } = image || {};
-
     const headerProps = {
         isHomePage,
         title,
         subtitle,
-        image: showImage ? bannerImage : null,
+        image: bannerImage,
         menu,
         companyInfo,
     };
 
-    const { text: description } = introduction || {};
+    const { text: description, seoImage } = summary || {};
 
     const seoProps = {
         ...seo,
         image: seoImage || defaultSeoImage,
         title: seoTitle || title,
         description: seoDescription || (isJobPage ? subtitle : description),
-        bannerImage,
     };
 
     const callToAction = pageCallToAction || defaultCallToAction;

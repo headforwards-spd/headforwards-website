@@ -3,11 +3,9 @@ uuid: 21a08160-0fac-11ea-843f-932c76de5936
 parent: how-we-work
 type: info-page
 title: Continuous delivery
-image:
+bannerImage: /uploads/hf-g.jpg
+summary:
   image: /uploads/hf-g.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     By delivering new functionality into production every day Headforwards
     continuously creates business value for clients across industries.

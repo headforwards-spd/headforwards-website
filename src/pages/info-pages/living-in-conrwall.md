@@ -3,11 +3,9 @@ uuid: 22fe4ade-37d3-11ea-aec2-2e728ce88125
 parent: careers
 type: info-page
 title: Living in Cornwall
-image:
+bannerImage: /uploads/hf-beach-1.jpg
+summary:
   image: /uploads/hf-beach-1.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     With its own culture, own climate and own pace of life, we’re lucky to live
     and work in one of the most unique places on earth – and we’d like you to

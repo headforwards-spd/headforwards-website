@@ -17,10 +17,7 @@ const homePageSectionPropTypes = {
     imageSquare: ImageSrcPropType,
 };
 const homepagePropTypes = {
-    introduction: shape({
-        show: bool.isRequired,
-        text: string,
-    }),
+    introduction: string,
     sections: arrayOf(shape(homePageSectionPropTypes)),
 };
 
@@ -33,11 +30,9 @@ Homepage.defaultProps = {
 };
 
 function Homepage({ introduction, sections }) {
-    const { show: showIntroduction, text: introText } = introduction;
-
     return (
         <>
-            {showIntroduction && <IntroductionComponent introduction={introText} className={styles.intro} />}
+            {introduction && <IntroductionComponent introduction={introduction} className={styles.intro} />}
             {!!sections &&
                 sections.map(({ id, ...section }, index) => (
                     <HomePageSection key={id} {...section} isFirstSection={index === 0} />

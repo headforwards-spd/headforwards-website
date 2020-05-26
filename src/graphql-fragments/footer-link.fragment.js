@@ -6,13 +6,11 @@ export const FooterLinkFragment = graphql`
         id
         frontmatter {
             title
-            introduction {
-                text
-            }
-            image {
+            summary {
                 image {
                     ...FooterImageFragment
                 }
+                text
             }
         }
     }

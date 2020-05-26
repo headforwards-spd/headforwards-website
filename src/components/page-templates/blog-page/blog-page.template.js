@@ -31,7 +31,6 @@ BlogPage.defaultProps = {
 };
 
 function BlogPage({ introduction, components = [], author, formattedPublishedDate }) {
-    const { show, text } = introduction;
     return (
         <>
             {author && <Author {...author} />}
@@ -40,7 +39,7 @@ function BlogPage({ introduction, components = [], author, formattedPublishedDat
                     <p>{formattedPublishedDate}</p>
                 </section>
             )}
-            {show && <IntroductionComponent introduction={text} />}
+            {introduction && <IntroductionComponent introduction={introduction} />}
             {components && (
                 <section>
                     {!!components &&
