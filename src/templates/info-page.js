@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { arrayOf, bool, shape, string } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
@@ -13,10 +13,7 @@ InfoPagePage.propTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
-                introduction: shape({
-                    show: bool.isRequired,
-                    text: string.isRequired,
-                }),
+                introduction: string,
                 components: arrayOf(PageComponentPropType),
                 careers: shape({
                     title: string,
@@ -57,7 +54,6 @@ function InfoPagePage({ data }) {
                 ...layoutProps,
                 jobDetails,
             }}
-            introduction={introduction}
             footerLinks={footerLinks}
         >
             <InfoPageTemplate {...pageProps} />

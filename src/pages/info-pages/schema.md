@@ -5,12 +5,12 @@ type: force value
 title: force value
 author: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
 subtitle: force value
+publishedDate: force value
 isPostits: false
-image:
-  show: false
+bannerImage: /uploads/headforwards.png
+introduction: force value
+summary:
   image: /uploads/headforwards.png
-introduction:
-  show: false
   text: force value
 sections:
   - components:

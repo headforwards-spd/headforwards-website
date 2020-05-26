@@ -4,12 +4,12 @@ import CMS, { init } from 'netlify-cms-app';
 import styles from '!css-loader!sass-loader!../scss/main.scss';
 
 import cmsConfig from './config';
+import OptionalObjectControl from './custom-widgets/optional-object-control';
+import UuidControl from './custom-widgets/uuid-control';
 import BlogPagePreview from './preview-templates/blog-page-preview';
 import CareersPagePreview from './preview-templates/careers-page-preview';
 import IndexPagePreview from './preview-templates/index-page-preview';
 import InfoPagePreview from './preview-templates/info-page-preview';
-import OptionalObjectControl from './widgets/optional-object-control';
-import UuidControl from './widgets/uuid-control';
 
 // eslint-disable-next-line no-underscore-dangle
 window.___loader = { enqueue: () => {}, hovering: () => {} };

@@ -46,12 +46,7 @@ export const query = graphql`
     query LegalPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
-                title
-                subtitle
-                introduction {
-                    show
-                    text
-                }
+                ...HeaderFragment
                 sections {
                     title
                     text

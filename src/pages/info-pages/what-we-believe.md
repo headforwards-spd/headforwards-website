@@ -3,11 +3,9 @@ uuid: 07758420-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: What we believe
-image:
+bannerImage: /uploads/headforwards-2.jpg
+summary:
   image: /uploads/headforwards-2.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     We believe clients get the greatest business value from software outsourcing
     when development teams are empowered to make their own decisions.

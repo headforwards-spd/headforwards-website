@@ -3,11 +3,8 @@ uuid: fe585b60-1528-11ea-a6b5-63ea6add32fb
 parent: careers
 type: info-page
 title: Front End
-image:
-  show: false
+summary:
   image: /uploads/icon.black.png
-introduction:
-  show: false
   text: >-
     JavaScript and particularly React are the tools of choice for most front ends across our applications.
 components:

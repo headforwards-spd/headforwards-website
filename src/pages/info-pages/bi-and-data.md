@@ -3,11 +3,8 @@ uuid: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
 parent: careers
 type: info-page
 title: BI & Data
-image:
+summary:
   image: /uploads/icon.black.png
-  show: false
-introduction:
-  show: false
   text: >-
     We recently embarked on a new challenge, working with our local authority as
     they look to improve the access and confidence that residents and members

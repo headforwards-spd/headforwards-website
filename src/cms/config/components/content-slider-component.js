@@ -1,4 +1,4 @@
-import linkFields from './link-fields';
+import linkFields from '../widgets/link-fields';
 
 const contentSliderComponent = {
     label: 'Content Slider',

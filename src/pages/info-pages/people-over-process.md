@@ -3,11 +3,9 @@ uuid: 45d05450-103a-11ea-9ef0-bd54961b4e30
 parent: what-we-do
 type: info-page
 title: People over process
-image:
+bannerImage: /uploads/hf-d.jpg
+summary:
   image: /uploads/hf-d.jpg
-  show: true
-introduction:
-  show: false
   text: Headforwards builds its teams based on each job’s specific needs
 components:
   - content:
