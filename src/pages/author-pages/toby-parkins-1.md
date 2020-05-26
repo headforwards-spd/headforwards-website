@@ -18,4 +18,3 @@ bio: >-
   Cornwall Digital Meetup Group, and also chairman of the Cornwall Chamber of
   Commerce.
 ---
-
