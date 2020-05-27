@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import { shape, string } from 'prop-types';
 import React from 'react';
 
-import Layout, { extractLayoutProps } from '../components/page-layout/layout';
+import Layout from '../components/page-layout/layout';
 import ApplicationFormTemplate from '../components/page-templates/application-form/application-form.template';
 
 export default ApplicationFormPage;

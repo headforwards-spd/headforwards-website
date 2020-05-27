@@ -39,7 +39,6 @@ const plugins = [
     { ...gatsbyPluginRobotsTxt },
     { ...gatsbyPluginGoogleTagmanger },
     { ...gatsbyPluginNetlifyCms },
-    `gatsby-plugin-netlify-cache`,
     { ...gatsbyPluginNetlify },
 ];
 

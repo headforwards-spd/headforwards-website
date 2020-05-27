@@ -5,7 +5,7 @@ import Form from '../../page-components/forms/contact-form/contact-form.componen
 import Link from '../../page-layout/link/link.component';
 import styles from './contact.module.scss';
 
-const contactPropTypes = {
+export const contactPropTypes = {
     companyName: string,
     email: string,
     jobsEmail: string,

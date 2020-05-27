@@ -1,10 +1,24 @@
 import { graphql } from 'gatsby';
+import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
+import { PageComponentPropType } from '../components/page-components/page-component';
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
-import ContactTemplate from '../components/page-templates/contact/contact.template';
+import ContactTemplate, { contactPropTypes } from '../components/page-templates/contact/contact.template';
 
 export default ContactPage;
+
+ContactPage.propTypes = {
+    data: shape({
+        page: shape({
+            frontmatter: shape({
+                introduction: string,
+                components: arrayOf(PageComponentPropType),
+            }),
+        }),
+        companyInfo: shape(contactPropTypes),
+    }).isRequired,
+};
 
 function ContactPage({ data }) {
     const { page, companyInfo } = data;

@@ -1,49 +1,27 @@
 import { graphql } from 'gatsby';
+import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
+import { PageComponentPropType } from '../components/page-components/page-component';
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
+import { BlogLinkPropType } from '../components/page-templates/index-page/blog-link.component';
 import IndexPageTemplate from '../components/page-templates/index-page/index-page.template';
 
 export default BlogIndex;
 
-// JobsPage.propTypes = {
-//     data: shape({
-//         page: shape({
-//             frontmatter: shape({
-//                 introduction: string,
-//                 components: arrayOf(PageComponentPropType),
-//                 footerText: string,
-//             }),
-//         }),
-//         jobs: shape({
-//             nodes: arrayOf(
-//                 shape({
-//                     id: string,
-//                     title: string,
-//                     path: string,
-//                     created: string,
-//                 })
-//             ),
-//         }),
-//         filters: shape({
-//             departments: arrayOf(
-//                 shape({
-//                     label: string.isRequired,
-//                     slug: string.isRequired,
-//                 })
-//             ),
-//             tags: arrayOf(
-//                 shape({
-//                     label: string.isRequired,
-//                     slug: string.isRequired,
-//                 })
-//             ),
-//         }).isRequired,
-//         tags: shape({
-//             distinct: arrayOf(string),
-//         }).isRequired,
-//     }).isRequired,
-// };
+BlogIndex.propTypes = {
+    data: shape({
+        page: shape({
+            frontmatter: shape({
+                introduction: string,
+                components: arrayOf(PageComponentPropType),
+            }),
+        }),
+        children: shape({
+            nodes: arrayOf(BlogLinkPropType),
+        }),
+    }).isRequired,
+};
 
 function BlogIndex({ data }) {
     const { page, children } = data;
