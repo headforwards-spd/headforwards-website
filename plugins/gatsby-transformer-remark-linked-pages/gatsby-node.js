@@ -96,7 +96,6 @@ exports.sourceNodes = gatsby => {
 
             return typeof link === 'string' ? path : { ...linkObject, link: path };
         } catch (error) {
-            console.log({ error });
             return null;
         }
     }
