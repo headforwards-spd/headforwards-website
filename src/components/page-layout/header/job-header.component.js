@@ -43,7 +43,7 @@ export default class JobHeader extends StickyNav {
 
     tagList() {
         const { jobDetails } = this.props;
-        const { filters, tags } = jobDetails;
+        const { filters, tags = [] } = jobDetails;
         const { tags: allowedTags = [] } = filters || {};
         const slugs = tags.map(slugify);
 

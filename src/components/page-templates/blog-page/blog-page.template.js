@@ -1,5 +1,6 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
+import styles from './blog-page.module.scss';
 
 import Author from '../../page-components/author/author.component';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
@@ -39,7 +40,7 @@ function BlogPage({ introduction, components = [], author, formattedPublishedDat
                     <p>{formattedPublishedDate}</p>
                 </section>
             )}
-            {introduction && <IntroductionComponent introduction={introduction} />}
+            {introduction && <IntroductionComponent introduction={introduction} className={styles.intro} />}
             {components && (
                 <section>
                     {!!components &&
