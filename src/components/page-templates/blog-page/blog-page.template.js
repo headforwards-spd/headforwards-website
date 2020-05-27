@@ -1,11 +1,11 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
-import styles from './blog-page.module.scss';
 
 import Author from '../../page-components/author/author.component';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import { ImageSrcPropType } from '../../page-layout/image/image.component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import styles from './blog-page.module.scss';
 
 export default BlogPage;
 
