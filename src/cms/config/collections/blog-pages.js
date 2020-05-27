@@ -38,6 +38,12 @@ const blogPages = {
             widget: 'hidden',
             default: 'blog-page',
         },
+        {
+            label: 'Parent',
+            name: 'parent',
+            widget: 'hidden',
+            default: 'blog',
+        },
     ],
 };
 

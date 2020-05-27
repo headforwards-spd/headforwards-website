@@ -4,8 +4,7 @@ import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
-import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
-import Layout from '../components/page-layout/layout';
+import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import BlogPageTemplate from '../components/page-templates/blog-page/blog-page.template';
 
 export default BlogPagePage;
@@ -24,15 +23,10 @@ BlogPagePage.propTypes = {
 function BlogPagePage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
-    const {
-        introduction,
-        author: authorPage,
-        components,
-        footerLinks: rawFooterLinks,
-        publishedDate,
-        ...layoutProps
-    } = frontmatter;
-    const footerLinks = extractFooterLinks(rawFooterLinks);
+
+    const layoutProps = extractLayoutProps(page);
+
+    const { introduction, author: authorPage, components, publishedDate } = frontmatter;
     const { frontmatter: author } = authorPage || {};
     const formattedPublishedDate = moment(publishedDate).format('Do MMMM YYYY');
     const pageProps = {
@@ -43,12 +37,7 @@ function BlogPagePage({ data }) {
     };
 
     return (
-        <Layout
-            {...{
-                ...layoutProps,
-            }}
-            footerLinks={footerLinks}
-        >
+        <Layout {...layoutProps}>
             <BlogPageTemplate {...pageProps} />
         </Layout>
     );

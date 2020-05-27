@@ -3,8 +3,7 @@ import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
-import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
-import Layout from '../components/page-layout/layout';
+import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import InfoPageTemplate from '../components/page-templates/info-page/info-page.template';
 
 export default InfoPagePage;
@@ -28,8 +27,10 @@ InfoPagePage.propTypes = {
 function InfoPagePage({ data }) {
     const { page, careers: careersSettings, jobs: jobNodes } = data;
     const { frontmatter } = page;
-    const { introduction, components, careers, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
-    const footerLinks = extractFooterLinks(rawFooterLinks);
+
+    const layoutProps = extractLayoutProps(page);
+    const { introduction, components, careers } = frontmatter;
+
     const { jobsTitle } = careersSettings;
     const { nodes: jobs } = jobNodes;
     const pageProps = {
@@ -40,22 +41,8 @@ function InfoPagePage({ data }) {
         careers,
     };
 
-    const { applicationForm } = careers || {};
-    const jobDetails = applicationForm
-        ? {
-              path: `/careers/${applicationForm}`,
-              tags: [],
-          }
-        : null;
-
     return (
-        <Layout
-            {...{
-                ...layoutProps,
-                jobDetails,
-            }}
-            footerLinks={footerLinks}
-        >
+        <Layout {...layoutProps}>
             <InfoPageTemplate {...pageProps} />
         </Layout>
     );

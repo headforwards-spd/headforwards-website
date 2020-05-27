@@ -2,6 +2,12 @@
 title: Can Agile work in local authorities?
 author: 8d241049-6ed4-45ff-aaf8-488d06871310
 publishedDate: 2020-05-21T14:59:33.673Z
+parent: insights
+summary:
+  image: /uploads/hf-c.jpg
+  text: >-
+    At Headforwards you’ll find cutting-edge projects in a truly agile
+    environment.
 introduction: >-
   The annual Agile on the Beach conference, co-founded by one of Headforwards’
   founders, Toby Parkins is now one of the most respected agile conferences in

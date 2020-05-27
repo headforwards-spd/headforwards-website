@@ -2,8 +2,7 @@ import { graphql } from 'gatsby';
 import { any, arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
-import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
-import Layout from '../components/page-layout/layout';
+import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import HomepageTemplate from '../components/page-templates/homepage/homepage.template';
 
 const homepagePropTypes = {
@@ -24,15 +23,17 @@ Homepage.propTypes = homepagePropTypes;
 function Homepage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { introduction, sections, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
-    const footerLinks = extractFooterLinks(rawFooterLinks);
+
+    const layoutProps = extractLayoutProps(page);
+    const { introduction, sections, components } = frontmatter;
     const templateProps = {
         introduction,
         sections,
+        components,
     };
 
     return (
-        <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks} isHomePage>
+        <Layout {...layoutProps} isHomePage>
             <HomepageTemplate {...templateProps} />
         </Layout>
     );
@@ -46,28 +47,13 @@ export const query = graphql`
                 sections {
                     id
                     image {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...ImageFragment
                     }
                     imageSquare: image {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...ImageSquareFragment
                     }
                     imagePostit: image {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp_noBase64
-                            }
-                        }
+                        ...ImagePostitFragment
                     }
                     isPostit
                     title
@@ -81,12 +67,7 @@ export const query = graphql`
                             type
                             quote
                             profilePic {
-                                publicURL
-                                childImageSharp {
-                                    fluid(maxWidth: 100, maxHeight: 100, cropFocus: CENTER, quality: 85) {
-                                        ...GatsbyImageSharpFluid_withWebp
-                                    }
-                                }
+                                ...ProfilePicFragment
                             }
                             name
                             jobTitle

@@ -19,11 +19,13 @@ exports.createPages = ({ actions, graphql }) => {
 
     return getData(graphql)
         .then(({ data, errors }) => (!errors ? Promise.resolve(data) : Promise.reject(errors)))
-        .then(({ indexPages, pages, jobs }) => {
-            createAllIndexPages(createPage, indexPages);
-            createAllPages(createPage, pages);
-            createAllJobs(createPage, jobs);
-        });
+        .then(({ indexPages, pages, jobs }) =>
+            Promise.all([
+                createAllIndexPages(createPage, indexPages),
+                createAllPages(createPage, pages),
+                createAllJobs(createPage, jobs),
+            ])
+        );
 };
 
 exports.onCreateNode = ({ node, actions }) => {
@@ -66,8 +68,11 @@ function createAllIndexPages(createPage, { menu: pages }) {
 
 function createIndexPage(createPage, promises, page) {
     const { uuid, linkText: title, link: path, children } = page;
+    const isHomePage = path === '/';
+    const hasChildren = !!children;
+    const shouldBuild = !isHomePage && hasChildren;
 
-    !!children &&
+    shouldBuild &&
         promises.push(
             createPage({
                 path,
@@ -80,7 +85,7 @@ function createIndexPage(createPage, promises, page) {
             })
         );
 
-    !!children && children.forEach(child => createIndexPage(createPage, promises, child));
+    hasChildren && children.forEach(child => createIndexPage(createPage, promises, child));
 }
 
 function createAllPages(createPage, { nodes: pages = [] }) {
@@ -149,7 +154,7 @@ function getData(graphql) {
                                     image {
                                         publicURL
                                         childImageSharp {
-                                            fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER) {
+                                            fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
                                                 aspectRatio
                                                 base64
                                                 sizes
@@ -177,7 +182,7 @@ function getData(graphql) {
                                         image {
                                             publicURL
                                             childImageSharp {
-                                                fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER) {
+                                                fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
                                                     aspectRatio
                                                     base64
                                                     sizes
@@ -198,7 +203,19 @@ function getData(graphql) {
 
             pages: allMarkdownRemark(
                 filter: {
-                    frontmatter: { type: { in: ["info-page", "legal-page", "home-page", "jobs-page", "blog-page"] } }
+                    frontmatter: {
+                        type: {
+                            in: [
+                                "home-page"
+                                "info-page"
+                                "jobs-page"
+                                "blog-index"
+                                "blog-page"
+                                "contact-page"
+                                "legal-page"
+                            ]
+                        }
+                    }
                 }
             ) {
                 nodes {

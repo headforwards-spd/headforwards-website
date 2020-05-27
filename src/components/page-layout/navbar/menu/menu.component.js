@@ -17,9 +17,12 @@ Menu.defaultProps = {
     activeClass: null,
 };
 
-function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
+function Menu({ menuClick, hasBackground, activeClass, menu: fullMenu, companyInfo }) {
     const { companyName, phone } = companyInfo;
     const backgroundImg = hasBackground ? 'with-bg' : '';
+
+    const [home, ...menu] = fullMenu;
+    const { children: homeChildren } = home || {};
 
     return (
         <Location>
@@ -39,20 +42,10 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                             <ul>
                                 <MenuItem
                                     className={styles.navHomeLink}
+                                    {...home}
                                     {...{
-                                        id: 'nav-home-link',
-                                        showTitle: true,
                                         location,
-                                        link: '/',
-                                        linkText: 'Home.',
-                                        children: [
-                                            {
-                                                id: 'nav-home-contact-page-link',
-                                                location,
-                                                link: '/contact',
-                                                linkText: 'Contact',
-                                            },
-                                        ],
+                                        showTitle: true,
                                     }}
                                 />
                                 {menu.map(({ id, ...item }) => (
@@ -65,15 +58,18 @@ function Menu({ menuClick, hasBackground, activeClass, menu, companyInfo }) {
                                         }}
                                     />
                                 ))}
-                                <MenuItem
-                                    className={styles.navContactLink}
-                                    {...{
-                                        id: 'nav-contact-link',
-                                        link: '/contact',
-                                        linkText: 'Contact.',
-                                        location,
-                                    }}
-                                />
+                                {homeChildren &&
+                                    homeChildren.map(({ id, ...item }) => (
+                                        <MenuItem
+                                            key={id}
+                                            className={styles.navContactLink}
+                                            {...item}
+                                            {...{
+                                                location,
+                                                showTitle: true,
+                                            }}
+                                        />
+                                    ))}
                             </ul>
                             <section className={styles.contactDetails}>
                                 <dl>
