@@ -1,7 +1,7 @@
 const React = require('react');
 
 exports.onRenderBody = ({ setPostBodyComponents }) => {
-    const settings = `window.$buoop={required:{e:-2,f:-2,o:-2,s:-2,c:-2},insecure:true,unsupported:true,api:2020.02};`;
+    const settings = `window.$buoop={required:{e:-3,f:-3,o:-3,s:-3,c:-3},insecure:true,unsupported:true,api:2020.05 };`;
     const html = {
         __html: settings,
     };
