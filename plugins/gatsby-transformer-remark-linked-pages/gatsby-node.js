@@ -87,12 +87,18 @@ exports.sourceNodes = gatsby => {
             return null;
         }
 
-        const [linkObject] = typeof link === 'object' ? link : [];
-        const { link: linkObjectLink } = linkObject || {};
-        const pageLink = linkObjectLink || link;
-        const { path } = getIndexedPage(indexedPages, pageLink) || {};
+        try {
+            const [linkObject] = typeof link === 'object' ? link : [];
 
-        return typeof link === 'string' ? path : { ...linkObject, link: path };
+            const { link: linkObjectLink } = linkObject || {};
+            const pageLink = linkObjectLink || link;
+            const { path } = getIndexedPage(indexedPages, pageLink) || {};
+
+            return typeof link === 'string' ? path : { ...linkObject, link: path };
+        } catch (error) {
+            console.log({ error });
+            return null;
+        }
     }
 
     function getPageId(link) {
