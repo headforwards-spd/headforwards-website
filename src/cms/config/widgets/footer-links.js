@@ -5,6 +5,7 @@ const footerLinks = {
     name: 'footerLinks',
     widget: 'optional-object',
     required: false,
+    default: null,
     fields: [
         {
             label: 'Title',

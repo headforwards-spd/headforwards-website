@@ -27,7 +27,7 @@ exports.sourceNodes = gatsby => {
 
     pages.forEach(page => {
         const { frontmatter } = page || {};
-        const { author, sections = [], components = [], jobRoles = [], footerLinks = [] } = frontmatter || {};
+        const { author, sections = [], components = [], jobRoles = [], rawFooterLinks = [] } = frontmatter || {};
 
         author && (frontmatter.author___NODE = getPageId(author));
         frontmatter.author = undefined;
@@ -65,18 +65,16 @@ exports.sourceNodes = gatsby => {
             page.frontmatter.jobRoles = [...jobRoles];
         }
 
-        if (footerLinks && footerLinks.length) {
-            footerLinks.forEach(footerLink => {
-                const { link1 = null, link2 = null, link3 = null } = footerLink;
-
-                footerLink.id = uuid.v1();
-                footerLink.link1 = getPageLink(link1);
-                footerLink.link2 = getPageLink(link2);
-                footerLink.link3 = getPageLink(link3);
-                footerLink.page1___NODE = getPageId(link1);
-                footerLink.page2___NODE = getPageId(link2);
-                footerLink.page3___NODE = getPageId(link3);
-            });
+        const [footerLinks] = rawFooterLinks || {};
+        const { link1 = null, link2 = null, link3 = null } = footerLinks;
+        if (link1 && link2 && link3) {
+            footerLinks.id = uuid.v1();
+            footerLinks.link1 = getPageLink(link1);
+            footerLinks.link2 = getPageLink(link2);
+            footerLinks.link3 = getPageLink(link3);
+            footerLinks.page1___NODE = getPageId(link1);
+            footerLinks.page2___NODE = getPageId(link2);
+            footerLinks.page3___NODE = getPageId(link3);
 
             page.frontmatter.footerLinks = [...footerLinks];
         }

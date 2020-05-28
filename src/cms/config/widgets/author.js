@@ -7,7 +7,7 @@ export const authorLink = {
 };
 
 const author = {
-    label: 'Author Name',
+    label: 'Author',
     name: 'author',
     ...authorLink,
 };
