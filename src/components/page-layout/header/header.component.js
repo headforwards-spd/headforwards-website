@@ -2,7 +2,6 @@ import parseHtml from 'html-react-parser';
 import { arrayOf, bool, string } from 'prop-types';
 import React from 'react';
 
-import SocialShare from '../../page-components/social-share/social-share.component';
 import { CompanyInfoPropType } from '../company-info.prop-type';
 import Image, { ImageSrcPropType } from '../image/image.component';
 import { MenuItemPropType } from '../navbar/menu-item/menu-item.prop-type';

@@ -1,3 +1,4 @@
+import blogIndexPages from './collections/blog-index-pages';
 import allPages from './collections/all-pages';
 import authorPages from './collections/author-pages';
 import blogPages from './collections/blog-pages';
@@ -27,5 +28,5 @@ export default {
     logo_url: 'https://www.headforwards.com/images/headforwards.black.png',
     media_folder: 'static/uploads',
     public_folder: '/uploads',
-    collections: [blogPages, authorPages, ...infoPages, indexPages, legalPages, settings, allPages],
+    collections: [blogPages, authorPages, blogIndexPages, indexPages, ...infoPages, legalPages, settings, allPages],
 };

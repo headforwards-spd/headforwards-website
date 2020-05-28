@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import moment from 'moment';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
@@ -29,12 +28,11 @@ function BlogPagePage({ data }) {
 
     const { introduction, author: authorPage, components, publishedDate } = frontmatter;
     const { frontmatter: author } = authorPage || {};
-    const formattedPublishedDate = moment(publishedDate).format('Do MMMM YYYY');
     const pageProps = {
         title,
         introduction,
         author,
-        formattedPublishedDate,
+        publishedDate,
         components,
     };
 

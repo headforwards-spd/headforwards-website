@@ -39,6 +39,7 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
         subtitle,
         bannerImage: bannerImageRef = null,
         introduction,
+        publishedDate,
         components = [],
         footerLinks: rawFooterLinks,
         callToAction,
@@ -98,6 +99,8 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
     };
 
     const pageProps = {
+        title,
+        publishedDate,
         introduction,
         author,
         components,

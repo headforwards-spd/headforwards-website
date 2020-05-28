@@ -32,31 +32,6 @@ const authorPages = {
             widget: 'text',
         },
         {
-            label: 'Social Media',
-            name: 'social',
-            widget: 'object',
-            fields: [
-                {
-                    label: 'LinkedIn URL',
-                    name: 'linkedIn',
-                    widget: 'string',
-                    required: false,
-                },
-                {
-                    label: 'Twitter URL',
-                    name: 'twitter',
-                    widget: 'string',
-                    required: false,
-                },
-                {
-                    label: 'Facebook URL',
-                    name: 'facebook',
-                    widget: 'string',
-                    required: false,
-                },
-            ],
-        },
-        {
             label: 'ID',
             name: 'uuid',
             widget: 'uuid',
