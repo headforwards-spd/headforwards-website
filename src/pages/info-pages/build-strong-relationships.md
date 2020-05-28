@@ -3,14 +3,10 @@ uuid: 359e0550-009f-11ea-b6f6-d743f848720a
 parent: what-we-do
 type: info-page
 title: Build strong relationships
-image:
+bannerImage: /uploads/hf-a.jpg
+summary:
   image: /uploads/hf-a.jpg
-  show: true
-introduction:
-  show: false
-  text: >-
-    Strong relationships are key to Headforwards’ ability to create value
-    through software
+  text: Strong relationships are key to Headforwards’ ability to create value through software
 components:
   - content:
       - text: "Strong relationships are the key to creating value through software. That’s why Headforwards seeks to develop lasting relationships with clients around the world and within the teams that make up the company.  \r\n\nHeadforwards’ approach to building long-lasting, trusting relationships is rooted in collaboration, knowledge-sharing, mutual respect and total transparency."
