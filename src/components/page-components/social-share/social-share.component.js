@@ -21,6 +21,7 @@ SocialShare.defaultProps = {
     className: '',
 };
 function SocialShare({ title, url, className }) {
+    const currentPage = encodeURI(url || (typeof window !== 'undefined' ? window.location.href : ''));
     const linkTitle = title ? encodeURI(title) : null;
     const handleClick = (event, name, link, popup) => {
         if (!popup) {
@@ -31,8 +32,6 @@ function SocialShare({ title, url, className }) {
         window.open(link, name, `toolbar=0,status=0,width=${width},height=${height}`);
     };
 
-    const getCurrentPage = url => encodeURI(url || window ? window.location.href : '');
-
     const links = [
         {
             icon: faLinkedinIn,
@@ -40,7 +39,7 @@ function SocialShare({ title, url, className }) {
             popup: [600, 600],
             link: [
                 `https://www.linkedin.com/shareArticle/?`,
-                `&url=${getCurrentPage()}`,
+                `&url=${currentPage}`,
                 linkTitle ? `&title=${linkTitle}` : '',
             ].join(''),
         },
@@ -48,17 +47,13 @@ function SocialShare({ title, url, className }) {
             icon: faTwitter,
             name: 'Twitter',
             popup: [600, 300],
-            link: [
-                `https://twitter.com/share?`,
-                `&url=${getCurrentPage()}`,
-                linkTitle ? `&text=${linkTitle}` : '',
-            ].join(''),
+            link: [`https://twitter.com/share?`, `&url=${currentPage}`, linkTitle ? `&text=${linkTitle}` : ''].join(''),
         },
         {
             icon: faFacebookSquare,
             name: 'Facebook',
             popup: [600, 100],
-            link: [`https://www.facebook.com/sharer/sharer.php?`, `&u=${getCurrentPage()}`].join(''),
+            link: [`https://www.facebook.com/sharer/sharer.php?`, `&u=${currentPage}`].join(''),
         },
         {
             icon: faWhatsapp,
@@ -68,7 +63,7 @@ function SocialShare({ title, url, className }) {
                 `https://api.whatsapp.com/send?`,
                 `&text=`,
                 linkTitle ? `${linkTitle}${encodeURI(`\n\n`)}` : '',
-                getCurrentPage(),
+                currentPage,
             ].join(''),
         },
         {
@@ -80,7 +75,7 @@ function SocialShare({ title, url, className }) {
                 linkTitle ? `&subject=${linkTitle}` : '',
                 `&body=`,
                 linkTitle ? `${linkTitle}${encodeURI(`\n\n`)}` : '',
-                getCurrentPage(),
+                currentPage,
             ].join(''),
         },
     ];
