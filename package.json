@@ -2,7 +2,7 @@
   "name": "headforwards-website",
   "author": "Headforwards Solutions Ltd.",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "cosmos": "cosmos",
     "lint": "run-p lint:fix:**",
     "lint:fix:others": "prettier --write --loglevel warn '**/*.{json,md,yml}'",
