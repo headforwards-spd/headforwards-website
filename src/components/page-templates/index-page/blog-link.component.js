@@ -47,7 +47,7 @@ function BlogLink({ fields, frontmatter }) {
                 <section>
                     <Markdown source={text} />
                 </section>
-                <Link to={link}>Read more</Link>
+                <div className={styles.readMore}>Read more</div>
             </article>
         </Link>
     );
