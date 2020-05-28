@@ -1,32 +1,29 @@
-import author from '../widgets/author';
 import callToAction from '../widgets/call-to-action';
 import footerLinks from '../widgets/footer-links';
 import header from '../widgets/header';
 import pageComponents from '../widgets/page-components';
-import publishDate from '../widgets/publish-date';
 import seo from '../widgets/seo';
 import summary from '../widgets/summary';
 import uuid from '../widgets/uuid';
 
-const blogPages = {
-    label: 'Blog Pages',
-    label_singular: 'Blog Page',
-    name: 'blog-pages',
-    description: 'Blog Pages',
+const blogIndexPages = {
+    label: 'Blog Index Pages',
+    label_singular: 'Blog Index Page',
+    name: 'blog-index-pages',
+    description: 'Index pages',
     folder: 'src/pages/info-pages',
-    create: true,
+    create: false,
+    delete: false,
     slug: '{{slug}}',
     preview_path: '{{slug}}',
     identifier_field: 'title',
     filter: {
         field: 'type',
-        value: 'blog-page',
+        value: 'blog-index',
     },
     fields: [
         ...header,
         summary,
-        author,
-        publishDate,
         pageComponents,
         footerLinks,
         callToAction,
@@ -36,15 +33,8 @@ const blogPages = {
             label: 'Type',
             name: 'type',
             widget: 'hidden',
-            default: 'blog-page',
-        },
-        {
-            label: 'Parent',
-            name: 'parent',
-            widget: 'hidden',
-            default: 'blog',
+            default: 'blog-index',
         },
     ],
 };
-
-export default blogPages;
+export default blogIndexPages;

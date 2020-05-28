@@ -1,0 +1,22 @@
+@import "../../page-components/page-component";
+@import "../../../scss/mixins/typography";
+
+.aside {
+  @include component-gutter;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  time {
+    @include fontMedium;
+    line-height: 3;
+    margin-bottom: 0;
+    color: #b8b8b8;
+    svg {
+      margin-right: 0.3em;
+    }
+  }
+}

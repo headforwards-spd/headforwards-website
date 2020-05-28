@@ -10,7 +10,7 @@ import { Provider } from 'unstated';
 
 import AppContainer from '../../containers/app.container';
 import CookieBar from './cookie-bar/cookie-bar.component';
-import { FooterLinkPropType } from './footer/footer-link.component';
+import { extractFooterLinks, FooterLinkPropType } from './footer/footer-link.component';
 import Footer from './footer/footer.component';
 import Header from './header/header.component';
 import JobHeader from './header/job-header.component';
@@ -54,7 +54,6 @@ Layout.propTypes = {
     }).isRequired,
     jobDetails: shape({
         salary: string,
-        tags: arrayOf(string),
         path: string.isRequired,
     }),
     footerLinks: shape({
@@ -151,4 +150,33 @@ function Layout({
             <CookieBar />
         </Provider>
     );
+}
+
+export function extractLayoutProps({ frontmatter }) {
+    const {
+        isHomePage,
+        bannerImage,
+        title,
+        subtitle,
+        summary,
+        careers,
+        footerLinks: rawFooterLinks,
+        callToAction,
+        seo,
+    } = frontmatter;
+    const { applicationForm } = careers || {};
+    const jobDetails = applicationForm ? { path: `/careers/${applicationForm}` } : null;
+    const footerLinks = extractFooterLinks(rawFooterLinks);
+
+    return {
+        isHomePage,
+        bannerImage,
+        title,
+        subtitle,
+        summary,
+        jobDetails,
+        footerLinks,
+        callToAction,
+        seo,
+    };
 }

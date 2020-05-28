@@ -46,8 +46,7 @@
     }
   }
 
-  > article,
-  > img {
+  > article {
     @include fontMedium;
     display: flex;
     flex-direction: column;
@@ -182,16 +181,20 @@
     opacity: 0.3;
   }
 
-  .logo {
-    height: 5rem;
-    margin-bottom: auto;
-    width: 5rem;
-  }
-
   .introduction {
     bottom: -$column-gutter-sm/2;
     display: flex;
     flex-direction: column;
+
+    &:before {
+      content: " ";
+      display: block;
+      height: 5rem;
+      margin-bottom: auto;
+      width: 5rem;
+      background: url("/images/icon.white.100.png");
+      background-size: cover;
+    }
 
     height: calc(100% - #{$column-gutter-sm/2});
 
@@ -253,6 +256,107 @@
 
     @media (min-width: $screen-md) {
       margin-bottom: 0;
+    }
+  }
+}
+.blog {
+  @include columns-component;
+  img {
+    align-self: flex-start;
+    margin-left: auto;
+  }
+  .blogLink {
+    article {
+      @include fontMediumVr;
+      margin-bottom: 0;
+      display: flex;
+
+      flex-direction: column;
+
+      .image {
+        order: 1;
+        padding-bottom: 37.5%;
+
+        > div {
+          display: none;
+        }
+      }
+
+      > header {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          order: 1;
+          @include fontSmallVr;
+          line-height: 3;
+
+          & {
+            margin: 0;
+          }
+        }
+
+        h2 {
+          order: 2;
+        }
+      }
+
+      > section {
+        flex-grow: 1;
+        order: 3;
+
+        > :last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      > a {
+        display: block;
+        @include arrow-link;
+        font-weight: normal;
+        margin-top: 1em * $rhythm-unit;
+        order: 4;
+      }
+
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    .blogLink,
+    > img {
+      width: calc((100% / 3) - #{$column-gutter-md});
+
+      article {
+        margin-bottom: 0;
+        .image {
+          margin-left: 0;
+          margin-right: 0;
+          padding-bottom: unset;
+
+          > div {
+            display: block;
+          }
+        }
+      }
+    }
+    > img {
+      padding: 1.5em;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    .blogLink,
+    > img {
+      width: calc((100% / 3) - #{$column-gutter-lg});
+    }
+    > img {
+      padding: 2rem;
     }
   }
 }

@@ -4,11 +4,11 @@ import React from 'react';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
-import BlogPageTemplate from '../components/page-templates/blog-page/blog-page.template';
+import ContactTemplate, { contactPropTypes } from '../components/page-templates/contact/contact.template';
 
-export default BlogPagePage;
+export default ContactPage;
 
-BlogPagePage.propTypes = {
+ContactPage.propTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
@@ -16,37 +16,42 @@ BlogPagePage.propTypes = {
                 components: arrayOf(PageComponentPropType),
             }),
         }),
+        companyInfo: shape(contactPropTypes),
     }).isRequired,
 };
 
-function BlogPagePage({ data }) {
-    const { page } = data;
+function ContactPage({ data }) {
+    const { page, companyInfo } = data;
     const { frontmatter } = page;
-    const { title } = frontmatter;
 
     const layoutProps = extractLayoutProps(page);
-
-    const { introduction, author: authorPage, components, publishedDate } = frontmatter;
-    const { frontmatter: author } = authorPage || {};
+    const { introduction, components } = frontmatter;
     const pageProps = {
-        title,
         introduction,
-        author,
-        publishedDate,
+        ...companyInfo,
         components,
     };
 
     return (
         <Layout {...layoutProps}>
-            <BlogPageTemplate {...pageProps} />
+            <ContactTemplate {...pageProps} />
         </Layout>
     );
 }
 
 export const query = graphql`
-    query BlogPage($id: String!) {
+    query ContactPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
             ...PageFragment
+        }
+        companyInfo: dataYaml(title: { eq: "company-info" }) {
+            companyName
+            email
+            jobsEmail
+            phone
+            address
+            registeredAddress
+            mapUrl
         }
     }
 `;

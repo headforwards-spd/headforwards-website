@@ -3,8 +3,7 @@ import { any, arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
-import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
-import Layout from '../components/page-layout/layout';
+import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import IndexPageTemplate from '../components/page-templates/index-page/index-page.template';
 
 export default IndexPage;
@@ -27,8 +26,10 @@ IndexPage.propTypes = {
 function IndexPage({ data, pageContext }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { isPostits, introduction, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
-    const footerLinks = extractFooterLinks(rawFooterLinks);
+
+    const layoutProps = extractLayoutProps(page);
+
+    const { isPostits, introduction, components } = frontmatter;
     const { children: pages } = pageContext || {};
     const templateProps = {
         isPostits,
@@ -38,7 +39,7 @@ function IndexPage({ data, pageContext }) {
     };
 
     return (
-        <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks}>
+        <Layout {...layoutProps}>
             <IndexPageTemplate {...templateProps} />
         </Layout>
     );

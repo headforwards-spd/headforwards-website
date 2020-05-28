@@ -2,8 +2,7 @@ import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
-import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
-import Layout from '../components/page-layout/layout';
+import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import LegalPageTemplate from '../components/page-templates/legal-page/legal-page.template';
 
 export default LegalPage;
@@ -28,15 +27,17 @@ LegalPage.propTypes = {
 function LegalPage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { introduction, sections, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
-    const footerLinks = extractFooterLinks(rawFooterLinks);
+    const { introduction, sections, components } = frontmatter;
+
+    const layoutProps = extractLayoutProps(page);
     const templateProps = {
         introduction,
         sections,
+        components,
     };
 
     return (
-        <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks}>
+        <Layout {...layoutProps}>
             <LegalPageTemplate {...templateProps} />
         </Layout>
     );

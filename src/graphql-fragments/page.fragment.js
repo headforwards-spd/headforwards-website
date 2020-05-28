@@ -30,12 +30,7 @@ export const PageFragment = graphql`
                     name
                     jobTitle
                     profilePic {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...ProfilePicFragment
                     }
                 }
                 quote
@@ -76,12 +71,7 @@ export const PageFragment = graphql`
                     ...ImageSquareFragment
                 }
                 profilePic {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
+                    ...ProfilePicFragment
                 }
             }
             footerLinks {

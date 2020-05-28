@@ -1,0 +1,22 @@
+@import "../../../scss/mixins/typography";
+.socialShare {
+  @include fontMediumVr;
+  & {
+    margin-bottom: 0;
+  }
+  display: flex;
+  align-items: flex-end;
+  a {
+    @include headingFontMediumVr;
+    margin-bottom: 0;
+    margin-left: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all $transitionTime ease;
+    color: $social-icon-grey;
+    &:hover {
+      color: $blue-background;
+    }
+  }
+}

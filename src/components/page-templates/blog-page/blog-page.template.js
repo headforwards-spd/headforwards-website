@@ -1,19 +1,21 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import Author from '../../page-components/author/author.component';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import { ImageSrcPropType } from '../../page-layout/image/image.component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import BlogPageHeader from './blog-page-header.component';
+import styles from './blog-page.module.scss';
 
 export default BlogPage;
 
 BlogPage.propTypes = {
+    title: string.isRequired,
     introduction: shape({
         show: bool,
         text: string,
     }),
-    formattedPublishedDate: string,
+    publishedDate: string,
     components: arrayOf(PageComponentPropType),
     author: shape({
         uuid: string,
@@ -26,20 +28,20 @@ BlogPage.propTypes = {
 BlogPage.defaultProps = {
     introduction: null,
     components: null,
-    formattedPublishedDate: null,
+    publishedDate: null,
     author: null,
 };
 
-function BlogPage({ introduction, components = [], author, formattedPublishedDate }) {
+function BlogPage({ title, introduction, components = [], author, publishedDate }) {
+    const headerProps = {
+        title,
+        author,
+        publishedDate,
+    };
     return (
         <>
-            {author && <Author {...author} />}
-            {formattedPublishedDate && (
-                <section>
-                    <p>{formattedPublishedDate}</p>
-                </section>
-            )}
-            {introduction && <IntroductionComponent introduction={introduction} />}
+            <BlogPageHeader {...headerProps} />
+            {introduction && <IntroductionComponent introduction={introduction} className={styles.intro} />}
             {components && (
                 <section>
                     {!!components &&

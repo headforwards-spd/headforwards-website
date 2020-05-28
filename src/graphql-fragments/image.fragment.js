@@ -22,7 +22,7 @@ export const ImageFragment = graphql`
     fragment ImageFragment on File {
         publicURL
         childImageSharp {
-            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
+            fluid(maxWidth: 720, maxHeight: 450, cropFocus: CENTER, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
             }
         }
@@ -30,7 +30,7 @@ export const ImageFragment = graphql`
     fragment ProfilePicFragment on File {
         publicURL
         childImageSharp {
-            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
+            fluid(maxWidth: 100, maxHeight: 100, cropFocus: CENTER, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
             }
         }
@@ -38,7 +38,7 @@ export const ImageFragment = graphql`
     fragment FooterImageFragment on File {
         publicURL
         childImageSharp {
-            fluid(maxWidth: 1024, maxHeight: 512, cropFocus: CENTER, quality: 85) {
+            fluid(maxWidth: 732, maxHeight: 366, cropFocus: CENTER, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
             }
         }
@@ -46,8 +46,16 @@ export const ImageFragment = graphql`
     fragment ImageSquareFragment on File {
         publicURL
         childImageSharp {
-            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
+            fluid(maxWidth: 585, maxHeight: 585, cropFocus: CENTER, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
+            }
+        }
+    }
+    fragment ImagePostitFragment on File {
+        publicURL
+        childImageSharp {
+            fluid(maxWidth: 585, maxHeight: 585, cropFocus: CENTER, quality: 85) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
             }
         }
     }
