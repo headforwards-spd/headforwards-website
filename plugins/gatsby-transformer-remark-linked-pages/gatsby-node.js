@@ -66,7 +66,7 @@ exports.sourceNodes = gatsby => {
         }
 
         const [footerLinks] = rawFooterLinks || {};
-        const { link1 = null, link2 = null, link3 = null } = footerLinks;
+        const { link1 = null, link2 = null, link3 = null } = footerLinks || {};
         if (link1 && link2 && link3) {
             footerLinks.id = uuid.v1();
             footerLinks.link1 = getPageLink(link1);
