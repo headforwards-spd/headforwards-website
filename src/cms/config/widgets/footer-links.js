@@ -23,16 +23,19 @@ const footerLinks = {
         {
             label: 'Link',
             name: 'link1',
+            required: true,
             ...linkFields,
         },
         {
             label: 'Link',
             name: 'link2',
+            required: true,
             ...linkFields,
         },
         {
             label: 'Link',
             name: 'link3',
+            required: true,
             ...linkFields,
         },
     ],
