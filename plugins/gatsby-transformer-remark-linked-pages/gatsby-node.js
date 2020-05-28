@@ -77,6 +77,8 @@ exports.sourceNodes = gatsby => {
             footerLinks.page3___NODE = getPageId(link3);
 
             page.frontmatter.footerLinks = [...footerLinks];
+        } else {
+            page.frontmatter.footerLinks = null;
         }
     });
 
