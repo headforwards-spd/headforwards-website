@@ -24,23 +24,21 @@ Author.defaultProps = {
 
 function Author({ bio, profilePic, name, jobTitle }) {
     return (
-        <section className={`${styles.blockquoteContainer}`}>
-            <blockquote>
-                {!!name && (
-                    <footer>
-                        {!!profilePic && (
-                            <div className={styles.imageCropper}>
-                                <Image className={styles.image} image={profilePic} ratio="100%" />
-                            </div>
-                        )}
-                        <section>
-                            <h2>{name}</h2>
-                            {!!jobTitle && <p>{jobTitle}</p>}
-                        </section>
-                    </footer>
-                )}
-                <p>{preventOrphans(bio)}</p>
-            </blockquote>
+        <section className={styles.authorContainer}>
+            {!!name && (
+                <header>
+                    <section>
+                        <h2>{name}</h2>
+                        {!!jobTitle && <p>{jobTitle}</p>}
+                    </section>
+                    {!!profilePic && (
+                        <div className={styles.imageCropper}>
+                            <Image image={profilePic} ratio="100%" />
+                        </div>
+                    )}
+                </header>
+            )}
+            <p>{preventOrphans(bio)}</p>
         </section>
     );
 }

@@ -1,5 +1,5 @@
-import { faFacebookSquare, faLinkedin, faTwitterSquare, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare, faLinkedinIn, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { string } from 'prop-types';
 import React from 'react';
@@ -10,6 +10,7 @@ import styles from './social-share.module.scss';
 export const SocialShareProps = {
     title: string,
     url: string,
+    className: string,
 };
 export default SocialShare;
 
@@ -17,8 +18,9 @@ SocialShare.propTypes = SocialShareProps;
 SocialShare.defaultProps = {
     title: null,
     url: null,
+    className: '',
 };
-function SocialShare({ title, url }) {
+function SocialShare({ title, url, className }) {
     const currentPage = encodeURI(url || window.location.href);
     const linkTitle = title ? encodeURI(title) : null;
     const handleClick = (event, name, link, popup) => {
@@ -32,7 +34,7 @@ function SocialShare({ title, url }) {
 
     const links = [
         {
-            icon: faLinkedin,
+            icon: faLinkedinIn,
             name: 'LinkedIn',
             popup: [600, 600],
             link: [
@@ -42,7 +44,7 @@ function SocialShare({ title, url }) {
             ].join(''),
         },
         {
-            icon: faTwitterSquare,
+            icon: faTwitter,
             name: 'Twitter',
             popup: [600, 300],
             link: [`https://twitter.com/share?`, `&url=${currentPage}`, linkTitle ? `&text=${linkTitle}` : ''].join(''),
@@ -54,7 +56,7 @@ function SocialShare({ title, url }) {
             link: [`https://www.facebook.com/sharer/sharer.php?`, `&u=${currentPage}`].join(''),
         },
         {
-            icon: faWhatsappSquare,
+            icon: faWhatsapp,
             name: 'Whatsapp',
             popup: [600, 500],
             link: [
@@ -65,7 +67,7 @@ function SocialShare({ title, url }) {
             ].join(''),
         },
         {
-            icon: faEnvelopeSquare,
+            icon: faEnvelope,
             name: 'Email',
             popup: null,
             link: [
@@ -79,7 +81,7 @@ function SocialShare({ title, url }) {
     ];
 
     return (
-        <nav className={styles.socialShare}>
+        <nav className={`${styles.socialShare} ${className}`}>
             Share:
             {links.map(({ icon, name, link, popup }) => (
                 <Link

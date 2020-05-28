@@ -1,15 +1,16 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
 import React from 'react';
 
-import Author from '../../page-components/author/author.component';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import { ImageSrcPropType } from '../../page-layout/image/image.component';
 import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import BlogPageHeader from './blog-page-header.component';
 import styles from './blog-page.module.scss';
 
 export default BlogPage;
 
 BlogPage.propTypes = {
+    title: string.isRequired,
     introduction: shape({
         show: bool,
         text: string,
@@ -31,15 +32,15 @@ BlogPage.defaultProps = {
     author: null,
 };
 
-function BlogPage({ introduction, components = [], author, formattedPublishedDate }) {
+function BlogPage({ title, introduction, components = [], author, formattedPublishedDate: publishedDate }) {
+    const headerProps = {
+        title,
+        author,
+        publishedDate,
+    };
     return (
         <>
-            {author && <Author {...author} />}
-            {formattedPublishedDate && (
-                <section>
-                    <p>{formattedPublishedDate}</p>
-                </section>
-            )}
+            <BlogPageHeader {...headerProps} />
             {introduction && <IntroductionComponent introduction={introduction} className={styles.intro} />}
             {components && (
                 <section>

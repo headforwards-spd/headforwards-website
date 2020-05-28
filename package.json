@@ -2,20 +2,15 @@
   "name": "headforwards-website",
   "author": "Headforwards Solutions Ltd.",
   "scripts": {
-    "build": "run-p build:**",
-    "build:app": "gatsby build",
-    "clean": "gatsby clean",
+    "build": "gatsby build",
     "cosmos": "cosmos",
-    "lint": "eslint '**/*.{js,jsx}'",
-    "lint:fix": "run-p lint:fix:**",
-    "lint:fix:javascript": "eslint --fix '**/*.js'",
+    "lint": "run-p lint:fix:**",
     "lint:fix:others": "prettier --write --loglevel warn '**/*.{json,md,yml}'",
     "lint:fix:styles": "stylelint --fix '**/*.scss'",
+    "lint:javascript": "eslint --fix '**/*.js'",
     "lint:report": "eslint --fix -f json -o reports/eslint.json '**/*.js'",
-    "sanitise:wordpress": "node src/lib/sanitise-wordpress-markdown.js",
     "sonar": "npm run lint:report; npm run test; sonar-scanner",
-    "start": "run-p start:**",
-    "start:app": "npm run clean && gatsby develop",
+    "start": "gatsby clean && gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
@@ -128,6 +123,6 @@
     "webpack": "^4.41.2"
   },
   "pre-commit": [
-    "lint:fix"
+    "lint"
   ]
 }

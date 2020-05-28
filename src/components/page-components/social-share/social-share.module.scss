@@ -1,15 +1,15 @@
 @import "../../../scss/mixins/typography";
 .socialShare {
-  @include fontMedium;
-  line-height: 1;
+  @include fontMediumVr;
+  & {
+    margin-bottom: 0;
+  }
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   a {
-    @include fontLarge;
-    margin-left: 0.2em;
-    line-height: 1;
-    height: 1em;
-    width: 1em;
+    @include headingFontMediumVr;
+    margin-bottom: 0;
+    margin-left: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;

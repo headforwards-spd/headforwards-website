@@ -3,8 +3,6 @@ menu:
   - link: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
     linkText: Home.
     children:
-      - link: b6b978da-9f51-11ea-bb37-0242ac130002
-        linkText: Insights.
       - link: 0c6225e2-9f6c-11ea-bb37-0242ac130002
         linkText: Contact.
   - children:
