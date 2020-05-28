@@ -41,7 +41,7 @@ function FooterLink({ showImages, link, title, summary }) {
 }
 
 export function extractFooterLinks(footerLinks) {
-    const [{ title, showImages, link1, link2, link3, page1, page2, page3 }] = footerLinks || [{}];
+    const [{ title, showImages, link1, link2, link3, page1, page2, page3 } = {}] = footerLinks || [{}];
 
     if (!(link1 && link2 && link3)) {
         return null;
