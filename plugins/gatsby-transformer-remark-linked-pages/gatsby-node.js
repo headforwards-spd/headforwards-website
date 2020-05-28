@@ -78,7 +78,7 @@ exports.sourceNodes = gatsby => {
 
             page.frontmatter.footerLinks = [...footerLinks];
         } else {
-            page.frontmatter.footerLinks = [];
+            page.frontmatter.footerLinks = undefined;
         }
     });
 
