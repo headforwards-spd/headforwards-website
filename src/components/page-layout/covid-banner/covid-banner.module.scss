@@ -41,8 +41,8 @@
       }
       > section {
         width: calc(62.5% - #{$column-gutter-md/2});
-        >* {
-          @include fontSmall
+        > * {
+          @include fontSmall;
         }
         :last-child {
           margin: 0;
