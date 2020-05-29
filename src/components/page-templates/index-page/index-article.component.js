@@ -23,6 +23,7 @@ IndexArticle.defaultProps = {};
 
 function IndexArticle({ link, title, summary }) {
     const { image, text } = summary || {};
+
     return (
         <article className={styles.page}>
             <Link to={link}>

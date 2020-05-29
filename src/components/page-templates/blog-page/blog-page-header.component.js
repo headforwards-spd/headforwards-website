@@ -1,8 +1,9 @@
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import moment from 'moment';
-import { string } from 'prop-types';
+import { shape, string } from 'prop-types';
 import React from 'react';
+import { ImageSrcPropType } from '../../page-layout/image/image.component';
 
 import Author from '../../page-components/author/author.component';
 import SocialShare from '../../page-components/social-share/social-share.component';
@@ -10,7 +11,12 @@ import styles from './blog-page-header.module.scss';
 
 export const BlogPageHeaderProps = {
     title: string.isRequired,
-    author: string.isRequired,
+    author: shape({
+        uuid: string,
+        name: string,
+        profilePic: ImageSrcPropType,
+        bio: string,
+    }).isRequired,
     publishedDate: string.isRequired,
 };
 export default BlogPageHeader;

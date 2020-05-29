@@ -1,5 +1,6 @@
-import { arrayOf, bool, shape, string } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import React, { Component } from 'react';
+import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 
 import slugify from '../../../lib/slugify';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
@@ -10,10 +11,7 @@ import styles from './jobs-page.module.scss';
 
 export default class JobsPage extends Component {
     static propTypes = {
-        introduction: shape({
-            show: bool,
-            text: string,
-        }),
+        introduction: string,
         filters: shape({
             tags: arrayOf(
                 shape({
@@ -126,7 +124,7 @@ export default class JobsPage extends Component {
     }
 
     render() {
-        const { components, footerText } = this.props;
+        const { introduction, components, footerText } = this.props;
         const { showFilters } = this.state;
 
         const filtersClass = showFilters ? styles.showFilters : '';
@@ -136,13 +134,17 @@ export default class JobsPage extends Component {
         const jobsList = this.filteredJobs();
 
         const { toggleFilters, toggleFilter, clearFilters, isSelected } = this;
+        const isIntro = !introduction;
 
         return (
             <>
+                {introduction && <IntroductionComponent introduction={introduction} />}
                 {components && (
                     <section>
                         {!!components &&
-                            components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
+                            components.map(({ id, ...component }) => (
+                                <PageComponent key={id} {...component} isIntro={isIntro} />
+                            ))}
                     </section>
                 )}
                 {tagList && (
