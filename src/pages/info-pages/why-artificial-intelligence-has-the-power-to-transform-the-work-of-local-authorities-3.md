@@ -5,8 +5,8 @@ title: >-
   authorities
 subtitle: ''
 introduction: >-
-  **Local authorities in the UK are on the verge of a revolution in their use of
-  Artificial Intelligence (AI)**
+  ## Local authorities in the UK are on the verge of a revolution in their use
+  of Artificial Intelligence (AI)
 
 
   A recent national survey has revealed one in six councils are anticipating
