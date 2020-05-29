@@ -9,28 +9,29 @@ import styles from './index-page.module.scss';
 const indexArticlePropTypes = {
     link: string.isRequired,
     title: string.isRequired,
-    image: ImageSrcPropType,
-    introduction: string.isRequired,
+    summary: shape({
+        image: ImageSrcPropType,
+        text: string,
+    }).isRequired,
 };
 
 export default IndexArticle;
 export const IndexArticlePropType = shape(indexArticlePropTypes);
 
 IndexArticle.propTypes = indexArticlePropTypes;
-IndexArticle.defaultProps = {
-    image: null,
-};
+IndexArticle.defaultProps = {};
 
-function IndexArticle({ link, title, image, introduction }) {
+function IndexArticle({ link, title, summary }) {
+    const { image, text } = summary || {};
     return (
         <article className={styles.page}>
             <Link to={link}>
                 <h2>{title}</h2>
                 <section>
                     {image && <Image image={image} alt={title} ratio="100%" />}
-                    {image && introduction && (
+                    {image && text && (
                         <section className={styles.introduction}>
-                            <Markdown source={introduction} truncate />
+                            <Markdown source={text} truncate />
                         </section>
                     )}
                 </section>

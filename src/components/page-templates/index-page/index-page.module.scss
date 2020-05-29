@@ -266,6 +266,8 @@
     margin-left: auto;
   }
   .blogLink {
+    display: flex;
+
     article {
       @include fontMediumVr;
       margin-bottom: 0;
@@ -326,7 +328,7 @@
   }
 
   @media (min-width: $screen-md) {
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: flex-start;
     .blogLink,
     > img {
@@ -346,6 +348,7 @@
       }
     }
     > img {
+      align-self: flex-start;
       padding: 1.5em;
     }
   }

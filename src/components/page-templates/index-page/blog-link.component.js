@@ -45,7 +45,7 @@ function BlogLink({ fields, frontmatter }) {
                 </header>
                 <Image image={image} className={styles.image} />
                 <section>
-                    <Markdown source={text} />
+                    <Markdown source={text} truncate />
                 </section>
                 <div className={styles.readMore}>Read more</div>
             </article>
