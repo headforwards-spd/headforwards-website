@@ -30,12 +30,14 @@ Homepage.defaultProps = {
 };
 
 function Homepage({ introduction, sections }) {
+    const isIntro = !introduction;
+
     return (
         <>
             {introduction && <IntroductionComponent introduction={introduction} className={styles.intro} />}
             {!!sections &&
                 sections.map(({ id, ...section }, index) => (
-                    <HomePageSection key={id} {...section} isFirstSection={index === 0} />
+                    <HomePageSection key={id} {...section} isFirstSection={isIntro && index === 0} />
                 ))}
         </>
     );

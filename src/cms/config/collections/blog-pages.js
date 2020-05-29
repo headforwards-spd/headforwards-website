@@ -16,7 +16,7 @@ const blogPages = {
     folder: 'src/pages/info-pages',
     create: true,
     slug: '{{slug}}',
-    preview_path: '{{slug}}',
+    preview_path: 'insights/{{slug}}',
     identifier_field: 'title',
     filter: {
         field: 'type',
@@ -42,7 +42,7 @@ const blogPages = {
             label: 'Parent',
             name: 'parent',
             widget: 'hidden',
-            default: 'blog',
+            default: 'insights',
         },
     ],
 };

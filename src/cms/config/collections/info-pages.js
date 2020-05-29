@@ -1,4 +1,4 @@
-import parentOptions from '../parentOptions';
+import parentOptions from '../pageParentOptions';
 import callToAction from '../widgets/call-to-action';
 import careers from '../widgets/careers';
 import footerLinks from '../widgets/footer-links';

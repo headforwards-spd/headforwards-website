@@ -10,8 +10,6 @@ summary:
     Headforwards offers two engagement models to ensure you get the right mix of
     quality and value for money
 components:
-  - content: []
-    type: image-copy-component
   - content:
       - text: "Headforwards was founded on the belief that clients are short-changed by traditional software outsource companies – mainly due to the “on-the-bench” model of project resourcing.\r\n\n\rTo ensure clients get the right mix of quality and value for money, Headforwards offers two choices of engagement models: a long term partnership or a short term project."
         type: markdown-component

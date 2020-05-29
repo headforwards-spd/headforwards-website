@@ -38,7 +38,7 @@ function Image({ image, alt, ratio, className = '', ...props }) {
     if (childImageSharp) {
         const { fluid } = childImageSharp;
 
-        return <GatsbyImage fluid={fluid} alt={alt} durationFadeIn={500} className={className} {...props} />;
+        return <GatsbyImage fluid={fluid} alt={alt} durationFadeIn={250} className={className} {...props} />;
     }
 
     if (typeof image === 'string') {
