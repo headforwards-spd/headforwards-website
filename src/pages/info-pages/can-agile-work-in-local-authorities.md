@@ -1,13 +1,6 @@
 ---
+bannerImage: /uploads/head-11.jpg
 title: Can Agile work in local authorities?
-author: 8d241049-6ed4-45ff-aaf8-488d06871310
-publishedDate: 2020-05-21T14:59:33.673Z
-parent: insights
-summary:
-  image: /uploads/hf-c.jpg
-  text: >-
-    At Headforwards you’ll find cutting-edge projects in a truly agile
-    environment.
 introduction: >-
   The annual Agile on the Beach conference, co-founded by one of Headforwards’
   founders, Toby Parkins is now one of the most respected agile conferences in
@@ -16,6 +9,13 @@ introduction: >-
   Agile and best practice, but it’s also a great place for people to get to
   understand the principals of an Agile methodology. For our local authority,
   Agile on the Beach sparked the question, “How could we become more Agile?”
+summary:
+  image: /uploads/head-11.jpg
+  text: >-
+    At Headforwards you’ll find cutting-edge projects in a truly agile
+    environment.
+author: 8d241049-6ed4-45ff-aaf8-488d06871310
+publishedDate: 2020-05-21T14:59:33.673Z
 components:
   - content:
       - text: >-
@@ -35,7 +35,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Turning the tanker "
+    title: 'Turning the tanker '
     type: image-copy-component
   - content:
       - text: >-
@@ -65,7 +65,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Agile in local authority? "
+    title: 'Agile in local authority? '
     type: image-copy-component
   - content:
       - text: >-
@@ -85,7 +85,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Agile in a crisis "
+    title: 'Agile in a crisis '
     type: image-copy-component
   - content:
       - text: >-
@@ -107,14 +107,16 @@ components:
     isTwoColumns: true
     linkFields:
       - linkText: Read more
-    title: "No more business as usual "
+    title: 'No more business as usual '
     type: image-copy-component
 footerLinks:
-  - link1: 53629a60-103a-11ea-9ef0-bd54961b4e30
+  - link1: daf5dd50-a0f1-11ea-a322-0143b68e61ce
     link2: 6b233b00-103a-11ea-9ef0-bd54961b4e30
     link3: 359e0550-009f-11ea-b6f6-d743f848720a
     showImages: false
     title: Similar reading
 uuid: d4bb7510-861d-11ea-81f7-196976a6717d
 type: blog-page
+parent: insights
 ---
+
