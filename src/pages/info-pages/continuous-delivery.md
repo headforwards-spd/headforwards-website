@@ -10,8 +10,6 @@ summary:
     By delivering new functionality into production every day Headforwards
     continuously creates business value for clients across industries.
 components:
-  - content: []
-    type: image-copy-component
   - content:
       - text: >-
           Unlike developers who work to a monthly release cycle, Headforwards

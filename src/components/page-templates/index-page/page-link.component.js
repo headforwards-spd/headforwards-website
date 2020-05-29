@@ -33,13 +33,10 @@ PageLink.defaultProps = {
 function PageLink({ isPostit, link, linkText: title, page }) {
     const { frontmatter } = page || {};
     const { summary } = frontmatter || {};
-    const { image, text: introduction } = summary || {};
-
     const pageLinkProps = {
         link,
         title,
-        image,
-        introduction,
+        summary,
     };
 
     return !isPostit ? <IndexArticle {...pageLinkProps} /> : <IndexPostit {...pageLinkProps} />;

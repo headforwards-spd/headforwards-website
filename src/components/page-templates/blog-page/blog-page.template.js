@@ -11,10 +11,7 @@ export default BlogPage;
 
 BlogPage.propTypes = {
     title: string.isRequired,
-    introduction: shape({
-        show: bool,
-        text: string,
-    }),
+    introduction: string,
     publishedDate: string,
     components: arrayOf(PageComponentPropType),
     author: shape({
@@ -38,6 +35,8 @@ function BlogPage({ title, introduction, components = [], author, publishedDate 
         author,
         publishedDate,
     };
+    const isIntro = !introduction;
+
     return (
         <>
             <BlogPageHeader {...headerProps} />
@@ -45,7 +44,9 @@ function BlogPage({ title, introduction, components = [], author, publishedDate 
             {components && (
                 <section>
                     {!!components &&
-                        components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
+                        components.map(({ id, ...component }) => (
+                            <PageComponent key={id} {...component} isIntro={isIntro} />
+                        ))}
                 </section>
             )}
         </>

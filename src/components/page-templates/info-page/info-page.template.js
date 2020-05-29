@@ -33,13 +33,17 @@ function InfoPage({ introduction, components = [], jobsTitle: defaultJobsTitle, 
     const { title: jobsTitle, applicationForm } = careers || {};
     const hasApplicationForm = !!applicationForm;
 
+    const isIntro = !introduction;
+
     return (
         <>
             {introduction && <IntroductionComponent introduction={introduction} />}
             {components && (
                 <section>
                     {!!components &&
-                        components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
+                        components.map(({ id, ...component }) => (
+                            <PageComponent key={id} {...component} isIntro={isIntro} />
+                        ))}
                 </section>
             )}
             {hasApplicationForm && (

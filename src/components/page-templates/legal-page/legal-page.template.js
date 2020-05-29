@@ -1,4 +1,4 @@
-import { arrayOf, bool, shape, string } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import Markdown from '../../page-layout/markdown';
@@ -10,10 +10,7 @@ const legalPageSectionPropTypes = {
 };
 
 const legalPagePropTypes = {
-    introduction: shape({
-        show: bool,
-        text: string,
-    }),
+    introduction: string,
     sections: arrayOf(
         shape({
             id: string.isRequired,
@@ -32,13 +29,11 @@ LegalPage.defaultProps = {
 };
 
 function LegalPage({ introduction, sections }) {
-    const { show, text } = introduction || {};
-
     return (
         <section className={styles.sections}>
-            {show && (
+            {introduction && (
                 <section>
-                    <Markdown source={text} />
+                    <Markdown source={introduction} />
                 </section>
             )}
             {sections.map(({ id, ...section }) => (

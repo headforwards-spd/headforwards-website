@@ -74,7 +74,9 @@ components:
     isTwoColumns: false
     title: "Making it happen "
     type: image-copy-component
+footerLinks:
+  - {}
 uuid: c8643620-a0ef-11ea-a322-0143b68e61ce
 type: blog-page
-parent: blog
+parent: insights
 ---
