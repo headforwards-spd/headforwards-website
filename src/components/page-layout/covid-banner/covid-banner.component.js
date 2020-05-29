@@ -6,11 +6,12 @@ import styles from './covid-banner.module.scss';
 
 export default CovidBanner;
 
+const theWindow = typeof window !== 'undefined' ? window : null;
+
 function CovidBanner() {
     const hasDismissed = useMemo(() => {
-        const hasWindow = typeof window !== 'undefined';
-        return hasWindow ? localStorage.getItem('covidDismiss') : false;
-    }, [window]);
+        return theWindow ? localStorage.getItem('covidDismiss') : false;
+    }, [window || undefined]);
     const [showMessage, setShowMessage] = useState(hasDismissed);
     const handleDismiss = useCallback(() => {
         localStorage.setItem('covidDismiss', true);
@@ -19,7 +20,7 @@ function CovidBanner() {
 
     return !showMessage ? (
         <div className={styles.covidBanner}>
-            <section onClick={handleDismiss}>
+            <section>
                 <h2>COVID-19</h2>
                 <section>
                     <p>
@@ -32,7 +33,7 @@ function CovidBanner() {
                     </p>
                 </section>
             </section>
-            <button type="button">
+            <button type="button" onClick={handleDismiss}>
                 <Icon icon={faTimes} />
             </button>
         </div>
