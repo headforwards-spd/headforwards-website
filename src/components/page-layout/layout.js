@@ -9,7 +9,7 @@ import Helmet from 'react-helmet';
 import { Provider } from 'unstated';
 
 import AppContainer from '../../containers/app.container';
-import CookieBar from './cookie-bar/cookie-bar.component';
+import CovidBanner from './covid-banner/covid-banner.component';
 import { extractFooterLinks, FooterLinkPropType } from './footer/footer-link.component';
 import Footer from './footer/footer.component';
 import Header from './header/header.component';
@@ -147,7 +147,7 @@ function Layout({
             {(!isJobPage && <Header {...headerProps} />) || <JobHeader {...headerProps} jobDetails={jobDetails} />}
             <main>{children}</main>
             <Footer {...footerProps} />
-            <CookieBar />
+            <CovidBanner />
         </Provider>
     );
 }
