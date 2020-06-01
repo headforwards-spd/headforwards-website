@@ -1,8 +1,9 @@
 ---
+bannerImage: /uploads/headforwards-14.jpg
 title: Building the business case for long term IT investment
-introduction: ""
+introduction: ''
 summary:
-  image: /uploads/hf-steal-1.jpg
+  image: /uploads/headforwards-14.jpg
   text: >-
     As an outsource software development company Headforwards has worked with a
     lot of people in building the right business case for their products and
@@ -39,7 +40,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: "Where did all the value go?  "
+    title: 'Where did all the value go?  '
     type: image-copy-component
   - content:
       - text: >-
@@ -59,7 +60,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: "What’s the solution? "
+    title: 'What’s the solution? '
     type: image-copy-component
   - content:
       - text: "The way Headforwards builds its teams came from a chance conversation at a BBQ between one of our founders, Toby Parkins and a product owner from a global corporation. His struggle to get really good outsource developers came from the fact that they don’t bring you the right people, pulling anyone off the bench to work on projects.  \r\n\n\rAt Headforwards we specifically don’t do that to enable our clients and their businesses to really get value from us as an outsource software company. We will build the right time with you, and the value you’ll get as a result relies on you building the right business case."
@@ -67,9 +68,10 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: "Get it right next time "
+    title: 'Get it right next time '
     type: image-copy-component
 uuid: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
 type: blog-page
 parent: blog
 ---
+
