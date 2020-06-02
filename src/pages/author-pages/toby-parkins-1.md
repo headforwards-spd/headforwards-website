@@ -1,7 +1,7 @@
 ---
 name: Toby Parkins
 jobTitle: Director
-profilePic: /uploads/toby-1.jpg
+profilePic: /uploads/toby_parkins_headforwards.png
 bio: >-
   Toby was an agile practitioner talking to a product owner from a global
   corporation at a barbecue when the Headforwards concept began to develop.
