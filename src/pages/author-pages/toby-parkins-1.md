@@ -1,20 +1,15 @@
 ---
-uuid: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
 name: Toby Parkins
 jobTitle: Director
 profilePic: /uploads/toby-1.jpg
 bio: >-
-  Founder and managing director of UKNetWeb and founding director of
-  Headforwards, Toby Parkins combines technical knowledge with a highly driven,
-  commercial perspective to produce the latest approach to a range of business
-  activities.
-
-
-  Starting out on the internet in the early 90s, Toby has a good understanding
-  of a range of programming languages and an ability to identify technical
-  opportunities that others would miss. Toby is responsible for concept
-  development, top level project management, strategic consultancy and
-  development. He is also founder of the Agile on the Beach conference and the
-  Cornwall Digital Meetup Group, and also chairman of the Cornwall Chamber of
-  Commerce.
+  Toby was an agile practitioner talking to a product owner from a global
+  corporation at a barbecue when the Headforwards concept began to develop.
+  Having started out on the internet in the early 90s, Toby founded UKNetWeb, a
+  web development company and knew that he could deliver a better outsource
+  software company. Toby and Craig co-founded Headforwards in 2011. Toby is also
+  the founder of Agile on the Beach, President of Cornwall Chamber of Commerce
+  and a Director of Software Cornwall.  
+uuid: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
 ---
+
