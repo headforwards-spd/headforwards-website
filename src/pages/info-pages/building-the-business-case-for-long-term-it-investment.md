@@ -8,7 +8,7 @@ summary:
     As an outsource software development company Headforwards has worked with a
     lot of people in building the right business case for their products and
     projects. The impact of structuring a business case can be significant and
-    can determine the success or failure of projects.
+    can determine the success or failure of projects
 author: c038aaac-943e-11ea-bb37-0242ac130002
 publishedDate: 2020-05-29T08:58:16.498Z
 components:
