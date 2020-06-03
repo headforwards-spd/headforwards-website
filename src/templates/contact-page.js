@@ -1,8 +1,9 @@
 import { graphql } from 'gatsby';
-import { arrayOf, shape, string } from 'prop-types';
+import { arrayOf, shape } from 'prop-types';
 import React from 'react';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
+import { IntroductionProps } from '../components/page-layout/introduction/introduction.component';
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import ContactTemplate, { contactPropTypes } from '../components/page-templates/contact/contact.template';
 
@@ -12,7 +13,7 @@ ContactPage.propTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
-                introduction: string,
+                introduction: shape(IntroductionProps),
                 components: arrayOf(PageComponentPropType),
             }),
         }),

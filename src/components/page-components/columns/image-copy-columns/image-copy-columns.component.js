@@ -38,7 +38,7 @@ function ImageCopyColumns({ image, isRightImage, title, content, link }) {
             <section className={styles.copy}>
                 {title && <h2>{title}</h2>}
                 {content && (
-                    <section>
+                    <section className={styles.markdown}>
                         {content.map(({ id, type, ...item }) => (
                             <ContentComponent key={id} type={type} {...item} />
                         ))}
