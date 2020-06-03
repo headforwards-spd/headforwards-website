@@ -24,7 +24,7 @@ function Markdown({ source = '', className, truncate, maxLength }) {
 
     const fancyText = text ? preventOrphans(text) : '';
     if (!fancyText) {
-        return <></>;
+        return null;
     }
 
     return !truncate ? (
