@@ -35,7 +35,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Turning the tanker "
+    title: 'Turning the tanker '
     type: image-copy-component
   - content:
       - text: >-
@@ -65,14 +65,14 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Agile in local authority? "
+    title: 'Agile in local authority? '
     type: image-copy-component
   - content:
       - text: >-
           The Coronavirus outbreak has put pressure on a lot of companies, but
           the need for the council to respond quickly is enormous. As well as
           their responsibility to support individuals, communities and
-          businesses, the council has XX employees of its own who, within a
+          businesses, the council has many employees of its own who, within a
           matter of days all had to move from offices to home working.   The
           digital transformation focused on the vast quantities of data the
           council stores, but once the Coronavirus outbreak hit the urgent task
@@ -85,7 +85,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: "Agile in a crisis "
+    title: 'Agile in a crisis '
     type: image-copy-component
   - content:
       - text: >-
@@ -107,7 +107,7 @@ components:
     isTwoColumns: true
     linkFields:
       - linkText: Read more
-    title: "No more business as usual "
+    title: 'No more business as usual '
     type: image-copy-component
 footerLinks:
   - link1: daf5dd50-a0f1-11ea-a322-0143b68e61ce
@@ -119,3 +119,4 @@ uuid: d4bb7510-861d-11ea-81f7-196976a6717d
 type: blog-page
 parent: insights
 ---
+
