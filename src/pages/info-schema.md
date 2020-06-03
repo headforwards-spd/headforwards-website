@@ -11,9 +11,9 @@ bannerImage: /uploads/headforwards.png
 introduction:
   title: force value
   content:
-    - type: markdown-component
+    - id: force value
+      type: force value
       text: force value
-    - type: quote-component
       title: force value
       quote: force value
       name: force value

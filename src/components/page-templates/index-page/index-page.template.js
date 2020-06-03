@@ -22,7 +22,7 @@ IndexPage.defaultProps = {
     isBlog: false,
 };
 export default function IndexPage({ isPostits, introduction, pages, components, isBlog }) {
-    const hasArrow = !!pages && pages.length % (!isBlog ? 2 : 3) !== 0;
+    const hasArrow = !isBlog && !!pages && pages.length % 2 !== 0;
     const postitClass = isPostits ? styles.postits : '';
     const blogClass = isBlog ? styles.blog : '';
 

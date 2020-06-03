@@ -4,4 +4,5 @@
 .introduction {
   @include component-gutter;
   @include fontMedium;
+  @include markdown;
 }

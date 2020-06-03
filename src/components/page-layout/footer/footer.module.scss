@@ -59,6 +59,10 @@
           width: calc((100% / 3) - #{$column-gutter-lg/2});
         }
 
+        button {
+          cursor: pointer;
+        }
+
         section {
           @include fontMedium;
           background: white;

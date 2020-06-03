@@ -1,7 +1,8 @@
 import { graphql } from 'gatsby';
-import { any, arrayOf, shape, string } from 'prop-types';
+import { any, arrayOf, shape } from 'prop-types';
 import React from 'react';
 
+import { IntroductionProps } from '../components/page-layout/introduction/introduction.component';
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import HomepageTemplate from '../components/page-templates/homepage/homepage.template';
 
@@ -9,7 +10,7 @@ const homepagePropTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
-                introduction: string,
+                introduction: shape(IntroductionProps),
                 sections: arrayOf(any),
             }),
         }),

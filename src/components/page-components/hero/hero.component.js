@@ -37,7 +37,7 @@ function Hero({ title, content = [], isTwoColumns, className, isIntro }) {
         <section className={`${styles.hero} ${columnsClass} ${hasTitleClass} ${className} ${isIntroClass}`}>
             {title && <h2>{title}</h2>}
             {content && (
-                <section>
+                <section className={styles.markdown}>
                     {content.map(({ id, ...item }) => (
                         <ContentComponent key={id} {...item} />
                     ))}

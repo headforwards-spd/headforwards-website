@@ -2,7 +2,6 @@ import { shape, string } from 'prop-types';
 import React from 'react';
 
 import Markdown from '../page-layout/markdown';
-import styles from './content.module.scss';
 import Quote from './quote/quote.component';
 
 const contentComponentPropTypes = {
@@ -21,7 +20,7 @@ function ContentComponent({ type, ...item }) {
         case 'quote-component':
             return <Quote {...item} fullWidth />;
         case 'markdown-component':
-            return <Markdown className={styles.markdown} source={text} />;
+            return <Markdown source={text} />;
         default:
             return null;
     }
