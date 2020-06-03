@@ -12,7 +12,8 @@
 
   time {
     @include fontMedium;
-    line-height: 3;
+    line-height: 3rem;
+    margin-right: $column-gutter-sm;
     margin-bottom: 0;
     color: #b8b8b8;
     svg {

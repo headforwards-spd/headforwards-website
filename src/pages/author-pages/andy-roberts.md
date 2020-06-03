@@ -8,7 +8,6 @@ bio: >-
   engineering, finance, communications, utilities and insurance. Through his
   management years he has tried pretty much every leadership style and now takes
   a coaching approach to all teams and individuals, placing less value on
-  hierarchy and authority and instead emphasising competencies and influence.  
+  hierarchy and authority and instead emphasising competencies and influence.
 uuid: 8d241049-6ed4-45ff-aaf8-488d06871310
 ---
-

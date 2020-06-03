@@ -8,7 +8,19 @@ export const HeaderFragment = graphql`
         }
         title
         subtitle
-        introduction
+        introduction {
+            title
+            content {
+                type
+                text
+                quote
+                name
+                jobTitle
+                profilePic {
+                    ...ProfilePicFragment
+                }
+            }
+        }
         summary {
             text
             seoImage: image {

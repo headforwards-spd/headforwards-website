@@ -10,14 +10,16 @@ Markdown.propTypes = {
     source: string,
     truncate: bool,
     maxLength: number,
+    className: string,
 };
 Markdown.defaultProps = {
     source: null,
     truncate: false,
     maxLength: 125,
+    className: '',
 };
 
-function Markdown({ source = '', truncate, maxLength }) {
+function Markdown({ source = '', className, truncate, maxLength }) {
     const text = truncate ? truncateString(source, maxLength) : source;
 
     const fancyText = text ? preventOrphans(text) : '';
@@ -25,7 +27,11 @@ function Markdown({ source = '', truncate, maxLength }) {
         return <></>;
     }
 
-    return !truncate ? <ReactMarkdown source={fancyText} /> : <p>{fancyText}</p>;
+    return !truncate ? (
+        <ReactMarkdown source={fancyText} className={className} />
+    ) : (
+        <p className={className}>{fancyText}</p>
+    );
 }
 
 function truncateString(text = '', maxLength = 150, ellipsis = `\u2026`) {

@@ -1,9 +1,9 @@
 import { arrayOf, shape, string } from 'prop-types';
 import React, { Component } from 'react';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 
 import slugify from '../../../lib/slugify';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
+import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import Link from '../../page-layout/link/link.component';
 import Markdown from '../../page-layout/markdown';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
@@ -11,7 +11,7 @@ import styles from './jobs-page.module.scss';
 
 export default class JobsPage extends Component {
     static propTypes = {
-        introduction: string,
+        introduction: shape(IntroductionProps),
         filters: shape({
             tags: arrayOf(
                 shape({
@@ -138,7 +138,7 @@ export default class JobsPage extends Component {
 
         return (
             <>
-                {introduction && <IntroductionComponent introduction={introduction} />}
+                {introduction && <Introduction introduction={introduction} />}
                 {components && (
                     <section>
                         {!!components &&

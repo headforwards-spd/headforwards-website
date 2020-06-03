@@ -11,6 +11,7 @@ import PostitCopyColumns, {
     PostitCopyColumnsPropType,
 } from './columns/image-copy-columns/postit-copy-columns.component';
 import ContentSlider, { ContentSliderPropType } from './content-slider/content-slider.component';
+import styles from './content.module.scss';
 import Hero, { HeroPropType } from './hero/hero.component';
 import FullWidthImage, { FullWidthImageSrcPropType } from './images/full-width/full-width-image.component';
 import TwoImages, { TwoImagesPropType } from './images/two/two-images.component';
@@ -53,7 +54,7 @@ function PageComponent({ type, ...component }) {
         case 'bio-component':
             return <Author {...component} />;
         default:
-            return <Markdown source={component.text} />;
+            return <Markdown className={styles.markdown} source={component.text} />;
     }
 }
 

@@ -9,7 +9,6 @@ bio: >-
   web development company and knew that he could deliver a better outsource
   software company. Toby and Craig co-founded Headforwards in 2011. Toby is also
   the founder of Agile on the Beach, President of Cornwall Chamber of Commerce
-  and a Director of Software Cornwall.  
+  and a Director of Software Cornwall.
 uuid: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
 ---
-

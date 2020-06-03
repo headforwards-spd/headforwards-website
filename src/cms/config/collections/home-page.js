@@ -1,5 +1,6 @@
 import imageCopyComponent from '../components/image-copy-component';
 import { subTitle, title } from '../widgets/header';
+import introduction from '../widgets/introduction';
 import summary from '../widgets/summary';
 
 const sections = {
@@ -59,12 +60,7 @@ const homePage = {
         },
         title,
         subTitle,
-        {
-            label: 'Page Introduction',
-            name: 'introduction',
-            widget: 'markdown',
-            required: true,
-        },
+        { ...introduction, required: true },
         summary,
         sections,
         {

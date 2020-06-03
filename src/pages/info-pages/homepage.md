@@ -3,12 +3,15 @@ uuid: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
 type: home-page
 title: Forward thinking software
 bannerImage: /uploads/headforwards-1.jpg
-introduction: >-
-  Headforwards is an outsource software development company. 
+introduction:
+  content:
+    - type: markdown-component
+      text: >-
+        Headforwards is an outsource software development company. 
 
 
-  Using Agile principles and dedicated teams recruited specifically for their
-  clients, Headforwards delivers software that creates real business value.
+        Using Agile principles and dedicated teams recruited specifically for their
+        clients, Headforwards delivers software that creates real business value.
 summary:
   image: /uploads/headforwards-1.jpg
   text: >-

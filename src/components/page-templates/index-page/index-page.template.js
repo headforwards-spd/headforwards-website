@@ -1,14 +1,14 @@
-import { arrayOf, bool, oneOf, string } from 'prop-types';
+import { arrayOf, bool, oneOf, shape } from 'prop-types';
 import React from 'react';
 
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import BlogLink, { BlogLinkPropType } from './blog-link.component';
 import styles from './index-page.module.scss';
 import PageLink, { PageLinkPropType } from './page-link.component';
 
 IndexPage.propTypes = {
-    introduction: string,
+    introduction: shape(IntroductionProps),
     isPostits: bool,
     pages: arrayOf(PageLinkPropType),
     components: arrayOf(oneOf([PageComponentPropType, BlogLinkPropType])),
@@ -28,7 +28,7 @@ export default function IndexPage({ isPostits, introduction, pages, components, 
 
     return (
         <>
-            {introduction && <IntroductionComponent introduction={introduction} />}
+            {introduction && <Introduction introduction={introduction} />}
             <section className={`${styles.pages} ${postitClass} ${blogClass}`}>
                 {!!pages &&
                     pages.map(({ uuid, ...page }) =>

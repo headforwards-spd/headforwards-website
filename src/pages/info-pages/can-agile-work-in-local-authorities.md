@@ -1,14 +1,17 @@
 ---
 bannerImage: /uploads/head-11.jpg
 title: Can Agile work in local authorities?
-introduction: >-
-  The annual Agile on the Beach conference, co-founded by one of Headforwards’
-  founders, Toby Parkins is now one of the most respected agile conferences in
-  the UK with a growing international audience. It’s an opportunity for Agile
-  practitioners to come together to hear from some of the leading voices in
-  Agile and best practice, but it’s also a great place for people to get to
-  understand the principals of an Agile methodology. For our local authority,
-  Agile on the Beach sparked the question, “How could we become more Agile?”
+introduction:
+  content:
+    - type: markdown-component
+      text: >-
+        The annual Agile on the Beach conference, co-founded by one of Headforwards’
+        founders, Toby Parkins is now one of the most respected agile conferences in
+        the UK with a growing international audience. It’s an opportunity for Agile
+        practitioners to come together to hear from some of the leading voices in
+        Agile and best practice, but it’s also a great place for people to get to
+        understand the principals of an Agile methodology. For our local authority,
+        Agile on the Beach sparked the question, “How could we become more Agile?”
 summary:
   image: /uploads/head-11.jpg
   text: >-
@@ -35,7 +38,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: 'Turning the tanker '
+    title: "Turning the tanker "
     type: image-copy-component
   - content:
       - text: >-
@@ -65,7 +68,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: 'Agile in local authority? '
+    title: "Agile in local authority? "
     type: image-copy-component
   - content:
       - text: >-
@@ -85,7 +88,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: 'Agile in a crisis '
+    title: "Agile in a crisis "
     type: image-copy-component
   - content:
       - text: >-
@@ -107,7 +110,7 @@ components:
     isTwoColumns: true
     linkFields:
       - linkText: Read more
-    title: 'No more business as usual '
+    title: "No more business as usual "
     type: image-copy-component
 footerLinks:
   - link1: daf5dd50-a0f1-11ea-a322-0143b68e61ce
@@ -119,4 +122,3 @@ uuid: d4bb7510-861d-11ea-81f7-196976a6717d
 type: blog-page
 parent: insights
 ---
-

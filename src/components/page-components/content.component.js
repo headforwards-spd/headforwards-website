@@ -2,6 +2,7 @@ import { shape, string } from 'prop-types';
 import React from 'react';
 
 import Markdown from '../page-layout/markdown';
+import styles from './content.module.scss';
 import Quote from './quote/quote.component';
 
 const contentComponentPropTypes = {
@@ -9,7 +10,7 @@ const contentComponentPropTypes = {
 };
 
 export default ContentComponent;
-export const ContentComponentPropType = shape(contentComponentPropTypes);
+export const ContentComponentProps = shape(contentComponentPropTypes);
 
 ContentComponent.propTypes = contentComponentPropTypes;
 
@@ -20,8 +21,8 @@ function ContentComponent({ type, ...item }) {
         case 'quote-component':
             return <Quote {...item} fullWidth />;
         case 'markdown-component':
-            return <Markdown source={text} />;
+            return <Markdown className={styles.markdown} source={text} />;
         default:
-            return <></>;
+            return null;
     }
 }
