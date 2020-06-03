@@ -4,27 +4,27 @@ title: >-
   Why Artificial Intelligence has the power to transform the work of local
   authorities
 subtitle: ""
-introduction: >-
-  ## Local authorities in the UK are on the verge of a revolution in their use
-  of Artificial Intelligence (AI)
+introduction:
+  title: Local authorities in the UK are on the verge of a revolution in their use of Artificial Intelligence (AI)
+  content:
+    - type: markdown-component
+      text: >-
+        A recent national survey has revealed one in six councils are anticipating
+        savings between £750,000 and £1m through the introduction of AI technology in
+        2020. Councils are rapidly moving towards a strategic approach on how to
+        maximise the benefits of AI and are starting to implement tools like chatbots
+        and automated processing of documents. 
 
 
-  A recent national survey has revealed one in six councils are anticipating
-  savings between £750,000 and £1m through the introduction of AI technology in
-  2020. Councils are rapidly moving towards a strategic approach on how to
-  maximise the benefits of AI and are starting to implement tools like chatbots
-  and automated processing of documents. 
-
-
-  The potential for local authorities to free up resources and staff time from
-  repetitive administrative tasks is enormous. AI does not replace the need for
-  human involvement. Instead, it enables people to perform complex or
-  time-consuming tasks more quickly, more accurately and more cost-effectively.
-  For local authorities, this opens new opportunities to radically change the
-  way they operate and how they deliver services to residents.
+        The potential for local authorities to free up resources and staff time from
+        repetitive administrative tasks is enormous. AI does not replace the need for
+        human involvement. Instead, it enables people to perform complex or
+        time-consuming tasks more quickly, more accurately and more cost-effectively.
+        For local authorities, this opens new opportunities to radically change the
+        way they operate and how they deliver services to residents.
 summary:
   image: /uploads/head-8.jpg
-  text: >
+  text: >-
     A recent national survey has revealed one in six councils are anticipating
     savings between £750,000 and £1m through the introduction of AI technology
     in 2020. Councils are rapidly moving towards a strategic approach on how to

@@ -14,6 +14,7 @@ import ContentSlider, { ContentSliderPropType } from './content-slider/content-s
 import Hero, { HeroPropType } from './hero/hero.component';
 import FullWidthImage, { FullWidthImageSrcPropType } from './images/full-width/full-width-image.component';
 import TwoImages, { TwoImagesPropType } from './images/two/two-images.component';
+import styles from './content.module.scss';
 import Quote, { QuotePropType } from './quote/quote.component';
 
 const pageComponentPropTypes = {
@@ -53,7 +54,7 @@ function PageComponent({ type, ...component }) {
         case 'bio-component':
             return <Author {...component} />;
         default:
-            return <Markdown source={component.text} />;
+            return <Markdown className={styles.markdown} source={component.text} />;
     }
 }
 

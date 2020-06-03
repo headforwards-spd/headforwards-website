@@ -1,3 +1,5 @@
+import introduction from './introduction';
+
 export const bannerImage = {
     label: 'Banner Image',
     name: 'bannerImage',
@@ -17,13 +19,6 @@ export const subTitle = {
     widget: 'string',
     required: false,
     default: null,
-};
-
-export const introduction = {
-    label: 'Page Introduction',
-    name: 'introduction',
-    widget: 'markdown',
-    required: false,
 };
 
 const header = [bannerImage, title, subTitle, introduction];

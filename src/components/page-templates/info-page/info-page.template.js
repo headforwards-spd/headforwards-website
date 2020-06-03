@@ -2,7 +2,7 @@ import { any, arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import Link from '../../page-layout/link/link.component';
 import JobSummaryComponent from '../jobs-page/job-summary.component';
 import styles from './info-page.module.scss';
@@ -10,7 +10,7 @@ import styles from './info-page.module.scss';
 export default InfoPage;
 
 InfoPage.propTypes = {
-    introduction: string,
+    introduction: shape(IntroductionProps),
     components: arrayOf(PageComponentPropType),
     jobsTitle: string,
     jobs: arrayOf(any),
@@ -37,7 +37,7 @@ function InfoPage({ introduction, components = [], jobsTitle: defaultJobsTitle, 
 
     return (
         <>
-            {introduction && <IntroductionComponent introduction={introduction} />}
+            {introduction && <Introduction introduction={introduction} />}
             {components && (
                 <section>
                     {!!components &&

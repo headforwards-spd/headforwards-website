@@ -3,7 +3,7 @@ import React from 'react';
 
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import { ImageSrcPropType } from '../../page-layout/image/image.component';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import BlogPageHeader from './blog-page-header.component';
 import styles from './blog-page.module.scss';
 
@@ -11,7 +11,7 @@ export default BlogPage;
 
 BlogPage.propTypes = {
     title: string.isRequired,
-    introduction: string,
+    introduction: shape(IntroductionProps),
     publishedDate: string,
     components: arrayOf(PageComponentPropType),
     author: shape({
@@ -40,7 +40,7 @@ function BlogPage({ title, introduction, components = [], author, publishedDate 
     return (
         <>
             <BlogPageHeader {...headerProps} />
-            {introduction && <IntroductionComponent introduction={introduction} className={styles.intro} />}
+            {introduction && <Introduction introduction={introduction} className={styles.intro} />}
             {components && (
                 <section>
                     {!!components &&

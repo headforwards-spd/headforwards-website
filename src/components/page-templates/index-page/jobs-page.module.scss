@@ -13,7 +13,7 @@
   @include component-gutter;
 }
 
-.jobRoles {
+.jobTitles {
   @include columns-component;
 
   margin: #{-$gutter-small/2} #{-$gutter-small/2} #{$gutter-large -

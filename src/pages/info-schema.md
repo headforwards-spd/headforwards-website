@@ -8,7 +8,17 @@ subtitle: force value
 publishedDate: force value
 isPostits: false
 bannerImage: /uploads/headforwards.png
-introduction: force value
+introduction:
+  title: force value
+  content:
+    - type: markdown-component
+      text: force value
+    - type: quote-component
+      title: force value
+      quote: force value
+      name: force value
+      jobTitle: force value
+      profilePic: /uploads/headforwards.png
 summary:
   image: /uploads/headforwards.png
   text: force value
@@ -19,7 +29,7 @@ sections:
             text: force value
           - quote: force value
             name: force value
-            jobRole: force value
+            jobTitle: force value
             profilePic: /uploads/headforwards.png
 
 components:

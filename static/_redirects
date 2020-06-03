@@ -41,9 +41,9 @@ https://headforwards-website2.netlify.com/* https://www.headforwards.com/:splat 
 
 
 # WordPress Media Files
-/wp-content/uploads/2017/11/headforwards-logo.png /images/headforwards.png        301
+/wp-content/uploads/2017/11/headforwards-logo.png /images/headforwards.png 301
 /wp-content/themes/head-forwards/images/logo/head-forwards.png /images/headforwards.png 301
-/wp-content/uploads/2020/01/Headforwards-Way.pdf  /documents/Headforwards-Way.pdf 301
+/wp-content/uploads/2020/01/Headforwards-Way.pdf /documents/Headforwards-Way.pdf 301
 /sitemap_index.xml /sitemap.xml 301
 
 
@@ -148,10 +148,10 @@ https://headforwards-website2.netlify.com/* https://www.headforwards.com/:splat 
 #/2018/03/increase-knowledge-sharing-organisation/
 
 # Catchalls
-/news/*     /insights/ 301
+/news/* /insights/ 301
 /category/* /insights/ 301
-/tag/*      /insights/ 301
-/author/*   /insights/ 301
+/tag/* /insights/ 301
+/author/* /insights/ 301
 /2012/:month/* /insights/ 301
 /2013/:month/* /insights/ 301
 /2014/:month/* /insights/ 301

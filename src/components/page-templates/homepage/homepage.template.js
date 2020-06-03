@@ -4,7 +4,7 @@ import React from 'react';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import Postit from '../../page-components/postit/postit.component';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import styles from './homepage.module.scss';
 
 const homePageSectionPropTypes = {
@@ -17,7 +17,7 @@ const homePageSectionPropTypes = {
     imageSquare: ImageSrcPropType,
 };
 const homepagePropTypes = {
-    introduction: string,
+    introduction: shape(IntroductionProps),
     sections: arrayOf(shape(homePageSectionPropTypes)),
 };
 
@@ -34,7 +34,7 @@ function Homepage({ introduction, sections }) {
 
     return (
         <>
-            {introduction && <IntroductionComponent introduction={introduction} className={styles.intro} />}
+            {introduction && <Introduction introduction={introduction} className={styles.intro} />}
             {!!sections &&
                 sections.map(({ id, ...section }, index) => (
                     <HomePageSection key={id} {...section} isFirstSection={isIntro && index === 0} />

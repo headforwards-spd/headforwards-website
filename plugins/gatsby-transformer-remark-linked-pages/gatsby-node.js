@@ -27,14 +27,14 @@ exports.sourceNodes = gatsby => {
 
     pages.forEach(page => {
         const { frontmatter } = page || {};
-        const { author, sections = [], components = [], jobRoles = [], footerLinks = [] } = frontmatter || {};
+        const { author, sections = [], components = [], jobTitles = [], footerLinks = [] } = frontmatter || {};
 
         author && (frontmatter.author___NODE = getPageId(author));
         frontmatter.author = undefined;
 
         sections && sections.length && setItemIds(sections);
         components && components.length && setItemIds(components);
-        jobRoles && jobRoles.length && setItemIds(jobRoles);
+        jobTitles && jobTitles.length && setItemIds(jobTitles);
 
         if (components && components.length) {
             components.forEach(component => {
@@ -54,15 +54,15 @@ exports.sourceNodes = gatsby => {
             page.frontmatter.components = [...components];
         }
 
-        if (jobRoles && jobRoles.length) {
-            jobRoles.forEach(jobRole => {
-                const { link = null } = jobRole;
+        if (jobTitles && jobTitles.length) {
+            jobTitles.forEach(jobTitle => {
+                const { link = null } = jobTitle;
 
-                jobRole.link = getPageLink(link);
-                jobRole.page___NODE = getPageId(link);
+                jobTitle.link = getPageLink(link);
+                jobTitle.page___NODE = getPageId(link);
             });
 
-            page.frontmatter.jobRoles = [...jobRoles];
+            page.frontmatter.jobTitles = [...jobTitles];
         }
 
         if (footerLinks && footerLinks.length) {
