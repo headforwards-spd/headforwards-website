@@ -267,6 +267,7 @@
   }
   .blogLink {
     display: flex;
+    flex-direction: column;
 
     article {
       @include fontMediumVr;

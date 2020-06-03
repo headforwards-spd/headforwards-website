@@ -33,7 +33,7 @@ function CovidBanner() {
                     </p>
                 </section>
             </section>
-            <button type="button" onClick={handleDismiss}>
+            <button type="button" onClick={handleDismiss} aria-label="close">
                 <Icon icon={faTimes} />
             </button>
         </div>
