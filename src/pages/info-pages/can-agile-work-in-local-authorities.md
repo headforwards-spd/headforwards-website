@@ -35,7 +35,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: 'Turning the tanker '
+    title: "Turning the tanker "
     type: image-copy-component
   - content:
       - text: >-
@@ -65,7 +65,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: 'Agile in local authority? '
+    title: "Agile in local authority? "
     type: image-copy-component
   - content:
       - text: >-
@@ -85,7 +85,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: true
-    title: 'Agile in a crisis '
+    title: "Agile in a crisis "
     type: image-copy-component
   - content:
       - text: >-
@@ -107,7 +107,7 @@ components:
     isTwoColumns: true
     linkFields:
       - linkText: Read more
-    title: 'No more business as usual '
+    title: "No more business as usual "
     type: image-copy-component
 footerLinks:
   - link1: daf5dd50-a0f1-11ea-a322-0143b68e61ce
@@ -119,4 +119,3 @@ uuid: d4bb7510-861d-11ea-81f7-196976a6717d
 type: blog-page
 parent: insights
 ---
-

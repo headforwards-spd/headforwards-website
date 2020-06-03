@@ -1,7 +1,7 @@
 ---
 bannerImage: /uploads/hf-g.jpg
-title: 'An exciting future for AI in UK healthcare '
-subtitle: ''
+title: "An exciting future for AI in UK healthcare "
+subtitle: ""
 introduction: >-
   ## Healthcare is entering a new era, with Artificial Intelligence (AI) playing
   an increasingly important role.
@@ -99,7 +99,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: '2. New preventative treatments '
+    title: "2. New preventative treatments "
     type: image-copy-component
   - content:
       - text: >-
@@ -121,7 +121,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: '3. Advanced management systems '
+    title: "3. Advanced management systems "
     type: image-copy-component
   - content:
       - text: >-
@@ -144,7 +144,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: '4. New diagnostic tools '
+    title: "4. New diagnostic tools "
     type: image-copy-component
   - content:
       - text: >-
@@ -168,7 +168,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: '5. Remote healthcare '
+    title: "5. Remote healthcare "
     type: image-copy-component
   - content:
       - text: >-
@@ -216,11 +216,10 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: 'Making it happen '
+    title: "Making it happen "
     type: image-copy-component
 footerLinks: []
 uuid: daf5dd50-a0f1-11ea-a322-0143b68e61ce
 type: blog-page
 parent: insights
 ---
-

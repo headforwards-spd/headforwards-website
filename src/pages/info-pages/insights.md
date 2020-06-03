@@ -20,8 +20,7 @@ seo:
     for our clients and delve into the technical side with content directly from
     our software developers.
   slug: insights
-  title: ''
+  title: ""
 uuid: b6b978da-9f51-11ea-bb37-0242ac130002
 type: blog-index
 ---
-

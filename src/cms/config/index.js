@@ -1,6 +1,6 @@
-import blogIndexPages from './collections/blog-index-pages';
 import allPages from './collections/all-pages';
 import authorPages from './collections/author-pages';
+import blogIndexPages from './collections/blog-index-pages';
 import blogPages from './collections/blog-pages';
 import indexPages from './collections/index-pages';
 import infoPages from './collections/info-pages';

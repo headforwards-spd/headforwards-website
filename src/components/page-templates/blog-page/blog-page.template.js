@@ -1,4 +1,4 @@
-import { arrayOf, bool, shape, string } from 'prop-types';
+import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';

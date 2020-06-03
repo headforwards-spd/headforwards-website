@@ -1,8 +1,8 @@
 import { shape, string } from 'prop-types';
 import React from 'react';
-import { ImageSrcPropType } from '../../page-layout/image/image.component';
 
 import Postit from '../../page-components/postit/postit.component';
+import { ImageSrcPropType } from '../../page-layout/image/image.component';
 import Link from '../../page-layout/link/link.component';
 import Markdown from '../../page-layout/markdown';
 import styles from './index-page.module.scss';

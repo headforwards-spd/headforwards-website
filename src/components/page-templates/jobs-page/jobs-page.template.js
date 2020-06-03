@@ -1,9 +1,9 @@
 import { arrayOf, shape, string } from 'prop-types';
 import React, { Component } from 'react';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 
 import slugify from '../../../lib/slugify';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
+import IntroductionComponent from '../../page-layout/introduction/introduction.component';
 import Link from '../../page-layout/link/link.component';
 import Markdown from '../../page-layout/markdown';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
