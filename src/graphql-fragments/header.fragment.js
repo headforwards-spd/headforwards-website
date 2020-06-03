@@ -11,6 +11,7 @@ export const HeaderFragment = graphql`
         introduction {
             title
             content {
+                id
                 type
                 text
                 quote

@@ -6,8 +6,10 @@ const setItemIds = items =>
     items.length &&
     items.forEach(item => {
         item.id = uuid.v1();
-        const { components, sections, content, articles } = item;
+        const { introduction, components, sections, content, articles } = item;
+        const { content: introductionContent } = introduction || {};
 
+        introductionContent && introduction.content.length && setItemIds(introduction.content);
         components && components.length && setItemIds(components);
         sections && sections.length && setItemIds(sections);
         content && content.length && setItemIds(content);

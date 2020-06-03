@@ -3,6 +3,7 @@ import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
+import { IntroductionProps } from '../components/page-layout/introduction/introduction.component';
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import InfoPageTemplate from '../components/page-templates/info-page/info-page.template';
 
@@ -12,7 +13,7 @@ InfoPagePage.propTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
-                introduction: string,
+                introduction: shape(IntroductionProps),
                 components: arrayOf(PageComponentPropType),
                 careers: shape({
                     title: string,
