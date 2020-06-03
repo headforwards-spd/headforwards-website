@@ -3,7 +3,7 @@ bannerImage: /uploads/head-8.jpg
 title: >-
   Why Artificial Intelligence has the power to transform the work of local
   authorities
-subtitle: ""
+subtitle: ''
 introduction: >-
   ## Local authorities in the UK are on the verge of a revolution in their use
   of Artificial Intelligence (AI)
@@ -47,7 +47,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: "AI can improve the overall efficiency of the operation "
+    title: 'AI can improve the overall efficiency of the operation '
     type: image-copy-component
   - content:
       - text: "AI has arrived at a time when councils are storing and processing more data than ever before and want to ensure they get maximum value from the data that they hold. AI can be a powerful tool for making sense of this vast amount of data, leading to better strategic planning. As part of this, new approaches to data warehousing are allowing AI systems to rapidly access the exact data that they need, rather than it being trapped in separate departmental ‘silos’. \r\n\n\r\n\nMerton Council has used AI to make sense of a wealth of energy usage data in a drive to reduce energy consumption in support of its climate emergency commitments. Using consumption data for council-run schools, the AI system quickly flagged unnecessary energy use outside normal operating hours, with a potential cost saving of £25,000. This approach is now being rolled out to the entire council estate."
@@ -55,7 +55,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: "AI can enable more effective use of data "
+    title: 'AI can enable more effective use of data '
     type: image-copy-component
   - content:
       - text: "AI can improve decision making, by enabling full use of all the information available to the council and using advanced analytics to uncover new insights from the data. As part of this, it can also lead to more objective decisions, by removing any subjective bias that may occur when humans are analysing the data. As a result, local strategies can be developed which more accurately align with local needs. \r\n\n\r\n\nHackney Council has trialled an Early Help Predictive System that uses AI to identify families that may benefit from extra support from the government. Its goal is to provide support to families that need it as early as possible, and also to prevent the need for high-cost and high-risk services later on. The AI analyses data such as debt, unemployment, housing, anti-social behaviour, domestic violence, and school attendance to create a profile of need for families."
@@ -63,7 +63,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: "AI can guide decision making "
+    title: 'AI can guide decision making '
     type: image-copy-component
   - content:
       - text: "AI is not only a means of improving efficiency, it can also be used to improve customer experience. As Natural Language Processing continues to advance, local authorities are increasingly looking to combine human service with AI to build chatbots that have the ability to carry out a number of functions, such as taking council tax payments, providing updates on service requests and registering for new services. By improving the customer experience, AI can improve customer satisfaction and strengthen the relationship between local authorities and the people they serve. \r\n\n\r\n\nAylesbury Vale District Council has incorporated AI into its customer service operation. The AI system uses information learned from previous council residents' conversations to improve response time to queries around services such as council tax, benefit and bin collection. Council services team members now respond to enquiries within three to five minutes, compared to eight minutes before the system was implemented."
@@ -71,7 +71,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: "AI can improve the customer experience "
+    title: 'AI can improve the customer experience '
     type: image-copy-component
   - content:
       - text: "By automating certain processes, AI can also help alleviate some of the pressure points that occur in council systems when there are peak levels in demand. For example, chatbots can be available to deal with inquiries and information requests 24/7, delivering better responsiveness to the public without the need for increased staffing. \r\n\n\r\n\nMilton Keynes Council is working on an AI system that will speed up the processing of planning applications. They have designed an AI customer-facing interface to answer general planning inquiries, including the status of applications, key planning dates, conservation area details and other queries. Their goal is to use systems like these to free up time for more added-value activities, such as planning for growth and community engagement."
@@ -79,7 +79,7 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: "AI can relieve pressure points in the system "
+    title: 'AI can relieve pressure points in the system '
     type: image-copy-component
   - content:
       - text: "So far, nearly a quarter of councils (24%) already have an AI strategy in place. (source: Agile Datum, March 2020) Most councils expect to have a chatbot strategy (90%) and artificial intelligence strategy (91%) in place within 12-18 months. \r\n\n\r\n\nWith all the technology developments now taking place, there has never been a better time for local authorities to explore the potential of AI. \r\n\n\r\n\nAt Headforwards, we are excited to be working with local authorities around the UK at this time of rapid change, helping them to make the most of technology to transform their service delivery."
@@ -87,11 +87,16 @@ components:
     isPostit: false
     isRightImage: false
     isTwoColumns: false
-    title: "Making it happen "
+    title: 'Making it happen '
     type: image-copy-component
 footerLinks:
-  - {}
+  - link1: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
+    link2: daf5dd50-a0f1-11ea-a322-0143b68e61ce
+    link3: 21a08160-0fac-11ea-843f-932c76de5936
+    title: Similar reading
+callToAction: ''
 uuid: c8643620-a0ef-11ea-a322-0143b68e61ce
 type: blog-page
 parent: insights
 ---
+
