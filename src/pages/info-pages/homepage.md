@@ -5,14 +5,13 @@ title: Forward thinking software
 bannerImage: /uploads/headforwards-1.jpg
 introduction:
   content:
-    - content:
-        - type: markdown-component
-          text: >-
-            Headforwards is an outsource software development company. 
+    - type: markdown-component
+      text: >-
+        Headforwards is an outsource software development company. 
 
 
-            Using Agile principles and dedicated teams recruited specifically for their
-            clients, Headforwards delivers software that creates real business value.
+        Using Agile principles and dedicated teams recruited specifically for their
+        clients, Headforwards delivers software that creates real business value.
 summary:
   image: /uploads/headforwards-1.jpg
   text: >-
