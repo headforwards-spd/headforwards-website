@@ -30,7 +30,6 @@ const plugins = [
     { ...gatsbyTransformerRemark },
     'gatsby-transformer-yaml',
     'gatsby-transformer-json',
-    `gatsby-transformer-yaml-menu`,
     { ...gatsbyPluginManifest },
     { ...gatsbyPluginOffline },
     `gatsby-plugin-force-trailing-slashes`,

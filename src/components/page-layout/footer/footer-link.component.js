@@ -67,9 +67,7 @@ export function extractFooterLinks(footerLinks) {
             },
         ].map(({ id, page }) => {
             const { fields, frontmatter } = page || {};
-            const { slug } = fields || {};
-            const { parent } = frontmatter || {};
-            const link = `/${parent || ''}/${slug || ''}/`;
+            const { link } = fields || {};
 
             return {
                 id,

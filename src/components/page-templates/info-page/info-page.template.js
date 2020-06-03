@@ -1,6 +1,7 @@
 import { any, arrayOf, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import Link from '../../page-layout/link/link.component';
@@ -35,15 +36,16 @@ function InfoPage({ introduction, components = [], jobsTitle: defaultJobsTitle, 
 
     const isIntro = !introduction;
 
+    const hashedComponents = useMemo(() => (components ? hashArray(components) : components), [components]);
+
     return (
         <>
             {introduction && <Introduction introduction={introduction} />}
-            {components && (
+            {hashedComponents && (
                 <section>
-                    {!!components &&
-                        components.map(({ id, ...component }) => (
-                            <PageComponent key={id} {...component} isIntro={isIntro} />
-                        ))}
+                    {hashedComponents.map(({ id, ...component }) => (
+                        <PageComponent key={id} {...component} isIntro={isIntro} />
+                    ))}
                 </section>
             )}
             {hasApplicationForm && (

@@ -1,6 +1,7 @@
-import { arrayOf, shape, string } from 'prop-types';
-import React, { Component } from 'react';
+import { arrayOf, bool, shape, string } from 'prop-types';
+import React, { Component, useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import slugify from '../../../lib/slugify';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
@@ -139,14 +140,7 @@ export default class JobsPage extends Component {
         return (
             <>
                 {introduction && <Introduction introduction={introduction} />}
-                {components && (
-                    <section>
-                        {!!components &&
-                            components.map(({ id, ...component }) => (
-                                <PageComponent key={id} {...component} isIntro={isIntro} />
-                            ))}
-                    </section>
-                )}
+                {components && <Components components={components} isIntro={isIntro} />}
                 {tagList && (
                     <section className={styles.filters}>
                         <ul className={styles.selectedTags}>
@@ -206,4 +200,24 @@ export default class JobsPage extends Component {
             </>
         );
     }
+}
+
+Components.propTypes = {
+    isIntro: bool,
+    components: arrayOf(PageComponentPropType),
+};
+Components.defaultProps = {
+    isIntro: false,
+    components: [],
+};
+function Components({ components, isIntro }) {
+    const hashedComponents = useMemo(() => (components ? hashArray(components) : components), [components]);
+
+    return hashedComponents ? (
+        <section>
+            {hashedComponents.map(({ id, ...component }) => (
+                <PageComponent key={id} {...component} isIntro={isIntro} />
+            ))}
+        </section>
+    ) : null;
 }

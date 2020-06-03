@@ -58,7 +58,7 @@ export const query = graphql`
             nodes {
                 id
                 fields {
-                    slug
+                    link
                 }
                 frontmatter {
                     parent

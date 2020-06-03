@@ -1,6 +1,7 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import Postit from '../../page-components/postit/postit.component';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
@@ -32,11 +33,13 @@ Homepage.defaultProps = {
 function Homepage({ introduction, sections }) {
     const isIntro = !introduction;
 
+    const hashedSections = useMemo(() => (sections ? hashArray(sections) : sections), [sections]);
+
     return (
         <>
             {introduction && <Introduction introduction={introduction} className={styles.intro} />}
-            {!!sections &&
-                sections.map(({ id, ...section }, index) => (
+            {hashedSections &&
+                hashedSections.map(({ id, ...section }, index) => (
                     <HomePageSection key={id} {...section} isFirstSection={isIntro && index === 0} />
                 ))}
         </>
@@ -65,6 +68,8 @@ function HomePageSection({ isFirstSection, components, isPostit, isRightImage, i
     const [{ title }] = components || [{}];
     const firstClass = isFirstSection ? styles.first : '';
 
+    const hashedComponents = useMemo(() => (components ? hashArray(components) : components), [components]);
+
     return (
         <section className={`${wrapperStyles} ${firstClass}`}>
             {!!hasImage && (
@@ -79,10 +84,13 @@ function HomePageSection({ isFirstSection, components, isPostit, isRightImage, i
                     }}
                 />
             )}
-            <section className={styles.components}>
-                {!!components &&
-                    components.map(({ id, ...component }) => <PageComponent key={id} {...component} title={title} />)}
-            </section>
+            {hashedComponents && (
+                <section className={styles.components}>
+                    {hashedComponents.map(({ id, ...component }) => (
+                        <PageComponent key={id} {...component} title={title} />
+                    ))}
+                </section>
+            )}
         </section>
     );
 }

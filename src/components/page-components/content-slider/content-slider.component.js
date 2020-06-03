@@ -2,9 +2,10 @@ import './slick-theme.scss';
 import './slick.scss';
 
 import { arrayOf, shape, string } from 'prop-types';
-import React, { Component } from 'react';
+import React, { Component, useMemo } from 'react';
 import Slider from 'react-slick';
 
+import hashArray from '../../../lib/hash-array';
 import styles from './content-slider.module.scss';
 import Slide, { SlidePropType } from './slide.component';
 
@@ -43,11 +44,13 @@ export default class ContentSlider extends Component {
 
         const headerClass = isChanging ? 'changing' : '';
 
+        const hashedArticles = useMemo(() => (articles ? hashArray(articles) : articles), [articles]);
+
         return (
             <section className={styles.contentSlider}>
                 <h2 className={headerClass}>{title}</h2>
                 <Slider {...settings}>
-                    {articles.map(({ id, ...slide }) => (
+                    {hashedArticles.map(({ id, ...slide }) => (
                         <Slide key={id} {...slide} />
                     ))}
                 </Slider>

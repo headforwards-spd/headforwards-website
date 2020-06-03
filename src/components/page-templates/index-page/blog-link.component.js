@@ -7,7 +7,7 @@ import Markdown from '../../page-layout/markdown';
 import styles from './index-page.module.scss';
 
 const BlogLinkPropTypes = {
-    fields: shape({ slug: string }).isRequired,
+    fields: shape({ link: string }).isRequired,
     frontmatter: shape({
         summary: shape({
             image: ImageSrcPropType,
@@ -27,12 +27,11 @@ export const BlogLinkPropType = shape(BlogLinkPropTypes);
 BlogLink.propTypes = BlogLinkPropTypes;
 
 function BlogLink({ fields, frontmatter }) {
-    const { slug } = fields;
-    const { title, parent, summary, author: authorPage } = frontmatter || {};
+    const { link } = fields;
+    const { title, summary, author: authorPage } = frontmatter || {};
     const {
         frontmatter: { name: author },
     } = authorPage || {};
-    const link = `/${parent}/${slug}`;
 
     const { image, text } = summary || {};
 

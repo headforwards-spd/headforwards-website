@@ -5,7 +5,7 @@ export const FooterLinkFragment = graphql`
     fragment FooterLinkFragment on MarkdownRemark {
         id
         fields {
-            slug
+            link
         }
         frontmatter {
             parent

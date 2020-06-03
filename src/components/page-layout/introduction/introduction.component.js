@@ -1,6 +1,7 @@
 import { arrayOf, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import ContentComponent, { ContentComponentProps } from '../../page-components/content.component';
 import styles from './introduction.module.scss';
 
@@ -26,10 +27,13 @@ function Introduction({ introduction, className }) {
         return null;
     }
 
+    const hashedContent = useMemo(() => (content ? hashArray(content) : content), [content]);
+
     return (
         <section className={`${styles.introduction} ${className}`}>
             {title && <h2>{title}</h2>}
-            {content && content.map(({ id, type, ...item }) => <ContentComponent key={id} type={type} {...item} />)}
+            {hashedContent &&
+                hashedContent.map(({ id, type, ...item }) => <ContentComponent key={id} type={type} {...item} />)}
         </section>
     );
 }

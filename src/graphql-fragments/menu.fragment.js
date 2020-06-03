@@ -4,17 +4,35 @@ import { graphql } from 'gatsby';
 export const MenuFragment = graphql`
     fragment MenuFragment on DataYaml {
         menu {
-            id
             linkText
-            link
-            children {
-                id
-                linkText
-                link
-                children {
-                    id
-                    linkText
+            page {
+                fields {
                     link
+                }
+                frontmatter {
+                    uuid
+                }
+            }
+            children {
+                linkText
+                page {
+                    fields {
+                        link
+                    }
+                    frontmatter {
+                        uuid
+                    }
+                }
+                children {
+                    linkText
+                    page {
+                        fields {
+                            link
+                        }
+                        frontmatter {
+                            uuid
+                        }
+                    }
                 }
             }
         }

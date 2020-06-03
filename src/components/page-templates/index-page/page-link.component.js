@@ -30,8 +30,9 @@ PageLink.defaultProps = {
     isPostit: false,
 };
 
-function PageLink({ isPostit, link, linkText: title, page }) {
-    const { frontmatter } = page || {};
+function PageLink({ isPostit, linkText: title, page }) {
+    const { fields, frontmatter } = page || {};
+    const { link } = fields;
     const { summary } = frontmatter || {};
     const pageLinkProps = {
         link,
