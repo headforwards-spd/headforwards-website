@@ -332,7 +332,7 @@
     justify-content: flex-start;
     .blogLink,
     > img {
-      width: calc((100% / 3) - #{$column-gutter-md});
+      width: calc((100% / 2) - #{$column-gutter-md});
 
       article {
         margin-bottom: 0;

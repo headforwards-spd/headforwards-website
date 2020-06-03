@@ -1,6 +1,7 @@
 import callToAction from '../widgets/call-to-action';
 import footerLinks from '../widgets/footer-links';
-import { introduction, subTitle, title } from '../widgets/header';
+import { subTitle, title } from '../widgets/header';
+import introduction from '../widgets/introduction';
 import seo from '../widgets/seo';
 import summary from '../widgets/summary';
 import uuid from '../widgets/uuid';

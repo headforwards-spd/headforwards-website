@@ -1,14 +1,17 @@
 ---
 bannerImage: /uploads/head-11.jpg
 title: Can Agile work in local authorities?
-introduction: >-
-  The annual Agile on the Beach conference, co-founded by one of Headforwards’
-  founders, Toby Parkins is now one of the most respected agile conferences in
-  the UK with a growing international audience. It’s an opportunity for Agile
-  practitioners to come together to hear from some of the leading voices in
-  Agile and best practice, but it’s also a great place for people to get to
-  understand the principals of an Agile methodology. For our local authority,
-  Agile on the Beach sparked the question, “How could we become more Agile?”
+introduction:
+  content:
+    - type: markdown-component
+      text: >-
+        The annual Agile on the Beach conference, co-founded by one of Headforwards’
+        founders, Toby Parkins is now one of the most respected agile conferences in
+        the UK with a growing international audience. It’s an opportunity for Agile
+        practitioners to come together to hear from some of the leading voices in
+        Agile and best practice, but it’s also a great place for people to get to
+        understand the principals of an Agile methodology. For our local authority,
+        Agile on the Beach sparked the question, “How could we become more Agile?”
 summary:
   image: /uploads/head-11.jpg
   text: >-
@@ -72,7 +75,7 @@ components:
           The Coronavirus outbreak has put pressure on a lot of companies, but
           the need for the council to respond quickly is enormous. As well as
           their responsibility to support individuals, communities and
-          businesses, the council has XX employees of its own who, within a
+          businesses, the council has many employees of its own who, within a
           matter of days all had to move from offices to home working.   The
           digital transformation focused on the vast quantities of data the
           council stores, but once the Coronavirus outbreak hit the urgent task

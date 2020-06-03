@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
+import { IntroductionProps } from '../components/page-layout/introduction/introduction.component';
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import LegalPageTemplate from '../components/page-templates/legal-page/legal-page.template';
 
@@ -12,7 +13,7 @@ LegalPage.propTypes = {
             frontmatter: shape({
                 title: string.isRequired,
                 subtitle: string,
-                introduction: string,
+                introduction: shape(IntroductionProps),
                 sections: arrayOf(
                     shape({
                         title: string,

@@ -1,0 +1,5 @@
+@import "./page-component";
+
+.markdown {
+  @include markdown;
+}

@@ -6,6 +6,7 @@ import * as uuid from 'uuid';
 import Footer from '../../components/page-layout/footer/footer.component';
 import Header from '../../components/page-layout/header/header.component';
 import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
+import { IntroductionProps } from '../../components/page-layout/introduction/introduction.component';
 import BlogPage from '../../components/page-templates/blog-page/blog-page.template';
 
 export default BlogPagePreview;
@@ -16,7 +17,7 @@ BlogPagePreview.propTypes = {
             title: string,
             subtitle: string,
             bannerImage: ImageSrcPropType,
-            introduction: string,
+            introduction: shape(IntroductionProps),
             summary: shape({
                 image: ImageSrcPropType,
                 text: string,

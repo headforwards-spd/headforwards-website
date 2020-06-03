@@ -1,6 +1,5 @@
 ---
 title: Building the business case for long term IT investment
-introduction: ""
 summary:
   image: /uploads/hf-steal-1.jpg
   text: >-
@@ -71,5 +70,5 @@ components:
     type: image-copy-component
 uuid: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
 type: blog-page
-parent: blog
+parent: insights
 ---
