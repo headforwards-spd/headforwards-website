@@ -22,8 +22,6 @@ Markdown.defaultProps = {
 function Markdown({ source = '', className, truncate, maxLength }) {
     const text = truncate ? truncateString(source, maxLength) : source;
 
-    console.log({ className, text });
-
     const fancyText = text ? preventOrphans(text) : '';
     if (!fancyText) {
         return <></>;
