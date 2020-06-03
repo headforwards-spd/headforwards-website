@@ -1,6 +1,6 @@
 import { faFacebookSquare, faLinkedinIn, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import { string } from 'prop-types';
 import React from 'react';
 
@@ -91,7 +91,7 @@ function SocialShare({ title, url, className }) {
                     to={link}
                     onClick={event => handleClick(event, name, link, popup)}
                 >
-                    <FontAwesomeIcon icon={icon} />
+                    <Icon icon={icon} className={styles.icon} />
                 </Link>
             ))}
         </nav>
