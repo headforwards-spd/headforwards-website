@@ -22,11 +22,10 @@ BlogPagePage.propTypes = {
 function BlogPagePage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { title } = frontmatter;
+    const { title, introduction, author: authorPage, components, publishedDate } = frontmatter || {};
 
     const layoutProps = extractLayoutProps(page);
 
-    const { introduction, author: authorPage, components, publishedDate } = frontmatter;
     const { frontmatter: author } = authorPage || {};
     const pageProps = {
         title,
@@ -46,7 +45,9 @@ function BlogPagePage({ data }) {
 export const query = graphql`
     query BlogPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
-            ...PageFragment
+            frontmatter {
+                ...PageFragment
+            }
         }
     }
 `;

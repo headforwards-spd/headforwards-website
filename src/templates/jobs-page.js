@@ -53,7 +53,7 @@ function JobsPage({ data }) {
 
     const layoutProps = extractLayoutProps(page);
 
-    const { introduction, components, footerText } = frontmatter;
+    const { introduction, components, footerText } = frontmatter || {};
     const { nodes: jobs } = jobNodes;
     const { distinct: tags } = tagData;
     const pageProps = {
@@ -75,7 +75,9 @@ function JobsPage({ data }) {
 export const query = graphql`
     query JobsPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
-            ...PageFragment
+            frontmatter {
+                ...PageFragment
+            }
         }
         filters: dataYaml(title: { eq: "careers" }) {
             tags {

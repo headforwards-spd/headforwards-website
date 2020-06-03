@@ -29,7 +29,7 @@ function InfoPagePage({ data }) {
     const { frontmatter } = page;
 
     const layoutProps = extractLayoutProps(page);
-    const { introduction, components, careers } = frontmatter;
+    const { introduction, components, careers } = frontmatter || {};
 
     const { jobsTitle } = careersSettings;
     const { nodes: jobs } = jobNodes;
@@ -51,7 +51,9 @@ function InfoPagePage({ data }) {
 export const query = graphql`
     query InfoPage($id: String!, $department: String!, $tagRegex: String!) {
         page: markdownRemark(id: { eq: $id }) {
-            ...PageFragment
+            frontmatter {
+                ...PageFragment
+            }
         }
         careers: dataYaml(title: { eq: "careers" }) {
             jobsTitle

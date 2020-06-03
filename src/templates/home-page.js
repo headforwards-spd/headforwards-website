@@ -25,7 +25,7 @@ function Homepage({ data }) {
     const { frontmatter } = page;
 
     const layoutProps = extractLayoutProps(page);
-    const { introduction, sections, components } = frontmatter;
+    const { introduction, sections, components } = frontmatter || {};
     const templateProps = {
         introduction,
         sections,
@@ -45,7 +45,6 @@ export const query = graphql`
             frontmatter {
                 ...HeaderFragment
                 sections {
-                    id
                     image {
                         ...ImageFragment
                     }
@@ -59,11 +58,9 @@ export const query = graphql`
                     title
                     isRightImage
                     components {
-                        id
                         type
                         title
                         content {
-                            id
                             type
                             quote
                             profilePic {

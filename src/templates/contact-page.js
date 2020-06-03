@@ -25,7 +25,7 @@ function ContactPage({ data }) {
     const { frontmatter } = page;
 
     const layoutProps = extractLayoutProps(page);
-    const { introduction, components } = frontmatter;
+    const { introduction, components } = frontmatter || {};
     const pageProps = {
         introduction,
         ...companyInfo,
@@ -42,7 +42,9 @@ function ContactPage({ data }) {
 export const query = graphql`
     query ContactPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
-            ...PageFragment
+            frontmatter {
+                ...PageFragment
+            }
         }
         companyInfo: dataYaml(title: { eq: "company-info" }) {
             companyName

@@ -29,7 +29,7 @@ function IndexPage({ data, pageContext }) {
 
     const layoutProps = extractLayoutProps(page);
 
-    const { isPostits, introduction, components } = frontmatter;
+    const { isPostits, introduction, components } = frontmatter || {};
     const { children: pages } = pageContext || {};
     const templateProps = {
         isPostits,
@@ -48,7 +48,9 @@ function IndexPage({ data, pageContext }) {
 export const query = graphql`
     query IndexPage($uuid: String!) {
         page: markdownRemark(frontmatter: { uuid: { eq: $uuid } }) {
-            ...PageFragment
+            frontmatter {
+                ...PageFragment
+            }
         }
     }
 `;

@@ -14,6 +14,30 @@ const slugOptions = {
 
 const { resolve } = require('path');
 
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions;
+    const typeDefs = `
+type MarkdownRemark implements Node {
+  frontmatter: MarkdownRemarkFrontmatter
+}
+type MarkdownRemarkFrontmatter {
+  author: MarkdownRemark @link(by: "frontmatter.uuid", from: "author")
+  footerLinks: [FooterLinks]
+}
+type FooterLinks {
+    title: String
+    showImages: Boolean
+    link1: String
+    link2: String
+    link3: String
+    page1: MarkdownRemark @link(by: "frontmatter.uuid", from: "link1")
+    page2: MarkdownRemark @link(by: "frontmatter.uuid", from: "link2")
+    page3: MarkdownRemark @link(by: "frontmatter.uuid", from: "link3")
+}
+  `;
+    createTypes(typeDefs);
+};
+
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
 
@@ -34,7 +58,7 @@ exports.onCreateNode = ({ node, actions }) => {
     const { type } = internal;
     fmImagesToRelative(node); // convert image paths for gatsby images
 
-    if (type === `MarkdownRemark`) {
+    if (type === `MarkdownRemark` || type === `MarkdownRemark`) {
         const { frontmatter } = node;
         const { title, name } = frontmatter;
         const value = makeSlug(title, slugOptions) || makeSlug(name, slugOptions);

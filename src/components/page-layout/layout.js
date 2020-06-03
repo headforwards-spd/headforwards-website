@@ -163,7 +163,7 @@ export function extractLayoutProps({ frontmatter }) {
         footerLinks: rawFooterLinks,
         callToAction,
         seo,
-    } = frontmatter;
+    } = frontmatter || {};
     const { applicationForm } = careers || {};
     const jobDetails = applicationForm ? { path: `/careers/${applicationForm}` } : null;
     const footerLinks = extractFooterLinks(rawFooterLinks);

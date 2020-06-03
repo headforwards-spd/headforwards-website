@@ -31,7 +31,7 @@ function BlogLink({ fields, frontmatter }) {
     const { title, parent, summary, author: authorPage } = frontmatter || {};
     const {
         frontmatter: { name: author },
-    } = authorPage;
+    } = authorPage || {};
     const link = `/${parent}/${slug}`;
 
     const { image, text } = summary || {};

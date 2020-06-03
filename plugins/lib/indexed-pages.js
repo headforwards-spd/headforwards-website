@@ -14,7 +14,7 @@ exports.getIndexedPages = pages => {
 
         urls[uuid] = {
             id,
-            path: `${parent}/${slug}`.replace(/\/\/+/g, '/'),
+            path: `/${parent}/${slug}/`.replace(/\/\/+/g, '/'),
         };
     });
 

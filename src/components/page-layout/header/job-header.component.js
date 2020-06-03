@@ -68,7 +68,7 @@ export default class JobHeader extends StickyNav {
                 <Navbar {...navBarProps} />
                 <section>
                     <section>
-                        <h1>{parseHtml(title)}</h1>
+                        {title && <h1>{parseHtml(title)}</h1>}
                         <p>{subtitle}</p>
                     </section>
                     <section>
