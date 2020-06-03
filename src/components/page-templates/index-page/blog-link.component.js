@@ -43,7 +43,7 @@ function BlogLink({ fields, frontmatter }) {
                     <h2>{title}</h2>
                     {author && <p>{`By ${author}`}</p>}
                 </header>
-                <Image image={image} className={styles.image} />
+                <Image image={image} className={styles.image} alt={title} />
                 <section>
                     <Markdown source={text} truncate />
                 </section>

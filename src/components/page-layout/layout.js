@@ -28,15 +28,24 @@ const UnstatedHelmet = withUnstated(
 
         return (
             <Helmet bodyAttributes={bodyAttributes}>
+                {/* Google */}
                 <link rel="preconnect" href="https://www.google.com" />
-                <link rel="preconnect" href="https://www.facebook.com" />
-                <link rel="preconnect" href="https://www.googletagmanager.com" />
-                <link rel="preconnect" href="https://d.adroll.mgr.consensu.org" />
-                <link rel="preconnect" href="https://d.adroll.com" />
-                <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
-                <link rel="preconnect" href="https://www.google-analytics.com" />
+                {/* Facebook */}
                 <link rel="preconnect" href="https://connect.facebook.net" />
+                <link rel="preconnect" href="https://www.facebook.com" />
+                {/* HotJar */}
+                <link rel="preconnect" href="https://in.hotjar.com" />
+                <link rel="preconnect" href="https://script.hotjar.com" />
+                <link rel="preconnect" href="https://static.hotjar.com" />
+                <link rel="preconnect" href="https://stats.g.doubleclick.net" />
+                <link rel="preconnect" href="https://vars.hotjar.com" />
                 <link rel="preconnect" href="https://vc.hotjar.io" />
+
+                {/* <link rel="preconnect" href="https://d.adroll.mgr.consensu.org" /> */}
+                {/* <link rel="preconnect" href="https://d.adroll.com" /> */}
+                {/* <link rel="preconnect" href="https://googleads.g.doubleclick.net" /> */}
+                {/* <link rel="preconnect" href="https://www.google-analytics.com" /> */}
+                {/* <link rel="preconnect" href="https://www.googletagmanager.com" /> */}
             </Helmet>
         );
     },

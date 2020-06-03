@@ -33,7 +33,7 @@ function Author({ bio, profilePic, name, jobTitle }) {
                     </section>
                     {!!profilePic && (
                         <div className={styles.imageCropper}>
-                            <Image image={profilePic} ratio="100%" />
+                            <Image image={profilePic} ratio="100%" alt={name} />
                         </div>
                     )}
                 </header>
