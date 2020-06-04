@@ -1,8 +1,6 @@
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 const makeSlug = require('slug');
 
-const webpack = require(`webpack`);
-
 const slugOptions = {
     replacement: '-',
     symbols: true,
@@ -89,16 +87,6 @@ exports.createPages = ({ actions, graphql }) => {
                 createAllJobs(createPage, jobs),
             ])
         );
-};
-
-exports.onCreateWebpackConfig = ({ actions }) => {
-    actions.setWebpackConfig({
-        plugins: [
-            new webpack.IgnorePlugin({
-                resourceRegExp: /^netlify-identity-widget$/,
-            }),
-        ],
-    });
 };
 
 function createAllIndexPages(createPage, { menu: pages }) {
