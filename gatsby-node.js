@@ -27,8 +27,9 @@ type MarkdownRemarkFrontmatter {
 type DataYaml implements Node {
   menu: [MenuItem]
 }
-type MarkdownRemarkFrontmatterSections {
-  id: ID
+type MarkdownRemarkFrontmatterComponents {
+    link: Link
+    articles: [Link]
 }
 type FooterLinks {
     title: String
@@ -44,6 +45,10 @@ type MenuItem {
     linkText: String
     page: MarkdownRemark @link(by: "frontmatter.uuid", from: "page")
     children: [MenuItem]
+}
+type Link {
+    linkText: String
+    link: MarkdownRemark @link(by: "frontmatter.uuid", from: "link")
 }
   `;
     createTypes(typeDefs);

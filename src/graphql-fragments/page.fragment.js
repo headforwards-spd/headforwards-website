@@ -36,19 +36,33 @@ export const PageFragment = graphql`
             isRightImage
             isTwoColumns
             link {
-                link
                 linkText
+                link {
+                    fields {
+                        link
+                    }
+                }
             }
             articles {
                 title
                 text
                 linkText
-                link
-                image {
-                    ...ImageFragment
-                }
-                imageSquare: image {
-                    ...ImageSquareFragment
+                link {
+                    fields {
+                        link
+                    }
+                    frontmatter {
+                        title
+                        summary {
+                            text
+                            image {
+                                ...ImageFragment
+                            }
+                            imageSquare: image {
+                                ...ImageSquareFragment
+                            }
+                        }
+                    }
                 }
             }
             ...SectionImageFragment

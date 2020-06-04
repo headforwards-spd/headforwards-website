@@ -9,7 +9,6 @@ import styles from './article-columns.module.scss';
 const articlePropTypes = {
     title: string.isRequired,
     text: string.isRequired,
-    image: ImageSrcPropType.isRequired,
     link: string,
     linkText: string,
 };
@@ -23,7 +22,8 @@ Article.defaultProps = {
     linkText: null,
 };
 
-function Article({ title, text, image, link, linkText }) {
+function Article({ link: linkPage, linkText }) {
+    const { fields: { link } = {}, frontmatter: { title, summary: { text, image } = {} } = {} } = linkPage || {};
     const hasLink = !!link && !!linkText;
 
     return (

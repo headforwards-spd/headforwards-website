@@ -44,17 +44,31 @@ export default class ContentSlider extends Component {
 
         const headerClass = isChanging ? 'changing' : '';
 
-        const hashedArticles = useMemo(() => (articles ? hashArray(articles) : articles), [articles]);
-
         return (
             <section className={styles.contentSlider}>
                 <h2 className={headerClass}>{title}</h2>
                 <Slider {...settings}>
-                    {hashedArticles.map(({ id, ...slide }) => (
-                        <Slide key={id} {...slide} />
-                    ))}
+                    <Slides slides={articles} />
                 </Slider>
             </section>
         );
     }
+}
+
+Slides.propTypes = {
+    slides: arrayOf(SlidePropType),
+};
+Slides.defaultProps = {
+    slides: [],
+};
+function Slides({ slides }) {
+    const hashedSlides = useMemo(() => (slides ? hashArray(slides) : slides), [slides]);
+
+    return (
+        <>
+            {hashedSlides.map(({ id, ...slide }) => (
+                <Slide key={id} {...slide} />
+            ))}
+        </>
+    );
 }

@@ -16,7 +16,8 @@ export const BlogArticlePropType = shape(blogArticlePropTypes);
 
 BlogArticle.propTypes = blogArticlePropTypes;
 
-function BlogArticle({ title, image, link }) {
+function BlogArticle({ title, link: linkPage }) {
+    const { fields: { link } = {}, frontmatter: { summary: { image } = {} } = {} } = linkPage || {};
     return (
         <Link to={link} aria-label={title}>
             <section className={styles.article}>

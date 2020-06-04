@@ -6,18 +6,20 @@ import Link from '../../page-layout/link/link.component';
 import Markdown from '../../page-layout/markdown';
 import styles from './content-slider.module.scss';
 
-const slidePropTypes = {
-    title: string.isRequired,
-    text: string.isRequired,
-    image: ImageSrcPropType.isRequired,
-};
+// const slidePropTypes = {
+//     title: string.isRequired,
+//     text: string.isRequired,
+//     image: ImageSrcPropType.isRequired,
+// };
 
 export default Slide;
-export const SlidePropType = shape(slidePropTypes);
+// export const SlidePropType = shape(slidePropTypes);
+//
+// Slide.propTypes = slidePropTypes;
 
-Slide.propTypes = slidePropTypes;
+function Slide({ linkText, link: linkPage }) {
+    const { fields: { link } = {}, frontmatter: { title, summary: { text, image } = {} } = {} } = linkPage || {};
 
-function Slide({ title, text, image }) {
     return (
         <section className={styles.slide}>
             <section>
@@ -25,7 +27,7 @@ function Slide({ title, text, image }) {
                 <section>
                     <Markdown source={text} />
                 </section>
-                <Link to="/">Read the case study</Link>
+                <Link to={link}>{linkText}</Link>
             </section>
             <Image className={styles.slideImage} image={image} />
         </section>

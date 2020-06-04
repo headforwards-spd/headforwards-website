@@ -29,8 +29,9 @@ ImageCopyColumns.defaultProps = {
     content: [],
 };
 
-function ImageCopyColumns({ image, isRightImage, title, content, link }) {
+function ImageCopyColumns({ image, isRightImage, title, content, link: linkPage }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
+    const { fields: { link } = {} } = linkPage || {};
     const hasLink = !!link;
 
     const hashedContent = useMemo(() => (content ? hashArray(content) : content), [content]);

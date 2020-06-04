@@ -30,8 +30,9 @@ PostitCopyColumns.defaultProps = {
     content: [],
 };
 
-function PostitCopyColumns({ image, isRightImage, title, content, link }) {
+function PostitCopyColumns({ image, isRightImage, title, content, link: linkPage }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
+    const { fields: { link } = {} } = linkPage || {};
 
     const hasLink = !!link;
 
