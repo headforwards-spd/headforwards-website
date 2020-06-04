@@ -2,15 +2,24 @@
 @import "../../page-components/columns/columns";
 
 .introduction {
-  > h2 {
-    @include headingFontLarge;
+  @media (min-width: $screen-md) {
+    position: relative;
+    width: $singleColumnMaxWidth;
+    &:after {
+      @media (min-width: $screen-md) {
+        content: url(/images/hf-arrow.svg);
+        opacity: 0.05;
+        position: absolute;
+        right: -50%;
+        top: -$component-gutter-md + $column-gutter-md/2;
+        width: 62.5%;
+        z-index: -1;
+      }
+      @media (min-width: $screen-lg) {
+        top: -$component-gutter-lg + $column-gutter-lg/2;
+      }
+    }
   }
-
-  @include fontMedium;
-  @media (min-width: $screen-lg) {
-    @include fontLarge;
-  }
-  @include component-gutter;
 }
 
 .apply {

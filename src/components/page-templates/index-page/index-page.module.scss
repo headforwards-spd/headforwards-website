@@ -21,6 +21,13 @@
   background-color: rgba($r1 * 1.1, $g1 * 1.1, $b1 * 1.1, $desired_alpha);
 }
 
+.intro {
+  @media (min-width: $screen-md) {
+    position: relative;
+    width: $singleColumnMaxWidth;
+  }
+}
+
 .pages {
   @include columns-component;
   align-items: stretch;
@@ -273,6 +280,7 @@
       @include fontMediumVr;
       margin-bottom: 0;
       display: flex;
+      flex-grow: 1;
 
       flex-direction: column;
 
