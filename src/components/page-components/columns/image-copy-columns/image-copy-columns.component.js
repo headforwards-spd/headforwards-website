@@ -13,7 +13,7 @@ const imageCopyColumnsPropTypes = {
     image: ImageSrcPropType.isRequired,
     content: arrayOf(any),
     link: shape({
-        linkText: string.isRequired,
+        linkText: string,
         link: shape({
             fields: shape({
                 link: string,

@@ -57,7 +57,8 @@ export default class MenuItem extends Component {
     }
 }
 Item.propTypes = {
-    location: string.isRequired,
+    // eslint-disable-next-line react/forbid-prop-types
+    location: any,
     link: string.isRequired,
     children: arrayOf(any),
     linkText: string.isRequired,
@@ -67,6 +68,7 @@ Item.propTypes = {
     toggleMenu: func.isRequired,
 };
 Item.defaultProps = {
+    location: null,
     children: null,
     showTitle: false,
     isActive: false,

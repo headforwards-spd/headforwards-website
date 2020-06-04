@@ -1,7 +1,6 @@
 ---
 bannerImage: /uploads/headforwards-14.jpg
 title: Building the business case for long term IT investment
-introduction: ""
 summary:
   image: /uploads/headforwards-14.jpg
   text: >-
