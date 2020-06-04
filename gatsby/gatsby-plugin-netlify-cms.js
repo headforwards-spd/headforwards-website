@@ -9,7 +9,7 @@ module.exports = {
         modulePath: `${__dirname}/../src/cms/cms.js`,
         stylesPath: [`${__dirname}/../src`, 'node_modules'],
         enableIdentityWidget: true,
-        publicPath: 'admin',
+        publicPath: '/admin/',
         htmlTitle: 'Content Manager',
         includeRobots: false,
     },

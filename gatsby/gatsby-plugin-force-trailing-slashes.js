@@ -1,6 +1,6 @@
 module.exports = {
     resolve: `gatsby-plugin-force-trailing-slashes`,
     options: {
-        excludedPaths: [`/admin`, '/offline-plugin-app-shell-fallback/index.html'],
+        excludedPaths: [`/404.html`, '/offline-plugin-app-shell-fallback/index.html'],
     },
 };
