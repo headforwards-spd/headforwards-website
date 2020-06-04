@@ -34,8 +34,6 @@ const plugins = [
     `gatsby-transformer-remark-linked-pages`,
     `gatsby-transformer-yaml-menu`,
 
-    { ...gatsbyPluginNetlifyCms },
-
     { ...gatsbyPluginForceTrailingSlashes },
     { ...gatsbyPluginSitemap },
     { ...gatsbyPluginRobotsTxt },
@@ -43,6 +41,8 @@ const plugins = [
 
     { ...gatsbyPluginManifest },
     { ...gatsbyPluginOffline },
+
+    { ...gatsbyPluginNetlifyCms },
 
     { ...gatsbyPluginNetlify },
 ];
