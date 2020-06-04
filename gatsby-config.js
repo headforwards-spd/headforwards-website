@@ -33,13 +33,17 @@ const plugins = [
     'gatsby-transformer-json',
     `gatsby-transformer-remark-linked-pages`,
     `gatsby-transformer-yaml-menu`,
+
     { ...gatsbyPluginForceTrailingSlashes },
-    { ...gatsbyPluginManifest },
-    { ...gatsbyPluginOffline },
     { ...gatsbyPluginSitemap },
     { ...gatsbyPluginRobotsTxt },
     { ...gatsbyPluginGoogleTagmanger },
+
+    { ...gatsbyPluginManifest },
+    { ...gatsbyPluginOffline },
+
     { ...gatsbyPluginNetlifyCms },
+
     { ...gatsbyPluginNetlify },
 ];
 
