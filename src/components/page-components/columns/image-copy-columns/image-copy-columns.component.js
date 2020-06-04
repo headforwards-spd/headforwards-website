@@ -8,13 +8,17 @@ import ContentComponent from '../../content.component';
 import styles from './image-copy-columns.module.scss';
 
 const imageCopyColumnsPropTypes = {
-    image: ImageSrcPropType.isRequired,
     isRightImage: bool,
     title: string,
+    image: ImageSrcPropType.isRequired,
     content: arrayOf(any),
     link: shape({
-        link: string.isRequired,
         linkText: string.isRequired,
+        link: shape({
+            fields: shape({
+                link: string,
+            }),
+        }).isRequired,
     }),
 };
 

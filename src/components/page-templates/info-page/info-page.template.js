@@ -40,7 +40,7 @@ function InfoPage({ introduction, components = [], jobsTitle: defaultJobsTitle, 
 
     return (
         <>
-            {introduction && <Introduction introduction={introduction} />}
+            {introduction && <Introduction introduction={introduction} className={styles.introduction} />}
             {hashedComponents && (
                 <section>
                     {hashedComponents.map(({ id, ...component }) => (

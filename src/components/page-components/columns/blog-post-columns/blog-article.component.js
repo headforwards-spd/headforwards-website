@@ -6,9 +6,17 @@ import Link from '../../../page-layout/link/link.component';
 import styles from './blog-post-columns.module.scss';
 
 const blogArticlePropTypes = {
-    title: string.isRequired,
-    image: ImageSrcPropType.isRequired,
-    link: string.isRequired,
+    link: shape({
+        fields: shape({
+            link: string,
+        }),
+        frontmatter: shape({
+            title: string,
+            summary: shape({
+                image: ImageSrcPropType,
+            }),
+        }),
+    }).isRequired,
 };
 
 export default BlogArticle;
@@ -16,8 +24,8 @@ export const BlogArticlePropType = shape(blogArticlePropTypes);
 
 BlogArticle.propTypes = blogArticlePropTypes;
 
-function BlogArticle({ title, link: linkPage }) {
-    const { fields: { link } = {}, frontmatter: { summary: { image } = {} } = {} } = linkPage || {};
+function BlogArticle({ link: linkPage }) {
+    const { fields: { link } = {}, frontmatter: { title, summary: { image } = {} } = {} } = linkPage || {};
     return (
         <Link to={link} aria-label={title}>
             <section className={styles.article}>

@@ -14,8 +14,12 @@ const postitCopyColumnsPropTypes = {
     title: string,
     content: arrayOf(any),
     link: shape({
-        link: string.isRequired,
         linkText: string.isRequired,
+        link: shape({
+            fields: shape({
+                link: string,
+            }),
+        }),
     }),
 };
 

@@ -7,11 +7,11 @@ import Slider from 'react-slick';
 
 import hashArray from '../../../lib/hash-array';
 import styles from './content-slider.module.scss';
-import Slide, { SlidePropType } from './slide.component';
+import Slide, { SlideProps } from './slide.component';
 
 const contentSliderPropTypes = {
     title: string.isRequired,
-    articles: arrayOf(SlidePropType),
+    articles: arrayOf(shape(SlideProps)),
 };
 
 export const ContentSliderPropType = shape(contentSliderPropTypes);
@@ -45,7 +45,7 @@ export default class ContentSlider extends Component {
         const headerClass = isChanging ? 'changing' : '';
 
         return (
-            <section className={styles.contentSlider}>
+            <section>
                 <h2 className={headerClass}>{title}</h2>
                 <Slider {...settings}>
                     <Slides slides={articles} />
@@ -56,7 +56,7 @@ export default class ContentSlider extends Component {
 }
 
 Slides.propTypes = {
-    slides: arrayOf(SlidePropType),
+    slides: arrayOf(shape(SlideProps)),
 };
 Slides.defaultProps = {
     slides: [],

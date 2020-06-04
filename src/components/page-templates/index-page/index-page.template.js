@@ -32,7 +32,7 @@ export default function IndexPage({ isPostits, introduction, pages, components, 
 
     return (
         <>
-            {introduction && <Introduction introduction={introduction} />}
+            {introduction && <Introduction introduction={introduction} className={styles.intro} />}
             <section className={`${styles.pages} ${postitClass} ${blogClass}`}>
                 {hashedPages &&
                     hashedPages.map(({ id, ...page }) =>

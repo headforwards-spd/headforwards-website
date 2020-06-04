@@ -6,22 +6,26 @@ import Link from '../../../page-layout/link/link.component';
 import Markdown from '../../../page-layout/markdown';
 import styles from './article-columns.module.scss';
 
-const articlePropTypes = {
-    title: string.isRequired,
-    text: string.isRequired,
-    link: string,
-    linkText: string,
+const articleProps = {
+    linkText: string.isRequired,
+    link: shape({
+        fields: shape({
+            link: string,
+        }),
+        frontmatter: shape({
+            title: string,
+            summary: shape({
+                image: ImageSrcPropType,
+                text: string,
+            }),
+        }),
+    }).isRequired,
 };
 
 export default Article;
-export const ArticlePropType = shape(articlePropTypes);
+export const ArticlePropType = shape(articleProps);
 
-Article.propTypes = articlePropTypes;
-Article.defaultProps = {
-    link: null,
-    linkText: null,
-};
-
+Article.propTypes = articleProps;
 function Article({ link: linkPage, linkText }) {
     const { fields: { link } = {}, frontmatter: { title, summary: { text, image } = {} } = {} } = linkPage || {};
     const hasLink = !!link && !!linkText;
