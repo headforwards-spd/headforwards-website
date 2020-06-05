@@ -132,7 +132,7 @@ function Layout({
         companyInfo,
     };
 
-    const { text: description, image: seoImage } = summary || {};
+    const { text: description, seoImage } = summary || {};
 
     const seoProps = {
         ...seo,

@@ -78,7 +78,7 @@ function Seo({ location, image, title: pageTitle, description: pageDescription, 
             <meta itemProp="description" content={description} />
             {imageContent && <meta itemProp="image" content={imageContent} />}
 
-            {pathname && <meta property="og:url" content={`${url}${pathname}/`} />}
+            {pathname && <meta property="og:url" content={`${url}${pathname}`} />}
             <meta property="og:site_name" content={companyName} />
             <meta property="og:locale" content="en_GB" />
             <meta property="og:type" content="website" />
