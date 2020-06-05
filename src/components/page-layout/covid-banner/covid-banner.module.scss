@@ -1,0 +1,99 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins/typography";
+@import "../../page-components/columns/columns";
+.covidBanner {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #4d4d4d;
+  @include fontSmall;
+  transform: translateY(100%);
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+
+  > section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: $column-gutter-sm;
+
+    h2 {
+      @include headingFontMedium;
+      color: #fff;
+      text-align: center;
+    }
+    p {
+      color: #fff;
+    }
+
+    @media (min-width: $screen-md) {
+      max-width: calc(#{$max_width} + #{$column-gutter-md * 2});
+      @include fontMedium;
+      padding: $column-gutter-md;
+      flex-direction: row;
+      justify-content: space-between;
+      > h2 {
+        text-align: left;
+        width: calc(37.5% - #{$column-gutter-md/2});
+        margin: 0;
+      }
+      > section {
+        width: calc(62.5% - #{$column-gutter-md/2});
+        > * {
+          @include fontSmall;
+        }
+        :last-child {
+          margin: 0;
+        }
+      }
+    }
+    @media (min-width: $screen-lg) {
+      max-width: calc(#{$max_width} + #{$column-gutter-lg * 2});
+      padding: $column-gutter-lg;
+      > h2 {
+        width: calc(37.5% - #{$column-gutter-lg/2});
+      }
+      > section {
+        width: calc(62.5% - #{$column-gutter-lg/2});
+      }
+    }
+  }
+  button {
+    @include fontMedium;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: unset;
+    border: unset;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: $column-gutter-sm/2;
+    height: calc(1em + #{$column-gutter-sm});
+    width: calc(1em + #{$column-gutter-sm});
+    @media (min-width: $screen-md) {
+      padding: $column-gutter-md/2;
+      height: calc(1em + #{$column-gutter-md});
+      width: calc(1em + #{$column-gutter-md});
+    }
+    @media (min-width: $screen-lg) {
+      padding: $column-gutter-lg/2;
+      height: calc(1em + #{$column-gutter-lg});
+      width: calc(1em + #{$column-gutter-lg});
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

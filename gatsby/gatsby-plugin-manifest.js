@@ -7,7 +7,7 @@ module.exports = {
         background_color: '#FFFFFF',
         theme_color: '#FFB800',
         display: 'standalone',
-        icon: 'static/images/icon.black.png',
+        icon: 'static/images/brand/headforwards-emblem.black.svg',
         crossOrigin: `use-credentials`,
     },
 };

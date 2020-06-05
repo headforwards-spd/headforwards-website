@@ -10,8 +10,10 @@ const pageLinkPropTypes = {
     linkText: string,
     page: shape({
         frontmatter: shape({
-            introduction: shape({ text: string }),
-            image: shape({ image: ImageSrcPropType }),
+            summary: shape({
+                image: ImageSrcPropType,
+                text: string,
+            }),
         }),
     }),
     isPostit: bool,
@@ -28,17 +30,14 @@ PageLink.defaultProps = {
     isPostit: false,
 };
 
-function PageLink({ isPostit, link, linkText: title, page }) {
-    const { frontmatter } = page || {};
-    const { introduction: introductionObject, image: imageObject } = frontmatter || {};
-    const { image } = imageObject || {};
-    const { text: introduction } = introductionObject || {};
-
+function PageLink({ isPostit, linkText: title, page }) {
+    const { fields, frontmatter } = page || {};
+    const { link } = fields;
+    const { summary } = frontmatter || {};
     const pageLinkProps = {
         link,
         title,
-        image,
-        introduction,
+        summary,
     };
 
     return !isPostit ? <IndexArticle {...pageLinkProps} /> : <IndexPostit {...pageLinkProps} />;

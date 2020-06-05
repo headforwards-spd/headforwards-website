@@ -24,7 +24,7 @@
     }
   }
 
-  &:first-child:after {
+  &.isIntro:first-child:after {
     @media (min-width: $screen-md) {
       content: url(/images/hf-arrow.svg);
       opacity: 0.05;
@@ -87,4 +87,8 @@
       }
     }
   }
+}
+
+.markdown {
+  @include markdown;
 }

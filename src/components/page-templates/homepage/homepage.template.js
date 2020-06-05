@@ -1,10 +1,11 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import Postit from '../../page-components/postit/postit.component';
 import Image, { ImageSrcPropType } from '../../page-layout/image/image.component';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import styles from './homepage.module.scss';
 
 const homePageSectionPropTypes = {
@@ -17,10 +18,7 @@ const homePageSectionPropTypes = {
     imageSquare: ImageSrcPropType,
 };
 const homepagePropTypes = {
-    introduction: shape({
-        show: bool.isRequired,
-        text: string,
-    }),
+    introduction: shape(IntroductionProps),
     sections: arrayOf(shape(homePageSectionPropTypes)),
 };
 
@@ -33,14 +31,16 @@ Homepage.defaultProps = {
 };
 
 function Homepage({ introduction, sections }) {
-    const { show: showIntroduction, text: introText } = introduction;
+    const isIntro = !introduction;
+
+    const hashedSections = useMemo(() => (sections ? hashArray(sections) : sections), [sections]);
 
     return (
         <>
-            {showIntroduction && <IntroductionComponent introduction={introText} className={styles.intro} />}
-            {!!sections &&
-                sections.map(({ id, ...section }, index) => (
-                    <HomePageSection key={id} {...section} isFirstSection={index === 0} />
+            {introduction && <Introduction introduction={introduction} className={styles.intro} />}
+            {hashedSections &&
+                hashedSections.map(({ id, ...section }, index) => (
+                    <HomePageSection key={id} {...section} isFirstSection={isIntro && index === 0} />
                 ))}
         </>
     );
@@ -68,6 +68,8 @@ function HomePageSection({ isFirstSection, components, isPostit, isRightImage, i
     const [{ title }] = components || [{}];
     const firstClass = isFirstSection ? styles.first : '';
 
+    const hashedComponents = useMemo(() => (components ? hashArray(components) : components), [components]);
+
     return (
         <section className={`${wrapperStyles} ${firstClass}`}>
             {!!hasImage && (
@@ -82,10 +84,13 @@ function HomePageSection({ isFirstSection, components, isPostit, isRightImage, i
                     }}
                 />
             )}
-            <section className={styles.components}>
-                {!!components &&
-                    components.map(({ id, ...component }) => <PageComponent key={id} {...component} title={title} />)}
-            </section>
+            {hashedComponents && (
+                <section className={styles.components}>
+                    {hashedComponents.map(({ id, ...component }) => (
+                        <PageComponent key={id} {...component} title={title} />
+                    ))}
+                </section>
+            )}
         </section>
     );
 }

@@ -3,11 +3,9 @@ uuid: 4bc8aa80-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: What is it like here?
-image:
+bannerImage: /uploads/headforwards-13.jpg
+summary:
   image: /uploads/headforwards-13.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     With regular catchups and strategy meetings, strong relationships between
     clients and teams grow fast
@@ -73,9 +71,9 @@ components:
     type: images-component
   - content:
       - text: >-
-          Headforwards' lack of hierarchy means teams are empowered to
-          self-organise, play to each other’s strengths, and collaborate
-          effectively—and clients see massive value from this.
+          Headforwards' structure is designed to empower teams to self-organise,
+          play to each other’s strengths, and collaborate effectively—and
+          clients see massive value from this.
 
 
           Every team is built to create the perfect balance of skills, and

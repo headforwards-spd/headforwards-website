@@ -3,9 +3,16 @@ import CMS, { init } from 'netlify-cms-app';
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
 import styles from '!css-loader!sass-loader!../scss/main.scss';
 
+import cmsConfig from './config';
+import OptionalObjectControl from './custom-widgets/optional-object-control';
+import UuidControl from './custom-widgets/uuid-control';
+import BlogPagePreview from './preview-templates/blog-page-preview';
+import CareersPagePreview from './preview-templates/careers-page-preview';
+import IndexPagePreview from './preview-templates/index-page-preview';
 import InfoPagePreview from './preview-templates/info-page-preview';
-import OptionalObjectControl from './widgets/optional-object-control';
-import UuidControl from './widgets/uuid-control';
+
+// eslint-disable-next-line no-underscore-dangle
+window.___loader = { enqueue: () => {}, hovering: () => {} };
 
 const branch = process.env.GATSBY_CMS_BRANCH || 'master';
 
@@ -14,10 +21,14 @@ const config = {
         name: 'github',
         repo: 'andyweirheadforwards/headforwards-website',
         branch,
+        use_graphql: true,
     },
 };
 
-branch === 'master' && (config.publish_mode = 'editorial_workflow');
+if (branch === 'master') {
+    config.publish_mode = 'editorial_workflow';
+    config.show_preview_links = true;
+}
 
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
@@ -30,10 +41,16 @@ CMS.registerWidget({
     controlComponent: OptionalObjectControl,
 });
 
+CMS.registerPreviewTemplate('index-pages', IndexPagePreview);
 CMS.registerPreviewTemplate('who-we-are', InfoPagePreview);
 CMS.registerPreviewTemplate('what-we-do', InfoPagePreview);
 CMS.registerPreviewTemplate('how-we-work', InfoPagePreview);
-CMS.registerPreviewTemplate('careers', InfoPagePreview);
-CMS.registerPreviewTemplate('index-pages', InfoPagePreview);
+CMS.registerPreviewTemplate('blog-pages', BlogPagePreview);
+CMS.registerPreviewTemplate('careers', CareersPagePreview);
 
-init({ config });
+init({
+    config: {
+        ...config,
+        ...cmsConfig,
+    },
+});

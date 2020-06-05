@@ -10,8 +10,10 @@ const footerLinkPropTypes = {
     showImages: bool,
     link: string.isRequired,
     title: string.isRequired,
-    image: shape({ image: ImageSrcPropType }).isRequired,
-    introduction: shape({ text: string }).isRequired,
+    summary: shape({
+        image: ImageSrcPropType,
+        text: string,
+    }).isRequired,
 };
 
 export default FooterLink;
@@ -23,15 +25,14 @@ FooterLink.defaultProps = {
     showImages: false,
 };
 
-function FooterLink({ showImages, link, title, image, introduction }) {
-    const { image: bannerImage } = image || {};
-    const { text } = introduction || {};
+function FooterLink({ showImages, link, title, summary }) {
+    const { image, text } = summary;
 
     return (
         <Link to={link}>
             <section>
                 <h2>{title}</h2>
-                {showImages && <Image alt={title} image={bannerImage} className={styles.footerLinkImage} />}
+                {showImages && <Image alt={title} image={image} className={styles.footerLinkImage} />}
                 <Markdown source={text} truncate maxLength={100} />
                 <button type="button">Read more</button>
             </section>
@@ -40,7 +41,7 @@ function FooterLink({ showImages, link, title, image, introduction }) {
 }
 
 export function extractFooterLinks(footerLinks) {
-    const [{ title, showImages, link1, link2, link3, page1, page2, page3 }] = footerLinks || [{}];
+    const [{ title, showImages, link1, link2, link3, page1, page2, page3 } = {}] = footerLinks || [{}];
 
     if (!(link1 && link2 && link3)) {
         return null;
@@ -64,8 +65,9 @@ export function extractFooterLinks(footerLinks) {
                 link: link3,
                 page: page3,
             },
-        ].map(({ id, link, page }) => {
-            const { frontmatter } = page || {};
+        ].map(({ id, page }) => {
+            const { fields, frontmatter } = page || {};
+            const { link } = fields || {};
 
             return {
                 id,

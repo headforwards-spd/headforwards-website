@@ -3,11 +3,9 @@ uuid: 40718760-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: How we recruit
-image:
+bannerImage: /uploads/recruit-header-v.2.jpg
+summary:
   image: /uploads/recruit-header-v.2.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Headforwards was founded on the principle of recruiting the right team for
     each client
@@ -49,7 +47,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: Round pegs in round holes
+    title: The right people in the right roles
   - flip: true
     imageOne: /uploads/headforwards-11.jpg
     imageTwo: /uploads/headforwards-12.jpg

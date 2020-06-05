@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
-import Layout from '../components/page-layout/layout';
+import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import JobPageTemplate from '../components/page-templates/job-page/job-page.templete';
 
 export default JobPage;
@@ -36,17 +36,24 @@ function JobPage({ path, data }) {
     const { title, subtitle, introduction, ...templateProps } = job;
     const { salary, tags } = job;
 
-    const layoutProps = {
-        title,
-        subtitle,
-        introduction,
-        jobDetails: {
-            salary,
-            tags,
-            path,
-            filters,
+    const page = {
+        frontmatter: {
+            title,
+            subtitle,
+            summary: {
+                title,
+                text: introduction,
+            },
+            jobDetails: {
+                salary,
+                tags,
+                path,
+                filters,
+            },
         },
     };
+
+    const layoutProps = extractLayoutProps(page);
 
     return (
         <Layout {...layoutProps}>

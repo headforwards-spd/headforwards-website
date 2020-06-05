@@ -3,11 +3,9 @@ uuid: 0cd74ed0-0fac-11ea-843f-932c76de5936
 parent: how-we-work
 type: info-page
 title: Collaboration
-image:
+bannerImage: /uploads/hf-f.jpg
+summary:
   image: /uploads/hf-f.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Headforwards works closely with you to deliver software that creates value
     for your organisation

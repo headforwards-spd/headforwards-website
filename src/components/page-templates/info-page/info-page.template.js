@@ -1,8 +1,9 @@
-import { any, arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
+import { any, arrayOf, shape, string } from 'prop-types';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import Link from '../../page-layout/link/link.component';
 import JobSummaryComponent from '../jobs-page/job-summary.component';
 import styles from './info-page.module.scss';
@@ -10,10 +11,7 @@ import styles from './info-page.module.scss';
 export default InfoPage;
 
 InfoPage.propTypes = {
-    introduction: shape({
-        show: bool,
-        text: string,
-    }),
+    introduction: shape(IntroductionProps),
     components: arrayOf(PageComponentPropType),
     jobsTitle: string,
     jobs: arrayOf(any),
@@ -32,18 +30,22 @@ InfoPage.defaultProps = {
 };
 
 function InfoPage({ introduction, components = [], jobsTitle: defaultJobsTitle, jobs, careers }) {
-    const { show, text } = introduction;
     const hasJobs = !!(jobs && jobs.length);
     const { title: jobsTitle, applicationForm } = careers || {};
     const hasApplicationForm = !!applicationForm;
 
+    const isIntro = !introduction;
+
+    const hashedComponents = useMemo(() => (components ? hashArray(components) : components), [components]);
+
     return (
         <>
-            {show && <IntroductionComponent introduction={text} />}
-            {components && (
+            {introduction && <Introduction introduction={introduction} className={styles.introduction} />}
+            {hashedComponents && (
                 <section>
-                    {!!components &&
-                        components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
+                    {hashedComponents.map(({ id, ...component }) => (
+                        <PageComponent key={id} {...component} isIntro={isIntro} />
+                    ))}
                 </section>
             )}
             {hasApplicationForm && (

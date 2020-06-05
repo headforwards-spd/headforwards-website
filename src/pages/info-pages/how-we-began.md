@@ -3,11 +3,9 @@ uuid: 3b246990-0f6f-11ea-81de-ff3cb4003432
 parent: who-we-are
 type: info-page
 title: How we began
-image:
+bannerImage: /uploads/headforwards-7.jpg
+summary:
   image: /uploads/headforwards-7.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     The brainchild of Craig Girvan and Toby Parkins, Headforwards was
     incorporated in 2011 and has grown into a company of well over 100 people.
@@ -19,7 +17,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: ''
+    title: ""
   - content:
       - text: "Toby took the idea to Craig Girvan – a fellow Agile practitioner – who had been thinking along similar lines.\r\n\nThey agreed that clients were short-changed by traditional outsourcers, who tend to prioritise their own business over that of their clients. They sketched out a vision of a new kind of outsource company, built on three principles:"
         type: markdown-component
@@ -63,4 +61,3 @@ footerLinks:
     title: Find out more about Headforwards
 callToAction: Would you like to join us on our journey?
 ---
-

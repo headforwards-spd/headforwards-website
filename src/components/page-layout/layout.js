@@ -9,8 +9,8 @@ import Helmet from 'react-helmet';
 import { Provider } from 'unstated';
 
 import AppContainer from '../../containers/app.container';
-import CookieBar from './cookie-bar/cookie-bar.component';
-import { FooterLinkPropType } from './footer/footer-link.component';
+import CovidBanner from './covid-banner/covid-banner.component';
+import { extractFooterLinks, FooterLinkPropType } from './footer/footer-link.component';
 import Footer from './footer/footer.component';
 import Header from './header/header.component';
 import JobHeader from './header/job-header.component';
@@ -28,18 +28,24 @@ const UnstatedHelmet = withUnstated(
 
         return (
             <Helmet bodyAttributes={bodyAttributes}>
-                {/* <link rel="preload" href="/fonts/FSAlbertWeb/Bold.woff2" as="font" /> */}
-                {/* <link rel="preload" href="/fonts/FSAlbertWeb/Regular.woff2" as="font" /> */}
-                {/* <link rel="preload" href="/fonts/FSAlbertWeb/Italic.woff2" as="font" /> */}
+                {/* Google */}
                 <link rel="preconnect" href="https://www.google.com" />
-                <link rel="preconnect" href="https://www.facebook.com" />
-                <link rel="preconnect" href="https://www.googletagmanager.com" />
-                <link rel="preconnect" href="https://d.adroll.mgr.consensu.org" />
-                <link rel="preconnect" href="https://d.adroll.com" />
-                <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
-                <link rel="preconnect" href="https://www.google-analytics.com" />
+                {/* Facebook */}
                 <link rel="preconnect" href="https://connect.facebook.net" />
+                <link rel="preconnect" href="https://www.facebook.com" />
+                {/* HotJar */}
+                <link rel="preconnect" href="https://in.hotjar.com" />
+                <link rel="preconnect" href="https://script.hotjar.com" />
+                <link rel="preconnect" href="https://static.hotjar.com" />
+                <link rel="preconnect" href="https://stats.g.doubleclick.net" />
+                <link rel="preconnect" href="https://vars.hotjar.com" />
                 <link rel="preconnect" href="https://vc.hotjar.io" />
+
+                {/* <link rel="preconnect" href="https://d.adroll.mgr.consensu.org" /> */}
+                {/* <link rel="preconnect" href="https://d.adroll.com" /> */}
+                {/* <link rel="preconnect" href="https://googleads.g.doubleclick.net" /> */}
+                {/* <link rel="preconnect" href="https://www.google-analytics.com" /> */}
+                {/* <link rel="preconnect" href="https://www.googletagmanager.com" /> */}
             </Helmet>
         );
     },
@@ -48,15 +54,15 @@ const UnstatedHelmet = withUnstated(
 
 Layout.propTypes = {
     isHomePage: bool,
+    bannerImage: ImageSrcPropType,
     title: string.isRequired,
     subtitle: string,
-    introduction: shape({
-        show: bool.isRequired,
+    summary: shape({
+        seoImage: ImageSrcPropType,
         text: string,
-    }),
+    }).isRequired,
     jobDetails: shape({
         salary: string,
-        tags: arrayOf(string),
         path: string.isRequired,
     }),
     footerLinks: shape({
@@ -64,19 +70,14 @@ Layout.propTypes = {
         links: arrayOf(FooterLinkPropType),
     }),
     callToAction: string,
-    image: shape({
-        show: bool,
-        image: ImageSrcPropType,
-    }),
     seo: SeoPropType,
     children: oneOfType([arrayOf(node), node, string]),
 };
 Layout.defaultProps = {
     isHomePage: false,
+    bannerImage: null,
     subtitle: null,
-    introduction: null,
     jobDetails: null,
-    image: null,
     children: null,
     seo: null,
     footerLinks: null,
@@ -86,11 +87,11 @@ Layout.defaultProps = {
 function Layout({
     isHomePage,
     seo,
+    bannerImage,
     title,
-    introduction,
+    summary,
     subtitle,
     jobDetails,
-    image,
     children,
     footerLinks,
     callToAction: pageCallToAction,
@@ -98,7 +99,7 @@ function Layout({
     const { menuData, companyInfo, seoImage: defaultSeoImage } = useStaticQuery(
         graphql`
             query {
-                seoImage: file(name: { eq: "icon" }) {
+                seoImage: file(name: { eq: "placeholder" }) {
                     childImageSharp {
                         fixed(width: 1200, height: 630, fit: CONTAIN, quality: 85, background: "white") {
                             src
@@ -122,25 +123,22 @@ function Layout({
 
     const { callToAction: defaultCallToAction } = companyInfo;
 
-    const { show: showImage, image: bannerImage, seoImage } = image || {};
-
     const headerProps = {
         isHomePage,
         title,
         subtitle,
-        image: showImage ? bannerImage : null,
+        image: bannerImage,
         menu,
         companyInfo,
     };
 
-    const { text: description } = introduction || {};
+    const { text: description, image: seoImage } = summary || {};
 
     const seoProps = {
         ...seo,
         image: seoImage || defaultSeoImage,
         title: seoTitle || title,
         description: seoDescription || (isJobPage ? subtitle : description),
-        bannerImage,
     };
 
     const callToAction = pageCallToAction || defaultCallToAction;
@@ -158,7 +156,36 @@ function Layout({
             {(!isJobPage && <Header {...headerProps} />) || <JobHeader {...headerProps} jobDetails={jobDetails} />}
             <main>{children}</main>
             <Footer {...footerProps} />
-            <CookieBar />
+            <CovidBanner />
         </Provider>
     );
+}
+
+export function extractLayoutProps({ frontmatter }) {
+    const {
+        isHomePage,
+        bannerImage,
+        title,
+        subtitle,
+        summary,
+        careers,
+        footerLinks: rawFooterLinks,
+        callToAction,
+        seo,
+    } = frontmatter || {};
+    const { applicationForm } = careers || {};
+    const jobDetails = applicationForm ? { path: `/careers/${applicationForm}` } : null;
+    const footerLinks = extractFooterLinks(rawFooterLinks);
+
+    return {
+        isHomePage,
+        bannerImage,
+        title,
+        subtitle,
+        summary,
+        jobDetails,
+        footerLinks,
+        callToAction,
+        seo,
+    };
 }

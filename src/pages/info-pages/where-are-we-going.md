@@ -3,11 +3,9 @@ uuid: 550440a0-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: Where are we going?
-image:
+bannerImage: /uploads/headforards-17.jpg
+summary:
   image: /uploads/headforards-17.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Headforwards has several strategic objectives for growth, powered by its
     core principles and its approach to client service

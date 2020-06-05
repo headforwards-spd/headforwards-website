@@ -3,17 +3,13 @@ uuid: 7332ebd0-0fac-11ea-8f1d-b7c7fe6e2260
 parent: how-we-work
 type: info-page
 title: Our working models
-image:
+bannerImage: /uploads/hf-i.jpg
+summary:
   image: /uploads/hf-i.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Headforwards offers two engagement models to ensure you get the right mix of
     quality and value for money
 components:
-  - content: []
-    type: image-copy-component
   - content:
       - text: "Headforwards was founded on the belief that clients are short-changed by traditional software outsource companies – mainly due to the “on-the-bench” model of project resourcing.\r\n\n\rTo ensure clients get the right mix of quality and value for money, Headforwards offers two choices of engagement models: a long term partnership or a short term project."
         type: markdown-component
@@ -69,4 +65,3 @@ footerLinks:
     title: How we can work with you
 callToAction: Do you want to know more about how we build winning teams?
 ---
-

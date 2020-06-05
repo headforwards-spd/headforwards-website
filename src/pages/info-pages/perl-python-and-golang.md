@@ -3,11 +3,8 @@ uuid: 7ccaa0e0-152c-11ea-a47f-c360f0875c84
 parent: careers
 type: info-page
 title: "Perl, Python and Golang"
-image:
-  show: false
-  image: /uploads/icon.black.png
-introduction:
-  show: false
+summary:
+  image: /uploads/placeholder.jpg
   text: >-
     Our global communications team is 45 people, again all in small teams of
     3-7. They work on cutting edge web applications which are used by millions
