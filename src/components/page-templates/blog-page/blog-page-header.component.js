@@ -32,7 +32,7 @@ function BlogPageHeader({ title, author, publishedDate }) {
             {author && <Author {...author} />}
             <aside className={styles.aside}>
                 <time dateTime={publishedDate}>
-                    <Icon icon={faClock} inline />
+                    <Icon icon={faClock} />
                     {publishedDateString}
                 </time>
                 <SocialShare title={title} />

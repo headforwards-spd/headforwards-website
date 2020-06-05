@@ -40,14 +40,20 @@
           margin-bottom: 1em * $rhythm-unit;
           order: 1;
           position: relative;
+          overflow: visible !important;
 
-          &:before {
+          &:after {
             @include fontMedium;
-            background: linear-gradient(
-              315deg,
-              rgba(#ffb800, 0.6) 50%,
-              transparent 50%
-            );
+            background: linear-gradient(315deg, $orange 50%, transparent 50%);
+            mix-blend-mode: multiply;
+            @media all and (-ms-high-contrast: none),
+              (-ms-high-contrast: active) {
+              background: linear-gradient(
+                315deg,
+                rgba(#ffb800, 0.6) 50%,
+                transparent 50%
+              );
+            }
             border-radius: 0 0 $column-gutter-sm 0;
             bottom: -$column-gutter-sm/2;
             content: "";
@@ -66,7 +72,7 @@
             }
           }
 
-          &:after {
+          &:before {
             content: "";
             position: absolute;
             background: url(/images/hf-arrow.white.svg);

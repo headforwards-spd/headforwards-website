@@ -169,7 +169,7 @@
         rgba(black, 0.6)
       );
       img {
-        mix-blend-mode: color;
+        mix-blend-mode: multiply;
       }
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         background: linear-gradient(

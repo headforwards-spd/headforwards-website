@@ -200,6 +200,7 @@ function getData(graphql) {
                                 summary {
                                     text
                                     image {
+                                        extension
                                         publicURL
                                         childImageSharp {
                                             fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
@@ -232,6 +233,7 @@ function getData(graphql) {
                                     summary {
                                         text
                                         image {
+                                            extension
                                             publicURL
                                             childImageSharp {
                                                 fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
