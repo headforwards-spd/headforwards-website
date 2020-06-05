@@ -122,7 +122,7 @@ function structuredData({ title, description, datePosted, employmentType, salary
                 'https://www.youtube.com/channel/UC6EL0AsCvG7duu-PVsSQIXg/',
                 'https://twitter.com/headforwards/',
             ],
-            logo: 'https://www.headforwards.com/images/headforwards-emblem-text.jpg',
+            logo: 'https://www.headforwards.com/images/headforwards-emblem-with-text.jpg',
         },
         jobLocation: {
             '@type': 'Place',
