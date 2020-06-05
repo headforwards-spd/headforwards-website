@@ -4,7 +4,7 @@ parent: careers
 type: info-page
 title: Front End
 summary:
-  image: /uploads/icon.black.png
+  image: /uploads/placeholder.jpg
   text: >-
     JavaScript and particularly React are the tools of choice for most front ends across our applications.
 components:

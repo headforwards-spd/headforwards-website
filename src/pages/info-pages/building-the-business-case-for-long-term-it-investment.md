@@ -1,7 +1,8 @@
 ---
+bannerImage: /uploads/headforwards-14.jpg
 title: Building the business case for long term IT investment
 summary:
-  image: /uploads/hf-steal-1.jpg
+  image: /uploads/headforwards-14.jpg
   text: >-
     As an outsource software development company Headforwards has worked with a
     lot of people in building the right business case for their products and

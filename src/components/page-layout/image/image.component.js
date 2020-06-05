@@ -33,9 +33,9 @@ Image.defaultProps = {
 };
 
 function Image({ image, alt, ratio, className = '', ...props }) {
-    const { childImageSharp = null } = image || {};
+    const { childImageSharp, extension } = image || {};
     let src;
-    if (childImageSharp) {
+    if (childImageSharp && extension !== 'svg') {
         const { fluid } = childImageSharp;
 
         return <GatsbyImage fluid={fluid} alt={alt} durationFadeIn={250} className={className} {...props} />;

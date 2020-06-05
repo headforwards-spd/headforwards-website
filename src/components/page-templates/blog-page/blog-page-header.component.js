@@ -1,5 +1,5 @@
 import { faClock } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import moment from 'moment';
 import { shape, string } from 'prop-types';
 import React from 'react';
@@ -32,7 +32,7 @@ function BlogPageHeader({ title, author, publishedDate }) {
             {author && <Author {...author} />}
             <aside className={styles.aside}>
                 <time dateTime={publishedDate}>
-                    <FontAwesomeIcon icon={faClock} />
+                    <Icon icon={faClock} />
                     {publishedDateString}
                 </time>
                 <SocialShare title={title} />

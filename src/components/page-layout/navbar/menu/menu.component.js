@@ -1,6 +1,7 @@
 import { Location } from '@reach/router';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../../lib/hash-array';
 import Link from '../../link/link.component';
 import Socials from '../../socials/socials.component';
 import Hamburger from '../hamburger/hamburger.component';
@@ -23,6 +24,9 @@ function Menu({ menuClick, hasBackground, activeClass, menu: fullMenu, companyIn
 
     const [home, ...menu] = fullMenu;
     const { children: homeChildren } = home || {};
+
+    const hashedMenu = useMemo(() => (menu ? hashArray(menu) : menu), [menu]);
+    const hashedHomeChildren = useMemo(() => (homeChildren ? hashArray(homeChildren) : homeChildren), [homeChildren]);
 
     return (
         <Location>
@@ -48,7 +52,7 @@ function Menu({ menuClick, hasBackground, activeClass, menu: fullMenu, companyIn
                                         showTitle: true,
                                     }}
                                 />
-                                {menu.map(({ id, ...item }) => (
+                                {hashedMenu.map(({ id, ...item }) => (
                                     <MenuItem
                                         key={id}
                                         {...item}
@@ -58,11 +62,10 @@ function Menu({ menuClick, hasBackground, activeClass, menu: fullMenu, companyIn
                                         }}
                                     />
                                 ))}
-                                {homeChildren &&
-                                    homeChildren.map(({ id, ...item }) => (
+                                {hashedHomeChildren &&
+                                    hashedHomeChildren.map(({ id, ...item }) => (
                                         <MenuItem
                                             key={id}
-                                            className={styles.navContactLink}
                                             {...item}
                                             {...{
                                                 location,

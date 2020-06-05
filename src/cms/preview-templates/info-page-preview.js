@@ -142,7 +142,7 @@ function getFooterLink({ showImages, page }) {
         link: '/',
         title,
         summary: {
-            image: image || '/uploads/icon.black.png',
+            image: image || '/images/placeholder.jpg',
             text: text || 'Link text here...',
         },
     };

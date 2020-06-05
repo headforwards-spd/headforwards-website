@@ -90,12 +90,31 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
         ];
     }
 
-    components.forEach(component => setComponent(component, getAsset));
+    const componentsValue = entry.getIn(['data', 'components']);
+    components.forEach((component, index) => {
+        const componentValue = componentsValue ? componentsValue.get(index) : null;
+        const componentMeta = fieldsMetaData ? fieldsMetaData.getIn(['components'], componentValue) : null;
+        setComponent(component, componentValue, componentMeta, getAsset);
+    });
 
     const companyInfo = {};
     const headerProps = {
         ...header,
-        menu: [],
+        menu: [
+            {
+                linkText: 'Home.',
+                page: {
+                    id: uuid(),
+                    fields: {
+                        link: '/',
+                    },
+                    frontmatter: {
+                        uuid: uuid(),
+                    },
+                },
+                children: [],
+            },
+        ],
         companyInfo,
     };
 
@@ -124,14 +143,14 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
     );
 }
 
-function setArticle(article, getAsset) {
-    const { image: aImage = null } = article;
-    article.id = uuid.v1();
+function setArticle(article, articleValue, articleMeta) {
+    const articleLink = articleValue ? articleMeta.getIn(['link', 'info-pages', articleValue.getIn(['link'])]) : null;
 
-    article.image = aImage ? getAsset(aImage).toString() : !!aImage;
+    article.id = uuid.v1();
+    article.link = articleLink ? { fields: { link: '/' }, frontmatter: articleLink.toJS() } : null;
 }
 
-function setComponent(component, getAsset) {
+function setComponent(component, componentValue, componentMeta, getAsset) {
     const { image: cImage = null, imageOne = null, imageTwo = null, profilePic = null, articles = [] } = component;
     component.id = uuid.v1();
 
@@ -140,7 +159,13 @@ function setComponent(component, getAsset) {
     component.imageTwo = imageTwo ? getAsset(imageTwo).toString() : imageTwo;
     component.profilePic = profilePic ? getAsset(profilePic).toString() : profilePic;
 
-    articles.forEach(article => setArticle(article, getAsset));
+    const articlesValue = componentValue ? componentValue.getIn(['articles']) : null;
+    articles.forEach((article, index) => {
+        const articleValue = articlesValue ? articlesValue.get(index) : null;
+        const articleMeta = componentMeta ? componentMeta.getIn(['articles'], articleValue) : null;
+
+        setArticle(article, articleValue, articleMeta, getAsset);
+    });
 }
 
 function getFooterLink({ showImages, page }) {
@@ -152,7 +177,7 @@ function getFooterLink({ showImages, page }) {
         link: '/',
         title,
         summary: {
-            image: image || '/uploads/icon.black.png',
+            image: image || '/images/placeholder.jpg',
             text: text || 'Link text here...',
         },
     };

@@ -4,7 +4,7 @@ parent: careers
 type: info-page
 title: BI & Data
 summary:
-  image: /uploads/icon.black.png
+  image: /uploads/placeholder.jpg
   text: >-
     We recently embarked on a new challenge, working with our local authority as
     they look to improve the access and confidence that residents and members

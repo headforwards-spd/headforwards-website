@@ -28,7 +28,7 @@ LegalPage.propTypes = {
 function LegalPage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { introduction, sections, components } = frontmatter;
+    const { introduction, sections, components } = frontmatter || {};
 
     const layoutProps = extractLayoutProps(page);
     const templateProps = {

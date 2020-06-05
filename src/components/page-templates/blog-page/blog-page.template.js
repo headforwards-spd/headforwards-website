@@ -1,6 +1,7 @@
 import { arrayOf, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import { ImageSrcPropType } from '../../page-layout/image/image.component';
 import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
@@ -37,16 +38,17 @@ function BlogPage({ title, introduction, components = [], author, publishedDate 
     };
     const isIntro = !introduction;
 
+    const hashedComponents = useMemo(() => (components ? hashArray(components) : components), [components]);
+
     return (
         <>
             <BlogPageHeader {...headerProps} />
             {introduction && <Introduction introduction={introduction} className={styles.intro} />}
-            {components && (
+            {hashedComponents && (
                 <section>
-                    {!!components &&
-                        components.map(({ id, ...component }) => (
-                            <PageComponent key={id} {...component} isIntro={isIntro} />
-                        ))}
+                    {hashedComponents.map(({ id, ...component }) => (
+                        <PageComponent key={id} {...component} isIntro={isIntro} />
+                    ))}
                 </section>
             )}
         </>

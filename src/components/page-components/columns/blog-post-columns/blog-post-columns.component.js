@@ -1,6 +1,7 @@
 import { arrayOf, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../../lib/hash-array';
 import BlogArticle, { BlogArticlePropType } from './blog-article.component';
 import styles from './blog-post-columns.module.scss';
 
@@ -19,11 +20,13 @@ BlogPostColumns.defaultProps = {
 };
 
 function BlogPostColumns({ title, articles }) {
+    const hashedArticles = useMemo(() => (articles ? hashArray(articles) : articles), [articles]);
+
     return (
         <section className={styles.blogPostColumns}>
             {!!title && <h2>{title}</h2>}
             <section>
-                {articles.map(({ id, ...article }) => (
+                {hashedArticles.map(({ id, ...article }) => (
                     <BlogArticle key={id} {...article} />
                 ))}
             </section>

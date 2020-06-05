@@ -30,7 +30,7 @@ function BlogIndex({ data }) {
     const { nodes: pages } = children;
 
     const layoutProps = extractLayoutProps(page);
-    const { introduction, components } = frontmatter;
+    const { introduction, components } = frontmatter || {};
     const pageProps = {
         introduction,
         components,
@@ -47,7 +47,9 @@ function BlogIndex({ data }) {
 export const query = graphql`
     query BlogIndex($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
-            ...PageFragment
+            frontmatter {
+                ...PageFragment
+            }
         }
         children: allMarkdownRemark(
             filter: { frontmatter: { type: { eq: "blog-page" } } }
@@ -56,11 +58,16 @@ export const query = graphql`
             nodes {
                 id
                 fields {
-                    slug
+                    link
                 }
                 frontmatter {
                     parent
                     title
+                    author {
+                        frontmatter {
+                            name
+                        }
+                    }
                     summary {
                         image {
                             ...ImageSquareFragment
@@ -68,11 +75,6 @@ export const query = graphql`
                         text
                     }
                     publishedDate
-                    author {
-                        frontmatter {
-                            name
-                        }
-                    }
                 }
             }
         }

@@ -1,8 +1,6 @@
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 const makeSlug = require('slug');
 
-const webpack = require(`webpack`);
-
 const slugOptions = {
     replacement: '-',
     symbols: true,
@@ -13,6 +11,69 @@ const slugOptions = {
 };
 
 const { resolve } = require('path');
+
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions;
+    const typeDefs = `
+type MarkdownRemark implements Node {
+  frontmatter: MarkdownRemarkFrontmatter
+}
+type MarkdownRemarkFrontmatter {
+  author: MarkdownRemark @link(by: "frontmatter.uuid", from: "author")
+  footerLinks: [FooterLinks]
+}
+type DataYaml implements Node {
+  menu: [MenuItem]
+}
+type MarkdownRemarkFrontmatterComponents {
+    link: Link
+    articles: [Link]
+}
+type FooterLinks {
+    title: String
+    showImages: Boolean
+    link1: String
+    link2: String
+    link3: String
+    page1: MarkdownRemark @link(by: "frontmatter.uuid", from: "link1")
+    page2: MarkdownRemark @link(by: "frontmatter.uuid", from: "link2")
+    page3: MarkdownRemark @link(by: "frontmatter.uuid", from: "link3")
+}
+type MenuItem {
+    linkText: String
+    page: MarkdownRemark @link(by: "frontmatter.uuid", from: "page")
+    children: [MenuItem]
+}
+type Link {
+    linkText: String
+    link: MarkdownRemark @link(by: "frontmatter.uuid", from: "link")
+}
+  `;
+    createTypes(typeDefs);
+};
+
+exports.onCreateNode = ({ node, actions }) => {
+    const { createNodeField } = actions;
+    const { internal = null } = node;
+    const { type } = internal;
+    fmImagesToRelative(node); // convert image paths for gatsby images
+
+    if (type === `MarkdownRemark` || type === `MarkdownRemark`) {
+        const { frontmatter } = node;
+        const { parent, title, name, seo } = frontmatter;
+        const { slug: seoSlug } = seo || {};
+        const pageSlug = makeSlug(name || title, slugOptions);
+        const slug = seoSlug || pageSlug;
+        const link = `/${parent || ''}/${slug || ''}/`.replace(/\/+/g, '/');
+
+        return createNodeField({
+            name: `link`,
+            node,
+            value: link,
+        });
+    }
+    return Promise.resolve();
+};
 
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
@@ -28,36 +89,6 @@ exports.createPages = ({ actions, graphql }) => {
         );
 };
 
-exports.onCreateNode = ({ node, actions }) => {
-    const { createNodeField } = actions;
-    const { internal = null } = node;
-    const { type } = internal;
-    fmImagesToRelative(node); // convert image paths for gatsby images
-
-    if (type === `MarkdownRemark`) {
-        const { frontmatter } = node;
-        const { title, name } = frontmatter;
-        const value = makeSlug(title, slugOptions) || makeSlug(name, slugOptions);
-
-        return createNodeField({
-            name: `slug`,
-            node,
-            value,
-        });
-    }
-    return Promise.resolve();
-};
-
-exports.onCreateWebpackConfig = ({ actions }) => {
-    actions.setWebpackConfig({
-        plugins: [
-            new webpack.IgnorePlugin({
-                resourceRegExp: /^netlify-identity-widget$/,
-            }),
-        ],
-    });
-};
-
 function createAllIndexPages(createPage, { menu: pages }) {
     const promises = [];
 
@@ -66,16 +97,19 @@ function createAllIndexPages(createPage, { menu: pages }) {
     return Promise.all(promises);
 }
 
-function createIndexPage(createPage, promises, page) {
-    const { uuid, linkText: title, link: path, children } = page;
-    const isHomePage = path === '/';
+function createIndexPage(createPage, promises, indexPage) {
+    const { linkText: title, page, children } = indexPage;
+    const { fields, frontmatter } = page;
+    const { link } = fields;
+    const { uuid } = frontmatter;
+    const isHomePage = link === '/';
     const hasChildren = !!children;
     const shouldBuild = !isHomePage && hasChildren;
 
     shouldBuild &&
         promises.push(
             createPage({
-                path,
+                path: link,
                 component: resolve(`src/templates/index-page.js`),
                 context: {
                     uuid,
@@ -91,16 +125,13 @@ function createIndexPage(createPage, promises, page) {
 function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
         pages.map(({ id, fields, frontmatter }) => {
-            const { slug: titleSlug } = fields;
-            const { type, parent = '', seo, careers } = frontmatter;
-            const { slug: seoSlug } = seo || {};
+            const { link: path } = fields;
+            const { type, careers } = frontmatter;
             const { department = '', tag } = careers || {};
-            const slug = seoSlug || titleSlug;
-            const pagePath = `/${parent || ''}/${slug}`;
             const tagRegex = tag ? `/${tag}/i` : '/.*/';
 
             return createPage({
-                path: pagePath.replace(/\/+/g, '/'),
+                path,
                 component: resolve(`src/templates/${type}.js`),
                 context: { id, department, tagRegex },
             });
@@ -111,28 +142,34 @@ function createAllPages(createPage, { nodes: pages = [] }) {
 function createAllJobs(createPage, { nodes: jobs = [] }) {
     const promises = [];
 
-    jobs.forEach(({ id, path, title = '' }) => {
-        const isRegister = title.toLowerCase().includes('register');
-        const applyPath = !isRegister ? `jobs/${path}` : 'register-interest';
+    jobs.forEach(job => {
+        const { id, title, slug } = job;
+        const isRegister = (title || '').toLowerCase().includes('register');
+        const applySlug = !isRegister ? `jobs/${slug}` : 'register-interest';
 
-        !isRegister &&
-            promises.push(
-                createPage({
-                    path: `/careers/jobs/${path}/`,
-                    component: resolve(`src/templates/job-page.js`),
-                    context: { id },
-                })
-            );
-        promises.push(
-            createPage({
-                path: `/careers/${applyPath}/application-form/`,
-                component: resolve(`src/templates/application-form-page.js`),
-                context: { id },
-            })
-        );
+        !isRegister && promises.push(createRegisterPage(createPage, id, slug));
+        promises.push(createApplicationFormPage(createPage, id, applySlug));
     });
 
     return Promise.all(promises);
+}
+
+function createRegisterPage(createPage, id, slug) {
+    const path = `/careers/jobs/${slug}/`;
+    return createPage({
+        path,
+        component: resolve(`src/templates/job-page.js`),
+        context: { id },
+    });
+}
+
+function createApplicationFormPage(createPage, id, slug) {
+    const path = `/careers/${slug}/application-form/`;
+    return createPage({
+        path,
+        component: resolve(`src/templates/application-form-page.js`),
+        context: { id },
+    });
 }
 
 function getData(graphql) {
@@ -140,18 +177,30 @@ function getData(graphql) {
         {
             indexPages: dataYaml(title: { eq: "main-menu" }) {
                 menu {
-                    uuid
-                    link
                     linkText
+                    page {
+                        id
+                        fields {
+                            link
+                        }
+                        frontmatter {
+                            uuid
+                        }
+                    }
                     children {
-                        uuid
-                        link
                         linkText
                         page {
+                            id
+                            fields {
+                                link
+                            }
                             frontmatter {
+                                uuid
+                                title
                                 summary {
                                     text
                                     image {
+                                        extension
                                         publicURL
                                         childImageSharp {
                                             fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
@@ -172,14 +221,19 @@ function getData(graphql) {
                             }
                         }
                         children {
-                            uuid
-                            link
                             linkText
                             page {
+                                id
+                                fields {
+                                    link
+                                }
                                 frontmatter {
+                                    uuid
+                                    title
                                     summary {
                                         text
                                         image {
+                                            extension
                                             publicURL
                                             childImageSharp {
                                                 fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
@@ -193,6 +247,9 @@ function getData(graphql) {
                                                 }
                                             }
                                         }
+                                    }
+                                    careers {
+                                        department
                                     }
                                 }
                             }
@@ -221,7 +278,7 @@ function getData(graphql) {
                 nodes {
                     id
                     fields {
-                        slug
+                        link
                     }
                     frontmatter {
                         type
@@ -242,7 +299,7 @@ function getData(graphql) {
                     id
                     title
                     type
-                    path
+                    slug: path
                 }
             }
         }

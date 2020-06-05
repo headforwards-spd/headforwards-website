@@ -1,7 +1,9 @@
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { Component } from 'react';
+import { any, arrayOf, bool, func, string } from 'prop-types';
+import React, { Component, useMemo } from 'react';
 
+import hashArray from '../../../../lib/hash-array';
 import Link from '../../link/link.component';
 import styles from '../navbar.module.scss';
 import { menuItemPropTypes } from './menu-item.prop-type';
@@ -12,7 +14,9 @@ export default class MenuItem extends Component {
     constructor(props) {
         super(props);
 
-        const { link, location } = props;
+        const { location, page } = props;
+        const { fields } = page;
+        const { link } = fields;
         const { pathname: path = '' } = location || {};
 
         const cleanLink = `/${link}/`.replace(/\/+/g, '/').replace(/^\/$/, 'homepage');
@@ -32,39 +36,76 @@ export default class MenuItem extends Component {
     }
 
     render() {
-        const { location, link, linkText, showTitle = false, children, className = '' } = this.props;
+        const { location, linkText, showTitle = false, page, children, className = '' } = this.props;
+        const { fields } = page;
+        const { link } = fields;
         const { isActive } = this.state;
         const { toggleMenu } = this;
-        const hasChildren = !!children;
 
-        const openClass = isActive ? styles.isActive : '';
-        const childrenClass = hasChildren ? styles.hasChildren : '';
+        const itemProps = {
+            location,
+            link,
+            children,
+            linkText,
+            showTitle,
+            isActive,
+            className,
+            toggleMenu: toggleMenu.bind(this),
+        };
 
-        return (
-            <li className={`${childrenClass} ${openClass} ${className}`}>
-                <Link to={link}>
-                    {linkText}
-                    {showTitle && hasChildren && (
-                        <button type="button" onClick={toggleMenu.bind(this)}>
-                            {(isActive && <FontAwesomeIcon icon={faMinus} fixedWidth />) || (
-                                <FontAwesomeIcon icon={faPlus} fixedWidth />
-                            )}
-                        </button>
-                    )}
-                </Link>
-                {!!hasChildren && (
-                    <section>
-                        {showTitle && <h2>{linkText}</h2>}
-                        {showTitle && (
-                            <ul>
-                                {children.map(({ id, ...item }) => (
-                                    <MenuItem key={id} {...item} location={location} />
-                                ))}
-                            </ul>
-                        )}
-                    </section>
-                )}
-            </li>
-        );
+        return <Item {...itemProps} />;
     }
+}
+Item.propTypes = {
+    // eslint-disable-next-line react/forbid-prop-types
+    location: any,
+    link: string.isRequired,
+    children: arrayOf(any),
+    linkText: string.isRequired,
+    showTitle: bool,
+    isActive: bool,
+    className: string,
+    toggleMenu: func.isRequired,
+};
+Item.defaultProps = {
+    location: null,
+    children: null,
+    showTitle: false,
+    isActive: false,
+    className: '',
+};
+function Item({ location, link, children, linkText, showTitle, isActive, className, toggleMenu }) {
+    const hasChildren = !!children;
+
+    const openClass = isActive ? styles.isActive : '';
+    const childrenClass = hasChildren ? styles.hasChildren : '';
+
+    const hashedChildren = useMemo(() => (children ? hashArray(children) : children), [children]);
+
+    return (
+        <li className={`${childrenClass} ${openClass} ${className}`}>
+            <Link to={link}>
+                {linkText}
+                {showTitle && hasChildren && (
+                    <button type="button" onClick={toggleMenu}>
+                        {(isActive && <FontAwesomeIcon icon={faMinus} fixedWidth />) || (
+                            <FontAwesomeIcon icon={faPlus} fixedWidth />
+                        )}
+                    </button>
+                )}
+            </Link>
+            {hashedChildren && (
+                <section>
+                    {showTitle && <h2>{linkText}</h2>}
+                    {showTitle && (
+                        <ul>
+                            {hashedChildren.map(({ id, ...item }) => (
+                                <MenuItem key={id} {...item} location={location} />
+                            ))}
+                        </ul>
+                    )}
+                </section>
+            )}
+        </li>
+    );
 }

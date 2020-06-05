@@ -11,6 +11,7 @@ const gatsbyPluginRobotsTxt = require('./gatsby/gatsby-plugin-robots-txt');
 const gatsbyPluginOffline = require('./gatsby/gatsby-plugin-offline');
 const gatsbyPluginGoogleTagmanger = require('./gatsby/gatsby-plugin-google-tagmanager');
 const gatsbyPluginNetlify = require('./gatsby/gatsby-plugin-netlify');
+const gatsbyPluginForceTrailingSlashes = require('./gatsby/gatsby-plugin-force-trailing-slashes');
 
 const sitePassword = process.env.SITE_PASSWORD || null;
 const siteMetadata = {
@@ -30,15 +31,17 @@ const plugins = [
     { ...gatsbyTransformerRemark },
     'gatsby-transformer-yaml',
     'gatsby-transformer-json',
-    `gatsby-transformer-remark-linked-pages`,
-    `gatsby-transformer-yaml-menu`,
-    { ...gatsbyPluginManifest },
-    { ...gatsbyPluginOffline },
-    `gatsby-plugin-force-trailing-slashes`,
+
+    { ...gatsbyPluginForceTrailingSlashes },
     { ...gatsbyPluginSitemap },
     { ...gatsbyPluginRobotsTxt },
     { ...gatsbyPluginGoogleTagmanger },
+
+    { ...gatsbyPluginManifest },
+    { ...gatsbyPluginOffline },
+
     { ...gatsbyPluginNetlifyCms },
+
     { ...gatsbyPluginNetlify },
 ];
 

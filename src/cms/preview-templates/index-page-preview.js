@@ -143,7 +143,7 @@ function getFooterLink({ showImages, page }) {
         link: '/',
         title,
         summary: {
-            image: image || '/uploads/icon.black.png',
+            image: image || '/images/placeholder.jpg',
             text: text || 'Link text here...',
         },
     };
@@ -158,7 +158,7 @@ function getPages() {
             page: {
                 frontmatter: {
                     summary: {
-                        image: '/uploads/icon.black.png',
+                        image: '/images/placeholder.jpg',
                         text: 'Page introduction here.',
                     },
                 },

@@ -4,7 +4,7 @@ parent: careers
 type: info-page
 title: "Perl, Python and Golang"
 summary:
-  image: /uploads/icon.black.png
+  image: /uploads/placeholder.jpg
   text: >-
     Our global communications team is 45 people, again all in small teams of
     3-7. They work on cutting edge web applications which are used by millions
