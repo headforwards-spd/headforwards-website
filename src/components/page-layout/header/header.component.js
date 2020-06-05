@@ -54,7 +54,7 @@ export default class Header extends StickyNav {
                     }}
                 />
                 <section className={titleStyle}>
-                    <h1>{parseHtml(title)}</h1>
+                    {title && <h1>{parseHtml(title)}</h1>}
                     {!!subtitle && <p>{subtitle}</p>}
                 </section>
                 {!!image && <Image image={image} alt={title} className={styles.image} />}

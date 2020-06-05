@@ -1,6 +1,9 @@
-import { arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
+import { arrayOf, shape, string } from 'prop-types';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
+import ContentComponent from '../../page-components/content.component';
+import { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import Markdown from '../../page-layout/markdown';
 import styles from './legal-page.module.scss';
 
@@ -10,13 +13,9 @@ const legalPageSectionPropTypes = {
 };
 
 const legalPagePropTypes = {
-    introduction: shape({
-        show: bool,
-        text: string,
-    }),
+    introduction: shape(IntroductionProps),
     sections: arrayOf(
         shape({
-            id: string.isRequired,
             ...legalPageSectionPropTypes,
         })
     ),
@@ -32,16 +31,12 @@ LegalPage.defaultProps = {
 };
 
 function LegalPage({ introduction, sections }) {
-    const { show, text } = introduction || {};
+    const hashedSections = useMemo(() => (sections ? hashArray(sections) : sections), [sections]);
 
     return (
         <section className={styles.sections}>
-            {show && (
-                <section>
-                    <Markdown source={text} />
-                </section>
-            )}
-            {sections.map(({ id, ...section }) => (
+            {introduction && <LegalPageIntroduction introduction={introduction} />}
+            {hashedSections.map(({ id, ...section }) => (
                 <LegalPageSection key={id} {...section} />
             ))}
         </section>
@@ -59,5 +54,26 @@ function LegalPageSection({ title, text }) {
             {title && <h2>{title}</h2>}
             <Markdown source={text} />
         </section>
+    );
+}
+
+LegalPageIntroduction.propTypes = {
+    introduction: shape(IntroductionProps).isRequired,
+};
+function LegalPageIntroduction({ introduction }) {
+    const { title, content } = introduction || {};
+
+    if (!title && !(content || []).length) {
+        return null;
+    }
+
+    const hashedContent = useMemo(() => (content ? hashArray(content) : content), [content]);
+
+    return (
+        <>
+            {title && <h2>{title}</h2>}
+            {hashedContent &&
+                hashedContent.map(({ id, type, ...item }) => <ContentComponent key={id} type={type} {...item} />)}
+        </>
     );
 }

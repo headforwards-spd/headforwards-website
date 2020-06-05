@@ -3,20 +3,18 @@ uuid: 3c96d190-0fac-11ea-843f-932c76de5936
 parent: how-we-work
 type: info-page
 title: Mobbing
-image:
+bannerImage: /uploads/hf-e.jpg
+summary:
   image: /uploads/hf-e.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Mob programming is a chance to apply a whole team’s ideas and knowledge to
     one project
 components:
   - content:
       - text: >-
-          An entire dev team, gathered around one computer, all working on the
-          same client project. It sounds like chaos, but it’s a brilliant way of
-          delivering high quality software, fast. 
+          Imagine your entire dev team, gathered around one computer, all
+          working on your project. It sounds like chaos, but it’s a brilliant
+          way of delivering high quality software, fast. 
 
 
           Mob programming is used a lot at Headforwards. It’s a chance to apply
@@ -58,10 +56,10 @@ components:
     title: Clients are welcome
   - content:
       - text: >-
-          But once a team tries mobbing, they often find they really enjoy
-          working in such a collaborative way. Everyone at Headforwards has a
-          specialist skill – whether it’s front-end development, database coding
-          or web services – and mobbing means that knowledge gets shared.
+          Once a team tries mobbing, they often find they really enjoy working
+          in such a collaborative way. Everyone at Headforwards has a specialist
+          skill – whether it’s front-end development, database coding or web
+          services – and mobbing means that knowledge gets shared.
 
 
           It’s a win-win: the client gets great quality software fast, and the

@@ -1,19 +1,16 @@
 import { graphql } from 'gatsby';
-import { any, arrayOf, bool, shape, string } from 'prop-types';
+import { any, arrayOf, shape } from 'prop-types';
 import React from 'react';
 
-import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
-import Layout from '../components/page-layout/layout';
+import { IntroductionProps } from '../components/page-layout/introduction/introduction.component';
+import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import HomepageTemplate from '../components/page-templates/homepage/homepage.template';
 
 const homepagePropTypes = {
     data: shape({
         page: shape({
             frontmatter: shape({
-                introduction: shape({
-                    show: bool.isRequired,
-                    text: string,
-                }),
+                introduction: shape(IntroductionProps),
                 sections: arrayOf(any),
             }),
         }),
@@ -27,15 +24,17 @@ Homepage.propTypes = homepagePropTypes;
 function Homepage({ data }) {
     const { page } = data;
     const { frontmatter } = page;
-    const { introduction, sections, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
-    const footerLinks = extractFooterLinks(rawFooterLinks);
+
+    const layoutProps = extractLayoutProps(page);
+    const { introduction, sections, components } = frontmatter || {};
     const templateProps = {
         introduction,
         sections,
+        components,
     };
 
     return (
-        <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks} isHomePage>
+        <Layout {...layoutProps} isHomePage>
             <HomepageTemplate {...templateProps} />
         </Layout>
     );
@@ -45,57 +44,28 @@ export const query = graphql`
     query HomePage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
-                title
-                subtitle
-                introduction {
-                    show
-                    text
-                }
-                ...BannerImageFragment
+                ...HeaderFragment
                 sections {
-                    id
                     image {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 1024, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...ImageFragment
                     }
                     imageSquare: image {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...ImageSquareFragment
                     }
                     imagePostit: image {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp_noBase64
-                            }
-                        }
+                        ...ImagePostitFragment
                     }
                     isPostit
                     title
                     isRightImage
                     components {
-                        id
                         type
                         title
                         content {
-                            id
                             type
                             quote
                             profilePic {
-                                publicURL
-                                childImageSharp {
-                                    fluid(maxWidth: 100, maxHeight: 100, cropFocus: CENTER, quality: 85) {
-                                        ...GatsbyImageSharpFluid_withWebp
-                                    }
-                                }
+                                ...ProfilePicFragment
                             }
                             name
                             jobTitle

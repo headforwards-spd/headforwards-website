@@ -1,0 +1,106 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins/mixins";
+@import "../../../scss/mixins/typography";
+@import "../page-component";
+
+.fixture {
+  @include fontMedium;
+  margin-top: $component-gutter-sm;
+  @media (min-width: $screen-md) {
+    margin-top: $component-gutter-md;
+  }
+  @media (min-width: $screen-lg) {
+    margin-top: $component-gutter-lg;
+  }
+}
+
+.authorContainer {
+  border-bottom: 2px solid #d7d7d6;
+  margin-top: -$component-gutter-sm;
+  padding: $column-gutter-sm 0;
+
+  > header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    .imageCropper {
+      order: 1;
+      border-radius: 50%;
+      margin-right: 1em;
+      overflow: hidden;
+      position: relative;
+      width: 3em;
+
+      @media (min-width: $screen-md) {
+        width: 3.5em;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 4em;
+      }
+    }
+    > section {
+      order: 2;
+
+      h2 {
+        color: black;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+
+      p {
+        @include fontSmall;
+        color: #b8b8b8;
+        font-style: italic;
+        margin: 0;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  > p {
+    @include fontSmallVr;
+    display: none;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .authorContainer {
+    margin-top: -$component-gutter-md;
+    padding: $column-gutter-md 0;
+
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
+    > header {
+      width: calc(37.5% - #{$column-gutter-md/2});
+      h2 {
+        @include headingFontSmall;
+      }
+    }
+
+    > p {
+      display: block;
+      width: calc(62.5% - #{$column-gutter-md/2});
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .authorContainer {
+    margin-top: -$component-gutter-lg;
+    padding: $column-gutter-lg 0;
+
+    > header {
+      width: calc(37.5% - #{$column-gutter-lg/2});
+    }
+
+    > p {
+      width: calc(62.5% - #{$column-gutter-lg/2});
+    }
+  }
+}

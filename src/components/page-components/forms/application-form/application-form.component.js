@@ -84,6 +84,8 @@ export default class ApplicationForm extends Component {
             }
         });
 
+        formData.append('candidate[referrer]', 'website');
+
         const options = {
             method: 'POST',
             headers: { 'Content-Type': 'multipart/form-data' },

@@ -2,9 +2,10 @@ import { string } from 'prop-types';
 import React from 'react';
 
 import Form from '../../page-components/forms/contact-form/contact-form.component';
+import Link from '../../page-layout/link/link.component';
 import styles from './contact.module.scss';
 
-const contactPropTypes = {
+export const contactPropTypes = {
     companyName: string,
     email: string,
     jobsEmail: string,
@@ -46,10 +47,16 @@ function Contact({ companyName, mapUrl, email, jobsEmail, phone, address, regist
                     </section>
                     <dl>
                         <dt>Telephone.</dt>
-                        <dd>{phone}</dd>
+                        <dd>
+                            <Link to={`tel:${phone}`}>{phone}</Link>
+                        </dd>
                         <dt>Email.</dt>
-                        <dd>{email}</dd>
-                        <dd>{jobsEmail}</dd>
+                        <dd>
+                            <Link to={`mailto:${email}`}>{email}</Link>
+                        </dd>
+                        <dd>
+                            <Link to={`mailto:${jobsEmail}`}>{jobsEmail}</Link>
+                        </dd>
                     </dl>
                 </address>
                 <Form formName="contact" />
@@ -77,10 +84,11 @@ function Contact({ companyName, mapUrl, email, jobsEmail, phone, address, regist
                         <strong>We only recruit directly so, please, NO recruiters.</strong>
                     </p>
                     <p>
-                        We have a great in-house team and we have never used an agency. We don't see this changing, we
-                        don't have a PSL and we don't keep details of anyone who does call or email us. All of our
-                        recruitment goes through the team, not directly with any of the Hiring Managers. We just want to
-                        save your time by letting you know this so please don't contact us. Thank you for understanding.{' '}
+                        We have a great in-house team and we have never used an agency. We don&apos;t see this changing,
+                        we don&apos;t have a PSL and we don&apos;t keep details of anyone who does call or email us. All
+                        of our recruitment goes through the team, not directly with any of the Hiring Managers. We just
+                        want to save your time by letting you know this so please don&apos;t contact us. Thank you for
+                        understanding.
                     </p>
                 </section>
                 <section>

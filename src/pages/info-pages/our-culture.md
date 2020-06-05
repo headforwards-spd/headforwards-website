@@ -3,11 +3,9 @@ uuid: 92161650-0f9b-11ea-9e15-59d1e5da42db
 parent: careers
 type: info-page
 title: Our culture
-image:
+bannerImage: /uploads/toby cooking.jpg
+summary:
   image: /uploads/toby cooking.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Discover a very different technology business built around a supportive,
     collaborative culture.
@@ -29,8 +27,8 @@ components:
 
 
           Most of all, it’s a place where you and your family can enjoy a
-          fantastic lifestyle and an unrivaled quality of life – because joining
-          us isn’t just a career choice, it’s a life choice.
+          fantastic lifestyle and quality of life – because joining us isn’t
+          just a career choice, it’s a life choice.
         type: markdown-component
       - jobTitle: ""
         name: ""
@@ -42,7 +40,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: "Great software. Great lifestyle."
+    title: Great software. Great lifestyle.
   - imageOne: /uploads/toby-1.jpg
     imageTwo: /uploads/toby-4.jpg
     type: images-component
@@ -62,7 +60,7 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: "Happy people do great work. Simple. "
+    title: Happy people do great work.
   - quote: >-
       Headforwards’ directors talk to employees on a regular basis to check if
       any improvements can be made, get any suggestions they have for the
@@ -84,7 +82,7 @@ components:
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
-    title: "The more you know"
+    title: The more you know
   - imageOne: /uploads/toby-3.jpg
     imageTwo: /uploads/toby-2.jpg
     type: images-component
@@ -116,5 +114,5 @@ footerLinks:
     link3: 87ef9080-0f86-11ea-9e15-59d1e5da42db
     showImages: true
     title: Discover more about our culture
-callToAction: "Want to progress your career in a more relaxed location?"
+callToAction: Want to progress your career in a more relaxed location?
 ---

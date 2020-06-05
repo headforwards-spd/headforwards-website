@@ -1,6 +1,0 @@
-{
-  "name": "gatsby-transformer-remark-linked-pages",
-  "dependencies": {
-    "uuid": "^3.3.3"
-  }
-}

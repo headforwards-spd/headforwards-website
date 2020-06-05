@@ -36,7 +36,7 @@ Seo.defaultProps = {
     meta: null,
 };
 
-function Seo({ location, image, title: pageTitle, description: pageDescripton, lang, meta }) {
+function Seo({ location, image, title: pageTitle, description: pageDescription, lang, meta }) {
     const { companyInfo } = useStaticQuery(graphql`
         query {
             companyInfo: dataYaml(title: { eq: "company-info" }) {
@@ -65,7 +65,7 @@ function Seo({ location, image, title: pageTitle, description: pageDescripton, l
     const { pathname } = location || {};
 
     const imageContent = src ? `${url}${src}` : null;
-    const description = pageDescripton || companyDescription;
+    const description = pageDescription || companyDescription;
 
     return (
         <Helmet htmlAttributes={{ lang }} title={pageTitle} titleTemplate={`%s | ${companyTitle}`}>

@@ -3,11 +3,9 @@ uuid: 07758420-1033-11ea-9288-bf5475231968
 parent: who-we-are
 type: info-page
 title: What we believe
-image:
+bannerImage: /uploads/headforwards-2.jpg
+summary:
   image: /uploads/headforwards-2.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     We believe clients get the greatest business value from software outsourcing
     when development teams are empowered to make their own decisions.
@@ -64,7 +62,7 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: 'We believe in being Agile, we believe in empowering teams'
+    title: "We believe in being Agile, we believe in empowering teams"
 footerLinks:
   - link1: fe1a1d50-0fab-11ea-843f-932c76de5936
     link2: 21a08160-0fac-11ea-843f-932c76de5936
@@ -73,4 +71,3 @@ footerLinks:
     title: Find out more about our beliefs and values
 callToAction: How can we create value for your organisation?
 ---
-

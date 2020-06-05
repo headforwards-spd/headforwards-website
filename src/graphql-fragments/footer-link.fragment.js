@@ -4,15 +4,17 @@ import { graphql } from 'gatsby';
 export const FooterLinkFragment = graphql`
     fragment FooterLinkFragment on MarkdownRemark {
         id
+        fields {
+            link
+        }
         frontmatter {
+            parent
             title
-            introduction {
-                text
-            }
-            image {
+            summary {
                 image {
                     ...FooterImageFragment
                 }
+                text
             }
         }
     }

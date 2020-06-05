@@ -9,7 +9,7 @@ const contentComponentPropTypes = {
 };
 
 export default ContentComponent;
-export const ContentComponentPropType = shape(contentComponentPropTypes);
+export const ContentComponentProps = shape(contentComponentPropTypes);
 
 ContentComponent.propTypes = contentComponentPropTypes;
 
@@ -22,6 +22,6 @@ function ContentComponent({ type, ...item }) {
         case 'markdown-component':
             return <Markdown source={text} />;
         default:
-            return <></>;
+            return null;
     }
 }

@@ -3,11 +3,9 @@ uuid: 53629a60-103a-11ea-9ef0-bd54961b4e30
 parent: what-we-do
 type: info-page
 title: Create value through software
-image:
+bannerImage: /uploads/hf-c.jpg
+summary:
   image: /uploads/hf-c.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Every step of each Headforwards project, development is centred around the
     clients’ objectives
@@ -67,4 +65,3 @@ footerLinks:
     showImages: true
     title: Software with the client’s overall business objectives in mind
 ---
-

@@ -1,14 +1,12 @@
-import { bool, func, shape, string } from 'prop-types';
+import { func, shape, string } from 'prop-types';
 import React from 'react';
 import { Provider } from 'unstated';
 import * as uuid from 'uuid';
 
-import PageComponent from '../../components/page-components/page-component';
 import Footer from '../../components/page-layout/footer/footer.component';
 import Header from '../../components/page-layout/header/header.component';
 import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
-import IntroductionComponent from '../../components/page-layout/introduction/introduction.component';
-import styles from '../../components/page-templates/info-page/info-page.module.scss';
+import InfoPage from '../../components/page-templates/info-page/info-page.template';
 
 export default InfoPagePreview;
 
@@ -17,38 +15,73 @@ InfoPagePreview.propTypes = {
         data: shape({
             title: string.isRequired,
             subtitle: string,
-            image: shape({
-                show: bool,
+            bannerImage: ImageSrcPropType,
+            introduction: string,
+            summary: shape({
                 image: ImageSrcPropType,
-            }),
-            introduction: shape({
-                show: bool,
                 text: string,
             }),
         }),
     }).isRequired,
+    fieldsMetaData: func.isRequired,
     getAsset: func.isRequired,
 };
 
-function InfoPagePreview({ entry, getAsset }) {
+function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
     const { data } = entry.toJS();
     const {
         title = '',
         subtitle,
-        image,
+        bannerImage: bannerImageRef = null,
         introduction,
         components = [],
         footerLinks: rawFooterLinks,
         callToAction,
     } = data;
-    const { show: showImage = false, image: bannerImageRef = null } = image || {};
     const bannerImage = bannerImageRef ? getAsset(bannerImageRef).toString() : null;
+    const [footerLinks] = rawFooterLinks || [];
 
     const header = {
         title,
         subtitle,
-        image: showImage ? bannerImage : null,
+        image: bannerImage,
     };
+
+    if (footerLinks) {
+        const footerLinksArray = entry.getIn(['data', 'footerLinks']);
+        const footerLinksValue = footerLinksArray ? footerLinksArray.get(0) : null;
+        const footerLinksMeta = fieldsMetaData ? fieldsMetaData.getIn(['footerLinks'], footerLinksValue) : null;
+        const link1 = footerLinksValue
+            ? footerLinksMeta.getIn(['link1', 'info-pages', footerLinksValue.getIn(['link1'])])
+            : null;
+        const link2 = footerLinksValue
+            ? footerLinksMeta.getIn(['link2', 'info-pages', footerLinksValue.getIn(['link2'])])
+            : null;
+        const link3 = footerLinksValue
+            ? footerLinksMeta.getIn(['link3', 'info-pages', footerLinksValue.getIn(['link3'])])
+            : null;
+
+        const link1Page = link1 ? link1.toJS() : null;
+        const link2Page = link2 ? link2.toJS() : null;
+        const link3Page = link3 ? link3.toJS() : null;
+
+        const { showImages = false } = footerLinks || {};
+
+        footerLinks.links = [
+            getFooterLink({
+                showImages,
+                page: link1Page,
+            }),
+            getFooterLink({
+                showImages,
+                page: link2Page,
+            }),
+            getFooterLink({
+                showImages,
+                page: link3Page,
+            }),
+        ];
+    }
 
     components.forEach(component => setComponent(component, getAsset));
 
@@ -59,24 +92,16 @@ function InfoPagePreview({ entry, getAsset }) {
         companyInfo,
     };
 
-    const { show: showIntro, text: introText } = introduction;
-
-    const [footerLinks] = rawFooterLinks || {};
-    const { showImages: showFooterImages } = footerLinks || {};
-
-    footerLinks && setFooterLinks(footerLinks, showFooterImages);
+    const pageProps = {
+        introduction,
+        components,
+    };
 
     return (
         <Provider>
             <Header {...headerProps} />
             <main>
-                {showIntro && <IntroductionComponent introduction={introText} />}
-                {components && (
-                    <section className={styles.components}>
-                        {!!components &&
-                            components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
-                    </section>
-                )}
+                <InfoPage {...pageProps} />
             </main>
             <Footer
                 {...{
@@ -108,14 +133,17 @@ function setComponent(component, getAsset) {
     articles.forEach(article => setArticle(article, getAsset));
 }
 
-function setFooterLinks(footerLinks, showImages) {
-    footerLinks.links = [...Array(3)].map((v, k) => {
-        return {
-            showImages,
-            link: '/',
-            title: `Link ${k + 1}`,
-            image: { image: '/uploads/icon.black.png' },
-            introduction: { text: 'Introduction...' },
-        };
-    });
+function getFooterLink({ showImages, page }) {
+    const { title = 'Link', summary } = page || {};
+    const { image, text } = summary || {};
+
+    return {
+        showImages,
+        link: '/',
+        title,
+        summary: {
+            image: image || '/images/placeholder.jpg',
+            text: text || 'Link text here...',
+        },
+    };
 }

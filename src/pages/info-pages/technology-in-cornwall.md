@@ -3,11 +3,9 @@ uuid: 87ef9080-0f86-11ea-9e15-59d1e5da42db
 parent: careers
 type: info-page
 title: Technology in Cornwall
-image:
+bannerImage: /uploads/hf-d.jpg
+summary:
   image: /uploads/hf-d.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     As one of the fastest growing tech hubs in the UK, Cornwall has been a key
     part of our success at Headforwards.
