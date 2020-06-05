@@ -2,6 +2,7 @@
 .dependabot
 .scannerwork
 node_modules
+src/pages/**/*.md
 public
 static/documents
 static/fonts
