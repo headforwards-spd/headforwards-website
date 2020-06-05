@@ -30,10 +30,6 @@ if (branch === 'master') {
     config.show_preview_links = true;
 }
 
-if (branch === 'HW-71') {
-    config.local_backend = true;
-}
-
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
 CMS.registerWidget({
