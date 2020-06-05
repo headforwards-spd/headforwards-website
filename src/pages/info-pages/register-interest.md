@@ -7,7 +7,7 @@ subtitle: >-
   If you didn't see a role you'd like to apply for, but you are interested in working for
   us then please let us know here.
 summary:
-  image: /uploads/icon.black.png
+  image: /uploads/placeholder.jpg
   text: >-
     If you didn't see a role you'd like to apply for, but you are interested in
     working for us then please let us know here.

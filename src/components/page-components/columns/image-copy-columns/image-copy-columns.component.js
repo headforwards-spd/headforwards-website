@@ -1,19 +1,24 @@
 import { any, arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../../lib/hash-array';
 import Image, { ImageSrcPropType } from '../../../page-layout/image/image.component';
 import Link from '../../../page-layout/link/link.component';
 import ContentComponent from '../../content.component';
 import styles from './image-copy-columns.module.scss';
 
 const imageCopyColumnsPropTypes = {
-    image: ImageSrcPropType.isRequired,
     isRightImage: bool,
     title: string,
+    image: ImageSrcPropType.isRequired,
     content: arrayOf(any),
     link: shape({
-        link: string.isRequired,
-        linkText: string.isRequired,
+        linkText: string,
+        link: shape({
+            fields: shape({
+                link: string,
+            }),
+        }).isRequired,
     }),
 };
 
@@ -28,18 +33,21 @@ ImageCopyColumns.defaultProps = {
     content: [],
 };
 
-function ImageCopyColumns({ image, isRightImage, title, content, link }) {
+function ImageCopyColumns({ image, isRightImage, title, content, link: linkPage }) {
     const imageClass = isRightImage === true ? styles.isRightImage : '';
+    const { fields: { link } = {} } = linkPage || {};
     const hasLink = !!link;
+
+    const hashedContent = useMemo(() => (content ? hashArray(content) : content), [content]);
 
     return (
         <section className={`${styles.columnsWrapper} ${imageClass} ${styles.isImage}`}>
             <Image image={image} ratio="100%" alt={title} className={styles.image} />
             <section className={styles.copy}>
                 {title && <h2>{title}</h2>}
-                {content && (
+                {hashedContent && (
                     <section className={styles.markdown}>
-                        {content.map(({ id, type, ...item }) => (
+                        {hashedContent.map(({ id, type, ...item }) => (
                             <ContentComponent key={id} type={type} {...item} />
                         ))}
                     </section>

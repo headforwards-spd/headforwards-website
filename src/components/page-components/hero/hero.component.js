@@ -1,6 +1,7 @@
 import { any, arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import ContentComponent from '../content.component';
 import styles from './hero.module.scss';
 
@@ -33,12 +34,14 @@ function Hero({ title, content = [], isTwoColumns, className, isIntro }) {
         return null;
     }
 
+    const hashedContent = useMemo(() => (content ? hashArray(content) : content), [content]);
+
     return (
         <section className={`${styles.hero} ${columnsClass} ${hasTitleClass} ${className} ${isIntroClass}`}>
             {title && <h2>{title}</h2>}
-            {content && (
+            {hashedContent && (
                 <section className={styles.markdown}>
-                    {content.map(({ id, ...item }) => (
+                    {hashedContent.map(({ id, ...item }) => (
                         <ContentComponent key={id} {...item} />
                     ))}
                 </section>

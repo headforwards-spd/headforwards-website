@@ -1,0 +1,30 @@
+@import "../../scss/variables";
+$transitionTime: 1000;
+$elastic: transform #{$transitionTime}ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+$smooth: transform #{$transitionTime}ms ease;
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 -#{$column-gutter-sm};
+  .slide {
+    background: green;
+    margin: 0 #{$column-gutter-sm/2};
+    flex-shrink: 0;
+    width: calc(100% - #{$column-gutter-sm * 2});
+    &.isSliding {
+      transition: $smooth;
+      background: orange;
+      transform: translateX(calc(-100% - #{$column-gutter-sm}));
+    }
+  }
+  &.isEven .slide {
+    transform: translateX(calc(50% + #{$column-gutter-sm/2}));
+    &.isSliding {
+      transform: translateX(calc(-50% - #{$column-gutter-sm/2}));
+    }
+  }
+}

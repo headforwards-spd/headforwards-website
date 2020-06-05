@@ -1,6 +1,7 @@
 import { arrayOf, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import ContentComponent from '../../page-components/content.component';
 import { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import Markdown from '../../page-layout/markdown';
@@ -12,10 +13,9 @@ const legalPageSectionPropTypes = {
 };
 
 const legalPagePropTypes = {
-    introduction: string,
+    introduction: shape(IntroductionProps),
     sections: arrayOf(
         shape({
-            id: string.isRequired,
             ...legalPageSectionPropTypes,
         })
     ),
@@ -31,10 +31,12 @@ LegalPage.defaultProps = {
 };
 
 function LegalPage({ introduction, sections }) {
+    const hashedSections = useMemo(() => (sections ? hashArray(sections) : sections), [sections]);
+
     return (
         <section className={styles.sections}>
             {introduction && <LegalPageIntroduction introduction={introduction} />}
-            {sections.map(({ id, ...section }) => (
+            {hashedSections.map(({ id, ...section }) => (
                 <LegalPageSection key={id} {...section} />
             ))}
         </section>
@@ -65,10 +67,13 @@ function LegalPageIntroduction({ introduction }) {
         return null;
     }
 
+    const hashedContent = useMemo(() => (content ? hashArray(content) : content), [content]);
+
     return (
         <>
             {title && <h2>{title}</h2>}
-            {content && content.map(({ id, type, ...item }) => <ContentComponent key={id} type={type} {...item} />)}
+            {hashedContent &&
+                hashedContent.map(({ id, type, ...item }) => <ContentComponent key={id} type={type} {...item} />)}
         </>
     );
 }

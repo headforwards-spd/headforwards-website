@@ -7,7 +7,7 @@ author: bed56294-a114-11ea-bb37-0242ac130002
 subtitle: force value
 publishedDate: force value
 isPostits: false
-bannerImage: /uploads/headforwards.png
+bannerImage: /imiages/placeholder.jpg
 introduction:
   title: force value
   content:
@@ -18,9 +18,9 @@ introduction:
       quote: force value
       name: force value
       jobTitle: force value
-      profilePic: /uploads/headforwards.png
+      profilePic: /imiages/placeholder.jpg
 summary:
-  image: /uploads/headforwards.png
+  image: /imiages/placeholder.jpg
   text: force value
 sections:
   - components:
@@ -30,23 +30,23 @@ sections:
           - quote: force value
             name: force value
             jobTitle: force value
-            profilePic: /uploads/headforwards.png
+            profilePic: /imiages/placeholder.jpg
 
 components:
   - type: images-component
     flip: false
-    imageOne: /uploads/headforwards.png
-    imageTwo: /uploads/headforwards.png
+    imageOne: /imiages/placeholder.jpg
+    imageTwo: /imiages/placeholder.jpg
 
   - type: quote-component
     title: force value
     quote: force value
     name: force value
     jobTitle: force value
-    profilePic: /uploads/headforwards.png
+    profilePic: /imiages/placeholder.jpg
 
   - type: image-copy-component
-    image: /uploads/headforwards.png
+    image: /imiages/placeholder.jpg
     title: force value
     content:
       - type: markdown-component
@@ -56,7 +56,7 @@ components:
         quote: force value
         name: force value
         jobTitle: force value
-        profilePic: /uploads/headforwards.png
+        profilePic: /imiages/placeholder.jpg
     link:
       - linkText: force value
         link: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
@@ -69,7 +69,7 @@ components:
     articles:
       - title: force value
         text: force value
-        image: /uploads/headforwards.png
+        image: /imiages/placeholder.jpg
         linkText: force value
         link: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
 
@@ -77,14 +77,14 @@ components:
     title: force value
     articles:
       - title: force value
-        image: /uploads/headforwards.png
+        image: /imiages/placeholder.jpg
         link: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2
 
   - type: content-slider-component
     title: force value
     articles:
       - title: force value
-        image: /uploads/headforwards.png
+        image: /imiages/placeholder.jpg
         text: force value
         linkText: force value
         link: 0d2868af-3e1c-497e-82bf-a5b17a0bbda2

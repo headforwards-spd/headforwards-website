@@ -118,6 +118,7 @@
       justify-content: space-between;
       min-height: 62.5vh;
       position: relative;
+
       &.isHomePage {
         min-height: calc(100vh - 4.5em);
       }
@@ -151,6 +152,19 @@
           }
         }
       }
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        background: linear-gradient(
+          rgba(black, 1),
+          transparent 175px,
+          transparent calc(100% - 400px),
+          rgba(black, 1)
+        );
+
+        .image {
+          opacity: 0.9 !important;
+        }
+      }
     }
 
     .image {
@@ -168,19 +182,8 @@
         transparent calc(100% - 400px),
         rgba(black, 0.6)
       );
-      img {
-        mix-blend-mode: color;
-      }
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        background: linear-gradient(
-          rgba(black, 1),
-          transparent 175px,
-          transparent calc(100% - 400px),
-          rgba(black, 1)
-        );
-        img {
-          opacity: 0.9 !important;
-        }
+      picture {
+        mix-blend-mode: multiply;
       }
     }
   }

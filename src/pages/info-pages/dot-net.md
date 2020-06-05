@@ -4,7 +4,7 @@ parent: careers
 type: info-page
 title: .Net
 summary:
-  image: /uploads/icon.black.png
+  image: /uploads/placeholder.jpg
   text: >-
     We have 35 people working in 6 different .NET teams, for 3 different
     clients. That’s a lot of people to learn from and share knowledge with.

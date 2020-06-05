@@ -99,7 +99,7 @@ function Layout({
     const { menuData, companyInfo, seoImage: defaultSeoImage } = useStaticQuery(
         graphql`
             query {
-                seoImage: file(name: { eq: "icon" }) {
+                seoImage: file(name: { eq: "placeholder" }) {
                     childImageSharp {
                         fixed(width: 1200, height: 630, fit: CONTAIN, quality: 85, background: "white") {
                             src
@@ -132,7 +132,7 @@ function Layout({
         companyInfo,
     };
 
-    const { text: description, seoImage } = summary || {};
+    const { text: description, image: seoImage } = summary || {};
 
     const seoProps = {
         ...seo,
@@ -172,7 +172,7 @@ export function extractLayoutProps({ frontmatter }) {
         footerLinks: rawFooterLinks,
         callToAction,
         seo,
-    } = frontmatter;
+    } = frontmatter || {};
     const { applicationForm } = careers || {};
     const jobDetails = applicationForm ? { path: `/careers/${applicationForm}` } : null;
     const footerLinks = extractFooterLinks(rawFooterLinks);

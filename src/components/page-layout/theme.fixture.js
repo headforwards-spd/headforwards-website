@@ -1,4 +1,5 @@
 import faker from 'faker/locale/en_GB';
+import hash from 'object-hash';
 import { string } from 'prop-types';
 import React from 'react';
 
@@ -159,7 +160,7 @@ function Section({ className, heading, copy }) {
         <section className={className}>
             <h2>{heading}</h2>
             {copy.map(paragraph => (
-                <p>{paragraph}</p>
+                <p key={hash(paragraph)}>{paragraph}</p>
             ))}
         </section>
     );

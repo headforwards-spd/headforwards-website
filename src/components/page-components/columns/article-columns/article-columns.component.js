@@ -1,6 +1,7 @@
 import { arrayOf, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
+import hashArray from '../../../../lib/hash-array';
 import styles from './article-columns.module.scss';
 import Article, { ArticlePropType } from './article.component';
 
@@ -19,13 +20,15 @@ ArticleColumns.defaultProps = {
 };
 
 function ArticleColumns({ title, articles }) {
-    const columnsStyle = articles.length === 3 ? styles.isThreeColumns : '';
+    const columnsStyle = articles.length > 2 ? styles.isThreeColumns : '';
+    const hashedArticles = useMemo(() => (articles ? hashArray(articles) : articles), [articles]);
+
     return (
         <section className={styles.articleColumns}>
-            {!!title && <h2>{title}</h2>}
-            {!!articles && (
+            {title && <h2>{title}</h2>}
+            {hashedArticles && (
                 <section className={columnsStyle}>
-                    {articles.map(({ id, ...article }) => (
+                    {hashedArticles.map(({ id, ...article }) => (
                         <Article key={id} {...article} />
                     ))}
                 </section>

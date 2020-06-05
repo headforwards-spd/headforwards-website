@@ -18,18 +18,8 @@ const blogPostComponent = {
             widget: 'list',
             fields: [
                 {
-                    label: 'Title',
-                    name: 'title',
-                    widget: 'string',
-                },
-                {
-                    label: 'Image',
-                    name: 'image',
-                    widget: 'image',
-                },
-                {
                     label: 'Link',
-                    name: 'linkFields',
+                    name: 'link',
                     ...linkFields,
                 },
             ],

@@ -25,7 +25,7 @@ switch (branch) {
 export default {
     site_url: siteUrl,
     display_url: 'https://www.headforwards.com',
-    logo_url: 'https://www.headforwards.com/images/headforwards.black.png',
+    logo_url: 'https://www.headforwards.com/images/brand/headforwards-logo.black.svg',
     media_folder: 'static/uploads',
     public_folder: '/uploads',
     collections: [blogPages, authorPages, blogIndexPages, indexPages, ...infoPages, legalPages, settings, allPages],

@@ -10,7 +10,7 @@ export default {
     'Postit on the Right': PostitOnRight,
 };
 
-const image = '/uploads/icon.black.png';
+const image = '/images/placeholder.jpg';
 
 const defaultValue = {
     ...getProps(),

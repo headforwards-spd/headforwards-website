@@ -28,7 +28,7 @@ const defaultPageValue = {
 };
 
 const defaultBlogValue = {
-    fields: { slug: faker.random.uuid() },
+    fields: { link: faker.random.uuid() },
     frontmatter: {
         summary: {
             image: generateImage(true),
