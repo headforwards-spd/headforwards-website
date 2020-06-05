@@ -14,7 +14,7 @@ $smooth: transform #{$transitionTime}ms ease;
     background: green;
     margin: 0 #{$column-gutter-sm/2};
     flex-shrink: 0;
-    width: calc(100% - #{$column-gutter-sm*2});
+    width: calc(100% - #{$column-gutter-sm * 2});
     &.isSliding {
       transition: $smooth;
       background: orange;

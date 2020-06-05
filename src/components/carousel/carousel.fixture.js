@@ -1,6 +1,6 @@
+import faker from 'faker/locale/en_GB';
 import React from 'react';
 import { useValue } from 'react-cosmos/fixture';
-import faker from 'faker/locale/en_GB';
 
 import FixtureLayout from '../page-layout/FixtureLayout';
 import Carousel from './carousel.component';
