@@ -111,12 +111,6 @@
     }
 
     &.hasBackground {
-      background: linear-gradient(
-        rgba(black, 1),
-        transparent 175px,
-        transparent calc(100% - 400px),
-        rgba(black, 1)
-      );
       display: flex;
 
       flex-direction: column;
@@ -164,11 +158,30 @@
       left: 0;
       margin: 0;
       max-width: unset;
-      opacity: 0.9;
       position: absolute !important;
       right: 0;
       top: 0;
       z-index: -1;
+      background: linear-gradient(
+        rgba(black, 0.4),
+        transparent 150px,
+        transparent calc(100% - 400px),
+        rgba(black, 0.6)
+      );
+      img {
+        mix-blend-mode: color;
+      }
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        background: linear-gradient(
+          rgba(black, 1),
+          transparent 175px,
+          transparent calc(100% - 400px),
+          rgba(black, 1)
+        );
+        img {
+          opacity: 0.9 !important;
+        }
+      }
     }
   }
 
