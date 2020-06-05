@@ -186,6 +186,7 @@ const employmentTypes = [
 function getEmploymentType(type) {
     return employmentTypes.find(
         employmentType =>
-            type.replace(/[^a-zA-Z]/, '').toLowerCase() === employmentType.replace(/[^a-zA-Z]/, '').toLowerCase()
+            (type || '').replace(/[^a-zA-Z]/, '').toLowerCase() ===
+            employmentType.replace(/[^a-zA-Z]/, '').toLowerCase()
     );
 }
