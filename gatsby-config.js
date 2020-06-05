@@ -31,8 +31,6 @@ const plugins = [
     { ...gatsbyTransformerRemark },
     'gatsby-transformer-yaml',
     'gatsby-transformer-json',
-    `gatsby-transformer-remark-linked-pages`,
-    `gatsby-transformer-yaml-menu`,
 
     { ...gatsbyPluginForceTrailingSlashes },
     { ...gatsbyPluginSitemap },

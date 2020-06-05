@@ -23,16 +23,16 @@
     }
 
     &:first-child {
-      margin-left: calc(1.5rem - 0.5em);
+      margin-left: calc(1.5rem - 0.6em);
     }
 
     &:last-child {
-      margin-right: calc(0.5em - 1.5rem);
+      margin-right: calc(0.6em - 1.5rem);
     }
 
     .icon {
-      width: 1em;
-      height: 1em;
+      width: 1.2em;
+      height: 1.2em;
     }
   }
 }

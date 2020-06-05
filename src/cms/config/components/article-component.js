@@ -18,21 +18,6 @@ const articleComponent = {
             widget: 'list',
             fields: [
                 {
-                    label: 'Title',
-                    name: 'title',
-                    widget: 'string',
-                },
-                {
-                    label: 'Copy',
-                    name: 'text',
-                    widget: 'markdown',
-                },
-                {
-                    label: 'Image',
-                    name: 'image',
-                    widget: 'image',
-                },
-                {
                     label: 'Link Text',
                     name: 'linkText',
                     widget: 'string',
@@ -40,7 +25,7 @@ const articleComponent = {
                 },
                 {
                     label: 'Link',
-                    name: 'linkFields',
+                    name: 'link',
                     ...linkFields,
                 },
             ],

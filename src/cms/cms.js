@@ -21,12 +21,17 @@ const config = {
         name: 'github',
         repo: 'andyweirheadforwards/headforwards-website',
         branch,
+        // use_graphql: true,
     },
 };
 
 if (branch === 'master') {
     config.publish_mode = 'editorial_workflow';
     config.show_preview_links = true;
+}
+
+if (branch === 'HW-71') {
+    config.local_backend = true;
 }
 
 CMS.registerPreviewStyle(styles.toString(), { raw: true });

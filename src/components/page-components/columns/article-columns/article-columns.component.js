@@ -20,7 +20,7 @@ ArticleColumns.defaultProps = {
 };
 
 function ArticleColumns({ title, articles }) {
-    const columnsStyle = articles.length === 3 ? styles.isThreeColumns : '';
+    const columnsStyle = articles.length > 2 ? styles.isThreeColumns : '';
     const hashedArticles = useMemo(() => (articles ? hashArray(articles) : articles), [articles]);
 
     return (
