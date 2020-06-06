@@ -47,7 +47,7 @@ function PageLink({ isPostit, linkText: title, page }) {
 function getImage({ imageMobile, imageTablet, imageDesktop }) {
     const { publicURL, extension } = imageMobile || {};
 
-    if (!publicURL) {
+    if (!publicURL || extension === 'svg') {
         return null;
     }
 

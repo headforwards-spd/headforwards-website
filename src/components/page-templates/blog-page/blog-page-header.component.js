@@ -45,7 +45,7 @@ function BlogPageHeader({ title, author, publishedDate }) {
 function getProfilePic({ imageMobile, imageTablet, imageDesktop }) {
     const { publicURL, extension } = imageMobile;
 
-    if (!publicURL) {
+    if (!publicURL || extension === 'svg') {
         return null;
     }
 

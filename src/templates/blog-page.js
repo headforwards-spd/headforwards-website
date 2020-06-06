@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import { arrayOf, shape } from 'prop-types';
 import React from 'react';
-import { Helmet } from 'react-helmet/es/Helmet';
+import { Helmet } from 'react-helmet';
 
 import { PageComponentPropType } from '../components/page-components/page-component';
 import { IntroductionProps } from '../components/page-layout/introduction/introduction.component';

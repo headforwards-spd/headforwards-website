@@ -5,7 +5,7 @@ import { Location } from '@reach/router';
 import { graphql, useStaticQuery } from 'gatsby';
 import { arrayOf, bool, node, oneOfType, shape, string } from 'prop-types';
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { Provider } from 'unstated';
 
 import AppContainer from '../../containers/app.container';

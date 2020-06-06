@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
-import { Helmet } from 'react-helmet/es/Helmet';
+import { Helmet } from 'react-helmet';
 import showdown from 'showdown';
 
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
