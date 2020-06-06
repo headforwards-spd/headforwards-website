@@ -178,7 +178,7 @@ export function extractLayoutProps({ frontmatter }) {
     const jobDetails = applicationForm ? { path: `/careers/${applicationForm}` } : null;
     const footerLinks = extractFooterLinks(rawFooterLinks);
 
-    const { publicURL, extension } = bannerImageMobile || null;
+    const { publicURL, extension } = bannerImageMobile || {};
     const bannerImage = publicURL ? { publicURL, extension, childImageSharp: { fluid: [] } } : null;
     bannerImage &&
         (bannerImage.childImageSharp.fluid = [
