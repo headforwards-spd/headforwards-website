@@ -6,6 +6,9 @@ export const HeaderFragment = graphql`
         bannerImage {
             ...BannerImageFragment
         }
+        bannerImageDesktop: bannerImage {
+            ...BannerImageDesktopFragment
+        }
         title
         subtitle
         introduction {

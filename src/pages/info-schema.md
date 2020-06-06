@@ -8,6 +8,7 @@ subtitle: force value
 publishedDate: force value
 isPostits: false
 bannerImage: /imiages/placeholder.jpg
+bannerImageMobile: /imiages/placeholder.jpg
 introduction:
   title: force value
   content:

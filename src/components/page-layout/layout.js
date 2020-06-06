@@ -165,6 +165,7 @@ export function extractLayoutProps({ frontmatter }) {
     const {
         isHomePage,
         bannerImage,
+        bannerImageDesktop,
         title,
         subtitle,
         summary,
@@ -176,6 +177,15 @@ export function extractLayoutProps({ frontmatter }) {
     const { applicationForm } = careers || {};
     const jobDetails = applicationForm ? { path: `/careers/${applicationForm}` } : null;
     const footerLinks = extractFooterLinks(rawFooterLinks);
+
+    bannerImage &&
+        (bannerImage.childImageSharp.fluid = [
+            bannerImage.childImageSharp.fluid,
+            {
+                ...bannerImageDesktop.childImageSharp.fluid,
+                media: `(min-width: 768px)`,
+            },
+        ]);
 
     return {
         isHomePage,
