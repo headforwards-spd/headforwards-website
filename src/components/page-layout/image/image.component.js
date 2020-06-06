@@ -1,6 +1,6 @@
 import GatsbyImage from 'gatsby-image';
 import { any, objectOf, oneOfType, shape, string } from 'prop-types';
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 
 import styles from './image.module.scss';
 
@@ -19,6 +19,7 @@ const imagePropTypes = {
     alt: string,
     ratio: string,
     className: string,
+    loadClassName: string,
 };
 
 export default Image;
@@ -30,15 +31,29 @@ Image.defaultProps = {
     alt: null,
     ratio: '62.5%',
     className: '',
+    loadClassName: '',
 };
 
-function Image({ image, alt, ratio, className = '', ...props }) {
+function Image({ image, alt, ratio, className, loadClassName, ...props }) {
     const { childImageSharp, extension } = image || {};
     let src;
     if (childImageSharp && extension !== 'svg') {
         const { fluid } = childImageSharp;
+        const [startLoad, setStartLoad] = useState(false);
 
-        return <GatsbyImage fluid={fluid} alt={alt} durationFadeIn={100} className={className} {...props} />;
+        const handleLoad = useCallback(() => setStartLoad(true), [setStartLoad]);
+        const allClasses = startLoad ? `${className} ${loadClassName}` : className;
+
+        return (
+            <GatsbyImage
+                fluid={fluid}
+                alt={alt}
+                durationFadeIn={250}
+                onLoad={handleLoad}
+                className={allClasses}
+                {...props}
+            />
+        );
     }
 
     if (typeof image === 'string') {

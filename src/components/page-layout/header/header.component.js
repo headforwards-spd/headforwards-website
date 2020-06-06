@@ -57,7 +57,15 @@ export default class Header extends StickyNav {
                     {title && <h1>{parseHtml(title)}</h1>}
                     {!!subtitle && <p>{subtitle}</p>}
                 </section>
-                {!!image && <Image image={image} alt={title} className={styles.image} />}
+                {!!image && (
+                    <Image
+                        image={image}
+                        alt={title}
+                        className={styles.image}
+                        loadClassName={styles.loaded}
+                        placeholderStyle={{ opacity: null }}
+                    />
+                )}
             </header>
         );
     }
