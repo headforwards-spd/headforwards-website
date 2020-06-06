@@ -66,6 +66,7 @@ function Menu({ menuClick, hasBackground, activeClass, menu: fullMenu, companyIn
                                     hashedHomeChildren.map(({ id, ...item }) => (
                                         <MenuItem
                                             key={id}
+                                            className={styles.navContactLink}
                                             {...item}
                                             {...{
                                                 location,

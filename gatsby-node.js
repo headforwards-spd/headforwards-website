@@ -203,7 +203,12 @@ function getData(graphql) {
                                         extension
                                         publicURL
                                         childImageSharp {
-                                            fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
+                                            fluid(
+                                                maxWidth: 564
+                                                maxHeight: 564
+                                                cropFocus: CENTER
+                                                srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                                            ) {
                                                 aspectRatio
                                                 base64
                                                 sizes
@@ -236,7 +241,12 @@ function getData(graphql) {
                                             extension
                                             publicURL
                                             childImageSharp {
-                                                fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
+                                                fluid(
+                                                    maxWidth: 564
+                                                    maxHeight: 564
+                                                    cropFocus: CENTER
+                                                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                                                ) {
                                                     aspectRatio
                                                     base64
                                                     sizes
