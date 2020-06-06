@@ -32,6 +32,49 @@ export const ImageFragment = graphql`
             }
         }
     }
+    fragment BlogSummaryImageFragment on MarkdownRemarkFrontmatterSummary {
+        imageMobile: image {
+            publicURL
+            extension
+            childImageSharp {
+                fluid(
+                    maxWidth: 726
+                    maxHeight: 276
+                    cropFocus: CENTER
+                    quality: 70
+                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                ) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
+            }
+        }
+        imageTablet: image {
+            childImageSharp {
+                fluid(
+                    maxWidth: 468
+                    maxHeight: 468
+                    cropFocus: CENTER
+                    quality: 75
+                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                ) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
+            }
+        }
+        imageDesktop: image {
+            childImageSharp {
+                fluid(
+                    maxWidth: 362
+                    maxHeight: 362
+                    cropFocus: CENTER
+                    quality: 80
+                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                ) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
+            }
+        }
+    }
     fragment SeoImageFragment on File {
         publicURL
         extension
@@ -55,6 +98,49 @@ export const ImageFragment = graphql`
                 srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
             ) {
                 ...GatsbyImageSharpFluid_withWebp
+            }
+        }
+    }
+    fragment AuthorImageFragment on MarkdownRemarkFrontmatter {
+        imageMobile: profilePic {
+            publicURL
+            extension
+            childImageSharp {
+                fluid(
+                    maxWidth: 54
+                    maxHeight: 54
+                    cropFocus: CENTER
+                    quality: 70
+                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                ) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
+            }
+        }
+        imageTablet: profilePic {
+            childImageSharp {
+                fluid(
+                    maxWidth: 67
+                    maxHeight: 67
+                    cropFocus: CENTER
+                    quality: 75
+                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                ) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
+            }
+        }
+        imageDesktop: profilePic {
+            childImageSharp {
+                fluid(
+                    maxWidth: 84
+                    maxHeight: 84
+                    cropFocus: CENTER
+                    quality: 80
+                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                ) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
             }
         }
     }

@@ -10,9 +10,7 @@ export const PageFragment = graphql`
                 name
                 bio
                 jobTitle
-                profilePic {
-                    ...ProfilePicFragment
-                }
+                ...AuthorImageFragment
             }
         }
         publishedDate
