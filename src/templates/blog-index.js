@@ -53,7 +53,7 @@ export const query = graphql`
         }
         children: allMarkdownRemark(
             filter: { frontmatter: { type: { eq: "blog-page" } } }
-            sort: { fields: frontmatter___publishedDate }
+            sort: { fields: frontmatter___publishedDate, order: DESC }
         ) {
             nodes {
                 id
@@ -69,9 +69,7 @@ export const query = graphql`
                         }
                     }
                     summary {
-                        image {
-                            ...ImageSquareFragment
-                        }
+                        ...BlogSummaryImageFragment
                         text
                     }
                     publishedDate
