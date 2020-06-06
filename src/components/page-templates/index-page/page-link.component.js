@@ -34,11 +34,32 @@ function PageLink({ isPostit, linkText: title, page }) {
     const { fields, frontmatter } = page || {};
     const { link } = fields;
     const { summary } = frontmatter || {};
+    const { text } = summary;
     const pageLinkProps = {
         link,
         title,
-        summary,
+        summary: { text, image: getImage(summary) },
     };
 
     return !isPostit ? <IndexArticle {...pageLinkProps} /> : <IndexPostit {...pageLinkProps} />;
+}
+
+function getImage({ imageMobile, imageTablet, imageDesktop }) {
+    const { publicURL, extension } = imageMobile || {};
+
+    if (!publicURL) {
+        return null;
+    }
+
+    return {
+        publicURL,
+        extension,
+        childImageSharp: {
+            fluid: [
+                { ...imageMobile.childImageSharp.fluid, media: `(max-width: 767px)` },
+                { ...imageTablet.childImageSharp.fluid, media: `(min-width: 768px) and (max-width: 1023px)` },
+                { ...imageDesktop.childImageSharp.fluid, media: `(min-width: 1024px)` },
+            ],
+        },
+    };
 }
