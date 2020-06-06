@@ -34,7 +34,7 @@ function Markdown({ source = '', className, truncate, maxLength }) {
     );
 }
 
-function truncateString(text = '', maxLength = 150, ellipsis = `\u2026`) {
+export function truncateString(text = '', maxLength = 150, ellipsis = `\u2026`) {
     if (!text || text.length <= maxLength) {
         return text;
     }

@@ -7,6 +7,7 @@ import showdown from 'showdown';
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import JobPageTemplate from '../components/page-templates/job-page/job-page.templete';
 import preventOrphans from '../lib/prevent-orphans';
+import organisation from '../structured-data/organisation';
 
 const converter = new showdown.Converter();
 
@@ -111,19 +112,7 @@ function structuredData({ title, description, datePosted, employmentType, salary
             value: identifier,
         },
         datePosted,
-        hiringOrganization: {
-            '@type': 'Organization',
-            name: 'Headforwards',
-            sameAs: [
-                'https://www.headforwards.com',
-                'https://www.facebook.com/headforwards/',
-                'https://www.instagram.com/headforwards_uk/',
-                'https://www.linkedin.com/company/headforwards/',
-                'https://www.youtube.com/channel/UC6EL0AsCvG7duu-PVsSQIXg/',
-                'https://twitter.com/headforwards/',
-            ],
-            logo: 'https://www.headforwards.com/images/headforwards-emblem-with-text.jpg',
-        },
+        hiringOrganization: organisation,
         jobLocation: {
             '@type': 'Place',
             address: {
