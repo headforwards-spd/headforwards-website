@@ -46,11 +46,11 @@
       flex: 1;
 
       line-height: 3;
-      margin: 0 $column-gutter-sm/2;
+      margin: 0.375em $column-gutter-sm/2;
       text-indent: -1000vw;
-      height: 3em;
+      height: 2.25em;
       @media (min-width: $screen-md) {
-        margin: 0 $column-gutter-md/2;
+        margin: 0.375em $column-gutter-md/2;
       }
       @media (min-width: $screen-lg) {
         margin: 0 $column-gutter-lg/2;

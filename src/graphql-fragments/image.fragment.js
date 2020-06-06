@@ -2,24 +2,31 @@ import { graphql } from 'gatsby';
 
 // eslint-disable-next-line import/prefer-default-export
 export const ImageFragment = graphql`
-    fragment BannerImageFragment on File {
-        publicURL
-        childImageSharp {
-            fluid(maxWidth: 768, maxHeight: 768, cropFocus: CENTER, quality: 75, srcSetBreakpoints: [320, 480, 768]) {
-                ...GatsbyImageSharpFluid_withWebp
+    fragment BannerImageFragment on MarkdownRemarkFrontmatter {
+        bannerImageMobile: bannerImage {
+            childImageSharp {
+                fluid(
+                    maxWidth: 768
+                    maxHeight: 768
+                    cropFocus: CENTER
+                    quality: 70
+                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                ) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
             }
         }
-    }
-    fragment BannerImageDesktopFragment on File {
-        childImageSharp {
-            fluid(
-                maxWidth: 1440
-                maxHeight: 900
-                cropFocus: CENTER
-                quality: 85
-                srcSetBreakpoints: [768, 1024, 1280, 1440]
-            ) {
-                ...GatsbyImageSharpFluid_withWebp
+        bannerImageDesktop: bannerImage {
+            childImageSharp {
+                fluid(
+                    maxWidth: 1440
+                    maxHeight: 900
+                    cropFocus: CENTER
+                    quality: 80
+                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+                ) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
             }
         }
     }

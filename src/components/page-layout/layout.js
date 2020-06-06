@@ -164,7 +164,7 @@ function Layout({
 export function extractLayoutProps({ frontmatter }) {
     const {
         isHomePage,
-        bannerImage,
+        bannerImageMobile: bannerImage,
         bannerImageDesktop,
         title,
         subtitle,
@@ -180,11 +180,8 @@ export function extractLayoutProps({ frontmatter }) {
 
     bannerImage &&
         (bannerImage.childImageSharp.fluid = [
-            bannerImage.childImageSharp.fluid,
-            {
-                ...bannerImageDesktop.childImageSharp.fluid,
-                media: `(min-width: 768px)`,
-            },
+            { ...bannerImage.childImageSharp.fluid, media: `(max-width: 767px)` },
+            { ...bannerImageDesktop.childImageSharp.fluid, media: `(min-width: 768px)` },
         ]);
 
     return {
