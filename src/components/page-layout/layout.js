@@ -164,7 +164,7 @@ function Layout({
 export function extractLayoutProps({ frontmatter }) {
     const {
         isHomePage,
-        bannerImageMobile: bannerImage,
+        bannerImageMobile,
         bannerImageDesktop,
         title,
         subtitle,
@@ -178,9 +178,11 @@ export function extractLayoutProps({ frontmatter }) {
     const jobDetails = applicationForm ? { path: `/careers/${applicationForm}` } : null;
     const footerLinks = extractFooterLinks(rawFooterLinks);
 
+    const { publicURL, extension } = bannerImageMobile || null;
+    const bannerImage = publicURL ? { publicURL, extension, childImageSharp: { fluid: [] } } : null;
     bannerImage &&
         (bannerImage.childImageSharp.fluid = [
-            { ...bannerImage.childImageSharp.fluid, media: `(max-width: 767px)` },
+            { ...bannerImageMobile.childImageSharp.fluid, media: `(max-width: 767px)` },
             { ...bannerImageDesktop.childImageSharp.fluid, media: `(min-width: 768px)` },
         ]);
 
