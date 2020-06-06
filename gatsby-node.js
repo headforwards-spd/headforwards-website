@@ -173,9 +173,45 @@ function createApplicationFormPage(createPage, id, slug) {
 }
 
 const graphqlImage = `
-image {
-    extension
+imageMobile: image {
     publicURL
+    extension
+    childImageSharp {
+        fluid(
+            maxWidth: 726
+            maxHeight: 276
+            cropFocus: CENTER
+            srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+        ) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+        }
+    }
+}
+imageTablet: image {
+    childImageSharp {
+        fluid(
+            maxWidth: 468
+            maxHeight: 468
+            cropFocus: CENTER
+            srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+        ) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+        }
+    }
+}
+imageDesktop: image {
     childImageSharp {
         fluid(
             maxWidth: 564
@@ -192,7 +228,8 @@ image {
             srcWebp
         }
     }
-}`;
+}
+`;
 const graphqlMenuPage = `
 page {
     id
