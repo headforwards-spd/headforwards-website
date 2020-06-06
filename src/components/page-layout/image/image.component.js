@@ -1,15 +1,26 @@
 import GatsbyImage from 'gatsby-image';
-import { any, objectOf, oneOfType, shape, string } from 'prop-types';
+import { arrayOf, number, oneOfType, shape, string } from 'prop-types';
 import React, { useCallback, useState } from 'react';
 
 import styles from './image.module.scss';
+
+const FluidProps = {
+    aspectRatio: number,
+    base64: string,
+    sizes: string,
+    src: string,
+    srcSet: string,
+    srcSetWebp: string,
+    srcWebp: string,
+};
 
 const imageSrcPropTypes = [
     string,
     shape({
         publicURL: string,
+        extension: string,
         childImageSharp: shape({
-            fluid: objectOf(any),
+            fluid: oneOfType([shape(FluidProps), arrayOf(shape(FluidProps))]),
         }),
     }),
 ];
@@ -23,7 +34,6 @@ const imagePropTypes = {
 };
 
 export default Image;
-export const ImagePropType = shape(imagePropTypes);
 export const ImageSrcPropType = oneOfType(imageSrcPropTypes);
 
 Image.propTypes = imagePropTypes;

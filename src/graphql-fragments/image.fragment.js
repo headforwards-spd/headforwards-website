@@ -4,10 +4,12 @@ import { graphql } from 'gatsby';
 export const ImageFragment = graphql`
     fragment BannerImageFragment on MarkdownRemarkFrontmatter {
         bannerImageMobile: bannerImage {
+            publicURL
+            extension
             childImageSharp {
                 fluid(
-                    maxWidth: 768
-                    maxHeight: 768
+                    maxWidth: 767
+                    maxHeight: 767
                     cropFocus: CENTER
                     quality: 70
                     srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]

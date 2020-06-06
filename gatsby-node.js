@@ -172,6 +172,46 @@ function createApplicationFormPage(createPage, id, slug) {
     });
 }
 
+const graphqlImage = `
+image {
+    extension
+    publicURL
+    childImageSharp {
+        fluid(
+            maxWidth: 564
+            maxHeight: 564
+            cropFocus: CENTER
+            srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+        ) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+        }
+    }
+}`;
+const graphqlMenuPage = `
+page {
+    id
+    fields {
+        link
+    }
+    frontmatter {
+        uuid
+        title
+        summary {
+            text
+            ${graphqlImage}
+        }
+        careers {
+            department
+        }
+    }
+}`;
+
 function getData(graphql) {
     return graphql(`
         {
@@ -189,80 +229,10 @@ function getData(graphql) {
                     }
                     children {
                         linkText
-                        page {
-                            id
-                            fields {
-                                link
-                            }
-                            frontmatter {
-                                uuid
-                                title
-                                summary {
-                                    text
-                                    image {
-                                        extension
-                                        publicURL
-                                        childImageSharp {
-                                            fluid(
-                                                maxWidth: 564
-                                                maxHeight: 564
-                                                cropFocus: CENTER
-                                                srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
-                                            ) {
-                                                aspectRatio
-                                                base64
-                                                sizes
-                                                src
-                                                srcSet
-                                                srcSetWebp
-                                                srcWebp
-                                            }
-                                        }
-                                    }
-                                }
-                                careers {
-                                    department
-                                }
-                            }
-                        }
+                        ${graphqlMenuPage}
                         children {
                             linkText
-                            page {
-                                id
-                                fields {
-                                    link
-                                }
-                                frontmatter {
-                                    uuid
-                                    title
-                                    summary {
-                                        text
-                                        image {
-                                            extension
-                                            publicURL
-                                            childImageSharp {
-                                                fluid(
-                                                    maxWidth: 564
-                                                    maxHeight: 564
-                                                    cropFocus: CENTER
-                                                    srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
-                                                ) {
-                                                    aspectRatio
-                                                    base64
-                                                    sizes
-                                                    src
-                                                    srcSet
-                                                    srcSetWebp
-                                                    srcWebp
-                                                }
-                                            }
-                                        }
-                                    }
-                                    careers {
-                                        department
-                                    }
-                                }
-                            }
+                            ${graphqlMenuPage}
                         }
                     }
                 }
