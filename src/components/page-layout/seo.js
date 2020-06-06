@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { arrayOf, number, object, shape, string } from 'prop-types';
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 const seoPropTypes = {
     location: shape({

@@ -56,7 +56,7 @@ function BlogLink({ fields, frontmatter }) {
 function getImage({ imageMobile, imageTablet, imageDesktop }) {
     const { publicURL, extension } = imageMobile || {};
 
-    if (!publicURL) {
+    if (!publicURL || extension === 'svg') {
         return null;
     }
 
