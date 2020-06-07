@@ -25,8 +25,8 @@ IndexPage.propTypes = {
 };
 
 function IndexPage({ data, pageContext }) {
-    const { page } = data;
-    const { frontmatter } = page;
+    const { page } = data || {};
+    const { frontmatter } = page || {};
 
     const layoutProps = extractLayoutProps(page);
 

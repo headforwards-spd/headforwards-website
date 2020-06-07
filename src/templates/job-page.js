@@ -38,8 +38,8 @@ JobPage.propTypes = {
 };
 
 function JobPage({ path, data }) {
-    const { job, filters } = data;
-    const { title, subtitle, introduction, ...templateProps } = job;
+    const { job, filters } = data || {};
+    const { title, subtitle, introduction, ...templateProps } = job || {};
     const {
         salary,
         tags,
@@ -48,7 +48,7 @@ function JobPage({ path, data }) {
         created: datePosted,
         path: identifier,
         employment_type_code: employmentType,
-    } = job;
+    } = job || {};
 
     const page = {
         frontmatter: {

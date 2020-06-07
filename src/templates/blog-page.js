@@ -24,16 +24,14 @@ BlogPagePage.propTypes = {
 };
 
 function BlogPagePage({ data }) {
-    const { page } = data;
-    const { fields, frontmatter, parent } = page;
+    const { page } = data || {};
+    const { fields, frontmatter, parent } = page || {};
     const { link: path } = fields || {};
     const { title, introduction, author: authorPage, components, publishedDate } = frontmatter || {};
-    const { modifiedTime: dateModified } = parent;
+    const { modifiedTime: dateModified } = parent || {};
     const {
-        images: {
-            frontmatter: { summary: rawImages },
-        },
-    } = data;
+        images: { frontmatter: { summary: rawImages } = {} },
+    } = data || {};
 
     const images = [];
 

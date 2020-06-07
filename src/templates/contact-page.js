@@ -22,8 +22,8 @@ ContactPage.propTypes = {
 };
 
 function ContactPage({ data }) {
-    const { page, companyInfo } = data;
-    const { frontmatter } = page;
+    const { page, companyInfo } = data || {};
+    const { frontmatter } = page || {};
 
     const layoutProps = extractLayoutProps(page);
     const { introduction, components } = frontmatter || {};

@@ -25,9 +25,9 @@ BlogIndex.propTypes = {
 };
 
 function BlogIndex({ data }) {
-    const { page, children } = data;
-    const { frontmatter } = page;
-    const { nodes: pages } = children;
+    const { page, children } = data || {};
+    const { frontmatter } = page || {};
+    const { nodes: pages } = children || {};
 
     const layoutProps = extractLayoutProps(page);
     const { introduction, components } = frontmatter || {};

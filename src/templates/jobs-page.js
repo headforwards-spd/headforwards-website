@@ -49,14 +49,14 @@ JobsPage.propTypes = {
 };
 
 function JobsPage({ data }) {
-    const { page, jobNodes, filters, tags: tagData } = data;
-    const { frontmatter } = page;
+    const { page, jobNodes, filters, tags: tagData } = data || {};
+    const { frontmatter } = page || {};
 
     const layoutProps = extractLayoutProps(page);
 
     const { introduction, components, footerText } = frontmatter || {};
-    const { nodes: jobs } = jobNodes;
-    const { distinct: tags } = tagData;
+    const { nodes: jobs } = jobNodes || {};
+    const { distinct: tags } = tagData || {};
     const pageProps = {
         introduction,
         filters,
