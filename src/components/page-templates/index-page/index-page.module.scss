@@ -189,32 +189,31 @@
   }
 
   .introduction {
-    bottom: -$column-gutter-sm/2;
-    display: flex;
-    flex-direction: column;
+    display: none;
     &:before,
     p {
       opacity: 0;
     }
-    &:before,
     &:after,
     p {
       transition: all ease 0.5s;
       transition-delay: 0.25s;
     }
-
-    &:before {
-      content: " ";
-      display: block;
-      height: 5rem;
-      margin-bottom: auto;
-      width: 5rem;
-      background: url("/images/brand/headforwards-emblem.white.svg");
-      background-size: cover;
-      z-index: 2;
-    }
     & > p {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
       z-index: 2;
+      &:before {
+        content: "";
+        display: block;
+        height: 2.5em;
+        width: 2.5em;
+        margin-bottom: auto;
+        background: url("/images/brand/headforwards-emblem.white.svg");
+        background-size: cover;
+        z-index: 2;
+      }
     }
     &:after {
       content: "";
@@ -235,22 +234,12 @@
           @include alphaBackgroundColor($orange, 0.7);
         }
       }
-      &:before,
       p {
         opacity: 1;
       }
     }
-
-    height: calc(100% - #{$column-gutter-sm/2});
-
-    left: -$column-gutter-sm/2;
-
     margin-bottom: 0;
-
     overflow: hidden;
-
-    padding: $column-gutter-sm;
-
     position: absolute;
 
     width: calc(100% - #{$column-gutter-sm/2});
@@ -270,6 +259,8 @@
       line-height: $mod_1;
     }
     @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
       bottom: -$column-gutter-md/2;
       height: 100%;
       left: -$column-gutter-md/2;
