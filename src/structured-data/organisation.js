@@ -9,10 +9,6 @@ const organisation = {
         'https://www.youtube.com/channel/UC6EL0AsCvG7duu-PVsSQIXg/',
         'https://twitter.com/headforwards/',
     ],
-    logo: {
-        '@type': 'ImageObject',
-        url: 'https://www.headforwards.com/images/headforwards-emblem-with-text.jpg',
-    },
 };
 
 export default organisation;
