@@ -202,6 +202,7 @@
     p {
       transition: all ease 0.5s;
       transition-delay: 0.25s;
+      z-index: 2;
     }
 
     &:before {
@@ -212,7 +213,7 @@
       width: 5rem;
       background: url("/images/brand/headforwards-emblem.white.svg");
       background-size: cover;
-      z-index: 1;
+      z-index: 2;
     }
     &:after {
       content: "";
@@ -224,6 +225,7 @@
       right: 0;
       background-color: transparent;
       mix-blend-mode: multiply;
+      z-index: 1;
     }
     &:hover {
       &:after {
