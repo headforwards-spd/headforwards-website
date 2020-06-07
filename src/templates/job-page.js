@@ -112,7 +112,10 @@ function structuredData({ title, description, datePosted, employmentType, salary
             value: identifier,
         },
         datePosted,
-        hiringOrganization: organisation,
+        hiringOrganization: {
+            ...organisation,
+            logo: 'https://www.headforwards.com/images/headforwards-emblem-with-text.jpg',
+        },
         jobLocation: {
             '@type': 'Place',
             address: {
@@ -122,6 +125,11 @@ function structuredData({ title, description, datePosted, employmentType, salary
                 addressRegion: 'ENG',
                 postalCode: 'TR15 3PL',
                 addressCountry: 'GB',
+            },
+            geo: {
+                '@type': 'GeoCoordinates',
+                latitude: '50.2303',
+                longitude: '-5.2272',
             },
         },
     };

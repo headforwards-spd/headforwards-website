@@ -90,7 +90,13 @@ function structuredData({ path, title, datePublished, dateModified, authorName, 
             '@type': 'Person',
             name: authorName,
         },
-        publisher: organisation,
+        publisher: {
+            ...organisation,
+            logo: {
+                '@type': 'ImageObject',
+                url: 'https://www.headforwards.com/images/headforwards-emblem-with-text.jpg',
+            },
+        },
     };
 
     return data;
