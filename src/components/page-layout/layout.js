@@ -172,7 +172,7 @@ export function extractLayoutProps({ frontmatter }) {
         careers,
         footerLinks: rawFooterLinks,
         callToAction,
-        seo = {},
+        seo,
     } = frontmatter || {};
     const { applicationForm } = careers || {};
     const jobDetails = applicationForm ? { path: `/careers/${applicationForm}` } : null;
@@ -195,6 +195,6 @@ export function extractLayoutProps({ frontmatter }) {
         jobDetails,
         footerLinks,
         callToAction,
-        seo,
+        seo: seo || {},
     };
 }
