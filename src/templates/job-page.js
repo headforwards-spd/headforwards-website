@@ -6,7 +6,6 @@ import showdown from 'showdown';
 
 import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import JobPageTemplate from '../components/page-templates/job-page/job-page.templete';
-import preventOrphans from '../lib/prevent-orphans';
 import organisation from '../structured-data/organisation';
 
 const converter = new showdown.Converter();
@@ -104,9 +103,7 @@ function JobPage({ path, data }) {
 }
 
 function structuredData({ title, description, datePosted, employmentType, salary, identifier }) {
-    const fancyText = description ? preventOrphans(description) : '';
-
-    const htmlDescription = converter.makeHtml(fancyText);
+    const htmlDescription = converter.makeHtml(description || '');
 
     const data = {
         '@context': 'http://schema.org',
