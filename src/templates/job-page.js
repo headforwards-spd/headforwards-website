@@ -95,7 +95,6 @@ function JobPage({ path, data }) {
                 {/* Meta Tags */}
 
                 {/* Open Graph */}
-                <meta property="article:published_time" content={datePosted} />
 
                 {/* Twitter Card */}
             </Helmet>
