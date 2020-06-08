@@ -1,6 +1,6 @@
 # Expired Jobs
 /careers/jobs/register-interest-redruth/* /careers/register-interest/:splat 301
-/careers/jobs/:job/* /careers/jobs/ 301
+/careers/jobs/:job/* /careers/jobs/ 410
 
 
 # careers.headforwards.com

@@ -41,6 +41,7 @@ function BlogPagePage({ data }) {
         images.push(src || publicURL);
     });
     const layoutProps = extractLayoutProps(page);
+    layoutProps.seo.ogType = 'article';
 
     const { frontmatter: author } = authorPage || {};
     const pageProps = {
@@ -65,7 +66,20 @@ function BlogPagePage({ data }) {
     return (
         <Layout {...layoutProps}>
             <Helmet>
+                {/* Structured Data */}
                 <script type="application/ld+json">{JSON.stringify(structuredData(structuredDataProps))}</script>
+
+                {/* Meta Tags */}
+                <meta name="author" content={authorName} />
+
+                {/* Open Graph */}
+                <meta property="article:published_time" content={publishedDate} />
+                <meta property="article:modified_time" content={dateModified} />
+                {/* article:author - profile array - Writers of the article. */}
+                {/* article:section - string - A high-level section name. E.g. Technology */}
+                {/* article:tag - string array - Tag words associated with this article. */}
+
+                {/* Twitter Card */}
             </Helmet>
             <BlogPageTemplate {...pageProps} />
         </Layout>
