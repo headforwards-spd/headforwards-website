@@ -89,7 +89,15 @@ function JobPage({ path, data }) {
     return (
         <Layout {...layoutProps}>
             <Helmet>
+                {/* Structured Data */}
                 <script type="application/ld+json">{JSON.stringify(structuredData(structuredDataProps))}</script>
+
+                {/* Meta Tags */}
+
+                {/* Open Graph */}
+                <meta property="article:published_time" content={datePosted} />
+
+                {/* Twitter Card */}
             </Helmet>
             <JobPageTemplate {...templateProps} introduction={introduction} path={path} />
         </Layout>

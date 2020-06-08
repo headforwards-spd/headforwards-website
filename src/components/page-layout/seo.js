@@ -20,6 +20,7 @@ const seoPropTypes = {
     description: string,
     lang: string,
     meta: arrayOf(object),
+    ogType: string,
 };
 
 export default Seo;
@@ -34,9 +35,10 @@ Seo.defaultProps = {
     description: '',
     lang: 'en',
     meta: null,
+    ogType: 'website',
 };
 
-function Seo({ location, image, title: pageTitle, description: pageDescription, lang, meta }) {
+function Seo({ location, image, title: pageTitle, description: pageDescription, lang, meta, ogType }) {
     const { companyInfo } = useStaticQuery(graphql`
         query {
             companyInfo: dataYaml(title: { eq: "company-info" }) {
@@ -81,7 +83,7 @@ function Seo({ location, image, title: pageTitle, description: pageDescription, 
             {pathname && <meta property="og:url" content={`${url}${pathname}`} />}
             <meta property="og:site_name" content={companyName} />
             <meta property="og:locale" content="en_GB" />
-            <meta property="og:type" content="website" />
+            <meta property="og:type" content={ogType} />
             <meta property="og:title" content={pageTitle} />
             <meta property="og:description" content={description} />
             {imageContent && <meta property="og:image" content={imageContent} />}
@@ -91,6 +93,7 @@ function Seo({ location, image, title: pageTitle, description: pageDescription, 
             <meta name="twitter:title" content={pageTitle} />
             <meta name="twitter:description" content={description} />
             {imageContent && <meta name="twitter:image" content={imageContent} />}
+            {imageContent && <meta name="twitter:image:alt" content={pageTitle} />}
             {width && <meta property="og:image:width" content={width} />}
             {height && <meta property="og:image:height" content={height} />}
 
