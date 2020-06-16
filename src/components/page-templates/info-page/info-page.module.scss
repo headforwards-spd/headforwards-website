@@ -7,7 +7,7 @@
     width: $singleColumnMaxWidth;
     &:after {
       @media (min-width: $screen-md) {
-        content: url(/images/hf-arrow.svg);
+        content: url(/images/hf-arrow.black.svg);
         opacity: 0.05;
         position: absolute;
         right: -50%;
