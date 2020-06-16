@@ -36,7 +36,7 @@ function BlogPagePage({ data }) {
     const images = [];
 
     Object.keys(rawImages).forEach(key => {
-        const { publicURL, childImageSharp: { fixed: { src } = {} } = {} } = rawImages[key];
+        const { publicURL, childImageSharp: { fixed: { src } = {} } = {} } = rawImages[key] || {};
 
         images.push(src || publicURL);
     });
