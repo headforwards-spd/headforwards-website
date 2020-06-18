@@ -45,6 +45,7 @@ CMS.registerPreviewTemplate('index-pages', IndexPagePreview);
 CMS.registerPreviewTemplate('who-we-are', InfoPagePreview);
 CMS.registerPreviewTemplate('what-we-do', InfoPagePreview);
 CMS.registerPreviewTemplate('how-we-work', InfoPagePreview);
+CMS.registerPreviewTemplate('blog-pages', BlogPagePreview);
 CMS.registerPreviewTemplate('careers', CareersPagePreview);
 
 init({
