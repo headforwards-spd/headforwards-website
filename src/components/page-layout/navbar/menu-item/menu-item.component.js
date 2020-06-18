@@ -14,9 +14,9 @@ export default class MenuItem extends Component {
     constructor(props) {
         super(props);
 
-        const { location, page } = props;
-        const { fields } = page;
-        const { link } = fields;
+        const { location, page } = props || {};
+        const { fields } = page || {};
+        const { link } = fields || {};
         const { pathname: path = '' } = location || {};
 
         const cleanLink = `/${link}/`.replace(/\/+/g, '/').replace(/^\/$/, 'homepage');
@@ -37,8 +37,8 @@ export default class MenuItem extends Component {
 
     render() {
         const { location, linkText, showTitle = false, page, children, className = '' } = this.props;
-        const { fields } = page;
-        const { link } = fields;
+        const { fields } = page || {};
+        const { link } = fields || {};
         const { isActive } = this.state;
         const { toggleMenu } = this;
 
