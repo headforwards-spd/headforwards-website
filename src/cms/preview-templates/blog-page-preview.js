@@ -1,4 +1,4 @@
-import { bool, func, shape, string } from 'prop-types';
+import { func, shape, string } from 'prop-types';
 import React from 'react';
 import { Provider } from 'unstated';
 import * as uuid from 'uuid';
@@ -6,6 +6,7 @@ import * as uuid from 'uuid';
 import Footer from '../../components/page-layout/footer/footer.component';
 import Header from '../../components/page-layout/header/header.component';
 import { ImageSrcPropType } from '../../components/page-layout/image/image.component';
+import { IntroductionProps } from '../../components/page-layout/introduction/introduction.component';
 import BlogPage from '../../components/page-templates/blog-page/blog-page.template';
 
 export default BlogPagePreview;
@@ -15,12 +16,10 @@ BlogPagePreview.propTypes = {
         data: shape({
             title: string,
             subtitle: string,
-            image: shape({
-                show: bool,
+            bannerImage: ImageSrcPropType,
+            introduction: shape(IntroductionProps),
+            summary: shape({
                 image: ImageSrcPropType,
-            }),
-            introduction: shape({
-                show: bool,
                 text: string,
             }),
             author: string,
@@ -39,20 +38,20 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
     const {
         title = '',
         subtitle,
-        image,
+        bannerImage: bannerImageRef = null,
         introduction,
+        publishedDate,
         components = [],
         footerLinks: rawFooterLinks,
         callToAction,
     } = data;
-    const { show: showImage = false, image: bannerImageRef = null } = image || {};
     const bannerImage = bannerImageRef ? getAsset(bannerImageRef).toString() : null;
     const [footerLinks] = rawFooterLinks || [];
 
     const header = {
         title,
         subtitle,
-        image: showImage ? bannerImage : null,
+        image: bannerImage,
     };
 
     if (footerLinks) {
@@ -60,13 +59,13 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
         const footerLinksValue = footerLinksArray ? footerLinksArray.get(0) : null;
         const footerLinksMeta = fieldsMetaData ? fieldsMetaData.getIn(['footerLinks'], footerLinksValue) : null;
         const link1 = footerLinksValue
-            ? footerLinksMeta.getIn(['link1', 'blog-pages', footerLinksValue.getIn(['link1'])])
+            ? footerLinksMeta.getIn(['link1', 'info-pages', footerLinksValue.getIn(['link1'])])
             : null;
         const link2 = footerLinksValue
-            ? footerLinksMeta.getIn(['link2', 'blog-pages', footerLinksValue.getIn(['link2'])])
+            ? footerLinksMeta.getIn(['link2', 'info-pages', footerLinksValue.getIn(['link2'])])
             : null;
         const link3 = footerLinksValue
-            ? footerLinksMeta.getIn(['link3', 'blog-pages', footerLinksValue.getIn(['link3'])])
+            ? footerLinksMeta.getIn(['link3', 'info-pages', footerLinksValue.getIn(['link3'])])
             : null;
 
         const link1Page = link1 ? link1.toJS() : null;
@@ -91,16 +90,37 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
         ];
     }
 
-    components.forEach(component => setComponent(component, getAsset));
+    const componentsValue = entry.getIn(['data', 'components']);
+    components.forEach((component, index) => {
+        const componentValue = componentsValue ? componentsValue.get(index) : null;
+        const componentMeta = fieldsMetaData ? fieldsMetaData.getIn(['components'], componentValue) : null;
+        setComponent(component, componentValue, componentMeta, getAsset);
+    });
 
     const companyInfo = {};
     const headerProps = {
         ...header,
-        menu: [],
+        menu: [
+            {
+                linkText: 'Home.',
+                page: {
+                    id: uuid(),
+                    fields: {
+                        link: '/',
+                    },
+                    frontmatter: {
+                        uuid: uuid(),
+                    },
+                },
+                children: [],
+            },
+        ],
         companyInfo,
     };
 
     const pageProps = {
+        title,
+        publishedDate,
         introduction,
         author,
         components,
@@ -123,14 +143,14 @@ function BlogPagePreview({ entry, fieldsMetaData, getAsset }) {
     );
 }
 
-function setArticle(article, getAsset) {
-    const { image: aImage = null } = article;
-    article.id = uuid.v1();
+function setArticle(article, articleValue, articleMeta) {
+    const articleLink = articleValue ? articleMeta.getIn(['link', 'info-pages', articleValue.getIn(['link'])]) : null;
 
-    article.image = aImage ? getAsset(aImage).toString() : !!aImage;
+    article.id = uuid.v1();
+    article.link = articleLink ? { fields: { link: '/' }, frontmatter: articleLink.toJS() } : null;
 }
 
-function setComponent(component, getAsset) {
+function setComponent(component, componentValue, componentMeta, getAsset) {
     const { image: cImage = null, imageOne = null, imageTwo = null, profilePic = null, articles = [] } = component;
     component.id = uuid.v1();
 
@@ -139,18 +159,26 @@ function setComponent(component, getAsset) {
     component.imageTwo = imageTwo ? getAsset(imageTwo).toString() : imageTwo;
     component.profilePic = profilePic ? getAsset(profilePic).toString() : profilePic;
 
-    articles.forEach(article => setArticle(article, getAsset));
+    const articlesValue = componentValue ? componentValue.getIn(['articles']) : null;
+    articles.forEach((article, index) => {
+        const articleValue = articlesValue ? articlesValue.get(index) : null;
+        const articleMeta = componentMeta ? componentMeta.getIn(['articles'], articleValue) : null;
+
+        setArticle(article, articleValue, articleMeta, getAsset);
+    });
 }
 
 function getFooterLink({ showImages, page }) {
-    const { title = 'Link', image = { image: '/uploads/icon.black.png' }, introduction = { text: 'Introduction...' } } =
-        page || {};
+    const { title = 'Link', summary } = page || {};
+    const { image, text } = summary || {};
 
     return {
         showImages,
         link: '/',
         title,
-        image,
-        introduction,
+        summary: {
+            image: image || '/images/placeholder.jpg',
+            text: text || 'Link text here...',
+        },
     };
 }

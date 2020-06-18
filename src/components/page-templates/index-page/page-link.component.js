@@ -10,8 +10,10 @@ const pageLinkPropTypes = {
     linkText: string,
     page: shape({
         frontmatter: shape({
-            introduction: shape({ text: string }),
-            image: shape({ image: ImageSrcPropType }),
+            summary: shape({
+                image: ImageSrcPropType,
+                text: string,
+            }),
         }),
     }),
     isPostit: bool,
@@ -28,18 +30,36 @@ PageLink.defaultProps = {
     isPostit: false,
 };
 
-function PageLink({ isPostit, link, linkText: title, page }) {
-    const { frontmatter } = page || {};
-    const { introduction: introductionObject, image: imageObject } = frontmatter || {};
-    const { image } = imageObject || {};
-    const { text: introduction } = introductionObject || {};
-
+function PageLink({ isPostit, linkText: title, page }) {
+    const { fields, frontmatter } = page || {};
+    const { link } = fields;
+    const { summary } = frontmatter || {};
+    const { text } = summary;
     const pageLinkProps = {
         link,
         title,
-        image,
-        introduction,
+        summary: { text, image: getImage(summary) },
     };
 
     return !isPostit ? <IndexArticle {...pageLinkProps} /> : <IndexPostit {...pageLinkProps} />;
+}
+
+function getImage({ imageMobile, imageTablet, imageDesktop }) {
+    const { publicURL, extension } = imageMobile || {};
+
+    if (!publicURL || extension === 'svg') {
+        return null;
+    }
+
+    return {
+        publicURL,
+        extension,
+        childImageSharp: {
+            fluid: [
+                { ...imageMobile.childImageSharp.fluid, media: `(max-width: 767px)` },
+                { ...imageTablet.childImageSharp.fluid, media: `(min-width: 768px) and (max-width: 1023px)` },
+                { ...imageDesktop.childImageSharp.fluid, media: `(min-width: 1024px)` },
+            ],
+        },
+    };
 }

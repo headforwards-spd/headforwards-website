@@ -3,11 +3,9 @@ uuid: 3c96d190-0fac-11ea-843f-932c76de5936
 parent: how-we-work
 type: info-page
 title: Mobbing
-image:
+bannerImage: /uploads/hf-e.jpg
+summary:
   image: /uploads/hf-e.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Mob programming is a chance to apply a whole team’s ideas and knowledge to
     one project

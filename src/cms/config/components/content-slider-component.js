@@ -1,4 +1,4 @@
-import linkFields from './link-fields';
+import linkFields from '../widgets/link-fields';
 
 const contentSliderComponent = {
     label: 'Content Slider',
@@ -16,21 +16,6 @@ const contentSliderComponent = {
             widget: 'list',
             fields: [
                 {
-                    label: 'Title',
-                    name: 'title',
-                    widget: 'string',
-                },
-                {
-                    label: 'Image',
-                    name: 'image',
-                    widget: 'image',
-                },
-                {
-                    label: 'Copy',
-                    name: 'text',
-                    widget: 'text',
-                },
-                {
                     label: 'Link Text',
                     name: 'linkText',
                     widget: 'string',
@@ -38,7 +23,7 @@ const contentSliderComponent = {
                 },
                 {
                     label: 'Link',
-                    name: 'linkFields',
+                    name: 'link',
                     ...linkFields,
                 },
             ],

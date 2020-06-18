@@ -1,0 +1,6 @@
+{
+  "watchDirs": ["src"],
+  "webpack": {
+    "overridePath": "webpack.cosmos.js"
+  }
+}

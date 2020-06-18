@@ -111,12 +111,6 @@
     }
 
     &.hasBackground {
-      background: linear-gradient(
-        rgba(black, 1),
-        transparent 175px,
-        transparent calc(100% - 400px),
-        rgba(black, 1)
-      );
       display: flex;
 
       flex-direction: column;
@@ -124,6 +118,7 @@
       justify-content: space-between;
       min-height: 62.5vh;
       position: relative;
+
       &.isHomePage {
         min-height: calc(100vh - 4.5em);
       }
@@ -157,6 +152,19 @@
           }
         }
       }
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        background: linear-gradient(
+          rgba(black, 1),
+          transparent 175px,
+          transparent calc(100% - 400px),
+          rgba(black, 1)
+        );
+
+        .image {
+          opacity: 0.9 !important;
+        }
+      }
     }
 
     .image {
@@ -164,11 +172,31 @@
       left: 0;
       margin: 0;
       max-width: unset;
-      opacity: 0.9;
       position: absolute !important;
       right: 0;
       top: 0;
       z-index: -1;
+      background: linear-gradient(
+        rgba(black, 0.4),
+        transparent 150px,
+        transparent calc(100% - 400px),
+        rgba(black, 0.6)
+      );
+      > :first-child img {
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 250ms ease !important;
+        transition-delay: 0ms !important;
+      }
+      > :last-child {
+        mix-blend-mode: multiply;
+      }
+      &.loaded {
+        > img {
+          z-index: 1;
+          opacity: 0;
+        }
+      }
     }
   }
 

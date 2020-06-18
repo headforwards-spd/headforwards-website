@@ -1,4 +1,4 @@
-import { bool, func, shape, string } from 'prop-types';
+import { func, shape, string } from 'prop-types';
 import React from 'react';
 import { Provider } from 'unstated';
 import * as uuid from 'uuid';
@@ -15,12 +15,10 @@ InfoPagePreview.propTypes = {
         data: shape({
             title: string.isRequired,
             subtitle: string,
-            image: shape({
-                show: bool,
+            bannerImage: ImageSrcPropType,
+            introduction: string,
+            summary: shape({
                 image: ImageSrcPropType,
-            }),
-            introduction: shape({
-                show: bool,
                 text: string,
             }),
         }),
@@ -34,20 +32,19 @@ function InfoPagePreview({ entry, fieldsMetaData, getAsset }) {
     const {
         title = '',
         subtitle,
-        image,
+        bannerImage: bannerImageRef = null,
         introduction,
         components = [],
         footerLinks: rawFooterLinks,
         callToAction,
     } = data;
-    const { show: showImage = false, image: bannerImageRef = null } = image || {};
     const bannerImage = bannerImageRef ? getAsset(bannerImageRef).toString() : null;
     const [footerLinks] = rawFooterLinks || [];
 
     const header = {
         title,
         subtitle,
-        image: showImage ? bannerImage : null,
+        image: bannerImage,
     };
 
     if (footerLinks) {
@@ -137,14 +134,16 @@ function setComponent(component, getAsset) {
 }
 
 function getFooterLink({ showImages, page }) {
-    const { title = 'Link', image = { image: '/uploads/icon.black.png' }, introduction = { text: 'Introduction...' } } =
-        page || {};
+    const { title = 'Link', summary } = page || {};
+    const { image, text } = summary || {};
 
     return {
         showImages,
         link: '/',
         title,
-        image,
-        introduction,
+        summary: {
+            image: image || '/images/placeholder.jpg',
+            text: text || 'Link text here...',
+        },
     };
 }

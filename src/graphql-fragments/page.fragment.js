@@ -2,124 +2,111 @@ import { graphql } from 'gatsby';
 
 // eslint-disable-next-line import/prefer-default-export
 export const PageFragment = graphql`
-    fragment PageFragment on MarkdownRemark {
-        frontmatter {
+    fragment PageFragment on MarkdownRemarkFrontmatter {
+        isPostits
+        ...HeaderFragment
+        author {
+            frontmatter {
+                name
+                bio
+                jobTitle
+                ...AuthorImageFragment
+            }
+        }
+        publishedDate
+        components {
+            type
             title
-            subtitle
-            author {
-                id
-                frontmatter {
-                    name
-                    bio
-                    profilePic {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
-                    }
-                }
-            }
-            isPostits
-            ...BannerImageFragment
-            introduction {
-                show
-                text
-            }
-            components {
-                id
+            content {
                 type
-                title
-                content {
-                    id
-                    type
-                    text
-                    quote
-                    name
-                    jobTitle
-                    profilePic {
-                        publicURL
-                        childImageSharp {
-                            fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
-                    }
-                }
+                text
                 quote
                 name
                 jobTitle
-                isPostit
-                isRightImage
-                isTwoColumns
-                link {
-                    link
-                    linkText
-                }
-                articles {
-                    id
-                    title
-                    text
-                    linkText
-                    link
-                    image {
-                        ...ImageFragment
-                    }
-                    imageSquare: image {
-                        ...ImageSquareFragment
-                    }
-                }
-                ...SectionImageFragment
-                flip
-                imageOne {
-                    ...ImageFragment
-                }
-                imageOneSquare: image {
-                    ...ImageSquareFragment
-                }
-                imageTwo {
-                    ...ImageFragment
-                }
-                imageTwoSquare: image {
-                    ...ImageSquareFragment
-                }
                 profilePic {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                            ...GatsbyImageSharpFluid_withWebp
+                    ...ProfilePicFragment
+                }
+            }
+            quote
+            name
+            jobTitle
+            isPostit
+            isRightImage
+            isTwoColumns
+            link {
+                linkText
+                link {
+                    fields {
+                        link
+                    }
+                }
+            }
+            articles {
+                title
+                text
+                linkText
+                link {
+                    fields {
+                        link
+                    }
+                    frontmatter {
+                        title
+                        summary {
+                            text
+                            image {
+                                ...ImageFragment
+                            }
+                            imageSquare: image {
+                                ...ImageSquareFragment
+                            }
                         }
                     }
                 }
             }
-            footerLinks {
-                showImages
-                title
-                link1
-                link2
-                link3
-                page1 {
-                    ...FooterLinkFragment
-                }
-                page2 {
-                    ...FooterLinkFragment
-                }
-                page3 {
-                    ...FooterLinkFragment
-                }
+            ...SectionImageFragment
+            flip
+            imageOne {
+                ...ImageFragment
             }
-            footerText
-            callToAction
-            careers {
-                title
-                department
-                applicationForm
+            imageOneSquare: image {
+                ...ImageSquareFragment
             }
-            seo {
-                title
-                description
+            imageTwo {
+                ...ImageFragment
             }
+            imageTwoSquare: image {
+                ...ImageSquareFragment
+            }
+            profilePic {
+                ...ProfilePicFragment
+            }
+        }
+        footerLinks {
+            showImages
+            title
+            link1
+            link2
+            link3
+            page1 {
+                ...FooterLinkFragment
+            }
+            page2 {
+                ...FooterLinkFragment
+            }
+            page3 {
+                ...FooterLinkFragment
+            }
+        }
+        footerText
+        callToAction
+        careers {
+            title
+            department
+            applicationForm
+        }
+        seo {
+            title
+            description
         }
     }
 `;

@@ -1,16 +1,17 @@
-import './slick-theme.css';
-import './slick.css';
+import './slick-theme.scss';
+import './slick.scss';
 
 import { arrayOf, shape, string } from 'prop-types';
-import React, { Component } from 'react';
+import React, { Component, useMemo } from 'react';
 import Slider from 'react-slick';
 
+import hashArray from '../../../lib/hash-array';
 import styles from './content-slider.module.scss';
-import Slide, { SlidePropType } from './slide.component';
+import Slide, { SlideProps } from './slide.component';
 
 const contentSliderPropTypes = {
     title: string.isRequired,
-    articles: arrayOf(SlidePropType),
+    articles: arrayOf(shape(SlideProps)),
 };
 
 export const ContentSliderPropType = shape(contentSliderPropTypes);
@@ -44,14 +45,30 @@ export default class ContentSlider extends Component {
         const headerClass = isChanging ? 'changing' : '';
 
         return (
-            <section className={styles.contentSlider}>
+            <section>
                 <h2 className={headerClass}>{title}</h2>
                 <Slider {...settings}>
-                    {articles.map(({ id, ...slide }) => (
-                        <Slide key={id} {...slide} />
-                    ))}
+                    <Slides slides={articles} />
                 </Slider>
             </section>
         );
     }
+}
+
+Slides.propTypes = {
+    slides: arrayOf(shape(SlideProps)),
+};
+Slides.defaultProps = {
+    slides: [],
+};
+function Slides({ slides }) {
+    const hashedSlides = useMemo(() => (slides ? hashArray(slides) : slides), [slides]);
+
+    return (
+        <>
+            {hashedSlides.map(({ id, ...slide }) => (
+                <Slide key={id} {...slide} />
+            ))}
+        </>
+    );
 }

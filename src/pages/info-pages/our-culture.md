@@ -3,11 +3,9 @@ uuid: 92161650-0f9b-11ea-9e15-59d1e5da42db
 parent: careers
 type: info-page
 title: Our culture
-image:
+bannerImage: /uploads/toby cooking.jpg
+summary:
   image: /uploads/toby cooking.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Discover a very different technology business built around a supportive,
     collaborative culture.

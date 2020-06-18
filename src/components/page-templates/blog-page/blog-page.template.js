@@ -1,18 +1,19 @@
-import { arrayOf, bool, shape, string } from 'prop-types';
-import React from 'react';
+import { arrayOf, shape, string } from 'prop-types';
+import React, { useMemo } from 'react';
 
-import Author from '../../page-components/author/author.component';
+import hashArray from '../../../lib/hash-array';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
 import { ImageSrcPropType } from '../../page-layout/image/image.component';
-import IntroductionComponent from '../../page-layout/introduction/introduction.component';
+import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
+import BlogPageHeader from './blog-page-header.component';
+import styles from './blog-page.module.scss';
 
 export default BlogPage;
 
 BlogPage.propTypes = {
-    introduction: shape({
-        show: bool,
-        text: string,
-    }),
+    title: string.isRequired,
+    introduction: shape(IntroductionProps),
+    publishedDate: string,
     components: arrayOf(PageComponentPropType),
     author: shape({
         uuid: string,
@@ -25,20 +26,29 @@ BlogPage.propTypes = {
 BlogPage.defaultProps = {
     introduction: null,
     components: null,
+    publishedDate: null,
     author: null,
 };
 
-function BlogPage({ introduction, components = [], author }) {
-    const { show, text } = introduction;
+function BlogPage({ title, introduction, components = [], author, publishedDate }) {
+    const headerProps = {
+        title,
+        author,
+        publishedDate,
+    };
+    const isIntro = !introduction;
+
+    const hashedComponents = useMemo(() => (components ? hashArray(components) : components), [components]);
 
     return (
         <>
-            {show && <IntroductionComponent introduction={text} />}
-            {author && <Author {...author} />}
-            {components && (
+            <BlogPageHeader {...headerProps} />
+            {introduction && <Introduction introduction={introduction} className={styles.intro} />}
+            {hashedComponents && (
                 <section>
-                    {!!components &&
-                        components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
+                    {hashedComponents.map(({ id, ...component }) => (
+                        <PageComponent key={id} {...component} isIntro={isIntro} />
+                    ))}
                 </section>
             )}
         </>

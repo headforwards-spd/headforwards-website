@@ -11,5 +11,8 @@ export const JobFragment = graphql`
         description
         requirements
         department
+        created
+        path
+        employment_type_code
     }
 `;

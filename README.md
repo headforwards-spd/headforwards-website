@@ -2,16 +2,6 @@
 
 # Project File Structure
 
-## [Storybook Config](https://storybook.js.org/docs/basics/introduction/)
-
-```
-+-- .storybook
-|   +-- lib
-|   +-- addons.js
-|   +-- config.js
-|   +-- webpack.config.js
-```
-
 ## [Gatsby Plugins Config](https://www.gatsbyjs.org/docs/plugins/)
 
 ```
@@ -32,20 +22,13 @@
 
 ## Site Sourcecode
 
-### [NetlifyCMS Custom Previews](https://www.netlifycms.org/docs/customization/)
+### [NetlifyCMS Configuration](https://www.netlifycms.org/docs/)
 
-- `src/cms/preview-templates` - Preview templates
-- `src/cms/widgets` - [Custom widgets](https://www.netlifycms.org/docs/custom-widgets/)
-- `src/cms/cms.js` - Configuration
+Full details in [CMS Readme](./src/cms/README.md)
 
 ```
 +-- src
 |   +-- cms
-|   |   +-- preview-templates
-|   |   |   +-- page-name.js
-|   |   +-- widgets
-|   |   |   +-- widget-name.js
-|   |   +-- cms.js
 ```
 
 ### React Components
@@ -109,14 +92,11 @@ Site-wide constants accessible via GraphQL (and potentially editable in CMS).
 
 ## Static Files
 
-- `static/admin/config.yml` - [NetlifyCMS Config](https://www.netlifycms.org/docs/configuration-options/)
 - `static/images` - (referenced in scss files: `url('/images/filename.jpg')`)
 - `static/uploads` - NetlifyCMS media library
 
 ```
 +-- static
-|   +-- adimn
-|   |   +-- config.yml
 |   +-- images
 |   +-- uploads
 ```

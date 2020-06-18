@@ -1,8 +1,10 @@
 import { arrayOf, bool, shape, string } from 'prop-types';
-import React, { Component } from 'react';
+import React, { Component, useMemo } from 'react';
 
+import hashArray from '../../../lib/hash-array';
 import slugify from '../../../lib/slugify';
 import PageComponent, { PageComponentPropType } from '../../page-components/page-component';
+import Introduction, { IntroductionProps } from '../../page-layout/introduction/introduction.component';
 import Link from '../../page-layout/link/link.component';
 import Markdown from '../../page-layout/markdown';
 import JobSummaryComponent, { JobsSummaryComponentPropType } from './job-summary.component';
@@ -10,10 +12,7 @@ import styles from './jobs-page.module.scss';
 
 export default class JobsPage extends Component {
     static propTypes = {
-        introduction: shape({
-            show: bool,
-            text: string,
-        }),
+        introduction: shape(IntroductionProps),
         filters: shape({
             tags: arrayOf(
                 shape({
@@ -126,7 +125,7 @@ export default class JobsPage extends Component {
     }
 
     render() {
-        const { components, footerText } = this.props;
+        const { introduction, components, footerText } = this.props;
         const { showFilters } = this.state;
 
         const filtersClass = showFilters ? styles.showFilters : '';
@@ -136,15 +135,12 @@ export default class JobsPage extends Component {
         const jobsList = this.filteredJobs();
 
         const { toggleFilters, toggleFilter, clearFilters, isSelected } = this;
+        const isIntro = !introduction;
 
         return (
             <>
-                {components && (
-                    <section>
-                        {!!components &&
-                            components.map(({ id, ...component }) => <PageComponent key={id} {...component} />)}
-                    </section>
-                )}
+                {introduction && <Introduction introduction={introduction} />}
+                {components && <Components components={components} isIntro={isIntro} />}
                 {tagList && (
                     <section className={styles.filters}>
                         <ul className={styles.selectedTags}>
@@ -204,4 +200,24 @@ export default class JobsPage extends Component {
             </>
         );
     }
+}
+
+Components.propTypes = {
+    isIntro: bool,
+    components: arrayOf(PageComponentPropType),
+};
+Components.defaultProps = {
+    isIntro: false,
+    components: [],
+};
+function Components({ components, isIntro }) {
+    const hashedComponents = useMemo(() => (components ? hashArray(components) : components), [components]);
+
+    return hashedComponents ? (
+        <section>
+            {hashedComponents.map(({ id, ...component }) => (
+                <PageComponent key={id} {...component} isIntro={isIntro} />
+            ))}
+        </section>
+    ) : null;
 }

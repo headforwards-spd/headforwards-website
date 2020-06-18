@@ -2,9 +2,9 @@
 .dependabot
 .scannerwork
 node_modules
+src/pages/**/*.md
 public
 static/documents
 static/fonts
 static/images
 static/uploads
-storybook-static

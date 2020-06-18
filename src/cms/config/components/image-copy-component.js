@@ -1,5 +1,5 @@
-import linkFields from './link-fields';
-import { quoteFields } from './quote-component';
+import contentField from '../widgets/content-field';
+import linkFields from '../widgets/link-fields';
 
 const imageCopyComponent = {
     label: 'Image & Copy',
@@ -20,31 +20,7 @@ const imageCopyComponent = {
             required: false,
             default: null,
         },
-        {
-            label: 'Content',
-            name: 'content',
-            widget: 'list',
-            types: [
-                {
-                    label: 'Copy',
-                    name: 'markdown-component',
-                    widget: 'object',
-                    fields: [
-                        {
-                            label: 'Copy',
-                            name: 'text',
-                            widget: 'markdown',
-                        },
-                    ],
-                },
-                {
-                    label: 'Quote',
-                    name: 'quote-component',
-                    widget: 'object',
-                    fields: quoteFields,
-                },
-            ],
-        },
+        { ...contentField },
         {
             label: 'Link',
             name: 'linkFields',

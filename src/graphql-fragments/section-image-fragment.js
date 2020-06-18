@@ -10,12 +10,7 @@ export const SectionImageFragment = graphql`
             ...ImageSquareFragment
         }
         imagePostit: image {
-            publicURL
-            childImageSharp {
-                fluid(maxWidth: 640, maxHeight: 640, cropFocus: CENTER, quality: 85) {
-                    ...GatsbyImageSharpFluid_withWebp_noBase64
-                }
-            }
+            ...ImagePostitFragment
         }
     }
 `;

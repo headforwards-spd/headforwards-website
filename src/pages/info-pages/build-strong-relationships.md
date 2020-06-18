@@ -3,11 +3,9 @@ uuid: 359e0550-009f-11ea-b6f6-d743f848720a
 parent: what-we-do
 type: info-page
 title: Build strong relationships
-image:
+bannerImage: /uploads/hf-a.jpg
+summary:
   image: /uploads/hf-a.jpg
-  show: true
-introduction:
-  show: false
   text: >-
     Strong relationships are key to Headforwards’ ability to create value
     through software

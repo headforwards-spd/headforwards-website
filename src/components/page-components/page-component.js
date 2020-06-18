@@ -2,7 +2,6 @@ import { bool, oneOfType, string } from 'prop-types';
 import React from 'react';
 
 import { ImageSrcPropType } from '../page-layout/image/image.component';
-import Markdown from '../page-layout/markdown';
 import Author, { AuthorPropType } from './author/author.component';
 import ArticleColumns, { ArticleColumnsPropType } from './columns/article-columns/article-columns.component';
 import BlogPostColumns, { BlogPostColumnsPropType } from './columns/blog-post-columns/blog-post-columns.component';
@@ -53,7 +52,7 @@ function PageComponent({ type, ...component }) {
         case 'bio-component':
             return <Author {...component} />;
         default:
-            return <Markdown source={component.text} />;
+            return null;
     }
 }
 

@@ -39,20 +39,22 @@
     }
 
     a {
-      background-image: url("/images/headforwards.black.png");
+      background-image: url("/images/brand/headforwards-logo.black.svg");
       background-position: 0 center;
       background-repeat: no-repeat;
       background-size: contain;
       flex: 1;
 
       line-height: 3;
-      margin: 0 $column-gutter-sm/2;
+      margin: 0.375em $column-gutter-sm/2;
       text-indent: -1000vw;
+      height: 2.25em;
       @media (min-width: $screen-md) {
-        margin: 0 $column-gutter-md/2;
+        margin: 0.375em $column-gutter-md/2;
       }
       @media (min-width: $screen-lg) {
         margin: 0 $column-gutter-lg/2;
+        height: 2.25em;
       }
       @media (min-width: $screen-xl) {
         margin-left: -1.5em;
@@ -69,6 +71,7 @@
       border-top: 1px solid #383f51;
 
       margin: 0;
+
       a {
         transition: all $transitionTime ease;
 
@@ -104,6 +107,7 @@
         border-bottom: 1px solid #383f51;
 
         text-decoration: none;
+
         &.hasChildren > a {
           display: flex;
           align-items: stretch;
@@ -115,6 +119,7 @@
             color: white;
             display: flex;
             justify-content: center;
+            align-items: center;
             width: 3em;
             padding: 0;
           }
@@ -158,6 +163,7 @@
         h2 {
           margin-bottom: 0;
         }
+
         @media (min-width: $screen-md) {
           &,
           h2 {
@@ -220,7 +226,7 @@
 
     > header {
       a {
-        background-image: url("/images/headforwards.white.png");
+        background-image: url("/images/brand/headforwards-logo.white.svg");
       }
     }
 
@@ -348,7 +354,7 @@
 
       > header {
         a {
-          background-image: url("/images/headforwards.black.png");
+          background-image: url("/images/brand/headforwards-logo.black.svg");
         }
       }
 
@@ -363,7 +369,6 @@
       flex-grow: 1;
       flex-shrink: 0;
       margin-bottom: 0;
-      width: 37.5%;
     }
 
     > section {
@@ -373,13 +378,13 @@
       opacity: unset;
 
       > ul {
-        @include fontMedium;
+        @include fontSmall;
         border-top: none;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
-        margin: 0 -#{$column-gutter-lg/2};
+        margin: 0 -#{$column-gutter-lg/2} 0 #{$column-gutter-lg/2};
 
         .navHomeLink {
           display: none;
@@ -514,7 +519,7 @@
 
       > header {
         a {
-          background-image: url("/images/headforwards.white.png");
+          background-image: url("/images/brand/headforwards-logo.white.svg");
         }
       }
 
@@ -529,6 +534,14 @@
             color: $orange;
           }
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    > section {
+      > ul {
+        @include fontMedium;
       }
     }
   }

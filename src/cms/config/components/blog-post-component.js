@@ -1,4 +1,4 @@
-import linkFields from './link-fields';
+import linkFields from '../widgets/link-fields';
 
 const blogPostComponent = {
     label: 'Blog Posts',
@@ -18,18 +18,8 @@ const blogPostComponent = {
             widget: 'list',
             fields: [
                 {
-                    label: 'Title',
-                    name: 'title',
-                    widget: 'string',
-                },
-                {
-                    label: 'Image',
-                    name: 'image',
-                    widget: 'image',
-                },
-                {
                     label: 'Link',
-                    name: 'linkFields',
+                    name: 'link',
                     ...linkFields,
                 },
             ],

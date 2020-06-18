@@ -2,8 +2,8 @@ import { graphql } from 'gatsby';
 import { arrayOf, shape, string } from 'prop-types';
 import React from 'react';
 
-import { extractFooterLinks } from '../components/page-layout/footer/footer-link.component';
-import Layout from '../components/page-layout/layout';
+import { IntroductionProps } from '../components/page-layout/introduction/introduction.component';
+import Layout, { extractLayoutProps } from '../components/page-layout/layout';
 import LegalPageTemplate from '../components/page-templates/legal-page/legal-page.template';
 
 export default LegalPage;
@@ -13,7 +13,7 @@ LegalPage.propTypes = {
             frontmatter: shape({
                 title: string.isRequired,
                 subtitle: string,
-                introduction: string,
+                introduction: shape(IntroductionProps),
                 sections: arrayOf(
                     shape({
                         title: string,
@@ -26,17 +26,19 @@ LegalPage.propTypes = {
 };
 
 function LegalPage({ data }) {
-    const { page } = data;
-    const { frontmatter } = page;
-    const { introduction, sections, components, footerLinks: rawFooterLinks, ...layoutProps } = frontmatter;
-    const footerLinks = extractFooterLinks(rawFooterLinks);
+    const { page } = data || {};
+    const { frontmatter } = page || {};
+    const { introduction, sections, components } = frontmatter || {};
+
+    const layoutProps = extractLayoutProps(page);
     const templateProps = {
         introduction,
         sections,
+        components,
     };
 
     return (
-        <Layout {...layoutProps} introduction={introduction} footerLinks={footerLinks}>
+        <Layout {...layoutProps}>
             <LegalPageTemplate {...templateProps} />
         </Layout>
     );
@@ -46,12 +48,7 @@ export const query = graphql`
     query LegalPage($id: String!) {
         page: markdownRemark(id: { eq: $id }) {
             frontmatter {
-                title
-                subtitle
-                introduction {
-                    show
-                    text
-                }
+                ...HeaderFragment
                 sections {
                     title
                     text

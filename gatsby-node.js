@@ -1,8 +1,6 @@
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 const makeSlug = require('slug');
 
-const webpack = require(`webpack`);
-
 const slugOptions = {
     replacement: '-',
     symbols: true,
@@ -14,16 +12,44 @@ const slugOptions = {
 
 const { resolve } = require('path');
 
-exports.createPages = ({ actions, graphql }) => {
-    const { createPage } = actions;
-
-    return getData(graphql)
-        .then(({ data, errors }) => (!errors ? Promise.resolve(data) : Promise.reject(errors)))
-        .then(({ indexPages, pages, jobs }) => {
-            createAllIndexPages(createPage, indexPages);
-            createAllPages(createPage, pages);
-            createAllJobs(createPage, jobs);
-        });
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions;
+    const typeDefs = `
+type MarkdownRemark implements Node {
+  frontmatter: MarkdownRemarkFrontmatter
+}
+type MarkdownRemarkFrontmatter {
+  author: MarkdownRemark @link(by: "frontmatter.uuid", from: "author")
+  footerLinks: [FooterLinks]
+}
+type DataYaml implements Node {
+  menu: [MenuItem]
+}
+type MarkdownRemarkFrontmatterComponents {
+    link: Link
+    articles: [Link]
+}
+type FooterLinks {
+    title: String
+    showImages: Boolean
+    link1: String
+    link2: String
+    link3: String
+    page1: MarkdownRemark @link(by: "frontmatter.uuid", from: "link1")
+    page2: MarkdownRemark @link(by: "frontmatter.uuid", from: "link2")
+    page3: MarkdownRemark @link(by: "frontmatter.uuid", from: "link3")
+}
+type MenuItem {
+    linkText: String
+    page: MarkdownRemark @link(by: "frontmatter.uuid", from: "page")
+    children: [MenuItem]
+}
+type Link {
+    linkText: String
+    link: MarkdownRemark @link(by: "frontmatter.uuid", from: "link")
+}
+  `;
+    createTypes(typeDefs);
 };
 
 exports.onCreateNode = ({ node, actions }) => {
@@ -32,28 +58,35 @@ exports.onCreateNode = ({ node, actions }) => {
     const { type } = internal;
     fmImagesToRelative(node); // convert image paths for gatsby images
 
-    if (type === `MarkdownRemark`) {
+    if (type === `MarkdownRemark` || type === `MarkdownRemark`) {
         const { frontmatter } = node;
-        const { title, name } = frontmatter;
-        const value = makeSlug(title, slugOptions) || makeSlug(name, slugOptions);
+        const { parent, title, name, seo } = frontmatter;
+        const { slug: seoSlug } = seo || {};
+        const pageSlug = makeSlug(name || title, slugOptions);
+        const slug = seoSlug || pageSlug;
+        const link = `/${parent || ''}/${slug || ''}/`.replace(/\/+/g, '/');
 
         return createNodeField({
-            name: `slug`,
+            name: `link`,
             node,
-            value,
+            value: link,
         });
     }
     return Promise.resolve();
 };
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-    actions.setWebpackConfig({
-        plugins: [
-            new webpack.IgnorePlugin({
-                resourceRegExp: /^netlify-identity-widget$/,
-            }),
-        ],
-    });
+exports.createPages = ({ actions, graphql }) => {
+    const { createPage } = actions;
+
+    return getData(graphql)
+        .then(({ data, errors }) => (!errors ? Promise.resolve(data) : Promise.reject(errors)))
+        .then(({ indexPages, pages, jobs }) =>
+            Promise.all([
+                createAllIndexPages(createPage, indexPages),
+                createAllPages(createPage, pages),
+                createAllJobs(createPage, jobs),
+            ])
+        );
 };
 
 function createAllIndexPages(createPage, { menu: pages }) {
@@ -64,13 +97,19 @@ function createAllIndexPages(createPage, { menu: pages }) {
     return Promise.all(promises);
 }
 
-function createIndexPage(createPage, promises, page) {
-    const { uuid, linkText: title, link: path, children } = page;
+function createIndexPage(createPage, promises, indexPage) {
+    const { linkText: title, page, children } = indexPage;
+    const { fields, frontmatter } = page;
+    const { link } = fields;
+    const { uuid } = frontmatter;
+    const isHomePage = link === '/';
+    const hasChildren = !!children;
+    const shouldBuild = !isHomePage && hasChildren;
 
-    !!children &&
+    shouldBuild &&
         promises.push(
             createPage({
-                path,
+                path: link,
                 component: resolve(`src/templates/index-page.js`),
                 context: {
                     uuid,
@@ -80,22 +119,19 @@ function createIndexPage(createPage, promises, page) {
             })
         );
 
-    !!children && children.forEach(child => createIndexPage(createPage, promises, child));
+    hasChildren && children.forEach(child => createIndexPage(createPage, promises, child));
 }
 
 function createAllPages(createPage, { nodes: pages = [] }) {
     return Promise.all(
         pages.map(({ id, fields, frontmatter }) => {
-            const { slug: titleSlug } = fields;
-            const { type, parent = '', seo, careers } = frontmatter;
-            const { slug: seoSlug } = seo || {};
+            const { link: path } = fields;
+            const { type, careers } = frontmatter;
             const { department = '', tag } = careers || {};
-            const slug = seoSlug || titleSlug;
-            const pagePath = `/${parent || ''}/${slug}`;
             const tagRegex = tag ? `/${tag}/i` : '/.*/';
 
             return createPage({
-                path: pagePath.replace(/\/+/g, '/'),
+                path,
                 component: resolve(`src/templates/${type}.js`),
                 context: { id, department, tagRegex },
             });
@@ -106,97 +142,134 @@ function createAllPages(createPage, { nodes: pages = [] }) {
 function createAllJobs(createPage, { nodes: jobs = [] }) {
     const promises = [];
 
-    jobs.forEach(({ id, path, title = '' }) => {
-        const isRegister = title.toLowerCase().includes('register');
-        const applyPath = !isRegister ? `jobs/${path}` : 'register-interest';
+    jobs.forEach(job => {
+        const { id, title, slug } = job;
+        const isRegister = (title || '').toLowerCase().includes('register');
+        const applySlug = !isRegister ? `jobs/${slug}` : 'register-interest';
 
-        !isRegister &&
-            promises.push(
-                createPage({
-                    path: `/careers/jobs/${path}/`,
-                    component: resolve(`src/templates/job-page.js`),
-                    context: { id },
-                })
-            );
-        promises.push(
-            createPage({
-                path: `/careers/${applyPath}/application-form/`,
-                component: resolve(`src/templates/application-form-page.js`),
-                context: { id },
-            })
-        );
+        !isRegister && promises.push(createRegisterPage(createPage, id, slug));
+        promises.push(createApplicationFormPage(createPage, id, applySlug));
     });
 
     return Promise.all(promises);
 }
+
+function createRegisterPage(createPage, id, slug) {
+    const path = `/careers/jobs/${slug}/`;
+    return createPage({
+        path,
+        component: resolve(`src/templates/job-page.js`),
+        context: { id },
+    });
+}
+
+function createApplicationFormPage(createPage, id, slug) {
+    const path = `/careers/${slug}/application-form/`;
+    return createPage({
+        path,
+        component: resolve(`src/templates/application-form-page.js`),
+        context: { id },
+    });
+}
+
+const graphqlImage = `
+imageMobile: image {
+    publicURL
+    extension
+    childImageSharp {
+        fluid(
+            maxWidth: 726
+            maxHeight: 276
+            cropFocus: CENTER
+            srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+        ) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+        }
+    }
+}
+imageTablet: image {
+    childImageSharp {
+        fluid(
+            maxWidth: 468
+            maxHeight: 468
+            cropFocus: CENTER
+            srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+        ) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+        }
+    }
+}
+imageDesktop: image {
+    childImageSharp {
+        fluid(
+            maxWidth: 564
+            maxHeight: 564
+            cropFocus: CENTER
+            srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+        ) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+        }
+    }
+}
+`;
+const graphqlMenuPage = `
+page {
+    id
+    fields {
+        link
+    }
+    frontmatter {
+        uuid
+        title
+        summary {
+            text
+            ${graphqlImage}
+        }
+        careers {
+            department
+        }
+    }
+}`;
 
 function getData(graphql) {
     return graphql(`
         {
             indexPages: dataYaml(title: { eq: "main-menu" }) {
                 menu {
-                    uuid
-                    link
                     linkText
-                    children {
-                        uuid
-                        link
-                        linkText
-                        page {
-                            frontmatter {
-                                introduction {
-                                    text
-                                }
-                                image {
-                                    show
-                                    image {
-                                        publicURL
-                                        childImageSharp {
-                                            fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER) {
-                                                aspectRatio
-                                                base64
-                                                sizes
-                                                src
-                                                srcSet
-                                                srcSetWebp
-                                                srcWebp
-                                            }
-                                        }
-                                    }
-                                }
-                                careers {
-                                    department
-                                }
-                            }
-                        }
-                        children {
-                            uuid
+                    page {
+                        id
+                        fields {
                             link
+                        }
+                        frontmatter {
+                            uuid
+                        }
+                    }
+                    children {
+                        linkText
+                        ${graphqlMenuPage}
+                        children {
                             linkText
-                            page {
-                                frontmatter {
-                                    introduction {
-                                        text
-                                    }
-                                    image {
-                                        show
-                                        image {
-                                            publicURL
-                                            childImageSharp {
-                                                fluid(maxWidth: 1440, maxHeight: 1440, cropFocus: CENTER) {
-                                                    aspectRatio
-                                                    base64
-                                                    sizes
-                                                    src
-                                                    srcSet
-                                                    srcSetWebp
-                                                    srcWebp
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                            ${graphqlMenuPage}
                         }
                     }
                 }
@@ -204,13 +277,25 @@ function getData(graphql) {
 
             pages: allMarkdownRemark(
                 filter: {
-                    frontmatter: { type: { in: ["info-page", "legal-page", "home-page", "jobs-page", "blog-page"] } }
+                    frontmatter: {
+                        type: {
+                            in: [
+                                "home-page"
+                                "info-page"
+                                "jobs-page"
+                                "blog-index"
+                                "blog-page"
+                                "contact-page"
+                                "legal-page"
+                            ]
+                        }
+                    }
                 }
             ) {
                 nodes {
                     id
                     fields {
-                        slug
+                        link
                     }
                     frontmatter {
                         type
@@ -231,7 +316,7 @@ function getData(graphql) {
                     id
                     title
                     type
-                    path
+                    slug: path
                 }
             }
         }
