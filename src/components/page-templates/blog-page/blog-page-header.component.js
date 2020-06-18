@@ -26,7 +26,7 @@ BlogPageHeader.defaultProps = {};
 
 function BlogPageHeader({ title, author, publishedDate }) {
     const publishedDateString = moment(publishedDate).format('Do MMMM YYYY');
-    const profilePic = getProfilePic(author);
+    const profilePic = author ? getProfilePic(author) : null;
 
     return (
         <>
@@ -43,7 +43,7 @@ function BlogPageHeader({ title, author, publishedDate }) {
 }
 
 function getProfilePic({ imageMobile, imageTablet, imageDesktop }) {
-    const { publicURL, extension } = imageMobile;
+    const { publicURL, extension } = imageMobile || {};
 
     if (!publicURL || extension === 'svg') {
         return null;
