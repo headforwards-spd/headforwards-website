@@ -21,7 +21,7 @@ const config = {
         name: 'github',
         repo: 'andyweirheadforwards/headforwards-website',
         branch,
-        use_graphql: true,
+        // use_graphql: true,
     },
 };
 
