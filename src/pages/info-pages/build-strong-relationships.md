@@ -1,7 +1,4 @@
 ---
-uuid: 359e0550-009f-11ea-b6f6-d743f848720a
-parent: what-we-do
-type: info-page
 title: Build strong relationships
 bannerImage: /uploads/hf-a.jpg
 summary:
@@ -60,4 +57,7 @@ footerLinks:
       Everyone is listened to, everyone is trusted equally and we’re a united
       team
 callToAction: To find out more about how we build relationships
+uuid: 359e0550-009f-11ea-b6f6-d743f848720a
+parent: what-we-do
+type: info-page
 ---
