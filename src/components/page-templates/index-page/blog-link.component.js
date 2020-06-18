@@ -33,7 +33,8 @@ function BlogLink({ fields, frontmatter }) {
         frontmatter: { name: author },
     } = authorPage || {};
 
-    const { image, text } = summary || {};
+    const { text } = summary || {};
+    const image = getImage(summary);
 
     return (
         <Link to={link} title={title} className={styles.blogLink}>
@@ -50,4 +51,24 @@ function BlogLink({ fields, frontmatter }) {
             </article>
         </Link>
     );
+}
+
+function getImage({ imageMobile, imageTablet, imageDesktop }) {
+    const { publicURL, extension } = imageMobile || {};
+
+    if (!publicURL || extension === 'svg') {
+        return null;
+    }
+
+    return {
+        publicURL,
+        extension,
+        childImageSharp: {
+            fluid: [
+                { ...imageMobile.childImageSharp.fluid, media: `(max-width: 767px)` },
+                { ...imageTablet.childImageSharp.fluid, media: `(min-width: 768px) and (max-width: 1023px)` },
+                { ...imageDesktop.childImageSharp.fluid, media: `(min-width: 1024px)` },
+            ],
+        },
+    };
 }

@@ -38,7 +38,7 @@ export default function IndexPage({ isPostits, introduction, pages, components, 
                     hashedPages.map(({ id, ...page }) =>
                         !isBlog ? <PageLink key={id} {...page} isPostit={isPostits} /> : <BlogLink key={id} {...page} />
                     )}
-                {hasArrow && <img src="/images/hf-arrow.svg" alt="arrow" className={styles.page} />}
+                {hasArrow && <img src="/images/hf-arrow.black.svg" alt="arrow" className={styles.page} />}
             </section>
             {hashedComponents && (
                 <section>

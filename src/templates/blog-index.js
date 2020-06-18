@@ -25,9 +25,9 @@ BlogIndex.propTypes = {
 };
 
 function BlogIndex({ data }) {
-    const { page, children } = data;
-    const { frontmatter } = page;
-    const { nodes: pages } = children;
+    const { page, children } = data || {};
+    const { frontmatter } = page || {};
+    const { nodes: pages } = children || {};
 
     const layoutProps = extractLayoutProps(page);
     const { introduction, components } = frontmatter || {};
@@ -53,7 +53,7 @@ export const query = graphql`
         }
         children: allMarkdownRemark(
             filter: { frontmatter: { type: { eq: "blog-page" } } }
-            sort: { fields: frontmatter___publishedDate }
+            sort: { fields: frontmatter___publishedDate, order: DESC }
         ) {
             nodes {
                 id
@@ -69,9 +69,7 @@ export const query = graphql`
                         }
                     }
                     summary {
-                        image {
-                            ...ImageSquareFragment
-                        }
+                        ...BlogSummaryImageFragment
                         text
                     }
                     publishedDate

@@ -5,7 +5,7 @@ import { Location } from '@reach/router';
 import { graphql, useStaticQuery } from 'gatsby';
 import { arrayOf, bool, node, oneOfType, shape, string } from 'prop-types';
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { Provider } from 'unstated';
 
 import AppContainer from '../../containers/app.container';
@@ -132,7 +132,7 @@ function Layout({
         companyInfo,
     };
 
-    const { text: description, image: seoImage } = summary || {};
+    const { text: description, seoImage } = summary || {};
 
     const seoProps = {
         ...seo,
@@ -164,7 +164,8 @@ function Layout({
 export function extractLayoutProps({ frontmatter }) {
     const {
         isHomePage,
-        bannerImage,
+        bannerImageMobile,
+        bannerImageDesktop,
         title,
         subtitle,
         summary,
@@ -177,6 +178,14 @@ export function extractLayoutProps({ frontmatter }) {
     const jobDetails = applicationForm ? { path: `/careers/${applicationForm}` } : null;
     const footerLinks = extractFooterLinks(rawFooterLinks);
 
+    const { publicURL, extension } = bannerImageMobile || {};
+    const bannerImage = publicURL ? { publicURL, extension, childImageSharp: { fluid: [] } } : null;
+    bannerImage &&
+        (bannerImage.childImageSharp.fluid = [
+            { ...bannerImageMobile.childImageSharp.fluid, media: `(max-width: 767px)` },
+            { ...bannerImageDesktop.childImageSharp.fluid, media: `(min-width: 768px)` },
+        ]);
+
     return {
         isHomePage,
         bannerImage,
@@ -186,6 +195,6 @@ export function extractLayoutProps({ frontmatter }) {
         jobDetails,
         footerLinks,
         callToAction,
-        seo,
+        seo: seo || {},
     };
 }

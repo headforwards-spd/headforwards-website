@@ -27,7 +27,7 @@ const plugins = [
     { ...gatsbySourceFilesystemUploads },
     { ...gatsbySourceFilesystemPages },
     { ...gatsbySourceFilesystemData },
-    'gatsby-transformer-sharp',
+    { resolve: 'gatsby-transformer-sharp', options: { checkSupportedExtensions: false } },
     { ...gatsbyTransformerRemark },
     'gatsby-transformer-yaml',
     'gatsby-transformer-json',

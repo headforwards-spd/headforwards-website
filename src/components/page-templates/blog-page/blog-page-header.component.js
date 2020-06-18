@@ -26,10 +26,11 @@ BlogPageHeader.defaultProps = {};
 
 function BlogPageHeader({ title, author, publishedDate }) {
     const publishedDateString = moment(publishedDate).format('Do MMMM YYYY');
+    const profilePic = author ? getProfilePic(author) : null;
 
     return (
         <>
-            {author && <Author {...author} />}
+            {author && <Author {...author} profilePic={profilePic} />}
             <aside className={styles.aside}>
                 <time dateTime={publishedDate}>
                     <Icon icon={faClock} />
@@ -39,4 +40,24 @@ function BlogPageHeader({ title, author, publishedDate }) {
             </aside>
         </>
     );
+}
+
+function getProfilePic({ imageMobile, imageTablet, imageDesktop }) {
+    const { publicURL, extension } = imageMobile || {};
+
+    if (!publicURL || extension === 'svg') {
+        return null;
+    }
+
+    return {
+        publicURL,
+        extension,
+        childImageSharp: {
+            fluid: [
+                { ...imageMobile.childImageSharp.fluid, media: `(max-width: 767px)` },
+                { ...imageTablet.childImageSharp.fluid, media: `(min-width: 768px) and (max-width: 1023px)` },
+                { ...imageDesktop.childImageSharp.fluid, media: `(min-width: 1024px)` },
+            ],
+        },
+    };
 }

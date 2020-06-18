@@ -22,8 +22,8 @@ export default Homepage;
 Homepage.propTypes = homepagePropTypes;
 
 function Homepage({ data }) {
-    const { page } = data;
-    const { frontmatter } = page;
+    const { page } = data || {};
+    const { frontmatter } = page || {};
 
     const layoutProps = extractLayoutProps(page);
     const { introduction, sections, components } = frontmatter || {};

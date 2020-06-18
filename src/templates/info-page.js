@@ -26,14 +26,14 @@ InfoPagePage.propTypes = {
 };
 
 function InfoPagePage({ data }) {
-    const { page, careers: careersSettings, jobs: jobNodes } = data;
-    const { frontmatter } = page;
+    const { page, careers: careersSettings, jobs: jobNodes } = data || {};
+    const { frontmatter } = page || {};
 
     const layoutProps = extractLayoutProps(page);
     const { introduction, components, careers } = frontmatter || {};
 
-    const { jobsTitle } = careersSettings;
-    const { nodes: jobs } = jobNodes;
+    const { jobsTitle } = careersSettings || {};
+    const { nodes: jobs } = jobNodes || {};
     const pageProps = {
         introduction,
         components,

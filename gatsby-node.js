@@ -172,6 +172,83 @@ function createApplicationFormPage(createPage, id, slug) {
     });
 }
 
+const graphqlImage = `
+imageMobile: image {
+    publicURL
+    extension
+    childImageSharp {
+        fluid(
+            maxWidth: 726
+            maxHeight: 276
+            cropFocus: CENTER
+            srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+        ) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+        }
+    }
+}
+imageTablet: image {
+    childImageSharp {
+        fluid(
+            maxWidth: 468
+            maxHeight: 468
+            cropFocus: CENTER
+            srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+        ) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+        }
+    }
+}
+imageDesktop: image {
+    childImageSharp {
+        fluid(
+            maxWidth: 564
+            maxHeight: 564
+            cropFocus: CENTER
+            srcSetBreakpoints: [320, 480, 768, 1024, 1280, 1440]
+        ) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+        }
+    }
+}
+`;
+const graphqlMenuPage = `
+page {
+    id
+    fields {
+        link
+    }
+    frontmatter {
+        uuid
+        title
+        summary {
+            text
+            ${graphqlImage}
+        }
+        careers {
+            department
+        }
+    }
+}`;
+
 function getData(graphql) {
     return graphql(`
         {
@@ -189,70 +266,10 @@ function getData(graphql) {
                     }
                     children {
                         linkText
-                        page {
-                            id
-                            fields {
-                                link
-                            }
-                            frontmatter {
-                                uuid
-                                title
-                                summary {
-                                    text
-                                    image {
-                                        extension
-                                        publicURL
-                                        childImageSharp {
-                                            fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
-                                                aspectRatio
-                                                base64
-                                                sizes
-                                                src
-                                                srcSet
-                                                srcSetWebp
-                                                srcWebp
-                                            }
-                                        }
-                                    }
-                                }
-                                careers {
-                                    department
-                                }
-                            }
-                        }
+                        ${graphqlMenuPage}
                         children {
                             linkText
-                            page {
-                                id
-                                fields {
-                                    link
-                                }
-                                frontmatter {
-                                    uuid
-                                    title
-                                    summary {
-                                        text
-                                        image {
-                                            extension
-                                            publicURL
-                                            childImageSharp {
-                                                fluid(maxWidth: 564, maxHeight: 564, cropFocus: CENTER) {
-                                                    aspectRatio
-                                                    base64
-                                                    sizes
-                                                    src
-                                                    srcSet
-                                                    srcSetWebp
-                                                    srcWebp
-                                                }
-                                            }
-                                        }
-                                    }
-                                    careers {
-                                        department
-                                    }
-                                }
-                            }
+                            ${graphqlMenuPage}
                         }
                     }
                 }
