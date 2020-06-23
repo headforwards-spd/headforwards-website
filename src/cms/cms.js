@@ -19,9 +19,9 @@ const branch = process.env.GATSBY_CMS_BRANCH || 'master';
 const config = {
     backend: {
         name: 'github',
-        repo: 'andyweirheadforwards/headforwards-website',
+        repo: 'headforwards-spd/headforwards-website',
         branch,
-        // use_graphql: true,
+        use_graphql: true,
     },
 };
 
