@@ -19,9 +19,11 @@ components:
     content:
       - type: markdown-component
         text: >-
-          To celebrate Cream Tea Day on 26th June, a Cornish web developer has
-          launched an app to let people check if they are enjoying their cream
-          tea the proper way – the Cornish way. 
+          To celebrate [Cream Tea
+          Day](https://nationaldaycalendar.com/national-cream-tea-day-last-friday-in-june)
+          on 26th June, a Cornish web developer has launched an app to let
+          people check if they are enjoying their cream tea the proper way – the
+          Cornish way. 
 
 
           Just upload a photo and this unique app will immediately spot if your cream tea is a proper job, with the jam and the cream the right way round! Barney Nicholls, who created the app, says:
@@ -36,7 +38,7 @@ components:
           now](https://www.creamtease.co.uk/?utm_source=headforwards&utm_medium\
           =referral)"
     linkFields: []
-    image: /uploads/2020-06-25-12_39_07-cream-tease.png
+    image: /uploads/2020-06-25-12_39_07-cream-tease-2-.png
 uuid: 738ce250-b616-11ea-addc-857de1c3d3b9
 type: blog-page
 parent: insights
