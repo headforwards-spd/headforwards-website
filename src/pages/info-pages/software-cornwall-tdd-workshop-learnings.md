@@ -17,12 +17,14 @@ components:
     content:
       - type: markdown-component
         text: Last week I was fortunate enough to be given the opportunity to attend
-          Software Cornwall’s TDD workshop being run by Jon Jagger and Kevlin
-          Henney. I learned a huge amount about testing and would be happy to do
-          a more exhaustive write-up of the course if people are interested.
-          What I’ll share here are some little gems of knowledge that were
-          shared between the exercises and lectures that the week comprised of,
-          often in response to difficult questions posed by other listeners.
+          Software Cornwall’s TDD workshop being run by [Jon
+          Jagger](https://twitter.com/jonjagger) and [Kevlin
+          Henney](https://www.linkedin.com/in/kevlin/). I learned a huge amount
+          about testing and would be happy to do a more exhaustive write-up of
+          the course if people are interested. What I’ll share here are some
+          little gems of knowledge that were shared between the exercises and
+          lectures that the week comprised of, often in response to difficult
+          questions posed by other listeners.
       - type: quote-component
         quote: Different conventions for tests and code is okay
       - type: markdown-component
@@ -76,7 +78,10 @@ components:
           analysing these problems to be very beneficial, which is why I'm going
           to try to get into the habit of solving one problem per week to keep
           my skills sharp and continue to improve my approach to writing code
-          and tests.  Probably the single most useful thing I learned was the
+          and tests. \ 
+
+
+          Probably the single most useful thing I learned was the
           concept of burning calories to understand code or tests. It's an
           abstract way to measure complexity, you could burn calories by
           literally looking up and down code to find functions, or burn calories
