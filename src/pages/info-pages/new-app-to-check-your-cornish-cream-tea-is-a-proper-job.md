@@ -13,7 +13,7 @@ author: bbb4e5c0-b6d7-11ea-b1d5-d544ef9e5564
 publishedDate: 2020-06-24T12:23:59.182Z
 components:
   - type: image-copy-component
-    isRightImage: false
+    isRightImage: true
     isPostit: false
     isTwoColumns: false
     content:
@@ -32,6 +32,7 @@ components:
 
           [Try it now](https://www.creamtease.co.uk/?utm_source=headforwards&utm_medium=referral)
     linkFields: []
+    image: /uploads/2020-06-25-12_39_07-cream-tease.png
 uuid: 738ce250-b616-11ea-addc-857de1c3d3b9
 type: blog-page
 parent: insights
