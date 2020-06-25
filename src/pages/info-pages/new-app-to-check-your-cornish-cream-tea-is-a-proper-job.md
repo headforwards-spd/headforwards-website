@@ -9,7 +9,7 @@ summary:
     launched an app to let people check if they are enjoying their cream tea the
     proper way – the Cornish way.
   image: /uploads/sam-edwards-k527mbnqbm0-unsplash.jpg
-author: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
+author: bbb4e5c0-b6d7-11ea-b1d5-d544ef9e5564
 publishedDate: 2020-06-24T12:23:59.182Z
 components:
   - type: image-copy-component
