@@ -38,7 +38,7 @@ components:
           now](https://www.creamtease.co.uk/?utm_source=headforwards&utm_medium\
           =referral)"
     linkFields: []
-    image: /uploads/2020-06-25-12_39_07-cream-tease-2-.png
+    image: /uploads/creamteas-1-.jpg
 uuid: 738ce250-b616-11ea-addc-857de1c3d3b9
 type: blog-page
 parent: insights
