@@ -5,7 +5,8 @@ introduction:
   content: []
   title: ""
 summary:
-  text: To celebrate Cream Tea Day on 26th June, a Cornish web developer has
+  text: >
+    To celebrate Cream Tea Day on 26th June, a Cornish web developer has
     launched an app to let people check if they are enjoying their cream tea the
     proper way – the Cornish way.
   image: /uploads/sam-edwards-k527mbnqbm0-unsplash.jpg
