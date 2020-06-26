@@ -114,9 +114,11 @@ components:
     content:
       - type: markdown-component
         text: "Given the complexity of the above requirements, and the growing demands
-          of customers, it is not surprising that AI and automation are
-          beginning to make an impact on the way that councils deliver their
-          customer experience.\r
+          of customers, it is not surprising that [AI and automation are
+          beginning to make an
+          impact](https://www.headforwards.com/insights/why-artificial-intellig\
+          ence-has-the-power-to-transform-the-work-of-local-authorities/) on the
+          way that councils deliver their customer experience.\r
 
 
           A great example of this trend is the increased use of
