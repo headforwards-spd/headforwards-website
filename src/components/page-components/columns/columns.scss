@@ -38,7 +38,7 @@
       margin-bottom: 0;
     }
   }
-  a {
+  > a {
     @include fontLarge;
     display: block;
     @include arrow-link;
