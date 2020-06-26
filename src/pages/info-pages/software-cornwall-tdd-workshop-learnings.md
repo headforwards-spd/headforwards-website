@@ -1,8 +1,10 @@
 ---
 bannerImage: /uploads/austin-distel-vcfxt2yt1eq-unsplash.jpg
 title: Software Cornwall TDD Workshop Learnings
-subtitle: A four day workshop focusing on test driven development hosted by Jon
-  Jagger and Kevlin Henney
+subtitle: ""
+introduction:
+  title: A four day workshop focusing on test driven development hosted by Jon
+    Jagger and Kevlin Henney
 summary:
   text: Last week I was fortunate enough to be given the opportunity to attend
     Software Cornwall’s TDD workshop being run by Jon Jagger and Kevlin Henney.
