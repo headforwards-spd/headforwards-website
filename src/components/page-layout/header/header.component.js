@@ -64,6 +64,7 @@ export default class Header extends StickyNav {
                         className={styles.image}
                         loadClassName={styles.loaded}
                         placeholderStyle={{ opacity: null }}
+                        loading="auto"
                     />
                 )}
             </header>
