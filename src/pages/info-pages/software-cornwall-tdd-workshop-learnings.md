@@ -88,8 +88,7 @@ components:
           abstract way to measure complexity, you could burn calories by
           literally looking up and down code to find functions, or burn calories
           by using your brain to understand some particularly complicated or
-          poorly explained test. Try it with some of your own code, I found it
-          \r
+          poorly explained test.
 
 
           If any of you get the opportunity to attend a course or
