@@ -12,25 +12,28 @@ const gatsbyPluginOffline = require('./gatsby/gatsby-plugin-offline');
 const gatsbyPluginGoogleTagmanger = require('./gatsby/gatsby-plugin-google-tagmanager');
 const gatsbyPluginNetlify = require('./gatsby/gatsby-plugin-netlify');
 const gatsbyPluginForceTrailingSlashes = require('./gatsby/gatsby-plugin-force-trailing-slashes');
+const gatsbyTransformerSharp = require('./gatsby/gatsby-transformer-sharp');
 
 const sitePassword = process.env.SITE_PASSWORD || null;
 const siteMetadata = {
     siteUrl: `https://www.headforwards.com`,
 };
 const plugins = [
-    'gatsby-plugin-react-helmet',
-    { ...gatsbyPluginSass },
-    `gatsby-plugin-svgr`,
-    'gatsby-plugin-sharp',
     `gatsby-source-recruitee-api`,
     { ...gatsbySourceFilesystemImages },
     { ...gatsbySourceFilesystemUploads },
     { ...gatsbySourceFilesystemPages },
     { ...gatsbySourceFilesystemData },
-    { resolve: 'gatsby-transformer-sharp', options: { checkSupportedExtensions: false } },
+
+    { ...gatsbyTransformerSharp },
     { ...gatsbyTransformerRemark },
     'gatsby-transformer-yaml',
     'gatsby-transformer-json',
+
+    { ...gatsbyPluginSass },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sharp',
+    `gatsby-plugin-svgr`,
 
     { ...gatsbyPluginForceTrailingSlashes },
     { ...gatsbyPluginSitemap },
