@@ -52,27 +52,34 @@ type Link {
     createTypes(typeDefs);
 };
 
-exports.onCreateNode = ({ node, actions }) => {
-    const { createNodeField } = actions;
-    const { internal = null } = node;
-    const { type } = internal;
-    fmImagesToRelative(node); // convert image paths for gatsby images
-
-    if (type === `MarkdownRemark` || type === `MarkdownRemark`) {
-        const { frontmatter } = node;
-        const { parent, title, name, seo } = frontmatter;
-        const { slug: seoSlug } = seo || {};
-        const pageSlug = makeSlug(name || title, slugOptions);
-        const slug = seoSlug || pageSlug;
-        const link = `/${parent || ''}/${slug || ''}/`.replace(/\/+/g, '/');
-
-        return createNodeField({
-            name: `link`,
-            node,
-            value: link,
-        });
+let isInitialised = false;
+exports.onCreateNode = gatsby => {
+    const { node } = gatsby;
+    const {
+        internal: { type },
+    } = node;
+    if (type !== `MarkdownRemark`) {
+        return;
     }
-    return Promise.resolve();
+    !isInitialised && initialise(gatsby);
+
+    const {
+        actions: { createNodeField },
+    } = gatsby;
+
+    const { frontmatter } = node;
+    const { parent, title, name, seo } = frontmatter;
+    const { slug: seoSlug } = seo || {};
+    const pageSlug = makeSlug(name || title, slugOptions);
+    const slug = seoSlug || pageSlug;
+    const link = `/${parent || ''}/${slug || ''}/`.replace(/\/+/g, '/');
+
+    createNodeField({
+        name: `link`,
+        node,
+        value: link,
+    });
+    fmImagesToRelative(node);
 };
 
 exports.createPages = ({ actions, graphql }) => {
@@ -321,4 +328,11 @@ function getData(graphql) {
             }
         }
     `);
+}
+
+function initialise({ getNodes }) {
+    isInitialised = true;
+    getNodes()
+        .filter(({ dir, internal: { mediaType = '' } }) => !!dir && mediaType.startsWith('image'))
+        .map(fmImagesToRelative);
 }
