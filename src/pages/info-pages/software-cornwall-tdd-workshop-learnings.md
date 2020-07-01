@@ -55,7 +55,8 @@ components:
           either foot (tests or code) but big strides in either are bad.\r
 
           One very helpful way to think about complexity they used was
-          the number of calories required to understand code and tests. This
+          the number of calories required to understand code and tests.
+          This
           could be through literally looking up and down code to find functions,
           or because there are poorly named variables that require you to
           explicitly understand what’s happening.\r\n"
@@ -76,7 +77,8 @@ components:
 
           The example problems on cyber-dojo.org, which are small by
           design, can highlight problems usually associated with large code
-          bases in as little as thirty minutes. I've found the process of
+          bases in as little as thirty minutes.
+          I've found the process of
           analysing these problems to be very beneficial, which is why I'm going
           to try to get into the habit of solving one problem per week to keep
           my skills sharp and continue to improve my approach to writing code
