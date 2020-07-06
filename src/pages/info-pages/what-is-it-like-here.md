@@ -1,14 +1,11 @@
 ---
-uuid: 4bc8aa80-1033-11ea-9288-bf5475231968
-parent: who-we-are
-type: info-page
-title: What is it like here?
 bannerImage: /uploads/headforwards-13.jpg
+title: What is it like here?
 summary:
   image: /uploads/headforwards-13.jpg
-  text: >-
-    With regular catchups and strategy meetings, strong relationships between
+  text: With regular catchups and strategy meetings, strong relationships between
     clients and teams grow fast
+parent: who-we-are
 components:
   - content:
       - text: >-
@@ -17,20 +14,15 @@ components:
           throughout projects.
 
 
-          When a client partners with Headforwards, they’re involved right from
-          the beginning—during initial team creation, developer interviews, and
-          the project kick-off.
+          When a client partners with Headforwards, they’re involved right from the beginning—during initial team creation, developer interviews, and the project kick-off.
 
 
-          With regular catchups and strategy meetings, strong relationships
-          between clients and teams grow fast, and communication is made easy
-          throughout the entire project.
+          With regular catchups and strategy meetings, strong relationships between clients and teams grow fast, and communication is made easy throughout the entire project.
         type: markdown-component
       - jobTitle: Business Analyst
         name: Katherine Moore
-        quote: >-
-          When clients and teams work closely together, communication becomes
-          much easier. Our developers feel confident approaching the client with
+        quote: When clients and teams work closely together, communication becomes much
+          easier. Our developers feel confident approaching the client with
           issues, and the client isn’t afraid to tell us if we’re going down the
           wrong path.
         type: quote-component
@@ -50,12 +42,9 @@ components:
           happen in the day ahead.
 
 
-          To touch base with clients, team members have regular catchups
-          throughout the week, and weekly strategy meetings present a chance to
-          discuss progress with the entire team.
+          To touch base with clients, team members have regular catchups throughout the week, and weekly strategy meetings present a chance to discuss progress with the entire team.
         type: markdown-component
-      - quote: >-
-          We’re always trying to keep the client up-to-date. Our weekly strategy
+      - quote: We’re always trying to keep the client up-to-date. Our weekly strategy
           meetings are a good opportunity to reprioritise tasks, update the
           client on our progress, or demo new software; overall, communication
           is key to a successful project.
@@ -76,10 +65,7 @@ components:
           clients see massive value from this.
 
 
-          Every team is built to create the perfect balance of skills, and
-          individuals are encouraged to focus on what they do best, which means
-          the client gets the most out of every person assigned to their
-          project.
+          Every team is built to create the perfect balance of skills, and individuals are encouraged to focus on what they do best, which means the client gets the most out of every person assigned to their project.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -93,4 +79,11 @@ footerLinks:
     showImages: true
     title: Learn more about our culture
 callToAction: Would you like to work with us?
+seo:
+  slug: ""
+  title: What Is It Like Here? | Headforwards
+  description: With regular catchups and strategy meetings, strong relationships
+    between clients and teams grow fast here at Headforwards.
+uuid: 4bc8aa80-1033-11ea-9288-bf5475231968
+type: info-page
 ---
