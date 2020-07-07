@@ -1,14 +1,11 @@
 ---
-uuid: 0cd74ed0-0fac-11ea-843f-932c76de5936
-parent: how-we-work
-type: info-page
-title: Collaboration
 bannerImage: /uploads/hf-f.jpg
+title: Collaboration
 summary:
   image: /uploads/hf-f.jpg
-  text: >-
-    Headforwards works closely with you to deliver software that creates value
+  text: Headforwards works closely with you to deliver software that creates value
     for your organisation
+parent: how-we-work
 components:
   - content:
       - text: >-
@@ -17,15 +14,11 @@ components:
           creates value for your organisation. 
 
 
-          Headforwards abides by one of the Agile Manifesto’s core values:
-          customer collaboration over contract negotiation. That’s not to say it
-          doesn’t believe in contracts – rather it believes problems are better
-          solved together with the client.
+          Headforwards abides by one of the Agile Manifesto’s core values: customer collaboration over contract negotiation. That’s not to say it doesn’t believe in contracts – rather it believes problems are better solved together with the client.
         type: markdown-component
       - jobTitle: cofounder & director
         name: Craig Girvan
-        quote: >-
-          We work with our clients to deliver tangible business value. That only
+        quote: We work with our clients to deliver tangible business value. That only
           comes from engaging key stakeholders at every stage – even sometimes
           embedding them within our own teams.
         type: quote-component
@@ -41,21 +34,18 @@ components:
           stays in place for the entire life of the project. 
 
 
-          Clients can draw on the team’s software development experience,
-          knowledge and ideas, all of which can contribute to better
-          decision-making and better quality software.
+          Clients can draw on the team’s software development experience, knowledge and ideas, all of which can contribute to better decision-making and better quality software.
         type: markdown-component
     isPostit: false
     isRightImage: true
     isTwoColumns: false
     type: image-copy-component
-    title: "The right team for each project"
+    title: The right team for each project
     image: /uploads/headforwards-16.jpg
-  - quote: >-
-      We want to be a partner to our clients, to develop long-term relationships
-      with trust on both sides. With a dedicated team in place, trust and
-      collaboration build over time, and we come to a shared and seamless way of
-      working.
+  - quote: We want to be a partner to our clients, to develop long-term
+      relationships with trust on both sides. With a dedicated team in place,
+      trust and collaboration build over time, and we come to a shared and
+      seamless way of working.
     type: quote-component
   - content:
       - text: >-
@@ -64,9 +54,7 @@ components:
           where collaborating with Headforwards can help.  
 
 
-          By partnering with Headforwards, large organisations can immediately
-          benefit from its Agile approach to software development – something
-          that can be hard to achieve in-house.
+          By partnering with Headforwards, large organisations can immediately benefit from its Agile approach to software development – something that can be hard to achieve in-house.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -75,15 +63,13 @@ components:
     title: A faster way to become Agile
     image: /uploads/postit-2.jpg
   - content:
-      - text: >-
-          Headforwards may be an Agile outsource partner, but there’s nothing
+      - text: Headforwards may be an Agile outsource partner, but there’s nothing
           dogmatic about its approach. The company believes that the most value
           comes from working with each client to establish the most productive
           way of working.
         type: markdown-component
-      - quote: >-
-          We believe in people and teams over dogma and principles. If we can
-          get everyone to work together effectively, we’re going to get a much
+      - quote: We believe in people and teams over dogma and principles. If we can get
+          everyone to work together effectively, we’re going to get a much
           better result for everyone.
         type: quote-component
     isPostit: false
@@ -97,5 +83,11 @@ footerLinks:
     link3: 3c96d190-0fac-11ea-843f-932c76de5936
     showImages: true
     title: Let's work together
-callToAction: "To learn more about how we collaborate with clients"
+callToAction: To learn more about how we collaborate with clients
+seo:
+  title: Collaborative Software Development | Headforwards
+  description: Headforwards works closely with you to deliver software that
+    creates real value for your organisation.
+uuid: 0cd74ed0-0fac-11ea-843f-932c76de5936
+type: info-page
 ---
