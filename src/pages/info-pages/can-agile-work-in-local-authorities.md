@@ -134,6 +134,11 @@ footerLinks:
     link3: 21a08160-0fac-11ea-843f-932c76de5936
     title: Similar reading
 callToAction: ""
+seo:
+  title: Can Agile Work in Local Authorities? | Headforwards
+  description: Cornwall Council has gone through a real transformation in how
+    they’re structured, how they manage products and of course in their new
+    Agile approach.
 uuid: 4726e290-afba-11ea-b2ee-3d8109340327
 type: blog-page
 parent: insights
