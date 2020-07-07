@@ -1,14 +1,11 @@
 ---
-uuid: 92161650-0f9b-11ea-9e15-59d1e5da42db
-parent: careers
-type: info-page
-title: Our culture
 bannerImage: /uploads/toby cooking.jpg
+title: Our culture
 summary:
   image: /uploads/toby cooking.jpg
-  text: >-
-    Discover a very different technology business built around a supportive,
+  text: Discover a very different technology business built around a supportive,
     collaborative culture.
+parent: careers
 components:
   - content:
       - text: >-
@@ -16,24 +13,17 @@ components:
           we’re pretty unique.
 
 
-          At Headforwards you’ll find cutting-edge projects in a truly agile
-          environment, a flat structure with no egos, and a friendly team
-          environment where everyone’s equal.
+          At Headforwards you’ll find cutting-edge projects in a truly agile environment, a flat structure with no egos, and a friendly team environment where everyone’s equal.
 
 
-          Working here gives you the chance to tackle new challenges and build
-          your skills, alongside a team of experts who are always hungry to
-          explore new technologies and learn new things. 
+          Working here gives you the chance to tackle new challenges and build your skills, alongside a team of experts who are always hungry to explore new technologies and learn new things. 
 
 
-          Most of all, it’s a place where you and your family can enjoy a
-          fantastic lifestyle and quality of life – because joining us isn’t
-          just a career choice, it’s a life choice.
+          Most of all, it’s a place where you and your family can enjoy a fantastic lifestyle and quality of life – because joining us isn’t just a career choice, it’s a life choice.
         type: markdown-component
       - jobTitle: ""
         name: ""
-        quote: >-
-          At Headforwards there are people from all walks of life, culture and
+        quote: At Headforwards there are people from all walks of life, culture and
           religion. And it is especially good being a female developer.
         type: quote-component
     isPostit: false
@@ -52,17 +42,14 @@ components:
           wellbeing. 
 
 
-          All of this combines to create an environment where work is enjoyable,
-          not stressful. And outside of work, you’re in Cornwall – so there’s a
-          fantastic lifestyle to enjoy.
+          All of this combines to create an environment where work is enjoyable, not stressful. And outside of work, you’re in Cornwall – so there’s a fantastic lifestyle to enjoy.
         type: markdown-component
     isPostit: false
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
     title: Happy people do great work.
-  - quote: >-
-      Headforwards’ directors talk to employees on a regular basis to check if
+  - quote: Headforwards’ directors talk to employees on a regular basis to check if
       any improvements can be made, get any suggestions they have for the
       company, or simply to offer general support.
     type: quote-component
@@ -74,9 +61,7 @@ components:
           on specific topics. 
 
 
-          It’s an important part of life at the company because the more
-          knowledge and experience the team develops, the better it can serve
-          its clients.
+          It’s an important part of life at the company because the more knowledge and experience the team develops, the better it can serve its clients.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -93,17 +78,14 @@ components:
           footing and good ideas are recognised wherever they come from.
 
 
-          This means your career can really go places, because our leaders are
-          all around you. And they’re great at spotting talented people who
-          always give their all.
+          This means your career can really go places, because our leaders are all around you. And they’re great at spotting talented people who always give their all.
         type: markdown-component
     isPostit: false
     isRightImage: false
     isTwoColumns: false
     type: image-copy-component
     title: Leadership not management.
-  - quote: >-
-      In addition to wide-ranging learning resources, we also have the
+  - quote: In addition to wide-ranging learning resources, we also have the
       opportunity to attend industry conferences like Agile on the Beach. It’s
       just another way we constantly improve our combined knowledge to benefit
       our clients.
@@ -115,4 +97,10 @@ footerLinks:
     showImages: true
     title: Discover more about our culture
 callToAction: Want to progress your career in a more relaxed location?
+seo:
+  title: Our Company Culture | Headforwards
+  description: Discover a very different technology business built around a
+    supportive collaborative culture.
+uuid: 92161650-0f9b-11ea-9e15-59d1e5da42db
+type: info-page
 ---
