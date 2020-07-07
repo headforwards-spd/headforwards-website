@@ -1,30 +1,22 @@
 ---
-uuid: 22fe4ade-37d3-11ea-aec2-2e728ce88125
-parent: careers
-type: info-page
-title: Living in Cornwall
 bannerImage: /uploads/hf-beach-1.jpg
+title: Living in Cornwall
 summary:
   image: /uploads/hf-beach-1.jpg
-  text: >-
-    With its own culture, own climate and own pace of life, we’re lucky to live
-    and work in one of the most unique places on earth – and we’d like you to
-    share it with us.
+  text: With its own culture, own climate and own pace of life, we’re lucky to
+    live and work in one of the most unique places on earth – and we’d like you
+    to share it with us.
+parent: careers
 components:
   - content:
       - text: >-
           If you’ve never been to Cornwall before, you are in for a treat. 
 
 
-          The county is famed for its golden sands, great surf and rich history
-          – from the tin mines dotted around the coast to King Arthur’s castle
-          protecting the peninsula. Even the weather is unlike anywhere else in
-          England, with a sub-tropical climate providing the mildest conditions
-          in the UK, and some of the longest hours of sunlight.
+          The county is famed for its golden sands, great surf and rich history – from the tin mines dotted around the coast to King Arthur’s castle protecting the peninsula. Even the weather is unlike anywhere else in England, with a sub-tropical climate providing the mildest conditions in the UK, and some of the longest hours of sunlight.
 
 
-          Say goodbye to frost and snow (most of the time, anyway), and say
-          hello to palm trees and pasties.
+          Say goodbye to frost and snow (most of the time, anyway), and say hello to palm trees and pasties.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -41,11 +33,7 @@ components:
           quicker to get around). 
 
 
-          If you crave the hustle and bustle of big city life, then Cornwall
-          might not be for you. But other than that, there’s something for
-          everyone. For nightlife and bars you have Truro, Newquay and Falmouth,
-          and if you’re seeking a quiet life by the coast there are no end of
-          historic villages to choose from.
+          If you crave the hustle and bustle of big city life, then Cornwall might not be for you. But other than that, there’s something for everyone. For nightlife and bars you have Truro, Newquay and Falmouth, and if you’re seeking a quiet life by the coast there are no end of historic villages to choose from.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -60,8 +48,7 @@ components:
           happening now. 
 
 
-          We’re also home to Goonhilly Earth Station, whose mission is "to
-          create the UK’s space communications gateway.”
+          We’re also home to Goonhilly Earth Station, whose mission is "to create the UK’s space communications gateway.”
 
 
           You can find out more, here;
@@ -79,19 +66,18 @@ components:
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: "A county full of interest and intrigue"
+    title: A county full of interest and intrigue
   - flip: true
     imageOne: /uploads/hf-beach-2.jpg
     imageTwo: /uploads/HF careers 1.jpg
     type: images-component
   - content:
-      - text: >-
-          Cornwall really is a special place to live. We’re not all rushing
-          around trying to get to the next meeting or staying late to finish
-          projects. We’re working with global clients on cutting-edge projects,
-          but not at the expense of our work-life balance. It’s something we
-          really believe in: finish work on time, go home, take the dog for a
-          walk, spend time with friends and family, go to the beach. Relax!
+      - text: "Cornwall really is a special place to live. We’re not all rushing around
+          trying to get to the next meeting or staying late to finish projects.
+          We’re working with global clients on cutting-edge projects, but not at
+          the expense of our work-life balance. It’s something we really believe
+          in: finish work on time, go home, take the dog for a walk, spend time
+          with friends and family, go to the beach. Relax!"
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -104,12 +90,7 @@ components:
           expensive as some people think.
 
 
-          If you want a detached house right on the beach, it will cost you
-          more, but it’s not equivalent to London prices at all. And there are
-          plenty of coastal villages which are much cheaper to buy or rent in.
-          In fact, living here is a lot cheaper than many UK cities. People
-          often relocate from London and sometimes take a small pay cut, but
-          their rent or mortgages are often halved.
+          If you want a detached house right on the beach, it will cost you more, but it’s not equivalent to London prices at all. And there are plenty of coastal villages which are much cheaper to buy or rent in. In fact, living here is a lot cheaper than many UK cities. People often relocate from London and sometimes take a small pay cut, but their rent or mortgages are often halved.
         type: markdown-component
     flip: true
     isPostit: false
@@ -123,5 +104,11 @@ footerLinks:
     link3: 16f53e5e-3847-11ea-a137-2e728ce88125
     showImages: true
     title: Take a look around
-callToAction: "Tired of the rat race? Find a different type of tech career with us"
+callToAction: Tired of the rat race? Find a different type of tech career with us
+seo:
+  title: Living in Cornwall | Headforwards
+  description: With its own culture, own climate and own pace of life, we’re lucky
+    to live and work in one of the most unique places on earth.
+uuid: 22fe4ade-37d3-11ea-aec2-2e728ce88125
+type: info-page
 ---
