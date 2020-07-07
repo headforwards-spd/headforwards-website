@@ -138,6 +138,11 @@ components:
           Reuters, Renault F1, Schlumberger, Tandberg and many many more. He's
           the co-author (with Olve Maudal) of the Deep C/C++ slide deck (over 1
           million views) and has had some C# books published.
+seo:
+  title: Software Cornwall TDD Workshop Learnings | Headforwards
+  description: Last week we were fortunate enough to be given the opportunity to
+    attend Software Cornwall’s TDD workshop being run by Jon Jagger and Kevlin
+    Henney.
 uuid: 924d7880-b6e8-11ea-91a0-1fe3606af1ea
 type: blog-page
 parent: insights
