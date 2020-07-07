@@ -1,14 +1,11 @@
 ---
-uuid: 6b233b00-103a-11ea-9ef0-bd54961b4e30
-parent: what-we-do
-type: info-page
-title: Create effective teams
 bannerImage: /uploads/hf-b.jpg
+title: Create effective teams
 summary:
   image: /uploads/hf-b.jpg
-  text: >-
-    At Headforwards each client has a dedicated team hand-picked to meet their
+  text: At Headforwards each client has a dedicated team hand-picked to meet their
     specific needs
+parent: what-we-do
 components:
   - content:
       - text: >-
@@ -18,17 +15,11 @@ components:
 
 
 
-          At Headforwards, each client has a dedicated team, hand-picked to meet
-          the client’s specific needs, and in place for the long term. To ensure
-          a great cultural fit and a great start to the relationship, clients
-          are involved at every step of the team recruitment process.
+          At Headforwards, each client has a dedicated team, hand-picked to meet the client’s specific needs, and in place for the long term. To ensure a great cultural fit and a great start to the relationship, clients are involved at every step of the team recruitment process.
 
 
 
-          Close collaboration means clients and the team get to know each other
-          better every day, resulting in a strong partnership, the opportunity
-          to share skills and knowledge, and a high quality of delivered
-          software.
+          Close collaboration means clients and the team get to know each other better every day, resulting in a strong partnership, the opportunity to share skills and knowledge, and a high quality of delivered software.
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -36,8 +27,7 @@ components:
     type: image-copy-component
   - jobTitle: Client Account Manager
     name: Dave Longman
-    quote: >-
-      With tightly-crafted teams for every client, everyone builds strong
+    quote: With tightly-crafted teams for every client, everyone builds strong
       relationships with each other – it makes the challenges easier to
       overcome, and the successes even bigger.
     type: quote-component
@@ -48,21 +38,29 @@ components:
           which skills are needed on the team.
 
 
-          But when there’s a strong bond between the individual team members and
-          the client, finding the right solution becomes easier.
+          But when there’s a strong bond between the individual team members and the client, finding the right solution becomes easier.
         type: markdown-component
-      - quote: >-
-          It’s important everyone is trusted equally in our teams. The right mix
-          of experiences and skills can generate some really exciting ideas and
-          it completely shapes the way the project runs.
+      - quote: It’s important everyone is trusted equally in our teams. The right mix of
+          experiences and skills can generate some really exciting ideas and it
+          completely shapes the way the project runs.
         type: quote-component
     isPostit: false
     isRightImage: false
     isTwoColumns: true
     type: image-copy-component
-    title: "High-performing teams, high-quality software"
+    title: High-performing teams, high-quality software
   - content:
-      - text: "Creating an effective team is only the first step. For a team to thrive, individual members must work closely together to reach their goals.\rHeadforwards takes an Agile approach to development, using techniques like pair programming and mob programming to bring team members together, share knowledge and skills, and ultimately deliver high quality software, fast.\n\n\rAt the same time, each team’s scrum master is there to keep up morale, encourage team cohesion and ensure the team is maximising its potential."
+      - text: "Creating an effective team is only the first step. For a team to thrive,
+          individual members must work closely together to reach their
+          goals.\rHeadforwards takes an Agile approach to development, using
+          techniques like pair programming and mob programming to bring team
+          members together, share knowledge and skills, and ultimately deliver
+          high quality software, fast.
+
+
+          \rAt the same time, each team’s scrum master is there to
+          keep up morale, encourage team cohesion and ensure the team is
+          maximising its potential."
         type: markdown-component
     isPostit: false
     isRightImage: false
@@ -80,4 +78,10 @@ footerLinks:
     showImages: true
     title: Headforwards takes an Agile approach to development
 callToAction: To learn more about our team creation process
+seo:
+  title: Dedicated, Effective Teams | Headforwards
+  description: At Headforwards, each client has a dedicated team, hand-picked to
+    meet the client’s specific needs, and in place for the long term.
+uuid: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+type: info-page
 ---
