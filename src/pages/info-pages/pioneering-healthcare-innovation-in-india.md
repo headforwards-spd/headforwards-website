@@ -15,9 +15,9 @@ introduction:
         My own journey has led me to create a healthcare tech system called Doctor Pulse, initially for Electronic Health Records, which is being trialled and developed in partnership with a hospital in India.
   title: ""
 summary:
-  text: Rahul Lamba, a software engineer at Headforwards, is developing a
-    pioneering health tech system in partnership with a hospital in India, which
-    will lead to improved patient care through the use of AI
+  text: Rahul Lamba is developing a pioneering health tech system in partnership
+    with a hospital in India, which will lead to improved patient care through
+    the use of AI
   image: /uploads/admin-dashboard-today-–-1-bw.png
 author: 6bd8d7f0-c28a-11ea-a64c-75f62d2ae041
 publishedDate: 2020-07-10T08:23:19.516Z
@@ -123,9 +123,9 @@ components:
 footerLinks: []
 callToAction: ""
 seo:
-  description: Rahul Lamba, a software engineer at Headforwards, is developing a
-    pioneering health tech system in partnership with a hospital in India, which
-    will lead to improved patient care through the use of AI
+  description: Rahul Lamba is developing a pioneering health tech system in
+    partnership with a hospital in India, which will lead to improved patient
+    care through the use of AI
 uuid: 32c2d980-c289-11ea-8a34-bd04a7b35fc0
 type: blog-page
 parent: insights
