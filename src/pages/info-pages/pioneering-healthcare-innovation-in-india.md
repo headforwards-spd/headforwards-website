@@ -12,6 +12,7 @@ introduction:
 
 
         My own journey has led me to create a healthcare tech system called Doctor Pulse, initially for Electronic Health Records, which is being trialled and developed in partnership with a hospital in India.
+  title: ""
 summary:
   text: >-
     One of the great things about working at Headforwards is that staff are
@@ -24,6 +25,9 @@ summary:
 author: bbb4e5c0-b6d7-11ea-b1d5-d544ef9e5564
 publishedDate: 2020-07-10T08:23:19.516Z
 components:
+  - type: images-component
+    imageOne: /uploads/2020-07-10-09_37_26-window.png
+    flip: false
   - type: image-copy-component
     isRightImage: false
     isPostit: false
