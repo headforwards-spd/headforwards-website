@@ -21,13 +21,14 @@ summary:
 
 
     My own journey has led me to create a healthcare tech system called Doctor Pulse, initially for Electronic Health Records, which is being trialled and developed in partnership with a hospital in India.
-  image: /uploads/2020-07-10-09_37_26-window.png
+  image: /uploads/admin-dashboard-today-–-1-bw.png
 author: 6bd8d7f0-c28a-11ea-a64c-75f62d2ae041
 publishedDate: 2020-07-10T08:23:19.516Z
 components:
   - type: images-component
     imageOne: /uploads/2020-07-10-09_37_26-window.png
     flip: false
+    imageTwo: /uploads/patient-profile-–-1-1-.png
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -50,8 +51,8 @@ components:
     title: Digitisation of Records
     image: ""
   - type: images-component
-    imageOne: /uploads/admin-dashboard-today-–-1-1-.png
-    imageTwo: /uploads/patient-profile-–-1-1-.png
+    imageOne: /uploads/add-new-patient-4-1-.png
+    imageTwo: /uploads/doctor-dashboard-tablet-1600-px-–-4-1-.png
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -114,7 +115,14 @@ components:
 
 
           It is a richly rewarding experience to know that this innovation can make such a difference and to help bring new technologies to hospitals in India and elsewhere, leading to improved patient care and potentially saving lives.
+  - type: article-component
+    articles:
+      - linkText: Read more
+        link: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
+      - linkText: Read more
+        link: daf5dd50-a0f1-11ea-a322-0143b68e61ce
 footerLinks: []
+callToAction: ""
 uuid: 32c2d980-c289-11ea-8a34-bd04a7b35fc0
 type: blog-page
 parent: insights
