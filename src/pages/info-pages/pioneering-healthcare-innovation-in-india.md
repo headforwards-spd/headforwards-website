@@ -1,5 +1,5 @@
 ---
-bannerImage: /uploads/2020-07-10-09_37_26-window.png
+bannerImage: /uploads/admin-dashboard-today-–-1-bw.png
 title: "Pioneering Healthcare innovation in India "
 introduction:
   content:
