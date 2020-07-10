@@ -22,7 +22,7 @@ summary:
 
     My own journey has led me to create a healthcare tech system called Doctor Pulse, initially for Electronic Health Records, which is being trialled and developed in partnership with a hospital in India.
   image: /uploads/2020-07-10-09_37_26-window.png
-author: bbb4e5c0-b6d7-11ea-b1d5-d544ef9e5564
+author: 6bd8d7f0-c28a-11ea-a64c-75f62d2ae041
 publishedDate: 2020-07-10T08:23:19.516Z
 components:
   - type: images-component
