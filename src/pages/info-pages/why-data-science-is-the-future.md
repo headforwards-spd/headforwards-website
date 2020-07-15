@@ -122,6 +122,7 @@ seo:
     of the most exciting, as it has such huge potential to help shape the future
     of business and society. "
   title: Why data science is the future
+  slug: the-continuing-importance-data science
 uuid: 45ded980-c674-11ea-bc59-e32a813a8bbf
 type: blog-page
 parent: insights
