@@ -1,6 +1,6 @@
 ---
 bannerImage: /uploads/dsc08858.jpg
-title: Why data science is the future
+title: The continuing importance of data science
 introduction:
   title: "Creating powerful insights "
   content:
