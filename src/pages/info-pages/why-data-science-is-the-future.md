@@ -1,5 +1,5 @@
 ---
-bannerImage: /uploads/dsc08876.jpg
+bannerImage: /uploads/dsc08858.jpg
 title: Why data science is the future
 introduction:
   title: "Creating powerful insights "
@@ -14,7 +14,7 @@ summary:
   text: "Data science is one of the fastest growing fields in tech and one of the
     most exciting, as it has such huge potential to help shape the future of
     business and society. "
-  image: /uploads/dsc08876.jpg
+  image: /uploads/dsc08858.jpg
 author: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
 publishedDate: 2020-07-15T08:15:41.961Z
 components:
@@ -81,9 +81,9 @@ components:
           used to create advantage. 
 
 
-          * **Local authority services:** Local authorities provide a wide range of services to their citizens and need to deliver these in the best targeted and most cost-effective way.  Data science can help to identify and predict trends in their local community, providing insights that allow them to align service delivery with future needs, delivering the best value to stakeholders. Local authorities can also use data science to gain a bird’s eye view of their organisation, shining a spotlight on how resources are being deployed across services, so they can be as effective as possible. And by making use of new types of data collection, including for example smart devices such as sensors on dustbins (as used in Scotland to improve refuse collection services) they can ensure that service delivery reflects community needs. 
+          * **Local authority services:** Local authorities provide a wide range of services to their citizens and need to deliver these in the best targeted and most cost-effective way.  Data science can help to identify and predict trends in their local community, providing insights that allow them to align service delivery with future needs, delivering the best value to stakeholders. Local authorities can also use data science to gain a bird’s eye view of their organisation, shining a spotlight on how resources are being deployed across services, so they can be as effective as possible. And by making use of new types of data collection, including for example smart devices such as sensors on dustbins (as used in Scotland to improve refuse collection services) they can ensure that service delivery reflects community needs.  
 
-          * **Healthcare delivery:** Data science is transforming healthcare in a number of ways. It makes it easier for doctors to accurately diagnose patients and hence, make faster decisions that can save lives. Data science has also helped in the emergence of applications and wearables that can monitor patients on a constant basis to help prevent health problems. In addition, it plays a vital role in pharmaceutical research. Here, machine learning algorithms are used to extract and analyse biological samples from patients to develop innovative cures. 
+          * **Healthcare delivery:** Data science is transforming healthcare in a number of ways. It makes it easier for doctors to accurately diagnose patients and hence, make faster decisions that can save lives. Data science has also helped in the emergence of applications and wearables that can monitor patients on a constant basis to help prevent health problems. In addition, it plays a vital role in pharmaceutical research. Here, machine learning algorithms are used to extract and analyse biological samples from patients to develop innovative cures.  
 
           * **Business Marketing:** Data science can provide vital information about the factors driving sales as well as help organisations identify and predict trends so they can develop new products to meet their future customers’ needs. It can also be used to generate a more granular understanding of customers and create personalised customer experiences. In today’s competitive environment, businesses need to regard their data as their biggest asset and leverage it to provide powerful insights that allow them to gain the edge over their competitors. 
 
