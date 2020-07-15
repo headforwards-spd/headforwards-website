@@ -40,7 +40,7 @@ components:
 
           For organisations such as local authorities which are currently facing the challenge of budget cuts, this has never been more important.
   - type: image-copy-component
-    isRightImage: false
+    isRightImage: true
     isPostit: false
     isTwoColumns: false
     title: New techniques
@@ -69,6 +69,7 @@ components:
 
 
           As the technology continues to evolve, data science will be used to help inform decision making even more widely and will find its place right at the heart of operations and planning. It will help managers make the smartest decisions and deliver improved value for stakeholders.
+    image: /uploads/head-8.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -117,6 +118,15 @@ components:
 
 
           At Headforwards, we are proud to be at the forefront of Data Science in the UK and we are excited by its future potential, as the industry continues to evolve.
+    image: /uploads/dsc08876.jpg
+  - type: article-component
+    title: Further reading
+    articles:
+      - linkText: Read more
+        link: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
+      - linkText: Read more
+        link: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
+callToAction: Considering an investment in data science?
 seo:
   description: "Data science is one of the fastest growing fields in tech and one
     of the most exciting, as it has such huge potential to help shape the future
