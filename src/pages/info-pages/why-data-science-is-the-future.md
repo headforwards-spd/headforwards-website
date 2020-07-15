@@ -26,7 +26,7 @@ components:
           how it can help transform their performance.
 
 
-          Today’s organisations generate huge amounts of data the whole time. Hidden within this data are potentially valuable insights that could lead to new revenue streams, streamlined operations and improved services. This is true for organisations as diverse as local authorities, the NHS and private sector enterprises. 
+          Today’s organisations generate huge amounts of data the whole time. Hidden within this data are potentially valuable insights that could lead to new revenue streams, streamlined operations and improved services. This is true for organisations as diverse as [local authorities](https://www.headforwards.com/insights/why-artificial-intelligence-has-the-power-to-transform-the-work-of-local-authorities/), [the NHS](https://www.headforwards.com/insights/an-exciting-future-for-ai-in-uk-healthcare/) and private sector enterprises. 
 
 
           Data science is the key that unlocks maximum value from an organisation’s data. When data is mined, it can uncover insights that are pure gold. 
@@ -138,7 +138,7 @@ components:
         link: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
       - linkText: Read more
         link: 53629a60-103a-11ea-9ef0-bd54961b4e30
-callToAction: Considering an investment in data science?
+callToAction: Are you investing in your data?
 seo:
   description: "Data science is one of the fastest growing fields in tech and one
     of the most exciting, as it has such huge potential to help shape the future
