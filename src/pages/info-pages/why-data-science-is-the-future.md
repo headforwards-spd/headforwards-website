@@ -111,7 +111,7 @@ components:
 
 
           One other important current advance is Natural Language Processing (NLP). In the past, the only data that could be analysed was numbers. However, NLP means that natural language and text can also now be analysed by data scientists, to help unlock further insights.
-    image: /uploads/dsc08876.jpg
+    image: /uploads/head-stolen.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
