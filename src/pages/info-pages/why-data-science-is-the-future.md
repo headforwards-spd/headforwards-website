@@ -2,14 +2,8 @@
 bannerImage: /uploads/dsc08858.jpg
 title: The continuing importance of data science
 introduction:
-  title: "Creating powerful insights "
-  content:
-    - type: markdown-component
-      text: Data science is one of the fastest growing fields in tech and one of the
-        most exciting, as it has such huge potential to help shape the future of
-        business and society. UK demand for data scientists has tripled over the
-        last five years, as more and more organisations see how it can help
-        transform their performance.
+  title: ""
+  content: []
 summary:
   text: "Data science is one of the fastest growing fields in tech and one of the
     most exciting, as it has such huge potential to help shape the future of
@@ -25,11 +19,14 @@ components:
     content:
       - type: markdown-component
         text: >-
-          Today’s organisations generate huge amounts of data the whole time.
-          Hidden within this data are potentially valuable insights that could
-          lead to new revenue streams, streamlined operations and improved
-          services. This is true for organisations as diverse as local
-          authorities, the NHS and private sector enterprises. 
+          Data science is one of the fastest growing fields in tech and one of
+          the most exciting, as it has such huge potential to help shape the
+          future of business and society. UK demand for data scientists has
+          tripled over the last five years, as more and more organisations see
+          how it can help transform their performance.
+
+
+          Today’s organisations generate huge amounts of data the whole time. Hidden within this data are potentially valuable insights that could lead to new revenue streams, streamlined operations and improved services. This is true for organisations as diverse as local authorities, the NHS and private sector enterprises. 
 
 
           Data science is the key that unlocks maximum value from an organisation’s data. When data is mined, it can uncover insights that are pure gold. 
@@ -39,6 +36,7 @@ components:
 
 
           For organisations such as local authorities which are currently facing the challenge of budget cuts, this has never been more important.
+    title: "Creating powerful insights "
   - type: image-copy-component
     isRightImage: true
     isPostit: false
@@ -59,17 +57,24 @@ components:
           For example, local authorities are now developing their use of data science on two key fronts. 
 
 
-          Firstly, they are introducing new analytical techniques, such as machine learning and predictive analytics, artificial intelligence and A/B testing. Secondly, we are seeing expansion of the types of data local government exploits. For example, administrative data can be repurposed, social media data can be harvested and businesses such as mobile phone companies can become partners, sharing data. 
-
-
-          With the amount of Big Data increasing and data generated from the Internet of Things (IoT) set to rocket, the application of machine learning will become even more crucial. 
+          Firstly, they are introducing new analytical techniques, such as machine learning and predictive analytics, artificial intelligence and A/B testing. Secondly, we are seeing expansion of the types of data local government exploits. For example, administrative data can be repurposed, social media data can be harvested and businesses such as mobile phone companies can become partners, sharing data.
+    image: /uploads/head-8.jpg
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    content:
+      - type: markdown-component
+        text: >-
+          With the amount of Big Data increasing and data generated from the
+          Internet of Things (IoT) set to rocket, the application of machine
+          learning will become even more crucial. 
 
 
           At Headforwards, we are ahead of the curve when it comes to data science. Recent projects range from helping a global telecoms company identify patterns in cloud usage to helping a local authority identify trends in the community, leading to improved planning.  
 
 
           As the technology continues to evolve, data science will be used to help inform decision making even more widely and will find its place right at the heart of operations and planning. It will help managers make the smartest decisions and deliver improved value for stakeholders.
-    image: /uploads/head-8.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -105,8 +110,16 @@ components:
           Firstly, automated data science and machine learning will continue to rise in importance. Everything from data cleaning of Big Data to automatic model design and training will continue to grow. 
 
 
-          One other important current advance is Natural Language Processing (NLP). In the past, the only data that could be analysed was numbers. However, NLP means that natural language and text can also now be analysed by data scientists, to help unlock further insights. 
-
+          One other important current advance is Natural Language Processing (NLP). In the past, the only data that could be analysed was numbers. However, NLP means that natural language and text can also now be analysed by data scientists, to help unlock further insights.
+    image: /uploads/dsc08876.jpg
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    content:
+      - type: markdown-component
+        text: >-
+          
 
           Another hot topic right now is the privacy and security protocols surrounding data.  Data comes from individuals and the privacy of this data must always be protected. Expect to see new processes to establish the security and integrity of data in the months and years ahead, as well as new protocols around the ethics of data science. 
 
@@ -118,7 +131,6 @@ components:
 
 
           At Headforwards, we are proud to be at the forefront of Data Science in the UK and we are excited by its future potential, as the industry continues to evolve.
-    image: /uploads/dsc08876.jpg
   - type: article-component
     title: Further reading
     articles:
