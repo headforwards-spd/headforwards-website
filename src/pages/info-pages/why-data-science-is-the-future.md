@@ -116,7 +116,7 @@ components:
           This is a sector where change is happening at an extraordinary rate and where the opportunities are almost limitless.  
 
 
-          At Headforwards, we are proud to be at the cutting edge of Data Science in the UK and we are excited by its future potential, as the industry continues to evolve.
+          At Headforwards, we are proud to be at the forefront of Data Science in the UK and we are excited by its future potential, as the industry continues to evolve.
 seo:
   description: "Data science is one of the fastest growing fields in tech and one
     of the most exciting, as it has such huge potential to help shape the future
