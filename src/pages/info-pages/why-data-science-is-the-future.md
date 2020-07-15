@@ -15,7 +15,7 @@ summary:
     most exciting, as it has such huge potential to help shape the future of
     business and society. "
   image: /uploads/dsc08858.jpg
-author: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
+author: a94440f0-c674-11ea-bc59-e32a813a8bbf
 publishedDate: 2020-07-15T08:15:41.961Z
 components:
   - type: image-copy-component
