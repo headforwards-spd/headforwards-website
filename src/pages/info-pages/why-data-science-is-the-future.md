@@ -137,7 +137,7 @@ components:
       - linkText: Read more
         link: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
       - linkText: Read more
-        link: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
+        link: 53629a60-103a-11ea-9ef0-bd54961b4e30
 callToAction: Considering an investment in data science?
 seo:
   description: "Data science is one of the fastest growing fields in tech and one
