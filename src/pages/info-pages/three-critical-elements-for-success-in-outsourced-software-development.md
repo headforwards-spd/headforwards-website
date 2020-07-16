@@ -57,13 +57,13 @@ components:
     content:
       - type: markdown-component
         text: >-
-          ### Clear vision 
+          ### Clear vision
 
 
           The outsourced software development company should always aim to understand the big picture.  It is vital to have a good understanding of the client’s overall strategy and where their project fits into the whole. It is only then that the software development company can consistently make the right decisions at every level in the company and truly deliver against the client’s business objectives. 
 
 
-          Outsourced software development is a major game-changer. As the sector continues to grow and mature, outsourcing will be regarded as essential for delivering cutting edge IT innovation. As a result, outsourced software development companies will increasingly be seen as vital strategic partners. It is an exciting time to be at the forefront of this trend, helping to shape the software industry of the future.
+          As the sector continues to grow and mature, outsourcing will be regarded as essential for delivering cutting edge IT innovation. As a result, outsourced software development companies will increasingly be seen as vital strategic partners. It is an exciting time to be at the forefront of this trend, helping to shape the software industry of the future.
     image: /uploads/dsc07596.jpg
   - type: article-component
     articles:
