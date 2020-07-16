@@ -27,7 +27,7 @@ components:
     title: The Three Critical Elements Explained
   - type: image-copy-component
     isRightImage: false
-    isPostit: false
+    isPostit: true
     isTwoColumns: false
     title: ""
     content:
@@ -40,7 +40,7 @@ components:
     image: /uploads/dsc07634.jpg
   - type: image-copy-component
     isRightImage: true
-    isPostit: false
+    isPostit: true
     isTwoColumns: false
     content:
       - type: markdown-component
@@ -52,7 +52,7 @@ components:
     image: /uploads/dsc08690.jpg
   - type: image-copy-component
     isRightImage: false
-    isPostit: false
+    isPostit: true
     isTwoColumns: false
     content:
       - type: markdown-component
@@ -77,7 +77,7 @@ seo:
     elements that we believe should be cornerstones of an outsourced software
     development project.
   title: "Three Critical Elements for Success in Outsourced Software Development "
-  slug: "three-critical-elements-success-outsourced-software-development "
+  slug: three-critical-elements-success-outsourced-software-development
 uuid: 7c573e40-c768-11ea-b188-29f107d14181
 type: blog-page
 parent: insights
