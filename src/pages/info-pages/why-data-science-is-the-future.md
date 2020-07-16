@@ -143,7 +143,7 @@ seo:
   description: "Data science is one of the fastest growing fields in tech and one
     of the most exciting, as it has such huge potential to help shape the future
     of business and society. "
-  title: Why data science is the future
+  title: The continuing importance of data science
   slug: the-continuing-importance-data-science
 uuid: 45ded980-c674-11ea-bc59-e32a813a8bbf
 type: blog-page
