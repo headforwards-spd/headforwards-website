@@ -1,9 +1,9 @@
 ---
-bannerImage: /uploads/team-5.jpg
+bannerImage: /uploads/glenn-carstens-peters-rlw-uc03gwc-unsplash.jpg
 title: "Three Critical Elements for Success in Outsourced Software Development "
 summary:
-  text: As a company that has delivered outsourced software for many years, we
-    have come to understand any possible pitfalls and has identified ways to
+  text: As a company that has been delivering outsourced software for many years,
+    we have come to understand any possible pitfalls and has identified ways to
     ensure these are avoided.
   image: /uploads/team-5.jpg
 author: 8d241049-6ed4-45ff-aaf8-488d06871310
@@ -15,11 +15,11 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: As a company that has delivered outsourced software for many years, we
-          have come to understand any possible pitfalls and has identified ways
-          to ensure these are avoided. There are many areas to consider but here
-          are the three key elements that we believe should be cornerstones of
-          an outsourced software development project.
+        text: As a company that has been delivering outsourced software for many years,
+          we have come to understand any possible pitfalls and has identified
+          ways to ensure these are avoided. There are many areas to consider but
+          here are the three key elements that we believe should be cornerstones
+          of an outsourced software development project.
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -27,7 +27,7 @@ components:
     title: The Three Critical Elements Explained
   - type: image-copy-component
     isRightImage: false
-    isPostit: true
+    isPostit: false
     isTwoColumns: false
     title: ""
     content:
@@ -40,7 +40,7 @@ components:
     image: /uploads/dsc07634.jpg
   - type: image-copy-component
     isRightImage: true
-    isPostit: true
+    isPostit: false
     isTwoColumns: false
     content:
       - type: markdown-component
@@ -52,7 +52,7 @@ components:
     image: /uploads/dsc08690.jpg
   - type: image-copy-component
     isRightImage: false
-    isPostit: true
+    isPostit: false
     isTwoColumns: false
     content:
       - type: markdown-component
