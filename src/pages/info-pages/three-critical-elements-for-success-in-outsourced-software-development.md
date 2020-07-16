@@ -71,6 +71,7 @@ components:
         link: 0cd74ed0-0fac-11ea-843f-932c76de5936
       - linkText: Read more
         link: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
+    title: Further reading
 callToAction: Discover stronger value through communication
 seo:
   description: There are many areas to consider but here are the three key
