@@ -103,7 +103,7 @@ components:
           Bob says:
 
 
-          > "We are moving to a system where intelligent data is at the heart of the organisation and therefore can inform all our decision-making. Going forward, our data will be dynamic and interactive and easily interrogated by officers. As part of this, we will make full use of Open Sourced data within our systems, so we are sharing instant access to wider data as well as our own. We have started a programme of building in open data to our common datasets - for example, data on population, deprivation, crime and so on. This enables people across the organisation to deliver their own comprehensive reporting in a ‘self-service’ manner."
+          > We are moving to a system where intelligent data is at the heart of the organisation and therefore can inform all our decision-making. Going forward, our data will be dynamic and interactive and easily interrogated by officers. As part of this, we will make full use of Open Sourced data within our systems, so we are sharing instant access to wider data as well as our own. We have started a programme of building in open data to our common datasets - for example, data on population, deprivation, crime and so on. This enables people across the organisation to deliver their own comprehensive reporting in a ‘self-service’ manner
     title: Predictive analytics
   - type: image-copy-component
     isRightImage: false
