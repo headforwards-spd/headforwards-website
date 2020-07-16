@@ -1,6 +1,6 @@
 ---
-bannerImage: /uploads/dsc09867.jpg
-title: How local authorities are revolutionising the way they use data
+bannerImage: /uploads/dsc08186.jpg
+title: Local authorities are revolutionising the way they use data
 subtitle: ""
 introduction:
   title: "Local authorities are set to make a step change in their use of Business
@@ -23,7 +23,7 @@ summary:
   text: Find out how we are helping Cornwall Council create a new digital
     architecture and a forward looking culture with Business Intelligence at its
     heart
-  image: /uploads/dsc09867.jpg
+  image: /uploads/dsc08186.jpg
 author: 8d241049-6ed4-45ff-aaf8-488d06871310
 publishedDate: 2020-07-16T14:59:16.696Z
 components:
