@@ -143,6 +143,13 @@ components:
           agile approach to local government.” "
         jobTitle: Product Owner
         name: Lee Warren
+  - type: article-component
+    articles:
+      - linkText: Read more
+        link: f3e06340-b77f-11ea-9ace-d98373c0dec6
+      - linkText: Read more
+        link: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
+    title: Further reading
 seo:
   description: Find out how Headforwards are helping Cornwall Council create a new
     digital architecture and a forward looking culture with Business
