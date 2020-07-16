@@ -6,7 +6,7 @@ summary:
     we have come to understand any possible pitfalls and has identified ways to
     ensure these are avoided.
   image: /uploads/team-5.jpg
-author: 8d241049-6ed4-45ff-aaf8-488d06871310
+author: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
 publishedDate: 2020-07-23T13:02:35.039Z
 components:
   - type: image-copy-component
