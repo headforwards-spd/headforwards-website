@@ -10,7 +10,7 @@ introduction:
 summary:
   image: /uploads/dsc09561.jpg
   text: SUMMARY HERE
-author: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
+author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
 publishedDate: 2020-07-21T15:16:35.650Z
 components:
   - type: image-copy-component
