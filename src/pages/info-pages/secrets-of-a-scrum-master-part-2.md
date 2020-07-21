@@ -143,6 +143,8 @@ components:
       - linkText: Read more
         link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
 footerLinks: []
+seo:
+  slug: secrets-of-a-scrum-master-part-2
 uuid: df986270-cb66-11ea-8e96-b7fc142baae4
 type: blog-page
 parent: insights
