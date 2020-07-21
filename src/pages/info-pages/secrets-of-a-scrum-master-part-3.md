@@ -132,6 +132,8 @@ components:
           respect and generosity of spirit, whether they are the most junior
           person in the company or the owner of the company. Respect others and
           you will soon win the respect of others. "
+seo:
+  slug: secrets-of-a-scrum-master-part-3
 uuid: 8147d560-cb67-11ea-8e96-b7fc142baae4
 type: blog-page
 parent: insights
