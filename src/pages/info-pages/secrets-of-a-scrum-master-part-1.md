@@ -180,6 +180,12 @@ components:
           team develop this attitude, to the point where they become really
           ambitious about taking on highly complex and tough projects, is one of
           the most rewarding aspects of the Scrum Master’s role. "
+  - type: article-component
+    articles:
+      - linkText: Read more
+        link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+      - linkText: Read more
+        link: 0cd74ed0-0fac-11ea-843f-932c76de5936
 seo:
   slug: secrets-of-a-scrum-master-part-1
 uuid: 321e54a0-cb67-11ea-8e96-b7fc142baae4
