@@ -37,7 +37,7 @@ components:
 
 
           Close communication is vital for the success of any software development project. Indeed, this is at the heart of the agile and DevOps methodologies. Both these frameworks enable close collaboration between team members, so that mistakes always translate to learning, ensuring that development becomes an iterative process. Where an outsourced partner is used, it is important that communication remains a top priority – even although there may also be language barriers, different cultures, or time zones to consider. Video calls and other web-based methods can be used to make sure communication continues to flow smoothly and that everyone works closely as one team throughout the process.
-    image: /uploads/dsc07634.jpg
+    image: /uploads/team-5.jpg
   - type: image-copy-component
     isRightImage: true
     isPostit: false
@@ -49,7 +49,7 @@ components:
 
 
           It is essential that any outsourced software development project has clearly agreed metrics at the outset and that both parties fully understand how a project’s success will be measured. Not only must there be agreement and clarity about the final outcomes, but also full agreement about all milestones along the way and all crucial timeframes.
-    image: /uploads/dsc08690.jpg
+    image: /uploads/hf-f.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
