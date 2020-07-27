@@ -1,6 +1,6 @@
 ---
 name: Mike Fosker
-jobTitle: Scrum Master
+jobTitle: Product Owner and Agile Facilitator
 profilePic: /uploads/mike_fosker_headforwards.jpg
 bio: Mike is an experienced product manager and owner of web and app based
   experiences with a passion for delivering digital products that help people
