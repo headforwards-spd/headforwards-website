@@ -4,7 +4,11 @@ title: Secrets of a Scrum Master | Part 1
 introduction:
   content:
     - type: markdown-component
-      text: INTRODUCTION HERE
+      text: Being a Scrum Master requires a wide range of interpersonal skills. While
+        there are a set of principles that Scrum Masters typically adhere to,
+        everybody has their own take on the practice. We asked three of our own
+        to talk about their focal points when practising the art of Scrum. Mike
+        Fosker talks about his take on the role.
 summary:
   text: SUMMARY HERE
   image: /uploads/HF careers 1.jpg
