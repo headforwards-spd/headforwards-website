@@ -6,10 +6,18 @@ introduction:
   title: ""
   content:
     - type: markdown-component
-      text: INTRODUCTION HERE
+      text: Being a Scrum Master requires a wide range of interpersonal skills. While
+        there are a set of principles that Scrum Masters typically adhere to,
+        everybody has their own take on the practice. We asked three of our own
+        to talk about their focal points when practising the art of Scrum.
+        Headforwards Director and Scrum Master, Craig Girvan gives his unique
+        take on the role.
 summary:
   image: /uploads/dsc09561.jpg
-  text: SUMMARY HERE
+  text: Being a Scrum Master requires a wide range of interpersonal skills. While
+    there are a set of principles that Scrum Masters typically adhere to,
+    everybody has their own take on the practice. We asked three of our own to
+    talk about their focal points when practicing the art of Scrum.
 author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
 publishedDate: 2020-07-21T15:16:35.650Z
 components:
