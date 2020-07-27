@@ -10,9 +10,13 @@ introduction:
         to talk about their focal points when practising the art of Scrum. Mike
         Fosker talks about his take on the role.
 summary:
-  text: SUMMARY HERE
+  text: Being a Scrum Master requires a wide range of interpersonal skills. While
+    there are a set of principles that Scrum Masters typically adhere to,
+    everybody has their own take on the practice. We asked three of our own to
+    talk about their focal points when practising the art of Scrum. Mike Fosker
+    talks about his take on the role.
   image: /uploads/HF careers 1.jpg
-author: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
+author: d6b8ef80-d01b-11ea-b7cd-8b72a2b29420
 publishedDate: 2020-07-21T15:29:00.594Z
 components:
   - type: image-copy-component
