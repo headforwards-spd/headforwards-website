@@ -4,25 +4,19 @@ title: Secrets of a Scrum Master | Part 1
 introduction:
   content:
     - type: markdown-component
-      text: Being a Scrum Master requires a wide range of interpersonal skills. While
-        there are a set of principles that Scrum Masters typically adhere to,
-        everybody has their own take on the practice. We asked three of our own
-        to talk about their focal points when practising the art of Scrum. Mike
-        Fosker talks about his take on the role.A lot has been written about
-        agile methodology and the role of Scrum Master. Being a Scrum Master
-        requires a wide range of interpersonal and facilitator skills. While
-        there are a set of principles that Scrum Masters typically adhere to,
-        everybody has their own take on the practice. We asked three of our own
-        to talk about their focal points when practising the art of Scrum. This
-        is the first in a series where Headforwards Scrum Masters reveal
-        insights into their role. Mike Fosker talks shares his thoughts.
+      text: A lot has been written about agile methodology and the role of Scrum
+        Master. Being a Scrum Master requires a wide range of interpersonal and
+        facilitator skills. While there are a set of principles that Scrum
+        Masters typically adhere to, everybody has their own take on the
+        practice. We asked three of our own to talk about their focal points
+        when practising the art of Scrum.This is the first in a series where
+        Headforwards Scrum Masters reveal insights into their role. Mike Fosker
+        shares his thoughts.
   title: Introduction
 summary:
-  text: Being a Scrum Master requires a wide range of interpersonal skills. While
-    there are a set of principles that Scrum Masters typically adhere to,
-    everybody has their own take on the practice. We asked three of our own to
-    talk about their focal points when practising the art of Scrum. Mike Fosker
-    talks about his take on the role.
+  text: While there are a set of principles that Scrum Masters typically adhere
+    to, everybody has their own take on the practice. We asked three of our own
+    to talk about their focal points when practising the art of Scrum.
   image: /uploads/HF careers 1.jpg
 author: d6b8ef80-d01b-11ea-b7cd-8b72a2b29420
 publishedDate: 2020-07-21T15:29:00.594Z
