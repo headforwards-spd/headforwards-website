@@ -1,9 +1,8 @@
 ---
 name: Andy Roberts
-jobTitle: Special Projects
+jobTitle: ""
 profilePic: /uploads/andy-roberts.png
-bio: >-
-  Andy has worked in many different environments from the military through to
+bio: Andy has worked in many different environments from the military through to
   challenging corporate roles as CIO and Change Director in industries including
   engineering, finance, communications, utilities and insurance. Through his
   management years he has tried pretty much every leadership style and now takes
