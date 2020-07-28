@@ -1,6 +1,6 @@
 ---
 name: Peter Conway
-jobTitle: Software Developer
+jobTitle: ""
 profilePic: /uploads/img_20200222_082104_2.jpg
 bio: "Peter studied Theoretical Physics at Swansea University and once had
   ambitions to go into particle physics. Since graduating he has completed a
