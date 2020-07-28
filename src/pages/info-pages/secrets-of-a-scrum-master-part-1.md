@@ -5,12 +5,14 @@ subtitle: ""
 introduction:
   content:
     - type: markdown-component
-      text: >-
-        This is the first in a series where Headforwards Scrum Masters reveal
-        insights into their role. Scrum Master.
-
-
-        A lot has been written about agile methodology and the role of Scrum Master. Being a Scrum Master requires a wide range of interpersonal and facilitator skills. While there are a set of principles that Scrum Masters typically adhere to, everybody has their own take on the practice. We asked three of our own to talk about their focal points when practising the art of Scrum. Mike Fosker talks about his take on the role.
+      text: This is the first in a series where Headforwards Scrum Masters reveal
+        insights into their role. A lot has been written about agile methodology
+        and the role of Scrum Master. Being a Scrum Master requires a wide range
+        of interpersonal and facilitator skills. While there are a set of
+        principles that Scrum Masters typically adhere to, everybody has their
+        own take on the practice. We asked three of our own to talk about their
+        focal points when practising the art of Scrum. Mike Fosker talks about
+        his take on the role.
   title: Introduction
 summary:
   text: We asked three of our own to talk about their focal points when practising
