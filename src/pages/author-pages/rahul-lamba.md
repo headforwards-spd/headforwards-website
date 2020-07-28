@@ -1,6 +1,6 @@
 ---
 name: Rahul Lamba
-jobTitle: Software Engineer
+jobTitle: ""
 profilePic: /uploads/fb.jpg
 bio: Rahul started coding in India. Inspired by new ideas, new ways of doing
   things and utilising various technologies, he focuses on streamlining services
