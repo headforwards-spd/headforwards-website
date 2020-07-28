@@ -103,18 +103,6 @@ components:
 
 
           This growth mindset is one of the most important characteristics that you can help to nurture in your team. Seeing your team develop this attitude, to the point where they become really ambitious about taking on highly complex and tough projects, is one of the most rewarding aspects of the Scrum Master’s role.
-
-
-          ## Explore the series
-
-
-          **Part 1 - Mike Fosker**
-
-
-          *Part 2 - Craig Girvan - coming soon*
-
-
-          *Part 3 - Andy Roberts - coming soon*
     image: ""
   - type: article-component
     articles:
