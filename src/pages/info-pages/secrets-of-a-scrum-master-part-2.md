@@ -93,7 +93,7 @@ components:
           What can I learn from that experience which means I can be more
           effective next time?"
   - type: images-component
-    imageOne: /uploads/headforwards-12.jpg
+    imageOne: /uploads/dsc09867.jpg
     flip: false
   - type: image-copy-component
     isRightImage: false
@@ -145,12 +145,12 @@ components:
           that their intentions are good, this will stop you going off on a
           negative spiral and it will mean that you can focus on the positive. "
   - type: article-component
-    title: Continue the series
+    title: Explore the series
     articles:
       - linkText: Read more
         link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
       - linkText: Read more
-        link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+        link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
 footerLinks: []
 seo:
   slug: secrets-of-a-scrum-master-part-2
