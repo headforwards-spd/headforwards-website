@@ -1,28 +1,16 @@
 ---
 bannerImage: /uploads/head-stolen.jpg
 title: Secrets of a Scrum Master | Part 1
+subtitle: ""
 introduction:
   content:
     - type: markdown-component
       text: >-
-        A lot has been written about agile methodology and the role of Scrum
-        Master. Being a Scrum Master requires a wide range of interpersonal and
-        facilitator skills. While there are a set of principles that Scrum
-        Masters typically adhere to, everybody has their own take on the
-        practice. We asked three of our own to talk about their focal points
-        when practising the art of Scrum. 
+        This is the first in a series where Headforwards Scrum Masters reveal
+        insights into their role. Scrum Master.
 
 
-        This is the first in a series where Headforwards Scrum Masters reveal insights into their role. Scrum Master, Mike Fosker talks about his take on the role.
-
-
-        [Part 1 - Mike Fosker](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
-
-
-        [Part 2 - Craig Girvan](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
-
-
-        [Part 3 - Andy Roberts](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
+        A lot has been written about agile methodology and the role of Scrum Master. Being a Scrum Master requires a wide range of interpersonal and facilitator skills. While there are a set of principles that Scrum Masters typically adhere to, everybody has their own take on the practice. We asked three of our own to talk about their focal points when practising the art of Scrum. Mike Fosker talks about his take on the role.
   title: Introduction
 summary:
   text: While there are a set of principles that Scrum Masters typically adhere
@@ -39,10 +27,10 @@ components:
     content:
       - type: markdown-component
         text: >-
-          ## Stay focussed on the big picture and the value being delivered
+          ## Stay focused on the big picture and the value being delivered
 
 
-          Don’t get caught up in the mechanics of the process (as in the Scrum Guide) and making sure that everything is done by the book. There is of course nothing wrong with the mechanics but it is too easy to get buried in them. The most important thing is to keep focused on the one overriding question –is this going to generate the value that the product owner originally had in mind? What the product owner wants is a solution to a problem. It is vital to keep thinking about that single question– will this solve the problem? Is it going to work?  Aim to get the feedback you need that confirms this will indeed deliver the value anticipated. The end value is all that really matters. Keep focussed on the big picture. 
+          Don’t get caught up in the mechanics of the process (as in the Scrum Guide) and making sure that everything is done by the book. There is of course nothing wrong with the mechanics but it is too easy to get buried in them. The most important thing is to keep focused on the one overriding question – is this going to generate the value that the product owner originally had in mind? What the product owner wants is a solution to a problem. It is vital to keep thinking about that single question – will this solve the problem? Is it going to work?  Aim to get the feedback you need that confirms this will indeed deliver the value anticipated. The end value is all that really matters. Keep focused on the big picture. 
 
 
           ## Create an environment where the team feel psychologically safe
@@ -115,6 +103,18 @@ components:
 
 
           This growth mindset is one of the most important characteristics that you can help to nurture in your team. Seeing your team develop this attitude, to the point where they become really ambitious about taking on highly complex and tough projects, is one of the most rewarding aspects of the Scrum Master’s role.
+
+
+          ## Explore the series
+
+
+          **Part 1 - Mike Fosker**
+
+
+          *Part 2 - Craig Girvan - coming soon*
+
+
+          *Part 3 - Andy Roberts - coming soon*
     image: ""
   - type: article-component
     articles:
