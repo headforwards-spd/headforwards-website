@@ -4,25 +4,14 @@ title: Secrets of a Scrum Master | Part Three
 introduction:
   content:
     - type: markdown-component
-      text: >-
-        A lot has been written about agile methodology and the role of Scrum
-        Master. Being a Scrum Master requires a wide range of interpersonal and
-        facilitator skills. While there are a set of principles that Scrum
-        Masters typically adhere to, everybody has their own take on the
-        practice. We asked three of our own to talk about their focal points
-        when practising the art of Scrum. 
-
-
-        This is the last in a series where Headforwards Scrum Masters reveal insights into their role. Scrum Master, Andy Roberts talks about his take on the role.
-
-
-        [Part 1 - Mike Fosker](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
-
-
-        [Part 2 - Craig Girvan](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
-
-
-        [Part 3 - Andy Roberts](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
+      text: This is the last in a series where Headforwards Scrum Masters reveal
+        insights into their role. A lot has been written about agile methodology
+        and the role of Scrum Master. Being a Scrum Master requires a wide range
+        of interpersonal and facilitator skills. While there are a set of
+        principles that Scrum Masters typically adhere to, everybody has their
+        own take on the practice. We asked three of our own to talk about their
+        focal points when practising the art of Scrum. Andy Roberts talks about
+        his take on the role.
 summary:
   image: /uploads/head-1.jpg
   text: Being a Scrum Master requires a wide range of interpersonal skills. While
@@ -94,12 +83,12 @@ components:
 
           Treat everyone as a peer and  treat everyone with equal respect and generosity of spirit, whether they are the most junior person in the company or the owner of the company. Respect others and you will soon win the respect of others.
   - type: article-component
-    title: Read the series
+    title: Explore the series
     articles:
       - linkText: Read more
-        link: 359e0550-009f-11ea-b6f6-d743f848720a
+        link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
       - linkText: Read more
-        link: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
+        link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
 seo:
   slug: secrets-of-a-scrum-master-part-3
 uuid: 8147d560-cb67-11ea-8e96-b7fc142baae4
