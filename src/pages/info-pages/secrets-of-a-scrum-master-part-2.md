@@ -3,28 +3,15 @@ bannerImage: /uploads/dsc09561.jpg
 title: Secrets of a Scrum Master | Part Two
 subtitle: ""
 introduction:
-  title: ""
+  title: Introduction
   content:
     - type: markdown-component
       text: >-
-        A lot has been written about agile methodology and the role of Scrum
-        Master. Being a Scrum Master requires a wide range of interpersonal and
-        facilitator skills. While there are a set of principles that Scrum
-        Masters typically adhere to, everybody has their own take on the
-        practice. We asked three of our own to talk about their focal points
-        when practising the art of Scrum. 
+        This is the second in a series where Headforwards Scrum Masters reveal
+        insights into their role. Scrum Master.
 
 
-        This is the second in a series where Headforwards Scrum Masters reveal insights into their role. Scrum Master, Craig Girvan talks about his take on the role.
-
-
-        [Part 1 - Mike Fosker](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
-
-
-        [Part 2 - Craig Girvan](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
-
-
-        [Part 3 - Andy Roberts](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
+        A lot has been written about agile methodology and the role of Scrum Master. Being a Scrum Master requires a wide range of interpersonal and facilitator skills. While there are a set of principles that Scrum Masters typically adhere to, everybody has their own take on the practice. We asked three of our own to talk about their focal points when practising the art of Scrum. Craig Girvan talks about his take on the role.
 summary:
   image: /uploads/dsc09561.jpg
   text: Being a Scrum Master requires a wide range of interpersonal and
@@ -33,7 +20,7 @@ summary:
     three of our own to talk about their focal points when practising the art of
     Scrum.
 author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
-publishedDate: 2020-07-21T15:16:35.650Z
+publishedDate: 2020-08-04T15:16:35.650Z
 components:
   - type: image-copy-component
     isRightImage: false
@@ -158,10 +145,10 @@ components:
           that their intentions are good, this will stop you going off on a
           negative spiral and it will mean that you can focus on the positive. "
   - type: article-component
-    title: Further reading
+    title: Continue the series
     articles:
       - linkText: Read more
-        link: 0cd74ed0-0fac-11ea-843f-932c76de5936
+        link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
       - linkText: Read more
         link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
 footerLinks: []
