@@ -1,9 +1,8 @@
 ---
 name: Toby Parkins
-jobTitle: Director
+jobTitle: ""
 profilePic: /uploads/toby_parkins_headforwards.png
-bio: >-
-  Toby was an agile practitioner talking to a product owner from a global
+bio: Toby was an agile practitioner talking to a product owner from a global
   corporation at a barbecue when the Headforwards concept began to develop.
   Having started out on the internet in the early 90s, Toby founded UKNetWeb, a
   web development company and knew that he could deliver a better outsource
