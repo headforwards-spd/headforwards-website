@@ -1,6 +1,6 @@
 ---
 name: Mike Fosker
-jobTitle: Product Owner and Agile Facilitator
+jobTitle: ""
 profilePic: /uploads/mike_fosker_headforwards.jpg
 bio: Mike is an experienced product manager and owner of web and app based
   experiences with a passion for delivering digital products that help people
