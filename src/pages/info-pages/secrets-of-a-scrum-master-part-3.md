@@ -4,11 +4,25 @@ title: Secrets of a Scrum Master | Part 3
 introduction:
   content:
     - type: markdown-component
-      text: Being a Scrum Master requires a wide range of interpersonal skills. While
-        there are a set of principles that Scrum Masters typically adhere to,
-        everybody has their own take on the practice. We asked three of our own
-        to talk about their focal points when practising the art of Scrum. Andy
-        Roberts talks about his take on the role.
+      text: >-
+        A lot has been written about agile methodology and the role of Scrum
+        Master. Being a Scrum Master requires a wide range of interpersonal and
+        facilitator skills. While there are a set of principles that Scrum
+        Masters typically adhere to, everybody has their own take on the
+        practice. We asked three of our own to talk about their focal points
+        when practising the art of Scrum. 
+
+
+        This is the last in a series where Headforwards Scrum Masters reveal insights into their role. Scrum Master, Andy Roberts talks about his take on the role.
+
+
+        [Part 1 - Mike Fosker](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
+
+
+        [Part 2 - Craig Girvan](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
+
+
+        [Part 3 - Andy Roberts](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
 summary:
   image: /uploads/head-1.jpg
   text: Being a Scrum Master requires a wide range of interpersonal skills. While
