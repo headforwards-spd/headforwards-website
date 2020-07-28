@@ -1,6 +1,6 @@
 ---
 bannerImage: /uploads/dsc09561.jpg
-title: Secrets of a Scrum Master | Part 2
+title: Secrets of a Scrum Master | Part Two
 subtitle: ""
 introduction:
   title: ""
