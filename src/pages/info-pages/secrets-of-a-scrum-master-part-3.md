@@ -1,6 +1,6 @@
 ---
 bannerImage: /uploads/head-1.jpg
-title: Secrets of a Scrum Master | Part 3
+title: Secrets of a Scrum Master | Part Three
 introduction:
   content:
     - type: markdown-component
