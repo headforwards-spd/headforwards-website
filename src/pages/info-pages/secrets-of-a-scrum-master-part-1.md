@@ -18,7 +18,7 @@ summary:
     to talk about their focal points when practising the art of Scrum.
   image: /uploads/HF careers 1.jpg
 author: d6b8ef80-d01b-11ea-b7cd-8b72a2b29420
-publishedDate: 2020-07-21T15:29:00.594Z
+publishedDate: 2020-07-28T10:18:15.813Z
 components:
   - type: image-copy-component
     isRightImage: false
