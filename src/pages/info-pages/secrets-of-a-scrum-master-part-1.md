@@ -4,14 +4,25 @@ title: Secrets of a Scrum Master | Part 1
 introduction:
   content:
     - type: markdown-component
-      text: A lot has been written about agile methodology and the role of Scrum
+      text: >-
+        A lot has been written about agile methodology and the role of Scrum
         Master. Being a Scrum Master requires a wide range of interpersonal and
         facilitator skills. While there are a set of principles that Scrum
         Masters typically adhere to, everybody has their own take on the
         practice. We asked three of our own to talk about their focal points
-        when practising the art of Scrum.This is the first in a series where
-        Headforwards Scrum Masters reveal insights into their role. Mike Fosker
-        shares his thoughts.
+        when practising the art of Scrum. 
+
+
+        This is the first in a series where Headforwards Scrum Masters reveal insights into their role. Scrum Master, Mike Fosker talks about his take on the role.
+
+
+        [Part 1 - Mike Fosker](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
+
+
+        [Part 2 - Craig Girvan](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
+
+
+        [Part 3 - Andy Roberts](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
   title: Introduction
 summary:
   text: While there are a set of principles that Scrum Masters typically adhere
