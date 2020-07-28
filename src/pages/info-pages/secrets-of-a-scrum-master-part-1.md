@@ -1,6 +1,6 @@
 ---
 bannerImage: /uploads/head-stolen.jpg
-title: Secrets of a Scrum Master | Part 1
+title: Secrets of a Scrum Master | Part One
 subtitle: ""
 introduction:
   content:
