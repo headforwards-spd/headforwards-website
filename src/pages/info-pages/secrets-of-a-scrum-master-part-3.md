@@ -12,6 +12,7 @@ introduction:
         own take on the practice. We asked three of our own to talk about their
         focal points when practising the art of Scrum. Andy Roberts talks about
         his take on the role.
+  title: Introduction
 summary:
   image: /uploads/head-1.jpg
   text: Being a Scrum Master requires a wide range of interpersonal skills. While
