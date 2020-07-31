@@ -6,7 +6,7 @@ introduction:
   title: ""
   content: []
 summary:
-  image: /uploads/dsc08858.jpg
+  image: /uploads/claudio-schwarz-purzlbaum-brejy-akxv8-unsplash-1-.jpg
   text: As staff around the world have moved to working from home during lockdown,
     Headforwards has looked at its productivity impact in comparison with office
     based working.
