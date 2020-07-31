@@ -6,12 +6,16 @@ introduction:
   title: Introduction
   content:
     - type: markdown-component
-      text: >-
+      text: >+
         This is the second in a series where Headforwards Scrum Masters reveal
-        insights into their role. Scrum Master.
+        insights into their role. Scrum Master. Read part one here: [Secrets of
+        a Scrum Master | Part
+        One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
 
 
         A lot has been written about agile methodology and the role of Scrum Master. Being a Scrum Master requires a wide range of interpersonal and facilitator skills. While there are a set of principles that Scrum Masters typically adhere to, everybody has their own take on the practice. We asked three of our own to talk about their focal points when practising the art of Scrum. Craig Girvan talks about his take on the role.
+
+
 summary:
   image: /uploads/dsc09561.jpg
   text: Being a Scrum Master requires a wide range of interpersonal and
@@ -145,12 +149,12 @@ components:
           that their intentions are good, this will stop you going off on a
           negative spiral and it will mean that you can focus on the positive. "
   - type: article-component
-    title: Explore the series
+    title: Further reading
     articles:
       - linkText: Read more
         link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
       - linkText: Read more
-        link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
+        link: 0cd74ed0-0fac-11ea-843f-932c76de5936
 footerLinks: []
 seo:
   slug: secrets-of-a-scrum-master-part-2
