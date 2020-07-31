@@ -8,7 +8,6 @@ import styles from './contact.module.scss';
 export const contactPropTypes = {
     companyName: string,
     email: string,
-    jobsEmail: string,
     phone: string,
     address: string,
     registeredAddress: string,
@@ -21,14 +20,13 @@ Contact.propTypes = contactPropTypes;
 Contact.defaultProps = {
     companyName: '',
     email: '',
-    jobsEmail: '',
     phone: '',
     address: '',
     registeredAddress: '',
     mapUrl: null,
 };
 
-function Contact({ companyName, mapUrl, email, jobsEmail, phone, address, registeredAddress }) {
+function Contact({ companyName, mapUrl, email, phone, address, registeredAddress }) {
     const formattedAddress = address.split(',');
     const formattedRegAddress = registeredAddress.split(',');
 
@@ -54,8 +52,15 @@ function Contact({ companyName, mapUrl, email, jobsEmail, phone, address, regist
                         <dd>
                             <Link to={`mailto:${email}`}>{email}</Link>
                         </dd>
+                        <dt>Recruitment Agencies.</dt>
                         <dd>
-                            <Link to={`mailto:${jobsEmail}`}>{jobsEmail}</Link>
+                            <Link to="/careers/recruitment-agencies/">Please click here</Link>
+                        </dd>
+                        <dt>Helpdesk.</dt>
+                        <dd>
+                            <a href="https://support.headforwards.com/" target="_blank" rel="noreferrer">
+                                Submit support ticket
+                            </a>
                         </dd>
                     </dl>
                 </address>
