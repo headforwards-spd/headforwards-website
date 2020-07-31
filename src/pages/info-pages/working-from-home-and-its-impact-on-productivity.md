@@ -10,7 +10,7 @@ summary:
   text: As staff around the world have moved to working from home during lockdown,
     Headforwards has looked at its productivity impact in comparison with office
     based working.
-author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
+author: 499f30e0-d32d-11ea-b828-ab8ad195066a
 publishedDate: 2020-07-31T11:29:53.415Z
 components:
   - type: image-copy-component
