@@ -47,7 +47,7 @@ components:
 
           As an Agile Scrum Master, it is vital that you avoid any of the language of old-style management or hierarchical structures. You should  endeavour not to issue blunt instructions or tell the team what they have to do. At the heart of your approach, should be a commitment to Agile Coaching. Work with the team and encourage them. This will show up in the kind of language you use. For example, you should always say ‘This is the team I work with’ rather than call them ‘My team’. The differences may seem subtle but it creates an atmosphere of mutual respect and builds the team’s confidence. In the same vein, tone of voice matters too. As quite a passionate person by nature, this is something I have had to learn and cultivate. It never helps to raise your voice or get too strident. Stay cool, calm and measured.
   - type: images-component
-    imageOne: /uploads/head-1.jpg
+    imageOne: /uploads/headforwards-22.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -89,7 +89,7 @@ components:
       - linkText: Read more
         link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
       - linkText: Read more
-        link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
+        link: 0cd74ed0-0fac-11ea-843f-932c76de5936
 seo:
   slug: secrets-of-a-scrum-master-part-3
 uuid: 8147d560-cb67-11ea-8e96-b7fc142baae4
