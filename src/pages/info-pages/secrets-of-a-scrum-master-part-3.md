@@ -4,7 +4,8 @@ title: Secrets of a Scrum Master | Part Three
 introduction:
   content:
     - type: markdown-component
-      text: This is the last in a series where Headforwards Scrum Masters reveal
+      text: >-
+        This is the last in a series where Headforwards Scrum Masters reveal
         insights into their role. A lot has been written about agile methodology
         and the role of Scrum Master. Being a Scrum Master requires a wide range
         of interpersonal and facilitator skills. While there are a set of
@@ -12,6 +13,17 @@ introduction:
         own take on the practice. We asked three of our own to talk about their
         focal points when practising the art of Scrum. Andy Roberts talks about
         his take on the role.
+
+
+
+
+        **Series links**
+
+
+        [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
+
+
+        [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
   title: Introduction
 summary:
   image: /uploads/head-1.jpg
@@ -83,8 +95,17 @@ components:
 
 
           Treat everyone as a peer and  treat everyone with equal respect and generosity of spirit, whether they are the most junior person in the company or the owner of the company. Respect others and you will soon win the respect of others.
+
+
+          #### Series links
+
+
+          [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
+
+
+          [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
   - type: article-component
-    title: Explore the series
+    title: Further Reading
     articles:
       - linkText: Read more
         link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
