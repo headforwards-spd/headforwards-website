@@ -106,6 +106,16 @@ function Contact({ companyName, mapUrl, email, phone, address, registeredAddress
                     <p>Headforwards is the trading name of Headforwards Solutions Ltd.</p>
                     <p>An Outsource Software Company registered in England and Wales with number 07576641</p>
                 </section>
+                <section>
+                    <h2>Helpdesk</h2>
+                    <p>
+                        If you are looking for IT support relating to a website or hosting we provide for your business.
+                        Please click below to submit a support ticket.
+                    </p>
+                    <a href="https://support.headforwards.com/" target="_blank" rel="noreferrer">
+                        Submit support ticket
+                    </a>
+                </section>
             </section>
         </section>
     );
