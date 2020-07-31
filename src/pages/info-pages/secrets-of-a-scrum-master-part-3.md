@@ -15,7 +15,7 @@ introduction:
         his take on the role.
 
 
-        #### Series links
+        ### Series links
 
 
         [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
