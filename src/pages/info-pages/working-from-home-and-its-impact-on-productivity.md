@@ -1,7 +1,7 @@
 ---
 bannerImage: /uploads/dsc08858.jpg
 title: Working from home and its impact on productivity
-subtitle: The world of work has changed
+subtitle: ""
 introduction:
   title: ""
   content: []
