@@ -105,6 +105,9 @@ components:
 
 
           [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
+
+
+          **Secrets of a Scrum Master | Part Three**
   - type: article-component
     title: Further Reading
     articles:
