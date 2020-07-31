@@ -72,6 +72,9 @@ function Footer({ footerLinks, companyInfo, callToAction }) {
                     <section className={styles.legal}>
                         <Link to="/privacy-notice">Privacy Policy</Link>
                         <Link to="/terms-of-use">Terms of Use</Link>
+                        <a href="https://support.headforwards.com" target="_blank" rel="noreferrer">
+                            Submit Support Ticket
+                        </a>
                     </section>
                 </section>
             </address>
