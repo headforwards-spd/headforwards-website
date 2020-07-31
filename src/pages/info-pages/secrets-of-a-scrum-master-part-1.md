@@ -5,7 +5,8 @@ subtitle: ""
 introduction:
   content:
     - type: markdown-component
-      text: This is the first in a series where Headforwards Scrum Masters reveal
+      text: >-
+        This is the first in a series where Headforwards Scrum Masters reveal
         insights into their role. A lot has been written about agile methodology
         and the role of Scrum Master. Being a Scrum Master requires a wide range
         of interpersonal and facilitator skills. While there are a set of
@@ -13,6 +14,18 @@ introduction:
         own take on the practice. We asked three of our own to talk about their
         focal points when practising the art of Scrum. Mike Fosker talks about
         his take on the role.
+
+
+        ### Series links
+
+
+        [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
+
+
+        *Secrets of a Scrum Master | Part Two (Coming soon)*
+
+
+        *Secrets of a Scrum Master | Part Three (Coming soon)*
   title: Introduction
 summary:
   text: We asked three of our own to talk about their focal points when practising
@@ -104,6 +117,18 @@ components:
 
 
           This growth mindset is one of the most important characteristics that you can help to nurture in your team. Seeing your team develop this attitude, to the point where they become really ambitious about taking on highly complex and tough projects, is one of the most rewarding aspects of the Scrum Master’s role.
+
+
+          ### Series links
+
+
+          [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
+
+
+          *Secrets of a Scrum Master | Part Two (Coming soon)*
+
+
+          *Secrets of a Scrum Master | Part Three (Coming soon)*
     image: ""
   - type: article-component
     articles:
