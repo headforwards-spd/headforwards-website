@@ -98,7 +98,7 @@ components:
           Treat everyone as a peer and  treat everyone with equal respect and generosity of spirit, whether they are the most junior person in the company or the owner of the company. Respect others and you will soon win the respect of others.
 
 
-          #### Series links
+          ### Series links
 
 
           [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
