@@ -15,15 +15,16 @@ introduction:
         his take on the role.
 
 
-
-
-        **Series links**
+        #### Series links
 
 
         [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
 
 
         [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
+
+
+        **Secrets of a Scrum Master | Part Three**
   title: Introduction
 summary:
   image: /uploads/head-1.jpg
