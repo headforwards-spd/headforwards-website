@@ -22,7 +22,7 @@ introduction:
         [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
 
 
-        *Secrets of a Scrum Master | Part Two (Coming soon)*
+        [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
 
 
         *Secrets of a Scrum Master | Part Three (Coming soon)*
@@ -125,7 +125,7 @@ components:
           [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
 
 
-          *Secrets of a Scrum Master | Part Two (Coming soon)*
+          [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
 
 
           *Secrets of a Scrum Master | Part Three (Coming soon)*
@@ -133,7 +133,7 @@ components:
   - type: article-component
     articles:
       - linkText: Read more
-        link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+        link: df986270-cb66-11ea-8e96-b7fc142baae4
       - linkText: Read more
         link: 0cd74ed0-0fac-11ea-843f-932c76de5936
     title: Further reading
