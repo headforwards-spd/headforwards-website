@@ -122,6 +122,9 @@ components:
           We have a simple system in place that will enable us to closely monitor our productivity into the future – wherever our teams are located.
 
 
+          [View image full size](https://deploy-preview-176--headforwards-website2.netlify.app/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg)
+
+
           ![](/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg)
   - type: article-component
     articles:
