@@ -110,16 +110,6 @@ components:
     content:
       - type: markdown-component
         text: >-
-          Like businesses across the country, we have now had an enforced ‘test’
-          of working from home, from which we have learnt a great deal.  
-
-
-          We want to explore making more long-term remote working options available to staff in future but without losing the collaborative benefits of office working. It may be that the ideal solution is a mix of working environments, building on the respective benefits of both.
-
-
-          We have a simple system in place that will enable us to closely monitor our productivity into the future – wherever our teams are located.
-
-
           ### Our 8 top tips for working from home
 
 
