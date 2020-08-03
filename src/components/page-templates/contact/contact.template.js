@@ -52,11 +52,11 @@ function Contact({ companyName, mapUrl, email, phone, address, registeredAddress
                         <dd>
                             <Link to={`mailto:${email}`}>{email}</Link>
                         </dd>
-                        <dt>Recruitment Agencies.</dt>
+                        <dt>Recruitment agencies.</dt>
                         <dd>
                             <Link to="/careers/recruitment-agencies/">Please click here</Link>
                         </dd>
-                        <dt>Helpdesk.</dt>
+                        <dt>Help desk.</dt>
                         <dd>
                             <a href="https://support.headforwards.com/" target="_blank" rel="noreferrer">
                                 Submit support ticket
