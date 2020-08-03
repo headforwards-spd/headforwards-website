@@ -115,8 +115,19 @@ components:
           We want to explore making more long-term remote working options available to staff in future but without losing the collaborative benefits of office working. It may be that the ideal solution is a mix of working environments, building on the respective benefits of both.
 
 
+          We have a simple system in place that will enable us to closely monitor our productivity into the future – wherever our teams are located.
+
+
+          Like businesses across the country, we have now had an enforced ‘test’ of working from home, from which we have learnt a great deal. We realised there are lots of simple tweaks you can make to stay productive while working from home and have compiled the best ones into a handy infographic, so you can try them all and see what works for you.
+
+
+          We want to explore making more long-term remote working options available to staff in future but without losing the collaborative benefits of office working. It may be that the ideal solution is a mix of working environments, building on the respective benefits of both.
+
 
           We have a simple system in place that will enable us to closely monitor our productivity into the future – wherever our teams are located.
+
+
+          ![](/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards_web.png)
   - type: article-component
     articles:
       - linkText: Read more
