@@ -127,7 +127,7 @@ components:
           We have a simple system in place that will enable us to closely monitor our productivity into the future – wherever our teams are located.
 
 
-          ![](/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards_web.png)
+          ![](/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg)
   - type: article-component
     articles:
       - linkText: Read more
