@@ -29,11 +29,8 @@ introduction:
         *Secrets of a Scrum Master | Part Three (Coming Soon)*
 summary:
   image: /uploads/dsc09561.jpg
-  text: Being a Scrum Master requires a wide range of interpersonal and
-    facilitator skills. While there are a set of principles that Scrum Masters
-    typically adhere to, everybody has their own take on the practice. We asked
-    three of our own to talk about their focal points when practising the art of
-    Scrum.
+  text: We asked three of our own to talk about their focal points when practising
+    the art of Scrum.
 author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
 publishedDate: 2020-08-04T15:16:35.650Z
 components:
@@ -155,6 +152,9 @@ components:
 footerLinks: []
 seo:
   slug: secrets-of-a-scrum-master-part-2
+  description: We asked three of our own to talk about their focal points when
+    practising the art of Scrum.
+  title: Secrets of a Scrum Master | Part Two
 uuid: df986270-cb66-11ea-8e96-b7fc142baae4
 type: blog-page
 parent: insights
