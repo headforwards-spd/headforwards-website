@@ -1,12 +1,12 @@
 ---
-bannerImage: /uploads/claudio-schwarz-purzlbaum-brejy-akxv8-unsplash-1-.jpg
+bannerImage: /uploads/kate-sade-2zzp12chxhu-unsplash.jpg
 title: Working from home and its impact on productivity
 subtitle: ""
 introduction:
   title: ""
   content: []
 summary:
-  image: /uploads/claudio-schwarz-purzlbaum-brejy-akxv8-unsplash-1-.jpg
+  image: /uploads/kate-sade-2zzp12chxhu-unsplash.jpg
   text: As staff around the world have moved to working from home during lockdown,
     Headforwards has looked at its productivity impact in comparison with office
     based working.
