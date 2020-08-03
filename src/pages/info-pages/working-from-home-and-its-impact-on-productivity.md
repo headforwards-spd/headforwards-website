@@ -25,33 +25,23 @@ components:
           this adjustment at very short notice.  
 
 
-          The Office for National Statistics says that 49% of UK workers reported working from home at some point in the seven days to 14 June 2020. The fact that so many people have now had this experience is likely to lead to a major change in working practices in the future.
+          The [Office for National Statistics](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/coronavirusandhomeworkingintheuk/april2020#main-points) says that 49% of UK workers reported working from home at some point in the seven days to 14 June 2020. The fact that so many people have now had this experience is likely to lead to a major change in working practices in the future.
 
 
           Many experts believe that there will now be a permanent shift to more working from home. This is because the experience of home working has demonstrated to businesses and their employees the range of benefits that it can bring. Working from home can allow people to work smarter and to achieve more with their time and resources, as well as achieve a better work-life balance. Staff can avoid the need for commuting and the stress associated with it, freeing up more time and energy to be invested in productive work.  These factors can improve staff morale and lead to better staff retention and loyalty. There is certainly evidence building to prove the case that home working can enhance productivity.
-    title: The world of work has changed
-  - type: image-copy-component
-    isRightImage: false
-    isPostit: false
-    isTwoColumns: false
-    content:
-      - type: markdown-component
-        text: >-
-          A survey by Airtasker in the USA found that remote employees work
-          more. On average, remote employees worked 1.4 more days every month,
-          or almost 17 more days every year, than those who worked in an office.
-          Meanwhile, research by Jabra in June 2020 has indicated that a
-          majority of people working from home during the pandemic felt that
-          they were more productive as a result.
+
+
+          [A survey by Airtasker](https://www.airtasker.com/blog/the-benefits-of-working-from-home/) in the USA found that remote employees work more. On average, remote employees worked 1.4 more days every month, or almost 17 more days every year, than those who worked in an office. Meanwhile, research by Jabra in June 2020 has indicated that a majority of people working from home during the pandemic felt that they were more productive as a result.
 
 
           On the other hand, working in an office can have important benefits too. The value of face to face communications and a sense of personal connection is enormous and this can be an important contributor to staff motivation. Simple things such as shared whiteboards can be surprisingly helpful. There is also the ‘buzz’ of the office, which is impossible to replicate in a virtual environment. Even random chats at the watercooler can spark ideas and identify new opportunities or solutions.
 
 
-          Agile was originally designed around the premise of co-located teams and so it is quite a change for an Agile company to experience working in a completely different way.
-    image: ""
+          Agile was originally designed around the premise of co-located teams and so it is quite a change for an [Agile company](https://www.headforwards.com/who-we-are/what-we-believe/) to experience working in a completely different way.
+    title: The world of work has changed
   - type: images-component
-    imageOne: /uploads/vadim-kaipov-wbnjmea2d-0-unsplash-1-.jpg
+    imageOne: /uploads/luke-peters-b6jinerwmz0-unsplash-1-.jpg
+    imageTwo: /uploads/thought-catalog-uk78i6vk3sc-unsplash.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -80,7 +70,7 @@ components:
           User stories are an integral part of our agile approach. The purpose of them is to encourage the team to focus on the value of the requirement. They are expressed from the point of view of the user and explain the reason for the functionality and the benefit it will bring. Our teams are used to focusing on delivering the most valuable stories first, so we were comfortable that using the number of stories completed was a good proxy for measuring productivity.
 
 
-          Since we use Azure DevOps to keep track of all the teams’ backlogs, we had a few reporting options available to us. We decided to build reports using Microsoft’s Power BI platform which had good integrations with Azure DevOps and enabled us to easily extend our reporting to pull in additional datasets and make the reports available to people who do not use Azure DevOps often.
+          Since we use [Azure DevOps](https://azure.microsoft.com/en-gb/services/devops/) to keep track of all the teams’ backlogs, we had a few reporting options available to us. We decided to build reports using Microsoft’s Power BI platform which had good integrations with Azure DevOps and enabled us to easily extend our reporting to pull in additional datasets and make the reports available to people who do not use Azure DevOps often.
 
 
           We created an Analytics View in Azure DevOps that retrieved a historical summary of all our teams work since the start of 2019. This let us see every change to a story’s status over time and was the basis of our historical reporting. Using Power BI measures, we calculated the average number of stories that we completed each month during 2019 and used this as a comparison with 2020 data.
