@@ -113,7 +113,7 @@ components:
           ### Our 8 top tips for working from home
 
 
-          Like businesses across the country, we have now had an enforced ‘test’ of working from home, from which we have learnt a great deal. We realised there are lots of simple tweaks you can make to stay productive while working from home and have compiled the best ones into a handy infographic, so you can try them all and see what works for you.
+          Like businesses across the country, we have now had an enforced ‘test’ of working from home, from which we have learnt a great deal. We realised there are lots of simple tweaks you can make to stay productive while working from home and have compiled the best ones into a [handy infographic](https://deploy-preview-176--headforwards-website2.netlify.app/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg), so you can try them all and see what works for you.
 
 
           We want to explore making more long-term remote working options available to staff in future but without losing the collaborative benefits of office working. It may be that the ideal solution is a mix of working environments, building on the respective benefits of both.
