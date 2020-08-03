@@ -1,6 +1,7 @@
 import { bool, number, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import styles from './markdown.module.scss';
 
 import preventOrphans from '../../lib/prevent-orphans';
 
@@ -28,7 +29,7 @@ function Markdown({ source = '', className, truncate, maxLength }) {
     }
 
     return !truncate ? (
-        <ReactMarkdown source={fancyText} className={className} />
+        <ReactMarkdown source={fancyText} className={`${styles.markdown} ${className}`} />
     ) : (
         <p className={className}>{fancyText}</p>
     );
