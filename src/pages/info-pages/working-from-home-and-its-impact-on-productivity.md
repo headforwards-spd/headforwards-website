@@ -49,7 +49,9 @@ components:
 
 
           Agile was originally designed around the premise of co-located teams and so it is quite a change for an Agile company to experience working in a completely different way.
-    image: /uploads/vadim-kaipov-wbnjmea2d-0-unsplash-1-.jpg
+    image: ""
+  - type: images-component
+    imageOne: /uploads/vadim-kaipov-wbnjmea2d-0-unsplash-1-.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
