@@ -92,14 +92,11 @@ components:
 
 
           This suggests that we may be very slightly less productive during Q2 than we were during Q2 2019. However, the difference is very small and during Q1 we delivered noticeably more than Q1 2019. It is not uncommon for teams to have a slight dip in their output after periods of higher than normal delivery, so this was not a concern for us. In summary, using Power BI and data already within our backlog management system, we quickly created a report that gave us confidence that the very different working arrangements during Q2 2020 have not had a significant impact on our delivery.
-  - type: image-copy-component
-    isRightImage: false
-    isPostit: false
-    isTwoColumns: false
-    title: Looking to the future
-    content:
-      - type: markdown-component
-        text: >-
+
+
+          ## Looking to the future
+
+
           ### Our 8 top tips for working from home
 
 
