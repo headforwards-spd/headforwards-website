@@ -112,9 +112,6 @@ components:
           We realised there are lots of simple tweaks you can make to stay productive while working from home and have compiled the best ones into a [handy infographic](https://deploy-preview-176--headforwards-website2.netlify.app/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg), so you can try them all and see what works for you.
 
 
-          [View image full size](https://deploy-preview-176--headforwards-website2.netlify.app/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg)
-
-
           ![](/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards.jpg)
       - type: markdown-component
         text: >-
