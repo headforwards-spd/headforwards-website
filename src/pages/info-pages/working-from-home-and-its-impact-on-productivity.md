@@ -76,7 +76,7 @@ components:
           We created an Analytics View in Azure DevOps that retrieved a historical summary of all our teams work since the start of 2019. This let us see every change to a story’s status over time and was the basis of our historical reporting. Using Power BI measures, we calculated the average number of stories that we completed each month during 2019 and used this as a comparison with 2020 data.
 
 
-          ![Completed Stories by Month Compared to 2019 Monthly Average Chart](/uploads/completed_stories_by_month_compared_2019_monthly_average_chart_small.png "Completed Stories by Month Compared to 2019 Monthly Average Chart")
+          ![Completed Stories by Month Compared to 2019 Monthly Average Chart](/uploads/completed_stories_by_month_compared_2019_monthly_average_chart.png "Completed Stories by Month Compared to 2019 Monthly Average Chart")
 
 
           This showed that we have a significant amount of monthly volatility with the number of stories that the teams completed each month. Looking at the data from the start of 2019 there does not appear to be a clear yearly trend, although January and August do appear to be lower than other months. We also compared the number of stories completed by quarter rather than by month. This showed similar volatility, but trends were less obvious.
@@ -88,7 +88,7 @@ components:
           Both views suggested that the work completed during lockdown was within our expected levels of volatility. After a surprisingly strong March, our delivery levels settled to a similar level to 2019. This indicated that the lockdown had not negatively impacted our delivery productivity. While we were building high level reporting, we compared our 2020 data to the equivalent month in 2019 to see if that highlighted any areas for concern.
 
 
-          ![Completed Stories by Month Compared to 2019 Chart](/uploads/completed_stories_by_month_compared_2019_chart_small.png "Completed Stories by Month Compared to 2019 Chart")
+          ![Completed Stories by Month Compared to 2019 Chart](/uploads/completed_stories_by_month_compared_2019_chart.png "Completed Stories by Month Compared to 2019 Chart")
 
 
           This suggests that we may be very slightly less productive during Q2 than we were during Q2 2019. However, the difference is very small and during Q1 we delivered noticeably more than Q1 2019. It is not uncommon for teams to have a slight dip in their output after periods of higher than normal delivery, so this was not a concern for us. In summary, using Power BI and data already within our backlog management system, we quickly created a report that gave us confidence that the very different working arrangements during Q2 2020 have not had a significant impact on our delivery.
@@ -115,7 +115,7 @@ components:
           [View image full size](https://deploy-preview-176--headforwards-website2.netlify.app/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg)
 
 
-          ![](/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg)
+          ![](/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards.jpg)
   - type: article-component
     articles:
       - linkText: Read more
