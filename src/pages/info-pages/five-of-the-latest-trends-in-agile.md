@@ -1,10 +1,10 @@
 ---
-bannerImage: /uploads/team-6.jpg
+bannerImage: /uploads/postit-2.jpg
 title: "Five of the latest trends in Agile  "
 summary:
   text: Discover five of the current trends which are transforming Agile and will
     help shape the way Agile evolves into 2021 and beyond.
-  image: /uploads/team-6.jpg
+  image: /uploads/postit-2.jpg
 author: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
 publishedDate: 2020-08-06T12:29:42.193Z
 components:
@@ -14,21 +14,28 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: >-
-          It is now nearly two decades since the launch of The Agile Manifesto,
-          yet Agile continues to grow in importance as it is embraced by more
-          and more organisations.  
+        text: "It is now nearly two decades since the launch of The Agile Manifesto, yet
+          Agile continues to grow in importance as it is embraced by more and
+          more organisations. \ 
 
 
-          For the very first time in 2020 the Project Management Institute (which is regarded as the global leader in project management training) announced that it was introducing familiarity with Agile concepts as part of the necessary skillset for their Project Management Professional (PMP) Certification – a reminder of the extent to which Agile is now at the heart of mainstream project management thinking. 
+          For the very first time in 2020 the Project Management
+          Institute (which is regarded as the global leader in project
+          management training) announced that it was introducing familiarity
+          with Agile concepts as part of the necessary skillset for their
+          Project Management Professional (PMP) Certification – a reminder of
+          the extent to which Agile is now at the heart of mainstream project
+          management thinking.\ 
 
 
-          Agile is here to stay – but Agile development continues to evolve as companies explore new and better ways of working.  
+          Agile is here to stay – but Agile development continues to
+          evolve as companies explore new and better ways of working. \ 
 
 
-          Check out some of the current trends we are seeing in the industry, which will shape and define Agile into 2021 and beyond.
-      - type: markdown-component
-        text: "## 1. Scrum at Scale\ 
+          Check out some of the current trends we are seeing in the
+          industry, which will shape and define Agile into 2021 and beyond.
+
+          ## 1. Scrum at Scale\ 
 
 
           Extending Agile from individual Scrum teams to large scale
@@ -88,7 +95,7 @@ components:
           charged with implementing agile at scale and across organisations.
           Over the next decade, we are likely to see more enterprises setting up
           a centralised Agile team to oversee the implementation of agile. "
-    title: Introduction
+    title: ""
   - type: images-component
     imageOne: /uploads/headforwards-14.jpg
     imageTwo: /uploads/dsc08876.jpg
@@ -179,6 +186,7 @@ components:
         link: 45d05450-103a-11ea-9ef0-bd54961b4e30
       - linkText: Read more
         link: 0cd74ed0-0fac-11ea-843f-932c76de5936
+callToAction: Looking to understand how Agile can help your business?
 seo:
   description: Discover five of the current trends which are transforming Agile
     and will help shape the way Agile evolves into 2021 and beyond
