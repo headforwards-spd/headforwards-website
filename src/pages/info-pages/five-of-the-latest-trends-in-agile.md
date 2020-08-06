@@ -14,168 +14,49 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: "It is now nearly two decades since the launch of The Agile Manifesto, yet
-          Agile continues to grow in importance as it is embraced by more and
-          more organisations. \ 
+        text: >-
+          It is now nearly two decades since the launch of The Agile Manifesto,
+          yet Agile continues to grow in importance as it is embraced by more
+          and more organisations.  
 
 
-          For the very first time in 2020 the Project Management
-          Institute (which is regarded as the global leader in project
-          management training) announced that it was introducing familiarity
-          with Agile concepts as part of the necessary skillset for their
-          Project Management Professional (PMP) Certification – a reminder of
-          the extent to which Agile is now at the heart of mainstream project
-          management thinking.\ 
+          For the very first time in 2020 the Project Management Institute (which is regarded as the global leader in project management training) announced that it was introducing familiarity with Agile concepts as part of the necessary skillset for their Project Management Professional (PMP) Certification – a reminder of the extent to which Agile is now at the heart of mainstream project management thinking. 
 
 
-          Agile is here to stay – but Agile development continues to
-          evolve as companies explore new and better ways of working. \ 
+          Agile is here to stay – but Agile development continues to evolve as companies explore new and better ways of working.  
 
 
-          Check out some of the current trends we are seeing in the
-          industry, which will shape and define Agile into 2021 and beyond.
-
-          ## 1. Scrum at Scale\ 
+          Here are some of the current trends we are seeing in the industry, which will shape and define Agile into 2021 and beyond.
 
 
-          Extending Agile from individual Scrum teams to large scale
-          programmes is gaining traction.\ 
+          ## 1. Scrum at Scale
 
 
-          Scrum, as defined in the Scrum Guide, was originally
-          envisaged as a framework for developing and delivering products by a
-          single team. Scrum is now increasingly being scaled across many high
-          performance teams within an organisation and the Scrum at Scale
-          organisation has been created to find effective ways of co-ordinating
-          this new eco system of multiple teams.\ 
+          Extending Agile from individual Scrum teams to large scale programmes is gaining traction. 
 
 
-          We are now seeing new practices emerging which are designed
-          for a scaled setting, such as the ‘Scrum of Scrums’ to understand
-          collective progress and be responsive to any issues raised by
-          individual teams; and a Scaled Daily Scrum (SDS) which people from
-          participating teams attend.\ 
+          Scrum, as defined in the Scrum Guide, was originally envisaged as a framework for developing and delivering products by a single team. Scrum is now increasingly being scaled across many high performance teams within an organisation and the Scrum at Scale organisation has been created to find effective ways of co-ordinating this new eco system of multiple teams. 
 
 
-          The Scrum at Scale organisation has already published
-          several white papers on applying the Scrum@Scale model to improve
-          efficiency and momentum will continue as this organisation and others
-          explore the best ways of implementing scrum at scale.
+          We are now seeing new practices emerging which are designed for a scaled setting, such as the ‘Scrum of Scrums’ to understand collective progress and be responsive to any issues raised by individual teams; and a Scaled Daily Scrum (SDS) which people from participating teams attend. 
 
 
-          ## 2. Agile is being rolled out across organisations  \r
-
-          \r
-
-          We are now seeing Agile principles rolled out beyond
-          software development to other functions of the company –Agile Human
-          Resources, Agile Marketing, Agile Engineering and so on.  \r
-
-          \r
-
-          This trend can be seen across a number of frameworks and
-          discussion this year. The Scaled Agile Framework (SAFe version 5.0)
-          which was released in January 2020, includes the addition  “Business
-          Agility” for the first time. SAFe is one of the hottest things amongst
-          large companies today and this upward trend is likely to continue. \r
-
-          \r
-
-          The concept of Enterprise Agile will become increasingly
-          mainstream, as the principles of constant feedback and rapid iteration
-          are equally valid right across organisations. Agile is being
-          increasingly sought as businesses seek to improve productivity and
-          competitiveness.  \r
-
-          \r
-
-          Reflecting this trend, we are also seeing a growth in Agile
-          Coaching. In contrast to Scrum Masters, who act as strategic coaches
-          for their teams, Agile Coaches operate at organisational level,
-          charged with implementing agile at scale and across organisations.
-          Over the next decade, we are likely to see more enterprises setting up
-          a centralised Agile team to oversee the implementation of agile. "
-      - text: "It is now nearly two decades since the launch of The Agile Manifesto, yet
-          Agile continues to grow in importance as it is embraced by more and
-          more organisations. \ 
+          The Scrum at Scale organisation has already published several white papers on applying the Scrum@Scale model to improve efficiency and momentum will continue as this organisation and others explore the best ways of implementing scrum at scale.
 
 
-          For the very first time in 2020 the Project Management
-          Institute (which is regarded as the global leader in project
-          management training) announced that it was introducing familiarity
-          with Agile concepts as part of the necessary skillset for their
-          Project Management Professional (PMP) Certification – a reminder of
-          the extent to which Agile is now at the heart of mainstream project
-          management thinking.\ 
+          ## 2. Agile is being rolled out across organisations
 
 
-          Agile is here to stay – but Agile development continues to
-          evolve as companies explore new and better ways of working. \ 
+          We are now seeing Agile principles rolled out beyond software development to other functions of the company –Agile Human Resources, Agile Marketing, Agile Engineering and so on.  
 
 
-          Here are some of the current trends we are seeing in the
-          industry, which will shape and define Agile into 2021 and beyond.
-
-          ## 1. Scrum at Scale\ 
+          This trend can be seen across a number of frameworks and discussion this year. The Scaled Agile Framework (SAFe version 5.0) which was released in January 2020, includes the addition  “Business Agility” for the first time. SAFe is one of the hottest things amongst large companies today and this upward trend is likely to continue. 
 
 
-          Extending Agile from individual Scrum teams to large scale
-          programmes is gaining traction.\ 
+          The concept of Enterprise Agile will become increasingly mainstream, as the principles of constant feedback and rapid iteration are equally valid right across organisations. Agile is being increasingly sought as businesses seek to improve productivity and competitiveness.  
 
 
-          Scrum, as defined in the Scrum Guide, was originally
-          envisaged as a framework for developing and delivering products by a
-          single team. Scrum is now increasingly being scaled across many high
-          performance teams within an organisation and the Scrum at Scale
-          organisation has been created to find effective ways of co-ordinating
-          this new eco system of multiple teams.\ 
-
-
-          We are now seeing new practices emerging which are designed
-          for a scaled setting, such as the ‘Scrum of Scrums’ to understand
-          collective progress and be responsive to any issues raised by
-          individual teams; and a Scaled Daily Scrum (SDS) which people from
-          participating teams attend.\ 
-
-
-          The Scrum at Scale organisation has already published
-          several white papers on applying the Scrum@Scale model to improve
-          efficiency and momentum will continue as this organisation and others
-          explore the best ways of implementing scrum at scale.
-
-
-          ## 2. Agile is being rolled out across organisations  \r
-
-          \r
-
-          We are now seeing Agile principles rolled out beyond
-          software development to other functions of the company –Agile Human
-          Resources, Agile Marketing, Agile Engineering and so on.  \r
-
-          \r
-
-          This trend can be seen across a number of frameworks and
-          discussion this year. The Scaled Agile Framework (SAFe version 5.0)
-          which was released in January 2020, includes the addition  “Business
-          Agility” for the first time. SAFe is one of the hottest things amongst
-          large companies today and this upward trend is likely to continue. \r
-
-          \r
-
-          The concept of Enterprise Agile will become increasingly
-          mainstream, as the principles of constant feedback and rapid iteration
-          are equally valid right across organisations. Agile is being
-          increasingly sought as businesses seek to improve productivity and
-          competitiveness.  \r
-
-          \r
-
-          Reflecting this trend, we are also seeing a growth in Agile
-          Coaching. In contrast to Scrum Masters, who act as strategic coaches
-          for their teams, Agile Coaches operate at organisational level,
-          charged with implementing agile at scale and across organisations.
-          Over the next decade, we are likely to see more enterprises setting up
-          a centralised Agile team to oversee the implementation of agile. "
+          Reflecting this trend, we are also seeing a growth in Agile Coaching. In contrast to Scrum Masters, who act as strategic coaches for their teams, Agile Coaches operate at organisational level, charged with implementing agile at scale and across organisations. Over the next decade, we are likely to see more enterprises setting up a centralised Agile team to oversee the implementation of agile.
     title: ""
   - type: images-component
     imageOne: /uploads/headforwards-14.jpg
