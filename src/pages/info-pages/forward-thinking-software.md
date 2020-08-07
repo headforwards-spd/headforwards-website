@@ -113,9 +113,6 @@ components:
 
 
           ### [Register interest](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
-
-
-          ![](/uploads/get-in-touch-cta.svg)
   - type: article-component
     articles:
       - linkText: Read more
