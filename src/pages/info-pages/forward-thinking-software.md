@@ -98,7 +98,34 @@ components:
     image: ""
     content:
       - type: markdown-component
-        text: "*Team shots here*"
+        text: "*Meet the team*"
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    content:
+      - type: markdown-component
+        text: bio for helen
+    image: /uploads/2020-07-15-09_24_23-0-478×478-.png
+    title: Helen Stembridge
+  - type: image-copy-component
+    isRightImage: true
+    isPostit: false
+    isTwoColumns: false
+    title: Tom Clarke
+    image: /uploads/team-4.jpg
+    content:
+      - type: markdown-component
+        text: bio for tom also need his photo
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    title: Jon Dodkins
+    image: /uploads/team-5.jpg
+    content:
+      - type: markdown-component
+        text: bio for jon
   - type: image-copy-component
     isRightImage: false
     isPostit: false
