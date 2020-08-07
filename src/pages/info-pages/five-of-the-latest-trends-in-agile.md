@@ -67,81 +67,35 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: "## 3. Distributed Agile teams \r
+        text: >-
+          ## 3. Distributed Agile teams
 
-          \r
 
-          Agile was originally designed on the premise of co-located
-          teams that can easily communicate with each other and respond quickly
-          to change. The rise in working from home (rapidly accelerated as a
-          result of the coronavirus pandemic) means that many teams are now
-          working remotely. This is creating fresh challenges as the newly
-          distributed teams need to invent new ways of achieving the same
-          quality of close communication and responsiveness as a co-located
-          team.  \r
+          Agile was originally designed on the premise of co-located teams that can easily communicate with each other and respond quickly to change. The rise in working from home (rapidly accelerated as a result of the coronavirus pandemic) means that many teams are now working remotely. This is creating fresh challenges as the newly distributed teams need to invent new ways of achieving the same quality of close communication and responsiveness as a co-located team.  
 
-          \r
 
-          At the same time, global outsourcing continues to grow apace
-          and again this can in some cases mean teams are virtual. Although
-          co-location is seen as the best practice, many Agile teams are now
-          distributed. Technology is being used to overcome the challenges of
-          physical distance and Agile management tools such as Storyteller are
-          being used to track and monitor outsourcing activities, improving
-          collaboration and ensuring alignment. \r
+          At the same time, global outsourcing continues to grow apace and again this can in some cases mean teams are virtual. Although co-location is seen as the best practice, many Agile teams are now distributed. Technology is being used to overcome the challenges of physical distance and Agile management tools such as Storyteller are being used to track and monitor outsourcing activities, improving collaboration and ensuring alignment. 
 
-          \r
 
-          It is likely that in the post-pandemic world, Agile will
-          continue to evolve in ways that transcend the need for co-location and
-          finds new ways of optimising agile performance in distributed teams.
-          \r
+          It is likely that in the post-pandemic world, Agile will continue to evolve in ways that transcend the need for co-location and finds new ways of optimising agile performance in distributed teams. 
 
-          \r
 
-          ## 4. AI and Machine Learning is boosting agility \r
+          ## 4. AI and Machine Learning is boosting agility
 
-          \r
 
-          Artificial Intelligence (AI) is now boosting our agility,
-          speeding up processes and increasing efficiency. AI is being used to
-          help Agile teams make smart decisions about their Agile practice, and
-          Machine Learning is eradicating some predictable and monotonous tasks,
-          freeing up staff to work on tasks that add more value. \r
+          Artificial Intelligence (AI) is now boosting our agility, speeding up processes and increasing efficiency. AI is being used to help Agile teams make smart decisions about their Agile practice, and Machine Learning is eradicating some predictable and monotonous tasks, freeing up staff to work on tasks that add more value. 
 
-          \r
 
-          With the emergence of AI and Machine Learning, the software
-          development industry is undergoing transformation on an unprecedented
-          scale, streamlining continuous testing for faster releases and
-          accelerated delivery.  This is turbo-charging the whole environment in
-          which Agile operates. \r
+          With the emergence of AI and Machine Learning, the software development industry is undergoing transformation on an unprecedented scale, streamlining continuous testing for faster releases and accelerated delivery.  This is turbo-charging the whole environment in which Agile operates. 
 
-          \r
 
-          ## 5. Greater management and tracking of business value  \r
+          ## 5. Greater management and tracking of business value
 
-          \r
 
-          There is an upward trend on managing and tracking the
-          delivery of business value.  As Agile becomes increasingly embedded
-          within organisations, there is a new emphasis on evaluating business
-          value, so it can be optimised. We are seeing this happening through a
-          number of different tools and techniques, including value stream
-          management (VSM), and metric/results tracking tools such as
-          Pluralsight Flow. Teams who adopt these approaches to manage and track
-          business value will be able to make data-driven decisions and
-          prioritizations.These new tools can provide the deeper insights that
-          enable teams to continue to improve and deliver greater value to
-          stakeholders. \r
+          There is an upward trend on managing and tracking the delivery of business value.  As Agile becomes increasingly embedded within organisations, there is a new emphasis on evaluating business value, so it can be optimised. We are seeing this happening through a number of different tools and techniques, including value stream management (VSM), and metric/results tracking tools such as Pluralsight Flow. Teams which adopt these approaches to manage and track business value will be able to make data-driven decisions and prioritizations. These new tools can provide the deeper insights that enable teams to continue to improve and deliver greater value to stakeholders. 
 
-          \r
 
-          For Headforwards, as one of the first pioneers in Agile in
-          the UK, this is an exciting time. As Agile grows worldwide through
-          scaling frameworks and whole-organisation transformations, we are
-          looking forward to staying at the cutting edge of Agile and continuing
-          to innovate. "
+          For Headforwards, as one of the first pioneers in Agile in the UK, this is an exciting time. As Agile grows worldwide through scaling frameworks and whole-organisation transformations, we are looking forward to staying at the cutting edge of Agile and continuing to innovate.
   - type: article-component
     articles:
       - linkText: Read more
