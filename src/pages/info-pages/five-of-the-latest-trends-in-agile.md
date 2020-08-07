@@ -92,7 +92,7 @@ components:
           ## 5. Greater management and tracking of business value
 
 
-          There is an upward trend on managing and tracking the delivery of business value.  As Agile becomes increasingly embedded within organisations, there is a new emphasis on evaluating business value, so it can be optimised. We are seeing this happening through a number of different tools and techniques, including value stream management (VSM), and metric/results tracking tools such as Pluralsight Flow. Teams which adopt these approaches to manage and track business value will be able to make data-driven decisions and prioritizations. These new tools can provide the deeper insights that enable teams to continue to improve and deliver greater value to stakeholders. 
+          There is an upward trend on managing and tracking the delivery of business value.  As Agile becomes increasingly embedded within organisations, there is a new emphasis on evaluating business value, so it can be optimised. We are seeing this happening through a number of different tools and techniques, including value stream management (VSM), and metric/results tracking tools such as Pluralsight Flow. Teams which adopt these approaches to manage and track business value will be able to make data-driven decisions and prioritisations. These new tools can provide the deeper insights that enable teams to continue to improve and deliver greater value to stakeholders. 
 
 
           For Headforwards, as one of the first pioneers in Agile in the UK, this is an exciting time. As Agile grows worldwide through scaling frameworks and whole-organisation transformations, we are looking forward to staying at the cutting edge of Agile and continuing to innovate.
