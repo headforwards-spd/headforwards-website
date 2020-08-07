@@ -53,31 +53,31 @@ components:
     content:
       - type: markdown-component
         text: >-
-          ### Proof of Concept
+          **Proof of Concept**
 
 
           To prove whether a software idea can be built in the real world, what technologies should be used and whether the software is likely to be adopted by its intended users.
 
 
-          ### New/Initial Product Development
+          **Initial Product Development**
 
 
           Developing and launching a new product to market requiring a rapid development cycle, strategy support, UX design and customer testing all in close client collaboration.
 
 
-          ### Enterprise Project
+          **Enterprise Project**
 
 
           A stand-alone software project with enterprise wide, business goals where the client either doesn’t have the tech capability or they are at capacity with core work.
 
 
-          ### Augmented Team
+          **Augmented Team**
 
 
           A long-term dedicated team in situations where budget or other constraints don’t allow a full, cross-functional team. This model offers access to bursts of support or specialist expertise as and when appropriate.
 
 
-          ### Consultancy
+          **Consultancy**
 
 
           A wide range of workshops and coaching engagements specific to a client’s needs from Vision and Roadmap creation to Agile coaching and Agile transformation support.
@@ -99,17 +99,11 @@ components:
     content:
       - type: markdown-component
         text: |-
-          *Jon Dodkins*
+          *Jon Dodkins \[IMAGE]*
 
-          ![](/uploads/team-5.jpg)
+          *Helen Stembridge \[IMAGE]*
 
-          *Helen Stembridge*
-
-          ![](/uploads/2020-07-15-09_24_23-0-478×478-.png)
-
-          *Tom Clarke*
-
-          ![](/uploads/team-4.jpg)
+          *Tom Clarke \[IMAGE]*
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -118,9 +112,9 @@ components:
     content:
       - type: markdown-component
         text: >-
-          Fill out our short form. 
-
-          Whether you have a project ready to go or just want an informal chat about exploring opportunities, one of our team will be in touch.
+          Fill out our short form.  Whether you have a project ready to go or
+          just want an informal chat about exploring opportunities, one of our
+          team will be in touch.
 
 
           ### [Register interest](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
