@@ -98,12 +98,7 @@ components:
     image: ""
     content:
       - type: markdown-component
-        text: |-
-          *Jon Dodkins \[IMAGE]*
-
-          *Helen Stembridge \[IMAGE]*
-
-          *Tom Clarke \[IMAGE]*
+        text: "![](/uploads/team_shot.png)"
   - type: image-copy-component
     isRightImage: false
     isPostit: false
