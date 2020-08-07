@@ -29,7 +29,7 @@ components:
     content:
       - type: markdown-component
         text: >-
-          ### How we work
+          ## How we work
 
 
           Our Agile approach to software development brings value to your business from the start.
