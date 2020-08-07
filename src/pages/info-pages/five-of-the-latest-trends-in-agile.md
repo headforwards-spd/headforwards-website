@@ -20,7 +20,7 @@ components:
           and more organisations.  
 
 
-          For the very first time in 2020 the Project Management Institute (which is regarded as the global leader in project management training) announced that it was introducing familiarity with Agile concepts as part of the necessary skillset for their Project Management Professional (PMP) Certification – a reminder of the extent to which Agile is now at the heart of mainstream project management thinking. 
+          For the very first time in 2020 the Project Management Institute (which is regarded as the global leader in project management training) [announced that it was introducing familiarity](https://www.pmi.org/learning/featured-topics/agile) with Agile concepts as part of the necessary skillset for their Project Management Professional (PMP) Certification – a reminder of the extent to which Agile is now at the heart of mainstream project management thinking. 
 
 
           Agile is here to stay – but Agile development continues to evolve as companies explore new and better ways of working.  
@@ -41,7 +41,7 @@ components:
           We are now seeing new practices emerging which are designed for a scaled setting, such as the ‘Scrum of Scrums’ to understand collective progress and be responsive to any issues raised by individual teams; and a Scaled Daily Scrum (SDS) which people from participating teams attend. 
 
 
-          The Scrum at Scale organisation has already published several white papers on applying the Scrum@Scale model to improve efficiency and momentum will continue as this organisation and others explore the best ways of implementing scrum at scale.
+          The Scrum at Scale organisation has already published several white papers on applying the [Scrum@Scale](https://www.scrumatscale.com/scrum-at-scale-guide/) model to improve efficiency and momentum will continue as this organisation and others explore the best ways of implementing scrum at scale.
 
 
           ## 2. Agile is being rolled out across organisations
@@ -92,7 +92,7 @@ components:
           ## 5. Greater management and tracking of business value
 
 
-          There is an upward trend on managing and tracking the delivery of business value.  As Agile becomes increasingly embedded within organisations, there is a new emphasis on evaluating business value, so it can be optimised. We are seeing this happening through a number of different tools and techniques, including value stream management (VSM), and metric/results tracking tools such as Pluralsight Flow. Teams which adopt these approaches to manage and track business value will be able to make data-driven decisions and prioritisations. These new tools can provide the deeper insights that enable teams to continue to improve and deliver greater value to stakeholders. 
+          There is an upward trend on managing and tracking the delivery of business value.  As Agile becomes increasingly embedded within organisations, there is a new emphasis on evaluating business value, so it can be optimised. We are seeing this happening through a number of different tools and techniques, including value stream management (VSM), and metric/results tracking tools such as [Pluralsight Flow](https://www.pluralsight.com/product/flow). Teams which adopt these approaches to manage and track business value will be able to make data-driven decisions and prioritisations. These new tools can provide the deeper insights that enable teams to continue to improve and deliver greater value to stakeholders. 
 
 
           For Headforwards, as one of the first pioneers in Agile in the UK, this is an exciting time. As Agile grows worldwide through scaling frameworks and whole-organisation transformations, we are looking forward to staying at the cutting edge of Agile and continuing to innovate.
