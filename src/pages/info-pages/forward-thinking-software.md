@@ -101,7 +101,7 @@ components:
         text: "*Meet the team*"
   - type: image-copy-component
     isRightImage: false
-    isPostit: false
+    isPostit: true
     isTwoColumns: false
     content:
       - type: markdown-component
@@ -110,7 +110,7 @@ components:
     title: Helen Stembridge
   - type: image-copy-component
     isRightImage: true
-    isPostit: false
+    isPostit: true
     isTwoColumns: false
     title: Tom Clarke
     image: /uploads/team-4.jpg
@@ -119,7 +119,7 @@ components:
         text: bio for tom also need his photo
   - type: image-copy-component
     isRightImage: false
-    isPostit: false
+    isPostit: true
     isTwoColumns: false
     title: Jon Dodkins
     image: /uploads/team-5.jpg
