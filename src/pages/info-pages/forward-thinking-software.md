@@ -69,7 +69,7 @@ components:
           [**Enterprise Project** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
 
 
-          A stand-alone software project with enterprise wide, business goals where the client either doesn’t have the tech capability or they are at capacity with core work.
+          A stand-alone software project to boost enterprise capabilities to support their goals. Often our clients either don't have development teams themselves or are at capacity with other work.
 
 
           [**Augmented Team** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
