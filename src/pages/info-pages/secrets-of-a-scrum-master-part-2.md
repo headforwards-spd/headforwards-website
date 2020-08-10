@@ -26,7 +26,7 @@ introduction:
         [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
 
 
-        *Secrets of a Scrum Master | Part Three (Coming Soon)*
+        [Secrets of a Scrum Master | Part Three](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
 summary:
   image: /uploads/dsc09561.jpg
   text: We asked three of our own to talk about their focal points when practising
@@ -129,26 +129,14 @@ components:
           ## Assume good intent
 
 
-          The vast majority of people have good intentions– but communications are fallible. It is always far too easy to misinterpret what someone means and see it as being negative, critical or threatening, when in fact that was not what they intended. This is especially true in communications such as texts and emails. One simple way of avoiding this trap is to always assume that someone has positive intentions in what they are saying or doing. OK, they may not be executing it in the best possible way – but if you remind yourself that their intentions are good, this will stop you going off on a negative spiral and it will mean that you can focus on the positive. 
-
-
-          ### Series links
-
-
-          [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
-
-
-          [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
-
-
-          *Secrets of a Scrum Master | Part Three (Coming Soon)*
+          The vast majority of people have good intentions– but communications are fallible. It is always far too easy to misinterpret what someone means and see it as being negative, critical or threatening, when in fact that was not what they intended. This is especially true in communications such as texts and emails. One simple way of avoiding this trap is to always assume that someone has positive intentions in what they are saying or doing. OK, they may not be executing it in the best possible way – but if you remind yourself that their intentions are good, this will stop you going off on a negative spiral and it will mean that you can focus on the positive.
   - type: article-component
     title: Further reading
     articles:
       - linkText: Read more
         link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
       - linkText: Read more
-        link: 0cd74ed0-0fac-11ea-843f-932c76de5936
+        link: 8147d560-cb67-11ea-8e96-b7fc142baae4
 footerLinks: []
 seo:
   slug: secrets-of-a-scrum-master-part-2
