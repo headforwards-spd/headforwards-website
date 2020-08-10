@@ -86,7 +86,7 @@ components:
   - type: image-copy-component
     isRightImage: false
     isPostit: false
-    isTwoColumns: true
+    isTwoColumns: false
     title: Who we've worked with
     content:
       - type: markdown-component
@@ -94,7 +94,7 @@ components:
   - type: image-copy-component
     isRightImage: false
     isPostit: false
-    isTwoColumns: true
+    isTwoColumns: false
     title: Who you'll be working with
     image: ""
     content:
@@ -113,7 +113,7 @@ components:
           team will be in touch.
 
 
-          ## [Register interest →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
+          [Contact us →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
   - type: article-component
     articles:
       - linkText: Read more
