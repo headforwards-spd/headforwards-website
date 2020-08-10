@@ -28,11 +28,8 @@ introduction:
   title: Introduction
 summary:
   image: /uploads/head-1.jpg
-  text: Being a Scrum Master requires a wide range of interpersonal skills. While
-    there are a set of principles that Scrum Masters typically adhere to,
-    everybody has their own take on the practice. We asked three of our own to
-    talk about their focal points when practising the art of Scrum. Andy Roberts
-    talks about his take on the role.
+  text: We asked three of our own to talk about their focal points when practising
+    the art of Scrum. Andy Roberts talks about his take on the role.
 author: 8d241049-6ed4-45ff-aaf8-488d06871310
 publishedDate: 2020-08-11T08:33:56.058Z
 components:
