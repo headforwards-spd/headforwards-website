@@ -118,7 +118,9 @@ components:
           Copy the code below to embed this infographic on your website
 
 
-          `<a href="https://www.headforwards.com/insights/working-from-home-and-its-impact-on-productivity/"><img style="width:100%;" src="https://www.headforwards.com/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg"></a><br>Infographic by headforwards <a href="headforwards.com">Headforwards</a>
+          `
+
+          <a href="https://www.headforwards.com/insights/working-from-home-and-its-impact-on-productivity/"><img style="width:100%;" src="https://www.headforwards.com/uploads/how-to-work-from-home-and-be-productive-infographic-headforwards-850x5557.jpg"></a><br>Infographic by headforwards <a href="headforwards.com">Headforwards</a>
 
           `
   - type: article-component
