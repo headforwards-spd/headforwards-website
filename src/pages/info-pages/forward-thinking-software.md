@@ -49,35 +49,36 @@ components:
   - type: image-copy-component
     isRightImage: false
     isPostit: false
-    isTwoColumns: false
+    isTwoColumns: true
     content:
       - type: markdown-component
         text: >-
-          **Proof of Concept**
+          [**Proof of Concept**
+          →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
 
 
           To prove whether a software idea can be built in the real world, what technologies should be used and whether the software is likely to be adopted by its intended users.
 
 
-          **Initial Product Development**
+          [**Initial Product Development** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
 
 
           Developing and launching a new product to market requiring a rapid development cycle, strategy support, UX design and customer testing all in close client collaboration.
 
 
-          **Enterprise Project**
+          [**Enterprise Project** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
 
 
           A stand-alone software project with enterprise wide, business goals where the client either doesn’t have the tech capability or they are at capacity with core work.
 
 
-          **Augmented Team**
+          [**Augmented Team** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
 
 
           A long-term dedicated team in situations where budget or other constraints don’t allow a full, cross-functional team. This model offers access to bursts of support or specialist expertise as and when appropriate.
 
 
-          **Consultancy**
+          [**Consultancy** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
 
 
           A wide range of workshops and coaching engagements specific to a client’s needs from Vision and Roadmap creation to Agile coaching and Agile transformation support.
