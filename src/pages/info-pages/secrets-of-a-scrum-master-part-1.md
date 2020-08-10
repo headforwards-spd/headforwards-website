@@ -25,7 +25,7 @@ introduction:
         [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
 
 
-        *Secrets of a Scrum Master | Part Three (Coming soon)*
+        [Secrets of a Scrum Master | Part Three](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
   title: Introduction
 summary:
   text: We asked three of our own to talk about their focal points when practising
@@ -117,25 +117,13 @@ components:
 
 
           This growth mindset is one of the most important characteristics that you can help to nurture in your team. Seeing your team develop this attitude, to the point where they become really ambitious about taking on highly complex and tough projects, is one of the most rewarding aspects of the Scrum Master’s role.
-
-
-          ### Series links
-
-
-          [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
-
-
-          [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
-
-
-          *Secrets of a Scrum Master | Part Three (Coming soon)*
     image: ""
   - type: article-component
     articles:
       - linkText: Read more
         link: df986270-cb66-11ea-8e96-b7fc142baae4
       - linkText: Read more
-        link: 0cd74ed0-0fac-11ea-843f-932c76de5936
+        link: 8147d560-cb67-11ea-8e96-b7fc142baae4
     title: Further reading
 seo:
   slug: secrets-of-a-scrum-master-part-1
