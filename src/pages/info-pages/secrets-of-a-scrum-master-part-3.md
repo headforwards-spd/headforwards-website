@@ -96,25 +96,13 @@ components:
 
 
           Treat everyone as a peer and  treat everyone with equal respect and generosity of spirit, whether they are the most junior person in the company or the owner of the company. Respect others and you will soon win the respect of others.
-
-
-          ### Series links
-
-
-          [Secrets of a Scrum Master | Part One](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-1/)
-
-
-          [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
-
-
-          [Secrets of a Scrum Master | Part Three](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
   - type: article-component
     title: Further Reading
     articles:
       - linkText: Read more
-        link: 71165820-d322-11ea-939f-c56422732714
+        link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
       - linkText: Read more
-        link: 7c573e40-c768-11ea-b188-29f107d14181
+        link: 8147d560-cb67-11ea-8e96-b7fc142baae4
 seo:
   slug: secrets-of-a-scrum-master-part-3
 uuid: 8147d560-cb67-11ea-8e96-b7fc142baae4
