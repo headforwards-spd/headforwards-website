@@ -6,7 +6,7 @@ summary:
     help shape the way Agile evolves into 2021 and beyond.
   image: /uploads/postit-2.jpg
 author: 1a31bfe0-9c31-11ea-8da2-bb3acc74f61a
-publishedDate: 2020-08-06T12:29:42.193Z
+publishedDate: 2020-08-10T08:34:26.613Z
 components:
   - type: image-copy-component
     isRightImage: false
