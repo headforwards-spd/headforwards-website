@@ -86,7 +86,7 @@ components:
   - type: image-copy-component
     isRightImage: false
     isPostit: false
-    isTwoColumns: false
+    isTwoColumns: true
     title: Who we've worked with
     content:
       - type: markdown-component
@@ -94,7 +94,7 @@ components:
   - type: image-copy-component
     isRightImage: false
     isPostit: false
-    isTwoColumns: false
+    isTwoColumns: true
     title: Who you'll be working with
     image: ""
     content:
