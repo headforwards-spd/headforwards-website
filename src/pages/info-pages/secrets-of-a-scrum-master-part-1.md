@@ -29,7 +29,7 @@ introduction:
   title: Introduction
 summary:
   text: We asked three of our own to talk about their focal points when practising
-    the art of Scrum.
+    the art of Scrum. Mike Fosker talks about his take on the role.
   image: /uploads/head-stolen.jpg
 author: d6b8ef80-d01b-11ea-b7cd-8b72a2b29420
 publishedDate: 2020-07-28T10:18:15.813Z
