@@ -113,7 +113,7 @@ components:
           team will be in touch.
 
 
-          [Contact us →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
+          ### [Contact us →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
   - type: article-component
     articles:
       - linkText: Read more
