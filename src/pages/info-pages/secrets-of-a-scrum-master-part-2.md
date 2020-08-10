@@ -30,7 +30,7 @@ introduction:
 summary:
   image: /uploads/dsc09561.jpg
   text: We asked three of our own to talk about their focal points when practising
-    the art of Scrum.
+    the art of Scrum. Craig talks about his take on the role.
 author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
 publishedDate: 2020-08-04T15:16:35.650Z
 components:
