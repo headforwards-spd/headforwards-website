@@ -25,7 +25,7 @@ introduction:
         [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
 
 
-        *Secrets of a Scrum Master | Part Three (Coming soon)*
+        [Secrets of a Scrum Master | Part Three](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
   title: Introduction
 summary:
   text: We asked three of our own to talk about their focal points when practising
@@ -128,7 +128,7 @@ components:
           [Secrets of a Scrum Master | Part Two](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-2/)
 
 
-          *Secrets of a Scrum Master | Part Three (Coming soon)*
+          [Secrets of a Scrum Master | Part Three](https://www.headforwards.com/insights/secrets-of-a-scrum-master-part-3/)
     image: ""
   - type: article-component
     articles:
