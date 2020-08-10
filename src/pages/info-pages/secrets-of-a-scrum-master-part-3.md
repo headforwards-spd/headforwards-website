@@ -34,7 +34,7 @@ summary:
     talk about their focal points when practising the art of Scrum. Andy Roberts
     talks about his take on the role.
 author: 8d241049-6ed4-45ff-aaf8-488d06871310
-publishedDate: 2020-07-21T15:31:16.483Z
+publishedDate: 2020-08-10T08:33:56.058Z
 components:
   - type: image-copy-component
     isRightImage: false
