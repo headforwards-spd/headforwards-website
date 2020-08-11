@@ -87,14 +87,6 @@ components:
     isRightImage: false
     isPostit: false
     isTwoColumns: false
-    title: Who we've worked with
-    content:
-      - type: markdown-component
-        text: "![](/uploads/who-we-have-worked-with.png)"
-  - type: image-copy-component
-    isRightImage: false
-    isPostit: false
-    isTwoColumns: false
     title: Who you'll be working with
     image: ""
     content:
