@@ -1,11 +1,11 @@
 ---
-bannerImage: /uploads/dsc08753.jpg
+bannerImage: /uploads/dsc08106.jpg
 title: "Outsourced software development: why it makes all the difference"
 summary:
   text: Outsourcing can be the secret to software development that delivers
     long-term value for organisations across all verticals – if you choose the
     right provider.
-  image: /uploads/dsc08753.jpg
+  image: /uploads/dsc08106.jpg
 author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
 publishedDate: 2020-08-13T07:48:37.314Z
 components:
