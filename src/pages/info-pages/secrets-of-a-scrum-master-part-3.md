@@ -99,7 +99,7 @@ components:
       - linkText: Read more
         link: 321e54a0-cb67-11ea-8e96-b7fc142baae4
       - linkText: Read more
-        link: 8147d560-cb67-11ea-8e96-b7fc142baae4
+        link: df986270-cb66-11ea-8e96-b7fc142baae4
 seo:
   slug: secrets-of-a-scrum-master-part-3
 uuid: 8147d560-cb67-11ea-8e96-b7fc142baae4
