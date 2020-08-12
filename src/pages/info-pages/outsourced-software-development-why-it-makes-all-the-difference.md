@@ -1,5 +1,5 @@
 ---
-bannerImage: /uploads/dsc09867.jpg
+bannerImage: /uploads/head-stolen.jpg
 title: "Outsourced software development: why it makes all the difference"
 summary:
   text: Outsourcing can be the secret to software development that delivers
