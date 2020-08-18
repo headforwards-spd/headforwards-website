@@ -1,6 +1,11 @@
 ---
-bannerImage: /uploads/dsc08106.jpg
-title: "Outsourced software development: why it makes all the difference"
+bannerImage: /uploads/hf-i.jpg
+title: "Building partnerships: why you should consider outsourced software
+  development"
+subtitle: ""
+introduction:
+  content: []
+  title: ""
 summary:
   text: Outsourcing can be the secret to software development that delivers
     long-term value for organisations across all verticals – if you choose the
@@ -16,7 +21,7 @@ components:
     content:
       - type: markdown-component
         text: >-
-          ## What could you achieve with outsourced software development?
+          ## Why outsourced software development works
 
 
           Outsourced software development is a growth industry that’s making its mark all round the world – and it’s easy to see why.
