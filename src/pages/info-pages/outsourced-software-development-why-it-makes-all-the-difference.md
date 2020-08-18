@@ -1,7 +1,6 @@
 ---
 bannerImage: /uploads/hf-i.jpg
-title: "Building partnerships: why you should consider outsourced software
-  development"
+title: Why outsourced software development works
 subtitle: ""
 introduction:
   content: []
@@ -21,7 +20,8 @@ components:
     content:
       - type: markdown-component
         text: >-
-          ## Why outsourced software development works
+          ## Building partnerships: why you should consider outsourced software
+          development
 
 
           Outsourced software development is a growth industry that’s making its mark all round the world – and it’s easy to see why.
