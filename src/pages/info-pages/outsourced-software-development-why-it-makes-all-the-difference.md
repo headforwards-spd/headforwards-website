@@ -11,7 +11,7 @@ summary:
     right provider.
   image: /uploads/dsc08106.jpg
 author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
-publishedDate: 2020-08-13T07:48:37.314Z
+publishedDate: 2020-08-18T13:38:16.639Z
 components:
   - type: image-copy-component
     isRightImage: false
@@ -67,7 +67,7 @@ components:
     title: ""
   - type: images-component
     imageOne: /uploads/headforwards-1.jpg
-    imageTwo: /uploads/head-stolen.jpg
+    imageTwo: /uploads/dsc08270.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
