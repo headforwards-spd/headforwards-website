@@ -9,7 +9,7 @@ summary:
   text: Outsourcing can be the secret to software development that delivers
     long-term value for organisations across all verticals – if you choose the
     right provider.
-  image: /uploads/dsc08106.jpg
+  image: /uploads/hf-i.jpg
 author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
 publishedDate: 2020-08-18T13:38:16.639Z
 components:
