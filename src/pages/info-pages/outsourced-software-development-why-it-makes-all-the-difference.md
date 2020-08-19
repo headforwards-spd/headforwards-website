@@ -10,7 +10,7 @@ summary:
     long-term value for organisations across all verticals – if you choose the
     right provider.
   image: /uploads/hf-i.jpg
-author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
+author: a94440f0-c674-11ea-bc59-e32a813a8bbf
 publishedDate: 2020-08-18T13:38:16.639Z
 components:
   - type: image-copy-component
