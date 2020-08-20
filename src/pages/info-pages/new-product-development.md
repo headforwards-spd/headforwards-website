@@ -88,7 +88,7 @@ components:
     title: Back to Services
 callToAction: "#"
 seo:
-  slug: /what-we-do/forward-thinking-software/new-product-development/
+  slug: /forward-thinking-software/new-product-development/
 uuid: b7a3d0e0-e2f6-11ea-8a0e-8bdb4574407e
 type: info-page
 ---
