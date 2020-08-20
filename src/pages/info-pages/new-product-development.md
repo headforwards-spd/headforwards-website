@@ -41,7 +41,7 @@ components:
   - type: images-component
     imageOne: /uploads/dsc08477.jpg
     imageTwo: /uploads/headforwards-6.jpg
-    flip: true
+    flip: false
   - type: image-copy-component
     isRightImage: false
     isPostit: false
