@@ -66,7 +66,17 @@ components:
           \r
 
           Our principles and values stay the same no matter how a
-          client chooses to work with us. "
+          client chooses to work with us.\ 
+
+
+          ## Let's talk
+
+          If you want to discuss new product development with us,
+          click the link below to fill out your details and we'll get back to
+          you.
+
+
+          [LINK HERE TO HUBSPOT FORM](#)"
   - type: article-component
     articles:
       - linkText: Discover more
