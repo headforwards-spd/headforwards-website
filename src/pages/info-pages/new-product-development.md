@@ -38,6 +38,10 @@ components:
         jobTitle: Client Account Manager
         name: Dave Longman
     title: Overview
+  - type: images-component
+    imageOne: /uploads/dsc08477.jpg
+    imageTwo: /uploads/headforwards-6.jpg
+    flip: true
   - type: image-copy-component
     isRightImage: false
     isPostit: false
