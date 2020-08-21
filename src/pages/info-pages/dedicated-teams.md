@@ -39,6 +39,7 @@ components:
 
 
           [HUBSPOT FORM](#hubspot)
+    title: Let's talk
   - type: article-component
     title: Our services
     articles:
