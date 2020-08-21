@@ -3,9 +3,9 @@ bannerImage: /uploads/dsc08186.jpg
 title: Proof of concept
 summary:
   image: /uploads/dsc08186.jpg
-  text: "To prove whether a software idea can be built in the real world, what
+  text: To prove whether a software idea can be built in the real world, what
     technologies should be used and whether the software is likely to be adopted
-    by its intended users. "
+    by its intended users.
 parent: what-we-do
 components:
   - type: image-copy-component
@@ -14,7 +14,25 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: COPY
+        text: "Proof of Concept projects are as much about learning what works as they
+          are about supporting the path to further investment, whether
+          internally or externally. Headforwards’ approach means we can help
+          clients achieve this quickly and efficiently.  \r
+
+          \r
+
+          We know that speed, scope and resource need to be carefully
+          managed with Proof of Concept projects. Headforwards works in close
+          collaboration with the client and leverages continuous transparency
+          and regular commercial check-ins, giving opportunities to change
+          course if necessary. "
+      - type: quote-component
+        quote: We believe in people and Agile principles over dogma. If we can get
+          everyone to work together effectively, we’re going to get a much
+          better result.
+        name: Tom Clark
+        jobTitle: Agile Facilitator
+    title: Overview
   - type: images-component
     imageOne: /uploads/claudio-schwarz-purzlbaum-brejy-akxv8-unsplash-1-.jpg
     imageTwo: /uploads/head-11.jpg
@@ -24,7 +42,53 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: COPY
+        text: "Headforwards not only offers a fast start to a project but also allows
+          for flexible resourcing so that fresh skills can be added as and when
+          the need arises. Working towards a proof of concept involves as many
+          business and UX decisions as it does tech ones and we bring in the
+          right expertise as needed to make sure our clients get the right
+          result. \r
+
+          \r
+
+          An Agile facilitator, providing the equivalent of 1 day per
+          week, can lead workshops that include customer journey maps and other
+          collaborative discovery sessions.  \r
+
+          \r
+
+          That same facilitator will champion Agile ceremonies such as
+          daily stand-ups, reviews and retrospectives that are shaed with the
+          client Product Owner through a dedicated digital kanban board and
+          wiki-style living documentation. "
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    title: Advantages
+    content:
+      - type: markdown-component
+        text: "* Fast start
+
+          * Optimised for budget and core outcomes\ 
+
+          * Highly skilled, full-stack engineers \r
+
+          * Flexible resourcing - additional skills available at short
+          notice \r
+
+          \r* Timeframe – 2-6 weeks \r
+
+          \r
+
+          This client-focussed approach makes working with
+          Headforwards as attractive to CTOs and CIOs in corporations and
+          organisations as it is to entrepreneurs and start-ups.
+
+          \r
+
+          Our principles and values stay the same no matter how a
+          client chooses to work with us. "
   - type: image-copy-component
     isRightImage: false
     isPostit: false
