@@ -107,17 +107,15 @@ components:
   - type: article-component
     articles:
       - linkText: Read more
-        link: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
+        link: bf8f6e80-e392-11ea-8daf-95f98603e186
       - linkText: Read more
-        link: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
+        link: b7a3d0e0-e2f6-11ea-8a0e-8bdb4574407e
       - linkText: Read more
-        link: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
+        link: 74b6aa40-e392-11ea-8daf-95f98603e186
       - linkText: Read more
-        link: 21017240-c777-11ea-9be3-c919c34df185
+        link: c1059090-e38e-11ea-8daf-95f98603e186
       - linkText: Read more
-        link: 21017240-c777-11ea-9be3-c919c34df185
-      - linkText: Read more
-        link: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
+        link: 24de5670-e393-11ea-8daf-95f98603e186
     title: Our services
 uuid: bf8f6e80-e392-11ea-8daf-95f98603e186
 type: info-page
