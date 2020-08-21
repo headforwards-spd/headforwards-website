@@ -40,6 +40,7 @@ components:
 
 
           [HUBSPOT FORM](#hubspot)
+    title: Let's talk
   - type: article-component
     articles:
       - linkText: Read more
