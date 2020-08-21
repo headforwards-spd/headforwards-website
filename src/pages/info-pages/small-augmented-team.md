@@ -1,6 +1,6 @@
 ---
 bannerImage: /uploads/headforwards-6.jpg
-title: Small Augmented Team
+title: Small augmented team
 summary:
   image: /uploads/dsc08799.jpg
   text: "A dedicated developer or small team in situations where budget or other
