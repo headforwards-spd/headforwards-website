@@ -1,6 +1,6 @@
 ---
 bannerImage: /uploads/dsc08753.jpg
-title: New Product Development
+title: New product development
 subtitle: ""
 summary:
   text: "Developing and launching a new product to market requiring a rapid
