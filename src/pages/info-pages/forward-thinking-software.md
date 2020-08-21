@@ -53,26 +53,26 @@ components:
     content:
       - type: markdown-component
         text: >-
-          [**Proof of Concept**
+          [**Proof of concept**
           →](https://www.headforwards.com/what-we-do/proof-of-concept/)
 
 
           To prove whether a software idea can be built in the real world, what technologies should be used and whether the software is likely to be adopted by its intended users.
 
 
-          [**Initial Product Development** →](https://www.headforwards.com/what-we-do/new-product-development/)
+          [**Initial product development** →](https://www.headforwards.com/what-we-do/new-product-development/)
 
 
           Developing and launching a new product to market requiring a rapid development cycle, strategy support, UX design and customer testing all in close client collaboration.
 
 
-          [**Enterprise Project** →](https://www.headforwards.com/what-we-do/enterprise-project/)
+          [**Enterprise project** →](https://www.headforwards.com/what-we-do/enterprise-project/)
 
 
           A stand-alone software project to boost enterprise capabilities to support their goals. Often our clients either don't have development teams themselves or are at capacity with other work.
 
 
-          [**Augmented Team** →](https://www.headforwards.com/what-we-do/small-augmented-team/)
+          [**Augmented team** →](https://www.headforwards.com/what-we-do/small-augmented-team/)
 
 
           A long-term dedicated team in situations where budget or other constraints don’t allow a full, cross-functional team. This model offers access to bursts of support or specialist expertise as and when appropriate.
