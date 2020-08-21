@@ -80,7 +80,8 @@ components:
         text: >-
           If you want to discuss new product development with us, please fill
           out your details below and we'll get back to you. Alternatively, you
-          can [email](#) or [call](#) us directly.
+          can [email](mailto:enquiries@headforwards.com) or
+          [call](tel:+441209311151) us directly.
 
 
           [HUBSPOT FORM](#hubspot)
