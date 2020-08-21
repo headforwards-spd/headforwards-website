@@ -3,9 +3,9 @@ bannerImage: /uploads/hf-f.jpg
 title: Dedicated teams
 summary:
   image: /uploads/hf-f.jpg
-  text: "Offering a truly bespoke solution starting with a single team of at least
+  text: Offering a truly bespoke solution starting with a single team of at least
     3 people and growing to any size over time. The team is recruited and
-    organised to a client’s specific requirements. "
+    organised to a client’s specific requirements.
 parent: what-we-do
 components:
   - type: image-copy-component
@@ -16,24 +16,24 @@ components:
       - type: markdown-component
         text: "Our dedicated teams can be self-contained delivery teams that provide or
           extend any in-house capability, or they can become an extension of
-          existing teams, augmenting them with specific skillsets as needed.  \r
+          existing teams, augmented with specific skillsets as needed. \r
 
-          \r
+          \ \r
 
           A core aspect of the Headforwards approach to building a
           dedicated team or teams is that the client is an integral part of the
           recruitment process. This is truly a long-term partnership solution.
           These teams will be actively involved in understanding their clients
           technical and business roadmaps and will be focused on those goals for
-          the long term. \r \r
+          the long term.\r
 
-          \r
+          \ \r
 
           Because these dedicated teams are also an integral part of
           Headforwards, clients benefit from all the knowledge sharing and
           working practices that are a part of our philosophy; an Agile approach
-          to development, techniques such as pair programming and mob
-          programming and Agile ‘ceremonies’ such as daily stand-ups. "
+          to development, techniques such as pair and mob programming and our
+          internal knowledge sharing and communities of practice events.\r"
       - type: quote-component
         quote: When clients and teams work closely together, communication becomes much
           easier. Our developers feel confident approaching the client with
@@ -53,12 +53,14 @@ components:
       - type: markdown-component
         text: "The majority of our dedicated teams are focused on software development
           although we have also built teams that focus on other areas of
-          business such as Customer Service and Product Management.  \r
+          business such as Customer Service and Product Management. \r
 
+          \ \r
 
           Our belief in the value of dedicated teams and our ability
-          to recruit and mange them to exceed client’s expectations is what lies
-          at the core of Headforwards’ reputation in software development. "
+          to recruit and manage them to exceed client’s expectations is what
+          lies at the core of Headforwards’ reputation in software
+          development.\r\n"
   - type: image-copy-component
     isRightImage: false
     isPostit: false
