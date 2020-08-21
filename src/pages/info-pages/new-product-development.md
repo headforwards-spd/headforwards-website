@@ -15,15 +15,17 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: "Developing a new product requires a skill set specific to that project.
-          With a timeframe of 12 months or more, Headforwards always recruit and
-          create the core team in close partnership with clients. \r
+        text: "Developing and launching a new product to market requiring a rapid
+          development cycle, strategy support, UX design and customer testing
+          all in close client collaboration. \r
 
-          \r\r
+          \r
 
-          A typical team might contain at least 2 dedicated software
-          engineers, an Agile facilitator and a Product Owner or Product
-          Manager. \r
+          Developing a new product requires a skill set specific to
+          that project. With this in mind, Headforwards creates the core team in
+          close partnership with clients. A typical team might contain at least
+          2 dedicated software engineers, an Agile facilitator and a Product
+          Owner or Product Manager. \r \r
 
           \r
 
@@ -52,9 +54,9 @@ components:
         text: "Once the core team is up and running, Headforwards’ structure allows for
           other skills and experience to be brought in to support and augment
           the project if required. This might simply be extra capacity or for a
-          specialist task, such as UX design. \r
+          specialist task, such as UX design. \r\r
 
-          \r\r
+          \r
 
           The delivery framework, from project initiation and planning
           through to closure, will be created bespoke for the team. "
@@ -76,12 +78,10 @@ components:
           * Dedicated technical team can be supported and augmented by
           other skills and experience \ 
 
-          * Timeframe – 12 months plus
 
-
-          This client-focussed approach makes working with
-          Headforwards as attractive to CTOs and CIOs in corporations and
-          organisations as it is to entrepreneurs and start-ups. \r
+          This client-focused approach makes working with Headforwards
+          as attractive to CTOs and CIOs in corporations and organisations as it
+          is to entrepreneurs and start-ups. \r
 
           \r
 
