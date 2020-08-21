@@ -72,7 +72,7 @@ components:
           A stand-alone software project to boost enterprise capabilities to support their goals. Often our clients either don't have development teams themselves or are at capacity with other work.
 
 
-          [**Augmented Team** →](https://www.headforwards.com/what-we-do/augmented-team/)
+          [**Augmented Team** →](https://www.headforwards.com/what-we-do/small-augmented-team/)
 
 
           A long-term dedicated team in situations where budget or other constraints don’t allow a full, cross-functional team. This model offers access to bursts of support or specialist expertise as and when appropriate.
