@@ -76,8 +76,8 @@ components:
           ## Let's talk
 
           If you want to discuss new product development with us,
-          click the link below to fill out your details and we'll get back to
-          you.
+          please fill out your details below and we'll get back to you.
+          Alternatively, you can [email](#) or [call](#) us directly.
 
 
           [LINK HERE TO HUBSPOT FORM](#)"
