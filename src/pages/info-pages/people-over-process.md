@@ -1,8 +1,8 @@
 ---
-bannerImage: /uploads/hf-d.jpg
+bannerImage: /uploads/hf-steal-1.jpg
 title: People over Process
 summary:
-  image: /uploads/hf-d.jpg
+  image: /uploads/hf-steal-1.jpg
   text: Headforwards builds its teams based on each job’s specific needs
 parent: what-we-do
 components:
