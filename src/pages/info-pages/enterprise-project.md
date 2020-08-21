@@ -44,8 +44,8 @@ components:
         jobTitle: Agile Facilitator
     title: Overview
   - type: images-component
-    imageOne: /uploads/HF careers 1.jpg
-    imageTwo: /uploads/HF careers 3.jpg
+    imageOne: /uploads/dsc08858.jpg
+    imageTwo: /uploads/headforwards-2.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
