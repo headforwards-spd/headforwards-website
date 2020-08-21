@@ -27,16 +27,27 @@ components:
 
           \r
 
-          A Product Owner works closely with client to translate their
-          strategy into a roadmap and prioritised backlog items. A Product
-          Manager is able to explore the product strategy, value proposition and
-          customer testing as well as clarifying risks and assumptions. "
+          A Product Owner works closely with a client to translate
+          their strategy into a roadmap and prioritised backlog items, based on
+          business value. A Product Manager is also able to explore the product
+          strategy, value proposition and customer testing as well as clarifying
+          risks and assumptions. "
       - type: quote-component
         quote: With tightly-crafted teams for every client, everyone builds strong
           relationships with each other. It makes the challenges easier to
           overcome, and the successes even bigger.
         jobTitle: Client Account Manager
         name: Dave Longman
+      - type: markdown-component
+        text: "Once the core team is up and running, Headforwards’ structure allows for
+          other skills and experience to be brought in to support and augment
+          the project if required. This might simply be extra capacity or for a
+          specialist task, such as UX design. \r
+
+          \r\r
+
+          The delivery framework, from project initiation and planning
+          through to closure, will be created bespoke for the team. "
     title: Overview
   - type: images-component
     imageOne: /uploads/dsc08477.jpg
@@ -69,8 +80,9 @@ components:
 
           \r
 
-          Our principles and values stay the same no matter how a
-          client chooses to work with us."
+          Our [principles and
+          values](https://www.headforwards.com/what-we-do/people-over-process/)
+          stay the same no matter how a client chooses to work with us."
   - type: image-copy-component
     isRightImage: false
     isPostit: false
