@@ -39,8 +39,8 @@ components:
         profilePic: /uploads/andy-roberts.png
     title: Overview
   - type: images-component
-    imageOne: /uploads/careers-at-headforwards.jpg
-    imageTwo: /uploads/claudio-schwarz-purzlbaum-brejy-akxv8-unsplash-1-.jpg
+    imageOne: /uploads/dsc08477.jpg
+    imageTwo: /uploads/head-stolen.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
