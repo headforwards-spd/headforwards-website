@@ -110,17 +110,15 @@ components:
     title: Our services
     articles:
       - linkText: Read more
-        link: daf5dd50-a0f1-11ea-a322-0143b68e61ce
+        link: bf8f6e80-e392-11ea-8daf-95f98603e186
       - linkText: Read more
-        link: 4726e290-afba-11ea-b2ee-3d8109340327
+        link: b7a3d0e0-e2f6-11ea-8a0e-8bdb4574407e
       - linkText: Read more
-        link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+        link: 74b6aa40-e392-11ea-8daf-95f98603e186
       - linkText: Read more
-        link: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
+        link: c1059090-e38e-11ea-8daf-95f98603e186
       - linkText: Read more
-        link: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
-      - linkText: Read more
-        link: 359e0550-009f-11ea-b6f6-d743f848720a
+        link: 24de5670-e393-11ea-8daf-95f98603e186
 uuid: 24de5670-e393-11ea-8daf-95f98603e186
 type: info-page
 ---
