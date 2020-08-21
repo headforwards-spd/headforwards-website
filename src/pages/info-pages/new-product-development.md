@@ -38,6 +38,16 @@ components:
           overcome, and the successes even bigger.
         jobTitle: Client Account Manager
         name: Dave Longman
+    title: Overview
+  - type: images-component
+    imageOne: /uploads/dsc08477.jpg
+    imageTwo: /uploads/headforwards-6.jpg
+    flip: false
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    content:
       - type: markdown-component
         text: "Once the core team is up and running, Headforwards’ structure allows for
           other skills and experience to be brought in to support and augment
@@ -48,11 +58,6 @@ components:
 
           The delivery framework, from project initiation and planning
           through to closure, will be created bespoke for the team. "
-    title: Overview
-  - type: images-component
-    imageOne: /uploads/dsc08477.jpg
-    imageTwo: /uploads/headforwards-6.jpg
-    flip: false
   - type: image-copy-component
     isRightImage: false
     isPostit: false
