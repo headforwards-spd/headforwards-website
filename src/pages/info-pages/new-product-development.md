@@ -80,7 +80,7 @@ components:
           Alternatively, you can [email](#) or [call](#) us directly.
 
 
-          [LINK HERE TO HUBSPOT FORM](#)"
+          [HUBSPOT FORM](#hubspot)"
   - type: article-component
     articles:
       - linkText: Read more
