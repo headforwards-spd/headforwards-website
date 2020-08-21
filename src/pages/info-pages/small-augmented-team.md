@@ -34,9 +34,9 @@ components:
     content:
       - type: markdown-component
         text: >-
-          If you want to discuss new product development with us, please fill
-          out your details below and we'll get back to you. Alternatively, you
-          can [email](mailto:enquiries@headforwards.com) or
+          If you want to discuss how we can support you with augmented teams,
+          please fill out your details below and we'll get back to you.
+          Alternatively, you can [email](mailto:enquiries@headforwards.com) or
           [call](tel:+441209311151) us directly.
 
 
