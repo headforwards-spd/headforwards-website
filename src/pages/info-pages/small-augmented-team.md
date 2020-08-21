@@ -55,6 +55,7 @@ components:
         link: 3f7760ba-48cc-11ea-b77f-2e728ce88125
       - linkText: Read more
         link: 3f7760ba-48cc-11ea-b77f-2e728ce88125
+    title: Services we offer
 uuid: c1059090-e38e-11ea-8daf-95f98603e186
 type: info-page
 ---
