@@ -68,7 +68,7 @@ components:
         text: "* Fast start
 
           * Bespoke build - customised and extensible vs. Commercial
-          Off-* the-shelf Software (COTS)
+          Off-the-shelf Software (COTS)
 
           * Highly skilled, full-stack engineers
 
