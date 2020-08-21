@@ -42,13 +42,6 @@ components:
           understand how important this approach is to success
         name: Jon Dodkins
         jobTitle: Agile Facilitator
-      - type: markdown-component
-        text: "The daily collaboration that Headforwards offers allows enterprises to
-          obtain maximum benefit from bespoke software, by ensuring that it
-          extends seamlessly through their organisation. Headforwards build a
-          knowledge of your business as we build the partnership; we build a
-          roadmap in the background so that we are ready to continue adding
-          value past the project timeframe. "
     title: Overview
   - type: images-component
     imageOne: /uploads/HF careers 1.jpg
@@ -57,7 +50,14 @@ components:
     isRightImage: false
     isPostit: false
     isTwoColumns: false
-    content: []
+    content:
+      - type: markdown-component
+        text: "The daily collaboration that Headforwards offers allows enterprises to
+          obtain maximum benefit from bespoke software, by ensuring that it
+          extends seamlessly through their organisation. Headforwards build a
+          knowledge of your business as we build the partnership; we build a
+          roadmap in the background so that we are ready to continue adding
+          value past the project timeframe. "
   - type: image-copy-component
     isRightImage: false
     isPostit: false
