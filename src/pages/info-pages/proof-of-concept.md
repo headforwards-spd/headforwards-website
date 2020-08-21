@@ -1,8 +1,8 @@
 ---
-bannerImage: /uploads/dsc08186.jpg
+bannerImage: /uploads/alvaro-reyes-qwwphwip31m-unsplash.jpg
 title: Proof of concept
 summary:
-  image: /uploads/dsc08186.jpg
+  image: /uploads/alvaro-reyes-qwwphwip31m-unsplash.jpg
   text: To prove whether a software idea can be built in the real world, what
     technologies should be used and whether the software is likely to be adopted
     by its intended users.
@@ -34,7 +34,7 @@ components:
         jobTitle: Agile Facilitator
     title: Overview
   - type: images-component
-    imageOne: /uploads/claudio-schwarz-purzlbaum-brejy-akxv8-unsplash-1-.jpg
+    imageOne: /uploads/team-5.jpg
     imageTwo: /uploads/head-11.jpg
   - type: image-copy-component
     isRightImage: false
