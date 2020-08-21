@@ -1,8 +1,8 @@
 ---
-bannerImage: /uploads/headforwards-21.jpg
+bannerImage: /uploads/hf-f.jpg
 title: Dedicated teams
 summary:
-  image: /uploads/headforwards-21.jpg
+  image: /uploads/hf-f.jpg
   text: "Offering a truly bespoke solution starting with a single team of at least
     3 people and growing to any size over time. The team is recruited and
     organised to a client’s specific requirements. "
