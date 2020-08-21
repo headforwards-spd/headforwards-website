@@ -14,7 +14,34 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: COPY
+        text: "Our dedicated teams can be self-contained delivery teams that provide or
+          extend any in-house capability, or they can become an extension of
+          existing teams, augmenting them with specific skillsets as needed.  \r
+
+          \r
+
+          A core aspect of the Headforwards approach to building a
+          dedicated team or teams is that the client is an integral part of the
+          recruitment process. This is truly a long-term partnership solution.
+          These teams will be actively involved in understanding their clients
+          technical and business roadmaps and will be focused on those goals for
+          the long term. \r \r
+
+          \r
+
+          Because these dedicated teams are also an integral part of
+          Headforwards, clients benefit from all the knowledge sharing and
+          working practices that are a part of our philosophy; an Agile approach
+          to development, techniques such as pair programming and mob
+          programming and Agile ‘ceremonies’ such as daily stand-ups. "
+      - type: quote-component
+        quote: When clients and teams work closely together, communication becomes much
+          easier. Our developers feel confident approaching the client with
+          issues, and the client isn’t afraid to tell us if we’re going down the
+          wrong path.
+        name: Katherine Moore
+        jobTitle: Business Analyst
+    title: Overview
   - type: images-component
     imageOne: /uploads/headforwards-20.jpg
     imageTwo: /uploads/headforwards-16.jpg
@@ -24,7 +51,44 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: COPY
+        text: "The majority of our dedicated teams are focused on software development
+          although we have also built teams that focus on other areas of
+          business such as Customer Service and Product Management.  \r
+
+
+          Our belief in the value of dedicated teams and our ability
+          to recruit and mange them to exceed client’s expectations is what lies
+          at the core of Headforwards’ reputation in software development. "
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    title: Advantages
+    content:
+      - type: markdown-component
+        text: "* Teams recruited specifically to answer a client’s needs \r
+
+          * Dedicated teams build client knowledge and strengthen the
+          working relationship \r
+
+          * Flexible resourcing with additional skills available at
+          short notice \r
+
+          * Explore the benefits of working in an Agile way without
+          needing to transform internal practices \r
+
+          * Timeframe – 12 months plus \r
+
+          \r
+
+          This client-focussed approach makes working with
+          Headforwards especially attractive to CTOs and CIOs in larger
+          corporations and organisations. \r
+
+
+          Our [principles and
+          values](https://www.headforwards.com/what-we-do/people-over-process/)
+          stay the same no matter how a client chooses to work with us. "
   - type: image-copy-component
     isRightImage: false
     isPostit: false
