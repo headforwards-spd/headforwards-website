@@ -70,17 +70,21 @@ components:
           \r
 
           Our principles and values stay the same no matter how a
-          client chooses to work with us.\ 
+          client chooses to work with us."
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    content:
+      - type: markdown-component
+        text: >-
+          If you want to discuss new product development with us, please fill
+          out your details below and we'll get back to you. Alternatively, you
+          can [email](#) or [call](#) us directly.
 
 
-          ## Let's talk
-
-          If you want to discuss new product development with us,
-          please fill out your details below and we'll get back to you.
-          Alternatively, you can [email](#) or [call](#) us directly.
-
-
-          [HUBSPOT FORM](#hubspot)"
+          [HUBSPOT FORM](#hubspot)
+    title: Let's talk
   - type: article-component
     articles:
       - linkText: Read more
