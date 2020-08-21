@@ -83,10 +83,20 @@ components:
           [LINK HERE TO HUBSPOT FORM](#)"
   - type: article-component
     articles:
-      - linkText: Discover more
+      - linkText: Read more
         link: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
-    title: Back to Services
-callToAction: "#"
+      - linkText: Read more
+        link: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
+      - linkText: Read more
+        link: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
+      - linkText: Read more
+        link: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
+      - linkText: Read more
+        link: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
+      - linkText: Read more
+        link: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
+    title: Services we offer
+callToAction: ""
 seo:
   slug: new-product-development
 uuid: b7a3d0e0-e2f6-11ea-8a0e-8bdb4574407e
