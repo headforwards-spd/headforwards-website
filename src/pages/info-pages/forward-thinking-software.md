@@ -54,28 +54,34 @@ components:
       - type: markdown-component
         text: >-
           [**Proof of Concept**
-          →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
+          →](https://www.headforwards.com/what-we-do/proof-of-concept/)
 
 
           To prove whether a software idea can be built in the real world, what technologies should be used and whether the software is likely to be adopted by its intended users.
 
 
-          [**Initial Product Development** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
+          [**Initial Product Development** →](https://www.headforwards.com/what-we-do/new-product-development/)
 
 
           Developing and launching a new product to market requiring a rapid development cycle, strategy support, UX design and customer testing all in close client collaboration.
 
 
-          [**Enterprise Project** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
+          [**Enterprise Project** →](https://www.headforwards.com/what-we-do/enterprise-project/)
 
 
           A stand-alone software project to boost enterprise capabilities to support their goals. Often our clients either don't have development teams themselves or are at capacity with other work.
 
 
-          [**Augmented Team** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
+          [**Augmented Team** →](https://www.headforwards.com/what-we-do/augmented-team/)
 
 
           A long-term dedicated team in situations where budget or other constraints don’t allow a full, cross-functional team. This model offers access to bursts of support or specialist expertise as and when appropriate.
+
+
+          [Dedicated teams →](https://www.headforwards.com/what-we-do/dedicated-teams/)
+
+
+          Our dedicated teams can be self-contained delivery teams that provide or extend any in-house capability, or they can become an extension of existing teams, augmenting them with specific skillsets as needed.  
 
 
           [**Consultancy** →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
@@ -108,19 +114,21 @@ components:
     content:
       - type: markdown-component
         text: >-
-          Fill out our short form.  Whether you have a project ready to go or
-          just want an informal chat about exploring opportunities, one of our
-          team will be in touch.
+          Whether you have a project ready to go or just want an informal chat
+          about exploring opportunities, one of our team will be in touch.
+          Please fill out your details below and we'll get back to you.
+          Alternatively, you can [email](mailto:enquiries@headforwards.com) or
+          [call](tel:+441209311151) us directly.
 
 
-          ### [Contact us →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
+          [HUBSPOT FORM](#hubspot)
   - type: article-component
+    title: About us
     articles:
-      - linkText: Read more
-        link: 7332ebd0-0fac-11ea-8f1d-b7c7fe6e2260
-      - linkText: Read more
-        link: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
-    title: Further reading
+      - linkText: Learn more
+        link: 07758420-1033-11ea-9288-bf5475231968
+      - linkText: Learn more
+        link: 53629a60-103a-11ea-9ef0-bd54961b4e30
 uuid: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
 type: info-page
 ---
