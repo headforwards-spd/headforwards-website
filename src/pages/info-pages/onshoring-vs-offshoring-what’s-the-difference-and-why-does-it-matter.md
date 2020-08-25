@@ -172,6 +172,13 @@ components:
           approach that we&#39;re always striving to perfect, and if that sounds
           like a partnership that appeals to you, [let&#39;s
           talk](https://www.headforwards.com/contact/)."
+  - type: article-component
+    title: Further reading
+    articles:
+      - linkText: Read more
+        link: c6e975c0-dc73-11ea-8a6e-774d8cee9ecb
+      - linkText: Read more
+        link: 71165820-d322-11ea-939f-c56422732714
 callToAction: Leverage the benefits of outsourcing
 seo:
   title: "Onshoring vs offshoring for outsourced software development "
