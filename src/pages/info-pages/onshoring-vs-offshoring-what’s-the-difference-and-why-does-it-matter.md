@@ -22,7 +22,7 @@ summary:
   text: "What’s the difference between onshoring and offshoring – and does it
     really matter in modern software development? "
   image: /uploads/head-8.jpg
-author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
+author: c038aaac-943e-11ea-bb37-0242ac130002
 publishedDate: 2020-09-01T12:48:11.253Z
 components:
   - type: images-component
@@ -172,11 +172,12 @@ components:
           approach that we&#39;re always striving to perfect, and if that sounds
           like a partnership that appeals to you, [let&#39;s
           talk](https://www.headforwards.com/contact/)."
+callToAction: Leverage the benefits of outsourcing
 seo:
   title: "Onshoring vs offshoring for outsourced software development "
   description: "What’s the difference between onshoring and offshoring – and does
     it really matter in modern software development? "
-  slug: "onshoring-vs-offshoring-outsourced-software-development "
+  slug: onshoring-vs-offshoring-outsourced-software-development
 uuid: af974060-e6d1-11ea-ac35-47db82f92c20
 type: blog-page
 parent: insights
