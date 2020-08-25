@@ -25,9 +25,6 @@ summary:
 author: c038aaac-943e-11ea-bb37-0242ac130002
 publishedDate: 2020-09-01T12:48:11.253Z
 components:
-  - type: images-component
-    imageOne: /uploads/head-stolen.jpg
-    imageTwo: /uploads/head-1.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -84,6 +81,9 @@ components:
           make key considerations such as regulatory compliance and data
           sovereignty easier to manage. "
     title: "Neighbours: nearshoring"
+  - type: images-component
+    imageOne: /uploads/head-stolen.jpg
+    imageTwo: /uploads/head-1.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -126,16 +126,10 @@ components:
           This won&#39;t always happen face to face – but a long-term
           partnership deserves a real investment of time and effort. That&#39;s
           all dependent on the partner you choose, not where they&#39;re
-          based.\r"
-    title: Is offshoring still worth it?
-    image: /uploads/007.svg
-  - type: image-copy-component
-    isRightImage: false
-    isPostit: false
-    isTwoColumns: false
-    content:
-      - type: markdown-component
-        text: "At Headforwards, we&#39;ve spent years [turning collaboration into an art
+          based.\r
+
+          At Headforwards, we&#39;ve spent years [turning
+          collaboration into an art
           form](https://www.headforwards.com/how-we-work/collaboration/); giving
           our clients high-touch partnership support anywhere in the world.
           It&#39;s all about knowing how to find the best way of working
@@ -172,6 +166,8 @@ components:
           approach that we&#39;re always striving to perfect, and if that sounds
           like a partnership that appeals to you, [let&#39;s
           talk](https://www.headforwards.com/contact/)."
+    title: Is offshoring still worth it?
+    image: ""
   - type: article-component
     title: Further reading
     articles:
