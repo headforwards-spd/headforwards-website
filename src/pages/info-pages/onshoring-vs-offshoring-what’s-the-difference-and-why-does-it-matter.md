@@ -23,7 +23,7 @@ summary:
     really matter in modern software development? "
   image: /uploads/head-8.jpg
 author: c038aaac-943e-11ea-bb37-0242ac130002
-publishedDate: 2020-09-01T12:48:11.253Z
+publishedDate: 2020-09-02T09:20:48.319Z
 components:
   - type: image-copy-component
     isRightImage: false
