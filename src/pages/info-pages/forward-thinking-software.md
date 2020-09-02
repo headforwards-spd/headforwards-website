@@ -77,7 +77,7 @@ components:
           A long-term dedicated team in situations where budget or other constraints don’t allow a full, cross-functional team. This model offers access to bursts of support or specialist expertise as and when appropriate. [More details →](https://www.headforwards.com/what-we-do/small-augmented-team/)
 
 
-          ### Dedicated team
+          ### Dedicated teams
 
 
           Our dedicated teams can be self-contained delivery teams that provide or extend any in-house capability, or they can become an extension of existing teams, augmenting them with specific skillsets as needed. 
