@@ -62,7 +62,7 @@ components:
           ### Initial product development
 
 
-          Developing and launching a new product to market requiring a rapid development cycle, strategy support, UX design and customer testing all in close client collaboration. [More details →](https://www.headforwards.com/what-we-do/initial-project-development/)
+          Developing and launching a new product to market requiring a rapid development cycle, strategy support, UX design and customer testing all in close client collaboration. [More details →](https://www.headforwards.com/what-we-do/initial-product-development/)
 
 
           ### Enterprise project
