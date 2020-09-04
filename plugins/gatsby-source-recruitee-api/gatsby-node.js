@@ -55,7 +55,7 @@ type RecruiteeOffer implements Node {
     salary: String
     title: String
     subtitle: String
-    tags: String
+    tags: [String]
 }
 type openQuestion {
     body: String
@@ -84,6 +84,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     );
 
     function processOffer(offer) {
+        console.log({offer});
         const { id, title, description = '', requirements, created_at: created, slug: path, ...others } = offer;
         const [full, salary = null] =
             title.match(
