@@ -42,6 +42,37 @@ const getMarkdown = html => {
     return markdown.replace(/\s*(?:\\n){2,}\s*(?:\\n){2,}\s*/g, '\n\n');
 };
 
+exports.createSchemaCustomization = ({ actions }) => {
+
+    const { createTypes } = actions;
+    const typeDefs = `
+type RecruiteeOffer implements Node {
+    path: String
+    open_questions: [openQuestion]
+    options_cover_letter: String
+    options_cv: String
+    options_phone: String
+    options_photo: String
+    salary: String
+    title: String
+    subtitle: String
+    tags: String
+}
+type openQuestion {
+    body: String
+    id: String
+    kind: String
+    required: String
+    open_question_options: [openQuestionOption]
+}
+type openQuestionOption {
+    body: String
+    id: String
+}
+    `;
+    createTypes(typeDefs);
+};
+
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     const { createNode } = actions;
 
@@ -50,10 +81,12 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
         // Fetch a response from the apiUrl
         fetch(apiUrl)
             .then(response => response.json())
-            .then(({ offers }) => offers.map(processOffer))
+            .then(({ offers }) => offers
+              .map(processOffer))
     );
 
     function processOffer(offer) {
+
         const { id, title, description = '', requirements, created_at: created, slug: path, ...others } = offer;
         const [full, salary = null] =
             title.match(
