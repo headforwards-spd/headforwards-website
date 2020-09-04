@@ -43,7 +43,6 @@ const getMarkdown = html => {
 };
 
 exports.createSchemaCustomization = ({ actions }) => {
-
     const { createTypes } = actions;
     const typeDefs = `
 type RecruiteeOffer implements Node {
@@ -81,12 +80,10 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
         // Fetch a response from the apiUrl
         fetch(apiUrl)
             .then(response => response.json())
-            .then(({ offers }) => offers
-              .map(processOffer))
+            .then(({ offers }) => offers.map(processOffer))
     );
 
     function processOffer(offer) {
-
         const { id, title, description = '', requirements, created_at: created, slug: path, ...others } = offer;
         const [full, salary = null] =
             title.match(

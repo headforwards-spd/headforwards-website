@@ -1,9 +1,9 @@
 import { bool, number, string } from 'prop-types';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import styles from './markdown.module.scss';
 
 import preventOrphans from '../../lib/prevent-orphans';
+import styles from './markdown.module.scss';
 
 export default Markdown;
 
