@@ -71,7 +71,7 @@ components:
           culture of continuous learning and self-improvement.\ 
 
 
-          # Stay alert to change \r
+          ## Stay alert to change \r
 
           \r
 
