@@ -1,6 +1,6 @@
 ---
 bannerImage: /uploads/hf-recruit-header.jpg
-title: Forward thinking software
+title: Software services
 subtitle: ""
 introduction:
   content:
