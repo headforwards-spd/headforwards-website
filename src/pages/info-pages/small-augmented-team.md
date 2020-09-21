@@ -1,6 +1,6 @@
 ---
 bannerImage: /uploads/headforwards-6.jpg
-title: Small augmented team
+title: Augmented team
 summary:
   image: /uploads/dsc08799.jpg
   text: "A dedicated developer or small team in situations where budget or other
@@ -117,6 +117,8 @@ components:
       - linkText: Read more
         link: 24de5670-e393-11ea-8daf-95f98603e186
     title: Services we offer
+seo:
+  slug: /services/augmented-team/
 uuid: c1059090-e38e-11ea-8daf-95f98603e186
 type: info-page
 ---
