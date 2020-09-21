@@ -1,6 +1,6 @@
 ---
 bannerImage: /uploads/hf-recruit-header.jpg
-title: Forward thinking software
+title: Software services
 subtitle: ""
 introduction:
   content:
@@ -130,6 +130,8 @@ components:
         link: 07758420-1033-11ea-9288-bf5475231968
       - linkText: Learn more
         link: 53629a60-103a-11ea-9ef0-bd54961b4e30
+seo:
+  slug: /services/
 uuid: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
 type: info-page
 ---
