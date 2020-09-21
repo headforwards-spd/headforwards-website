@@ -1,75 +1,75 @@
 title: main-menu
 menu:
-  - page: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
+  - link: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
     linkText: Home.
     children:
-      - page: b6b978da-9f51-11ea-bb37-0242ac130002
+      - link: b6b978da-9f51-11ea-bb37-0242ac130002
         linkText: Insights.
-      - page: 0c6225e2-9f6c-11ea-bb37-0242ac130002
+      - link: 0c6225e2-9f6c-11ea-bb37-0242ac130002
         linkText: Contact.
   - children:
-      - page: 07758420-1033-11ea-9288-bf5475231968
+      - link: 07758420-1033-11ea-9288-bf5475231968
         linkText: What we believe
-      - page: 3b246990-0f6f-11ea-81de-ff3cb4003432
+      - link: 3b246990-0f6f-11ea-81de-ff3cb4003432
         linkText: How we began
-      - page: 40718760-1033-11ea-9288-bf5475231968
+      - link: 40718760-1033-11ea-9288-bf5475231968
         linkText: How we recruit
-      - page: 4bc8aa80-1033-11ea-9288-bf5475231968
+      - link: 4bc8aa80-1033-11ea-9288-bf5475231968
         linkText: What is it like here?
-      - page: 550440a0-1033-11ea-9288-bf5475231968
+      - link: 550440a0-1033-11ea-9288-bf5475231968
         linkText: Where are we going?
-    page: e3863adc-37b0-11ea-850d-2e728ce88125
+    link: e3863adc-37b0-11ea-850d-2e728ce88125
     linkText: Who we are.
   - children:
-      - page: 45d05450-103a-11ea-9ef0-bd54961b4e30
+      - link: 45d05450-103a-11ea-9ef0-bd54961b4e30
         linkText: People over process
-      - page: 53629a60-103a-11ea-9ef0-bd54961b4e30
+      - link: 53629a60-103a-11ea-9ef0-bd54961b4e30
         linkText: Create value through software
-      - page: 359e0550-009f-11ea-b6f6-d743f848720a
+      - link: 359e0550-009f-11ea-b6f6-d743f848720a
         linkText: Build strong relationships
-      - page: 6b233b00-103a-11ea-9ef0-bd54961b4e30
+      - link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
         linkText: Create effective teams
-    page: c8419b2c-37c9-11ea-978f-2e728ce88125
+    link: c8419b2c-37c9-11ea-978f-2e728ce88125
     linkText: What we do.
   - children:
-      - page: 7332ebd0-0fac-11ea-8f1d-b7c7fe6e2260
+      - link: 7332ebd0-0fac-11ea-8f1d-b7c7fe6e2260
         linkText: Working model
-      - page: 0cd74ed0-0fac-11ea-843f-932c76de5936
+      - link: 0cd74ed0-0fac-11ea-843f-932c76de5936
         linkText: Collaboration
-      - page: fe1a1d50-0fab-11ea-843f-932c76de5936
+      - link: fe1a1d50-0fab-11ea-843f-932c76de5936
         linkText: Do the right thing
-      - page: 21a08160-0fac-11ea-843f-932c76de5936
+      - link: 21a08160-0fac-11ea-843f-932c76de5936
         linkText: Continuous delivery
-      - page: 3c96d190-0fac-11ea-843f-932c76de5936
+      - link: 3c96d190-0fac-11ea-843f-932c76de5936
         linkText: Mobbing
-    page: c841a072-37c9-11ea-978f-2e728ce88125
+    link: c841a072-37c9-11ea-978f-2e728ce88125
     linkText: How we work.
   - children:
       - children:
-          - page: 92161650-0f9b-11ea-9e15-59d1e5da42db
+          - link: 92161650-0f9b-11ea-9e15-59d1e5da42db
             linkText: Our culture
-          - page: 87ef9080-0f86-11ea-9e15-59d1e5da42db
+          - link: 87ef9080-0f86-11ea-9e15-59d1e5da42db
             linkText: Tech in Cornwall
-          - page: 97f70000-0fac-11ea-b2ae-07531833e614
+          - link: 97f70000-0fac-11ea-b2ae-07531833e614
             linkText: "Training, development and growth"
-          - page: 22fe4f48-37d3-11ea-aec2-2e728ce88125
+          - link: 22fe4f48-37d3-11ea-aec2-2e728ce88125
             linkText: Our Benefits
-        page: 5fc0e4d0-0fac-11ea-8ab2-d74757235dd0
+        link: 5fc0e4d0-0fac-11ea-8ab2-d74757235dd0
         linkText: Working at Headforwards
       - children:
-          - page: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
+          - link: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
             linkText: BI & Data
-          - page: 4a8df080-1529-11ea-a6b5-63ea6add32fb
+          - link: 4a8df080-1529-11ea-a6b5-63ea6add32fb
             linkText: .Net
-          - page: fe585b60-1528-11ea-a6b5-63ea6add32fb
+          - link: fe585b60-1528-11ea-a6b5-63ea6add32fb
             linkText: Front End
-          - page: 7ccaa0e0-152c-11ea-a47f-c360f0875c84
+          - link: 7ccaa0e0-152c-11ea-a47f-c360f0875c84
             linkText: "Perl, Python and Golang"
-        page: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
+        link: 9a3d7830-ef2c-11e9-b344-9b711dfd021f
         linkText: Teams and tech
-      - page: 22fe4ade-37d3-11ea-aec2-2e728ce88125
+      - link: 22fe4ade-37d3-11ea-aec2-2e728ce88125
         linkText: Living in Cornwall
-      - page: 16f53e5e-3847-11ea-a137-2e728ce88125
+      - link: 16f53e5e-3847-11ea-a137-2e728ce88125
         linkText: Jobs
-    page: c841a202-37c9-11ea-978f-2e728ce88125
+    link: c841a202-37c9-11ea-978f-2e728ce88125
     linkText: Careers.

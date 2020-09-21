@@ -5,7 +5,7 @@ export const MenuFragment = graphql`
     fragment MenuFragment on DataYaml {
         menu {
             linkText
-            page {
+            link {
                 fields {
                     link
                 }
@@ -15,7 +15,7 @@ export const MenuFragment = graphql`
             }
             children {
                 linkText
-                page {
+                link {
                     fields {
                         link
                     }
@@ -25,7 +25,7 @@ export const MenuFragment = graphql`
                 }
                 children {
                     linkText
-                    page {
+                    link {
                         fields {
                             link
                         }

@@ -41,7 +41,7 @@ type FooterLinks {
 }
 type MenuItem {
     linkText: String
-    page: MarkdownRemark @link(by: "frontmatter.uuid", from: "page")
+    link: MarkdownRemark @link(by: "frontmatter.uuid", from: "link")
     children: [MenuItem]
 }
 type Link {
@@ -105,7 +105,7 @@ function createAllIndexPages(createPage, { menu: pages }) {
 }
 
 function createIndexPage(createPage, promises, indexPage) {
-    const { linkText: title, page, children } = indexPage;
+    const { linkText: title, link: page, children } = indexPage;
     const { fields, frontmatter } = page;
     const { link } = fields;
     const { uuid } = frontmatter;
@@ -238,7 +238,7 @@ imageDesktop: image {
 }
 `;
 const graphqlMenuPage = `
-page {
+link {
     id
     fields {
         link
@@ -262,7 +262,7 @@ function getData(graphql) {
             indexPages: dataYaml(title: { eq: "main-menu" }) {
                 menu {
                     linkText
-                    page {
+                    link {
                         id
                         fields {
                             link
