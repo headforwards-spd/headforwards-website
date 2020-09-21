@@ -122,6 +122,8 @@ components:
       - linkText: Read more
         link: 24de5670-e393-11ea-8daf-95f98603e186
     title: Our services
+seo:
+  slug: /services/enterprise-project/
 uuid: 74b6aa40-e392-11ea-8daf-95f98603e186
 type: info-page
 ---
