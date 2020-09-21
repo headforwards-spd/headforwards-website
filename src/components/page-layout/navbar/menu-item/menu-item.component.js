@@ -14,7 +14,7 @@ export default class MenuItem extends Component {
     constructor(props) {
         super(props);
 
-        const { location, page } = props || {};
+        const { location, link: page } = props || {};
         const { fields } = page || {};
         const { link } = fields || {};
         const { pathname: path = '' } = location || {};
@@ -36,7 +36,7 @@ export default class MenuItem extends Component {
     }
 
     render() {
-        const { location, linkText, showTitle = false, page, children, className = '' } = this.props;
+        const { location, linkText, showTitle = false, link: page, children, className = '' } = this.props;
         const { fields } = page || {};
         const { link } = fields || {};
         const { isActive } = this.state;
