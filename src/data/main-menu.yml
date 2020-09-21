@@ -30,6 +30,8 @@ menu:
     linkText: Who we are.
     link: e3863adc-37b0-11ea-850d-2e728ce88125
   - children:
+      - linkText: Services
+        link: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
       - page: 45d05450-103a-11ea-9ef0-bd54961b4e30
         linkText: People over process
         link: 45d05450-103a-11ea-9ef0-bd54961b4e30
@@ -42,8 +44,6 @@ menu:
       - page: 6b233b00-103a-11ea-9ef0-bd54961b4e30
         linkText: Create effective teams
         link: 6b233b00-103a-11ea-9ef0-bd54961b4e30
-      - linkText: Services
-        link: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
     page: c8419b2c-37c9-11ea-978f-2e728ce88125
     linkText: What we do.
     link: c8419b2c-37c9-11ea-978f-2e728ce88125
