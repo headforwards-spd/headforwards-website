@@ -56,25 +56,25 @@ components:
           ### Proof of concept
 
 
-          To prove whether a software idea can be built in the real world, what technologies should be used and whether the software is likely to be adopted by its intended users. [More details →](https://www.headforwards.com/what-we-do/proof-of-concept/)
+          To prove whether a software idea can be built in the real world, what technologies should be used and whether the software is likely to be adopted by its intended users. [More details →](https://www.headforwards.com/what-we-do/services/proof-of-concept/)
 
 
           ### Initial product development
 
 
-          Developing and launching a new product to market requiring a rapid development cycle, strategy support, UX design and customer testing all in close client collaboration. [More details →](https://www.headforwards.com/what-we-do/new-product-development/)
+          Developing and launching a new product to market requiring a rapid development cycle, strategy support, UX design and customer testing all in close client collaboration. [More details →](https://www.headforwards.com/what-we-do/services/new-product-development/)
 
 
           ### Enterprise project
 
 
-          A stand-alone software project to boost enterprise capabilities to support their goals. Often our clients either don't have development teams themselves or are at capacity with other work. [More details →](https://www.headforwards.com/what-we-do/enterprise-project/)
+          A stand-alone software project to boost enterprise capabilities to support their goals. Often our clients either don't have development teams themselves or are at capacity with other work. [More details →](https://www.headforwards.com/what-we-do/services/enterprise-project/)
 
 
           ### Small augmented team
 
 
-          A long-term dedicated team in situations where budget or other constraints don’t allow a full, cross-functional team. This model offers access to bursts of support or specialist expertise as and when appropriate. [More details →](https://www.headforwards.com/what-we-do/small-augmented-team/)
+          A long-term dedicated team in situations where budget or other constraints don’t allow a full, cross-functional team. This model offers access to bursts of support or specialist expertise as and when appropriate. [More details →](https://www.headforwards.com/what-we-do/services/small-augmented-team/)
 
 
           ### Dedicated teams
@@ -82,7 +82,7 @@ components:
 
           Our dedicated teams can be self-contained delivery teams that provide or extend any in-house capability, or they can become an extension of existing teams, augmenting them with specific skillsets as needed. 
 
-          [More details →](https://www.headforwards.com/what-we-do/dedicated-teams/)
+          [More details →](https://www.headforwards.com/what-we-do/services/dedicated-teams/)
 
 
           **Consultancy**
