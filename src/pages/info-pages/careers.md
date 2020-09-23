@@ -6,7 +6,7 @@ summary:
   text: At Headforwards you’ll find cutting-edge projects in a truly agile
     environment.
 seo:
-  title: Software Development Careers | Headforwards
+  title: Software Development Careers
   description: Ready for a new role? At Headforwards we deliver software that
     creates real value for our clients. See what job opportunities we have and
     contact us today!
