@@ -35,7 +35,7 @@ components:
     type: quote-component
 seo:
   slug: dot-net
-  title: .Net Software Development | Headforwards
+  title: .Net Software Development 
   description: We have 35 people working in 6 different .NET teams for 3 different
     clients. That’s a lot of people to learn from and share knowledge with.
 uuid: 4a8df080-1529-11ea-a6b5-63ea6add32fb

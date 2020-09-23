@@ -106,7 +106,7 @@ footerLinks:
     title: Take a look around
 callToAction: Tired of the rat race? Find a different type of tech career with us
 seo:
-  title: Living in Cornwall | Headforwards
+  title: Living in Cornwall 
   description: With its own culture, own climate and own pace of life, we’re lucky
     to live and work in one of the most unique places on earth.
 uuid: 22fe4ade-37d3-11ea-aec2-2e728ce88125

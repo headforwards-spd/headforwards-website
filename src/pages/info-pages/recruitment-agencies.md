@@ -22,7 +22,7 @@ summary:
     understanding.
 parent: careers
 seo:
-  title: Software Development Recruitment Agencies | Headforwards
+  title: Software Development Recruitment Agencies 
   description: All of our recruitment goes through our great in-house team and we
     never use agencies. We want to save your time by letting you know - please
     don't contact us.

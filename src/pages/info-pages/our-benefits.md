@@ -57,7 +57,7 @@ footerLinks:
     title: The benefits of working at Headforwards
 callToAction: Want to work somewhere that cares about you and your family?
 seo:
-  title: Employee Benefits | Headforwards
+  title: Employee Benefits 
   description: We believe that happy people do better work. That’s why we provide
     a range of employee benefits and community activities for staff and their
     families.

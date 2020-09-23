@@ -211,7 +211,7 @@ footerLinks:
     title: Similar reading
 callToAction: ""
 seo:
-  title: Artificial Intelligence in Local Authorities | Headforwards
+  title: Artificial Intelligence in Local Authorities 
   description: Local authorities in the UK are revolutionising their use of
     Artificial Intelligence. At Headforwards, we are helping them transform
     their service delivery.

@@ -81,7 +81,7 @@ footerLinks:
 callToAction: Would you like to work with us?
 seo:
   slug: ""
-  title: What Is It Like Here? | Headforwards
+  title: What Is It Like Here? 
   description: With regular catchups and strategy meetings, strong relationships
     between clients and teams grow fast here at Headforwards.
 uuid: 4bc8aa80-1033-11ea-9288-bf5475231968

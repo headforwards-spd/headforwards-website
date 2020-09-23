@@ -72,7 +72,7 @@ footerLinks:
     title: How we see our future
 callToAction: Think this is a refreshing approach to software development?
 seo:
-  title: Where Are We Going? | Headforwards
+  title: Where Are We Going? 
   description: Headforwards has several strategic objectives for growth powered by
     its core principles and its approach to client service
 uuid: 550440a0-1033-11ea-9288-bf5475231968

@@ -5,7 +5,7 @@ summary:
   image: /uploads/group-photo.jpg
   text: We believe that strong individuals make a strong team
 seo:
-  title: Who We Are | Headforwards
+  title: Who We Are 
   description: We believe that strong individuals make strong teams. At
     Headforwards we build dedicated teams to deliver software that creates real
     value for our clients.

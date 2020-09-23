@@ -139,7 +139,7 @@ components:
           the co-author (with Olve Maudal) of the Deep C/C++ slide deck (over 1
           million views) and has had some C# books published.
 seo:
-  title: Software Cornwall TDD Workshop Learnings | Headforwards
+  title: Software Cornwall TDD Workshop Learnings 
   description: Last week we were fortunate enough to be given the opportunity to
     attend Software Cornwall’s TDD workshop being run by Jon Jagger and Kevlin
     Henney.

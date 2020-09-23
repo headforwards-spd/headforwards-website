@@ -46,7 +46,7 @@ components:
     type: quote-component
 seo:
   slug: perl-python-and-golang
-  title: Perl Python & Golang Programming | Headforwards
+  title: Perl Python & Golang Programming 
   description: We believe that great developers can pick up new skills and
     languages easily. Even if you don’t have experience in our languages, we'd
     love to hear from you!

@@ -74,7 +74,7 @@ footerLinks:
     title: Learn more about how we work
 callToAction: Want to work in a company that believes in the power of teams?
 seo:
-  title: Technology in Cornwall | Headforwards
+  title: Technology in Cornwall 
   description: As one of the fastest growing tech hubs in the UK, Cornwall has
     been a key part of our success at Headforwards.
 uuid: 87ef9080-0f86-11ea-9e15-59d1e5da42db

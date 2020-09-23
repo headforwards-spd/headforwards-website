@@ -67,7 +67,7 @@ footerLinks:
     title: Would you like us to build a team for you?
 callToAction: Would you like to be part of our team?
 seo:
-  title: How We Recruit | Headforwards
+  title: How We Recruit 
   description: Headforwards was founded on the principle of recruiting the right
     team for each client - to do the best work, you need the best people.
 uuid: 40718760-1033-11ea-9288-bf5475231968

@@ -35,7 +35,7 @@ components:
   - quote: The calibre of the people here, its cutting edge.
     type: quote-component
 seo:
-  title: Front End Development | Headforwards
+  title: Front End Development 
   description: Our front end teams all have a solid understanding of fundamental
     web technologies and use this to make a difference.
 uuid: fe585b60-1528-11ea-a6b5-63ea6add32fb

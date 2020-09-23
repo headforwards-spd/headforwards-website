@@ -77,7 +77,7 @@ footerLinks:
     title: We are a 'people business'
 callToAction: How do the right people make all the difference?
 seo:
-  title: People Over Process | Headforwards
+  title: People Over Process 
   description: Headforwards is people-centric rather than process-orientated,
     placing a strong focus on finding the right people and helping them develop
     their skills.

@@ -60,7 +60,7 @@ footerLinks:
     title: Find out more about our beliefs and values
 callToAction: How can we create value for your organisation?
 seo:
-  title: What We Believe | Headforwards
+  title: What We Believe 
   description: We believe clients get the greatest business value from software
     outsourcing when development teams are empowered to make their own
     decisions.

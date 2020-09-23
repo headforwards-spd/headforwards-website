@@ -98,7 +98,7 @@ footerLinks:
     title: Discover more about our culture
 callToAction: Want to progress your career in a more relaxed location?
 seo:
-  title: Our Company Culture | Headforwards
+  title: Our Company Culture 
   description: Discover a very different technology business built around a
     supportive collaborative culture.
 uuid: 92161650-0f9b-11ea-9e15-59d1e5da42db

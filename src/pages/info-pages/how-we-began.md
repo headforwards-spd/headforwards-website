@@ -82,7 +82,7 @@ footerLinks:
     title: Find out more about Headforwards
 callToAction: Would you like to join us on our journey?
 seo:
-  title: How We Began | Headforwards
+  title: How We Began 
   description: The brainchild of Craig Girvan and Toby Parkins, Headforwards was
     incorporated in 2011 and has grown into a Software Outsourcing Company of
     over 100 people.

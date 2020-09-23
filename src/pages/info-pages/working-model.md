@@ -72,7 +72,7 @@ footerLinks:
     title: How we can work with you
 callToAction: Do you want to know more about how we build winning teams?
 seo:
-  title: Our Working Models | Headforwards
+  title: Our Working Models 
   description: Headforwards offers two engagement models to ensure you get the
     right mix of quality and value for money; a long term partnership or a short
     term project.

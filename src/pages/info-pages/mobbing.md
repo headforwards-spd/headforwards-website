@@ -72,7 +72,7 @@ footerLinks:
     title: Get quality software fast
 callToAction: Learn how mobbing can deliver quality software
 seo:
-  title: Mob Programming | Headforwards
+  title: Mob Programming 
   description: Mob programming is used a lot at Headforwards; it’s a chance to
     apply a whole team’s ideas and knowledge to one project.
 uuid: 3c96d190-0fac-11ea-843f-932c76de5936

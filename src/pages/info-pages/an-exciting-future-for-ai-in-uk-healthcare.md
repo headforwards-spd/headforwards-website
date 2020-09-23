@@ -154,7 +154,7 @@ footerLinks: []
 callToAction: As a leading software developer, Headforwards is looking forward
   to helping drive the innovation in AI that will keep UK healthcare ahead.
 seo:
-  title: An Exciting Future for AI in UK Healthcare | Headforwards
+  title: An Exciting Future for AI in UK Healthcare
   description: As a leading software developer, Headforwards is looking forward to
     helping drive the innovation in Artificial Intelligence that will keep UK
     healthcare ahead.

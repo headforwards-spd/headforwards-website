@@ -25,7 +25,7 @@ components:
 
           We are always looking for people who are team players, a passion for cutting-edge technologies and a desire to be part of a forward-thinking Agile team.
 seo:
-  title: Interested in Working at Headforwards? | Headforwards
+  title: Interested in Working at Headforwards? 
   description: If you didn't see a role you'd like to apply for but you are
     interested in working for us then please let us know here.
 uuid: 806059b4-48e6-11ea-b77f-2e728ce88125

@@ -77,7 +77,7 @@ footerLinks:
     title: A culture of openness, transparency, and trust
 callToAction: For open and honest software development
 seo:
-  title: Doing the Right Thing | Headforwards
+  title: Doing the Right Thing 
   description: Here at Headforwards, we're proud of our culture of openness,
     transparency and trust.
 uuid: fe1a1d50-0fab-11ea-843f-932c76de5936

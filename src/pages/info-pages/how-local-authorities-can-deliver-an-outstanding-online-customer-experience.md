@@ -205,7 +205,7 @@ callToAction: At Headforwards, we work with local authorities to bring about
   sustainable digital transformation, delivering outstanding customer experience
   as well as powerful business intelligence.
 seo:
-  title: Online Customer Experience in Local Authorities | Headforwards
+  title: Online Customer Experience in Local Authorities 
   description: People increasingly expect their council to provide services
     quickly and efficiently using the online technology which makes their lives
     as easy as possible.

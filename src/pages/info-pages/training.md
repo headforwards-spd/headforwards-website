@@ -70,7 +70,7 @@ footerLinks:
     title: What can you learn here?
 callToAction: Grow your career with Headforwards
 seo:
-  title: Training, Development & Growth | Headforwards
+  title: Training, Development & Growth 
   description: We want our people to the get most from their time here which is
     why we work hard to provide the perfect environment for people to learn and
     grow.

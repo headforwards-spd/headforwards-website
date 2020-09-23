@@ -5,7 +5,7 @@ summary:
   text: We are language agnostic. We love new tech and any opportunity to use it
 parent: careers
 seo:
-  title: Software Development Teams & Tech | Headforwards
+  title: Software Development Teams & Tech 
   description: Building teams is what we do at Headforwards. We are language
     agnostic, love new tech and any opportunity to use it. Here are our
     development teams.

@@ -21,7 +21,7 @@ components:
 callToAction: Not ready to apply for a job right now? We still want to hear from you
 seo:
   slug: jobs
-  title: Jobs at Headforwards | Headforwards
+  title: Jobs at Headforwards 
   description: Ready for a new role? At Headforwards we deliver software that
     creates real value for our clients. Apply for a specific job or just
     register your interest.
