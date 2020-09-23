@@ -21,7 +21,7 @@ menu:
     link: e3863adc-37b0-11ea-850d-2e728ce88125
     linkText: Who we are.
   - children:
-      - linkText: Services
+      - linkText: Software services
         link: 0e1e28a0-d88c-11ea-b825-e35c8bd84b0b
       - link: 45d05450-103a-11ea-9ef0-bd54961b4e30
         linkText: People over process
