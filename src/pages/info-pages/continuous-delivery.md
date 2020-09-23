@@ -75,7 +75,7 @@ footerLinks:
     title: Our teams can develop, test and deploy software in just a few days
 callToAction: To learn more about our continuous delivery process
 seo:
-  title: Continuous Delivery | Headforwards
+  title: Continuous Delivery
   description: By delivering new functionality into production every day,
     Headforwards continuously creates business value for clients across
     industries.
