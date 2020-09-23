@@ -25,7 +25,7 @@ components:
     type: image-copy-component
 seo:
   slug: bi-and-data
-  title: Business Intelligence & Data | Headforwards
+  title: Business Intelligence & Data
   description: We help understand and organise data and make it available to the
     people who can use it to make a difference.
 uuid: 84dca7f0-1528-11ea-a6b5-63ea6add32fb
