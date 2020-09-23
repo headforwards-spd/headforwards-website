@@ -147,6 +147,14 @@ https://headforwards-website2.netlify.com/* https://www.headforwards.com/:splat 
 #/2017/01/headforwards-appoints-howell-lead-new-travel-division/
 #/2018/03/increase-knowledge-sharing-organisation/
 
+# Service Pages
+/what-we-do/forward-thinking-software /what-we-do/services/ 301
+/what-we-do/proof-of-concept /what-we-do/services/proof-of-concept/ 301
+/what-we-do/new-product-development /what-we-do/services/new-product-development/ 301
+/what-we-do/dedicated-teams /what-we-do/services/dedicated-teams/ 301
+/what-we-do/augmented-team /what-we-do/services/augmented-team/ 301
+/what-we-do/enterprise-project /what-we-do/services/enterprise-project/ 301
+
 # Catchalls
 /news/* /insights/ 301
 /category/* /insights/ 301
