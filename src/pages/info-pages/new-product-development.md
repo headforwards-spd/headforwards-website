@@ -118,7 +118,7 @@ components:
     title: Services we offer
 callToAction: ""
 seo:
-  slug: new-product-development
+  slug: /services/new-product-development/
 uuid: b7a3d0e0-e2f6-11ea-8a0e-8bdb4574407e
 type: info-page
 ---
