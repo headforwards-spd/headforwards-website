@@ -79,7 +79,7 @@ footerLinks:
     title: Headforwards takes an Agile approach to development
 callToAction: To learn more about our team creation process
 seo:
-  title: Dedicated, Effective Teams | Headforwards
+  title: Dedicated, Effective Teams
   description: At Headforwards, each client has a dedicated team, hand-picked to
     meet the client’s specific needs, and in place for the long term.
 uuid: 6b233b00-103a-11ea-9ef0-bd54961b4e30
