@@ -129,7 +129,7 @@ components:
     title: "Get it right next time "
     type: image-copy-component
 seo:
-  title: The Business Case for Long Term IT Investment | Headforwards
+  title: The Business Case for Long Term IT Investment
   description: Many clients are looking for long-term, ongoing and cost-effective
     support from their outsource partner which is what we offer here at
     Headforwards.
