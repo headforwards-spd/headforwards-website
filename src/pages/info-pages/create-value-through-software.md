@@ -79,7 +79,7 @@ footerLinks:
     showImages: true
     title: Software with the client’s overall business objectives in mind
 seo:
-  title: Creating Value Through Software Development | Headforwards
+  title: Creating Value Through Software Development
   description: Headforwards aligns development work with client objectives at
     every step so you know the software will be of genuine value to your overall
     business strategy.
