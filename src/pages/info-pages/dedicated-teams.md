@@ -119,6 +119,8 @@ components:
         link: c1059090-e38e-11ea-8daf-95f98603e186
       - linkText: Read more
         link: 24de5670-e393-11ea-8daf-95f98603e186
+seo:
+  slug: /services/dedicated-teams/
 uuid: 24de5670-e393-11ea-8daf-95f98603e186
 type: info-page
 ---
