@@ -85,7 +85,7 @@ footerLinks:
     title: Let's work together
 callToAction: To learn more about how we collaborate with clients
 seo:
-  title: Collaborative Software Development | Headforwards
+  title: Collaborative Software Development
   description: Headforwards works closely with you to deliver software that
     creates real value for your organisation.
 uuid: 0cd74ed0-0fac-11ea-843f-932c76de5936
