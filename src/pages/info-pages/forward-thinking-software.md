@@ -3,23 +3,13 @@ bannerImage: /uploads/hf-recruit-header.jpg
 title: Software services
 subtitle: ""
 introduction:
-  content:
-    - type: markdown-component
-      text: >-
-        Whether you’re ready to get up and running on a software development
-        project, want to explore a digital transformation project, exploit
-        opportunities to maximise resource in your business or you want to test
-        a concept quickly and cleanly, Headforwards can help. 
-
-
-        Use our team of experienced software developers to help transform your business.
-  title: Headforwards builds custom software that brings real business value.
+  content: []
+  title: ""
 summary:
   image: /uploads/team-5.jpg
-  text: Whether you’re ready to get up and running on a software development
-    project, want to explore a digital transformation project, exploit
-    opportunities to maximise resource in your business or you want to test a
-    concept quickly and cleanly, Headforwards can help.
+  text: "We ensure clients get the right mix of quality and value for money,
+    offering a co-created dedicated team or teams, standalone projects – such as
+    a proof of concept – and consultancy services.  "
 parent: what-we-do
 components:
   - type: image-copy-component
@@ -28,24 +18,28 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: >-
-          ## How we work
+        text: "We ensure clients get the right mix of quality and value for money,
+          offering a co-created dedicated team or teams, standalone projects –
+          such as a proof of concept – and consultancy services. \ 
 
 
-          Our Agile approach to software development brings value to your business from the start.
+          Headforwards was founded on the belief that clients are
+          short-changed by traditional software outsource companies – mainly due
+          to the ‘on-the-bench’ model of outsourcing. We believe great software
+          is built by great teams. We believe in people over process and build
+          all our teams based on each job’s specific needs.  \r  \r
 
+          \r
 
-          We work to understand your business context and define projects around your objectives.  Depending on your needs, our teams may be augmented with temporary developer resource or product, technical and facilitation consultancy. This flexibility can assist in rapid team creation and - in turn - rapid project starts. 
-
-
-          Headforwards believes that great software is built by great teams. We believe in people over process and build our teams based on each job’s specific needs to make sure our clients get the right product. 
-
-
-          We believe that all software deserves to be treated this way, irrespective of size of project or roadmap.
-  - type: images-component
-    imageOne: /uploads/headforwards-10.jpg
-    imageTwo: /uploads/team-5.jpg
-    flip: true
+          We believe all software deserve to be treated this way,
+          irrespective of project size or roadmap.  "
+      - type: quote-component
+        quote: It’s all about getting the right team on to the project. We’ll always
+          work with our clients to co-create the right model for their needs.
+        name: Toby Parkins
+        jobTitle: Director & Co-Founder
+        profilePic: /uploads/toby-parkins.png
+    title: Headforwards builds custom software that brings real business value.
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -85,11 +79,35 @@ components:
           [More details →](https://www.headforwards.com/what-we-do/services/dedicated-teams/)
 
 
-          **Consultancy**
+          ### Consultancy
 
 
-          A wide range of workshops and coaching engagements specific to a client’s needs from Vision and Roadmap creation to Agile coaching and Agile transformation support. [More details →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
-    title: Our Services
+          A wide range of workshops and coaching engagements specific to a client’s needs from Vision and Roadmap creation to Agile coaching and Agile transformation support. [Contact us →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
+    title: Our offering
+  - type: images-component
+    imageOne: /uploads/headforwards-10.jpg
+    imageTwo: /uploads/team-5.jpg
+    flip: true
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    title: "Our Agile approach to software development brings value to your business
+      from the start. "
+    content:
+      - type: markdown-component
+        text: Projects are always defined by a client’s needs rather than a pre-defined
+          format. Teams may be co-located or remote. They may be augmented with
+          temporary developer resource or product, technical and facilitation
+          consultancy. This flexibility can assist in rapid team creation and -
+          in turn - rapid project starts.
+  - type: article-component
+    articles:
+      - linkText: Read more
+        link: c841a072-37c9-11ea-978f-2e728ce88125
+      - linkText: Read more
+        link: 53629a60-103a-11ea-9ef0-bd54961b4e30
+    title: ""
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -98,15 +116,6 @@ components:
     content:
       - type: markdown-component
         text: "![](/uploads/who-we-have-worked-with.png)"
-  - type: image-copy-component
-    isRightImage: false
-    isPostit: false
-    isTwoColumns: false
-    title: Who you'll be working with
-    image: ""
-    content:
-      - type: markdown-component
-        text: "![](/uploads/team_shot.png)"
   - type: image-copy-component
     isRightImage: false
     isPostit: false
