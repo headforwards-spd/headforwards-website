@@ -43,7 +43,7 @@ components:
   - type: image-copy-component
     isRightImage: false
     isPostit: false
-    isTwoColumns: true
+    isTwoColumns: false
     content:
       - type: markdown-component
         text: >
