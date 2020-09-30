@@ -76,6 +76,7 @@ sections:
     isRightImage: false
 seo:
   title: Software Development Outsourcing Services
+  description: Headforwards is an outsource software development company. Using Agile principles and dedicated teams, Headforwards delivers software that creates real value.
   slug: /
 uuid: ffdb60f0-13bf-11ea-bdd8-37983c1fc502
 type: home-page
