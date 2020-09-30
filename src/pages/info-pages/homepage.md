@@ -12,10 +12,7 @@ introduction:
 summary:
   image: /uploads/headforwards-1.jpg
   text: >-
-    Headforwards is an outsource software development company. 
-
-
-    Using Agile principles and dedicated teams recruited specifically for their clients, Headforwards delivers software that creates real business value.
+    Headforwards is an outsource software development company. Using Agile principles and dedicated teams, Headforwards delivers software that creates real value.
 sections:
   - components:
       - content:
