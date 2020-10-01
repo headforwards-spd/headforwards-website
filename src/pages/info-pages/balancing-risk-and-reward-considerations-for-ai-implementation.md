@@ -1,5 +1,5 @@
 ---
-bannerImage: /uploads/headforwards-6.jpg
+bannerImage: /uploads/head-11.jpg
 title: "Balancing risk and reward: considerations for AI implementation"
 introduction:
   title: ""
