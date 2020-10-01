@@ -21,7 +21,7 @@ components:
           Artificial intelligence means something slightly different to everyone, from IT buzzword to the next great leap in technology. Sometimes it can feel like little more than an urban myth, only applied in the largest of enterprises. But however you think of it, AI is set to make a huge impact on the global economy, with [PwC predicting a $15.7 trillion contribution by 2030](https://www.pwc.com/gx/en/issues/data-and-analytics/publications/artificial-intelligence-study.html).
 
 
-          We’re already working on AI projects with clients across industries, bringing dedicated expertise to a complex, evolving technology that’s still very much a new venture for most organisations. We’ve previously discussed some of the potential for [local authorities]() l and healthcare applications, but the possibilities are near-endless and span every sector – if you approach it in the right way.
+          We’re already working on AI projects with clients across industries, bringing dedicated expertise to a complex, evolving technology that’s still very much a new venture for most organisations. We’ve previously discussed some of the potential for [local authorities](https://www.headforwards.com/insights/why-artificial-intelligence-has-the-power-to-transform-the-work-of-local-authorities/) and [healthcare applications](https://www.headforwards.com/insights/an-exciting-future-for-ai-in-uk-healthcare/), but the possibilities are near-endless and span every sector – if you approach it in the right way.
 
 
           Although thousands upon thousands of businesses already have AI projects underway, many industry leaders are still talking about AI in the highest-level terms, making it difficult to define it – and its applications – in a practical way. But like any major technology, adopting AI is all about balancing the benefits and risks. To help put that in perspective, here are some key considerations for organisations to make before getting started.
@@ -91,7 +91,7 @@ components:
 
           * **Maintaining compliance**
 
-          As an organisation, the way you use data will always be under scrutiny – and AI is only going to increase the need for guidance, accountability, and measures for security and compliance. Protecting data that belongs to employees, customers, citizens or third-party sources needs to be at the top of any AI agenda, to safeguard identities and save your reputation.
+          As an organisation, the way you use data will always be under scrutiny – and AI is only going to increase the need for [guidance, accountability, and measures for security and compliance](https://ico.org.uk/for-organisations/guide-to-data-protection/key-data-protection-themes/guidance-on-ai-and-data-protection/). Protecting data that belongs to employees, customers, citizens or third-party sources needs to be at the top of any AI agenda, to safeguard identities and save your reputation.
 
 
           The most important thing to remember is that these risks – and any others you might encounter as you plan your own AI project – aren’t insurmountable. They just require the right framework and approach.
@@ -103,10 +103,10 @@ components:
           Getting AI right can be a challenge, but at Headforwards we’ve built an understanding of the best way to approach an AI project – and that understanding is evolving all the time as the landscape changes and new innovations join the fray.
 
 
-          Every project will require a slightly different approach – a different mix of skills, technologies, coding techniques and more – and our people can help you find that pathway to a successful AI implementation.
+          Every project will require a slightly different approach – [a different mix of skills, technologies, coding techniques and more](https://www.headforwards.com/how-we-work/our-working-models/) – and our people can help you find that pathway to a successful AI implementation.
 
 
-          Talk to us today about your AI ambitions, and let us show you how outsourced development can help you realise them.
+          [Talk to us today about your AI ambitions](https://www.headforwards.com/contact/), and let us show you how outsourced development can help you realise them.
 seo:
   slug: the-risks-and-benefits-of-artificial-intelligence
   title: The risks and benefits of AI applications
