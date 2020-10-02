@@ -24,17 +24,23 @@ components:
           and Asia. Here is our expert view on why you should consider
           outsourcing your software development.
 
-
           We  can observe the primary benefits of software outsourcing
           into key 7 areas
 
           * [Cost savings](#cost-savings)
+
           * [Access to talent](#access-to-talent)
+
           * [Flexibility](#flexibiltiy)
+
           * [Time savings](#time-savings)
+
           * [Cybersecurity](#cybersecurity)
+
           * [Access to new opportunities and fresh perspectives](#new-oppurtunities)
+
           * [Mitigate risk](#mitigate-risk)"
+
 
     title: Outsourced software development
   - type: image-copy-component
@@ -48,10 +54,7 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: "
-        
-          <a name='cost-savings'></a>
-          ### Cost savings
+        text: "### Cost savings <a id="cost-savings"></a>
 
           Using an outsourced software development company can save
           you a significant amount of money. You avoid recruitment fees and the
@@ -60,8 +63,6 @@ components:
           like premises and equipment. Nevertheless, quality always matters more
           – so in choosing your provider it is vital to look beyond simply
           price.
-
-          [](#access-to-talent)
 
           ### Access to talent
 
@@ -75,8 +76,6 @@ components:
           software development is a way around this and gives you access to a
           huge pool of talent, with diverse and leading-edge technology
           expertise.
-          
-          [](#flexibiltiy)
 
           ### Flexibility
 
@@ -92,8 +91,6 @@ components:
           in-house team or to act as a standalone dedicated team working on a
           specific project.
 
-          [](#time-savings)
-
           ### Time savings
 
           Your outsourced team will be focussed on your project,
@@ -102,8 +99,6 @@ components:
           outsourced team will also be able to hit the ground running, as they
           are experienced in working on a project basis and delivering against
           demanding KPIs.
-          
-          [](#cybersecurity)
 
           ### Cybersecurity
 
@@ -111,8 +106,6 @@ components:
           with a good outsourced software development company can give you
           immediate access to high level skills and protocols to ensure that
           your data is safe and compliant.
-
-          [](#new-oppurtunities)
 
           ### Access to new opportunities and fresh perspectives
 
@@ -124,8 +117,6 @@ components:
           business at the cutting edge. An outsourced software development
           consultancy will be able to bring a fresh perspective to your business
           and help your company think outside the box.
-
-          [](#mitigate-risk)
 
           ### Mitigate risk
 
