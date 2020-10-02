@@ -26,24 +26,16 @@ components:
 
 
           We  can observe the primary benefits of software outsourcing
-          into key 7 areas\r
+          into key 7 areas
 
-          \r
+          * [Cost savings](#cost-savings)
+          * [Access to talent](#access-to-talent)
+          * [Flexibility](#flexibiltiy)
+          * [Time savings](#time-savings)
+          * [Cybersecurity](#cybersecurity)
+          * [Access to new opportunities and fresh perspectives](#new-oppurtunities)
+          * [Mitigate risk](#mitigate-risk)"
 
-          * [Cost savings](#cost-savings)\r
-
-          * [Access to talent](#access-to-talent)\r
-
-          * [Flexibility](#flexibiltiy)\r
-
-          * [Time savings](#time-savings)\r
-
-          * [Cybersecurity](#cybersecurity)\r
-
-          * [Access to new opportunities and fresh
-          perspectives](#new-oppurtunities)\r
-
-          * [Mitigate risk](#mitigate-risk) \r"
     title: Outsourced software development
   - type: image-copy-component
     isRightImage: false
@@ -56,13 +48,10 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: "[](#cost-savings)\r
-
-          ### Cost savings\r
-
-          \r
-
-          \r
+        text: "
+        
+          <a name='cost-savings'></a>
+          ### Cost savings
 
           Using an outsourced software development company can save
           you a significant amount of money. You avoid recruitment fees and the
@@ -70,21 +59,11 @@ components:
           you avoid extra employment costs such as NI and other staff overheads,
           like premises and equipment. Nevertheless, quality always matters more
           – so in choosing your provider it is vital to look beyond simply
-          price. \r
+          price.
 
-          \r
+          [](#access-to-talent)
 
-          \r
-
-          \r
-
-          [](#access-to-talent)\r
-
-          ### Access to talent\r
-
-          \r
-
-          \r
+          ### Access to talent
 
           One of the most important drivers in the global outsourced
           software development market is the rapid emergence of new
@@ -95,17 +74,11 @@ components:
           especially in some of the very latest software areas. Outsourcing
           software development is a way around this and gives you access to a
           huge pool of talent, with diverse and leading-edge technology
-          expertise. \r
+          expertise.
+          
+          [](#flexibiltiy)
 
-          \r
-
-          [](#flexibiltiy)\r
-
-          ### Flexibility\r
-
-          \r
-
-          \r
+          ### Flexibility
 
           You can scale up or scale down as required, [adjusting to
           the needs of your
@@ -117,49 +90,31 @@ components:
           also built-in flexibility in the way outsourced software developers
           work with their clients. For instance, they can be used to augment an
           in-house team or to act as a standalone dedicated team working on a
-          specific project. \r
+          specific project.
 
-          \r
+          [](#time-savings)
 
-          [](#time-savings)\r
-
-          ### Time savings\r
-
-          \r
-
-          \r
+          ### Time savings
 
           Your outsourced team will be focussed on your project,
           delivering in line with your required critical path. This can mean
           reduced time to market and provide a competitive advantage. Your
           outsourced team will also be able to hit the ground running, as they
           are experienced in working on a project basis and delivering against
-          demanding KPIs. \r
+          demanding KPIs.
+          
+          [](#cybersecurity)
 
-          \r
-
-          [](#cybersecurity)\r
-
-          ### Cybersecurity\r
-
-          \r
-
-          \r
+          ### Cybersecurity
 
           With mounting awareness of cybersecurity threats, working
           with a good outsourced software development company can give you
           immediate access to high level skills and protocols to ensure that
-          your data is safe and compliant. \r
+          your data is safe and compliant.
 
-          \r
+          [](#new-oppurtunities)
 
-          [](#new-oppurtunities)\r
-
-          ### Access to new opportunities and fresh perspectives\r
-
-          \r
-
-          \r
+          ### Access to new opportunities and fresh perspectives
 
           Working with an innovative software company can open your
           eyes to [emerging
@@ -168,17 +123,12 @@ components:
           a variety of competency centres and this can help keep your own
           business at the cutting edge. An outsourced software development
           consultancy will be able to bring a fresh perspective to your business
-          and help your company think outside the box. \r
+          and help your company think outside the box.
 
-          \r
+          [](#mitigate-risk)
 
-          [](#mitigate-risk)\r
+          ### Mitigate risk
 
-          ### Mitigate risk\r
-
-          \r
-
-          \r
 
           By working with an outsourced software consultancy, you
           benefit from access to robust project management and quality control
