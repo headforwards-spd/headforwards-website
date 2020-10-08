@@ -1,12 +1,12 @@
 ---
-bannerImage: /uploads/head-11.jpg
+bannerImage: /uploads/team-3.jpg
 title: "Balancing risk and reward: considerations for AI implementation"
 introduction:
   title: ""
 summary:
   text: We explore some of the misconceptions and risks around AI – and how to
     overcome them for a successful implementation.
-  image: /uploads/dsc08186.jpg
+  image: /uploads/team-3.jpg
 author: bd32c3b0-094b-11eb-bae6-6f586e392189
 publishedDate: 2020-10-01T09:23:55.992Z
 components:
@@ -48,8 +48,8 @@ components:
           It’s the same as any new technology – by starting with pilot projects and proofs of concept, you can ensure your new systems or processes will cause the smallest amount of disruption possible as you implement them. You can also closely monitor the impact from day one, measuring the real-world benefits and identifying areas for improvement.
     title: "Risks and rewards: things to consider before you adopt AI "
   - type: images-component
-    imageOne: /uploads/headforwards-11.jpg
-    imageTwo: /uploads/headforwards-21.jpg
+    imageOne: /uploads/headforwards-10.jpg
+    imageTwo: /uploads/head-8.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
