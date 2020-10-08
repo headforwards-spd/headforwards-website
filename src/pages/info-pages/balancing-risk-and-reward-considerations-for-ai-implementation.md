@@ -7,7 +7,7 @@ summary:
   text: We explore some of the misconceptions and risks around AI – and how to
     overcome them for a successful implementation.
   image: /uploads/dsc08186.jpg
-author: a94440f0-c674-11ea-bc59-e32a813a8bbf
+author: bd32c3b0-094b-11eb-bae6-6f586e392189
 publishedDate: 2020-10-01T09:23:55.992Z
 components:
   - type: image-copy-component
