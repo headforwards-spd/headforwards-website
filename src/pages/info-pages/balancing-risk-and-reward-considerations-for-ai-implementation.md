@@ -8,7 +8,7 @@ summary:
     overcome them for a successful implementation.
   image: /uploads/team-3.jpg
 author: bd32c3b0-094b-11eb-bae6-6f586e392189
-publishedDate: 2020-10-01T09:23:55.992Z
+publishedDate: 2020-10-08T12:57:09.553Z
 components:
   - type: image-copy-component
     isRightImage: false
