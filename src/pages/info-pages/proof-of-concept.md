@@ -58,7 +58,7 @@ components:
           \r
 
           That same facilitator will champion Agile ceremonies such as
-          daily stand-ups, reviews and retrospectives that are shaed with the
+          daily stand-ups, reviews and retrospectives that are shared with the
           client Product Owner through a dedicated digital kanban board and
           wiki-style living documentation. "
   - type: image-copy-component

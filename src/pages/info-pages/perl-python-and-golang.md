@@ -31,7 +31,7 @@ components:
            
 
            
-          Join Headforwards and you’ll discover a very different technology business. A fun atmosphere with flexible hours. A strong team spirit. And aplace that genuinely cares about your - and your family’s -well-being. So work becomes more enjoyable and less stressful. And outside work, you’rein Cornwall, so there’s a fantastic lifestyle to enjoy.
+          Join Headforwards and you’ll discover a very different technology business. A fun atmosphere with flexible hours. A strong team spirit. And a place that genuinely cares about your - and your family’s -well-being. So work becomes more enjoyable and less stressful. And outside work, you’rein Cornwall, so there’s a fantastic lifestyle to enjoy.
 
 
           We might be growing fast, but there’s no ‘us and them’. Our business model’s flat and fluid. There are no ivory towers, so it’s all about teamwork. And we recognise good ideas, wherever they come from. So, prove yourself and your career can really go places here. Because our leaders are all around you. And they’re great at spotting talented people who always give their all.

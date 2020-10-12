@@ -77,9 +77,9 @@ components:
         text: >-
           * Dedicated focus from your own team
 
-          * Can deliver a continuous roadmap through the ‘power of a team’\
+          * Can deliver a continuous roadmap through the ‘power of a team’
 
-          * Incremental growth – prove value to your stakeholders, before progressing to more team members\
+          * Incremental growth – prove value to your stakeholders, before progressing to more team members
 
           * Flexible resourcing - additional skills available, at short notice  
 
