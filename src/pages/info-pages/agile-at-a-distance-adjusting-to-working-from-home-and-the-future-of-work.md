@@ -24,12 +24,6 @@ components:
           had a socially-distanced chat about how we’ve all adapted to working
           from home, and what they think our operations might look like in a
           post-pandemic world.\r\n"
-  - type: quote-component
-    quote: A single policy – one that dictates how everyone should be working – can
-      just lead to you losing good people.
-    name: Toby Parkins
-    jobTitle: Director, Headforwards
-    profilePic: /uploads/toby-parkins.png
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -148,6 +142,12 @@ components:
 
           We’re taking the very classical agile approach of plan, do, review. They’ll try new working approaches for a few months, reflect on whether it’s effective, and share their findings with the rest of the organisation. With more than 20 teams, that’s potentially a lot of different ideas.
     image: ""
+  - type: quote-component
+    quote: A single policy – one that dictates how everyone should be working – can
+      just lead to you losing good people.
+    name: Toby Parkins
+    jobTitle: Director, Headforwards
+    profilePic: /uploads/toby-parkins.png
   - type: images-component
     imageOne: /uploads/dsc09678.jpg
     imageTwo: /uploads/dsc09451.jpg
