@@ -62,9 +62,6 @@ components:
 
 
           **TOBY:** Companies have made a lot of bold, definitive statements about the future of work, and many are embracing remote working. Some companies have even ended their office leases – but are they considering everyone’s circumstances? Not everyone can work from home forever.
-  - type: images-component
-    imageOne: /uploads/dsc09759.jpg
-    imageTwo: /uploads/dsc09867.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -82,6 +79,9 @@ components:
 
 
           That makes a huge difference.  Teams work best when everyone can rally around an individual that has a challenge – in lockdown, some people are going to need much more support than others.
+  - type: images-component
+    imageOne: /uploads/dsc09759.jpg
+    imageTwo: /uploads/dsc09867.jpg
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -134,7 +134,11 @@ components:
 
 
           We’re taking the very classical agile approach of plan, do, review. They’ll try new working approaches for a few months, reflect on whether it’s effective, and share their findings with the rest of the organisation. With more than 20 teams, that’s potentially a lot of different ideas.
-    image: /uploads/dsc09451.jpg
+    image: ""
+  - type: images-component
+    imageOne: /uploads/dsc09678.jpg
+    imageTwo: /uploads/dsc09451.jpg
+    flip: true
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -175,7 +179,7 @@ components:
   - type: image-copy-component
     isRightImage: false
     isPostit: false
-    isTwoColumns: true
+    isTwoColumns: false
     title: Is remote working the future for Headforwards?
     content:
       - type: markdown-component
@@ -193,6 +197,22 @@ components:
 
 
           **CRAIG:** Now it’s about being empiricists, being scientists, and seeing what lessons we can take from the experience. It’s a forced experiment, but there’s always something we can learn.
+  - type: image-copy-component
+    isRightImage: false
+    isPostit: false
+    isTwoColumns: false
+    content:
+      - type: markdown-component
+        text: We are actively researching the long-term effects of working from home.
+          See the results of this study below.
+    image: ""
+    title: Further reading
+  - type: article-component
+    articles:
+      - linkText: Read more
+        link: 71165820-d322-11ea-939f-c56422732714
+    title: ""
+callToAction: ""
 seo:
   description: Headforwards founders Toby Parkins and Craig Girvan discuss the
     transition to working from home – and how to preserve an agile culture over
