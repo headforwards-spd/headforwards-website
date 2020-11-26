@@ -192,7 +192,7 @@ components:
   - type: image-copy-component
     isRightImage: false
     isPostit: false
-    isTwoColumns: false
+    isTwoColumns: true
     title: Is remote working the future for Headforwards?
     content:
       - type: markdown-component
