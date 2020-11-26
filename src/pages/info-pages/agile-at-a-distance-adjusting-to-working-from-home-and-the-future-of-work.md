@@ -5,7 +5,7 @@ summary:
   text: Headforwards founders Toby Parkins and Craig Girvan discuss the transition
     to working from home – and how to preserve an agile culture over video chat.
   image: /uploads/brusk-dede-tjd5cfddpra-unsplash.jpg
-author: 8d241049-6ed4-45ff-aaf8-488d06871310
+author: 48a62150-2fe7-11eb-a14b-43dc49807385
 publishedDate: 2020-11-26T11:23:08.957Z
 components:
   - type: image-copy-component
