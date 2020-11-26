@@ -24,6 +24,12 @@ components:
           had a socially-distanced chat about how we’ve all adapted to working
           from home, and what they think our operations might look like in a
           post-pandemic world.\r\n"
+  - type: quote-component
+    quote: A single policy – one that dictates how everyone should be working – can
+      just lead to you losing good people.
+    name: Toby Parkins
+    jobTitle: Director, Headforwards
+    profilePic: /uploads/toby-parkins.png
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -79,6 +85,13 @@ components:
 
 
           That makes a huge difference.  Teams work best when everyone can rally around an individual that has a challenge – in lockdown, some people are going to need much more support than others.
+  - type: quote-component
+    quote: By having discussions with the people who are working with the everyday
+      reality of remote collaboration, or a hybrid model, you can make more
+      informed decisions.
+    name: Craig Girvan
+    jobTitle: Director, Headforwards
+    profilePic: /uploads/craig_profile.jpg
   - type: images-component
     imageOne: /uploads/dsc09759.jpg
     imageTwo: /uploads/dsc09867.jpg
