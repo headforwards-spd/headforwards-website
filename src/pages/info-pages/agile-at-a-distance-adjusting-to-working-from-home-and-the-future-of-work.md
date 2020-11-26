@@ -197,6 +197,7 @@ components:
 
 
           **CRAIG:** Now it’s about being empiricists, being scientists, and seeing what lessons we can take from the experience. It’s a forced experiment, but there’s always something we can learn.
+    image: ""
   - type: image-copy-component
     isRightImage: false
     isPostit: false
@@ -211,6 +212,8 @@ components:
     articles:
       - linkText: Read more
         link: 71165820-d322-11ea-939f-c56422732714
+      - linkText: Read more
+        link: 5ffa59b0-a18b-11ea-8793-17b8dc61ba9d
     title: ""
 callToAction: ""
 seo:
