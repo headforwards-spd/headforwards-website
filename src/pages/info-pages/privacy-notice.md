@@ -23,7 +23,7 @@ summary:
     We will only ever use your data in the way you intended it when you provided it to us. This should be explicitly clear, if you are unsure please contact us. We will regularly review and revise our privacy policy, to ensure you are protected.
 
 
-    This policy was last updated on 24th May 2018.
+    This policy was last updated September 2020.
   image: /uploads/careers 4.jpg
 sections:
   - title: Personal Data
