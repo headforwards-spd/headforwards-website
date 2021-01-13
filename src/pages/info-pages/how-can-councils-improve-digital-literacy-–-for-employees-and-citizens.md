@@ -2,13 +2,8 @@
 bannerImage: /uploads/headforwards-14.jpg
 title: How can councils improve digital literacy – for employees and citizens?
 summary:
-  text: >
-    Many councils are starting to adopt advanced business intelligence, detailed
-    reporting, customer experience solutions, and other tech-based approaches to
-    improve citizen services and help employees work more effectively. But for
-    these projects to be successful, councils need to ensure their people have
-    the right level of digital literacy to make the most of the new systems and
-    solutions.
+  text: As councils adopt new software and processes to improve operations,
+    digital literacy and change management are becoming vital for success.
   image: /uploads/headforwards-14.jpg
 author: 8d241049-6ed4-45ff-aaf8-488d06871310
 publishedDate: 2021-01-13T11:06:40.662Z
