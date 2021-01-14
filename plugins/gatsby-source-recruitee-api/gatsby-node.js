@@ -84,7 +84,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     );
 
     function processOffer(offer) {
-        const { id, title, description = '', requirements, created_at: created, slug: path, ...others } = offer;
+        const { id, title, description = '', department = '', tags = [], requirements, created_at: created, slug: path, ...others } = offer;
         const [full, salary = null] =
             title.match(
                 /(?:\s*-?\s*)(?:\s*\(?\s*)((?:(?:up\s*to)|(?:£?[\d]+\s*-))\s*£?[\d]+)(?:[k]?)(?:\s*\)?\s*)$/im
@@ -106,6 +106,8 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
                 type: `RecruiteeOffer`,
                 contentDigest: createContentDigest(offer),
             },
+            department,
+            tags,
             description: getMarkdown(description),
             requirements: getMarkdown(requirements),
             created: moment(created, 'YYYY-MM-DD HH:mm:ss Z').toDate(),
