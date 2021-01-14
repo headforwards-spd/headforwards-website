@@ -55,7 +55,7 @@ components:
           The change management challenge here is clearly communicating what the new solution offers, how it’s going to make people’s jobs easier and, crucially, how this factors into a bigger picture for the council. People often respond better to change when it’s put into the full context – what it means for them, but also how it’s contributing to improvements in the organisation and its services, too.
 
 
-          Councils are often very traditional, hierarchical organisations. In some ways, this can be a drawback, but it can also be used to make change management more effective. Gaining high-level buy-in for new technologies and filtering that down through management layers can help build enthusiasm throughout the organisation. As long as those ‘lower’ in the hierarchy have the opportunity to give their own thoughts, requirements and feedback, it’s a great way to create a consistent push towards digital literacy for the whole council.
+          Councils are often very traditional, hierarchical organisations. In some ways, this can be a drawback, but it can also be used to make change management more effective. Gaining high-level buy-in for new technologies and filtering that down through management layers can help build enthusiasm throughout the organisation. As long as people in a variety of roles across the business have the opportunity to give their own thoughts, requirements and feedback, it’s a great way to create a consistent push towards digital literacy for the whole council.
     title: Encouraging change in a traditional organisation
   - type: image-copy-component
     isRightImage: false
