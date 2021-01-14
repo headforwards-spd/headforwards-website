@@ -84,7 +84,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     );
 
     function processOffer(offer) {
-        const { id, title, description = '', department = '', tags = [], requirements, created_at: created, slug: path, ...others } = offer;
+        const { id, title, description = '', department = '', requirements, created_at: created, slug: path, ...others } = offer;
         const [full, salary = null] =
             title.match(
                 /(?:\s*-?\s*)(?:\s*\(?\s*)((?:(?:up\s*to)|(?:£?[\d]+\s*-))\s*£?[\d]+)(?:[k]?)(?:\s*\)?\s*)$/im
@@ -97,7 +97,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
             path,
             id: nodeId,
             title: full ? title.substring(0, title.indexOf(full)) : title,
-            salary: salary ? `${salary.toLowerCase()}k` : salary,
+            salary: salary ? `${salary.toLowerCase()}k` : '',
             subtitle: subtitle.trim().replace(/\*+/g, ''),
             type: 'recruitee-offer',
             parent: null,
@@ -106,12 +106,13 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
                 type: `RecruiteeOffer`,
                 contentDigest: createContentDigest(offer),
             },
-            department,
-            tags,
+            department: department || '',
             description: getMarkdown(description),
             requirements: getMarkdown(requirements),
             created: moment(created, 'YYYY-MM-DD HH:mm:ss Z').toDate(),
         };
+
+        console.log({nodeData});
 
         createNode(nodeData);
     }
