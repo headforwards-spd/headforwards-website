@@ -1,5 +1,5 @@
 ---
-bannerImage: /uploads/files-1614223_1920.jpg
+bannerImage: /uploads/files-1614223_1920_dark.jpg
 title: "The 24-hour proof of concept: how to solve business challenges with
   hackathons"
 subtitle: ""
