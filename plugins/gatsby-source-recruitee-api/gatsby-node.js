@@ -23,6 +23,8 @@ const getMarkdown = html => {
         .replace('</i>', '</em> ')
         .replace(/\s*<strong>\s*<strong>\s*/gm, '<strong>')
         .replace(/\s*<\/strong>\s*<\/strong>\s*/gm, '</strong>')
+        .replace(/<\/strong>(\s*)<strong>/gm, '$1')
+        .replace(/<\/em>(\s*)<em>/gm, '$1')
         .replace(/\s*<em>\s*<em>\s*/gm, '<em>')
         .replace(/\s*<\/em>\s*<\/em>\s*/gm, '</em>')
         .replace(/\s*<em>\s*<\/em>\s*/gm, ' ')
@@ -84,10 +86,19 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     );
 
     function processOffer(offer) {
-        const { id, title, description = '', department = '', requirements, created_at: created, slug: path, ...others } = offer;
+        const {
+            id,
+            title,
+            description = '',
+            department = '',
+            requirements,
+            created_at: created,
+            slug: path,
+            ...others
+        } = offer;
         const [full, salary = null] =
             title.match(
-                /(?:\s*-?\s*)(?:\s*\(?\s*)((?:(?:up\s*to)|(?:£?[\d]+\s*-))\s*£?[\d]+)(?:[k]?)(?:\s*\)?\s*)$/im
+                /(?:\s*-?\s*)(?:\s*\(?\s*)((?:(?:up\s*to)|(?:£?[\d]+\s*-))\s*£?[\d]+)(?:[kK]?)(?:\s*\)?\s*)$/im
             ) || [];
         const [, subtitle = null] = description ? getMarkdown(description).match(/^(.*)(?:\n\n)/m) : [];
 
@@ -112,7 +123,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
             created: moment(created, 'YYYY-MM-DD HH:mm:ss Z').toDate(),
         };
 
-        console.log({nodeData});
+        console.log({ title, full, subtitle, salary });
 
         createNode(nodeData);
     }
