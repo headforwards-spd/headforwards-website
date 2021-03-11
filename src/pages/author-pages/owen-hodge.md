@@ -1,6 +1,6 @@
 ---
 name: Owen Hodge
-jobTitle: Product Owner
+jobTitle: Product Manager
 profilePic: /uploads/owen_hodge_headforwards_bw.jpeg
 bio: "Owen Hodge has been with Headforwards for more than five years. He is a
   Product Manager currently working with Local Authorities and has more than 10
