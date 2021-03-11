@@ -1,11 +1,11 @@
 ---
-bannerImage: /uploads/head-1.jpg
+bannerImage: /uploads/head-stolen.jpg
 title: The pros and cons of user-created apps
 subtitle: ""
 introduction:
   content: []
 summary:
-  image: /uploads/head-1.jpg
+  image: /uploads/head-stolen.jpg
   text: With low-code tools growing in popularity, is citizen development a worthy
     investment for organisations – or could it cause more problems than it
     solves?
