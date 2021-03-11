@@ -46,12 +46,8 @@ components:
     content:
       - type: markdown-component
         text: >-
-          * You can ease the pressure on your central IT IT teams are constantly
-          looking at a growing list of existing systems that need attention and
-          new systems that need building. By sharing some of the development
-          responsibility with end users, you can help central IT focus on the
-          specialist work.
-
+          * **You can ease the pressure on your central IT.** \
+            IT teams are constantly looking at a growing list of existing systems that need attention and new systems that need building. By sharing some of the development responsibility with end users, you can help central IT focus on the specialist work.
           * Your end users understand their challenges better than anyone Everyone can name at least one stumbling block that gets in the way of their everyday tasks. And when there’s a clear fix – like automating a daily email, for example – it can be faster for your users to solve that challenge themselves.
 
           * Users can have ownership of their own systems It’s universal in organisations: users get attached to the systems they use every day, and they’ll tweak them to fit their own specific needs. It’s how we get the super-tailored Microsoft Excel spreadsheets that teams like finance rely on. Giving users the tools to make those tweaks more effectively can help you standardise while letting your people set up their workflows the way they like them.
