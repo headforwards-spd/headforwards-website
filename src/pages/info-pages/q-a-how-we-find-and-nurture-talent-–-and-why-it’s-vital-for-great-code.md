@@ -20,10 +20,6 @@ author: 23a8e510-cb68-11ea-8e96-b7fc142baae4
 publishedDate: 2021-03-30T14:53:27.660Z
 components:
   - type: image-copy-component
-    isRightImage: false
-    isPostit: false
-    isTwoColumns: false
-  - type: image-copy-component
     isRightImage: true
     isPostit: true
     isTwoColumns: true
