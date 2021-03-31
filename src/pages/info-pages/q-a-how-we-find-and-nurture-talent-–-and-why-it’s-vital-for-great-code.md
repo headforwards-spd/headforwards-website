@@ -1,5 +1,5 @@
 ---
-bannerImage: /uploads/HF careers 3.jpg
+bannerImage: /uploads/img_0155-web-edit-bw.jpg
 title: "Q&A: How we find and nurture talent – and why it’s vital for great code"
 introduction:
   content:
