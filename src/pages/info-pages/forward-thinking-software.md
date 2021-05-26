@@ -46,7 +46,7 @@ components:
     isTwoColumns: false
     content:
       - type: markdown-component
-        text: >
+        text: >-
           ### Proof of concept
 
 
@@ -74,15 +74,13 @@ components:
           ### Dedicated teams
 
 
-          Our dedicated teams can be self-contained delivery teams that provide or extend any in-house capability, or they can become an extension of existing teams, augmenting them with specific skillsets as needed. 
-
-          [More details →](https://www.headforwards.com/what-we-do/services/dedicated-teams/)
+          Our dedicated teams can be self-contained delivery teams that provide or extend any in-house capability, or they can become an extension of existing teams, augmenting them with specific skillsets as needed.  [More details →](https://www.headforwards.com/what-we-do/services/dedicated-teams/)
 
 
           ### Consultancy
 
 
-          A wide range of workshops and coaching engagements specific to a client’s needs from Vision and Roadmap creation to Agile coaching and Agile transformation support. [Contact us →](https://share.hsforms.com/1aRrvaaplSQC-3z6Gqj-G8Qzec3)
+          A wide range of workshops and coaching engagements specific to a client’s needs from Vision and Roadmap creation to Agile coaching and Agile transformation support. [Contact us →](https://share.hsforms.com/1HHmnw48ESsihISufYe_Pmwzec3)
     title: Our offering
   - type: images-component
     imageOne: /uploads/headforwards-10.jpg
