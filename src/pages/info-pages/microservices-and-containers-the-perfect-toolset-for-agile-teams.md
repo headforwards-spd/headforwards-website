@@ -5,7 +5,7 @@ summary:
   text: See how microservices and containers fit into the Agile toolset – and how
     they’re helping organisations enable continuous delivery.
   image: /uploads/dsc08876.jpg
-author: d6b8ef80-d01b-11ea-b7cd-8b72a2b29420
+author: 9d524670-b971-11eb-ae50-75e5d24df288
 publishedDate: 2021-05-20T13:31:40.387Z
 components:
   - type: image-copy-component
